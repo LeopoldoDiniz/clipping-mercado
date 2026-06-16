@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Intelligence — Simulação Completa</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg:#0b0f1a; --surface:#131928; --surface-2:#1a2235; --border:#1e2d47;
+    --text:#e8edf5; --text-2:#8a9ab5; --text-3:#4a5a72;
+    --blue:#3b82f6; --blue-dim:#1e3a5f; --green:#10b981; --green-dim:#064e3b;
+    --red:#ef4444; --red-dim:#450a0a; --amber:#f59e0b; --amber-dim:#451a03;
+    --purple:#8b5cf6; --cyan:#06b6d4;
+    --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
+    --toc-w:220px; --top-h:56px;
+  }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--text); font-family:var(--sans); font-size:14px; line-height:1.6; }
+
+  /* TOPBAR */
+  .topbar { background:var(--surface); border-bottom:1px solid var(--border); padding:0 28px;
+    display:flex; align-items:center; justify-content:space-between; height:var(--top-h);
+    position:fixed; top:0; left:0; right:0; z-index:200; }
+  .topbar-brand { display:flex; align-items:center; gap:12px; }
+  .brand-dot { width:8px; height:8px; border-radius:50%; background:var(--blue); box-shadow:0 0 8px var(--blue); animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+  .brand-name { font-size:13px; font-weight:600; letter-spacing:.5px; }
+  .topbar-nav { display:flex; gap:2px; }
+  .topbar-nav button { padding:6px 13px; border-radius:6px; font-size:12px; font-weight:500;
+    color:var(--text-2); background:none; border:none; cursor:pointer; font-family:var(--sans); transition:all .15s; }
+  .topbar-nav button:hover { background:var(--surface-2); color:var(--text); }
+  .topbar-nav button.active { background:var(--blue-dim); color:var(--blue); }
+  .topbar-right { font-family:var(--mono); font-size:11px; color:var(--text-3); }
+
+  /* TOC */
+  .toc { background:var(--surface); border-right:1px solid var(--border); position:fixed;
+    top:var(--top-h); left:0; width:var(--toc-w); height:calc(100vh - var(--top-h));
+    overflow-y:auto; padding:28px 0 40px; z-index:100; }
+  .toc-label { font-family:var(--mono); font-size:9px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--text-3); padding:0 22px 14px; border-bottom:1px solid var(--border); margin-bottom:10px; }
+  .toc-item { display:block; padding:8px 22px; font-family:var(--mono); font-size:11px;
+    color:var(--text-3); text-decoration:none; border-left:2px solid transparent; transition:all .12s; line-height:1.4; cursor:pointer; }
+  .toc-item:hover { color:var(--blue); border-left-color:var(--blue-dim); background:rgba(59,130,246,.05); }
+  .toc-item.active { color:var(--blue); border-left-color:var(--blue); background:rgba(59,130,246,.08); font-weight:500; }
+  .toc-item.sub { padding-left:36px; font-size:10px; }
+  .toc-divider { height:1px; background:var(--border); margin:8px 22px; }
+
+  /* SECTOR FILTER (no TOC) */
+  .sector-filter { margin:20px 16px 0; }
+  .sf-title { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--text-3); margin-bottom:10px; padding:0 6px; }
+  .sf-btn { display:flex; align-items:center; justify-content:space-between; width:100%;
+    padding:9px 12px; margin-bottom:6px; border-radius:8px; border:1px solid var(--border);
+    background:var(--surface-2); color:var(--text-2); font-family:var(--sans); font-size:12px; font-weight:500;
+    cursor:pointer; transition:all .15s; }
+  .sf-btn:hover { border-color:var(--text-3); color:var(--text); }
+  .sf-btn.active { background:var(--blue-dim); border-color:var(--blue); color:var(--blue); }
+  .sf-dot { width:8px; height:8px; border-radius:50%; }
+  .sf-count { font-family:var(--mono); font-size:10px; opacity:.7; }
+  .sfd-todos { background:var(--text-2); }
+  .sfd-industria { background:#60a5fa; }
+  .sfd-comercio { background:#34d399; }
+  .sfd-servicos { background:#a78bfa; }
+
+  /* SELETOR TEMPORAL */
+  .time-selector { display:flex; align-items:center; gap:10px; margin-bottom:24px; flex-wrap:wrap; }
+  .ts-arrow { width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--surface);
+    color:var(--text-2); cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:16px; transition:all .15s; flex-shrink:0; }
+  .ts-arrow:hover:not(:disabled) { border-color:var(--blue); color:var(--blue); background:var(--blue-dim); }
+  .ts-arrow:disabled { opacity:.3; cursor:not-allowed; }
+  .ts-dropdown { position:relative; min-width:280px; }
+  .ts-current { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%;
+    padding:8px 14px; border-radius:8px; border:1px solid var(--border); background:var(--surface);
+    color:var(--text); cursor:pointer; font-family:var(--sans); font-size:13px; font-weight:500; transition:all .15s; }
+  .ts-current:hover { border-color:var(--blue); }
+  .ts-current.open { border-color:var(--blue); background:var(--surface-2); }
+  .ts-current-main { display:flex; align-items:center; gap:10px; }
+  .ts-icon { font-family:var(--mono); font-size:11px; color:var(--blue); background:var(--blue-dim); padding:3px 8px; border-radius:5px; }
+  .ts-chevron { color:var(--text-3); font-size:11px; transition:transform .15s; }
+  .ts-current.open .ts-chevron { transform:rotate(180deg); }
+  .ts-menu { position:absolute; top:calc(100% + 6px); left:0; right:0; max-height:340px; overflow-y:auto;
+    background:var(--surface); border:1px solid var(--border); border-radius:10px; z-index:150;
+    box-shadow:0 12px 40px rgba(0,0,0,.5); display:none; padding:6px; }
+  .ts-menu.open { display:block; }
+  .ts-opt { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 12px;
+    border-radius:7px; cursor:pointer; transition:all .12s; }
+  .ts-opt:hover { background:var(--surface-2); }
+  .ts-opt.active { background:var(--blue-dim); }
+  .ts-opt.empty { opacity:.5; }
+  .ts-opt.empty:hover { background:var(--surface-2); }
+  .ts-opt-label { font-size:13px; color:var(--text); font-weight:500; }
+  .ts-opt.active .ts-opt-label { color:var(--blue); }
+  .ts-opt-sub { font-family:var(--mono); font-size:10px; color:var(--text-3); }
+  .ts-opt-status { font-family:var(--mono); font-size:9px; padding:2px 7px; border-radius:10px; }
+  .ts-status-ok { background:var(--green-dim); color:#6ee7b7; }
+  .ts-status-empty { background:var(--surface-2); color:var(--text-3); }
+  .ts-group-label { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--text-3); padding:10px 12px 4px; }
+  .ts-year-tabs { display:flex; gap:4px; margin-left:auto; }
+  .ts-year-tab { padding:7px 14px; border-radius:8px; border:1px solid var(--border); background:var(--surface);
+    color:var(--text-2); cursor:pointer; font-family:var(--mono); font-size:12px; font-weight:500; transition:all .15s; }
+  .ts-year-tab:hover { border-color:var(--text-3); color:var(--text); }
+  .ts-year-tab.active { background:var(--blue-dim); border-color:var(--blue); color:var(--blue); }
+  .ts-year-tab:disabled { opacity:.35; cursor:not-allowed; }
+
+  /* ESTADO VAZIO (período sem dados) */
+  .empty-state { text-align:center; padding:80px 32px; }
+  .empty-state-icon { font-size:40px; margin-bottom:16px; opacity:.4; }
+  .empty-state-title { font-size:18px; font-weight:700; color:var(--text-2); margin-bottom:8px; }
+  .empty-state-text { font-size:13px; color:var(--text-3); max-width:440px; margin:0 auto; line-height:1.6; }
+  .empty-state-badge { display:inline-block; margin-top:18px; font-family:var(--mono); font-size:11px;
+    padding:6px 14px; border-radius:20px; background:var(--surface-2); border:1px solid var(--border); color:var(--text-3); }
+
+  /* MAIN */
+  .main { margin-left:var(--toc-w); padding:calc(var(--top-h) + 28px) 32px 40px; max-width:1500px; }
+  .page-header { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:26px; padding-bottom:22px; border-bottom:1px solid var(--border); }
+  .page-title { font-size:26px; font-weight:800; line-height:1.15; }
+  .page-subtitle { font-size:13px; color:var(--text-2); margin-top:5px; }
+  .page-badges { display:flex; gap:8px; flex-shrink:0; align-items:center; }
+  .badge { padding:5px 12px; border-radius:20px; font-size:11px; font-weight:600; font-family:var(--mono); letter-spacing:.5px; white-space:nowrap; }
+  .badge-blue { background:var(--blue-dim); color:var(--blue); }
+  .badge-green { background:var(--green-dim); color:var(--green); }
+  .badge-sector { background:var(--surface-2); color:var(--text-2); border:1px solid var(--border); display:none; }
+  .badge-sector.show { display:inline-flex; align-items:center; gap:6px; }
+
+  /* KPIs */
+  .kpi-row { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:26px; }
+  .kpi-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px; }
+  .kpi-label { font-size:10px; color:var(--text-3); font-weight:500; text-transform:uppercase; letter-spacing:1px; margin-bottom:9px; }
+  .kpi-value { font-size:24px; font-weight:800; line-height:1; margin-bottom:5px; }
+  .kpi-sub { font-size:11px; color:var(--text-2); }
+  .kpi-up { color:var(--green); } .kpi-down { color:var(--red); } .kpi-neutral { color:var(--amber); }
+
+  /* SECTION HEAD */
+  .sec-head { display:flex; align-items:center; gap:12px; margin:0 0 16px; scroll-margin-top:80px; }
+  .sec-num { font-family:var(--mono); font-size:11px; font-weight:600; color:var(--blue); background:var(--blue-dim); padding:3px 9px; border-radius:5px; }
+  .sec-title { font-size:15px; font-weight:700; letter-spacing:.3px; }
+  .sec-line { flex:1; height:1px; background:var(--border); }
+
+  /* CARDS */
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  .card-header { padding:14px 20px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+  .card-title { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px; color:var(--text-2); }
+  .card-count { font-family:var(--mono); font-size:10px; color:var(--text-3); }
+  .card-body { padding:20px; }
+
+  .grid-3 { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) 300px; gap:18px; margin-bottom:30px; align-items:start; }
+
+  /* CLIPPING */
+  .clip-item { padding:13px 0; border-bottom:1px solid var(--border); }
+  .clip-item:last-child { border-bottom:none; padding-bottom:0; }
+  .clip-item:first-child { padding-top:0; }
+  .clip-tags { display:flex; gap:6px; margin-bottom:6px; flex-wrap:wrap; align-items:center; }
+  .tag-pill { font-size:10px; font-weight:600; padding:2px 8px; border-radius:4px; font-family:var(--mono); }
+  .tag-industria { background:#1e3a5f; color:#60a5fa; }
+  .tag-comercio { background:#064e3b; color:#34d399; }
+  .tag-servicos { background:#2e1065; color:#a78bfa; }
+  .tag-transversal { background:#3a2f0a; color:#fbbf24; }
+  .tag-fonte { background:var(--surface-2); color:var(--text-3); }
+  .clip-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:4px; line-height:1.4; }
+  .clip-text { font-size:12px; color:var(--text-2); line-height:1.55; margin-bottom:7px; }
+  .clip-link { display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:10px;
+    color:var(--blue); text-decoration:none; padding:3px 8px; border:1px solid var(--blue-dim); border-radius:5px; transition:all .15s; }
+  .clip-link:hover { background:var(--blue-dim); }
+  .clip-link svg { width:10px; height:10px; }
+
+  /* PESTEL */
+  .pestel-list { display:flex; flex-direction:column; gap:14px; }
+  .pestel-row { display:grid; grid-template-columns:36px 1fr; gap:12px; align-items:start; }
+  .pestel-badge { width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:16px; flex-shrink:0; }
+  .p-pol { background:#1e3a5f; color:#60a5fa; } .p-eco { background:#064e3b; color:#34d399; }
+  .p-soc { background:#451a03; color:#fbbf24; } .p-tec { background:#2e1065; color:#a78bfa; }
+  .p-amb { background:#0c3444; color:#22d3ee; } .p-leg { background:#450a0a; color:#f87171; }
+  .pestel-meta { min-width:0; }
+  .pestel-name-row { display:flex; align-items:baseline; gap:8px; margin-bottom:5px; flex-wrap:wrap; }
+  .pestel-name { font-size:12px; font-weight:600; color:var(--text); }
+  .pestel-dim { font-size:10px; color:var(--text-3); font-family:var(--mono); }
+  .pestel-excerpt { font-size:12px; color:var(--text-2); line-height:1.5; margin-bottom:5px; }
+  .pestel-sectors { display:flex; gap:4px; margin-bottom:7px; flex-wrap:wrap; }
+  .pestel-stag { font-size:9px; font-family:var(--mono); padding:1px 6px; border-radius:3px; }
+  .pestel-bar-track { display:flex; align-items:center; gap:8px; }
+  .pestel-bar-wrap { flex:1; height:4px; background:var(--border); border-radius:2px; }
+  .pestel-bar { height:4px; border-radius:2px; }
+  .pestel-score { font-family:var(--mono); font-size:10px; color:var(--text-3); white-space:nowrap; }
+
+  /* foot legend (PESTEL + LONG) */
+  .area-foot { margin-top:18px; padding-top:14px; border-top:1px solid var(--border); }
+  .foot-grad { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .fg-label { font-family:var(--mono); font-size:9px; color:var(--text-3); letter-spacing:1px; }
+  .fg-bar { flex:1; height:4px; border-radius:2px; background:linear-gradient(90deg,#4a5a72 0%,#60a5fa 55%,#10b981 100%); }
+  .foot-note { font-family:var(--mono); font-size:9px; color:var(--text-3); line-height:1.55; }
+
+  /* SIDEBAR */
+  .side-stack { display:flex; flex-direction:column; gap:18px; }
+  .risk-panel { display:flex; flex-direction:column; gap:8px; }
+  .risk-row { display:grid; grid-template-columns:10px 1fr auto; align-items:center; gap:10px;
+    padding:9px 12px; background:var(--surface-2); border-radius:8px; border:1px solid var(--border); }
+  .risk-indicator { width:8px; height:8px; border-radius:50%; }
+  .r-alto { background:var(--red); box-shadow:0 0 5px var(--red); }
+  .r-medio { background:var(--amber); box-shadow:0 0 5px var(--amber); }
+  .r-baixo { background:var(--green); box-shadow:0 0 5px var(--green); }
+  .risk-desc { font-size:12px; color:var(--text); line-height:1.3; }
+  .risk-sector { font-size:10px; color:var(--text-3); margin-top:2px; font-family:var(--mono); }
+  .risk-level { font-family:var(--mono); font-size:10px; font-weight:600; }
+  .level-alto { color:var(--red); } .level-medio { color:var(--amber); } .level-baixo { color:var(--green); }
+  .opp-row { padding:10px 12px; background:var(--green-dim); border-radius:8px; border:1px solid #065f46; margin-bottom:8px; }
+  .opp-row:last-child { margin-bottom:0; }
+  .opp-title { font-size:12px; font-weight:600; color:#6ee7b7; margin-bottom:3px; }
+  .opp-text { font-size:11px; color:#a7f3d0; line-height:1.45; }
+  .empty-note { font-size:11px; color:var(--text-3); font-style:italic; padding:8px 0; }
+
+  /* LONGITUDINAL */
+  .long-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .long-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px; position:relative; overflow:hidden; }
+  .long-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; }
+  .long-card.mat::before { background:var(--red); }
+  .long-card.cur::before { background:var(--amber); }
+  .long-card.mon::before { background:var(--text-3); }
+  .long-week-tag { font-family:var(--mono); font-size:10px; color:var(--text-3); margin-bottom:8px; }
+  .long-card-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:8px; line-height:1.35; }
+  .long-update { font-size:12px; color:var(--text-2); line-height:1.5; margin-bottom:8px; }
+  .long-sectors { display:flex; gap:4px; flex-wrap:wrap; margin-bottom:4px; }
+  .status-chip { display:inline-flex; align-items:center; gap:6px; margin-top:6px; padding:4px 11px; border-radius:20px; font-size:10px; font-weight:600; font-family:var(--mono); }
+  .chip-mat { background:var(--red-dim); color:#fca5a5; }
+  .chip-cur { background:var(--amber-dim); color:#fcd34d; }
+  .chip-mon { background:var(--surface-2); color:var(--text-3); border:1px solid var(--border); }
+  .chip-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+  .cd-mat { background:var(--red); box-shadow:0 0 4px var(--red); }
+  .cd-cur { background:var(--amber); box-shadow:0 0 4px var(--amber); }
+  .cd-mon { background:var(--text-3); }
+
+  /* legend longitudinal (rodapé) */
+  .long-legend { display:flex; gap:24px; flex-wrap:wrap; }
+  .ll-item { display:flex; align-items:flex-start; gap:9px; max-width:280px; }
+  .ll-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; margin-top:3px; }
+  .lld-mat { background:var(--red); box-shadow:0 0 5px var(--red); }
+  .lld-cur { background:var(--amber); box-shadow:0 0 5px var(--amber); }
+  .lld-mon { background:var(--text-3); }
+  .ll-text { font-size:11px; color:var(--text-2); line-height:1.45; }
+  .ll-text strong { display:block; color:var(--text); font-weight:600; font-size:11px; }
+
+  .block { margin-bottom:30px; }
+  .fontes-text { font-family:var(--mono); font-size:11px; color:var(--text-3); line-height:2.1; }
+  .fontes-count { display:block; margin-top:10px; color:var(--text-2); font-size:12px; }
+
+  footer { border-top:1px solid var(--border); padding:18px 32px; margin-left:var(--toc-w);
+    display:flex; justify-content:space-between; gap:16px; font-family:var(--mono); font-size:11px; color:var(--text-3); }
+
+  .fade-filtered { transition:opacity .2s; }
+
+  @media (max-width:1180px) {
+    .grid-3 { grid-template-columns:1fr 1fr; }
+    .side-stack { grid-column:1 / -1; flex-direction:row; }
+    .side-stack > .card { flex:1; }
+  }
+  @media (max-width:860px) {
+    .toc { display:none; }
+    .main, footer { margin-left:0; }
+    .kpi-row { grid-template-columns:repeat(2,1fr); }
+    .grid-3 { grid-template-columns:1fr; }
+    .side-stack { flex-direction:column; }
+    .long-grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">
+    <div class="brand-dot"></div>
+    <span class="brand-name">Market Intelligence</span>
+  </div>
+  <nav class="topbar-nav" id="periodNav">
+    <button data-period="semanal" class="active">Semanal</button>
+    <button data-period="mensal">Mensal</button>
+    <button data-period="trimestral">Trimestral</button>
+    <button data-period="semestral">Semestral</button>
+    <button data-period="anual">Anual (YTD)</button>
+  </nav>
+  <div class="topbar-right" id="genStamp">Gerado 09/06/2025 · 07:02</div>
+</div>
+
+<!-- TOC -->
+<nav class="toc">
+  <div class="toc-label">Nesta edição</div>
+  <a class="toc-item active" data-scroll="sec-kpis">Indicadores</a>
+  <div class="toc-divider"></div>
+  <a class="toc-item" data-scroll="sec-clip">1. Clipping Setorial</a>
+  <div class="toc-divider"></div>
+  <a class="toc-item" data-scroll="sec-pestel">2. Análise PESTEL</a>
+  <div class="toc-divider"></div>
+  <a class="toc-item" data-scroll="sec-risk">3. Riscos & Oportunidades</a>
+  <div class="toc-divider"></div>
+  <a class="toc-item" data-scroll="sec-long">4. Revisão Longitudinal</a>
+  <div class="toc-divider"></div>
+  <a class="toc-item" data-scroll="sec-fontes">Fontes monitoradas</a>
+
+  <!-- SECTOR FILTER -->
+  <div class="sector-filter">
+    <div class="sf-title">Filtrar por setor</div>
+    <button class="sf-btn active" data-sector="todos">
+      <span style="display:flex;align-items:center;gap:8px;"><span class="sf-dot sfd-todos"></span>Todos</span>
+      <span class="sf-count" id="cnt-todos"></span>
+    </button>
+    <button class="sf-btn" data-sector="industria">
+      <span style="display:flex;align-items:center;gap:8px;"><span class="sf-dot sfd-industria"></span>Indústria</span>
+      <span class="sf-count" id="cnt-industria"></span>
+    </button>
+    <button class="sf-btn" data-sector="comercio">
+      <span style="display:flex;align-items:center;gap:8px;"><span class="sf-dot sfd-comercio"></span>Comércio</span>
+      <span class="sf-count" id="cnt-comercio"></span>
+    </button>
+    <button class="sf-btn" data-sector="servicos">
+      <span style="display:flex;align-items:center;gap:8px;"><span class="sf-dot sfd-servicos"></span>Serviços</span>
+      <span class="sf-count" id="cnt-servicos"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="page-header">
+    <div>
+      <div class="page-title" id="pageTitle"></div>
+      <div class="page-subtitle" id="pageSubtitle"></div>
+    </div>
+    <div class="page-badges">
+      <span class="badge badge-blue" id="periodBadge"></span>
+      <span class="badge badge-sector" id="sectorBadge"></span>
+      <span class="badge badge-green">● Atualizado</span>
+    </div>
+  </div>
+
+  <!-- SELETOR TEMPORAL -->
+  <div class="time-selector">
+    <button class="ts-arrow" id="tsPrev">‹</button>
+    <div class="ts-dropdown">
+      <div class="ts-current" id="tsCurrent">
+        <span class="ts-current-main">
+          <span class="ts-icon" id="tsIcon"></span>
+          <span id="tsLabel"></span>
+        </span>
+        <span class="ts-chevron">▼</span>
+      </div>
+      <div class="ts-menu" id="tsMenu"></div>
+    </div>
+    <button class="ts-arrow" id="tsNext">›</button>
+    <div class="ts-year-tabs" id="tsYearTabs"></div>
+  </div>
+
+  <div id="contentArea">
+  <div id="emptyWrap" style="display:none;">
+    <div class="empty-state">
+      <div class="empty-state-icon">📊</div>
+      <div class="empty-state-title">Sem dados para este período</div>
+      <div class="empty-state-text" id="emptyText"></div>
+      <div class="empty-state-badge">Histórico em formação · alimentado automaticamente toda semana</div>
+    </div>
+  </div>
+  <div id="sectionsWrap">
+  <div class="sec-head" id="sec-kpis">
+    <span class="sec-num">◆</span>
+    <span class="sec-title" id="kpiTitle">Indicadores</span>
+    <span class="sec-line"></span>
+  </div>
+  <div class="kpi-row" id="kpiRow"></div>
+
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-header" id="sec-clip"><span class="card-title">1 · Clipping Setorial</span><span class="card-count" id="clipCount"></span></div>
+      <div class="card-body" id="clipBody"></div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="sec-pestel"><span class="card-title">2 · Análise PESTEL</span><span class="card-count" id="pestelCount"></span></div>
+      <div class="card-body">
+        <div class="pestel-list" id="pestelBody"></div>
+        <div class="area-foot">
+          <div class="foot-grad"><span class="fg-label">BAIXA</span><div class="fg-bar"></div><span class="fg-label">ALTA</span></div>
+          <div class="foot-note">Intensidade (0–10) = relevância relativa de cada dimensão no período, calculada pelo volume e peso das notícias coletadas.</div>
+        </div>
+      </div>
+    </div>
+    <div class="side-stack">
+      <div class="card">
+        <div class="card-header" id="sec-risk"><span class="card-title">3 · Riscos</span><span class="card-count" id="riskCount"></span></div>
+        <div class="card-body"><div class="risk-panel" id="riskBody"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-title">Oportunidades</span><span class="card-count" id="oppCount"></span></div>
+        <div class="card-body" id="oppBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec-head" id="sec-long">
+      <span class="sec-num">4</span>
+      <span class="sec-title">Revisão Longitudinal — Rastreamento de Riscos &amp; Oportunidades</span>
+      <span class="sec-line"></span>
+    </div>
+    <div class="long-grid" id="longBody"></div>
+    <div class="area-foot">
+      <div class="long-legend">
+        <div class="ll-item"><span class="ll-dot lld-mat"></span><span class="ll-text"><strong>Materializado</strong>O previsto ocorreu. Exige ação imediata ou revisão de estratégia.</span></div>
+        <div class="ll-item"><span class="ll-dot lld-cur"></span><span class="ll-text"><strong>Em curso</strong>Tendência ativa, ainda não concluída. Requer acompanhamento próximo.</span></div>
+        <div class="ll-item"><span class="ll-dot lld-mon"></span><span class="ll-text"><strong>Monitorar</strong>Sem evolução relevante. Permanece no radar com revisão periódica.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="card">
+      <div class="card-header" id="sec-fontes"><span class="card-title">Fontes monitoradas no período</span></div>
+      <div class="card-body">
+        <div class="fontes-text">
+          IBGE (PMC, PIM, PMS, PNAD) · BCB Focus · BCB Nota de Crédito · FGV/IBRE · IPEA Data · CNI · MDIC · ANP · FIESP · CNC · Fecomércio MG · CNDL/SPC Brasil · NielsenIQ · Sebrae · Agência Sebrae · Febraban · Agência Senado · Agência Câmara · Receita Federal · CADE · MIT Technology Review BR · ANEEL · MMA · B3 Sustentabilidade · Valor Econômico · Exame · InfoMoney · EPBR
+          <span class="fontes-count">28 fontes verificadas · todas consultadas no período</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- /sectionsWrap -->
+  </div><!-- /contentArea -->
+</main>
+
+<footer>
+  <span>Market Intelligence · Formatar Consultoria · Divinópolis MG</span>
+  <span id="footStamp"></span>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   DADOS SIMULADOS — 5 PERÍODOS
+   setores: 'industria' | 'comercio' | 'servicos' | 'transversal'
+   (itens 'transversal' aparecem em QUALQUER filtro setorial)
+   ═══════════════════════════════════════════════════════════ */
+const SRC = {
+  ibge:'https://www.ibge.gov.br', bcb:'https://www.bcb.gov.br', cni:'https://www.portaldaindustria.com.br',
+  cnc:'https://www.portaldocomercio.org.br', sebrae:'https://www.sebrae.com.br', aneel:'https://www.gov.br/aneel',
+  valor:'https://valor.globo.com', mdic:'https://www.gov.br/mdic', senado:'https://www12.senado.leg.br',
+  receita:'https://www.gov.br/receitafederal', fgv:'https://portalibre.fgv.br', exame:'https://exame.com'
+};
+
+/* ═══════════════════════════════════════════════════════════
+   BASE DE DADOS INDEXADA POR CHAVE TEMPORAL
+   Cada tipo de período guarda múltiplas instâncias navegáveis.
+   data:null  → slot existe mas ainda sem coleta (estado vazio)
+   ═══════════════════════════════════════════════════════════ */
+
+// blocos reutilizáveis de setor
+function S(...a){return a;}
+
+const DB = {
+  semanal: {
+    label:'Semana', icon:'SEM',
+    items: [
+      { key:'2025-W24', year:2025, nav:'Semana 24', sub:'9–13 jun 2025', data:{
+        title:'Semana 24 · Junho 2025', subtitle:'9 a 13 de junho · 28 fontes monitoradas', badge:'S24 / 2025',
+        stamp:'Gerado 09/06/2025 · 07:02', kpiTitle:'Indicadores da semana',
+        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável · fin. 2025'},{l:'IPCA Proj.',v:'3,9%',c:'up',s:'Dentro da meta'},{l:'Câmbio (máx.)',v:'R$5,34',c:'down',s:'↑ Pressionado'},{l:'Desemprego',v:'6,9%',c:'up',s:'↓ Mín. desde 2013'},{l:'Varejo (PMC)',v:'+1,2%',c:'up',s:'Abr · IBGE'}],
+        clipping:[
+          {set:S('industria'),fonte:'IBGE / PIM',t:'Produção industrial recua 0,8% em abril; bens de capital lideram queda',x:'Retração puxada por máquinas e equipamentos (−2,1%), refletindo postergação de investimentos ante incerteza fiscal.',url:SRC.ibge},
+          {set:S('industria'),fonte:'CNI',t:'ICEI avança para 51,3 — otimismo do empresário industrial pelo 2º mês',x:'Expectativas de demanda nos próximos 6 meses são o vetor principal. Bens intermediários lideram a confiança.',url:SRC.cni},
+          {set:S('comercio'),fonte:'IBGE / PMC',t:'Varejo cresce 1,2% em abril — supermercados e farmácias puxam resultado',x:'Vestuário recua 0,4%; alimentação avança 1,9%. CNC revisa projeção do varejo 2025 para 3,1%.',url:SRC.ibge},
+          {set:S('servicos'),fonte:'IBGE / PMS',t:'Serviços crescem 0,6% e acumulam +4,2% em 12 meses',x:'TI lidera com +7,3% no acumulado do ano. Turismo registra maior expansão mensal desde 2022.',url:SRC.ibge},
+          {set:S('transversal'),fonte:'BCB Focus',t:'Boletim Focus mantém projeção de SELIC em 10,5% para o fim de 2025',x:'Mediana das projeções de inflação recua para 3,9%. Expectativa de PIB sobe para 2,2%.',url:SRC.bcb}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma tributária',x:'Regulamentação do IBS/CBS avança no Senado. 3 decretos de desoneração pautados.',score:6.5,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'SELIC + câmbio',x:'Focus mantém SELIC em 10,5%. Câmbio oscilou até R$5,34, pressionado por fluxo externo.',score:7.8,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego + consumo',x:'Desemprego em 6,9% — mínima desde 2013. Massa salarial real +4,1% a/a favorece o varejo.',score:8.2,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA + automação',x:'34% das PMEs já adotam IA generativa. Automação industrial em MG cresce 22%.',score:7.0,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + ESG',x:'Aneel anuncia reajuste de 7,2% em julho. Seca no Sudeste eleva risco de bandeira vermelha.',score:5.5,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'STF + tributação',x:'STF julgará ICMS/subvenções em agosto. Split payment regulamentado para 2026.',score:6.0,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'Reajuste tarifário de energia — jul/25',setlabel:'Ambiental · Indústria',set:S('industria','comercio')},{sev:'medio',t:'STF — tributação ICMS subvenções',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')},{sev:'medio',t:'Câmbio pressionado > R$5,30',setlabel:'Econômico · Todos',set:S('transversal')}],
+        opp:[{t:'IA em PMEs — diferenciação',x:'34% de adoção deixa 66% do mercado descoberto. Alta tração em serviços.',set:S('servicos','industria')},{t:'Massa salarial sustenta consumo',x:'+4,1% real a/a favorece varejo e serviços ao consumidor.',set:S('comercio','servicos')},{t:'Pronampe ampliado',x:'R$250k/CNPJ. Janela aberta até 30/07 — capital de giro.',set:S('transversal')}],
+        long:[{st:'mat',tag:'W21 · 19 mai 2025 · Risco',t:'Pressão cambial > R$5,30 — impacto em insumos importados',x:'Câmbio tocou R$5,34. Três clientes industriais relataram reajuste de fornecedores. Tendência confirmada.',set:S('industria','transversal')},{st:'cur',tag:'W22 · 26 mai 2025 · Oportunidade',t:'Expansão Pronampe — crédito PJ para PMEs do comércio',x:'BCB ampliou limite para R$250k/CNPJ. Janela até 30/07. Nenhum cliente acionou ainda.',set:S('comercio','transversal')},{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais — impacto em e-commerce',x:'PL ainda em comissão. Sem movimentação na semana. Votação prevista para agosto.',set:S('comercio','servicos')}]
+      }},
+      { key:'2025-W23', year:2025, nav:'Semana 23', sub:'2–6 jun 2025', data:{
+        title:'Semana 23 · Junho 2025', subtitle:'2 a 6 de junho · 28 fontes monitoradas', badge:'S23 / 2025',
+        stamp:'Gerado 02/06/2025 · 07:04', kpiTitle:'Indicadores da semana',
+        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA Proj.',v:'4,0%',c:'up',s:'Teto da meta'},{l:'Câmbio (máx.)',v:'R$5,28',c:'down',s:'↑ Em alta'},{l:'Desemprego',v:'7,0%',c:'up',s:'Estável'},{l:'Varejo (PMC)',v:'+0,9%',c:'up',s:'Mar · IBGE'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI',t:'Sondagem industrial aponta melhora gradual na demanda de maio',x:'Empresários relatam recuperação tímida de pedidos. Estoques em nível adequado. Otimismo concentrado em bens intermediários.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC',t:'Intenção de consumo das famílias sobe pela 4ª semana',x:'Melhora do mercado de trabalho sustenta a confiança do consumidor. Bens duráveis lideram a intenção de compra.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE',t:'Serviços de TI puxam contratações no setor terciário',x:'Demanda por digitalização sustenta criação de vagas qualificadas. Serviços profissionais em expansão.',url:SRC.ibge},
+          {set:S('transversal'),fonte:'BCB',t:'Ata do Copom reforça cautela e juros estáveis no horizonte',x:'Comitê mantém tom conservador diante do quadro fiscal. Câmbio é citado como vetor de risco inflacionário.',url:SRC.bcb}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Pauta fiscal',x:'Discussão sobre arcabouço fiscal de 2026 começa a ganhar espaço no Congresso.',score:5.8,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Câmbio + juros',x:'Câmbio inicia trajetória de alta na semana. SELIC mantida. Atividade segue resiliente.',score:7.2,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Mercado de trabalho',x:'Emprego segue como destaque positivo. Renda real em expansão sustenta consumo.',score:7.9,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Digitalização',x:'Demanda por TI e automação acelera. PMEs ampliam investimento em ferramentas digitais.',score:6.8,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Risco hídrico',x:'Primeiros sinais de seca no Sudeste acendem alerta sobre custo de energia.',score:5.0,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Agenda STF',x:'Pauta tributária do STF para o 2º semestre começa a ser monitorada.',score:5.5,set:S('industria','servicos')}],
+        riscos:[{sev:'medio',t:'Câmbio inicia trajetória de alta',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Sinais de seca no Sudeste',setlabel:'Ambiental · Indústria',set:S('industria','comercio')},{sev:'baixo',t:'Endividamento das famílias persistente',setlabel:'Social · Comércio',set:S('comercio')}],
+        opp:[{t:'Confiança do consumidor em alta',x:'4 semanas de melhora abrem espaço para o varejo planejar o meio do ano.',set:S('comercio','servicos')},{t:'Demanda por digitalização',x:'TI puxa contratações — janela para serviços de tecnologia.',set:S('servicos','industria')}],
+        long:[{st:'cur',tag:'W21 · 19 mai 2025 · Risco',t:'Pressão cambial — começando a se confirmar',x:'Câmbio iniciou alta na semana, validando o alerta de maio. Ainda sem impacto direto reportado pelos clientes.',set:S('industria','transversal')},{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais',x:'PL sem movimentação. Mantido em monitoramento.',set:S('comercio','servicos')}]
+      }},
+      { key:'2025-W22', year:2025, nav:'Semana 22', sub:'26–30 mai 2025', data:{
+        title:'Semana 22 · Maio 2025', subtitle:'26 a 30 de maio · 28 fontes monitoradas', badge:'S22 / 2025',
+        stamp:'Gerado 26/05/2025 · 07:01', kpiTitle:'Indicadores da semana',
+        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA Proj.',v:'4,0%',c:'up',s:'Teto da meta'},{l:'Câmbio (máx.)',v:'R$5,22',c:'neutral',s:'Lateral'},{l:'Desemprego',v:'7,0%',c:'up',s:'Estável'},{l:'Varejo (PMC)',v:'+0,9%',c:'up',s:'Mar · IBGE'}],
+        clipping:[
+          {set:S('comercio'),fonte:'BCB',t:'BCB anuncia ampliação do limite do Pronampe para R$250 mil por CNPJ',x:'Medida amplia acesso a crédito de capital de giro para pequenas empresas. Janela de adesão aberta até 30 de julho.',url:SRC.bcb},
+          {set:S('industria'),fonte:'CNI',t:'Indústria de transformação mantém estabilidade em maio',x:'Produção lateralizada. Empresários aguardam definições fiscais antes de novos investimentos.',url:SRC.cni},
+          {set:S('servicos'),fonte:'IBGE',t:'Setor de serviços mantém crescimento moderado',x:'Serviços às famílias e profissionais sustentam o ritmo. Turismo começa a acelerar com a baixa temporada.',url:SRC.ibge}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Crédito + fomento',x:'Governo amplia instrumentos de crédito para PMEs. Pauta de fomento ganha tração.',score:6.0,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Estabilidade',x:'Câmbio lateral na semana. Juros mantidos. Cenário de relativa calmaria antes da volatilidade de junho.',score:6.5,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Consumo estável',x:'Mercado de trabalho sustenta consumo. Confiança do consumidor em recuperação lenta.',score:7.5,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Automação',x:'Automação industrial avança em MG. Demanda por eficiência cresce entre indústrias locais.',score:6.5,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Clima estável',x:'Sem alertas climáticos relevantes na semana. Reservatórios em níveis adequados.',score:4.0,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Tributário',x:'Discussões sobre regulamentação tributária seguem em ritmo técnico.',score:5.0,set:S('industria','servicos')}],
+        riscos:[{sev:'medio',t:'Incerteza fiscal limita investimento industrial',setlabel:'Político · Indústria',set:S('industria','transversal')},{sev:'baixo',t:'Vestuário e bens duráveis fracos no varejo',setlabel:'Social · Comércio',set:S('comercio')}],
+        opp:[{t:'Pronampe ampliado — NOVA janela',x:'Limite elevado para R$250k/CNPJ. Oportunidade imediata de capital de giro para PMEs.',set:S('transversal')},{t:'Turismo entra em alta temporada',x:'Serviços de turismo começam a acelerar — janela sazonal para o setor.',set:S('servicos')}],
+        long:[{st:'cur',tag:'W21 · 19 mai 2025 · Risco',t:'Pressão cambial — em monitoramento',x:'Alerta da semana anterior mantido. Câmbio ainda lateral, mas vetores externos preocupam.',set:S('industria','transversal')},{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais',x:'Sem novidades. PL parado em comissão.',set:S('comercio','servicos')}]
+      }},
+      { key:'2025-W21', year:2025, nav:'Semana 21', sub:'19–23 mai 2025', data:{
+        title:'Semana 21 · Maio 2025', subtitle:'19 a 23 de maio · 28 fontes monitoradas', badge:'S21 / 2025',
+        stamp:'Gerado 19/05/2025 · 07:03', kpiTitle:'Indicadores da semana',
+        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA Proj.',v:'4,1%',c:'up',s:'Acima do centro'},{l:'Câmbio (máx.)',v:'R$5,19',c:'neutral',s:'Vetores externos'},{l:'Desemprego',v:'7,1%',c:'up',s:'Estável'},{l:'Varejo (PMC)',v:'+0,7%',c:'up',s:'Fev · IBGE'}],
+        clipping:[
+          {set:S('transversal'),fonte:'Valor',t:'Analistas alertam para pressão cambial diante de fluxo externo adverso',x:'Cenário internacional e dúvidas fiscais elevam risco de desvalorização do real nos próximos meses.',url:SRC.valor},
+          {set:S('industria'),fonte:'CNI',t:'Indústria preocupada com custo de insumos importados',x:'Setores dependentes de importação monitoram câmbio. Possível repasse a preços no horizonte.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC',t:'Comércio mantém recuperação gradual em maio',x:'Vendas crescem de forma moderada. Mercado de trabalho sustenta a demanda das famílias.',url:SRC.cnc}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Quadro fiscal',x:'Dúvidas sobre a trajetória fiscal alimentam incerteza nos mercados.',score:6.2,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Risco cambial',x:'Primeiro grande alerta de pressão cambial do trimestre. Fluxo externo adverso. Real sob risco.',score:7.5,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego sólido',x:'Mercado de trabalho segue resiliente, ancorando o consumo apesar das incertezas.',score:7.3,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Investimento digital',x:'Empresas seguem investindo em digitalização apesar do ambiente cauteloso.',score:6.0,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Estável',x:'Sem eventos climáticos relevantes na semana.',score:3.5,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Monitoramento',x:'Pauta tributária e regulatória em ritmo técnico, sem decisões relevantes.',score:4.5,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'NOVO: Pressão cambial > R$5,30 no horizonte',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Custo de insumos importados na indústria',setlabel:'Econômico · Indústria',set:S('industria')}],
+        opp:[{t:'Recuperação gradual do consumo',x:'Comércio em recuperação consistente — base para o meio do ano.',set:S('comercio','servicos')}],
+        long:[{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais',x:'PL em comissão, sem movimentação. Primeiro registro de monitoramento.',set:S('comercio','servicos')}]
+      }},
+      { key:'2025-W20', year:2025, nav:'Semana 20', sub:'12–16 mai 2025', data:null }
+    ]
+  },
+
+  mensal: {
+    label:'Mês', icon:'MÊS',
+    items: [
+      { key:'2025-06', year:2025, nav:'Junho 2025', sub:'Consolidado · S22–S26', data:{
+        title:'Junho 2025 · Consolidado mensal', subtitle:'Semanas 22 a 26 · síntese de 5 semanas · 28 fontes', badge:'JUN / 2025',
+        stamp:'Gerado 30/06/2025 · 07:05', kpiTitle:'Indicadores do mês (acumulado)',
+        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Mantida no mês'},{l:'IPCA mês',v:'+0,32%',c:'up',s:'12m: 3,9%'},{l:'Câmbio méd.',v:'R$5,27',c:'down',s:'Volátil no mês'},{l:'Desemprego',v:'6,9%',c:'up',s:'Estável · baixo'},{l:'Varejo 12m',v:'+3,1%',c:'up',s:'Revisado ↑'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI · síntese',t:'Indústria fecha junho com confiança acima de 50 por todo o mês',x:'ICEI consolidou patamar otimista. Utilização da capacidade sobe para 81%. Bens de capital em recuperação lenta.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC · síntese',t:'Comércio acumula 3 meses consecutivos de alta nas vendas',x:'ICF atinge maior nível de 2025. Endividamento recua para 76,8% das famílias.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE · síntese',t:'Serviços sustentam liderança no crescimento setorial em junho',x:'TI e serviços profissionais puxam o resultado. Setor acumula 4,2% em 12 meses.',url:SRC.ibge},
+          {set:S('transversal'),fonte:'Valor',t:'Mercado revisa PIB de 2025 para 2,2% após dados positivos de emprego',x:'Consenso melhora pela terceira vez no ano, sustentado por consumo e mercado de trabalho aquecido.',url:SRC.valor}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Tributária + fiscal',x:'Regulamentação da reforma avançou no mês. Debate fiscal de 2026 ganha tração.',score:7.0,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + atividade',x:'SELIC mantida. Atividade surpreende positivamente. Câmbio médio de R$5,27, com volatilidade.',score:8.0,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Renda + emprego',x:'Mercado de trabalho consolida força. Massa salarial sustenta consumo. Inadimplência estável.',score:8.3,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Digitalização PME',x:'Adoção de IA por PMEs cresce de forma consistente. Automação em MG mantém ritmo forte.',score:7.2,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Tarifas + clima',x:'Reajuste de energia confirmado para julho domina a pauta. Risco hídrico elevado no inverno.',score:6.5,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Judicial tributário',x:'Agenda do STF para agosto concentra atenção. Adaptação ao split payment no radar.',score:6.2,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'Energia +7,2% confirmada — vigência julho',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'alto',t:'Volatilidade cambial persistente no mês',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Agenda tributária do STF (agosto)',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')},{sev:'baixo',t:'Endividamento das famílias ainda alto',setlabel:'Social · Comércio',set:S('comercio')}],
+        opp:[{t:'Consumo aquecido sustentável',x:'3 meses de alta no varejo abrem espaço para expansão planejada no 2º semestre.',set:S('comercio','servicos')},{t:'Onda de digitalização PME',x:'Demanda por automação e IA cria janela de consultoria e implementação.',set:S('servicos','industria')},{t:'Crédito Pronampe ativo',x:'Janela aberta. Mobilizar clientes antes de 30/07.',set:S('transversal')}],
+        long:[{st:'mat',tag:'W21 · mai 2025 · Risco',t:'Pressão cambial — materializada e persistente',x:'Confirmada ao longo de junho. Câmbio médio R$5,27 com picos acima de R$5,30. Revisão de contratos virou prioridade.',set:S('industria','transversal')},{st:'mat',tag:'W18 · mai 2025 · Risco',t:'Reajuste de energia — confirmado para julho',x:'Previsão de maio oficializada pela Aneel: +7,2% a partir de julho. Impacto direto em custos.',set:S('industria','comercio')},{st:'cur',tag:'W22 · mai 2025 · Oportunidade',t:'Pronampe ampliado — adesão em curso',x:'Dois clientes do comércio iniciaram crédito. Janela ainda aberta.',set:S('comercio','transversal')}]
+      }},
+      { key:'2025-05', year:2025, nav:'Maio 2025', sub:'Consolidado · S18–S22', data:{
+        title:'Maio 2025 · Consolidado mensal', subtitle:'Semanas 18 a 22 · síntese de 5 semanas · 28 fontes', badge:'MAI / 2025',
+        stamp:'Gerado 31/05/2025 · 07:08', kpiTitle:'Indicadores do mês (acumulado)',
+        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Mantida'},{l:'IPCA mês',v:'+0,28%',c:'up',s:'12m: 4,0%'},{l:'Câmbio méd.',v:'R$5,18',c:'neutral',s:'Início de alta'},{l:'Desemprego',v:'7,0%',c:'up',s:'Estável'},{l:'Varejo 12m',v:'+2,7%',c:'up',s:'Mar · IBGE'}],
+        clipping:[
+          {set:S('transversal'),fonte:'Valor · síntese',t:'Maio marca o início da pressão cambial que definiria o trimestre',x:'Real começa a se desvalorizar diante de fluxo externo adverso e dúvidas fiscais. Primeiro alerta relevante do ano.',url:SRC.valor},
+          {set:S('comercio'),fonte:'BCB',t:'Pronampe ampliado para R$250 mil por CNPJ é anunciado em maio',x:'Medida amplia acesso a crédito para PMEs. Comércio é o principal beneficiário potencial.',url:SRC.bcb},
+          {set:S('industria'),fonte:'CNI · síntese',t:'Indústria estável em maio, aguardando definições fiscais',x:'Produção lateralizada. Confiança em recuperação lenta. Investimento contido pela incerteza.',url:SRC.cni}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Fiscal + fomento',x:'Incerteza fiscal cresce. Em paralelo, governo amplia instrumentos de crédito a PMEs.',score:6.3,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Câmbio em alta',x:'Maio marca a virada do câmbio. Real começa trajetória de desvalorização. SELIC mantida.',score:7.4,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego resiliente',x:'Mercado de trabalho mantém força, sustentando o consumo das famílias.',score:7.6,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Digital PME',x:'Investimento em digitalização segue firme entre PMEs, apesar da cautela.',score:6.4,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Primeiros alertas',x:'Sinais iniciais de seca no Sudeste. Discussão sobre reajuste de energia começa.',score:5.2,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Técnico',x:'Pauta tributária em ritmo técnico. Agenda do STF começa a ser mapeada.',score:4.8,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'NOVO: Pressão cambial surge como risco do trimestre',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Incerteza fiscal trava investimento',setlabel:'Político · Indústria',set:S('industria','transversal')},{sev:'medio',t:'Sinais iniciais de risco hídrico',setlabel:'Ambiental · Indústria',set:S('industria','comercio')}],
+        opp:[{t:'Pronampe ampliado — janela aberta',x:'R$250k/CNPJ. Nova oportunidade de crédito para PMEs do comércio.',set:S('transversal')},{t:'Consumo resiliente',x:'Emprego sustenta a demanda — base para o varejo no meio do ano.',set:S('comercio','servicos')}],
+        long:[{st:'cur',tag:'Abr 2025 · Risco',t:'Risco de energia — começando a tomar forma',x:'Discussão sobre reajuste tarifário avança. Ainda como alerta, sem confirmação oficial.',set:S('industria','comercio')},{st:'mon',tag:'Abr 2025 · Risco',t:'Regulação de plataformas digitais',x:'PL em tramitação lenta. Mantido em monitoramento.',set:S('comercio','servicos')}]
+      }},
+      { key:'2025-04', year:2025, nav:'Abril 2025', sub:'Consolidado · S14–S18', data:{
+        title:'Abril 2025 · Consolidado mensal', subtitle:'Semanas 14 a 18 · síntese de 5 semanas · 28 fontes', badge:'ABR / 2025',
+        stamp:'Gerado 30/04/2025 · 07:06', kpiTitle:'Indicadores do mês (acumulado)',
+        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Mantida'},{l:'IPCA mês',v:'+0,35%',c:'up',s:'12m: 4,1%'},{l:'Câmbio méd.',v:'R$5,12',c:'up',s:'Estável'},{l:'Desemprego',v:'7,2%',c:'up',s:'Em queda'},{l:'Varejo 12m',v:'+2,5%',c:'up',s:'Fev · IBGE'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI · síntese',t:'Indústria inicia 2º trimestre em recuperação tímida',x:'Produção industrial mostra sinais de estabilização após início de ano fraco. Confiança ainda abaixo da média histórica.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC · síntese',t:'Comércio se recupera com melhora do mercado de trabalho',x:'Vendas voltam a crescer após trimestre morno. Queda do desemprego sustenta a retomada.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE · síntese',t:'Serviços mantêm trajetória de crescimento em abril',x:'TI e serviços profissionais seguem como destaque. Setor consolida liderança no ano.',url:SRC.ibge}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma',x:'Regulamentação da reforma tributária entra em fase técnica intensa.',score:6.0,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Estabilidade',x:'Câmbio estável em abril. Atividade econômica em recuperação gradual. SELIC mantida.',score:6.8,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego melhora',x:'Desemprego em queda consistente. Mercado de trabalho começa a se destacar como motor.',score:7.4,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA cresce',x:'Adoção de IA por PMEs ganha tração. Automação industrial em MG começa a acelerar.',score:6.6,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Início de alerta',x:'Primeiras discussões sobre possível reajuste de energia para o 2º semestre.',score:4.5,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Técnico',x:'Trabalho técnico de regulamentação tributária em andamento.',score:4.5,set:S('industria','servicos')}],
+        riscos:[{sev:'medio',t:'Confiança industrial abaixo da média',setlabel:'Econômico · Indústria',set:S('industria')},{sev:'baixo',t:'Discussão inicial sobre reajuste de energia',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')}],
+        opp:[{t:'Recuperação do mercado de trabalho',x:'Queda do desemprego abre espaço para retomada do consumo no trimestre.',set:S('comercio','servicos')},{t:'IA ganha tração entre PMEs',x:'Janela inicial para serviços de implementação e consultoria.',set:S('servicos','industria')}],
+        long:[{st:'mon',tag:'Mar 2025 · Risco',t:'Custo de energia — primeiro registro',x:'Discussões iniciais sobre reajuste para o 2º semestre. Registrado para monitoramento.',set:S('industria','comercio')}]
+      }},
+      { key:'2025-03', year:2025, nav:'Março 2025', sub:'Sem dados detalhados', data:null }
+    ]
+  },
+
+  trimestral: {
+    label:'Trimestre', icon:'TRI',
+    items: [
+      { key:'2025-Q2', year:2025, nav:'Q2 2025', sub:'Abr–Jun', data:{
+        title:'2º Trimestre 2025 · Q2', subtitle:'Abril a Junho · consolidação trimestral · 28 fontes', badge:'Q2 / 2025',
+        stamp:'Gerado 30/06/2025 · 08:00', kpiTitle:'Indicadores do trimestre',
+        kpis:[{l:'SELIC fim Q2',v:'10,5%',c:'neutral',s:'Sem cortes no tri'},{l:'IPCA tri',v:'+1,1%',c:'up',s:'12m: 3,9%'},{l:'PIB Q2 (proj.)',v:'+0,6%',c:'up',s:'t/t · estimativa'},{l:'Desemprego',v:'6,9%',c:'up',s:'Queda no tri'},{l:'Varejo tri',v:'+2,4%',c:'up',s:'Acum. Q2'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI · balanço Q2',t:'Indústria encerra Q2 em recuperação gradual, mas abaixo do potencial',x:'Confiança melhorou no trimestre, mas investimento em bens de capital segue contido. Capacidade em 81%.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC · balanço Q2',t:'Comércio tem melhor trimestre desde 2023, puxado por consumo das famílias',x:'Varejo cresce 2,4% no trimestre. Supermercados, farmácias e e-commerce lideram. Vestuário fraco.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE · balanço Q2',t:'Serviços confirmam papel de motor da economia no 2º trimestre',x:'TI, serviços profissionais e turismo sustentam expansão acima da indústria e do comércio.',url:SRC.ibge},
+          {set:S('transversal'),fonte:'BCB',t:'Banco Central sinaliza juros estáveis até clareza no quadro fiscal',x:'Ata do Copom reforça cautela. Mercado não vê cortes antes do 4º trimestre. Câmbio como risco.',url:SRC.bcb}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma + 2026',x:'Reforma avançou na regulamentação no trimestre. Debate fiscal de 2026 domina o cenário.',score:7.3,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + câmbio',x:'Política monetária restritiva mantida. Câmbio volátil. Atividade resiliente surpreende.',score:8.1,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego forte',x:'Mercado de trabalho foi o grande destaque do trimestre. Desemprego em mínimas.',score:8.4,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA acelera',x:'Aceleração consistente na adoção de IA por PMEs. Automação em MG cresce dois dígitos.',score:7.5,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + hídrico',x:'Reajuste tarifário e risco hídrico marcam o fim do trimestre. Custo de energia no radar.',score:6.8,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'STF + compliance',x:'Agenda judicial tributária para o 2º semestre gera incerteza. Preparação para split payment.',score:6.5,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'Custo de energia estrutural a partir de jul',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'alto',t:'Juros altos prolongados pressionam investimento',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'medio',t:'Incerteza fiscal de 2026',setlabel:'Político · Todos',set:S('transversal')},{sev:'medio',t:'Julgamentos tributários no STF (ago)',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')}],
+        opp:[{t:'Trimestre de consumo forte',x:'Melhor Q2 desde 2023 valida estratégias de expansão para o varejo.',set:S('comercio','servicos')},{t:'Serviços como motor',x:'Liderança setorial consolidada. Oportunidade para clientes escalarem.',set:S('servicos')},{t:'Digitalização industrial em MG',x:'Crescimento de dois dígitos em automação. Janela para eficiência.',set:S('industria','servicos')}],
+        long:[{st:'mat',tag:'Q1→Q2 · Risco',t:'Câmbio pressionado — materializado no trimestre',x:'Risco do início do ano se confirmou. Câmbio elevado constante em Q2. Custos importados subiram.',set:S('industria','transversal')},{st:'mat',tag:'Abr · Risco',t:'Reajuste de energia — confirmado e estrutural',x:'Previsto em abril, oficializado em junho. Vira fator estrutural de custo para 2025.',set:S('industria','comercio')},{st:'cur',tag:'Q1 · Oportunidade',t:'Recuperação do consumo — em pleno curso',x:'Tendência do Q1 se confirmou e acelerou. Varejo teve melhor trimestre em dois anos.',set:S('comercio','servicos')}]
+      }},
+      { key:'2025-Q1', year:2025, nav:'Q1 2025', sub:'Jan–Mar', data:{
+        title:'1º Trimestre 2025 · Q1', subtitle:'Janeiro a Março · consolidação trimestral · 28 fontes', badge:'Q1 / 2025',
+        stamp:'Gerado 31/03/2025 · 08:00', kpiTitle:'Indicadores do trimestre',
+        kpis:[{l:'SELIC fim Q1',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA tri',v:'+1,3%',c:'up',s:'12m: 4,1%'},{l:'PIB Q1 (proj.)',v:'+0,7%',c:'up',s:'t/t · estimativa'},{l:'Desemprego',v:'7,2%',c:'up',s:'Início de queda'},{l:'Varejo tri',v:'+1,8%',c:'up',s:'Acum. Q1'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI · balanço Q1',t:'Indústria começa 2025 fraca, com confiança abaixo da média',x:'Início de ano morno para o setor. Incerteza fiscal e juros altos limitam o investimento produtivo.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC · balanço Q1',t:'Comércio inicia ano em ritmo lento, mas mostra sinais de recuperação',x:'Vendas tímidas no início do trimestre, com melhora ao final puxada pelo mercado de trabalho.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE · balanço Q1',t:'Serviços já despontam como destaque no início de 2025',x:'TI e serviços profissionais lideram desde o começo do ano, antecipando a liderança do setor.',url:SRC.ibge}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Início da reforma',x:'Regulamentação da reforma tributária começa a ser estruturada no início do ano.',score:6.5,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros altos',x:'Trimestre de juros restritivos e câmbio relativamente estável. Atividade morna no início.',score:7.0,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego em melhora',x:'Mercado de trabalho começa a dar sinais de força que definiriam o ano.',score:7.2,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA emergente',x:'Adoção de IA por PMEs ainda em estágio inicial, mas com crescimento perceptível.',score:6.0,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Estável',x:'Sem pressões ambientais ou energéticas relevantes no trimestre.',score:4.0,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Estruturação',x:'Início do trabalho de regulamentação da nova era tributária.',score:5.0,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'Juros altos limitam atividade no início do ano',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'medio',t:'Início de ano fraco no comércio',setlabel:'Social · Comércio',set:S('comercio')}],
+        opp:[{t:'Serviços despontam cedo',x:'Liderança do setor já visível no Q1 — sinal antecipado de oportunidade.',set:S('servicos')},{t:'Mercado de trabalho em melhora',x:'Primeiros sinais de força no emprego antecipam recuperação do consumo.',set:S('comercio','servicos')}],
+        long:[{st:'mon',tag:'Jan · Risco',t:'Câmbio — primeiro mapeamento do risco do ano',x:'Identificado já em janeiro como o principal vetor de risco potencial para 2025. Em monitoramento.',set:S('industria','transversal')}]
+      }}
+    ]
+  },
+
+  semestral: {
+    label:'Semestre', icon:'SEM',
+    items: [
+      { key:'2025-S1', year:2025, nav:'S1 2025', sub:'Jan–Jun', data:{
+        title:'1º Semestre 2025 · S1', subtitle:'Janeiro a Junho · retrospectiva semestral · 28 fontes', badge:'S1 / 2025',
+        stamp:'Gerado 30/06/2025 · 09:00', kpiTitle:'Indicadores do semestre',
+        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Estável no S1'},{l:'IPCA 12m',v:'3,9%',c:'up',s:'Dentro da meta'},{l:'PIB S1 (proj.)',v:'+1,3%',c:'up',s:'Acum. semestre'},{l:'Desemprego',v:'6,9%',c:'up',s:'−0,8pp no S1'},{l:'Varejo S1',v:'+2,9%',c:'up',s:'Acum. jan–jun'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI · balanço S1',t:'Indústria fecha 1º semestre em recuperação modesta, sem tração de investimento',x:'Confiança melhorou no semestre, mas juros altos e câmbio limitaram a retomada do investimento.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC · balanço S1',t:'Comércio é o destaque positivo do semestre, sustentado pelo emprego',x:'Vendas crescem 2,9% no acumulado. Mercado de trabalho aquecido e renda em alta sustentam a demanda.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE · balanço S1',t:'Serviços lideram o crescimento econômico no 1º semestre de 2025',x:'TI e serviços profissionais puxam o setor, que cresce acima da média. Digitalização impulsiona.',url:SRC.ibge},
+          {set:S('transversal'),fonte:'FGV/IBRE',t:'Confiança empresarial encerra semestre em alta na maioria dos setores',x:'Índices da indústria, comércio e serviços terminam o S1 em território otimista, apesar das incertezas.',url:SRC.fgv}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma + fiscal',x:'Semestre dominado pela regulamentação da reforma e pelo crescente debate fiscal de 2026.',score:7.5,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + resiliência',x:'Política restritiva por todo o semestre. Economia resiliente acima do esperado. Câmbio foi a tensão.',score:8.2,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego recorde',x:'O grande tema do semestre: trabalho na mínima histórica e renda real em expansão sustentada.',score:8.6,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA mainstream',x:'IA generativa virou ferramenta de PME no semestre. Automação avançou na indústria mineira.',score:7.8,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + ESG',x:'Custo de energia e risco hídrico ganharam peso. ESG entrou na agenda regulatória.',score:6.9,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Transição tributária',x:'Início da preparação real para a nova era tributária. Agenda judicial concentra riscos no H2.',score:6.7,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'Energia como custo estrutural no H2',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'alto',t:'Juros altos prolongados travam investimento',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'alto',t:'Incerteza fiscal 2026 cresce no horizonte',setlabel:'Político · Todos',set:S('transversal')},{sev:'medio',t:'Transição tributária exige adaptação',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')}],
+        opp:[{t:'Semestre valida consumo resiliente',x:'Varejo +2,9% no S1 com emprego forte: base sólida para crescimento no H2.',set:S('comercio','servicos')},{t:'Serviços lideram a economia',x:'Setor confirmou papel de motor. Maior oportunidade estrutural do ano.',set:S('servicos')},{t:'IA vira padrão de mercado',x:'Adoção mainstream cria demanda sustentada por consultoria e eficiência.',set:S('industria','servicos')}],
+        long:[{st:'mat',tag:'Jan 2025 · Risco',t:'Câmbio elevado — risco do ano que se concretizou',x:'Identificado em janeiro como principal vetor de risco. Confirmou-se em todo o semestre, pressionando custos.',set:S('industria','transversal')},{st:'mat',tag:'Fev 2025 · Oportunidade',t:'Aposta no consumo — plenamente validada',x:'A tese de consumo resiliente de fevereiro se confirmou: varejo +2,9% no S1 sustentado pelo emprego.',set:S('comercio','servicos')},{st:'cur',tag:'Mar 2025 · Risco',t:'Custo de energia — de alerta a fator estrutural',x:'Começou como alerta em março e virou custo estrutural confirmado. Em curso como pressão de margem no H2.',set:S('industria','comercio')}]
+      }},
+      { key:'2024-S2', year:2024, nav:'S2 2024', sub:'Jul–Dez · pré-monitoramento', data:null }
+    ]
+  },
+
+  anual: {
+    label:'Ano', icon:'ANO',
+    items: [
+      { key:'2025', year:2025, nav:'2025 (YTD)', sub:'Jan–Jun · em construção', data:{
+        title:'2025 · Ano até a data (YTD)', subtitle:'Janeiro a junho · visão anual em construção · 28 fontes', badge:'YTD 2025',
+        stamp:'Gerado 30/06/2025 · 10:00', kpiTitle:'Indicadores YTD 2025',
+        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Sem cortes no ano'},{l:'IPCA 12m',v:'3,9%',c:'up',s:'Dentro da meta'},{l:'PIB YTD',v:'+1,3%',c:'up',s:'Acum. 2025'},{l:'Desemprego',v:'6,9%',c:'up',s:'Mín. histórica'},{l:'Varejo YTD',v:'+2,9%',c:'up',s:'Acum. 2025'}],
+        clipping:[
+          {set:S('industria'),fonte:'CNI · YTD',t:'Indústria em 2025: recuperação lenta sob juros altos e câmbio pressionado',x:'O ano mostra confiança em recuperação, mas investimento contido. Câmbio e energia são os limitadores estruturais.',url:SRC.cni},
+          {set:S('comercio'),fonte:'CNC · YTD',t:'Comércio é a história positiva de 2025 até o momento',x:'Mercado de trabalho aquecido sustentou o melhor desempenho do ano. Varejo +2,9% com tendência de continuidade.',url:SRC.cnc},
+          {set:S('servicos'),fonte:'IBGE · YTD',t:'Serviços lideram a economia em 2025 e puxam o crescimento',x:'TI, serviços profissionais e turismo fazem do setor o motor do ano. Digitalização sustenta a demanda.',url:SRC.ibge},
+          {set:S('transversal'),fonte:'BCB / Valor',t:'2025 caminha para PIB acima de 2% com inflação controlada',x:'Emprego forte, consumo resiliente e inflação na meta definem o ano. Riscos no quadro fiscal de 2026.',url:SRC.bcb}],
+        pestel:[
+          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma + eleições 26',x:'O ano é definido pela transição tributária e pela sombra do debate fiscal e eleitoral de 2026.',score:7.7,set:S('transversal')},
+          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + câmbio',x:'2025 é o ano dos juros altos com economia resiliente. Câmbio pressionado é o fio de risco do ano.',score:8.3,set:S('transversal')},
+          {dim:'S',cls:'p-soc',name:'Social',tema:'Pleno emprego',x:'O grande motor de 2025: trabalho na mínima histórica sustentando consumo e renda o ano todo.',score:8.7,set:S('comercio','servicos')},
+          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA consolidada',x:'2025 consolida a IA como ferramenta padrão de PME. Automação industrial avança, com MG em destaque.',score:8.0,set:S('industria','servicos')},
+          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + clima',x:'Custo de energia e risco hídrico se firmaram como fatores estruturais. ESG regulatório ganhou peso.',score:7.1,set:S('industria','comercio')},
+          {dim:'L',cls:'p-leg',name:'Legal',tema:'Nova era tributária',x:'2025 é o ano da preparação para a maior mudança tributária em décadas. Riscos judiciais no H2.',score:6.9,set:S('industria','servicos')}],
+        riscos:[{sev:'alto',t:'Quadro fiscal de 2026 — risco macro do ano',setlabel:'Político/Econ. · Todos',set:S('transversal')},{sev:'alto',t:'Câmbio pressionado estrutural em 2025',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'alto',t:'Custo de energia consolidado',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'medio',t:'Transição tributária — execução 2026',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')}],
+        opp:[{t:'Consumo como tese do ano',x:'Emprego recorde + renda em alta fazem do consumo a aposta mais sólida de 2025.',set:S('comercio','servicos')},{t:'Serviços: motor estrutural',x:'Liderança consolidada. A maior oportunidade de escala para clientes de serviços.',set:S('servicos')},{t:'IA como vantagem competitiva',x:'Adoção mainstream cria mercado sustentado de consultoria e eficiência.',set:S('industria','servicos')}],
+        long:[{st:'mat',tag:'Jan 2025 · Risco macro',t:'Câmbio pressionado — risco-chave do ano, confirmado',x:'Principal risco mapeado no início de 2025 se materializou e persistiu por todo o YTD. Fator estrutural de custo.',set:S('industria','transversal')},{st:'mat',tag:'Fev 2025 · Oportunidade',t:'Tese de consumo — o grande acerto do ano',x:'A aposta no consumo resiliente foi o principal acerto de 2025. Varejo +2,9% validou a leitura.',set:S('comercio','servicos')},{st:'cur',tag:'Mar 2025 · Risco',t:'Energia estrutural — em curso para o H2',x:'De alerta a custo estrutural. Segue como a principal pressão de margem projetada para o semestre.',set:S('industria','comercio')}]
+      }},
+      { key:'2024', year:2024, nav:'2024', sub:'Anterior ao monitoramento', data:null }
+    ]
+  }
+};
+
+// índice atual selecionado por tipo de período (default = 0 = mais recente)
+const CUR = { semanal:0, mensal:0, trimestral:0, semestral:0, anual:0 };
+
+/* ═══════════════════ ESTADO E HELPERS ═══════════════════ */
+let state = { period:'semanal', sector:'todos', menuOpen:false };
+
+const SECTOR_LABEL = { industria:'Indústria', comercio:'Comércio', servicos:'Serviços', transversal:'Transversal' };
+const SECTOR_TAGCLASS = { industria:'tag-industria', comercio:'tag-comercio', servicos:'tag-servicos', transversal:'tag-transversal' };
+const SECTOR_STAGCOLOR = {
+  industria:'background:#1e3a5f;color:#60a5fa', comercio:'background:#064e3b;color:#34d399',
+  servicos:'background:#2e1065;color:#a78bfa', transversal:'background:#3a2f0a;color:#fbbf24'
+};
+
+function match(itemSetores){
+  if(state.sector==='todos') return true;
+  return itemSetores.includes('transversal') || itemSetores.includes(state.sector);
+}
+function sectorTags(setores){ return setores.map(s=>`<span class="pestel-stag" style="${SECTOR_STAGCOLOR[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
+function clipTags(setores){ return setores.map(s=>`<span class="tag-pill ${SECTOR_TAGCLASS[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
+function barColor(score){ if(score>=8)return'#10b981'; if(score>=6.5)return'#60a5fa'; return'#8a9ab5'; }
+
+// retorna a instância atualmente selecionada do período ativo
+function currentInstance(){ return DB[state.period].items[CUR[state.period]]; }
+
+/* ═══════════════════ SELETOR TEMPORAL ═══════════════════ */
+function renderSelector(){
+  const grp = DB[state.period];
+  const inst = grp.items[CUR[state.period]];
+
+  document.getElementById('tsIcon').textContent = grp.icon;
+  document.getElementById('tsLabel').textContent = inst.nav + ' · ' + inst.sub;
+
+  // setas (items[0] = mais recente; índice maior = mais antigo)
+  document.getElementById('tsPrev').disabled = (CUR[state.period] >= grp.items.length - 1); // mais antigo
+  document.getElementById('tsNext').disabled = (CUR[state.period] <= 0); // mais recente
+
+  // year tabs
+  const years = [...new Set(grp.items.map(i=>i.year))].sort((a,b)=>b-a);
+  const yt = document.getElementById('tsYearTabs');
+  yt.innerHTML = years.map(y=>`<button class="ts-year-tab ${y===inst.year?'active':''}" data-year="${y}">${y}</button>`).join('');
+  yt.querySelectorAll('.ts-year-tab').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const y = +btn.dataset.year;
+      const idx = grp.items.findIndex(i=>i.year===y);
+      if(idx>=0){ CUR[state.period]=idx; closeMenu(); renderAll(); }
+    });
+  });
+
+  // dropdown menu
+  const menu = document.getElementById('tsMenu');
+  let lastYear = null; let html='';
+  grp.items.forEach((it,idx)=>{
+    if(it.year!==lastYear){ html += `<div class="ts-group-label">${it.year}</div>`; lastYear=it.year; }
+    const has = it.data!==null;
+    html += `<div class="ts-opt ${idx===CUR[state.period]?'active':''} ${has?'':'empty'}" data-idx="${idx}">
+      <div><div class="ts-opt-label">${it.nav}</div><div class="ts-opt-sub">${it.sub}</div></div>
+      <span class="ts-opt-status ${has?'ts-status-ok':'ts-status-empty'}">${has?'● dados':'○ vazio'}</span>
+    </div>`;
+  });
+  menu.innerHTML = html;
+  menu.querySelectorAll('.ts-opt').forEach(opt=>{
+    opt.addEventListener('click',()=>{ CUR[state.period]=+opt.dataset.idx; closeMenu(); renderAll(); });
+  });
+}
+function closeMenu(){ state.menuOpen=false; document.getElementById('tsMenu').classList.remove('open'); document.getElementById('tsCurrent').classList.remove('open'); }
+function toggleMenu(){ state.menuOpen=!state.menuOpen; document.getElementById('tsMenu').classList.toggle('open',state.menuOpen); document.getElementById('tsCurrent').classList.toggle('open',state.menuOpen); }
+
+/* ═══════════════════ RENDER PRINCIPAL ═══════════════════ */
+function renderAll(){
+  renderSelector();
+  const inst = currentInstance();
+
+  // estado vazio?
+  if(inst.data===null){
+    document.getElementById('sectionsWrap').style.display='none';
+    document.getElementById('emptyWrap').style.display='block';
+    document.getElementById('emptyText').textContent =
+      `O período "${inst.nav}" ainda não possui coleta registrada. Conforme o sistema roda semanalmente, a base de dados é preenchida automaticamente e este período passará a exibir clipping, PESTEL, riscos e revisão longitudinal.`;
+    document.getElementById('pageTitle').textContent = inst.nav;
+    document.getElementById('pageSubtitle').textContent = inst.sub;
+    document.getElementById('periodBadge').textContent = DB[state.period].label;
+    document.getElementById('sectorBadge').classList.remove('show');
+    document.getElementById('genStamp').textContent = 'Sem coleta';
+    document.getElementById('footStamp').textContent = inst.nav + ' · sem dados';
+    ['todos','industria','comercio','servicos'].forEach(s=>document.getElementById('cnt-'+s).textContent='–');
+    return;
+  }
+  document.getElementById('sectionsWrap').style.display='block';
+  document.getElementById('emptyWrap').style.display='none';
+
+  const d = inst.data;
+  document.getElementById('pageTitle').textContent = d.title;
+  document.getElementById('pageSubtitle').textContent = d.subtitle;
+  document.getElementById('periodBadge').textContent = d.badge;
+  document.getElementById('kpiTitle').textContent = d.kpiTitle;
+  document.getElementById('genStamp').textContent = d.stamp;
+  document.getElementById('footStamp').textContent = d.badge + ' · Gerado automaticamente via Claude API';
+
+  const sb = document.getElementById('sectorBadge');
+  if(state.sector==='todos'){ sb.classList.remove('show'); }
+  else { sb.classList.add('show'); sb.innerHTML = `<span class="sf-dot sfd-${state.sector}" style="width:7px;height:7px;"></span>Filtro: ${SECTOR_LABEL[state.sector]}`; }
+
+  // KPIs (não filtram por setor)
+  document.getElementById('kpiRow').innerHTML = d.kpis.map(k=>`<div class="kpi-card"><div class="kpi-label">${k.l}</div><div class="kpi-value kpi-${k.c}">${k.v}</div><div class="kpi-sub">${k.s}</div></div>`).join('');
+
+  // CLIPPING
+  const clip = d.clipping.filter(c=>match(c.set));
+  document.getElementById('clipBody').innerHTML = clip.length ? clip.map(c=>`
+    <div class="clip-item">
+      <div class="clip-tags">${clipTags(c.set)}<span class="tag-pill tag-fonte">${c.fonte}</span></div>
+      <div class="clip-title">${c.t}</div>
+      <div class="clip-text">${c.x}</div>
+      <a class="clip-link" href="${c.url}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        Ver fonte original
+      </a>
+    </div>`).join('') : `<div class="empty-note">Nenhuma notícia específica para este setor neste período.</div>`;
+  document.getElementById('clipCount').textContent = `${clip.length} ${clip.length===1?'item':'itens'}`;
+
+  // PESTEL
+  const pst = d.pestel.filter(p=>match(p.set));
+  document.getElementById('pestelBody').innerHTML = pst.length ? pst.map(p=>`
+    <div class="pestel-row">
+      <div class="pestel-badge ${p.cls}">${p.dim}</div>
+      <div class="pestel-meta">
+        <div class="pestel-name-row"><span class="pestel-name">${p.name}</span><span class="pestel-dim">${p.tema}</span></div>
+        <div class="pestel-excerpt">${p.x}</div>
+        <div class="pestel-sectors">${sectorTags(p.set)}</div>
+        <div class="pestel-bar-track"><div class="pestel-bar-wrap"><div class="pestel-bar" style="width:${p.score*10}%;background:${barColor(p.score)};"></div></div><span class="pestel-score">${p.score.toFixed(1)}</span></div>
+      </div>
+    </div>`).join('') : `<div class="empty-note">Nenhuma dimensão PESTEL específica para este setor neste período.</div>`;
+  document.getElementById('pestelCount').textContent = `${pst.length}/6 dim.`;
+
+  // RISCOS
+  const rsk = d.riscos.filter(r=>match(r.set));
+  document.getElementById('riskBody').innerHTML = rsk.length ? rsk.map(r=>`
+    <div class="risk-row"><div class="risk-indicator r-${r.sev}"></div><div><div class="risk-desc">${r.t}</div><div class="risk-sector">${r.setlabel}</div></div><div class="risk-level level-${r.sev}">${r.sev.toUpperCase()}</div></div>
+  `).join('') : `<div class="empty-note">Sem riscos específicos para este setor.</div>`;
+  document.getElementById('riskCount').textContent = `${rsk.length}`;
+
+  // OPORTUNIDADES
+  const opp = d.opp.filter(o=>match(o.set));
+  document.getElementById('oppBody').innerHTML = opp.length ? opp.map(o=>`<div class="opp-row"><div class="opp-title">${o.t}</div><div class="opp-text">${o.x}</div></div>`).join('') : `<div class="empty-note">Sem oportunidades específicas para este setor.</div>`;
+  document.getElementById('oppCount').textContent = `${opp.length}`;
+
+  // LONGITUDINAL
+  const lng = d.long.filter(l=>match(l.set));
+  const chipLabel = { mat:'Materializado', cur:'Em curso', mon:'Monitorar' };
+  document.getElementById('longBody').innerHTML = lng.length ? lng.map(l=>`
+    <div class="long-card ${l.st}">
+      <div class="long-week-tag">${l.tag}</div>
+      <div class="long-card-title">${l.t}</div>
+      <div class="long-update">${l.x}</div>
+      <div class="long-sectors">${sectorTags(l.set)}</div>
+      <span class="status-chip chip-${l.st}"><span class="chip-dot cd-${l.st}"></span>${chipLabel[l.st]}</span>
+    </div>`).join('') : `<div class="empty-note">Nenhum rastreamento longitudinal para este setor neste período.</div>`;
+
+  updateCounts();
+}
+
+function updateCounts(){
+  const inst = currentInstance();
+  if(inst.data===null){ ['todos','industria','comercio','servicos'].forEach(s=>document.getElementById('cnt-'+s).textContent='–'); return; }
+  const d = inst.data;
+  const all = [...d.clipping, ...d.pestel, ...d.riscos, ...d.opp, ...d.long];
+  const count = (sec)=> all.filter(it=> sec==='todos'?true:(it.set.includes('transversal')||it.set.includes(sec))).length;
+  ['todos','industria','comercio','servicos'].forEach(s=>document.getElementById('cnt-'+s).textContent=count(s));
+}
+
+/* ═══════════════════ EVENTOS ═══════════════════ */
+document.getElementById('periodNav').addEventListener('click',e=>{
+  const btn=e.target.closest('button'); if(!btn) return;
+  state.period=btn.dataset.period;
+  document.querySelectorAll('#periodNav button').forEach(b=>b.classList.toggle('active',b===btn));
+  closeMenu(); renderAll(); window.scrollTo({top:0,behavior:'smooth'});
+});
+
+document.querySelectorAll('.sf-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    state.sector=btn.dataset.sector;
+    document.querySelectorAll('.sf-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    renderAll();
+  });
+});
+
+document.getElementById('tsCurrent').addEventListener('click',e=>{ e.stopPropagation(); toggleMenu(); });
+document.addEventListener('click',e=>{ if(!e.target.closest('.ts-dropdown')) closeMenu(); });
+
+// setas: prev = mais antigo (idx+1), next = mais recente (idx-1)
+document.getElementById('tsPrev').addEventListener('click',()=>{
+  if(CUR[state.period] < DB[state.period].items.length-1){ CUR[state.period]++; renderAll(); }
+});
+document.getElementById('tsNext').addEventListener('click',()=>{
+  if(CUR[state.period] > 0){ CUR[state.period]--; renderAll(); }
+});
+
+document.querySelectorAll('.toc-item').forEach(item=>{
+  item.addEventListener('click',()=>{ const el=document.getElementById(item.dataset.scroll); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); });
+});
+
+const spyIds=['sec-kpis','sec-clip','sec-pestel','sec-risk','sec-long','sec-fontes'];
+window.addEventListener('scroll',()=>{
+  let cur=spyIds[0];
+  for(const id of spyIds){ const el=document.getElementById(id); if(el && window.scrollY>=el.offsetTop-130) cur=id; }
+  document.querySelectorAll('.toc-item').forEach(it=>it.classList.toggle('active',it.dataset.scroll===cur));
+});
+
+renderAll();
+</script>
+</body>
+</html>
