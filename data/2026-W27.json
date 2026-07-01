@@ -1,62 +1,70 @@
 {
   "periodo": "2026-W27",
   "label": "Semana 27 · Junho 2026",
-  "gerado_em": "2026-07-01T22:02:31.058694",
+  "gerado_em": "2026-07-01T22:26:08.244467",
   "clipping": [
     {
       "setores": [
-        "servicos"
+        "industria"
       ],
-      "fonte": "FGV IBRE",
-      "titulo": "Confiança de serviços no Brasil avança em junho com melhora das expectativas",
-      "texto": "A confiança do setor de serviços do Brasil teve melhora em junho, subindo 2,1 pontos e atingindo 90,8 pontos, o maior nível desde janeiro de 2026. Este avanço foi impulsionado principalmente por expectativas mais elevadas para os próximos meses. A redução da incerteza externa, com a distensão do conflito no Oriente Médio e a acomodação dos preços do petróleo, contribuiu para esse alívio. Contudo, juros em patamar restritivo e o elevado endividamento das famílias seguem como contrapesos, refletindo cautela para o segundo semestre.",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFArqjMV_lVxCdgO2-svJuswpt8Y9xLJ06PgV_s9jl6u_hD0PduBE-3BYNVyool9d4X2CUOc0QTPe7JQjLW5GAy32ZiipMeoJRdflet6aatUqGOEKtx01vJoTK85poMonMbGRVeMHx66GyVRfOTv-CSt1DY8GeEzzFltJSQrVKiBqnU51HwCh2EntB2YMNU6CtsYw3A9amuAqHPCgQE9GypN8EwNUPg26dGTs77I0ibyNm3j9O8gryasCh9"
+      "fonte": "CNI",
+      "titulo": "Confiança do Empresário Industrial recua e completa 18 meses de pessimismo",
+      "texto": "O Índice de Confiança do Empresário Industrial (ICEI) caiu para 46,7 pontos em junho de 2026, registrando uma queda de 0,5 ponto em relação a maio. Este é o 18º mês consecutivo em que o indicador permanece abaixo da linha de 50 pontos, que separa a falta de confiança da confiança, configurando a segunda pior sequência histórica do ICEI. A queda reflete uma pior avaliação dos empresários sobre o presente e o futuro das empresas e da economia, com o índice de condições atuais em 42,3 pontos e o de expectativas em 48,9 pontos.",
+      "url": "https://www.portaldaindustria.com.br/estatisticas/icei-indice-de-confianca-do-empresario-industrial/"
     },
     {
       "setores": [
         "comercio"
       ],
-      "fonte": "CNC / Mercado&Consumo",
-      "titulo": "Confiança do comércio volta a crescer em junho após duas quedas consecutivas",
-      "texto": "A confiança dos empresários do comércio brasileiro interrompeu uma sequência de duas quedas mensais consecutivas e avançou 0,2% em junho, alcançando 102,6 pontos após ajuste sazonal. O resultado, apurado pela Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC), mantém o indicador acima do nível de satisfação (100 pontos). O segmento de bens semiduráveis (roupas, calçados, tecidos e acessórios) impulsionou a alta com um salto de 1,1% na confiança. No entanto, 75,9% dos varejistas afirmaram observar piora no cenário econômico corrente, o maior percentual de insatisfação desde outubro do ano passado.",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxIiK1VhR9h0eSS-QSZev7S1JGQPl1gk5s8aheFeGFLjWR43cPQW2eOnU9NvgQjRyTw-LrZ7ulL0A_HoTZWIxkCsUM0A6Nu9FjqoBLaVppGZfrY-2ZwHx1t3WgMKfy4DQI6eT9Lp5mmeUKPZFm5qxw3px6hfv77-bf_F3AAV3jro9IJzSDdcdJjOcW64rqnYoY_iW8KW_mGkvyZYsjeooMj_DAKujLjZIxEXkEv9VbvCNH"
+      "fonte": "CNC",
+      "titulo": "Confiança do comércio volta a crescer em junho, impulsionada por bens semiduráveis",
+      "texto": "A confiança dos empresários do comércio brasileiro (Icec) avançou 0,2% em junho de 2026, atingindo 102,6 pontos após duas quedas mensais consecutivas. O resultado mantém o indicador acima do nível de satisfação (100 pontos), impulsionado principalmente pelo segmento de bens semiduráveis (roupas, calçados, tecidos e acessórios), cuja confiança saltou 1,1% no mês. Apesar do otimismo com as expectativas futuras (+0,7%), a percepção sobre as condições macroeconômicas atuais ainda gera cautela."
     },
     {
       "setores": [
-        "industria"
+        "servicos"
       ],
-      "fonte": "CNN Brasil / S&P Global PMI",
-      "titulo": "Indústria do Brasil volta a crescer em junho mas vendas recuam, mostra PMI",
-      "texto": "A atividade industrial no Brasil registrou leve expansão em junho, com o PMI subindo para 50,8 (de 49,1 em maio), indicando crescimento. Contudo, esse avanço refletiu principalmente a criação de empregos pelo quinto mês seguido e a formação de estoques, já que a produção e as novas encomendas permaneceram em território de contração. Pressões inflacionárias menores e aumento de estoques de itens de pré-produção foram observados. O otimismo foi limitado por preocupações com concorrência, demanda, incerteza política e volatilidade dos mercados globais.",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEd4-L-FbDh2E7vty7tzXuHWwhESoW-g_1J2q4XCuV2eH3McU_KkLy73KAw1-4Tu9ln-H-56voISTF6WQSlGo7hozFwmUpBuWcFWllYaKZvnGy-R-dHElPrJARo1Bz2IVgiQR7N9eqf7QiRhJiACLXdGbeH3MmjDm3QTOyVEiV5epY1oEUDpRErJynY7cFVNNS2OR9yYfqcAuZ6Dk-CqkkxK8aj6EQZ4jAWwrcvzzF4eunRpDf_vsfu"
+      "fonte": "FGV IBRE",
+      "titulo": "Confiança do setor de serviços avança em junho com melhora das expectativas",
+      "texto": "O Índice de Confiança de Serviços (ICS) do FGV IBRE subiu 2,1 pontos em junho de 2026, alcançando 90,8 pontos, o maior nível desde janeiro de 2026. Este é o segundo mês consecutivo de melhora, impulsionado principalmente pelas expectativas para os próximos meses, que subiram 3,3 pontos. A redução da incerteza externa, com a distensão do conflito no Oriente Médio e a acomodação dos preços do petróleo, contribuiu para o alívio. No entanto, juros em patamar restritivo e o elevado endividamento das famílias ainda são contrapesos para a sustentação da confiança no segundo semestre.",
+      "url": "https://portalibre.fgv.br/noticias/confianca-de-servicos-avancou-pela-segunda-vez-consecutiva-em-junho"
     },
     {
       "setores": [
         "transversal"
       ],
-      "fonte": "IBGE / Agência Brasil",
-      "titulo": "Desemprego fica em 5,6% e tem menor taxa até maio na série histórica",
-      "texto": "A taxa de desemprego no Brasil ficou em 5,6% no trimestre encerrado em maio de 2026, o menor patamar para o intervalo na série histórica iniciada em 2012. Os dados, divulgados pelo IBGE, indicam uma tendência estrutural de aquecimento e expansão na absorção de mão de obra. A população desocupada está em 6,1 milhões, enquanto a empregada supera os 102 milhões. O rendimento médio mensal do trabalhador ficou em R$ 3.726, estável em relação ao trimestre anterior e 4% acima do ano passado.",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZkJwoxF_KxFRFSAhZSjBfI-opmTY0aSOzB6WTjdwv3RPoPPx8ycjxH49NMQaQ0GRySpr7NsB1r5I8VM6XMBOHEqxNmE9VmfKN9FwZPKwzaqQeUi9sgYbwOzJUovRCYelUtby1BZaz4OXxG8Z0sIPmW9YhL7jghuutQIbqvCcxD4aBQrjwBXXRo6xIJjEojda05Z5WcqjURxD6MLXM_3SioW7Qh148N5ZMim6PsyuxEQ=="
+      "fonte": "IBGE",
+      "titulo": "Taxa de desemprego atinge 5,6% no trimestre encerrado em maio, menor patamar histórico para o período",
+      "texto": "A taxa de desocupação no Brasil ficou em 5,6% no trimestre encerrado em maio de 2026, o menor patamar para o período na série histórica da Pesquisa Nacional por Amostra de Domicílios Contínua (Pnad Contínua), iniciada em 2012. O resultado representa estabilidade em relação ao trimestre anterior (dezembro/2025 a fevereiro/2026, 5,8%) e uma queda de 0,6 ponto percentual em comparação com o mesmo período do ano passado. A população ocupada atingiu 102,7 milhões de pessoas.",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/desemprego-ate-maio-cai-para-56-o-menor-ja-registrado-no-periodo"
     },
     {
       "setores": [
-        "transversal",
-        "legal"
+        "comercio",
+        "servicos",
+        "transversal"
       ],
-      "fonte": "Receita Federal / Portal Gov.br",
-      "titulo": "Receita Federal inicia publicação dos primeiros contribuintes considerados como Devedores Contumazes",
-      "texto": "A Receita Federal publicou a primeira lista de contribuintes considerados como devedores contumazes, após a conclusão do rito previsto na Lei Complementar nº 225/2026. Esta ação busca coibir a inadimplência estruturada e promover a concorrência leal na economia. O enquadramento ocorreu ao término do processo administrativo, que assegurou notificação prévia e prazo para regularização ou defesa.",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESzx4FPmEdk33visgp8MzCojLRnY3tfEXJjGCVBbx4E7mPKtsAzL6nTPcD5DlsFRJMDEX824VzU9I46-CQjT50cd5CABsY0oGJaakgEdcbk15L68GSrpCADcMxyZAz3tZUjWlycnNuu49RDN4pgZiLZ8yi-S1pVeYU5FJ4RfTHfCRFQqXxxpoGyvvX6MO1Wo4rVwQG1xAYJAbCsWR1NosHzQUWP4ldRUMkeEL-Zy2Xkd0CJZrP9AGIzbx5hiAfyJDKRFaxG20XlppE3ImA1o6sMDqO0dmncLX99LPsg1FiE_HJo2FDDA=="
+      "fonte": "CNDL / SPC Brasil",
+      "titulo": "Reincidência na inadimplência atinge 85,41% dos consumidores em maio",
+      "texto": "O Indicador de Reincidência de Pessoas Físicas, apurado pela CNDL e SPC Brasil, revelou que 85,41% dos consumidores que entraram na inadimplência em maio de 2026 já haviam sido negativados nos 12 meses anteriores. Deste grupo, 65,92% ainda não haviam quitado dívidas antigas. O tempo médio entre o vencimento de uma dívida e o surgimento de outra foi de 72,6 dias. A alta reincidência é atribuída a juros elevados, custo de vida pressionado e falta de margem financeira, empurrando os cidadãos de volta ao superendividamento."
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "fonte": "Senado Federal / Comsefaz",
+      "titulo": "Reforma Tributária inicia período de adaptação em 2026 com destaque informativo de novos tributos",
+      "texto": "A implementação da Reforma Tributária sobre o consumo começou em 1º de janeiro de 2026, marcando o início da transição para o novo modelo de tributação com o Imposto sobre Bens e Serviços (IBS) e a Contribuição sobre Bens e Serviços (CBS). A partir de 3 de agosto de 2026, será obrigatório o preenchimento dos campos relativos ao IBS e à CBS nos documentos fiscais eletrônicos para empresas do regime regular, com uma alíquota teste de 1% (0,1% de IBS e 0,9% de CBS). Durante este período inicial, os valores terão caráter exclusivamente informativo e não haverá penalidades para falhas de preenchimento, visando a adaptação gradual das empresas.",
+      "url": "https://www.senado.leg.br/institucional/noticias/ano-de-2026-marca-implementacao-da-reforma-tributaria"
     }
   ],
   "pestel": [
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Combate à Inadimplência e Reforma Tributária",
-      "texto": "A Receita Federal iniciou a publicação da lista de devedores contumazes, conforme a Lei Complementar nº 225/2026, visando aprimorar a conformidade fiscal e a concorrência leal. Paralelamente, a Receita Federal continua a promover a adesão ao piloto da Reforma Tributária da Contribuição sobre Bens e Serviços (CBS), sinalizando o avanço nas discussões e implementações de mudanças fiscais.",
-      "score": 7.0,
+      "tema": "Implementação e Regulamentação da Reforma Tributária",
+      "texto": "A Reforma Tributária sobre o consumo entrou em vigor em 2026, iniciando um período de transição com destaque informativo do IBS e CBS nas notas fiscais. A partir de agosto, o preenchimento desses campos será obrigatório para empresas do regime regular, com alíquotas teste. O Congresso Nacional continua a discutir a regulamentação detalhada, incluindo regimes específicos e critérios de distribuição da arrecadação.",
+      "score": 7.5,
       "setores": [
         "transversal"
       ]
@@ -64,9 +72,9 @@
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Estabilidade de Projeções e Desafios de Juros",
-      "texto": "O mercado financeiro manteve as projeções para o IPCA em 5,33% e a Selic em 14% para 2026, após semanas de alta da inflação, indicando uma pausa na deterioração das expectativas. O PIB para 2026 teve uma leve alta na projeção para 1,99%. Apesar da melhora da confiança em alguns setores, os juros elevados e o endividamento das famílias continuam sendo fatores de cautela, limitando o consumo e investimentos.",
-      "score": 7.8,
+      "tema": "Cenário de Juros Elevados, Inflação Persistente e Endividamento",
+      "texto": "O cenário econômico da semana é marcado por juros ainda restritivos (Selic em 14,25% ao ano), inflação (IPCA-15 de junho em 0,41% e acumulado em 12 meses em 4,8%, acima do teto da meta) e um recorde de endividamento familiar, com 80,9% das famílias brasileiras possuindo algum tipo de dívida em abril de 2026. O dólar fechou junho em R$ 5,16, com valorização de 2,39% no mês.",
+      "score": 8.5,
       "setores": [
         "transversal"
       ]
@@ -74,20 +82,20 @@
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Melhora no Mercado de Trabalho e Cautela no Consumo",
-      "texto": "A taxa de desemprego atingiu 5,6% no trimestre encerrado em maio de 2026, o menor nível em 14 anos, refletindo um aquecimento estrutural do mercado de trabalho. Contudo, a Intenção de Consumo das Famílias (ICF) registrou a menor alta desde novembro (+0,1% em junho), impulsionada por uma maior cautela em relação ao futuro do emprego, apesar da percepção favorável do momento atual.",
-      "score": 7.5,
+      "tema": "Cautela do Consumidor e Alta Reincidência na Inadimplência",
+      "texto": "A Intenção de Consumo das Famílias (ICF) registrou a menor alta desde novembro em junho, refletindo uma cautela maior com o futuro do emprego e o impacto dos juros elevados. O endividamento familiar atingiu níveis recordes, e a reincidência na inadimplência é alarmante, com 85,41% dos consumidores negativados em maio já tendo dívidas anteriores, indicando um ciclo de superendividamento.",
+      "score": 8.0,
       "setores": [
-        "transversal",
-        "comercio"
+        "comercio",
+        "servicos"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Digitalização e Segurança como Serviço",
-      "texto": "A maturidade digital, automação de processos, uso de Inteligência Artificial e Machine Learning são tendências cruciais para o setor de serviços em 2026, visando eficiência e competitividade. O modelo 'Technology as a Service' (TaaS) está se consolidando, especialmente no segmento de segurança corporativa, com soluções sob demanda e em formato de assinatura ganhando espaço para proteção de dados e infraestruturas digitais.",
-      "score": 8.0,
+      "tema": "Digitalização e Adoção de IA por PMEs como Requisito Competitivo",
+      "texto": "A transformação digital para PMEs está se tornando um requisito competitivo. Empresas estão adotando digitalização por necessidade, com foco em marketplaces, e-commerce e meios de pagamento digitais. A inteligência artificial é vista como um potencial para reduzir barreiras de uso de tecnologias existentes e otimizar o relacionamento com o cliente, impulsionando o crescimento e a profissionalização.",
+      "score": 7.0,
       "setores": [
         "industria",
         "comercio",
@@ -97,61 +105,69 @@
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Sustentabilidade e Pressões Regulatórias",
-      "texto": "Embora não haja notícias específicas para a semana, a agenda de sustentabilidade e as pressões por práticas mais ecológicas continuam a influenciar as empresas. A busca por energias renováveis e a adaptação a regulamentações ambientais são temas constantes, especialmente para a indústria, que enfrenta desafios de conformidade e busca por eficiência energética. A B3 Sustentabilidade e o MMA seguem como referências para monitoramento de políticas e tendências neste campo.",
-      "score": 5.5,
+      "tema": "Sem notícias relevantes no período",
+      "texto": "Não foram identificadas notícias ou dados econômicos relevantes relacionados à dimensão ambiental para a semana de 29 de junho a 3 de julho de 2026 nas fontes prioritárias.",
+      "score": 1.0,
       "setores": [
-        "industria",
         "transversal"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Novas Regulações Fiscais e Impacto Legislativo",
-      "texto": "A Receita Federal implementou a publicação dos devedores contumazes, com base na Lei Complementar nº 225/2026, reforçando o arcabouço legal para a recuperação de créditos e a promoção da equidade fiscal. Além disso, a discussão sobre a substituição do Código Civil é um tema relevante, com potenciais impactos na segurança jurídica e no equilíbrio financeiro de PMEs, exigindo atenção para possíveis desdobramentos legislativos.",
-      "score": 6.5,
+      "tema": "Prazos e Adaptação às Novas Obrigações da Reforma Tributária",
+      "texto": "O ano de 2026 marca o início da transição da Reforma Tributária, com a obrigatoriedade de destaque informativo do IBS e CBS nas notas fiscais. A partir de 3 de agosto, o preenchimento desses campos será mandatório para empresas do regime regular, com dispensa de penalidades durante o período de adaptação. As empresas do Simples Nacional terão até setembro de 2026 para optar pelo novo regime a partir de 2027.",
+      "score": 7.0,
       "setores": [
-        "transversal",
-        "industria",
-        "comercio",
-        "servicos"
+        "transversal"
       ]
     }
   ],
   "kpis": [
     {
-      "label": "SELIC (Focus)",
-      "valor": "14,0%",
+      "label": "SELIC (Atual)",
+      "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Estável para 2026"
+      "sub": "Estável (último corte de 0,25 p.p.)"
     },
     {
-      "label": "IPCA (Focus)",
-      "valor": "5,33%",
-      "cor": "neutral",
-      "sub": "Estável para 2026 após 15 semanas de alta"
+      "label": "IPCA-15 (Junho/2026)",
+      "valor": "0,41%",
+      "cor": "up",
+      "sub": "Desaceleração mensal, mas acumulado em 12 meses (4,8%) acima da meta"
     },
     {
-      "label": "Câmbio (Dólar - Focus)",
-      "valor": "R$ 5,20",
-      "cor": "neutral",
-      "sub": "Estável para 2026"
+      "label": "Câmbio (Dólar Comercial - Fim Junho/2026)",
+      "valor": "R$ 5,16",
+      "cor": "up",
+      "sub": "Valorização de 2,39% no mês"
     },
     {
-      "label": "Taxa de Desemprego (IBGE)",
+      "label": "Taxa de Desemprego (Maio/2026)",
       "valor": "5,6%",
       "cor": "down",
-      "sub": "Menor taxa até maio na série histórica"
+      "sub": "Menor taxa para o período na série histórica"
     },
     {
-      "label": "Vendas no Varejo (IBGE)",
-      "valor": "-1,5% (Abril)",
+      "label": "Vendas Varejo (Abril/2026)",
+      "valor": "-1,5%",
       "cor": "down",
-      "sub": "Maior queda em quase 4 anos (m/m)"
+      "sub": "Primeira queda de 2026, perdendo nível recorde"
     }
   ],
   "longitudinal": [
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 66.75
+    },
     {
       "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
       "tipo": "oportunidade",
@@ -162,20 +178,21 @@
         "comercio",
         "servicos"
       ],
-      "status": "monitorar",
-      "relevancia": 53.5
+      "status": "em_curso",
+      "relevancia": 64.75
     },
     {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
-      "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
+      "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
+      "tipo": "oportunidade",
+      "titulo": "Aceleração da Adoção de Inteligência Artificial por PMEs para Otimização de Processos",
+      "dimensao": "T",
       "setores": [
+        "industria",
         "comercio",
         "servicos"
       ],
       "status": "monitorar",
-      "relevancia": 47.25
+      "relevancia": 54.25
     },
     {
       "id": "c330066d-d634-418a-bcc5-05a55d14573b",
@@ -186,7 +203,7 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 44.75
+      "relevancia": 25.5
     }
   ]
 }
