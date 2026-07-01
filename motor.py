@@ -256,6 +256,34 @@ def gerar_dados_portal(dados, sb, chave, label):
     with open("data/ultimo.json", "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, indent=2)
 
+    # Mantém o índice de períodos disponíveis (o seletor temporal do portal lê daqui).
+    # Lê o índice existente, adiciona/atualiza esta semana, mantém ordenado (mais recente primeiro).
+    index_path = "data/index.json"
+    indice = {"semanas": []}
+    if os.path.exists(index_path):
+        try:
+            with open(index_path, encoding="utf-8") as f:
+                indice = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            indice = {"semanas": []}
+
+    # extrai ano e número da semana da chave (ex: "2026-W27")
+    try:
+        ano_s, sem_s = chave.split("-W")
+        ordem = int(ano_s) * 100 + int(sem_s)
+    except ValueError:
+        ordem = 0
+
+    entrada = {"chave": chave, "label": label, "arquivo": f"{chave}.json", "ordem": ordem}
+    # remove entrada antiga desta mesma semana (se for repetição) e insere a nova
+    indice["semanas"] = [s for s in indice.get("semanas", []) if s.get("chave") != chave]
+    indice["semanas"].append(entrada)
+    indice["semanas"].sort(key=lambda s: s.get("ordem", 0), reverse=True)
+    indice["atualizado_em"] = datetime.utcnow().isoformat()
+
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(indice, f, ensure_ascii=False, indent=2)
+
 
 if __name__ == "__main__":
     main()

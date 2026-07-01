@@ -121,6 +121,8 @@
   .badge { padding:5px 12px; border-radius:20px; font-size:11px; font-weight:600; font-family:var(--mono); letter-spacing:.5px; white-space:nowrap; }
   .badge-blue { background:var(--blue-dim); color:var(--blue); }
   .badge-green { background:var(--green-dim); color:var(--green); }
+  .badge-refresh { background:var(--blue-dim); color:var(--blue); text-decoration:none; cursor:pointer; transition:all .15s; }
+  .badge-refresh:hover { background:var(--blue); color:#fff; }
   .badge-sector { background:var(--surface-2); color:var(--text-2); border:1px solid var(--border); display:none; }
   .badge-sector.show { display:inline-flex; align-items:center; gap:6px; }
 
@@ -330,6 +332,7 @@
       <span class="badge badge-blue" id="periodBadge"></span>
       <span class="badge badge-sector" id="sectorBadge"></span>
       <span class="badge badge-green">● Atualizado</span>
+      <a class="badge badge-refresh" id="btnAtualizar" href="#" target="_blank" rel="noopener" title="Dispara uma nova coleta agora">↻ Atualizar agora</a>
     </div>
   </div>
 
@@ -451,259 +454,170 @@ const SRC = {
 // blocos reutilizáveis de setor
 function S(...a){return a;}
 
-const DB = {
-  semanal: {
-    label:'Semana', icon:'SEM',
-    items: [
-      { key:'2025-W24', year:2025, nav:'Semana 24', sub:'9–13 jun 2025', data:{
-        title:'Semana 24 · Junho 2025', subtitle:'9 a 13 de junho · 28 fontes monitoradas', badge:'S24 / 2025',
-        stamp:'Gerado 09/06/2025 · 07:02', kpiTitle:'Indicadores da semana',
-        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável · fin. 2025'},{l:'IPCA Proj.',v:'3,9%',c:'up',s:'Dentro da meta'},{l:'Câmbio (máx.)',v:'R$5,34',c:'down',s:'↑ Pressionado'},{l:'Desemprego',v:'6,9%',c:'up',s:'↓ Mín. desde 2013'},{l:'Varejo (PMC)',v:'+1,2%',c:'up',s:'Abr · IBGE'}],
-        clipping:[
-          {set:S('industria'),fonte:'IBGE / PIM',t:'Produção industrial recua 0,8% em abril; bens de capital lideram queda',x:'Retração puxada por máquinas e equipamentos (−2,1%), refletindo postergação de investimentos ante incerteza fiscal.',url:SRC.ibge},
-          {set:S('industria'),fonte:'CNI',t:'ICEI avança para 51,3 — otimismo do empresário industrial pelo 2º mês',x:'Expectativas de demanda nos próximos 6 meses são o vetor principal. Bens intermediários lideram a confiança.',url:SRC.cni},
-          {set:S('comercio'),fonte:'IBGE / PMC',t:'Varejo cresce 1,2% em abril — supermercados e farmácias puxam resultado',x:'Vestuário recua 0,4%; alimentação avança 1,9%. CNC revisa projeção do varejo 2025 para 3,1%.',url:SRC.ibge},
-          {set:S('servicos'),fonte:'IBGE / PMS',t:'Serviços crescem 0,6% e acumulam +4,2% em 12 meses',x:'TI lidera com +7,3% no acumulado do ano. Turismo registra maior expansão mensal desde 2022.',url:SRC.ibge},
-          {set:S('transversal'),fonte:'BCB Focus',t:'Boletim Focus mantém projeção de SELIC em 10,5% para o fim de 2025',x:'Mediana das projeções de inflação recua para 3,9%. Expectativa de PIB sobe para 2,2%.',url:SRC.bcb}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma tributária',x:'Regulamentação do IBS/CBS avança no Senado. 3 decretos de desoneração pautados.',score:6.5,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'SELIC + câmbio',x:'Focus mantém SELIC em 10,5%. Câmbio oscilou até R$5,34, pressionado por fluxo externo.',score:7.8,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego + consumo',x:'Desemprego em 6,9% — mínima desde 2013. Massa salarial real +4,1% a/a favorece o varejo.',score:8.2,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA + automação',x:'34% das PMEs já adotam IA generativa. Automação industrial em MG cresce 22%.',score:7.0,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + ESG',x:'Aneel anuncia reajuste de 7,2% em julho. Seca no Sudeste eleva risco de bandeira vermelha.',score:5.5,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'STF + tributação',x:'STF julgará ICMS/subvenções em agosto. Split payment regulamentado para 2026.',score:6.0,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'Reajuste tarifário de energia — jul/25',setlabel:'Ambiental · Indústria',set:S('industria','comercio')},{sev:'medio',t:'STF — tributação ICMS subvenções',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')},{sev:'medio',t:'Câmbio pressionado > R$5,30',setlabel:'Econômico · Todos',set:S('transversal')}],
-        opp:[{t:'IA em PMEs — diferenciação',x:'34% de adoção deixa 66% do mercado descoberto. Alta tração em serviços.',set:S('servicos','industria')},{t:'Massa salarial sustenta consumo',x:'+4,1% real a/a favorece varejo e serviços ao consumidor.',set:S('comercio','servicos')},{t:'Pronampe ampliado',x:'R$250k/CNPJ. Janela aberta até 30/07 — capital de giro.',set:S('transversal')}],
-        long:[{st:'mat',tag:'W21 · 19 mai 2025 · Risco',t:'Pressão cambial > R$5,30 — impacto em insumos importados',x:'Câmbio tocou R$5,34. Três clientes industriais relataram reajuste de fornecedores. Tendência confirmada.',set:S('industria','transversal')},{st:'cur',tag:'W22 · 26 mai 2025 · Oportunidade',t:'Expansão Pronampe — crédito PJ para PMEs do comércio',x:'BCB ampliou limite para R$250k/CNPJ. Janela até 30/07. Nenhum cliente acionou ainda.',set:S('comercio','transversal')},{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais — impacto em e-commerce',x:'PL ainda em comissão. Sem movimentação na semana. Votação prevista para agosto.',set:S('comercio','servicos')}]
-      }},
-      { key:'2025-W23', year:2025, nav:'Semana 23', sub:'2–6 jun 2025', data:{
-        title:'Semana 23 · Junho 2025', subtitle:'2 a 6 de junho · 28 fontes monitoradas', badge:'S23 / 2025',
-        stamp:'Gerado 02/06/2025 · 07:04', kpiTitle:'Indicadores da semana',
-        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA Proj.',v:'4,0%',c:'up',s:'Teto da meta'},{l:'Câmbio (máx.)',v:'R$5,28',c:'down',s:'↑ Em alta'},{l:'Desemprego',v:'7,0%',c:'up',s:'Estável'},{l:'Varejo (PMC)',v:'+0,9%',c:'up',s:'Mar · IBGE'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI',t:'Sondagem industrial aponta melhora gradual na demanda de maio',x:'Empresários relatam recuperação tímida de pedidos. Estoques em nível adequado. Otimismo concentrado em bens intermediários.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC',t:'Intenção de consumo das famílias sobe pela 4ª semana',x:'Melhora do mercado de trabalho sustenta a confiança do consumidor. Bens duráveis lideram a intenção de compra.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE',t:'Serviços de TI puxam contratações no setor terciário',x:'Demanda por digitalização sustenta criação de vagas qualificadas. Serviços profissionais em expansão.',url:SRC.ibge},
-          {set:S('transversal'),fonte:'BCB',t:'Ata do Copom reforça cautela e juros estáveis no horizonte',x:'Comitê mantém tom conservador diante do quadro fiscal. Câmbio é citado como vetor de risco inflacionário.',url:SRC.bcb}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Pauta fiscal',x:'Discussão sobre arcabouço fiscal de 2026 começa a ganhar espaço no Congresso.',score:5.8,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Câmbio + juros',x:'Câmbio inicia trajetória de alta na semana. SELIC mantida. Atividade segue resiliente.',score:7.2,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Mercado de trabalho',x:'Emprego segue como destaque positivo. Renda real em expansão sustenta consumo.',score:7.9,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Digitalização',x:'Demanda por TI e automação acelera. PMEs ampliam investimento em ferramentas digitais.',score:6.8,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Risco hídrico',x:'Primeiros sinais de seca no Sudeste acendem alerta sobre custo de energia.',score:5.0,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Agenda STF',x:'Pauta tributária do STF para o 2º semestre começa a ser monitorada.',score:5.5,set:S('industria','servicos')}],
-        riscos:[{sev:'medio',t:'Câmbio inicia trajetória de alta',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Sinais de seca no Sudeste',setlabel:'Ambiental · Indústria',set:S('industria','comercio')},{sev:'baixo',t:'Endividamento das famílias persistente',setlabel:'Social · Comércio',set:S('comercio')}],
-        opp:[{t:'Confiança do consumidor em alta',x:'4 semanas de melhora abrem espaço para o varejo planejar o meio do ano.',set:S('comercio','servicos')},{t:'Demanda por digitalização',x:'TI puxa contratações — janela para serviços de tecnologia.',set:S('servicos','industria')}],
-        long:[{st:'cur',tag:'W21 · 19 mai 2025 · Risco',t:'Pressão cambial — começando a se confirmar',x:'Câmbio iniciou alta na semana, validando o alerta de maio. Ainda sem impacto direto reportado pelos clientes.',set:S('industria','transversal')},{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais',x:'PL sem movimentação. Mantido em monitoramento.',set:S('comercio','servicos')}]
-      }},
-      { key:'2025-W22', year:2025, nav:'Semana 22', sub:'26–30 mai 2025', data:{
-        title:'Semana 22 · Maio 2025', subtitle:'26 a 30 de maio · 28 fontes monitoradas', badge:'S22 / 2025',
-        stamp:'Gerado 26/05/2025 · 07:01', kpiTitle:'Indicadores da semana',
-        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA Proj.',v:'4,0%',c:'up',s:'Teto da meta'},{l:'Câmbio (máx.)',v:'R$5,22',c:'neutral',s:'Lateral'},{l:'Desemprego',v:'7,0%',c:'up',s:'Estável'},{l:'Varejo (PMC)',v:'+0,9%',c:'up',s:'Mar · IBGE'}],
-        clipping:[
-          {set:S('comercio'),fonte:'BCB',t:'BCB anuncia ampliação do limite do Pronampe para R$250 mil por CNPJ',x:'Medida amplia acesso a crédito de capital de giro para pequenas empresas. Janela de adesão aberta até 30 de julho.',url:SRC.bcb},
-          {set:S('industria'),fonte:'CNI',t:'Indústria de transformação mantém estabilidade em maio',x:'Produção lateralizada. Empresários aguardam definições fiscais antes de novos investimentos.',url:SRC.cni},
-          {set:S('servicos'),fonte:'IBGE',t:'Setor de serviços mantém crescimento moderado',x:'Serviços às famílias e profissionais sustentam o ritmo. Turismo começa a acelerar com a baixa temporada.',url:SRC.ibge}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Crédito + fomento',x:'Governo amplia instrumentos de crédito para PMEs. Pauta de fomento ganha tração.',score:6.0,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Estabilidade',x:'Câmbio lateral na semana. Juros mantidos. Cenário de relativa calmaria antes da volatilidade de junho.',score:6.5,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Consumo estável',x:'Mercado de trabalho sustenta consumo. Confiança do consumidor em recuperação lenta.',score:7.5,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Automação',x:'Automação industrial avança em MG. Demanda por eficiência cresce entre indústrias locais.',score:6.5,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Clima estável',x:'Sem alertas climáticos relevantes na semana. Reservatórios em níveis adequados.',score:4.0,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Tributário',x:'Discussões sobre regulamentação tributária seguem em ritmo técnico.',score:5.0,set:S('industria','servicos')}],
-        riscos:[{sev:'medio',t:'Incerteza fiscal limita investimento industrial',setlabel:'Político · Indústria',set:S('industria','transversal')},{sev:'baixo',t:'Vestuário e bens duráveis fracos no varejo',setlabel:'Social · Comércio',set:S('comercio')}],
-        opp:[{t:'Pronampe ampliado — NOVA janela',x:'Limite elevado para R$250k/CNPJ. Oportunidade imediata de capital de giro para PMEs.',set:S('transversal')},{t:'Turismo entra em alta temporada',x:'Serviços de turismo começam a acelerar — janela sazonal para o setor.',set:S('servicos')}],
-        long:[{st:'cur',tag:'W21 · 19 mai 2025 · Risco',t:'Pressão cambial — em monitoramento',x:'Alerta da semana anterior mantido. Câmbio ainda lateral, mas vetores externos preocupam.',set:S('industria','transversal')},{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais',x:'Sem novidades. PL parado em comissão.',set:S('comercio','servicos')}]
-      }},
-      { key:'2025-W21', year:2025, nav:'Semana 21', sub:'19–23 mai 2025', data:{
-        title:'Semana 21 · Maio 2025', subtitle:'19 a 23 de maio · 28 fontes monitoradas', badge:'S21 / 2025',
-        stamp:'Gerado 19/05/2025 · 07:03', kpiTitle:'Indicadores da semana',
-        kpis:[{l:'SELIC (Focus)',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA Proj.',v:'4,1%',c:'up',s:'Acima do centro'},{l:'Câmbio (máx.)',v:'R$5,19',c:'neutral',s:'Vetores externos'},{l:'Desemprego',v:'7,1%',c:'up',s:'Estável'},{l:'Varejo (PMC)',v:'+0,7%',c:'up',s:'Fev · IBGE'}],
-        clipping:[
-          {set:S('transversal'),fonte:'Valor',t:'Analistas alertam para pressão cambial diante de fluxo externo adverso',x:'Cenário internacional e dúvidas fiscais elevam risco de desvalorização do real nos próximos meses.',url:SRC.valor},
-          {set:S('industria'),fonte:'CNI',t:'Indústria preocupada com custo de insumos importados',x:'Setores dependentes de importação monitoram câmbio. Possível repasse a preços no horizonte.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC',t:'Comércio mantém recuperação gradual em maio',x:'Vendas crescem de forma moderada. Mercado de trabalho sustenta a demanda das famílias.',url:SRC.cnc}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Quadro fiscal',x:'Dúvidas sobre a trajetória fiscal alimentam incerteza nos mercados.',score:6.2,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Risco cambial',x:'Primeiro grande alerta de pressão cambial do trimestre. Fluxo externo adverso. Real sob risco.',score:7.5,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego sólido',x:'Mercado de trabalho segue resiliente, ancorando o consumo apesar das incertezas.',score:7.3,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Investimento digital',x:'Empresas seguem investindo em digitalização apesar do ambiente cauteloso.',score:6.0,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Estável',x:'Sem eventos climáticos relevantes na semana.',score:3.5,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Monitoramento',x:'Pauta tributária e regulatória em ritmo técnico, sem decisões relevantes.',score:4.5,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'NOVO: Pressão cambial > R$5,30 no horizonte',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Custo de insumos importados na indústria',setlabel:'Econômico · Indústria',set:S('industria')}],
-        opp:[{t:'Recuperação gradual do consumo',x:'Comércio em recuperação consistente — base para o meio do ano.',set:S('comercio','servicos')}],
-        long:[{st:'mon',tag:'W19 · 5 mai 2025 · Risco',t:'Regulação de plataformas digitais',x:'PL em comissão, sem movimentação. Primeiro registro de monitoramento.',set:S('comercio','servicos')}]
-      }},
-      { key:'2025-W20', year:2025, nav:'Semana 20', sub:'12–16 mai 2025', data:null }
-    ]
-  },
+/* ═══════════════════════════════════════════════════════════
+   CAMADA DE DADOS REAIS
+   Busca data/index.json + os arquivos semanais gerados pelo motor
+   e monta o objeto DB no MESMO formato que as funções de render esperam.
+   Todos os fallbacks estão aqui: sem dados, fetch falho, arquivo corrompido.
+   ═══════════════════════════════════════════════════════════ */
 
-  mensal: {
-    label:'Mês', icon:'MÊS',
-    items: [
-      { key:'2025-06', year:2025, nav:'Junho 2025', sub:'Consolidado · S22–S26', data:{
-        title:'Junho 2025 · Consolidado mensal', subtitle:'Semanas 22 a 26 · síntese de 5 semanas · 28 fontes', badge:'JUN / 2025',
-        stamp:'Gerado 30/06/2025 · 07:05', kpiTitle:'Indicadores do mês (acumulado)',
-        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Mantida no mês'},{l:'IPCA mês',v:'+0,32%',c:'up',s:'12m: 3,9%'},{l:'Câmbio méd.',v:'R$5,27',c:'down',s:'Volátil no mês'},{l:'Desemprego',v:'6,9%',c:'up',s:'Estável · baixo'},{l:'Varejo 12m',v:'+3,1%',c:'up',s:'Revisado ↑'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI · síntese',t:'Indústria fecha junho com confiança acima de 50 por todo o mês',x:'ICEI consolidou patamar otimista. Utilização da capacidade sobe para 81%. Bens de capital em recuperação lenta.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC · síntese',t:'Comércio acumula 3 meses consecutivos de alta nas vendas',x:'ICF atinge maior nível de 2025. Endividamento recua para 76,8% das famílias.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE · síntese',t:'Serviços sustentam liderança no crescimento setorial em junho',x:'TI e serviços profissionais puxam o resultado. Setor acumula 4,2% em 12 meses.',url:SRC.ibge},
-          {set:S('transversal'),fonte:'Valor',t:'Mercado revisa PIB de 2025 para 2,2% após dados positivos de emprego',x:'Consenso melhora pela terceira vez no ano, sustentado por consumo e mercado de trabalho aquecido.',url:SRC.valor}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Tributária + fiscal',x:'Regulamentação da reforma avançou no mês. Debate fiscal de 2026 ganha tração.',score:7.0,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + atividade',x:'SELIC mantida. Atividade surpreende positivamente. Câmbio médio de R$5,27, com volatilidade.',score:8.0,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Renda + emprego',x:'Mercado de trabalho consolida força. Massa salarial sustenta consumo. Inadimplência estável.',score:8.3,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Digitalização PME',x:'Adoção de IA por PMEs cresce de forma consistente. Automação em MG mantém ritmo forte.',score:7.2,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Tarifas + clima',x:'Reajuste de energia confirmado para julho domina a pauta. Risco hídrico elevado no inverno.',score:6.5,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Judicial tributário',x:'Agenda do STF para agosto concentra atenção. Adaptação ao split payment no radar.',score:6.2,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'Energia +7,2% confirmada — vigência julho',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'alto',t:'Volatilidade cambial persistente no mês',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Agenda tributária do STF (agosto)',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')},{sev:'baixo',t:'Endividamento das famílias ainda alto',setlabel:'Social · Comércio',set:S('comercio')}],
-        opp:[{t:'Consumo aquecido sustentável',x:'3 meses de alta no varejo abrem espaço para expansão planejada no 2º semestre.',set:S('comercio','servicos')},{t:'Onda de digitalização PME',x:'Demanda por automação e IA cria janela de consultoria e implementação.',set:S('servicos','industria')},{t:'Crédito Pronampe ativo',x:'Janela aberta. Mobilizar clientes antes de 30/07.',set:S('transversal')}],
-        long:[{st:'mat',tag:'W21 · mai 2025 · Risco',t:'Pressão cambial — materializada e persistente',x:'Confirmada ao longo de junho. Câmbio médio R$5,27 com picos acima de R$5,30. Revisão de contratos virou prioridade.',set:S('industria','transversal')},{st:'mat',tag:'W18 · mai 2025 · Risco',t:'Reajuste de energia — confirmado para julho',x:'Previsão de maio oficializada pela Aneel: +7,2% a partir de julho. Impacto direto em custos.',set:S('industria','comercio')},{st:'cur',tag:'W22 · mai 2025 · Oportunidade',t:'Pronampe ampliado — adesão em curso',x:'Dois clientes do comércio iniciaram crédito. Janela ainda aberta.',set:S('comercio','transversal')}]
-      }},
-      { key:'2025-05', year:2025, nav:'Maio 2025', sub:'Consolidado · S18–S22', data:{
-        title:'Maio 2025 · Consolidado mensal', subtitle:'Semanas 18 a 22 · síntese de 5 semanas · 28 fontes', badge:'MAI / 2025',
-        stamp:'Gerado 31/05/2025 · 07:08', kpiTitle:'Indicadores do mês (acumulado)',
-        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Mantida'},{l:'IPCA mês',v:'+0,28%',c:'up',s:'12m: 4,0%'},{l:'Câmbio méd.',v:'R$5,18',c:'neutral',s:'Início de alta'},{l:'Desemprego',v:'7,0%',c:'up',s:'Estável'},{l:'Varejo 12m',v:'+2,7%',c:'up',s:'Mar · IBGE'}],
-        clipping:[
-          {set:S('transversal'),fonte:'Valor · síntese',t:'Maio marca o início da pressão cambial que definiria o trimestre',x:'Real começa a se desvalorizar diante de fluxo externo adverso e dúvidas fiscais. Primeiro alerta relevante do ano.',url:SRC.valor},
-          {set:S('comercio'),fonte:'BCB',t:'Pronampe ampliado para R$250 mil por CNPJ é anunciado em maio',x:'Medida amplia acesso a crédito para PMEs. Comércio é o principal beneficiário potencial.',url:SRC.bcb},
-          {set:S('industria'),fonte:'CNI · síntese',t:'Indústria estável em maio, aguardando definições fiscais',x:'Produção lateralizada. Confiança em recuperação lenta. Investimento contido pela incerteza.',url:SRC.cni}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Fiscal + fomento',x:'Incerteza fiscal cresce. Em paralelo, governo amplia instrumentos de crédito a PMEs.',score:6.3,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Câmbio em alta',x:'Maio marca a virada do câmbio. Real começa trajetória de desvalorização. SELIC mantida.',score:7.4,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego resiliente',x:'Mercado de trabalho mantém força, sustentando o consumo das famílias.',score:7.6,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'Digital PME',x:'Investimento em digitalização segue firme entre PMEs, apesar da cautela.',score:6.4,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Primeiros alertas',x:'Sinais iniciais de seca no Sudeste. Discussão sobre reajuste de energia começa.',score:5.2,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Técnico',x:'Pauta tributária em ritmo técnico. Agenda do STF começa a ser mapeada.',score:4.8,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'NOVO: Pressão cambial surge como risco do trimestre',setlabel:'Econômico · Todos',set:S('transversal')},{sev:'medio',t:'Incerteza fiscal trava investimento',setlabel:'Político · Indústria',set:S('industria','transversal')},{sev:'medio',t:'Sinais iniciais de risco hídrico',setlabel:'Ambiental · Indústria',set:S('industria','comercio')}],
-        opp:[{t:'Pronampe ampliado — janela aberta',x:'R$250k/CNPJ. Nova oportunidade de crédito para PMEs do comércio.',set:S('transversal')},{t:'Consumo resiliente',x:'Emprego sustenta a demanda — base para o varejo no meio do ano.',set:S('comercio','servicos')}],
-        long:[{st:'cur',tag:'Abr 2025 · Risco',t:'Risco de energia — começando a tomar forma',x:'Discussão sobre reajuste tarifário avança. Ainda como alerta, sem confirmação oficial.',set:S('industria','comercio')},{st:'mon',tag:'Abr 2025 · Risco',t:'Regulação de plataformas digitais',x:'PL em tramitação lenta. Mantido em monitoramento.',set:S('comercio','servicos')}]
-      }},
-      { key:'2025-04', year:2025, nav:'Abril 2025', sub:'Consolidado · S14–S18', data:{
-        title:'Abril 2025 · Consolidado mensal', subtitle:'Semanas 14 a 18 · síntese de 5 semanas · 28 fontes', badge:'ABR / 2025',
-        stamp:'Gerado 30/04/2025 · 07:06', kpiTitle:'Indicadores do mês (acumulado)',
-        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Mantida'},{l:'IPCA mês',v:'+0,35%',c:'up',s:'12m: 4,1%'},{l:'Câmbio méd.',v:'R$5,12',c:'up',s:'Estável'},{l:'Desemprego',v:'7,2%',c:'up',s:'Em queda'},{l:'Varejo 12m',v:'+2,5%',c:'up',s:'Fev · IBGE'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI · síntese',t:'Indústria inicia 2º trimestre em recuperação tímida',x:'Produção industrial mostra sinais de estabilização após início de ano fraco. Confiança ainda abaixo da média histórica.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC · síntese',t:'Comércio se recupera com melhora do mercado de trabalho',x:'Vendas voltam a crescer após trimestre morno. Queda do desemprego sustenta a retomada.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE · síntese',t:'Serviços mantêm trajetória de crescimento em abril',x:'TI e serviços profissionais seguem como destaque. Setor consolida liderança no ano.',url:SRC.ibge}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma',x:'Regulamentação da reforma tributária entra em fase técnica intensa.',score:6.0,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Estabilidade',x:'Câmbio estável em abril. Atividade econômica em recuperação gradual. SELIC mantida.',score:6.8,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego melhora',x:'Desemprego em queda consistente. Mercado de trabalho começa a se destacar como motor.',score:7.4,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA cresce',x:'Adoção de IA por PMEs ganha tração. Automação industrial em MG começa a acelerar.',score:6.6,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Início de alerta',x:'Primeiras discussões sobre possível reajuste de energia para o 2º semestre.',score:4.5,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Técnico',x:'Trabalho técnico de regulamentação tributária em andamento.',score:4.5,set:S('industria','servicos')}],
-        riscos:[{sev:'medio',t:'Confiança industrial abaixo da média',setlabel:'Econômico · Indústria',set:S('industria')},{sev:'baixo',t:'Discussão inicial sobre reajuste de energia',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')}],
-        opp:[{t:'Recuperação do mercado de trabalho',x:'Queda do desemprego abre espaço para retomada do consumo no trimestre.',set:S('comercio','servicos')},{t:'IA ganha tração entre PMEs',x:'Janela inicial para serviços de implementação e consultoria.',set:S('servicos','industria')}],
-        long:[{st:'mon',tag:'Mar 2025 · Risco',t:'Custo de energia — primeiro registro',x:'Discussões iniciais sobre reajuste para o 2º semestre. Registrado para monitoramento.',set:S('industria','comercio')}]
-      }},
-      { key:'2025-03', year:2025, nav:'Março 2025', sub:'Sem dados detalhados', data:null }
-    ]
-  },
+// URL do botão "Atualizar agora": leva à tela do GitHub Actions onde você
+// clica "Run workflow". TROQUE "SEU-USUARIO" pelo seu usuário do GitHub.
+const URL_ATUALIZAR = "https://github.com/SEU-USUARIO/clipping-mercado/actions/workflows/clipping.yml";
 
-  trimestral: {
-    label:'Trimestre', icon:'TRI',
-    items: [
-      { key:'2025-Q2', year:2025, nav:'Q2 2025', sub:'Abr–Jun', data:{
-        title:'2º Trimestre 2025 · Q2', subtitle:'Abril a Junho · consolidação trimestral · 28 fontes', badge:'Q2 / 2025',
-        stamp:'Gerado 30/06/2025 · 08:00', kpiTitle:'Indicadores do trimestre',
-        kpis:[{l:'SELIC fim Q2',v:'10,5%',c:'neutral',s:'Sem cortes no tri'},{l:'IPCA tri',v:'+1,1%',c:'up',s:'12m: 3,9%'},{l:'PIB Q2 (proj.)',v:'+0,6%',c:'up',s:'t/t · estimativa'},{l:'Desemprego',v:'6,9%',c:'up',s:'Queda no tri'},{l:'Varejo tri',v:'+2,4%',c:'up',s:'Acum. Q2'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI · balanço Q2',t:'Indústria encerra Q2 em recuperação gradual, mas abaixo do potencial',x:'Confiança melhorou no trimestre, mas investimento em bens de capital segue contido. Capacidade em 81%.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC · balanço Q2',t:'Comércio tem melhor trimestre desde 2023, puxado por consumo das famílias',x:'Varejo cresce 2,4% no trimestre. Supermercados, farmácias e e-commerce lideram. Vestuário fraco.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE · balanço Q2',t:'Serviços confirmam papel de motor da economia no 2º trimestre',x:'TI, serviços profissionais e turismo sustentam expansão acima da indústria e do comércio.',url:SRC.ibge},
-          {set:S('transversal'),fonte:'BCB',t:'Banco Central sinaliza juros estáveis até clareza no quadro fiscal',x:'Ata do Copom reforça cautela. Mercado não vê cortes antes do 4º trimestre. Câmbio como risco.',url:SRC.bcb}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma + 2026',x:'Reforma avançou na regulamentação no trimestre. Debate fiscal de 2026 domina o cenário.',score:7.3,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + câmbio',x:'Política monetária restritiva mantida. Câmbio volátil. Atividade resiliente surpreende.',score:8.1,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego forte',x:'Mercado de trabalho foi o grande destaque do trimestre. Desemprego em mínimas.',score:8.4,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA acelera',x:'Aceleração consistente na adoção de IA por PMEs. Automação em MG cresce dois dígitos.',score:7.5,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + hídrico',x:'Reajuste tarifário e risco hídrico marcam o fim do trimestre. Custo de energia no radar.',score:6.8,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'STF + compliance',x:'Agenda judicial tributária para o 2º semestre gera incerteza. Preparação para split payment.',score:6.5,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'Custo de energia estrutural a partir de jul',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'alto',t:'Juros altos prolongados pressionam investimento',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'medio',t:'Incerteza fiscal de 2026',setlabel:'Político · Todos',set:S('transversal')},{sev:'medio',t:'Julgamentos tributários no STF (ago)',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')}],
-        opp:[{t:'Trimestre de consumo forte',x:'Melhor Q2 desde 2023 valida estratégias de expansão para o varejo.',set:S('comercio','servicos')},{t:'Serviços como motor',x:'Liderança setorial consolidada. Oportunidade para clientes escalarem.',set:S('servicos')},{t:'Digitalização industrial em MG',x:'Crescimento de dois dígitos em automação. Janela para eficiência.',set:S('industria','servicos')}],
-        long:[{st:'mat',tag:'Q1→Q2 · Risco',t:'Câmbio pressionado — materializado no trimestre',x:'Risco do início do ano se confirmou. Câmbio elevado constante em Q2. Custos importados subiram.',set:S('industria','transversal')},{st:'mat',tag:'Abr · Risco',t:'Reajuste de energia — confirmado e estrutural',x:'Previsto em abril, oficializado em junho. Vira fator estrutural de custo para 2025.',set:S('industria','comercio')},{st:'cur',tag:'Q1 · Oportunidade',t:'Recuperação do consumo — em pleno curso',x:'Tendência do Q1 se confirmou e acelerou. Varejo teve melhor trimestre em dois anos.',set:S('comercio','servicos')}]
-      }},
-      { key:'2025-Q1', year:2025, nav:'Q1 2025', sub:'Jan–Mar', data:{
-        title:'1º Trimestre 2025 · Q1', subtitle:'Janeiro a Março · consolidação trimestral · 28 fontes', badge:'Q1 / 2025',
-        stamp:'Gerado 31/03/2025 · 08:00', kpiTitle:'Indicadores do trimestre',
-        kpis:[{l:'SELIC fim Q1',v:'10,5%',c:'neutral',s:'Estável'},{l:'IPCA tri',v:'+1,3%',c:'up',s:'12m: 4,1%'},{l:'PIB Q1 (proj.)',v:'+0,7%',c:'up',s:'t/t · estimativa'},{l:'Desemprego',v:'7,2%',c:'up',s:'Início de queda'},{l:'Varejo tri',v:'+1,8%',c:'up',s:'Acum. Q1'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI · balanço Q1',t:'Indústria começa 2025 fraca, com confiança abaixo da média',x:'Início de ano morno para o setor. Incerteza fiscal e juros altos limitam o investimento produtivo.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC · balanço Q1',t:'Comércio inicia ano em ritmo lento, mas mostra sinais de recuperação',x:'Vendas tímidas no início do trimestre, com melhora ao final puxada pelo mercado de trabalho.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE · balanço Q1',t:'Serviços já despontam como destaque no início de 2025',x:'TI e serviços profissionais lideram desde o começo do ano, antecipando a liderança do setor.',url:SRC.ibge}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Início da reforma',x:'Regulamentação da reforma tributária começa a ser estruturada no início do ano.',score:6.5,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros altos',x:'Trimestre de juros restritivos e câmbio relativamente estável. Atividade morna no início.',score:7.0,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego em melhora',x:'Mercado de trabalho começa a dar sinais de força que definiriam o ano.',score:7.2,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA emergente',x:'Adoção de IA por PMEs ainda em estágio inicial, mas com crescimento perceptível.',score:6.0,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Estável',x:'Sem pressões ambientais ou energéticas relevantes no trimestre.',score:4.0,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Estruturação',x:'Início do trabalho de regulamentação da nova era tributária.',score:5.0,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'Juros altos limitam atividade no início do ano',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'medio',t:'Início de ano fraco no comércio',setlabel:'Social · Comércio',set:S('comercio')}],
-        opp:[{t:'Serviços despontam cedo',x:'Liderança do setor já visível no Q1 — sinal antecipado de oportunidade.',set:S('servicos')},{t:'Mercado de trabalho em melhora',x:'Primeiros sinais de força no emprego antecipam recuperação do consumo.',set:S('comercio','servicos')}],
-        long:[{st:'mon',tag:'Jan · Risco',t:'Câmbio — primeiro mapeamento do risco do ano',x:'Identificado já em janeiro como o principal vetor de risco potencial para 2025. Em monitoramento.',set:S('industria','transversal')}]
-      }}
-    ]
-  },
-
-  semestral: {
-    label:'Semestre', icon:'SEM',
-    items: [
-      { key:'2025-S1', year:2025, nav:'S1 2025', sub:'Jan–Jun', data:{
-        title:'1º Semestre 2025 · S1', subtitle:'Janeiro a Junho · retrospectiva semestral · 28 fontes', badge:'S1 / 2025',
-        stamp:'Gerado 30/06/2025 · 09:00', kpiTitle:'Indicadores do semestre',
-        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Estável no S1'},{l:'IPCA 12m',v:'3,9%',c:'up',s:'Dentro da meta'},{l:'PIB S1 (proj.)',v:'+1,3%',c:'up',s:'Acum. semestre'},{l:'Desemprego',v:'6,9%',c:'up',s:'−0,8pp no S1'},{l:'Varejo S1',v:'+2,9%',c:'up',s:'Acum. jan–jun'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI · balanço S1',t:'Indústria fecha 1º semestre em recuperação modesta, sem tração de investimento',x:'Confiança melhorou no semestre, mas juros altos e câmbio limitaram a retomada do investimento.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC · balanço S1',t:'Comércio é o destaque positivo do semestre, sustentado pelo emprego',x:'Vendas crescem 2,9% no acumulado. Mercado de trabalho aquecido e renda em alta sustentam a demanda.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE · balanço S1',t:'Serviços lideram o crescimento econômico no 1º semestre de 2025',x:'TI e serviços profissionais puxam o setor, que cresce acima da média. Digitalização impulsiona.',url:SRC.ibge},
-          {set:S('transversal'),fonte:'FGV/IBRE',t:'Confiança empresarial encerra semestre em alta na maioria dos setores',x:'Índices da indústria, comércio e serviços terminam o S1 em território otimista, apesar das incertezas.',url:SRC.fgv}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma + fiscal',x:'Semestre dominado pela regulamentação da reforma e pelo crescente debate fiscal de 2026.',score:7.5,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + resiliência',x:'Política restritiva por todo o semestre. Economia resiliente acima do esperado. Câmbio foi a tensão.',score:8.2,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Emprego recorde',x:'O grande tema do semestre: trabalho na mínima histórica e renda real em expansão sustentada.',score:8.6,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA mainstream',x:'IA generativa virou ferramenta de PME no semestre. Automação avançou na indústria mineira.',score:7.8,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + ESG',x:'Custo de energia e risco hídrico ganharam peso. ESG entrou na agenda regulatória.',score:6.9,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Transição tributária',x:'Início da preparação real para a nova era tributária. Agenda judicial concentra riscos no H2.',score:6.7,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'Energia como custo estrutural no H2',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'alto',t:'Juros altos prolongados travam investimento',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'alto',t:'Incerteza fiscal 2026 cresce no horizonte',setlabel:'Político · Todos',set:S('transversal')},{sev:'medio',t:'Transição tributária exige adaptação',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')}],
-        opp:[{t:'Semestre valida consumo resiliente',x:'Varejo +2,9% no S1 com emprego forte: base sólida para crescimento no H2.',set:S('comercio','servicos')},{t:'Serviços lideram a economia',x:'Setor confirmou papel de motor. Maior oportunidade estrutural do ano.',set:S('servicos')},{t:'IA vira padrão de mercado',x:'Adoção mainstream cria demanda sustentada por consultoria e eficiência.',set:S('industria','servicos')}],
-        long:[{st:'mat',tag:'Jan 2025 · Risco',t:'Câmbio elevado — risco do ano que se concretizou',x:'Identificado em janeiro como principal vetor de risco. Confirmou-se em todo o semestre, pressionando custos.',set:S('industria','transversal')},{st:'mat',tag:'Fev 2025 · Oportunidade',t:'Aposta no consumo — plenamente validada',x:'A tese de consumo resiliente de fevereiro se confirmou: varejo +2,9% no S1 sustentado pelo emprego.',set:S('comercio','servicos')},{st:'cur',tag:'Mar 2025 · Risco',t:'Custo de energia — de alerta a fator estrutural',x:'Começou como alerta em março e virou custo estrutural confirmado. Em curso como pressão de margem no H2.',set:S('industria','comercio')}]
-      }},
-      { key:'2024-S2', year:2024, nav:'S2 2024', sub:'Jul–Dez · pré-monitoramento', data:null }
-    ]
-  },
-
-  anual: {
-    label:'Ano', icon:'ANO',
-    items: [
-      { key:'2025', year:2025, nav:'2025 (YTD)', sub:'Jan–Jun · em construção', data:{
-        title:'2025 · Ano até a data (YTD)', subtitle:'Janeiro a junho · visão anual em construção · 28 fontes', badge:'YTD 2025',
-        stamp:'Gerado 30/06/2025 · 10:00', kpiTitle:'Indicadores YTD 2025',
-        kpis:[{l:'SELIC',v:'10,5%',c:'neutral',s:'Sem cortes no ano'},{l:'IPCA 12m',v:'3,9%',c:'up',s:'Dentro da meta'},{l:'PIB YTD',v:'+1,3%',c:'up',s:'Acum. 2025'},{l:'Desemprego',v:'6,9%',c:'up',s:'Mín. histórica'},{l:'Varejo YTD',v:'+2,9%',c:'up',s:'Acum. 2025'}],
-        clipping:[
-          {set:S('industria'),fonte:'CNI · YTD',t:'Indústria em 2025: recuperação lenta sob juros altos e câmbio pressionado',x:'O ano mostra confiança em recuperação, mas investimento contido. Câmbio e energia são os limitadores estruturais.',url:SRC.cni},
-          {set:S('comercio'),fonte:'CNC · YTD',t:'Comércio é a história positiva de 2025 até o momento',x:'Mercado de trabalho aquecido sustentou o melhor desempenho do ano. Varejo +2,9% com tendência de continuidade.',url:SRC.cnc},
-          {set:S('servicos'),fonte:'IBGE · YTD',t:'Serviços lideram a economia em 2025 e puxam o crescimento',x:'TI, serviços profissionais e turismo fazem do setor o motor do ano. Digitalização sustenta a demanda.',url:SRC.ibge},
-          {set:S('transversal'),fonte:'BCB / Valor',t:'2025 caminha para PIB acima de 2% com inflação controlada',x:'Emprego forte, consumo resiliente e inflação na meta definem o ano. Riscos no quadro fiscal de 2026.',url:SRC.bcb}],
-        pestel:[
-          {dim:'P',cls:'p-pol',name:'Político',tema:'Reforma + eleições 26',x:'O ano é definido pela transição tributária e pela sombra do debate fiscal e eleitoral de 2026.',score:7.7,set:S('transversal')},
-          {dim:'E',cls:'p-eco',name:'Econômico',tema:'Juros + câmbio',x:'2025 é o ano dos juros altos com economia resiliente. Câmbio pressionado é o fio de risco do ano.',score:8.3,set:S('transversal')},
-          {dim:'S',cls:'p-soc',name:'Social',tema:'Pleno emprego',x:'O grande motor de 2025: trabalho na mínima histórica sustentando consumo e renda o ano todo.',score:8.7,set:S('comercio','servicos')},
-          {dim:'T',cls:'p-tec',name:'Tecnológico',tema:'IA consolidada',x:'2025 consolida a IA como ferramenta padrão de PME. Automação industrial avança, com MG em destaque.',score:8.0,set:S('industria','servicos')},
-          {dim:'A',cls:'p-amb',name:'Ambiental',tema:'Energia + clima',x:'Custo de energia e risco hídrico se firmaram como fatores estruturais. ESG regulatório ganhou peso.',score:7.1,set:S('industria','comercio')},
-          {dim:'L',cls:'p-leg',name:'Legal',tema:'Nova era tributária',x:'2025 é o ano da preparação para a maior mudança tributária em décadas. Riscos judiciais no H2.',score:6.9,set:S('industria','servicos')}],
-        riscos:[{sev:'alto',t:'Quadro fiscal de 2026 — risco macro do ano',setlabel:'Político/Econ. · Todos',set:S('transversal')},{sev:'alto',t:'Câmbio pressionado estrutural em 2025',setlabel:'Econômico · Indústria',set:S('industria','transversal')},{sev:'alto',t:'Custo de energia consolidado',setlabel:'Ambiental · Ind./Com.',set:S('industria','comercio')},{sev:'medio',t:'Transição tributária — execução 2026',setlabel:'Legal · Ind./Serv.',set:S('industria','servicos')}],
-        opp:[{t:'Consumo como tese do ano',x:'Emprego recorde + renda em alta fazem do consumo a aposta mais sólida de 2025.',set:S('comercio','servicos')},{t:'Serviços: motor estrutural',x:'Liderança consolidada. A maior oportunidade de escala para clientes de serviços.',set:S('servicos')},{t:'IA como vantagem competitiva',x:'Adoção mainstream cria mercado sustentado de consultoria e eficiência.',set:S('industria','servicos')}],
-        long:[{st:'mat',tag:'Jan 2025 · Risco macro',t:'Câmbio pressionado — risco-chave do ano, confirmado',x:'Principal risco mapeado no início de 2025 se materializou e persistiu por todo o YTD. Fator estrutural de custo.',set:S('industria','transversal')},{st:'mat',tag:'Fev 2025 · Oportunidade',t:'Tese de consumo — o grande acerto do ano',x:'A aposta no consumo resiliente foi o principal acerto de 2025. Varejo +2,9% validou a leitura.',set:S('comercio','servicos')},{st:'cur',tag:'Mar 2025 · Risco',t:'Energia estrutural — em curso para o H2',x:'De alerta a custo estrutural. Segue como a principal pressão de margem projetada para o semestre.',set:S('industria','comercio')}]
-      }},
-      { key:'2024', year:2024, nav:'2024', sub:'Anterior ao monitoramento', data:null }
-    ]
-  }
+// DB começa vazio; é preenchido por bootstrap() antes do primeiro render.
+let DB = {
+  semanal:    { label:'Semana',    icon:'SEM', items:[] },
+  mensal:     { label:'Mês',       icon:'MÊS', items:[] },
+  trimestral: { label:'Trimestre', icon:'TRI', items:[] },
+  semestral:  { label:'Semestre',  icon:'SEM', items:[] },
+  anual:      { label:'Ano',       icon:'ANO', items:[] },
 };
 
-// índice atual selecionado por tipo de período (default = 0 = mais recente)
+// Converte o JSON do motor (data/<semana>.json) para o formato de "data" do portal.
+function adaptarSemana(json) {
+  // KPIs: motor usa {label,valor,cor,sub}; portal usa {l,v,c,s}
+  const kpis = (json.kpis || []).map(k => ({
+    l: k.label, v: k.valor, c: k.cor || 'neutral', s: k.sub || ''
+  }));
+
+  // Clipping: motor usa {setores,fonte,titulo,texto,url}; portal usa {set,fonte,t,x,url}
+  const clipping = (json.clipping || []).map(c => ({
+    set: c.setores || ['transversal'], fonte: c.fonte || '',
+    t: c.titulo || '', x: c.texto || '', url: c.url || '#'
+  }));
+
+  // PESTEL: motor usa {dim,nome,tema,texto,score,setores}; portal usa {dim,cls,name,tema,x,score,set}
+  const clsMap = { P:'p-pol', E:'p-eco', S:'p-soc', T:'p-tec', A:'p-amb', L:'p-leg' };
+  const pestel = (json.pestel || []).map(p => ({
+    dim: p.dim, cls: clsMap[p.dim] || 'p-eco', name: p.nome || '',
+    tema: p.tema || '', x: p.texto || '', score: p.score || 0,
+    set: p.setores || ['transversal']
+  }));
+
+  // Longitudinal: motor manda sinais rankeados; portal separa por status visual.
+  // status do sinal: monitorar/em_curso/materializado → chip mon/cur/mat
+  const stMap = { materializado:'mat', em_curso:'cur', monitorar:'mon', dormindo:'mon' };
+  const long = (json.longitudinal || []).map(s => ({
+    st: stMap[s.status] || 'mon',
+    tag: `${s.dimensao || '·'} · relevância ${Math.round(s.relevancia || 0)}`,
+    t: s.titulo || '', x: `Sinal ${s.tipo || ''} em acompanhamento.`,
+    set: s.setores || ['transversal']
+  }));
+
+  // Riscos e oportunidades para os painéis laterais: derivados dos sinais longitudinais
+  const riscos = (json.longitudinal || [])
+    .filter(s => s.tipo === 'risco')
+    .slice(0, 5)
+    .map(s => ({
+      sev: (s.relevancia >= 70 ? 'alto' : s.relevancia >= 45 ? 'medio' : 'baixo'),
+      t: s.titulo || '', setlabel: `${s.dimensao || ''} · ${(s.setores||[]).join('/')}`,
+      set: s.setores || ['transversal']
+    }));
+  const opp = (json.longitudinal || [])
+    .filter(s => s.tipo === 'oportunidade')
+    .slice(0, 5)
+    .map(s => ({
+      t: s.titulo || '', x: `Oportunidade em ${(s.setores||[]).join(', ')}.`,
+      set: s.setores || ['transversal']
+    }));
+
+  return {
+    title: json.label || 'Clipping da semana',
+    subtitle: `${json.periodo || ''} · gerado automaticamente · 28 fontes`,
+    badge: json.periodo || '', stamp: formatarStamp(json.gerado_em),
+    kpiTitle: 'Indicadores da semana',
+    kpis, clipping, pestel, riscos, opp, long
+  };
+}
+
+function formatarStamp(iso) {
+  if (!iso) return 'Gerado automaticamente';
+  try {
+    const d = new Date(iso);
+    return 'Gerado ' + d.toLocaleDateString('pt-BR') + ' · ' +
+           d.toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit' });
+  } catch { return 'Gerado automaticamente'; }
+}
+
+function anoDaChave(chave) {
+  const m = /^(\d{4})-W(\d+)/.exec(chave || '');
+  return m ? parseInt(m[1], 10) : new Date().getFullYear();
+}
+function subDaChave(chave, label) {
+  const m = /-W(\d+)/.exec(chave || '');
+  return m ? `Semana ${parseInt(m[1], 10)}` : (label || '');
+}
+
+// Placeholder para os períodos ainda não construídos (mês/trimestre/etc)
+function itemEmBreve(label, icon) {
+  return {
+    key: 'em-breve', year: new Date().getFullYear(),
+    nav: label, sub: 'consolidação em breve', data: null
+  };
+}
+
+// ═══ BOOTSTRAP: busca os dados reais e monta o DB ═══
+async function bootstrap() {
+  // 1. Períodos de consolidação: por enquanto, placeholders "em breve" (Caminho A)
+  DB.mensal.items     = [itemEmBreve('Mês atual')];
+  DB.trimestral.items = [itemEmBreve('Trimestre atual')];
+  DB.semestral.items  = [itemEmBreve('Semestre atual')];
+  DB.anual.items      = [itemEmBreve('Ano atual')];
+
+  // 2. Semanas: lê o índice; se não houver, tenta o ultimo.json; se nada, estado inicial
+  let semanas = [];
+  try {
+    const idxResp = await fetch('data/index.json', { cache: 'no-store' });
+    if (idxResp.ok) {
+      const idx = await idxResp.json();
+      const lista = (idx.semanas || []);
+      // busca cada arquivo semanal (limita a 20 mais recentes para não pesar)
+      for (const s of lista.slice(0, 20)) {
+        try {
+          const r = await fetch('data/' + s.arquivo, { cache: 'no-store' });
+          if (r.ok) {
+            const j = await r.json();
+            semanas.push({
+              key: s.chave, year: anoDaChave(s.chave),
+              nav: subDaChave(s.chave, s.label), sub: s.label,
+              data: adaptarSemana(j)
+            });
+          }
+        } catch (e) { /* arquivo individual falhou: pula, não quebra o portal */ }
+      }
+    }
+  } catch (e) { /* índice não existe ainda: tenta ultimo.json abaixo */ }
+
+  // Fallback: sem índice, tenta o ultimo.json direto
+  if (semanas.length === 0) {
+    try {
+      const r = await fetch('data/ultimo.json', { cache: 'no-store' });
+      if (r.ok) {
+        const j = await r.json();
+        semanas.push({
+          key: j.periodo, year: anoDaChave(j.periodo),
+          nav: subDaChave(j.periodo, j.label), sub: j.label,
+          data: adaptarSemana(j)
+        });
+      }
+    } catch (e) { /* nem ultimo.json existe: estado inicial abaixo */ }
+  }
+
+  // Fallback final: nenhum dado ainda (antes da 1ª geração)
+  if (semanas.length === 0) {
+    semanas.push({
+      key: 'inicial', year: new Date().getFullYear(),
+      nav: 'Aguardando 1ª coleta', sub: 'o motor ainda não rodou', data: null
+    });
+  }
+
+  DB.semanal.items = semanas;
+
+  // reseta índices e renderiza
+  Object.keys(CUR).forEach(k => CUR[k] = 0);
+  renderAll();
+}
 const CUR = { semanal:0, mensal:0, trimestral:0, semestral:0, anual:0 };
 
 /* ═══════════════════ ESTADO E HELPERS ═══════════════════ */
@@ -910,7 +824,12 @@ window.addEventListener('scroll',()=>{
   document.querySelectorAll('.toc-item').forEach(it=>it.classList.toggle('active',it.dataset.scroll===cur));
 });
 
-renderAll();
+// wire do botão "Atualizar agora"
+const _btn = document.getElementById('btnAtualizar');
+if (_btn) _btn.href = URL_ATUALIZAR;
+
+bootstrap();
+
 </script>
 </body>
 </html>
