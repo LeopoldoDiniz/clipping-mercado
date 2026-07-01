@@ -1,0 +1,42 @@
+name: Clipping Semanal
+
+# Dispara toda segunda-feira às 10h UTC = 07h de Divinópolis (UTC-3)
+# e permite disparo manual pelo botão "Run workflow"
+on:
+  schedule:
+    - cron: "0 10 * * 1"
+  workflow_dispatch:
+
+# Permite ao workflow commitar os arquivos gerados de volta no repositório
+permissions:
+  contents: write
+
+jobs:
+  gerar-clipping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install google-genai supabase
+
+      - name: Rodar o motor do clipping
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python motor.py
+
+      - name: Publicar os dados gerados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Clipping automático: $(date +'%Y-%m-%d')"
+          git push
