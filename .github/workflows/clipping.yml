@@ -1,13 +1,17 @@
 name: Clipping Semanal
 
-# Dispara toda segunda-feira às 10h UTC = 07h de Divinópolis (UTC-3)
-# e permite disparo manual pelo botão "Run workflow"
+# Dois disparos por semana:
+#  - Segunda 10h UTC (07h Divinópolis) = clipping principal da semana
+#  - Quinta  10h UTC (07h Divinópolis) = atualização + mantém o Supabase acordado
+# Como o motor respeita "1 ciclo = 1 semana", a quinta NÃO infla a relevância:
+# ela atualiza o que mudou e mantém o banco ativo (evita a pausa de 7 dias).
+# O botão de disparo manual (workflow_dispatch) usa a mesma lógica.
 on:
   schedule:
     - cron: "0 10 * * 1"
+    - cron: "0 10 * * 4"
   workflow_dispatch:
 
-# Permite ao workflow commitar os arquivos gerados de volta no repositório
 permissions:
   contents: write
 
@@ -38,5 +42,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "Clipping automático: $(date +'%Y-%m-%d')"
+          git diff --staged --quiet || git commit -m "Clipping automático: $(date +'%Y-%m-%d %H:%M')"
           git push
