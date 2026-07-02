@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market Intelligence — Simulação Completa</title>
+<title>Nexosis IM · Cockpit de Inteligência</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --bg:#0b0f1a; --surface:#131928; --surface-2:#1a2235; --border:#1e2d47;
-    --text:#e8edf5; --text-2:#8a9ab5; --text-3:#4a5a72;
-    --blue:#3b82f6; --blue-dim:#1e3a5f; --green:#10b981; --green-dim:#064e3b;
-    --red:#ef4444; --red-dim:#450a0a; --amber:#f59e0b; --amber-dim:#451a03;
-    --purple:#8b5cf6; --cyan:#06b6d4;
+    --bg:#12140d; --surface:#1a1e13; --surface-2:#242a1a; --border:#333a24;
+    --text:#e9ead9; --text-2:#a3a986; --text-3:#6b7050;
+    /* "blue" agora é o verde-musgo/oliva de acento (mantém o nome da variável p/ não quebrar refs) */
+    --blue:#8a9a5b; --blue-dim:#2c3419; --green:#7d9153; --green-dim:#2a331a;
+    --red:#c85a4a; --red-dim:#3a1613; --amber:#c9a24b; --amber-dim:#3a2c10;
+    --sand:#c8b789; --sand-dim:#39321f;
+    --purple:#b0a56a; --cyan:#7d8a4e;
     --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
     --toc-w:220px; --top-h:56px;
   }
@@ -59,9 +61,9 @@
   .sf-dot { width:8px; height:8px; border-radius:50%; }
   .sf-count { font-family:var(--mono); font-size:10px; opacity:.7; }
   .sfd-todos { background:var(--text-2); }
-  .sfd-industria { background:#60a5fa; }
+  .sfd-industria { background:#a8b874; }
   .sfd-comercio { background:#34d399; }
-  .sfd-servicos { background:#a78bfa; }
+  .sfd-servicos { background:#c9b98a; }
 
   /* SELETOR TEMPORAL */
   .time-selector { display:flex; align-items:center; gap:10px; margin-bottom:24px; flex-wrap:wrap; }
@@ -121,13 +123,18 @@
   .badge { padding:5px 12px; border-radius:20px; font-size:11px; font-weight:600; font-family:var(--mono); letter-spacing:.5px; white-space:nowrap; }
   .badge-blue { background:var(--blue-dim); color:var(--blue); }
   .badge-green { background:var(--green-dim); color:var(--green); }
-  .badge-refresh { background:var(--blue-dim); color:var(--blue); text-decoration:none; cursor:pointer; transition:all .15s; }
-  .badge-refresh:hover { background:var(--blue); color:#fff; }
+  .tb-btn { background:var(--surface-2); color:var(--text-2); border:1px solid var(--border);
+    font-family:var(--mono); font-size:11px; padding:5px 11px; border-radius:7px; cursor:pointer; transition:all .15s; }
+  .tb-btn:hover { border-color:var(--blue); color:var(--blue); background:var(--blue-dim); }
   .badge-sector { background:var(--surface-2); color:var(--text-2); border:1px solid var(--border); display:none; }
   .badge-sector.show { display:inline-flex; align-items:center; gap:6px; }
 
   /* KPIs */
-  .kpi-row { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:26px; }
+  .kpi-row { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:14px; margin-bottom:26px; }
+  .kpi-label { min-height:2.2em; display:flex; align-items:flex-end; }
+  .clip-links { display:flex; flex-wrap:wrap; gap:6px; }
+  .fontes-text a { color:var(--text-2); text-decoration:none; border-bottom:1px dotted var(--text-3); transition:color .15s; }
+  .fontes-text a:hover { color:var(--blue); border-bottom-color:var(--blue); }
   .kpi-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px; }
   .kpi-label { font-size:10px; color:var(--text-3); font-weight:500; text-transform:uppercase; letter-spacing:1px; margin-bottom:9px; }
   .kpi-value { font-size:24px; font-weight:800; line-height:1; margin-bottom:5px; }
@@ -155,9 +162,9 @@
   .clip-item:first-child { padding-top:0; }
   .clip-tags { display:flex; gap:6px; margin-bottom:6px; flex-wrap:wrap; align-items:center; }
   .tag-pill { font-size:10px; font-weight:600; padding:2px 8px; border-radius:4px; font-family:var(--mono); }
-  .tag-industria { background:#1e3a5f; color:#60a5fa; }
+  .tag-industria { background:#2c3419; color:#a8b874; }
   .tag-comercio { background:#064e3b; color:#34d399; }
-  .tag-servicos { background:#2e1065; color:#a78bfa; }
+  .tag-servicos { background:#2f2a1a; color:#c9b98a; }
   .tag-transversal { background:#3a2f0a; color:#fbbf24; }
   .tag-fonte { background:var(--surface-2); color:var(--text-3); }
   .clip-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:4px; line-height:1.4; }
@@ -171,9 +178,9 @@
   .pestel-list { display:flex; flex-direction:column; gap:14px; }
   .pestel-row { display:grid; grid-template-columns:36px 1fr; gap:12px; align-items:start; }
   .pestel-badge { width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:16px; flex-shrink:0; }
-  .p-pol { background:#1e3a5f; color:#60a5fa; } .p-eco { background:#064e3b; color:#34d399; }
-  .p-soc { background:#451a03; color:#fbbf24; } .p-tec { background:#2e1065; color:#a78bfa; }
-  .p-amb { background:#0c3444; color:#22d3ee; } .p-leg { background:#450a0a; color:#f87171; }
+  .p-pol { background:#2c3419; color:#a8b874; } .p-eco { background:#064e3b; color:#34d399; }
+  .p-soc { background:#451a03; color:#fbbf24; } .p-tec { background:#2f2a1a; color:#c9b98a; }
+  .p-amb { background:#242a1a; color:#c8b789; } .p-leg { background:#450a0a; color:#f87171; }
   .pestel-meta { min-width:0; }
   .pestel-name-row { display:flex; align-items:baseline; gap:8px; margin-bottom:5px; flex-wrap:wrap; }
   .pestel-name { font-size:12px; font-weight:600; color:var(--text); }
@@ -190,7 +197,7 @@
   .area-foot { margin-top:18px; padding-top:14px; border-top:1px solid var(--border); }
   .foot-grad { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
   .fg-label { font-family:var(--mono); font-size:9px; color:var(--text-3); letter-spacing:1px; }
-  .fg-bar { flex:1; height:4px; border-radius:2px; background:linear-gradient(90deg,#4a5a72 0%,#60a5fa 55%,#10b981 100%); }
+  .fg-bar { flex:1; height:4px; border-radius:2px; background:linear-gradient(90deg,#4a5a72 0%,#a8b874 55%,#10b981 100%); }
   .foot-note { font-family:var(--mono); font-size:9px; color:var(--text-3); line-height:1.55; }
 
   /* SIDEBAR */
@@ -264,6 +271,104 @@
     .side-stack { flex-direction:column; }
     .long-grid { grid-template-columns:1fr; }
   }
+
+  /* ═══ COCKPIT: layout de sistema ═══ */
+  .topbar-right { display:flex; align-items:center; gap:12px; }
+  .gen-stamp { font-family:var(--mono); font-size:10.5px; color:var(--text-3); }
+  .page-title { font-size:22px; }
+  .page-header { margin-bottom:16px; }
+
+  .side { position:fixed; top:var(--top-h); left:0; bottom:0; width:var(--toc-w);
+    background:var(--surface); border-right:1px solid var(--border);
+    padding:16px 12px 24px; overflow-y:auto; z-index:60; }
+  .side-label { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--text-3); padding:0 8px; margin:4px 0 10px; }
+  .side-item { display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+    background:none; border:1px solid transparent; border-radius:9px; padding:8px 10px;
+    cursor:pointer; transition:all .15s; margin-bottom:3px; font-family:var(--sans); }
+  .side-item:hover { background:var(--surface-2); }
+  .side-item.active { background:var(--blue-dim); border-color:rgba(96,165,250,.25); }
+  .si-num { font-family:var(--mono); font-size:10px; color:var(--text-3); width:14px; text-align:center; flex-shrink:0; }
+  .side-item.active .si-num { color:var(--blue); }
+  .si-title { display:block; font-size:12.5px; font-weight:600; color:var(--text-2); }
+  .side-item.active .si-title { color:var(--blue); }
+  .si-q { display:block; font-size:10px; color:var(--text-3); margin-top:1px; }
+  .side .sector-filter { margin-top:20px; }
+
+  .view { display:none; }
+  .view.active { display:block; animation:fadeUp .28s ease; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+
+  .hero { display:grid; grid-template-columns:auto 1fr; gap:26px; align-items:center;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:18px 22px; margin-bottom:24px; }
+  .hero-gauge { display:flex; align-items:center; gap:14px; }
+  .gauge-ring { width:86px; height:86px; border-radius:50%; display:flex; align-items:center;
+    justify-content:center; position:relative; background:var(--surface-2); flex-shrink:0; }
+  .gauge-ring::after { content:''; position:absolute; inset:8px; border-radius:50%; background:var(--surface); }
+  .gauge-val { position:relative; z-index:1; font-family:var(--mono); font-size:20px; font-weight:700; color:var(--text); }
+  .gauge-label { font-size:10.5px; color:var(--text-3); line-height:1.5; }
+  .gauge-tag { font-family:var(--mono); font-size:9px; padding:2px 8px; border-radius:10px; display:inline-block; margin-top:4px; }
+  .hero-kicker { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--blue); margin-bottom:7px; }
+  .hero-narrative { font-size:14.5px; line-height:1.65; color:var(--text); }
+  .hero-narrative strong { color:var(--blue); }
+  .hero-chips { display:flex; gap:8px; flex-wrap:wrap; margin-top:11px; }
+  .chip { font-family:var(--mono); font-size:10px; padding:4px 10px; border-radius:12px;
+    background:var(--surface-2); border:1px solid var(--border); color:var(--text-2); }
+
+  .ov-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; }
+  .ov-open { background:none; border:1px solid var(--border); color:var(--blue); font-family:var(--mono);
+    font-size:10px; padding:4px 10px; border-radius:8px; cursor:pointer; transition:all .15s; }
+  button.ov-open:hover { background:var(--blue-dim); border-color:var(--blue); }
+  .ov-item { padding:10px 0; border-bottom:1px solid var(--border); cursor:pointer; }
+  .ov-item:last-child { border-bottom:none; }
+  .ov-item:hover .ovi-t { color:var(--blue); }
+  .ovi-t { font-size:12.5px; font-weight:600; color:var(--text); line-height:1.45; margin-top:5px; transition:color .15s; }
+  .ov-line { display:flex; align-items:center; gap:9px; padding:9px 0; border-bottom:1px solid var(--border); font-size:12px; color:var(--text); }
+  .ov-line:last-child { border-bottom:none; }
+  .ov-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+
+  .heatmap { display:grid; grid-template-columns:112px repeat(3,1fr); gap:6px; }
+  .hm-col { font-family:var(--mono); font-size:9px; letter-spacing:1px; color:var(--text-3);
+    text-transform:uppercase; text-align:center; align-self:end; padding-bottom:2px; }
+  .hm-dim { display:flex; align-items:center; gap:8px; font-size:11px; color:var(--text-2); }
+  .hm-cell { height:34px; border-radius:7px; display:flex; align-items:center; justify-content:center;
+    font-family:var(--mono); font-size:11px; font-weight:600; color:var(--text); border:1px solid var(--border); }
+
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; }
+
+  @media (max-width: 1100px) {
+    .ov-grid, .grid-2 { grid-template-columns:1fr; }
+    .hero { grid-template-columns:1fr; }
+  }
+  @media (max-width: 860px) {
+    .side { position:static; width:auto; margin-top:var(--top-h); display:flex; flex-wrap:wrap;
+      gap:6px; border-right:0; border-bottom:1px solid var(--border); padding:10px 14px; overflow:visible; }
+    .side .side-label, .si-q { display:none; }
+    .side-item { width:auto; margin-bottom:0; }
+    .side .sector-filter { margin-top:0; display:flex; gap:6px; }
+    .main { margin-left:0; padding-top:16px; }
+  }
+
+
+  /* ═══ EXPORTAÇÃO / IMPRESSÃO ═══ */
+  @media print {
+    @page { margin: 14mm; size: A4; }
+    body { background:#fff !important; color:#111 !important; }
+    .topbar, .side, .time-selector, .ov-open, footer .ti { display:none !important; }
+    .main { margin-left:0 !important; padding:0 !important; max-width:100% !important; }
+    /* imprime TODAS as visões, não só a ativa */
+    .view { display:block !important; page-break-inside:avoid; margin-bottom:18px; }
+    .view + .view { page-break-before:always; }
+    .card, .hero { border:1px solid #ccc !important; background:#fff !important; box-shadow:none !important; }
+    * { color:#111 !important; }
+    .page-subtitle, .foot-note, .ts-opt-sub, .gen-stamp { color:#555 !important; }
+    a { color:#111 !important; text-decoration:underline; }
+    .hm-cell, .kpi-card, .clip-item, .pestel-row, .long-card { break-inside:avoid; }
+    .print-only { display:block !important; }
+  }
+  .print-only { display:none; }
+
 </style>
 </head>
 <body>
@@ -272,7 +377,7 @@
 <div class="topbar">
   <div class="topbar-brand">
     <div class="brand-dot"></div>
-    <span class="brand-name">Market Intelligence</span>
+    <span class="brand-name">Nexosis <span style="color:var(--sand);">IM</span></span>
   </div>
   <nav class="topbar-nav" id="periodNav">
     <button data-period="semanal" class="active">Semanal</button>
@@ -281,25 +386,41 @@
     <button data-period="semestral">Semestral</button>
     <button data-period="anual">Anual (YTD)</button>
   </nav>
-  <div class="topbar-right" id="genStamp">Gerado 09/06/2025 · 07:02</div>
+  <div class="topbar-right">
+    <span class="gen-stamp" id="genStamp"></span>
+    <button class="tb-btn" id="btnPrint" title="Exportar como PDF (imprimir)">⎙ PDF</button>
+    <button class="tb-btn" id="btnJSON" title="Baixar os dados brutos desta edição em JSON">⬇ Dados</button>
+  </div>
 </div>
 
-<!-- TOC -->
-<nav class="toc">
-  <div class="toc-label">Nesta edição</div>
-  <a class="toc-item active" data-scroll="sec-kpis">Indicadores</a>
-  <div class="toc-divider"></div>
-  <a class="toc-item" data-scroll="sec-clip">1. Clipping Setorial</a>
-  <div class="toc-divider"></div>
-  <a class="toc-item" data-scroll="sec-pestel">2. Análise PESTEL</a>
-  <div class="toc-divider"></div>
-  <a class="toc-item" data-scroll="sec-risk">3. Riscos & Oportunidades</a>
-  <div class="toc-divider"></div>
-  <a class="toc-item" data-scroll="sec-long">4. Revisão Longitudinal</a>
-  <div class="toc-divider"></div>
-  <a class="toc-item" data-scroll="sec-fontes">Fontes monitoradas</a>
+<!-- SIDEBAR: o arco narrativo do briefing -->
+<aside class="side">
+  <div class="side-label" id="sideLabel">A história da semana</div>
+  <button class="side-item active" data-view="pulso">
+    <span class="si-num">1</span>
+    <span class="si-body"><span class="si-title">Pulso</span><span class="si-q">O que aconteceu?</span></span>
+  </button>
+  <button class="side-item" data-view="radar">
+    <span class="si-num">2</span>
+    <span class="si-body"><span class="si-title">Radar de Notícias</span><span class="si-q">O que foi publicado?</span></span>
+  </button>
+  <button class="side-item" data-view="forcas">
+    <span class="si-num">3</span>
+    <span class="si-body"><span class="si-title">Forças do Ambiente</span><span class="si-q">Que forças atuam?</span></span>
+  </button>
+  <button class="side-item" data-view="alertas">
+    <span class="si-num">4</span>
+    <span class="si-body"><span class="si-title">Alertas</span><span class="si-q">Riscos e oportunidades?</span></span>
+  </button>
+  <button class="side-item" data-view="trajetorias">
+    <span class="si-num">5</span>
+    <span class="si-body"><span class="si-title">Trajetórias</span><span class="si-q">Como evolui no tempo?</span></span>
+  </button>
+  <button class="side-item" data-view="fontes">
+    <span class="si-num">·</span>
+    <span class="si-body"><span class="si-title">Fontes</span><span class="si-q">De onde vem a informação</span></span>
+  </button>
 
-  <!-- SECTOR FILTER -->
   <div class="sector-filter">
     <div class="sf-title">Filtrar por setor</div>
     <button class="sf-btn active" data-sector="todos">
@@ -319,9 +440,8 @@
       <span class="sf-count" id="cnt-servicos"></span>
     </button>
   </div>
-</nav>
+</aside>
 
-<!-- MAIN -->
 <main class="main">
   <div class="page-header">
     <div>
@@ -332,11 +452,10 @@
       <span class="badge badge-blue" id="periodBadge"></span>
       <span class="badge badge-sector" id="sectorBadge"></span>
       <span class="badge badge-green">● Atualizado</span>
-      <a class="badge badge-refresh" id="btnAtualizar" href="#" target="_blank" rel="noopener" title="Dispara uma nova coleta agora">↻ Atualizar agora</a>
     </div>
   </div>
 
-  <!-- SELETOR TEMPORAL -->
+  <!-- SELETOR TEMPORAL (vale para todas as visões) -->
   <div class="time-selector">
     <button class="ts-arrow" id="tsPrev">‹</button>
     <div class="ts-dropdown">
@@ -363,20 +482,63 @@
     </div>
   </div>
   <div id="sectionsWrap">
-  <div class="sec-head" id="sec-kpis">
-    <span class="sec-num">◆</span>
-    <span class="sec-title" id="kpiTitle">Indicadores</span>
-    <span class="sec-line"></span>
-  </div>
-  <div class="kpi-row" id="kpiRow"></div>
 
-  <div class="grid-3">
+  <!-- ═══ VISÃO 1 · PULSO ═══ -->
+  <section class="view active" id="view-pulso">
+    <div class="hero">
+      <div class="hero-gauge">
+        <div class="gauge-ring" id="gaugeRing"><span class="gauge-val" id="gaugeVal">–</span></div>
+        <div class="gauge-label">Pressão<br>da semana<br><span id="gaugeTag" class="gauge-tag"></span></div>
+      </div>
+      <div class="hero-mid">
+        <div class="hero-kicker">Briefing de 60 segundos</div>
+        <div class="hero-narrative" id="ovNarrativa"></div>
+        <div class="hero-chips" id="ovChips"></div>
+      </div>
+    </div>
+
+    <div class="sec-head" id="sec-kpis">
+      <span class="sec-num">◆</span>
+      <span class="sec-title" id="kpiTitle">Indicadores</span>
+      <span class="sec-line"></span>
+    </div>
+    <div class="kpi-row" id="kpiRow"></div>
+
+    <div class="ov-grid">
+      <div class="card">
+        <div class="card-header"><span class="card-title">Onde a pressão se concentra</span><span class="card-count">setor × dimensão</span></div>
+        <div class="card-body">
+          <div class="heatmap" id="ovHeat"></div>
+          <div class="foot-note" style="margin-top:12px;">Cruzamento das intensidades PESTEL com os sinais ativos. Quanto mais quente a célula, mais atenção o par setor × dimensão exige nesta semana.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-title">Destaques do radar</span><button class="ov-open" data-view="radar">abrir →</button></div>
+        <div class="card-body" id="ovClip"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-title">Alertas que pedem ação</span><button class="ov-open" data-view="alertas">abrir →</button></div>
+        <div class="card-body" id="ovAlertas"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-title">Trajetórias em movimento</span><button class="ov-open" data-view="trajetorias">abrir →</button></div>
+        <div class="card-body" id="ovLong"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VISÃO 2 · RADAR ═══ -->
+  <section class="view" id="view-radar">
     <div class="card">
-      <div class="card-header" id="sec-clip"><span class="card-title">1 · Clipping Setorial</span><span class="card-count" id="clipCount"></span></div>
+      <div class="card-header"><span class="card-title">Radar de Notícias — Clipping Setorial</span><span class="card-count" id="clipCount"></span></div>
       <div class="card-body" id="clipBody"></div>
     </div>
+  </section>
+
+  <!-- ═══ VISÃO 3 · FORÇAS ═══ -->
+  <section class="view" id="view-forcas">
     <div class="card">
-      <div class="card-header" id="sec-pestel"><span class="card-title">2 · Análise PESTEL</span><span class="card-count" id="pestelCount"></span></div>
+      <div class="card-header"><span class="card-title">Forças do Ambiente — Análise PESTEL</span><span class="card-count" id="pestelCount"></span></div>
       <div class="card-body">
         <div class="pestel-list" id="pestelBody"></div>
         <div class="area-foot">
@@ -385,9 +547,13 @@
         </div>
       </div>
     </div>
-    <div class="side-stack">
+  </section>
+
+  <!-- ═══ VISÃO 4 · ALERTAS ═══ -->
+  <section class="view" id="view-alertas">
+    <div class="grid-2">
       <div class="card">
-        <div class="card-header" id="sec-risk"><span class="card-title">3 · Riscos</span><span class="card-count" id="riskCount"></span></div>
+        <div class="card-header"><span class="card-title">Riscos</span><span class="card-count" id="riskCount"></span></div>
         <div class="card-body"><div class="risk-panel" id="riskBody"></div></div>
       </div>
       <div class="card">
@@ -395,12 +561,13 @@
         <div class="card-body" id="oppBody"></div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="block">
-    <div class="sec-head" id="sec-long">
-      <span class="sec-num">4</span>
-      <span class="sec-title">Revisão Longitudinal — Rastreamento de Riscos &amp; Oportunidades</span>
+  <!-- ═══ VISÃO 5 · TRAJETÓRIAS ═══ -->
+  <section class="view" id="view-trajetorias">
+    <div class="sec-head">
+      <span class="sec-num">◆</span>
+      <span class="sec-title">Revisão Longitudinal — a memória do sistema</span>
       <span class="sec-line"></span>
     </div>
     <div class="long-grid" id="longBody"></div>
@@ -411,24 +578,27 @@
         <div class="ll-item"><span class="ll-dot lld-mon"></span><span class="ll-text"><strong>Monitorar</strong>Sem evolução relevante. Permanece no radar com revisão periódica.</span></div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="block">
+  <!-- ═══ VISÃO 6 · FONTES ═══ -->
+  <section class="view" id="view-fontes">
     <div class="card">
       <div class="card-header" id="sec-fontes"><span class="card-title">Fontes monitoradas no período</span></div>
       <div class="card-body">
         <div class="fontes-text">
-          IBGE (PMC, PIM, PMS, PNAD) · BCB Focus · BCB Nota de Crédito · FGV/IBRE · IPEA Data · CNI · MDIC · ANP · FIESP · CNC · Fecomércio MG · CNDL/SPC Brasil · NielsenIQ · Sebrae · Agência Sebrae · Febraban · Agência Senado · Agência Câmara · Receita Federal · CADE · MIT Technology Review BR · ANEEL · MMA · B3 Sustentabilidade · Valor Econômico · Exame · InfoMoney · EPBR
+          <a href="https://agenciadenoticias.ibge.gov.br" target="_blank" rel="noopener">IBGE (PMC, PIM, PMS, PNAD, IPP)</a> · <a href="https://www.bcb.gov.br/publicacoes/focus" target="_blank" rel="noopener">BCB Focus</a> · <a href="https://www.bcb.gov.br/estatisticas/estatisticasmonetariascredito" target="_blank" rel="noopener">BCB Nota de Crédito</a> · <a href="https://portalibre.fgv.br" target="_blank" rel="noopener">FGV/IBRE</a> · <a href="http://www.ipeadata.gov.br" target="_blank" rel="noopener">IPEA Data</a> · <a href="https://noticias.portaldaindustria.com.br" target="_blank" rel="noopener">CNI</a> · <a href="https://www.gov.br/mdic/pt-br" target="_blank" rel="noopener">MDIC</a> · <a href="https://www.gov.br/anp/pt-br" target="_blank" rel="noopener">ANP</a> · <a href="https://www.fiesp.com.br" target="_blank" rel="noopener">FIESP</a> · <a href="https://portaldocomercio.org.br" target="_blank" rel="noopener">CNC</a> · <a href="https://www.fecomerciomg.org.br" target="_blank" rel="noopener">Fecomércio MG</a> · <a href="https://cndl.org.br" target="_blank" rel="noopener">CNDL/SPC Brasil</a> · <a href="https://nielseniq.com/global/pt" target="_blank" rel="noopener">NielsenIQ</a> · <a href="https://sebrae.com.br" target="_blank" rel="noopener">Sebrae</a> · <a href="https://agenciasebrae.com.br" target="_blank" rel="noopener">Agência Sebrae</a> · <a href="https://portal.febraban.org.br" target="_blank" rel="noopener">Febraban</a> · <a href="https://www12.senado.leg.br/noticias" target="_blank" rel="noopener">Agência Senado</a> · <a href="https://www.camara.leg.br/noticias" target="_blank" rel="noopener">Agência Câmara</a> · <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener">Receita Federal</a> · <a href="https://www.gov.br/cade/pt-br" target="_blank" rel="noopener">CADE</a> · <a href="https://mittechreview.com.br" target="_blank" rel="noopener">MIT Technology Review BR</a> · <a href="https://www.gov.br/aneel/pt-br" target="_blank" rel="noopener">ANEEL</a> · <a href="https://www.gov.br/mma/pt-br" target="_blank" rel="noopener">MMA</a> · <a href="https://www.b3.com.br" target="_blank" rel="noopener">B3 Sustentabilidade</a> · <a href="https://valor.globo.com" target="_blank" rel="noopener">Valor Econômico</a> · <a href="https://exame.com" target="_blank" rel="noopener">Exame</a> · <a href="https://www.infomoney.com.br" target="_blank" rel="noopener">InfoMoney</a> · <a href="https://epbr.com.br" target="_blank" rel="noopener">EPBR</a>
           <span class="fontes-count">28 fontes verificadas · todas consultadas no período</span>
         </div>
       </div>
     </div>
+  </section>
+
   </div><!-- /sectionsWrap -->
   </div><!-- /contentArea -->
 </main>
 
 <footer>
-  <span>Market Intelligence · Formatar Consultoria · Divinópolis MG</span>
+  <span>Nexosis IM · Nexosis · Inteligência de Mercado</span>
   <span id="footStamp"></span>
 </footer>
 
@@ -463,7 +633,6 @@ function S(...a){return a;}
 
 // URL do botão "Atualizar agora": leva à tela do GitHub Actions onde você
 // clica "Run workflow". TROQUE "SEU-USUARIO" pelo seu usuário do GitHub.
-const URL_ATUALIZAR = "https://github.com/LeopoldoDiniz/clipping-mercado/actions/workflows/clipping.yml";
 
 // DB começa vazio; é preenchido por bootstrap() antes do primeiro render.
 let DB = {
@@ -482,10 +651,19 @@ function adaptarSemana(json) {
   }));
 
   // Clipping: motor usa {setores,fonte,titulo,texto,url}; portal usa {set,fonte,t,x,url}
-  const clipping = (json.clipping || []).map(c => ({
-    set: c.setores || ['transversal'], fonte: c.fonte || '',
-    t: c.titulo || '', x: c.texto || '', url: c.url || '#'
-  }));
+  // Clipping: formato novo {fontes:[{nome,url}]} com retrocompatibilidade
+  // para o antigo {fonte,url}. Links inválidos (null) fazem o botão sumir.
+  const clipping = (json.clipping || []).map(c => {
+    let fontes = c.fontes;
+    if (!fontes || !fontes.length) {
+      fontes = [{ nome: c.fonte || 'Fonte', url: c.url || null }];
+    }
+    return {
+      set: c.setores || ['transversal'],
+      t: c.titulo || '', x: c.texto || '',
+      fontes: fontes.map(f => ({ nome: f.nome || f.fonte || 'Fonte', url: f.url || null }))
+    };
+  });
 
   // PESTEL: motor usa {dim,nome,tema,texto,score,setores}; portal usa {dim,cls,name,tema,x,score,set}
   const clsMap = { P:'p-pol', E:'p-eco', S:'p-soc', T:'p-tec', A:'p-amb', L:'p-leg' };
@@ -500,8 +678,10 @@ function adaptarSemana(json) {
   const stMap = { materializado:'mat', em_curso:'cur', monitorar:'mon', dormindo:'mon' };
   const long = (json.longitudinal || []).map(s => ({
     st: stMap[s.status] || 'mon',
-    tag: `${s.dimensao || '·'} · relevância ${Math.round(s.relevancia || 0)}`,
-    t: s.titulo || '', x: `Sinal ${s.tipo || ''} em acompanhamento.`,
+    tipo: s.tipo || 'risco', dim: s.dimensao || '', rel: s.relevancia || 0,
+    tag: `${s.periodo_observacao || s.dimensao || '·'} · ${s.tipo === 'risco' ? 'Risco' : 'Oportunidade'} · relevância ${Math.round(s.relevancia || 0)}`,
+    t: s.titulo || '',
+    x: s.ultima_observacao || `Sinal ${s.tipo || ''} em acompanhamento.`,
     set: s.setores || ['transversal']
   }));
 
@@ -518,7 +698,8 @@ function adaptarSemana(json) {
     .filter(s => s.tipo === 'oportunidade')
     .slice(0, 5)
     .map(s => ({
-      t: s.titulo || '', x: `Oportunidade em ${(s.setores||[]).join(', ')}.`,
+      t: s.titulo || '',
+      x: s.ultima_observacao || `Oportunidade em ${(s.setores||[]).join(', ')}.`,
       set: s.setores || ['transversal']
     }));
 
@@ -543,6 +724,10 @@ function formatarStamp(iso) {
 function anoDaChave(chave) {
   const m = /^(\d{4})-W(\d+)/.exec(chave || '');
   return m ? parseInt(m[1], 10) : new Date().getFullYear();
+}
+function limparSub(label) {
+  // remove o prefixo 'Semana NN · ' para o seletor não repetir a palavra
+  return (label || '').replace(/^Semana\s+\d+\s*·\s*/, '');
 }
 function subDaChave(chave, label) {
   const m = /-W(\d+)/.exec(chave || '');
@@ -580,8 +765,8 @@ async function bootstrap() {
             const j = await r.json();
             semanas.push({
               key: s.chave, year: anoDaChave(s.chave),
-              nav: subDaChave(s.chave, s.label), sub: s.label,
-              data: adaptarSemana(j)
+              nav: subDaChave(s.chave, s.label), sub: limparSub(s.label),
+              data: adaptarSemana(j), raw: j
             });
           }
         } catch (e) { /* arquivo individual falhou: pula, não quebra o portal */ }
@@ -597,8 +782,8 @@ async function bootstrap() {
         const j = await r.json();
         semanas.push({
           key: j.periodo, year: anoDaChave(j.periodo),
-          nav: subDaChave(j.periodo, j.label), sub: j.label,
-          data: adaptarSemana(j)
+          nav: subDaChave(j.periodo, j.label), sub: limparSub(j.label),
+          data: adaptarSemana(j), raw: j
         });
       }
     } catch (e) { /* nem ultimo.json existe: estado inicial abaixo */ }
@@ -626,8 +811,8 @@ let state = { period:'semanal', sector:'todos', menuOpen:false };
 const SECTOR_LABEL = { industria:'Indústria', comercio:'Comércio', servicos:'Serviços', transversal:'Transversal' };
 const SECTOR_TAGCLASS = { industria:'tag-industria', comercio:'tag-comercio', servicos:'tag-servicos', transversal:'tag-transversal' };
 const SECTOR_STAGCOLOR = {
-  industria:'background:#1e3a5f;color:#60a5fa', comercio:'background:#064e3b;color:#34d399',
-  servicos:'background:#2e1065;color:#a78bfa', transversal:'background:#3a2f0a;color:#fbbf24'
+  industria:'background:#2c3419;color:#a8b874', comercio:'background:#064e3b;color:#34d399',
+  servicos:'background:#2f2a1a;color:#c9b98a', transversal:'background:#3a2f0a;color:#fbbf24'
 };
 
 function match(itemSetores){
@@ -636,7 +821,7 @@ function match(itemSetores){
 }
 function sectorTags(setores){ return setores.map(s=>`<span class="pestel-stag" style="${SECTOR_STAGCOLOR[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
 function clipTags(setores){ return setores.map(s=>`<span class="tag-pill ${SECTOR_TAGCLASS[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
-function barColor(score){ if(score>=8)return'#10b981'; if(score>=6.5)return'#60a5fa'; return'#8a9ab5'; }
+function barColor(score){ if(score>=8)return'#10b981'; if(score>=6.5)return'#a8b874'; return'#8a9ab5'; }
 
 // retorna a instância atualmente selecionada do período ativo
 function currentInstance(){ return DB[state.period].items[CUR[state.period]]; }
@@ -708,6 +893,7 @@ function renderAll(){
   document.getElementById('emptyWrap').style.display='none';
 
   const d = inst.data;
+  _edicaoAtual = inst.raw || null;
   document.getElementById('pageTitle').textContent = d.title;
   document.getElementById('pageSubtitle').textContent = d.subtitle;
   document.getElementById('periodBadge').textContent = d.badge;
@@ -724,16 +910,21 @@ function renderAll(){
 
   // CLIPPING
   const clip = d.clipping.filter(c=>match(c.set));
-  document.getElementById('clipBody').innerHTML = clip.length ? clip.map(c=>`
+  const svgLink = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`;
+  document.getElementById('clipBody').innerHTML = clip.length ? clip.map(c=>{
+    const fontes = c.fontes || [];
+    const pills = fontes.map(f=>`<span class="tag-pill tag-fonte">${f.nome}</span>`).join('');
+    const links = fontes.filter(f=>f.url).map(f=>
+      `<a class="clip-link" href="${f.url}" target="_blank" rel="noopener">${svgLink}${fontes.length>1 ? f.nome : 'Ver fonte original'}</a>`
+    ).join(' ');
+    return `
     <div class="clip-item">
-      <div class="clip-tags">${clipTags(c.set)}<span class="tag-pill tag-fonte">${c.fonte}</span></div>
+      <div class="clip-tags">${clipTags(c.set)}${pills}</div>
       <div class="clip-title">${c.t}</div>
       <div class="clip-text">${c.x}</div>
-      <a class="clip-link" href="${c.url}" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        Ver fonte original
-      </a>
-    </div>`).join('') : `<div class="empty-note">Nenhuma notícia específica para este setor neste período.</div>`;
+      ${links ? `<div class="clip-links">${links}</div>` : ''}
+    </div>`;
+  }).join('') : `<div class="empty-note">Nenhuma notícia específica para este setor neste período.</div>`;
   document.getElementById('clipCount').textContent = `${clip.length} ${clip.length===1?'item':'itens'}`;
 
   // PESTEL
@@ -775,6 +966,8 @@ function renderAll(){
     </div>`).join('') : `<div class="empty-note">Nenhum rastreamento longitudinal para este setor neste período.</div>`;
 
   updateCounts();
+  renderOverview(d);
+  setSideLabel();
 }
 
 function updateCounts(){
@@ -784,6 +977,96 @@ function updateCounts(){
   const all = [...d.clipping, ...d.pestel, ...d.riscos, ...d.opp, ...d.long];
   const count = (sec)=> all.filter(it=> sec==='todos'?true:(it.set.includes('transversal')||it.set.includes(sec))).length;
   ['todos','industria','comercio','servicos'].forEach(s=>document.getElementById('cnt-'+s).textContent=count(s));
+}
+
+
+
+/* rótulo narrativo da sidebar varia com o período */
+const LABEL_PERIODO = {
+  semanal:'A história da semana', mensal:'A história mensal',
+  trimestral:'A história trimestral', semestral:'A história semestral', anual:'A história do ano'
+};
+function setSideLabel(){
+  const el=document.getElementById('sideLabel');
+  if(el) el.textContent = LABEL_PERIODO[state.period] || 'A história do período';
+}
+
+/* ═══════════════════ VISÃO GERAL: cruzamentos de inteligência ═══════════════════ */
+function renderOverview(d){
+  const P = d.pestel.filter(p=>match(p.set));
+  const C = d.clipping.filter(c=>match(c.set));
+  const L = (d.long||[]).filter(l=>match(l.set));
+  const R = L.filter(l=>l.tipo==='risco');
+  const O = L.filter(l=>l.tipo==='oportunidade');
+
+  // PRESSÃO DA SEMANA (0–100): 60% intensidade média PESTEL + 40% relevância média dos riscos
+  const mp = P.length ? P.reduce((a,p)=>a+(p.score||0),0)/P.length : 0;
+  const mr = R.length ? R.reduce((a,l)=>a+(l.rel||0),0)/R.length : null;
+  const pressao = Math.round(mr===null ? mp*10 : mp*10*0.6 + mr*0.4);
+  const corP = pressao>=70 ? '#ef4444' : pressao>=45 ? '#f59e0b' : '#10b981';
+  const tagP = pressao>=70 ? 'ALTA' : pressao>=45 ? 'MODERADA' : 'BAIXA';
+  const ring=document.getElementById('gaugeRing');
+  if(ring) ring.style.background = `conic-gradient(${corP} ${pressao*3.6}deg, var(--surface-2) 0)`;
+  const gv=document.getElementById('gaugeVal'); if(gv) gv.textContent = isFinite(pressao)?pressao:'–';
+  const gt=document.getElementById('gaugeTag');
+  if(gt){ gt.textContent=tagP; gt.style.background=corP+'22'; gt.style.color=corP; }
+
+  // NARRATIVA AUTOMÁTICA
+  const dom = P.slice().sort((a,b)=>(b.score||0)-(a.score||0))[0];
+  const nMat = L.filter(l=>l.st==='mat').length;
+  const fontesCitadas = new Set(); C.forEach(c=>(c.fontes||[]).forEach(f=>f.nome&&fontesCitadas.add(f.nome)));
+  const nar=document.getElementById('ovNarrativa');
+  if(nar) nar.innerHTML = dom
+    ? `Semana sob maior pressão da dimensão <strong>${dom.name}</strong> (${(dom.score||0).toFixed(1)}/10), com foco em ${dom.tema||'—'}. São <strong>${C.length}</strong> notícia${C.length===1?'':'s'} no radar, <strong>${R.length}</strong> risco${R.length===1?'':'s'} e <strong>${O.length}</strong> oportunidade${O.length===1?'':'s'} em acompanhamento${nMat?` — <strong>${nMat}</strong> já materializado${nMat===1?'':'s'}`:''}.`
+    : 'Sem dados suficientes para o briefing deste período.';
+  const chips=document.getElementById('ovChips');
+  if(chips) chips.innerHTML = [
+    dom?`Dominante: ${dom.name}`:null,
+    `${fontesCitadas.size} fonte${fontesCitadas.size===1?'':'s'} citada${fontesCitadas.size===1?'':'s'}`,
+    `${L.length} sina${L.length===1?'l':'is'} ativo${L.length===1?'':'s'}`,
+    `Filtro: ${state.sector==='todos'?'todos os setores':SECTOR_LABEL[state.sector]}`
+  ].filter(Boolean).map(t=>`<span class="chip">${t}</span>`).join('');
+
+  // HEATMAP setor × dimensão (usa todos os dados: o cruzamento é o ponto)
+  const dims=[['P','p-pol'],['E','p-eco'],['S','p-soc'],['T','p-tec'],['A','p-amb'],['L','p-leg']];
+  const sets=[['industria','Indústria'],['comercio','Comércio'],['servicos','Serviços']];
+  const pAll=d.pestel, lAll=(d.long||[]);
+  let hm='<div></div>'+sets.map(s=>`<div class="hm-col">${s[1]}</div>`).join('');
+  dims.forEach(([dim,cls])=>{
+    const p=pAll.find(x=>x.dim===dim);
+    hm+=`<div class="hm-dim"><span class="pestel-badge ${cls}" style="width:22px;height:22px;font-size:10px;">${dim}</span><span>${p?p.name:''}</span></div>`;
+    sets.forEach(([sk,sn])=>{
+      const base = p && (p.set.includes(sk)||p.set.includes('transversal')) ? (p.score||0) : 0;
+      const boosts = lAll.filter(l=>l.dim===dim && (l.set.includes(sk)||l.set.includes('transversal'))).map(l=>(l.rel||0)/10);
+      const v = Math.max(base, boosts.length?Math.max(...boosts):0);
+      hm += v>0
+        ? `<div class="hm-cell" title="${(p?p.name:dim)} × ${sn}: intensidade ${v.toFixed(1)} de 10" style="background:rgba(239,68,68,${(0.06+(v/10)*0.5).toFixed(2)});">${v.toFixed(1)}</div>`
+        : `<div class="hm-cell" style="background:var(--surface-2);color:var(--text-3);">–</div>`;
+    });
+  });
+  const heat=document.getElementById('ovHeat'); if(heat) heat.innerHTML=hm;
+
+  // RESUMOS (top N, respeitando o filtro setorial)
+  const oc=document.getElementById('ovClip');
+  if(oc) oc.innerHTML = C.slice(0,3).map(c=>
+    `<div class="ov-item ov-open" data-view="radar"><div class="clip-tags">${clipTags(c.set)}</div><div class="ovi-t">${c.t}</div></div>`
+  ).join('') || '<div class="empty-note">Nenhuma notícia para este filtro.</div>';
+
+  const oa=document.getElementById('ovAlertas');
+  if(oa){
+    const rows=[
+      ...R.slice(0,3).map(l=>({cor:l.rel>=70?'#ef4444':l.rel>=45?'#f59e0b':'#8a9ab5',t:l.t,k:'Risco · '+Math.round(l.rel)})),
+      ...O.slice(0,2).map(l=>({cor:'#10b981',t:l.t,k:'Oport. · '+Math.round(l.rel)}))
+    ];
+    oa.innerHTML = rows.map(r=>
+      `<div class="ov-line"><span class="ov-dot" style="background:${r.cor}"></span><span style="flex:1;">${r.t}</span><span class="ts-opt-sub">${r.k}</span></div>`
+    ).join('') || '<div class="empty-note">Sem alertas para este filtro.</div>';
+  }
+
+  const ol=document.getElementById('ovLong');
+  if(ol) ol.innerHTML = L.slice(0,3).map(l=>
+    `<div class="ov-item ov-open" data-view="trajetorias"><div class="long-week-tag">${l.tag}</div><div class="ovi-t">${l.t}</div></div>`
+  ).join('') || '<div class="empty-note">Sem trajetórias para este filtro.</div>';
 }
 
 /* ═══════════════════ EVENTOS ═══════════════════ */
@@ -813,20 +1096,39 @@ document.getElementById('tsNext').addEventListener('click',()=>{
   if(CUR[state.period] > 0){ CUR[state.period]--; renderAll(); }
 });
 
-document.querySelectorAll('.toc-item').forEach(item=>{
-  item.addEventListener('click',()=>{ const el=document.getElementById(item.dataset.scroll); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); });
+// ═══ NAVEGAÇÃO POR VISÕES (o arco narrativo) ═══
+function setView(v){
+  document.querySelectorAll('.view').forEach(el=>el.classList.toggle('active', el.id==='view-'+v));
+  document.querySelectorAll('.side-item').forEach(b=>b.classList.toggle('active', b.dataset.view===v));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.side-item').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
+document.addEventListener('click',e=>{
+  const o=e.target.closest('.ov-open'); if(o && o.dataset.view) setView(o.dataset.view);
 });
 
-const spyIds=['sec-kpis','sec-clip','sec-pestel','sec-risk','sec-long','sec-fontes'];
-window.addEventListener('scroll',()=>{
-  let cur=spyIds[0];
-  for(const id of spyIds){ const el=document.getElementById(id); if(el && window.scrollY>=el.offsetTop-130) cur=id; }
-  document.querySelectorAll('.toc-item').forEach(it=>it.classList.toggle('active',it.dataset.scroll===cur));
-});
 
-// wire do botão "Atualizar agora"
-const _btn = document.getElementById('btnAtualizar');
-if (_btn) _btn.href = URL_ATUALIZAR;
+
+/* ═══════════════════ EXPORTAÇÃO ═══════════════════ */
+let _edicaoAtual = null;  // guarda o JSON bruto da semana em exibição
+
+function baixarJSON(){
+  if(!_edicaoAtual){ alert('Ainda não há dados carregados para exportar.'); return; }
+  try {
+    const blob = new Blob([JSON.stringify(_edicaoAtual, null, 2)], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'nexosis-' + (_edicaoAtual.periodo || 'edicao') + '.json';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  } catch(e){ alert('Não foi possível exportar os dados: ' + e.message); }
+}
+
+const _bp = document.getElementById('btnPrint');
+if(_bp) _bp.addEventListener('click', ()=>window.print());
+const _bj = document.getElementById('btnJSON');
+if(_bj) _bj.addEventListener('click', baixarJSON);
 
 bootstrap();
 

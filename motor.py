@@ -33,6 +33,102 @@ MODELO       = "gemini-2.5-flash"   # modelo gratuito com busca nativa
 LIMIAR_DORMIR = 25.0
 CICLOS_PARA_DORMIR = 3
 
+# ─────────────────────────────────────────────────────────
+# FONTES OFICIAIS: mapa palavra-chave → homepage oficial.
+# Usado como fallback quando o Gemini devolve URL inválida/proibida.
+# ─────────────────────────────────────────────────────────
+FONTES_OFICIAIS = {
+    "ibge": "https://agenciadenoticias.ibge.gov.br",
+    "focus": "https://www.bcb.gov.br/publicacoes/focus",
+    "bcb": "https://www.bcb.gov.br",
+    "banco central": "https://www.bcb.gov.br",
+    "fgv": "https://portalibre.fgv.br",
+    "ibre": "https://portalibre.fgv.br",
+    "ipea": "https://www.ipea.gov.br",
+    "cni": "https://noticias.portaldaindustria.com.br",
+    "mdic": "https://www.gov.br/mdic/pt-br",
+    "anp": "https://www.gov.br/anp/pt-br",
+    "fiesp": "https://www.fiesp.com.br",
+    "cnc": "https://portaldocomercio.org.br",
+    "fecom": "https://www.fecomerciomg.org.br",
+    "cndl": "https://cndl.org.br",
+    "spc": "https://cndl.org.br",
+    "nielsen": "https://nielseniq.com/global/pt",
+    "sebrae": "https://sebrae.com.br",
+    "febraban": "https://portal.febraban.org.br",
+    "senado": "https://www12.senado.leg.br/noticias",
+    "camara": "https://www.camara.leg.br/noticias",
+    "câmara": "https://www.camara.leg.br/noticias",
+    "receita": "https://www.gov.br/receitafederal/pt-br",
+    "cade": "https://www.gov.br/cade/pt-br",
+    "mit": "https://mittechreview.com.br",
+    "aneel": "https://www.gov.br/aneel/pt-br",
+    "mma": "https://www.gov.br/mma/pt-br",
+    "b3": "https://www.b3.com.br",
+    "valor": "https://valor.globo.com",
+    "exame": "https://exame.com",
+    "infomoney": "https://www.infomoney.com.br",
+    "epbr": "https://epbr.com.br",
+}
+
+# Domínios que NUNCA podem aparecer como fonte (inclui o próprio portal)
+DOMINIOS_PROIBIDOS = (
+    "github.io", "githubusercontent", "github.com", "vercel.app", "netlify",
+    "pages.dev", "vertexaisearch", "grounding-api-redirect",
+    "google.com/search", "googleusercontent",
+)
+
+
+def url_valida(url):
+    """URL é aceitável se for http(s) e não estiver na lista proibida."""
+    if not url or not isinstance(url, str):
+        return False
+    u = url.strip().lower()
+    if not (u.startswith("http://") or u.startswith("https://")):
+        return False
+    return not any(dom in u for dom in DOMINIOS_PROIBIDOS)
+
+
+def fallback_fonte(nome):
+    """Encontra a homepage oficial pela palavra-chave no nome da fonte."""
+    n = (nome or "").lower()
+    for chave, home in FONTES_OFICIAIS.items():
+        if chave in n:
+            return home
+    return None
+
+
+def normalizar_clipping(itens):
+    """
+    Normaliza os itens de clipping para o formato canônico:
+      {setores, titulo, texto, fontes:[{nome,url}]}
+    - Aceita o formato novo (fontes: array) e o antigo (fonte + url).
+    - Valida cada URL; se inválida/proibida, troca pela homepage oficial da fonte;
+      se nem isso existir, remove o link (o portal exibe a fonte sem link).
+    """
+    saida = []
+    for it in itens or []:
+        fontes_brutas = it.get("fontes")
+        if not fontes_brutas:
+            # formato antigo: fonte (string) + url
+            fontes_brutas = [{"nome": it.get("fonte", ""), "url": it.get("url", "")}]
+
+        fontes_limpa = []
+        for f in fontes_brutas:
+            nome = (f.get("nome") or f.get("fonte") or "").strip()
+            url = (f.get("url") or "").strip()
+            if not url_valida(url):
+                url = fallback_fonte(nome)  # pode ser None → sem link
+            fontes_limpa.append({"nome": nome or "Fonte", "url": url})
+
+        saida.append({
+            "setores": it.get("setores") or ["transversal"],
+            "titulo": it.get("titulo", ""),
+            "texto": it.get("texto", ""),
+            "fontes": fontes_limpa,
+        })
+    return saida
+
 
 # ─────────────────────────────────────────────────────────
 # FÓRMULA DE RELEVÂNCIA (espelha a função SQL do Supabase)
@@ -236,19 +332,34 @@ def gerar_dados_portal(dados, sb, chave, label):
     top = sb.table("sinais").select("*").neq("status", "dormindo") \
             .order("relevancia_atual", desc=True).limit(9).execute()
 
+    # para cada sinal do topo, busca a observação mais recente (o texto vivo da trajetória)
+    longitudinal = []
+    for s in top.data:
+        ultima_obs, ultima_per = "", ""
+        try:
+            obs = sb.table("observacoes").select("texto,periodo") \
+                    .eq("sinal_id", s["id"]) \
+                    .order("criado_em", desc=True).limit(1).execute()
+            if obs.data:
+                ultima_obs = obs.data[0].get("texto", "")
+                ultima_per = obs.data[0].get("periodo", "")
+        except Exception:
+            pass  # sem observação: o portal usa um texto padrão
+        longitudinal.append({
+            "id": s["id"], "tipo": s["tipo"], "titulo": s["titulo"],
+            "dimensao": s["dimensao"], "setores": s["setores"],
+            "status": s["status"], "relevancia": s["relevancia_atual"],
+            "ultima_observacao": ultima_obs, "periodo_observacao": ultima_per,
+            "data_identificacao": s.get("data_identificacao", ""),
+        })
+
     saida = {
         "periodo": chave, "label": label,
         "gerado_em": datetime.utcnow().isoformat(),
-        "clipping": dados.get("clipping", []),
+        "clipping": normalizar_clipping(dados.get("clipping", [])),
         "pestel": dados.get("pestel", []),
         "kpis": dados.get("kpis", []),
-        "longitudinal": [
-            {
-                "id": s["id"], "tipo": s["tipo"], "titulo": s["titulo"],
-                "dimensao": s["dimensao"], "setores": s["setores"],
-                "status": s["status"], "relevancia": s["relevancia_atual"],
-            } for s in top.data
-        ],
+        "longitudinal": longitudinal,
     }
     os.makedirs("data", exist_ok=True)
     with open(f"data/{chave}.json", "w", encoding="utf-8") as f:

@@ -9,11 +9,11 @@ FONTES = """
 IBGE (ibge.gov.br), Banco Central/Focus (bcb.gov.br), FGV/IBRE (portalibre.fgv.br),
 IPEA (ipeadata.gov.br), CNI (portaldaindustria.com.br), MDIC (gov.br/mdic),
 ANP (gov.br/anp), FIESP (fiesp.com.br), CNC (portaldocomercio.org.br),
-Fecomércio MG (fecomercio-mg.org.br), CNDL/SPC (cndl.org.br), NielsenIQ,
-Sebrae (sebrae.com.br), Agência Sebrae, Febraban (febraban.org.br),
-Agência Senado (senado.leg.br), Agência Câmara (camara.leg.br),
-Receita Federal (gov.br/receitafederal), CADE (cade.gov.br),
-MIT Technology Review Brasil, ANEEL (gov.br/aneel), MMA (gov.br/mma),
+Fecomércio MG (fecomerciomg.org.br), CNDL/SPC (cndl.org.br), NielsenIQ (nielseniq.com),
+Sebrae (sebrae.com.br), Agência Sebrae (agenciasebrae.com.br), Febraban (febraban.org.br),
+Agência Senado (www12.senado.leg.br), Agência Câmara (camara.leg.br),
+Receita Federal (gov.br/receitafederal), CADE (gov.br/cade),
+MIT Technology Review Brasil (mittechreview.com.br), ANEEL (gov.br/aneel), MMA (gov.br/mma),
 B3 Sustentabilidade (b3.com.br), Valor Econômico (valor.globo.com),
 Exame (exame.com), InfoMoney (infomoney.com.br), EPBR (epbr.com.br)
 """.strip()
@@ -26,7 +26,6 @@ def montar_prompt(periodo_label, data_inicio, data_fim, historico_sinais):
     historico_sinais: lista de sinais ativos vindos do Supabase (para a revisão longitudinal)
     """
 
-    # Formata o histórico de sinais para o Gemini avaliar a evolução
     if historico_sinais:
         hist_texto = "\n".join([
             f"- [{s['id']}] ({s['tipo']}, dim {s['dimensao']}, setores {s['setores']}) "
@@ -42,10 +41,16 @@ em Divinópolis/MG, produzindo o clipping estratégico da semana para uma consul
 que atende PMEs dos setores de INDÚSTRIA, COMÉRCIO e SERVIÇOS.
 
 # TAREFA
-Pesquise nas fontes confiáveis abaixo as notícias e dados econômicos mais relevantes
-do período {periodo_label} ({data_inicio} a {data_fim}) e produza uma análise estruturada.
-Faça MÚLTIPLAS buscas para cobrir bem cada setor e cada dimensão PESTEL, cruzando fontes
-independentes para confirmar cada sinal (isso alimenta a "corroboração").
+Pesquise nas 28 fontes abaixo as notícias e dados econômicos relevantes do período
+{periodo_label} ({data_inicio} a {data_fim}) e produza uma análise estruturada.
+
+# COBERTURA OBRIGATÓRIA DAS FONTES
+- Faça MÚLTIPLAS buscas (entre 12 e 20) para varrer TODAS as 28 fontes, não apenas as óbvias.
+- Toda fonte que tiver publicado material relevante no período DEVE aparecer em ao menos um item do clipping.
+- Fontes sem material relevante na semana podem ficar de fora — mas isso deve ser exceção, não regra.
+- AGRUPE notícias complementares sobre o mesmo tema em UM item; nesse caso, TODAS as fontes
+  do agrupamento entram no array "fontes" do item, cada uma com seu próprio url.
+- Notícias independentes viram itens separados. Meta: entre 10 e 18 itens de clipping.
 
 # FONTES PRIORITÁRIAS
 {FONTES}
@@ -68,7 +73,11 @@ Estrutura exata:
 
 {{
   "clipping": [
-    {{"setores": ["industria"], "fonte": "IBGE / PIM", "titulo": "...", "texto": "...", "url": "https://..."}}
+    {{"setores": ["industria"], "titulo": "...", "texto": "...",
+      "fontes": [
+        {{"nome": "IBGE / PIM", "url": "https://agenciadenoticias.ibge.gov.br/..."}},
+        {{"nome": "CNI", "url": "https://noticias.portaldaindustria.com.br/..."}}
+      ]}}
   ],
   "pestel": [
     {{"dim": "P", "nome": "Político", "tema": "...", "texto": "...", "score": 6.5, "setores": ["transversal"]}},
@@ -79,7 +88,7 @@ Estrutura exata:
     {{"dim": "L", "nome": "Legal", "tema": "...", "texto": "...", "score": 6.0, "setores": ["industria","servicos"]}}
   ],
   "kpis": [
-    {{"label": "SELIC (Focus)", "valor": "10,5%", "cor": "neutral", "sub": "Estável"}}
+    {{"label": "SELIC", "valor": "14,25%", "cor": "neutral", "sub": "detalhe/contexto aqui"}}
   ],
   "novos_sinais": [
     {{"tipo": "risco", "titulo": "...", "dimensao": "E", "setores": ["transversal"],
@@ -93,10 +102,22 @@ Estrutura exata:
   ]
 }}
 
-# REGRAS
-- clipping: 4 a 8 itens, cobrindo os três setores. Cada um com URL real da fonte.
+# REGRAS DE URL (CRÍTICAS — VIOLAÇÃO INVALIDA O ITEM)
+- Todo url deve apontar para a matéria/release REAL no domínio OFICIAL da fonte
+  (os domínios estão listados junto às fontes acima).
+- Se não tiver o link exato da matéria, use a página oficial de notícias/imprensa daquela fonte.
+- NUNCA use como url: github.io, vercel.app, netlify, páginas do próprio portal de clipping,
+  links de redirecionamento de busca, ou resultados de pesquisa do Google.
+
+# REGRAS GERAIS
+- clipping: 10 a 18 itens, cobrindo os três setores + transversal. Agrupamentos com todas as fontes no array.
 - pestel: sempre as 6 dimensões. score de 0 a 10 = intensidade/relevância da dimensão na semana.
-- kpis: 5 indicadores macro (SELIC, IPCA, câmbio, desemprego, varejo). cor = "up"/"down"/"neutral".
+- kpis: exatamente 7 indicadores, nesta ordem:
+  1. SELIC  2. IPCA ou IPCA-15 (o mais recente)  3. Câmbio (dólar)  4. Desemprego (PNAD)
+  5. Varejo (PMC/IBGE)  6. Produção Industrial (PIM-PF/IBGE)  7. IPP (Índice de Preços ao Produtor/IBGE)
+  * "label" CURTO (máximo 22 caracteres, ex: "SELIC", "IPCA-15", "Câmbio", "PIM (Indústria)", "IPP").
+  * Detalhes, datas e contexto vão em "sub", nunca no label. cor = "up"/"down"/"neutral"
+    ("up" = leitura positiva para a economia, "down" = negativa, "neutral" = estável/ambígua).
 - novos_sinais: riscos/oportunidades identificados AGORA que não estão no histórico. severidade e iminencia de 0 a 10.
 - atualizacoes_sinais: para cada sinal do histórico que teve desdobramento OU reapareceu. Use o ID exato.
 - Seja factual e específico (números, datas, fontes). Nada de generalidades vagas.
@@ -107,11 +128,11 @@ Estrutura exata:
 # Teste rápido de montagem (não chama a API)
 if __name__ == "__main__":
     exemplo_hist = [
-        {"id": "SIG-001", "tipo": "risco", "dimensao": "E", "setores": ["industria", "transversal"],
-         "titulo": "Pressão cambial > R$5,30", "status": "em_curso",
+        {"id": "abc-123", "tipo": "risco", "dimensao": "E", "setores": ["industria", "transversal"],
+         "titulo": "Câmbio alto", "status": "em_curso",
          "relevancia_atual": 68.0, "ultimo_periodo": "2026-W26"}
     ]
-    p = montar_prompt("Semana 27 · Julho 2026", "2026-07-06", "2026-07-10", exemplo_hist)
-    print(p[:1200])
-    print("\n...[prompt completo montado com sucesso]...")
-    print(f"\nTamanho do prompt: {len(p)} caracteres")
+    p = montar_prompt("Semana 28 · Julho 2026", "2026-07-06", "2026-07-10", exemplo_hist)
+    assert "12 e 20" in p and "10 a 18 itens" in p and "IPP" in p and "PIM" in p
+    assert "NUNCA use como url" in p and "github.io" in p
+    print(f"Prompt montado: {len(p)} caracteres — regras de cobertura, URL e KPIs presentes")
