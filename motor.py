@@ -7,6 +7,7 @@ processa resposta → recalcula relevância → grava de volta → gera dados do
 import os
 import json
 import re
+import glob
 import time
 from datetime import date, datetime, timedelta
 
@@ -28,7 +29,11 @@ if _raw_url.endswith("/rest/v1"):
     _raw_url = _raw_url[:-len("/rest/v1")]
 SUPABASE_URL = _raw_url.rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_KEY"].strip()
-MODELO       = "gemini-2.5-flash"   # modelo gratuito com busca nativa
+MODELO          = "gemini-2.5-flash"        # primário: busca nativa, free tier
+# Fallback com COTA DIÁRIA SEPARADA (limite por modelo, não por chave). Suporta
+# grounding com Google Search e é o substituto vivo do extinto gemini-2.0-flash
+# (desligado pela Google em 01/06/2026). Usar SEMPRE o string estável, não o -preview.
+MODELO_FALLBACK = "gemini-2.5-flash-lite"   # cota diária independente do primário
 
 # limiar abaixo do qual um sinal "dorme" após ciclos sem aparecer
 LIMIAR_DORMIR = 25.0
@@ -174,19 +179,43 @@ def extrair_json(texto):
 
 
 # ─────────────────────────────────────────────────────────
+# FALLBACK DE MODELO: se a COTA DIÁRIA do primário estourar, desvia para o
+# secundário (cota diária independente). Não confundir com o limite por MINUTO
+# (RPM), que se resolve esperando segundos — esse é tratado por backoff.
+# ─────────────────────────────────────────────────────────
+def _cota_diaria_esgotada(err):
+    """True só quando o erro indica esgotamento da cota DIÁRIA (RPD), que não
+    adianta esperar segundos — ela só renova à meia-noite (Pacífico)."""
+    s = str(err).lower()
+    esgotou = any(t in s for t in ("resource_exhausted", "429", "quota", "exhausted"))
+    marca_diaria = any(t in s for t in ("perday", "per day", "requests per day", "daily"))
+    return esgotou and marca_diaria
+
+
+def _gerar(client, prompt, config):
+    """Chama o primário; se a cota DIÁRIA do primário estourar, refaz no fallback.
+    Retorna (resposta, modelo_usado)."""
+    try:
+        return client.models.generate_content(
+            model=MODELO, contents=prompt, config=config), MODELO
+    except Exception as e:
+        if _cota_diaria_esgotada(e):
+            print(f"[motor] Cota diária de {MODELO} esgotada — desviando para {MODELO_FALLBACK}.")
+            return client.models.generate_content(
+                model=MODELO_FALLBACK, contents=prompt, config=config), MODELO_FALLBACK
+        raise
+
+
+# ─────────────────────────────────────────────────────────
 # CHAMA O GEMINI com busca web nativa
 # ─────────────────────────────────────────────────────────
 def gerar_analise(prompt):
     client = genai.Client(api_key=GEMINI_KEY)
     grounding = types.Tool(google_search=types.GoogleSearch())
-    resp = client.models.generate_content(
-        model=MODELO,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            tools=[grounding],
-            temperature=0.4,
-        ),
-    )
+    config = types.GenerateContentConfig(tools=[grounding], temperature=0.4)
+    resp, modelo = _gerar(client, prompt, config)
+    if modelo != MODELO:
+        print(f"[motor] Coleta concluída via fallback ({modelo}).")
     return resp.text
 
 
@@ -439,21 +468,120 @@ Responda SOMENTE com o texto do editorial, sem título, sem aspas, sem markdown.
             print(f"[motor] Editorial: aguardando {espera}s antes de nova tentativa (rate limit)...")
             time.sleep(espera)
         try:
-            resp = client.models.generate_content(
-                model=MODELO,
-                contents=prompt,
-                config=types.GenerateContentConfig(temperature=0.5),
-            )
+            resp, modelo = _gerar(
+                client, prompt, types.GenerateContentConfig(temperature=0.5))
             texto = (resp.text or "").strip()
             if texto:
                 return {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
-                        "n_sinais_considerados": ctx["n_ativos"]}
+                        "n_sinais_considerados": ctx["n_ativos"], "modelo": modelo}
             ultimo_erro = "resposta vazia"
         except Exception as e:
             ultimo_erro = str(e)
             print(f"[motor] Editorial tentativa {i+1}/{len(esperas)} falhou: {e}")
-    print(f"[motor] Editorial não gerado após {len(esperas)} tentativas ({ultimo_erro}).")
+
+    # ÚLTIMO RECURSO: uma tentativa limpa no modelo secundário, seja qual for o erro
+    # do primário (cota diária, limite por minuto travado ou erro ambíguo). O secundário
+    # tem cota/limites independentes, então costuma passar quando o primário está saturado.
+    try:
+        print(f"[motor] Editorial: última tentativa no fallback {MODELO_FALLBACK}...")
+        resp = genai.Client(api_key=GEMINI_KEY).models.generate_content(
+            model=MODELO_FALLBACK, contents=prompt,
+            config=types.GenerateContentConfig(temperature=0.5))
+        texto = (resp.text or "").strip()
+        if texto:
+            print(f"[motor] Editorial gerado no fallback {MODELO_FALLBACK}.")
+            return {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
+                    "n_sinais_considerados": ctx["n_ativos"], "modelo": MODELO_FALLBACK}
+    except Exception as e:
+        ultimo_erro = str(e)
+        print(f"[motor] Editorial: fallback {MODELO_FALLBACK} também falhou: {e}")
+
+    print(f"[motor] Editorial não gerado após {len(esperas)} tentativas + fallback ({ultimo_erro}).")
     return None
+
+
+def _kpi_indisponivel(v):
+    s = str(v or "").strip()
+    if not s or re.fullmatch(r"[-–—\s]+", s):
+        return True
+    return bool(re.search(
+        r"n[ãa]o\s+(dispon|divulg|informad|h[áa]|houve)|indispon|"
+        r"sem\s+(dado|coleta|divulga)|aguard|a\s+divulgar|pendente|n/d", s, re.I))
+
+
+def _kpi_sem_proj(v):
+    return re.sub(r"\s*\(proj\.[^)]*\)", "", str(v or "")).strip()
+
+
+def _kpi_bucket(label):
+    L = (label or "").lower()
+    mapa = [
+        ("selic", ("selic",)), ("ipca", ("ipca",)),
+        ("cambio", ("câmbio", "cambio", "dólar", "dolar")),
+        ("desemprego", ("desemprego", "pnad", "desocup")),
+        ("varejo", ("varejo", "pmc")),
+        ("pim", ("pim", "produção industrial", "producao industrial")),
+        ("ipp", ("ipp",)),
+    ]
+    for nome, termos in mapa:
+        if any(t in L for t in termos):
+            return nome
+    return L
+
+
+def _ordem_chave(ch):
+    try:
+        a, s = ch.split("-W")
+        return int(a) * 100 + int(s)
+    except (ValueError, AttributeError):
+        return -1
+
+
+def reconciliar_kpis(kpis, chave):
+    """Ponto 1a — herança determinística do último valor conhecido.
+
+    Se um KPI não foi divulgado nesta semana ('Não disponível', 'Não divulgado',
+    'Sem dados', etc.), busca nas semanas anteriores (data/*.json) o valor real
+    mais recente do MESMO indicador e o assume como parâmetro, anotando no 'sub'
+    a semana de referência. Não depende do Gemini obedecer — é código puro.
+    """
+    ordem_atual = _ordem_chave(chave)
+    anteriores = []
+    try:
+        for fn in glob.glob("data/*.json"):
+            base = os.path.basename(fn)
+            if base in ("index.json", "ultimo.json"):
+                continue
+            m = re.match(r"(\d{4}-W\d+)\.json$", base)
+            if not m or _ordem_chave(m.group(1)) >= ordem_atual:
+                continue
+            with open(fn, encoding="utf-8") as f:
+                j = json.load(f)
+            anteriores.append((_ordem_chave(m.group(1)),
+                               j.get("label", m.group(1)),
+                               j.get("kpis", [])))
+    except (OSError, json.JSONDecodeError):
+        anteriores = []
+    anteriores.sort(key=lambda t: t[0], reverse=True)
+
+    saida = []
+    for k in kpis:
+        kk = dict(k)
+        if _kpi_indisponivel(kk.get("valor")):
+            bucket = _kpi_bucket(kk.get("label"))
+            for _, lbl_ant, kpis_ant in anteriores:
+                cand = next((x for x in kpis_ant
+                             if _kpi_bucket(x.get("label")) == bucket
+                             and not _kpi_indisponivel(_kpi_sem_proj(x.get("valor")))),
+                            None)
+                if cand:
+                    kk["valor"] = _kpi_sem_proj(cand.get("valor"))
+                    kk["sub"] = (f"Sem divulgação nesta semana; "
+                                 f"último dado conhecido ({lbl_ant}).")
+                    kk["herdado_de"] = lbl_ant
+                    break
+        saida.append(kk)
+    return saida
 
 
 def gerar_dados_portal(dados, sb, chave, label, editorial=None):
@@ -484,13 +612,16 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
             "origem": s.get("origem") or "real",
         })
 
+    # ponto 1a — herda o último valor real para KPIs não divulgados nesta semana
+    kpis_final = reconciliar_kpis(dados.get("kpis", []), chave)
+
     saida = {
         "periodo": chave, "label": label,
         "gerado_em": datetime.utcnow().isoformat(),
         "editorial": editorial,  # análise longitudinal automática (pode ser None)
         "clipping": normalizar_clipping(dados.get("clipping", [])),
         "pestel": dados.get("pestel", []),
-        "kpis": dados.get("kpis", []),
+        "kpis": kpis_final,
         "longitudinal": longitudinal,
     }
     os.makedirs("data", exist_ok=True)

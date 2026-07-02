@@ -546,6 +546,7 @@
       <div class="page-subtitle" id="pageSubtitle"></div>
     </div>
     <div class="page-badges">
+      <span class="badge" id="compareBadge" style="display:none;cursor:pointer;background:var(--sand,#c9b98a);color:#1a1a1a;" title="Sair da comparação">✕ Comparação</span>
       <span class="badge badge-blue" id="periodBadge"></span>
       <span class="badge badge-sector" id="sectorBadge"></span>
       <span class="badge badge-green">● Atualizado</span>
@@ -622,7 +623,9 @@
     <div class="hero">
       <div class="hero-gauge">
         <div class="gauge-ring" id="gaugeRing"><span class="gauge-val" id="gaugeVal">–</span></div>
-        <div class="gauge-label">Pressão<br>da semana<br><span id="gaugeTag" class="gauge-tag"></span></div>
+        <div class="gauge-label">Pressão<br>da semana<br><span id="gaugeTag" class="gauge-tag"></span>
+          <span class="kpi-i" tabindex="0" role="button" aria-label="Como a Pressão da semana é calculada" style="margin-left:5px;vertical-align:middle;"><span class="kpi-i-mark">i</span><span class="kpi-tip" id="gaugeTip" style="width:290px;white-space:normal;text-align:left;"></span></span>
+        </div>
       </div>
       <div class="hero-mid">
         <div class="hero-kicker">Briefing de 60 segundos</div>
@@ -853,10 +856,12 @@ function adaptarSemana(json) {
   // Riscos e oportunidades para os painéis laterais: derivados dos sinais longitudinais
   const riscos = (json.longitudinal || [])
     .filter(s => s.tipo === 'risco')
-    .slice(0, 5)
+    .slice(0, 8)
     .map(s => ({
       sev: (s.relevancia >= 70 ? 'alto' : s.relevancia >= 45 ? 'medio' : 'baixo'),
       t: s.titulo || '', setlabel: `${s.dimensao || ''} · ${(s.setores||[]).join('/')}`,
+      x: s.ultima_observacao || `Sinal de risco em acompanhamento nos setores ${(s.setores||[]).join(', ')}.`,
+      rel: s.relevancia || 0,
       set: s.setores || ['transversal']
     }));
   const opp = (json.longitudinal || [])
@@ -899,12 +904,110 @@ function subDaChave(chave, label) {
   return m ? `Semana ${parseInt(m[1], 10)}` : (label || '');
 }
 
+/* ═══ HELPERS KPI: fallback de último valor + tag de projeção (pontos 1a/1b) ═══ */
+function _kpiIndisponivel(v){
+  var s = String(v==null?'':v).trim();
+  if(!s || /^[-–—\s]+$/.test(s)) return true;
+  return /n[ãa]o\s+(dispon|divulg|informad|h[áa]|houve)|indispon|sem\s+(dado|coleta|divulga)|aguard|a\s+divulgar|pendente|n\/d/i.test(s);
+}
+function _kpiSemProj(v){ return String(v==null?'':v).replace(/\s*\(proj\.[^)]*\)/ig,'').trim(); }
+function _kpiBucket(label){
+  var L=(label||'').toLowerCase();
+  var i=KPI_INFO.findIndex(function(k){return k.m.some(function(x){return L.includes(x);});});
+  return i>=0 ? ('b'+i) : L;
+}
+function resolverKpi(k, histKpis){
+  var proj = /\(proj/i.test(String(k.v||'')) || /\(proj/i.test(String(k.s||'')) || /proje[çc]/i.test(String(k.s||''));
+  var valor = _kpiSemProj(k.v), sub = _kpiSemProj(k.s), cor = k.c || 'neutral';
+  var herdado = false, ref = '';
+  if(_kpiIndisponivel(valor)){
+    var bucket = _kpiBucket(k.l);
+    for(var i=0;i<histKpis.length;i++){
+      var fonte = histKpis[i];
+      var prev = (fonte.kpis||[]).find(function(x){ return _kpiBucket(x.l)===bucket && !_kpiIndisponivel(_kpiSemProj(x.v)); });
+      if(prev){
+        valor = _kpiSemProj(prev.v);
+        var ps = _kpiSemProj(prev.s);
+        sub = 'Sem divulgação nesta semana; exibido o último dado conhecido' + (ps? ' — '+ps : '') + '.';
+        cor = prev.c || 'neutral'; herdado = true; ref = fonte.ref || '';
+        break;
+      }
+    }
+    if(!herdado) valor = '—';
+  }
+  return { valor: valor||'—', sub: sub, cor: cor, proj: proj, herdado: herdado, ref: ref };
+}
+/* realça a dimensão PESTEL ao vir de um clique no heatmap (ponto 2) */
+function realcarDim(dim){
+  setTimeout(function(){
+    var row = document.querySelector('#pestelBody .pestel-row[data-dim="'+dim+'"]');
+    if(!row) return;
+    row.scrollIntoView({behavior:'smooth', block:'center'});
+    row.style.transition='background .3s'; row.style.background='var(--surface-2)';
+    setTimeout(function(){ row.style.background=''; }, 1400);
+  }, 90);
+}
+
 // Placeholder para os períodos ainda não construídos (mês/trimestre/etc)
 function itemEmBreve(label, icon) {
   return {
     key: 'em-breve', year: new Date().getFullYear(),
     nav: label, sub: 'consolidação em breve', data: null
   };
+}
+
+/* ═══ ENGINE DE AGREGAÇÃO: consolida N semanas numa visão (pontos 5 e 1d) ═══ */
+function _ordemChave(ch){ var m=/(\d{4})-W(\d+)/.exec(ch||''); return m ? (+m[1])*100 + (+m[2]) : -1; }
+function _dedup(arr, keyfn){ var seen={}, out=[]; (arr||[]).forEach(function(x){ var k=keyfn(x); if(!seen[k]){ seen[k]=1; out.push(x); } }); return out; }
+function agregarData(datas, meta){
+  datas = datas.filter(Boolean);
+  var recente = datas[0] || {};
+  var kpis = recente.kpis || [];
+  var clipping = _dedup([].concat.apply([], datas.map(function(d){return d.clipping||[];})), function(c){return c.t;}).slice(0,30);
+  var dims=['P','E','S','T','A','L'];
+  var pestel = dims.map(function(dim){
+    var rows = datas.map(function(d){ return (d.pestel||[]).find(function(p){return p.dim===dim;}); }).filter(Boolean);
+    if(!rows.length) return null;
+    var score = rows.reduce(function(a,p){return a+(p.score||0);},0)/rows.length;
+    return Object.assign({}, rows[0], { score: Math.round(score*10)/10 });
+  }).filter(Boolean);
+  var long = _dedup([].concat.apply([], datas.map(function(d){return d.long||[];})), function(l){return l.t;});
+  var riscos = _dedup([].concat.apply([], datas.map(function(d){return d.riscos||[];})), function(r){return r.t;}).slice(0,8);
+  var opp = _dedup([].concat.apply([], datas.map(function(d){return d.opp||[];})), function(o){return o.t;}).slice(0,8);
+  return { title:meta.title, subtitle:meta.subtitle, badge:meta.badge, stamp:meta.stamp,
+           kpiTitle:meta.kpiTitle||'Indicadores consolidados', kpis:kpis, clipping:clipping, pestel:pestel, riscos:riscos, opp:opp, long:long };
+}
+// agrupa por it.sub (ex.: "Junho 2026") e consolida — ponto 5
+function construirMensal(semanas){
+  var comDados = semanas.filter(function(w){ return w.data; });
+  if(!comDados.length){ DB.mensal.items=[itemEmBreve('Mês atual')]; return; }
+  var grupos = {};
+  comDados.forEach(function(w){ (grupos[w.sub] = grupos[w.sub] || []).push(w); });
+  var itens = Object.keys(grupos).map(function(mesKey){
+    var ws = grupos[mesKey];
+    var maxOrd = Math.max.apply(null, ws.map(function(w){return _ordemChave(w.key);}));
+    var data = agregarData(ws.map(function(w){return w.data;}), {
+      title: mesKey + ' — consolidado',
+      subtitle: ws.length + (ws.length>1?' semanas consolidadas':' semana') + ' · ' + ws.map(function(w){return w.nav;}).slice().reverse().join(', '),
+      badge: mesKey, stamp: 'Consolidação de ' + ws.length + ' semana' + (ws.length>1?'s':''),
+      kpiTitle: 'Indicadores — ' + mesKey
+    });
+    return { key:'m-'+mesKey, year: ws[0].year, nav: mesKey.split(' ')[0], sub: ws.length+' semana'+(ws.length>1?'s':''), data:data, raw:{editorial:null}, _ord:maxOrd };
+  });
+  itens.sort(function(a,b){ return b._ord - a._ord; });
+  DB.mensal.items = itens;
+}
+// ponto 1d: consolida um conjunto arbitrário de semanas selecionadas
+function montarComparacao(keys){
+  var ws = DB.semanal.items.filter(function(it){ return it.data && keys.indexOf(it.key)>=0; });
+  ws.sort(function(a,b){ return _ordemChave(b.key) - _ordemChave(a.key); });
+  if(ws.length<2) return null;
+  var data = agregarData(ws.map(function(w){return w.data;}), {
+    title: 'Comparação de ' + ws.length + ' semanas',
+    subtitle: ws.map(function(w){return w.nav;}).slice().reverse().join(', ') + ' · consolidado apenas das semanas selecionadas',
+    badge: ws.length + ' semanas', stamp: 'Seleção manual', kpiTitle: 'Indicadores das semanas selecionadas'
+  });
+  return { key:'cmp', year: ws[0].year, nav:'Comparação', sub: ws.length+' semanas', data:data, raw:{editorial:null} };
 }
 
 // ═══ BOOTSTRAP: busca os dados reais e monta o DB ═══
@@ -964,6 +1067,7 @@ async function bootstrap() {
   }
 
   DB.semanal.items = semanas;
+  construirMensal(semanas);   // consolida as semanas em meses (ponto 5)
 
   // reseta índices e renderiza
   Object.keys(CUR).forEach(k => CUR[k] = 0);
@@ -972,7 +1076,7 @@ async function bootstrap() {
 const CUR = { semanal:0, mensal:0, trimestral:0, semestral:0, anual:0 };
 
 /* ═══════════════════ ESTADO E HELPERS ═══════════════════ */
-let state = { period:'semanal', sector:'todos', menuOpen:false };
+let state = { period:'semanal', sector:'todos', menuOpen:false, selWeeks:new Set() };
 
 const SECTOR_LABEL = { industria:'Indústria', comercio:'Comércio', servicos:'Serviços', transversal:'Transversal' };
 const SECTOR_TAGCLASS = { industria:'tag-industria', comercio:'tag-comercio', servicos:'tag-servicos', transversal:'tag-transversal' };
@@ -1015,29 +1119,52 @@ function renderSelector(){
     });
   });
 
-  // dropdown menu
+  // dropdown menu (no período semanal, permite marcar 2+ semanas para comparar — ponto 1d)
   const menu = document.getElementById('tsMenu');
+  const modoCompara = (state.period==='semanal');
   let lastYear = null; let html='';
+  if(modoCompara) html += `<div style="padding:8px 12px;font-size:10px;color:var(--text-3);font-family:var(--mono);border-bottom:1px solid var(--border);">Marque 2+ semanas para analisá-las juntas</div>`;
   grp.items.forEach((it,idx)=>{
     if(it.year!==lastYear){ html += `<div class="ts-group-label">${it.year}</div>`; lastYear=it.year; }
     const has = it.data!==null;
-    html += `<div class="ts-opt ${idx===CUR[state.period]?'active':''} ${has?'':'empty'}" data-idx="${idx}">
-      <div><div class="ts-opt-label">${it.nav}</div><div class="ts-opt-sub">${it.sub}</div></div>
+    const chk = (modoCompara && has) ? `<input type="checkbox" class="ts-cmp-chk" data-key="${it.key}" ${state.selWeeks.has(it.key)?'checked':''} style="margin-right:9px;cursor:pointer;accent-color:var(--sand,#c9b98a);" onclick="event.stopPropagation()">` : '';
+    html += `<div class="ts-opt ${idx===CUR[state.period]?'active':''} ${has?'':'empty'}" data-idx="${idx}" style="display:flex;align-items:center;">
+      ${chk}<div style="flex:1;"><div class="ts-opt-label">${it.nav}</div><div class="ts-opt-sub">${it.sub}</div></div>
       <span class="ts-opt-status ${has?'ts-status-ok':'ts-status-empty'}">${has?'● dados':'○ vazio'}</span>
     </div>`;
   });
+  if(modoCompara) html += `<div style="padding:10px 12px;border-top:1px solid var(--border);display:flex;gap:8px;">
+      <button id="tsCmpGo" style="flex:1;padding:7px;border-radius:7px;border:none;cursor:pointer;font-size:11px;font-weight:600;background:var(--sand,#c9b98a);color:#1a1a1a;">Analisar selecionadas</button>
+      <button id="tsCmpClear" style="padding:7px 10px;border-radius:7px;border:1px solid var(--border);cursor:pointer;font-size:11px;background:transparent;color:var(--text-2);">Limpar</button>
+    </div>`;
   menu.innerHTML = html;
-  menu.querySelectorAll('.ts-opt').forEach(opt=>{
-    opt.addEventListener('click',()=>{ CUR[state.period]=+opt.dataset.idx; closeMenu(); renderAll(); });
+  menu.querySelectorAll('.ts-cmp-chk').forEach(function(cb){
+    cb.addEventListener('change',function(){ if(cb.checked) state.selWeeks.add(cb.dataset.key); else state.selWeeks.delete(cb.dataset.key); });
   });
+  menu.querySelectorAll('.ts-opt').forEach(opt=>{
+    opt.addEventListener('click',()=>{ CUR[state.period]=+opt.dataset.idx; _comparacaoInst=null; closeMenu(); renderAll(); });
+  });
+  var _go=document.getElementById('tsCmpGo');
+  if(_go) _go.addEventListener('click',function(e){
+    e.stopPropagation();
+    var inst = montarComparacao(Array.from(state.selWeeks));
+    if(!inst){ alert('Selecione ao menos 2 semanas com dados para comparar.'); return; }
+    _comparacaoInst = inst; closeMenu(); renderAll(); window.scrollTo({top:0,behavior:'smooth'});
+  });
+  var _clr=document.getElementById('tsCmpClear');
+  if(_clr) _clr.addEventListener('click',function(e){ e.stopPropagation(); state.selWeeks.clear(); _comparacaoInst=null; renderSelector(); });
 }
 function closeMenu(){ state.menuOpen=false; document.getElementById('tsMenu').classList.remove('open'); document.getElementById('tsCurrent').classList.remove('open'); }
 function toggleMenu(){ state.menuOpen=!state.menuOpen; document.getElementById('tsMenu').classList.toggle('open',state.menuOpen); document.getElementById('tsCurrent').classList.toggle('open',state.menuOpen); }
 
 /* ═══════════════════ RENDER PRINCIPAL ═══════════════════ */
+var _comparacaoInst = null;   // instância ad-hoc do modo comparar (ponto 1d)
 function renderAll(){
   renderSelector();
-  const inst = currentInstance();
+  const inst = (_comparacaoInst && state.period==='semanal') ? _comparacaoInst : currentInstance();
+  var _cb=document.getElementById('compareBadge');
+  if(_cb) _cb.style.display = (_comparacaoInst && state.period==='semanal') ? '' : 'none';
+  if(_comparacaoInst && state.period==='semanal'){ var _tl=document.getElementById('tsLabel'); if(_tl) _tl.textContent='Comparação · '+_comparacaoInst.sub; }
 
   // estado vazio?
   if(inst.data===null){
@@ -1070,11 +1197,18 @@ function renderAll(){
   if(state.sector==='todos'){ sb.classList.remove('show'); }
   else { sb.classList.add('show'); sb.innerHTML = `<span class="sf-dot sfd-${state.sector}" style="width:7px;height:7px;"></span>Filtro: ${SECTOR_LABEL[state.sector]}`; }
 
-  // KPIs (não filtram por setor)
-  document.getElementById('kpiRow').innerHTML = d.kpis.map(k=>{
-    const info = kpiInfo(k.l);
-    const badge = info ? `<span class="kpi-i" tabindex="0" role="button" aria-label="O que é ${k.l}"><span class="kpi-i-mark">i</span><span class="kpi-tip">${info}</span></span>` : '';
-    return `<div class="kpi-card"><div class="kpi-label"><span>${k.l}</span>${badge}</div><div class="kpi-value kpi-${k.c}">${k.v}</div><div class="kpi-sub">${k.s}</div></div>`;
+  // KPIs (não filtram por setor) — tag de projeção + herança do último valor conhecido (pontos 1a/1b)
+  var _srcWeeks = ((_comparacaoInst && state.period==='semanal') || state.period!=='semanal') ? DB.semanal.items : DB.semanal.items.slice((CUR.semanal||0)+1);
+  var _histKpis = _srcWeeks.map(function(it){ return { kpis: it.data && it.data.kpis, ref: it.nav }; }).filter(function(o){ return o.kpis; });
+  document.getElementById('kpiRow').innerHTML = d.kpis.map(function(k){
+    var r = resolverKpi(k, _histKpis);
+    var info = kpiInfo(k.l);
+    var badge = info ? `<span class="kpi-i" tabindex="0" role="button" aria-label="O que é ${k.l}"><span class="kpi-i-mark">i</span><span class="kpi-tip">${info}</span></span>` : '';
+    var tags = [];
+    if(r.proj) tags.push(`<span title="Valor projetado (ex.: Boletim Focus), não uma medição fechada" style="font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:8px;background:var(--surface-2);color:var(--text-3);">proj.</span>`);
+    if(r.herdado) tags.push(`<span title="Sem divulgação nesta semana; exibindo o último valor conhecido na base" style="font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:8px;background:var(--amber-dim,rgba(245,158,11,.15));color:var(--amber,#f59e0b);">última${r.ref?': '+r.ref:''}</span>`);
+    var labelLimpo = String(k.l).replace(/\s*\(proj\.[^)]*\)/ig,'');
+    return `<div class="kpi-card"><div class="kpi-label"><span>${labelLimpo}</span>${badge}</div><div class="kpi-value kpi-${r.cor}">${r.valor}</div><div class="kpi-sub">${r.sub}</div>${tags.length?`<div style="margin-top:8px;display:flex;gap:5px;flex-wrap:wrap;">${tags.join('')}</div>`:''}</div>`;
   }).join('');
 
   // CLIPPING
@@ -1099,7 +1233,7 @@ function renderAll(){
   // PESTEL
   const pst = d.pestel.filter(p=>match(p.set));
   document.getElementById('pestelBody').innerHTML = pst.length ? pst.map(p=>`
-    <div class="pestel-row">
+    <div class="pestel-row" data-dim="${p.dim}">
       <div class="pestel-badge ${p.cls}">${p.dim}</div>
       <div class="pestel-meta">
         <div class="pestel-name-row"><span class="pestel-name">${p.name}</span><span class="pestel-dim">${p.tema}</span></div>
@@ -1113,7 +1247,7 @@ function renderAll(){
   // RISCOS
   const rsk = d.riscos.filter(r=>match(r.set));
   document.getElementById('riskBody').innerHTML = rsk.length ? rsk.map(r=>`
-    <div class="risk-row"><div class="risk-indicator r-${r.sev}"></div><div><div class="risk-desc">${r.t}</div><div class="risk-sector">${r.setlabel}</div></div><div class="risk-level level-${r.sev}">${r.sev.toUpperCase()}</div></div>
+    <div class="risk-row"><div class="risk-indicator r-${r.sev}"></div><div style="min-width:0;flex:1;"><div class="risk-desc">${r.t}</div><div class="risk-sector">${r.setlabel}</div><div style="font-size:12px;color:var(--text-2);line-height:1.55;margin-top:7px;">${r.x||''}</div></div><div class="risk-level level-${r.sev}">${r.sev.toUpperCase()}</div></div>
   `).join('') : `<div class="empty-note">Sem riscos específicos para este setor.</div>`;
   document.getElementById('riskCount').textContent = `${rsk.length}`;
 
@@ -1196,6 +1330,11 @@ function renderOverview(d){
   const gv=document.getElementById('gaugeVal'); if(gv) gv.textContent = isFinite(pressao)?pressao:'–';
   const gt=document.getElementById('gaugeTag');
   if(gt){ gt.textContent=tagP; gt.style.background=corP+'22'; gt.style.color=corP; }
+  const gtip=document.getElementById('gaugeTip');
+  if(gtip) gtip.innerHTML =
+    `<b>Pressão da semana (0–100)</b><br>Combina a intensidade média das 6 dimensões PESTEL (peso 60%) com a relevância média dos riscos ativos (peso 40%).<br><br>`+
+    `Nesta edição: PESTEL médio <b>${mp.toFixed(1)}</b>/10 · risco médio <b>${mr===null?'—':Math.round(mr)}</b>/100 → <b>${isFinite(pressao)?pressao:'–'}</b> (${tagP}).<br><br>`+
+    `Faixas: <b>BAIXA</b> &lt; 45 · <b>MODERADA</b> 45–69 · <b>ALTA</b> ≥ 70.`;
 
   // NARRATIVA AUTOMÁTICA
   const dom = P.slice().sort((a,b)=>(b.score||0)-(a.score||0))[0];
@@ -1220,13 +1359,13 @@ function renderOverview(d){
   let hm='<div></div>'+sets.map(s=>`<div class="hm-col">${s[1]}</div>`).join('');
   dims.forEach(([dim,cls])=>{
     const p=pAll.find(x=>x.dim===dim);
-    hm+=`<div class="hm-dim"><span class="pestel-badge ${cls}" style="width:22px;height:22px;font-size:10px;">${dim}</span><span>${p?p.name:''}</span></div>`;
+    hm+=`<div class="hm-dim" data-goto-dim="${dim}" title="Ver a dimensão ${p?p.name:dim} em Forças" style="cursor:pointer;"><span class="pestel-badge ${cls}" style="width:22px;height:22px;font-size:10px;">${dim}</span><span>${p?p.name:''}</span></div>`;
     sets.forEach(([sk,sn])=>{
       const base = p && (p.set.includes(sk)||p.set.includes('transversal')) ? (p.score||0) : 0;
       const boosts = lAll.filter(l=>l.dim===dim && (l.set.includes(sk)||l.set.includes('transversal'))).map(l=>(l.rel||0)/10);
       const v = Math.max(base, boosts.length?Math.max(...boosts):0);
       hm += v>0
-        ? `<div class="hm-cell" title="${(p?p.name:dim)} × ${sn}: intensidade ${v.toFixed(1)} de 10" style="background:rgba(239,68,68,${(0.06+(v/10)*0.5).toFixed(2)});">${v.toFixed(1)}</div>`
+        ? `<div class="hm-cell" data-goto-dim="${dim}" title="${(p?p.name:dim)} × ${sn}: intensidade ${v.toFixed(1)} de 10 · clique para ver a dimensão" style="cursor:pointer;background:rgba(239,68,68,${(0.06+(v/10)*0.5).toFixed(2)});">${v.toFixed(1)}</div>`
         : `<div class="hm-cell" style="background:var(--surface-2);color:var(--text-3);">–</div>`;
     });
   });
@@ -1245,7 +1384,7 @@ function renderOverview(d){
       ...O.slice(0,2).map(l=>({cor:'#10b981',t:l.t,k:'Oport. · '+Math.round(l.rel)}))
     ];
     oa.innerHTML = rows.map(r=>
-      `<div class="ov-line"><span class="ov-dot" style="background:${r.cor}"></span><span style="flex:1;">${r.t}</span><span class="ts-opt-sub">${r.k}</span></div>`
+      `<div class="ov-line ov-open" data-view="alertas" style="cursor:pointer;"><span class="ov-dot" style="background:${r.cor}"></span><span style="flex:1;">${r.t}</span><span class="ts-opt-sub">${r.k}</span></div>`
     ).join('') || '<div class="empty-note">Sem alertas para este filtro.</div>';
   }
 
@@ -1258,7 +1397,7 @@ function renderOverview(d){
 /* ═══════════════════ EVENTOS ═══════════════════ */
 document.getElementById('periodNav').addEventListener('click',e=>{
   const btn=e.target.closest('button'); if(!btn) return;
-  state.period=btn.dataset.period;
+  state.period=btn.dataset.period; _comparacaoInst=null;
   document.querySelectorAll('#periodNav button').forEach(b=>b.classList.toggle('active',b===btn));
   closeMenu(); renderAll(); window.scrollTo({top:0,behavior:'smooth'});
 });
@@ -1291,6 +1430,7 @@ function setView(v){
 document.querySelectorAll('.side-item').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
 document.addEventListener('click',e=>{
   const o=e.target.closest('.ov-open'); if(o && o.dataset.view) setView(o.dataset.view);
+  const g=e.target.closest('[data-goto-dim]'); if(g){ setView('forcas'); realcarDim(g.getAttribute('data-goto-dim')); }
 });
 
 
@@ -1345,6 +1485,7 @@ if(_bp) _bp.addEventListener('click', ()=>window.print());
 const _bj = document.getElementById('btnJSON');
 if(_bj) _bj.addEventListener('click', baixarJSON);
 
+(function(){ var b=document.getElementById('compareBadge'); if(b) b.addEventListener('click',function(){ _comparacaoInst=null; if(state.selWeeks) state.selWeeks.clear(); renderAll(); }); })();
 bootstrap();
 
 </script>
