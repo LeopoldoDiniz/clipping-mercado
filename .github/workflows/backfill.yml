@@ -1,0 +1,49 @@
+name: Backfill (abastecer histórico)
+
+# Disparo MANUAL apenas — roda uma vez para popular semanas passadas.
+# NÃO tem agendamento: não deve rodar sozinho.
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "Modo do backfill"
+        required: true
+        default: "indicadores"
+        type: choice
+        options:
+          - indicadores   # só KPIs macro reais (recomendado, base íntegra)
+          - completo      # clipping + sinais + KPIs (histórico rico, parte reconstruída)
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install google-genai supabase
+
+      - name: Rodar o backfill
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          BACKFILL_MODO: ${{ github.event.inputs.modo }}
+        run: python backfill.py
+
+      - name: Publicar os dados gerados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Backfill: histórico de semanas passadas ($(date +'%Y-%m-%d'))"
+          git push
