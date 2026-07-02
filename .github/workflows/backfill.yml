@@ -8,11 +8,11 @@ on:
       modo:
         description: "Modo do backfill"
         required: true
-        default: "indicadores"
+        default: "completo"
         type: choice
         options:
-          - indicadores   # só KPIs macro reais (recomendado, base íntegra)
-          - completo      # clipping + sinais + KPIs (histórico rico, parte reconstruída)
+          - completo      # clipping + sinais + KPIs (padrão)
+          - indicadores   # só KPIs macro reais (base íntegra, sem sinais)
 
 permissions:
   contents: write
@@ -37,7 +37,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          BACKFILL_MODO: ${{ github.event.inputs.modo }}
+          # se o input não vier (menu não exibido), assume 'completo'
+          BACKFILL_MODO: ${{ github.event.inputs.modo || 'completo' }}
         run: python backfill.py
 
       - name: Publicar os dados gerados
