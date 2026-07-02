@@ -485,8 +485,27 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
     os.makedirs("data", exist_ok=True)
     with open(f"data/{chave}.json", "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, indent=2)
-    with open("data/ultimo.json", "w", encoding="utf-8") as f:
-        json.dump(saida, f, ensure_ascii=False, indent=2)
+
+    # ultimo.json aponta SEMPRE para a semana mais recente que existe.
+    # Só sobrescreve se esta semana for >= à que está em ultimo.json —
+    # assim o backfill (que processa semanas passadas) NÃO rebaixa o "último".
+    def _ordem(ch):
+        try:
+            a, s = ch.split("-W"); return int(a) * 100 + int(s)
+        except (ValueError, AttributeError):
+            return -1
+    deve_gravar_ultimo = True
+    try:
+        if os.path.exists("data/ultimo.json"):
+            with open("data/ultimo.json", encoding="utf-8") as f:
+                atual_ultimo = json.load(f)
+            if _ordem(chave) < _ordem(atual_ultimo.get("periodo", "")):
+                deve_gravar_ultimo = False  # esta semana é mais antiga: não rebaixa
+    except (json.JSONDecodeError, OSError):
+        deve_gravar_ultimo = True
+    if deve_gravar_ultimo:
+        with open("data/ultimo.json", "w", encoding="utf-8") as f:
+            json.dump(saida, f, ensure_ascii=False, indent=2)
 
     # Mantém o índice de períodos disponíveis (o seletor temporal do portal lê daqui).
     # Lê o índice existente, adiciona/atualiza esta semana, mantém ordenado (mais recente primeiro).

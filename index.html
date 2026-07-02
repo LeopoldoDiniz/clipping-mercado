@@ -918,14 +918,15 @@ async function bootstrap() {
   // 2. Semanas: lê o índice; se não houver, tenta o ultimo.json; se nada, estado inicial
   let semanas = [];
   try {
-    const idxResp = await fetch('data/index.json', { cache: 'no-store' });
+    const _cb = '?v=' + Date.now();
+    const idxResp = await fetch('data/index.json' + _cb, { cache: 'no-store' });
     if (idxResp.ok) {
       const idx = await idxResp.json();
       const lista = (idx.semanas || []);
       // busca cada arquivo semanal (limita a 20 mais recentes para não pesar)
       for (const s of lista.slice(0, 20)) {
         try {
-          const r = await fetch('data/' + s.arquivo, { cache: 'no-store' });
+          const r = await fetch('data/' + s.arquivo + _cb, { cache: 'no-store' });
           if (r.ok) {
             const j = await r.json();
             semanas.push({
@@ -942,7 +943,7 @@ async function bootstrap() {
   // Fallback: sem índice, tenta o ultimo.json direto
   if (semanas.length === 0) {
     try {
-      const r = await fetch('data/ultimo.json', { cache: 'no-store' });
+      const r = await fetch('data/ultimo.json' + '?v=' + Date.now(), { cache: 'no-store' });
       if (r.ok) {
         const j = await r.json();
         semanas.push({
