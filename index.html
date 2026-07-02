@@ -21,6 +21,16 @@
     --pa-bg:#26301a; --pa-fg:#cbbf7e; --pl-bg:#3a1c17; --pl-fg:#e08a78;
     /* superfície de código/heatmap base */
     --heat:212,112,89;  /* rgb do risco, p/ o mapa de calor */
+    /* oportunidade (verde MUSGO, não neon) */
+    --opp-bg:#242a17; --opp-bd:#4a5828; --opp-title:#c3d492; --opp-text:#9fb072;
+    /* badge "dados" e status ok */
+    --ok-bg:#2a331a; --ok-fg:#a3b56a;
+    /* badges de setor: fundo + texto legível */
+    --tg-ind-bg:#2c3419; --tg-ind-fg:#bcce88; --tg-com-bg:#22331f; --tg-com-fg:#8fd0a0;
+    --tg-ser-bg:#2f2a1a; --tg-ser-fg:#d4c48a; --tg-tra-bg:#3a2f0a; --tg-tra-fg:#e2c766;
+    --tg-fon-bg:#242a1a; --tg-fon-fg:#b7bd9a;
+    /* status chip long */
+    --st-mat-bg:#3a1613; --st-mat-fg:#e0a094; --st-cur-bg:#3a2c10; --st-cur-fg:#e2c766; --st-mon-bg:#242a1a; --st-mon-fg:#b7bd9a;
     --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
     --toc-w:220px; --top-h:56px;
   }
@@ -36,6 +46,13 @@
     --ps-bg:#f0e3c4; --ps-fg:#8a6410; --pt-bg:#e4dfc8; --pt-fg:#6a5f2a;
     --pa-bg:#dde0c8; --pa-fg:#5a5528; --pl-bg:#f0d9cf; --pl-fg:#9a3a26;
     --heat:168,72,47;
+    /* oportunidade (verde ESCURO sobre fundo claro) */
+    --opp-bg:#dfe5c8; --opp-bd:#a9b877; --opp-title:#3f5220; --opp-text:#54633a;
+    --ok-bg:#d5dcbe; --ok-fg:#4a5722;
+    --tg-ind-bg:#d9dcc0; --tg-ind-fg:#3f5220; --tg-com-bg:#cfe0d2; --tg-com-fg:#1f6b45;
+    --tg-ser-bg:#e6ddc4; --tg-ser-fg:#6a5518; --tg-tra-bg:#f0e6c6; --tg-tra-fg:#7a5e12;
+    --tg-fon-bg:#e2dfcd; --tg-fon-fg:#54573f;
+    --st-mat-bg:#f0d9cf; --st-mat-fg:#9a3a26; --st-cur-bg:#f0e3c4; --st-cur-fg:#8a6410; --st-mon-bg:#e2dfcd; --st-mon-fg:#54573f;
     --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
     --toc-w:220px; --top-h:56px;
   }
@@ -116,7 +133,7 @@
   .ts-opt.active .ts-opt-label { color:var(--blue); }
   .ts-opt-sub { font-family:var(--mono); font-size:10px; color:var(--text-3); }
   .ts-opt-status { font-family:var(--mono); font-size:9px; padding:2px 7px; border-radius:10px; }
-  .ts-status-ok { background:var(--green-dim); color:#6ee7b7; }
+  .ts-status-ok { background:var(--ok-bg); color:var(--ok-fg); }
   .ts-status-empty { background:var(--surface-2); color:var(--text-3); }
   .ts-group-label { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase;
     color:var(--text-3); padding:10px 12px 4px; }
@@ -159,7 +176,7 @@
     display:inline-block; transition:all .15s; }
   .fontes-text a:hover { color:var(--blue); border-color:var(--blue); background:var(--blue-dim); }
   .kpi-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px; }
-  .kpi-label { font-size:10px; color:var(--text-3); font-weight:500; text-transform:uppercase; letter-spacing:1px; margin-bottom:9px; }
+  .kpi-label { font-size:10px; color:var(--text-3); font-weight:500; text-transform:uppercase; letter-spacing:1px; margin-bottom:9px; justify-content:space-between; gap:6px; }
   .kpi-value { font-size:24px; font-weight:800; line-height:1; margin-bottom:5px; }
   .kpi-sub { font-size:11px; color:var(--text-2); }
   .kpi-up { color:var(--green); } .kpi-down { color:var(--red); } .kpi-neutral { color:var(--amber); }
@@ -185,11 +202,11 @@
   .clip-item:first-child { padding-top:0; }
   .clip-tags { display:flex; gap:6px; margin-bottom:6px; flex-wrap:wrap; align-items:center; }
   .tag-pill { font-size:10px; font-weight:600; padding:2px 8px; border-radius:4px; font-family:var(--mono); }
-  .tag-industria { background:#2c3419; color:#a8b874; }
-  .tag-comercio { background:#064e3b; color:#34d399; }
-  .tag-servicos { background:#2f2a1a; color:#c9b98a; }
-  .tag-transversal { background:#3a2f0a; color:#fbbf24; }
-  .tag-fonte { background:var(--surface-2); color:var(--text-3); }
+  .tag-industria { background:var(--tg-ind-bg); color:var(--tg-ind-fg); }
+  .tag-comercio { background:var(--tg-com-bg); color:var(--tg-com-fg); }
+  .tag-servicos { background:var(--tg-ser-bg); color:var(--tg-ser-fg); }
+  .tag-transversal { background:var(--tg-tra-bg); color:var(--tg-tra-fg); }
+  .tag-fonte { background:var(--tg-fon-bg); color:var(--tg-fon-fg); }
   .clip-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:4px; line-height:1.4; }
   .clip-text { font-size:12px; color:var(--text-2); line-height:1.55; margin-bottom:7px; }
   .clip-link { display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:10px;
@@ -236,10 +253,10 @@
   .risk-sector { font-size:10px; color:var(--text-3); margin-top:2px; font-family:var(--mono); }
   .risk-level { font-family:var(--mono); font-size:10px; font-weight:600; }
   .level-alto { color:var(--red); } .level-medio { color:var(--amber); } .level-baixo { color:var(--green); }
-  .opp-row { padding:10px 12px; background:var(--green-dim); border-radius:8px; border:1px solid #065f46; margin-bottom:8px; }
+  .opp-row { padding:10px 12px; background:var(--opp-bg); border-radius:8px; border:1px solid var(--opp-bd); margin-bottom:8px; }
   .opp-row:last-child { margin-bottom:0; }
-  .opp-title { font-size:12px; font-weight:600; color:#6ee7b7; margin-bottom:3px; }
-  .opp-text { font-size:11px; color:#a7f3d0; line-height:1.45; }
+  .opp-title { font-size:12px; font-weight:600; color:var(--opp-title); margin-bottom:3px; }
+  .opp-text { font-size:11px; color:var(--opp-text); line-height:1.45; }
   .empty-note { font-size:11px; color:var(--text-3); font-style:italic; padding:8px 0; }
 
   /* LONGITUDINAL */
@@ -254,9 +271,9 @@
   .long-update { font-size:12px; color:var(--text-2); line-height:1.5; margin-bottom:8px; }
   .long-sectors { display:flex; gap:4px; flex-wrap:wrap; margin-bottom:4px; }
   .status-chip { display:inline-flex; align-items:center; gap:6px; margin-top:6px; padding:4px 11px; border-radius:20px; font-size:10px; font-weight:600; font-family:var(--mono); }
-  .chip-mat { background:var(--red-dim); color:#fca5a5; }
-  .chip-cur { background:var(--amber-dim); color:#fcd34d; }
-  .chip-mon { background:var(--surface-2); color:var(--text-3); border:1px solid var(--border); }
+  .chip-mat { background:var(--st-mat-bg); color:var(--st-mat-fg); }
+  .chip-cur { background:var(--st-cur-bg); color:var(--st-cur-fg); }
+  .chip-mon { background:var(--st-mon-bg); color:var(--st-mon-fg); border:1px solid var(--border); }
   .chip-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
   .cd-mat { background:var(--red); box-shadow:0 0 4px var(--red); }
   .cd-cur { background:var(--amber); box-shadow:0 0 4px var(--amber); }
@@ -394,6 +411,38 @@
   .legend-note b { color:var(--text-2); }
   @media (max-width:1100px){ .legend-grid { grid-template-columns:1fr; gap:16px; } }
 
+
+
+  /* ═══ EDITORIAL LONGITUDINAL ═══ */
+  .editorial { background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--blue);
+    border-radius:12px; padding:20px 24px; margin-bottom:24px; }
+  .editorial-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
+  .editorial-kicker { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--blue); }
+  .editorial-stamp { font-family:var(--mono); font-size:10px; color:var(--text-3); }
+  .editorial-body { font-size:14px; line-height:1.75; color:var(--text); }
+  .editorial-body p { margin:0 0 11px; } .editorial-body p:last-child { margin-bottom:0; }
+
+  /* ═══ ÍCONE (i) DE AJUDA NOS KPIs ═══ */
+  .kpi-i { position:relative; flex-shrink:0; cursor:help; display:inline-flex; }
+  .kpi-i-mark { width:15px; height:15px; border-radius:50%; border:1px solid var(--border);
+    background:var(--surface-2); color:var(--text-2); font-family:var(--mono); font-size:9px;
+    font-style:italic; font-weight:700; display:flex; align-items:center; justify-content:center;
+    text-transform:none; letter-spacing:0; transition:all .15s; }
+  .kpi-i:hover .kpi-i-mark, .kpi-i:focus .kpi-i-mark { border-color:var(--blue); color:var(--blue); background:var(--blue-dim); }
+  .kpi-tip { position:absolute; top:calc(100% + 8px); right:-4px; width:250px; z-index:200;
+    background:var(--surface-2); border:1px solid var(--blue); border-radius:9px; padding:11px 13px;
+    font-family:var(--sans); font-size:11px; font-weight:400; line-height:1.55; color:var(--text);
+    text-transform:none; letter-spacing:0; box-shadow:0 10px 30px rgba(0,0,0,.45);
+    opacity:0; visibility:hidden; transform:translateY(-4px); transition:all .16s; pointer-events:none; }
+  .kpi-i:hover .kpi-tip, .kpi-i:focus .kpi-tip, .kpi-i:focus-within .kpi-tip {
+    opacity:1; visibility:visible; transform:translateY(0); }
+  .kpi-tip::before { content:''; position:absolute; bottom:100%; right:10px;
+    border:6px solid transparent; border-bottom-color:var(--blue); }
+  /* última coluna: tooltip abre para a esquerda p/ não vazar da tela */
+  .kpi-card:last-child .kpi-tip, .kpi-card:nth-child(7n) .kpi-tip { right:auto; left:-4px; }
+  .kpi-card:last-child .kpi-tip::before, .kpi-card:nth-child(7n) .kpi-tip::before { right:auto; left:10px; }
+  @media print { .kpi-i { display:none !important; } }
+
   /* ═══ EXPORTAÇÃO / IMPRESSÃO ═══ */
   @media print {
     @page { margin: 14mm; size: A4; }
@@ -410,6 +459,7 @@
     .hm-cell, .kpi-card, .clip-item, .pestel-row, .long-card { break-inside:avoid; }
     .print-only { display:block !important; }
     .legend-panel { display:block !important; } .legend-toggle { display:none !important; }
+    .editorial { display:block !important; break-inside:avoid; }
   }
   .print-only { display:none; }
 
@@ -577,6 +627,14 @@
         <div class="hero-narrative" id="ovNarrativa"></div>
         <div class="hero-chips" id="ovChips"></div>
       </div>
+    </div>
+
+    <div class="editorial" id="editorialBlock" hidden>
+      <div class="editorial-head">
+        <span class="editorial-kicker">Editorial da semana · análise longitudinal</span>
+        <span class="editorial-stamp" id="editorialStamp"></span>
+      </div>
+      <div class="editorial-body" id="editorialBody"></div>
     </div>
 
     <div class="sec-head" id="sec-kpis">
@@ -914,16 +972,15 @@ let state = { period:'semanal', sector:'todos', menuOpen:false };
 
 const SECTOR_LABEL = { industria:'Indústria', comercio:'Comércio', servicos:'Serviços', transversal:'Transversal' };
 const SECTOR_TAGCLASS = { industria:'tag-industria', comercio:'tag-comercio', servicos:'tag-servicos', transversal:'tag-transversal' };
-const SECTOR_STAGCOLOR = {
-  industria:'background:#2c3419;color:#a8b874', comercio:'background:#064e3b;color:#34d399',
-  servicos:'background:#2f2a1a;color:#c9b98a', transversal:'background:#3a2f0a;color:#fbbf24'
+const SECTOR_STAGCLASS = {
+  industria:'tag-industria', comercio:'tag-comercio', servicos:'tag-servicos', transversal:'tag-transversal'
 };
 
 function match(itemSetores){
   if(state.sector==='todos') return true;
   return itemSetores.includes('transversal') || itemSetores.includes(state.sector);
 }
-function sectorTags(setores){ return setores.map(s=>`<span class="pestel-stag" style="${SECTOR_STAGCOLOR[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
+function sectorTags(setores){ return setores.map(s=>`<span class="pestel-stag ${SECTOR_STAGCLASS[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
 function clipTags(setores){ return setores.map(s=>`<span class="tag-pill ${SECTOR_TAGCLASS[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
 function barColor(score){ if(score>=8)return'#10b981'; if(score>=6.5)return'#a8b874'; return'#8a9ab5'; }
 
@@ -1010,7 +1067,11 @@ function renderAll(){
   else { sb.classList.add('show'); sb.innerHTML = `<span class="sf-dot sfd-${state.sector}" style="width:7px;height:7px;"></span>Filtro: ${SECTOR_LABEL[state.sector]}`; }
 
   // KPIs (não filtram por setor)
-  document.getElementById('kpiRow').innerHTML = d.kpis.map(k=>`<div class="kpi-card"><div class="kpi-label">${k.l}</div><div class="kpi-value kpi-${k.c}">${k.v}</div><div class="kpi-sub">${k.s}</div></div>`).join('');
+  document.getElementById('kpiRow').innerHTML = d.kpis.map(k=>{
+    const info = kpiInfo(k.l);
+    const badge = info ? `<span class="kpi-i" tabindex="0" role="button" aria-label="O que é ${k.l}"><span class="kpi-i-mark">i</span><span class="kpi-tip">${info}</span></span>` : '';
+    return `<div class="kpi-card"><div class="kpi-label"><span>${k.l}</span>${badge}</div><div class="kpi-value kpi-${k.c}">${k.v}</div><div class="kpi-sub">${k.s}</div></div>`;
+  }).join('');
 
   // CLIPPING
   const clip = d.clipping.filter(c=>match(c.set));
@@ -1097,6 +1158,23 @@ function setSideLabel(){
 
 /* ═══════════════════ VISÃO GERAL: cruzamentos de inteligência ═══════════════════ */
 function renderOverview(d){
+  // EDITORIAL longitudinal (gerado pelo motor; ausente nas edições antigas → esconde)
+  (function(){
+    var bloco = document.getElementById('editorialBlock');
+    var body = document.getElementById('editorialBody');
+    var stamp = document.getElementById('editorialStamp');
+    var ed = _edicaoAtual && _edicaoAtual.editorial;
+    if(ed && ed.texto){
+      var paras = String(ed.texto).split(/\n\s*\n/).filter(function(p){return p.trim();});
+      body.innerHTML = paras.map(function(p){return '<p>'+p.replace(/</g,'&lt;')+'</p>';}).join('');
+      var n = ed.n_sinais_considerados;
+      stamp.textContent = n ? (n + ' sinais considerados') : '';
+      bloco.hidden = false;
+    } else {
+      bloco.hidden = true;  // fallback: sem editorial, some sem deixar buraco
+    }
+  })();
+
   const P = d.pestel.filter(p=>match(p.set));
   const C = d.clipping.filter(c=>match(c.set));
   const L = (d.long||[]).filter(l=>match(l.set));
@@ -1212,6 +1290,23 @@ document.addEventListener('click',e=>{
 });
 
 
+
+
+/* ═══ EXPLICAÇÕES DOS INDICADORES (tooltip do ícone i) ═══ */
+const KPI_INFO = [
+  { m:['selic'], t:'SELIC — Taxa básica de juros da economia, definida pelo Copom/Banco Central. É o principal instrumento de política monetária: juros altos freiam a inflação e encarecem o crédito; juros baixos estimulam consumo e investimento. Referência para todas as demais taxas do país.' },
+  { m:['ipca-15','ipca'], t:'IPCA / IPCA-15 — Índice de Preços ao Consumidor Amplo, a inflação oficial do Brasil (IBGE). O IPCA-15 é uma prévia, coletada até o dia 15. Mede a variação de preços de uma cesta de consumo das famílias. A meta atual é 3,0% ao ano, com tolerância de ±1,5 p.p.' },
+  { m:['câmbio','cambio','dólar','dolar'], t:'Câmbio (dólar comercial) — Preço do dólar em reais. Afeta diretamente custos de insumos importados, preços de commodities e a competitividade das exportações. Alta do dólar pressiona a inflação; queda barateia importações.' },
+  { m:['desemprego','pnad','desocupação','desocupacao'], t:'Taxa de desemprego (PNAD Contínua/IBGE) — Percentual da população economicamente ativa que procura trabalho e não encontra. Desemprego baixo indica mercado de trabalho aquecido, o que sustenta renda e consumo — mas pode pressionar salários e inflação.' },
+  { m:['varejo','pmc'], t:'Varejo (PMC/IBGE) — Pesquisa Mensal de Comércio: mede o volume de vendas do comércio varejista. É o termômetro mais direto do consumo das famílias e da saúde do setor comercial.' },
+  { m:['pim','produção industrial','producao industrial'], t:'PIM (Produção Industrial/IBGE) — Pesquisa Industrial Mensal (PIM-PF): mede o volume físico produzido pela indústria. Indica o ritmo da atividade industrial e antecipa tendências de emprego e investimento no setor.' },
+  { m:['ipp'], t:'IPP (Índice de Preços ao Produtor/IBGE) — Mede a variação de preços na porta da fábrica, antes de impostos e frete. É um indicador antecedente da inflação ao consumidor: pressões de custo no produtor tendem a chegar ao IPCA meses depois.' }
+];
+function kpiInfo(label){
+  const L = (label||'').toLowerCase();
+  const hit = KPI_INFO.find(k => k.m.some(x => L.includes(x)));
+  return hit ? hit.t : null;
+}
 
 /* ═══════════════════ EXPORTAÇÃO ═══════════════════ */
 let _edicaoAtual = null;  // guarda o JSON bruto da semana em exibição
