@@ -7,6 +7,7 @@ processa resposta → recalcula relevância → grava de volta → gera dados do
 import os
 import json
 import re
+import time
 from datetime import date, datetime, timedelta
 
 from google import genai
@@ -428,21 +429,31 @@ de riscos e oportunidades ao longo das semanas.
 
 Responda SOMENTE com o texto do editorial, sem título, sem aspas, sem markdown."""
 
-    try:
-        client = genai.Client(api_key=GEMINI_KEY)
-        resp = client.models.generate_content(
-            model=MODELO,
-            contents=prompt,
-            config=types.GenerateContentConfig(temperature=0.5),
-        )
-        texto = (resp.text or "").strip()
-        if not texto:
-            return None
-        return {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
-                "n_sinais_considerados": ctx["n_ativos"]}
-    except Exception as e:
-        print(f"[motor] Editorial falhou (não crítico): {e}")
-        return None
+    # Retry com backoff: a 2ª chamada ao Gemini (editorial) costuma bater no
+    # rate limit da cota gratuita logo após a coleta pesada. Espera e tenta de novo.
+    client = genai.Client(api_key=GEMINI_KEY)
+    esperas = [0, 20, 40]  # 1ª tentativa imediata; depois espera 20s, 40s
+    ultimo_erro = None
+    for i, espera in enumerate(esperas):
+        if espera:
+            print(f"[motor] Editorial: aguardando {espera}s antes de nova tentativa (rate limit)...")
+            time.sleep(espera)
+        try:
+            resp = client.models.generate_content(
+                model=MODELO,
+                contents=prompt,
+                config=types.GenerateContentConfig(temperature=0.5),
+            )
+            texto = (resp.text or "").strip()
+            if texto:
+                return {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
+                        "n_sinais_considerados": ctx["n_ativos"]}
+            ultimo_erro = "resposta vazia"
+        except Exception as e:
+            ultimo_erro = str(e)
+            print(f"[motor] Editorial tentativa {i+1}/{len(esperas)} falhou: {e}")
+    print(f"[motor] Editorial não gerado após {len(esperas)} tentativas ({ultimo_erro}).")
+    return None
 
 
 def gerar_dados_portal(dados, sb, chave, label, editorial=None):
