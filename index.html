@@ -3,18 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexosis IM · Cockpit de Inteligência</title>
+<title>Nexos IM · Cockpit de Inteligência</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
+    /* ─── TEMA ESCURO (padrão) · militar musgo/oliva/areia ─── */
     --bg:#12140d; --surface:#1a1e13; --surface-2:#242a1a; --border:#333a24;
-    --text:#e9ead9; --text-2:#a3a986; --text-3:#6b7050;
-    /* "blue" agora é o verde-musgo/oliva de acento (mantém o nome da variável p/ não quebrar refs) */
-    --blue:#8a9a5b; --blue-dim:#2c3419; --green:#7d9153; --green-dim:#2a331a;
-    --red:#c85a4a; --red-dim:#3a1613; --amber:#c9a24b; --amber-dim:#3a2c10;
-    --sand:#c8b789; --sand-dim:#39321f;
-    --purple:#b0a56a; --cyan:#7d8a4e;
+    --text:#e9ead9; --text-2:#b7bd9a; --text-3:#8a906a;
+    --blue:#a3b56a; --blue-dim:#2c3419; --green:#8aa35e; --green-dim:#2a331a;
+    --red:#d47059; --red-dim:#3a1613; --amber:#d4ab52; --amber-dim:#3a2c10;
+    --sand:#d4c390; --sand-dim:#39321f;
+    --purple:#c2b57a; --cyan:#9aa860;
+    /* badges PESTEL tokenizados (para o tema claro trocar junto) */
+    --pp-bg:#2c3419; --pp-fg:#b8c884; --pe-bg:#1f3a2b; --pe-fg:#6ee7a8;
+    --ps-bg:#3a2a10; --ps-fg:#e2b558; --pt-bg:#2f2a1a; --pt-fg:#d4c48a;
+    --pa-bg:#26301a; --pa-fg:#cbbf7e; --pl-bg:#3a1c17; --pl-fg:#e08a78;
+    /* superfície de código/heatmap base */
+    --heat:212,112,89;  /* rgb do risco, p/ o mapa de calor */
+    --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
+    --toc-w:220px; --top-h:56px;
+  }
+  /* ─── TEMA CLARO · areia/pergaminho militar (campanha diurna) ─── */
+  [data-theme="light"] {
+    --bg:#e8e6d8; --surface:#f3f1e6; --surface-2:#e2dfcd; --border:#c8c4ad;
+    --text:#26281c; --text-2:#54573f; --text-3:#7a7d5f;
+    --blue:#5f6d34; --blue-dim:#d9dcc0; --green:#5a7038; --green-dim:#d5dcbe;
+    --red:#a8482f; --red-dim:#f0d9cf; --amber:#9a7420; --amber-dim:#f0e3c4;
+    --sand:#8a7638; --sand-dim:#e6dcc0;
+    --purple:#7a6d3a; --cyan:#5f6a30;
+    --pp-bg:#d9dcc0; --pp-fg:#4a5722; --pe-bg:#cfe0d2; --pe-fg:#1f6b45;
+    --ps-bg:#f0e3c4; --ps-fg:#8a6410; --pt-bg:#e4dfc8; --pt-fg:#6a5f2a;
+    --pa-bg:#dde0c8; --pa-fg:#5a5528; --pl-bg:#f0d9cf; --pl-fg:#9a3a26;
+    --heat:168,72,47;
     --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
     --toc-w:220px; --top-h:56px;
   }
@@ -133,8 +154,10 @@
   .kpi-row { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:14px; margin-bottom:26px; }
   .kpi-label { min-height:2.2em; display:flex; align-items:flex-end; }
   .clip-links { display:flex; flex-wrap:wrap; gap:6px; }
-  .fontes-text a { color:var(--text-2); text-decoration:none; border-bottom:1px dotted var(--text-3); transition:color .15s; }
-  .fontes-text a:hover { color:var(--blue); border-bottom-color:var(--blue); }
+  .fontes-text a { color:var(--text); text-decoration:none; background:var(--surface-2);
+    border:1px solid var(--border); border-radius:6px; padding:3px 9px; margin:2px 1px;
+    display:inline-block; transition:all .15s; }
+  .fontes-text a:hover { color:var(--blue); border-color:var(--blue); background:var(--blue-dim); }
   .kpi-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px; }
   .kpi-label { font-size:10px; color:var(--text-3); font-weight:500; text-transform:uppercase; letter-spacing:1px; margin-bottom:9px; }
   .kpi-value { font-size:24px; font-weight:800; line-height:1; margin-bottom:5px; }
@@ -178,9 +201,9 @@
   .pestel-list { display:flex; flex-direction:column; gap:14px; }
   .pestel-row { display:grid; grid-template-columns:36px 1fr; gap:12px; align-items:start; }
   .pestel-badge { width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:16px; flex-shrink:0; }
-  .p-pol { background:#2c3419; color:#a8b874; } .p-eco { background:#064e3b; color:#34d399; }
-  .p-soc { background:#451a03; color:#fbbf24; } .p-tec { background:#2f2a1a; color:#c9b98a; }
-  .p-amb { background:#242a1a; color:#c8b789; } .p-leg { background:#450a0a; color:#f87171; }
+  .p-pol { background:var(--pp-bg); color:var(--pp-fg); } .p-eco { background:var(--pe-bg); color:var(--pe-fg); }
+  .p-soc { background:var(--ps-bg); color:var(--ps-fg); } .p-tec { background:var(--pt-bg); color:var(--pt-fg); }
+  .p-amb { background:var(--pa-bg); color:var(--pa-fg); } .p-leg { background:var(--pl-bg); color:var(--pl-fg); }
   .pestel-meta { min-width:0; }
   .pestel-name-row { display:flex; align-items:baseline; gap:8px; margin-bottom:5px; flex-wrap:wrap; }
   .pestel-name { font-size:12px; font-weight:600; color:var(--text); }
@@ -250,7 +273,7 @@
   .ll-text strong { display:block; color:var(--text); font-weight:600; font-size:11px; }
 
   .block { margin-bottom:30px; }
-  .fontes-text { font-family:var(--mono); font-size:11px; color:var(--text-3); line-height:2.1; }
+  .fontes-text { font-family:var(--mono); font-size:11.5px; color:var(--text-2); line-height:2.2; }
   .fontes-count { display:block; margin-top:10px; color:var(--text-2); font-size:12px; }
 
   footer { border-top:1px solid var(--border); padding:18px 32px; margin-left:var(--toc-w);
@@ -351,6 +374,26 @@
   }
 
 
+
+  /* ═══ TEMA / LEGENDAS ═══ */
+  .legend-toggle { margin-left:8px; background:var(--surface-2); color:var(--text-2);
+    border:1px solid var(--border); font-family:var(--mono); font-size:11px; padding:6px 12px;
+    border-radius:8px; cursor:pointer; transition:all .15s; }
+  .legend-toggle:hover, .legend-toggle[aria-expanded="true"] { border-color:var(--blue); color:var(--blue); background:var(--blue-dim); }
+  .legend-panel { background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:18px 22px; margin-bottom:22px; animation:fadeUp .25s ease; }
+  .legend-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .legend-h { font-family:var(--mono); font-size:9px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--blue); margin-bottom:10px; }
+  .legend-row { display:flex; align-items:flex-start; gap:9px; font-size:12px; color:var(--text-2);
+    line-height:1.5; margin-bottom:8px; }
+  .legend-row b { color:var(--text); font-weight:600; }
+  .legend-row .sf-dot, .legend-row .ll-dot { margin-top:4px; flex-shrink:0; }
+  .lg-chip { font-family:var(--mono); font-size:9px; padding:3px 8px; border-radius:10px; flex-shrink:0; white-space:nowrap; }
+  .legend-note { font-size:11.5px; color:var(--text-3); line-height:1.55; margin-bottom:7px; }
+  .legend-note b { color:var(--text-2); }
+  @media (max-width:1100px){ .legend-grid { grid-template-columns:1fr; gap:16px; } }
+
   /* ═══ EXPORTAÇÃO / IMPRESSÃO ═══ */
   @media print {
     @page { margin: 14mm; size: A4; }
@@ -366,6 +409,7 @@
     a { color:#111 !important; text-decoration:underline; }
     .hm-cell, .kpi-card, .clip-item, .pestel-row, .long-card { break-inside:avoid; }
     .print-only { display:block !important; }
+    .legend-panel { display:block !important; } .legend-toggle { display:none !important; }
   }
   .print-only { display:none; }
 
@@ -377,7 +421,7 @@
 <div class="topbar">
   <div class="topbar-brand">
     <div class="brand-dot"></div>
-    <span class="brand-name">Nexosis <span style="color:var(--sand);">IM</span></span>
+    <span class="brand-name">Nexos <span style="color:var(--sand);">IM</span></span>
   </div>
   <nav class="topbar-nav" id="periodNav">
     <button data-period="semanal" class="active">Semanal</button>
@@ -388,6 +432,7 @@
   </nav>
   <div class="topbar-right">
     <span class="gen-stamp" id="genStamp"></span>
+    <button class="tb-btn" id="btnTheme" title="Alternar tema claro/escuro" aria-label="Alternar tema">☾ Tema</button>
     <button class="tb-btn" id="btnPrint" title="Exportar como PDF (imprimir)">⎙ PDF</button>
     <button class="tb-btn" id="btnJSON" title="Baixar os dados brutos desta edição em JSON">⬇ Dados</button>
   </div>
@@ -470,6 +515,43 @@
     </div>
     <button class="ts-arrow" id="tsNext">›</button>
     <div class="ts-year-tabs" id="tsYearTabs"></div>
+    <button class="legend-toggle" id="legendToggle" aria-expanded="false">? Legenda</button>
+  </div>
+
+  <!-- PAINEL DE LEGENDAS -->
+  <div class="legend-panel" id="legendPanel" hidden>
+    <div class="legend-grid">
+      <div class="legend-col">
+        <div class="legend-h">Dimensões PESTEL</div>
+        <div class="legend-row"><span class="pestel-badge p-pol" style="width:24px;height:24px;font-size:11px;">P</span><span><b>Político</b> — governo, políticas, regulação, tributação</span></div>
+        <div class="legend-row"><span class="pestel-badge p-eco" style="width:24px;height:24px;font-size:11px;">E</span><span><b>Econômico</b> — juros, câmbio, inflação, atividade</span></div>
+        <div class="legend-row"><span class="pestel-badge p-soc" style="width:24px;height:24px;font-size:11px;">S</span><span><b>Social</b> — emprego, renda, consumo, demografia</span></div>
+        <div class="legend-row"><span class="pestel-badge p-tec" style="width:24px;height:24px;font-size:11px;">T</span><span><b>Tecnológico</b> — inovação, digitalização, automação</span></div>
+        <div class="legend-row"><span class="pestel-badge p-amb" style="width:24px;height:24px;font-size:11px;">A</span><span><b>Ambiental</b> — energia, clima, ESG, recursos</span></div>
+        <div class="legend-row"><span class="pestel-badge p-leg" style="width:24px;height:24px;font-size:11px;">L</span><span><b>Legal</b> — leis, decisões judiciais, compliance</span></div>
+      </div>
+      <div class="legend-col">
+        <div class="legend-h">Setores</div>
+        <div class="legend-row"><span class="sf-dot sfd-industria"></span><span><b>Indústria</b> — produção e transformação</span></div>
+        <div class="legend-row"><span class="sf-dot sfd-comercio"></span><span><b>Comércio</b> — varejo e atacado</span></div>
+        <div class="legend-row"><span class="sf-dot sfd-servicos"></span><span><b>Serviços</b> — terciário</span></div>
+        <div class="legend-row"><span class="sf-dot sfd-todos"></span><span><b>Transversal</b> — afeta todos os setores</span></div>
+        <div class="legend-h" style="margin-top:14px;">Status do sinal</div>
+        <div class="legend-row"><span class="ll-dot lld-mat"></span><span><b>Materializado</b> — o previsto ocorreu; exige ação</span></div>
+        <div class="legend-row"><span class="ll-dot lld-cur"></span><span><b>Em curso</b> — tendência ativa; acompanhar de perto</span></div>
+        <div class="legend-row"><span class="ll-dot lld-mon"></span><span><b>Monitorar</b> — no radar, sem evolução relevante</span></div>
+      </div>
+      <div class="legend-col">
+        <div class="legend-h">Pressão da semana (0–100)</div>
+        <div class="legend-row"><span class="lg-chip" style="background:var(--red-dim);color:var(--red);">ALTA ≥ 70</span><span>semana exige atenção imediata</span></div>
+        <div class="legend-row"><span class="lg-chip" style="background:var(--amber-dim);color:var(--amber);">MODERADA 45–69</span><span>vigilância ativa</span></div>
+        <div class="legend-row"><span class="lg-chip" style="background:var(--green-dim);color:var(--green);">BAIXA &lt; 45</span><span>ambiente estável</span></div>
+        <div class="legend-h" style="margin-top:14px;">Como se calcula</div>
+        <div class="legend-note">A <b>pressão</b> combina a intensidade média das 6 dimensões PESTEL (60%) com a relevância média dos riscos ativos (40%).</div>
+        <div class="legend-note">A <b>relevância</b> (0–100) de cada sinal pondera severidade, iminência, persistência (quantas semanas reaparece) e corroboração (quantas fontes confirmam), com decaimento se some das notícias.</div>
+        <div class="legend-note">O <b>mapa de calor</b> cruza cada dimensão × setor: quanto mais quente, mais aquele par exige atenção.</div>
+      </div>
+    </div>
   </div>
 
   <div id="contentArea">
@@ -598,7 +680,7 @@
 </main>
 
 <footer>
-  <span>Nexosis IM · Nexosis · Inteligência de Mercado</span>
+  <span>Inteligência de Mercado · Leopoldo Diniz</span>
   <span id="footStamp"></span>
 </footer>
 
@@ -623,6 +705,28 @@ const SRC = {
 
 // blocos reutilizáveis de setor
 function S(...a){return a;}
+
+
+/* ═══════════════════ TEMA CLARO / ESCURO ═══════════════════ */
+(function initTheme(){
+  var salvo = null;
+  try { salvo = localStorage.getItem('nexos-tema'); } catch(e){}
+  if(salvo === 'light') document.documentElement.setAttribute('data-theme','light');
+})();
+function aplicarLabelTema(){
+  var b = document.getElementById('btnTheme');
+  if(!b) return;
+  var claro = document.documentElement.getAttribute('data-theme') === 'light';
+  b.textContent = claro ? '☀ Tema' : '☾ Tema';
+  b.title = claro ? 'Mudar para tema escuro' : 'Mudar para tema claro';
+}
+function alternarTema(){
+  var atual = document.documentElement.getAttribute('data-theme') === 'light';
+  if(atual){ document.documentElement.removeAttribute('data-theme'); }
+  else { document.documentElement.setAttribute('data-theme','light'); }
+  try { localStorage.setItem('nexos-tema', atual ? 'dark' : 'light'); } catch(e){}
+  aplicarLabelTema();
+}
 
 /* ═══════════════════════════════════════════════════════════
    CAMADA DE DADOS REAIS
@@ -899,7 +1003,7 @@ function renderAll(){
   document.getElementById('periodBadge').textContent = d.badge;
   document.getElementById('kpiTitle').textContent = d.kpiTitle;
   document.getElementById('genStamp').textContent = d.stamp;
-  document.getElementById('footStamp').textContent = d.badge + ' · Gerado automaticamente via Claude API';
+  document.getElementById('footStamp').textContent = d.badge + ' · Gerado automaticamente';
 
   const sb = document.getElementById('sectorBadge');
   if(state.sector==='todos'){ sb.classList.remove('show'); }
@@ -1124,6 +1228,18 @@ function baixarJSON(){
     document.body.removeChild(a); URL.revokeObjectURL(url);
   } catch(e){ alert('Não foi possível exportar os dados: ' + e.message); }
 }
+
+const _bt = document.getElementById('btnTheme');
+if(_bt) _bt.addEventListener('click', alternarTema);
+aplicarLabelTema();
+
+const _lt = document.getElementById('legendToggle');
+if(_lt) _lt.addEventListener('click', function(){
+  var p = document.getElementById('legendPanel');
+  var aberto = !p.hidden;
+  p.hidden = aberto;
+  _lt.setAttribute('aria-expanded', String(!aberto));
+});
 
 const _bp = document.getElementById('btnPrint');
 if(_bp) _bp.addEventListener('click', ()=>window.print());
