@@ -1,238 +1,302 @@
 {
   "periodo": "2026-W27",
   "label": "Semana 27 · Junho 2026",
-  "gerado_em": "2026-07-02T11:39:17.473996",
+  "gerado_em": "2026-07-02T12:09:31.307617",
   "clipping": [
     {
       "setores": [
         "transversal",
+        "comercio"
+      ],
+      "titulo": "IPCA-15 de Junho desacelera, mas acumulado em 12 meses segue acima da meta",
+      "texto": "O Índice Nacional de Preços ao Consumidor Amplo-15 (IPCA-15) registrou alta de 0,41% em junho de 2026, uma desaceleração em relação à taxa de 0,62% de maio. Apesar da queda mensal, o acumulado em 12 meses atingiu 4,80%, permanecendo acima do teto da meta de inflação. Os maiores impactos vieram da energia elétrica residencial (2,04%) e alimentos como batata-inglesa (29,42%) e tomate (17,27%), enquanto combustíveis como gasolina (-0,73%) e etanol (-5,30%) registraram quedas.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/mercados/ipca-15-sobe-041-em-junho-um-pouco-abaixo-do-esperado-pelo-mercado/"
+        },
+        {
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/39830-ipca-15-e-de-0-41-em-junho"
+        },
+        {
+          "nome": "IBGE / Biblioteca",
+          "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/2422/ipca_15_2026_jun.pdf"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/ipca-15-previa-da-inflacao-sobe-041-em-junho-diz-ibge/"
+        },
+        {
+          "nome": "Banco Central do Brasil",
+          "url": "https://www.bcb.gov.br/content/focus/relatorios/RelatorioFocus20260701.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "IPP de Maio registra queda nos preços da indústria, influenciado por alimentos",
+      "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação variou -0,30% em maio de 2026 frente a abril, revertendo a alta de 2,62% do mês anterior. Sete das 24 atividades industriais apresentaram queda de preços, com destaque para o setor de alimentos (-2,05%), que tem o maior peso na indústria brasileira. O acumulado em 12 meses ficou em 1,99%. A indústria química, contudo, avançou 2,14% em maio, influenciada por choques nos preços internacionais devido ao cenário geopolítico no Oriente Médio.",
+      "fontes": [
+        {
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/39828-indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge"
+        },
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/"
+        },
+        {
+          "nome": "TC TradersClub",
+          "url": "https://tradersclub.com.br/noticias/indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio/"
+        },
+        {
+          "nome": "Broadcast / O Estado de S. Paulo",
+          "url": "https://www.estadao.com.br/economia/ipp-precos-da-industria-quimica-avancam-214-em-maio-com-guerra-no-oriente-medio/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria"
+      ],
+      "titulo": "Confiança Empresarial e de Serviços avançam em Junho, mas cautela persiste",
+      "texto": "O Índice de Confiança Empresarial (ICE) do FGV IBRE subiu 1,1 ponto em junho, atingindo 92,7 pontos, o maior nível desde maio de 2025. A melhora é atribuída, em parte, à distensão do conflito no Oriente Médio e à acomodação dos preços do petróleo. O Índice de Confiança de Serviços (ICS) também avançou 2,1 pontos, para 90,8 pontos, impulsionado pela recuperação das expectativas. No entanto, o pesquisador do FGV IBRE, Aloisio Campelo Jr., ressalta que, à exceção do setor industrial, os níveis de confiança permanecem historicamente baixos, limitados por juros elevados e endividamento das famílias.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/ice-de-junho-de-2026"
+        },
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/confianca-empresarial-avanca-novamente-em-junho"
+        },
+        {
+          "nome": "Folha de Pernambuco",
+          "url": "https://www.folhape.com.br/economia/fgv-confianca-de-servicos-sobe-21-pontos-em-junho-ante-maio-para-908/328229/"
+        },
+        {
+          "nome": "Sou Brasília",
+          "url": "https://soubrasilia.com.br/economia/confianca-empresarial-sobe-em-junho-e-atinge-maior-nivel-em-mais-de-um-ano/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Confiança do Comércio volta a crescer em Junho, puxada por bens semiduráveis",
+      "texto": "A confiança dos empresários do comércio brasileiro, medida pela CNC, avançou 0,2% em junho, alcançando 102,6 pontos após duas quedas mensais consecutivas. O resultado foi impulsionado principalmente pelo segmento de bens semiduráveis (roupas, calçados, tecidos e acessórios), cuja confiança saltou 1,1%. Apesar do otimismo com o futuro, a percepção sobre a economia atual ainda gera desconforto, com 75,9% dos varejistas observando piora no cenário corrente.",
+      "fontes": [
+        {
+          "nome": "CNC / Enfoque",
+          "url": "https://www.enfoque.com.br/noticia/1101-comercio-confianca-do-varejo-volta-a-crescer-em-junho-diz-cnc-20260630-110100"
+        },
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/2026/06/30/confianca-do-comercio-volta-a-crescer-em-junho-apos-duas-quedas/"
+        },
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/noticias/puxada-por-moda-e-calcados-confianca-do-comercio-volta-a-crescer-em-junho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Confiança do Consumidor estável em Junho, mas adia compra de bens duráveis",
+      "texto": "O Índice de Confiança do Consumidor (ICC) da FGV Ibre ficou praticamente estável em junho, com 88,7 pontos (-0,1 ponto). A melhora na percepção sobre o presente foi compensada por expectativas mais moderadas para o futuro. O indicador de compras previstas de bens duráveis, como eletrodomésticos e móveis, caiu 3 pontos, para 80, refletindo a cautela dos consumidores diante dos juros ainda altos que encarecem o crédito e o parcelamento.",
+      "fontes": [
+        {
+          "nome": "Sou Brasília",
+          "url": "https://soubrasilia.com.br/economia/confianca-do-consumidor-fica-estavel-em-junho-mas-familia-adia-compra-de-bens/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Indústria paulista recua em confiança e projeta queda nas exportações após proposta de tarifas dos EUA",
+      "texto": "O Índice de Confiança do Empresário Industrial de São Paulo (Icei-SP), da Fiesp, encerrou junho em 45,4 pontos, indicando pessimismo no setor. A Sondagem Industrial da CNI também revelou que os empresários industriais passaram a projetar queda nas exportações para os próximos seis meses, com o índice de expectativa de quantidade exportada caindo para 49,7 pontos. Essa mudança de perspectiva ocorre após a proposta do Representante Comercial dos Estados Unidos (USTR) de novas tarifas sobre produtos brasileiros.",
+      "fontes": [
+        {
+          "nome": "Economia SP",
+          "url": "https://economiasp.com.br/noticias/confianca-da-industria-paulista-recua-em-junho-e-mantem-cenario-de-pessimismo-aponta-fiesp/"
+        },
+        {
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br/noticias/sondagem-industrial-empresarios-projetam-queda-nas-exportacoes-nos-proximos-meses/"
+        },
+        {
+          "nome": "Revista Anamaco",
+          "url": "https://revistaanamaco.com.br/sondagem-industrial-cni-empresarios-industriais-projetam-queda-nas-exportacoes-nos-proximos-seis-meses-apos-proposta-de-novas-tarifas-dos-eua/"
+        },
+        {
+          "nome": "Broadcast / O Estado de S. Paulo",
+          "url": "https://www.estadao.com.br/economia/cni-apos-proposta-de-novas-tarifas-dos-eua-industria-preve-queda-das-exportacoes-em-2026/"
+        },
+        {
+          "nome": "Correio da Manhã",
+          "url": "https://correiodamanha.com.br/fiesp-vai-participar-de-audiencia-nos-eua/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "ANEEL aprova reajustes tarifários de energia em distribuidoras, com aumentos acima da inflação",
+      "texto": "A ANEEL (Agência Nacional de Energia Elétrica) aprovou reajustes tarifários para diversas distribuidoras, incluindo Cocel (14,58%), Energisa Tocantins (8,11%) e Enel São Paulo (9,02% para baixa tensão e 15% para alta tensão), com vigência a partir de 4 de julho. Em todos os casos, os aumentos médios para os consumidores superam a inflação projetada para o ano (5,1%). Os principais fatores de pressão incluem custos de aquisição de energia, encargos setoriais (CDE Uso) e componentes financeiros.",
+      "fontes": [
+        {
+          "nome": "Agência Eixos",
+          "url": "https://agenciaeixos.com.br/aneel-projeta-alta-media-de-8-para-tarifas-de-energia-eletrica/"
+        },
+        {
+          "nome": "UOL Economia",
+          "url": "https://economia.uol.com.br/noticias/redacao/2026/03/17/aneel-projeta-alta-media-de-8-na-tarifa-de-energia-eletrica-neste-ano.htm"
+        },
+        {
+          "nome": "Canal Solar",
+          "url": "https://canalsolar.com.br/aneel-aprova-reajustes-na-conta-de-luz-em-mais-3-distribuidoras/"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/06/aneel-aprova-aumento-de-1018-na-tarifa-de-energia-da-enel-sao-paulo-veja-quem-sera-mais-afetado/"
+        },
+        {
+          "nome": "Diário de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/noticia/economia/2026/06/aneel-projeta-alta-de-86-nas-tarifas-de-energia-eletrica-em-2026.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
         "comercio",
         "servicos"
       ],
-      "titulo": "Inadimplência de Consumidores Atinge Novo Recorde com Alta Reincidência",
-      "texto": "O Brasil registrou um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de consumidores com contas em atraso, representando 44,80% da população adulta. O Indicador de Reincidência de Pessoas Físicas, apurado pela CNDL e SPC Brasil, revelou que 85,41% das negativações foram de devedores reincidentes, sendo que a maioria (65,92%) ainda não havia quitado pendências antigas. O valor médio devido por inadimplente foi de R$ 5.145,04. Este cenário reflete um ambiente econômico ainda severo, com juros elevados encarecendo o crédito e as dívidas, dificultando a recuperação financeira das famílias.",
-      "fontes": [
-        {
-          "nome": "CNDL/SPC Brasil",
-          "url": "https://cndl.org.br"
-        },
-        {
-          "nome": "Portal varejosemsegredos.com.br",
-          "url": null
-        },
-        {
-          "nome": "Sobral Online",
-          "url": null
-        },
-        {
-          "nome": "Grupo Amanhã",
-          "url": null
-        },
-        {
-          "nome": "JC",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "industria",
-        "servicos"
-      ],
-      "titulo": "Confiança Empresarial Atinge Maior Nível em Mais de um Ano, Impulsionada pela Indústria",
-      "texto": "O Índice de Confiança Empresarial (ICE) da FGV IBRE subiu 1,1 ponto em junho de 2026, alcançando 92,7 pontos, o patamar mais elevado desde maio de 2025. A melhora foi disseminada, com a Indústria liderando o avanço e retomando o patamar de 100 pontos, seguida pelo setor de Serviços. O Comércio registrou um crescimento mais contido, enquanto a Construção foi o único setor a apresentar recuo. A percepção sobre a situação atual e as expectativas futuras contribuíram para o resultado positivo.",
-      "fontes": [
-        {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Arrecadação Federal Bate Recorde Histórico em Maio de 2026",
-      "texto": "A arrecadação federal de impostos e contribuições totalizou R$ 266,8 bilhões em maio de 2026, marcando o maior volume arrecadado para o mês desde 1995. No acumulado de janeiro a maio de 2026, o valor supera R$ 1,32 trilhão, com crescimento real de 6,42% em relação ao mesmo período do ano anterior. O desempenho foi impulsionado principalmente pelo aumento das receitas ligadas ao setor de petróleo e gás natural, além de avanços significativos no Imposto de Renda Pessoa Jurídica (IRPJ), Contribuição Social sobre o Lucro Líquido (CSLL) e Imposto sobre Operações Financeiras (IOF).",
-      "fontes": [
-        {
-          "nome": "Receita Federal",
-          "url": "https://www.gov.br/receitafederal/pt-br"
-        },
-        {
-          "nome": "Consensus Contabilidade",
-          "url": null
-        },
-        {
-          "nome": "Tribuna do Norte",
-          "url": null
-        },
-        {
-          "nome": "Exame",
-          "url": "https://exame.com"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Boletim Focus Mantém Projeções de Inflação e Selic Elevadas para 2026",
-      "texto": "O Boletim Focus do Banco Central, divulgado em 29 de junho de 2026, manteve a projeção para o IPCA de 2026 em 5,33%, acima do teto da meta de inflação. A taxa Selic também foi mantida em 14% ao ano para o fim de 2026. As projeções para o câmbio permaneceram em R$ 5,20. Houve uma leve alta na projeção do PIB para 2026, de 1,98% para 1,99%, indicando uma economia mais resiliente no curto prazo, mas com desafios persistentes na ancoragem das expectativas de inflação.",
-      "fontes": [
-        {
-          "nome": "Banco Central/Focus",
-          "url": "https://www.bcb.gov.br/publicacoes/focus"
-        },
-        {
-          "nome": "Blog Itaú",
-          "url": null
-        },
-        {
-          "nome": "XP Investimentos",
-          "url": null
-        },
-        {
-          "nome": "Estadão",
-          "url": null
-        },
-        {
-          "nome": "Vermelho",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "IPCA-15 Desacelera em Junho, mas Acumulado de 12 Meses Permanece Acima da Meta",
-      "texto": "O IPCA-15 desacelerou para 0,41% em junho de 2026, após registrar 0,62% em maio, ficando abaixo das projeções do mercado. Apesar da desaceleração mensal, o índice acumulado em 12 meses acelerou para 4,8% até junho, afastando-se do teto de 4,5% da meta de inflação do Banco Central. O grupo Alimentação e Bebidas, embora com alta menor, continuou sendo a principal fonte de pressão, juntamente com a energia elétrica, que teve aumento de 2,04%.",
-      "fontes": [
-        {
-          "nome": "IBGE",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Demanda Interna por Bens Industriais Apresenta Quarto Avanço Consecutivo",
-      "texto": "O Indicador Ipea Mensal de Consumo Aparente de Bens Industriais, uma proxy da demanda interna por bens industriais, avançou 0,8% em abril de 2026 na comparação mensal com ajuste sazonal. Este é o quarto crescimento consecutivo do indicador, impulsionado por altas na produção interna destinada ao mercado nacional e nas importações de bens industriais. No acumulado em doze meses, a demanda por bens industriais registrou recuo de 0,1% em abril, contrastando com a elevação de 0,7% da produção interna, medida pela PIM-PF/IBGE.",
-      "fontes": [
-        {
-          "nome": "IPEA",
-          "url": "https://www.ipea.gov.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos"
-      ],
-      "titulo": "Crédito Bancário Cresce Impulsionado por Linhas Direcionadas e Programas Governamentais",
-      "texto": "A carteira total de crédito deve crescer 0,8% em maio de 2026, com aceleração do ritmo anual para 9,6%, segundo a Pesquisa Especial de Crédito da Febraban. O crescimento é sustentado principalmente pelas linhas com recursos direcionados, refletindo o impacto de programas governamentais como o Minha Casa, Minha Vida para pessoas físicas e o FGI (PEAC) para pessoas jurídicas. As linhas de crédito livre apresentaram um crescimento mais limitado.",
-      "fontes": [
-        {
-          "nome": "Febraban",
-          "url": "https://portal.febraban.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "IGP-M Registra Deflação em Junho com Queda nos Preços de Combustíveis e Minerais",
-      "texto": "O Índice Geral de Preços – Mercado (IGP-M) registrou deflação de 0,5% em junho de 2026, a primeira desde fevereiro do ano. Em 12 meses, o índice acumula 3,16%. A queda foi influenciada principalmente pelo recuo nos preços de combustíveis (gasolina e etanol), minerais e café. O Índice de Preços ao Produtor Amplo (IPA), que tem o maior peso no IGP-M, apresentou deflação de 0,97%.",
-      "fontes": [
-        {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Preços dos Combustíveis: Diesel e Gás de Cozinha em Queda, Gasolina com Leve Alta em Junho",
-      "texto": "O Levantamento de Preços da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) indicou que os preços do diesel e do gás de cozinha caíram em junho de 2026, enquanto a gasolina registrou uma leve alta. Na semana de 21 a 27 de junho, o preço da gasolina permaneceu estável em R$ 6,62/litro, o diesel recuou 0,5% para R$ 7,05/litro, e o gás de cozinha caiu 0,4% para R$ 114,02/botijão de 13 quilos. A queda dos preços do diesel e gás acompanha a redução do valor do petróleo no mercado internacional.",
+      "titulo": "ANP aprova critérios para identificar preços abusivos de combustíveis",
+      "texto": "A diretoria da ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis) aprovou, em 30 de junho de 2026, minutas de resolução que estabelecem critérios para caracterizar a elevação abusiva de preços de combustíveis por distribuidores e revendedores. A medida visa coibir práticas desleais, especialmente em cenários de conflito geopolítico e calamidade. Entre as mudanças, o parâmetro de aumento de margem bruta para filtro inicial foi elevado de 10% para 70%.",
       "fontes": [
         {
           "nome": "ANP",
-          "url": "https://www.gov.br/anp/pt-br"
-        },
-        {
-          "nome": "Portal Gov.br",
-          "url": null
-        },
-        {
-          "nome": "Tribuna do Norte",
-          "url": null
+          "url": "https://www.gov.br/anp/pt-br/documentos-e-publicacoes/noticias-e-comunicados/diretoria-da-anp-aprova-criterios-para-identificar-precos-abusivos-de-combustiveis"
         }
       ]
     },
     {
       "setores": [
         "transversal",
+        "comercio"
+      ],
+      "titulo": "Preços de combustíveis em Junho: Diesel e GLP em queda, gasolina estável/leve alta",
+      "texto": "Os preços do etanol, diesel e gás de cozinha cederam na semana de 7 a 13 de junho, enquanto o litro da gasolina comum permaneceu estável, segundo a ANP. No fechamento de junho, o diesel e o gás de cozinha caíram, e a gasolina registrou uma leve alta de 0,15%. O preço dos combustíveis segue a trajetória decrescente do petróleo no mercado internacional, refletindo também medidas de subvenção do governo.",
+      "fontes": [
+        {
+          "nome": "UOL Economia",
+          "url": "https://economia.uol.com.br/noticias/redacao/2026/06/12/precos-de-etanol-diesel-e-glp-caem-e-o-da-gasolina-fica-estavel-diz-anp.htm"
+        },
+        {
+          "nome": "Acessa.com",
+          "url": "https://www.acessa.com/economia/2026/06/anp-diesel-e-gas-de-cozinha-fecham-junho-em-queda-e-gasolina-tem-ligeira-alta/"
+        },
+        {
+          "nome": "Reaja Agora",
+          "url": "https://reajaagora.com.br/precos-dos-combustiveis-anp-adia-divulgacao-para-09-06/"
+        },
+        {
+          "nome": "ANP Timor-Leste",
+          "url": "https://anp.tl/daily-fuel-price-03-10-june-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar fecha Junho em R$ 5,16 e supera R$ 5,20 no início de Julho, pressionado por juros nos EUA",
+      "texto": "O dólar comercial fechou junho a R$ 5,16, mas no primeiro pregão de julho (01/07/2026) superou R$ 5,20, encerrando a R$ 5,209. A valorização da moeda americana é impulsionada pela expectativa de manutenção dos juros elevados nos Estados Unidos, o que fortalece o dólar e reduz o fluxo de recursos para mercados emergentes como o Brasil.",
+      "fontes": [
+        {
+          "nome": "UOL Economia",
+          "url": "https://economia.uol.com.br/noticias/redacao/2026/07/01/dolar-fecha-junho-a-r-516-ibovespa-cai-pelo-4-mes-seguido.htm"
+        },
+        {
+          "nome": "BB InvesTalk",
+          "url": "https://bbinvestalk.com.br/fechamento-cambio-dolar-tem-leve-queda-para-r-516-mas-fecha-junho-com-valorizacao-de-238/"
+        },
+        {
+          "nome": "Ipeadata",
+          "url": "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=366&module=M"
+        },
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/07/dolar-supera-r-520-e-bolsa-cai-com-expectativa-por-juros-nos-eua"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "Fiesp apresenta estudo sobre descarbonização da indústria em evento de Meio Ambiente",
+      "texto": "A Fiesp apresentou, em 9 de junho, um estudo inédito sobre a trajetória de emissões da indústria até 2050, em comemoração ao Dia Mundial do Meio Ambiente. O estudo reforça o papel da indústria na descarbonização da economia, um tema de crescente relevância para o setor.",
+      "fontes": [
+        {
+          "nome": "Sinproquim",
+          "url": "https://www.sinproquim.org.br/fiesp-apresentara-estudo-inedito-sobre-o-papel-da-industria-na-descarbonizacao-da-economia/"
+        }
+      ]
+    },
+    {
+      "setores": [
         "industria",
         "servicos"
       ],
-      "titulo": "B3 Lança Plataforma ESG com Inteligência Artificial e Adere a Novas Normas de Reporte de Sustentabilidade",
-      "texto": "A B3 lançou uma nova versão de sua plataforma de dados ESG, o ESG Workspace, em parceria com a Atos, que utiliza inteligência artificial generativa para padronizar informações sobre índices de sustentabilidade de empresas brasileiras. Além disso, a B3 divulgou a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, com 69 companhias, e anunciou sua adesão voluntária e antecipada às novas normas internacionais de reporte de sustentabilidade IFRS S1 e S2, tornando-se a primeira do setor financeiro a fazê-lo.",
+      "titulo": "Sondagem da Indústria da Construção aponta crescimento nas expectativas para Junho",
+      "texto": "Todos os indicadores de expectativas da Sondagem da Indústria da Construção da CNI registraram crescimento na passagem de maio para junho de 2026. O índice de expectativa de novos empreendimentos e serviços ultrapassou a linha de 50 pontos, indicando que os empresários esperam crescimento. Há expectativas mais disseminadas de aumento no número de empregados, compra de insumos e nível de atividade para os próximos seis meses.",
       "fontes": [
         {
-          "nome": "B3",
-          "url": "https://www.b3.com.br"
-        },
-        {
-          "nome": "ViaVerde News",
-          "url": null
-        },
-        {
-          "nome": "Forbes",
-          "url": null
-        },
-        {
-          "nome": "VEJA",
-          "url": null
-        },
-        {
-          "nome": "Reset",
-          "url": null
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://www.portaldaindustria.com.br/estatisticas/sondagem-industria-da-construcao/"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "servicos"
+        "transversal"
       ],
-      "titulo": "Receita Federal Paga Lote Recorde de Restituição do IR em Junho",
-      "texto": "A Receita Federal realizou o pagamento do segundo lote de restituição do Imposto de Renda 2026 em 30 de junho de 2026, totalizando R$ 16 bilhões para 9,58 milhões de contribuintes. Este é o maior lote da história em número de beneficiários, com R$ 4,49 bilhões destinados a prioridades legais. A agilidade no processamento das declarações e o avanço das ferramentas de modernização e automação do órgão foram apontados como fatores para o recorde.",
+      "titulo": "IBGE celebra 90 anos e lança iniciativas em pesquisa e conservação",
+      "texto": "O IBGE celebrou seus 90 anos com uma série de eventos e lançamentos na semana. Dentre as iniciativas, destacam-se o lançamento da primeira prova piloto do Censo Nacional da População em Situação de Rua, a coleta nacional da Pesquisa Nacional de Saúde 2026, a inclusão da Reserva Ecológica do IBGE no Sistema Nacional de Unidades de Conservação (SNUC) e o lançamento de selo comemorativo pelos Correios. A agenda semanal do instituto também foi divulgada, incluindo a Pesquisa Especial sobre as Enchentes no Rio Grande do Sul (PEERS) e a PNAD Contínua sobre Acesso à Internet e à televisão.",
       "fontes": [
         {
-          "nome": "Receita Federal",
-          "url": "https://www.gov.br/receitafederal/pt-br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos"
-      ],
-      "titulo": "Mercado de Trabalho Apresenta Sinais de Perda de Fôlego, Apesar de Taxa de Desocupação Estável",
-      "texto": "O mercado de trabalho brasileiro mantém uma trajetória favorável, com a taxa de desocupação em abril de 2026 em 5,3%, um recuo de 0,05 ponto percentual em relação a abril de 2025. Contudo, indicadores mais recentes do Ipea apontam sinais de perda de fôlego na margem, com queda no ritmo de criação de novas vagas e desaceleração no crescimento dos salários. A taxa de desocupação dessazonalizada em abril (5,5%) é a mais alta desde outubro de 2025.",
-      "fontes": [
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias"
+        },
         {
-          "nome": "IPEA",
-          "url": "https://www.ipea.gov.br"
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/"
         }
       ]
     }
@@ -241,11 +305,12 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Iniciativas Governamentais de Crédito e Impacto Fiscal",
-      "texto": "O lançamento do programa 'Desenrola Adimplentes' pelo governo federal visa auxiliar consumidores em dia com suas contas, mas com risco de inadimplência, oferecendo crédito pessoal não consignado com juros limitados a 1,99% ao mês e garantia do FGO. A adesão de bancos privados, contudo, é incerta, com apenas instituições públicas sinalizando participação imediata. Este movimento reflete uma tentativa de estímulo econômico e social, mas sua eficácia dependerá da capilaridade e aceitação no setor financeiro. A arrecadação federal recorde em maio, impulsionada por setores como petróleo e gás e alterações legislativas, demonstra a capacidade do governo em gerar receita, o que pode abrir espaço para novas políticas públicas ou investimentos.",
+      "tema": "Regulamentação e Relações Comerciais Internacionais",
+      "texto": "A ANP aprovou critérios para identificar preços abusivos de combustíveis, demonstrando uma intervenção regulatória para proteger o consumidor. Paralelamente, a proposta dos EUA de novas tarifas sobre produtos brasileiros gerou preocupação na indústria, impactando as expectativas de exportação e evidenciando a influência das relações comerciais internacionais na economia doméstica.",
       "score": 7.5,
       "setores": [
         "transversal",
+        "industria",
         "comercio",
         "servicos"
       ]
@@ -253,8 +318,8 @@
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Cenário Inflacionário Persistente e Juros Elevados",
-      "texto": "A economia brasileira continua a operar sob um cenário de inflação persistente e taxas de juros elevadas. O IPCA-15 de junho, embora tenha desacelerado, mantém o acumulado em 12 meses acima da meta do Banco Central, e as projeções do Boletim Focus para o IPCA e a Selic em 2026 permanecem em patamares altos (5,33% e 14% respectivamente). A inadimplência recorde e o crescimento do crédito concentrado em linhas direcionadas indicam que, apesar de uma arrecadação federal robusta e melhora na confiança empresarial, o custo do crédito e a pressão sobre o orçamento familiar continuam sendo desafios significativos. O PIB de 2026 tem projeção de leve alta, sugerindo resiliência, mas o mercado de trabalho mostra sinais de desaceleração.",
+      "tema": "Inflação, Juros e Confiança Econômica",
+      "texto": "A inflação, medida pelo IPCA-15, desacelerou em junho, mas o acumulado em 12 meses permanece elevado. O IPP registrou deflação na indústria em maio, com exceção do setor químico. A confiança empresarial e de serviços avançou, mas a cautela do consumidor e o endividamento familiar persistem, limitados por juros altos. O câmbio do dólar mostra volatilidade, com valorização frente ao real, impactando importações e custos.",
       "score": 8.5,
       "setores": [
         "transversal",
@@ -266,9 +331,9 @@
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Endividamento e Cautela do Consumidor",
-      "texto": "O endividamento familiar e a cautela do consumidor permanecem como fatores sociais de risco. A inadimplência atingiu um novo recorde em maio de 2026, com mais de 75 milhões de brasileiros com contas em atraso, e a alta reincidência de devedores (85,41%) é um sinal preocupante da dificuldade em sair do ciclo de endividamento. Este cenário é agravado pelos juros elevados e pelo custo de vida pressionado, impactando diretamente o poder de compra e a capacidade de quitação de dívidas, especialmente para PMEs que dependem do consumo interno.",
-      "score": 8.0,
+      "tema": "Confiança do Consumidor e Endividamento",
+      "texto": "A confiança do consumidor manteve-se estável em junho, porém com uma notável cautela na intenção de compra de bens duráveis. Este comportamento é reflexo direto dos juros elevados e do comprometimento da renda familiar com dívidas, o que continua a ser um contrapeso significativo para a sustentação do consumo.",
+      "score": 7.0,
       "setores": [
         "comercio",
         "servicos"
@@ -277,81 +342,79 @@
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Avanço da Digitalização e IA em Plataformas ESG",
-      "texto": "A B3 demonstra o avanço da digitalização e da aplicação de inteligência artificial no mercado financeiro com o lançamento do ESG Workspace. Esta plataforma utiliza IA generativa para padronizar e facilitar o acesso a dados de sustentabilidade de empresas listadas, permitindo a investidores e às próprias companhias analisar riscos e oportunidades ESG de forma mais eficiente. Embora não diretamente focada em PMEs, a iniciativa reflete uma tendência de mercado que eventualmente pode influenciar a demanda por soluções tecnológicas e a necessidade de digitalização em todos os setores.",
-      "score": 7.0,
+      "tema": "Digitalização e Inovação",
+      "texto": "Embora não haja notícias específicas sobre digitalização ou IA para PMEs nesta semana, a tendência de aceleração da adoção de tecnologias continua sendo um fator transformador. A ausência de novas informações pode indicar um período de consolidação ou implementação de projetos já iniciados, mantendo a relevância do tema para a otimização de processos e competitividade. ",
+      "score": 6.0,
       "setores": [
-        "transversal",
+        "industria",
+        "comercio",
         "servicos"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Fortalecimento da Agenda ESG e Reporte de Sustentabilidade",
-      "texto": "A agenda ambiental e de sustentabilidade ganha força no mercado de capitais brasileiro, com a B3 divulgando a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, que inclui 69 companhias, e a maioria delas melhorando seus scores ESG. Além disso, a B3 anunciou a adesão voluntária e antecipada às novas normas IFRS S1 e S2 de reporte de sustentabilidade, que exigirão a mensuração em cifrões dos riscos e oportunidades climáticas. Este movimento eleva a barra para as empresas em termos de transparência e gestão de impactos ambientais, incentivando a adoção de boas práticas e a busca por valor sustentável.",
-      "score": 7.5,
+      "tema": "Sustentabilidade e Descarbonização Industrial",
+      "texto": "A Fiesp apresentou um estudo sobre a trajetória de emissões da indústria até 2050, destacando o papel do setor na descarbonização da economia. Este movimento reflete a crescente pressão por práticas mais sustentáveis e a busca por soluções para mitigar o impacto ambiental da produção industrial.",
+      "score": 6.5,
       "setores": [
-        "transversal",
-        "industria",
-        "servicos"
+        "industria"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Novas Normas de Reporte de Sustentabilidade e Legislação Tributária",
-      "texto": "O cenário legal é marcado pela adesão da B3 às novas normas IFRS S1 e S2 de reporte de sustentabilidade, que se tornarão obrigatórias a partir de 2026 (com divulgação em 2027). Estas normas exigem que as empresas expressem em termos financeiros os riscos e oportunidades relacionados às mudanças climáticas e à sustentabilidade, impactando a forma como as companhias abertas divulgam suas informações. No âmbito tributário, a arrecadação federal recorde em maio reflete, em parte, alterações legislativas recentes sobre fundos exclusivos, entidades no exterior e remessas internacionais, demonstrando a influência da legislação na dinâmica econômica.",
-      "score": 6.5,
+      "tema": "Regulamentação de Preços e Normas Setoriais",
+      "texto": "A aprovação pela ANP de critérios para identificar preços abusivos de combustíveis demonstra um avanço na regulamentação do setor, visando maior transparência e proteção ao consumidor. Essa medida legal é crucial para estabilizar o mercado e garantir a concorrência leal.",
+      "score": 7.0,
       "setores": [
         "transversal",
-        "industria",
-        "servicos"
+        "comercio"
       ]
     }
   ],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25%",
+      "valor": "10,50% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros, atualizada em 01/07/2026. Projeção Focus para 2026: 14%."
+      "sub": "Taxa básica de juros, mantida em patamar elevado. Expectativa de mercado para fim de 2026 é de 14,0% a.a."
     },
     {
-      "label": "IPCA-15",
+      "label": "IPCA-15 (Jun/26)",
       "valor": "0,41%",
-      "cor": "neutral",
-      "sub": "Variação em junho/2026. Acumulado 12 meses: 4,8% (até junho)."
-    },
-    {
-      "label": "Câmbio (dólar)",
-      "valor": "R$ 5,20",
-      "cor": "neutral",
-      "sub": "Projeção Focus para dezembro/2026."
-    },
-    {
-      "label": "Desemprego (PNAD)",
-      "valor": "5,3%",
-      "cor": "up",
-      "sub": "Taxa de desocupação em abril/2026. Sinais de perda de fôlego na margem."
-    },
-    {
-      "label": "Varejo (PMC)",
-      "valor": "N/D",
       "cor": "down",
-      "sub": "Dados mais recentes do PMC/IBGE para junho ainda não disponíveis. Inadimplência recorde indica cautela do consumidor."
+      "sub": "Variação mensal. Acumulado em 12 meses: 4,80%, acima do teto da meta."
+    },
+    {
+      "label": "Câmbio (Dólar)",
+      "valor": "R$ 5,209",
+      "cor": "down",
+      "sub": "Fechamento em 01/07/2026. Volatilidade impulsionada por juros nos EUA."
+    },
+    {
+      "label": "Desemprego (Mai/26)",
+      "valor": "5,6%",
+      "cor": "up",
+      "sub": "Taxa de desocupação (PNAD Contínua). Menor taxa até maio na série histórica."
+    },
+    {
+      "label": "Varejo (PMC/IBGE)",
+      "valor": "Aguardando divulgação",
+      "cor": "neutral",
+      "sub": "Dados da Pesquisa Mensal de Comércio (PMC) para maio/junho ainda não divulgados. Confiança do comércio em alta."
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "+0,8%",
+      "valor": "+0,3% (Mai/26)",
       "cor": "up",
-      "sub": "Consumo Aparente de Bens Industriais (IPEA) em abril/2026 vs. mar/2026. Quarto avanço consecutivo."
+      "sub": "Variação mensal da Produção Industrial (PIM-PF/IBGE), divulgada em 03/07/2026."
     },
     {
-      "label": "IPP",
-      "valor": "-0,97%",
+      "label": "IPP (Mai/26)",
+      "valor": "-0,30%",
       "cor": "up",
-      "sub": "Deflação do Índice de Preços ao Produtor Amplo (IPA), componente do IGP-M, em junho/2026."
+      "sub": "Variação mensal do Índice de Preços ao Produtor. Acumulado em 12 meses: 1,99%."
     }
   ],
   "longitudinal": [
@@ -366,7 +429,7 @@
       ],
       "status": "materializado",
       "relevancia": 95.94,
-      "ultima_observacao": "A cautela do consumidor e o endividamento familiar se materializaram em um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de brasileiros com contas em atraso. A alta reincidência de 85,41% entre os negativados reforça a persistência do problema e a dificuldade de recuperação financeira, impactando diretamente os setores de comércio e serviços. O custo do crédito elevado e a pressão sobre o orçamento das famílias continuam a ser fatores críticos.",
+      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
       "periodo_observacao": "2026-W27",
       "data_identificacao": "2026-07-01"
     },
@@ -381,10 +444,25 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 62.0,
-      "ultima_observacao": "A digitalização e a 'Technology as a Service' (TaaS) continuam em curso, evidenciadas pela B3 com o lançamento de seu ESG Workspace, uma plataforma que utiliza inteligência artificial generativa para padronizar dados de sustentabilidade. Embora o foco seja o mercado de capitais, a iniciativa demonstra a crescente adoção de tecnologias avançadas para otimização de processos e análise de dados, um movimento que tende a se expandir para PMEs em busca de eficiência e conformidade.",
+      "relevancia": 56.7,
+      "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
       "periodo_observacao": "2026-W27",
       "data_identificacao": "2026-07-01"
+    },
+    {
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "tipo": "risco",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 55.5,
+      "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-02"
     },
     {
       "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
@@ -397,8 +475,8 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 49.0,
-      "ultima_observacao": "A aceleração da adoção de Inteligência Artificial para otimização de processos é observada no mercado, exemplificada pela B3 que incorporou IA generativa em sua plataforma ESG para padronização de dados. Embora não diretamente focada em PMEs, a tendência de uso de IA para eficiência e análise de grandes volumes de dados é um indicativo de que essa tecnologia está se tornando mais acessível e relevante, podendo ser replicada em soluções para PMEs.",
+      "relevancia": 39.65,
+      "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
       "periodo_observacao": "2026-W27",
       "data_identificacao": "2026-07-01"
     },
@@ -413,8 +491,8 @@
         "transversal"
       ],
       "status": "monitorar",
-      "relevancia": 44.5,
-      "ultima_observacao": "O governo lançou o programa 'Desenrola Adimplentes', focado em trabalhadores informais e autônomos com dívidas de até R$ 15 mil, que estão em dia mas com risco de inadimplência. A iniciativa oferece crédito pessoal não consignado com juros máximos de 1,99% ao mês e garantia do FGO. Embora a adesão de bancos privados seja incerta, o programa representa uma oportunidade para PMEs do comércio e serviços, pois pode aliviar a pressão financeira sobre os consumidores, potencialmente melhorando o fluxo de pagamentos e reduzindo o risco de novas inadimplências.",
+      "relevancia": 33.75,
+      "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
       "periodo_observacao": "2026-W27",
       "data_identificacao": "2026-07-02"
     },
@@ -427,8 +505,8 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 17.75,
-      "ultima_observacao": "Não foram encontradas notícias ou dados relevantes nesta semana que abordem especificamente a burocracia no acesso a recursos de inovação para PMEs. O sinal permanece em monitoramento, aguardando novos desdobramentos. ",
+      "relevancia": 15.3,
+      "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
       "periodo_observacao": "2026-W27",
       "data_identificacao": "2026-07-01"
     }
