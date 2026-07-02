@@ -2,7 +2,11 @@
   "periodo": "2026-W27",
   "label": "Semana 27 · Junho 2026",
   "gerado_em": "2026-07-02T15:01:11.033198",
-  "editorial": null,
+  "editorial": {
+    "texto": "A Semana 27, que fecha junho e abre julho de 2026, foi de poucos dados novos e muita leitura de tendência. O IBGE não divulgou nesta semana os números de desemprego, varejo, produção industrial ou preços ao produtor; o cenário ficou guiado pelas projeções do Boletim Focus, que apontam a Selic, a taxa básica de juros, recuando para 14,00% ao ano até o fim de 2026, a inflação medida pelo IPCA ainda em 5,33% — acima da meta — e o dólar a R$ 5,20. É um quadro de juros altos cedendo devagar e preços resistentes, que segue pesando sobre o crédito e o consumo.\n\nConfirma-se e se aprofunda a leitura das semanas anteriores. A 'Cautela do Consumidor e Endividamento Familiar' permanece como o sinal mais forte e já materializado, pressionando diretamente o comércio e os serviços. Em contrapartida, a tecnologia consolida-se como a principal avenida de oportunidade: a digitalização como serviço e a adoção de inteligência artificial pelas pequenas e médias empresas seguem em curso e ecoaram em várias matérias da semana, ainda que esbarrem em barreiras de treinamento. Entre os riscos, a ameaça das novas tarifas dos Estados Unidos sobre produtos brasileiros continua ativa para a indústria, e ganha corpo uma preocupação estrutural: a crise de talentos na engenharia.\n\nNa prática, para a indústria o momento é de olhar para a energia — a nova regulamentação de eficiência e os R$ 5,6 bilhões da ANEEL para aliviar a tarifa mexem com custos — e para a agenda ESG, que deixa de ser discurso e passa a condicionar o financiamento. Para o comércio e os serviços, o caminho segue pela tecnologia e por linhas de crédito como o 'Desenrola Adimplentes', que tentam recompor o poder de compra de um consumidor ainda retraído.\n\nNas próximas semanas, o termômetro será a divulgação dos dados do IBGE, hoje represados, e o rumo das negociações comerciais com os Estados Unidos, que define o horizonte da indústria exportadora.",
+    "gerado_em": "2026-07-02T18:59:26.641297+00:00",
+    "n_sinais_considerados": 9
+  },
   "clipping": [
     {
       "setores": [
