@@ -470,6 +470,7 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
             "status": s["status"], "relevancia": s["relevancia_atual"],
             "ultima_observacao": ultima_obs, "periodo_observacao": ultima_per,
             "data_identificacao": s.get("data_identificacao", ""),
+            "origem": s.get("origem") or "real",
         })
 
     saida = {

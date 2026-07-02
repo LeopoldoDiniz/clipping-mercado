@@ -85,12 +85,40 @@ def rodar_indicadores(sb, chave, label, ini, fim):
 
 
 def rodar_completo(sb, chave, label, ini, fim):
-    """Roda o ciclo completo do motor para a semana passada (clipping + sinais + KPIs)."""
+    """Roda o ciclo completo do motor para a semana passada (clipping + sinais + KPIs).
+    Marca os sinais como origem='backfill', corrige a data de identificação para a
+    semana histórica e NEUTRALIZA a inflação de relevância (pico/persistência):
+    a contagem em tempo real recomeça na primeira execução real (W atual)."""
+    # snapshot dos IDs que já existiam ANTES desta semana de backfill
+    antes = sb.table("sinais").select("id").execute().data
+    ids_antes = {r["id"] for r in antes}
+
     ativos = sb.table("sinais").select("*").neq("status", "dormindo").execute().data
     prompt = montar_prompt(label, ini, fim, ativos)
     texto = motor.gerar_analise(prompt)
     dados = extrair_json(texto)
     processar(dados, sb, chave, ativos)
+
+    # identifica os sinais NOVOS criados nesta semana de backfill
+    depois = sb.table("sinais").select("id,relevancia_atual").execute().data
+    novos_ids = [r["id"] for r in depois if r["id"] not in ids_antes]
+
+    # marca origem + corrige data histórica + congela pico=relevância atual
+    # + zera persistência inflada (recomeça em 1) para não sequestrar o ranking real
+    for sid in novos_ids:
+        try:
+            atual = next((r for r in depois if r["id"] == sid), None)
+            rel = atual["relevancia_atual"] if atual else 0
+            sb.table("sinais").update({
+                "origem": "backfill",
+                "data_identificacao": ini,          # data histórica real, não hoje
+                "relevancia_pico": rel,             # pico = valor de agora (sem inflar)
+                "persistencia": 1,                  # contagem real recomeça no vivo
+                "ultimo_ciclo_contado": chave,
+            }).eq("id", sid).execute()
+        except Exception as e:
+            print(f"[backfill] aviso: não marquei {sid}: {e}")
+
     editorial = gerar_editorial(sb, chave, label, dados)
     gerar_dados_portal(dados, sb, chave, label, editorial)
     return len(dados.get("clipping", [])), len(dados.get("novos_sinais", []))
