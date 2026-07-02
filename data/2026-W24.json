@@ -1,52 +1,52 @@
 {
-  "periodo": "2026-W26",
-  "label": "Semana 26 · Junho 2026",
-  "gerado_em": "2026-07-02T13:11:03.060227",
+  "periodo": "2026-W24",
+  "label": "Semana 24 · Junho 2026",
+  "gerado_em": "2026-07-02T13:09:55.347754",
   "editorial": null,
   "clipping": [],
   "pestel": [],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14.25% a.a.",
-      "cor": "down",
+      "valor": "14,50% a.a.",
+      "cor": "neutral",
       "sub": "vigente na semana"
     },
     {
       "label": "IPCA-15",
-      "valor": "0.41%",
-      "cor": "down",
-      "sub": "junho/2026"
+      "valor": "0,62% (Maio)",
+      "cor": "up",
+      "sub": "mês anterior divulgado"
     },
     {
-      "label": "Câmbio",
-      "valor": "R$ 5.1895",
-      "cor": "up",
-      "sub": "PTAX venda (média da semana)"
+      "label": "Câmbio (USD/BRL)",
+      "valor": "5,42",
+      "cor": "down",
+      "sub": "média da semana"
     },
     {
       "label": "Desemprego",
-      "valor": "5.6%",
+      "valor": "5,8% (Fev-Abr)",
       "cor": "down",
-      "sub": "PNAD (mar-mai/2026)"
+      "sub": "PNAD Contínua divulgado"
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "-1.5%",
+      "valor": "-1,5% (Abril)",
       "cor": "down",
-      "sub": "PMC (abril/2026)"
+      "sub": "mês anterior divulgado"
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "0.7%",
+      "valor": "0,1% (Março)",
       "cor": "up",
-      "sub": "PIM (abril/2026)"
+      "sub": "mês anterior divulgado"
     },
     {
       "label": "IPP",
-      "valor": "-0.30%",
-      "cor": "down",
-      "sub": "IPP (maio/2026)"
+      "valor": "2,62% (Abril)",
+      "cor": "up",
+      "sub": "mês anterior divulgado"
     }
   ],
   "longitudinal": [

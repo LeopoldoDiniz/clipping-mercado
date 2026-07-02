@@ -5,7 +5,37 @@
       "label": "Semana 27 · Junho 2026",
       "arquivo": "2026-W27.json",
       "ordem": 202627
+    },
+    {
+      "chave": "2026-W26",
+      "label": "Semana 26 · Junho 2026",
+      "arquivo": "2026-W26.json",
+      "ordem": 202626
+    },
+    {
+      "chave": "2026-W25",
+      "label": "Semana 25 · Junho 2026",
+      "arquivo": "2026-W25.json",
+      "ordem": 202625
+    },
+    {
+      "chave": "2026-W24",
+      "label": "Semana 24 · Junho 2026",
+      "arquivo": "2026-W24.json",
+      "ordem": 202624
+    },
+    {
+      "chave": "2026-W23",
+      "label": "Semana 23 · Junho 2026",
+      "arquivo": "2026-W23.json",
+      "ordem": 202623
+    },
+    {
+      "chave": "2026-W22",
+      "label": "Semana 22 · Maio 2026",
+      "arquivo": "2026-W22.json",
+      "ordem": 202622
     }
   ],
-  "atualizado_em": "2026-07-02T12:09:31.309738"
+  "atualizado_em": "2026-07-02T13:11:03.061217"
 }
