@@ -3,56 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexos · Inteligência de Mercado</title>
+<title>Nexos IM · Inteligência de Mercado</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    /* ─── TEMA ESCURO (padrão) · militar musgo/oliva/areia ─── */
-    --bg:#12140d; --surface:#1a1e13; --surface-2:#242a1a; --border:#333a24;
-    --text:#e9ead9; --text-2:#b7bd9a; --text-3:#8a906a;
-    --blue:#a3b56a; --blue-dim:#2c3419; --green:#8aa35e; --green-dim:#2a331a;
-    --red:#d47059; --red-dim:#3a1613; --amber:#d4ab52; --amber-dim:#3a2c10;
-    --sand:#d4c390; --sand-dim:#39321f;
-    --purple:#c2b57a; --cyan:#9aa860;
-    /* badges PESTEL tokenizados (para o tema claro trocar junto) */
-    --pp-bg:#2c3419; --pp-fg:#b8c884; --pe-bg:#1f3a2b; --pe-fg:#6ee7a8;
-    --ps-bg:#3a2a10; --ps-fg:#e2b558; --pt-bg:#2f2a1a; --pt-fg:#d4c48a;
-    --pa-bg:#26301a; --pa-fg:#cbbf7e; --pl-bg:#3a1c17; --pl-fg:#e08a78;
-    /* superfície de código/heatmap base */
-    --heat:212,112,89;  /* rgb do risco, p/ o mapa de calor */
-    /* oportunidade (verde MUSGO, não neon) */
-    --opp-bg:#242a17; --opp-bd:#4a5828; --opp-title:#c3d492; --opp-text:#9fb072;
-    /* badge "dados" e status ok */
-    --ok-bg:#2a331a; --ok-fg:#a3b56a;
-    /* badges de setor: fundo + texto legível */
-    --tg-ind-bg:#2c3419; --tg-ind-fg:#bcce88; --tg-com-bg:#22331f; --tg-com-fg:#8fd0a0;
-    --tg-ser-bg:#2f2a1a; --tg-ser-fg:#d4c48a; --tg-tra-bg:#3a2f0a; --tg-tra-fg:#e2c766;
-    --tg-fon-bg:#242a1a; --tg-fon-fg:#b7bd9a;
+    /* ─── TEMA ESCURO (padrão) · chumbo/cinza/gelo ─── */
+    --bg:#14171b; --surface:#1b1f25; --surface-2:#252b33; --border:#323942;
+    --text:#e8edf2; --text-2:#a2adb8; --text-3:#69737e;
+    --blue:#8fb9d8; --blue-dim:#1d2933; --green:#5fc0b4; --green-dim:#163029;
+    --red:#e0806a; --red-dim:#3a1c17; --amber:#e0b45f; --amber-dim:#3a2c12;
+    --sand:#aab6c2; --sand-dim:#282f38;
+    --purple:#a9b6c4; --cyan:#78c4d0;
+    /* badges PESTEL tokenizados (tons frios) */
+    --pp-bg:#20303c; --pp-fg:#9fc4e0; --pe-bg:#163029; --pe-fg:#68c9bb;
+    --ps-bg:#2b2836; --ps-fg:#b3a6d6; --pt-bg:#1f2b38; --pt-fg:#8fb9d8;
+    --pa-bg:#1c3033; --pa-fg:#78c4d0; --pl-bg:#33232a; --pl-fg:#dba0ac;
+    --heat:224,128,106;  /* rgb do risco, p/ o mapa de calor */
+    /* oportunidade (teal) */
+    --opp-bg:#172a29; --opp-bd:#2f5450; --opp-title:#8fd6cb; --opp-text:#7bb4ad;
+    --ok-bg:#163029; --ok-fg:#5fc0b4;
+    /* badges de setor */
+    --tg-ind-bg:#20303c; --tg-ind-fg:#9fc4e0; --tg-com-bg:#163029; --tg-com-fg:#68c9bb;
+    --tg-ser-bg:#2b2836; --tg-ser-fg:#b3a6d6; --tg-tra-bg:#362b12; --tg-tra-fg:#e0b45f;
+    --tg-fon-bg:#252b33; --tg-fon-fg:#a2adb8;
     /* status chip long */
-    --st-mat-bg:#3a1613; --st-mat-fg:#e0a094; --st-cur-bg:#3a2c10; --st-cur-fg:#e2c766; --st-mon-bg:#242a1a; --st-mon-fg:#b7bd9a;
+    --st-mat-bg:#3a1c17; --st-mat-fg:#e69985; --st-cur-bg:#3a2c12; --st-cur-fg:#e0b45f; --st-mon-bg:#252b33; --st-mon-fg:#a2adb8;
     --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
     --toc-w:220px; --top-h:56px;
   }
-  /* ─── TEMA CLARO · areia/pergaminho militar (campanha diurna) ─── */
+  /* ─── TEMA CLARO · cinza/gelo ─── */
   [data-theme="light"] {
-    --bg:#e8e6d8; --surface:#f3f1e6; --surface-2:#e2dfcd; --border:#c8c4ad;
-    --text:#26281c; --text-2:#54573f; --text-3:#7a7d5f;
-    --blue:#5f6d34; --blue-dim:#d9dcc0; --green:#5a7038; --green-dim:#d5dcbe;
-    --red:#a8482f; --red-dim:#f0d9cf; --amber:#9a7420; --amber-dim:#f0e3c4;
-    --sand:#8a7638; --sand-dim:#e6dcc0;
-    --purple:#7a6d3a; --cyan:#5f6a30;
-    --pp-bg:#d9dcc0; --pp-fg:#4a5722; --pe-bg:#cfe0d2; --pe-fg:#1f6b45;
-    --ps-bg:#f0e3c4; --ps-fg:#8a6410; --pt-bg:#e4dfc8; --pt-fg:#6a5f2a;
-    --pa-bg:#dde0c8; --pa-fg:#5a5528; --pl-bg:#f0d9cf; --pl-fg:#9a3a26;
-    --heat:168,72,47;
-    /* oportunidade (verde ESCURO sobre fundo claro) */
-    --opp-bg:#dfe5c8; --opp-bd:#a9b877; --opp-title:#3f5220; --opp-text:#54633a;
-    --ok-bg:#d5dcbe; --ok-fg:#4a5722;
-    --tg-ind-bg:#d9dcc0; --tg-ind-fg:#3f5220; --tg-com-bg:#cfe0d2; --tg-com-fg:#1f6b45;
-    --tg-ser-bg:#e6ddc4; --tg-ser-fg:#6a5518; --tg-tra-bg:#f0e6c6; --tg-tra-fg:#7a5e12;
-    --tg-fon-bg:#e2dfcd; --tg-fon-fg:#54573f;
-    --st-mat-bg:#f0d9cf; --st-mat-fg:#9a3a26; --st-cur-bg:#f0e3c4; --st-cur-fg:#8a6410; --st-mon-bg:#e2dfcd; --st-mon-fg:#54573f;
+    --bg:#eceef1; --surface:#f7f8fa; --surface-2:#e6e9ee; --border:#d0d5db;
+    --text:#1c2127; --text-2:#4a525c; --text-3:#727b85;
+    --blue:#356a92; --blue-dim:#dbe6ef; --green:#2a8a7e; --green-dim:#d3ece7;
+    --red:#b04a34; --red-dim:#f2ddd6; --amber:#9a6f1e; --amber-dim:#f2e6c9;
+    --sand:#5a6572; --sand-dim:#e0e4ea;
+    --purple:#5a6472; --cyan:#2f7d8c;
+    --pp-bg:#dce8f1; --pp-fg:#2b5f85; --pe-bg:#d3ece7; --pe-fg:#1f7a6e;
+    --ps-bg:#e6e2f0; --ps-fg:#5a4f80; --pt-bg:#dce6f1; --pt-fg:#345f85;
+    --pa-bg:#d6ecf0; --pa-fg:#256b7a; --pl-bg:#f2dfe4; --pl-fg:#9a4a5a;
+    --heat:176,74,52;
+    /* oportunidade (teal sobre fundo claro) */
+    --opp-bg:#d7ece8; --opp-bd:#8fc7bd; --opp-title:#1f6b60; --opp-text:#3a7a70;
+    --ok-bg:#d3ece7; --ok-fg:#1f7a6e;
+    --tg-ind-bg:#dce8f1; --tg-ind-fg:#2b5f85; --tg-com-bg:#d3ece7; --tg-com-fg:#1f7a6e;
+    --tg-ser-bg:#e6e2f0; --tg-ser-fg:#5a4f80; --tg-tra-bg:#f2e6c9; --tg-tra-fg:#8a6410;
+    --tg-fon-bg:#e6e9ee; --tg-fon-fg:#4a525c;
+    --st-mat-bg:#f2ddd6; --st-mat-fg:#9a3a26; --st-cur-bg:#f2e6c9; --st-cur-fg:#8a6410; --st-mon-bg:#e6e9ee; --st-mon-fg:#4a525c;
     --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
     --toc-w:220px; --top-h:56px;
   }
@@ -99,9 +97,9 @@
   .sf-dot { width:8px; height:8px; border-radius:50%; }
   .sf-count { font-family:var(--mono); font-size:10px; opacity:.7; }
   .sfd-todos { background:var(--text-2); }
-  .sfd-industria { background:#a8b874; }
-  .sfd-comercio { background:#34d399; }
-  .sfd-servicos { background:#c9b98a; }
+  .sfd-industria { background:#8fb9d8; }
+  .sfd-comercio { background:#5fc0b4; }
+  .sfd-servicos { background:#aab6c2; }
 
   /* SELETOR TEMPORAL */
   .time-selector { display:flex; align-items:center; gap:10px; margin-bottom:24px; flex-wrap:wrap; }
@@ -237,7 +235,7 @@
   .area-foot { margin-top:18px; padding-top:14px; border-top:1px solid var(--border); }
   .foot-grad { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
   .fg-label { font-family:var(--mono); font-size:9px; color:var(--text-3); letter-spacing:1px; }
-  .fg-bar { flex:1; height:4px; border-radius:2px; background:linear-gradient(90deg,#4a5a72 0%,#a8b874 55%,#10b981 100%); }
+  .fg-bar { flex:1; height:4px; border-radius:2px; background:linear-gradient(90deg,#3a4654 0%,#8fb9d8 55%,#5fc0b4 100%); }
   .foot-note { font-family:var(--mono); font-size:9px; color:var(--text-3); line-height:1.55; }
 
   /* SIDEBAR */
@@ -443,25 +441,111 @@
   /* última coluna: tooltip abre para a esquerda p/ não vazar da tela */
   .kpi-card:last-child .kpi-tip, .kpi-card:nth-child(7n) .kpi-tip { right:auto; left:-4px; }
   .kpi-card:last-child .kpi-tip::before, .kpi-card:nth-child(7n) .kpi-tip::before { right:auto; left:10px; }
-  @media print { .kpi-i { display:none !important; } }
+  /* ═══ MARCA (autor + ferramenta) ═══ */
+  .brand-lockup { display:flex; flex-direction:column; line-height:1.08; }
+  .brand-author { font-family:var(--mono); font-size:8.5px; letter-spacing:2.5px; text-transform:uppercase; color:var(--text-3); }
+  .brand-name { font-size:14px; font-weight:700; letter-spacing:.3px; color:var(--text); }
+  .brand-im { color:var(--sand); }
 
-  /* ═══ EXPORTAÇÃO / IMPRESSÃO ═══ */
+  /* ═══ LINK JSON (rodapé · p/ IAs) ═══ */
+  .foot-api { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .foot-api-label { color:var(--text-3); }
+  .foot-api a { color:var(--blue); text-decoration:none; border-bottom:1px dotted var(--blue); word-break:break-all; }
+  .foot-api a:hover { color:var(--text); }
+  .foot-copy { background:var(--surface-2); color:var(--text-2); border:1px solid var(--border);
+    font-family:var(--mono); font-size:10px; padding:2px 8px; border-radius:6px; cursor:pointer; transition:all .15s; }
+  .foot-copy:hover { border-color:var(--blue); color:var(--blue); }
+
+  /* ═══ RESPONSIVO · celulares e tablets ═══ */
+  @media (max-width:1100px){ .kpi-row { grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:860px){
+    :root { --top-h:52px; }
+    .topbar { padding:0 12px; gap:8px; }
+    .topbar-nav { flex:1; min-width:0; overflow-x:auto; -webkit-overflow-scrolling:touch; gap:4px; scrollbar-width:none; }
+    .topbar-nav::-webkit-scrollbar { display:none; }
+    .topbar-nav button { flex:0 0 auto; padding:6px 10px; white-space:nowrap; }
+    .topbar-right { gap:6px; } .gen-stamp { display:none; }
+    .tb-btn { padding:5px 8px; font-size:10px; }
+    .brand-name { font-size:13px; } .brand-author { font-size:8px; letter-spacing:1.5px; }
+
+    .side { position:static; width:auto; height:auto; margin-top:var(--top-h);
+      display:flex; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch;
+      gap:8px; border-right:0; border-bottom:1px solid var(--border); padding:10px 12px; align-items:center; scrollbar-width:none; }
+    .side::-webkit-scrollbar { display:none; }
+    .side-label { display:none; }
+    .side-item { flex:0 0 auto; width:auto; margin-bottom:0; padding:7px 12px; }
+    .si-q { display:none; }
+    .side .sector-filter { margin-top:0; display:flex; gap:6px; flex:0 0 auto; align-items:center; }
+    .side .sf-title { display:none; }
+    .sf-btn { width:auto; margin-bottom:0; padding:7px 12px; white-space:nowrap; }
+    .sf-count { display:none; }
+
+    .main { margin-left:0; padding:16px 14px 32px; max-width:100%; }
+    footer { margin-left:0; padding:16px 14px; flex-direction:column; gap:8px; align-items:flex-start; }
+
+    .page-header { flex-direction:column; align-items:flex-start; gap:10px; }
+    .page-title { font-size:19px; } .page-badges { flex-wrap:wrap; }
+
+    .hero { grid-template-columns:1fr; gap:16px; padding:16px; }
+    .hero-gauge { justify-content:flex-start; }
+
+    .kpi-row { grid-template-columns:repeat(2,1fr); gap:10px; }
+    .kpi-card { padding:14px; } .kpi-value { font-size:20px; }
+
+    .grid-3, .grid-2, .ov-grid, .long-grid { grid-template-columns:1fr; }
+    .side-stack { flex-direction:column; }
+
+    .heatmap { grid-template-columns:76px repeat(3,minmax(58px,1fr)); gap:4px; }
+    .hm-cell { height:30px; font-size:10px; } .hm-dim { font-size:10px; gap:5px; } .hm-col { font-size:8px; }
+
+    .time-selector { gap:8px; } .ts-dropdown { min-width:0; flex:1 1 auto; } .ts-year-tabs { margin-left:0; }
+
+    .kpi-tip { width:200px; right:auto; left:0; }
+    .kpi-card:nth-child(2n) .kpi-tip { right:0; left:auto; }
+    .kpi-card:nth-child(2n) .kpi-tip::before { right:10px; left:auto; }
+
+    .legend-grid { grid-template-columns:1fr; } .long-selo { display:none; }
+  }
+  @media (max-width:400px){
+    .kpi-row { grid-template-columns:1fr; }
+    .topbar-nav button { font-size:11px; padding:6px 8px; }
+  }
+
+  /* ═══ IMPRESSÃO / PDF ═══ */
   @media print {
-    @page { margin: 14mm; size: A4; }
-    body { background:#fff !important; color:#111 !important; }
-    .topbar, .side, .time-selector, .ov-open, footer .ti { display:none !important; }
-    .main { margin-left:0 !important; padding:0 !important; max-width:100% !important; }
-    /* imprime TODAS as visões, não só a ativa */
-    .view { display:block !important; page-break-inside:avoid; margin-bottom:18px; }
-    .view + .view { page-break-before:always; }
-    .card, .hero { border:1px solid #ccc !important; background:#fff !important; box-shadow:none !important; }
-    * { color:#111 !important; }
-    .page-subtitle, .foot-note, .ts-opt-sub, .gen-stamp { color:#555 !important; }
-    a { color:#111 !important; text-decoration:underline; }
-    .hm-cell, .kpi-card, .clip-item, .pestel-row, .long-card { break-inside:avoid; }
+    @page { margin:12mm; size:A4; }
+    html, body { background:#fff !important; color:#111 !important; font-size:11px !important; }
+    * { color:#111 !important; box-shadow:none !important; text-shadow:none !important; }
+    .topbar, .side, .toc, .time-selector, .ts-year-tabs, .legend-toggle,
+    .kpi-i, .kpi-tip, .ov-open, button.ov-open, #compareBadge, .sector-filter,
+    .tb-btn, .brand-dot, .foot-copy { display:none !important; }
+    .main { margin:0 !important; padding:0 !important; max-width:100% !important; }
+    footer { margin:0 !important; padding:10px 0 0 !important; border-top:1px solid #bbb !important; flex-direction:row !important; }
+
     .print-only { display:block !important; }
-    .legend-panel { display:block !important; } .legend-toggle { display:none !important; }
-    .editorial { display:block !important; break-inside:avoid; }
+    .print-header { border-bottom:2px solid #111 !important; padding-bottom:8px; margin-bottom:16px; }
+    .print-header .ph-brand { font-size:16px; font-weight:800; }
+    .print-header .ph-sub { font-size:10px; color:#555 !important; margin-top:3px; }
+
+    .view { display:block !important; }
+    .view + .view { page-break-before:always; }
+    .sec-head, .card-header { page-break-after:avoid; }
+
+    .card, .hero, .kpi-card, .long-card, .editorial, .legend-panel, .risk-row, .opp-row, .ts-current,
+    .chip, .badge, .tag-pill, .pestel-badge, .status-chip, .hm-cell {
+      background:#fff !important; border:1px solid #bbb !important; }
+    .badge, .chip, .tag-pill, .status-chip, .pestel-badge { border-radius:4px; }
+    .editorial { border-left:3px solid #111 !important; } .pestel-badge { font-weight:800; }
+
+    .kpi-row { grid-template-columns:repeat(4,1fr) !important; gap:8px !important; }
+    .kpi-value { font-size:16px !important; }
+    .heatmap { grid-template-columns:110px repeat(3,1fr) !important; }
+    .grid-3, .grid-2, .ov-grid, .long-grid { grid-template-columns:1fr 1fr !important; }
+
+    .card, .hero, .kpi-card, .clip-item, .pestel-row, .long-card, .risk-row, .opp-row, .editorial {
+      break-inside:avoid; page-break-inside:avoid; }
+    a { color:#111 !important; text-decoration:none; }
+    .legend-panel { display:block !important; }
   }
   .print-only { display:none; }
 
@@ -473,7 +557,10 @@
 <div class="topbar">
   <div class="topbar-brand">
     <div class="brand-dot"></div>
-    <span class="brand-name">Nexos <span style="color:var(--sand);">IM | Leopoldo Diniz</span></span>
+    <div class="brand-lockup">
+      <span class="brand-author">Leopoldo Diniz</span>
+      <span class="brand-name">Nexos <span class="brand-im">IM</span></span>
+    </div>
   </div>
   <nav class="topbar-nav" id="periodNav">
     <button data-period="semanal" class="active">Semanal</button>
@@ -540,6 +627,7 @@
 </aside>
 
 <main class="main">
+  <div class="print-only print-header" id="printHeader"></div>
   <div class="page-header">
     <div>
       <div class="page-title" id="pageTitle"></div>
@@ -623,7 +711,7 @@
     <div class="hero">
       <div class="hero-gauge">
         <div class="gauge-ring" id="gaugeRing"><span class="gauge-val" id="gaugeVal">–</span></div>
-        <div class="gauge-label">Pressão<br>da semana<br><span id="gaugeTag" class="gauge-tag"></span>
+        <div class="gauge-label">Pressão<br><span id="gaugeScope">da semana</span><br><span id="gaugeTag" class="gauge-tag"></span>
           <span class="kpi-i" tabindex="0" role="button" aria-label="Como a Pressão da semana é calculada" style="margin-left:5px;vertical-align:middle;"><span class="kpi-i-mark">i</span><span class="kpi-tip" id="gaugeTip" style="width:290px;white-space:normal;text-align:left;"></span></span>
         </div>
       </div>
@@ -636,7 +724,7 @@
 
     <div class="editorial" id="editorialBlock" hidden>
       <div class="editorial-head">
-        <span class="editorial-kicker">Editorial da semana · análise longitudinal</span>
+        <span class="editorial-kicker" id="editorialKicker">Editorial da semana · análise longitudinal</span>
         <span class="editorial-stamp" id="editorialStamp"></span>
       </div>
       <div class="editorial-body" id="editorialBody"></div>
@@ -744,6 +832,11 @@
 
 <footer>
   <span>Inteligência de Mercado · Leopoldo Diniz</span>
+  <span class="foot-api">
+    <span class="foot-api-label">JSON p/ IAs:</span>
+    <a href="https://raw.githubusercontent.com/LeopoldoDiniz/clipping-mercado/main/data/ultimo.json" target="_blank" rel="noopener" id="apiUrl">raw.githubusercontent.com/…/data/ultimo.json</a>
+    <button class="foot-copy" id="btnCopyApi" type="button" title="Copiar URL do JSON">copiar</button>
+  </span>
   <span id="footStamp"></span>
 </footer>
 
@@ -956,6 +1049,81 @@ function itemEmBreve(label, icon) {
   };
 }
 
+/* ═══ ESCOPO TEMPORAL: rótulos que acompanham o período selecionado ═══ */
+var ESCOPO = {
+  semanal:    {abertura:'Semana',    art:'da semana',    analiseKicker:'Editorial da semana · análise longitudinal'},
+  mensal:     {abertura:'Mês',       art:'do mês',       analiseKicker:'Análise do mês · consolidado'},
+  trimestral: {abertura:'Trimestre', art:'do trimestre', analiseKicker:'Análise do trimestre · consolidado'},
+  semestral:  {abertura:'Semestre',  art:'do semestre',  analiseKicker:'Análise do semestre · consolidado'},
+  anual:      {abertura:'Ano',       art:'do ano',       analiseKicker:'Análise do ano · consolidado (YTD)'},
+  comparacao: {abertura:'Período',   art:'do período',   analiseKicker:'Análise da seleção · consolidado'}
+};
+function _escopoAtual(){ return (typeof _comparacaoInst!=='undefined' && _comparacaoInst && state.period==='semanal') ? 'comparacao' : state.period; }
+
+/* ═══ FONTE DA PROJEÇÃO (ponto 1): identifica a origem citada no 'sub' do KPI ═══ */
+var FONTES_PROJ = [
+  {re:/boletim\s+focus|focus/i,     label:'Boletim Focus (BCB)',   short:'Focus', url:'https://www.bcb.gov.br/publicacoes/focus'},
+  {re:/fgv|ibre/i,                  label:'FGV/IBRE',              short:'FGV',   url:'https://portalibre.fgv.br'},
+  {re:/ipea/i,                      label:'IPEA',                  short:'IPEA',  url:'http://www.ipeadata.gov.br'},
+  {re:/copom|banco\s+central|\bbcb\b/i, label:'Banco Central (BCB)', short:'BCB', url:'https://www.bcb.gov.br'},
+  {re:/ibge/i,                      label:'IBGE',                  short:'IBGE',  url:'https://agenciadenoticias.ibge.gov.br'}
+];
+function _fonteProj(txt){ var s=String(txt||''); for(var i=0;i<FONTES_PROJ.length;i++){ if(FONTES_PROJ[i].re.test(s)) return FONTES_PROJ[i]; } return null; }
+
+/* ═══ MÊS→NÚMERO e PRESSÃO por sub-período (para agrupar e analisar) ═══ */
+var MESES = {janeiro:1,fevereiro:2,'março':3,marco:3,abril:4,maio:5,junho:6,julho:7,agosto:8,setembro:9,outubro:10,novembro:11,dezembro:12};
+function _mesNum(sub){ var m=/([a-zç]+)/.exec((sub||'').toLowerCase()); return m?(MESES[m[1]]||0):0; }
+function _pressaoDe(data){
+  var P=(data.pestel||[]), R=(data.long||[]).filter(function(l){return l.tipo==='risco';});
+  var mp=P.length?P.reduce(function(a,p){return a+(p.score||0);},0)/P.length:0;
+  var mr=R.length?R.reduce(function(a,l){return a+(l.rel||0);},0)/R.length:null;
+  return Math.round(mr===null?mp*10:mp*10*0.6+mr*0.4);
+}
+
+/* ═══ ANÁLISE DO PERÍODO (ponto 2b): síntese determinística que evolui a cada ciclo ═══ */
+function analisePeriodo(datas, escKey, rotulo, navs){
+  datas=(datas||[]).filter(Boolean); if(!datas.length) return '';
+  var press=datas.map(_pressaoDe);
+  var pAvg=Math.round(press.reduce(function(a,b){return a+b;},0)/press.length);
+  var faixa=pAvg>=70?'ALTA':pAvg>=45?'MODERADA':'BAIXA';
+  var prim=press[press.length-1], ult=press[0], tend;
+  if(ult-prim>=5) tend='em elevação (de '+prim+' para '+ult+' ao longo do período)';
+  else if(prim-ult>=5) tend='em recuo (de '+prim+' para '+ult+')';
+  else tend='estável em torno de '+pAvg;
+  var pico=Math.max.apply(null,press), navPico=(navs&&navs[press.indexOf(pico)])||'';
+  var dims=['P','E','S','T','A','L'], domNome='', domScore=0, domTema='';
+  dims.forEach(function(dim){
+    var rows=datas.map(function(d){return (d.pestel||[]).find(function(p){return p.dim===dim;});}).filter(Boolean);
+    if(!rows.length) return;
+    var sc=rows.reduce(function(a,p){return a+(p.score||0);},0)/rows.length;
+    if(sc>domScore){ domScore=sc; domNome=rows[0].name; domTema=rows[0].tema||''; }
+  });
+  var cont={}, mats={}, relMax={}, tipoDe={};
+  datas.forEach(function(d){ (d.long||[]).forEach(function(l){
+    cont[l.t]=(cont[l.t]||0)+1; if(l.st==='mat') mats[l.t]=1;
+    relMax[l.t]=Math.max(relMax[l.t]||0,l.rel||0); tipoDe[l.t]=l.tipo;
+  }); });
+  var titulos=Object.keys(cont);
+  var persist=titulos.filter(function(t){return cont[t]>=Math.max(2,Math.ceil(datas.length/2));});
+  var nMat=Object.keys(mats).length;
+  var riscosOrd=titulos.filter(function(t){return tipoDe[t]==='risco';}).sort(function(a,b){return relMax[b]-relMax[a];});
+  var oppOrd=titulos.filter(function(t){return tipoDe[t]==='oportunidade';}).sort(function(a,b){return relMax[b]-relMax[a];});
+  var setCont={industria:0,comercio:0,servicos:0};
+  datas.forEach(function(d){ (d.long||[]).concat(d.pestel||[]).forEach(function(x){ (x.set||[]).forEach(function(s){ if(setCont[s]!=null) setCont[s]++; }); }); });
+  var setTop=Object.keys(setCont).sort(function(a,b){return setCont[b]-setCont[a];}).filter(function(s){return setCont[s]>0;}).slice(0,2).map(function(s){return SECTOR_LABEL[s];});
+  var nSem=datas.length;
+  var p1=rotulo+' consolidou '+nSem+' semana'+(nSem>1?'s':'')+' de monitoramento. A pressão média do período foi '+pAvg+'/100 ('+faixa+'), '+tend+
+         (navPico?', com pico em '+navPico:'')+'. '+
+         (domNome?'A dimensão de maior intensidade foi '+domNome+' ('+domScore.toFixed(1)+'/10)'+(domTema?', puxada por '+domTema:'')+'.':'');
+  var p2='Ao todo, '+titulos.length+' sinais distintos foram acompanhados'+
+         (nMat?', dos quais '+nMat+' já se materializou'+(nMat>1?' (mais de um)':''):'')+
+         (persist.length?' e '+persist.length+' persistiram em boa parte do período — temas estruturais, não ruído pontual':'')+'. '+
+         (riscosOrd.length?'Os riscos de maior relevância foram '+riscosOrd.slice(0,3).map(function(t){return '“'+t+'” ('+Math.round(relMax[t])+')';}).join('; ')+'. ':'')+
+         (oppOrd.length?'No lado positivo, destacam-se '+oppOrd.slice(0,2).map(function(t){return '“'+t+'”';}).join(' e ')+'.':'');
+  var p3=setTop.length?('A concentração setorial recaiu sobre '+setTop.join(' e ')+' — onde a atenção do período deve se dirigir.'):'';
+  return [p1,p2,p3].filter(Boolean).join('\n\n');
+}
+
 /* ═══ ENGINE DE AGREGAÇÃO: consolida N semanas numa visão (pontos 5 e 1d) ═══ */
 function _ordemChave(ch){ var m=/(\d{4})-W(\d+)/.exec(ch||''); return m ? (+m[1])*100 + (+m[2]) : -1; }
 function _dedup(arr, keyfn){ var seen={}, out=[]; (arr||[]).forEach(function(x){ var k=keyfn(x); if(!seen[k]){ seen[k]=1; out.push(x); } }); return out; }
@@ -977,25 +1145,49 @@ function agregarData(datas, meta){
   return { title:meta.title, subtitle:meta.subtitle, badge:meta.badge, stamp:meta.stamp,
            kpiTitle:meta.kpiTitle||'Indicadores consolidados', kpis:kpis, clipping:clipping, pestel:pestel, riscos:riscos, opp:opp, long:long };
 }
-// agrupa por it.sub (ex.: "Junho 2026") e consolida — ponto 5
-function construirMensal(semanas){
-  var comDados = semanas.filter(function(w){ return w.data; });
-  if(!comDados.length){ DB.mensal.items=[itemEmBreve('Mês atual')]; return; }
-  var grupos = {};
-  comDados.forEach(function(w){ (grupos[w.sub] = grupos[w.sub] || []).push(w); });
-  var itens = Object.keys(grupos).map(function(mesKey){
-    var ws = grupos[mesKey];
-    var maxOrd = Math.max.apply(null, ws.map(function(w){return _ordemChave(w.key);}));
-    var data = agregarData(ws.map(function(w){return w.data;}), {
-      title: mesKey + ' — consolidado',
-      subtitle: ws.length + (ws.length>1?' semanas consolidadas':' semana') + ' · ' + ws.map(function(w){return w.nav;}).slice().reverse().join(', '),
-      badge: mesKey, stamp: 'Consolidação de ' + ws.length + ' semana' + (ws.length>1?'s':''),
-      kpiTitle: 'Indicadores — ' + mesKey
-    });
-    return { key:'m-'+mesKey, year: ws[0].year, nav: mesKey.split(' ')[0], sub: ws.length+' semana'+(ws.length>1?'s':''), data:data, raw:{editorial:null}, _ord:maxOrd };
+// consolida um grupo de semanas em uma instância (com análise do período embutida)
+function _consolidarGrupo(ws, escKey, rotulo, badge){
+  var navs = ws.map(function(w){return w.nav;});
+  var data = agregarData(ws.map(function(w){return w.data;}), {
+    title: rotulo + ' — consolidado' + (escKey==='anual'?' (YTD)':''),
+    subtitle: ws.length + (ws.length>1?' semanas consolidadas':' semana') + ' · ' + navs.slice().reverse().join(', '),
+    badge: badge, stamp: 'Consolidação de ' + ws.length + ' semana' + (ws.length>1?'s':''),
+    kpiTitle: 'Indicadores — ' + rotulo
   });
-  itens.sort(function(a,b){ return b._ord - a._ord; });
-  DB.mensal.items = itens;
+  var uni = _dedup([].concat.apply([], ws.map(function(w){return w.data.long||[];})), function(l){return l.t;}).length;
+  var texto = analisePeriodo(ws.map(function(w){return w.data;}), escKey, rotulo, navs);
+  return { data:data, raw:{editorial:{texto:texto, n_sinais_considerados:uni, escopo:escKey}} };
+}
+// agrupa as semanas em mês, trimestre, semestre e ano — pontos 5 e 2b
+function construirConsolidados(semanas){
+  var comDados = semanas.filter(function(w){ return w.data; });
+  if(!comDados.length){
+    DB.mensal.items=[itemEmBreve('Mês atual')]; DB.trimestral.items=[itemEmBreve('Trimestre atual')];
+    DB.semestral.items=[itemEmBreve('Semestre atual')]; DB.anual.items=[itemEmBreve('Ano atual')]; return;
+  }
+  function agrupar(chaveFn){
+    var g={}; comDados.forEach(function(w){ var k=chaveFn(w); (g[k]=g[k]||[]).push(w); });
+    return Object.keys(g).map(function(k){ return {k:k, ws:g[k], ord:Math.max.apply(null,g[k].map(function(w){return _ordemChave(w.key);}))}; })
+                         .sort(function(a,b){return b.ord-a.ord;});
+  }
+  DB.mensal.items = agrupar(function(w){return w.sub;}).map(function(gr){
+    var c=_consolidarGrupo(gr.ws,'mensal',gr.k,gr.k);
+    return { key:'m-'+gr.k, year:gr.ws[0].year, nav:gr.k.split(' ')[0], sub:gr.ws.length+' semana'+(gr.ws.length>1?'s':''), data:c.data, raw:c.raw, _ord:gr.ord };
+  });
+  DB.trimestral.items = agrupar(function(w){ return w.year+'-T'+(Math.ceil(_mesNum(w.sub)/3)||1); }).map(function(gr){
+    var q=gr.k.split('-T')[1], ano=gr.k.split('-T')[0], rot=q+'º trimestre '+ano;
+    var c=_consolidarGrupo(gr.ws,'trimestral',rot,'T'+q+' '+ano);
+    return { key:'t-'+gr.k, year:+ano, nav:'T'+q, sub:gr.ws.length+' semana'+(gr.ws.length>1?'s':''), data:c.data, raw:c.raw, _ord:gr.ord };
+  });
+  DB.semestral.items = agrupar(function(w){ return w.year+'-S'+(_mesNum(w.sub)<=6?1:2); }).map(function(gr){
+    var s=gr.k.split('-S')[1], ano=gr.k.split('-S')[0], rot=s+'º semestre '+ano;
+    var c=_consolidarGrupo(gr.ws,'semestral',rot,s+'º sem. '+ano);
+    return { key:'s-'+gr.k, year:+ano, nav:'S'+s, sub:gr.ws.length+' semana'+(gr.ws.length>1?'s':''), data:c.data, raw:c.raw, _ord:gr.ord };
+  });
+  DB.anual.items = agrupar(function(w){ return String(w.year); }).map(function(gr){
+    var c=_consolidarGrupo(gr.ws,'anual',gr.k,gr.k+' YTD');
+    return { key:'a-'+gr.k, year:+gr.k, nav:gr.k, sub:gr.ws.length+' semana'+(gr.ws.length>1?'s':''), data:c.data, raw:c.raw, _ord:gr.ord };
+  });
 }
 // ponto 1d: consolida um conjunto arbitrário de semanas selecionadas
 function montarComparacao(keys){
@@ -1007,7 +1199,9 @@ function montarComparacao(keys){
     subtitle: ws.map(function(w){return w.nav;}).slice().reverse().join(', ') + ' · consolidado apenas das semanas selecionadas',
     badge: ws.length + ' semanas', stamp: 'Seleção manual', kpiTitle: 'Indicadores das semanas selecionadas'
   });
-  return { key:'cmp', year: ws[0].year, nav:'Comparação', sub: ws.length+' semanas', data:data, raw:{editorial:null} };
+  var _txt = analisePeriodo(ws.map(function(w){return w.data;}), 'comparacao', 'A seleção', ws.map(function(w){return w.nav;}));
+  var _uni = _dedup([].concat.apply([], ws.map(function(w){return w.data.long||[];})), function(l){return l.t;}).length;
+  return { key:'cmp', year: ws[0].year, nav:'Comparação', sub: ws.length+' semanas', data:data, raw:{editorial:{texto:_txt, n_sinais_considerados:_uni, escopo:'comparacao'}} };
 }
 
 // ═══ BOOTSTRAP: busca os dados reais e monta o DB ═══
@@ -1067,7 +1261,7 @@ async function bootstrap() {
   }
 
   DB.semanal.items = semanas;
-  construirMensal(semanas);   // consolida as semanas em meses (ponto 5)
+  construirConsolidados(semanas);   // consolida em mês, trimestre, semestre e ano
 
   // reseta índices e renderiza
   Object.keys(CUR).forEach(k => CUR[k] = 0);
@@ -1090,7 +1284,7 @@ function match(itemSetores){
 }
 function sectorTags(setores){ return setores.map(s=>`<span class="pestel-stag ${SECTOR_STAGCLASS[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
 function clipTags(setores){ return setores.map(s=>`<span class="tag-pill ${SECTOR_TAGCLASS[s]}">${SECTOR_LABEL[s]}</span>`).join(''); }
-function barColor(score){ if(score>=8)return'#10b981'; if(score>=6.5)return'#a8b874'; return'#8a9ab5'; }
+function barColor(score){ if(score>=8)return'#5fc0b4'; if(score>=6.5)return'#8fb9d8'; return'#6b7b90'; }
 
 // retorna a instância atualmente selecionada do período ativo
 function currentInstance(){ return DB[state.period].items[CUR[state.period]]; }
@@ -1191,6 +1385,9 @@ function renderAll(){
   document.getElementById('periodBadge').textContent = d.badge;
   document.getElementById('kpiTitle').textContent = d.kpiTitle;
   document.getElementById('genStamp').textContent = d.stamp;
+  var _ph=document.getElementById('printHeader');
+  if(_ph) _ph.innerHTML='<div class="ph-brand">Nexos IM — Inteligência de Mercado</div>'+
+    '<div class="ph-sub">por Leopoldo Diniz · '+(d.title||'')+' · '+(state.sector==='todos'?'todos os setores':(SECTOR_LABEL[state.sector]||''))+' · impresso em '+new Date().toLocaleDateString('pt-BR')+'</div>';
   document.getElementById('footStamp').textContent = d.badge + ' · Gerado automaticamente';
 
   const sb = document.getElementById('sectorBadge');
@@ -1205,7 +1402,12 @@ function renderAll(){
     var info = kpiInfo(k.l);
     var badge = info ? `<span class="kpi-i" tabindex="0" role="button" aria-label="O que é ${k.l}"><span class="kpi-i-mark">i</span><span class="kpi-tip">${info}</span></span>` : '';
     var tags = [];
-    if(r.proj) tags.push(`<span title="Valor projetado (ex.: Boletim Focus), não uma medição fechada" style="font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:8px;background:var(--surface-2);color:var(--text-3);">proj.</span>`);
+    if(r.proj){
+      var fp=_fonteProj(r.sub||k.s||'');
+      var _tt = fp ? ('proj. · '+fp.short) : 'proj.';
+      var _tip = fp ? ('Projeção — fonte: '+fp.label+(fp.url?' · <a href="'+fp.url+'" target="_blank" rel="noopener" style="color:var(--blue);">ver fonte</a>':'')) : 'Valor projetado (estimativa de mercado), não uma medição fechada.';
+      tags.push(`<span class="kpi-i" tabindex="0" role="button" style="font-family:var(--mono);font-size:9px;"><span style="display:inline-block;padding:1px 6px;border-radius:8px;background:var(--surface-2);color:var(--text-3);">${_tt}</span><span class="kpi-tip" style="width:230px;white-space:normal;text-align:left;text-transform:none;letter-spacing:normal;">${_tip}</span></span>`);
+    }
     if(r.herdado) tags.push(`<span title="Sem divulgação nesta semana; exibindo o último valor conhecido na base" style="font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:8px;background:var(--amber-dim,rgba(245,158,11,.15));color:var(--amber,#f59e0b);">última${r.ref?': '+r.ref:''}</span>`);
     var labelLimpo = String(k.l).replace(/\s*\(proj\.[^)]*\)/ig,'');
     return `<div class="kpi-card"><div class="kpi-label"><span>${labelLimpo}</span>${badge}</div><div class="kpi-value kpi-${r.cor}">${r.valor}</div><div class="kpi-sub">${r.sub}</div>${tags.length?`<div style="margin-top:8px;display:flex;gap:5px;flex-wrap:wrap;">${tags.join('')}</div>`:''}</div>`;
@@ -1301,12 +1503,14 @@ function renderOverview(d){
     var bloco = document.getElementById('editorialBlock');
     var body = document.getElementById('editorialBody');
     var stamp = document.getElementById('editorialStamp');
+    var kicker = document.getElementById('editorialKicker');
     var ed = _edicaoAtual && _edicaoAtual.editorial;
     if(ed && ed.texto){
       var paras = String(ed.texto).split(/\n\s*\n/).filter(function(p){return p.trim();});
       body.innerHTML = paras.map(function(p){return '<p>'+p.replace(/</g,'&lt;')+'</p>';}).join('');
       var n = ed.n_sinais_considerados;
       stamp.textContent = n ? (n + ' sinais considerados') : '';
+      if(kicker) kicker.textContent = (ed.escopo && ESCOPO[ed.escopo]) ? ESCOPO[ed.escopo].analiseKicker : 'Editorial da semana · análise longitudinal';
       bloco.hidden = false;
     } else {
       bloco.hidden = true;  // fallback: sem editorial, some sem deixar buraco
@@ -1323,26 +1527,29 @@ function renderOverview(d){
   const mp = P.length ? P.reduce((a,p)=>a+(p.score||0),0)/P.length : 0;
   const mr = R.length ? R.reduce((a,l)=>a+(l.rel||0),0)/R.length : null;
   const pressao = Math.round(mr===null ? mp*10 : mp*10*0.6 + mr*0.4);
-  const corP = pressao>=70 ? '#ef4444' : pressao>=45 ? '#f59e0b' : '#10b981';
+  const corP = pressao>=70 ? '#ef4444' : pressao>=45 ? '#f59e0b' : '#3bbfae';
   const tagP = pressao>=70 ? 'ALTA' : pressao>=45 ? 'MODERADA' : 'BAIXA';
   const ring=document.getElementById('gaugeRing');
   if(ring) ring.style.background = `conic-gradient(${corP} ${pressao*3.6}deg, var(--surface-2) 0)`;
   const gv=document.getElementById('gaugeVal'); if(gv) gv.textContent = isFinite(pressao)?pressao:'–';
   const gt=document.getElementById('gaugeTag');
   if(gt){ gt.textContent=tagP; gt.style.background=corP+'22'; gt.style.color=corP; }
+  var _esc=(ESCOPO[_escopoAtual()]||ESCOPO.semanal);
+  var gsc=document.getElementById('gaugeScope'); if(gsc) gsc.textContent=_esc.art;
   const gtip=document.getElementById('gaugeTip');
   if(gtip) gtip.innerHTML =
-    `<b>Pressão da semana (0–100)</b><br>Combina a intensidade média das 6 dimensões PESTEL (peso 60%) com a relevância média dos riscos ativos (peso 40%).<br><br>`+
-    `Nesta edição: PESTEL médio <b>${mp.toFixed(1)}</b>/10 · risco médio <b>${mr===null?'—':Math.round(mr)}</b>/100 → <b>${isFinite(pressao)?pressao:'–'}</b> (${tagP}).<br><br>`+
+    `<b>Pressão ${_esc.art} (0–100)</b><br>Combina a intensidade média das 6 dimensões PESTEL (peso 60%) com a relevância média dos riscos ativos (peso 40%).<br><br>`+
+    `Neste período: PESTEL médio <b>${mp.toFixed(1)}</b>/10 · risco médio <b>${mr===null?'—':Math.round(mr)}</b>/100 → <b>${isFinite(pressao)?pressao:'–'}</b> (${tagP}).<br><br>`+
     `Faixas: <b>BAIXA</b> &lt; 45 · <b>MODERADA</b> 45–69 · <b>ALTA</b> ≥ 70.`;
 
   // NARRATIVA AUTOMÁTICA
   const dom = P.slice().sort((a,b)=>(b.score||0)-(a.score||0))[0];
   const nMat = L.filter(l=>l.st==='mat').length;
   const fontesCitadas = new Set(); C.forEach(c=>(c.fontes||[]).forEach(f=>f.nome&&fontesCitadas.add(f.nome)));
+  const _abre=(ESCOPO[_escopoAtual()]||ESCOPO.semanal).abertura;
   const nar=document.getElementById('ovNarrativa');
   if(nar) nar.innerHTML = dom
-    ? `Semana sob maior pressão da dimensão <strong>${dom.name}</strong> (${(dom.score||0).toFixed(1)}/10), com foco em ${dom.tema||'—'}. São <strong>${C.length}</strong> notícia${C.length===1?'':'s'} no radar, <strong>${R.length}</strong> risco${R.length===1?'':'s'} e <strong>${O.length}</strong> oportunidade${O.length===1?'':'s'} em acompanhamento${nMat?` — <strong>${nMat}</strong> já materializado${nMat===1?'':'s'}`:''}.`
+    ? `${_abre} sob maior pressão da dimensão <strong>${dom.name}</strong> (${(dom.score||0).toFixed(1)}/10), com foco em ${dom.tema||'—'}. São <strong>${C.length}</strong> notícia${C.length===1?'':'s'} no radar, <strong>${R.length}</strong> risco${R.length===1?'':'s'} e <strong>${O.length}</strong> oportunidade${O.length===1?'':'s'} em acompanhamento${nMat?` — <strong>${nMat}</strong> já materializado${nMat===1?'':'s'}`:''}.`
     : 'Sem dados suficientes para o briefing deste período.';
   const chips=document.getElementById('ovChips');
   if(chips) chips.innerHTML = [
@@ -1380,8 +1587,8 @@ function renderOverview(d){
   const oa=document.getElementById('ovAlertas');
   if(oa){
     const rows=[
-      ...R.slice(0,3).map(l=>({cor:l.rel>=70?'#ef4444':l.rel>=45?'#f59e0b':'#8a9ab5',t:l.t,k:'Risco · '+Math.round(l.rel)})),
-      ...O.slice(0,2).map(l=>({cor:'#10b981',t:l.t,k:'Oport. · '+Math.round(l.rel)}))
+      ...R.slice(0,3).map(l=>({cor:l.rel>=70?'#ef4444':l.rel>=45?'#f59e0b':'#6b7b90',t:l.t,k:'Risco · '+Math.round(l.rel)})),
+      ...O.slice(0,2).map(l=>({cor:'#5fc0b4',t:l.t,k:'Oport. · '+Math.round(l.rel)}))
     ];
     oa.innerHTML = rows.map(r=>
       `<div class="ov-line ov-open" data-view="alertas" style="cursor:pointer;"><span class="ov-dot" style="background:${r.cor}"></span><span style="flex:1;">${r.t}</span><span class="ts-opt-sub">${r.k}</span></div>`
@@ -1485,6 +1692,13 @@ if(_bp) _bp.addEventListener('click', ()=>window.print());
 const _bj = document.getElementById('btnJSON');
 if(_bj) _bj.addEventListener('click', baixarJSON);
 
+var _bca=document.getElementById('btnCopyApi');
+if(_bca) _bca.addEventListener('click', function(){
+  var url=(document.getElementById('apiUrl')||{}).href||'';
+  function ok(){ var t=_bca.textContent; _bca.textContent='copiado ✓'; setTimeout(function(){ _bca.textContent=t; },1500); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(ok,ok); }
+  else { try{ var ta=document.createElement('textarea'); ta.value=url; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); ok(); }catch(e){} }
+});
 (function(){ var b=document.getElementById('compareBadge'); if(b) b.addEventListener('click',function(){ _comparacaoInst=null; if(state.selWeeks) state.selWeeks.clear(); renderAll(); }); })();
 bootstrap();
 
