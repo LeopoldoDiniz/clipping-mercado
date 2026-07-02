@@ -1,52 +1,52 @@
 {
   "periodo": "2026-W26",
   "label": "Semana 26 · Junho 2026",
-  "gerado_em": "2026-07-02T13:11:03.060227",
+  "gerado_em": "2026-07-02T13:21:54.961638",
   "editorial": null,
   "clipping": [],
   "pestel": [],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14.25% a.a.",
-      "cor": "down",
+      "valor": "14,25% a.a.",
+      "cor": "neutral",
       "sub": "vigente na semana"
     },
     {
       "label": "IPCA-15",
-      "valor": "0.41%",
-      "cor": "down",
-      "sub": "junho/2026"
+      "valor": "0,41%",
+      "cor": "up",
+      "sub": "junho 2026"
     },
     {
       "label": "Câmbio",
-      "valor": "R$ 5.1895",
-      "cor": "up",
-      "sub": "PTAX venda (média da semana)"
+      "valor": "R$ 5,1695",
+      "cor": "down",
+      "sub": "PTAX Venda 26/06/2026"
     },
     {
       "label": "Desemprego",
-      "valor": "5.6%",
-      "cor": "down",
-      "sub": "PNAD (mar-mai/2026)"
+      "valor": "5,6%",
+      "cor": "up",
+      "sub": "PNAD Contínua (trim. até maio/2026)"
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "-1.5%",
-      "cor": "down",
-      "sub": "PMC (abril/2026)"
+      "valor": "-1,5%",
+      "cor": "up",
+      "sub": "abril 2026 (var. mensal)"
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "0.7%",
-      "cor": "up",
-      "sub": "PIM (abril/2026)"
+      "valor": "0,7%",
+      "cor": "down",
+      "sub": "abril 2026 (var. mensal)"
     },
     {
       "label": "IPP",
-      "valor": "-0.30%",
-      "cor": "down",
-      "sub": "IPP (maio/2026)"
+      "valor": "2,63%",
+      "cor": "neutral",
+      "sub": "abril 2026 (var. mensal)"
     }
   ],
   "longitudinal": [
@@ -63,7 +63,8 @@
       "relevancia": 95.94,
       "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     },
     {
       "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
@@ -79,7 +80,8 @@
       "relevancia": 56.7,
       "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     },
     {
       "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
@@ -94,7 +96,8 @@
       "relevancia": 55.5,
       "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02"
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
     },
     {
       "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
@@ -110,7 +113,8 @@
       "relevancia": 39.65,
       "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     },
     {
       "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
@@ -126,7 +130,8 @@
       "relevancia": 33.75,
       "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02"
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
     },
     {
       "id": "c330066d-d634-418a-bcc5-05a55d14573b",
@@ -140,7 +145,8 @@
       "relevancia": 15.3,
       "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     }
   ]
 }
