@@ -27,7 +27,9 @@ from prompt_geracao import montar_prompt
 
 # ═══════════════════ CONFIGURAÇÃO ═══════════════════
 SEMANAS_ATRAS = 5          # quantas semanas passadas abastecer
-MODO = os.environ.get("BACKFILL_MODO", "indicadores")   # "indicadores" | "completo"
+# Default = "completo". Trata ausência E string vazia (input não renderizado no Actions).
+_modo_env = (os.environ.get("BACKFILL_MODO") or "").strip().lower()
+MODO = _modo_env if _modo_env in ("completo", "indicadores") else "completo"
 MESES = ["", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
          "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 
@@ -84,6 +86,46 @@ def rodar_indicadores(sb, chave, label, ini, fim):
     return len(dados.get("kpis", []))
 
 
+
+def prompt_completo_retroativo(label, ini, fim, ativos):
+    """Prompt de backfill que INSTRUI a busca retroativa de notícias antigas —
+    a limitação que faz o clipping vir vazio quando se pede notícia de semanas atrás."""
+    from prompt_geracao import montar_prompt
+    base = montar_prompt(label, ini, fim, ativos)
+    reforco = f"""
+
+# ATENÇÃO — BUSCA RETROATIVA (HISTÓRICO)
+Esta é uma reconstrução de uma semana PASSADA ({ini} a {fim}). Notícias antigas exigem
+estratégia de busca específica, senão o clipping volta vazio. Faça o seguinte:
+- Inclua a DATA nas buscas: adicione "{ini[:7]}" (ano-mês), "maio 2026", "junho 2026" conforme o período.
+- Busque por RELEASES e BOLETINS que têm data fixa: "IBGE {ini[:7]}", "IPCA {ini[:7]}",
+  "Boletim Focus {ini[:7]}", "CNI sondagem {ini[:7]}", "Copom {ini[:7]}".
+- Se não encontrar a matéria EXATA da semana, use a divulgação oficial MAIS PRÓXIMA daquele período
+  (ex.: o indicador econômico daquele mês, o comunicado do Copom daquela data).
+- É MELHOR trazer 6-10 itens reais e datados do período do que retornar clipping vazio.
+- Cada item DEVE ter ao menos uma fonte com URL oficial. NUNCA retorne clipping vazio se houver
+  qualquer divulgação econômica relevante naquele mês — e sempre há (IBGE, BCB publicam mensalmente).
+"""
+    return base + reforco
+
+
+def prompt_clipping_minimo(label, ini, fim):
+    """2ª tentativa: pede SÓ o clipping, focado nas divulgações econômicas oficiais do mês."""
+    mes_ano = ini[:7]
+    return f"""Liste as principais divulgações econômicas oficiais do Brasil no período {ini} a {fim}
+(mês de referência {mes_ano}). Foque no que órgãos oficiais publicaram: IBGE (IPCA, PIM, PMC, PNAD, IPP),
+Banco Central (Copom, Focus, crédito), CNI (sondagem industrial), FGV (confiança).
+
+Responda SOMENTE com JSON válido, sem markdown:
+{{
+  "clipping": [
+    {{"setores": ["transversal"], "titulo": "...", "texto": "...",
+      "fontes": [{{"nome": "IBGE", "url": "https://agenciadenoticias.ibge.gov.br/..."}}]}}
+  ]
+}}
+Traga entre 6 e 10 divulgações reais daquele mês. Cada uma com fonte oficial e URL.
+Se não tiver a URL exata, use a página oficial de notícias do órgão. Nunca retorne lista vazia."""
+
 def rodar_completo(sb, chave, label, ini, fim):
     """Roda o ciclo completo do motor para a semana passada (clipping + sinais + KPIs).
     Marca os sinais como origem='backfill', corrige a data de identificação para a
@@ -94,9 +136,24 @@ def rodar_completo(sb, chave, label, ini, fim):
     ids_antes = {r["id"] for r in antes}
 
     ativos = sb.table("sinais").select("*").neq("status", "dormindo").execute().data
-    prompt = montar_prompt(label, ini, fim, ativos)
+    prompt = prompt_completo_retroativo(label, ini, fim, ativos)
     texto = motor.gerar_analise(prompt)
     dados = extrair_json(texto)
+
+    # FALLBACK: se o clipping veio vazio (limite da busca retroativa), tenta 1 vez
+    # com um pedido focado só em divulgações econômicas oficiais daquele mês.
+    if not dados.get("clipping"):
+        print(f"[backfill] {chave}: clipping vazio, tentando recuperação focada...")
+        try:
+            reforco = prompt_clipping_minimo(label, ini, fim)
+            t2 = motor.gerar_analise(reforco)
+            d2 = extrair_json(t2)
+            if d2.get("clipping"):
+                dados["clipping"] = d2["clipping"]
+                print(f"[backfill] {chave}: recuperados {len(d2['clipping'])} itens na 2ª tentativa.")
+        except Exception as e:
+            print(f"[backfill] {chave}: recuperação de clipping falhou (segue): {e}")
+
     processar(dados, sb, chave, ativos)
 
     # identifica os sinais NOVOS criados nesta semana de backfill
