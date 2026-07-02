@@ -1,190 +1,74 @@
 {
   "periodo": "2026-W27",
   "label": "Semana 27 · Junho 2026",
-  "gerado_em": "2026-07-02T12:09:31.307617",
+  "gerado_em": "2026-07-02T15:01:11.033198",
+  "editorial": null,
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "comercio"
-      ],
-      "titulo": "IPCA-15 de Junho desacelera, mas acumulado em 12 meses segue acima da meta",
-      "texto": "O Índice Nacional de Preços ao Consumidor Amplo-15 (IPCA-15) registrou alta de 0,41% em junho de 2026, uma desaceleração em relação à taxa de 0,62% de maio. Apesar da queda mensal, o acumulado em 12 meses atingiu 4,80%, permanecendo acima do teto da meta de inflação. Os maiores impactos vieram da energia elétrica residencial (2,04%) e alimentos como batata-inglesa (29,42%) e tomate (17,27%), enquanto combustíveis como gasolina (-0,73%) e etanol (-5,30%) registraram quedas.",
-      "fontes": [
-        {
-          "nome": "InfoMoney",
-          "url": "https://www.infomoney.com.br/mercados/ipca-15-sobe-041-em-junho-um-pouco-abaixo-do-esperado-pelo-mercado/"
-        },
-        {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/39830-ipca-15-e-de-0-41-em-junho"
-        },
-        {
-          "nome": "IBGE / Biblioteca",
-          "url": "https://biblioteca.ibge.gov.br/visualizacao/periodicos/2422/ipca_15_2026_jun.pdf"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/economia/ipca-15-previa-da-inflacao-sobe-041-em-junho-diz-ibge/"
-        },
-        {
-          "nome": "Banco Central do Brasil",
-          "url": "https://www.bcb.gov.br/content/focus/relatorios/RelatorioFocus20260701.pdf"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
         "transversal"
       ],
-      "titulo": "IPP de Maio registra queda nos preços da indústria, influenciado por alimentos",
-      "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação variou -0,30% em maio de 2026 frente a abril, revertendo a alta de 2,62% do mês anterior. Sete das 24 atividades industriais apresentaram queda de preços, com destaque para o setor de alimentos (-2,05%), que tem o maior peso na indústria brasileira. O acumulado em 12 meses ficou em 1,99%. A indústria química, contudo, avançou 2,14% em maio, influenciada por choques nos preços internacionais devido ao cenário geopolítico no Oriente Médio.",
+      "titulo": "Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026",
+      "texto": "O Boletim Focus, divulgado nesta segunda-feira (29), indicou estabilidade nas projeções do mercado financeiro para os principais indicadores econômicos de 2026. O Índice Nacional de Preços ao Consumidor Amplo (IPCA) manteve-se em 5,33%, interrompendo uma sequência de 15 meses de altas consecutivas. A taxa básica de juros (Selic) foi projetada em 14%, sugerindo um corte em relação à taxa atual de 14,25%. A cotação do dólar para o final de 2026 também permaneceu estável em R$ 5,20. A projeção para o Produto Interno Bruto (PIB) de 2026 avançou ligeiramente de 1,98% para 1,99%.",
       "fontes": [
         {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/39828-indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio"
+          "nome": "Gazeta Brazilian News",
+          "url": "https://gazetanews.com/mercado-mantem-em-533-projecao-de-inflacao-para-2026/"
         },
         {
-          "nome": "Metrópoles",
-          "url": "https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge"
+          "nome": "Tribuna do Norte",
+          "url": "https://www.tribunadonorte.com.br/noticia/mercado-mantem-em-5-33-projecao-de-inflacao-para-2026/563428"
         },
         {
-          "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/"
-        },
-        {
-          "nome": "TC TradersClub",
-          "url": "https://tradersclub.com.br/noticias/indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio/"
-        },
-        {
-          "nome": "Broadcast / O Estado de S. Paulo",
-          "url": "https://www.estadao.com.br/economia/ipp-precos-da-industria-quimica-avancam-214-em-maio-com-guerra-no-oriente-medio/"
+          "nome": "Jornal do Brasil",
+          "url": "https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html"
         }
       ]
     },
     {
       "setores": [
         "transversal",
-        "servicos",
-        "comercio",
-        "industria"
+        "industria",
+        "servicos"
       ],
-      "titulo": "Confiança Empresarial e de Serviços avançam em Junho, mas cautela persiste",
-      "texto": "O Índice de Confiança Empresarial (ICE) do FGV IBRE subiu 1,1 ponto em junho, atingindo 92,7 pontos, o maior nível desde maio de 2025. A melhora é atribuída, em parte, à distensão do conflito no Oriente Médio e à acomodação dos preços do petróleo. O Índice de Confiança de Serviços (ICS) também avançou 2,1 pontos, para 90,8 pontos, impulsionado pela recuperação das expectativas. No entanto, o pesquisador do FGV IBRE, Aloisio Campelo Jr., ressalta que, à exceção do setor industrial, os níveis de confiança permanecem historicamente baixos, limitados por juros elevados e endividamento das famílias.",
+      "titulo": "Governo Libera Crédito para Subsídio ao Diesel e Inicia Retirada Gradual de Benefícios",
+      "texto": "O governo federal publicou medida provisória abrindo crédito extraordinário de R$ 550 milhões para subsidiar a importação de óleo diesel rodoviário, com execução pela Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP). Paralelamente, o Ministério da Fazenda anunciou o início da retirada gradual dos subsídios aos combustíveis, começando com R$ 0,35 por litro do diesel, justificado pela estabilização dos preços internacionais do petróleo. Contudo, observou-se que a queda nos preços do petróleo não foi totalmente repassada pelas distribuidoras.",
       "fontes": [
         {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br/noticias/ice-de-junho-de-2026"
+          "nome": "Gazeta Brazilian News",
+          "url": "https://gazetanews.com/governo-abre-credito-de-r-550-milhoes-para-subsidiar-diesel/"
         },
         {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br/noticias/confianca-empresarial-avanca-novamente-em-junho"
+          "nome": "Tribuna do Norte",
+          "url": "https://www.tribunadonorte.com.br/noticia/governo-abre-credito-de-r-550-milhoes-para-subsidiar-diesel/563427"
         },
         {
-          "nome": "Folha de Pernambuco",
-          "url": "https://www.folhape.com.br/economia/fgv-confianca-de-servicos-sobe-21-pontos-em-junho-ante-maio-para-908/328229/"
+          "nome": "Portal do Amazonas",
+          "url": "https://portalamazonas.com/governo-inicia-retirada-gradual-de-subsidios-aos-combustiveis/"
         },
         {
-          "nome": "Sou Brasília",
-          "url": "https://soubrasilia.com.br/economia/confianca-empresarial-sobe-em-junho-e-atinge-maior-nivel-em-mais-de-um-ano/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "transversal"
-      ],
-      "titulo": "Confiança do Comércio volta a crescer em Junho, puxada por bens semiduráveis",
-      "texto": "A confiança dos empresários do comércio brasileiro, medida pela CNC, avançou 0,2% em junho, alcançando 102,6 pontos após duas quedas mensais consecutivas. O resultado foi impulsionado principalmente pelo segmento de bens semiduráveis (roupas, calçados, tecidos e acessórios), cuja confiança saltou 1,1%. Apesar do otimismo com o futuro, a percepção sobre a economia atual ainda gera desconforto, com 75,9% dos varejistas observando piora no cenário corrente.",
-      "fontes": [
-        {
-          "nome": "CNC / Enfoque",
-          "url": "https://www.enfoque.com.br/noticia/1101-comercio-confianca-do-varejo-volta-a-crescer-em-junho-diz-cnc-20260630-110100"
+          "nome": "Esquerda.net",
+          "url": "https://www.esquerda.net/artigo/preco-do-petroleo-caiu-gasolineiras-nao-deram-por-isso/86720"
         },
         {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/2026/06/30/confianca-do-comercio-volta-a-crescer-em-junho-apos-duas-quedas/"
-        },
-        {
-          "nome": "Diário do Comércio",
-          "url": "https://diariodocomercio.com.br/noticias/puxada-por-moda-e-calcados-confianca-do-comercio-volta-a-crescer-em-junho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "Confiança do Consumidor estável em Junho, mas adia compra de bens duráveis",
-      "texto": "O Índice de Confiança do Consumidor (ICC) da FGV Ibre ficou praticamente estável em junho, com 88,7 pontos (-0,1 ponto). A melhora na percepção sobre o presente foi compensada por expectativas mais moderadas para o futuro. O indicador de compras previstas de bens duráveis, como eletrodomésticos e móveis, caiu 3 pontos, para 80, refletindo a cautela dos consumidores diante dos juros ainda altos que encarecem o crédito e o parcelamento.",
-      "fontes": [
-        {
-          "nome": "Sou Brasília",
-          "url": "https://soubrasilia.com.br/economia/confianca-do-consumidor-fica-estavel-em-junho-mas-familia-adia-compra-de-bens/"
+          "nome": "Euronews",
+          "url": "https://pt.euronews.com/2026/06/29/noticias-do-dia-29-de-junho-2026-manha"
         }
       ]
     },
     {
       "setores": [
         "industria",
-        "transversal"
-      ],
-      "titulo": "Indústria paulista recua em confiança e projeta queda nas exportações após proposta de tarifas dos EUA",
-      "texto": "O Índice de Confiança do Empresário Industrial de São Paulo (Icei-SP), da Fiesp, encerrou junho em 45,4 pontos, indicando pessimismo no setor. A Sondagem Industrial da CNI também revelou que os empresários industriais passaram a projetar queda nas exportações para os próximos seis meses, com o índice de expectativa de quantidade exportada caindo para 49,7 pontos. Essa mudança de perspectiva ocorre após a proposta do Representante Comercial dos Estados Unidos (USTR) de novas tarifas sobre produtos brasileiros.",
-      "fontes": [
-        {
-          "nome": "Economia SP",
-          "url": "https://economiasp.com.br/noticias/confianca-da-industria-paulista-recua-em-junho-e-mantem-cenario-de-pessimismo-aponta-fiesp/"
-        },
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/sondagem-industrial-empresarios-projetam-queda-nas-exportacoes-nos-proximos-meses/"
-        },
-        {
-          "nome": "Revista Anamaco",
-          "url": "https://revistaanamaco.com.br/sondagem-industrial-cni-empresarios-industriais-projetam-queda-nas-exportacoes-nos-proximos-seis-meses-apos-proposta-de-novas-tarifas-dos-eua/"
-        },
-        {
-          "nome": "Broadcast / O Estado de S. Paulo",
-          "url": "https://www.estadao.com.br/economia/cni-apos-proposta-de-novas-tarifas-dos-eua-industria-preve-queda-das-exportacoes-em-2026/"
-        },
-        {
-          "nome": "Correio da Manhã",
-          "url": "https://correiodamanha.com.br/fiesp-vai-participar-de-audiencia-nos-eua/"
-        }
-      ]
-    },
-    {
-      "setores": [
+        "comercio",
         "servicos",
         "transversal"
       ],
-      "titulo": "ANEEL aprova reajustes tarifários de energia em distribuidoras, com aumentos acima da inflação",
-      "texto": "A ANEEL (Agência Nacional de Energia Elétrica) aprovou reajustes tarifários para diversas distribuidoras, incluindo Cocel (14,58%), Energisa Tocantins (8,11%) e Enel São Paulo (9,02% para baixa tensão e 15% para alta tensão), com vigência a partir de 4 de julho. Em todos os casos, os aumentos médios para os consumidores superam a inflação projetada para o ano (5,1%). Os principais fatores de pressão incluem custos de aquisição de energia, encargos setoriais (CDE Uso) e componentes financeiros.",
+      "titulo": "Brasil Regulamenta Eficiência Energética para Lâmpadas e Luminárias LED",
+      "texto": "O Brasil deu um passo importante na modernização do setor de iluminação com a publicação da primeira regulamentação nacional que estabelece índices mínimos de eficiência energética para lâmpadas e luminárias com tecnologia LED. A medida, presidida pelo Ministério de Minas e Energia (MME), pode gerar uma economia acumulada entre 283 e 432 TWh até 2040 e contribui para a transição energética e sustentabilidade do país. Comerciantes terão prazos de três a cinco anos para adequação de estoques.",
       "fontes": [
         {
-          "nome": "Agência Eixos",
-          "url": "https://agenciaeixos.com.br/aneel-projeta-alta-media-de-8-para-tarifas-de-energia-eletrica/"
-        },
-        {
-          "nome": "UOL Economia",
-          "url": "https://economia.uol.com.br/noticias/redacao/2026/03/17/aneel-projeta-alta-media-de-8-na-tarifa-de-energia-eletrica-neste-ano.htm"
-        },
-        {
-          "nome": "Canal Solar",
-          "url": "https://canalsolar.com.br/aneel-aprova-reajustes-na-conta-de-luz-em-mais-3-distribuidoras/"
-        },
-        {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/forbes-money/2026/06/aneel-aprova-aumento-de-1018-na-tarifa-de-energia-da-enel-sao-paulo-veja-quem-sera-mais-afetado/"
-        },
-        {
-          "nome": "Diário de Pernambuco",
-          "url": "https://www.diariodepernambuco.com.br/noticia/economia/2026/06/aneel-projeta-alta-de-86-nas-tarifas-de-energia-eletrica-em-2026.html"
+          "nome": "Portal do Marcos Santos",
+          "url": "https://www.portalmarcossantos.com.br/2026/06/29/brasil-avanca-na-eficiencia-energetica-com-primeira-regulamentacao-para-lampadas-e-luminarias-led/"
         }
       ]
     },
@@ -195,77 +79,93 @@
         "comercio",
         "servicos"
       ],
-      "titulo": "ANP aprova critérios para identificar preços abusivos de combustíveis",
-      "texto": "A diretoria da ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis) aprovou, em 30 de junho de 2026, minutas de resolução que estabelecem critérios para caracterizar a elevação abusiva de preços de combustíveis por distribuidores e revendedores. A medida visa coibir práticas desleais, especialmente em cenários de conflito geopolítico e calamidade. Entre as mudanças, o parâmetro de aumento de margem bruta para filtro inicial foi elevado de 10% para 70%.",
+      "titulo": "ANEEL Destina R$ 5,6 Bilhões para Redução da Tarifa de Energia; Expansão Solar Desafia Rede",
+      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) formalizou a destinação de até R$ 5,636 bilhões para reduzir as tarifas de energia elétrica em 19 estados, provenientes da repactuação de dívidas de geradoras hidrelétricas. Em contrapartida, a rápida expansão da geração distribuída de energia solar tem imposto desafios à rede elétrica, especialmente em períodos de baixo consumo e alta geração, exigindo a redução controlada da geração ('curtailment') e levantando a necessidade de soluções como o armazenamento em baterias.",
       "fontes": [
         {
-          "nome": "ANP",
-          "url": "https://www.gov.br/anp/pt-br/documentos-e-publicacoes/noticias-e-comunicados/diretoria-da-anp-aprova-criterios-para-identificar-precos-abusivos-de-combustiveis"
+          "nome": "Confaeab",
+          "url": "https://confaeab.org.br/aneel-destinara-ate-r-56-bi-para-aliviar-conta-de-luz-em-19-estados/"
+        },
+        {
+          "nome": "Valor Econômico",
+          "url": "https://valor.globo.com/brasil/noticia/2026/06/29/expansao-dos-paineis-solares-poe-rede-eletrica-a-prova-durante-jogo-do-brasil.ghtml"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "comercio"
-      ],
-      "titulo": "Preços de combustíveis em Junho: Diesel e GLP em queda, gasolina estável/leve alta",
-      "texto": "Os preços do etanol, diesel e gás de cozinha cederam na semana de 7 a 13 de junho, enquanto o litro da gasolina comum permaneceu estável, segundo a ANP. No fechamento de junho, o diesel e o gás de cozinha caíram, e a gasolina registrou uma leve alta de 0,15%. O preço dos combustíveis segue a trajetória decrescente do petróleo no mercado internacional, refletindo também medidas de subvenção do governo.",
-      "fontes": [
-        {
-          "nome": "UOL Economia",
-          "url": "https://economia.uol.com.br/noticias/redacao/2026/06/12/precos-de-etanol-diesel-e-glp-caem-e-o-da-gasolina-fica-estavel-diz-anp.htm"
-        },
-        {
-          "nome": "Acessa.com",
-          "url": "https://www.acessa.com/economia/2026/06/anp-diesel-e-gas-de-cozinha-fecham-junho-em-queda-e-gasolina-tem-ligeira-alta/"
-        },
-        {
-          "nome": "Reaja Agora",
-          "url": "https://reajaagora.com.br/precos-dos-combustiveis-anp-adia-divulgacao-para-09-06/"
-        },
-        {
-          "nome": "ANP Timor-Leste",
-          "url": "https://anp.tl/daily-fuel-price-03-10-june-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
         "transversal"
       ],
-      "titulo": "Dólar fecha Junho em R$ 5,16 e supera R$ 5,20 no início de Julho, pressionado por juros nos EUA",
-      "texto": "O dólar comercial fechou junho a R$ 5,16, mas no primeiro pregão de julho (01/07/2026) superou R$ 5,20, encerrando a R$ 5,209. A valorização da moeda americana é impulsionada pela expectativa de manutenção dos juros elevados nos Estados Unidos, o que fortalece o dólar e reduz o fluxo de recursos para mercados emergentes como o Brasil.",
+      "titulo": "PMEs Lideram Adoção de IA, mas Enfrentam Barreiras de Treinamento e Organização",
+      "texto": "Pequenas e médias empresas (PMEs) estão na vanguarda da adoção de Inteligência Artificial (IA), superando grandes corporações em frequência de uso. No entanto, um estudo da Deloitte aponta que o maior desafio não é a tecnologia em si, mas a adaptação da cultura organizacional, o redesenho de funções e a falta de treinamento adequado para os colaboradores, que impede a exploração total do potencial da IA. A OCDE e a Comissão Europeia também defendem a literacia em IA como prioridade nas escolas.",
       "fontes": [
         {
-          "nome": "UOL Economia",
-          "url": "https://economia.uol.com.br/noticias/redacao/2026/07/01/dolar-fecha-junho-a-r-516-ibovespa-cai-pelo-4-mes-seguido.htm"
+          "nome": "RHmagazine",
+          "url": "https://rhmagazine.pt/o-maior-desafio-da-ia-nas-empresas-nao-e-aquele-que-imagina-revela-estudo-da-deloitte/"
         },
         {
-          "nome": "BB InvesTalk",
-          "url": "https://bbinvestalk.com.br/fechamento-cambio-dolar-tem-leve-queda-para-r-516-mas-fecha-junho-com-valorizacao-de-238/"
+          "nome": "Agência Rix",
+          "url": "https://agenciarix.com.br/como-pequenas-empresas-estao-superando-as-grandes-no-uso-de-ia/"
         },
         {
-          "nome": "Ipeadata",
-          "url": "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=366&module=M"
-        },
-        {
-          "nome": "Agência Brasil",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/07/dolar-supera-r-520-e-bolsa-cai-com-expectativa-por-juros-nos-eua"
+          "nome": "Pessoas 2030",
+          "url": "https://pessoas2030.pt/noticias/nova-literacia-em-inteligencia-artificial-deve-tornar-se-uma-prioridade-nas-escolas-defendem-a-ocde-e-a-comissao-europeia/"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "industria"
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Fiesp apresenta estudo sobre descarbonização da indústria em evento de Meio Ambiente",
-      "texto": "A Fiesp apresentou, em 9 de junho, um estudo inédito sobre a trajetória de emissões da indústria até 2050, em comemoração ao Dia Mundial do Meio Ambiente. O estudo reforça o papel da indústria na descarbonização da economia, um tema de crescente relevância para o setor.",
+      "titulo": "Agenda ESG se Consolida e Financiamento Sustentável Torna-se Essencial para PMEs",
+      "texto": "A agenda ESG (Ambiental, Social e Governança) deixou de ser exclusiva de grandes corporações e agora é uma condição obrigatória para o financiamento e acesso ao mercado para médias empresas, que buscam certificações de sustentabilidade. Bancos utilizam três eixos essenciais para classificar e aprovar financiamentos sustentáveis, e empresas que não medem seu impacto podem ter custos futuros consideravelmente maiores.",
       "fontes": [
         {
-          "nome": "Sinproquim",
-          "url": "https://www.sinproquim.org.br/fiesp-apresentara-estudo-inedito-sobre-o-papel-da-industria-na-descarbonizacao-da-economia/"
+          "nome": "Conecta SC",
+          "url": "https://conectasc.com.br/noticias-corporativas/esg-representa-uma-inovacao-no-mundo-dos-negocios/"
+        },
+        {
+          "nome": "Jornal de Notícias",
+          "url": "https://www.jn.pt/pages/financiamento-sustentavel-o-novo-motor-de-sobrevivencia-e-crescimento-para-as-pmes-17799043.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Governo Português Lança Estratégia Industrial Verde para Descarbonização e Investimento",
+      "texto": "O Governo português determinou a elaboração da Estratégia Industrial Verde, visando posicionar Portugal como destino competitivo para investimentos industriais ligados à descarbonização, transição energética e inovação. A iniciativa busca identificar cadeias de valor prioritárias e mapear oportunidades de investimento tecnológico e econômico, aproveitando a vantagem energética nacional. Em Moçambique, a transição energética requer investimentos superiores a US$ 80 bilhões até 2050.",
+      "fontes": [
+        {
+          "nome": "Ambiente Magazine",
+          "url": "https://www.ambientemagazine.pt/2026/06/30/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/"
+        },
+        {
+          "nome": "Jornal Notícias",
+          "url": "https://www.jornalnoticias.co.mz/index.php/economia/10898-necessarios-89-mil-milhoes-de-dolares-para-garantir-transicao-energetica"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Setor de Engenharia Enfrenta Crise de Talento com Dificuldade de Recrutamento",
+      "texto": "O setor da engenharia enfrenta uma das maiores crises de talento dos últimos anos, com 73% dos empregadores relatando dificuldades em recrutar profissionais qualificados. A situação é agravada pelo envelhecimento da força de trabalho e pela aceleração tecnológica, impactando indústrias como defesa e semicondutores.",
+      "fontes": [
+        {
+          "nome": "RHmagazine",
+          "url": "https://rhmagazine.pt/setor-da-engenharia-enfrenta-uma-das-maiores-crises-de-talento-dos-ultimos-anos/"
         }
       ]
     },
@@ -274,12 +174,12 @@
         "industria",
         "servicos"
       ],
-      "titulo": "Sondagem da Indústria da Construção aponta crescimento nas expectativas para Junho",
-      "texto": "Todos os indicadores de expectativas da Sondagem da Indústria da Construção da CNI registraram crescimento na passagem de maio para junho de 2026. O índice de expectativa de novos empreendimentos e serviços ultrapassou a linha de 50 pontos, indicando que os empresários esperam crescimento. Há expectativas mais disseminadas de aumento no número de empregados, compra de insumos e nível de atividade para os próximos seis meses.",
+      "titulo": "Concrete Show 2026 Destaca Inovação e Sustentabilidade no Setor da Construção",
+      "texto": "O Concrete Show 2026, que ocorrerá em agosto, enfatizará a inovação, eficiência e sustentabilidade no setor da construção. O evento, que espera mais de 26 mil profissionais, adotará credenciamento pago para visitantes, buscando qualificar a audiência e ampliar as oportunidades de negócios e aplicação de novas tecnologias.",
       "fontes": [
         {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://www.portaldaindustria.com.br/estatisticas/sondagem-industria-da-construcao/"
+          "nome": "Revista Grandes Construções",
+          "url": "https://grandesconstrucoes.com.br/concrete-show-destaca-inovacao-eficiencia-e-sustentabilidade-no-setor/"
         }
       ]
     },
@@ -287,16 +187,46 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "IBGE celebra 90 anos e lança iniciativas em pesquisa e conservação",
-      "texto": "O IBGE celebrou seus 90 anos com uma série de eventos e lançamentos na semana. Dentre as iniciativas, destacam-se o lançamento da primeira prova piloto do Censo Nacional da População em Situação de Rua, a coleta nacional da Pesquisa Nacional de Saúde 2026, a inclusão da Reserva Ecológica do IBGE no Sistema Nacional de Unidades de Conservação (SNUC) e o lançamento de selo comemorativo pelos Correios. A agenda semanal do instituto também foi divulgada, incluindo a Pesquisa Especial sobre as Enchentes no Rio Grande do Sul (PEERS) e a PNAD Contínua sobre Acesso à Internet e à televisão.",
+      "titulo": "Acordo de Paz no Golfo e Postura do Fed Influenciam Mercados Emergentes",
+      "texto": "O acordo de paz provisório entre EUA e Irã, que levou à queda dos preços do petróleo a níveis pré-guerra, trouxe alívio para as projeções de inflação e Selic no Brasil. Contudo, o tom 'hawkish' do Federal Reserve (Fed) dos EUA tem freado a recuperação de títulos de mercados emergentes, fortalecendo o dólar e criando obstáculos para posições em moeda local.",
       "fontes": [
         {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias"
+          "nome": "Jornal do Brasil",
+          "url": "https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html"
         },
         {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/"
+          "nome": "Valor Econômico",
+          "url": "https://valor.globo.com/mercados/noticia/2026/06/29/tom-hawkish-do-fed-freia-recuperacao-de-titulos-de-mercados-emergentes.ghtml"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Coreia do Sul Anuncia Mega-Investimento em Inteligência Artificial",
+      "texto": "O governo sul-coreano revelou um plano decenal de mais de 1 bilhão de euros para impulsionar a Inteligência Artificial, incluindo a construção de fábricas de semicondutores e centros de dados. Este é o terceiro e mais significativo investimento em IA anunciado pelo país em menos de um ano.",
+      "fontes": [
+        {
+          "nome": "Jornal Notícias",
+          "url": "https://www.jornalnoticias.co.mz/index.php/ciencia-tecnologia-e-ambiente/10899-coreia-do-sul-anuncia-plano-de-mais-de-um-biliao-para-desenvolver-inteligencia-artificial"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos"
+      ],
+      "titulo": "Programa de Governança Climática do TCE-AM Recebe Destaque Nacional",
+      "texto": "O programa Blitz TCE-AM foi reconhecido em congresso nacional sobre governança climática, destacando-se como um modelo de fiscalização preventiva para identificar vulnerabilidades e fortalecer a capacidade de resposta dos órgãos públicos diante dos desafios ambientais.",
+      "fontes": [
+        {
+          "nome": "Portal do Amazonas",
+          "url": "https://portalamazonas.com/programa-blitz-tce-am-e-destaque-em-congresso-nacional-sobre-governanca-climatica/"
         }
       ]
     }
@@ -305,8 +235,8 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Regulamentação e Relações Comerciais Internacionais",
-      "texto": "A ANP aprovou critérios para identificar preços abusivos de combustíveis, demonstrando uma intervenção regulatória para proteger o consumidor. Paralelamente, a proposta dos EUA de novas tarifas sobre produtos brasileiros gerou preocupação na indústria, impactando as expectativas de exportação e evidenciando a influência das relações comerciais internacionais na economia doméstica.",
+      "tema": "Políticas Governamentais e Geopolítica",
+      "texto": "As políticas governamentais brasileiras na semana se concentraram na gestão de subsídios a combustíveis, com a liberação de crédito para diesel e o início da retirada gradual de benefícios, impactando diretamente os custos de transporte e logística. A regulamentação de eficiência energética para LEDs demonstra um esforço em direção à sustentabilidade e economia de recursos. No cenário internacional, a estabilização dos preços do petróleo, influenciada por acordos geopolíticos, teve reflexos nas projeções de inflação e juros no Brasil, enquanto a postura do Federal Reserve dos EUA continua a impactar os mercados emergentes.",
       "score": 7.5,
       "setores": [
         "transversal",
@@ -318,9 +248,9 @@
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Inflação, Juros e Confiança Econômica",
-      "texto": "A inflação, medida pelo IPCA-15, desacelerou em junho, mas o acumulado em 12 meses permanece elevado. O IPP registrou deflação na indústria em maio, com exceção do setor químico. A confiança empresarial e de serviços avançou, mas a cautela do consumidor e o endividamento familiar persistem, limitados por juros altos. O câmbio do dólar mostra volatilidade, com valorização frente ao real, impactando importações e custos.",
-      "score": 8.5,
+      "tema": "Cenário Macroeconômico e Custos Operacionais",
+      "texto": "O cenário econômico da semana é marcado pela estabilização das projeções de inflação e taxa de juros, conforme o Boletim Focus, o que pode indicar um ambiente mais previsível para investimentos. No entanto, a retirada gradual dos subsídios ao diesel e a persistência de preços elevados nas bombas de combustível podem pressionar os custos operacionais de empresas em todos os setores. A alocação de recursos pela ANEEL para reduzir as tarifas de energia é um ponto positivo para o poder de compra e a competitividade.",
+      "score": 7.8,
       "setores": [
         "transversal",
         "industria",
@@ -331,44 +261,50 @@
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Confiança do Consumidor e Endividamento",
-      "texto": "A confiança do consumidor manteve-se estável em junho, porém com uma notável cautela na intenção de compra de bens duráveis. Este comportamento é reflexo direto dos juros elevados e do comprometimento da renda familiar com dívidas, o que continua a ser um contrapeso significativo para a sustentação do consumo.",
-      "score": 7.0,
+      "tema": "Qualificação da Força de Trabalho e Consciência Social",
+      "texto": "A discussão sobre a necessidade de uma nova literacia em Inteligência Artificial nas escolas e a grave crise de talento no setor de engenharia evidenciam lacunas significativas na qualificação da força de trabalho, com potenciais impactos na inovação e competitividade. A crescente adoção de práticas ESG por médias empresas, impulsionada pela demanda de consumidores e investidores, demonstra uma evolução na consciência social e ambiental no ambiente de negócios.",
+      "score": 6.5,
       "setores": [
-        "comercio",
+        "transversal",
+        "industria",
         "servicos"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Digitalização e Inovação",
-      "texto": "Embora não haja notícias específicas sobre digitalização ou IA para PMEs nesta semana, a tendência de aceleração da adoção de tecnologias continua sendo um fator transformador. A ausência de novas informações pode indicar um período de consolidação ou implementação de projetos já iniciados, mantendo a relevância do tema para a otimização de processos e competitividade. ",
-      "score": 6.0,
+      "tema": "Inovação em IA e Transição Energética Tecnológica",
+      "texto": "A Inteligência Artificial continua a ser um motor de transformação, com PMEs superando grandes empresas em sua adoção, apesar dos desafios de treinamento e organização. O investimento massivo da Coreia do Sul em infraestrutura de IA e a discussão sobre literacia em IA sublinham a importância estratégica da tecnologia. No setor de energia, a regulamentação de eficiência para LEDs e os desafios técnicos impostos pela expansão da geração solar distribuída exigem constante inovação e soluções tecnológicas, como o armazenamento em baterias.",
+      "score": 8.5,
       "setores": [
         "industria",
         "comercio",
-        "servicos"
+        "servicos",
+        "transversal"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Sustentabilidade e Descarbonização Industrial",
-      "texto": "A Fiesp apresentou um estudo sobre a trajetória de emissões da indústria até 2050, destacando o papel do setor na descarbonização da economia. Este movimento reflete a crescente pressão por práticas mais sustentáveis e a busca por soluções para mitigar o impacto ambiental da produção industrial.",
-      "score": 6.5,
+      "tema": "Sustentabilidade e Descarbonização",
+      "texto": "A agenda ambiental ganhou destaque com a nova regulamentação brasileira para eficiência energética de LEDs, visando a redução do consumo e emissões. A Estratégia Industrial Verde em Portugal exemplifica o movimento global para atrair investimentos em descarbonização. A crescente relevância dos critérios ESG para o acesso a financiamentos por PMEs reforça a necessidade de práticas empresariais mais sustentáveis e responsáveis.",
+      "score": 7.0,
       "setores": [
-        "industria"
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulamentação de Preços e Normas Setoriais",
-      "texto": "A aprovação pela ANP de critérios para identificar preços abusivos de combustíveis demonstra um avanço na regulamentação do setor, visando maior transparência e proteção ao consumidor. Essa medida legal é crucial para estabilizar o mercado e garantir a concorrência leal.",
-      "score": 7.0,
+      "tema": "Regulamentação e Legislação Setorial",
+      "texto": "A semana foi marcada por ações regulatórias e legislativas com impacto direto nos setores. A medida provisória para subsidiar o diesel e a regulamentação de eficiência energética para lâmpadas LED são exemplos de intervenções governamentais que moldam o ambiente de negócios. A necessidade de um arcabouço técnico e jurídico para gerenciar a expansão da energia solar distribuída também aponta para a importância da legislação na adaptação a novas tecnologias.",
+      "score": 6.0,
       "setores": [
         "transversal",
+        "industria",
         "comercio"
       ]
     }
@@ -376,45 +312,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "10,50% a.a.",
+      "valor": "14,00% (proj. 2026)",
       "cor": "neutral",
-      "sub": "Taxa básica de juros, mantida em patamar elevado. Expectativa de mercado para fim de 2026 é de 14,0% a.a."
+      "sub": "Projeção do Boletim Focus para o final de 2026, indicando um corte da taxa atual de 14,25%."
     },
     {
-      "label": "IPCA-15 (Jun/26)",
-      "valor": "0,41%",
-      "cor": "down",
-      "sub": "Variação mensal. Acumulado em 12 meses: 4,80%, acima do teto da meta."
+      "label": "IPCA (proj. 2026)",
+      "valor": "5,33% (proj. 2026)",
+      "cor": "neutral",
+      "sub": "Projeção do Boletim Focus para o final de 2026, estável após 15 meses de alta, mas acima da meta do BC."
     },
     {
-      "label": "Câmbio (Dólar)",
-      "valor": "R$ 5,209",
-      "cor": "down",
-      "sub": "Fechamento em 01/07/2026. Volatilidade impulsionada por juros nos EUA."
+      "label": "Câmbio (dólar)",
+      "valor": "R$ 5,20 (proj. 2026)",
+      "cor": "neutral",
+      "sub": "Projeção do Boletim Focus para a cotação do dólar no final de 2026."
     },
     {
-      "label": "Desemprego (Mai/26)",
-      "valor": "5,6%",
-      "cor": "up",
-      "sub": "Taxa de desocupação (PNAD Contínua). Menor taxa até maio na série histórica."
+      "label": "Desemprego (PNAD)",
+      "valor": "Não disponível (Semana 27)",
+      "cor": "neutral",
+      "sub": "Dados da PNAD Contínua para junho/julho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
     },
     {
       "label": "Varejo (PMC/IBGE)",
-      "valor": "Aguardando divulgação",
+      "valor": "Não disponível (Semana 27)",
       "cor": "neutral",
-      "sub": "Dados da Pesquisa Mensal de Comércio (PMC) para maio/junho ainda não divulgados. Confiança do comércio em alta."
+      "sub": "Dados da Pesquisa Mensal de Comércio (PMC) para maio/junho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "+0,3% (Mai/26)",
-      "cor": "up",
-      "sub": "Variação mensal da Produção Industrial (PIM-PF/IBGE), divulgada em 03/07/2026."
+      "valor": "Não disponível (Semana 27)",
+      "cor": "neutral",
+      "sub": "Dados da Pesquisa Industrial Mensal - Produção Física (PIM-PF) para maio/junho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
     },
     {
-      "label": "IPP (Mai/26)",
-      "valor": "-0,30%",
-      "cor": "up",
-      "sub": "Variação mensal do Índice de Preços ao Produtor. Acumulado em 12 meses: 1,99%."
+      "label": "IPP (Produtor/IBGE)",
+      "valor": "Não disponível (Semana 27)",
+      "cor": "neutral",
+      "sub": "Dados do Índice de Preços ao Produtor (IPP) para maio/junho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
     }
   ],
   "longitudinal": [
@@ -428,10 +364,11 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 95.94,
-      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "relevancia": 94.78,
+      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes. Embora a confiança do comércio tenha apresentado uma leve alta em junho, a percepção dos varejistas sobre as condições econômicas atuais ainda é de piora, indicando que a cautela persiste entre os consumidores.",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     },
     {
       "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
@@ -444,25 +381,11 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 56.7,
-      "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
+      "relevancia": 79.3,
+      "ultima_observacao": "A digitalização e a adoção de tecnologias avançadas, como a Inteligência Artificial, continuam em forte desenvolvimento. PMEs estão superando grandes empresas na frequência de uso de IA, embora enfrentem desafios de treinamento e adaptação organizacional. A necessidade de uma nova literacia em IA nas escolas e os investimentos massivos em IA na Coreia do Sul reforçam a tendência de digitalização e a demanda por serviços tecnológicos.",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "monitorar",
-      "relevancia": 55.5,
-      "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02"
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     },
     {
       "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
@@ -475,10 +398,61 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 39.65,
-      "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
+      "relevancia": 76.75,
+      "ultima_observacao": "A adoção de Inteligência Artificial por PMEs para otimização de processos está em aceleração, com essas empresas mostrando maior agilidade que as grandes. No entanto, a eficácia dessa adoção depende criticamente da capacidade das organizações de redesenhar funções e processos e de investir em treinamento adequado para seus colaboradores, superando a barreira da adaptação cultural.",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "tipo": "risco",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 72.0,
+      "ultima_observacao": "O cenário geopolítico global, com o acordo de paz (ainda que atribulado) entre EUA e Irã, influenciou a estabilização dos preços do petróleo e, consequentemente, as projeções de inflação e Selic no Brasil. No entanto, o tom 'hawkish' do Federal Reserve dos EUA continua a impactar negativamente os mercados emergentes, fortalecendo o dólar e criando obstáculos para o financiamento, o que indiretamente pode afetar as relações comerciais e a competitividade dos produtos brasileiros.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "242055f9-f62f-4973-8d14-05a96ff3c71e",
+      "tipo": "risco",
+      "titulo": "Expansão da Geração Solar Distribuída Pressiona Estabilidade da Rede Elétrica",
+      "dimensao": "T",
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 49.75,
+      "ultima_observacao": "A rápida expansão da geração distribuída de energia solar, especialmente em telhados, está criando desafios operacionais significativos para a rede elétrica, levando à necessidade de 'curtailment' (redução controlada da geração) em períodos de baixo consumo. A falta de controle direto sobre essa geração e a ausência de soluções estruturais, como o armazenamento em baterias, representam um risco para a estabilidade do sistema elétrico e para o fornecimento de energia a indústrias e consumidores.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "9032fb4f-90f5-423f-a5d6-e0578821761d",
+      "tipo": "risco",
+      "titulo": "Crise de Talentos em Engenharia Ameaça Setores Chave da Economia",
+      "dimensao": "S",
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 48.25,
+      "ultima_observacao": "O setor de engenharia enfrenta uma das maiores crises de talento, com 73% dos empregadores reportando dificuldades em recrutar profissionais qualificados. O envelhecimento da força de trabalho e a aceleração tecnológica agravam a situação, podendo limitar a inovação e o crescimento em indústrias como defesa e semicondutores, além de impactar o desenvolvimento de infraestrutura.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
     },
     {
       "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
@@ -490,11 +464,28 @@
         "servicos",
         "transversal"
       ],
+      "status": "em_curso",
+      "relevancia": 48.06,
+      "ultima_observacao": "Não houve menção direta ou desdobramento sobre o 'Desenrola Adimplentes' nas fontes pesquisadas para a semana 26 de 2026.",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
+      "tipo": "oportunidade",
+      "titulo": "Otimismo na Indústria da Construção com Novos Projetos",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "servicos"
+      ],
       "status": "monitorar",
-      "relevancia": 33.75,
-      "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
+      "relevancia": 42.5,
+      "ultima_observacao": "O Concrete Show 2026 destaca a busca por inovação, eficiência e sustentabilidade no setor da construção, indicando um foco em modernização e melhores práticas. A adoção de credenciamento pago visa qualificar a audiência e fomentar negócios, o que sugere um ambiente de busca por oportunidades, embora não haja menção explícita a um 'otimismo generalizado com novos projetos' em termos de volume.",
       "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02"
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
     },
     {
       "id": "c330066d-d634-418a-bcc5-05a55d14573b",
@@ -505,10 +496,11 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 15.3,
-      "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01"
+      "relevancia": 27.09,
+      "ultima_observacao": "Não houve menção direta ou desdobramento sobre a 'Burocracia no Acesso a Recursos de Inovação para PMEs' nas fontes pesquisadas para a semana 26 de 2026.",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
     }
   ]
 }
