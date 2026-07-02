@@ -1,55 +1,405 @@
 {
   "periodo": "2026-W22",
   "label": "Semana 22 · Maio 2026",
-  "gerado_em": "2026-07-02T13:19:42.294394",
-  "editorial": null,
-  "clipping": [],
-  "pestel": [],
+  "gerado_em": "2026-07-02T14:35:44.057726",
+  "editorial": {
+    "texto": "O cenário econômico da Semana 22 de maio de 2026 apresenta um quadro de contrastes que exige atenção. Enquanto a taxa de desocupação do país atingiu o menor patamar para o período desde 2012, indicando um mercado de trabalho aquecido e potencialmente impulsionando o consumo, a inflação segue como um ponto de alerta. O Índice de Preços ao Consumidor Amplo (IPCA) acumulou 4,72% em doze meses, superando o teto da meta estabelecida, o que mantém a taxa básica de juros, a SELIC, em patamar elevado de 14,50%. A decisão sobre a manutenção ou alteração dessa taxa é aguardada com expectativa para a próxima semana.\n\nNeste ciclo, observamos a materialização do risco de \"Cautela do Consumidor e Endividamento Familiar\", um sinal que vinha sendo monitorado e agora se confirma, impactando diretamente os setores de comércio e serviços. Essa cautela é compreensível diante da inflação persistente e dos juros altos, mesmo com o avanço do emprego. Por outro lado, a indústria mostra sinais de desaceleração, com o Índice de Preços ao Produtor (IPP) registrando queda de 0,30% em maio, revertendo altas anteriores. O setor industrial também permanece sob a sombra da \"Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros\", um risco externo de alta relevância que se mantém em monitoramento.\n\nPara os empresários, especialmente as pequenas e médias empresas, o momento é de navegar entre desafios e oportunidades. Os setores de comércio e serviços, embora sintam a cautela do consumidor, podem se beneficiar da nova linha de crédito \"Desenrola Adimplentes\", que visa prevenir a inadimplência. A digitalização e a adoção de Inteligência Artificial, tanto para otimização de processos quanto para a oferta de \"Technology as a Service\" (TaaS), continuam sendo oportunidades em curso e transversais a todos os setores. No entanto, a burocracia no acesso a recursos de inovação para PMEs na indústria permanece um obstáculo a ser superado.\n\nPara as próximas semanas, será crucial acompanhar a decisão do Copom sobre a SELIC e a evolução da inflação. A capacidade de as empresas se adaptarem às novas tecnologias e a forma como o mercado de trabalho reage à persistência da cautela do consumidor serão determinantes para o desempenho geral da economia.",
+    "gerado_em": "2026-07-02T14:35:42.174214",
+    "n_sinais_considerados": 6
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Inflação desacelera em maio, mas acumulado em 12 meses ultrapassa o teto da meta do Banco Central",
+      "texto": "O Índice Nacional de Preços ao Consumidor Amplo (IPCA) registrou alta de 0,58% em maio de 2026, uma desaceleração em relação à taxa de 0,67% observada em abril. No entanto, o acumulado nos últimos 12 meses atingiu 4,72%, superando o teto de 4,5% da meta de inflação perseguida pelo Banco Central, o que não ocorria desde outubro do ano anterior. A pressão inflacionária em maio foi impulsionada principalmente pelo grupo Alimentação e Bebidas, com variação de 1,33%, e pela energia elétrica, que subiu 3,67% e foi o principal impacto individual de alta no índice.",
+      "fontes": [
+        {
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39832-em-maio-ipca-fica-em-0-58"
+        },
+        {
+          "nome": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/economia/2026/06/inflacao-ipca-de-maio-e-divulgado-pelo-ibge.shtml"
+        },
+        {
+          "nome": "Quinto Andar",
+          "url": "https://www.quintoandar.com.br/blog/ipca-maio-2026/"
+        },
+        {
+          "nome": "Brasil Indicadores",
+          "url": "https://www.brasilindicadores.com.br/ipca/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Preços da indústria recuam 0,30% em maio, sob impacto do setor de alimentos e extrativas",
+      "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação registrou uma variação de -0,30% em maio de 2026 frente a abril, revertendo o sinal da alta de 2,62% do mês anterior. Sete das 24 atividades industriais apresentaram queda de preços. O setor de alimentos teve o maior impacto negativo (-0,48 p.p.), com recuo de 2,05% nos preços, influenciado pela safra da cana-de-açúcar e café, além da valorização do real. As indústrias extrativas também contribuíram significativamente para a queda, com -5,90%.",
+      "fontes": [
+        {
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39958-precos-da-industria-caem-0-30-em-maio-sob-impacto-do-setor-de-alimentos"
+        },
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria"
+      ],
+      "titulo": "Taxa de desocupação atinge 5,6% no trimestre encerrado em maio, a menor para o período desde 2012",
+      "texto": "A taxa de desocupação no Brasil foi de 5,6% no trimestre de março a maio de 2026, mantendo-se estável em relação ao trimestre anterior e registrando uma queda de 0,6 p.p. em comparação com o mesmo período de 2025. Este é o menor resultado para o mês de maio desde o início da série histórica da PNAD Contínua em 2012. A população ocupada atingiu 102,7 milhões de pessoas, com alta de 0,5% no trimestre. Apesar da melhora no mercado de trabalho, o rendimento médio real desacelerou seu crescimento na comparação anual.",
+      "fontes": [
+        {
+          "nome": "IBGE / Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39908-pnad-continua-taxa-de-desocupacao-de-maio-fica-em-5-6"
+        },
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-06/desemprego-ate-maio-cai-para-56-o-menor-ja-registrado-no-periodo"
+        },
+        {
+          "nome": "Blog do PicPay",
+          "url": "https://blog.picpay.com/pnad-continua-maio-2026/"
+        },
+        {
+          "nome": "Portal Gov.br",
+          "url": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/junho/informativo-pnad-mai2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Arrecadação federal bate recorde de R$ 266,8 bilhões em maio, impulsionada por petróleo e atividade econômica",
+      "texto": "A arrecadação federal alcançou R$ 266,8 bilhões em maio de 2026, marcando o maior resultado para o mês desde o início da série histórica em 1995. Este valor representa um crescimento real de 10,69% em comparação com maio de 2025. O desempenho foi impulsionado principalmente pela valorização do petróleo no mercado internacional, pela atividade econômica e por alterações na tributação. No acumulado de janeiro a maio, a União arrecadou R$ 1,32 trilhão, também um recorde para o período.",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-06/arrecadacao-federal-bate-recorde-de-r-2668-bilhoes-em-maio"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Produção nacional de petróleo e gás natural se mantém estável em maio, apesar de queda na Petrobras",
+      "texto": "A produção total de petróleo e gás natural no Brasil atingiu 5,597 milhões de barris de óleo equivalente por dia (boe/d) em maio de 2026, mantendo-se estável em relação ao mês anterior. A produção de petróleo especificamente subiu 16,9% para 4,3 milhões de barris por dia (bpd) na comparação anual, mas registrou uma queda de 0,9% em relação a abril. A Petrobras, maior produtora do país, teve uma redução de 2,9% em sua produção de petróleo no mês.",
+      "fontes": [
+        {
+          "nome": "ANP",
+          "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/07/producao-de-petroleo-do-brasil-sobe-169-em-maio-para-43-mi-barris-dia-diz-anp/"
+        },
+        {
+          "nome": "Times Brasil | CNBC",
+          "url": "https://timesbrasil.com.br/petroleo/recuo-da-petrobras-derruba-producao-de-petroleo-confirma-anp/"
+        },
+        {
+          "nome": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mercado/2026/07/producao-de-petroleo-do-brasil-sobe-169-em-maio-para-43-mi-barris-por-dia-diz-anp.shtml"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "industria"
+      ],
+      "titulo": "Carteira de crédito deve crescer 0,8% em maio, impulsionada por recursos direcionados",
+      "texto": "A carteira total de crédito no Brasil deve apresentar um crescimento de 0,8% em maio de 2026 em relação a abril, com uma aceleração do ritmo anual para 9,6%. Este desempenho é sustentado principalmente pelas linhas com recursos direcionados, que devem avançar 1,0% no mês, refletindo o impacto de programas governamentais como o Fundo Garantidor para Investimentos (FGI) para Pessoas Jurídicas e o programa Minha Casa, Minha Vida para Pessoas Físicas. Já a carteira com recursos livres deve crescer 0,7% no mês, com expansão anual estável em 7,1%.",
+      "fontes": [
+        {
+          "nome": "Febraban",
+          "url": "https://febraban.org.br/noticias/saldo-da-carteira-de-credito-deve-crescer-08-em-maio-com-concentracao-em-recursos-direcionados"
+        },
+        {
+          "nome": "Broadcast",
+          "url": "https://broadcast.com.br/febraban-credito-deve-crescer-08-em-maio-com-aceleracao-do-ritmo-anual-para-alta-de-96/"
+        },
+        {
+          "nome": "Let's Money",
+          "url": "https://letsmoney.com.br/febraban-projeta-alta-de-96-no-credito-em-maio/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "ANEEL aprova bandeira tarifária amarela para maio e destina R$ 5,5 bilhões para redução de tarifas",
+      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) aprovou a bandeira tarifária amarela para o mês de maio de 2026, resultando em uma cobrança extra de R$ 1,885 a cada 100 kWh consumidos, devido às condições hidrológicas menos favoráveis. Em outra decisão, a ANEEL homologou a destinação de R$ 5,5 bilhões para reduzir as tarifas de energia de 22 distribuidoras ao longo de 2026, um aporte que visa mitigar reajustes mais elevados. Além disso, a agência homologou os repasses da Tarifa Social de Energia Elétrica referentes a maio de 2026.",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-05/aneel-aprova-r-55-bi-para-reduzir-conta-de-luz-em-22-distribuidoras"
+        },
+        {
+          "nome": "Portal Gov.br / ANEEL",
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/bandeiras-tarifarias"
+        },
+        {
+          "nome": "UOL Economia",
+          "url": "https://economia.uol.com.br/noticias/redacao/2026/04/24/aneel-aprova-bandeira-amarela-e-conta-de-luz-fica-mais-cara-em-maio.htm"
+        },
+        {
+          "nome": "O TEMPO",
+          "url": "https://www.otempo.com.br/economia/aneel-homologa-repasses-da-tarifa-social-de-energia-de-maio-de-2026-1.3392437"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "B3 divulga nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026 com critérios mais rigorosos",
+      "texto": "A B3 anunciou a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, composta por 69 companhias. A nota de corte para inclusão no índice subiu para 65,66 pontos, um avanço de 5,26 pontos em relação à média dos três ciclos anteriores, o que demonstra um aumento na exigência e na maturidade das práticas ESG (Ambiental, Social e Governança) no mercado brasileiro. Cerca de 90% das empresas que permaneceram na carteira melhoraram sua pontuação. A B3 também passou a integrar o Dow Jones Best in Class Index global.",
+      "fontes": [
+        {
+          "nome": "B3",
+          "url": "https://www.b3.com.br/pt_br/noticias/b3-divulga-nova-carteira-do-indice-de-sustentabilidade-empresarial-ise-b3-para-2026.htm"
+        },
+        {
+          "nome": "Plurale em site",
+          "url": "https://www.plurale.com.br/b3-divulga-nova-carteira-do-indice-de-sustentabilidade-empresarial-ise-b3-para-2026/"
+        },
+        {
+          "nome": "Estadão",
+          "url": "https://www.estadao.com.br/economia/ise-2026-b3-aperta-criterios-eleva-nota-de-corte-e-redefine-a-carteira-de-sustentabilidade-confira-o-ranking/"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/05/b3-entra-no-radar-global-de-sustentabilidade-e-testa-apetite-por-esg-em-mercados-emergentes/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Fecomércio MG: Comércio mineiro em recuperação, mas serviços e turismo recuam",
+      "texto": "A Fecomércio MG avaliou o cenário econômico de Minas Gerais, indicando que o comércio mineiro mostra sinais de recuperação. O varejo ampliado no estado avançou 11% na comparação entre março de 2026 e março de 2025, superando a média nacional. Contudo, os setores de serviços e turismo ainda operam em ritmo mais lento, com o volume de serviços caindo 0,7% em março frente ao mês anterior e acumulando quatro retrações consecutivas. O cenário reflete o ambiente macroeconômico restritivo, com juros elevados.",
+      "fontes": [
+        {
+          "nome": "Fecomércio MG",
+          "url": "https://fecomerciomg.org.br/noticias/comercio-sustenta-atividade-economica-em-minas-enquanto-servicos-e-turismo-recuam-avalia-fecomercio-mg/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Receita Federal prorroga prazo para sugestões sobre regulamento do IBS e intensifica cobrança de IR",
+      "texto": "A Receita Federal prorrogou até 15 de junho de 2026 o prazo para o envio de sugestões ao regulamento do Imposto sobre Bens e Serviços (IBS), parte da Reforma Tributária. Além disso, a Receita realizou uma ampla ação de cobrança, notificando quase 1 milhão de contribuintes com pendências no Imposto de Renda, totalizando cerca de R$ 24,45 bilhões em débitos. A iniciativa visa incentivar a regularização e evitar complicações futuras.",
+      "fontes": [
+        {
+          "nome": "Receita Federal / Portal Gov.br",
+          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/maio/receita-federal-prorroga-ate-15-de-junho-o-envio-de-sugestoes-ao-regulamento-do-ibs"
+        },
+        {
+          "nome": "JBA",
+          "url": "https://jba.com.br/2026/05/20/20-05-2026-alerta-tributario/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Febraban destaca avanço da digitalização bancária com 83% das transações em canais digitais",
+      "texto": "Uma pesquisa da Febraban revelou que 83% das transações bancárias realizadas pelos brasileiros são feitas por canais digitais, como celular e internet banking. O mobile banking, em particular, registrou um crescimento expressivo de 169% nos últimos cinco anos, totalizando 187,5 bilhões de transações. Os bancos brasileiros têm priorizado investimentos em cibersegurança e tecnologia da informação (TI), com um orçamento tecnológico previsto de R$ 50,4 bilhões para 2026.",
+      "fontes": [
+        {
+          "nome": "Febraban",
+          "url": "https://febraban.org.br/noticias/83-das-transacoes-bancarias-sao-feitas-pelos-canais-digitais"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Fecomércio MG promove Innovation Day e Semana S com foco em inovação e empregos",
+      "texto": "A Fecomércio MG realizou o 'Innovation Day' em maio, um evento estratégico para debater as transformações do comércio, com a participação de especialistas em inovação e transformação digital. Simultaneamente, a 'Semana S', uma mobilização nacional, ofereceu um feirão de empregos com 15 mil vagas nos setores de comércio e serviços, além de ações gratuitas e debates sobre os impactos da Inteligência Artificial.",
+      "fontes": [
+        {
+          "nome": "Fecomércio MG",
+          "url": "https://fecomerciomg.org.br/noticias/sistema-fecomercio-mg-sesc-e-senac-realizam-innovation-day-para-debater-transformacoes-do-comercio/"
+        },
+        {
+          "nome": "Alvorada FM",
+          "url": "https://alvoradafm.com.br/noticias/semana-s-2026-fecomercio-mg-promove-acoes-gratuitas-e-feirao-de-empregos-ate-proximo-domingo-em-bh"
+        },
+        {
+          "nome": "Senac MG",
+          "url": "https://www.mg.senac.br/noticias/sistema-fecomercio-mg-promove-programacoes-gastronomica-e-cultural-ao-longo-de-2026-no-mercado-das-flores-em-belo-horizonte"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Reforma Tributária e Programas Governamentais",
+      "texto": "A prorrogação do prazo para sugestões ao regulamento do IBS e a instituição de um Grupo de Trabalho Interministerial para o split payment indicam o avanço na regulamentação da Reforma Tributária. Além disso, programas governamentais continuam impulsionando o crédito direcionado, como o FGI para PJs e o Minha Casa, Minha Vida para PFs, demonstrando a atuação do governo na economia. A ANEEL também demonstra atividade regulatória significativa na gestão de tarifas de energia.",
+      "score": 8.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Indicadores Macroeconômicos e Crédito",
+      "texto": "Os indicadores econômicos da semana apresentaram um cenário misto: a inflação (IPCA) desacelerou mensalmente, mas o acumulado em 12 meses superou a meta do BC, pressionado por alimentos e energia. Os preços da indústria (IPP) recuaram, especialmente em alimentos e extrativas. A taxa de desocupação atingiu um mínimo histórico, sinalizando aquecimento do mercado de trabalho. A arrecadação federal bateu recorde em maio, e o crédito bancário, especialmente o direcionado, continua em expansão.",
+      "score": 8.5,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Mercado de Trabalho e Comportamento do Consumidor",
+      "texto": "A queda da taxa de desocupação para o menor nível histórico no trimestre encerrado em maio é um sinal positivo para o aspecto social, indicando maior absorção de mão de obra. No entanto, a Fecomércio MG aponta que a cautela do consumidor e o endividamento familiar ainda são fatores relevantes, especialmente em Minas Gerais, onde o comércio mostra recuperação, mas serviços e turismo recuam. A Receita Federal também intensificou a cobrança de débitos de IR.",
+      "score": 7.5,
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização e Inovação nos Setores",
+      "texto": "A digitalização continua sendo um pilar fundamental, com a Febraban revelando que 83% das transações bancárias são digitais e investimentos significativos em cibersegurança e TI. A Fecomércio MG promoveu o 'Innovation Day' e debates sobre Inteligência Artificial no comércio e serviços, indicando a crescente relevância da tecnologia para a competitividade e transformação dos negócios.",
+      "score": 7.0,
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Sustentabilidade e ESG no Mercado de Capitais",
+      "texto": "A B3 divulgou a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, com critérios mais rigorosos e um aumento na nota de corte, reforçando a importância das práticas ESG no mercado de capitais brasileiro. A inclusão da B3 no Dow Jones Best in Class Index global também destaca o reconhecimento internacional das iniciativas de sustentabilidade.",
+      "score": 6.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Regulamentação Tributária e Fiscalização",
+      "texto": "A Receita Federal está ativamente engajada na regulamentação da Reforma Tributária, prorrogando prazos para contribuições sobre o IBS. Além disso, a intensificação das ações de cobrança de pendências no Imposto de Renda demonstra um foco na conformidade fiscal. A ANEEL também atua na regulamentação e homologação de tarifas e repasses no setor de energia elétrica.",
+      "score": 7.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
       "valor": "14,50%",
       "cor": "neutral",
-      "sub": "vigente na semana"
+      "sub": "Taxa mantida na reunião anterior do Copom; nova decisão aguardada na semana seguinte à de referência (Maio/2026)."
     },
     {
-      "label": "IPCA-15",
-      "valor": "0,62%",
+      "label": "IPCA (Maio)",
+      "valor": "0,58%",
       "cor": "down",
-      "sub": "Maio"
+      "sub": "Variação mensal em maio/2026. Acumulado 12 meses: 4,72%, acima do teto da meta."
     },
     {
-      "label": "Câmbio",
-      "valor": "R$ 5,04",
-      "cor": "up",
-      "sub": "Média semanal"
+      "label": "Câmbio (Dólar)",
+      "valor": "N/D",
+      "cor": "neutral",
+      "sub": "Não há valor pontual para a semana. O IPP de maio menciona 'apreciação do real frente ao dólar'."
     },
     {
-      "label": "Desemprego",
-      "valor": "5,8%",
+      "label": "Desemprego (PNAD)",
+      "valor": "5,6%",
       "cor": "up",
-      "sub": "PNAD (Fev-Abr)"
+      "sub": "Taxa de desocupação no trimestre Mar-Mai/2026, menor para o período desde 2012."
     },
     {
-      "label": "Varejo (PMC)",
-      "valor": "0,5%",
-      "cor": "up",
-      "sub": "Março"
+      "label": "Varejo (PMC/IBGE)",
+      "valor": "N/D",
+      "cor": "neutral",
+      "sub": "Dados nacionais para maio/2026 ainda não divulgados. Em MG, varejo ampliado cresceu 11% em março/2026 (vs. mar/2025)."
     },
     {
-      "label": "PIM (Indústria)",
-      "valor": "0,1%",
-      "cor": "up",
-      "sub": "Março"
+      "label": "Prod. Ind. (PIM-PF)",
+      "valor": "N/D",
+      "cor": "neutral",
+      "sub": "Dados nacionais para maio/2026 ainda não divulgados. IPP da indústria registrou queda de 0,30% em maio/2026."
     },
     {
-      "label": "IPP",
-      "valor": "2,63%",
-      "cor": "up",
-      "sub": "Abril"
+      "label": "IPP (Indústria)",
+      "valor": "-0,30%",
+      "cor": "neutral",
+      "sub": "Variação mensal em maio/2026, revertendo alta anterior."
     }
   ],
   "longitudinal": [
+    {
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "tipo": "risco",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 100.0,
+      "ultima_observacao": "Não houve menções a desdobramentos sobre propostas de novas tarifas dos EUA sobre produtos brasileiros nas fontes desta semana.",
+      "periodo_observacao": "2026-W22",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
     {
       "id": "24441022-20e8-4a69-afed-041851f13279",
       "tipo": "risco",
@@ -60,9 +410,9 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 95.94,
-      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 90.94,
+      "ultima_observacao": "A Fecomércio MG reforça a cautela do consumidor e o endividamento familiar em Minas Gerais, mesmo com a recuperação do comércio em alguns segmentos. O crescimento do crédito bancário está concentrado em linhas direcionadas, indicando que o crédito livre ainda enfrenta restrições e a cautela persiste.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -77,25 +427,41 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 56.7,
-      "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 66.25,
+      "ultima_observacao": "A digitalização bancária se consolida, com 83% das transações realizadas por canais digitais e forte investimento em cibersegurança e TI. A Fecomércio MG também promoveu eventos para debater transformações do comércio impulsionadas pela tecnologia.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
     {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "id": "c330066d-d634-418a-bcc5-05a55d14573b",
       "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
+      "titulo": "Burocracia no Acesso a Recursos de Inovação para PMEs",
+      "dimensao": "L",
       "setores": [
-        "industria",
-        "transversal"
+        "industria"
       ],
       "status": "monitorar",
-      "relevancia": 55.5,
-      "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 57.55,
+      "ultima_observacao": "Não houve menções explícitas a desdobramentos sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana.",
+      "periodo_observacao": "2026-W22",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
+      "tipo": "oportunidade",
+      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 49.0,
+      "ultima_observacao": "O crescimento da carteira de crédito direcionado, impulsionado por programas governamentais como o Minha Casa, Minha Vida e o FGI, sugere a materialização de políticas de incentivo ao crédito que podem auxiliar na prevenção da inadimplência. A antecipação do 13º salário também é um fator de alívio temporário para as famílias.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-02",
       "origem": "real"
     },
@@ -110,41 +476,9 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 39.65,
-      "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
-      "tipo": "oportunidade",
-      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
-      "dimensao": "E",
-      "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "status": "monitorar",
-      "relevancia": 33.75,
-      "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "c330066d-d634-418a-bcc5-05a55d14573b",
-      "tipo": "risco",
-      "titulo": "Burocracia no Acesso a Recursos de Inovação para PMEs",
-      "dimensao": "L",
-      "setores": [
-        "industria"
-      ],
-      "status": "monitorar",
-      "relevancia": 15.3,
-      "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 44.75,
+      "ultima_observacao": "O 'Innovation Day' da Fecomércio MG incluiu debates sobre os impactos da Inteligência Artificial no comércio e serviços, indicando a continuidade da discussão e potencial adoção por PMEs para otimização de processos.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     }

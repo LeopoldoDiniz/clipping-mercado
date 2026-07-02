@@ -1,52 +1,399 @@
 {
   "periodo": "2026-W26",
   "label": "Semana 26 · Junho 2026",
-  "gerado_em": "2026-07-02T13:21:54.961638",
-  "editorial": null,
-  "clipping": [],
-  "pestel": [],
+  "gerado_em": "2026-07-02T14:45:17.561794",
+  "editorial": {
+    "texto": "A Semana 26 de junho de 2026 desenha um cenário econômico de contrastes, onde a cautela e a oportunidade se entrelaçam. A taxa Selic, embora reduzida em 0,25 ponto percentual para 14,25% ao ano em meados de junho, mantém o custo do crédito em patamar elevado, desafiando o ímpeto de investimento. Contudo, a inflação medida pelo IPCA-15 em 0,41% para junho, com acumulado de 4,80% em doze meses, demonstra controle de preços, e o câmbio permanece estável, com o Brent perto de US$ 73/barril. A indústria, por sua vez, registrou crescimento de 0,7% em abril, um sinal positivo, mas enfrenta pressões deflacionárias na porta da fábrica, com o Índice de Preços ao Produtor (IPP) em -0,30% em maio.\n\nNossa leitura da semana anterior é confirmada e ajustada pela evolução dos sinais. A \"Cautela do Consumidor e Endividamento Familiar\" não é mais uma projeção, mas uma realidade plenamente materializada, impactando diretamente os setores de comércio e serviços. Em resposta, a oportunidade do \"Desenrola Adimplentes\" segue em curso, buscando mitigar a inadimplência e oferecer um alívio potencial. Para a indústria, o risco das \"Propostas de Novas Tarifas dos EUA sobre Produtos Brasileiros\" persiste, exigindo atenção, mas um novo sinal de \"Otimismo na Indústria da Construção\" surge, apontando para novos projetos e um horizonte mais promissor.\n\nPara os empresários, a mensagem é clara: a adaptação tecnológica é imperativa. As oportunidades de \"Digitalização e 'Technology as a Service' (TaaS)\" e a \"Aceleração da Adoção de Inteligência Artificial por PMEs\" continuam a ganhar relevância, sendo ferramentas essenciais para otimização e competitividade em todos os setores, especialmente diante de um consumidor mais retraído. A burocracia no acesso a recursos de inovação, embora ainda presente, mostra relevância diminuída.\n\nNas próximas semanas, será fundamental observar como a indústria da construção capitaliza seu otimismo e se as iniciativas de crédito conseguirão reverter a cautela do consumidor. A evolução das negociações comerciais com os EUA também será um termômetro crucial.",
+    "gerado_em": "2026-07-02T14:45:15.560429",
+    "n_sinais_considerados": 7
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela",
+      "texto": "O Comitê de Política Monetária (Copom) do Banco Central reduziu a Taxa Selic em 0,25 ponto percentual, fixando-a em 14,25% ao ano. Esta é a terceira redução consecutiva no ciclo, com a decisão sendo tomada em 17 de junho de 2026. Apesar do corte, o comunicado do Copom manteve um tom cauteloso, citando a inflação ainda acima da meta e as incertezas do cenário global, especialmente as consequências dos conflitos no Oriente Médio. A projeção do Banco Safra é que a Selic encerre 2026 em 13,50% ao ano, refletindo um processo gradual de queda dos juros.",
+      "fontes": [
+        {
+          "nome": "Agência Brasil - EBC",
+          "url": null
+        },
+        {
+          "nome": "Banco Safra",
+          "url": null
+        },
+        {
+          "nome": "Adriano Freire - Finanças",
+          "url": null
+        },
+        {
+          "nome": "BB InvesTalk - Banco do Brasil",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA-15 Desacelera para 0,41% em Junho, mas Alimentos e Energia Pressionam",
+      "texto": "O Índice Nacional de Preços ao Consumidor Amplo-15 (IPCA-15) registrou alta de 0,41% em junho de 2026, uma desaceleração em relação aos 0,62% de maio, mas ainda acima das expectativas do mercado. Divulgado em 25 de junho de 2026, o índice acumulado em 12 meses atingiu 4,80%, afastando-se do teto da meta de inflação do Banco Central. Os principais impactos vieram da energia elétrica residencial e de alimentos como batata-inglesa e tomate, que mais que dobraram de preço no primeiro semestre.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br"
+        },
+        {
+          "nome": "Folha de S.Paulo",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Sondagem Industrial da CNI Aponta Queda na Expectativa de Exportações e Investimentos",
+      "texto": "A Sondagem Industrial de junho de 2026, divulgada pela Confederação Nacional da Indústria (CNI) em 22 de junho de 2026, revelou que o índice de expectativa de quantidade exportada caiu abaixo dos 50 pontos pela primeira vez no ano, indicando que os empresários industriais esperam uma redução nas exportações nos próximos seis meses. Essa perspectiva é influenciada pela proposta de novas tarifas dos EUA sobre produtos brasileiros. Além disso, a intenção de investir por parte dos empresários também registrou queda.",
+      "fontes": [
+        {
+          "nome": "CNI - Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br"
+        },
+        {
+          "nome": "Revista Anamaco",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Confiança do Comércio Volta a Crescer em Junho, Impulsionada por Semiduráveis",
+      "texto": "A confiança dos empresários do comércio brasileiro interrompeu uma sequência de duas quedas mensais e avançou 0,2% em junho de 2026, atingindo 102,6 pontos, segundo dados da Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) divulgados em 30 de junho de 2026. O resultado, impulsionado principalmente pelo segmento de bens semiduráveis (moda e vestuário), mantém o indicador acima do nível de satisfação (100 pontos). Contudo, a percepção sobre as condições econômicas atuais ainda gera desconforto para a maioria dos varejistas.",
+      "fontes": [
+        {
+          "nome": "CNC - Enfoque",
+          "url": "https://portaldocomercio.org.br"
+        },
+        {
+          "nome": "Mercado&Consumo",
+          "url": null
+        },
+        {
+          "nome": "SOU SEGURA",
+          "url": null
+        },
+        {
+          "nome": "Diário do Comércio",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria"
+      ],
+      "titulo": "Arrecadação Federal Bate Recorde Histórico em Maio, Impulsionada por Petróleo e Mudanças Tributárias",
+      "texto": "A arrecadação federal de impostos e contribuições atingiu R$ 266,8 bilhões em maio de 2026, o maior valor já registrado para o mês na série histórica iniciada em 1995. O acumulado de janeiro a maio de 2026 superou R$ 1,32 trilhão, também um recorde para o período. Os dados, divulgados pela Receita Federal em 25 de junho de 2026, mostram que o desempenho foi impulsionado pelo aumento das receitas ligadas à extração de petróleo e gás natural, pela atividade econômica e por mudanças na tributação de fundos exclusivos e offshores.",
+      "fontes": [
+        {
+          "nome": "Receita Federal (via Agência Brasil)",
+          "url": "https://www.gov.br/receitafederal/pt-br"
+        },
+        {
+          "nome": "Consensus Contabilidade",
+          "url": null
+        },
+        {
+          "nome": "Tribuna do Norte",
+          "url": null
+        },
+        {
+          "nome": "Exame",
+          "url": "https://exame.com"
+        },
+        {
+          "nome": "Contfisco",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Setor Bancário Prevê Investimento de R$ 50,4 Bilhões em Tecnologia em 2026, com Foco em IA e Nuvem",
+      "texto": "O setor bancário brasileiro projeta um orçamento de R$ 50,4 bilhões para tecnologia em 2026, um aumento de 8% em relação ao ano anterior, conforme a Pesquisa Febraban de Tecnologia Bancária 2026, divulgada em 26 de junho de 2026. Tecnologias emergentes como Inteligência Artificial (IA) e computação em nuvem (cloud) são as principais prioridades, com investimentos em IA crescendo 39% e em nuvem 30%. A cibersegurança permanece como a principal preocupação, com 100% dos bancos classificando-a como prioridade de investimento.",
+      "fontes": [
+        {
+          "nome": "Febraban (via Broadcast)",
+          "url": "https://portal.febraban.org.br"
+        },
+        {
+          "nome": "Febraban (via YouTube)",
+          "url": "https://portal.febraban.org.br"
+        },
+        {
+          "nome": "Forbes",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "ANEEL Conclui Cálculo de Tarifas de Transmissão para Ciclo 2026/2027 e Formaliza Redução em Contas de Luz",
+      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) concluiu em 24 de junho de 2026 o cálculo das Receitas Anuais Permitidas (RAP) e das Tarifas de Uso do Sistema de Transmissão (TUST) para o ciclo 2026/2027, com vigência a partir de 1º de julho de 2026, buscando maior estabilidade e eficiência econômica. Além disso, em 26 de junho de 2026, a ANEEL formalizou a alocação de até R$ 5,6 bilhões para reduzir as tarifas de energia elétrica para consumidores em 19 estados, por meio da repactuação de dívidas de geradoras hidrelétricas. A bandeira tarifária para junho permaneceu amarela, adicionando R$ 1,885 a cada 100 kWh consumidos, devido ao período seco e acionamento de termelétricas.",
+      "fontes": [
+        {
+          "nome": "ANEEL - Portal Gov.br",
+          "url": "https://www.gov.br/aneel/pt-br"
+        },
+        {
+          "nome": "ANEEL - Portal Gov.br",
+          "url": "https://www.gov.br/aneel/pt-br"
+        },
+        {
+          "nome": "Jovem Pan News (via YouTube)",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "ANP Observa Queda Gradual nos Preços Internos de Combustíveis Após Acordo no Oriente Médio",
+      "texto": "A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) informou em 24 e 25 de junho de 2026 que está observando uma queda paulatina nos preços dos combustíveis no mercado brasileiro, após a assinatura de um acordo preliminar de paz entre Estados Unidos e Irã e a reabertura do Estreito de Ormuz. Os futuros do Brent, referência para o petróleo, operam perto de US$ 73 por barril. A ANP também reiterou que o mercado interno de combustíveis está devidamente abastecido, sem risco de desabastecimento, e que a flexibilização dos estoques mínimos de gasolina e diesel foi prorrogada até 30 de junho de 2026.",
+      "fontes": [
+        {
+          "nome": "ANP (via Sindiminas)",
+          "url": "https://www.gov.br/anp/pt-br"
+        },
+        {
+          "nome": "ANP (via Jornal do Comércio)",
+          "url": "https://www.gov.br/anp/pt-br"
+        },
+        {
+          "nome": "Baratão Combustíveis",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Confiança da Indústria Paulista Recua em Junho, Mantendo Cenário de Pessimismo",
+      "texto": "O Índice de Confiança do Empresário Industrial de São Paulo (Icei-SP) encerrou junho de 2026 em 45,4 pontos, uma leve queda em relação a maio e permanecendo abaixo da linha dos 50 pontos, que separa confiança de falta de confiança. O levantamento da Fiesp, divulgado em 28 de junho de 2026, aponta que o setor industrial paulista continua pessimista quanto ao cenário econômico e às perspectivas para os próximos meses, com o sentimento compartilhado por empresas de todos os portes.",
+      "fontes": [
+        {
+          "nome": "Fiesp (via Economia SP)",
+          "url": "https://www.fiesp.com.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Preços da Indústria Caem 0,30% em Maio, Impulsionados por Alimentos e Químicos",
+      "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação registrou variação de -0,30% em maio de 2026 frente a abril, revertendo o sinal de alta anterior. Divulgado pelo IBGE em 30 de junho de 2026, o resultado foi puxado principalmente pelo setor de alimentos (-2,05%), com destaque para a queda nos preços dos açúcares. Por outro lado, a indústria química avançou 2,14% no mês, ainda sob forte influência dos choques nos preços internacionais devido ao cenário geopolítico no Oriente Médio.",
+      "fontes": [
+        {
+          "nome": "IBGE - Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br"
+        },
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": null
+        },
+        {
+          "nome": "Rádio Guaíba",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos"
+      ],
+      "titulo": "Indústria da Construção Projeta Aumento de Novos Empreendimentos e Serviços em Junho",
+      "texto": "Pela primeira vez desde fevereiro, os empresários da indústria da construção passaram a projetar aumento de novos empreendimentos e serviços para os próximos seis meses, conforme a Sondagem Indústria da Construção da CNI, divulgada em 24 de junho de 2026. O índice de expectativa por novos projetos aumentou 3,3 pontos, atingindo 52,5 pontos, indicando otimismo. As expectativas em relação a novas contratações, compra de insumos e matérias-primas, e nível de atividade também melhoraram.",
+      "fontes": [
+        {
+          "nome": "CNI - Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br"
+        },
+        {
+          "nome": "FIERN",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Fiesp Apresenta Estudo sobre Desafios da Descarbonização da Indústria",
+      "texto": "A Federação das Indústrias do Estado de São Paulo (Fiesp), em parceria com a CNI, apresentou em 9 de junho de 2026 um estudo inédito sobre a trajetória de emissões da indústria até 2050. O estudo, coordenado pelo Departamento de Meio Ambiente da Fiesp, revela os desafios para a descarbonização da indústria, especialmente nos setores energointensivos. Soluções como hidrogênio verde, captura e armazenamento de carbono (CCS) e eletrificação de processos são consideradas cruciais, mas ainda distantes da realidade da maior parte do parque industrial brasileiro.",
+      "fontes": [
+        {
+          "nome": "ABIFA",
+          "url": null
+        },
+        {
+          "nome": "Sinproquim",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Febraban Defende Papel do Setor Financeiro no Avanço da Agenda Climática Global",
+      "texto": "O presidente da Federação Brasileira de Bancos (Febraban), Isaac Sidney, defendeu em 25 de junho de 2026 o papel central do setor financeiro na mobilização de capital privado para a transição climática, durante a London Climate Action Week. Ele enfatizou que bancos, mercado de capitais e seguradoras são decisivos para transformar compromissos climáticos em projetos financiáveis, com impacto econômico, social e ambiental mensurável. A Febraban também destacou os avanços da agenda ESG do setor bancário brasileiro, incluindo a gestão de riscos climáticos e o compromisso de alcançar emissões líquidas zero até 2050.",
+      "fontes": [
+        {
+          "nome": "Febraban",
+          "url": "https://portal.febraban.org.br"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Impacto de Políticas Comerciais e Fiscais",
+      "texto": "A proposta de novas tarifas dos EUA sobre produtos brasileiros continua a gerar incerteza e impactar negativamente as expectativas de exportação da indústria nacional. No âmbito doméstico, a arrecadação federal recorde em maio, impulsionada por mudanças tributárias e a exploração de petróleo, demonstra a eficácia das políticas fiscais recentes, mas também a dependência de setores específicos.",
+      "score": 7.0,
+      "setores": [
+        "transversal",
+        "industria"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Desaceleração da Inflação e Juros, com Desafios Setoriais",
+      "texto": "A redução da taxa Selic para 14,25% ao ano sinaliza um afrouxamento monetário, buscando estimular a economia. No entanto, o IPCA-15, embora desacelerando, ainda se mantém acima da meta, com pressões significativas de alimentos e energia. A confiança da indústria paulista permanece pessimista, enquanto a do comércio mostra uma leve recuperação, mas com cautela persistente do consumidor. A arrecadação federal recorde reflete um bom desempenho em alguns setores, mas o cenário geral ainda exige prudência.",
+      "score": 7.5,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Cautela do Consumidor e Custos de Vida",
+      "texto": "Apesar da leve melhora na confiança do comércio, a percepção dos varejistas sobre as condições econômicas atuais ainda é de piora, refletindo a cautela do consumidor. Os custos de vida permanecem pressionados pela energia elétrica (bandeira amarela e reajustes tarifários) e por alguns alimentos essenciais, impactando diretamente o poder de compra das famílias.",
+      "score": 6.5,
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Avanço da Digitalização e Investimento em IA no Setor Financeiro",
+      "texto": "O setor bancário brasileiro demonstra um forte compromisso com a transformação digital, com um investimento projetado de R$ 50,4 bilhões em tecnologia para 2026. Inteligência Artificial, computação em nuvem e cibersegurança são as principais áreas de foco, indicando uma aceleração na adoção de tecnologias avançadas para otimização de processos e melhoria da experiência do cliente.",
+      "score": 8.0,
+      "setores": [
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Desafios da Descarbonização e Financiamento Climático",
+      "texto": "Um estudo da Fiesp/CNI destaca os desafios da descarbonização da indústria brasileira, especialmente em setores energointensivos, apontando a necessidade de tecnologias como hidrogênio verde e captura de carbono. Paralelamente, a Febraban reforça o papel crucial do setor financeiro na mobilização de capital privado para a transição climática, alinhando a agenda ESG com investimentos concretos. A manutenção da bandeira tarifária amarela na energia elétrica também reflete as condições hidrológicas e a necessidade de acionamento de termelétricas.",
+      "score": 7.0,
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Regulamentação Tarifária e Fiscalização de Mercado",
+      "texto": "A ANEEL concluiu a regulamentação das tarifas de transmissão para o ciclo 2026/2027 e formalizou a destinação de recursos para reduzir as contas de luz, demonstrando a atuação regulatória no setor elétrico. A ANP, por sua vez, mantém a fiscalização de preços abusivos de combustíveis e prorrogou a flexibilização de estoques mínimos, evidenciando a intervenção regulatória em momentos de instabilidade de mercado. As mudanças na legislação tributária também tiveram um impacto significativo na arrecadação federal.",
+      "score": 6.8,
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25% a.a.",
-      "cor": "neutral",
-      "sub": "vigente na semana"
+      "valor": "14,25%",
+      "cor": "up",
+      "sub": "Redução de 0,25 p.p. em 17/06/2026."
     },
     {
       "label": "IPCA-15",
       "valor": "0,41%",
-      "cor": "up",
-      "sub": "junho 2026"
+      "cor": "neutral",
+      "sub": "Variação em junho/2026 (div. 25/06/2026). Acumulado 12 meses: 4,80%."
     },
     {
-      "label": "Câmbio",
-      "valor": "R$ 5,1695",
-      "cor": "down",
-      "sub": "PTAX Venda 26/06/2026"
+      "label": "Câmbio (dólar)",
+      "valor": "Estável/Volátil",
+      "cor": "neutral",
+      "sub": "Sem dado específico para a semana. Preços do Brent perto de US$ 73/barril."
     },
     {
-      "label": "Desemprego",
-      "valor": "5,6%",
-      "cor": "up",
-      "sub": "PNAD Contínua (trim. até maio/2026)"
+      "label": "Desemprego (PNAD)",
+      "valor": "Não divulgado",
+      "cor": "neutral",
+      "sub": "Dados para maio/junho de 2026 não divulgados no período."
     },
     {
-      "label": "Varejo (PMC)",
-      "valor": "-1,5%",
-      "cor": "up",
-      "sub": "abril 2026 (var. mensal)"
+      "label": "Varejo (PMC/IBGE)",
+      "valor": "Não divulgado",
+      "cor": "neutral",
+      "sub": "Dados para maio/junho de 2026 não divulgados no período."
     },
     {
       "label": "PIM (Indústria)",
       "valor": "0,7%",
-      "cor": "down",
-      "sub": "abril 2026 (var. mensal)"
+      "cor": "up",
+      "sub": "Crescimento da produção industrial em abril/2026 (div. 03/06/2026)."
     },
     {
       "label": "IPP",
-      "valor": "2,63%",
-      "cor": "neutral",
-      "sub": "abril 2026 (var. mensal)"
+      "valor": "-0,30%",
+      "cor": "up",
+      "sub": "Variação dos preços na porta da fábrica em maio/2026 (div. 30/06/2026)."
     }
   ],
   "longitudinal": [
@@ -60,9 +407,26 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 95.94,
-      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 100.0,
+      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes. Embora a confiança do comércio tenha apresentado uma leve alta em junho, a percepção dos varejistas sobre as condições econômicas atuais ainda é de piora, indicando que a cautela persiste entre os consumidores.",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
+      "tipo": "oportunidade",
+      "titulo": "Aceleração da Adoção de Inteligência Artificial por PMEs para Otimização de Processos",
+      "dimensao": "T",
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 76.0,
+      "ultima_observacao": "A aceleração da adoção de Inteligência Artificial por PMEs e grandes empresas segue em curso. O setor bancário, conforme a Pesquisa Febraban de Tecnologia Bancária 2026, prioriza a IA, com um crescimento de 39% nos investimentos na área. A IA é vista como central para ganhos de eficiência e diferenciação competitiva, inclusive na experiência do cliente.",
+      "periodo_observacao": "2026-W26",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -77,9 +441,9 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 56.7,
-      "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 73.25,
+      "ultima_observacao": "A digitalização e a adoção de 'Technology as a Service' (TaaS) continuam em forte ascensão, especialmente no setor bancário. A Pesquisa Febraban de Tecnologia Bancária 2026 aponta um investimento significativo em nuvem (crescimento de 30%), reforçando a migração de sistemas para ambientes externos e a busca por soluções como serviço.",
+      "periodo_observacao": "2026-W26",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -92,28 +456,11 @@
         "industria",
         "transversal"
       ],
-      "status": "monitorar",
-      "relevancia": 55.5,
-      "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
-      "tipo": "oportunidade",
-      "titulo": "Aceleração da Adoção de Inteligência Artificial por PMEs para Otimização de Processos",
-      "dimensao": "T",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos"
-      ],
       "status": "em_curso",
-      "relevancia": 39.65,
-      "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01",
+      "relevancia": 71.75,
+      "ultima_observacao": "A proposta de novas tarifas dos EUA sobre produtos brasileiros continua a impactar as expectativas da indústria nacional. A Sondagem Industrial da CNI de junho de 2026 mostra que os empresários esperam queda nas exportações pela primeira vez no ano, diretamente influenciados por essa incerteza.",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-07-02",
       "origem": "real"
     },
     {
@@ -126,10 +473,26 @@
         "servicos",
         "transversal"
       ],
+      "status": "em_curso",
+      "relevancia": 53.4,
+      "ultima_observacao": "Não houve menção direta ou desdobramento sobre o 'Desenrola Adimplentes' nas fontes pesquisadas para a semana 26 de 2026.",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
+      "tipo": "oportunidade",
+      "titulo": "Otimismo na Indústria da Construção com Novos Projetos",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "servicos"
+      ],
       "status": "monitorar",
-      "relevancia": 33.75,
-      "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 46.25,
+      "ultima_observacao": "Pela primeira vez em meses, a Sondagem Indústria da Construção da CNI indica que os empresários do setor esperam aumento de novos empreendimentos e serviços para os próximos seis meses, com melhora nas expectativas de contratações e compras de insumos.",
+      "periodo_observacao": "2026-W26",
       "data_identificacao": "2026-07-02",
       "origem": "real"
     },
@@ -142,9 +505,9 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 15.3,
-      "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 30.1,
+      "ultima_observacao": "Não houve menção direta ou desdobramento sobre a 'Burocracia no Acesso a Recursos de Inovação para PMEs' nas fontes pesquisadas para a semana 26 de 2026.",
+      "periodo_observacao": "2026-W26",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     }

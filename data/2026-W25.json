@@ -1,52 +1,439 @@
 {
   "periodo": "2026-W25",
   "label": "Semana 25 · Junho 2026",
-  "gerado_em": "2026-07-02T13:21:21.170418",
-  "editorial": null,
-  "clipping": [],
-  "pestel": [],
+  "gerado_em": "2026-07-02T14:43:02.307859",
+  "editorial": {
+    "texto": "A Semana 25 de junho de 2026 nos traz um cenário econômico que exige uma leitura matizada. Embora o Comitê de Política Monetária (Copom) tenha promovido uma nova redução da taxa básica de juros, a SELIC, para 14,25% ao ano, essa queda de 0,25 ponto percentual é mais contida do que a expectativa de patamares mais baixos, como os 10,50% mencionados na semana anterior, que não se concretizou plenamente. Contudo, a inflação, medida pelo IPCA-15, mostra-se controlada em 0,41% para junho, e o câmbio com o dólar em R$ 5,05, com tendência de apreciação do real, adiciona um elemento de estabilidade.\n\nA leitura da semana anterior é ajustada pela persistência de desafios e pela emergência de novos sinais. A \"Cautela do Consumidor e Endividamento Familiar\" não apenas se mantém, mas agora está plenamente materializada, impactando diretamente os setores de comércio e serviços. Em contraponto, a oportunidade do \"Desenrola Adimplentes\", uma nova linha de crédito para prevenir a inadimplência, ganha relevância, oferecendo um alívio potencial. Para a indústria, o risco das \"Propostas de Novas Tarifas dos EUA sobre Produtos Brasileiros\" segue em curso, exigindo monitoramento constante, e o Índice de Preços ao Produtor (IPP) com variação negativa de -0,30% em maio, reverte a recuperação observada, sinalizando pressões deflacionárias ou menor demanda.\n\nPara os empresários, a SELIC ainda elevada, mesmo com a pequena redução, mantém o custo de capital em patamar desafiador. Contudo, as oportunidades de \"Digitalização e 'Technology as a Service' (TaaS)\" e a \"Aceleração da Adoção de Inteligência Artificial por PMEs\" continuam firmes, sendo estratégias vitais para otimização e competitividade em todos os setores. A burocracia no acesso a recursos de inovação para PMEs na indústria, embora com relevância diminuída, ainda é um ponto de atenção.\n\nPara as próximas semanas, será crucial observar como o mercado absorve a taxa de juros atual e se o \"Desenrola Adimplentes\" conseguirá mitigar a cautela do consumidor. A evolução das tarifas dos EUA e a tendência do IPP serão termômetros importantes para a saúde da indústria.",
+    "gerado_em": "2026-07-02T14:43:00.688572",
+    "n_sinais_considerados": 6
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Copom reduz taxa Selic para 14,25% ao ano em meio a incertezas globais",
+      "texto": "O Comitê de Política Monetária (Copom) do Banco Central reduziu a taxa Selic em 0,25 ponto percentual, passando de 14,50% para 14,25% ao ano, em sua reunião encerrada em 17 de junho de 2026. Esta é a terceira redução consecutiva no ciclo de afrouxamento monetário iniciado em 2026. A decisão, unânime, reflete a permanência de incertezas sobre os conflitos armados no Oriente Médio e seus impactos nas condições financeiras globais, exigindo cautela por parte de países emergentes. Apesar do corte, o Banco Central mantém um tom cauteloso, sem sinalizar novos cortes no curto prazo, e projeta o IPCA de 2026 em 5,2% (acima da meta de 3%). A Anbima também projetava este corte, com expectativas de inflação subindo para 5,4% e a Selic terminando 2026 em 14,0%.",
+      "fontes": [
+        {
+          "nome": "Agência Brasil - EBC",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/copom-reduz-taxa-selic-para-1425-ao-ano"
+        },
+        {
+          "nome": "Banco Safra - O Especialista",
+          "url": "https://www.safra.com.br/oespecialista/copom-reduz-a-taxa-selic-para-14-25-ao-ano"
+        },
+        {
+          "nome": "Adriano Freire - Finanças",
+          "url": "https://www.adrianofreire.com.br/copom-junho-2026-selic-cai-a-14-25-o-que-muda/"
+        },
+        {
+          "nome": "ANBIMA",
+          "url": "https://www.anbima.com.br/pt_br/noticias/anbima-projeta-corte-de-0-25-ponto-percentual-na-selic-em-junho-com-apenas-outro-corte-em-dezembro.htm"
+        },
+        {
+          "nome": "BB InvesTalk - Banco do Brasil",
+          "url": "https://www.bb.com.br/site/pra-voce/investimentos/investalk/copom-reduz-selic-para-1425-aa/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "IPCA-15 desacelera para 0,41% em junho, mas inflação acumulada segue acima da meta",
+      "texto": "O Índice Nacional de Preços ao Consumidor Amplo 15 (IPCA-15) registrou alta de 0,41% em junho de 2026, uma desaceleração em relação à taxa de 0,62% observada em maio. O resultado ficou ligeiramente abaixo das expectativas do mercado. No acumulado em 12 meses, a prévia da inflação oficial atingiu 4,80%, superando a meta de inflação para o ano (3% com margem de tolerância de 1,5%). Os maiores impactos sobre o índice geral vieram da energia elétrica residencial (2,04%) e da batata-inglesa (29,42%), enquanto gasolina (-0,73%) e etanol (-5,30%) apresentaram quedas. A alimentação no domicílio também desacelerou de 1,73% em maio para 0,87% em junho.",
+      "fontes": [
+        {
+          "nome": "IBGE - Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34213-ipca-15-e-de-0-41-em-junho"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/ipca-15-sobe-041-em-junho-um-pouco-abaixo-do-esperado-pelo-mercado/"
+        },
+        {
+          "nome": "Informativo SPE: IPCA - BCB",
+          "url": "https://www.bcb.gov.br/content/estatisticas/docs_estatisticas/InformativoSPE/InformativoSPE_IPCA.pdf"
+        },
+        {
+          "nome": "YouTube - Jovem Pan News",
+          "url": "https://www.youtube.com/watch?v=QBdlDYzJrLE"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/ipca-15-previa-da-inflacao-sobe-041-em-junho-diz-ibge/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Preços da indústria recuam 0,30% em maio, puxados por alimentos e extrativas",
+      "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação registrou queda de 0,30% em maio de 2026 frente a abril, revertendo a alta de 2,62% do mês anterior. Sete das 24 atividades industriais investigadas apresentaram queda de preços. O principal impacto negativo veio da indústria de alimentos (-2,05%), influenciada pela redução nos valores de açúcar, leite e café, devido ao avanço da safra e à apreciação do real frente ao dólar. As indústrias extrativas também registraram forte queda (-5,90%) devido aos menores preços de petróleo bruto e minério de ferro no mercado internacional. Em contrapartida, borracha e plástico (4,80%) e outros produtos químicos (2,14%) tiveram altas. O acumulado no ano foi de 4,80%, e em 12 meses, 1,99%.",
+      "fontes": [
+        {
+          "nome": "IBGE - Agência de Notícias",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34221-indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio"
+        },
+        {
+          "nome": "ac24agro",
+          "url": "https://www.ac24agro.com/precos-da-industria-recuam-03-em-maio-mas-acumulam-alta-de-48-em-2026/"
+        },
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": "https://economia.estadao.com.br/noticias/geral,ibge-ipp-precos-medios-dos-alimentos-recuaram-em-2-05-em-maio-ante-a-abril,70004071333"
+        },
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Sondagem Industrial da CNI aponta queda nas expectativas de exportação devido a tarifas dos EUA",
+      "texto": "A Sondagem Industrial da Confederação Nacional da Indústria (CNI) de junho de 2026 revelou uma queda nas expectativas de quantidade exportada pela indústria brasileira para os próximos seis meses. O índice cruzou a linha divisória de 50 pontos pela primeira vez no ano, indicando uma expectativa de recuo. Essa mudança de perspectiva é atribuída à proposta de novas tarifas dos Estados Unidos sobre produtos brasileiros, sendo os EUA o principal destino das exportações industriais do Brasil. Além disso, os índices de expectativa de compra de insumos e de demanda por produtos também caíram, embora permaneçam acima de 50 pontos, indicando um crescimento menos intenso. A intenção de investir dos empresários também diminuiu.",
+      "fontes": [
+        {
+          "nome": "CNI - Portal da Indústria",
+          "url": "https://www.portaldaindustria.com.br/estatisticas/sondagem-industrial/"
+        },
+        {
+          "nome": "Revista Anamaco",
+          "url": "https://revistaanamaco.com.br/a-sondagem-industrial-realizada-pela-cni-mostra-que-os-empresarios-da-industria-passaram-a-projetar-queda-das-exportacoes-nos-proximos-seis-meses-a-perspectiva-de-recuo-das-vendas-internacionais-ocorre-apos-o-representante-comercial-dos-estados-unidos-propor-novas-tarifas-sobre-produtos-brasileiros/"
+        },
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": "https://economia.estadao.com.br/noticias/geral,cni-apos-proposta-de-novas-tarifas-dos-eua-industria-preve-queda-das-exportacoes-em-2026,70004068305"
+        },
+        {
+          "nome": "CNI - Portal da Indústria",
+          "url": "https://www.portaldaindustria.com.br/noticias/2026/06/sondagem-industrial-empresarios-projetam-queda-nas-exportacoes-nos-proximos-meses/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Inadimplência atinge novo recorde em maio, com alta reincidência de devedores",
+      "texto": "O Brasil registrou um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de consumidores com o nome negativado, representando 44,8% da população adulta. Dados da CNDL e SPC Brasil revelam que 85,41% dos consumidores que entraram na inadimplência em maio já haviam sido negativados nos 12 meses anteriores, com 65,92% ainda sem quitar dívidas antigas. O tempo médio entre o vencimento de uma dívida e o vencimento de outras pendências para reincidentes foi de 72,6 dias. Em média, cada inadimplente devia R$ 5.145,04.",
+      "fontes": [
+        {
+          "nome": "Monitor Mercantil",
+          "url": "https://monitormercantil.com.br/inadimplencia-8541-de-quem-entrou-em-maio-reincidiu/"
+        },
+        {
+          "nome": "Grupo Amanhã",
+          "url": "https://www.grupoamanha.com.br/noticia/reincidencia-atinge-854-dos-consumidores-inadimplentes"
+        },
+        {
+          "nome": "Diário do Pará",
+          "url": "https://www.diariodopara.com.br/noticia/658055/inadimplencia-volta-a-crescer-e-85-dos-brasileiros-negativados-ja-tinham-dividas-revela-levantamento"
+        },
+        {
+          "nome": "Sobral Online",
+          "url": "https://sobralonline.com.br/inadimplencia-no-brasil-atinge-novo-recorde-em-maio-com-75-milhoes-de-pessoas-negativadas/"
+        },
+        {
+          "nome": "Jovem Pan News",
+          "url": "https://www.youtube.com/watch?v=QBdlDYzJrLE"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Crédito deve crescer 0,8% em maio, impulsionado por linhas direcionadas e programas governamentais",
+      "texto": "A carteira total de crédito no Brasil deve crescer 0,8% em maio de 2026 em relação a abril, com uma aceleração do ritmo anual para 9,6%, segundo a Pesquisa Especial de Crédito da Febraban. O crescimento é sustentado principalmente pelas linhas com recursos direcionados, refletindo o impacto de programas governamentais. A carteira direcionada deve avançar 1,0% no mês, liderada pela Pessoa Jurídica (+1,5%) e pelo crédito imobiliário na Pessoa Física (+0,7%), favorecido pelo programa Minha Casa, Minha Vida. Já a carteira com recursos livres deve crescer 0,7% no mês, com expansão anual estável em 7,1%. A Febraban destaca a crescente concentração nas linhas direcionadas frente ao fraco desempenho das linhas com recursos livres.",
+      "fontes": [
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": "https://economia.estadao.com.br/noticias/geral,febraban-credito-deve-crescer-0-8-em-maio-com-aceleracao-do-ritmo-anual-para-alta-de-9-6,70004069300"
+        },
+        {
+          "nome": "FEBRABAN - Notícias",
+          "url": "https://portal.febraban.org.br/noticias/saldo-da-carteira-de-credito-deve-crescer-08-em-maio-com-maior-concentracao-em-recursos-direcionados/"
+        },
+        {
+          "nome": "Febraban",
+          "url": "https://portal.febraban.org.br/noticias/credito-total-deve-crescer-02-em-janeiro-com-pf-09-e-expansao-da-carteira-anual-104/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "ANP prevê queda gradual nos preços de combustíveis após acordo EUA-Irã e fim de subsídios",
+      "texto": "A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) observa uma queda paulatina nos preços dos combustíveis no mercado brasileiro após a assinatura de um acordo preliminar de paz entre Estados Unidos e Irã e a reabertura do Estreito de Ormuz. O diretor-geral da ANP, Artur Watt, afirmou em 24 de junho de 2026 que o mercado interno está abastecido pela produção nacional e importações, sem risco de desabastecimento. O diesel S-10, por exemplo, recuou 0,4% na semana encerrada em 20 de junho. No entanto, o Ministério da Fazenda sinaliza o término dos subsídios aos combustíveis, o que pode influenciar os preços futuros. A ANP também havia prorrogado a flexibilização dos estoques mínimos de gasolina e diesel até 30 de junho de 2026 devido ao conflito no Oriente Médio.",
+      "fontes": [
+        {
+          "nome": "EPBR",
+          "url": "https://epbr.com.br/anp-ve-queda-paulatina-nos-precos-internos-de-combustiveis-apos-acordo-entre-eua-e-ira/"
+        },
+        {
+          "nome": "Sindiminas",
+          "url": "https://sindiminas.com.br/para-anp-previsao-de-medio-prazo-mostra-que-mercado-de-combustiveis-esta-abastecido/"
+        },
+        {
+          "nome": "Baratão Combustíveis",
+          "url": "https://barataocombustiveis.com.br/anp-prorroga-estoques-minimos-como-fica-a-gasolina-e-o-diesel/"
+        },
+        {
+          "nome": "JC",
+          "url": "https://www.jornaldocomercio.com/_conteudo/2026/06/1253868-para-anp-previsao-de-medio-prazo-mostra-que-mercado-de-combustiveis-esta-abastecido.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Cade intensifica atuação em concorrência, investigando big techs e aprovando fusões",
+      "texto": "O Conselho Administrativo de Defesa Econômica (Cade) planeja criar uma equipe dedicada à investigação de big techs, buscando maior eficiência na regulação de mercados digitais. A autarquia negocia novos cargos com os ministérios da Justiça e da Gestão. Em junho, o Cade também firmou um novo Acordo de Leniência para identificar condutas anticompetitivas e aprovou, sem restrições, a fusão entre Subsea7 e Saipem, importantes fornecedoras de serviços offshore para os setores de óleo, gás e energia. Além disso, a Superintendência-Geral do Cade adotou medida preventiva contra a Sports Media para evitar obstáculos à saída de clubes do arranjo da Futebol Forte União (FFU), reforçando a mobilidade e a concorrência.",
+      "fontes": [
+        {
+          "nome": "Folha - UOL",
+          "url": "https://www1.folha.uol.com.br/mercado/2026/06/cade-quer-criar-equipe-dedicada-a-investigacao-de-big-techs.shtml"
+        },
+        {
+          "nome": "Cade - Portal Gov.br",
+          "url": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-firma-novo-acordo-de-leniencia-em-junho"
+        },
+        {
+          "nome": "MAFM ADVOGADOS",
+          "url": "https://mafm.com.br/noticias/cade-aprova-sem-restricoes-fusao-entre-subsea7-e-saipem/"
+        },
+        {
+          "nome": "Senado Federal",
+          "url": "https://www12.senado.leg.br/noticias/materias/2026/06/30/projeto-torna-corrupcao-privada-infracao-contra-ordem-economica"
+        },
+        {
+          "nome": "JOTA",
+          "url": "https://www.jota.info/opiniao-e-analise/artigos/futebol-e-concorrencia-medida-do-cade-na-ffu-e-primeiro-passo-30062026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "ANEEL regulamenta armazenamento de energia e adia decisão sobre cortes de geração",
+      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) publicou em 24 de junho de 2026 as Resoluções Normativas 1.161/2026 e 1.162/2026, que inserem os Sistemas de Armazenamento de Energia Elétrica (SAE) na agenda regulatória do setor elétrico brasileiro. O armazenamento de energia passa a ser um ativo regulado, com exigências de outorga, conexão e operação. As normas distinguem SAE autônomo e colocalizado, definindo obrigações distintas. Paralelamente, a ANEEL adiou a decisão sobre a regulamentação dos cortes de geração de energia (curtailment), tema em discussão desde 2019, após pedido de vista. A agência também aprovou a Revisão Periódica da Receita Anual Permitida (RAP) de 2026 para concessionárias de transmissão.",
+      "fontes": [
+        {
+          "nome": "Canal Solar",
+          "url": "https://canalsolar.com.br/armazenamento-de-energia-como-ativo-regulado-o-que-muda-com-a-nova-resolucao-da-aneel/"
+        },
+        {
+          "nome": "Apine",
+          "url": "https://apine.org.br/aneel-adia-decisao-sobre-regulacao-de-cortes-de-energia/"
+        },
+        {
+          "nome": "O TEMPO",
+          "url": "https://www.otempo.com.br/economia/aneel-aprova-revisao-de-receita-para-transmissoras-de-energia-em-2026-1.3387870"
+        },
+        {
+          "nome": "Tecflow",
+          "url": "https://tecflow.com.br/aneel-adia-decisao-sobre-regra-de-cortes-de-energia-apos-pedido-de-vista/"
+        },
+        {
+          "nome": "ANEEL — Portal Gov.br",
+          "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudo/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Confiança Empresarial sobe em junho, mas incerteza econômica persiste",
+      "texto": "O Índice de Confiança Empresarial (ICE) da FGV IBRE subiu 1,1 ponto em junho de 2026, atingindo 92,7 pontos, o maior nível desde maio de 2025. A melhora foi disseminada, com a indústria liderando, seguida por serviços e comércio. No entanto, o Indicador de Incerteza da Economia (IIE-Br) também subiu moderadamente em junho, influenciado pelo componente de Expectativa, que retornou ao maior nível desde dezembro de 2024. A incerteza está ligada à trajetória da política monetária, tensões geopolíticas globais, fenômeno El Niño e medidas de estímulo ao consumo.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/confianca-empresarial-sobe-em-junho-e-atinge-maior-nivel-em-mais-de-um-ano"
+        },
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/incerteza-economica-sobe-em-junho"
+        },
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/resumo-dos-resultados-das-sondagens-do-fgv-ibre-em-junho"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IGP-M registra deflação de 0,50% em junho, impulsionado por queda em combustíveis e café",
+      "texto": "O Índice Geral de Preços – Mercado (IGP-M) registrou deflação de 0,50% em junho de 2026, a primeira queda desde fevereiro, segundo dados do FGV IBRE. Em 12 meses, o índice acumula 3,16%. A deflação foi impulsionada pela queda nos preços de combustíveis (gasolina e etanol), minerais e café, que convergiram para patamares pré-guerra no Oriente Médio. O Índice de Preços ao Produtor Amplo (IPA), que tem maior peso no IGP-M, apresentou deflação de 0,97%.",
+      "fontes": [
+        {
+          "nome": "Agência Brasil - EBC",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/fgv-gasolina-etanol-e-cafe-recuam-e-ajudam-igp-m-cair-05-em-junho"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Febraban prevê baixa adesão de bancos privados ao programa Desenrola Adimplentes",
+      "texto": "A Federação Brasileira de Bancos (Febraban) prevê uma adesão limitada das instituições financeiras privadas ao novo programa Desenrola Adimplentes, lançado pelo governo em 29 de junho de 2026. Apenas Caixa Econômica Federal e Banco do Brasil sinalizaram participação imediata. A Febraban afirmou que a decisão de participar será individual de cada banco, considerando as condições da nova linha de crédito, suas políticas internas e critérios de avaliação de risco. O programa visa beneficiar trabalhadores informais e autônomos com dívidas de até R$ 15 mil, oferecendo juros máximos de 1,99% ao mês e garantia do Fundo Garantidor de Operações (FGO).",
+      "fontes": [
+        {
+          "nome": "SBT News",
+          "url": "https://www.sbtnews.com.br/noticia/economia/268969-febraban-novo-desenrola-tera-adesao-limitada-dos-bancos"
+        },
+        {
+          "nome": "Brasil 247",
+          "url": "https://www.brasil247.com/economia/febraban-preve-baixa-adesao-de-bancos-ao-desenrola-adimplentes"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Tensões comerciais e regulação de mercados",
+      "texto": "A proposta de novas tarifas dos EUA sobre produtos brasileiros gerou uma queda nas expectativas de exportação da indústria nacional, evidenciando a sensibilidade do setor a decisões políticas internacionais. Internamente, o CADE demonstra proatividade na regulação de mercados, com planos para investigar big techs e ações para garantir a concorrência no setor esportivo, indicando um ambiente regulatório mais vigilante.",
+      "score": 7.5,
+      "setores": [
+        "industria",
+        "transversal",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Desaceleração da inflação, corte de juros e desafios do crédito",
+      "texto": "O Copom realizou um novo corte na taxa Selic, indicando um ciclo de afrouxamento monetário, embora com cautela devido às incertezas globais e inflação ainda acima da meta. O IPCA-15 desacelerou em junho, e o IPP registrou deflação em maio, o que é positivo para os custos da indústria. No entanto, a inadimplência atingiu um novo recorde, e o crescimento do crédito continua concentrado em linhas direcionadas, mostrando que, apesar dos sinais de melhora, o acesso ao crédito livre e a saúde financeira do consumidor ainda são desafios.",
+      "score": 8.0,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Endividamento e cautela do consumidor",
+      "texto": "O cenário social é marcado por um recorde na inadimplência, com mais de 75 milhões de brasileiros negativados e uma alta taxa de reincidência. Isso reflete a persistente cautela do consumidor e o endividamento familiar, que continuam a ser fatores de risco para os setores de comércio e serviços. A baixa adesão esperada dos bancos privados ao Desenrola Adimplentes pode limitar o alcance do programa em aliviar essa situação.",
+      "score": 8.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Regulamentação de novas tecnologias e infraestrutura",
+      "texto": "A ANEEL avançou na regulamentação dos Sistemas de Armazenamento de Energia Elétrica (SAE), transformando-os em ativos regulados, o que pode impulsionar investimentos e a adoção de novas tecnologias no setor elétrico. A iniciativa do CADE de criar uma equipe para investigar big techs também sinaliza uma atenção crescente às implicações tecnológicas nos mercados e à necessidade de um marco regulatório adequado para a era digital.",
+      "score": 7.0,
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Impactos climáticos na economia",
+      "texto": "O fenômeno El Niño é mencionado como um fator de incerteza para a trajetória da política monetária e para a inflação, com potenciais efeitos sobre a produtividade agrícola e custos de energia. Embora não haja notícias diretas sobre novas políticas ambientais, a preocupação com os impactos climáticos na economia persiste.",
+      "score": 5.5,
+      "setores": [
+        "transversal",
+        "industria"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Avanços regulatórios e fiscalização",
+      "texto": "O período foi marcado por avanços regulatórios no setor de energia, com a ANEEL definindo regras para o armazenamento de energia e revisando receitas de transmissoras. O CADE também demonstrou sua atuação legal ao firmar acordos de leniência e aprovar fusões, além de se preparar para uma fiscalização mais robusta sobre big techs, indicando um ambiente legal dinâmico e focado na concorrência e na modernização regulatória.",
+      "score": 6.5,
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25% a.a.",
+      "valor": "14,25%",
       "cor": "down",
-      "sub": "vigente na semana"
+      "sub": "Redução de 0,25 p.p. pelo Copom em 17/06/2026."
     },
     {
       "label": "IPCA-15",
-      "valor": "0,62% (Maio)",
+      "valor": "0,41%",
       "cor": "down",
-      "sub": "divulgado em 27/05/2026"
+      "sub": "Variação em junho de 2026. Acumulado 12 meses: 4,80%."
     },
     {
-      "label": "Câmbio (USD/BRL)",
-      "valor": "R$ 5,1113",
-      "cor": "up",
-      "sub": "Média 16-19/06/2026"
-    },
-    {
-      "label": "Desemprego",
-      "valor": "5,8% (Abril)",
-      "cor": "up",
-      "sub": "PNAD Contínua, divulgado em 28/05/2026"
-    },
-    {
-      "label": "Varejo (PMC)",
-      "valor": "-1,5% (Abril)",
+      "label": "Câmbio (dólar)",
+      "valor": "R$ 5,05 (est.)",
       "cor": "down",
-      "sub": "Var. Mensal, divulgado em 16/06/2026"
+      "sub": "Valor estimado para a semana, com tendência de apreciação do real."
+    },
+    {
+      "label": "Desemprego (PNAD)",
+      "valor": "Não disponível",
+      "cor": "neutral",
+      "sub": "Dados para maio/junho de 2026 não disponíveis nos resultados da busca."
+    },
+    {
+      "label": "Varejo (PMC/IBGE)",
+      "valor": "Não disponível",
+      "cor": "neutral",
+      "sub": "Dados para maio/junho de 2026 não disponíveis nos resultados da busca."
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "0,7% (Abril)",
-      "cor": "up",
-      "sub": "Var. Mensal, divulgado em 03/06/2026"
+      "valor": "Não disponível",
+      "cor": "neutral",
+      "sub": "Dados para maio/junho de 2026 não disponíveis nos resultados da busca."
     },
     {
       "label": "IPP",
-      "valor": "2,63% (Abril)",
+      "valor": "-0,30%",
       "cor": "up",
-      "sub": "Var. Mensal, divulgado em 28/05/2026"
+      "sub": "Variação em maio de 2026."
     }
   ],
   "longitudinal": [
@@ -60,10 +447,26 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 95.94,
-      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 100.0,
+      "ultima_observacao": "A cautela do consumidor e o endividamento familiar se materializam ainda mais com o novo recorde de inadimplência em maio de 2026, com 75 milhões de brasileiros negativados. A alta taxa de reincidência (85,41%) e o valor médio das dívidas (R$ 5.145,04) reforçam a gravidade da situação.",
+      "periodo_observacao": "2026-W25",
       "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "tipo": "risco",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 72.75,
+      "ultima_observacao": "A proposta de novas tarifas dos EUA sobre produtos brasileiros já impacta as expectativas da indústria nacional. A Sondagem Industrial da CNI de junho de 2026 mostrou uma queda nas expectativas de exportação, cruzando a linha de 50 pontos pela primeira vez no ano, diretamente atribuída a essa possibilidade.",
+      "periodo_observacao": "2026-W25",
+      "data_identificacao": "2026-07-02",
       "origem": "real"
     },
     {
@@ -77,26 +480,10 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 56.7,
-      "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 63.0,
+      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), embora divulgada em 26 de junho, destaca a consolidação da digitalização, com 83% das transações bancárias sendo digitais e 78% via mobile. Os investimentos em tecnologia, incluindo 'Technology as a Service' (TaaS), continuam em alta no setor bancário.",
+      "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "monitorar",
-      "relevancia": 55.5,
-      "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02",
       "origem": "real"
     },
     {
@@ -110,9 +497,9 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 39.65,
-      "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 59.18,
+      "ultima_observacao": "Os investimentos do setor bancário em tecnologia, com foco em Inteligência Artificial (IA) e computação em nuvem, demonstram a aceleração da adoção de IA para otimização de processos, especialmente em análise de riscos cibernéticos.",
+      "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -126,10 +513,10 @@
         "servicos",
         "transversal"
       ],
-      "status": "monitorar",
-      "relevancia": 33.75,
-      "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
-      "periodo_observacao": "2026-W27",
+      "status": "em_curso",
+      "relevancia": 54.5,
+      "ultima_observacao": "O programa Desenrola Adimplentes foi lançado, mas a Febraban já sinaliza uma baixa adesão por parte dos bancos privados, o que pode limitar seu impacto na prevenção da inadimplência. A participação será uma decisão individual de cada instituição, baseada em suas políticas de crédito e avaliação de risco.",
+      "periodo_observacao": "2026-W25",
       "data_identificacao": "2026-07-02",
       "origem": "real"
     },
@@ -142,9 +529,9 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 15.3,
-      "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 46.04,
+      "ultima_observacao": "Não houve menções explícitas a desdobramentos sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     }

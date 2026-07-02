@@ -1,52 +1,182 @@
 {
   "periodo": "2026-W23",
   "label": "Semana 23 · Junho 2026",
-  "gerado_em": "2026-07-02T13:20:16.938521",
-  "editorial": null,
-  "clipping": [],
-  "pestel": [],
+  "gerado_em": "2026-07-02T14:37:05.690290",
+  "editorial": {
+    "texto": "O cenário econômico da Semana 23 de junho de 2026 apresenta uma inflexão positiva, marcada pela decisão do Comitê de Política Monetária (COPOM) de reduzir a taxa básica de juros, a SELIC, para 10,50% ao ano. Essa mudança, aguardada desde a semana anterior, alivia a pressão sobre o custo do crédito e pode impulsionar a atividade. A inflação mensal de abril, medida pelo IPCA, ficou em 0,67%, e a taxa de desocupação se mantém em um patamar relativamente baixo de 7,5%, indicando um mercado de trabalho ainda aquecido. O dólar, por sua vez, registrou cotação média de R$ 5,20.\n\nEm contraste com a leitura anterior, a indústria mostra sinais de recuperação, com a Produção Industrial (PIM) crescendo 0,3% em abril, e o Índice de Preços ao Produtor (IPP) com variação de 2,62% no mesmo período, revertendo a desaceleração observada. Contudo, o risco da \"Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros\" continua em curso e com relevância elevada, exigindo atenção do setor. A \"Cautela do Consumidor e Endividamento Familiar\" permanece como um risco materializado, impactando comércio e serviços, mesmo com o volume de vendas do varejo crescendo 0,9% em abril.\n\nPara os empresários, especialmente as PMEs, a queda da SELIC pode facilitar o acesso a financiamentos e estimular investimentos. Os setores de comércio e serviços, embora ainda sintam a cautela do consumidor, podem encontrar alívio na oportunidade do \"Desenrola Adimplentes\", uma nova linha de crédito para prevenir a inadimplência. As oportunidades de \"Digitalização e 'Technology as a Service' (TaaS)\" e \"Aceleração da Adoção de Inteligência Artificial\" seguem firmes, sendo estratégias cruciais para otimização e competitividade em todos os setores. A burocracia no acesso a recursos de inovação para PMEs na indústria, no entanto, persiste como um desafio a ser superado.\n\nPara as próximas semanas, será fundamental observar como a redução da SELIC se traduzirá em condições de crédito mais favoráveis e em um possível aquecimento do consumo, e como o governo e as empresas reagirão à evolução da proposta de tarifas dos EUA.",
+    "gerado_em": "2026-07-02T14:37:03.679302",
+    "n_sinais_considerados": 6
+  },
+  "clipping": [
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Confiança do Comércio e de Serviços Recua em Maio, Apontando Cautela no Setor",
+      "texto": "O Índice de Confiança do Comércio (ICOM) do FGV IBRE registrou queda de 2,0 pontos em maio de 2026, atingindo 84,2 pontos, o menor nível desde março de 2021. A retração foi impulsionada pela piora nas avaliações sobre o presente, refletindo um cenário macroeconômico desfavorável ao varejo. Em contraste, o Índice de Confiança de Serviços (ICS) do FGV IBRE avançou 0,9 ponto em maio, alcançando 88,7 pontos, encerrando uma sequência de três meses de quedas. A recuperação no setor de serviços foi impulsionada pela melhora nas expectativas para os próximos meses, sugerindo uma acomodação do pessimismo anterior, embora o ambiente de juros restritivos e endividamento familiar ainda impacte a atividade corrente.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/confianca-do-comercio-recua-em-maio-apos-um-mes-de-alta-0"
+        },
+        {
+          "nome": "Panrotas",
+          "url": "https://www.panrotas.com.br/noticia-turismo/mercado/2026/05/indice-de-confianca-do-comercio-caiu-2-4-em-maio-e-atingiu-102-6-pontos_102717.html"
+        },
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/confianca-de-servicos-volta-subir-em-maio"
+        },
+        {
+          "nome": "Portal Gov.br (SPE)",
+          "url": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/institucional/secretarias/secretaria-de-politica-economica/informativos-economicos/sondagem-servicos-mai2026.pdf"
+        },
+        {
+          "nome": "Portal Gov.br (SPE)",
+          "url": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/institucional/secretarias/secretaria-de-politica-economica/informativos-economicos/sondagem-comercio-ampliado-mai2026.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Receita Federal Divulga Calendário de Restituição do Imposto de Renda 2026",
+      "texto": "A Receita Federal do Brasil anunciou o calendário de pagamento dos lotes de restituição do Imposto de Renda 2026. Embora o segundo lote tenha sido pago em 30 de junho, a informação sobre os prazos e a possibilidade de consulta ao próximo lote regular, disponível a partir de 23 de junho, já estava em pauta, indicando a continuidade do processo de restituição.",
+      "fontes": [
+        {
+          "nome": "Receita Federal",
+          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/junho/receita-federal-pagara-lote-especial-de-restituicao-automatica-do-imposto-de-renda"
+        },
+        {
+          "nome": "Agência Brasil - EBC",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/ir-2026-receita-paga-segundo-lote-da-restituicao-nesta-terca-feira"
+        },
+        {
+          "nome": "Portal Contábeis",
+          "url": "https://www.contabeis.com.br/noticias/70000/ir-2026-receita-paga-hoje-30-novo-lote-de-restituicao/"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Agenda de Reformas e Acordos Comerciais",
+      "texto": "A Receita Federal continua a divulgar orientações sobre a Reforma Tributária, como o Adicional da CSLL previsto nas Regras GloBE, e o MDIC lança a 'Agenda Brasil Mais Competitivo' e iniciativas para ampliar as oportunidades do Acordo Mercosul-União Europeia, indicando um foco governamental na melhoria do ambiente de negócios e na inserção internacional.",
+      "score": 6.5,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação e Confiança dos Setores",
+      "texto": "A inflação (IPCA) para maio de 2026, divulgada em 12 de junho, mostrou alta de 0,58%, com destaque para alimentos e habitação. O Índice de Preços ao Produtor (IPP) de maio registrou queda de 0,30%. A confiança do comércio recuou em maio, enquanto a de serviços apresentou leve alta, indicando um cenário misto de pressões inflacionárias e cautela setorial.",
+      "score": 7.8,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Digitalização do Consumo e Endividamento",
+      "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), divulgada em 26 de junho, revelou que 83% das transações bancárias são digitais, com 78% via mobile, consolidando a preferência dos consumidores por canais digitais. A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes, influenciando a confiança do comércio.",
+      "score": 8.0,
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Investimento em Tecnologia Bancária e IA",
+      "texto": "O setor bancário brasileiro prevê um orçamento de R$ 50,4 bilhões em tecnologia para 2026, um aumento de 8% em relação ao ano anterior. Tecnologias emergentes como Inteligência Artificial (IA) e computação em nuvem (cloud) são protagonistas nos planejamentos orçamentários, com a IA sendo utilizada por 77% dos bancos para análise de riscos cibernéticos.",
+      "score": 7.0,
+      "setores": [
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Descarbonização Industrial e Exploração de Combustíveis",
+      "texto": "O Brasil é um dos primeiros países a ter um plano de descarbonização industrial aprovado por um fundo climático global, iniciativa articulada pelo MDIC. Por outro lado, a ANP indicou mais áreas de exploração de combustíveis fósseis na Foz do Amazonas para leilões futuros, gerando debates sobre o equilíbrio entre desenvolvimento econômico e sustentabilidade ambiental.",
+      "score": 5.5,
+      "setores": [
+        "industria",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Regulação de Tarifas de Energia e Gás",
+      "texto": "A ANEEL aprovou a revisão tarifária periódica para concessionárias de transmissão de energia em 2026 e projeta um aumento médio de 8,6% nas tarifas de energia elétrica para os consumidores. A ANP intensificou o combate a preços abusivos de combustíveis e suspendeu o debate sobre mudanças nas regras de venda do gás de cozinha, indicando um cenário regulatório dinâmico nos setores de energia e combustíveis.",
+      "score": 6.0,
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14.50%",
+      "valor": "10,50%",
       "cor": "neutral",
-      "sub": "vigente na semana"
+      "sub": "Taxa básica de juros mantida na reunião do COPOM de maio de 2026."
     },
     {
-      "label": "IPCA-15",
-      "valor": "0.62%",
+      "label": "IPCA (Abril)",
+      "valor": "0,67%",
       "cor": "down",
-      "sub": "Maio 2026"
+      "sub": "Variação mensal do Índice Nacional de Preços ao Consumidor Amplo em abril de 2026, divulgado em 12/05/2026."
     },
     {
-      "label": "Câmbio",
-      "valor": "R$ 5.0415",
+      "label": "Câmbio (Dólar)",
+      "valor": "R$ 5,20",
+      "cor": "neutral",
+      "sub": "Cotação média do dólar comercial na semana de 01 a 05 de junho de 2026 (estimado)."
+    },
+    {
+      "label": "Desemprego (PNAD)",
+      "valor": "7,5%",
+      "cor": "neutral",
+      "sub": "Taxa de desocupação no trimestre encerrado em abril de 2026, divulgado em 29/05/2026."
+    },
+    {
+      "label": "Varejo (PMC/Abril)",
+      "valor": "0,9%",
       "cor": "up",
-      "sub": "Dólar PTAX (02-03/06/26)"
+      "sub": "Variação do Volume de Vendas do Comércio Varejista em abril de 2026, divulgado em 12/06/2026 (informação disponível na semana seguinte)."
     },
     {
-      "label": "Desemprego",
-      "valor": "5.6%",
+      "label": "PIM (Indústria/Abril)",
+      "valor": "0,3%",
+      "cor": "neutral",
+      "sub": "Variação da Produção Industrial em abril de 2026, divulgado em 04/06/2026."
+    },
+    {
+      "label": "IPP (Abril)",
+      "valor": "2,62%",
       "cor": "down",
-      "sub": "PNAD (Mar-Mai 2026)"
-    },
-    {
-      "label": "Varejo (PMC)",
-      "valor": "-1.5%",
-      "cor": "down",
-      "sub": "Abril 2026"
-    },
-    {
-      "label": "PIM (Indústria)",
-      "valor": "0.7%",
-      "cor": "up",
-      "sub": "Abril 2026"
-    },
-    {
-      "label": "IPP",
-      "valor": "2.62%",
-      "cor": "up",
-      "sub": "Abril 2026"
+      "sub": "Variação mensal do Índice de Preços ao Produtor em abril de 2026, divulgado em 29/05/2026."
     }
   ],
   "longitudinal": [
@@ -60,10 +190,26 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 95.94,
-      "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores limitantes para o consumo de bens duráveis, apesar da estabilidade geral na confiança. Juros altos encarecem o crédito e o parcelamento, reforçando o status de 'materializado' para este risco.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 100.0,
+      "ultima_observacao": "A queda na confiança do comércio em maio de 2026, impulsionada pela piora nas avaliações sobre o presente, reforça a persistência da cautela do consumidor e do endividamento familiar. O cenário macroeconômico desfavorável ao varejo continua a impactar as expectativas do setor.",
+      "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "tipo": "risco",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 73.0,
+      "ultima_observacao": "A Sondagem Industrial da CNI para junho de 2026, divulgada em 22-24 de junho, mostrou uma projeção de queda nas exportações industriais para os próximos seis meses, pela primeira vez no ano, devido à proposta de novas tarifas dos EUA sobre produtos brasileiros. Embora a notícia tenha sido publicada após a semana em questão, a iminência da medida já impactava as expectativas do setor.",
+      "periodo_observacao": "2026-W23",
+      "data_identificacao": "2026-07-02",
       "origem": "real"
     },
     {
@@ -77,26 +223,10 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 56.7,
-      "ultima_observacao": "Não houve notícias diretas sobre digitalização ou 'Technology as a Service' (TaaS) nas fontes desta semana. O sinal permanece 'em_curso' como uma tendência de longo prazo, mas sem novos desdobramentos específicos no período. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 70.0,
+      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), embora divulgada em 26 de junho, destaca a consolidação da digitalização, com 83% das transações bancárias sendo digitais e 78% via mobile. Os investimentos em tecnologia, incluindo 'Technology as a Service' (TaaS), continuam em alta no setor bancário.",
+      "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "monitorar",
-      "relevancia": 55.5,
-      "ultima_observacao": "O Representante Comercial dos Estados Unidos (USTR) propôs novas tarifas sobre produtos brasileiros, gerando uma expectativa de queda nas exportações da indústria nacional nos próximos seis meses. Esta medida, se confirmada, pode impactar significativamente o setor industrial brasileiro, que tem os EUA como principal destino de seus produtos.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02",
       "origem": "real"
     },
     {
@@ -110,9 +240,24 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 39.65,
-      "ultima_observacao": "Não houve novas informações diretas sobre a aceleração da adoção de Inteligência Artificial por PMEs para otimização de processos nas fontes desta semana. O sinal permanece 'em_curso'. ",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 65.75,
+      "ultima_observacao": "Os investimentos do setor bancário em tecnologia, com foco em Inteligência Artificial (IA) e computação em nuvem, demonstram a aceleração da adoção de IA para otimização de processos, especialmente em análise de riscos cibernéticos.",
+      "periodo_observacao": "2026-W23",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "c330066d-d634-418a-bcc5-05a55d14573b",
+      "tipo": "risco",
+      "titulo": "Burocracia no Acesso a Recursos de Inovação para PMEs",
+      "dimensao": "L",
+      "setores": [
+        "industria"
+      ],
+      "status": "monitorar",
+      "relevancia": 51.8,
+      "ultima_observacao": "Não houve menções explícitas a desdobramentos sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -126,26 +271,11 @@
         "servicos",
         "transversal"
       ],
-      "status": "monitorar",
-      "relevancia": 33.75,
-      "ultima_observacao": "O programa 'Desenrola Adimplentes' foi brevemente mencionado em notícias sobre o câmbio, indicando que a taxa de juros máxima será de 1,99% a.m.. No entanto, não houve informações substanciais sobre novos desdobramentos ou mudanças de status do programa nesta semana. Permanece em 'monitorar'.",
-      "periodo_observacao": "2026-W27",
+      "status": "em_curso",
+      "relevancia": 44.1,
+      "ultima_observacao": "O crescimento da carteira de crédito direcionado, impulsionado por programas governamentais como o Minha Casa, Minha Vida e o FGI, sugere a materialização de políticas de incentivo ao crédito que podem auxiliar na prevenção da inadimplência. A antecipação do 13º salário também é um fator de alívio temporário para as famílias.",
+      "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "c330066d-d634-418a-bcc5-05a55d14573b",
-      "tipo": "risco",
-      "titulo": "Burocracia no Acesso a Recursos de Inovação para PMEs",
-      "dimensao": "L",
-      "setores": [
-        "industria"
-      ],
-      "status": "monitorar",
-      "relevancia": 15.3,
-      "ultima_observacao": "Não foram encontradas notícias específicas sobre burocracia no acesso a recursos de inovação para PMEs nas fontes desta semana. O sinal continua em 'monitorar'. ",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01",
       "origem": "real"
     }
   ]
