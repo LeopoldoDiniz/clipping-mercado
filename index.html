@@ -267,6 +267,8 @@
   .long-card.cur::before { background:var(--amber); }
   .long-card.mon::before { background:var(--text-3); }
   .long-week-tag { font-family:var(--mono); font-size:10px; color:var(--text-3); margin-bottom:8px; }
+  .long-selo { display:inline-block; background:var(--sand-dim); color:var(--sand); border:1px solid var(--sand);
+    font-size:8px; letter-spacing:.5px; text-transform:uppercase; padding:1px 6px; border-radius:8px; margin-left:6px; cursor:help; }
   .long-card-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:8px; line-height:1.35; }
   .long-update { font-size:12px; color:var(--text-2); line-height:1.5; margin-bottom:8px; }
   .long-sectors { display:flex; gap:4px; flex-wrap:wrap; margin-bottom:4px; }
@@ -841,6 +843,7 @@ function adaptarSemana(json) {
   const long = (json.longitudinal || []).map(s => ({
     st: stMap[s.status] || 'mon',
     tipo: s.tipo || 'risco', dim: s.dimensao || '', rel: s.relevancia || 0,
+    origem: s.origem || 'real',
     tag: `${s.periodo_observacao || s.dimensao || '·'} · ${s.tipo === 'risco' ? 'Risco' : 'Oportunidade'} · relevância ${Math.round(s.relevancia || 0)}`,
     t: s.titulo || '',
     x: s.ultima_observacao || `Sinal ${s.tipo || ''} em acompanhamento.`,
@@ -1123,7 +1126,7 @@ function renderAll(){
   const chipLabel = { mat:'Materializado', cur:'Em curso', mon:'Monitorar' };
   document.getElementById('longBody').innerHTML = lng.length ? lng.map(l=>`
     <div class="long-card ${l.st}">
-      <div class="long-week-tag">${l.tag}</div>
+      <div class="long-week-tag">${l.tag}${l.origem==='backfill' ? ' <span class="long-selo" title="Sinal reconstruído retroativamente pelo backfill — não foi detecção em tempo real">histórico reconstruído</span>' : ''}</div>
       <div class="long-card-title">${l.t}</div>
       <div class="long-update">${l.x}</div>
       <div class="long-sectors">${sectorTags(l.set)}</div>
