@@ -1,89 +1,273 @@
 {
   "periodo": "2026-W27",
   "label": "Semana 27 · Junho 2026",
-  "gerado_em": "2026-07-01T22:26:08.244467",
+  "gerado_em": "2026-07-02T11:39:17.473996",
   "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Inadimplência de Consumidores Atinge Novo Recorde com Alta Reincidência",
+      "texto": "O Brasil registrou um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de consumidores com contas em atraso, representando 44,80% da população adulta. O Indicador de Reincidência de Pessoas Físicas, apurado pela CNDL e SPC Brasil, revelou que 85,41% das negativações foram de devedores reincidentes, sendo que a maioria (65,92%) ainda não havia quitado pendências antigas. O valor médio devido por inadimplente foi de R$ 5.145,04. Este cenário reflete um ambiente econômico ainda severo, com juros elevados encarecendo o crédito e as dívidas, dificultando a recuperação financeira das famílias.",
+      "fontes": [
+        {
+          "nome": "CNDL/SPC Brasil",
+          "url": "https://cndl.org.br"
+        },
+        {
+          "nome": "Portal varejosemsegredos.com.br",
+          "url": null
+        },
+        {
+          "nome": "Sobral Online",
+          "url": null
+        },
+        {
+          "nome": "Grupo Amanhã",
+          "url": null
+        },
+        {
+          "nome": "JC",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos"
+      ],
+      "titulo": "Confiança Empresarial Atinge Maior Nível em Mais de um Ano, Impulsionada pela Indústria",
+      "texto": "O Índice de Confiança Empresarial (ICE) da FGV IBRE subiu 1,1 ponto em junho de 2026, alcançando 92,7 pontos, o patamar mais elevado desde maio de 2025. A melhora foi disseminada, com a Indústria liderando o avanço e retomando o patamar de 100 pontos, seguida pelo setor de Serviços. O Comércio registrou um crescimento mais contido, enquanto a Construção foi o único setor a apresentar recuo. A percepção sobre a situação atual e as expectativas futuras contribuíram para o resultado positivo.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Arrecadação Federal Bate Recorde Histórico em Maio de 2026",
+      "texto": "A arrecadação federal de impostos e contribuições totalizou R$ 266,8 bilhões em maio de 2026, marcando o maior volume arrecadado para o mês desde 1995. No acumulado de janeiro a maio de 2026, o valor supera R$ 1,32 trilhão, com crescimento real de 6,42% em relação ao mesmo período do ano anterior. O desempenho foi impulsionado principalmente pelo aumento das receitas ligadas ao setor de petróleo e gás natural, além de avanços significativos no Imposto de Renda Pessoa Jurídica (IRPJ), Contribuição Social sobre o Lucro Líquido (CSLL) e Imposto sobre Operações Financeiras (IOF).",
+      "fontes": [
+        {
+          "nome": "Receita Federal",
+          "url": "https://www.gov.br/receitafederal/pt-br"
+        },
+        {
+          "nome": "Consensus Contabilidade",
+          "url": null
+        },
+        {
+          "nome": "Tribuna do Norte",
+          "url": null
+        },
+        {
+          "nome": "Exame",
+          "url": "https://exame.com"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus Mantém Projeções de Inflação e Selic Elevadas para 2026",
+      "texto": "O Boletim Focus do Banco Central, divulgado em 29 de junho de 2026, manteve a projeção para o IPCA de 2026 em 5,33%, acima do teto da meta de inflação. A taxa Selic também foi mantida em 14% ao ano para o fim de 2026. As projeções para o câmbio permaneceram em R$ 5,20. Houve uma leve alta na projeção do PIB para 2026, de 1,98% para 1,99%, indicando uma economia mais resiliente no curto prazo, mas com desafios persistentes na ancoragem das expectativas de inflação.",
+      "fontes": [
+        {
+          "nome": "Banco Central/Focus",
+          "url": "https://www.bcb.gov.br/publicacoes/focus"
+        },
+        {
+          "nome": "Blog Itaú",
+          "url": null
+        },
+        {
+          "nome": "XP Investimentos",
+          "url": null
+        },
+        {
+          "nome": "Estadão",
+          "url": null
+        },
+        {
+          "nome": "Vermelho",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA-15 Desacelera em Junho, mas Acumulado de 12 Meses Permanece Acima da Meta",
+      "texto": "O IPCA-15 desacelerou para 0,41% em junho de 2026, após registrar 0,62% em maio, ficando abaixo das projeções do mercado. Apesar da desaceleração mensal, o índice acumulado em 12 meses acelerou para 4,8% até junho, afastando-se do teto de 4,5% da meta de inflação do Banco Central. O grupo Alimentação e Bebidas, embora com alta menor, continuou sendo a principal fonte de pressão, juntamente com a energia elétrica, que teve aumento de 2,04%.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br"
+        }
+      ]
+    },
     {
       "setores": [
         "industria"
       ],
-      "fonte": "CNI",
-      "titulo": "Confiança do Empresário Industrial recua e completa 18 meses de pessimismo",
-      "texto": "O Índice de Confiança do Empresário Industrial (ICEI) caiu para 46,7 pontos em junho de 2026, registrando uma queda de 0,5 ponto em relação a maio. Este é o 18º mês consecutivo em que o indicador permanece abaixo da linha de 50 pontos, que separa a falta de confiança da confiança, configurando a segunda pior sequência histórica do ICEI. A queda reflete uma pior avaliação dos empresários sobre o presente e o futuro das empresas e da economia, com o índice de condições atuais em 42,3 pontos e o de expectativas em 48,9 pontos.",
-      "url": "https://www.portaldaindustria.com.br/estatisticas/icei-indice-de-confianca-do-empresario-industrial/"
+      "titulo": "Demanda Interna por Bens Industriais Apresenta Quarto Avanço Consecutivo",
+      "texto": "O Indicador Ipea Mensal de Consumo Aparente de Bens Industriais, uma proxy da demanda interna por bens industriais, avançou 0,8% em abril de 2026 na comparação mensal com ajuste sazonal. Este é o quarto crescimento consecutivo do indicador, impulsionado por altas na produção interna destinada ao mercado nacional e nas importações de bens industriais. No acumulado em doze meses, a demanda por bens industriais registrou recuo de 0,1% em abril, contrastando com a elevação de 0,7% da produção interna, medida pela PIM-PF/IBGE.",
+      "fontes": [
+        {
+          "nome": "IPEA",
+          "url": "https://www.ipea.gov.br"
+        }
+      ]
     },
     {
       "setores": [
-        "comercio"
-      ],
-      "fonte": "CNC",
-      "titulo": "Confiança do comércio volta a crescer em junho, impulsionada por bens semiduráveis",
-      "texto": "A confiança dos empresários do comércio brasileiro (Icec) avançou 0,2% em junho de 2026, atingindo 102,6 pontos após duas quedas mensais consecutivas. O resultado mantém o indicador acima do nível de satisfação (100 pontos), impulsionado principalmente pelo segmento de bens semiduráveis (roupas, calçados, tecidos e acessórios), cuja confiança saltou 1,1% no mês. Apesar do otimismo com as expectativas futuras (+0,7%), a percepção sobre as condições macroeconômicas atuais ainda gera cautela."
-    },
-    {
-      "setores": [
+        "transversal",
         "servicos"
       ],
-      "fonte": "FGV IBRE",
-      "titulo": "Confiança do setor de serviços avança em junho com melhora das expectativas",
-      "texto": "O Índice de Confiança de Serviços (ICS) do FGV IBRE subiu 2,1 pontos em junho de 2026, alcançando 90,8 pontos, o maior nível desde janeiro de 2026. Este é o segundo mês consecutivo de melhora, impulsionado principalmente pelas expectativas para os próximos meses, que subiram 3,3 pontos. A redução da incerteza externa, com a distensão do conflito no Oriente Médio e a acomodação dos preços do petróleo, contribuiu para o alívio. No entanto, juros em patamar restritivo e o elevado endividamento das famílias ainda são contrapesos para a sustentação da confiança no segundo semestre.",
-      "url": "https://portalibre.fgv.br/noticias/confianca-de-servicos-avancou-pela-segunda-vez-consecutiva-em-junho"
+      "titulo": "Crédito Bancário Cresce Impulsionado por Linhas Direcionadas e Programas Governamentais",
+      "texto": "A carteira total de crédito deve crescer 0,8% em maio de 2026, com aceleração do ritmo anual para 9,6%, segundo a Pesquisa Especial de Crédito da Febraban. O crescimento é sustentado principalmente pelas linhas com recursos direcionados, refletindo o impacto de programas governamentais como o Minha Casa, Minha Vida para pessoas físicas e o FGI (PEAC) para pessoas jurídicas. As linhas de crédito livre apresentaram um crescimento mais limitado.",
+      "fontes": [
+        {
+          "nome": "Febraban",
+          "url": "https://portal.febraban.org.br"
+        }
+      ]
     },
     {
       "setores": [
         "transversal"
       ],
-      "fonte": "IBGE",
-      "titulo": "Taxa de desemprego atinge 5,6% no trimestre encerrado em maio, menor patamar histórico para o período",
-      "texto": "A taxa de desocupação no Brasil ficou em 5,6% no trimestre encerrado em maio de 2026, o menor patamar para o período na série histórica da Pesquisa Nacional por Amostra de Domicílios Contínua (Pnad Contínua), iniciada em 2012. O resultado representa estabilidade em relação ao trimestre anterior (dezembro/2025 a fevereiro/2026, 5,8%) e uma queda de 0,6 ponto percentual em comparação com o mesmo período do ano passado. A população ocupada atingiu 102,7 milhões de pessoas.",
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/desemprego-ate-maio-cai-para-56-o-menor-ja-registrado-no-periodo"
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "fonte": "CNDL / SPC Brasil",
-      "titulo": "Reincidência na inadimplência atinge 85,41% dos consumidores em maio",
-      "texto": "O Indicador de Reincidência de Pessoas Físicas, apurado pela CNDL e SPC Brasil, revelou que 85,41% dos consumidores que entraram na inadimplência em maio de 2026 já haviam sido negativados nos 12 meses anteriores. Deste grupo, 65,92% ainda não haviam quitado dívidas antigas. O tempo médio entre o vencimento de uma dívida e o surgimento de outra foi de 72,6 dias. A alta reincidência é atribuída a juros elevados, custo de vida pressionado e falta de margem financeira, empurrando os cidadãos de volta ao superendividamento."
+      "titulo": "IGP-M Registra Deflação em Junho com Queda nos Preços de Combustíveis e Minerais",
+      "texto": "O Índice Geral de Preços – Mercado (IGP-M) registrou deflação de 0,5% em junho de 2026, a primeira desde fevereiro do ano. Em 12 meses, o índice acumula 3,16%. A queda foi influenciada principalmente pelo recuo nos preços de combustíveis (gasolina e etanol), minerais e café. O Índice de Preços ao Produtor Amplo (IPA), que tem o maior peso no IGP-M, apresentou deflação de 0,97%.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br"
+        }
+      ]
     },
     {
       "setores": [
         "transversal"
       ],
-      "fonte": "Senado Federal / Comsefaz",
-      "titulo": "Reforma Tributária inicia período de adaptação em 2026 com destaque informativo de novos tributos",
-      "texto": "A implementação da Reforma Tributária sobre o consumo começou em 1º de janeiro de 2026, marcando o início da transição para o novo modelo de tributação com o Imposto sobre Bens e Serviços (IBS) e a Contribuição sobre Bens e Serviços (CBS). A partir de 3 de agosto de 2026, será obrigatório o preenchimento dos campos relativos ao IBS e à CBS nos documentos fiscais eletrônicos para empresas do regime regular, com uma alíquota teste de 1% (0,1% de IBS e 0,9% de CBS). Durante este período inicial, os valores terão caráter exclusivamente informativo e não haverá penalidades para falhas de preenchimento, visando a adaptação gradual das empresas.",
-      "url": "https://www.senado.leg.br/institucional/noticias/ano-de-2026-marca-implementacao-da-reforma-tributaria"
+      "titulo": "Preços dos Combustíveis: Diesel e Gás de Cozinha em Queda, Gasolina com Leve Alta em Junho",
+      "texto": "O Levantamento de Preços da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) indicou que os preços do diesel e do gás de cozinha caíram em junho de 2026, enquanto a gasolina registrou uma leve alta. Na semana de 21 a 27 de junho, o preço da gasolina permaneceu estável em R$ 6,62/litro, o diesel recuou 0,5% para R$ 7,05/litro, e o gás de cozinha caiu 0,4% para R$ 114,02/botijão de 13 quilos. A queda dos preços do diesel e gás acompanha a redução do valor do petróleo no mercado internacional.",
+      "fontes": [
+        {
+          "nome": "ANP",
+          "url": "https://www.gov.br/anp/pt-br"
+        },
+        {
+          "nome": "Portal Gov.br",
+          "url": null
+        },
+        {
+          "nome": "Tribuna do Norte",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos"
+      ],
+      "titulo": "B3 Lança Plataforma ESG com Inteligência Artificial e Adere a Novas Normas de Reporte de Sustentabilidade",
+      "texto": "A B3 lançou uma nova versão de sua plataforma de dados ESG, o ESG Workspace, em parceria com a Atos, que utiliza inteligência artificial generativa para padronizar informações sobre índices de sustentabilidade de empresas brasileiras. Além disso, a B3 divulgou a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, com 69 companhias, e anunciou sua adesão voluntária e antecipada às novas normas internacionais de reporte de sustentabilidade IFRS S1 e S2, tornando-se a primeira do setor financeiro a fazê-lo.",
+      "fontes": [
+        {
+          "nome": "B3",
+          "url": "https://www.b3.com.br"
+        },
+        {
+          "nome": "ViaVerde News",
+          "url": null
+        },
+        {
+          "nome": "Forbes",
+          "url": null
+        },
+        {
+          "nome": "VEJA",
+          "url": null
+        },
+        {
+          "nome": "Reset",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Receita Federal Paga Lote Recorde de Restituição do IR em Junho",
+      "texto": "A Receita Federal realizou o pagamento do segundo lote de restituição do Imposto de Renda 2026 em 30 de junho de 2026, totalizando R$ 16 bilhões para 9,58 milhões de contribuintes. Este é o maior lote da história em número de beneficiários, com R$ 4,49 bilhões destinados a prioridades legais. A agilidade no processamento das declarações e o avanço das ferramentas de modernização e automação do órgão foram apontados como fatores para o recorde.",
+      "fontes": [
+        {
+          "nome": "Receita Federal",
+          "url": "https://www.gov.br/receitafederal/pt-br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Mercado de Trabalho Apresenta Sinais de Perda de Fôlego, Apesar de Taxa de Desocupação Estável",
+      "texto": "O mercado de trabalho brasileiro mantém uma trajetória favorável, com a taxa de desocupação em abril de 2026 em 5,3%, um recuo de 0,05 ponto percentual em relação a abril de 2025. Contudo, indicadores mais recentes do Ipea apontam sinais de perda de fôlego na margem, com queda no ritmo de criação de novas vagas e desaceleração no crescimento dos salários. A taxa de desocupação dessazonalizada em abril (5,5%) é a mais alta desde outubro de 2025.",
+      "fontes": [
+        {
+          "nome": "IPEA",
+          "url": "https://www.ipea.gov.br"
+        }
+      ]
     }
   ],
   "pestel": [
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Implementação e Regulamentação da Reforma Tributária",
-      "texto": "A Reforma Tributária sobre o consumo entrou em vigor em 2026, iniciando um período de transição com destaque informativo do IBS e CBS nas notas fiscais. A partir de agosto, o preenchimento desses campos será obrigatório para empresas do regime regular, com alíquotas teste. O Congresso Nacional continua a discutir a regulamentação detalhada, incluindo regimes específicos e critérios de distribuição da arrecadação.",
+      "tema": "Iniciativas Governamentais de Crédito e Impacto Fiscal",
+      "texto": "O lançamento do programa 'Desenrola Adimplentes' pelo governo federal visa auxiliar consumidores em dia com suas contas, mas com risco de inadimplência, oferecendo crédito pessoal não consignado com juros limitados a 1,99% ao mês e garantia do FGO. A adesão de bancos privados, contudo, é incerta, com apenas instituições públicas sinalizando participação imediata. Este movimento reflete uma tentativa de estímulo econômico e social, mas sua eficácia dependerá da capilaridade e aceitação no setor financeiro. A arrecadação federal recorde em maio, impulsionada por setores como petróleo e gás e alterações legislativas, demonstra a capacidade do governo em gerar receita, o que pode abrir espaço para novas políticas públicas ou investimentos.",
       "score": 7.5,
       "setores": [
-        "transversal"
+        "transversal",
+        "comercio",
+        "servicos"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Cenário de Juros Elevados, Inflação Persistente e Endividamento",
-      "texto": "O cenário econômico da semana é marcado por juros ainda restritivos (Selic em 14,25% ao ano), inflação (IPCA-15 de junho em 0,41% e acumulado em 12 meses em 4,8%, acima do teto da meta) e um recorde de endividamento familiar, com 80,9% das famílias brasileiras possuindo algum tipo de dívida em abril de 2026. O dólar fechou junho em R$ 5,16, com valorização de 2,39% no mês.",
+      "tema": "Cenário Inflacionário Persistente e Juros Elevados",
+      "texto": "A economia brasileira continua a operar sob um cenário de inflação persistente e taxas de juros elevadas. O IPCA-15 de junho, embora tenha desacelerado, mantém o acumulado em 12 meses acima da meta do Banco Central, e as projeções do Boletim Focus para o IPCA e a Selic em 2026 permanecem em patamares altos (5,33% e 14% respectivamente). A inadimplência recorde e o crescimento do crédito concentrado em linhas direcionadas indicam que, apesar de uma arrecadação federal robusta e melhora na confiança empresarial, o custo do crédito e a pressão sobre o orçamento familiar continuam sendo desafios significativos. O PIB de 2026 tem projeção de leve alta, sugerindo resiliência, mas o mercado de trabalho mostra sinais de desaceleração.",
       "score": 8.5,
       "setores": [
-        "transversal"
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Cautela do Consumidor e Alta Reincidência na Inadimplência",
-      "texto": "A Intenção de Consumo das Famílias (ICF) registrou a menor alta desde novembro em junho, refletindo uma cautela maior com o futuro do emprego e o impacto dos juros elevados. O endividamento familiar atingiu níveis recordes, e a reincidência na inadimplência é alarmante, com 85,41% dos consumidores negativados em maio já tendo dívidas anteriores, indicando um ciclo de superendividamento.",
+      "tema": "Endividamento e Cautela do Consumidor",
+      "texto": "O endividamento familiar e a cautela do consumidor permanecem como fatores sociais de risco. A inadimplência atingiu um novo recorde em maio de 2026, com mais de 75 milhões de brasileiros com contas em atraso, e a alta reincidência de devedores (85,41%) é um sinal preocupante da dificuldade em sair do ciclo de endividamento. Este cenário é agravado pelos juros elevados e pelo custo de vida pressionado, impactando diretamente o poder de compra e a capacidade de quitação de dívidas, especialmente para PMEs que dependem do consumo interno.",
       "score": 8.0,
       "setores": [
         "comercio",
@@ -93,66 +277,81 @@
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Digitalização e Adoção de IA por PMEs como Requisito Competitivo",
-      "texto": "A transformação digital para PMEs está se tornando um requisito competitivo. Empresas estão adotando digitalização por necessidade, com foco em marketplaces, e-commerce e meios de pagamento digitais. A inteligência artificial é vista como um potencial para reduzir barreiras de uso de tecnologias existentes e otimizar o relacionamento com o cliente, impulsionando o crescimento e a profissionalização.",
+      "tema": "Avanço da Digitalização e IA em Plataformas ESG",
+      "texto": "A B3 demonstra o avanço da digitalização e da aplicação de inteligência artificial no mercado financeiro com o lançamento do ESG Workspace. Esta plataforma utiliza IA generativa para padronizar e facilitar o acesso a dados de sustentabilidade de empresas listadas, permitindo a investidores e às próprias companhias analisar riscos e oportunidades ESG de forma mais eficiente. Embora não diretamente focada em PMEs, a iniciativa reflete uma tendência de mercado que eventualmente pode influenciar a demanda por soluções tecnológicas e a necessidade de digitalização em todos os setores.",
       "score": 7.0,
       "setores": [
-        "industria",
-        "comercio",
+        "transversal",
         "servicos"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Sem notícias relevantes no período",
-      "texto": "Não foram identificadas notícias ou dados econômicos relevantes relacionados à dimensão ambiental para a semana de 29 de junho a 3 de julho de 2026 nas fontes prioritárias.",
-      "score": 1.0,
+      "tema": "Fortalecimento da Agenda ESG e Reporte de Sustentabilidade",
+      "texto": "A agenda ambiental e de sustentabilidade ganha força no mercado de capitais brasileiro, com a B3 divulgando a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, que inclui 69 companhias, e a maioria delas melhorando seus scores ESG. Além disso, a B3 anunciou a adesão voluntária e antecipada às novas normas IFRS S1 e S2 de reporte de sustentabilidade, que exigirão a mensuração em cifrões dos riscos e oportunidades climáticas. Este movimento eleva a barra para as empresas em termos de transparência e gestão de impactos ambientais, incentivando a adoção de boas práticas e a busca por valor sustentável.",
+      "score": 7.5,
       "setores": [
-        "transversal"
+        "transversal",
+        "industria",
+        "servicos"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Prazos e Adaptação às Novas Obrigações da Reforma Tributária",
-      "texto": "O ano de 2026 marca o início da transição da Reforma Tributária, com a obrigatoriedade de destaque informativo do IBS e CBS nas notas fiscais. A partir de 3 de agosto, o preenchimento desses campos será mandatório para empresas do regime regular, com dispensa de penalidades durante o período de adaptação. As empresas do Simples Nacional terão até setembro de 2026 para optar pelo novo regime a partir de 2027.",
-      "score": 7.0,
+      "tema": "Novas Normas de Reporte de Sustentabilidade e Legislação Tributária",
+      "texto": "O cenário legal é marcado pela adesão da B3 às novas normas IFRS S1 e S2 de reporte de sustentabilidade, que se tornarão obrigatórias a partir de 2026 (com divulgação em 2027). Estas normas exigem que as empresas expressem em termos financeiros os riscos e oportunidades relacionados às mudanças climáticas e à sustentabilidade, impactando a forma como as companhias abertas divulgam suas informações. No âmbito tributário, a arrecadação federal recorde em maio reflete, em parte, alterações legislativas recentes sobre fundos exclusivos, entidades no exterior e remessas internacionais, demonstrando a influência da legislação na dinâmica econômica.",
+      "score": 6.5,
       "setores": [
-        "transversal"
+        "transversal",
+        "industria",
+        "servicos"
       ]
     }
   ],
   "kpis": [
     {
-      "label": "SELIC (Atual)",
-      "valor": "14,25% a.a.",
+      "label": "SELIC",
+      "valor": "14,25%",
       "cor": "neutral",
-      "sub": "Estável (último corte de 0,25 p.p.)"
+      "sub": "Taxa básica de juros, atualizada em 01/07/2026. Projeção Focus para 2026: 14%."
     },
     {
-      "label": "IPCA-15 (Junho/2026)",
+      "label": "IPCA-15",
       "valor": "0,41%",
+      "cor": "neutral",
+      "sub": "Variação em junho/2026. Acumulado 12 meses: 4,8% (até junho)."
+    },
+    {
+      "label": "Câmbio (dólar)",
+      "valor": "R$ 5,20",
+      "cor": "neutral",
+      "sub": "Projeção Focus para dezembro/2026."
+    },
+    {
+      "label": "Desemprego (PNAD)",
+      "valor": "5,3%",
       "cor": "up",
-      "sub": "Desaceleração mensal, mas acumulado em 12 meses (4,8%) acima da meta"
+      "sub": "Taxa de desocupação em abril/2026. Sinais de perda de fôlego na margem."
     },
     {
-      "label": "Câmbio (Dólar Comercial - Fim Junho/2026)",
-      "valor": "R$ 5,16",
+      "label": "Varejo (PMC)",
+      "valor": "N/D",
+      "cor": "down",
+      "sub": "Dados mais recentes do PMC/IBGE para junho ainda não disponíveis. Inadimplência recorde indica cautela do consumidor."
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "+0,8%",
       "cor": "up",
-      "sub": "Valorização de 2,39% no mês"
+      "sub": "Consumo Aparente de Bens Industriais (IPEA) em abril/2026 vs. mar/2026. Quarto avanço consecutivo."
     },
     {
-      "label": "Taxa de Desemprego (Maio/2026)",
-      "valor": "5,6%",
-      "cor": "down",
-      "sub": "Menor taxa para o período na série histórica"
-    },
-    {
-      "label": "Vendas Varejo (Abril/2026)",
-      "valor": "-1,5%",
-      "cor": "down",
-      "sub": "Primeira queda de 2026, perdendo nível recorde"
+      "label": "IPP",
+      "valor": "-0,97%",
+      "cor": "up",
+      "sub": "Deflação do Índice de Preços ao Produtor Amplo (IPA), componente do IGP-M, em junho/2026."
     }
   ],
   "longitudinal": [
@@ -165,8 +364,11 @@
         "comercio",
         "servicos"
       ],
-      "status": "em_curso",
-      "relevancia": 66.75
+      "status": "materializado",
+      "relevancia": 95.94,
+      "ultima_observacao": "A cautela do consumidor e o endividamento familiar se materializaram em um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de brasileiros com contas em atraso. A alta reincidência de 85,41% entre os negativados reforça a persistência do problema e a dificuldade de recuperação financeira, impactando diretamente os setores de comércio e serviços. O custo do crédito elevado e a pressão sobre o orçamento das famílias continuam a ser fatores críticos.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-01"
     },
     {
       "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
@@ -179,7 +381,10 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 64.75
+      "relevancia": 62.0,
+      "ultima_observacao": "A digitalização e a 'Technology as a Service' (TaaS) continuam em curso, evidenciadas pela B3 com o lançamento de seu ESG Workspace, uma plataforma que utiliza inteligência artificial generativa para padronizar dados de sustentabilidade. Embora o foco seja o mercado de capitais, a iniciativa demonstra a crescente adoção de tecnologias avançadas para otimização de processos e análise de dados, um movimento que tende a se expandir para PMEs em busca de eficiência e conformidade.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-01"
     },
     {
       "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
@@ -191,8 +396,27 @@
         "comercio",
         "servicos"
       ],
+      "status": "em_curso",
+      "relevancia": 49.0,
+      "ultima_observacao": "A aceleração da adoção de Inteligência Artificial para otimização de processos é observada no mercado, exemplificada pela B3 que incorporou IA generativa em sua plataforma ESG para padronização de dados. Embora não diretamente focada em PMEs, a tendência de uso de IA para eficiência e análise de grandes volumes de dados é um indicativo de que essa tecnologia está se tornando mais acessível e relevante, podendo ser replicada em soluções para PMEs.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-01"
+    },
+    {
+      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
+      "tipo": "oportunidade",
+      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
       "status": "monitorar",
-      "relevancia": 54.25
+      "relevancia": 44.5,
+      "ultima_observacao": "O governo lançou o programa 'Desenrola Adimplentes', focado em trabalhadores informais e autônomos com dívidas de até R$ 15 mil, que estão em dia mas com risco de inadimplência. A iniciativa oferece crédito pessoal não consignado com juros máximos de 1,99% ao mês e garantia do FGO. Embora a adesão de bancos privados seja incerta, o programa representa uma oportunidade para PMEs do comércio e serviços, pois pode aliviar a pressão financeira sobre os consumidores, potencialmente melhorando o fluxo de pagamentos e reduzindo o risco de novas inadimplências.",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-02"
     },
     {
       "id": "c330066d-d634-418a-bcc5-05a55d14573b",
@@ -203,7 +427,10 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 25.5
+      "relevancia": 17.75,
+      "ultima_observacao": "Não foram encontradas notícias ou dados relevantes nesta semana que abordem especificamente a burocracia no acesso a recursos de inovação para PMEs. O sinal permanece em monitoramento, aguardando novos desdobramentos. ",
+      "periodo_observacao": "2026-W27",
+      "data_identificacao": "2026-07-01"
     }
   ]
 }
