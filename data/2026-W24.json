@@ -2,7 +2,11 @@
   "periodo": "2026-W24",
   "label": "Semana 24 · Junho 2026",
   "gerado_em": "2026-07-02T13:20:54.800848",
-  "editorial": null,
+  "editorial": {
+    "texto": "A Semana 24 de junho de 2026 nos apresenta um cenário econômico de contrastes, exigindo atenção estratégica. Enquanto o desemprego se mantém em patamar relativamente baixo, a principal preocupação que se materializou é a \"Cautela do Consumidor e Endividamento Familiar\". Este risco, que vinha sendo monitorado, agora se confirma como uma realidade de alta relevância, impactando diretamente os setores de comércio e serviços. A manutenção da taxa básica de juros, a SELIC, em 14,50%, contribui para a pressão sobre o orçamento das famílias, mesmo com um crescimento modesto no varejo e na indústria.\n\nA trajetória de cautela do consumidor, que atingiu seu pico nas últimas semanas, sugere que, apesar do avanço de 0,5% no varejo, a sustentabilidade desse crescimento é frágil. Para a indústria, o Índice de Preços ao Produtor (IPP) em alta, de 2,63%, indica custos crescentes, enquanto a proposta de novas tarifas dos EUA sobre produtos brasileiros permanece um risco externo significativo, embora sua relevância tenha oscilado ligeiramente.\n\nEm contrapartida, as oportunidades no campo tecnológico ganham força. A \"Digitalização e Technology as a Service\" (TaaS), assim como a \"Aceleração da Adoção de Inteligência Artificial por PMEs\", continuam em curso e com relevância crescente. Estes movimentos indicam um caminho claro para a otimização de processos e o aumento da competitividade em todos os setores – indústria, comércio e serviços – como resposta às pressões econômicas.\n\nPara as próximas semanas, é fundamental observar como a dinâmica entre a cautela do consumidor e as iniciativas de crédito, como o \"Desenrola Adimplentes\", se desenvolverá. A capacidade das empresas de se adaptar e investir em tecnologia será um diferencial crucial para navegar este ambiente complexo.",
+    "gerado_em": "2026-07-02T17:23:59.272211",
+    "n_sinais_considerados": 9
+  },
   "clipping": [],
   "pestel": [],
   "kpis": [
