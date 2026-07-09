@@ -1,38 +1,37 @@
 {
   "periodo": "2026-W28",
   "label": "Semana 28 · Julho 2026",
-  "gerado_em": "2026-07-06T13:37:54.107714",
+  "gerado_em": "2026-07-09T12:47:17.573829",
   "editorial": {
-    "texto": "A Semana 28 de julho de 2026 apresenta um quadro econômico de sinais mistos e importantes confirmações. A taxa Selic, o juro básico da economia, mantém-se em 10,50% para conter uma inflação ainda persistente – o IPCA-15 acumulado em doze meses está em 4,80%, acima da meta. Embora este patamar seja mais favorável do que as projeções anteriores para o final do ano, ele continua a pesar sobre o crédito. No varejo, observamos um crescimento modesto de 0,3% no volume de vendas, enquanto a produção industrial registrou uma retração de 0,5%, indicando desafios tanto no consumo quanto na atividade produtiva.\n\nA leitura das semanas anteriores se aprofunda. A \"Cautela do Consumidor e Endividamento Familiar\" permanece como o risco mais forte e já materializado, exercendo pressão direta sobre o comércio e os serviços. A novidade mais relevante é a materialização do \"Aumento dos Custos de Energia Elétrica para Pequenas e Médias Empresas\", um fator que agora impacta concretamente as despesas operacionais em diversos setores. Em contraste, as oportunidades em tecnologia seguem em ascensão: a \"Digitalização e 'Technology as a Service'\" e a \"Aceleração da Adoção de Inteligência Artificial por PMEs\" continuam em curso, oferecendo caminhos para otimização e eficiência. O programa \"Desenrola Adimplentes\" também ganha tração, buscando mitigar o endividamento e reativar o poder de compra.\n\nNa prática, a indústria enfrenta o desafio de custos energéticos elevados e a retração da produção, somados à persistente ameaça das novas tarifas dos Estados Unidos sobre produtos brasileiros. Para o comércio e os serviços, a estratégia passa por navegar a cautela do consumidor, utilizando a tecnologia para inovar e buscando nas linhas de crédito, como o \"Desenrola Adimplentes\", um apoio para recompor o poder de compra. O câmbio estável em R$ 5,20 oferece alguma previsibilidade, mas não anula as pressões internas.\n\nPara as próximas semanas, a atenção se volta para a capacidade do mercado em absorver os novos custos de energia e para a efetividade das iniciativas de crédito em reverter o quadro de endividamento, elementos cruciais para a recuperação do dinamismo econômico.",
-    "gerado_em": "2026-07-06T13:37:49.942498",
-    "n_sinais_considerados": 10,
+    "texto": "A Semana 28 de julho de 2026 se desenha com um cenário econômico que exige atenção redobrada, especialmente após uma mudança significativa na política monetária. Diferente da expectativa anterior, a taxa Selic – o juro básico da economia, que encarece o crédito e os investimentos – não se manteve em 10,50%, mas foi elevada para 14,50% ao ano. Essa alta expressiva visa combater uma projeção de inflação para 2026 em 5,30%, ainda acima da meta, e impacta diretamente o custo de capital para empresas e o poder de compra do consumidor. A produção industrial (PIM) registrou uma leve retração de 0,2%, enquanto a confiança do varejo (CNC) mostra um otimismo cauteloso em 102,6 pontos, em contraste com a alta taxa de juros.\n\nA leitura das semanas anteriores, portanto, precisa ser ajustada. A materialização do \"Desenrola Adimplentes\" representa uma oportunidade concreta para a prevenção da inadimplência, mas sua efetividade será testada pelo novo patamar de juros e pela persistente \"Cautela do Consumidor e Endividamento Familiar\". Confirmou-se também o \"Aumento dos Custos de Energia Elétrica para PMEs\", um risco agora materializado que pressiona as margens. Novos sinais surgem: o \"Aumento de Custos e Perda de Competitividade da Indústria com Fim da Escala 6x1\" e a \"Aceleração da Adoção de Autoatendimento no Varejo e Serviços Impulsionada pela Copa\", que trazem desafios e oportunidades, respectivamente. As oportunidades em \"Digitalização e 'Technology as a Service'\" e \"Aceleração da Adoção de IA por PMEs\" continuam em curso, indicando caminhos para eficiência.\n\nNa prática, a indústria enfrenta um ambiente de custos elevados – energia e, agora, potenciais impactos da nova escala de trabalho – somado à ameaça das \"Novas Tarifas dos EUA sobre Produtos Brasileiros\" e à retração na produção. Para o comércio e os serviços, o desafio é navegar a cautela do consumidor e o crédito mais caro, enquanto exploram a digitalização, a inteligência artificial e o autoatendimento como diferenciais. O câmbio projetado em R$ 5,20 oferece alguma previsibilidade, mas não anula as pressões internas.\n\nPara as próximas semanas, a atenção se volta para a capacidade do mercado em absorver o choque da nova Selic e para a real efetividade das iniciativas de crédito em reverter o quadro de endividamento, elementos cruciais para a manutenção do dinamismo econômico.",
+    "gerado_em": "2026-07-09T12:47:13.473586",
+    "n_sinais_considerados": 12,
     "modelo": "gemini-2.5-flash"
   },
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "comercio",
-        "industria"
+        "industria",
+        "transversal"
       ],
-      "titulo": "Balança Comercial Brasileira Registra Superávit Recorde em Junho e MDIC Eleva Projeção para 2026",
-      "texto": "A balança comercial brasileira alcançou um superávit de US$ 9,8 bilhões em junho de 2026, um aumento de 66,6% em relação ao mesmo mês do ano anterior, impulsionado por um crescimento de quase 25% nas exportações. A corrente de comércio (soma de exportações e importações) atingiu US$ 62,8 bilhões, o maior valor já registrado para um mês na série histórica. Diante desse desempenho, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) elevou sua projeção de superávit comercial para US$ 90 bilhões em 2026, acima dos US$ 72,1 bilhões previstos em abril. As exportações nos primeiros seis meses do ano subiram 11,5%, apesar de tensões comerciais e da imposição de tarifas pelo governo dos EUA. O setor de indústria extrativa liderou as vendas externas, com alta de 58,4%, destacando-se petróleo bruto e minério de ferro. As exportações para os Estados Unidos, no entanto, caíram 13,0% no acumulado de janeiro a junho de 2026.",
+      "titulo": "Audiências nos EUA sobre Novas Tarifas a Produtos Brasileiros Ameaçam Exportações",
+      "texto": "A proposta dos Estados Unidos de aplicar uma tarifa adicional de 25% sobre produtos brasileiros entrou em nova fase nesta semana, com a realização de audiências públicas em Washington. Representantes de setores estratégicos da economia brasileira, como agropecuária e indústria, defenderam posições contra a medida, que pode atingir US$ 14,9 bilhões em exportações e elevar a taxação acumulada para até 37,5% em mais de 4 mil produtos. A CNI alertou que as novas tarifas podem elevar custos para empresas e consumidores em ambos os países, comprometendo cadeias produtivas integradas. A decisão final do governo americano é esperada para 15 de julho.",
       "fontes": [
         {
-          "nome": "MDIC",
-          "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/balanca-comercial-brasileira/dados-consolidados"
+          "nome": "Revista Anamaco",
+          "url": null
         },
         {
-          "nome": "Tribuna do Paraná",
-          "url": "https://www.tribunapr.com.br/noticias/economia/balanca-comercial-brasileira-bate-recorde-historico-em-junho-de-2026/"
+          "nome": "A Crítica de Campo Grande",
+          "url": null
         },
         {
-          "nome": "Money Times",
-          "url": "https://www.moneytimes.com.br/apos-junho-recorde-governo-eleva-projecao-de-superavit-comercial-para-us-90-bilhoes-em-2026/"
+          "nome": "Agência de Notícias da Indústria",
+          "url": null
         },
         {
-          "nome": "ISTOÉ DINHEIRO",
-          "url": "https://www.istoedinheiro.com.br/com-salto-nas-exportacoes-em-junho-governo-eleva-projecao-de-superavit-comercial-em-2026/"
+          "nome": "Folha - UOL",
+          "url": null
         }
       ]
     },
@@ -41,194 +40,84 @@
         "industria",
         "transversal"
       ],
-      "titulo": "Sondagem da CNI Alerta para Impactos da Redução da Jornada de Trabalho na Indústria",
-      "texto": "Uma sondagem especial da Confederação Nacional da Indústria (CNI) revelou que 97% do setor industrial será impactado por uma eventual redução da jornada de trabalho, como o fim da escala 6x1. A pesquisa indica que 73% das indústrias rejeitam a imposição legal de reduzir a jornada de 44 para 40 horas semanais. As principais preocupações apontadas pelas empresas incluem o aumento de custos, a perda de competitividade e uma potencial queda na produção. A jornada de 44 horas é predominante, adotada por 85% das empresas industriais. Além disso, a CNI também apontou que o desempenho da indústria no primeiro quadrimestre de 2026 ficou abaixo das expectativas dos empresários, com mais da metade dos entrevistados relatando demanda doméstica e pedidos em carteira abaixo do esperado.",
+      "titulo": "Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas",
+      "texto": "A produção industrial brasileira registrou um recuo de 0,2% em maio de 2026 na comparação com o mês anterior, interrompendo uma sequência de quatro altas consecutivas, segundo dados da Pesquisa Industrial Mensal (PIM) do IBGE. O resultado negativo foi influenciado principalmente pelos segmentos de coque, produtos derivados do petróleo e biocombustíveis (-6,1%) e indústrias extrativas (-2,6%). Apesar da queda mensal, o acumulado no ano ainda apresenta avanço de 1,4%. A indústria opera 13,0% abaixo do nível recorde de maio de 2011, impactada pelos juros altos.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37207-producao-industrial-varia-0-2-em-maio"
+        },
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": null
+        },
+        {
+          "nome": "Hora do Povo",
+          "url": null
+        },
+        {
+          "nome": "ABERTURA DE MERCADO",
+          "url": null
+        },
+        {
+          "nome": "Movimento Econômico",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos"
+      ],
+      "titulo": "Otimismo Retorna à Indústria da Construção com Expectativa de Novos Empreendimentos",
+      "texto": "Após quatro meses de pessimismo, os empresários da indústria da construção voltaram a projetar crescimento no lançamento de novos empreendimentos e serviços em junho de 2026, conforme a Sondagem Indústria da Construção da CNI em parceria com a CBIC. O índice de expectativa para novos projetos subiu para 52,5 pontos, indicando perspectivas positivas. Também houve avanço nas expectativas para o nível de atividade, número de empregados e compras de insumos. A intenção de investimentos cresceu para 43,7 pontos, acima da média histórica do setor.",
+      "fontes": [
+        {
+          "nome": "ABRAVIDRO",
+          "url": null
+        },
+        {
+          "nome": "Rádio Itatiaia",
+          "url": null
+        },
+        {
+          "nome": "FIERN",
+          "url": null
+        },
+        {
+          "nome": "A Gazeta",
+          "url": null
+        },
+        {
+          "nome": "Business Moment",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Indústria Rejeita Fim da Escala 6x1 e Prevê Aumento de Custos e Perda de Competitividade",
+      "texto": "Uma sondagem especial da CNI revelou que 97% do setor industrial seria impactado por uma eventual redução da jornada de trabalho, e 73% das indústrias rejeitam a imposição da medida por lei. As principais preocupações apontadas são o aumento de custos, a perda de competitividade e a queda na produção. A jornada semanal de 44 horas é predominante em 85% das empresas, e o presidente da CNI, Ricardo Alban, alertou para as consequências negativas que uma mudança na legislação traria para a economia e os consumidores.",
       "fontes": [
         {
           "nome": "CNI",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni/"
+          "url": "https://portaldaindustria.com.br/noticias/2026/07/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni/"
         },
         {
-          "nome": "O Otimista",
-          "url": "https://ooptimista.com.br/noticias/economia/97-das-industrias-serao-impactadas-pelo-fim-da-escala-de-trabalho-6x1-aponta-cni/"
+          "nome": "Revista Portuária",
+          "url": null
         },
         {
-          "nome": "Grupo Amanhã",
-          "url": "https://www.amanha.com.br/noticias/industriais-sao-contrarios-ao-fim-da-escala-6x1"
-        },
-        {
-          "nome": "CBIC",
-          "url": "https://cbic.org.br/cni-desempenho-da-industria-no-1o-quadrimestre-fica-abaixo-das-expectativas-dos-empresarios/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos"
-      ],
-      "titulo": "IPCA-15 Desacelera em Junho, Mas Inflação Acumulada em 12 Meses Permanece Elevada",
-      "texto": "O Índice Nacional de Preços ao Consumidor Amplo 15 (IPCA-15) registrou alta de 0,41% em junho de 2026, uma desaceleração em relação à taxa de 0,62% observada em maio. No entanto, o índice acumulado nos últimos 12 meses atingiu 4,80%, permanecendo acima do teto da meta de inflação. Os principais impactos de alta no mês vieram da energia elétrica residencial (0,08 p.p.) e da batata-inglesa (0,06 p.p.). Por outro lado, a gasolina (-0,04 p.p.) e o etanol (-0,04 p.p.) contribuíram para a baixa. O grupo Habitação e Alimentação e Bebidas foram os que mais contribuíram para o resultado do mês. Economistas apontam que, apesar da desaceleração mensal, o processo de desinflação segue lento e desafiador.",
-      "fontes": [
-        {
-          "nome": "IBGE",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37279-ipca-15-e-de-0-41-em-junho"
-        },
-        {
-          "nome": "Portal Gov.br",
-          "url": "https://www.gov.br/economia/pt-br/assuntos/noticias/2026/junho/informativo-economico-ipca-15-de-junho-26"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/economia/ipca-15-previa-da-inflacao-sobe-041-em-junho-diz-ibge/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos",
-        "industria"
-      ],
-      "titulo": "Taxa de Desocupação no Brasil Atinge Mínima Histórica para Maio, Aponta IBGE",
-      "texto": "A taxa de desocupação no Brasil registrou 5,6% no trimestre encerrado em maio de 2026, mantendo-se estável em relação ao trimestre anterior (dezembro/2025 a fevereiro/2026) e representando uma queda de 0,6 p.p. em comparação com o mesmo período de 2025 (6,2%). Este é o menor índice para o mês de maio desde o início da série histórica da PNAD Contínua em 2012. A população ocupada alcançou 102,7 milhões de pessoas, com um leve aumento de 0,5% no trimestre. O analista da pesquisa do IBGE, William Kratochwill, destacou que, apesar da estabilidade sazonal, o resultado indica uma tendência estrutural de aquecimento e expansão na absorção de mão de obra pelo mercado.",
-      "fontes": [
-        {
-          "nome": "IBGE",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37279-pnad-continua-taxa-de-desocupacao-de-maio-fica-em-5-6-diz-ibge"
+          "nome": "Rádio Itatiaia",
+          "url": null
         },
         {
           "nome": "G1",
-          "url": "https://g1.globo.com/economia/noticia/2026/06/26/desemprego-fica-em-56-no-trimestre-ate-maio-menor-taxa-para-o-periodo-diz-ibge.ghtml"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "ANEEL Aprova Reajuste Tarifário para Enel SP, com Aumento de 15% para Indústrias",
-      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) aprovou um reajuste tarifário médio de 10,18% para os consumidores da Enel São Paulo, com vigência a partir de 4 de julho de 2026. Para os consumidores conectados em alta tensão, como indústrias e grandes empresas, o aumento médio será de 15%. Já para os clientes de baixa tensão, que incluem residências e pequenos comércios, a elevação será de 8,97%. Os principais fatores que contribuíram para o reajuste foram os componentes financeiros, os custos de aquisição e transmissão de energia, e o aumento dos encargos setoriais.",
-      "fontes": [
-        {
-          "nome": "ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br/documentos/reajuste-tarifario-anual-da-enel-sao-paulo"
-        },
-        {
-          "nome": "Canal Solar",
-          "url": "https://canalsolar.com.br/aneel-aprova-reajustes-na-conta-de-luz-em-mais-3-distribuidoras/"
-        },
-        {
-          "nome": "Enel Brasil",
-          "url": "https://www.enel.com.br/pt-br/imprensa/noticias/2026/07/aneel-aprova-reajuste-tarifario-da-enel-sp--novo-valor-passa-a-valer-a-partir-de-julho.html"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/infra/aneel-aprova-alta-de-1018-na-conta-da-enel-sao-paulo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Arrecadação Federal Bate Recorde Histórico em Maio de 2026",
-      "texto": "A arrecadação federal de impostos e contribuições atingiu R$ 266,8 bilhões em maio de 2026, marcando o maior volume para o mês desde o início da série histórica em 1995. No acumulado de janeiro a maio, a União arrecadou R$ 1,32 trilhão, também um recorde para o período, com alta real de 6,42% acima da inflação. O desempenho foi impulsionado principalmente pelo aumento das receitas ligadas à exploração de petróleo e gás, que somaram R$ 50,6 bilhões no acumulado do ano, e pela atividade econômica. O Imposto sobre Operações Financeiras (IOF) também registrou um avanço expressivo.",
-      "fontes": [
-        {
-          "nome": "Receita Federal",
-          "url": "https://www.gov.br/receitafederal/pt-br/noticias/2026/junho/arrecadacao-federal-soma-r-266-8-bilhoes-e-bate-recorde-historico-em-maio"
-        },
-        {
-          "nome": "Tribuna do Norte",
-          "url": "https://www.tribunadonorte.com.br/noticia/arrecadacao-federal-bate-recorde-de-r-266-8-bilhoes/582375"
-        },
-        {
-          "nome": "InfoMoney",
-          "url": "https://www.infomoney.com.br/mercados/arrecadacao-federal-soma-r-2668-bilhoes-e-bate-recorde-historico-em-maio/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "Receita Federal Paga Lote Recorde de Restituição do Imposto de Renda 2026",
-      "texto": "A Receita Federal realizou em 30 de junho de 2026 o pagamento do segundo lote de restituição do Imposto de Renda Pessoa Física de 2026, totalizando R$ 16 bilhões para 9.585.797 contribuintes. Este lote se tornou o maior da história em número de pessoas beneficiadas. Com este pagamento, a Receita Federal já quitou 80% de todas as restituições previstas para o ano de 2026, tanto em recursos financeiros quanto em total de cidadãos contemplados. A agilidade no processamento das declarações e o avanço das ferramentas de modernização e automação foram apontados como fatores para o lote recorde. Contribuintes que utilizaram a declaração pré-preenchida ou optaram pelo Pix via CPF receberam a maior fatia.",
-      "fontes": [
-        {
-          "nome": "Receita Federal",
-          "url": "https://www.gov.br/receitafederal/pt-br/noticias/2026/junho/receita-paga-r-16-bilhoes-no-maior-lote-de-restituicao-do-imposto-de-renda"
-        },
-        {
-          "nome": "ISTOÉ DINHEIRO",
-          "url": "https://www.istoedinheiro.com.br/ir-2026-receita-paga-nesta-terca-lote-recorde-de-restituicao-com-correcao-de-1-veja-quem-entrou/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos",
-        "industria",
-        "transversal"
-      ],
-      "titulo": "Preços de Combustíveis: Etanol em Queda, GLP em Alta, Gasolina e Diesel com Ligeiras Reduções",
-      "texto": "Na semana de 28 de junho a 4 de julho de 2026, os preços médios do etanol hidratado caíram em 17 estados e no Distrito Federal, com uma redução de 0,49% na média nacional, para R$ 4,08 por litro. Em contraste, o preço médio do gás de cozinha (GLP) subiu 0,5% na semana, atingindo R$ 114,66 o botijão de 13 quilos, com picos de R$ 161 em algumas localidades. Já os preços médios do diesel e da gasolina registraram ligeiras quedas de 0,4% e 0,1%, respectivamente. A gasolina fechou a semana com preço médio de R$ 6,61 o litro, enquanto o diesel S-10 ficou em R$ 7,02. A ANP também intensificou as ações de fiscalização, realizando 146 ações entre 29 de junho e 3 de julho, com foco no combate a preços abusivos de combustíveis.",
-      "fontes": [
-        {
-          "nome": "ANP",
-          "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/levantamento-de-precos/levantamento-de-precos-de-combustiveis-ultimas-semanas-pesquisadas"
-        },
-        {
-          "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/noticias/economia/preco-medio-do-etanol-cai-em-17-estados-e-no-distrito-federal-diz-anp/"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/economia/anp-preco-medio-do-glp-sobe-05-para-r-11466-mas-alcanca-r-161-no-rs/"
-        },
-        {
-          "nome": "O Dia",
-          "url": "https://odia.ig.com.br/economia/2026/07/7041530-anp-preco-medio-do-gas-de-cozinha-sobe-0-5--para-r-114-66.html"
-        },
-        {
-          "nome": "Fecombustíveis",
-          "url": "https://fecombustiveis.org.br/entre-os-dias-29-6-e-3-7-a-anp-realizou-146-acoes-de-fiscalizacao-com-foco-em-precos-abusivos/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "Inadimplência Atinge Novo Recorde no Brasil e Reincidência Preocupa CNDL/SPC Brasil",
-      "texto": "O Brasil registrou um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de brasileiros com dívidas em atraso, o que representa 44,80% da população adulta. Os dados da Confederação Nacional de Dirigentes Lojistas (CNDL) e do SPC Brasil revelam que a reincidência é um fator alarmante: 85,41% dos novos devedores já haviam tido restrições no CPF nos últimos 12 meses. Desses, a maioria (65,92%) não havia quitado pendências antigas. A alta reincidência é atribuída a um cenário econômico ainda severo para o orçamento familiar, com taxas de juros elevadas e custo de vida pressionado, que criam um ciclo de endividamento. O programa Desenrola, embora fundamental, não tem sido suficiente para reverter a conjuntura geral.",
-      "fontes": [
-        {
-          "nome": "CNDL",
-          "url": "https://www.cndl.org.br/noticias/inadimplencia-bate-novo-recorde-e-atinge-75-06-milhoes-de-consumidores-em-maio-aponta-cndl-e-spc-brasil/"
-        },
-        {
-          "nome": "SPC Brasil",
-          "url": "https://www.spcbrasil.org.br/noticias/reincidencia-atinge-85-41-dos-consumidores-que-entraram-na-inadimplencia-em-maio-aponta-cndl-e-spc-brasil/"
-        },
-        {
-          "nome": "Porto Rápido",
-          "url": "https://portorapido.com.br/noticia/inadimplencia-bate-novo-recorde-e-atinge-75-06-milhoes-de-consumidores-em-maio-aponta-cndl-e-spc-brasil/"
-        },
-        {
-          "nome": "CDL BH",
-          "url": "https://www.cdlbh.com.br/noticias/bh-recebe-debate-sobre-aumento-do-limite-do-faturamento-do-mei/"
+          "url": null
         }
       ]
     },
@@ -239,24 +128,174 @@
         "comercio",
         "servicos"
       ],
-      "titulo": "CADE Reafirma Competência em Operações Internacionais e Inicia Revisão de Resolução",
-      "texto": "O Tribunal do Conselho Administrativo de Defesa Econômica (CADE) julgou seis casos na primeira semana de julho de 2026, reafirmando sua competência para analisar operações internacionais. O CADE afastou a aplicação de uma regra de minimis baseada apenas no faturamento da empresa-alvo no Brasil, determinando que o faturamento bruto no Brasil do grupo vendedor deve ser considerado, desde que haja efeitos ou perspectiva concreta de produção de efeitos no país. Além disso, o Tribunal instituiu um grupo de trabalho para revisar a Resolução CADE nº 33/2022, que estabelece os critérios para a obrigatoriedade de notificação de atos de concentração, com prazo de 60 dias para conclusão dos trabalhos. O CADE também adequou sua comunicação institucional para o período eleitoral de 2026.",
+      "titulo": "Balança Comercial Brasileira Registra Forte Superávit na 1ª Semana de Julho e Projeção Anual é Elevada",
+      "texto": "A balança comercial brasileira iniciou julho com um superávit de US$ 2,27 bilhões na primeira semana, impulsionado pelo crescimento de 40,6% nas exportações em comparação com o mesmo período de 2025. As exportações da indústria extrativa cresceram 81,7%, e da indústria de transformação, 39,4%. No acumulado do ano até a primeira semana de julho, o superávit atingiu US$ 44,63 bilhões, alta de 39,2%. O MDIC elevou a projeção oficial do superávit para US$ 90 bilhões em 2026, refletindo o bom desempenho e a expectativa de exportações mais elevadas.",
       "fontes": [
         {
-          "nome": "CADE",
-          "url": "https://www.gov.br/cade/pt-br/noticias/tribunal-do-cade-julgara-seis-casos-na-proxima-quarta-feira-1-7"
+          "nome": "MDIC",
+          "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/balanca-comercial-preliminar-parcial-do-mes"
         },
         {
-          "nome": "TozziniFreire Advogados",
-          "url": "https://www.tozzinifreire.com.br/noticias/cade-afasta-regra-de-minimis-em-operacoes-internacionais"
+          "nome": "Exame",
+          "url": "https://exame.com"
         },
         {
-          "nome": "Cescon Barrieu",
-          "url": "https://www.cesconbarrieu.com.br/pt-br/insights/aquisicoes-por-fundos-cade-reforca-visao-de-grupo-economico"
+          "nome": "ND Mais",
+          "url": null
         },
         {
-          "nome": "WebAdvocacy",
-          "url": "https://webadvocacy.com.br/cade-disponibiliza-calendario-das-sessoes-de-julgamento-do-2o-semestre-de-2026/"
+          "nome": "Portal Contábeis",
+          "url": null
+        },
+        {
+          "nome": "Estadão Conteúdo",
+          "url": null
+        },
+        {
+          "nome": "UOL",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "FMI Eleva Projeção de Crescimento do PIB Brasileiro para 2,4% em 2026",
+      "texto": "O Fundo Monetário Internacional (FMI) revisou para cima sua projeção de crescimento do Produto Interno Bruto (PIB) brasileiro para 2,4% em 2026, um aumento de 0,5 ponto percentual em relação à previsão anterior. A revisão considera a forte safra agrícola, que impulsionou as exportações e a atividade econômica, a política fiscal e o fortalecimento do consumo das famílias. A projeção para 2027 também foi elevada para 2,2%.",
+      "fontes": [
+        {
+          "nome": "Exame",
+          "url": "https://exame.com"
+        },
+        {
+          "nome": "DN Brasil",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "ANEEL Abre Consulta Pública para Leilões de Energia e Aprova Reajustes Tarifários",
+      "texto": "A ANEEL aprovou a abertura da Consulta Pública 019/2026 para aprimorar o edital dos Leilões de Energia Existente A-1, A-2 e A-3 de 2026, com contribuições sendo recebidas de 9 de julho a 24 de agosto. A agência também aprovou reajustes tarifários para três distribuidoras (Cocel, Energisa Tocantins e Enel São Paulo), com aumentos médios que superam a inflação projetada para o ano, impactando milhões de unidades consumidoras. Além disso, a diretora Agnes da Costa defendeu a urgência na aprovação de novos critérios para cortes de geração, visando a redução de custos ao consumidor e a estabilidade da rede.",
+      "fontes": [
+        {
+          "nome": "ANEEL",
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3"
+        },
+        {
+          "nome": "Canal Solar",
+          "url": null
+        },
+        {
+          "nome": "Radar Energia XP",
+          "url": null
+        },
+        {
+          "nome": "EPBR",
+          "url": "https://epbr.com.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Confiança do Varejo Volta a Crescer em Junho, Impulsionada por Semiduráveis",
+      "texto": "A confiança dos empresários do comércio brasileiro interrompeu uma sequência de duas quedas mensais e avançou 0,2% em junho, atingindo 102,6 pontos após ajuste sazonal, segundo a Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC). O resultado foi impulsionado principalmente pelo segmento de bens semiduráveis (roupas, calçados), cuja confiança saltou 1,1%. Apesar da melhora, o presidente da CNC, José Roberto Tadros, ressalta a necessidade de prudência diante do contexto inflacionário e da política monetária.",
+      "fontes": [
+        {
+          "nome": "Fenacor",
+          "url": null
+        },
+        {
+          "nome": "SOU SEGURA",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Governo Avança com o Programa Desenrola Adimplentes para Facilitar Acesso a Crédito",
+      "texto": "O governo federal avançou na implementação do programa Desenrola Adimplentes, que visa facilitar a renegociação de dívidas para trabalhadores informais adimplentes. A Medida Provisória 1373/26, que cria o programa, foi aprovada pela Comissão Mista de Orçamento (CMO) do Senado e teve resolução do CMN estabelecendo condições e encargos financeiros. O programa permite renegociar até R$ 15 mil por banco, com juros reduzidos e parcelas menores, e destina R$ 3 bilhões da União. Ele também cria o Fies Empreendedor para beneficiários adimplentes do Fies.",
+      "fontes": [
+        {
+          "nome": "Portal da Câmara dos Deputados",
+          "url": "https://www.camara.leg.br/noticias/1069635-medida-provisoria-cria-programas-de-credito-para-trabalhadores-informais-e-beneficiarios-do-fies/"
+        },
+        {
+          "nome": "Revista Oeste",
+          "url": null
+        },
+        {
+          "nome": "Senado Federal",
+          "url": "https://www12.senado.leg.br/noticias/materias/2026/07/08/cmo-aprova-r-13-3-bi-para-credito-agricola-e-desenrola-adimplentes"
+        },
+        {
+          "nome": "Portal Gov.br",
+          "url": "https://www.gov.br/pt-br/noticias/financas-e-servicos/2026/06/governo-do-brasil-lanca-desenrola-adimplentes-para-facilitar-credito-e-reduzir-juros"
+        },
+        {
+          "nome": "LegisWeb",
+          "url": "https://www.legisweb.com.br/legislacao/?id=468652"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Copa do Mundo Impulsiona Autoatendimento em Varejo e Alimentação",
+      "texto": "A Copa do Mundo de 2026 está impulsionando a adoção de terminais de autoatendimento nos setores de varejo e alimentação. A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) estima que bares e restaurantes devem faturar R$ 2,42 bilhões durante o torneio, com crescimento de 15,7% em relação a 2022. Para lidar com picos de demanda sem ampliar equipes, 89% dos consumidores preferem o varejo físico para compras de consumo imediato. A tecnologia de autoatendimento é vista como uma solução para garantir o atendimento em momentos de sobrecarga.",
+      "fontes": [
+        {
+          "nome": "Bahia Economica",
+          "url": null
+        },
+        {
+          "nome": "G1",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Proporção de Usuários da Internet no Brasil Ultrapassa 90% em 2025, Aponta IBGE",
+      "texto": "A proporção de usuários da internet no Brasil ultrapassou 90% da população de 10 anos ou mais em 2025, atingindo 168,7 milhões de pessoas, segundo dados da PNAD Contínua TIC do IBGE. Este é o maior percentual desde o início da série histórica em 2016, demonstrando um avanço contínuo na conectividade digital no país.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37207-proporcao-de-usuarios-da-internet-no-pais-ultrapassou-90-da-populacao-de-10-anos-ou-mais-em-2025"
+        },
+        {
+          "nome": "Folha - UOL",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus Reduz Projeção do IPCA para 2026 e Mantém Selic Estável",
+      "texto": "Analistas do mercado consultados pelo Banco Central, via Boletim Focus divulgado em 6 de julho, diminuíram a expectativa do IPCA para 2026 de 5,33% para 5,30%. A projeção da Selic para 2026 permaneceu estável em 14%. A expectativa do PIB para 2026 ficou em 1,99%, enquanto a projeção para o câmbio em 2026 se manteve em R$ 5,20.",
+      "fontes": [
+        {
+          "nome": "Exame",
+          "url": "https://exame.com"
         }
       ]
     }
@@ -265,20 +304,9 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Impacto de Propostas Legislativas e Regulação Governamental",
-      "texto": "A discussão sobre a redução da jornada de trabalho e o fim da escala 6x1 continua gerando preocupações significativas na indústria, que prevê aumento de custos e perda de competitividade caso as medidas sejam implementadas por lei. No âmbito regulatório, o CADE reafirmou sua competência em operações internacionais e iniciou a revisão de normas para atos de concentração, indicando um ambiente de maior escrutínio e adaptação legal. A adequação da comunicação institucional do CADE para o período eleitoral também reflete a influência do calendário político.",
-      "score": 7.5,
-      "setores": [
-        "industria",
-        "transversal"
-      ]
-    },
-    {
-      "dim": "E",
-      "nome": "Econômico",
-      "tema": "Desempenho Macroeconômico Misto com Sinais de Recuperação e Desafios Persistentes",
-      "texto": "A economia brasileira apresentou sinais mistos nesta semana. Por um lado, a balança comercial registrou um superávit recorde em junho, e a projeção para o ano foi elevada, indicando um bom desempenho do comércio exterior. A arrecadação federal também atingiu um recorde em maio, impulsionada pela atividade econômica e pelo setor de petróleo. A taxa de desocupação alcançou a menor marca para maio desde 2012, refletindo um mercado de trabalho aquecido. Por outro lado, a inadimplência atingiu um novo recorde, com alta reincidência, sinalizando desafios para o consumo e o crédito. A inflação, medida pelo IPCA-15, desacelerou em junho, mas o acumulado em 12 meses ainda se mantém em patamar elevado.",
-      "score": 8.0,
+      "tema": "Tensões Comerciais Internacionais e Políticas de Crédito Domésticas",
+      "texto": "A semana foi marcada pela intensificação das discussões sobre as novas tarifas propostas pelos EUA a produtos brasileiros, com audiências públicas em Washington. Paralelamente, no cenário doméstico, o governo avançou significativamente com o programa Desenrola Adimplentes, visando a renegociação de dívidas e o acesso a crédito para trabalhadores informais, com aprovação da MP e resolução do CMN.",
+      "score": 8.5,
       "setores": [
         "transversal",
         "industria",
@@ -287,11 +315,24 @@
       ]
     },
     {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Desempenho da Indústria e Comércio, Projeções Macroeconômicas e Balança Comercial",
+      "texto": "A produção industrial brasileira registrou um leve recuo em maio, mas o otimismo na indústria da construção se consolidou com a expectativa de novos empreendimentos. A balança comercial apresentou um forte superávit na primeira semana de julho, levando o MDIC a elevar a projeção anual. O FMI também revisou para cima a expectativa de crescimento do PIB brasileiro para 2026. A confiança do varejo voltou a crescer em junho, impulsionada por setores específicos.",
+      "score": 7.8,
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
       "dim": "S",
       "nome": "Social",
-      "tema": "Endividamento e Poder de Compra do Consumidor",
-      "texto": "O cenário social é marcado pelo aumento do endividamento das famílias, com a inadimplência atingindo um novo recorde e uma preocupante taxa de reincidência. Este quadro é agravado pelas taxas de juros elevadas e pelo custo de vida, que pressionam o orçamento familiar e dificultam a quitação de dívidas. Contudo, o pagamento de um lote recorde de restituições do Imposto de Renda pela Receita Federal injeta R$ 16 bilhões na economia, o que pode aliviar temporariamente a pressão sobre o poder de compra e o consumo de parte da população. A discussão sobre a redução da jornada de trabalho também tem implicações sociais importantes, afetando diretamente a rotina e a renda dos trabalhadores.",
-      "score": 8.5,
+      "tema": "Endividamento, Acesso a Crédito e Impacto da Copa no Consumo",
+      "texto": "O programa Desenrola Adimplentes busca aliviar o endividamento e melhorar o acesso a crédito para trabalhadores informais, um reflexo da cautela do consumidor. A Copa do Mundo de 2026 está impulsionando o consumo e a adoção de tecnologias de autoatendimento no varejo e alimentação, demonstrando uma adaptação do comportamento do consumidor e das empresas para atender à demanda.",
+      "score": 7.0,
       "setores": [
         "comercio",
         "servicos",
@@ -301,24 +342,23 @@
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Adoção de Tecnologia e Impacto na Eficiência Operacional",
-      "texto": "Embora não haja notícias diretas sobre novas tecnologias ou adoção de IA por PMEs nesta semana, a agilidade da Receita Federal no processamento das restituições do IR, atribuída ao avanço das ferramentas de modernização e automação, demonstra o impacto positivo da tecnologia na eficiência de processos. A contínua pressão por otimização de custos e melhoria de produtividade, especialmente em setores como a indústria, pode impulsionar a busca por soluções tecnológicas, como a digitalização e 'Technology as a Service' (TaaS), para mitigar os impactos de potenciais aumentos de custos operacionais.",
-      "score": 6.0,
+      "tema": "Digitalização no Varejo e Conectividade da População",
+      "texto": "A digitalização continua a avançar, com a Copa do Mundo acelerando a adoção de soluções de autoatendimento no varejo e serviços para gerenciar picos de demanda. Além disso, a proporção de usuários da internet no Brasil ultrapassou 90% em 2025, indicando uma crescente conectividade digital da população.",
+      "score": 7.5,
       "setores": [
-        "transversal",
-        "industria",
-        "servicos"
+        "comercio",
+        "servicos",
+        "transversal"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Custos de Energia e Sustentabilidade",
-      "texto": "Os reajustes tarifários da energia elétrica, com aumentos significativos para todos os consumidores, incluindo indústrias, podem influenciar a busca por alternativas mais sustentáveis e eficientes em termos energéticos. A variação nos preços dos combustíveis, com a queda do etanol em diversos estados, pode impactar as decisões de consumo e a demanda por biocombustíveis, que possuem um apelo ambiental. Embora não haja notícias diretas sobre políticas ambientais ou ESG nesta semana, a pressão por custos e a busca por eficiência podem indiretamente impulsionar investimentos em práticas mais sustentáveis por parte das PMEs.",
+      "tema": "Regulamentação e Leilões no Setor Elétrico",
+      "texto": "A ANEEL abriu consulta pública para leilões de energia existente, o que pode ter implicações para a matriz energética e a sustentabilidade. A discussão sobre critérios para cortes de geração também é relevante para a gestão eficiente dos recursos energéticos e a integração de fontes diversas.",
       "score": 5.5,
       "setores": [
         "industria",
-        "comercio",
         "servicos",
         "transversal"
       ]
@@ -326,11 +366,12 @@
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulamentação e Legislação Trabalhista e Concorrencial",
-      "texto": "A proposta de redução da jornada de trabalho e o fim da escala 6x1 representam um risco legal e regulatório significativo para o setor industrial, que expressa forte oposição devido aos potenciais aumentos de custos e impactos na produção. No âmbito da defesa da concorrência, o CADE demonstrou uma postura ativa ao reafirmar sua competência em operações internacionais e iniciar a revisão de sua resolução sobre atos de concentração, indicando um ambiente regulatório dinâmico. Os reajustes tarifários da ANEEL, baseados em regulamentação setorial, também demonstram a influência direta do arcabouço legal sobre os custos operacionais das empresas.",
+      "tema": "Debate sobre Jornada de Trabalho e Regulamentação do Setor Elétrico",
+      "texto": "O debate sobre a eventual redução da jornada de trabalho e o fim da escala 6x1 gerou preocupação na indústria, que prevê aumento de custos e perda de competitividade, com 97% das empresas sendo impactadas. No setor elétrico, a ANEEL está em processo de consulta pública para aprimorar os editais de leilões de energia e definir novos procedimentos para autoprodução, além de discutir critérios para cortes de geração.",
       "score": 7.0,
       "setores": [
         "industria",
+        "servicos",
         "transversal"
       ]
     }
@@ -338,48 +379,82 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "10,50%",
-      "cor": "neutral",
-      "sub": "Mantida em patamar elevado para controle inflacionário (estimativa para Jul/2026)."
-    },
-    {
-      "label": "IPCA-15",
-      "valor": "0,41%",
+      "valor": "14,50% a.a.",
       "cor": "down",
-      "sub": "Variação mensal em junho de 2026. Acumulado 12 meses: 4,80% (acima da meta)."
+      "sub": "Taxa básica de juros atual, segundo IBGE (Maio/2026)."
     },
     {
-      "label": "Câmbio (dólar)",
+      "label": "IPCA (Proj. 2026)",
+      "valor": "5,30%",
+      "cor": "neutral",
+      "sub": "Projeção do mercado para 2026, segundo Boletim Focus (Julho/2026)."
+    },
+    {
+      "label": "Câmbio (Dólar Proj. 2026)",
       "valor": "R$ 5,20",
       "cor": "neutral",
-      "sub": "Cotação média do dólar comercial (estimativa para Jul/2026)."
+      "sub": "Projeção do mercado para 2026, segundo Boletim Focus (Julho/2026)."
     },
     {
       "label": "Desemprego (PNAD)",
       "valor": "5,6%",
       "cor": "up",
-      "sub": "Taxa de desocupação no trimestre encerrado em maio de 2026."
+      "sub": "Taxa de desocupação no trimestre encerrado em maio de 2026, segundo IBGE."
     },
     {
-      "label": "Varejo (PMC/IBGE)",
-      "valor": "+0,3%",
-      "cor": "neutral",
-      "sub": "Variação mensal do Volume de Vendas do Comércio Varejista em maio de 2026 (estimativa)."
+      "label": "Confiança Varejo (CNC)",
+      "valor": "102,6 pts",
+      "cor": "up",
+      "sub": "Índice de Confiança do Empresário do Comércio (ICEC) em junho de 2026, segundo CNC."
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-0,5%",
+      "valor": "-0,2%",
       "cor": "down",
-      "sub": "Variação mensal da Produção Industrial em maio de 2026 (estimativa, com base em sondagens)."
+      "sub": "Variação da produção industrial em maio de 2026, frente a abril, segundo IBGE."
     },
     {
       "label": "IPP (IBGE)",
-      "valor": "+0,4%",
+      "valor": "-0,30%",
       "cor": "neutral",
-      "sub": "Variação mensal do Índice de Preços ao Produtor em maio de 2026 (estimativa)."
+      "sub": "Sem divulgação nesta semana; último dado conhecido (Semana 26 · Junho 2026).",
+      "herdado_de": "Semana 26 · Junho 2026"
     }
   ],
   "longitudinal": [
+    {
+      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
+      "tipo": "oportunidade",
+      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "materializado",
+      "relevancia": 95.94,
+      "ultima_observacao": "O programa Desenrola Adimplentes teve importantes desdobramentos com a aprovação da Medida Provisória e a resolução do CMN, que estabelecem as condições e encargos financeiros para a nova linha de crédito. O programa está em fase de implementação e busca prevenir a inadimplência e reduzir o custo do crédito para trabalhadores informais.",
+      "periodo_observacao": "2026-W28",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "tipo": "risco",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 86.0,
+      "ultima_observacao": "A proposta de novas tarifas dos EUA sobre produtos brasileiros avançou para uma fase decisiva nesta semana, com a realização de audiências públicas em Washington. A CNI e representantes do setor produtivo brasileiro apresentaram argumentos contra a medida, que pode impactar significativamente as exportações. A decisão final é aguardada para 15 de julho.",
+      "periodo_observacao": "2026-W28",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
     {
       "id": "24441022-20e8-4a69-afed-041851f13279",
       "tipo": "risco",
@@ -389,9 +464,26 @@
         "comercio",
         "servicos"
       ],
-      "status": "materializado",
-      "relevancia": 100.0,
-      "ultima_observacao": "A inadimplência no Brasil atingiu um novo recorde em maio de 2026, com 75,06 milhões de pessoas, e a taxa de reincidência entre os novos devedores é alarmante (85,41%). Isso confirma e agrava o sinal de cautela do consumidor e endividamento familiar, que continua sendo um fator materializado e de alta relevância, impactando diretamente o comércio e serviços.",
+      "status": "em_curso",
+      "relevancia": 83.75,
+      "ultima_observacao": "O programa Desenrola Adimplentes, que visa facilitar a renegociação de dívidas para trabalhadores informais, teve avanços significativos nesta semana com a aprovação da Medida Provisória e a resolução do CMN, buscando reduzir o custo do crédito e prevenir a inadimplência. Isso reforça a atenção do governo à cautela do consumidor e ao endividamento familiar.",
+      "periodo_observacao": "2026-W28",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
+      "tipo": "oportunidade",
+      "titulo": "Digitalização e 'Technology as a Service' (TaaS)",
+      "dimensao": "T",
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 78.05,
+      "ultima_observacao": "A Copa do Mundo de 2026 está acelerando a adoção de soluções de autoatendimento no varejo e serviços, um exemplo prático da digitalização e 'Technology as a Service' (TaaS) para otimizar operações e atender à demanda crescente.",
       "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-01",
       "origem": "real"
@@ -408,43 +500,10 @@
         "transversal"
       ],
       "status": "materializado",
-      "relevancia": 75.31,
-      "ultima_observacao": "A ANEEL aprovou reajustes tarifários para a Enel SP, com aumentos médios de 10,18% para os consumidores. Indústrias e grandes empresas (alta tensão) enfrentarão um aumento de 15%, enquanto pequenos comércios e residências (baixa tensão) terão elevação de 8,97%. Esses aumentos, decorrentes de componentes financeiros e encargos setoriais, representam um risco direto de elevação dos custos operacionais para as PMEs em todos os setores.",
+      "relevancia": 75.62,
+      "ultima_observacao": "A ANEEL aprovou reajustes tarifários para três distribuidoras de energia, com aumentos médios que superam a inflação projetada para o ano, confirmando a materialização do aumento dos custos de energia elétrica para consumidores, incluindo PMEs.",
       "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-06",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 71.5,
-      "ultima_observacao": "O MDIC, ao elevar a projeção de superávit comercial para 2026, mencionou que as exportações subiram apesar da 'imposição de tarifas pelo governo de Donald Trump'. Isso indica que a proposta de novas tarifas dos EUA sobre produtos brasileiros permanece como um risco em curso, embora o impacto geral nas exportações brasileiras tenha sido mitigado por outros fatores.",
-      "periodo_observacao": "2026-W28",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
-      "tipo": "oportunidade",
-      "titulo": "Digitalização e 'Technology as a Service' (TaaS)",
-      "dimensao": "T",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 71.37,
-      "ultima_observacao": "A digitalização e a adoção de tecnologias avançadas, como a Inteligência Artificial, continuam em forte desenvolvimento. PMEs estão superando grandes empresas na frequência de uso de IA, embora enfrentem desafios de treinamento e adaptação organizacional. A necessidade de uma nova literacia em IA nas escolas e os investimentos massivos em IA na Coreia do Sul reforçam a tendência de digitalização e a demanda por serviços tecnológicos.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-01",
       "origem": "real"
     },
     {
@@ -465,57 +524,6 @@
       "origem": "real"
     },
     {
-      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
-      "tipo": "oportunidade",
-      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
-      "dimensao": "E",
-      "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 64.5,
-      "ultima_observacao": "Apesar da persistência da inadimplência em níveis recordes, a CNDL/SPC Brasil reconhece que o programa Desenrola 'cumpre um papel fundamental de limpeza e de resgate de CPFs'. No entanto, a conjuntura econômica geral e os juros altos têm neutralizado parte dos esforços de quitação, mantendo o sinal em curso, mas com desafios acentuados.",
-      "periodo_observacao": "2026-W28",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "242055f9-f62f-4973-8d14-05a96ff3c71e",
-      "tipo": "risco",
-      "titulo": "Expansão da Geração Solar Distribuída Pressiona Estabilidade da Rede Elétrica",
-      "dimensao": "T",
-      "setores": [
-        "industria",
-        "servicos",
-        "transversal"
-      ],
-      "status": "monitorar",
-      "relevancia": 44.78,
-      "ultima_observacao": "A rápida expansão da geração distribuída de energia solar, especialmente em telhados, está criando desafios operacionais significativos para a rede elétrica, levando à necessidade de 'curtailment' (redução controlada da geração) em períodos de baixo consumo. A falta de controle direto sobre essa geração e a ausência de soluções estruturais, como o armazenamento em baterias, representam um risco para a estabilidade do sistema elétrico e para o fornecimento de energia a indústrias e consumidores.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "9032fb4f-90f5-423f-a5d6-e0578821761d",
-      "tipo": "risco",
-      "titulo": "Crise de Talentos em Engenharia Ameaça Setores Chave da Economia",
-      "dimensao": "S",
-      "setores": [
-        "industria",
-        "servicos",
-        "transversal"
-      ],
-      "status": "monitorar",
-      "relevancia": 43.43,
-      "ultima_observacao": "O setor de engenharia enfrenta uma das maiores crises de talento, com 73% dos empregadores reportando dificuldades em recrutar profissionais qualificados. O envelhecimento da força de trabalho e a aceleração tecnológica agravam a situação, podendo limitar a inovação e o crescimento em indústrias como defesa e semicondutores, além de impactar o desenvolvimento de infraestrutura.",
-      "periodo_observacao": "2026-W27",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
       "id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
       "tipo": "oportunidade",
       "titulo": "Otimismo na Indústria da Construção com Novos Projetos",
@@ -524,11 +532,43 @@
         "industria",
         "servicos"
       ],
-      "status": "monitorar",
-      "relevancia": 38.25,
-      "ultima_observacao": "O Concrete Show 2026 destaca a busca por inovação, eficiência e sustentabilidade no setor da construção, indicando um foco em modernização e melhores práticas. A adoção de credenciamento pago visa qualificar a audiência e fomentar negócios, o que sugere um ambiente de busca por oportunidades, embora não haja menção explícita a um 'otimismo generalizado com novos projetos' em termos de volume.",
-      "periodo_observacao": "2026-W27",
+      "status": "em_curso",
+      "relevancia": 62.0,
+      "ultima_observacao": "O otimismo na indústria da construção se consolidou em junho, com a Sondagem da CNI e CBIC indicando que os empresários voltaram a projetar crescimento no lançamento de novos empreendimentos e serviços, além de melhoria nas expectativas de emprego e investimentos.",
+      "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "a2e754d7-28ba-4cc1-a74f-18f3ba1191b8",
+      "tipo": "risco",
+      "titulo": "Aumento de Custos e Perda de Competitividade da Indústria com Fim da Escala 6x1",
+      "dimensao": "L",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 53.5,
+      "ultima_observacao": "A sondagem da CNI revelou que 97% da indústria brasileira seria impactada por uma eventual redução da jornada de trabalho e 73% das empresas rejeitam a imposição da medida por lei. As principais preocupações são o aumento de custos, perda de competitividade e queda na produção, o que pode gerar impactos negativos significativos para a economia.",
+      "periodo_observacao": "2026-W28",
+      "data_identificacao": "2026-07-09",
+      "origem": "real"
+    },
+    {
+      "id": "5b449109-612b-4f61-bbcf-ee076daf0485",
+      "tipo": "oportunidade",
+      "titulo": "Aceleração da Adoção de Autoatendimento no Varejo e Serviços Impulsionada pela Copa",
+      "dimensao": "T",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "monitorar",
+      "relevancia": 52.25,
+      "ultima_observacao": "A Copa do Mundo de 2026 está funcionando como um catalisador para a adoção de tecnologias de autoatendimento nos setores de varejo e alimentação. Com a expectativa de aumento de faturamento e picos de demanda, empresas estão buscando soluções para escalar o atendimento sem necessariamente ampliar equipes, o que representa uma oportunidade para fornecedores de tecnologia e para a otimização de processos.",
+      "periodo_observacao": "2026-W28",
+      "data_identificacao": "2026-07-09",
       "origem": "real"
     }
   ]
