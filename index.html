@@ -928,7 +928,9 @@ function heatmap(){
 
 function viewRiscos(){
   const list=sigs();
-  const pts=list.map(s=>{const idx=s.i;return `<div class="pt ${s.tipo} clickable ${state.pointSig===idx?'sel':''}" data-point="${idx}" style="left:${s.imi*10}%;bottom:${s.imp*10}%" title="${s.t} — impacto ${s.imp}, iminência ${s.imi}"></div>`;}).join("");
+  // escala 1–10 → faixa interna 8–92% para os pontos nunca vazarem da moldura
+  const px=v=>8+((Math.max(1,Math.min(10,v))-1)/9)*84;
+  const pts=list.map(s=>{const idx=s.i;return `<div class="pt ${s.tipo} clickable ${state.pointSig===idx?'sel':''}" data-point="${idx}" style="left:${px(s.imi).toFixed(1)}%;bottom:${px(s.imp).toFixed(1)}%" title="${s.t} — impacto ${s.imp}, iminência ${s.imi}"></div>`;}).join("");
   const shown=state.pointSig!=null?list.filter(s=>s.i===state.pointSig):list.slice(0,8);
   const filterChip=state.pointSig!=null?`<button class="btn" id="clearFilter" style="font-size:11px;padding:4px 9px">✕ limpar filtro</button>`:"";
   const opps=shown.filter(s=>s.tipo==="oportunidade"),rks=shown.filter(s=>s.tipo==="risco");
