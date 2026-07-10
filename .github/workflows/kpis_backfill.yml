@@ -1,0 +1,33 @@
+name: Backfill KPIs oficiais
+
+# Disparo manual. Reescreve os indicadores macro de TODO o histórico (data/*.json)
+# com os valores OFICIAIS (BCB/SGS e IBGE/SIDRA) válidos na sexta de cada semana,
+# incluindo o acumulado no ano. NÃO usa Gemini nem Supabase — só APIs públicas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill-kpis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Reescrever KPIs históricos com dados oficiais
+        run: python backfill_kpis.py
+
+      - name: Publicar a base corrigida
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "KPIs oficiais: base histórica validada (BCB/IBGE) + acum. ano"
+          git push

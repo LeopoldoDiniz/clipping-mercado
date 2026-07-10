@@ -16,6 +16,7 @@ from google.genai import types
 from supabase import create_client
 
 from prompt_geracao import montar_prompt
+from kpis_oficiais import validar_kpis
 
 # ─────────────────────────────────────────────────────────
 # CONFIGURAÇÃO (as chaves vêm dos GitHub Secrets via ambiente)
@@ -210,6 +211,15 @@ def periodo_atual():
     label = f"Semana {semana} · {meses[inicio.month]} {ano}"
     chave = f"{ano}-W{semana:02d}"
     return chave, label, inicio.isoformat(), fim.isoformat()
+
+
+def _sexta_da_chave(chave):
+    """Sexta-feira (ISO) da semana da chave 'AAAA-Www' — data de referência dos KPIs oficiais."""
+    try:
+        a, s = chave.split("-W")
+        return date.fromisocalendar(int(a), int(s), 5)
+    except (ValueError, AttributeError):
+        return date.today()
 
 
 # ─────────────────────────────────────────────────────────
@@ -665,8 +675,13 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
             "origem": s.get("origem") or "real",
         })
 
-    # ponto 1a — herda o último valor real para KPIs não divulgados nesta semana
-    kpis_final = reconciliar_kpis(dados.get("kpis", []), chave)
+    # BLINDAGEM DE ACURÁCIA: o Gemini busca, mas os NÚMEROS macro são validados/
+    # sobrepostos pelos valores OFICIAIS (BCB/IBGE) válidos na sexta desta semana,
+    # já com acumulado no ano. Se a API oficial falhar, mantém o valor do Gemini.
+    ref_kpi = _sexta_da_chave(chave)
+    kpis_validados = validar_kpis(dados.get("kpis", []), ref=ref_kpi)
+    # ponto 1a — herança determinística caso algum indicador não venha da API oficial
+    kpis_final = reconciliar_kpis(kpis_validados, chave)
 
     saida = {
         "periodo": chave, "label": label,
