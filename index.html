@@ -803,7 +803,7 @@ function chartCard(){
   const janela=n===1?"1 leitura":`${labels[0]} → ${labels[n-1]}`;
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
-    <div class="legend" style="margin:2px 0 6px">Leitura conhecida em cada edição · clique para comparar até 3 séries.${DATA_LOADED?' <span class="mock-badge">prévia</span> série normalizada até os KPIs oficiais entrarem no motor.':''}</div>
+    <div class="legend" style="margin:2px 0 6px">Valor de cada indicador por semana · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}</div>
     <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
       ${grid}${xlab}${lines}</svg></div>
     <div class="schips">${chips}</div></div>`;
