@@ -631,7 +631,7 @@ const FONTES={
   ecommerce:[["Neotrust","neotrust.com.br"],["MCC-ENET","mccenet.com.br"],["ABComm","abcomm.org"],["NIQ / Webshoppers / Ebit","nielseniq.com"],["Conversion","conversion.com.br"],["NuvemCommerce / D2C","nuvemshop.com.br"],["Cielo ICVA","cielo.com.br"],["PayPal / BigDataCorp","bigdatacorp.com.br"],["Opinion Box","opinionbox.com"],["Mobile Time","mobiletime.com.br"],["CNDL","cndl.org.br"],["SPC Brasil","spcbrasil.org.br"],["Adyen Index","adyen.com"],["Serasa Experian","serasaexperian.com.br"],["Reclame Aqui","reclameaqui.com.br"],["E-commerce Brasil","ecommercebrasil.com.br"],["VTEX / VTEX Ads","vtex.com"],["Mercado Livre","mercadolivre.com.br"],["Shopee","shopee.com.br"],["Amazon Brasil","amazon.com.br"],["Magalu","magazineluiza.com.br"],["Casas Bahia","casasbahia.com.br"],["Americanas","americanas.com.br"],["AliExpress","aliexpress.com"],["Shein","shein.com.br"],["Tray (Locaweb)","tray.com.br"],["Nuvemshop","nuvemshop.com.br"],["TikTok Shop","seller-br.tiktok.com"],["iFood (q-commerce)","ifood.com.br"],["Rappi","rappi.com.br"]],
 };
 
-const PORTER={
+let PORTER={
   industria:{rivalidade:7,entrantes:4,fornecedores:8,compradores:6,substitutos:5,cadeia:{rivalidade:"cambio",entrantes:"demanda",fornecedores:"custos",compradores:"demanda",substitutos:"demanda"}},
   comercio:{rivalidade:8,entrantes:7,fornecedores:5,compradores:8,substitutos:7,cadeia:{rivalidade:"demanda",entrantes:"demanda",fornecedores:"custos",compradores:"credito",substitutos:"demanda"}},
   servicos:{rivalidade:7,entrantes:6,fornecedores:5,compradores:6,substitutos:6,cadeia:{rivalidade:"demanda",entrantes:"demanda",fornecedores:"custos",compradores:"demanda",substitutos:"demanda"}},
@@ -639,6 +639,7 @@ const PORTER={
   construcao:{rivalidade:6,entrantes:5,fornecedores:7,compradores:6,substitutos:3,cadeia:{rivalidade:"demanda",entrantes:"credito",fornecedores:"custos",compradores:"credito",substitutos:"demanda"}},
   ecommerce:{rivalidade:9,entrantes:8,fornecedores:6,compradores:9,substitutos:7,cadeia:{rivalidade:"demanda",entrantes:"demanda",fornecedores:"custos",compradores:"demanda",substitutos:"demanda"},nota:"Marketplaces concentram tráfego e ditam regras (comissão, frete, buy box); baixa barreira de entrada via plataformas (Nuvemshop/VTEX) e alto poder do comprador tornam preço e experiência o campo de batalha."},
 };
+const PORTER_BASE=PORTER; // referência estática (mapa força→cadeia p/ auditoria); números reais vêm do motor
 const PLABEL={rivalidade:"Rivalidade interna",entrantes:"Novos entrantes",fornecedores:"Poder dos fornecedores",compradores:"Poder dos compradores",substitutos:"Ameaça de substitutos"};
 
 const LENSES=[
@@ -934,7 +935,7 @@ function viewRiscos(){
   const grp=(titulo,cor,arr,first)=>`<div class="sig-group-h ${first?'first':''}" style="color:${cor}">${titulo} (${arr.length})</div>${arr.length?sigList(arr):'<p style="color:var(--ink-3);font-size:12.5px;margin:0">— nenhum nesta seleção</p>'}`;
   const body=state.pointSig!=null?sigList(shown):`${grp("▲ Oportunidades","var(--opp)",opps,true)}${grp("▼ Riscos","var(--risk)",rks)}`;
   return `${periodBanner()}
-  <div class="note"><span>▸</span><div><b>Matriz Risco × Oportunidade</b> — posição por <b>Impacto</b> (vertical) × <b>Iminência</b> (horizontal). Clique num <b>ponto</b> para filtrar as prioridades; clique numa <b>prioridade</b> para ver as notícias.${DATA_LOADED?' <b>Eixos estimados</b> a partir da relevância e do status até o motor gerar impacto/iminência nativos.':''}</div></div>
+  <div class="note"><span>▸</span><div><b>Matriz Risco × Oportunidade</b> — posição por <b>Impacto</b> (vertical) × <b>Iminência</b> (horizontal). Clique num <b>ponto</b> para filtrar as prioridades; clique numa <b>prioridade</b> para ver as notícias.${(DATA_LOADED&&!MATRIX_REAL)?' <b>Eixos estimados</b> a partir da relevância e do status até o motor gerar impacto/iminência nativos.':''}</div></div>
   <div class="matrix-wrap">
     <div class="matrix-holder"><span class="ax-y">Impacto →</span>
       <div class="matrix"><span class="quad q-tl">Preparar</span><span class="quad q-tr">Agir agora</span><span class="quad q-bl">Observar</span><span class="quad q-br">Monitorar de perto</span>${pts}</div>
@@ -967,7 +968,7 @@ function viewPorter(){
   if(!p)return `<div class="card card-pad"><p style="margin:0;color:var(--ink-3)">Estrutura em preparação.</p></div>`;
   const bar=v=>`<div class="gauge" style="--v:${v*10};background:var(--surface-3)"><i style="background:${m.cor}"></i></div>`;
   return `${periodBanner()}
-  <div class="note"><span>▸</span><div><b>Estrutura competitiva — ${m.nome}</b> <span class="mock-badge">preview</span> Intensidades ilustrativas (0–10). Clique numa <b>força</b> para ver as notícias abaixo.</div></div>
+  <div class="note"><span>▸</span><div><b>Estrutura competitiva — ${m.nome}</b> ${PORTER_REAL?'':'<span class="mock-badge">preview</span> Intensidades ilustrativas (0–10).'} Avaliação estrutural das 5 forças (0–10); muda devagar. Clique numa <b>força</b> para ver as notícias abaixo.${p.nota?`<div style="margin-top:6px;color:var(--ink-2)">${p.nota}</div>`:''}</div></div>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
     ${Object.keys(PLABEL).map(k=>`<div class="card card-pad force clickable" data-force="${k}">
       <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px"><h4 style="font-size:13.5px">${PLABEL[k]}</h4><span class="num" style="font-weight:700;color:${m.cor}">${p[k]}</span></div>${bar(p[k])}
@@ -1137,7 +1138,7 @@ document.addEventListener("click",e=>{
    O que o motor NÃO entrega ainda (impacto/iminência da matriz, cadeia, agenda,
    decomposição do IPCA, "o que fazer", setores Agro/Construção/E-commerce) é
    DERIVADO ou permanece como conteúdo editorial marcado, até a evolução do motor. */
-let DATA_LOADED=false, longByWeek={};
+let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, longByWeek={};
 const weekSelEl=document.getElementById("weekSel");
 const MABBR=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const MFULL=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
@@ -1205,8 +1206,11 @@ function deriveDim(t){t=t||"";
   return"E";}
 function adaptSignals(long){return (long||[]).map(l=>{
   const rel=Math.round((l.relevancia||0)*10)/10;
-  const imi=l.status==="materializado"?9:(l.status==="em_curso"?6:3);
-  const imp=Math.max(1,Math.min(10,Math.round(rel/10)));
+  // impacto/iminência REAIS quando o motor os fornece (severidade/iminencia 0–10);
+  // caso contrário, estimados por relevância e status.
+  const real=(l.severidade!=null&&l.iminencia!=null);
+  const imp=real?Math.max(1,Math.min(10,Math.round(l.severidade))):Math.max(1,Math.min(10,Math.round(rel/10)));
+  const imi=real?Math.max(1,Math.min(10,Math.round(l.iminencia))):(l.status==="materializado"?9:(l.status==="em_curso"?6:3));
   const text=l.titulo+" "+(l.ultima_observacao||"");
   const traj=CHRONO.map(w=>{const hit=(longByWeek[w.k]||[]).find(x=>x.id===l.id);return hit?[w.k,hit.status,Math.round(hit.relevancia)]:null;}).filter(Boolean);
   return {t:l.titulo,tipo:l.tipo,dim:l.dimensao,setores:l.setores||[],status:l.status,rel,imp,imi,
@@ -1218,6 +1222,10 @@ function adaptNews(clip,wm){const dataChip=wm?wm.dt.replace(/ 20\d\d/,""):null;
       dim:deriveDim(text),cadeia:deriveCadeia(text),temas:deriveTags(text),url:wu?wu.url:null,data:dataChip,
       src:(c.fontes||[]).map(f=>[f.nome,f.url?1:0]),origem:"real"};});}
 const adaptPestel=p=>(p||[]).map(x=>({dim:x.dim,tema:x.tema,score:x.score,setores:x.setores||[],texto:x.texto}));
+const numOr=(v,d)=>(typeof v==="number"&&!isNaN(v))?v:d;
+function mergePorter(p){const out={};Object.keys(PORTER_BASE).forEach(sec=>{const b=PORTER_BASE[sec],r=p[sec];
+  out[sec]=r?{rivalidade:numOr(r.rivalidade,b.rivalidade),entrantes:numOr(r.entrantes,b.entrantes),fornecedores:numOr(r.fornecedores,b.fornecedores),compradores:numOr(r.compradores,b.compradores),substitutos:numOr(r.substitutos,b.substitutos),cadeia:b.cadeia,nota:r.nota||b.nota}:b;});
+  return out;}
 function ediParas(t){if(!t)return[];const nl=t.split(/\n+/).map(s=>s.trim()).filter(Boolean);if(nl.length>1)return nl;
   const s=t.split(/(?<=[.!?])\s+/);if(s.length<3)return[t];const mid=Math.ceil(s.length/2);return [s.slice(0,mid).join(" "),s.slice(mid).join(" ")];}
 function firstSentence(t){const m=/^[\s\S]*?[.!?](\s|$)/.exec(t||"");let s=m?m[0].trim():(t||"");if(s.length>210)s=s.slice(0,207)+"…";return s;}
@@ -1241,8 +1249,11 @@ function applyData(sel,allData,metas){
   if(!state.chartSeries.every(id=>KPIMAP[id])){const ids=KPIS.map(k=>k.id);const pref=["ipca","ipp","selic","cambio"].filter(id=>KPIMAP[id]);state.chartSeries=(pref.length>=2?pref.slice(0,2):ids.slice(0,2));}
   if(sel.editorial&&sel.editorial.texto){EDITORIAL=sel.editorial.texto;LEITURA.quote=firstSentence(EDITORIAL);}
   SIGNALS=adaptSignals(sel.longitudinal||[]);SIGNALS.forEach((s,i)=>{s.i=i;});
+  MATRIX_REAL=(sel.longitudinal||[]).some(l=>l.severidade!=null&&l.iminencia!=null);
   PESTEL=adaptPestel(sel.pestel||[]);
   NEWS=adaptNews(sel.clipping||[],WMETA[sel._k]);
+  PORTER_REAL=!!(sel.porter&&Object.keys(sel.porter).length);
+  PORTER=PORTER_REAL?mergePorter(sel.porter):PORTER_BASE;
   DATA_LOADED=true;}
 async function boot(){
   try{

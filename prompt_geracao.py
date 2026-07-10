@@ -4,18 +4,43 @@ Este é o "cérebro" do sistema: a instrução que orienta o Gemini a produzir
 o clipping semanal completo, no formato JSON exato que o portal espera.
 """
 
-# As 28 fontes validadas — o Gemini prioriza busca nelas
+# Fontes validadas por setor — o Gemini prioriza busca nelas (grounding).
 FONTES = """
+## Macro / transversais
 IBGE (ibge.gov.br), Banco Central/Focus (bcb.gov.br), FGV/IBRE (portalibre.fgv.br),
-IPEA (ipeadata.gov.br), CNI (portaldaindustria.com.br), MDIC (gov.br/mdic),
-ANP (gov.br/anp), FIESP (fiesp.com.br), CNC (portaldocomercio.org.br),
-Fecomércio MG (fecomerciomg.org.br), CNDL/SPC (cndl.org.br), NielsenIQ (nielseniq.com),
-Sebrae (sebrae.com.br), Agência Sebrae (agenciasebrae.com.br), Febraban (febraban.org.br),
-Agência Senado (www12.senado.leg.br), Agência Câmara (camara.leg.br),
-Receita Federal (gov.br/receitafederal), CADE (gov.br/cade),
-MIT Technology Review Brasil (mittechreview.com.br), ANEEL (gov.br/aneel), MMA (gov.br/mma),
-B3 Sustentabilidade (b3.com.br), Valor Econômico (valor.globo.com),
-Exame (exame.com), InfoMoney (infomoney.com.br), EPBR (epbr.com.br)
+IPEA (ipeadata.gov.br), MDIC/Comex Stat (gov.br/mdic), Receita Federal (gov.br/receitafederal),
+CADE (gov.br/cade), Sebrae (sebrae.com.br), Agência Senado (www12.senado.leg.br),
+Agência Câmara (camara.leg.br), Serasa Experian (serasaexperian.com.br),
+Valor Econômico (valor.globo.com), Exame (exame.com), InfoMoney (infomoney.com.br)
+
+## Indústria
+CNI / Portal da Indústria (portaldaindustria.com.br), FIESP (fiesp.com.br),
+ABDI (gov.br/abdi), ANFAVEA (anfavea.com.br), ABIMAQ (abimaq.org.br)
+
+## Comércio
+CNC (portaldocomercio.org.br), Fecomércio (fecomercio.com.br), CNDL/SPC (cndl.org.br),
+NielsenIQ (nielseniq.com), ABRAS / SuperHiper (abras.com.br), Fenabrave (fenabrave.org.br)
+
+## Serviços
+Febraban (febraban.org.br), ANEEL (gov.br/aneel), ANATEL (gov.br/anatel),
+ABES Software (abessoftware.com.br), EPBR energia (epbr.com.br), MIT Tech Review BR (mittechreview.com.br)
+
+## Agro
+CNA Brasil (cnabrasil.org.br), CEPEA/Esalq (cepea.org.br), Conab (conab.gov.br),
+Embrapa (embrapa.br), MAPA (gov.br/agricultura), IMEA (imea.com.br),
+Notícias Agrícolas (noticiasagricolas.com.br), Canal Rural (canalrural.com.br),
+ABIEC / carne (abiec.com.br), ABPA / aves e suínos (abpa-br.org), ABIOVE / soja (abiove.org.br), UNICA (unica.com.br)
+
+## Construção civil
+CBIC (cbic.org.br), SindusCon-SP (sindusconsp.com.br), ABRAINC (abrainc.org.br),
+Secovi-SP (secovi.com.br), ABRAMAT / materiais (abramat.org.br), SNIC / cimento (snic.org.br),
+SINAPI / Caixa (caixa.gov.br), FGV — INCC (portalibre.fgv.br), ANAMACO (anamaco.com.br)
+
+## E-commerce
+ABComm (abcomm.org), Neotrust (neotrust.com.br), MCC-ENET (mccenet.com.br),
+NIQ / Webshoppers (nielseniq.com), Conversion (conversion.com.br), E-commerce Brasil (ecommercebrasil.com.br),
+Nuvemshop (nuvemshop.com.br), VTEX (vtex.com), Mercado Livre (mercadolivre.com.br),
+Shopee (shopee.com.br), Amazon Brasil (amazon.com.br), Magalu (magazineluiza.com.br), Reclame Aqui (reclameaqui.com.br)
 """.strip()
 
 
@@ -38,26 +63,31 @@ def montar_prompt(periodo_label, data_inicio, data_fim, historico_sinais):
 
     return f"""Você é um analista sênior de inteligência de mercado da Formatar Consultoria,
 em Divinópolis/MG, produzindo o clipping estratégico da semana para uma consultoria
-que atende PMEs dos setores de INDÚSTRIA, COMÉRCIO e SERVIÇOS.
+que atende PMEs dos setores de INDÚSTRIA, COMÉRCIO, SERVIÇOS, AGRO, CONSTRUÇÃO CIVIL e E-COMMERCE.
 
 # TAREFA
-Pesquise nas 28 fontes abaixo as notícias e dados econômicos relevantes do período
-{periodo_label} ({data_inicio} a {data_fim}) e produza uma análise estruturada.
+Pesquise nas fontes abaixo as notícias e dados econômicos relevantes do período
+{periodo_label} ({data_inicio} a {data_fim}) e produza uma análise estruturada,
+cobrindo os SEIS setores de forma equilibrada.
 
 # COBERTURA OBRIGATÓRIA DAS FONTES
-- Faça MÚLTIPLAS buscas (entre 12 e 20) para varrer TODAS as 28 fontes, não apenas as óbvias.
+- Faça MÚLTIPLAS buscas (entre 16 e 28) para varrer as fontes de TODOS os seis setores,
+  não apenas as macro/óbvias. Agro, construção civil e e-commerce têm fontes próprias — use-as.
 - Toda fonte que tiver publicado material relevante no período DEVE aparecer em ao menos um item do clipping.
-- Fontes sem material relevante na semana podem ficar de fora — mas isso deve ser exceção, não regra.
+- Garanta que CADA UM dos seis setores tenha ao menos 1–2 itens, se houve notícia relevante no período.
 - AGRUPE notícias complementares sobre o mesmo tema em UM item; nesse caso, TODAS as fontes
   do agrupamento entram no array "fontes" do item, cada uma com seu próprio url.
-- Notícias independentes viram itens separados. Meta: entre 10 e 18 itens de clipping.
+- Notícias independentes viram itens separados. Meta: entre 14 e 24 itens de clipping.
 
-# FONTES PRIORITÁRIAS
+# FONTES PRIORITÁRIAS (por setor)
 {FONTES}
 
 # SETORES (marque cada item com um ou mais)
-- "industria", "comercio", "servicos"
+- "industria", "comercio", "servicos", "agro", "construcao", "ecommerce"
 - "transversal" = afeta todos os setores (ex: SELIC, câmbio, reforma tributária)
+- Distribua a cobertura pelos seis setores. Agro (safra, exportações, câmbio, Plano Safra),
+  construção civil (INCC, crédito imobiliário, lançamentos, sondagens CBIC/CNI) e e-commerce
+  (faturamento, marketplaces, cross-border/Remessa Conforme, logística) são tão relevantes quanto os demais.
 
 # HISTÓRICO DE SINAIS ATIVOS (para a revisão longitudinal)
 Avalie CADA sinal abaixo à luz das notícias novas desta semana. Para cada um, decida:
@@ -90,6 +120,14 @@ Estrutura exata:
   "kpis": [
     {{"label": "SELIC", "valor": "14,25%", "cor": "neutral", "sub": "detalhe/contexto aqui"}}
   ],
+  "porter": {{
+    "industria":  {{"rivalidade": 7, "entrantes": 4, "fornecedores": 8, "compradores": 6, "substitutos": 5, "nota": "..."}},
+    "comercio":   {{"rivalidade": 8, "entrantes": 7, "fornecedores": 5, "compradores": 8, "substitutos": 7, "nota": "..."}},
+    "servicos":   {{"rivalidade": 7, "entrantes": 6, "fornecedores": 5, "compradores": 6, "substitutos": 6, "nota": "..."}},
+    "agro":       {{"rivalidade": 6, "entrantes": 3, "fornecedores": 7, "compradores": 7, "substitutos": 3, "nota": "..."}},
+    "construcao": {{"rivalidade": 6, "entrantes": 5, "fornecedores": 7, "compradores": 6, "substitutos": 3, "nota": "..."}},
+    "ecommerce":  {{"rivalidade": 9, "entrantes": 8, "fornecedores": 6, "compradores": 9, "substitutos": 7, "nota": "..."}}
+  }},
   "novos_sinais": [
     {{"tipo": "risco", "titulo": "...", "dimensao": "E", "setores": ["transversal"],
       "texto": "...", "fontes": ["Valor","BCB"],
@@ -110,8 +148,13 @@ Estrutura exata:
   links de redirecionamento de busca, ou resultados de pesquisa do Google.
 
 # REGRAS GERAIS
-- clipping: 10 a 18 itens, cobrindo os três setores + transversal. Agrupamentos com todas as fontes no array.
+- clipping: 14 a 24 itens, cobrindo os SEIS setores + transversal. Agrupamentos com todas as fontes no array.
 - pestel: sempre as 6 dimensões. score de 0 a 10 = intensidade/relevância da dimensão na semana.
+  Nos "setores" de cada dimensão, use qualquer combinação dos seis setores + "transversal".
+- porter: avaliação ESTRUTURAL das 5 forças competitivas (0 a 10) para os SEIS setores.
+  É uma leitura de estrutura de mercado que muda DEVAGAR — seja consistente entre semanas, ajustando
+  só quando houver mudança estrutural real (novo entrante relevante, consolidação, choque regulatório).
+  "nota" = uma frase explicando a força dominante do setor. Valores 0 (força fraca) a 10 (força intensa).
 - kpis: exatamente 7 indicadores, nesta ordem:
   1. SELIC  2. IPCA ou IPCA-15 (o mais recente)  3. Câmbio (dólar)  4. Desemprego (PNAD)
   5. Varejo (PMC/IBGE)  6. Produção Industrial (PIM-PF/IBGE)  7. IPP (Índice de Preços ao Produtor/IBGE)
@@ -133,6 +176,7 @@ if __name__ == "__main__":
          "relevancia_atual": 68.0, "ultimo_periodo": "2026-W26"}
     ]
     p = montar_prompt("Semana 28 · Julho 2026", "2026-07-06", "2026-07-10", exemplo_hist)
-    assert "12 e 20" in p and "10 a 18 itens" in p and "IPP" in p and "PIM" in p
+    assert "16 e 28" in p and "14 a 24 itens" in p and "IPP" in p and "PIM" in p
     assert "NUNCA use como url" in p and "github.io" in p
-    print(f"Prompt montado: {len(p)} caracteres — regras de cobertura, URL e KPIs presentes")
+    assert "agro" in p and "construcao" in p and "ecommerce" in p and '"porter"' in p
+    print(f"Prompt montado: {len(p)} caracteres — 6 setores, porter, cobertura, URL e KPIs presentes")

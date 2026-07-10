@@ -75,6 +75,54 @@ FONTES_OFICIAIS = {
     "exame": "https://exame.com",
     "infomoney": "https://www.infomoney.com.br",
     "epbr": "https://epbr.com.br",
+    "serasa": "https://www.serasaexperian.com.br",
+    "anfavea": "https://www.anfavea.com.br",
+    "abimaq": "https://www.abimaq.org.br",
+    "abras": "https://www.abras.com.br",
+    "fenabrave": "https://www.fenabrave.org.br",
+    "anatel": "https://www.gov.br/anatel/pt-br",
+    "abes": "https://abessoftware.com.br",
+    # Agro
+    "cna": "https://www.cnabrasil.org.br",
+    "cepea": "https://www.cepea.org.br",
+    "conab": "https://www.conab.gov.br",
+    "embrapa": "https://www.embrapa.br",
+    "mapa": "https://www.gov.br/agricultura/pt-br",
+    "agricultura": "https://www.gov.br/agricultura/pt-br",
+    "imea": "https://www.imea.com.br",
+    "notícias agrícolas": "https://www.noticiasagricolas.com.br",
+    "noticias agricolas": "https://www.noticiasagricolas.com.br",
+    "canal rural": "https://www.canalrural.com.br",
+    "abiec": "https://www.abiec.com.br",
+    "abpa": "https://www.abpa-br.org",
+    "abiove": "https://abiove.org.br",
+    "unica": "https://unica.com.br",
+    # Construção civil
+    "cbic": "https://cbic.org.br",
+    "sinduscon": "https://www.sindusconsp.com.br",
+    "abrainc": "https://www.abrainc.org.br",
+    "secovi": "https://www.secovi.com.br",
+    "abramat": "https://www.abramat.org.br",
+    "snic": "https://www.snic.org.br",
+    "sinapi": "https://www.caixa.gov.br",
+    "caixa": "https://www.caixa.gov.br",
+    "incc": "https://portalibre.fgv.br",
+    "anamaco": "https://www.anamaco.com.br",
+    # E-commerce
+    "abcomm": "https://abcomm.org",
+    "neotrust": "https://neotrust.com.br",
+    "mcc": "https://www.mccenet.com.br",
+    "conversion": "https://www.conversion.com.br",
+    "e-commerce brasil": "https://www.ecommercebrasil.com.br",
+    "ecommerce brasil": "https://www.ecommercebrasil.com.br",
+    "nuvemshop": "https://www.nuvemshop.com.br",
+    "vtex": "https://vtex.com/br-pt",
+    "mercado livre": "https://www.mercadolivre.com.br",
+    "shopee": "https://shopee.com.br",
+    "amazon": "https://www.amazon.com.br",
+    "magalu": "https://www.magazineluiza.com.br",
+    "magazine luiza": "https://www.magazineluiza.com.br",
+    "reclame aqui": "https://www.reclameaqui.com.br",
 }
 
 # Domínios que NUNCA podem aparecer como fonte (inclui o próprio portal)
@@ -212,7 +260,10 @@ def _gerar(client, prompt, config):
 def gerar_analise(prompt):
     client = genai.Client(api_key=GEMINI_KEY)
     grounding = types.Tool(google_search=types.GoogleSearch())
-    config = types.GenerateContentConfig(tools=[grounding], temperature=0.4)
+    # 6 setores + porter geram uma resposta maior; eleva o teto de saída para
+    # evitar truncamento (2.5-flash suporta até 65k tokens de saída). Continua no free.
+    config = types.GenerateContentConfig(
+        tools=[grounding], temperature=0.4, max_output_tokens=32768)
     resp, modelo = _gerar(client, prompt, config)
     if modelo != MODELO:
         print(f"[motor] Coleta concluída via fallback ({modelo}).")
@@ -607,6 +658,8 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
             "id": s["id"], "tipo": s["tipo"], "titulo": s["titulo"],
             "dimensao": s["dimensao"], "setores": s["setores"],
             "status": s["status"], "relevancia": s["relevancia_atual"],
+            # eixos da Matriz Risco × Oportunidade (impacto = severidade, iminência)
+            "severidade": s.get("severidade"), "iminencia": s.get("iminencia"),
             "ultima_observacao": ultima_obs, "periodo_observacao": ultima_per,
             "data_identificacao": s.get("data_identificacao", ""),
             "origem": s.get("origem") or "real",
@@ -622,6 +675,7 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
         "clipping": normalizar_clipping(dados.get("clipping", [])),
         "pestel": dados.get("pestel", []),
         "kpis": kpis_final,
+        "porter": dados.get("porter", {}),   # 5 Forças por setor (avaliação estrutural)
         "longitudinal": longitudinal,
     }
     os.makedirs("data", exist_ok=True)
