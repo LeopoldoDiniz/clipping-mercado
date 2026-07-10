@@ -82,6 +82,19 @@
   .stab .sw{width:9px;height:9px;border-radius:3px;background:var(--c,var(--ink-3))}
   .stab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--c,var(--accent))}
   .r-lenses{display:flex;align-items:center;gap:6px;overflow-x:auto;padding-top:9px;padding-bottom:9px;border-top:1px solid var(--border)}
+  .r-period{display:flex;align-items:center;gap:11px;flex-wrap:wrap;overflow-x:auto;padding-top:9px;padding-bottom:9px;border-top:1px solid var(--border)}
+  .pk-lbl{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+  .gseg{display:inline-flex;border:1px solid var(--border-strong);border-radius:var(--radius-sm);overflow:hidden;flex:0 0 auto}
+  .gseg button{border:0;border-left:1px solid var(--border);background:var(--surface-2);color:var(--ink-2);font:600 12px var(--sans);padding:6px 12px;cursor:pointer;white-space:nowrap}
+  .gseg button:first-child{border-left:0}
+  .gseg button:hover{color:var(--ink)}
+  .gseg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+  .wkchips{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+  .wkchip{flex:0 0 auto;font:600 12px var(--sans);padding:5px 10px;border:1px solid var(--border);background:var(--surface);border-radius:99px;color:var(--ink-2);cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+  .wkchip:hover{border-color:var(--border-strong);color:var(--ink)}
+  .wkchip.on{color:var(--ink);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
+  .wkchip .pp{font-size:10px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em}
+  .wkchip.on .pp{color:var(--accent)}
   .tab{flex:0 0 auto;padding:7px 12px;border:1px solid var(--border);background:var(--surface);border-radius:99px;
     font-size:12.5px;font-weight:600;color:var(--ink-2);cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap}
   .tab:hover{border-color:var(--border-strong);color:var(--ink)}
@@ -358,21 +371,10 @@
     <div class="brand"><span class="dot"></span>NEXOS<span class="ver">v2.0</span><small>Inteligência de Mercado</small></div>
     <div class="spacer"></div>
     <span class="eyebrow" id="weekCtx" style="align-self:center"></span>
-    <select id="weekSel" aria-label="Selecionar semana">
-      <option value="W28">Sem. 28 · 06–10 jul</option>
-      <option value="W27">Sem. 27 · 30 jun–04 jul</option>
-      <option value="W26">Sem. 26 · 23–27 jun</option>
-      <option value="W25">Sem. 25 · 16–20 jun</option>
-    </select>
-    <select id="periodSel" aria-label="Granularidade do período">
-      <option value="semanal">Semanal</option>
-      <option value="mensal">Mensal (acum.)</option>
-      <option value="trimestral">Trimestral</option>
-      <option value="anual">Ano (YTD)</option>
-    </select>
     <a class="btn" id="jsonBtn" href="https://raw.githubusercontent.com/LeopoldoDiniz/clipping-mercado/main/data/ultimo.json" target="_blank" rel="noopener" title="Dados abertos (JSON)">⧉ JSON</a>
     <button class="btn" id="themeBtn" aria-label="Alternar tema" title="Tema claro/escuro">◐</button>
   </div>
+  <div class="row r-period" id="periodBar" role="group" aria-label="Seleção de período"></div>
   <div class="row r-sectors" id="sectorNav" role="tablist"></div>
   <div class="row r-lenses" id="lensNav" role="tablist"></div>
 </header>
@@ -649,7 +651,7 @@ const LENSES=[
 ];
 
 /* ───────── ESTADO ───────── */
-let state={sector:"panorama",lens:"geral",week:"W28",period:"semanal",pointSig:null,chartSeries:["ipca","ipp"]};
+let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],pointSig:null,chartSeries:["ipca","ipp"]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
 
 /* ───────── HELPERS ───────── */
@@ -659,27 +661,61 @@ const inSector=arr=>state.sector==="panorama"||arr.includes(state.sector)||arr.i
 const sectorChips=ids=>ids.map(id=>{const m=SMETA[id];return m?`<span class="chip"><span class="sw" style="background:${m.cor}"></span>${m.nome}</span>`:"";}).join("");
 const arrow=c=>c==="up"?"▲":c==="down"?"▼":"■";
 
-function periodScope(){
-  const w=WMETA[state.week];
-  if(state.period==="semanal") return {weeks:[state.week],label:`Semana ${state.week.slice(1)} · ${w.full}`,nota:null};
-  if(state.period==="mensal"){const ws=WEEKS.filter(x=>x.mes===w.mes);return {weeks:ws.map(x=>x.k),label:`${w.mes==="2026-07"?"Julho":"Junho"} 2026 · acumulado ${w.mes==="2026-07"?"parcial (mês vigente)":""}`.trim(),nota:`Acumulado de ${ws.length} semana(s) do mês. Relevância = pico do sinal no período.`};}
-  if(state.period==="trimestral"){const ws=WEEKS.filter(x=>x.tri===w.tri);return {weeks:ws.map(x=>x.k),label:`3º trimestre 2026 · parcial`,nota:`Acumulado de ${ws.length} semana(s) do trimestre disponíveis. Relevância = pico no período.`};}
-  return {weeks:WEEKS.map(x=>x.k),label:`2026 · acumulado no ano (YTD)`,nota:`Acumulado de ${WEEKS.length} semana(s) apuradas em 2026. Relevância = pico no período.`};
-}
 let CHRONO=WEEKS.slice().reverse(); // objetos, mais antigo→mais recente
-function chartWeeks(){
-  const {weeks}=periodScope();
-  if(weeks.length<=1){ // semana única: janela histórica até a semana selecionada (inclui anteriores)
-    const upto=CHRONO.findIndex(w=>w.k===state.week);
-    return CHRONO.slice(0,upto+1);
+/* ── Datação: granularidade + multi-seleção. O ESCOPO selecionado rege todos os painéis. ── */
+const MESNOME={"01":"Janeiro","02":"Fevereiro","03":"Março","04":"Abril","05":"Maio","06":"Junho","07":"Julho","08":"Agosto","09":"Setembro","10":"Outubro","11":"Novembro","12":"Dezembro"};
+const mesLbl=id=>{const[y,m]=id.split("-");return `${MESNOME[m]||m}/${y.slice(2)}`;};
+const triLbl=id=>`${id.slice(-1)}º tri ${id.slice(2,4)}`;
+const lastWeekOfMonth=mid=>{const ws=WEEKS.filter(w=>w.mes===mid).map(w=>+w.k.slice(1));return ws.length?Math.max(...ws):"";};
+// itens disponíveis por granularidade, em ordem cronológica (antigo→recente); parcial = período vigente (não fechado)
+function granItems(g){
+  const uniq=a=>[...new Set(a)];
+  if(g==="semana")return CHRONO.map(w=>({id:w.k,lbl:"Sem "+w.k.slice(1),sub:w.dt.replace(/ 20\d\d/,""),parcial:false}));
+  if(g==="mes"){const ids=uniq(WEEKS.map(w=>w.mes)).sort();const mx=ids[ids.length-1];return ids.map(id=>({id,lbl:mesLbl(id),parcial:id===mx}));}
+  if(g==="trimestre"){const ids=uniq(WEEKS.map(w=>w.tri)).sort();const mx=ids[ids.length-1];return ids.map(id=>({id,lbl:triLbl(id),parcial:id===mx}));}
+  const ids=uniq(WEEKS.map(w=>w.mes.slice(0,4))).sort();const mx=ids[ids.length-1];return ids.map(id=>({id,lbl:id,parcial:id===mx}));
+}
+// semanas do escopo, cronológicas (antigo→recente). Nunca vazio.
+function scopeKeys(){
+  const g=state.gran,p=state.picks;
+  const match=w=>g==="semana"?p.includes(w.k):g==="mes"?p.includes(w.mes):g==="trimestre"?p.includes(w.tri):p.includes(w.mes.slice(0,4));
+  const keys=CHRONO.filter(match).map(w=>w.k);
+  return keys.length?keys:[CHRONO[CHRONO.length-1].k];
+}
+const refKey=()=>{const k=scopeKeys();return k[k.length-1];}; // semana de referência = mais recente do escopo
+function periodScope(){
+  const weeks=scopeKeys(),g=state.gran,picks=state.picks;
+  let label,nota=null;
+  if(g==="semana"){
+    if(weeks.length===1){const w=WMETA[weeks[0]];label=`Semana ${weeks[0].slice(1)} · ${w?w.full:""}`;}
+    else{label=`Semanas ${weeks.map(k=>k.slice(1)).join(", ")}`;nota=`Escopo de ${weeks.length} semanas selecionadas. Relevância = pico do sinal no período.`;}
+  }else if(g==="mes"){
+    const its=granItems("mes").filter(i=>picks.includes(i.id));
+    label=its.map(i=>i.parcial?`${i.lbl} · parcial até sem ${lastWeekOfMonth(i.id)}`:i.lbl).join(" · ");
+    nota=`Acumulado de ${weeks.length} semana(s) ${its.length>1?"dos meses selecionados":"do mês"}. Relevância = pico no período.`;
+  }else if(g==="trimestre"){
+    const its=granItems("trimestre").filter(i=>picks.includes(i.id));
+    label=its.map(i=>i.parcial?`${i.lbl} · parcial`:i.lbl).join(" · ");
+    nota=`Acumulado de ${weeks.length} semana(s) do(s) trimestre(s). Relevância = pico no período.`;
+  }else{
+    label=`${picks.join(", ")} · acumulado no ano (YTD)`;
+    nota=`Acumulado de ${weeks.length} semana(s) apuradas. Relevância = pico no período.`;
   }
-  return CHRONO.filter(w=>weeks.includes(w.k)); // agregado: as semanas do período
+  return {weeks,label,nota};
+}
+function chartWeeks(){
+  const weeks=scopeKeys();
+  if(state.gran==="semana"&&weeks.length===1){ // semana única → ela + a imediatamente anterior (2 pontos)
+    const upto=CHRONO.findIndex(w=>w.k===weeks[0]);
+    return CHRONO.slice(Math.max(0,upto-1),upto+1);
+  }
+  return CHRONO.filter(w=>weeks.includes(w.k)); // escopo agregado: apenas as semanas selecionadas
 }
 function sigPeriodRel(s,weeks){const pts=(s.traj||[]).filter(t=>weeks.includes(t[0]));if(!pts.length)return null;return Math.max(...pts.map(t=>t[2]));}
 function sigs(){
   const {weeks}=periodScope();
   let list=SIGNALS.filter(s=>inSector(s.setores));
-  if(state.period!=="semanal"){list=list.map(s=>({...s,rel:sigPeriodRel(s,weeks)??s.rel})).filter(s=>sigPeriodRel(s,weeks)!==null||true);}
+  if(weeks.length>1){list=list.map(s=>({...s,rel:sigPeriodRel(s,weeks)??s.rel}));} // agregado: pico no período
   return list.sort((a,b)=>b.rel-a.rel);
 }
 const news=()=>NEWS.filter(n=>inSector(n.setores));
@@ -758,6 +794,38 @@ function renderHead(){
   ctx.onclick=openSinaisDrawer;
   ln.appendChild(ctx);
   document.getElementById("weekCtx").textContent=label;
+  renderPeriodBar();
+}
+let ALLDATA=null,METAS=null;
+// recarrega a semana de referência do escopo e re-renderiza tudo
+function applyScope(){
+  if(ALLDATA){const rk=refKey();const d=ALLDATA.find(x=>x._k===rk);if(d)applyData(d,ALLDATA,METAS);}
+  render();
+}
+function renderPeriodBar(){
+  const bar=document.getElementById("periodBar");if(!bar)return;
+  const GRAN=[["semana","Semana"],["mes","Mês"],["trimestre","Trimestre"],["ano","Ano"]];
+  const seg=GRAN.map(([id,nm])=>`<button data-gran="${id}" aria-pressed="${state.gran===id}">${nm}</button>`).join("");
+  const chips=granItems(state.gran).map(it=>{
+    const on=state.picks.includes(it.id);
+    const sub=it.sub?`<span class="pp">${it.sub}</span>`:"";
+    const pp=it.parcial?`<span class="pp">parcial</span>`:"";
+    return `<button class="wkchip ${on?'on':''}" data-pick="${it.id}" aria-pressed="${on}">${it.lbl}${sub}${pp}</button>`;
+  }).join("");
+  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div><div class="wkchips">${chips}</div>`;
+  bar.querySelectorAll("[data-gran]").forEach(b=>b.onclick=()=>{
+    if(state.gran===b.dataset.gran)return;
+    state.gran=b.dataset.gran;
+    const its=granItems(state.gran);
+    state.picks=its.length?[its[its.length-1].id]:[]; // padrão: período mais recente
+    state.pointSig=null;applyScope();
+  });
+  bar.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{
+    const id=b.dataset.pick,i=state.picks.indexOf(id);
+    if(i>=0){if(state.picks.length>1)state.picks.splice(i,1);} // mantém ao menos 1 selecionado
+    else state.picks.push(id);
+    state.pointSig=null;applyScope();
+  });
 }
 
 /* ───────── VIEWS ───────── */
@@ -1141,7 +1209,6 @@ document.addEventListener("click",e=>{
    decomposição do IPCA, "o que fazer", setores Agro/Construção/E-commerce) é
    DERIVADO ou permanece como conteúdo editorial marcado, até a evolução do motor. */
 let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, longByWeek={};
-const weekSelEl=document.getElementById("weekSel");
 const MABBR=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const MFULL=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
 const pad2=n=>String(n).padStart(2,"0");
@@ -1217,7 +1284,7 @@ function adaptSignals(long){return (long||[]).map(l=>{
   const traj=CHRONO.map(w=>{const hit=(longByWeek[w.k]||[]).find(x=>x.id===l.id);return hit?[w.k,hit.status,Math.round(hit.relevancia)]:null;}).filter(Boolean);
   return {t:l.titulo,tipo:l.tipo,dim:l.dimensao,setores:l.setores||[],status:l.status,rel,imp,imi,
     cadeia:deriveCadeia(text),tema:deriveTags(text)[0]||null,obs:l.ultima_observacao||"",
-    traj:traj.length?traj:[[state.week,l.status,Math.round(rel)]],origem:l.origem};});}
+    traj:traj.length?traj:[[refKey(),l.status,Math.round(rel)]],origem:l.origem};});}
 function adaptNews(clip,wm){const dataChip=wm?wm.dt.replace(/ 20\d\d/,""):null;
   return (clip||[]).map(c=>{const text=c.titulo+" "+(c.texto||"");const wu=(c.fontes||[]).find(f=>f.url);
     return {t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],
@@ -1265,19 +1332,15 @@ async function boot(){
     if(!sem.length)throw new Error("index sem semanas");
     const metas=sem.map(s=>deriveWeek(s.chave));
     const datas=await Promise.all(sem.map(async s=>{const d=await (await fetch(base+s.arquivo,{cache:"no-store"})).json();d._k=weekKey(s.chave);return d;}));
-    state.week=metas[0].k;state.pointSig=null;
+    ALLDATA=datas;METAS=metas;
+    state.gran="semana";state.picks=[metas[0].k];state.pointSig=null; // padrão: semana mais recente
     applyData(datas[0],datas,metas);
-    weekSelEl.innerHTML=metas.map(w=>`<option value="${w.k}">Sem. ${w.k.slice(1)} · ${w.dt.replace(/ 20\d\d/,"")}</option>`).join("");
-    weekSelEl.value=state.week;
-    weekSelEl.onchange=e=>{state.week=e.target.value;state.pointSig=null;const d=datas.find(x=>x._k===state.week);if(d)applyData(d,datas,metas);render();};
     const jb=document.getElementById("jsonBtn");if(jb)jb.href=base+"ultimo.json";
     render();
   }catch(err){console.warn("Nexos: exibindo dados de demonstração (data/ indisponível).",err);}}
 
 /* ───────── CONTROLES ───────── */
 document.getElementById("themeBtn").onclick=()=>{const cur=document.documentElement.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",cur==="dark"?"light":"dark");};
-document.getElementById("weekSel").onchange=e=>{state.week=e.target.value;state.pointSig=null;render();};
-document.getElementById("periodSel").onchange=e=>{state.period=e.target.value;state.pointSig=null;render();};
 
 function render(){renderHead();document.getElementById("view").innerHTML=(VIEWS[state.lens]||viewGeral)();}
 render();
