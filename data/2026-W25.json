@@ -337,7 +337,7 @@
       "nome": "Econômico",
       "tema": "Desaceleração da inflação, corte de juros e desafios do crédito",
       "texto": "O Copom realizou um novo corte na taxa Selic, indicando um ciclo de afrouxamento monetário, embora com cautela devido às incertezas globais e inflação ainda acima da meta. O IPCA-15 desacelerou em junho, e o IPP registrou deflação em maio, o que é positivo para os custos da indústria. No entanto, a inadimplência atingiu um novo recorde, e o crescimento do crédito continua concentrado em linhas direcionadas, mostrando que, apesar dos sinais de melhora, o acesso ao crédito livre e a saúde financeira do consumidor ainda são desafios.",
-      "score": 8.0,
+      "score": 8,
       "setores": [
         "transversal",
         "industria",
@@ -361,7 +361,7 @@
       "nome": "Tecnológico",
       "tema": "Regulamentação de novas tecnologias e infraestrutura",
       "texto": "A ANEEL avançou na regulamentação dos Sistemas de Armazenamento de Energia Elétrica (SAE), transformando-os em ativos regulados, o que pode impulsionar investimentos e a adoção de novas tecnologias no setor elétrico. A iniciativa do CADE de criar uma equipe para investigar big techs também sinaliza uma atenção crescente às implicações tecnológicas nos mercados e à necessidade de um marco regulatório adequado para a era digital.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "industria",
         "servicos",
@@ -395,45 +395,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25%",
-      "cor": "down",
-      "sub": "Redução de 0,25 p.p. pelo Copom em 17/06/2026."
+      "valor": "14,25% a.a.",
+      "cor": "up",
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "IPCA-15",
-      "valor": "0,41%",
-      "cor": "down",
-      "sub": "Variação em junho de 2026. Acumulado 12 meses: 4,80%."
-    },
-    {
-      "label": "Câmbio (dólar)",
-      "valor": "R$ 5,05 (est.)",
-      "cor": "down",
-      "sub": "Valor estimado para a semana, com tendência de apreciação do real."
-    },
-    {
-      "label": "Desemprego (PNAD)",
-      "valor": "Não disponível",
+      "label": "IPCA",
+      "valor": "0,58%",
       "cor": "neutral",
-      "sub": "Dados para maio/junho de 2026 não disponíveis nos resultados da busca."
+      "sub": "Mês · acum. ano 3,20% · 12m 4,72% · IBGE mai/26"
     },
     {
-      "label": "Varejo (PMC/IBGE)",
-      "valor": "Não disponível",
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,14",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB/SGS"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,8%",
       "cor": "neutral",
-      "sub": "Dados para maio/junho de 2026 não disponíveis nos resultados da busca."
+      "sub": "PNAD Contínua · IBGE · fev-mar-abr 2026"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "-1,5%",
+      "cor": "down",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "Não disponível",
+      "valor": "0,7%",
       "cor": "neutral",
-      "sub": "Dados para maio/junho de 2026 não disponíveis nos resultados da busca."
+      "sub": "Produção física m/m · acum. ano 2,7% · IBGE abr/26"
     },
     {
       "label": "IPP",
-      "valor": "-0,30%",
-      "cor": "up",
-      "sub": "Variação em maio de 2026."
+      "valor": "2,62%",
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano 5,12% · IBGE abr/26"
     }
   ],
   "longitudinal": [
@@ -447,7 +447,7 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 100.0,
+      "relevancia": 100,
       "ultima_observacao": "A cautela do consumidor e o endividamento familiar se materializam ainda mais com o novo recorde de inadimplência em maio de 2026, com 75 milhões de brasileiros negativados. A alta taxa de reincidência (85,41%) e o valor médio das dívidas (R$ 5.145,04) reforçam a gravidade da situação.",
       "periodo_observacao": "2026-W25",
       "data_identificacao": "2026-07-01",
@@ -480,7 +480,7 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 63.0,
+      "relevancia": 63,
       "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), embora divulgada em 26 de junho, destaca a consolidação da digitalização, com 83% das transações bancárias sendo digitais e 78% via mobile. Os investimentos em tecnologia, incluindo 'Technology as a Service' (TaaS), continuam em alta no setor bancário.",
       "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",

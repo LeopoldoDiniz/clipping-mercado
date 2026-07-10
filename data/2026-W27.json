@@ -292,7 +292,7 @@
       "nome": "Ambiental",
       "tema": "Sustentabilidade e Descarbonização",
       "texto": "A agenda ambiental ganhou destaque com a nova regulamentação brasileira para eficiência energética de LEDs, visando a redução do consumo e emissões. A Estratégia Industrial Verde em Portugal exemplifica o movimento global para atrair investimentos em descarbonização. A crescente relevância dos critérios ESG para o acesso a financiamentos por PMEs reforça a necessidade de práticas empresariais mais sustentáveis e responsáveis.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "industria",
         "comercio",
@@ -305,7 +305,7 @@
       "nome": "Legal",
       "tema": "Regulamentação e Legislação Setorial",
       "texto": "A semana foi marcada por ações regulatórias e legislativas com impacto direto nos setores. A medida provisória para subsidiar o diesel e a regulamentação de eficiência energética para lâmpadas LED são exemplos de intervenções governamentais que moldam o ambiente de negócios. A necessidade de um arcabouço técnico e jurídico para gerenciar a expansão da energia solar distribuída também aponta para a importância da legislação na adaptação a novas tecnologias.",
-      "score": 6.0,
+      "score": 6,
       "setores": [
         "transversal",
         "industria",
@@ -316,45 +316,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,00% (proj. 2026)",
+      "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Projeção do Boletim Focus para o final de 2026, indicando um corte da taxa atual de 14,25%."
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "IPCA (proj. 2026)",
-      "valor": "5,33% (proj. 2026)",
+      "label": "IPCA",
+      "valor": "0,58%",
       "cor": "neutral",
-      "sub": "Projeção do Boletim Focus para o final de 2026, estável após 15 meses de alta, mas acima da meta do BC."
+      "sub": "Mês · acum. ano 3,20% · 12m 4,72% · IBGE mai/26"
     },
     {
-      "label": "Câmbio (dólar)",
-      "valor": "R$ 5,20 (proj. 2026)",
-      "cor": "neutral",
-      "sub": "Projeção do Boletim Focus para a cotação do dólar no final de 2026."
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,17",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB/SGS"
     },
     {
-      "label": "Desemprego (PNAD)",
-      "valor": "Não disponível (Semana 27)",
-      "cor": "neutral",
-      "sub": "Dados da PNAD Contínua para junho/julho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
+      "label": "Desemprego",
+      "valor": "5,6%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · mar-abr-mai 2026"
     },
     {
-      "label": "Varejo (PMC/IBGE)",
-      "valor": "Não disponível (Semana 27)",
+      "label": "Varejo (PMC)",
+      "valor": "-1,5%",
       "cor": "neutral",
-      "sub": "Dados da Pesquisa Mensal de Comércio (PMC) para maio/junho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "Não disponível (Semana 27)",
+      "valor": "0,7%",
       "cor": "neutral",
-      "sub": "Dados da Pesquisa Industrial Mensal - Produção Física (PIM-PF) para maio/junho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
+      "sub": "Produção física m/m · acum. ano 2,7% · IBGE abr/26"
     },
     {
-      "label": "IPP (Produtor/IBGE)",
-      "valor": "Não disponível (Semana 27)",
-      "cor": "neutral",
-      "sub": "Dados do Índice de Preços ao Produtor (IPP) para maio/junho de 2026 ainda não foram divulgados pelo IBGE nesta semana."
+      "label": "IPP",
+      "valor": "-0,30%",
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano 4,80% · IBGE mai/26"
     }
   ],
   "longitudinal": [
@@ -418,7 +418,7 @@
         "transversal"
       ],
       "status": "em_curso",
-      "relevancia": 72.0,
+      "relevancia": 72,
       "ultima_observacao": "O cenário geopolítico global, com o acordo de paz (ainda que atribulado) entre EUA e Irã, influenciou a estabilização dos preços do petróleo e, consequentemente, as projeções de inflação e Selic no Brasil. No entanto, o tom 'hawkish' do Federal Reserve dos EUA continua a impactar negativamente os mercados emergentes, fortalecendo o dólar e criando obstáculos para o financiamento, o que indiretamente pode afetar as relações comerciais e a competitividade dos produtos brasileiros.",
       "periodo_observacao": "2026-W27",
       "data_identificacao": "2026-07-02",

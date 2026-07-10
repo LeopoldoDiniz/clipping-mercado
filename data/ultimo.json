@@ -332,7 +332,7 @@
       "nome": "Social",
       "tema": "Endividamento, Acesso a Crédito e Impacto da Copa no Consumo",
       "texto": "O programa Desenrola Adimplentes busca aliviar o endividamento e melhorar o acesso a crédito para trabalhadores informais, um reflexo da cautela do consumidor. A Copa do Mundo de 2026 está impulsionando o consumo e a adoção de tecnologias de autoatendimento no varejo e alimentação, demonstrando uma adaptação do comportamento do consumidor e das empresas para atender à demanda.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "comercio",
         "servicos",
@@ -368,7 +368,7 @@
       "nome": "Legal",
       "tema": "Debate sobre Jornada de Trabalho e Regulamentação do Setor Elétrico",
       "texto": "O debate sobre a eventual redução da jornada de trabalho e o fim da escala 6x1 gerou preocupação na indústria, que prevê aumento de custos e perda de competitividade, com 97% das empresas sendo impactadas. No setor elétrico, a ANEEL está em processo de consulta pública para aprimorar os editais de leilões de energia e definir novos procedimentos para autoprodução, além de discutir critérios para cortes de geração.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "industria",
         "servicos",
@@ -379,46 +379,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,50% a.a.",
-      "cor": "down",
-      "sub": "Taxa básica de juros atual, segundo IBGE (Maio/2026)."
-    },
-    {
-      "label": "IPCA (Proj. 2026)",
-      "valor": "5,30%",
+      "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Projeção do mercado para 2026, segundo Boletim Focus (Julho/2026)."
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "Câmbio (Dólar Proj. 2026)",
-      "valor": "R$ 5,20",
-      "cor": "neutral",
-      "sub": "Projeção do mercado para 2026, segundo Boletim Focus (Julho/2026)."
+      "label": "IPCA",
+      "valor": "0,16%",
+      "cor": "up",
+      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · IBGE jun/26"
     },
     {
-      "label": "Desemprego (PNAD)",
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,11",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB/SGS"
+    },
+    {
+      "label": "Desemprego",
       "valor": "5,6%",
-      "cor": "up",
-      "sub": "Taxa de desocupação no trimestre encerrado em maio de 2026, segundo IBGE."
+      "cor": "neutral",
+      "sub": "PNAD Contínua · IBGE · mar-abr-mai 2026"
     },
     {
-      "label": "Confiança Varejo (CNC)",
-      "valor": "102,6 pts",
-      "cor": "up",
-      "sub": "Índice de Confiança do Empresário do Comércio (ICEC) em junho de 2026, segundo CNC."
+      "label": "Varejo (PMC)",
+      "valor": "-1,5%",
+      "cor": "neutral",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
     },
     {
       "label": "PIM (Indústria)",
       "valor": "-0,2%",
       "cor": "down",
-      "sub": "Variação da produção industrial em maio de 2026, frente a abril, segundo IBGE."
+      "sub": "Produção física m/m · acum. ano 0,2% · IBGE mai/26"
     },
     {
-      "label": "IPP (IBGE)",
+      "label": "IPP",
       "valor": "-0,30%",
       "cor": "neutral",
-      "sub": "Sem divulgação nesta semana; último dado conhecido (Semana 26 · Junho 2026).",
-      "herdado_de": "Semana 26 · Junho 2026"
+      "sub": "Preços ao produtor m/m · acum. ano 4,80% · IBGE mai/26"
     }
   ],
   "longitudinal": [
@@ -449,7 +448,7 @@
         "transversal"
       ],
       "status": "em_curso",
-      "relevancia": 86.0,
+      "relevancia": 86,
       "ultima_observacao": "A proposta de novas tarifas dos EUA sobre produtos brasileiros avançou para uma fase decisiva nesta semana, com a realização de audiências públicas em Washington. A CNI e representantes do setor produtivo brasileiro apresentaram argumentos contra a medida, que pode impactar significativamente as exportações. A decisão final é aguardada para 15 de julho.",
       "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-02",
@@ -533,7 +532,7 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 62.0,
+      "relevancia": 62,
       "ultima_observacao": "O otimismo na indústria da construção se consolidou em junho, com a Sondagem da CNI e CBIC indicando que os empresários voltaram a projetar crescimento no lançamento de novos empreendimentos e serviços, além de melhoria nas expectativas de emprego e investimentos.",
       "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-02",

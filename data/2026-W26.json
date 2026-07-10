@@ -285,7 +285,7 @@
       "nome": "Político",
       "tema": "Impacto de Políticas Comerciais e Fiscais",
       "texto": "A proposta de novas tarifas dos EUA sobre produtos brasileiros continua a gerar incerteza e impactar negativamente as expectativas de exportação da indústria nacional. No âmbito doméstico, a arrecadação federal recorde em maio, impulsionada por mudanças tributárias e a exploração de petróleo, demonstra a eficácia das políticas fiscais recentes, mas também a dependência de setores específicos.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "transversal",
         "industria"
@@ -321,7 +321,7 @@
       "nome": "Tecnológico",
       "tema": "Avanço da Digitalização e Investimento em IA no Setor Financeiro",
       "texto": "O setor bancário brasileiro demonstra um forte compromisso com a transformação digital, com um investimento projetado de R$ 50,4 bilhões em tecnologia para 2026. Inteligência Artificial, computação em nuvem e cibersegurança são as principais áreas de foco, indicando uma aceleração na adoção de tecnologias avançadas para otimização de processos e melhoria da experiência do cliente.",
-      "score": 8.0,
+      "score": 8,
       "setores": [
         "servicos",
         "transversal"
@@ -332,7 +332,7 @@
       "nome": "Ambiental",
       "tema": "Desafios da Descarbonização e Financiamento Climático",
       "texto": "Um estudo da Fiesp/CNI destaca os desafios da descarbonização da indústria brasileira, especialmente em setores energointensivos, apontando a necessidade de tecnologias como hidrogênio verde e captura de carbono. Paralelamente, a Febraban reforça o papel crucial do setor financeiro na mobilização de capital privado para a transição climática, alinhando a agenda ESG com investimentos concretos. A manutenção da bandeira tarifária amarela na energia elétrica também reflete as condições hidrológicas e a necessidade de acionamento de termelétricas.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "industria",
         "servicos",
@@ -355,45 +355,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25%",
-      "cor": "up",
-      "sub": "Redução de 0,25 p.p. em 17/06/2026."
+      "valor": "14,25% a.a.",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "IPCA-15",
-      "valor": "0,41%",
+      "label": "IPCA",
+      "valor": "0,58%",
       "cor": "neutral",
-      "sub": "Variação em junho/2026 (div. 25/06/2026). Acumulado 12 meses: 4,80%."
+      "sub": "Mês · acum. ano 3,20% · 12m 4,72% · IBGE mai/26"
     },
     {
-      "label": "Câmbio (dólar)",
-      "valor": "Estável/Volátil",
-      "cor": "neutral",
-      "sub": "Sem dado específico para a semana. Preços do Brent perto de US$ 73/barril."
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,17",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB/SGS"
     },
     {
-      "label": "Desemprego (PNAD)",
-      "valor": "Não divulgado",
+      "label": "Desemprego",
+      "valor": "5,8%",
       "cor": "neutral",
-      "sub": "Dados para maio/junho de 2026 não divulgados no período."
+      "sub": "PNAD Contínua · IBGE · fev-mar-abr 2026"
     },
     {
-      "label": "Varejo (PMC/IBGE)",
-      "valor": "Não divulgado",
+      "label": "Varejo (PMC)",
+      "valor": "-1,5%",
       "cor": "neutral",
-      "sub": "Dados para maio/junho de 2026 não divulgados no período."
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
     },
     {
       "label": "PIM (Indústria)",
       "valor": "0,7%",
-      "cor": "up",
-      "sub": "Crescimento da produção industrial em abril/2026 (div. 03/06/2026)."
+      "cor": "neutral",
+      "sub": "Produção física m/m · acum. ano 2,7% · IBGE abr/26"
     },
     {
       "label": "IPP",
-      "valor": "-0,30%",
-      "cor": "up",
-      "sub": "Variação dos preços na porta da fábrica em maio/2026 (div. 30/06/2026)."
+      "valor": "2,62%",
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano 5,12% · IBGE abr/26"
     }
   ],
   "longitudinal": [
@@ -407,7 +407,7 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 100.0,
+      "relevancia": 100,
       "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes. Embora a confiança do comércio tenha apresentado uma leve alta em junho, a percepção dos varejistas sobre as condições econômicas atuais ainda é de piora, indicando que a cautela persiste entre os consumidores.",
       "periodo_observacao": "2026-W26",
       "data_identificacao": "2026-07-01",
@@ -424,7 +424,7 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 76.0,
+      "relevancia": 76,
       "ultima_observacao": "A aceleração da adoção de Inteligência Artificial por PMEs e grandes empresas segue em curso. O setor bancário, conforme a Pesquisa Febraban de Tecnologia Bancária 2026, prioriza a IA, com um crescimento de 39% nos investimentos na área. A IA é vista como central para ganhos de eficiência e diferenciação competitiva, inclusive na experiência do cliente.",
       "periodo_observacao": "2026-W26",
       "data_identificacao": "2026-07-01",

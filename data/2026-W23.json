@@ -92,7 +92,7 @@
       "nome": "Social",
       "tema": "Digitalização do Consumo e Endividamento",
       "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), divulgada em 26 de junho, revelou que 83% das transações bancárias são digitais, com 78% via mobile, consolidando a preferência dos consumidores por canais digitais. A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes, influenciando a confiança do comércio.",
-      "score": 8.0,
+      "score": 8,
       "setores": [
         "comercio",
         "servicos",
@@ -104,7 +104,7 @@
       "nome": "Tecnológico",
       "tema": "Investimento em Tecnologia Bancária e IA",
       "texto": "O setor bancário brasileiro prevê um orçamento de R$ 50,4 bilhões em tecnologia para 2026, um aumento de 8% em relação ao ano anterior. Tecnologias emergentes como Inteligência Artificial (IA) e computação em nuvem (cloud) são protagonistas nos planejamentos orçamentários, com a IA sendo utilizada por 77% dos bancos para análise de riscos cibernéticos.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "servicos",
         "transversal"
@@ -126,7 +126,7 @@
       "nome": "Legal",
       "tema": "Regulação de Tarifas de Energia e Gás",
       "texto": "A ANEEL aprovou a revisão tarifária periódica para concessionárias de transmissão de energia em 2026 e projeta um aumento médio de 8,6% nas tarifas de energia elétrica para os consumidores. A ANP intensificou o combate a preços abusivos de combustíveis e suspendeu o debate sobre mudanças nas regras de venda do gás de cozinha, indicando um cenário regulatório dinâmico nos setores de energia e combustíveis.",
-      "score": 6.0,
+      "score": 6,
       "setores": [
         "industria",
         "comercio",
@@ -138,45 +138,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "10,50%",
+      "valor": "14,50% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros mantida na reunião do COPOM de maio de 2026."
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "IPCA (Abril)",
+      "label": "IPCA",
       "valor": "0,67%",
+      "cor": "neutral",
+      "sub": "Mês · acum. ano 2,60% · 12m 4,39% · IBGE abr/26"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,12",
       "cor": "down",
-      "sub": "Variação mensal do Índice Nacional de Preços ao Consumidor Amplo em abril de 2026, divulgado em 12/05/2026."
+      "sub": "Dólar PTAX venda · BCB/SGS"
     },
     {
-      "label": "Câmbio (Dólar)",
-      "valor": "R$ 5,20",
+      "label": "Desemprego",
+      "valor": "5,8%",
       "cor": "neutral",
-      "sub": "Cotação média do dólar comercial na semana de 01 a 05 de junho de 2026 (estimado)."
+      "sub": "PNAD Contínua · IBGE · fev-mar-abr 2026"
     },
     {
-      "label": "Desemprego (PNAD)",
-      "valor": "7,5%",
+      "label": "Varejo (PMC)",
+      "valor": "0,7%",
       "cor": "neutral",
-      "sub": "Taxa de desocupação no trimestre encerrado em abril de 2026, divulgado em 29/05/2026."
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,4% · IBGE mar/26"
     },
     {
-      "label": "Varejo (PMC/Abril)",
-      "valor": "0,9%",
+      "label": "PIM (Indústria)",
+      "valor": "0,7%",
       "cor": "up",
-      "sub": "Variação do Volume de Vendas do Comércio Varejista em abril de 2026, divulgado em 12/06/2026 (informação disponível na semana seguinte)."
+      "sub": "Produção física m/m · acum. ano 2,7% · IBGE abr/26"
     },
     {
-      "label": "PIM (Indústria/Abril)",
-      "valor": "0,3%",
-      "cor": "neutral",
-      "sub": "Variação da Produção Industrial em abril de 2026, divulgado em 04/06/2026."
-    },
-    {
-      "label": "IPP (Abril)",
+      "label": "IPP",
       "valor": "2,62%",
-      "cor": "down",
-      "sub": "Variação mensal do Índice de Preços ao Produtor em abril de 2026, divulgado em 29/05/2026."
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano 5,12% · IBGE abr/26"
     }
   ],
   "longitudinal": [
@@ -190,7 +190,7 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 100.0,
+      "relevancia": 100,
       "ultima_observacao": "A queda na confiança do comércio em maio de 2026, impulsionada pela piora nas avaliações sobre o presente, reforça a persistência da cautela do consumidor e do endividamento familiar. O cenário macroeconômico desfavorável ao varejo continua a impactar as expectativas do setor.",
       "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",
@@ -206,7 +206,7 @@
         "transversal"
       ],
       "status": "em_curso",
-      "relevancia": 73.0,
+      "relevancia": 73,
       "ultima_observacao": "A Sondagem Industrial da CNI para junho de 2026, divulgada em 22-24 de junho, mostrou uma projeção de queda nas exportações industriais para os próximos seis meses, pela primeira vez no ano, devido à proposta de novas tarifas dos EUA sobre produtos brasileiros. Embora a notícia tenha sido publicada após a semana em questão, a iminência da medida já impactava as expectativas do setor.",
       "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-02",
@@ -223,7 +223,7 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 70.0,
+      "relevancia": 70,
       "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), embora divulgada em 26 de junho, destaca a consolidação da digitalização, com 83% das transações bancárias sendo digitais e 78% via mobile. Os investimentos em tecnologia, incluindo 'Technology as a Service' (TaaS), continuam em alta no setor bancário.",
       "periodo_observacao": "2026-W23",
       "data_identificacao": "2026-07-01",

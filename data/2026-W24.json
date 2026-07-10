@@ -12,45 +12,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,50%",
+      "valor": "14,50% a.a.",
       "cor": "neutral",
-      "sub": "vigente na semana"
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "IPCA-15",
-      "valor": "0,41%",
-      "cor": "down",
-      "sub": "junho/2026"
-    },
-    {
-      "label": "Câmbio",
-      "valor": "R$ 5,41",
+      "label": "IPCA",
+      "valor": "0,58%",
       "cor": "up",
-      "sub": "média USD/BRL na semana"
+      "sub": "Mês · acum. ano 3,20% · 12m 4,72% · IBGE mai/26"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,08",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB/SGS"
     },
     {
       "label": "Desemprego",
       "valor": "5,8%",
-      "cor": "up",
-      "sub": "PNAD Contínua (Fev-Abr/2026)"
+      "cor": "neutral",
+      "sub": "PNAD Contínua · IBGE · fev-mar-abr 2026"
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "+0,5%",
-      "cor": "up",
-      "sub": "março/2026 (var. mensal)"
+      "valor": "0,7%",
+      "cor": "neutral",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,4% · IBGE mar/26"
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "+0,7%",
-      "cor": "up",
-      "sub": "abril/2026 (var. mensal)"
+      "valor": "0,7%",
+      "cor": "neutral",
+      "sub": "Produção física m/m · acum. ano 2,7% · IBGE abr/26"
     },
     {
       "label": "IPP",
-      "valor": "+2,63%",
-      "cor": "up",
-      "sub": "abril/2026 (var. mensal)"
+      "valor": "2,62%",
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano 5,12% · IBGE abr/26"
     }
   ],
   "longitudinal": [

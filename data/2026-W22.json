@@ -275,7 +275,7 @@
       "nome": "Político",
       "tema": "Reforma Tributária e Programas Governamentais",
       "texto": "A prorrogação do prazo para sugestões ao regulamento do IBS e a instituição de um Grupo de Trabalho Interministerial para o split payment indicam o avanço na regulamentação da Reforma Tributária. Além disso, programas governamentais continuam impulsionando o crédito direcionado, como o FGI para PJs e o Minha Casa, Minha Vida para PFs, demonstrando a atuação do governo na economia. A ANEEL também demonstra atividade regulatória significativa na gestão de tarifas de energia.",
-      "score": 8.0,
+      "score": 8,
       "setores": [
         "transversal"
       ]
@@ -310,7 +310,7 @@
       "nome": "Tecnológico",
       "tema": "Digitalização e Inovação nos Setores",
       "texto": "A digitalização continua sendo um pilar fundamental, com a Febraban revelando que 83% das transações bancárias são digitais e investimentos significativos em cibersegurança e TI. A Fecomércio MG promoveu o 'Innovation Day' e debates sobre Inteligência Artificial no comércio e serviços, indicando a crescente relevância da tecnologia para a competitividade e transformação dos negócios.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "industria",
         "comercio",
@@ -333,7 +333,7 @@
       "nome": "Legal",
       "tema": "Regulamentação Tributária e Fiscalização",
       "texto": "A Receita Federal está ativamente engajada na regulamentação da Reforma Tributária, prorrogando prazos para contribuições sobre o IBS. Além disso, a intensificação das ações de cobrança de pendências no Imposto de Renda demonstra um foco na conformidade fiscal. A ANEEL também atua na regulamentação e homologação de tarifas e repasses no setor de energia elétrica.",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "transversal"
       ]
@@ -342,45 +342,45 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,50%",
+      "valor": "14,50% a.a.",
       "cor": "neutral",
-      "sub": "Taxa mantida na reunião anterior do Copom; nova decisão aguardada na semana seguinte à de referência (Maio/2026)."
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
     },
     {
-      "label": "IPCA (Maio)",
-      "valor": "0,58%",
-      "cor": "down",
-      "sub": "Variação mensal em maio/2026. Acumulado 12 meses: 4,72%, acima do teto da meta."
-    },
-    {
-      "label": "Câmbio (Dólar)",
-      "valor": "N/D",
+      "label": "IPCA",
+      "valor": "0,67%",
       "cor": "neutral",
-      "sub": "Não há valor pontual para a semana. O IPP de maio menciona 'apreciação do real frente ao dólar'."
+      "sub": "Mês · acum. ano 2,60% · 12m 4,39% · IBGE abr/26"
     },
     {
-      "label": "Desemprego (PNAD)",
-      "valor": "5,6%",
-      "cor": "up",
-      "sub": "Taxa de desocupação no trimestre Mar-Mai/2026, menor para o período desde 2012."
-    },
-    {
-      "label": "Varejo (PMC/IBGE)",
-      "valor": "N/D",
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,06",
       "cor": "neutral",
-      "sub": "Dados nacionais para maio/2026 ainda não divulgados. Em MG, varejo ampliado cresceu 11% em março/2026 (vs. mar/2025)."
+      "sub": "Dólar PTAX venda · BCB/SGS"
     },
     {
-      "label": "Prod. Ind. (PIM-PF)",
-      "valor": "N/D",
+      "label": "Desemprego",
+      "valor": "5,8%",
       "cor": "neutral",
-      "sub": "Dados nacionais para maio/2026 ainda não divulgados. IPP da indústria registrou queda de 0,30% em maio/2026."
+      "sub": "PNAD Contínua · IBGE · fev-mar-abr 2026"
     },
     {
-      "label": "IPP (Indústria)",
-      "valor": "-0,30%",
+      "label": "Varejo (PMC)",
+      "valor": "0,7%",
       "cor": "neutral",
-      "sub": "Variação mensal em maio/2026, revertendo alta anterior."
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,4% · IBGE mar/26"
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "0,3%",
+      "cor": "neutral",
+      "sub": "Produção física m/m · acum. ano 4,4% · IBGE mar/26"
+    },
+    {
+      "label": "IPP",
+      "valor": "2,62%",
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano 5,12% · IBGE abr/26"
     }
   ],
   "longitudinal": [
@@ -394,7 +394,7 @@
         "transversal"
       ],
       "status": "monitorar",
-      "relevancia": 100.0,
+      "relevancia": 100,
       "ultima_observacao": "Não houve menções a desdobramentos sobre propostas de novas tarifas dos EUA sobre produtos brasileiros nas fontes desta semana.",
       "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-02",
@@ -459,7 +459,7 @@
         "transversal"
       ],
       "status": "em_curso",
-      "relevancia": 49.0,
+      "relevancia": 49,
       "ultima_observacao": "O crescimento da carteira de crédito direcionado, impulsionado por programas governamentais como o Minha Casa, Minha Vida e o FGI, sugere a materialização de políticas de incentivo ao crédito que podem auxiliar na prevenção da inadimplência. A antecipação do 13º salário também é um fator de alívio temporário para as famílias.",
       "periodo_observacao": "2026-W22",
       "data_identificacao": "2026-07-02",
