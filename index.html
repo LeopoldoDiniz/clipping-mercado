@@ -95,6 +95,16 @@
   .wkchip.on{color:var(--ink);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
   .wkchip .pp{font-size:10px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em}
   .wkchip.on .pp{color:var(--accent)}
+  .manchete{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--ink);margin:0 0 13px}
+  .hl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:0 0 13px}
+  @media (max-width:680px){.hl-row{grid-template-columns:1fr}}
+  .hl{border-left:3px solid var(--c,var(--accent));padding:1px 0 1px 11px}
+  .hl-t{font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:var(--c,var(--ink-3))}
+  .hl-x{font-size:12.5px;color:var(--ink);line-height:1.36;margin-top:3px}
+  .leitura-p{font-size:13px;color:var(--ink-2);line-height:1.55;margin:0}
+  .more{background:none;border:0;color:var(--accent);font:600 12px var(--sans);cursor:pointer;padding:0 0 0 3px;white-space:nowrap}
+  .more:hover{text-decoration:underline}
+  .clamp-rest[hidden]{display:none}
   .tab{flex:0 0 auto;padding:7px 12px;border:1px solid var(--border);background:var(--surface);border-radius:99px;
     font-size:12.5px;font-weight:600;color:var(--ink-2);cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap}
   .tab:hover{border-color:var(--border-strong);color:var(--ink)}
@@ -744,7 +754,7 @@ function evCard(n){
   return `<a class="ev" href="${n.url||'#'}" target="_blank" rel="noopener">
     <h5>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h5>
     <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:7px">${dateChip(n)}${sectorChips(n.setores)}<span class="chip">${DIMS[n.dim]}</span></div>
-    <p>${n.txt}</p>
+    <p>${firstN(n.txt,2)||n.txt}</p>
     <div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}</div>
     <span class="go">Ler na fonte ↗</span></a>`;
 }
@@ -890,6 +900,7 @@ function viewGeral(){
   }
   const agendaList=state.sector==="panorama"?AGENDA:AGENDA.filter(a=>!a.setor||a.setor===state.sector);
   const secTag=state.sector==="panorama"?"":` · <span style="color:${SMETA[state.sector].cor};font-weight:700">${SMETA[state.sector].nome}</span>`;
+  const L=leitura();
   return `${periodBanner()}${previaSetor()}<div class="vg">
     <div class="hero-row">
       <div class="hero2">
@@ -911,12 +922,11 @@ function viewGeral(){
     </div>
 
     <div class="blk">
-      <div class="blk-h">Leitura da semana</div>
-      <div class="card card-pad leitura-q">
-        <div class="lq-wrap">
-          <div class="lq-side"><div class="qmark">“</div><p class="lq">${A.quote}</p></div>
-          <div class="leitura-full">${A.edi.map(p=>`<p>${p}</p>`).join("")}</div>
-        </div>
+      <div class="blk-h">Leitura da seleção${secTag} <span class="audit-hint">▸ segue período e setor</span></div>
+      <div class="card card-pad">
+        <p class="manchete">“${L.manchete}”</p>
+        ${L.H.length?`<div class="hl-row">${L.H.map(h=>`<div class="hl" style="--c:${h.cor}"><div class="hl-t">${h.tag}</div><div class="hl-x">${h.txt}</div></div>`).join("")}</div>`:""}
+        <p class="leitura-p">${L.full?clampFull(L.paragrafo,L.full,"ver análise completa"):L.paragrafo}</p>
       </div>
     </div>
 
@@ -961,7 +971,7 @@ function sigList(list){
   return list.map(s=>`<div class="sig ${s.tipo} clickable ${state.pointSig===s.i?'sel':''}" data-sig="${s.i}"><div class="rail"></div><div class="body">
     <h4>${s.t} ${s.mock?'<span class="mock-badge">mock</span>':''}</h4>
     <div class="meta"><span class="st ${s.status}">${s.status.replace("_"," ")}</span><span class="chip">${DIMS[s.dim]}</span>${sectorChips(s.setores)}<span class="rel num">rel ${dec(s.rel,0)}</span></div>
-    <p>${s.obs}</p></div></div>`).join("");
+    <p>${clampText(s.obs)}</p></div></div>`).join("");
 }
 
 function viewPestel(){
@@ -974,7 +984,7 @@ function viewPestel(){
         <span class="chip chip-lg" style="background:var(--accent-soft);color:var(--accent)">${p.dim} · ${DIMS[p.dim]}</span>
         <span class="num" style="font-size:20px;font-weight:700;color:${p.score>=7.5?'var(--risk)':p.score>=6?'var(--warn)':'var(--ink-2)'}">${dec(p.score,1)}</span></div>
       <h4 style="font-size:14px;margin-bottom:6px">${p.tema}</h4>
-      <p style="font-size:13px;color:var(--ink-2);margin:0">${p.texto}</p>
+      <p style="font-size:13px;color:var(--ink-2);margin:0">${clampText(p.texto)}</p>
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px">${sectorChips(p.setores)}</div>
       <div style="margin-top:8px"><span class="audit-hint">▸ ver evidências</span></div></div>`).join("")}
   </div>
@@ -1050,7 +1060,7 @@ function viewPorter(){
 function renderForce(k){
   const p=PORTER[state.sector];const list=newsFor({cadeia:p.cadeia[k],sector:state.sector});
   document.querySelectorAll(".force").forEach(f=>f.classList.toggle("sel",f.dataset.force===k));
-  document.getElementById("forceEvidence").innerHTML=`<div class="eyebrow" style="margin-bottom:6px">${PLABEL[k]}</div>`+(list.length?`<div class="news">${list.map(n=>`<a class="nw" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4><div style="margin-bottom:6px">${dateChip(n)}</div><p>${n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`:`<p style="margin:0;color:var(--ink-3);font-size:13px">Sem matéria diretamente vinculada a esta força nesta semana.</p>`);
+  document.getElementById("forceEvidence").innerHTML=`<div class="eyebrow" style="margin-bottom:6px">${PLABEL[k]}</div>`+(list.length?`<div class="news">${list.map(n=>`<a class="nw" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4><div style="margin-bottom:6px">${dateChip(n)}</div><p>${firstN(n.txt,1)||n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`:`<p style="margin:0;color:var(--ink-3);font-size:13px">Sem matéria diretamente vinculada a esta força nesta semana.</p>`);
 }
 
 function viewTraj(){
@@ -1086,7 +1096,7 @@ function viewNoticias(){
   if(!list.length)return `${periodBanner()}<div class="card card-pad"><p style="color:var(--ink-3);margin:0">Sem notícias para este setor.</p></div>`;
   return `${periodBanner()}<div class="news-grid">${list.map(n=>`<a class="nw-card" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4>
     <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px">${dateChip(n)}${sectorChips(n.setores)}<span class="chip">${DIMS[n.dim]}</span></div>
-    <p>${n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`;
+    <p>${firstN(n.txt,1)||n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`;
 }
 
 // E-commerce: fontes em listas separadas por categoria
@@ -1161,12 +1171,12 @@ function viewMetodologia(){
       <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">Sinais e observações ficam num banco versionado (Supabase). A cada semana o sistema <b>relê a memória inteira</b> — não só a semana corrente — para dar continuidade às trajetórias e ao editorial.</p>
       <p style="font-size:12px;color:var(--ink-3);margin:0">É isso que permite a aba <a href="#" data-goto="trajetorias" style="color:var(--accent);font-weight:600">Trajetórias</a> mostrar a evolução de cada sinal ao longo do tempo.</p></div>
 
-    <div class="card card-pad"><h4 style="margin-bottom:10px">Σ Períodos e agregação</h4>
+    <div class="card card-pad"><h4 style="margin-bottom:10px">Σ Período selecionado e agregação</h4>
       <ul style="font-size:12.5px;color:var(--ink-2);margin:0;padding-left:18px;line-height:1.6">
-        <li><b>Semanal</b>: a edição da semana selecionada.</li>
-        <li><b>Mensal</b>: acumula as semanas do mês vigente (parcial enquanto o mês corre).</li>
-        <li><b>Trimestral / Anual (YTD)</b>: acumulam as semanas do período.</li>
-        <li>Em modo agregado, a relevância exibida é o <b>pico</b> do sinal no período; os KPIs macro mostram o <b>último dado</b> (são de estoque, não se somam).</li></ul></div>
+        <li>Escolha a <b>granularidade</b> (Semana / Mês / Trimestre / Ano) e marque <b>um ou vários</b> itens. O <b>escopo selecionado rege todos os painéis</b>.</li>
+        <li><b>Gráfico</b>: com uma única semana, mostra ela <b>+ a imediatamente anterior</b> (referência); com escopo agregado, mostra <b>apenas as semanas do escopo</b>.</li>
+        <li>Mês/trimestre <b>vigente</b> aparece como <b>parcial</b> (até a última semana apurada).</li>
+        <li>Em escopo agregado, a relevância exibida é o <b>pico</b> do sinal no período; os KPIs macro mostram o <b>último dado do escopo</b> (são de estoque, não se somam).</li></ul></div>
   </div>`;
 }
 
@@ -1175,6 +1185,7 @@ const VIEWS={geral:viewGeral,pestel:viewPestel,riscos:viewRiscos,cadeia:viewCade
 /* ───────── DELEGAÇÃO DE CLIQUES ───────── */
 function markActive(elm){document.querySelectorAll(".ev-active").forEach(x=>x.classList.remove("ev-active"));if(elm)elm.classList.add("ev-active");}
 document.getElementById("view").addEventListener("click",e=>{
+  const more=e.target.closest("[data-more]");if(more){e.preventDefault();e.stopPropagation();const w=more.closest(".clampw");const rest=w&&w.querySelector(".clamp-rest");if(rest){if(rest.hasAttribute("hidden")){rest.removeAttribute("hidden");more.textContent="ver menos";}else{rest.setAttribute("hidden","");more.textContent=more.dataset.more||"ver mais";}}return;}
   const goto=e.target.closest("[data-goto]");if(goto){e.preventDefault();state.lens=goto.dataset.goto;render();scrollTo({top:0,behavior:"smooth"});return;}
   const kpiI=e.target.closest("[data-kpi]");if(kpiI){const k=KPIS.find(x=>x.id===kpiI.dataset.kpi);markActive(kpiI.closest(".kpi"));openDrawer("Indicador",k.label,[]);document.getElementById("drawerBody").innerHTML=`<div style="padding:14px 0"><p style="font-size:13.5px;color:var(--ink-2)">${k.info}</p><div class="legend" style="margin-top:10px">${k.sub}</div><a href="#" data-goto="metodologia" style="display:inline-block;margin-top:12px;color:var(--accent);font-weight:600;font-size:12.5px">Ver metodologia completa →</a></div>`;return;}
   const sig=e.target.closest("[data-sig]");if(sig){const s=SIGNALS[+sig.dataset.sig];markActive(sig);openDrawer("Evidências do sinal",s.t,newsForSig(s));return;}
@@ -1278,8 +1289,12 @@ function adaptSignals(long){return (long||[]).map(l=>{
   // impacto/iminência REAIS quando o motor os fornece (severidade/iminencia 0–10);
   // caso contrário, estimados por relevância e status.
   const real=(l.severidade!=null&&l.iminencia!=null);
-  const imp=real?Math.max(1,Math.min(10,Math.round(l.severidade))):Math.max(1,Math.min(10,Math.round(rel/10)));
-  const imi=real?Math.max(1,Math.min(10,Math.round(l.iminencia))):(l.status==="materializado"?9:(l.status==="em_curso"?6:3));
+  const cl=v=>Math.max(1,Math.min(10,v)),r1=v=>Math.round(v*10)/10;
+  // impacto/iminência CONTÍNUOS (1 casa) — evita quantização que empilha pontos.
+  const imp=r1(real?cl(l.severidade):cl(rel/10));
+  // iminência estimada: âncora por status + deslocamento pela relevância (espalha o cluster).
+  const imiBase=l.status==="materializado"?8.8:(l.status==="em_curso"?5.8:3.2);
+  const imi=r1(real?cl(l.iminencia):cl(imiBase+(rel-60)/60*1.4));
   const text=l.titulo+" "+(l.ultima_observacao||"");
   const traj=CHRONO.map(w=>{const hit=(longByWeek[w.k]||[]).find(x=>x.id===l.id);return hit?[w.k,hit.status,Math.round(hit.relevancia)]:null;}).filter(Boolean);
   return {t:l.titulo,tipo:l.tipo,dim:l.dimensao,setores:l.setores||[],status:l.status,rel,imp,imi,
@@ -1299,6 +1314,59 @@ function ediParas(t){if(!t)return[];const nl=t.split(/\n+/).map(s=>s.trim()).fil
   const s=t.split(/(?<=[.!?])\s+/);if(s.length<3)return[t];const mid=Math.ceil(s.length/2);return [s.slice(0,mid).join(" "),s.slice(mid).join(" ")];}
 function firstSentence(t){const m=/^[\s\S]*?[.!?](\s|$)/.exec(t||"");let s=m?m[0].trim():(t||"");if(s.length>210)s=s.slice(0,207)+"…";return s;}
 function provFromData(){const l=sigs();if(!l.length)return HERO.provocacao;const t=l[0];return `${t.t}: o que isso muda para o seu negócio nesta semana?`;}
+// primeiras n frases de um texto
+function firstN(t,n){const s=(t||"").split(/(?<=[.!?])\s+/).map(x=>x.trim()).filter(Boolean);return s.slice(0,n).join(" ");}
+// recorte: highlight (1 frase) + resto recolhível atrás de "ver mais" (dado aberto preservado, auditável)
+function clampText(t){
+  t=(t||"").trim();if(!t)return"";
+  const s=t.split(/(?<=[.!?])\s+/).map(x=>x.trim()).filter(Boolean);
+  const head=s[0]||t;
+  if(s.length<=1||head.length>=t.length-2||t.length<=170)return `<span>${t}</span>`;
+  const rest=t.slice(head.length).trim();
+  return `<span class="clampw"><span>${head}</span><span class="clamp-rest" hidden> ${rest}</span> <button class="more" data-more type="button">ver mais</button></span>`;
+}
+// highlight (head) + texto completo distinto recolhível, com rótulo próprio
+function clampFull(head,full,label){
+  head=(head||"").trim();full=(full||"").trim();
+  if(!full||full.length<=head.length+2)return full||head;
+  const rest=full.slice(head.length).trim()||full;
+  const lb=label||"ver mais";
+  return `<span class="clampw"><span>${head}</span><span class="clamp-rest" hidden> ${rest}</span> <button class="more" data-more="${lb}" type="button">${lb}</button></span>`;
+}
+// leitura da seleção: manchete + 3 highlights + parágrafo curto — segue ESCOPO (período) e SETOR
+function leitura(){
+  const sec=state.sector,isPan=sec==="panorama",list=sigs();
+  const top=list[0],risco=list.find(s=>s.tipo==="risco"),opp=list.find(s=>s.tipo==="oportunidade");
+  const nome=isPan?"Panorama":SMETA[sec].nome;
+  let manchete;
+  if(DATA_LOADED)manchete=isPan?firstN(EDITORIAL,1):(top?`${nome}: ${top.t}.`:`${nome}: leitura da seleção.`);
+  else manchete=isPan?LEITURA.quote:((SETOR_ANALISE[sec]||{}).quote||LEITURA.quote);
+  const H=[];
+  if(top)H.push({tag:top.tipo==="risco"?"Destaque · risco":"Destaque · oportunidade",txt:top.t,cor:top.tipo==="risco"?"var(--risk)":"var(--opp)"});
+  if(risco&&risco!==top)H.push({tag:"Maior risco",txt:risco.t,cor:"var(--risk)"});
+  if(opp&&opp!==top)H.push({tag:"Maior oportunidade",txt:opp.t,cor:"var(--opp)"});
+  let paragrafo,full=null;
+  if(DATA_LOADED){
+    if(isPan){full=EDITORIAL;paragrafo=firstN(EDITORIAL,3);}
+    else{paragrafo=leituraSetorial(sec,list);}
+  }else{
+    const base=isPan?ediParas(EDITORIAL):((SETOR_ANALISE[sec]||{}).edi||ediParas(EDITORIAL));
+    full=base.join(" ");paragrafo=firstN(full,3);
+  }
+  return {manchete,H,paragrafo,full,nome};
+}
+// parágrafo setorial derivado dos sinais reais do escopo (factual, não fabricado)
+function leituraSetorial(sec,list){
+  const nome=SMETA[sec].nome,P=pressao();
+  const tom=P>=65?"ambiente tensionado":P>=45?"ambiente neutro":"ambiente de alívio";
+  const r=list.filter(s=>s.tipo==="risco").slice(0,2).map(s=>s.t);
+  const o=list.filter(s=>s.tipo==="oportunidade").slice(0,2).map(s=>s.t);
+  let out=`Em ${nome}: ${tom} (pressão ${P}/100).`;
+  if(r.length)out+=` Riscos em foco — ${r.join("; ")}.`;
+  if(o.length)out+=` Oportunidades — ${o.join("; ")}.`;
+  if(!r.length&&!o.length)out+=" Sem sinais próprios do setor na seleção; veja os transversais abaixo.";
+  return out;
+}
 const STOP=new Set("para com uma que dos das nos nas por sobre como mais menos ainda entre este esta esse essa aquele governo semana brasil setor após ante sem sob suas seus pelo pela nova novo novas novos deve podem pode".split(" "));
 const toks=t=>new Set((t||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").split(/[^a-z0-9]+/).filter(w=>w.length>3&&!STOP.has(w)));
 function newsForSig(s){

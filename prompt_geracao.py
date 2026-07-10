@@ -148,6 +148,12 @@ Estrutura exata:
   links de redirecionamento de busca, ou resultados de pesquisa do Google.
 
 # REGRAS GERAIS
+- SÍNTESE OBRIGATÓRIA em TODOS os campos de texto — o painel mostra highlights curtos, ninguém lê parágrafos:
+  * clipping "texto": MÁXIMO 35 palavras (1 a 2 frases factuais, com número/data).
+  * pestel "texto": MÁXIMO 30 palavras (o essencial da força na semana).
+  * novos_sinais "texto" e atualizacoes_sinais "texto_observacao": MÁXIMO 30 palavras.
+  * porter "nota": UMA frase curta.
+  Corte adjetivos e rodeios. Cada frase carrega informação; nada de generalidades.
 - clipping: 14 a 24 itens, cobrindo os SEIS setores + transversal. Agrupamentos com todas as fontes no array.
 - pestel: sempre as 6 dimensões. score de 0 a 10 = intensidade/relevância da dimensão na semana.
   Nos "setores" de cada dimensão, use qualquer combinação dos seis setores + "transversal".
