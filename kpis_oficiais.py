@@ -192,9 +192,12 @@ def coletar_kpis(ref=None):
                      if (yy, mm) < (y, m)), None)
         acum = _ipca_acum_ano(ipca_m, y, m)
         i12 = next((v for (yy, mm, v, *_ ) in reversed(ipca_12) if (yy, mm) == (y, m)), None)
-        sub = f"Mês · IBGE · {_MABBR[m]}/{str(y)[2:]}"
+        meta_ipca = "meta 3,0% (teto 4,5%)"   # meta contínua de inflação (CMN)
+        sub = f"Mês · {meta_ipca} · IBGE · {_MABBR[m]}/{str(y)[2:]}"
         if acum is not None:
-            sub = f"Mês · acum. ano {_br(acum)}%" + (f" · 12m {_br(i12)}%" if i12 is not None else "") + f" · IBGE {_MABBR[m]}/{str(y)[2:]}"
+            sub = (f"Mês · acum. ano {_br(acum)}%"
+                   + (f" · 12m {_br(i12)}%" if i12 is not None else "")
+                   + f" · {meta_ipca} · IBGE {_MABBR[m]}/{str(y)[2:]}")
         out["ipca"] = {"label": "IPCA", "valor": f"{_br(val)}%",
                        "cor": _cor(val, prev, True), "sub": sub, "fonte": "IBGE",
                        "acum_ano": None if acum is None else round(acum, 2)}
