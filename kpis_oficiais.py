@@ -30,19 +30,30 @@ _MES = {"janeiro": 1, "fevereiro": 2, "março": 3, "marco": 3, "abril": 4,
         "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12}
 
 
-# ─────────────────────────── HTTP com retry ───────────────────────────
-def _get(url, tries=5):
+# ─────────────────────────── HTTP com cache + retry curto ───────────────────────────
+# Cache por URL: a mesma série é reaproveitada entre semanas (backfill chama a
+# coleta várias vezes). Guarda até falhas (None) para não repetir retries lentos.
+_CACHE = {}
+
+
+def _get(url, tries=3):
+    if url in _CACHE:
+        return _CACHE[url]
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=_UA)
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=12) as r:
                 t = r.read().decode("utf-8")
             s = t.strip()
             if s.startswith("[") or s.startswith("{"):
-                return json.loads(s)
+                j = json.loads(s)
+                _CACHE[url] = j
+                return j
         except Exception:
             pass
-        time.sleep(1.5 * (i + 1))
+        if i < tries - 1:
+            time.sleep(1.0 * (i + 1))
+    _CACHE[url] = None
     return None
 
 

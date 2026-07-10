@@ -22,7 +22,7 @@ jobs:
           python-version: "3.12"
 
       - name: Reescrever KPIs históricos com dados oficiais
-        run: python backfill_kpis.py
+        run: python -u backfill_kpis.py
 
       - name: Publicar a base corrigida
         run: |

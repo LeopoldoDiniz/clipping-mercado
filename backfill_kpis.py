@@ -41,6 +41,8 @@ def main():
         return
 
     arquivos.sort(key=lambda t: _ordem(t[0]))  # cronológico
+    print(f"[kpis-backfill] {len(arquivos)} semanas. Buscando séries oficiais BCB/IBGE "
+          f"(1ª semana busca; as demais reusam do cache)...")
     ultimo_chave, ultimo_conteudo = None, None
 
     for chave, fn in arquivos:
