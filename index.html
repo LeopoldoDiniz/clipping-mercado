@@ -68,7 +68,8 @@
     backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
   .row{max-width:1400px;margin:0 auto;padding:0 24px}
   .r-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:11px;padding-bottom:11px}
-  .brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.02em;font-size:19px}
+  .brand{display:flex;align-items:baseline;gap:9px;font-weight:800;letter-spacing:-.02em;font-size:19px}
+  .brand-lead{display:inline-flex;align-items:center;gap:9px}
   .brand-txt{display:flex;flex-direction:column;align-items:flex-start;gap:1px;line-height:1.2}
   .brand-sub{display:flex;align-items:center;gap:9px}
   .brand-by{font-size:11px;font-weight:500;font-style:italic;color:var(--ink-3);letter-spacing:.01em}
@@ -423,7 +424,7 @@
 
 <header class="app-head">
   <div class="row r-top">
-    <div class="brand"><span class="dot"></span>NEXOS<span class="brand-txt"><span class="brand-sub"><small>Inteligência de Mercado</small><span class="ver">v2.0</span></span><span class="brand-by">por Leopoldo Diniz</span></span></div>
+    <div class="brand"><span class="brand-lead"><span class="dot"></span>NEXOS</span><span class="brand-txt"><span class="brand-sub"><small>Inteligência de Mercado</small><span class="ver">v2.0</span></span><span class="brand-by">por Leopoldo Diniz</span></span></div>
     <div class="spacer"></div>
     <span class="eyebrow" id="weekCtx" style="align-self:center"></span>
     <span class="upd" id="updCtx" style="align-self:center"></span>
