@@ -357,7 +357,7 @@
       "label": "SELIC",
       "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS"
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 26/jun"
     },
     {
       "label": "IPCA",
@@ -369,19 +369,19 @@
       "label": "Câmbio (US$)",
       "valor": "R$ 5,17",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB/SGS"
+      "sub": "Dólar PTAX venda · BCB/SGS · 26/jun"
     },
     {
       "label": "Desemprego",
-      "valor": "5,8%",
+      "valor": "5,4%",
       "cor": "neutral",
-      "sub": "PNAD Contínua · IBGE · fev-mar-abr 2026"
+      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026"
     },
     {
       "label": "Varejo (PMC)",
       "valor": "-1,5%",
       "cor": "neutral",
-      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
+      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
     },
     {
       "label": "PIM (Indústria)",

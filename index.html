@@ -132,6 +132,9 @@
   .banner{display:flex;gap:10px;align-items:center;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));
     border-radius:var(--radius-sm);padding:11px 14px;margin-bottom:16px;font-size:12.5px;color:var(--accent-2)}
   :root[data-theme="dark"] .banner{color:var(--accent-2)}
+  .banner.hist{background:var(--surface-2);border:1px solid var(--border-strong);color:var(--ink-2)}
+  :root[data-theme="dark"] .banner.hist{color:var(--ink-2)}
+  .banner.hist span:first-child{font-size:15px;color:var(--ink-3)}
   .note{font-size:12px;color:var(--ink-3);background:var(--surface-2);border:1px dashed var(--border-strong);border-radius:var(--radius-sm);padding:11px 13px;margin-bottom:16px;display:flex;gap:9px;align-items:flex-start}
   .mock-badge{font-size:9px;font-weight:800;letter-spacing:.05em;color:var(--warn);border:1px solid var(--warn);padding:1px 5px;border-radius:4px;text-transform:uppercase}
 
@@ -844,6 +847,8 @@ function renderPeriodBar(){
 
 /* ───────── VIEWS ───────── */
 function periodBanner(){const {nota}=periodScope();return nota?`<div class="banner"><span>Σ</span><div>${nota}</div></div>`:"";}
+// marcação de indisponibilidade de busca retroativa de notícias (semanas anteriores ao motor)
+function histBanner(){if(!HIST_ONLY)return"";return `<div class="banner hist"><span>⧗</span><div><b>Busca retroativa de notícias indisponível.</b> Para semanas anteriores à <b>Semana 22</b> (início do motor), a cobertura de clipping/sinais <b>não é reproduzível de forma confiável</b> — a apuração retroativa não passa no nosso padrão de auditoria. Você vê os <b>indicadores oficiais (BCB/IBGE)</b> e a <b>leitura macro derivada</b> deles.</div></div>`;}
 
 const KC={up:"var(--opp)",down:"var(--risk)",neutral:"var(--neutral)"};
 function kpiItems(){
@@ -905,7 +910,7 @@ function viewGeral(){
   const agendaList=state.sector==="panorama"?AGENDA:AGENDA.filter(a=>!a.setor||a.setor===state.sector);
   const secTag=state.sector==="panorama"?"":` · <span style="color:${SMETA[state.sector].cor};font-weight:700">${SMETA[state.sector].nome}</span>`;
   const L=leitura();
-  return `${periodBanner()}${previaSetor()}<div class="vg">
+  return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
     <div class="hero-row">
       <div class="hero2">
         <div class="eyebrow">${HERO.eyebrow}${secTag}</div>
@@ -980,7 +985,7 @@ function sigList(list){
 
 function viewPestel(){
   const list=pestel();
-  return `${periodBanner()}
+  return `${periodBanner()}${histBanner()}
   <div class="note"><span>▸</span><div>Clique numa <b>dimensão</b> ou numa <b>célula</b> do mapa para ver as notícias que a sustentam.</div></div>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
     ${list.map(p=>`<div class="card card-pad clickable" data-dim="${p.dim}">
@@ -1020,7 +1025,7 @@ function viewRiscos(){
   const col=(titulo,cor,ico,arr)=>`<div class="card card-pad">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="eyebrow" style="color:${cor}">${ico} ${titulo} (${arr.length})</span></div>
     ${arr.length?sigList(arr):'<p style="color:var(--ink-3);font-size:12.5px;margin:0">— nenhum nesta seleção</p>'}</div>`;
-  return `${periodBanner()}
+  return `${periodBanner()}${histBanner()}
   <div class="note"><span>▸</span><div><b>Matriz Risco × Oportunidade</b> — posição por <b>Impacto</b> (vertical) × <b>Iminência</b> (horizontal). Clique num <b>ponto</b> para filtrar; clique numa <b>prioridade</b> para ver as notícias.${(DATA_LOADED&&!MATRIX_REAL)?' <b>Eixos estimados</b> a partir da relevância e do status até o motor gerar impacto/iminência nativos.':''}</div></div>
   <div class="matrix-holder matrix-full"><span class="ax-y">Impacto →</span>
     <div class="matrix"><span class="quad q-tl">Preparar</span><span class="quad q-tr">Agir agora</span><span class="quad q-bl">Observar</span><span class="quad q-br">Monitorar de perto</span>${pts}</div>
@@ -1035,7 +1040,7 @@ function viewRiscos(){
 
 function viewCadeia(){
   const list=sigs();
-  return `${periodBanner()}
+  return `${periodBanner()}${histBanner()}
   <div class="note"><span>▸</span><div><b>Cadeia de Impacto Operacional</b> — reagrupa os sinais pelos vetores que a PME sente no caixa. Clique num <b>balde</b> para as notícias que o embasam.</div></div>
   <div class="cadeia">
     ${CADEIA.map(b=>{const items=list.filter(s=>s.cadeia===b.id);
@@ -1051,7 +1056,7 @@ function viewPorter(){
   const m=SMETA[state.sector],p=PORTER[state.sector];
   if(!p)return `<div class="card card-pad"><p style="margin:0;color:var(--ink-3)">Estrutura em preparação.</p></div>`;
   const bar=v=>`<div class="gauge" style="--v:${v*10};background:var(--surface-3)"><i style="background:${m.cor}"></i></div>`;
-  return `${periodBanner()}
+  return `${periodBanner()}${histBanner()}
   <div class="note"><span>▸</span><div><b>Estrutura competitiva — ${m.nome}</b> ${PORTER_REAL?'':'<span class="mock-badge">preview</span> Intensidades ilustrativas (0–10).'} Avaliação estrutural das 5 forças (0–10); muda devagar. Clique numa <b>força</b> para ver as notícias abaixo.${p.nota?`<div style="margin-top:6px;color:var(--ink-2)">${p.nota}</div>`:''}</div></div>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
     ${Object.keys(PLABEL).map(k=>`<div class="card card-pad force clickable" data-force="${k}">
@@ -1069,7 +1074,7 @@ function renderForce(k){
 
 function viewTraj(){
   const list=sigs().filter(s=>s.traj&&s.traj.length);
-  return `${periodBanner()}
+  return `${periodBanner()}${histBanner()}
   <div class="note"><span>▸</span><div><b>Trajetórias</b> — como cada sinal evoluiu ao longo das semanas. Clique num card para abrir o <b>histórico completo com as notícias</b> de cada semana.</div></div>
   <div class="card card-pad">
   ${list.map(s=>`<div class="traj" data-traj="${s.i}">
@@ -1097,8 +1102,8 @@ function openTraj(idx){
 
 function viewNoticias(){
   const list=news();
-  if(!list.length)return `${periodBanner()}<div class="card card-pad"><p style="color:var(--ink-3);margin:0">Sem notícias para este setor.</p></div>`;
-  return `${periodBanner()}<div class="news-grid">${list.map(n=>`<a class="nw-card" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4>
+  if(!list.length)return `${periodBanner()}${histBanner()}<div class="card card-pad"><p style="color:var(--ink-3);margin:0">${HIST_ONLY?"Sem clipping nesta semana — apenas indicadores oficiais (veja a aba Panorama).":"Sem notícias para este setor."}</p></div>`;
+  return `${periodBanner()}${histBanner()}<div class="news-grid">${list.map(n=>`<a class="nw-card" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4>
     <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px">${dateChip(n)}${sectorChips(n.setores)}<span class="chip">${DIMS[n.dim]}</span></div>
     <p>${firstN(n.txt,1)||n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`;
 }
@@ -1223,7 +1228,7 @@ document.addEventListener("click",e=>{
    O que o motor NÃO entrega ainda (impacto/iminência da matriz, cadeia, agenda,
    decomposição do IPCA, "o que fazer", setores Agro/Construção/E-commerce) é
    DERIVADO ou permanece como conteúdo editorial marcado, até a evolução do motor. */
-let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, longByWeek={};
+let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, longByWeek={};
 const MABBR=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const MFULL=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
 const pad2=n=>String(n).padStart(2,"0");
@@ -1343,15 +1348,18 @@ function leitura(){
   const top=list[0],risco=list.find(s=>s.tipo==="risco"),opp=list.find(s=>s.tipo==="oportunidade");
   const nome=isPan?"Panorama":SMETA[sec].nome;
   let manchete;
-  if(DATA_LOADED)manchete=isPan?firstN(EDITORIAL,1):(top?`${nome}: ${top.t}.`:`${nome}: leitura da seleção.`);
+  if(DATA_LOADED)manchete=HIST_ONLY?(firstN(EDITORIAL,1)||`${nome}: indicadores oficiais.`):(isPan?firstN(EDITORIAL,1):(top?`${nome}: ${top.t}.`:`${nome}: leitura da seleção.`));
   else manchete=isPan?LEITURA.quote:((SETOR_ANALISE[sec]||{}).quote||LEITURA.quote);
   const H=[];
-  if(top)H.push({tag:top.tipo==="risco"?"Destaque · risco":"Destaque · oportunidade",txt:top.t,cor:top.tipo==="risco"?"var(--risk)":"var(--opp)"});
-  if(risco&&risco!==top)H.push({tag:"Maior risco",txt:risco.t,cor:"var(--risk)"});
-  if(opp&&opp!==top)H.push({tag:"Maior oportunidade",txt:opp.t,cor:"var(--opp)"});
+  if(!HIST_ONLY){
+    if(top)H.push({tag:top.tipo==="risco"?"Destaque · risco":"Destaque · oportunidade",txt:top.t,cor:top.tipo==="risco"?"var(--risk)":"var(--opp)"});
+    if(risco&&risco!==top)H.push({tag:"Maior risco",txt:risco.t,cor:"var(--risk)"});
+    if(opp&&opp!==top)H.push({tag:"Maior oportunidade",txt:opp.t,cor:"var(--opp)"});
+  }
   let paragrafo,full=null;
   if(DATA_LOADED){
-    if(isPan){full=EDITORIAL;paragrafo=firstN(EDITORIAL,3);}
+    if(HIST_ONLY){paragrafo=EDITORIAL||"Indicadores oficiais disponíveis; sem cobertura de clipping nesta semana.";}
+    else if(isPan){full=EDITORIAL;paragrafo=firstN(EDITORIAL,3);}
     else{paragrafo=leituraSetorial(sec,list);}
   }else{
     const base=isPan?ediParas(EDITORIAL):((SETOR_ANALISE[sec]||{}).edi||ediParas(EDITORIAL));
@@ -1395,6 +1403,8 @@ function applyData(sel,allData,metas){
   NEWS=adaptNews(sel.clipping||[],WMETA[sel._k]);
   PORTER_REAL=!!(sel.porter&&Object.keys(sel.porter).length);
   PORTER=PORTER_REAL?mergePorter(sel.porter):PORTER_BASE;
+  // semana histórica: só indicadores oficiais + editorial macro derivado; sem clipping (busca retroativa não confiável)
+  HIST_ONLY=(sel.origem==="indicadores_oficiais")||(sel.busca_retroativa===false);
   DATA_LOADED=true;}
 async function boot(){
   try{

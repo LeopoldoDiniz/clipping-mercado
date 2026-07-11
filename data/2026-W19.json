@@ -1,0 +1,59 @@
+{
+  "periodo": "2026-W19",
+  "label": "Semana 19 · Maio 2026",
+  "gerado_em": "2026-07-11T12:00:00.000Z",
+  "origem": "indicadores_oficiais",
+  "busca_retroativa": false,
+  "editorial": {
+    "texto": "Leitura macro de Maio (semana 19), derivada dos indicadores oficiais: Selic mantida em 14,50% a.a.; o dólar recuou a R$ 4,90; IPCA do mês em 0,88% (acum. ano 1,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "origem": "derivado_indicadores"
+  },
+  "clipping": [],
+  "pestel": [],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "14,50% a.a.",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 8/mai"
+    },
+    {
+      "label": "IPCA",
+      "valor": "0,88%",
+      "cor": "neutral",
+      "sub": "Mês · acum. ano 1,92% · 12m 4,14% · meta 3,0% (teto 4,5%) · IBGE mar/26"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 4,90",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB/SGS · 8/mai"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,4%",
+      "cor": "neutral",
+      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "0,8%",
+      "cor": "neutral",
+      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 1,6% · IBGE fev/26"
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "0,3%",
+      "cor": "down",
+      "sub": "Produção física m/m · acum. ano 4,4% · IBGE mar/26"
+    },
+    {
+      "label": "IPP",
+      "valor": "2,28%",
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano 2,43% · IBGE mar/26"
+    }
+  ],
+  "longitudinal": [],
+  "porter": {}
+}

@@ -1,0 +1,59 @@
+{
+  "periodo": "2026-W03",
+  "label": "Semana 3 · Janeiro 2026",
+  "gerado_em": "2026-07-11T12:00:00.000Z",
+  "origem": "indicadores_oficiais",
+  "busca_retroativa": false,
+  "editorial": {
+    "texto": "Leitura macro de Janeiro (semana 3), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar subiu a R$ 5,38; IPCA do mês em 0,33% (acum. ano 4,26%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "origem": "derivado_indicadores"
+  },
+  "clipping": [],
+  "pestel": [],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "15,00% a.a.",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 16/jan"
+    },
+    {
+      "label": "IPCA",
+      "valor": "0,33%",
+      "cor": "down",
+      "sub": "Mês · acum. ano 4,26% · 12m 4,26% · meta 3,0% (teto 4,5%) · IBGE dez/25"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,38",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB/SGS · 16/jan"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "6,5%",
+      "cor": "neutral",
+      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2025"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "1,1%",
+      "cor": "up",
+      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 1,5% · IBGE nov/25"
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "-0,1%",
+      "cor": "neutral",
+      "sub": "Produção física m/m · acum. ano -1,4% · IBGE nov/25"
+    },
+    {
+      "label": "IPP",
+      "valor": "-0,35%",
+      "cor": "neutral",
+      "sub": "Preços ao produtor m/m · acum. ano -4,64% · IBGE nov/25"
+    }
+  ],
+  "longitudinal": [],
+  "porter": {}
+}

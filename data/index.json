@@ -41,7 +41,133 @@
       "label": "Semana 22 · Maio 2026",
       "arquivo": "2026-W22.json",
       "ordem": 202622
+    },
+    {
+      "chave": "2026-W21",
+      "label": "Semana 21 · Maio 2026",
+      "arquivo": "2026-W21.json",
+      "ordem": 202621
+    },
+    {
+      "chave": "2026-W20",
+      "label": "Semana 20 · Maio 2026",
+      "arquivo": "2026-W20.json",
+      "ordem": 202620
+    },
+    {
+      "chave": "2026-W19",
+      "label": "Semana 19 · Maio 2026",
+      "arquivo": "2026-W19.json",
+      "ordem": 202619
+    },
+    {
+      "chave": "2026-W18",
+      "label": "Semana 18 · Abril 2026",
+      "arquivo": "2026-W18.json",
+      "ordem": 202618
+    },
+    {
+      "chave": "2026-W17",
+      "label": "Semana 17 · Abril 2026",
+      "arquivo": "2026-W17.json",
+      "ordem": 202617
+    },
+    {
+      "chave": "2026-W16",
+      "label": "Semana 16 · Abril 2026",
+      "arquivo": "2026-W16.json",
+      "ordem": 202616
+    },
+    {
+      "chave": "2026-W15",
+      "label": "Semana 15 · Abril 2026",
+      "arquivo": "2026-W15.json",
+      "ordem": 202615
+    },
+    {
+      "chave": "2026-W14",
+      "label": "Semana 14 · Abril 2026",
+      "arquivo": "2026-W14.json",
+      "ordem": 202614
+    },
+    {
+      "chave": "2026-W13",
+      "label": "Semana 13 · Março 2026",
+      "arquivo": "2026-W13.json",
+      "ordem": 202613
+    },
+    {
+      "chave": "2026-W12",
+      "label": "Semana 12 · Março 2026",
+      "arquivo": "2026-W12.json",
+      "ordem": 202612
+    },
+    {
+      "chave": "2026-W11",
+      "label": "Semana 11 · Março 2026",
+      "arquivo": "2026-W11.json",
+      "ordem": 202611
+    },
+    {
+      "chave": "2026-W10",
+      "label": "Semana 10 · Março 2026",
+      "arquivo": "2026-W10.json",
+      "ordem": 202610
+    },
+    {
+      "chave": "2026-W09",
+      "label": "Semana 9 · Fevereiro 2026",
+      "arquivo": "2026-W09.json",
+      "ordem": 202609
+    },
+    {
+      "chave": "2026-W08",
+      "label": "Semana 8 · Fevereiro 2026",
+      "arquivo": "2026-W08.json",
+      "ordem": 202608
+    },
+    {
+      "chave": "2026-W07",
+      "label": "Semana 7 · Fevereiro 2026",
+      "arquivo": "2026-W07.json",
+      "ordem": 202607
+    },
+    {
+      "chave": "2026-W06",
+      "label": "Semana 6 · Fevereiro 2026",
+      "arquivo": "2026-W06.json",
+      "ordem": 202606
+    },
+    {
+      "chave": "2026-W05",
+      "label": "Semana 5 · Janeiro 2026",
+      "arquivo": "2026-W05.json",
+      "ordem": 202605
+    },
+    {
+      "chave": "2026-W04",
+      "label": "Semana 4 · Janeiro 2026",
+      "arquivo": "2026-W04.json",
+      "ordem": 202604
+    },
+    {
+      "chave": "2026-W03",
+      "label": "Semana 3 · Janeiro 2026",
+      "arquivo": "2026-W03.json",
+      "ordem": 202603
+    },
+    {
+      "chave": "2026-W02",
+      "label": "Semana 2 · Janeiro 2026",
+      "arquivo": "2026-W02.json",
+      "ordem": 202602
+    },
+    {
+      "chave": "2026-W01",
+      "label": "Semana 1 · Janeiro 2026",
+      "arquivo": "2026-W01.json",
+      "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-07-09T12:47:17.576444"
+  "atualizado_em": "2026-07-11T12:00:00.000Z"
 }
