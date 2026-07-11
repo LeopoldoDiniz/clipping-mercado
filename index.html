@@ -156,7 +156,7 @@
   .kpis{display:grid;grid-template-columns:repeat(8,minmax(140px,172px));justify-content:space-between;gap:14px}
   @media(max-width:1300px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr));justify-content:stretch}}
   @media(max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
-  .k-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:11px;color:var(--ink-2);margin:0 0 12px}
+  .k-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-end;font-size:11px;color:var(--ink-2);margin:12px 2px 0}
   .k-legend b{margin-right:3px;font-size:12px}
   .k-legend .k-legend-note{color:var(--ink-3);font-style:italic}
   .ind-grid{display:grid;grid-template-columns:minmax(200px,270px) 1fr;gap:16px;align-items:start}
@@ -495,15 +495,16 @@ let KPIS=[
 let KPIMAP=Object.fromEntries(KPIS.map(k=>[k.id,k]));
 let KPIS_SETOR=[]; // indicadores setoriais (incrementais aos macros) — preenchidos em applyData
 // setores com indicador setorial próprio, oficial (IBGE/BCB). Agro/E-commerce: fonte em validação (sem fabricar).
+// ordem: núcleo (já nos macros) → ativos (fonte própria) → em breve
 const SETOR_IND=[
-  {id:"servicos",nome:"Serviços",ico:"🛎️",fonte:true,info:"Volume de serviços prestados (PMS/IBGE), variação mês contra mês com ajuste sazonal; acumulado no ano compara jan–mês vs igual período do ano anterior. Fonte determinística: IBGE/SIDRA tabela 5906."},
-  {id:"construcao",nome:"Construção",ico:"🏗️",fonte:true,info:"Custo médio da construção civil por m² (SINAPI/IBGE): materiais + mão de obra, com variação no mês e acumulada no ano. Fonte determinística: IBGE/SIDRA tabela 2296, variáveis 48/1196/1197."},
   {id:"industria",nome:"Indústria",ico:"🏭",fonte:false,nucleo:true,info:"Indústria já está no núcleo macro (PIM e IPP), sempre visível."},
   {id:"comercio",nome:"Comércio",ico:"🛒",fonte:false,nucleo:true,info:"Comércio já está no núcleo macro (Varejo/PMC), sempre visível."},
-  {id:"agro",nome:"Agro",ico:"🌾",fonte:false,info:"Fonte oficial gratuita em validação (LSPA/Comex). Entra sem fabricar dado."},
-  {id:"ecommerce",nome:"E-commerce",ico:"🛍️",fonte:false,info:"Sem série oficial gratuita; proxies de pagamentos (BCB) em validação. Entra sem fabricar dado."}
+  {id:"servicos",nome:"Serviços",ico:"🛎️",fonte:true,info:"Volume de serviços prestados (PMS/IBGE), variação mês contra mês com ajuste sazonal; acumulado no ano compara jan–mês vs igual período do ano anterior. Fonte determinística: IBGE/SIDRA tabela 5906."},
+  {id:"construcao",nome:"Construção",ico:"🏗️",fonte:true,info:"Custo médio da construção civil por m² (SINAPI/IBGE): materiais + mão de obra, com variação no mês e acumulada no ano. Fonte determinística: IBGE/SIDRA tabela 2296, variáveis 48/1196/1197."},
+  {id:"agro",nome:"Agro",ico:"🌾",fonte:true,info:"Estimativa da produção nacional de grãos (cereais, leguminosas e oleaginosas) do ano-safra, revista mensalmente pelo IBGE. Fonte determinística: IBGE/SIDRA tabela 6588 (LSPA), variável 35."},
+  {id:"ecommerce",nome:"E-commerce",ico:"🛍️",fonte:false,info:"Sem série oficial gratuita de faturamento; proxy de pagamentos do BCB em validação (será tratado no motor, não pelo Gemini). Entra sem fabricar dado."}
 ];
-const SETOR_IMETA={servicos:SETOR_IND[0],construcao:SETOR_IND[1]};
+const SETOR_IMETA=Object.fromEntries(SETOR_IND.map(s=>[s.id,s]));
 // adapta kpis_setoriais (com numéricos pt/acum) em objetos de KPI com série histórica (espelha adaptKpis)
 function adaptKpisSetor(rawSetor,allData){
   return (rawSetor||[]).map(k=>{const setor=k.setor;const meta=SETOR_IMETA[setor]||{ico:"📊",info:""};
@@ -1134,15 +1135,16 @@ function viewGeral(){
   </div>`;
 }
 function viewIndicadores(){
-  const maxP=Math.max(...PRESSOES_IPCA.map(p=>Math.abs(p.val)));
+  const PI=pressoesInfo();
+  const maxP=Math.max(...PI.grupos.map(p=>Math.abs(p.val)),0.01);
   const secTag=state.sector==="panorama"?"":` · <span style="color:${SMETA[state.sector].cor};font-weight:700">${SMETA[state.sector].nome}</span>`;
   const A=analiseGA();
   return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
     <div class="blk">
       <div class="blk-h">Indicadores${secTag} <span class="audit-hint">▸ (i) explica · a frase é a leitura rápida</span></div>
-      ${kpiLegend()}
       ${setorSelector()}
       <div class="kpis">${kpiItems()}${selSetorKpis().map(kpiCard).join("")}</div>
+      ${kpiLegend()}
     </div>
 
     <div class="blk">
@@ -1154,8 +1156,8 @@ function viewIndicadores(){
       <div class="blk">
         <div class="blk-h">O que está pressionando o IPCA <span class="audit-hint">▸ por grupo</span></div>
         <div class="card card-pad">
-          <div class="legend" style="margin-bottom:12px">Quanto cada grupo puxou a inflação do mês — <b style="color:var(--risk)">vermelho pressiona</b>, <b style="color:var(--opp)">verde alivia</b>. <span class="mock-badge">ilustrativo</span> vira dado real do IBGE na integração.</div>
-          <div class="pressoes">${PRESSOES_IPCA.map(p=>{const w=Math.abs(p.val)/maxP*100;const pos=p.val>=0;return `<div class="pr-row"><span class="pr-ico">${p.ico}</span><span class="pr-nome">${p.nome}</span><div class="pr-bar"><i class="${pos?'pos':'neg'}" style="width:${w}%"></i></div><span class="pr-val ${pos?'down':'up'} num">${pos?'+':''}${dec(p.val,2)}%</span></div>`;}).join("")}</div>
+          <div class="legend" style="margin-bottom:12px">Quanto cada grupo puxou a inflação do mês${PI.real?` (<b>${PI.ref}</b>)`:""} — <b style="color:var(--risk)">vermelho pressiona</b>, <b style="color:var(--opp)">verde alivia</b>. ${PI.real?`Impacto em p.p. (peso × variação). Fonte: <b>IBGE/IPCA</b> (SIDRA 7060) · atualização <b>mensal</b> · última <b>${PI.ref}</b> · próxima <b>~${proxIpca(PI.mes,PI.ano)}</b>.`:`<span class="mock-badge">ilustrativo</span> vira dado real do IBGE na integração.`}</div>
+          <div class="pressoes">${PI.grupos.map(p=>{const w=Math.abs(p.val)/maxP*100;const pos=p.val>=0;return `<div class="pr-row"><span class="pr-ico">${p.ico}</span><span class="pr-nome">${p.nome}</span><div class="pr-bar"><i class="${pos?'pos':'neg'}" style="width:${w}%"></i></div><span class="pr-val ${pos?'down':'up'} num">${pos?'+':''}${dec(p.val,2)}%</span></div>`;}).join("")}</div>
         </div>
       </div>
       <div class="blk">
@@ -1443,7 +1445,7 @@ document.addEventListener("click",e=>{
    O que o motor NÃO entrega ainda (impacto/iminência da matriz, cadeia, agenda,
    decomposição do IPCA, "o que fazer", setores Agro/Construção/E-commerce) é
    DERIVADO ou permanece como conteúdo editorial marcado, até a evolução do motor. */
-let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, LAST_UPDATE=null, longByWeek={};
+let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, LAST_UPDATE=null, longByWeek={}, PRESSOES_DATA=null;
 const MABBR=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const DOWAB=["dom","seg","ter","qua","qui","sex","sáb"];
 // motor roda seg e qui às 10:00 UTC = 07h (BRT, UTC-3)
@@ -1635,7 +1637,16 @@ function applyData(sel,allData,metas){
   PORTER=PORTER_REAL?mergePorter(sel.porter):PORTER_BASE;
   // semana histórica: só indicadores oficiais + editorial macro derivado; sem clipping (busca retroativa não confiável)
   HIST_ONLY=(sel.origem==="indicadores_oficiais")||(sel.busca_retroativa===false);
+  PRESSOES_DATA=(sel.pressoes_ipca&&Array.isArray(sel.pressoes_ipca.grupos)&&sel.pressoes_ipca.grupos.length)?sel.pressoes_ipca:null;
   DATA_LOADED=true;}
+// pressões do IPCA por grupo: dado real do IBGE (tabela 7060) quando disponível; senão, exemplo ilustrativo
+function pressoesInfo(){
+  if(PRESSOES_DATA)return {grupos:PRESSOES_DATA.grupos,ref:PRESSOES_DATA.ref,mes:PRESSOES_DATA.mes,ano:PRESSOES_DATA.ano,real:true};
+  return {grupos:PRESSOES_IPCA,ref:null,real:false};
+}
+// próxima divulgação do IPCA (~dia 10 do 2º mês após o mês de referência)
+function proxIpca(mes,ano){if(!mes||!ano)return"";const d=new Date(Date.UTC(ano,mes+1,10));return `${String(d.getUTCDate()).padStart(2,'0')}/${_MABBR2[d.getUTCMonth()+1]}`;}
+const _MABBR2=["","jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 async function boot(){
   try{
     const base="./data/";

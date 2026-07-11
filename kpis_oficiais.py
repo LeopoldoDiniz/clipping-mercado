@@ -249,6 +249,143 @@ def coletar_kpis(ref=None):
     return [out[k] for k in ordem if k in out]
 
 
+# ─────────────────── INDICADORES SETORIAIS + PRESSÕES DO IPCA ───────────────────
+# Determinísticos (IBGE/SIDRA), como os macros. NÃO passam pelo Gemini.
+def _cor_delta(v):
+    if v is None:
+        return "neutral"
+    return "up" if v > 0.05 else ("down" if v < -0.05 else "neutral")
+
+
+def _br_mil(v):
+    """1976.37 → '1.976,37' (milhar com ponto, decimal com vírgula)."""
+    return f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def _sidra_raw(path):
+    return _get(f"https://apisidra.ibge.gov.br/values{path}/h/n") or []
+
+
+def _prev_mensal(serie, y, m):
+    best = None
+    for (yy, mm, val, per) in serie:
+        if (yy, mm) < (y, m) and (best is None or (yy, mm) > (best[0], best[1])):
+            best = (yy, mm, val, per)
+    return best
+
+
+# grupos do IPCA (classificação c315, tabela 7060) + ícone p/ o card de pressões
+_IPCA_GRUPOS = [
+    ("7170", "Alimentação e bebidas", "🍎"), ("7445", "Habitação", "⚡"),
+    ("7486", "Artigos de residência", "🛋️"), ("7558", "Vestuário", "👕"),
+    ("7625", "Transportes", "🚌"), ("7660", "Saúde e cuidados", "➕"),
+    ("7712", "Despesas pessoais", "🎭"), ("7766", "Educação", "📚"),
+    ("7786", "Comunicação", "📱"),
+]
+
+
+def coletar_ipca_grupos(ref=None):
+    """'O que está pressionando o IPCA': impacto (p.p.) de cada grupo no mês.
+    impacto = peso × variação / 100 (soma ≈ IPCA do mês). Fonte: IBGE/SIDRA 7060.
+    Escolhe o mês já DIVULGADO (~dia 10 do mês seguinte). None se a API falhar."""
+    ref = ref or date.today()
+    ids = ",".join(g[0] for g in _IPCA_GRUPOS)
+    raw = _sidra_raw(f"/t/7060/n1/all/v/63,66/p/last%2018/c315/{ids}")
+    gmap, meses = {}, set()
+    for x in raw:
+        per = x.get("D3N", "")
+        v = x.get("V")
+        if v in ("...", "..", "-", None):
+            continue
+        try:
+            parts = per.split(" ")
+            ano = int(parts[-1])
+            mes = _MES.get(parts[0].split("-")[-1].lower(), 0)
+            val = float(str(v).replace(",", "."))
+        except (ValueError, IndexError):
+            continue
+        if not mes:
+            continue
+        g = x.get("D4C")
+        key = (ano, mes)
+        meses.add(key)
+        gmap.setdefault(key, {}).setdefault(g, {})
+        if "peso" in x.get("D2N", "").lower():   # D2 = variável (Variação mensal / Peso mensal)
+            gmap[key][g]["peso"] = val
+        else:
+            gmap[key][g]["var"] = val
+    disp = [k for k in meses if _rel_date(k[0], k[1], 1, 10) <= ref]
+    if not disp:
+        return None
+    ano, mes = max(disp)
+    gm = gmap.get((ano, mes), {})
+    grupos = []
+    for gid, nome, ico in _IPCA_GRUPOS:
+        o = gm.get(gid, {})
+        if o.get("peso") is not None and o.get("var") is not None:
+            grupos.append({"nome": nome, "ico": ico,
+                           "val": round(o["peso"] * o["var"] / 100.0, 3)})
+    if not grupos:
+        return None
+    grupos.sort(key=lambda x: x["val"], reverse=True)
+    return {"ref": f"{_MABBR[mes]}/{str(ano)[2:]}", "mes": mes, "ano": ano, "grupos": grupos}
+
+
+def coletar_kpis_setoriais(ref=None):
+    """Indicadores setoriais (incrementais aos macros) válidos na data `ref`:
+    Serviços (PMS), Construção (SINAPI custo m²) e Agro (LSPA safra de grãos).
+    Cada um traz numéricos (pt/acum/flow) para o gráfico. IBGE/SIDRA, determinístico."""
+    ref = ref or date.today()
+    pms_m = _sidra("/t/5906/n1/all/v/11623/p/last%2018/c11046/56726")
+    pms_a = _sidra("/t/5906/n1/all/v/11625/p/last%2018/c11046/56726")
+    sin_c = _sidra("/t/2296/n1/all/v/48/p/last%2018")
+    sin_m = _sidra("/t/2296/n1/all/v/1196/p/last%2018")
+    sin_a = _sidra("/t/2296/n1/all/v/1197/p/last%2018")
+    lspa = _sidra("/t/6588/n1/all/v/35/p/last%2018/c48/39428")
+    out = []
+
+    pm = _pick_mensal(pms_m, ref, 2, 13) if pms_m else None   # PMS ~45d de defasagem
+    if pm:
+        y, m, val, _ = pm
+        pa = next((v for (yy, mm, v, *_ ) in pms_a if (yy, mm) == (y, m)), None)
+        sub = ("Volume · var. m/m (aj.saz.)"
+               + (f" · acum. ano {'+' if pa >= 0 else ''}{_br(pa, 1)}%" if pa is not None else "")
+               + f" · IBGE/PMS {_MABBR[m]}/{str(y)[2:]}")
+        out.append({"setor": "servicos", "setorLabel": "Serviços", "label": "Serviços (PMS)",
+                    "valor": f"{'+' if val >= 0 else ''}{_br(val, 1)}%", "cor": _cor_delta(val),
+                    "sub": sub, "ref": f"{_MABBR[m]}/{str(y)[2:]}", "pt": round(val, 2),
+                    "acum": None if pa is None else round(pa, 2), "flow": True, "unit": "%"})
+
+    sc = _pick_mensal(sin_c, ref, 1, 8) if sin_c else None
+    if sc:
+        y, m, val, _ = sc
+        sm = next((v for (yy, mm, v, *_ ) in sin_m if (yy, mm) == (y, m)), None)
+        sa = next((v for (yy, mm, v, *_ ) in sin_a if (yy, mm) == (y, m)), None)
+        sub = ("Custo médio da construção"
+               + (f" · +{_br(sm, 2)}% mês" if sm is not None else "")
+               + (f" · acum. ano +{_br(sa, 2)}%" if sa is not None else "")
+               + f" · IBGE/SINAPI {_MABBR[m]}/{str(y)[2:]}")
+        out.append({"setor": "construcao", "setorLabel": "Construção", "label": "Custo m² (SINAPI)",
+                    "valor": f"R$ {_br_mil(val)}", "cor": _cor_delta(sm if sm is not None else 0),
+                    "sub": sub, "ref": f"{_MABBR[m]}/{str(y)[2:]}", "pt": round(val, 2),
+                    "acum": None if sa is None else round(sa, 2), "flow": False, "unit": "R$/m²"})
+
+    ls = _pick_mensal(lspa, ref, 1, 8) if lspa else None
+    if ls:
+        y, m, val, _ = ls
+        lp = _prev_mensal(lspa, y, m)
+        mt = val / 1e6
+        rev = ((val - lp[2]) / lp[2] * 100) if lp else None
+        sub = (f"Estimativa da safra {y}"
+               + (f" · {'+' if rev >= 0 else ''}{_br(rev, 1)}% vs. mês anterior" if rev is not None else "")
+               + f" · IBGE/LSPA {_MABBR[m]}/{str(y)[2:]}")
+        out.append({"setor": "agro", "setorLabel": "Agro", "label": "Safra de grãos (LSPA)",
+                    "valor": f"{_br(mt, 1)} Mt", "cor": _cor_delta(rev), "sub": sub,
+                    "ref": f"{_MABBR[m]}/{str(y)[2:]}", "pt": round(mt, 1),
+                    "acum": None, "flow": False, "unit": "Mt"})
+    return out
+
+
 # ─────────────────────────── VALIDADOR ───────────────────────────
 def _familia(label):
     L = (label or "").lower()

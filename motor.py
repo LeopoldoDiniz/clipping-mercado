@@ -16,7 +16,7 @@ from google.genai import types
 from supabase import create_client
 
 from prompt_geracao import montar_prompt
-from kpis_oficiais import validar_kpis
+from kpis_oficiais import validar_kpis, coletar_kpis_setoriais, coletar_ipca_grupos
 
 # ─────────────────────────────────────────────────────────
 # CONFIGURAÇÃO (as chaves vêm dos GitHub Secrets via ambiente)
@@ -682,6 +682,19 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
     kpis_validados = validar_kpis(dados.get("kpis", []), ref=ref_kpi)
     # ponto 1a — herança determinística caso algum indicador não venha da API oficial
     kpis_final = reconciliar_kpis(kpis_validados, chave)
+    # indicadores setoriais + pressões do IPCA por grupo: OFICIAIS (IBGE), determinísticos.
+    # Válidos na sexta desta semana (mesma lógica de defasagem dos macros). Não passam pelo Gemini.
+    # Falha aqui NUNCA quebra o motor: cai para vazio/None e o front-end degrada com elegância.
+    try:
+        kpis_setoriais = coletar_kpis_setoriais(ref=ref_kpi)
+    except Exception as e:
+        print(f"[setoriais] indisponível nesta rodada: {e}")
+        kpis_setoriais = []
+    try:
+        pressoes_ipca = coletar_ipca_grupos(ref=ref_kpi)
+    except Exception as e:
+        print(f"[pressoes_ipca] indisponível nesta rodada: {e}")
+        pressoes_ipca = None
 
     saida = {
         "periodo": chave, "label": label,
@@ -690,6 +703,8 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
         "clipping": normalizar_clipping(dados.get("clipping", [])),
         "pestel": dados.get("pestel", []),
         "kpis": kpis_final,
+        "kpis_setoriais": kpis_setoriais,   # Serviços/PMS, Construção/SINAPI, Agro/LSPA
+        "pressoes_ipca": pressoes_ipca,     # impacto por grupo (IBGE/SIDRA 7060)
         "porter": dados.get("porter", {}),   # 5 Forças por setor (avaliação estrutural)
         "longitudinal": longitudinal,
     }

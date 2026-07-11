@@ -538,6 +538,71 @@
       "acum": 3.26,
       "flow": false,
       "unit": "R$/m²"
+    },
+    {
+      "setor": "agro",
+      "setorLabel": "Agro",
+      "label": "Safra de grãos (LSPA)",
+      "valor": "350,4 Mt",
+      "cor": "up",
+      "sub": "Estimativa da safra 2026 · +0,5% vs. mês anterior · IBGE/LSPA mai/26",
+      "ref": "mai/26",
+      "pt": 350.4,
+      "acum": null,
+      "flow": false,
+      "unit": "Mt"
     }
-  ]
+  ],
+  "pressoes_ipca": {
+    "ref": "mai/26",
+    "mes": 5,
+    "ano": 2026,
+    "grupos": [
+      {
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": 0.287
+      },
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": 0.185
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.123
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.042
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.029
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.01
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.003
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": 0
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": -0.094
+      }
+    ]
+  }
 }
