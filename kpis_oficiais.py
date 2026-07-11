@@ -262,6 +262,11 @@ def _br_mil(v):
     return f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
+def _br_int(v):
+    """1976.37 → '1.976' (milhar com ponto, sem centavos)."""
+    return f"{round(v):,}".replace(",", ".")
+
+
 def _sidra_raw(path):
     return _get(f"https://apisidra.ibge.gov.br/values{path}/h/n") or []
 
@@ -366,7 +371,7 @@ def coletar_kpis_setoriais(ref=None):
                + (f" · acum. ano +{_br(sa, 2)}%" if sa is not None else "")
                + f" · IBGE/SINAPI {_MABBR[m]}/{str(y)[2:]}")
         out.append({"setor": "construcao", "setorLabel": "Construção", "label": "Custo m² (SINAPI)",
-                    "valor": f"R$ {_br_mil(val)}", "cor": _cor_delta(sm if sm is not None else 0),
+                    "valor": f"R$ {_br_int(val)}", "cor": _cor_delta(sm if sm is not None else 0),
                     "sub": sub, "ref": f"{_MABBR[m]}/{str(y)[2:]}", "pt": round(val, 2),
                     "acum": None if sa is None else round(sa, 2), "flow": False, "unit": "R$/m²"})
 

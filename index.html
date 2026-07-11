@@ -521,7 +521,7 @@ function adaptKpisSetor(rawSetor,allData){
     const hist=fwd.map(v=>v!=null?v:(fst!=null?fst:0));
     let lastA=null;const acum=rawA.map(v=>{if(v!=null)lastA=v;return lastA;});
     return {id:"s_"+key,setor,key,setorLabel:k.setorLabel,label:k.label,ico:k.ico||meta.ico,val:k.valor,unit:"",
-      cor:k.cor||"neutral",sub:k.sub,hist,acum,flow:!!k.flow,un:k.flow?"%":"",info:k.info||meta.info,setorial:true};});
+      cor:k.cor||"neutral",sub:k.sub,hist,acum,flow:!!k.flow,un:k.flow?"%":"",info:k.info||meta.info,mkt:!!k.mkt,setorial:true};});
 }
 const selSetorKpis=()=>KPIS_SETOR.filter(k=>state.indSetores.includes(k.setor));
 const PRESSAO=71;
@@ -978,8 +978,11 @@ function kpiCard(k){
 // SELIC: referência explícita à meta do Copom (o valor exibido é a meta definida pelo Copom)
 function selicCard(k){
   const d=refDate(k.sub);
-  const sub=`Taxa básica de juros · <b>meta definida pelo Copom</b> · BCB/SGS${d?` · ${d}`:""}`;
-  return cardHTML({id:"selic",ico:k.ico,label:k.label,cor:k.cor,val:k.val,unit:k.unit,sub,info:k.info,insightId:"selic"});
+  const pct=(/-?[\d.,]+\s*%/.exec(k.val)||[k.val])[0].trim();     // "14,25%" (número + %)
+  const unit=(k.val.replace(pct,"").trim())||"a.a.";             // "a.a." vai p/ a fonte de unidade
+  // meta do Copom exibida como referência em % (padrão do IPCA acumulado)
+  const sub=`Taxa básica de juros · <b>meta Copom ${pct} ${unit}</b> · BCB/SGS${d?` · ${d}`:""}`;
+  return cardHTML({id:"selic",ico:k.ico,label:k.label,cor:k.cor,val:pct,unit,sub,info:k.info,insightId:"selic"});
 }
 // IPCA em dois cards: (1) mês + 12 meses  (2) acumulado no ano com ênfase na meta
 function ipcaCards(k){
@@ -1005,7 +1008,7 @@ function ipcaCards(k){
   const subAno=`Acumulado no ano · meta anual <b>${meta}%</b> (teto ${teto}%)${gapTxt} · IBGE${d?` ${d}`:""}`;
   const cAno=cardHTML({id:"ipca",ico:"🎯",label:"IPCA (acum. ano)",cor:corAno,val:av!=null?`${dec(av,2)}%`:k.val,unit:"no ano",sub:subAno,
     info:"IPCA acumulado no ano (jan → mês de referência) pelo método composto do IBGE; reinicia em janeiro. Comparado à meta anual do CMN (3,0%, com limite superior de 4,5%). Ver metodologia.",insightId:"ipca"});
-  return cMes+cAno;
+  return cAno+cMes;   // acumulado no ano logo após a SELIC; variação do mês em seguida
 }
 // legenda dos símbolos de leitura (seta/quadrado)
 function kpiLegend(){
@@ -1015,7 +1018,7 @@ function kpiLegend(){
     <span><b class="neutral">■</b> estável</span>
     <span class="k-legend-note">a cor/seta indicam o <b>efeito no ambiente de negócios</b> — não a direção do número</span></div>`;
 }
-const KPI_ORDER=["selic","cambio","desemprego","ipca","varejo","ipp","pim"]; // ordem fixa dos macros
+const KPI_ORDER=["selic","ipca","cambio","desemprego","varejo","ipp","pim"]; // SELIC → IPCA (acum+mês) → resto
 function kpiItems(){
   const map=Object.fromEntries(KPIS.map(k=>[k.id,k]));
   const out=[];
@@ -1029,9 +1032,10 @@ function kpiItems(){
 // seletor multi-setor: adiciona indicadores setoriais (incrementais aos macros, não substitutivos)
 function setorSelector(){
   const chips=SETOR_IND.map(s=>{
+    const hasData=KPIS_SETOR.some(k=>k.setor===s.id);   // habilita dinamicamente quando há dado real
+    const enabled=s.fonte||hasData;const disabled=!enabled;
     const on=state.indSetores.includes(s.id);
-    const disabled=!s.fonte;
-    const badge=s.nucleo?'<span class="ss-tag">no núcleo</span>':(!s.fonte?'<span class="ss-tag">em breve</span>':'');
+    const badge=s.nucleo?'<span class="ss-tag">no núcleo</span>':(disabled?'<span class="ss-tag">em breve</span>':(!s.fonte&&hasData?'<span class="ss-tag mkt">mercado</span>':''));
     return `<button class="ss-chip${on?' on':''}${disabled?' off':''}" ${disabled?'disabled aria-disabled="true"':`data-indsetor="${s.id}" aria-pressed="${on}"`} data-tip="${s.info.replace(/"/g,'&quot;')}"><span class="ss-ico">${s.ico}</span>${s.nome}${badge}</button>`;
   }).join("");
   return `<div class="setor-sel">
