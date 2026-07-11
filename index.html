@@ -943,7 +943,7 @@ function chartCard(){
   const janela=n===1?"1 leitura":`${points[0].label} → ${points[n-1].label}`;
   const partial=points.some(p=>p.partial);
   const legend=monthly
-    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: IPCA, varejo, PIM, IPP) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
+    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: IPCA, varejo, PIM, IPP) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
     : `Valor de cada indicador <b>por semana</b> (S = nº da semana) · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}`;
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
@@ -1209,6 +1209,16 @@ function viewMetodologia(){
     <div class="card card-pad"><h4 style="margin-bottom:10px">🏦 Indicadores macro — regra de cálculo</h4>
       <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">Valores <b>determinísticos</b>, buscados direto na API oficial. A IA <b>não</b> gera número macro.</p>
       <div class="heat-scroll"><table style="width:100%;border-collapse:collapse;font-size:12px">${kpiRows}</table></div></div>
+
+    <div class="card card-pad"><h4 style="margin-bottom:10px">Σ Acumulado no ano — como o IBGE calcula</h4>
+      <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">O <b>acumulado no ano</b> dos índices de fluxo (IPCA, varejo/PMC, PIM, IPP) <b>não é a soma</b> das variações mensais: é a <b>composição</b> delas —</p>
+      <div class="legend" style="font-family:var(--mono);font-size:11px">acum. = [ ∏ (1 + iₘ/100) − 1 ] × 100, de janeiro ao mês de referência</div>
+      <ul style="font-size:12px;color:var(--ink-2);margin:10px 0 0;padding-left:18px;line-height:1.6">
+        <li>Reinicia em <b>janeiro</b> de cada ano (jan = a própria variação do mês).</li>
+        <li>Por <b>defasagem de divulgação</b>, o dado mais recente refere-se ao <b>mês anterior</b> (o IPCA de junho sai em julho). Assim, no <b>início de cada ano</b> o acumulado disponível ainda é o <b>fechamento do ano anterior</b> — em janeiro/2026, o IPCA vigente é o de dez/2025 (acum. 2025). Não é erro: é o último dado oficial publicado.</li>
+        <li>Para <b>nível/estoque</b> (SELIC, câmbio, desemprego) não há acumulado — vale o <b>valor de fechamento</b> do período.</li>
+        <li>Validado contra o IBGE: IPCA 2026 jan–mai = <b>3,20%</b>; jan–jun = <b>3,36%</b>.</li></ul>
+      <p style="font-size:11px;color:var(--ink-3);margin:8px 0 0">Fonte/metodologia: <a href="https://www.ibge.gov.br/explica/inflacao.php" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">IBGE · Inflação</a>.</p></div>
 
     <div class="card card-pad"><h4 style="margin-bottom:10px">📡 Como um sinal é medido</h4>
       <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">Cada risco/oportunidade recebe uma <b>relevância (0–100)</b>:</p>
