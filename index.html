@@ -674,7 +674,7 @@ const LENSES=[
 ];
 
 /* ───────── ESTADO ───────── */
-let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonth:null,pointSig:null,chartSeries:["ipca","ipp"]};
+let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca","ipp"]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
 
 /* ───────── HELPERS ───────── */
@@ -832,13 +832,13 @@ function renderPeriodBar(){
   const seg=GRAN.map(([id,nm])=>`<button data-gran="${id}" aria-pressed="${state.gran===id}">${nm}</button>`).join("");
   let groups;
   if(state.gran==="semana"){
-    // filtro de MÊS + só as semanas do mês escolhido (evita o paredão de semanas)
+    // filtro de MÊS (multi) + as semanas dos meses selecionados (evita o paredão)
     const months=[...new Set(CHRONO.map(w=>w.mes))]; // cronológico
-    let cur=state.weekMonth;
-    if(!cur||!months.includes(cur))cur=(WMETA[state.picks[state.picks.length-1]]||{}).mes||months[months.length-1];
-    state.weekMonth=cur;
-    const moChips=months.map(mid=>`<button class="wkchip mo ${cur===mid?'on':''}" data-wkmonth="${mid}" aria-pressed="${cur===mid}">${MESNOME[mid.split("-")[1]]||mesLbl(mid)}</button>`).join("");
-    const wkChips=CHRONO.filter(w=>w.mes===cur).map(w=>{const on=state.picks.includes(w.k);
+    let sel=Array.isArray(state.weekMonths)?state.weekMonths.filter(m=>months.includes(m)):[];
+    if(!sel.length)sel=[(WMETA[state.picks[state.picks.length-1]]||{}).mes||months[months.length-1]];
+    state.weekMonths=sel;
+    const moChips=months.map(mid=>`<button class="wkchip mo ${sel.includes(mid)?'on':''}" data-wkmonth="${mid}" aria-pressed="${sel.includes(mid)}">${MESNOME[mid.split("-")[1]]||mesLbl(mid)}</button>`).join("");
+    const wkChips=CHRONO.filter(w=>sel.includes(w.mes)).map(w=>{const on=state.picks.includes(w.k);
       return `<button class="wkchip ${on?'on':''}" data-pick="${w.k}" aria-pressed="${on}">Sem ${w.k.slice(1)}<span class="pp">${w.dt.replace(/ 20\d\d/,"")}</span></button>`;}).join("");
     groups=`<div class="pk-picks"><div class="pk-row"><span class="pk-lbl2">Mês</span><div class="wkchips">${moChips}</div></div><div class="pk-row"><span class="pk-lbl2">Semanas</span><div class="wkchips">${wkChips}</div></div></div>`;
   }else{
@@ -853,14 +853,22 @@ function renderPeriodBar(){
     state.gran=b.dataset.gran;
     const its=granItems(state.gran);
     state.picks=its.length?[its[its.length-1].id]:[]; // padrão: período mais recente
-    if(state.gran==="semana")state.weekMonth=(WMETA[state.picks[0]]||{}).mes||null;
+    if(state.gran==="semana")state.weekMonths=[(WMETA[state.picks[0]]||{}).mes].filter(Boolean);
     state.pointSig=null;applyScope();
   });
   bar.querySelectorAll("[data-wkmonth]").forEach(b=>b.onclick=()=>{
-    const mid=b.dataset.wkmonth;state.weekMonth=mid;
-    const wks=CHRONO.filter(w=>w.mes===mid);
-    if(wks.length)state.picks=[wks[wks.length-1].k]; // seleciona a semana mais recente do mês
-    state.pointSig=null;applyScope();
+    const mid=b.dataset.wkmonth;let sel=(state.weekMonths||[]).slice();
+    const wksM=CHRONO.filter(w=>w.mes===mid).map(w=>w.k);
+    if(sel.includes(mid)){
+      if(sel.length>1){ // desmarca mês + remove suas semanas do escopo
+        sel=sel.filter(m=>m!==mid);
+        state.picks=state.picks.filter(k=>!wksM.includes(k));
+        if(!state.picks.length){const vis=CHRONO.filter(w=>sel.includes(w.mes));if(vis.length)state.picks=[vis[vis.length-1].k];}
+      }
+    }else{ // marca mês + adiciona todas as suas semanas ao escopo
+      sel.push(mid);wksM.forEach(k=>{if(!state.picks.includes(k))state.picks.push(k);});
+    }
+    state.weekMonths=sel;state.pointSig=null;applyScope();
   });
   bar.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{
     const id=b.dataset.pick,i=state.picks.indexOf(id);
@@ -877,45 +885,65 @@ function histBanner(){if(!HIST_ONLY)return"";return `<div class="banner hist"><s
 
 const KC={up:"var(--opp)",down:"var(--risk)",neutral:"var(--neutral)"};
 function kpiItems(){
-  return KPIS.map(k=>{const c=KC[k.cor]||"var(--accent)";return `<div class="kpi">
+  const monthly=state.gran!=="semana";
+  const refIdx=monthly?CHRONO.findIndex(w=>w.k===refKey()):-1;
+  return KPIS.map(k=>{const c=KC[k.cor]||"var(--accent)";
+    let val=k.val,tag="";
+    if(monthly){
+      if(k.flow&&k.acum&&refIdx>=0&&k.acum[refIdx]!=null){val=`${dec(k.acum[refIdx],2)}%`;tag=' · <b>acum. ano</b>';}
+      else tag=' · <b>fechamento do mês</b>';
+    }
+    return `<div class="kpi">
     <div class="k-head"><span class="k-badge" style="--kc:${c}">${k.ico}</span><span class="k-label">${k.label}</span>
     <button class="info clickable" data-kpi="${k.id}" aria-label="Sobre ${k.label}" data-tip="${k.info.replace(/"/g,'&quot;')}">i</button></div>
-    <div class="k-val num">${k.val}<span class="arrow ${k.cor}">${arrow(k.cor)}</span>${k.unit?`<span class="k-unit">${k.unit}</span>`:""}</div>
-    <div class="k-sub">${k.sub}${k.mkt?' · <b>mercado</b>':''}</div>
+    <div class="k-val num">${val}<span class="arrow ${k.cor}">${arrow(k.cor)}</span>${k.unit?`<span class="k-unit">${k.unit}</span>`:""}</div>
+    <div class="k-sub">${k.sub}${tag}${k.mkt?' · <b>mercado</b>':''}</div>
     ${(!DATA_LOADED&&KPI_INSIGHT[k.id])?`<div class="k-insight">${KPI_INSIGHT[k.id]}</div>`:""}</div>`;}).join("");
 }
 
 /* ── Gráfico de evolução dos indicadores (SVG, comparação de séries) ── */
+// pontos do gráfico: semanal = por semana (S#); mensal/tri/ano = por mês (fechamento do mês no escopo)
+function chartPoints(){
+  const wk=chartWeeks();
+  if(state.gran==="semana")return {monthly:false,points:wk.map(w=>({label:"S"+parseInt(w.k.slice(1),10),idx:CHRONO.findIndex(c=>c.k===w.k),dt:w.dt}))};
+  const maxMonth=[...new Set(WEEKS.map(w=>w.mes))].sort().pop();
+  const months=[...new Set(wk.map(w=>w.mes))]; // cronológico (wk já é asc)
+  return {monthly:true,points:months.map(mid=>{const wm=wk.filter(w=>w.mes===mid);const lw=wm[wm.length-1];
+    return {label:mesLbl(mid),idx:CHRONO.findIndex(c=>c.k===lw.k),partial:mid===maxMonth};})};
+}
 function chartCard(){
   const W=680,H=240,pl=42,pr=48,pt=16,pb=34;
   const keys=state.chartSeries;
-  const series=keys.map(k=>KPIMAP[k]);
-  const wk=chartWeeks();
-  const idxs=wk.map(w=>CHRONO.findIndex(c=>c.k===w.k));
-  const labels=wk.map(w=>w.dt.replace(" 2026",""));
-  const valsOf=s=>idxs.map(i=>s.hist[i]);
-  const all=series.flatMap(valsOf);
-  let mn=Math.min(...all),mx=Math.max(...all);if(mn===mx){mn-=1;mx+=1;}const pad=(mx-mn)*0.15;mn-=pad;mx+=pad;
-  const n=labels.length;
+  const series=keys.map(k=>KPIMAP[k]).filter(Boolean);
+  const {monthly,points}=chartPoints();
+  // valor por ponto: mensal+fluxo -> acumulado no ano; senão -> valor do período (nível/semana)
+  const valOf=(s,p)=>{const raw=(monthly&&s.flow)?s.acum[p.idx]:s.hist[p.idx];return raw!=null?raw:s.hist[p.idx];};
+  const valsOf=s=>points.map(p=>valOf(s,p));
+  const all=series.flatMap(valsOf).filter(v=>v!=null);
+  let mn=all.length?Math.min(...all):0,mx=all.length?Math.max(...all):1;if(mn===mx){mn-=1;mx+=1;}const pad=(mx-mn)*0.15;mn-=pad;mx+=pad;
+  const n=points.length;
   const x=i=>n===1?pl+(W-pl-pr)/2:pl+(i*(W-pl-pr)/(n-1));
   const y=v=>pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));
   const gridY=4;
   const grid=Array.from({length:gridY+1},(_,i)=>{const gv=mn+(mx-mn)*i/gridY;const gy=y(gv);
     return `<line x1="${pl}" x2="${W-pr}" y1="${gy}" y2="${gy}" stroke="var(--border)" stroke-width="1"/><text x="${pl-6}" y="${gy+3}" text-anchor="end" font-size="9" fill="var(--ink-3)" font-family="var(--mono)">${dec(gv,1)}</text>`;}).join("");
-  const xlab=labels.map((l,i)=>`<text x="${x(i)}" y="${H-12}" text-anchor="middle" font-size="9" fill="var(--ink-3)">${l}</text>`).join("");
+  const xlab=points.map((p,i)=>`<text x="${x(i)}" y="${H-12}" text-anchor="middle" font-size="9" fill="var(--ink-3)">${p.label}${p.partial?' ·p':''}</text>`).join("");
   const lines=series.map((s,si)=>{const c=CHART_COLORS[si%CHART_COLORS.length];const vs=valsOf(s);
     const pts=vs.map((v,i)=>`${x(i)},${y(v)}`).join(" ");
     const dots=vs.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?4:3}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"/>`).join("");
-    // rótulo de VALOR em cada ponto (séries pares acima, ímpares abaixo, p/ não colidir)
     const above=si%2===0;
     const vlab=vs.map((v,i)=>`<text x="${x(i)}" y="${y(v)+(above?-9:15)}" text-anchor="middle" font-size="9" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
   const chips=KPIS.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
     return `<button class="schip ${on?'on':''}" data-series="${k.id}" style="${on?`--sc:${c}`:''}"><span class="sw" style="background:${on?c:'var(--border-strong)'}"></span>${k.label}</button>`;}).join("");
-  const janela=n===1?"1 leitura":`${labels[0]} → ${labels[n-1]}`;
+  const janela=n===1?"1 leitura":`${points[0].label} → ${points[n-1].label}`;
+  const partial=points.some(p=>p.partial);
+  const legend=monthly
+    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: IPCA, varejo, PIM, IPP) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
+    : `Valor de cada indicador <b>por semana</b> (S = nº da semana) · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}`;
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
-    <div class="legend" style="margin:2px 0 6px">Valor de cada indicador por semana · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}</div>
+    <div class="legend" style="margin:2px 0 6px">${legend}</div>
     <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
       ${grid}${xlab}${lines}</svg></div>
     <div class="schips">${chips}</div></div>`;
@@ -1308,15 +1336,18 @@ function kpiFamily(label){const l=(label||"").toLowerCase();
   if(/varejo|pmc/.test(l))return"varejo";
   if(/pim|prod\. ind|produção ind|indústria/.test(l))return"pim";
   return"outro";}
+const parseAcum=sub=>{const m=/acum\.\s*ano\s*(-?\d+(?:[.,]\d+)?)\s*%/i.exec(sub||"");return m?parseFloat(m[1].replace(",",".")):null;};
 function adaptKpis(rawKpis,allData){
   const seen=new Set(),out=[];
   (rawKpis||[]).forEach(k=>{const fam=kpiFamily(k.label);if(fam!=="outro"&&seen.has(fam))return;seen.add(fam);
-    const meta=KPI_META[fam]||KPI_META.outro;const raw=[];
-    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);let v=null;
-      if(d){const kk=(d.kpis||[]).find(z=>kpiFamily(z.label)===fam);if(kk)v=parseNum(kk.valor);}raw.push(v);});
+    const meta=KPI_META[fam]||KPI_META.outro;const raw=[],rawA=[];
+    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);let v=null,a=null;
+      if(d){const kk=(d.kpis||[]).find(z=>kpiFamily(z.label)===fam);if(kk){v=parseNum(kk.valor);a=parseAcum(kk.sub);}}raw.push(v);rawA.push(a);});
     let last=null;const fwd=raw.map(v=>{if(v!=null)last=v;return last;});
     const fst=fwd.find(v=>v!=null);const hist=fwd.map(v=>v!=null?v:(fst!=null?fst:0));
-    out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,un:meta.un,
+    let lastA=null;const acum=rawA.map(v=>{if(v!=null)lastA=v;return lastA;}); // acum. ano, forward-fill
+    const flow=rawA.some(v=>v!=null); // fluxo (tem acumulado) vs nível (SELIC/câmbio/desemprego)
+    out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,flow,un:meta.un,
       info:meta.info+(k.herdado_de?` Nesta edição, dado herdado de ${k.herdado_de}.`:"")});});
   return out;}
 const TAGVOC={tarifas:/tarifa|eua|estados unidos|comércio exterior|exporta/i,desenrola:/desenrola/i,energia:/energia|aneel|elétric|tarifári/i,juros:/selic|juro|copom|crédito|financ/i,cambio:/câmbio|dólar|balança comercial/i,safra:/safra|grão|soja|milho|agronegócio|conab/i,consumo:/consumo|varejo|venda|confiança|endivida/i,digital:/digital|tecnologia|\bia\b|automação|autoatendimento|e-commerce|marketplace/i,escala6x1:/6x1|jornada de trabalho|escala/i,copa:/copa do mundo|\bcopa\b/i,remessa:/remessa conforme|cross-border|importados de baixo/i,construcao:/construção|obra|incc|imobiliári/i};
