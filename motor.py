@@ -696,6 +696,29 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
         print(f"[pressoes_ipca] indisponível nesta rodada: {e}")
         pressoes_ipca = None
 
+    # E-commerce: NÃO há série oficial gratuita. Se o Gemini capturou a manchete mensal de uma
+    # fonte de MERCADO (MCC-ENET/ABComm/Neotrust), publica com atribuição + badge de estimativa.
+    try:
+        ie = dados.get("indicador_ecommerce") or {}
+        if ie.get("valor"):
+            buf = "".join(c for c in str(ie["valor"]) if c.isdigit() or c in ".,-").replace(",", ".")
+            try:
+                pt = float(buf)
+            except ValueError:
+                pt = None
+            fonte = ie.get("fonte") or "mercado"
+            ref = ie.get("referencia") or ""
+            cor = "up" if (pt or 0) > 0 else ("down" if (pt or 0) < 0 else "neutral")
+            kpis_setoriais = (kpis_setoriais or []) + [{
+                "setor": "ecommerce", "setorLabel": "E-commerce", "label": f"E-commerce ({fonte})",
+                "valor": str(ie["valor"]), "cor": cor,
+                "sub": (ie.get("sub") or "Vendas do e-commerce")
+                       + f" · estimativa de mercado · fonte {fonte}" + (f" · {ref}" if ref else ""),
+                "ref": ref, "pt": pt, "acum": None, "flow": True, "unit": "%", "mkt": True,
+            }]
+    except Exception as e:
+        print(f"[ecommerce] indicador de mercado indisponível nesta rodada: {e}")
+
     saida = {
         "periodo": chave, "label": label,
         "gerado_em": datetime.utcnow().isoformat(),

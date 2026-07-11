@@ -127,6 +127,8 @@ Estrutura exata:
   "kpis": [
     {{"label": "SELIC", "valor": "14,25%", "cor": "neutral", "sub": "detalhe/contexto aqui"}}
   ],
+  "indicador_ecommerce": {{"valor": "+12,4%", "referencia": "maio/2026", "fonte": "MCC-ENET",
+      "sub": "Vendas do e-commerce · variação sobre igual mês do ano anterior"}},
   "porter": {{
     "industria":  {{"rivalidade": 7, "entrantes": 4, "fornecedores": 8, "compradores": 6, "substitutos": 5, "nota": "..."}},
     "comercio":   {{"rivalidade": 8, "entrantes": 7, "fornecedores": 5, "compradores": 8, "substitutos": 7, "nota": "..."}},
@@ -146,6 +148,12 @@ Estrutura exata:
       "severidade": 8.0, "iminencia": 7.5, "materializado": true}}
   ]
 }}
+
+# INDICADOR DE E-COMMERCE (fonte de MERCADO — não há série oficial gratuita)
+- Preencha "indicador_ecommerce" APENAS se uma fonte de mercado (MCC-ENET, ABComm, Neotrust,
+  NIQ/Webshoppers) divulgou no período um número mensal de vendas/faturamento do e-commerce.
+- "valor" = a variação divulgada (ex.: "+12,4%"); "fonte" = quem divulgou; "referencia" = mês do dado.
+- Se NENHUMA fonte de mercado publicou número no período, use "indicador_ecommerce": null. NUNCA estime/invente.
 
 # REGRAS DE URL (CRÍTICAS — VIOLAÇÃO INVALIDA O ITEM)
 - Todo url deve apontar para a matéria/release REAL no domínio OFICIAL da fonte
