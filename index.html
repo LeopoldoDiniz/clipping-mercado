@@ -296,6 +296,10 @@
   .pt:hover,.pt.sel{transform:translate(-50%,50%) scale(1.4);z-index:5;outline:2px solid var(--ink)}
   .ax{font-size:11px;color:var(--ink-3);display:flex;justify-content:space-between;margin-top:6px}
   .ax-y{writing-mode:vertical-rl;transform:rotate(180deg);position:absolute;left:-20px;top:50%;translate:0 -50%;font-size:11px;color:var(--ink-3)}
+  .matrix-full{padding-left:26px}
+  .matrix-full .matrix{aspect-ratio:auto;height:clamp(320px,40vh,460px)}
+  .ro-cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;align-items:start}
+  @media (max-width:760px){.ro-cols{grid-template-columns:1fr}}
 
   .heat-scroll{overflow-x:auto}
   .heat{width:100%;border-collapse:separate;border-spacing:3px;font-size:12px}
@@ -378,7 +382,7 @@
 
 <header class="app-head">
   <div class="row r-top">
-    <div class="brand"><span class="dot"></span>NEXOS<span class="ver">v2.0</span><small>Inteligência de Mercado</small></div>
+    <div class="brand"><span class="dot"></span>NEXOS<small>Inteligência de Mercado</small><span class="ver">v2.0</span></div>
     <div class="spacer"></div>
     <span class="eyebrow" id="weekCtx" style="align-self:center"></span>
     <a class="btn" id="jsonBtn" href="https://raw.githubusercontent.com/LeopoldoDiniz/clipping-mercado/main/data/ultimo.json" target="_blank" rel="noopener" title="Dados abertos (JSON)">⧉ JSON</a>
@@ -1009,23 +1013,23 @@ function viewRiscos(){
   // escala 1–10 → faixa interna 8–92% para os pontos nunca vazarem da moldura
   const px=v=>8+((Math.max(1,Math.min(10,v))-1)/9)*84;
   const pts=list.map(s=>{const idx=s.i;return `<div class="pt ${s.tipo} clickable ${state.pointSig===idx?'sel':''}" data-point="${idx}" style="left:${px(s.imi).toFixed(1)}%;bottom:${px(s.imp).toFixed(1)}%" title="${s.t} — impacto ${s.imp}, iminência ${s.imi}"></div>`;}).join("");
-  const shown=state.pointSig!=null?list.filter(s=>s.i===state.pointSig):list.slice(0,8);
-  const filterChip=state.pointSig!=null?`<button class="btn" id="clearFilter" style="font-size:11px;padding:4px 9px">✕ limpar filtro</button>`:"";
-  const opps=shown.filter(s=>s.tipo==="oportunidade"),rks=shown.filter(s=>s.tipo==="risco");
-  const grp=(titulo,cor,arr,first)=>`<div class="sig-group-h ${first?'first':''}" style="color:${cor}">${titulo} (${arr.length})</div>${arr.length?sigList(arr):'<p style="color:var(--ink-3);font-size:12.5px;margin:0">— nenhum nesta seleção</p>'}`;
-  const body=state.pointSig!=null?sigList(shown):`${grp("▲ Oportunidades","var(--opp)",opps,true)}${grp("▼ Riscos","var(--risk)",rks)}`;
+  const sel=state.pointSig!=null;
+  const opps=list.filter(s=>s.tipo==="oportunidade"&&(!sel||s.i===state.pointSig)).slice(0,12);
+  const rks=list.filter(s=>s.tipo==="risco"&&(!sel||s.i===state.pointSig)).slice(0,12);
+  const filterChip=sel?`<button class="btn" id="clearFilter" style="font-size:11px;padding:4px 9px">✕ limpar filtro</button>`:"";
+  const col=(titulo,cor,ico,arr)=>`<div class="card card-pad">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="eyebrow" style="color:${cor}">${ico} ${titulo} (${arr.length})</span></div>
+    ${arr.length?sigList(arr):'<p style="color:var(--ink-3);font-size:12.5px;margin:0">— nenhum nesta seleção</p>'}</div>`;
   return `${periodBanner()}
-  <div class="note"><span>▸</span><div><b>Matriz Risco × Oportunidade</b> — posição por <b>Impacto</b> (vertical) × <b>Iminência</b> (horizontal). Clique num <b>ponto</b> para filtrar as prioridades; clique numa <b>prioridade</b> para ver as notícias.${(DATA_LOADED&&!MATRIX_REAL)?' <b>Eixos estimados</b> a partir da relevância e do status até o motor gerar impacto/iminência nativos.':''}</div></div>
-  <div class="matrix-wrap">
-    <div class="matrix-holder"><span class="ax-y">Impacto →</span>
-      <div class="matrix"><span class="quad q-tl">Preparar</span><span class="quad q-tr">Agir agora</span><span class="quad q-bl">Observar</span><span class="quad q-br">Monitorar de perto</span>${pts}</div>
-      <div class="ax"><span>Baixa iminência</span><span>Iminência →</span><span>Alta</span></div>
-      <div class="mx-legend"><span><i class="mx-dot" style="background:var(--opp)"></i> Oportunidade</span><span><i class="mx-dot" style="background:var(--risk)"></i> Risco</span></div>
-    </div>
-    <div class="card card-pad">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><span class="eyebrow">Prioridades (${shown.length})</span>${filterChip}</div>
-      ${body}
-    </div>
+  <div class="note"><span>▸</span><div><b>Matriz Risco × Oportunidade</b> — posição por <b>Impacto</b> (vertical) × <b>Iminência</b> (horizontal). Clique num <b>ponto</b> para filtrar; clique numa <b>prioridade</b> para ver as notícias.${(DATA_LOADED&&!MATRIX_REAL)?' <b>Eixos estimados</b> a partir da relevância e do status até o motor gerar impacto/iminência nativos.':''}</div></div>
+  <div class="matrix-holder matrix-full"><span class="ax-y">Impacto →</span>
+    <div class="matrix"><span class="quad q-tl">Preparar</span><span class="quad q-tr">Agir agora</span><span class="quad q-bl">Observar</span><span class="quad q-br">Monitorar de perto</span>${pts}</div>
+    <div class="ax"><span>Baixa iminência</span><span>Iminência →</span><span>Alta</span></div>
+    <div class="mx-legend"><span><i class="mx-dot" style="background:var(--opp)"></i> Oportunidade</span><span><i class="mx-dot" style="background:var(--risk)"></i> Risco</span>${filterChip?`<span style="margin-left:auto">${filterChip}</span>`:""}</div>
+  </div>
+  <div class="ro-cols">
+    ${col("Oportunidades","var(--opp)","▲",opps)}
+    ${col("Riscos","var(--risk)","▼",rks)}
   </div>`;
 }
 
