@@ -60,6 +60,8 @@
   a{color:inherit;text-decoration:none}
   .num{font-variant-numeric:tabular-nums;font-family:var(--mono)}
   .eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+  .upd{display:flex;gap:6px;align-items:center;font-size:11px;color:var(--ink-3);white-space:nowrap}
+  .upd b{color:var(--ink-2);font-weight:600}
 
   /* ── Header fixo (topo + setores + lentes juntos) ── */
   .app-head{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--surface) 92%,transparent);
@@ -388,7 +390,7 @@
     <div class="brand"><span class="dot"></span>NEXOS<small>Inteligência de Mercado</small><span class="ver">v2.0</span></div>
     <div class="spacer"></div>
     <span class="eyebrow" id="weekCtx" style="align-self:center"></span>
-    <a class="btn" id="jsonBtn" href="https://raw.githubusercontent.com/LeopoldoDiniz/clipping-mercado/main/data/ultimo.json" target="_blank" rel="noopener" title="Dados abertos (JSON)">⧉ JSON</a>
+    <span class="upd" id="updCtx" style="align-self:center"></span>
     <button class="btn" id="themeBtn" aria-label="Alternar tema" title="Tema claro/escuro">◐</button>
   </div>
   <div class="row r-period" id="periodBar" role="group" aria-label="Seleção de período"></div>
@@ -811,6 +813,7 @@ function renderHead(){
   ctx.onclick=openSinaisDrawer;
   ln.appendChild(ctx);
   document.getElementById("weekCtx").textContent=label;
+  renderUpd();
   renderPeriodBar();
 }
 let ALLDATA=null,METAS=null;
@@ -1138,10 +1141,12 @@ function viewMetodologia(){
 
     <div class="card card-pad"><h4 style="margin-bottom:10px">🗓️ Como e quando atualiza</h4>
       <ul style="font-size:12.5px;color:var(--ink-2);margin:0;padding-left:18px;line-height:1.6">
-        <li>O motor roda automaticamente <b>duas vezes por semana</b>: segunda (edição principal) e quinta (atualização).</li>
+        <li>O motor roda automaticamente <b>duas vezes por semana</b>, sempre às <b>07h (horário de Brasília)</b> — <span style="font-family:var(--mono);font-size:11px">10:00 UTC</span>:
+          <ul style="margin:4px 0 0;padding-left:16px"><li><b>Segunda-feira, 07h</b> — edição principal da semana;</li><li><b>Quinta-feira, 07h</b> — atualização do que mudou.</li></ul></li>
         <li>Cada rodada: coleta as notícias da semana → revisa os sinais anteriores → recalcula relevância → grava a memória → publica os dados do portal.</li>
         <li>Vale a regra <b>1 ciclo = 1 semana</b>: a rodada de quinta atualiza o que mudou sem inflar a relevância.</li>
-        <li>Cada edição é <b>versionada por período</b> (ex.: 2026-W28), preservando o histórico.</li></ul></div>
+        <li>Cada edição é <b>versionada por período</b> (ex.: 2026-W28), preservando o histórico.</li>
+        <li>No <b>topo do painel</b> você vê a <b>última publicação</b> e a <b>próxima rodada prevista</b>.</li></ul></div>
 
     <div class="card card-pad"><h4 style="margin-bottom:10px">🏦 Indicadores macro — regra de cálculo</h4>
       <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">Valores <b>determinísticos</b>, buscados direto na API oficial. A IA <b>não</b> gera número macro.</p>
@@ -1186,6 +1191,14 @@ function viewMetodologia(){
         <li><b>Gráfico</b>: com uma única semana, mostra ela <b>+ a imediatamente anterior</b> (referência); com escopo agregado, mostra <b>apenas as semanas do escopo</b>.</li>
         <li>Mês/trimestre <b>vigente</b> aparece como <b>parcial</b> (até a última semana apurada).</li>
         <li>Em escopo agregado, a relevância exibida é o <b>pico</b> do sinal no período; os KPIs macro mostram o <b>último dado do escopo</b> (são de estoque, não se somam).</li></ul></div>
+
+    <div class="card card-pad"><h4 style="margin-bottom:10px">📂 Dados abertos (JSON)</h4>
+      <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 12px"><b>Cada número e cada texto</b> deste painel sai destes arquivos, versionados por semana (ex.: <span style="font-family:var(--mono);font-size:11px">2026-W28.json</span>). Nada é caixa-preta: baixe, audite e reutilize livremente.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn" href="./data/ultimo.json" target="_blank" rel="noopener" title="Dados da semana mais recente">⧉ Semana atual</a>
+        <a class="btn" href="./data/index.json" target="_blank" rel="noopener" title="Índice de todas as semanas">⧉ Índice de semanas</a>
+        <a class="btn" href="https://github.com/LeopoldoDiniz/clipping-mercado/tree/main/data" target="_blank" rel="noopener" title="Base completa no GitHub">⧉ Base completa (GitHub)</a>
+      </div></div>
   </div>`;
 }
 
@@ -1228,8 +1241,15 @@ document.addEventListener("click",e=>{
    O que o motor NÃO entrega ainda (impacto/iminência da matriz, cadeia, agenda,
    decomposição do IPCA, "o que fazer", setores Agro/Construção/E-commerce) é
    DERIVADO ou permanece como conteúdo editorial marcado, até a evolução do motor. */
-let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, longByWeek={};
+let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, LAST_UPDATE=null, longByWeek={};
 const MABBR=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+const DOWAB=["dom","seg","ter","qua","qui","sex","sáb"];
+// motor roda seg e qui às 10:00 UTC = 07h (BRT, UTC-3)
+const _brt=d=>new Date(d.getTime()-3*3600*1000); // Date deslocado p/ leitura em BRT
+function fmtUpd(iso){if(!iso)return null;let s=String(iso);if(!/[zZ]|[+-]\d\d:?\d\d$/.test(s))s+="Z";const d=new Date(s);if(isNaN(d))return null;const b=_brt(d);return `${b.getUTCDate()}/${MABBR[b.getUTCMonth()]} ${String(b.getUTCHours()).padStart(2,"0")}:${String(b.getUTCMinutes()).padStart(2,"0")}`;}
+function nextRun(){const now=new Date();for(let i=0;i<10;i++){const d=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+i,10,0,0));const dow=d.getUTCDay();if((dow===1||dow===4)&&d>now)return d;}return null;}
+function fmtRun(d){if(!d)return"—";const b=_brt(d);return `${DOWAB[b.getUTCDay()]} ${b.getUTCDate()}/${MABBR[b.getUTCMonth()]}, ${String(b.getUTCHours()).padStart(2,"0")}h`;}
+function renderUpd(){const el=document.getElementById("updCtx");if(!el)return;const last=fmtUpd(LAST_UPDATE);el.innerHTML=`<span title="Última publicação dos dados">↻ atualizado <b>${last||"—"}</b></span><span style="opacity:.45">·</span><span title="Próxima rodada programada do motor (segundas e quintas, 07h BRT)">próxima <b>${fmtRun(nextRun())}</b></span>`;}
 const MFULL=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
 const pad2=n=>String(n).padStart(2,"0");
 const weekKey=ch=>{const m=/W(\d+)/.exec(ch||"");return m?("W"+m[1]):ch;};
@@ -1410,6 +1430,7 @@ async function boot(){
   try{
     const base="./data/";
     const idx=await (await fetch(base+"index.json",{cache:"no-store"})).json();
+    LAST_UPDATE=idx.atualizado_em||null;
     const sem=(idx.semanas||[]).slice().sort((a,b)=>(b.ordem||0)-(a.ordem||0));
     if(!sem.length)throw new Error("index sem semanas");
     const metas=sem.map(s=>deriveWeek(s.chave));
@@ -1417,7 +1438,6 @@ async function boot(){
     ALLDATA=datas;METAS=metas;
     state.gran="semana";state.picks=[metas[0].k];state.pointSig=null; // padrão: semana mais recente
     applyData(datas[0],datas,metas);
-    const jb=document.getElementById("jsonBtn");if(jb)jb.href=base+"ultimo.json";
     render();
   }catch(err){console.warn("Nexos: exibindo dados de demonstração (data/ indisponível).",err);}}
 
