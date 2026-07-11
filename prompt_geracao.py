@@ -26,21 +26,28 @@ Febraban (febraban.org.br), ANEEL (gov.br/aneel), ANATEL (gov.br/anatel),
 ABES Software (abessoftware.com.br), EPBR energia (epbr.com.br), MIT Tech Review BR (mittechreview.com.br)
 
 ## Agro
-CNA Brasil (cnabrasil.org.br), CEPEA/Esalq (cepea.org.br), Conab (conab.gov.br),
-Embrapa (embrapa.br), MAPA (gov.br/agricultura), IMEA (imea.com.br),
-Notícias Agrícolas (noticiasagricolas.com.br), Canal Rural (canalrural.com.br),
+CNA Brasil (cnabrasil.org.br), CEPEA/Esalq (cepea.org.br) ⭐preço, Conab (conab.gov.br) ⭐safra,
+Embrapa (embrapa.br), MAPA (gov.br/agricultura), IMEA (imea.com.br), B3 / futuros agro (b3.com.br),
+Notícias Agrícolas (noticiasagricolas.com.br), Canal Rural (canalrural.com.br), Globo Rural (globorural.globo.com),
+AgFeed (agfeed.com.br), Scot Consultoria (scotconsultoria.com.br),
 ABIEC / carne (abiec.com.br), ABPA / aves e suínos (abpa-br.org), ABIOVE / soja (abiove.org.br), UNICA (unica.com.br)
 
 ## Construção civil
-CBIC (cbic.org.br), SindusCon-SP (sindusconsp.com.br), ABRAINC (abrainc.org.br),
-Secovi-SP (secovi.com.br), ABRAMAT / materiais (abramat.org.br), SNIC / cimento (snic.org.br),
-SINAPI / Caixa (caixa.gov.br), FGV — INCC (portalibre.fgv.br), ANAMACO (anamaco.com.br)
+CBIC / Hub de Dados (cbic.org.br) ⭐, SindusCon-SP (sindusconsp.com.br), CUB médio (cub.org.br) ⭐R$/m²,
+FGV — INCC (portalibre.fgv.br) ⭐custo, FipeZAP / imóveis (fipe.org.br) ⭐preço, SNIC / cimento (snic.org.br) ⭐atividade,
+ABRAINC (abrainc.org.br), Secovi-SP (secovi.com.br), ABRAMAT / materiais (abramat.org.br),
+SINAPI / Caixa (caixa.gov.br), ANAMACO (anamaco.com.br), Sienge (sienge.com.br)
 
 ## E-commerce
-ABComm (abcomm.org), Neotrust (neotrust.com.br), MCC-ENET (mccenet.com.br),
+ABComm (abcomm.org) ⭐, Neotrust / Confi (neotrust.com.br) ⭐, MCC-ENET (mccenet.com.br) ⭐índice mensal,
 NIQ / Webshoppers (nielseniq.com), Conversion (conversion.com.br), E-commerce Brasil (ecommercebrasil.com.br),
-Nuvemshop (nuvemshop.com.br), VTEX (vtex.com), Mercado Livre (mercadolivre.com.br),
+Mercado&Consumo (mercadoeconsumo.com.br), Nuvemshop (nuvemshop.com.br), VTEX (vtex.com), Mercado Livre (mercadolivre.com.br),
 Shopee (shopee.com.br), Amazon Brasil (amazon.com.br), Magalu (magazineluiza.com.br), Reclame Aqui (reclameaqui.com.br)
+
+# REFERÊNCIAS DE MERCADO (decision-grade) — as ⭐ acima são as réguas que o mercado usa para decidir.
+# Ancore a leitura de cada setor no número mais recente delas quando houver:
+#   Agro → preços CEPEA (soja/boi/milho/café) e safra Conab;  Construção → INCC/FGV, CUB e FipeZAP;
+#   E-commerce → índice MCC-ENET e dados Neotrust/ABComm.  Cite sempre a fonte e a data.
 """.strip()
 
 

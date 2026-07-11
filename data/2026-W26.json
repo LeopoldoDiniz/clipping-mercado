@@ -540,6 +540,20 @@
       "unit": "R$/m²"
     },
     {
+      "setor": "construcao",
+      "key": "construcao_incc",
+      "setorLabel": "Construção",
+      "label": "INCC (FGV)",
+      "valor": "+0,88%",
+      "cor": "up",
+      "sub": "Custo da construção (mercado) · var. mês · acum. ano +3,47% · FGV/BCB-SGS mai/26",
+      "ref": "mai/26",
+      "pt": 0.88,
+      "acum": 3.47,
+      "flow": true,
+      "unit": "%"
+    },
+    {
       "setor": "agro",
       "setorLabel": "Agro",
       "label": "Safra de grãos (LSPA)",

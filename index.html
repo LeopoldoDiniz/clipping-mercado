@@ -505,17 +505,23 @@ const SETOR_IND=[
   {id:"ecommerce",nome:"E-commerce",ico:"🛍️",fonte:false,info:"Sem série oficial gratuita de faturamento; proxy de pagamentos do BCB em validação (será tratado no motor, não pelo Gemini). Entra sem fabricar dado."}
 ];
 const SETOR_IMETA=Object.fromEntries(SETOR_IND.map(s=>[s.id,s]));
+// meta (ícone/explicação) por CHAVE de indicador — permite vários indicadores no mesmo setor
+// (ex.: Construção = SINAPI oficial + INCC de mercado; Agro = safra + preços CEPEA)
+const SETOR_KEYMETA={
+  construcao_incc:{ico:"📈",info:"INCC/FGV — Índice Nacional de Custo da Construção: variação do custo de obras (materiais, mão de obra e serviços), coletado em 7 capitais. É a régua de MERCADO para reajuste de contratos de construção. Fonte: FGV, espelhado em BCB/SGS série 192."}
+};
 // adapta kpis_setoriais (com numéricos pt/acum) em objetos de KPI com série histórica (espelha adaptKpis)
 function adaptKpisSetor(rawSetor,allData){
-  return (rawSetor||[]).map(k=>{const setor=k.setor;const meta=SETOR_IMETA[setor]||{ico:"📊",info:""};
+  return (rawSetor||[]).map(k=>{const setor=k.setor;const key=k.key||setor;
+    const meta=SETOR_KEYMETA[key]||SETOR_IMETA[setor]||{ico:"📊",info:""};
     const raw=[],rawA=[];
-    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);const kk=(d&&d.kpis_setoriais||[]).find(z=>z.setor===setor);
+    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);const kk=(d&&d.kpis_setoriais||[]).find(z=>(z.key||z.setor)===key);
       raw.push(kk&&kk.pt!=null?kk.pt:null);rawA.push(kk&&kk.acum!=null?kk.acum:null);});
     let last=null;const fwd=raw.map(v=>{if(v!=null)last=v;return last;});const fst=fwd.find(v=>v!=null);
     const hist=fwd.map(v=>v!=null?v:(fst!=null?fst:0));
     let lastA=null;const acum=rawA.map(v=>{if(v!=null)lastA=v;return lastA;});
-    return {id:"s_"+setor,setor,setorLabel:k.setorLabel,label:k.label,ico:meta.ico,val:k.valor,unit:"",
-      cor:k.cor||"neutral",sub:k.sub,hist,acum,flow:!!k.flow,un:k.flow?"%":"",info:meta.info,setorial:true};});
+    return {id:"s_"+key,setor,key,setorLabel:k.setorLabel,label:k.label,ico:k.ico||meta.ico,val:k.valor,unit:"",
+      cor:k.cor||"neutral",sub:k.sub,hist,acum,flow:!!k.flow,un:k.flow?"%":"",info:k.info||meta.info,setorial:true};});
 }
 const selSetorKpis=()=>KPIS_SETOR.filter(k=>state.indSetores.includes(k.setor));
 const PRESSAO=71;

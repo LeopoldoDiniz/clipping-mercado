@@ -370,6 +370,20 @@ def coletar_kpis_setoriais(ref=None):
                     "sub": sub, "ref": f"{_MABBR[m]}/{str(y)[2:]}", "pt": round(val, 2),
                     "acum": None if sa is None else round(sa, 2), "flow": False, "unit": "R$/m²"})
 
+    incc = _bcb_mensal(192, 20)   # INCC/FGV var % mensal (custo de mercado da construção; SGS cap=20 obs)
+    ic = _pick_mensal(incc, ref, 1, 6) if incc else None
+    if ic:
+        y, m, val, _ = ic
+        ica = _ipca_acum_ano(incc, y, m)   # acumulado no ano: compõe as variações mensais (jan→ref)
+        sub = ("Custo da construção (mercado) · var. mês"
+               + (f" · acum. ano {'+' if ica >= 0 else ''}{_br(ica, 2)}%" if ica is not None else "")
+               + f" · FGV/BCB-SGS {_MABBR[m]}/{str(y)[2:]}")
+        out.append({"setor": "construcao", "key": "construcao_incc", "setorLabel": "Construção",
+                    "label": "INCC (FGV)", "valor": f"{'+' if val >= 0 else ''}{_br(val, 2)}%",
+                    "cor": _cor_delta(val), "sub": sub, "ref": f"{_MABBR[m]}/{str(y)[2:]}",
+                    "pt": round(val, 2), "acum": None if ica is None else round(ica, 2),
+                    "flow": True, "unit": "%"})
+
     ls = _pick_mensal(lspa, ref, 1, 8) if lspa else None
     if ls:
         y, m, val, _ = ls
