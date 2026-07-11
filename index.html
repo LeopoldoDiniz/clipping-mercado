@@ -1034,9 +1034,7 @@ function setorSelector(){
     const badge=s.nucleo?'<span class="ss-tag">no núcleo</span>':(!s.fonte?'<span class="ss-tag">em breve</span>':'');
     return `<button class="ss-chip${on?' on':''}${disabled?' off':''}" ${disabled?'disabled aria-disabled="true"':`data-indsetor="${s.id}" aria-pressed="${on}"`} data-tip="${s.info.replace(/"/g,'&quot;')}"><span class="ss-ico">${s.ico}</span>${s.nome}${badge}</button>`;
   }).join("");
-  const n=state.indSetores.length;
   return `<div class="setor-sel">
-    <div class="ss-head"><span class="ss-lbl">Indicadores setoriais</span><span class="audit-hint">▸ somam-se aos macros (não substituem)${n?` · ${n} ativo${n>1?'s':''}`:''}</span></div>
     <div class="ss-chips">${chips}</div></div>`;
 }
 
