@@ -97,6 +97,8 @@
   .wkchip.on{color:var(--ink);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
   .wkchip .pp{font-size:10px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em}
   .wkchip.on .pp{color:var(--accent)}
+  .pk-lbl2{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+  .wkchip.mo.on{background:var(--accent);color:#fff;border-color:var(--accent)}
   .manchete{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--ink);margin:0 0 13px}
   .hl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:0 0 13px}
   @media (max-width:680px){.hl-row{grid-template-columns:1fr}}
@@ -670,7 +672,7 @@ const LENSES=[
 ];
 
 /* ───────── ESTADO ───────── */
-let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],pointSig:null,chartSeries:["ipca","ipp"]};
+let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonth:null,pointSig:null,chartSeries:["ipca","ipp"]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
 
 /* ───────── HELPERS ───────── */
@@ -826,18 +828,36 @@ function renderPeriodBar(){
   const bar=document.getElementById("periodBar");if(!bar)return;
   const GRAN=[["semana","Semana"],["mes","Mês"],["trimestre","Trimestre"],["ano","Ano"]];
   const seg=GRAN.map(([id,nm])=>`<button data-gran="${id}" aria-pressed="${state.gran===id}">${nm}</button>`).join("");
-  const chips=granItems(state.gran).map(it=>{
-    const on=state.picks.includes(it.id);
-    const sub=it.sub?`<span class="pp">${it.sub}</span>`:"";
-    const pp=it.parcial?`<span class="pp">parcial</span>`:"";
-    return `<button class="wkchip ${on?'on':''}" data-pick="${it.id}" aria-pressed="${on}">${it.lbl}${sub}${pp}</button>`;
-  }).join("");
-  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div><div class="wkchips">${chips}</div>`;
+  let groups;
+  if(state.gran==="semana"){
+    // filtro de MÊS + só as semanas do mês escolhido (evita o paredão de semanas)
+    const months=[...new Set(CHRONO.map(w=>w.mes))]; // cronológico
+    let cur=state.weekMonth;
+    if(!cur||!months.includes(cur))cur=(WMETA[state.picks[state.picks.length-1]]||{}).mes||months[months.length-1];
+    state.weekMonth=cur;
+    const moChips=months.map(mid=>`<button class="wkchip mo ${cur===mid?'on':''}" data-wkmonth="${mid}" aria-pressed="${cur===mid}">${MESNOME[mid.split("-")[1]]||mesLbl(mid)}</button>`).join("");
+    const wkChips=CHRONO.filter(w=>w.mes===cur).map(w=>{const on=state.picks.includes(w.k);
+      return `<button class="wkchip ${on?'on':''}" data-pick="${w.k}" aria-pressed="${on}">Sem ${w.k.slice(1)}<span class="pp">${w.dt.replace(/ 20\d\d/,"")}</span></button>`;}).join("");
+    groups=`<span class="pk-lbl2">Mês</span><div class="wkchips">${moChips}</div><span class="pk-lbl2">Semanas</span><div class="wkchips">${wkChips}</div>`;
+  }else{
+    const chips=granItems(state.gran).map(it=>{const on=state.picks.includes(it.id);
+      const sub=it.sub?`<span class="pp">${it.sub}</span>`:"";const pp=it.parcial?`<span class="pp">parcial</span>`:"";
+      return `<button class="wkchip ${on?'on':''}" data-pick="${it.id}" aria-pressed="${on}">${it.lbl}${sub}${pp}</button>`;}).join("");
+    groups=`<div class="wkchips">${chips}</div>`;
+  }
+  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div>${groups}`;
   bar.querySelectorAll("[data-gran]").forEach(b=>b.onclick=()=>{
     if(state.gran===b.dataset.gran)return;
     state.gran=b.dataset.gran;
     const its=granItems(state.gran);
     state.picks=its.length?[its[its.length-1].id]:[]; // padrão: período mais recente
+    if(state.gran==="semana")state.weekMonth=(WMETA[state.picks[0]]||{}).mes||null;
+    state.pointSig=null;applyScope();
+  });
+  bar.querySelectorAll("[data-wkmonth]").forEach(b=>b.onclick=()=>{
+    const mid=b.dataset.wkmonth;state.weekMonth=mid;
+    const wks=CHRONO.filter(w=>w.mes===mid);
+    if(wks.length)state.picks=[wks[wks.length-1].k]; // seleciona a semana mais recente do mês
     state.pointSig=null;applyScope();
   });
   bar.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{
