@@ -482,5 +482,33 @@
       "data_identificacao": "2026-07-01",
       "origem": "real"
     }
+  ],
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "-1,1%",
+      "cor": "down",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,3% · IBGE/PMS mar/26",
+      "ref": "mar/26",
+      "pt": -1.1,
+      "acum": 2.3,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 1.946,09",
+      "cor": "up",
+      "sub": "Custo médio da construção · +0,72% mês · acum. ano +2,89% · IBGE/SINAPI abr/26",
+      "ref": "abr/26",
+      "pt": 1946.09,
+      "acum": 2.89,
+      "flow": false,
+      "unit": "R$/m²"
+    }
   ]
 }

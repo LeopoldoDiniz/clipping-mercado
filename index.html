@@ -175,6 +175,31 @@
   .schip .sw{width:9px;height:9px;border-radius:3px}
   .schip.on{color:var(--ink);border-color:var(--sc,var(--accent))}
   .schip:hover{border-color:var(--border-strong)}
+  .schip-setor{border-style:dashed}
+  /* seletor multi-setor de indicadores */
+  .setor-sel{margin:2px 0 14px}
+  .ss-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .ss-lbl{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-2)}
+  .ss-chips{display:flex;gap:7px;flex-wrap:wrap}
+  .ss-chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:6px 11px;border-radius:99px;
+    border:1px solid var(--border);background:var(--surface);color:var(--ink-2);cursor:pointer;position:relative;transition:.12s}
+  .ss-chip .ss-ico{font-size:14px}
+  .ss-chip:hover:not(.off){border-color:var(--accent);color:var(--accent-2)}
+  .ss-chip.on{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 42%,var(--border));color:var(--accent-2);font-weight:700}
+  .ss-chip.off{opacity:.55;cursor:not-allowed}
+  .ss-tag{font-size:9px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:1px 5px;border-radius:5px;
+    background:var(--surface-2);color:var(--ink-3);border:1px solid var(--border)}
+  .ss-chip.on .ss-tag{background:var(--surface);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 30%,var(--border))}
+  .ss-chip[data-tip]::after{content:attr(data-tip);position:absolute;bottom:130%;left:0;width:240px;background:#12211F;color:#F4F7F7;
+    font-size:11px;font-weight:400;line-height:1.4;text-transform:none;letter-spacing:0;padding:9px 11px;border-radius:8px;
+    box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:opacity .15s;z-index:20;pointer-events:none;text-align:left}
+  .ss-chip[data-tip]:hover::after{opacity:1;visibility:visible}
+  :root[data-theme="dark"] .ss-chip[data-tip]::after{background:#05100F}
+  /* card de indicador setorial: destaque sutil (borda tracejada no topo) */
+  .kpi-setor{border-color:color-mix(in srgb,var(--accent) 34%,var(--border));background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+  .kpi-setor .k-head{flex-wrap:wrap}
+  .k-setor{font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);
+    background:var(--accent-soft);border-radius:5px;padding:1px 6px;margin-left:2px}
   .kpi .k-val{font-size:22px;font-weight:700;margin-top:3px;display:flex;align-items:center;gap:7px}
   .kpi .k-sub{font-size:11px;color:var(--ink-3);margin-top:5px;line-height:1.35}
   .arrow{font-size:12px;font-weight:800}
@@ -461,6 +486,30 @@ let KPIS=[
    info:"Faturamento do comércio eletrônico brasileiro, variação sobre o mesmo período do ano anterior. Não há série oficial gratuita — acompanhado como indicador de mercado (Neotrust, ABComm, MCC-ENET)."},
 ];
 let KPIMAP=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+let KPIS_SETOR=[]; // indicadores setoriais (incrementais aos macros) — preenchidos em applyData
+// setores com indicador setorial próprio, oficial (IBGE/BCB). Agro/E-commerce: fonte em validação (sem fabricar).
+const SETOR_IND=[
+  {id:"servicos",nome:"Serviços",ico:"🛎️",fonte:true,info:"Volume de serviços prestados (PMS/IBGE), variação mês contra mês com ajuste sazonal; acumulado no ano compara jan–mês vs igual período do ano anterior. Fonte determinística: IBGE/SIDRA tabela 5906."},
+  {id:"construcao",nome:"Construção",ico:"🏗️",fonte:true,info:"Custo médio da construção civil por m² (SINAPI/IBGE): materiais + mão de obra, com variação no mês e acumulada no ano. Fonte determinística: IBGE/SIDRA tabela 2296, variáveis 48/1196/1197."},
+  {id:"industria",nome:"Indústria",ico:"🏭",fonte:false,nucleo:true,info:"Indústria já está no núcleo macro (PIM e IPP), sempre visível."},
+  {id:"comercio",nome:"Comércio",ico:"🛒",fonte:false,nucleo:true,info:"Comércio já está no núcleo macro (Varejo/PMC), sempre visível."},
+  {id:"agro",nome:"Agro",ico:"🌾",fonte:false,info:"Fonte oficial gratuita em validação (LSPA/Comex). Entra sem fabricar dado."},
+  {id:"ecommerce",nome:"E-commerce",ico:"🛍️",fonte:false,info:"Sem série oficial gratuita; proxies de pagamentos (BCB) em validação. Entra sem fabricar dado."}
+];
+const SETOR_IMETA={servicos:SETOR_IND[0],construcao:SETOR_IND[1]};
+// adapta kpis_setoriais (com numéricos pt/acum) em objetos de KPI com série histórica (espelha adaptKpis)
+function adaptKpisSetor(rawSetor,allData){
+  return (rawSetor||[]).map(k=>{const setor=k.setor;const meta=SETOR_IMETA[setor]||{ico:"📊",info:""};
+    const raw=[],rawA=[];
+    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);const kk=(d&&d.kpis_setoriais||[]).find(z=>z.setor===setor);
+      raw.push(kk&&kk.pt!=null?kk.pt:null);rawA.push(kk&&kk.acum!=null?kk.acum:null);});
+    let last=null;const fwd=raw.map(v=>{if(v!=null)last=v;return last;});const fst=fwd.find(v=>v!=null);
+    const hist=fwd.map(v=>v!=null?v:(fst!=null?fst:0));
+    let lastA=null;const acum=rawA.map(v=>{if(v!=null)lastA=v;return lastA;});
+    return {id:"s_"+setor,setor,setorLabel:k.setorLabel,label:k.label,ico:meta.ico,val:k.valor,unit:"",
+      cor:k.cor||"neutral",sub:k.sub,hist,acum,flow:!!k.flow,un:k.flow?"%":"",info:meta.info,setorial:true};});
+}
+const selSetorKpis=()=>KPIS_SETOR.filter(k=>state.indSetores.includes(k.setor));
 const PRESSAO=71;
 
 let EDITORIAL=`A Semana 28 se desenha com um cenário que exige atenção redobrada, sobretudo após a política monetária manter a Selic em patamar elevado — o juro básico que encarece crédito e investimento — para conter a inflação ainda acima da meta. A produção industrial recuou 0,2% e o varejo perdeu fôlego, enquanto a balança comercial surpreendeu com forte superávit e o FMI elevou a projeção de PIB para 2,4%, puxada pela safra.
@@ -678,7 +727,7 @@ const LENSES=[
 ];
 
 /* ───────── ESTADO ───────── */
-let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca","ipp"]};
+let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca","ipp"],indSetores:[]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
 
 /* ───────── HELPERS ───────── */
@@ -888,21 +937,36 @@ function periodBanner(){const {nota}=periodScope();return nota?`<div class="bann
 function histBanner(){if(!HIST_ONLY)return"";return `<div class="banner hist"><span>⧗</span><div><b>Busca retroativa de notícias indisponível.</b> Para semanas anteriores à <b>Semana 22</b> (início do motor), a cobertura de clipping/sinais <b>não é reproduzível de forma confiável</b> — a apuração retroativa não passa no nosso padrão de auditoria. Você vê os <b>indicadores oficiais (BCB/IBGE)</b> e a <b>leitura macro derivada</b> deles.</div></div>`;}
 
 const KC={up:"var(--opp)",down:"var(--risk)",neutral:"var(--neutral)"};
-function kpiItems(){
+function kpiCard(k){
   const monthly=state.gran!=="semana";
   const refIdx=monthly?CHRONO.findIndex(w=>w.k===refKey()):-1;
-  return KPIS.map(k=>{const c=KC[k.cor]||"var(--accent)";
-    let val=k.val,tag="";
-    if(monthly){
-      if(k.flow&&k.acum&&refIdx>=0&&k.acum[refIdx]!=null){val=`${dec(k.acum[refIdx],2)}%`;tag=' · <b>acum. ano</b>';}
-      else tag=' · <b>fechamento do mês</b>';
-    }
-    return `<div class="kpi">
-    <div class="k-head"><span class="k-badge" style="--kc:${c}">${k.ico}</span><span class="k-label">${k.label}</span>
-    <button class="info clickable" data-kpi="${k.id}" aria-label="Sobre ${k.label}" data-tip="${k.info.replace(/"/g,'&quot;')}">i</button></div>
+  const c=KC[k.cor]||"var(--accent)";
+  let val=k.val,tag="";
+  if(monthly){
+    if(k.flow&&k.acum&&refIdx>=0&&k.acum[refIdx]!=null){val=`${dec(k.acum[refIdx],2)}%`;tag=' · <b>acum. ano</b>';}
+    else tag=' · <b>fechamento do mês</b>';
+  }
+  const setBadge=k.setorial?`<span class="k-setor">${k.setorLabel}</span>`:"";
+  return `<div class="kpi${k.setorial?' kpi-setor':''}">
+    <div class="k-head"><span class="k-badge" style="--kc:${c}">${k.ico}</span><span class="k-label">${k.label}</span>${setBadge}
+    <button class="info clickable" data-kpi="${k.id}" aria-label="Sobre ${k.label}" data-tip="${(k.info||'').replace(/"/g,'&quot;')}">i</button></div>
     <div class="k-val num">${val}<span class="arrow ${k.cor}">${arrow(k.cor)}</span>${k.unit?`<span class="k-unit">${k.unit}</span>`:""}</div>
     <div class="k-sub">${k.sub}${tag}${k.mkt?' · <b>mercado</b>':''}</div>
-    ${(!DATA_LOADED&&KPI_INSIGHT[k.id])?`<div class="k-insight">${KPI_INSIGHT[k.id]}</div>`:""}</div>`;}).join("");
+    ${(!DATA_LOADED&&KPI_INSIGHT[k.id])?`<div class="k-insight">${KPI_INSIGHT[k.id]}</div>`:""}</div>`;
+}
+function kpiItems(){return KPIS.map(kpiCard).join("");}
+// seletor multi-setor: adiciona indicadores setoriais (incrementais aos macros, não substitutivos)
+function setorSelector(){
+  const chips=SETOR_IND.map(s=>{
+    const on=state.indSetores.includes(s.id);
+    const disabled=!s.fonte;
+    const badge=s.nucleo?'<span class="ss-tag">no núcleo</span>':(!s.fonte?'<span class="ss-tag">em breve</span>':'');
+    return `<button class="ss-chip${on?' on':''}${disabled?' off':''}" ${disabled?'disabled aria-disabled="true"':`data-indsetor="${s.id}" aria-pressed="${on}"`} data-tip="${s.info.replace(/"/g,'&quot;')}"><span class="ss-ico">${s.ico}</span>${s.nome}${badge}</button>`;
+  }).join("");
+  const n=state.indSetores.length;
+  return `<div class="setor-sel">
+    <div class="ss-head"><span class="ss-lbl">Indicadores setoriais</span><span class="audit-hint">▸ somam-se aos macros (não substituem)${n?` · ${n} ativo${n>1?'s':''}`:''}</span></div>
+    <div class="ss-chips">${chips}</div></div>`;
 }
 
 /* ── Gráfico de evolução dos indicadores (SVG, comparação de séries) ── */
@@ -938,12 +1002,13 @@ function chartCard(){
     const above=si%2===0;
     const vlab=vs.map((v,i)=>`<text x="${x(i)}" y="${y(v)+(above?-9:15)}" text-anchor="middle" font-size="9" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
-  const chips=KPIS.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
-    return `<button class="schip ${on?'on':''}" data-series="${k.id}" style="${on?`--sc:${c}`:''}"><span class="sw" style="background:${on?c:'var(--border-strong)'}"></span>${k.label}</button>`;}).join("");
+  const chipSeries=KPIS.concat(selSetorKpis()); // macros + setoriais selecionados
+  const chips=chipSeries.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
+    return `<button class="schip ${on?'on':''}${k.setorial?' schip-setor':''}" data-series="${k.id}" style="${on?`--sc:${c}`:''}"><span class="sw" style="background:${on?c:'var(--border-strong)'}"></span>${k.label}</button>`;}).join("");
   const janela=n===1?"1 leitura":`${points[0].label} → ${points[n-1].label}`;
   const partial=points.some(p=>p.partial);
   const legend=monthly
-    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: IPCA, varejo, PIM, IPP) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
+    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: IPCA, varejo, PIM, IPP, Serviços/PMS) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego, custo/m²). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
     : `Valor de cada indicador <b>por semana</b> (S = nº da semana) · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}`;
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
@@ -1012,7 +1077,8 @@ function viewIndicadores(){
   return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
     <div class="blk">
       <div class="blk-h">Indicadores${secTag} <span class="audit-hint">▸ (i) explica · a frase é a leitura rápida</span></div>
-      <div class="kpis">${kpiItems()}</div>
+      ${setorSelector()}
+      <div class="kpis">${kpiItems()}${selSetorKpis().map(kpiCard).join("")}</div>
     </div>
 
     <div class="blk">
@@ -1277,7 +1343,7 @@ function markActive(elm){document.querySelectorAll(".ev-active").forEach(x=>x.cl
 document.getElementById("view").addEventListener("click",e=>{
   const more=e.target.closest("[data-more]");if(more){e.preventDefault();e.stopPropagation();const w=more.closest(".clampw");const rest=w&&w.querySelector(".clamp-rest");if(rest){if(rest.hasAttribute("hidden")){rest.removeAttribute("hidden");more.textContent="ver menos";}else{rest.setAttribute("hidden","");more.textContent=more.dataset.more||"ver mais";}}return;}
   const goto=e.target.closest("[data-goto]");if(goto){e.preventDefault();state.lens=goto.dataset.goto;render();scrollTo({top:0,behavior:"smooth"});return;}
-  const kpiI=e.target.closest("[data-kpi]");if(kpiI){const k=KPIS.find(x=>x.id===kpiI.dataset.kpi);markActive(kpiI.closest(".kpi"));openDrawer("Indicador",k.label,[]);document.getElementById("drawerBody").innerHTML=`<div style="padding:14px 0"><p style="font-size:13.5px;color:var(--ink-2)">${k.info}</p><div class="legend" style="margin-top:10px">${k.sub}</div><a href="#" data-goto="metodologia" style="display:inline-block;margin-top:12px;color:var(--accent);font-weight:600;font-size:12.5px">Ver metodologia completa →</a></div>`;return;}
+  const kpiI=e.target.closest("[data-kpi]");if(kpiI){const k=KPIMAP[kpiI.dataset.kpi]||KPIS.find(x=>x.id===kpiI.dataset.kpi);markActive(kpiI.closest(".kpi"));openDrawer("Indicador",k.label,[]);document.getElementById("drawerBody").innerHTML=`<div style="padding:14px 0"><p style="font-size:13.5px;color:var(--ink-2)">${k.info}</p><div class="legend" style="margin-top:10px">${k.sub}</div><a href="#" data-goto="metodologia" style="display:inline-block;margin-top:12px;color:var(--accent);font-weight:600;font-size:12.5px">Ver metodologia completa →</a></div>`;return;}
   const sig=e.target.closest("[data-sig]");if(sig){const s=SIGNALS[+sig.dataset.sig];markActive(sig);openDrawer("Evidências do sinal",s.t,newsForSig(s));return;}
   const dimC=e.target.closest(".cell[data-dim]");if(dimC){const d=dimC.dataset.dim,sec=dimC.dataset.sec;markActive(dimC);openDrawer(`${DIMS[d]} · ${SMETA[sec].nome}`,`${d} — ${PESTEL.find(x=>x.dim===d).tema}`,newsFor({dim:d,sector:sec}));return;}
   const dim=e.target.closest("[data-dim]");if(dim){const d=dim.dataset.dim;markActive(dim);openDrawer(`Dimensão ${DIMS[d]}`,PESTEL.find(x=>x.dim===d).tema,newsFor({dim:d}));return;}
@@ -1287,6 +1353,10 @@ document.getElementById("view").addEventListener("click",e=>{
   const force=e.target.closest("[data-force]");if(force){renderForce(force.dataset.force);return;}
   const traj=e.target.closest("[data-traj]");if(traj){markActive(traj);openTraj(+traj.dataset.traj);return;}
   const cs=e.target.closest("[data-series]");if(cs){e.preventDefault();const k=cs.dataset.series;const i=state.chartSeries.indexOf(k);if(i>=0){if(state.chartSeries.length>1)state.chartSeries.splice(i,1);}else{if(state.chartSeries.length>=3)state.chartSeries.shift();state.chartSeries.push(k);}render();return;}
+  const isel=e.target.closest("[data-indsetor]");if(isel){e.preventDefault();const s=isel.dataset.indsetor;const i=state.indSetores.indexOf(s);
+    if(i>=0){state.indSetores.splice(i,1);state.chartSeries=state.chartSeries.filter(id=>id!=="s_"+s);} // ao remover, tira do gráfico também
+    else state.indSetores.push(s);
+    render();return;}
 });
 document.getElementById("drawerBody").addEventListener("click",e=>{
   const g=e.target.closest("[data-goto]");if(g){e.preventDefault();state.lens=g.dataset.goto;closeDrawer();render();scrollTo({top:0,behavior:"smooth"});return;}
@@ -1485,7 +1555,12 @@ function previaSetor(){
 function applyData(sel,allData,metas){
   WEEKS=metas;WMETA=Object.fromEntries(WEEKS.map(w=>[w.k,w]));CHRONO=WEEKS.slice().reverse();
   longByWeek={};allData.forEach(d=>{longByWeek[d._k]=d.longitudinal||[];});
-  KPIS=adaptKpis(sel.kpis||[],allData);KPIMAP=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+  KPIS=adaptKpis(sel.kpis||[],allData);
+  KPIS_SETOR=adaptKpisSetor(sel.kpis_setoriais||[],allData);
+  KPIMAP=Object.fromEntries(KPIS.concat(KPIS_SETOR).map(k=>[k.id,k]));
+  if(!Array.isArray(state.indSetores))state.indSetores=[];
+  state.indSetores=state.indSetores.filter(s=>KPIS_SETOR.some(k=>k.setor===s)); // só setores com dado real
+  state.chartSeries=state.chartSeries.filter(id=>!id.startsWith("s_")||KPIMAP[id]); // limpa séries setoriais órfãs
   if(!state.chartSeries.every(id=>KPIMAP[id])){const ids=KPIS.map(k=>k.id);const pref=["ipca","ipp","selic","cambio"].filter(id=>KPIMAP[id]);state.chartSeries=(pref.length>=2?pref.slice(0,2):ids.slice(0,2));}
   if(sel.editorial&&sel.editorial.texto){EDITORIAL=sel.editorial.texto;LEITURA.quote=firstSentence(EDITORIAL);}
   SIGNALS=adaptSignals(sel.longitudinal||[]);SIGNALS.forEach((s,i)=>{s.i=i;});

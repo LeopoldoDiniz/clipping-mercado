@@ -55,5 +55,33 @@
     }
   ],
   "longitudinal": [],
-  "porter": {}
+  "porter": {},
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "-0,3%",
+      "cor": "down",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,9% · IBGE/PMS dez/25",
+      "ref": "dez/25",
+      "pt": -0.3,
+      "acum": 2.9,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 1.920,74",
+      "cor": "up",
+      "sub": "Custo médio da construção · +1,54% mês · acum. ano +1,54% · IBGE/SINAPI jan/26",
+      "ref": "jan/26",
+      "pt": 1920.74,
+      "acum": 1.54,
+      "flow": false,
+      "unit": "R$/m²"
+    }
+  ]
 }
