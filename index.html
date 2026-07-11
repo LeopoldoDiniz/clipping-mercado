@@ -152,8 +152,9 @@
   .note{font-size:12px;color:var(--ink-3);background:var(--surface-2);border:1px dashed var(--border-strong);border-radius:var(--radius-sm);padding:11px 13px;margin-bottom:16px;display:flex;gap:9px;align-items:flex-start}
   .mock-badge{font-size:9px;font-weight:800;letter-spacing:.05em;color:var(--warn);border:1px solid var(--warn);padding:1px 5px;border-radius:4px;text-transform:uppercase}
 
-  .kpis{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:12px}
-  @media(max-width:1300px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  /* 8 cards por linha; largura do card preservada (~hoje), a folga da tela vira espaçamento */
+  .kpis{display:grid;grid-template-columns:repeat(8,minmax(140px,172px));justify-content:space-between;gap:14px}
+  @media(max-width:1300px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr));justify-content:stretch}}
   @media(max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
   .k-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:11px;color:var(--ink-2);margin:0 0 12px}
   .k-legend b{margin-right:3px;font-size:12px}
