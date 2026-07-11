@@ -97,8 +97,9 @@
   .wkchip.on{color:var(--ink);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
   .wkchip .pp{font-size:10px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em}
   .wkchip.on .pp{color:var(--accent)}
-  .pk-lbl2{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
-  .pk-line2{flex-basis:100%;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:2px}
+  .pk-lbl2{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:700;min-width:64px;flex:0 0 auto}
+  .pk-picks{display:flex;flex-direction:column;gap:6px;flex:1 1 auto;min-width:0}
+  .pk-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .wkchip.mo.on{background:var(--accent);color:#fff;border-color:var(--accent)}
   .manchete{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--ink);margin:0 0 13px}
   .hl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:0 0 13px}
@@ -839,7 +840,7 @@ function renderPeriodBar(){
     const moChips=months.map(mid=>`<button class="wkchip mo ${cur===mid?'on':''}" data-wkmonth="${mid}" aria-pressed="${cur===mid}">${MESNOME[mid.split("-")[1]]||mesLbl(mid)}</button>`).join("");
     const wkChips=CHRONO.filter(w=>w.mes===cur).map(w=>{const on=state.picks.includes(w.k);
       return `<button class="wkchip ${on?'on':''}" data-pick="${w.k}" aria-pressed="${on}">Sem ${w.k.slice(1)}<span class="pp">${w.dt.replace(/ 20\d\d/,"")}</span></button>`;}).join("");
-    groups=`<span class="pk-lbl2">Mês</span><div class="wkchips">${moChips}</div><div class="pk-line2"><span class="pk-lbl2">Semanas</span><div class="wkchips">${wkChips}</div></div>`;
+    groups=`<div class="pk-picks"><div class="pk-row"><span class="pk-lbl2">Mês</span><div class="wkchips">${moChips}</div></div><div class="pk-row"><span class="pk-lbl2">Semanas</span><div class="wkchips">${wkChips}</div></div></div>`;
   }else{
     const chips=granItems(state.gran).map(it=>{const on=state.picks.includes(it.id);
       const sub=it.sub?`<span class="pp">${it.sub}</span>`:"";const pp=it.parcial?`<span class="pp">parcial</span>`:"";
