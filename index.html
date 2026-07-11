@@ -152,7 +152,12 @@
   .note{font-size:12px;color:var(--ink-3);background:var(--surface-2);border:1px dashed var(--border-strong);border-radius:var(--radius-sm);padding:11px 13px;margin-bottom:16px;display:flex;gap:9px;align-items:flex-start}
   .mock-badge{font-size:9px;font-weight:800;letter-spacing:.05em;color:var(--warn);border:1px solid var(--warn);padding:1px 5px;border-radius:4px;text-transform:uppercase}
 
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+  .kpis{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
+  @media(max-width:1180px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  @media(max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .k-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:11px;color:var(--ink-2);margin:0 0 12px}
+  .k-legend b{margin-right:3px;font-size:12px}
+  .k-legend .k-legend-note{color:var(--ink-3);font-style:italic}
   .ind-grid{display:grid;grid-template-columns:minmax(200px,270px) 1fr;gap:16px;align-items:start}
   .kpi-col{display:flex;flex-direction:column;gap:10px}
   .ind-grid .chart-scroll{min-width:0}
@@ -201,9 +206,6 @@
   :root[data-theme="dark"] .ss-chip[data-tip]::after{background:#05100F}
   /* card de indicador setorial: destaque sutil (borda tracejada no topo) */
   .kpi-setor{border-color:color-mix(in srgb,var(--accent) 34%,var(--border));background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
-  .kpi-setor .k-head{flex-wrap:wrap}
-  .k-setor{font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);
-    background:var(--accent-soft);border-radius:5px;padding:1px 6px;margin-left:2px}
   .kpi .k-val{font-size:22px;font-weight:700;margin-top:3px;display:flex;align-items:center;gap:7px}
   .kpi .k-sub{font-size:11px;color:var(--ink-3);margin-top:5px;line-height:1.35}
   .arrow{font-size:12px;font-weight:800}
@@ -941,24 +943,81 @@ function periodBanner(){const {nota}=periodScope();return nota?`<div class="bann
 function histBanner(){if(!HIST_ONLY)return"";return `<div class="banner hist"><span>⧗</span><div><b>Busca retroativa de notícias indisponível.</b> Para semanas anteriores à <b>Semana 22</b> (início do motor), a cobertura de clipping/sinais <b>não é reproduzível de forma confiável</b> — a apuração retroativa não passa no nosso padrão de auditoria. Você vê os <b>indicadores oficiais (BCB/IBGE)</b> e a <b>leitura macro derivada</b> deles.</div></div>`;}
 
 const KC={up:"var(--opp)",down:"var(--risk)",neutral:"var(--neutral)"};
+// número a partir de string ("3,36%" -> 3.36)
+function pnum(s){const m=/-?\d+(?:[.,]\d+)?/.exec(String(s==null?"":s));return m?parseFloat(m[0].replace(",",".")):null;}
+// data de referência ("... IBGE jun/26" -> "jun/26"; "... 10/jul" -> "10/jul")
+function refDate(sub){const m=/([a-zç]{3,4}\/\d{2}|\d{1,2}\/[a-zç]{3,4}|\d{1,2}\/\d{1,2})\s*$/i.exec(sub||"");return m?m[1]:"";}
+// card genérico (uma só forma para macros e setoriais — (i) sempre ao lado do título)
+function cardHTML(o){
+  const c=KC[o.cor]||"var(--accent)";
+  return `<div class="kpi${o.setorial?' kpi-setor':''}">
+    <div class="k-head"><span class="k-badge" style="--kc:${c}">${o.ico}</span><span class="k-label">${o.label}</span>
+    <button class="info clickable" data-kpi="${o.id}" aria-label="Sobre ${o.label}" data-tip="${(o.info||'').replace(/"/g,'&quot;')}">i</button></div>
+    <div class="k-val num">${o.val}<span class="arrow ${o.cor}">${arrow(o.cor)}</span>${o.unit?`<span class="k-unit">${o.unit}</span>`:""}</div>
+    <div class="k-sub">${o.sub}${o.mkt?' · <b>mercado</b>':''}</div>
+    ${(!DATA_LOADED&&o.insightId&&KPI_INSIGHT[o.insightId])?`<div class="k-insight">${KPI_INSIGHT[o.insightId]}</div>`:""}</div>`;
+}
 function kpiCard(k){
   const monthly=state.gran!=="semana";
   const refIdx=monthly?CHRONO.findIndex(w=>w.k===refKey()):-1;
-  const c=KC[k.cor]||"var(--accent)";
   let val=k.val,tag="";
   if(monthly){
     if(k.flow&&k.acum&&refIdx>=0&&k.acum[refIdx]!=null){val=`${dec(k.acum[refIdx],2)}%`;tag=' · <b>acum. ano</b>';}
     else tag=' · <b>fechamento do mês</b>';
   }
-  const setBadge=k.setorial?`<span class="k-setor">${k.setorLabel}</span>`:"";
-  return `<div class="kpi${k.setorial?' kpi-setor':''}">
-    <div class="k-head"><span class="k-badge" style="--kc:${c}">${k.ico}</span><span class="k-label">${k.label}</span>${setBadge}
-    <button class="info clickable" data-kpi="${k.id}" aria-label="Sobre ${k.label}" data-tip="${(k.info||'').replace(/"/g,'&quot;')}">i</button></div>
-    <div class="k-val num">${val}<span class="arrow ${k.cor}">${arrow(k.cor)}</span>${k.unit?`<span class="k-unit">${k.unit}</span>`:""}</div>
-    <div class="k-sub">${k.sub}${tag}${k.mkt?' · <b>mercado</b>':''}</div>
-    ${(!DATA_LOADED&&KPI_INSIGHT[k.id])?`<div class="k-insight">${KPI_INSIGHT[k.id]}</div>`:""}</div>`;
+  return cardHTML({id:k.id,ico:k.ico,label:k.label,cor:k.cor,val,unit:k.unit,sub:k.sub+tag,info:k.info,setorial:k.setorial,mkt:k.mkt,insightId:k.id});
 }
-function kpiItems(){return KPIS.map(kpiCard).join("");}
+// SELIC: referência explícita à meta do Copom (o valor exibido é a meta definida pelo Copom)
+function selicCard(k){
+  const d=refDate(k.sub);
+  const sub=`Taxa básica de juros · <b>meta definida pelo Copom</b> · BCB/SGS${d?` · ${d}`:""}`;
+  return cardHTML({id:"selic",ico:k.ico,label:k.label,cor:k.cor,val:k.val,unit:k.unit,sub,info:k.info,insightId:"selic"});
+}
+// IPCA em dois cards: (1) mês + 12 meses  (2) acumulado no ano com ênfase na meta
+function ipcaCards(k){
+  const m12=(/(?:12\s*m(?:eses)?)\s*([\d,]+)%/i.exec(k.sub)||[])[1];
+  const meta=(/meta\s*([\d,]+)%/i.exec(k.sub)||[])[1]||"3,0";
+  const teto=(/teto\s*([\d,]+)%/i.exec(k.sub)||[])[1]||"4,5";
+  const d=refDate(k.sub);
+  // (1) card do mês (leitura da semana)
+  const cur=CHRONO.findIndex(w=>w.k===refKey());
+  let dtxt="";
+  if(cur>0&&k.hist&&k.hist[cur]!=null&&k.hist[cur-1]!=null){const dd=k.hist[cur]-k.hist[cur-1];
+    if(Math.abs(dd)>=0.005)dtxt=` · vs. leitura anterior <b>${dd>0?"+":""}${dec(dd,2)} p.p.</b>`;}
+  const subMes=`Variação no mês${dtxt} · 12 meses <b>${m12||"—"}%</b> · IBGE${d?` ${d}`:""}`;
+  const cMes=cardHTML({id:"ipca",ico:"📈",label:"IPCA (mês)",cor:k.cor,val:k.val,unit:"mês",sub:subMes,
+    info:"Inflação oficial ao consumidor no mês (IBGE/IPCA), espelhada na série BCB/SGS 433. '12 meses' é a inflação acumulada nos últimos doze meses.",insightId:"ipca"});
+  // (2) card do acumulado no ano, com ênfase na meta anual
+  const acum=(k.acum&&cur>=0&&k.acum[cur]!=null)?k.acum[cur]:(k.acum||[]).filter(v=>v!=null).pop();
+  const mn=pnum(meta),tn=pnum(teto),av=acum!=null?acum:null;
+  let gapTxt="",corAno="neutral";
+  if(av!=null&&mn!=null){const gap=av-mn;const col=(tn!=null&&av>tn)?"var(--risk)":(gap>0?"var(--warn)":"var(--opp)");
+    corAno=(tn!=null&&av>tn)?"down":(gap>0?"neutral":"up");
+    gapTxt=` · <b style="color:${col}">${gap>=0?"+":""}${dec(gap,2)} p.p. vs meta</b>`;}
+  const subAno=`Acumulado no ano · meta anual <b>${meta}%</b> (teto ${teto}%)${gapTxt} · IBGE${d?` ${d}`:""}`;
+  const cAno=cardHTML({id:"ipca",ico:"🎯",label:"IPCA (acum. ano)",cor:corAno,val:av!=null?`${dec(av,2)}%`:k.val,unit:"no ano",sub:subAno,
+    info:"IPCA acumulado no ano (jan → mês de referência) pelo método composto do IBGE; reinicia em janeiro. Comparado à meta anual do CMN (3,0%, com limite superior de 4,5%). Ver metodologia.",insightId:"ipca"});
+  return cMes+cAno;
+}
+// legenda dos símbolos de leitura (seta/quadrado)
+function kpiLegend(){
+  return `<div class="k-legend">
+    <span><b class="up">▲</b> favorável</span>
+    <span><b class="down">▼</b> desfavorável</span>
+    <span><b class="neutral">■</b> estável</span>
+    <span class="k-legend-note">a cor/seta indicam o <b>efeito no ambiente de negócios</b> — não a direção do número</span></div>`;
+}
+const KPI_ORDER=["selic","cambio","desemprego","ipca","varejo","ipp","pim"]; // ordem fixa dos macros
+function kpiItems(){
+  const map=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+  const out=[];
+  KPI_ORDER.forEach(id=>{const k=map[id];if(!k)return;
+    if(id==="ipca")out.push(ipcaCards(k));
+    else if(id==="selic")out.push(selicCard(k));
+    else out.push(kpiCard(k));});
+  KPIS.forEach(k=>{if(!KPI_ORDER.includes(k.id))out.push(kpiCard(k));}); // extras (ex.: confiança) ao fim
+  return out.join("");
+}
 // seletor multi-setor: adiciona indicadores setoriais (incrementais aos macros, não substitutivos)
 function setorSelector(){
   const chips=SETOR_IND.map(s=>{
@@ -1080,6 +1139,7 @@ function viewIndicadores(){
   return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
     <div class="blk">
       <div class="blk-h">Indicadores${secTag} <span class="audit-hint">▸ (i) explica · a frase é a leitura rápida</span></div>
+      ${kpiLegend()}
       ${setorSelector()}
       <div class="kpis">${kpiItems()}${selSetorKpis().map(kpiCard).join("")}</div>
     </div>
