@@ -118,6 +118,10 @@
   @media (prefers-color-scheme:dark){.tab[aria-selected="true"]{color:#0A1112}}
   :root[data-theme="dark"] .tab[aria-selected="true"]{color:#0A1112}
   :root[data-theme="light"] .tab[aria-selected="true"]{color:var(--surface)}
+  .tab-hi{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 38%,var(--border));color:var(--accent-2);font-weight:700}
+  .tab-hi:hover{border-color:var(--accent);color:var(--accent-2)}
+  .tab-hi[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  :root[data-theme="dark"] .tab-hi[aria-selected="true"]{color:#08110F}
   .ctx{margin-left:auto;font-size:11.5px;color:var(--ink-3);white-space:nowrap;padding:4px 8px;background:none;border:0;cursor:pointer;font-family:var(--sans);display:inline-flex;align-items:center;gap:5px}
   .ctx:hover{color:var(--ink-2)}
   .ctx-i{width:14px;height:14px;border-radius:50%;border:1px solid var(--border-strong);display:inline-grid;place-items:center;font-size:9px;font-weight:800;font-style:italic;font-family:Georgia,serif}
@@ -668,7 +672,7 @@ const PORTER_BASE=PORTER; // referência estática (mapa força→cadeia p/ audi
 const PLABEL={rivalidade:"Rivalidade interna",entrantes:"Novos entrantes",fornecedores:"Poder dos fornecedores",compradores:"Poder dos compradores",substitutos:"Ameaça de substitutos"};
 
 const LENSES=[
-  {id:"geral",nome:"Visão geral"},{id:"pestel",nome:"PESTEL"},{id:"riscos",nome:"Riscos & Oportunidades"},
+  {id:"geral",nome:"Visão geral"},{id:"indicadores",nome:"Indicadores",destaque:true},{id:"pestel",nome:"PESTEL"},{id:"riscos",nome:"Riscos & Oportunidades"},
   {id:"cadeia",nome:"Cadeia de Impacto",novo:true},{id:"porter",nome:"5 Forças",novo:true},
   {id:"trajetorias",nome:"Trajetórias"},{id:"noticias",nome:"Notícias"},{id:"fontes",nome:"Fontes"},{id:"metodologia",nome:"Metodologia"},
 ];
@@ -809,7 +813,7 @@ function renderHead(){
   const sn=document.getElementById("sectorNav");sn.innerHTML="";
   SECTORS.forEach(s=>{const b=el(`<button class="stab" role="tab" style="--c:${s.cor}" aria-selected="${state.sector===s.id}"><span class="sw" style="background:${s.sw||s.cor}"></span>${s.nome}</button>`);b.onclick=()=>{state.sector=s.id;state.pointSig=null;render();};sn.appendChild(b);});
   const ln=document.getElementById("lensNav");ln.innerHTML="";
-  LENSES.forEach(l=>{const b=el(`<button class="tab" role="tab" aria-selected="${state.lens===l.id}">${l.nome}</button>`);b.onclick=()=>{state.lens=l.id;state.pointSig=null;render();};ln.appendChild(b);});
+  LENSES.forEach(l=>{const b=el(`<button class="tab${l.destaque?' tab-hi':''}" role="tab" aria-selected="${state.lens===l.id}">${l.nome}</button>`);b.onclick=()=>{state.lens=l.id;state.pointSig=null;render();};ln.appendChild(b);});
   const {label}=periodScope();
   const m=SMETA[state.sector];const n=sigs().length,r=sigs().filter(s=>s.tipo==="risco").length;
   const dica=`Sinal = cada risco ou oportunidade que o painel identifica e rastreia ao longo das semanas (com relevância, status e trajetória). "${n} sinais" = sinais ativos nesta seleção; "${r} riscos" = quantos são do tipo risco — os demais são oportunidades. Clique para ver a lista.`;
@@ -949,20 +953,18 @@ function chartCard(){
     <div class="schips">${chips}</div></div>`;
 }
 
+// provocação + ações "o que fazer" (compartilhado entre Visão Geral e Indicadores)
+function analiseGA(){
+  const sec=state.sector;
+  if(sec==="panorama")return {prov:DATA_LOADED?provFromData():HERO.provocacao,acoes:LEITURA.acoes};
+  const base=SETOR_ANALISE[sec];
+  return {prov:DATA_LOADED?provFromData():(base?base.prov:HERO.provocacao),acoes:base?base.acoes:LEITURA.acoes};
+}
 function viewGeral(){
   const P=pressao();
-  const maxP=Math.max(...PRESSOES_IPCA.map(p=>Math.abs(p.val)));
-  let A;
-  if(state.sector==="panorama"){
-    A={prov:DATA_LOADED?provFromData():HERO.provocacao,quote:LEITURA.quote,edi:ediParas(EDITORIAL),acoes:LEITURA.acoes};
-  }else{
-    const base=SETOR_ANALISE[state.sector];
-    A=DATA_LOADED?{prov:provFromData(),quote:LEITURA.quote,edi:ediParas(EDITORIAL),acoes:base?base.acoes:LEITURA.acoes}
-                 :(base||{prov:HERO.provocacao,quote:LEITURA.quote,edi:ediParas(EDITORIAL),acoes:LEITURA.acoes});
-  }
   const agendaList=state.sector==="panorama"?AGENDA:AGENDA.filter(a=>!a.setor||a.setor===state.sector);
   const secTag=state.sector==="panorama"?"":` · <span style="color:${SMETA[state.sector].cor};font-weight:700">${SMETA[state.sector].nome}</span>`;
-  const L=leitura();
+  const L=leitura();const A=analiseGA();
   return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
     <div class="hero-row">
       <div class="hero2">
@@ -995,7 +997,21 @@ function viewGeral(){
     <div class="provoke">💡 ${A.prov}</div>
 
     <div class="blk">
-      <div class="blk-h">Indicadores <span class="audit-hint">▸ (i) explica · a frase é a leitura rápida</span></div>
+      <div class="blk-h">Radar da próxima semana</div>
+      <div class="card card-pad">
+        <div class="agenda cols2">${agendaList.map(a=>`<div class="ag-row"><span class="ag-date num">${a.data}</span><span class="ag-tag ${a.tag}">${a.tag}</span><span class="ag-tit">${a.titulo}</span>${a.setor?sectorChips([a.setor]):""}</div>`).join("")}</div>
+        <div class="legend" style="margin-top:12px">Indicadores e gráficos na aba <a href="#" data-goto="indicadores" style="color:var(--accent);font-weight:600">Indicadores</a>. Riscos e oportunidades na aba <a href="#" data-goto="riscos" style="color:var(--accent);font-weight:600">Riscos &amp; Oportunidades</a>.</div>
+      </div>
+    </div>
+  </div>`;
+}
+function viewIndicadores(){
+  const maxP=Math.max(...PRESSOES_IPCA.map(p=>Math.abs(p.val)));
+  const secTag=state.sector==="panorama"?"":` · <span style="color:${SMETA[state.sector].cor};font-weight:700">${SMETA[state.sector].nome}</span>`;
+  const A=analiseGA();
+  return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
+    <div class="blk">
+      <div class="blk-h">Indicadores${secTag} <span class="audit-hint">▸ (i) explica · a frase é a leitura rápida</span></div>
       <div class="kpis">${kpiItems()}</div>
     </div>
 
@@ -1015,14 +1031,6 @@ function viewGeral(){
       <div class="blk">
         <div class="blk-h" style="color:var(--accent)">✓ O que fazer${DATA_LOADED?'<span class="audit-hint" style="margin-left:6px">▸ sugestões editoriais</span>':''}</div>
         <div class="card card-pad"><ul class="acoes">${A.acoes.map(a=>`<li><span class="a-ico">${a.ico}</span><span>${a.txt}</span></li>`).join("")}</ul></div>
-      </div>
-    </div>
-
-    <div class="blk">
-      <div class="blk-h">Radar da próxima semana</div>
-      <div class="card card-pad">
-        <div class="agenda cols2">${agendaList.map(a=>`<div class="ag-row"><span class="ag-date num">${a.data}</span><span class="ag-tag ${a.tag}">${a.tag}</span><span class="ag-tit">${a.titulo}</span>${a.setor?sectorChips([a.setor]):""}</div>`).join("")}</div>
-        <div class="legend" style="margin-top:12px">Próxima edição: <b>seg, 13/jul, 08h</b>. Riscos e oportunidades detalhados na aba <a href="#" data-goto="riscos" style="color:var(--accent);font-weight:600">Riscos &amp; Oportunidades</a>.</div>
       </div>
     </div>
   </div>`;
@@ -1252,7 +1260,7 @@ function viewMetodologia(){
   </div>`;
 }
 
-const VIEWS={geral:viewGeral,pestel:viewPestel,riscos:viewRiscos,cadeia:viewCadeia,porter:viewPorter,trajetorias:viewTraj,noticias:viewNoticias,fontes:viewFontes,metodologia:viewMetodologia};
+const VIEWS={geral:viewGeral,indicadores:viewIndicadores,pestel:viewPestel,riscos:viewRiscos,cadeia:viewCadeia,porter:viewPorter,trajetorias:viewTraj,noticias:viewNoticias,fontes:viewFontes,metodologia:viewMetodologia};
 
 /* ───────── DELEGAÇÃO DE CLIQUES ───────── */
 function markActive(elm){document.querySelectorAll(".ev-active").forEach(x=>x.classList.remove("ev-active"));if(elm)elm.classList.add("ev-active");}
