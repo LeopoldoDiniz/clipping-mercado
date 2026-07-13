@@ -10,225 +10,256 @@
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "comercio",
-        "servicos"
-      ],
-      "titulo": "Inflação desacelera em maio, mas acumulado em 12 meses ultrapassa o teto da meta do Banco Central",
-      "texto": "O Índice Nacional de Preços ao Consumidor Amplo (IPCA) registrou alta de 0,58% em maio de 2026, uma desaceleração em relação à taxa de 0,67% observada em abril. No entanto, o acumulado nos últimos 12 meses atingiu 4,72%, superando o teto de 4,5% da meta de inflação perseguida pelo Banco Central, o que não ocorria desde outubro do ano anterior. A pressão inflacionária em maio foi impulsionada principalmente pelo grupo Alimentação e Bebidas, com variação de 1,33%, e pela energia elétrica, que subiu 3,67% e foi o principal impacto individual de alta no índice.",
-      "fontes": [
-        {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39832-em-maio-ipca-fica-em-0-58"
-        },
-        {
-          "nome": "Folha de S.Paulo",
-          "url": "https://www1.folha.uol.com.br/economia/2026/06/inflacao-ipca-de-maio-e-divulgado-pelo-ibge.shtml"
-        },
-        {
-          "nome": "Quinto Andar",
-          "url": "https://www.quintoandar.com.br/blog/ipca-maio-2026/"
-        },
-        {
-          "nome": "Brasil Indicadores",
-          "url": "https://www.brasilindicadores.com.br/ipca/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
         "transversal"
       ],
-      "titulo": "Preços da indústria recuam 0,30% em maio, sob impacto do setor de alimentos e extrativas",
-      "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação registrou uma variação de -0,30% em maio de 2026 frente a abril, revertendo o sinal da alta de 2,62% do mês anterior. Sete das 24 atividades industriais apresentaram queda de preços. O setor de alimentos teve o maior impacto negativo (-0,48 p.p.), com recuo de 2,05% nos preços, influenciado pela safra da cana-de-açúcar e café, além da valorização do real. As indústrias extrativas também contribuíram significativamente para a queda, com -5,90%.",
+      "titulo": "IPCA-15 de maio surpreende e fecha em 0,62%",
+      "texto": "IPCA-15 de maio subiu 0,62%, acima da expectativa de mercado de 0,53%, puxado por alimentos e energia; acumulado de 3,02% no ano (divulgado em 27/05/2026).",
       "fontes": [
         {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39958-precos-da-industria-caem-0-30-em-maio-sob-impacto-do-setor-de-alimentos"
+          "nome": "Exame",
+          "url": "https://exame.com/economia/ipca-15-previa-da-inflacao-desacelera-e-fecha-maio-em-062/"
         },
         {
-          "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/"
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/previa-inflacao-ipca-15-maio-2026/"
         },
         {
-          "nome": "Metrópoles",
-          "url": "https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge"
+          "nome": "SAFRAS & Mercado",
+          "url": "https://safras.com.br/ipca-15-sobe-062-em-maio-projecao-era-de-053"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/ipca-15-sobe-062-em-maio-acima-do-esperado-pelo-mercado/"
         }
       ]
     },
     {
       "setores": [
         "transversal",
-        "servicos",
-        "comercio",
         "industria"
       ],
-      "titulo": "Taxa de desocupação atinge 5,6% no trimestre encerrado em maio, a menor para o período desde 2012",
-      "texto": "A taxa de desocupação no Brasil foi de 5,6% no trimestre de março a maio de 2026, mantendo-se estável em relação ao trimestre anterior e registrando uma queda de 0,6 p.p. em comparação com o mesmo período de 2025. Este é o menor resultado para o mês de maio desde o início da série histórica da PNAD Contínua em 2012. A população ocupada atingiu 102,7 milhões de pessoas, com alta de 0,5% no trimestre. Apesar da melhora no mercado de trabalho, o rendimento médio real desacelerou seu crescimento na comparação anual.",
+      "titulo": "Confiança da indústria sobe pelo terceiro mês, aponta FGV",
+      "texto": "Índice de Confiança da Indústria da FGV subiu 1,1 ponto em maio, a 97,1 pontos, com ISA avançando 2,2 pontos, a 98,7 (27/05/2026).",
       "fontes": [
         {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/39908-pnad-continua-taxa-de-desocupacao-de-maio-fica-em-5-6"
+          "nome": "Jornal de Brasília",
+          "url": "https://jornaldebrasilia.com.br/noticias/economia/fgv-indice-de-confianca-da-industria-sobe-11-ponto-em-maio-a-971-pontos/"
         },
         {
-          "nome": "Agência Brasil",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-06/desemprego-ate-maio-cai-para-56-o-menor-ja-registrado-no-periodo"
-        },
-        {
-          "nome": "Blog do PicPay",
-          "url": "https://blog.picpay.com/pnad-continua-maio-2026/"
-        },
-        {
-          "nome": "Portal Gov.br",
-          "url": "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/junho/informativo-pnad-mai2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Arrecadação federal bate recorde de R$ 266,8 bilhões em maio, impulsionada por petróleo e atividade econômica",
-      "texto": "A arrecadação federal alcançou R$ 266,8 bilhões em maio de 2026, marcando o maior resultado para o mês desde o início da série histórica em 1995. Este valor representa um crescimento real de 10,69% em comparação com maio de 2025. O desempenho foi impulsionado principalmente pela valorização do petróleo no mercado internacional, pela atividade econômica e por alterações na tributação. No acumulado de janeiro a maio, a União arrecadou R$ 1,32 trilhão, também um recorde para o período.",
-      "fontes": [
-        {
-          "nome": "Agência Brasil",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-06/arrecadacao-federal-bate-recorde-de-r-2668-bilhoes-em-maio"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "titulo": "Produção nacional de petróleo e gás natural se mantém estável em maio, apesar de queda na Petrobras",
-      "texto": "A produção total de petróleo e gás natural no Brasil atingiu 5,597 milhões de barris de óleo equivalente por dia (boe/d) em maio de 2026, mantendo-se estável em relação ao mês anterior. A produção de petróleo especificamente subiu 16,9% para 4,3 milhões de barris por dia (bpd) na comparação anual, mas registrou uma queda de 0,9% em relação a abril. A Petrobras, maior produtora do país, teve uma redução de 2,9% em sua produção de petróleo no mês.",
-      "fontes": [
-        {
-          "nome": "ANP",
-          "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/boletins-anp/boletim-mensal-da-producao-de-petroleo-e-gas-natural"
-        },
-        {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/forbes-money/2026/07/producao-de-petroleo-do-brasil-sobe-169-em-maio-para-43-mi-barris-dia-diz-anp/"
-        },
-        {
-          "nome": "Times Brasil | CNBC",
-          "url": "https://timesbrasil.com.br/petroleo/recuo-da-petrobras-derruba-producao-de-petroleo-confirma-anp/"
-        },
-        {
-          "nome": "Folha de S.Paulo",
-          "url": "https://www1.folha.uol.com.br/mercado/2026/07/producao-de-petroleo-do-brasil-sobe-169-em-maio-para-43-mi-barris-por-dia-diz-anp.shtml"
+          "nome": "Times Brasil/CNBC",
+          "url": "https://timesbrasil.com.br/brasil/economia-brasileira/indice-industria-fgv/"
         }
       ]
     },
     {
       "setores": [
         "transversal",
-        "comercio",
-        "servicos",
         "industria"
       ],
-      "titulo": "Carteira de crédito deve crescer 0,8% em maio, impulsionada por recursos direcionados",
-      "texto": "A carteira total de crédito no Brasil deve apresentar um crescimento de 0,8% em maio de 2026 em relação a abril, com uma aceleração do ritmo anual para 9,6%. Este desempenho é sustentado principalmente pelas linhas com recursos direcionados, que devem avançar 1,0% no mês, refletindo o impacto de programas governamentais como o Fundo Garantidor para Investimentos (FGI) para Pessoas Jurídicas e o programa Minha Casa, Minha Vida para Pessoas Físicas. Já a carteira com recursos livres deve crescer 0,7% no mês, com expansão anual estável em 7,1%.",
+      "titulo": "PIB cresce 1,1% no 1º trimestre e Brasil tem 6ª maior alta do mundo",
+      "texto": "PIB do 1º trimestre de 2026 avançou 1,1% (1,8% em 12 meses), a R$3,3 trilhões; indústria subiu 1,6%; Brasil teve a 6ª maior alta global (29/05/2026).",
       "fontes": [
         {
-          "nome": "Febraban",
-          "url": "https://febraban.org.br/noticias/saldo-da-carteira-de-credito-deve-crescer-08-em-maio-com-concentracao-em-recursos-direcionados"
+          "nome": "Exame",
+          "url": "https://exame.com/economia/brasil-registra-a-6a-maior-alta-do-pib-no-mundo-no-1o-trimestre/"
         },
         {
-          "nome": "Broadcast",
-          "url": "https://broadcast.com.br/febraban-credito-deve-crescer-08-em-maio-com-aceleracao-do-ritmo-anual-para-alta-de-96/"
+          "nome": "SuperFinanças",
+          "url": "https://superfinancas.com.br/governo/2026/05/economia-aumento-pib/"
         },
         {
-          "nome": "Let's Money",
-          "url": "https://letsmoney.com.br/febraban-projeta-alta-de-96-no-credito-em-maio/"
+          "nome": "Ministério do Planejamento / IBGE",
+          "url": "https://www.gov.br/planejamento/pt-br/assuntos/noticias/2026/maio/pib-avanca-1-1-no-primeiro-trimestre-e-chega-a-r-3-3-trilhoes-aponta-ibge"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Ibovespa tem pior mês desde 2023 com fuga de estrangeiros",
+      "texto": "Ibovespa caiu 7,2% em maio, pior desempenho mensal desde fevereiro de 2023, com saída de R$14,1 bilhões de estrangeiros e dólar subindo 1,82% (29/05/2026).",
+      "fontes": [
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/mercado/mercado-financeiro-ibovespa-dolar-29-maio-2026/"
+        },
+        {
+          "nome": "SUNO",
+          "url": "https://www.suno.com.br/noticias/ibovespa-fecha-maio-queda-setima-semana-perdas-mt/"
         }
       ]
     },
     {
       "setores": [
         "transversal",
-        "industria",
-        "comercio",
+        "industria"
+      ],
+      "titulo": "IGP-M desacelera para 0,84% em maio",
+      "texto": "IGP-M subiu 0,84% em maio, ante 2,73% em abril, mostrando forte desaceleração no acumulado de 12 meses, segundo FGV/IBRE (dados de 28/05/2026).",
+      "fontes": [
+        {
+          "nome": "FGV / IBRE",
+          "url": "https://portal.fgv.br/noticias/igp-m-maio-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção de aço recua, mas confiança da siderurgia sobe",
+      "texto": "Consumo de aço recuou em maio, mas o ICIA (Índice de Confiança da Indústria do Aço) atingiu 59,9 pontos em 29/05/2026, indicando otimismo do setor.",
+      "fontes": [
+        {
+          "nome": "Portal Siderurgia Brasil",
+          "url": "https://siderurgiabrasil.com.br/2026/05/29/producao-de-aco-cai-mas-a-confianca-avanca/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Número de setores industriais confiantes sobe de 1 para 6, diz CNI",
+      "texto": "ICEI da CNI mostrou que o número de setores industriais confiantes saltou de 1 para 6 em maio de 2026, divulgado em 27/05/2026.",
+      "fontes": [
+        {
+          "nome": "Portal da Indústria / CNI",
+          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/numero-de-setores-industriais-confiantes-sobe-de-1-para-6-aponta-cni/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Vendas no varejo devem subir em maio, junho e julho",
+      "texto": "IAV-IDV projetou alta nominal de vendas no varejo de 1,6% em maio, 3,6% em junho e 3,0% em julho de 2026 ante 2025 (27/05/2026).",
+      "fontes": [
+        {
+          "nome": "Bahia Econômica",
+          "url": "https://bahiaeconomica.com.br/wp/2026/05/27/vendas-nominais-no-varejo-devem-subir-em-maio-e-nos-proximos-dois-meses/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Dia Livre de Impostos reúne mais de 100 mil lojas em 28/05",
+      "texto": "20ª edição do Dia Livre de Impostos, em 28/05/2026, reuniu mais de 100 mil lojas em 1.500 cidades; no DF, 120 lojistas deram descontos de até 33%.",
+      "fontes": [
+        {
+          "nome": "Capital S/A (Correio Braziliense)",
+          "url": "https://blogs.correiobraziliense.com.br/capital-sa/2026/05/27/confira-as-lojas-que-vao-oferecer-produtos-sem-imposto-nesta-quinta-feira-no-df/"
+        },
+        {
+          "nome": "CNDL/Varejo S.A",
+          "url": "https://cndl.org.br/varejosa/dia-livre-de-impostos-ocorre-amanha-28-com-descontos-imperdiveis/"
+        }
+      ]
+    },
+    {
+      "setores": [
         "servicos"
       ],
-      "titulo": "ANEEL aprova bandeira tarifária amarela para maio e destina R$ 5,5 bilhões para redução de tarifas",
-      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) aprovou a bandeira tarifária amarela para o mês de maio de 2026, resultando em uma cobrança extra de R$ 1,885 a cada 100 kWh consumidos, devido às condições hidrológicas menos favoráveis. Em outra decisão, a ANEEL homologou a destinação de R$ 5,5 bilhões para reduzir as tarifas de energia de 22 distribuidoras ao longo de 2026, um aporte que visa mitigar reajustes mais elevados. Além disso, a agência homologou os repasses da Tarifa Social de Energia Elétrica referentes a maio de 2026.",
+      "titulo": "Disputa regulatória dos postes de energia avança em etapas ao longo de maio",
+      "texto": "AGU decidiu a favor da Anatel na disputa dos postes (25/05); entidades divergiram sobre cessão obrigatória (27/05); Anatel e Aneel abriram novo capítulo, incluindo postes rurais em SC (28-29/05/2026).",
       "fontes": [
         {
-          "nome": "Agência Brasil",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-05/aneel-aprova-r-55-bi-para-reduzir-conta-de-luz-em-22-distribuidoras"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/25/05/2026/veja-no-boletim-teletime-agu-encerra-impasse-juridico-dos-postes/"
         },
         {
-          "nome": "Portal Gov.br / ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/bandeiras-tarifarias"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/27/05/2026/veja-no-boletim-teletime-divergencia-nos-postes-e-educacao-conectada-2026/"
         },
         {
-          "nome": "UOL Economia",
-          "url": "https://economia.uol.com.br/noticias/redacao/2026/04/24/aneel-aprova-bandeira-amarela-e-conta-de-luz-fica-mais-cara-em-maio.htm"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/28/05/2026/veja-no-boletim-teletime-novo-capitulo-para-postes-e-vivo-no-pib/"
         },
         {
-          "nome": "O TEMPO",
-          "url": "https://www.otempo.com.br/economia/aneel-homologa-repasses-da-tarifa-social-de-energia-de-maio-de-2026-1.3392437"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/29/05/2026/boletim-teletime-claro-desktop/"
         }
       ]
     },
     {
       "setores": [
-        "transversal"
-      ],
-      "titulo": "B3 divulga nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026 com critérios mais rigorosos",
-      "texto": "A B3 anunciou a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, composta por 69 companhias. A nota de corte para inclusão no índice subiu para 65,66 pontos, um avanço de 5,26 pontos em relação à média dos três ciclos anteriores, o que demonstra um aumento na exigência e na maturidade das práticas ESG (Ambiental, Social e Governança) no mercado brasileiro. Cerca de 90% das empresas que permaneceram na carteira melhoraram sua pontuação. A B3 também passou a integrar o Dow Jones Best in Class Index global.",
-      "fontes": [
-        {
-          "nome": "B3",
-          "url": "https://www.b3.com.br/pt_br/noticias/b3-divulga-nova-carteira-do-indice-de-sustentabilidade-empresarial-ise-b3-para-2026.htm"
-        },
-        {
-          "nome": "Plurale em site",
-          "url": "https://www.plurale.com.br/b3-divulga-nova-carteira-do-indice-de-sustentabilidade-empresarial-ise-b3-para-2026/"
-        },
-        {
-          "nome": "Estadão",
-          "url": "https://www.estadao.com.br/economia/ise-2026-b3-aperta-criterios-eleva-nota-de-corte-e-redefine-a-carteira-de-sustentabilidade-confira-o-ranking/"
-        },
-        {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/forbes-money/2026/05/b3-entra-no-radar-global-de-sustentabilidade-e-testa-apetite-por-esg-em-mercados-emergentes/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
         "servicos"
       ],
-      "titulo": "Fecomércio MG: Comércio mineiro em recuperação, mas serviços e turismo recuam",
-      "texto": "A Fecomércio MG avaliou o cenário econômico de Minas Gerais, indicando que o comércio mineiro mostra sinais de recuperação. O varejo ampliado no estado avançou 11% na comparação entre março de 2026 e março de 2025, superando a média nacional. Contudo, os setores de serviços e turismo ainda operam em ritmo mais lento, com o volume de serviços caindo 0,7% em março frente ao mês anterior e acumulando quatro retrações consecutivas. O cenário reflete o ambiente macroeconômico restritivo, com juros elevados.",
+      "titulo": "Anatel inicia discussão sobre regulação de cabos submarinos",
+      "texto": "Anatel deu início, em 26/05/2026, à discussão sobre regulação de cabos submarinos, tema estratégico para a infraestrutura de telecomunicações no Brasil.",
       "fontes": [
         {
-          "nome": "Fecomércio MG",
-          "url": "https://fecomerciomg.org.br/noticias/comercio-sustenta-atividade-economica-em-minas-enquanto-servicos-e-turismo-recuam-avalia-fecomercio-mg/"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/26/05/2026/veja-no-boletim-teletime-anatel-e-a-regulacao-de-cabos-submarinos/"
         }
       ]
     },
     {
       "setores": [
-        "transversal"
+        "servicos"
       ],
-      "titulo": "Receita Federal prorroga prazo para sugestões sobre regulamento do IBS e intensifica cobrança de IR",
-      "texto": "A Receita Federal prorrogou até 15 de junho de 2026 o prazo para o envio de sugestões ao regulamento do Imposto sobre Bens e Serviços (IBS), parte da Reforma Tributária. Além disso, a Receita realizou uma ampla ação de cobrança, notificando quase 1 milhão de contribuintes com pendências no Imposto de Renda, totalizando cerca de R$ 24,45 bilhões em débitos. A iniciativa visa incentivar a regularização e evitar complicações futuras.",
+      "titulo": "Leilão reverso de espectro móvel é agendado para junho",
+      "texto": "Leilão reverso de espectro móvel foi programado para junho de 2026, com valor de R$20 milhões, segundo boletim TELETIME de 25/05/2026.",
       "fontes": [
         {
-          "nome": "Receita Federal / Portal Gov.br",
-          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/maio/receita-federal-prorroga-ate-15-de-junho-o-envio-de-sugestoes-ao-regulamento-do-ibs"
-        },
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/25/05/2026/veja-no-boletim-teletime-agu-encerra-impasse-juridico-dos-postes/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "GIC entra no capital da IHS Latin America",
+      "texto": "Fundo soberano GIC entrou no capital da IHS Latin America, segundo boletim TELETIME de 25/05/2026, movimentando o mercado de infraestrutura de torres.",
+      "fontes": [
         {
-          "nome": "JBA",
-          "url": "https://jba.com.br/2026/05/20/20-05-2026-alerta-tributario/"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/25/05/2026/veja-no-boletim-teletime-agu-encerra-impasse-juridico-dos-postes/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "CGI.br se posiciona sobre regulação de plataformas digitais",
+      "texto": "CGI.br se posicionou sobre a regulação de plataformas digitais em 26/05/2026, em meio ao debate sobre tendências de IA nas telecomunicações.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/26/05/2026/veja-no-boletim-teletime-anatel-e-a-regulacao-de-cabos-submarinos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Seminário Educação Conectada 2026 é realizado",
+      "texto": "Seminário Educação Conectada 2026 foi realizado em 27/05/2026, discutindo conectividade escolar, segundo boletim TELETIME.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/27/05/2026/veja-no-boletim-teletime-divergencia-nos-postes-e-educacao-conectada-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "NuCel lança estratégia voltada ao mercado teen",
+      "texto": "Operadora NuCel lançou, em 27/05/2026, estratégia voltada ao público adolescente, segundo boletim TELETIME.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/27/05/2026/veja-no-boletim-teletime-divergencia-nos-postes-e-educacao-conectada-2026/"
         }
       ]
     },
@@ -237,34 +268,219 @@
         "servicos",
         "transversal"
       ],
-      "titulo": "Febraban destaca avanço da digitalização bancária com 83% das transações em canais digitais",
-      "texto": "Uma pesquisa da Febraban revelou que 83% das transações bancárias realizadas pelos brasileiros são feitas por canais digitais, como celular e internet banking. O mobile banking, em particular, registrou um crescimento expressivo de 169% nos últimos cinco anos, totalizando 187,5 bilhões de transações. Os bancos brasileiros têm priorizado investimentos em cibersegurança e tecnologia da informação (TI), com um orçamento tecnológico previsto de R$ 50,4 bilhões para 2026.",
+      "titulo": "Vivo divulga sua contribuição ao PIB nacional",
+      "texto": "Vivo divulgou dados sobre sua contribuição ao PIB brasileiro em 28/05/2026, segundo boletim TELETIME.",
       "fontes": [
         {
-          "nome": "Febraban",
-          "url": "https://febraban.org.br/noticias/83-das-transacoes-bancarias-sao-feitas-pelos-canais-digitais"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/28/05/2026/veja-no-boletim-teletime-novo-capitulo-para-postes-e-vivo-no-pib/"
         }
       ]
     },
     {
       "setores": [
-        "comercio",
         "servicos"
       ],
-      "titulo": "Fecomércio MG promove Innovation Day e Semana S com foco em inovação e empregos",
-      "texto": "A Fecomércio MG realizou o 'Innovation Day' em maio, um evento estratégico para debater as transformações do comércio, com a participação de especialistas em inovação e transformação digital. Simultaneamente, a 'Semana S', uma mobilização nacional, ofereceu um feirão de empregos com 15 mil vagas nos setores de comércio e serviços, além de ações gratuitas e debates sobre os impactos da Inteligência Artificial.",
+      "titulo": "Medidas contra robocalls são prorrogadas até 2028",
+      "texto": "Medidas regulatórias de combate a robocalls foram prorrogadas até 2028, conforme boletim TELETIME de 28/05/2026.",
       "fontes": [
         {
-          "nome": "Fecomércio MG",
-          "url": "https://fecomerciomg.org.br/noticias/sistema-fecomercio-mg-sesc-e-senac-realizam-innovation-day-para-debater-transformacoes-do-comercio/"
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/28/05/2026/veja-no-boletim-teletime-novo-capitulo-para-postes-e-vivo-no-pib/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Anatel aprova aquisição da Desktop pela Claro",
+      "texto": "Anatel aprovou, em 29/05/2026, a aquisição da operadora Desktop pela Claro, consolidando o mercado de banda larga.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/29/05/2026/boletim-teletime-claro-desktop/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Senacon multa iFood e Keeta em R$14 milhões por falta de transparência",
+      "texto": "Senacon abriu processo e multou iFood e Keeta em R$14 milhões por violação da Portaria 61/2026 sobre transparência de preços; iFood está em adequação (28/05/2026).",
+      "fontes": [
+        {
+          "nome": "Mobile Time",
+          "url": "https://www.mobiletime.com.br/noticias/28/05/2026/ifood-senacon-adequacao/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "AgroBrasília 2026 reúne tecnologia e negócios com participação da Embrapa",
+      "texto": "16ª edição da AgroBrasília ocorreu de 19 a 23/05/2026 em Brasília, com a Embrapa realizando missão internacional e agenda técnica sob o tema 'Agro de Resultado'.",
+      "fontes": [
+        {
+          "nome": "Agrolink",
+          "url": "https://www.agrolink.com.br/noticias/agrobrasilia-2026-reune-tecnologia--negocios-e-conhecimento-para-o-agro_514703.html"
         },
         {
-          "nome": "Alvorada FM",
-          "url": "https://alvoradafm.com.br/noticias/semana-s-2026-fecomercio-mg-promove-acoes-gratuitas-e-feirao-de-empregos-ate-proximo-domingo-em-bh"
+          "nome": "Embrapa",
+          "url": "https://www.embrapa.br/busca-de-noticias/-/noticia/116474061/missao-internacional-e-agenda-tecnica-movimentam-primeiros-dias-da-embrapa-na-agrobrasilia-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Preço da arroba do bezerro recua e se estabiliza em maio",
+      "texto": "Preço da arroba do bezerro caiu 4,9%, de R$511,40 em 30/04 para R$486,20 em 22/05/2026, mostrando maior estabilidade no mês.",
+      "fontes": [
+        {
+          "nome": "Farm News",
+          "url": "https://farmnews.com.br/mercado/preco-da-arroba-do-bezerro-mais-estavel-em-maio-de-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Mercados agrícolas ficam atentos à divulgação do PIB do 1º trimestre",
+      "texto": "Divulgação do PIB do 1º trimestre em 29/05/2026 foi apontada como indicador-chave capaz de influenciar os mercados agrícolas na semana de 25 a 29/05.",
+      "fontes": [
+        {
+          "nome": "Safras & Mercado",
+          "url": "https://safras.com.br/o-que-deve-movimentar-o-agronegocio-e-os-mercados-entre-25-e-29-de-maio"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "INCC-M acelera para 0,77% em maio",
+      "texto": "Índice Nacional de Custo da Construção (INCC-M) subiu 0,77% em maio de 2026, com acumulado de 6,82% em 12 meses, segundo a FGV.",
+      "fontes": [
+        {
+          "nome": "FGV",
+          "url": "https://portal.fgv.br/noticias/incc-m-maio-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "SindusCon-SP fecha convenções coletivas com reajuste de 5,15% no interior paulista",
+      "texto": "SindusCon-SP assinou, em 27/05/2026, convenções coletivas com reajuste salarial de 5,15% em Assis, Barretos, Jacareí, Salto, Ourinhos, Campinas e mais 21 municípios do interior.",
+      "fontes": [
+        {
+          "nome": "SindusCon-SP",
+          "url": "https://sindusconsp.com.br/assis-barretos-jacarei-e-salto-assinam-convencao/"
         },
         {
-          "nome": "Senac MG",
-          "url": "https://www.mg.senac.br/noticias/sistema-fecomercio-mg-promove-programacoes-gastronomica-e-cultural-ao-longo-de-2026-no-mercado-das-flores-em-belo-horizonte"
+          "nome": "SindusCon-SP",
+          "url": "https://sindusconsp.com.br/assinada-convencao-com-trabalhadores-de-ourinhos/"
+        },
+        {
+          "nome": "SindusCon-SP",
+          "url": "https://sindusconsp.com.br/21-sindicatos-do-interior-assinam-convencao/"
+        },
+        {
+          "nome": "SindusCon-SP",
+          "url": "https://sindusconsp.com.br/campinas-tem-convencao-coletiva-assinada/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Secovi-SP aponta mercado imobiliário resiliente no interior paulista",
+      "texto": "Webinar do Secovi-SP, em 27/05/2026, com 60 participantes, apontou resiliência do mercado imobiliário no interior paulista apesar de desafios econômicos e políticos.",
+      "fontes": [
+        {
+          "nome": "Secovi-SP",
+          "url": "https://secovi.com.br/secovi-sp-aponta-mercado-imobiliario-resiliente-no-interior-paulista-apesar-de-desafios-economicos-e-politicos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "CBIC apresenta Indicadores Imobiliários Nacionais do 1º trimestre",
+      "texto": "CBIC realizou coletiva em 25/05/2026, das 10h às 12h, apresentando os Indicadores Imobiliários Nacionais referentes ao 1º trimestre de 2026.",
+      "fontes": [
+        {
+          "nome": "CBIC",
+          "url": "https://cbic.org.br/cbic-realiza-coletiva-sobre-os-indicadores-imobiliarios-nacionais-do-1o-trimestre-de-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "CBIC debate reforma tributária e cadeia de suprimentos da construção",
+      "texto": "CBIC promoveu, em 26-27/05/2026, o evento 'Imersão em Compras e Suprimentos', debatendo impactos da reforma tributária na cadeia de suprimentos da construção.",
+      "fontes": [
+        {
+          "nome": "CBIC",
+          "url": "https://cbic.org.br/evento-com-liderancas-da-construcao-debate-impactos-da-reforma-tributaria-e-novos-desafios-da-cadeia-de-suprimentos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Artigo defende fim da guerra de preços no e-commerce",
+      "texto": "Em artigo de 25/05/2026, Rodrigo Cursi argumentou que competir por preço é estratégia perdedora, defendendo diferenciação via autenticidade, curadoria e confiança frente à 'Temu-ficação'.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/artigos/temu-ficacao-vs-marcas-com-alma-o-fim-da-guerra-de-preco"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "OLX se torna primeiro marketplace brasileiro integrado ao ChatGPT",
+      "texto": "OLX integrou seu catálogo ao ChatGPT entre 28 e 29/05/2026, tornando-se o primeiro marketplace brasileiro com busca conversacional de automóveis e bens de consumo.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/olx-estreia-busca-conversacional-e-descoberta-de-produtos-no-chatgpt"
+        },
+        {
+          "nome": "Baguete",
+          "url": "https://www.baguete.com.br/noticias/itens-da-olx-agora-podem-ser-buscados-no-chatgpt"
+        },
+        {
+          "nome": "Central do Varejo",
+          "url": "https://centraldovarejo.com.br/olx-integra-catalogo-ao-chatgpt-e-se-torna-o-primeiro-marketplace-brasileiro-na-ferramenta-da-openai/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "ANYTOOLS debate adaptação de sellers aos marketplaces no Fórum ECBR",
+      "texto": "ANYTOOLS apresentou, em 28/05/2026, no Fórum E-Commerce Brasil, debate sobre adaptação de sellers com a proposta 'Marketplaces a serviço do seu negócio'.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/anytools-leva-ao-forum-ecbr-2026-debate-sobre-adaptacao-aos-marketplaces"
         }
       ]
     }
@@ -273,69 +489,71 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Reforma Tributária e Programas Governamentais",
-      "texto": "A prorrogação do prazo para sugestões ao regulamento do IBS e a instituição de um Grupo de Trabalho Interministerial para o split payment indicam o avanço na regulamentação da Reforma Tributária. Além disso, programas governamentais continuam impulsionando o crédito direcionado, como o FGI para PJs e o Minha Casa, Minha Vida para PFs, demonstrando a atuação do governo na economia. A ANEEL também demonstra atividade regulatória significativa na gestão de tarifas de energia.",
-      "score": 8,
+      "tema": "Reforma tributária e disputa regulatória de infraestrutura",
+      "texto": "Reforma tributária pressiona a cadeia da construção (CBIC) e a regulação dos postes de telecom segue disputada entre Anatel, Aneel e operadoras ao longo de maio.",
+      "score": 6,
       "setores": [
-        "transversal"
+        "construcao",
+        "servicos"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Indicadores Macroeconômicos e Crédito",
-      "texto": "Os indicadores econômicos da semana apresentaram um cenário misto: a inflação (IPCA) desacelerou mensalmente, mas o acumulado em 12 meses superou a meta do BC, pressionado por alimentos e energia. Os preços da indústria (IPP) recuaram, especialmente em alimentos e extrativas. A taxa de desocupação atingiu um mínimo histórico, sinalizando aquecimento do mercado de trabalho. A arrecadação federal bateu recorde em maio, e o crédito bancário, especialmente o direcionado, continua em expansão.",
-      "score": 8.5,
+      "tema": "Inflação persistente e mercado financeiro em queda",
+      "texto": "IPCA-15 surpreende em 0,62%, Ibovespa cai 7,2% em maio (pior desde 2023) com fuga de capital estrangeiro, mesmo com PIB do 1º trimestre crescendo 1,1%.",
+      "score": 8,
       "setores": [
         "transversal",
         "industria",
-        "comercio",
-        "servicos"
+        "comercio"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Mercado de Trabalho e Comportamento do Consumidor",
-      "texto": "A queda da taxa de desocupação para o menor nível histórico no trimestre encerrado em maio é um sinal positivo para o aspecto social, indicando maior absorção de mão de obra. No entanto, a Fecomércio MG aponta que a cautela do consumidor e o endividamento familiar ainda são fatores relevantes, especialmente em Minas Gerais, onde o comércio mostra recuperação, mas serviços e turismo recuam. A Receita Federal também intensificou a cobrança de débitos de IR.",
-      "score": 7.5,
+      "tema": "Datas comemorativas e eventos setoriais movimentam consumo",
+      "texto": "Dia Livre de Impostos mobiliza mais de 2 milhões de consumidores e Dia dos Namorados aquece o varejo online, enquanto AgroBrasília reúne o setor agro (19-29/05).",
+      "score": 5,
       "setores": [
         "comercio",
-        "servicos",
-        "transversal"
+        "ecommerce",
+        "agro"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Digitalização e Inovação nos Setores",
-      "texto": "A digitalização continua sendo um pilar fundamental, com a Febraban revelando que 83% das transações bancárias são digitais e investimentos significativos em cibersegurança e TI. A Fecomércio MG promoveu o 'Innovation Day' e debates sobre Inteligência Artificial no comércio e serviços, indicando a crescente relevância da tecnologia para a competitividade e transformação dos negócios.",
+      "tema": "IA e marketplaces redesenham a experiência de compra",
+      "texto": "OLX integra catálogo ao ChatGPT, primeiro marketplace nacional com busca conversacional, enquanto o setor de telecom debate IA e cabos submarinos (26-29/05/2026).",
       "score": 7,
       "setores": [
-        "industria",
+        "ecommerce",
         "comercio",
-        "servicos",
-        "transversal"
+        "servicos"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Sustentabilidade e ESG no Mercado de Capitais",
-      "texto": "A B3 divulgou a nova carteira do Índice de Sustentabilidade Empresarial (ISE B3) para 2026, com critérios mais rigorosos e um aumento na nota de corte, reforçando a importância das práticas ESG no mercado de capitais brasileiro. A inclusão da B3 no Dow Jones Best in Class Index global também destaca o reconhecimento internacional das iniciativas de sustentabilidade.",
-      "score": 6.5,
+      "tema": "Sazonalidade climática orienta operações do varejo",
+      "texto": "Chegada do inverno leva o varejo online a antecipar estoque e anúncios sazonais, segundo orientação da JoomPulse divulgada em 28/05/2026.",
+      "score": 3,
       "setores": [
-        "transversal"
+        "comercio",
+        "ecommerce"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulamentação Tributária e Fiscalização",
-      "texto": "A Receita Federal está ativamente engajada na regulamentação da Reforma Tributária, prorrogando prazos para contribuições sobre o IBS. Além disso, a intensificação das ações de cobrança de pendências no Imposto de Renda demonstra um foco na conformidade fiscal. A ANEEL também atua na regulamentação e homologação de tarifas e repasses no setor de energia elétrica.",
+      "tema": "Fiscalização de preços e novas regras tributárias no comércio",
+      "texto": "MP 1.357/2026 extingue a taxa das blusinhas e Senacon multa iFood e Keeta em R$14 milhões por opacidade de preços (Portaria 61/2026), entre 26 e 28/05/2026.",
       "score": 7,
       "setores": [
-        "transversal"
+        "comercio",
+        "ecommerce",
+        "servicos"
       ]
     }
   ],
@@ -589,5 +807,13 @@
         "val": 0.004
       }
     ]
+  },
+  "origem": "backfill_verificado",
+  "busca_retroativa": true,
+  "backfill": {
+    "metodo": "busca web + verificacao de URL ao vivo (WebFetch) + clusterizacao/reanalise por Claude (synth por agente)",
+    "itens": 31,
+    "brutos_verificados": 47,
+    "aplicado_em": "2026-07-12"
   }
 }

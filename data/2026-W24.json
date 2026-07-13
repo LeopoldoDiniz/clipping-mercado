@@ -7,8 +7,486 @@
     "gerado_em": "2026-07-02T17:23:59.272211",
     "n_sinais_considerados": 9
   },
-  "clipping": [],
-  "pestel": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus: mercado eleva projeção de IPCA 2026 e Selic para 13,50%",
+      "texto": "Boletim Focus de 8 de junho de 2026 revisou o IPCA 2026 para 5,11% e a Selic projetada para 13,50% ao ano.",
+      "fontes": [
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/economistas-elevam-inflacao-para-2026-e-projetam-selic-em-1350-confira-o-focus-desta-segunda-feira-08/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Ibovespa recua com queda da Vale e tensões geopolíticas",
+      "texto": "Ibovespa fechou em queda de 0,21%, aos 168.668,72 pontos, em 8 de junho de 2026, pressionado por Vale e tensão Irã-Israel.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-08062026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "BCB divulga Focus de 12 de junho com expectativas de mercado",
+      "texto": "Relatório Focus do Banco Central, de 12 de junho de 2026, consolidou projeções de IPCA, câmbio e Selic de cerca de 170 instituições.",
+      "fontes": [
+        {
+          "nome": "Banco Central do Brasil",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260612.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Comércio espera tíquete médio de até R$ 200 no Dia dos Namorados",
+      "texto": "Comércio de Minas Gerais projetou tíquete médio entre R$ 100 e R$ 200 no Dia dos Namorados (12/6); 43,6% dos comerciantes esperavam vendas melhores que em 2025.",
+      "fontes": [
+        {
+          "nome": "Tribuna de Minas",
+          "url": "https://tribunademinas.com.br/noticias/economia/12-06-2026/comercio-expectativas-dia-dos-namorados.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Orientações sobre couvert e gorjeta no Dia dos Namorados",
+      "texto": "Em 12 de junho de 2026 reforçou-se que couvert só pode ser cobrado se informado previamente, de forma clara e visível ao cliente.",
+      "fontes": [
+        {
+          "nome": "Tribuna de Minas",
+          "url": "https://tribunademinas.com.br/noticias/defesa-consumidor/12-06-2026/couvert-gorjeta-e-troca-o-que-vale-no-dia-dos-namorados.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Solteiros planejam Dia dos Namorados com Copa do Mundo e amigos",
+      "texto": "Pesquisa de 12 de junho de 2026 mostrou solteiros priorizando Copa do Mundo, encontros com amigos, séries e celebrações na data.",
+      "fontes": [
+        {
+          "nome": "Tribuna de Minas",
+          "url": "https://tribunademinas.com.br/noticias/cidade/12-06-2026/dia-dos-namorados-quais-sao-os-planos-dos-solteiros-para-a-data.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Comércio de Osvaldo Cruz se mobiliza para o Dia dos Namorados",
+      "texto": "ACEOC declarou em 12 de junho de 2026 que o comércio de Osvaldo Cruz (SP) se preparou para atender clientes e ampliar vendas na data.",
+      "fontes": [
+        {
+          "nome": "FM Metrópole",
+          "url": "https://www.fmmetropole.com.br/noticias/local/comercio-de-osvaldo-cruz-esta-preparado-para-atender-os-clientes-no-dia-dos-namorados-12-06-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "ecommerce"
+      ],
+      "titulo": "ICVA: varejo cresce 3,3% no Dia dos Namorados, com e-commerce em alta",
+      "texto": "Índice Cielo Varejo Ampliado registrou alta de 3,3% entre 6 e 12 de junho de 2026; e-commerce cresceu 13,1% e lojas físicas, 0,6%.",
+      "fontes": [
+        {
+          "nome": "Cielo/ICVA",
+          "url": "https://blog.cielo.com.br/indice-icva/vendas-varejo-dia-dos-namorados-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Fecomércio projeta faturamento do comércio +2,1% em junho",
+      "texto": "Fecomércio/Sincomercio Jundiaí estimou crescimento de 2,1% no faturamento do comércio em junho de 2026, com R$ 78,6 bilhões nos cinco principais segmentos varejistas.",
+      "fontes": [
+        {
+          "nome": "Fecomércio/Sincomercio Jundiaí",
+          "url": "https://www.fecomercio.com.br/noticia/faturamento-do-comercio-deve-crescer-2-1-em-junho-impulsionado-pelo-dia-dos-namorados"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "CNC: Dia dos Namorados deve movimentar R$ 2,84 bilhões no varejo",
+      "texto": "CNC projetou R$ 2,84 bilhões em vendas no Dia dos Namorados de 2026 (alta de 2,5%), com chocolates a +22,7% e joias a +20%.",
+      "fontes": [
+        {
+          "nome": "CNC/Portal do Comércio",
+          "url": "https://portaldocomercio.org.br/economia/cnc-com-alta-dos-precos-do-chocolate-e-das-joias-dia-dos-namorados-deve-movimentar-r-284-bilhoes-no-varejo-brasileiro-em-2026/"
+        },
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/economia/varejo-deve-movimentar-vendas-dia-dos-namorados/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Varejo deve movimentar R$ 22,14 bilhões com datas sazonais de junho",
+      "texto": "Central do Varejo estimou R$ 22,14 bilhões em vendas de junho de 2026 somando Dia dos Namorados (12/6), festas juninas e Copa do Mundo.",
+      "fontes": [
+        {
+          "nome": "Central do Varejo",
+          "url": "https://centraldovarejo.com.br/varejo-em-junho-dia-dos-namorados-festas-juninas-e-copa-devem-movimentar-r-2214-bilhoes/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Boletim TELETIME: regulação de IoT e orçamento da Anatel",
+      "texto": "Boletim TELETIME de 8 de junho de 2026 tratou da regulação de IoT e do risco ao orçamento da Anatel após cortes governamentais.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/08/06/2026/boletim-teletime-iot/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Wi-Fi 6 atinge 21% de adoção no Brasil",
+      "texto": "Relatório Ookla apontou, em 8 de junho de 2026, adoção de Wi-Fi 6 em 21,1% dos equipamentos instalados no Brasil; uso do 6 GHz ainda incipiente.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/08/06/2026/wi-fi-6-brasil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Vivo lidera adições em banda larga em abril",
+      "texto": "Vivo liderou adições em banda larga com 66 mil acessos positivos em abril de 2026, segundo dado divulgado em 8 de junho.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/08/06/2026/banda-larga-vivo-nio/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "ANPD abre processo sancionador contra Claro por acordo com Serasa",
+      "texto": "ANPD iniciou, em 8 de junho de 2026, processo sancionador contra a Claro por irregularidades no compartilhamento de dados pessoais com a Serasa.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/08/06/2026/anpd-claro-serasa/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Apps do governo federal superam big techs em downloads",
+      "texto": "Governo federal somou 82 milhões de downloads de aplicativos desde janeiro de 2026, superando big techs, conforme dado de 8 de junho.",
+      "fontes": [
+        {
+          "nome": "Mobile Time",
+          "url": "https://www.mobiletime.com.br/noticias/08/06/2026/governo-federal-apps-26/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Cade espera aprovação da Lei dos Mercados Digitais em 2026",
+      "texto": "Presidente do Cade declarou, em 9 de junho de 2026, expectativa de aprovação do PL 4.675/2025 (Mercados Digitais) pela Câmara ainda este ano.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/09/06/2026/mercados-digitais-cade/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Data centers espaciais ampliam desafio de sustentabilidade orbital",
+      "texto": "Análise de 9 de junho de 2026 apontou aumento da complexidade de gestão ambiental com a expansão de data centers em órbita.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/09/06/2026/data-centers-sustentabilidade/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Alares lança Wi-Fi inteligente para o mercado B2B",
+      "texto": "Alares lançou, em 9 de junho de 2026, solução de Wi-Fi inteligente que converte redes wireless em canais de marketing para empresas.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/09/06/2026/alares-lanca-wi-fi-inteligente-para-b2b/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Boletim TELETIME: números de telecom e regulação de ciber",
+      "texto": "Boletim TELETIME de 9 de junho de 2026 trouxe números de banda larga fixa, telefonia fixa e Wi-Fi 6/7 referentes a abril.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/09/06/2026/boletim-teletime-numeros/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Rede celular privativa do governo será operada como SMVNO",
+      "texto": "Rede privativa do governo, operada pela Telebras para forças de segurança no DF, será estruturada como SMVNO, segundo dado de 9 de junho de 2026.",
+      "fontes": [
+        {
+          "nome": "Mobile Time",
+          "url": "https://www.mobiletime.com.br/noticias/09/06/2026/rede-celular-privativa-smvno/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Boletim TELETIME: GPUs como serviço e regulação de IA",
+      "texto": "Boletim TELETIME de 10 de junho de 2026 abordou oferta de GPUs como serviço pela Claro e visão da Anatel sobre regulação de IA.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/10/06/2026/boletim-teletime-gpus/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Anatel inicia monitoramento permanente de faixas móveis",
+      "texto": "Anatel iniciou, em 10 de junho de 2026, execução do Plano de Monitoramento Espectral para Mobilidade (PM-EM) no Brasil.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/10/06/2026/anatel-pm-em/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Interrupções em plataformas de IA se multiplicam em 2026",
+      "texto": "Relatório Ookla/Downdetector, de 10 de junho de 2026, apontou aumento drástico de interrupções em plataformas de IA no início de 2026.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/10/06/2026/interrupcao-plataformas-ia-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Falta de conectividade nas rodovias trava veículo inteligente, diz Anfavea",
+      "texto": "Anfavea apontou, em 10 de junho de 2026, que menos de 15% das rodovias brasileiras têm conectividade, entrave para veículos inteligentes.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/10/06/2026/anfavea-veiculo-inteligente/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Estudantes brasileiros vencem competição de TIC da Huawei",
+      "texto": "Delegação brasileira venceu duas categorias em competição global de TIC da Huawei, com final em Shenzhen, conforme dado de 10 de junho de 2026.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/10/06/2026/brasileiros-vencem-competicao-da-huawei/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "ABIEC e FGV Agro projetam queda de até 92,6% nas emissões da pecuária até 2050",
+      "texto": "Estudo ABIEC/FGV Agro, apresentado à FAO em 8 de junho de 2026, projetou redução de até 92,6% na intensidade de emissões da pecuária brasileira até 2050.",
+      "fontes": [
+        {
+          "nome": "ABIEC",
+          "url": "https://abiec.com.br/na-fao-apexbrasil-apresenta-estudo-da-abiec-e-fgv-agro-que-aponta-reducao-de-ate-926-na-intensidade-de-emissoes-da-pecuaria-brasileira-ate-2050/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "AGRO 360º discute posicionamento do Brasil na nova ordem global",
+      "texto": "Evento AGRO 360º, em São Paulo em 9 de junho de 2026, reuniu JBS, Mosaic, Rumo, FS, 3tentos e Vibra para debater o agro na ordem global.",
+      "fontes": [
+        {
+          "nome": "The AgriBiz",
+          "url": "https://www.theagribiz.com/agro360/agro-360-reune-lideres-do-setor-para-discutir-o-agro-na-nova-ordem-global"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab eleva safra de grãos 2025/26 a recorde de 358,6 milhões de toneladas",
+      "texto": "9º levantamento da Conab, de 11 de junho de 2026, projetou recorde de 358,637 milhões de toneladas de grãos, com soja em 180,3 milhões e milho em 140,5 milhões.",
+      "fontes": [
+        {
+          "nome": "CONAB",
+          "url": "https://cast.conab.gov.br/post/2026-06-11_9_lev_graos/"
+        },
+        {
+          "nome": "Safras & Mercado",
+          "url": "https://safras.com.br/conab-projeta-safra-de-graos-no-brasil-em-2025-26-de-358637-milhoes-de-toneladas/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Mercado agrícola: consumo firme de milho, trigo e arroz, aponta Cultivar",
+      "texto": "Revista Cultivar, em 12 de junho de 2026, reportou consumo firme de milho, trigo e arroz com base em dados do USDA sobre soja, milho e trigo.",
+      "fontes": [
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/mercado-agricola-12-jun-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportações de soja seguem fortes em junho, aponta Cultivar",
+      "texto": "Revista Cultivar, em 9 de junho de 2026, destacou exportações fortes de soja em junho e análise de milho, trigo, sorgo, arroz e feijão.",
+      "fontes": [
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com/news/agricultural-market-9-June-2026"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Regulação digital e pressão orçamentária sobre a Anatel",
+      "texto": "Cade projeta aprovar o PL dos Mercados Digitais em 2026 e Anatel inicia monitoramento espectral, mas seu orçamento é ameaçado por cortes (8-10/6).",
+      "score": 6,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Selic em alta e varejo aquecido por datas sazonais de junho",
+      "texto": "Focus projeta Selic em 13,50% e IPCA em 5,11% para 2026; Dia dos Namorados deve movimentar R$ 2,84 bi e junho, R$ 22,14 bi no varejo.",
+      "score": 8,
+      "setores": [
+        "transversal",
+        "comercio",
+        "ecommerce"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo sazonal e comportamento do consumidor no Dia dos Namorados",
+      "texto": "Comerciantes de MG e SP esperam tíquete de R$ 100-200 e vendas melhores que 2025; solteiros priorizam Copa do Mundo e encontros sociais (12/6).",
+      "score": 5,
+      "setores": [
+        "comercio"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Avanço da conectividade e infraestrutura de IA sob pressão",
+      "texto": "Wi-Fi 6 chega a 21,1% de adoção e Claro oferece GPUs como serviço, enquanto interrupções em plataformas de IA se multiplicam (8-10/6).",
+      "score": 7,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Sustentabilidade na pecuária e nos data centers",
+      "texto": "Estudo ABIEC/FGV Agro projeta queda de 92,6% nas emissões da pecuária até 2050; expansão de data centers espaciais eleva desafio ambiental orbital (8-9/6).",
+      "score": 6,
+      "setores": [
+        "agro",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Fiscalização de dados pessoais e reforço da defesa do consumidor",
+      "texto": "ANPD abre processo sancionador contra a Claro por dados repassados à Serasa; regras de cobrança de couvert reforçadas no Dia dos Namorados (8-12/6).",
+      "score": 6,
+      "setores": [
+        "servicos",
+        "comercio"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -259,5 +737,13 @@
         "val": -0.094
       }
     ]
+  },
+  "origem": "backfill_verificado",
+  "busca_retroativa": true,
+  "backfill": {
+    "metodo": "busca web + verificacao de URL ao vivo (WebFetch) + clusterizacao/reanalise por Claude (synth por agente)",
+    "itens": 31,
+    "brutos_verificados": 33,
+    "aplicado_em": "2026-07-12"
   }
 }

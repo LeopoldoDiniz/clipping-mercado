@@ -10,32 +10,18 @@
   "clipping": [
     {
       "setores": [
-        "comercio",
-        "servicos",
         "transversal"
       ],
-      "titulo": "Confiança do Comércio e de Serviços Recua em Maio, Apontando Cautela no Setor",
-      "texto": "O Índice de Confiança do Comércio (ICOM) do FGV IBRE registrou queda de 2,0 pontos em maio de 2026, atingindo 84,2 pontos, o menor nível desde março de 2021. A retração foi impulsionada pela piora nas avaliações sobre o presente, refletindo um cenário macroeconômico desfavorável ao varejo. Em contraste, o Índice de Confiança de Serviços (ICS) do FGV IBRE avançou 0,9 ponto em maio, alcançando 88,7 pontos, encerrando uma sequência de três meses de quedas. A recuperação no setor de serviços foi impulsionada pela melhora nas expectativas para os próximos meses, sugerindo uma acomodação do pessimismo anterior, embora o ambiente de juros restritivos e endividamento familiar ainda impacte a atividade corrente.",
+      "titulo": "Boletim Focus eleva projeção de IPCA para 5,09% pela 12ª semana seguida, com Selic a 13,25%",
+      "texto": "Focus elevou projeção de IPCA para 5,09% em 2026 pela 12ª semana seguida, acima do teto da meta; Selic projetada em 13,25% e PIB em 1,90%, em 01/06/2026.",
       "fontes": [
         {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br/noticias/confianca-do-comercio-recua-em-maio-apos-um-mes-de-alta-0"
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-01062026/"
         },
         {
-          "nome": "Panrotas",
-          "url": "https://www.panrotas.com.br/noticia-turismo/mercado/2026/05/indice-de-confianca-do-comercio-caiu-2-4-em-maio-e-atingiu-102-6-pontos_102717.html"
-        },
-        {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br/noticias/confianca-de-servicos-volta-subir-em-maio"
-        },
-        {
-          "nome": "Portal Gov.br (SPE)",
-          "url": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/institucional/secretarias/secretaria-de-politica-economica/informativos-economicos/sondagem-servicos-mai2026.pdf"
-        },
-        {
-          "nome": "Portal Gov.br (SPE)",
-          "url": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/institucional/secretarias/secretaria-de-politica-economica/informativos-economicos/sondagem-comercio-ampliado-mai2026.pdf"
+          "nome": "TrendsCE",
+          "url": "https://www.trendsce.com.br/2026/06/01/minuto-mercado-1o-de-junho-de-2026/"
         }
       ]
     },
@@ -43,20 +29,168 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Receita Federal Divulga Calendário de Restituição do Imposto de Renda 2026",
-      "texto": "A Receita Federal do Brasil anunciou o calendário de pagamento dos lotes de restituição do Imposto de Renda 2026. Embora o segundo lote tenha sido pago em 30 de junho, a informação sobre os prazos e a possibilidade de consulta ao próximo lote regular, disponível a partir de 23 de junho, já estava em pauta, indicando a continuidade do processo de restituição.",
+      "titulo": "Ibovespa cai pela quinta sessão seguida e fecha junho em baixa",
+      "texto": "Ibovespa recuou 0,91% em 01/06/2026, fechando aos 172.197 pontos, quinta queda diária consecutiva no início de junho.",
       "fontes": [
         {
-          "nome": "Receita Federal",
-          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/junho/receita-federal-pagara-lote-especial-de-restituicao-automatica-do-imposto-de-renda"
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-01062026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Mercado de renda fixa reage a dados de emprego dos EUA",
+      "texto": "Renda fixa brasileira (CDBs, LCIs, LCAs) repercutiu em 03/06/2026 criação de 122 mil vagas privadas nos EUA pelo ADP, acima do esperado.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/onde-investir/renda-fixa-hoje-03062026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "PMI industrial do Brasil desaba para 49,1 pontos em maio, indicando contração",
+      "texto": "PMI industrial do Brasil caiu de 52,6 em abril para 49,1 em maio de 2026, sinalizando contração da atividade fabril.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio / S&P Global PMI Brasil",
+          "url": "https://www.jornaldocomercio.com/economia/2026/06/1250726-pmi-industrial-do-brasil-cai-a-491-pontos-em-maio-apos-atingir-526-pontos-em-abril.html"
         },
         {
-          "nome": "Agência Brasil - EBC",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/ir-2026-receita-paga-segundo-lote-da-restituicao-nesta-terca-feira"
+          "nome": "ADVFN News",
+          "url": "https://br.advfn.com/jornal/2026/06/farol-economico-agenda-dos-indicadores-que-movimentam-as-bolsas-nesta-segunda-feira-01-06-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção industrial brasileira avança 0,7% em abril, aponta IBGE",
+      "texto": "Produção industrial cresceu 0,7% em abril de 2026, quarto mês consecutivo de alta, acumulando 4,4% no período e 2,7% em 12 meses, segundo IBGE.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio / IBGE",
+          "url": "https://www.jornaldocomercio.com/economia/2026/06/1251082-producao-industrial-brasileira-avanca-07-em-abril-afirma-ibge.html"
         },
         {
-          "nome": "Portal Contábeis",
-          "url": "https://www.contabeis.com.br/noticias/70000/ir-2026-receita-paga-hoje-30-novo-lote-de-restituicao/"
+          "nome": "Plox / IBGE",
+          "url": "https://plox.com.br/noticia/03/06/2026/producao-industrial-sobe-abril-ibge"
+        },
+        {
+          "nome": "ND Mais / IBGE",
+          "url": "https://ndmais.com.br/economia/producao-industrial-abril-2026-pim-ibge/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Prataviera Shopping (Caxias do Sul) projeta alta de 10% nas vendas no Dia dos Namorados",
+      "texto": "Shopping em Caxias do Sul prevê crescimento de 10% nas vendas para o Dia dos Namorados, em 12/06/2026.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/jornal-cidades/2026/06/1251011-shopping-de-caxias-do-sul-preve-vendas-10-maiores-no-dia-dos-namorados.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Dia dos Namorados deve movimentar R$ 26 bilhões no comércio e serviços",
+      "texto": "Pesquisa CNDL/SPC Brasil estima que 100,1 milhões de consumidores movimentarão R$ 26,4 bilhões no Dia dos Namorados de 2026.",
+      "fontes": [
+        {
+          "nome": "CNDL e SPC Brasil",
+          "url": "https://site.cndl.org.br/dia-dos-namorados-deve-movimentar-r-26-bilhoes-no-comercio-e-servicos-aponta-pesquisa-cndl-spc-brasil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "CADE aprova venda da Oi Móvel para TIM, Vivo e Claro",
+      "texto": "CADE aprovou em 02/06/2026 a venda da Oi Móvel para TIM, Vivo e Claro; avança também o projeto Norte Conectado.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/02/06/2026/boletim-teletime-oi-movel/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Tarifaço dos EUA pressiona telecom; pirataria causa R$ 12 bi em perdas na região",
+      "texto": "Tarifas americanas impactam o setor de telecom no Brasil; pirataria gera R$ 12 bilhões em perdas anuais na região, em 03/06/2026.",
+      "fontes": [
+        {
+          "nome": "TELETIME",
+          "url": "https://teletime.com.br/03/06/2026/boletim-teletime-tarifaco/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Anatel abre consulta pública para rediscutir regulação da Internet das Coisas",
+      "texto": "Anatel abrirá consulta pública sobre IoT/M2M de 8 a 30 de julho de 2026, tema que envolve cerca de 30 milhões de dispositivos conectados.",
+      "fontes": [
+        {
+          "nome": "Convergência Digital",
+          "url": "https://convergenciadigital.com.br/mercado/anatel-abre-tomada-de-subsidios-para-rediscutir-regulacao-da-internet-das-coisas/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "PMI de Serviços do Brasil estende sequência de expansão em junho",
+      "texto": "PMI de Serviços do Brasil atingiu 51,3 pontos em junho de 2026, oitavo mês consecutivo de expansão, sob pressões inflacionárias.",
+      "fontes": [
+        {
+          "nome": "Trading View / S&P Global",
+          "url": "https://www.tradingview.com/news/te_news:564175:0-brazil-services-pmi-extends-growth-streak/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Secovi-SP reúne associados em encontro estratégico sobre o setor imobiliário",
+      "texto": "Secovi-SP promoveu, em 02/06/2026, encontro estratégico com associados sobre representatividade, economia e inovação no setor imobiliário.",
+      "fontes": [
+        {
+          "nome": "Secovi-SP",
+          "url": "https://secovi.com.br/secovi-sp-reune-novos-associados-em-encontro-estrategico-para-falar-de-representatividade-economia-e-inovacao-no-setor-imobiliario/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Fórum E-Commerce Brasil 2026 chega à 17ª edição em julho, no Anhembi",
+      "texto": "17ª edição do Fórum E-Commerce Brasil ocorre em 28-30 de julho de 2026, no Anhembi, com plenárias sobre IA, marketplace e logística.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/forum-e-commerce-brasil-2026-10-motivos-para-ir-ao-maior-evento-do-setor"
         }
       ]
     }
@@ -65,73 +199,62 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Agenda de Reformas e Acordos Comerciais",
-      "texto": "A Receita Federal continua a divulgar orientações sobre a Reforma Tributária, como o Adicional da CSLL previsto nas Regras GloBE, e o MDIC lança a 'Agenda Brasil Mais Competitivo' e iniciativas para ampliar as oportunidades do Acordo Mercosul-União Europeia, indicando um foco governamental na melhoria do ambiente de negócios e na inserção internacional.",
-      "score": 6.5,
+      "tema": "CADE aprova consolidação na telefonia móvel",
+      "texto": "CADE aprovou, em 02/06/2026, a venda da Oi Móvel para TIM, Vivo e Claro, avançando também o projeto Norte Conectado de expansão de rede.",
+      "score": 6,
       "setores": [
-        "transversal",
-        "industria",
-        "comercio"
+        "servicos"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Inflação e Confiança dos Setores",
-      "texto": "A inflação (IPCA) para maio de 2026, divulgada em 12 de junho, mostrou alta de 0,58%, com destaque para alimentos e habitação. O Índice de Preços ao Produtor (IPP) de maio registrou queda de 0,30%. A confiança do comércio recuou em maio, enquanto a de serviços apresentou leve alta, indicando um cenário misto de pressões inflacionárias e cautela setorial.",
-      "score": 7.8,
+      "tema": "Piora das expectativas de inflação/juros e sinais mistos na indústria",
+      "texto": "Focus elevou IPCA a 5,09% e Selic a 13,25%; Ibovespa caiu 0,91% (5ª queda); PMI industrial recuou a 49,1 em maio, sinalizando contração.",
+      "score": 8,
       "setores": [
         "transversal",
-        "industria",
-        "comercio",
-        "servicos"
+        "industria"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Digitalização do Consumo e Endividamento",
-      "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 (ano-base 2025), divulgada em 26 de junho, revelou que 83% das transações bancárias são digitais, com 78% via mobile, consolidando a preferência dos consumidores por canais digitais. A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes, influenciando a confiança do comércio.",
-      "score": 8,
+      "tema": "Consumo aquecido no Dia dos Namorados",
+      "texto": "Dia dos Namorados deve movimentar R$ 26,4 bilhões com 100,1 milhões de consumidores; shopping de Caxias do Sul projeta alta de 10% nas vendas.",
+      "score": 6,
       "setores": [
         "comercio",
-        "servicos",
-        "transversal"
+        "servicos"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Investimento em Tecnologia Bancária e IA",
-      "texto": "O setor bancário brasileiro prevê um orçamento de R$ 50,4 bilhões em tecnologia para 2026, um aumento de 8% em relação ao ano anterior. Tecnologias emergentes como Inteligência Artificial (IA) e computação em nuvem (cloud) são protagonistas nos planejamentos orçamentários, com a IA sendo utilizada por 77% dos bancos para análise de riscos cibernéticos.",
-      "score": 7,
+      "tema": "Expansão de conectividade e agenda de inovação em e-commerce",
+      "texto": "Anatel discute regulação de IoT/M2M para cerca de 30 milhões de dispositivos; Fórum E-Commerce Brasil 2026 (28-30/07) tratará de IA, marketplace e logística.",
+      "score": 6,
       "setores": [
         "servicos",
-        "transversal"
+        "ecommerce"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Descarbonização Industrial e Exploração de Combustíveis",
-      "texto": "O Brasil é um dos primeiros países a ter um plano de descarbonização industrial aprovado por um fundo climático global, iniciativa articulada pelo MDIC. Por outro lado, a ANP indicou mais áreas de exploração de combustíveis fósseis na Foz do Amazonas para leilões futuros, gerando debates sobre o equilíbrio entre desenvolvimento econômico e sustentabilidade ambiental.",
-      "score": 5.5,
-      "setores": [
-        "industria",
-        "transversal"
-      ]
+      "tema": "Sem eventos ambientais reportados na semana",
+      "texto": "Nenhuma notícia com foco ambiental foi verificada entre as fontes desta semana; dimensão sem cobertura factual.",
+      "score": 0,
+      "setores": []
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulação de Tarifas de Energia e Gás",
-      "texto": "A ANEEL aprovou a revisão tarifária periódica para concessionárias de transmissão de energia em 2026 e projeta um aumento médio de 8,6% nas tarifas de energia elétrica para os consumidores. A ANP intensificou o combate a preços abusivos de combustíveis e suspendeu o debate sobre mudanças nas regras de venda do gás de cozinha, indicando um cenário regulatório dinâmico nos setores de energia e combustíveis.",
-      "score": 6,
+      "tema": "Anatel formaliza processo regulatório sobre IoT",
+      "texto": "Anatel abrirá consulta pública sobre regulação de IoT/M2M de 8 a 30 de julho de 2026, instrumento legal para rediscutir normas do setor.",
+      "score": 5,
       "setores": [
-        "industria",
-        "comercio",
-        "servicos",
-        "transversal"
+        "servicos"
       ]
     }
   ],
@@ -385,5 +508,13 @@
         "val": 0.004
       }
     ]
+  },
+  "origem": "backfill_verificado",
+  "busca_retroativa": true,
+  "backfill": {
+    "metodo": "busca web + verificacao de URL ao vivo (WebFetch) + clusterizacao/reanalise por Claude (synth por agente)",
+    "itens": 13,
+    "brutos_verificados": 17,
+    "aplicado_em": "2026-07-12"
   }
 }
