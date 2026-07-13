@@ -510,10 +510,11 @@ const META_INFLACAO={centro:3.0,tolerancia:1.5,fonte:"CMN · BCB",regime:"meta c
 const _metaCentro=()=>dec(META_INFLACAO.centro,1),_metaTeto=()=>dec(META_INFLACAO.centro+META_INFLACAO.tolerancia,1);
 let KPIS_SETOR=[]; // indicadores setoriais (incrementais aos macros) — preenchidos em applyData
 // setores com indicador setorial próprio, oficial (IBGE/BCB). Agro/E-commerce: fonte em validação (sem fabricar).
-// ordem: núcleo (já nos macros) → ativos (fonte própria) → em breve
+// ordem: setores com indicador exclusivo (macro dedicado ou fonte própria) → em breve
+// macro: indicador macro EXCLUSIVO do setor (só aparece quando o setor é selecionado), não fica no macro padrão
 const SETOR_IND=[
-  {id:"industria",nome:"Indústria",ico:"🏭",fonte:false,nucleo:true,info:"Indústria já está no núcleo macro (PIM e IPP), sempre visível."},
-  {id:"comercio",nome:"Comércio",ico:"🛒",fonte:false,nucleo:true,info:"Comércio já está no núcleo macro (Varejo/PMC), sempre visível."},
+  {id:"industria",nome:"Indústria",ico:"🏭",fonte:false,macro:"pim",info:"Produção física da indústria (PIM-PF/IBGE): variação mês a mês e acumulada no ano. Indicador exclusivo do setor Indústria. Fonte determinística: IBGE/SIDRA tabela 8888, variável 11601."},
+  {id:"comercio",nome:"Comércio",ico:"🛒",fonte:false,macro:"varejo",info:"Volume de vendas do comércio varejista (PMC/IBGE): variação mês a mês e acumulada no ano. Indicador exclusivo do setor Comércio. Fonte determinística: IBGE/SIDRA tabela 8880, variável 11708."},
   {id:"servicos",nome:"Serviços",ico:"🛎️",fonte:true,info:"Volume de serviços prestados (PMS/IBGE), variação mês contra mês com ajuste sazonal; acumulado no ano compara jan–mês vs igual período do ano anterior. Fonte determinística: IBGE/SIDRA tabela 5906."},
   {id:"construcao",nome:"Construção",ico:"🏗️",fonte:true,info:"Custo médio da construção civil por m² (SINAPI/IBGE): materiais + mão de obra, com variação no mês e acumulada no ano. Fonte determinística: IBGE/SIDRA tabela 2296, variáveis 48/1196/1197."},
   {id:"agro",nome:"Agro",ico:"🌾",fonte:true,info:"Estimativa da produção nacional de grãos (cereais, leguminosas e oleaginosas) do ano-safra, revista mensalmente pelo IBGE. Fonte determinística: IBGE/SIDRA tabela 6588 (LSPA), variável 35."},
@@ -539,6 +540,13 @@ function adaptKpisSetor(rawSetor,allData){
       cor:k.cor||"neutral",sub:k.sub,hist,acum,flow:!!k.flow,un:k.flow?"%":"",info:k.info||meta.info,mkt:!!k.mkt,setorial:true};});
 }
 const selSetorKpis=()=>KPIS_SETOR.filter(k=>state.indSetores.includes(k.setor));
+// indicador macro exclusivo por setor (Indústria→PIM, Comércio→Varejo): só renderiza quando o setor está selecionado
+const SETOR_MACRO=Object.fromEntries(SETOR_IND.filter(s=>s.macro).map(s=>[s.id,s.macro]));
+function selMacroSetorKpis(){
+  const map=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+  return state.indSetores.map(s=>SETOR_MACRO[s]).filter(id=>id&&map[id])
+    .map(id=>kpiCard({...map[id],setorial:true})).join(""); // estilo setorial p/ sinalizar o vínculo
+}
 const PRESSAO=71;
 
 let EDITORIAL=`A Semana 28 se desenha com um cenário que exige atenção redobrada, sobretudo após a política monetária manter a Selic em patamar elevado — o juro básico que encarece crédito e investimento — para conter a inflação ainda acima da meta. A produção industrial recuou 0,2% e o varejo perdeu fôlego, enquanto a balança comercial surpreendeu com forte superávit e o FMI elevou a projeção de PIB para 2,4%, puxada pela safra.
@@ -1091,7 +1099,9 @@ function kpiLegend(){
     <span><b class="neutral">■</b> estável</span>
     <span class="k-legend-note">a cor/seta indicam o <b>efeito no ambiente de negócios</b> — não a direção do número</span></div>`;
 }
-const KPI_ORDER=["selic","ipca","cambio","desemprego","varejo","ipp","pim"]; // SELIC → IPCA (acum+mês) → resto
+const KPI_ORDER=["selic","ipca","cambio","desemprego","ipp"]; // SELIC → IPCA (acum+mês) → resto do macro padrão
+// exclusivos de setor: saem do macro padrão e só aparecem quando o setor é selecionado (Varejo→Comércio, PIM→Indústria)
+const KPI_EXCLUSIVO_SETOR=new Set(["varejo","pim"]);
 function kpiItems(){
   const map=Object.fromEntries(KPIS.map(k=>[k.id,k]));
   const out=[];
@@ -1099,7 +1109,7 @@ function kpiItems(){
     if(id==="ipca")out.push(ipcaCards(k));
     else if(id==="selic")out.push(selicCard(k));
     else out.push(kpiCard(k));});
-  KPIS.forEach(k=>{if(!KPI_ORDER.includes(k.id))out.push(kpiCard(k));}); // extras (ex.: confiança) ao fim
+  KPIS.forEach(k=>{if(!KPI_ORDER.includes(k.id)&&!KPI_EXCLUSIVO_SETOR.has(k.id))out.push(kpiCard(k));}); // extras (ex.: confiança) ao fim
   return out.join("");
 }
 // destaque macro na tela inicial (Panorama): SELIC + IPCA completo (mês, acum. ano, projetado)
@@ -1111,9 +1121,9 @@ function panoramaMacro(){
 function setorSelector(){
   const chips=SETOR_IND.map(s=>{
     const hasData=KPIS_SETOR.some(k=>k.setor===s.id);   // habilita dinamicamente quando há dado real
-    const enabled=s.fonte||hasData;const disabled=!enabled;
+    const enabled=s.fonte||hasData||!!s.macro;const disabled=!enabled;   // macro exclusivo (PIM/Varejo) também habilita
     const on=state.indSetores.includes(s.id);
-    const badge=s.nucleo?'<span class="ss-tag">no núcleo</span>':(disabled?'<span class="ss-tag">em breve</span>':(!s.fonte&&hasData?'<span class="ss-tag mkt">mercado</span>':''));
+    const badge=disabled?'<span class="ss-tag">em breve</span>':(!s.fonte&&!s.macro&&hasData?'<span class="ss-tag mkt">mercado</span>':'');
     return `<button class="ss-chip${on?' on':''}${disabled?' off':''}" ${disabled?'disabled aria-disabled="true"':`data-indsetor="${s.id}" aria-pressed="${on}"`} data-tip="${s.info.replace(/"/g,'&quot;')}"><span class="ss-ico">${s.ico}</span>${s.nome}${badge}</button>`;
   }).join("");
   return `<div class="setor-sel">
@@ -1235,7 +1245,7 @@ function viewIndicadores(){
     <div class="blk">
       <div class="blk-h">Indicadores${secTag} <span class="audit-hint">▸ (i) explica · a frase é a leitura rápida</span></div>
       ${setorSelector()}
-      <div class="kpis">${kpiItems()}${selSetorKpis().map(kpiCard).join("")}</div>
+      <div class="kpis">${kpiItems()}${selMacroSetorKpis()}${selSetorKpis().map(kpiCard).join("")}</div>
       ${kpiLegend()}
     </div>
 
@@ -1720,7 +1730,7 @@ function applyData(sel,allData,metas){
   KPIS_SETOR=adaptKpisSetor(sel.kpis_setoriais||[],allData);
   KPIMAP=Object.fromEntries(KPIS.concat(KPIS_SETOR).map(k=>[k.id,k]));
   if(!Array.isArray(state.indSetores))state.indSetores=[];
-  state.indSetores=state.indSetores.filter(s=>KPIS_SETOR.some(k=>k.setor===s)); // só setores com dado real
+  state.indSetores=state.indSetores.filter(s=>KPIS_SETOR.some(k=>k.setor===s)||SETOR_MACRO[s]); // setores com dado real ou macro exclusivo
   state.chartSeries=state.chartSeries.filter(id=>!id.startsWith("s_")||KPIMAP[id]); // limpa séries setoriais órfãs
   if(!state.chartSeries.every(id=>KPIMAP[id])){const ids=KPIS.map(k=>k.id);const pref=["ipca","ipp","selic","cambio"].filter(id=>KPIMAP[id]);state.chartSeries=(pref.length>=2?pref.slice(0,2):ids.slice(0,2));}
   if(sel.editorial&&sel.editorial.texto){EDITORIAL=sel.editorial.texto;LEITURA.quote=firstSentence(EDITORIAL);}
