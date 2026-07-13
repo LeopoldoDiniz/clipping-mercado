@@ -625,10 +625,12 @@ de riscos e oportunidades ao longo das semanas.
 # COMO ESCREVER
 - Linguagem FORMAL, mas SEM jargão técnico. Um empresário de PME deve entender sem dicionário.
   Se precisar citar um termo técnico (ex: SELIC), explique em poucas palavras na própria frase.
-- SÍNTESE é a regra: texto CORRIDO, CURTO, de no MÁXIMO 90 palavras (3 a 4 frases). Sem listas.
-  Ninguém lê parágrafos longos — cada frase precisa carregar informação. Corte adjetivos e rodeios.
-- Cubra, de forma enxuta: (1) o quadro da semana; (2) o que MUDOU frente às semanas anteriores;
-  (3) o ponto de atenção para a próxima semana. Priorize o que é acionável.
+- DENSIDADE é a regra: texto CORRIDO de 280 a 360 palavras, analítico e sem listas. Cada frase carrega
+  informação (número, evento, fonte) — nada de generalidade, adjetivo vazio ou enchimento.
+- Cubra, nesta ordem e ancorado nos dados: (1) o quadro macro da semana (Selic, IPCA, câmbio, atividade)
+  com os números-chave; (2) o que MUDOU frente às semanas anteriores (novos sinais, o que materializou);
+  (3) uma leitura enxuta por bloco setorial (indústria; comércio e serviços; agro; construção; e-commerce),
+  citando o fato concreto de cada um; (4) o ponto de atenção para as próximas semanas. Priorize o acionável.
 - Seja específico e ancorado nos dados e sinais fornecidos. Nada de generalidades vagas.
 - Tom: sóbrio, seguro, de quem acompanha o cenário há tempo. Português do Brasil.
 
