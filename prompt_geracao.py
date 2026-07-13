@@ -121,12 +121,23 @@ cobrindo os SEIS setores de forma equilibrada.
 # FONTES PRIORITÁRIAS (por setor)
 {FONTES}
 
-# SETORES (marque cada item com um ou mais)
+# SETORES (marque cada item com um ou mais) — vale para CLIPPING, PESTEL e SINAIS (longitudinal), não só clipping
 - "industria", "comercio", "servicos", "agro", "construcao", "ecommerce"
 - "transversal" = afeta todos os setores (ex: SELIC, câmbio, reforma tributária)
+- REGRA: se o item é ESPECÍFICO de um setor, ele DEVE conter a tag daquele setor (não deixe só "transversal"):
+  * obras/imóveis/INCC/SINAPI/CUB/FipeZAP/lançamentos/construtoras/VGV → "construcao"
+  * safra/grãos/soja/milho/boi/CEPEA/Conab/LSPA/agronegócio/fertilizantes → "agro"
+  * marketplace/faturamento online/cross-border/Remessa Conforme/last mile/checkout → "ecommerce"
+- No PESTEL, cada dimensão deve listar TODOS os setores afetados: use "transversal" para forças macro
+  E ACRESCENTE os setores mais impactados (inclua construcao/agro/ecommerce quando a força os atinge —
+  ex.: juros altos → transversal + construcao; câmbio → transversal + agro + ecommerce).
 - Distribua a cobertura pelos seis setores. Agro (safra, exportações, câmbio, Plano Safra),
   construção civil (INCC, crédito imobiliário, lançamentos, sondagens CBIC/CNI) e e-commerce
   (faturamento, marketplaces, cross-border/Remessa Conforme, logística) são tão relevantes quanto os demais.
+  E-commerce NÃO pode ficar sem clipping: busque nas fontes próprias do setor a cada rodada.
+- SINAIS (novos_sinais/longitudinal): além de riscos macro, promova a SINAL rastreável os desdobramentos
+  REGULATÓRIOS (ANEEL, leilões, Remessa Conforme, reforma tributária, marcos legais) e TRABALHISTAS
+  (escala 6x1, jornada, encargos) quando materiais — não os deixe só como notícia solta.
 
 # HISTÓRICO DE SINAIS ATIVOS (para a revisão longitudinal)
 Avalie CADA sinal abaixo à luz das notícias novas desta semana. Para cada um, decida:

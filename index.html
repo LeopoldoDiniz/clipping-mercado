@@ -1317,7 +1317,8 @@ function heatmap(){
   const scale=v=>`background:color-mix(in srgb, var(--accent) ${Math.round(Math.max(.1,Math.min(1,v/10))*100)}%, var(--surface-3))`;
   const rows=Object.keys(DIMS).map(d=>{
     const p=PESTEL.find(x=>x.dim===d);
-    const cells=cols.map(c=>{const on=p&&p.setores.includes(c.id);const v=on?p.score:0;
+    // força transversal afeta TODOS os setores → preenche a coluna (antes a célula ficava vazia p/ Construção/Agro/E-commerce)
+    const cells=cols.map(c=>{const on=p&&(p.setores.includes(c.id)||p.setores.includes("transversal"));const v=on?p.score:0;
       return `<td class="cell ${on?'clickable':'off'}" ${on?`data-dim="${d}" data-sec="${c.id}"`:''} style="${on?scale(v):'background:var(--surface-2);color:var(--ink-3)'}">${on?dec(v,1):'·'}</td>`;}).join("");
     return `<tr><td class="lbl">${d} · ${DIMS[d]}</td>${cells}</tr>`;
   }).join("");
@@ -1627,12 +1628,25 @@ function adaptKpis(rawKpis,allData){
   return out;}
 const TAGVOC={tarifas:/tarifa|eua|estados unidos|comércio exterior|exporta/i,desenrola:/desenrola/i,energia:/energia|aneel|elétric|tarifári/i,juros:/selic|juro|copom|crédito|financ/i,cambio:/câmbio|dólar|balança comercial/i,safra:/safra|grão|soja|milho|agronegócio|conab/i,consumo:/consumo|varejo|venda|confiança|endivida/i,digital:/digital|tecnologia|\bia\b|automação|autoatendimento|e-commerce|marketplace/i,escala6x1:/6x1|jornada de trabalho|escala/i,copa:/copa do mundo|\bcopa\b/i,remessa:/remessa conforme|cross-border|importados de baixo/i,construcao:/construção|obra|incc|imobiliári/i};
 const deriveTags=t=>Object.keys(TAGVOC).filter(k=>TAGVOC[k].test(t||""));
+// setor inferido a partir do CONTEÚDO — complementa (não substitui) as tags do motor, para que
+// Construção/Agro/E-commerce apareçam mesmo quando o motor não os marca. Só os setores "difíceis".
+const SETORVOC={
+  construcao:/construç|\bobra(s)?\b|im[óo]v(el|eis)|\bincc\b|sinapi|\bcub\b|imobiliári|cimento|habitaç|construtora|\bmtre\b|\bvgv\b|lançament|fipezap|engenharia civil|canteiro/i,
+  agro:/\bagro|agroneg[óo]cio|safra|\bgr[ãa]o|soja|\bmilho\b|\bboi\b|carne bovina|commodit|fazenda|lavoura|\blspa\b|conab|pecuár|colheita|fertilizante|plantio|cepea|\bcaf[ée]\b/i,
+  ecommerce:/e-?commerce|marketplace|com[ée]rcio eletr[ôo]nico|venda(s)? online|cross-?border|remessa conforme|last mile|dropship|neotrust|abcomm|mcc-enet|checkout|marketplaces/i
+};
+function deriveSetores(text){const t=text||"";return Object.keys(SETORVOC).filter(k=>SETORVOC[k].test(t));}
+// une as tags do motor com as inferidas do conteúdo (mantém "transversal" e a ordem original)
+function mergeSetores(base,text){const b=(base&&base.length)?base.slice():[];const d=deriveSetores(text);
+  d.forEach(s=>{if(!b.includes(s))b.push(s);});return b.length?b:["transversal"];}
+// vetor da Cadeia de Impacto — ordem por ESPECIFICIDADE (trabalho/câmbio/crédito/regulação antes de custos,
+// que era guloso demais e engolia sinais de trabalho/crédito por conterem a palavra "custo")
 function deriveCadeia(t){t=t||"";
-  if(/energia|aneel|custo|insumo|incc|combustível|tarifári/i.test(t))return"custos";
-  if(/crédito|juro|selic|financ|desenrola|inadimpl|copom|empréstimo/i.test(t))return"credito";
-  if(/câmbio|dólar|exporta|importa|\btarifa|balança|comércio exterior/i.test(t))return"cambio";
-  if(/emprego|jornada|6x1|folha|sindicato|desemprego|mão de obra|trabalh/i.test(t))return"trabalho";
-  if(/regula|\blei\b|tribut|imposto|reforma|marco|remessa conforme|compliance|\bcmn\b|medida provisória/i.test(t))return"regulacao";
+  if(/6x1|jornada|sindicat|folha de pag|\bclt\b|demiss|m[ãa]o de obra|encargos trabalh|piso salarial|acordo coletivo|trabalhista/i.test(t))return"trabalho";
+  if(/cr[ée]dito|linha de cr[ée]dito|desenrola|inadimpl|endividament|\bjuro|selic|copom|financiament|empr[ée]stimo/i.test(t))return"credito";
+  if(/tarifa(s)?\s*(dos|da|de)?\s*eua|c[âa]mbio|d[óo]lar|\bexporta[çrd]|\bimporta[çrd]|balan[çc]a comercial|com[ée]rcio exterior|geopol[íi]t|oriente m[ée]dio|petr[óo]leo|barril|insumo importado/i.test(t))return"cambio";
+  if(/energia|custo|insumo|\bincc\b|combust[íi]vel|frete|mat[ée]ria-prima|log[íi]stica/i.test(t))return"custos";
+  if(/aneel|leil[ãa]o|remessa conforme|marco (legal|regulat)|regulament|medida provis[óo]ria|\bmp\b|tribut|imposto|reforma tribut|compliance|\bcmn\b|licenciament|bandeira tarif[áa]ri|ag[êe]ncia reguladora/i.test(t))return"regulacao";
   return"demanda";}
 function deriveDim(t){t=t||"";
   if(/tarifa|governo|política|eua|congresso|\bmp\b|medida provisória|desenrola|plano safra/i.test(t))return"P";
@@ -1654,15 +1668,15 @@ function adaptSignals(long){return (long||[]).map(l=>{
   const imi=r1(real?cl(l.iminencia):cl(imiBase+(rel-60)/60*1.4));
   const text=l.titulo+" "+(l.ultima_observacao||"");
   const traj=CHRONO.map(w=>{const hit=(longByWeek[w.k]||[]).find(x=>x.id===l.id);return hit?[w.k,hit.status,Math.round(hit.relevancia)]:null;}).filter(Boolean);
-  return {t:l.titulo,tipo:l.tipo,dim:l.dimensao,setores:l.setores||[],status:l.status,rel,imp,imi,
+  return {t:l.titulo,tipo:l.tipo,dim:l.dimensao,setores:mergeSetores(l.setores,text),status:l.status,rel,imp,imi,
     cadeia:deriveCadeia(text),tema:deriveTags(text)[0]||null,obs:l.ultima_observacao||"",
     traj:traj.length?traj:[[refKey(),l.status,Math.round(rel)]],origem:l.origem};});}
 function adaptNews(clip,wm){const dataChip=wm?wm.dt.replace(/ 20\d\d/,""):null;
   return (clip||[]).map(c=>{const text=c.titulo+" "+(c.texto||"");const wu=(c.fontes||[]).find(f=>f.url);
-    return {t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],
+    return {t:c.titulo,txt:c.texto||"",setores:mergeSetores(c.setores,text),
       dim:deriveDim(text),cadeia:deriveCadeia(text),temas:deriveTags(text),url:wu?wu.url:null,data:dataChip,
       src:(c.fontes||[]).map(f=>[f.nome,f.url?1:0]),origem:"real"};});}
-const adaptPestel=p=>(p||[]).map(x=>({dim:x.dim,tema:x.tema,score:x.score,setores:x.setores||[],texto:x.texto}));
+const adaptPestel=p=>(p||[]).map(x=>({dim:x.dim,tema:x.tema,score:x.score,setores:mergeSetores(x.setores,(x.tema||"")+" "+(x.texto||"")),texto:x.texto}));
 const numOr=(v,d)=>(typeof v==="number"&&!isNaN(v))?v:d;
 function mergePorter(p){const out={};Object.keys(PORTER_BASE).forEach(sec=>{const b=PORTER_BASE[sec],r=p[sec];
   out[sec]=r?{rivalidade:numOr(r.rivalidade,b.rivalidade),entrantes:numOr(r.entrantes,b.entrantes),fornecedores:numOr(r.fornecedores,b.fornecedores),compradores:numOr(r.compradores,b.compradores),substitutos:numOr(r.substitutos,b.substitutos),cadeia:b.cadeia,nota:r.nota||b.nota}:b;});
