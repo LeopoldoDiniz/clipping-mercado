@@ -1116,7 +1116,7 @@ function analiseGA(){
   const sec=state.sector;
   if(sec==="panorama")return {prov:DATA_LOADED?provFromData():HERO.provocacao,acoes:LEITURA.acoes};
   const base=SETOR_ANALISE[sec];
-  return {prov:DATA_LOADED?provFromData():(base?base.prov:HERO.provocacao),acoes:base?base.acoes:LEITURA.acoes};
+  return {prov:(!HIST_ONLY&&base&&base.prov)?base.prov:(DATA_LOADED?provFromData():HERO.provocacao),acoes:base&&base.acoes?base.acoes:LEITURA.acoes};
 }
 function viewGeral(){
   const P=pressao();
@@ -1604,7 +1604,7 @@ function leitura(){
   const top=list[0],risco=list.find(s=>s.tipo==="risco"),opp=list.find(s=>s.tipo==="oportunidade");
   const nome=isPan?"Panorama":SMETA[sec].nome;
   let manchete;
-  if(DATA_LOADED)manchete=HIST_ONLY?(firstN(EDITORIAL,1)||`${nome}: indicadores oficiais.`):(isPan?firstN(EDITORIAL,1):(top?`${nome}: ${top.t}.`:`${nome}: leitura da seleção.`));
+  if(DATA_LOADED)manchete=HIST_ONLY?(firstN(EDITORIAL,1)||`${nome}: indicadores oficiais.`):(isPan?firstN(EDITORIAL,1):(((SETOR_ANALISE[sec]||{}).quote)||(top?`${nome}: ${top.t}.`:`${nome}: leitura da seleção.`)));
   else manchete=isPan?LEITURA.quote:((SETOR_ANALISE[sec]||{}).quote||LEITURA.quote);
   const H=[];
   if(!HIST_ONLY){
@@ -1616,7 +1616,7 @@ function leitura(){
   if(DATA_LOADED){
     if(HIST_ONLY){paragrafo=EDITORIAL||"Indicadores oficiais disponíveis; sem cobertura de clipping nesta semana.";}
     else if(isPan){full=EDITORIAL;paragrafo=firstN(EDITORIAL,3);}
-    else{paragrafo=leituraSetorial(sec,list);}
+    else{const sa=SETOR_ANALISE[sec];if(sa&&Array.isArray(sa.edi)&&sa.edi.length){full=sa.edi.join(" ");paragrafo=firstN(full,3);}else{paragrafo=leituraSetorial(sec,list);}}
   }else{
     const base=isPan?ediParas(EDITORIAL):((SETOR_ANALISE[sec]||{}).edi||ediParas(EDITORIAL));
     full=base.join(" ");paragrafo=firstN(full,3);
