@@ -105,6 +105,10 @@
   .pk-picks{display:flex;flex-direction:column;gap:6px;flex:1 1 auto;min-width:0;margin-left:26px}
   .pk-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .wkchip.mo.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .pk-hint{font-size:11px;color:var(--ink-3);white-space:nowrap;flex:0 0 auto;margin-left:auto;align-self:center}
+  .pk-hint b{color:var(--ink-2);font-weight:600}
+  .pk-hint .hint-touch{display:none}
+  @media(pointer:coarse){.pk-hint .hint-desk{display:none}.pk-hint .hint-touch{display:inline}}
   .manchete{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--ink);margin:0 0 13px}
   .hl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:0 0 13px}
   @media (max-width:680px){.hl-row{grid-template-columns:1fr}}
@@ -945,35 +949,57 @@ function renderPeriodBar(){
       return `<button class="wkchip ${on?'on':''}" data-pick="${it.id}" aria-pressed="${on}">${it.lbl}${sub}${pp}</button>`;}).join("");
     groups=`<div class="wkchips">${chips}</div>`;
   }
-  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div>${groups}`;
+  // dica de interação — muda conforme o dispositivo (ponteiro fino = desktop; grosso = toque)
+  const multiItems=(state.gran==="semana"?CHRONO.length:granItems(state.gran).length)>1;
+  const hint=multiItems?`<span class="pk-hint"><span class="hint-desk">${MOD_KEY}+clique <b>compara</b> · Shift <b>seleciona intervalo</b></span><span class="hint-touch">toque <b>navega</b> · segure para <b>comparar</b></span></span>`:"";
+  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div>${groups}${hint}`;
   bar.querySelectorAll("[data-gran]").forEach(b=>b.onclick=()=>{
     if(state.gran===b.dataset.gran)return;
     state.gran=b.dataset.gran;
     const its=granItems(state.gran);
     state.picks=its.length?[its[its.length-1].id]:[]; // padrão: período mais recente
+    state.pickAnchor=state.picks[0]||null;
     if(state.gran==="semana")state.weekMonths=[(WMETA[state.picks[0]]||{}).mes].filter(Boolean);
     state.pointSig=null;applyScope();
   });
-  bar.querySelectorAll("[data-wkmonth]").forEach(b=>b.onclick=()=>{
-    const mid=b.dataset.wkmonth;let sel=(state.weekMonths||[]).slice();
-    const wksM=CHRONO.filter(w=>w.mes===mid).map(w=>w.k);
+  bar.querySelectorAll("[data-wkmonth]").forEach(b=>bindPeriodChip(b,mod=>applyMonth(b.dataset.wkmonth,mod)));
+  bar.querySelectorAll("[data-pick]").forEach(b=>bindPeriodChip(b,mod=>applyPick(b.dataset.pick,mod)));
+}
+// tecla modificadora exibida na dica (⌘ no mac, Ctrl no resto)
+const MOD_KEY=(typeof navigator!=="undefined"&&/mac|iphone|ipad/i.test(navigator.platform||navigator.userAgent||""))?"⌘":"Ctrl";
+// liga clique (com modificadores) + long-press (toque) a um chip de período; `run(mod)` recebe {multi,range}
+function bindPeriodChip(b,run){
+  b.onclick=ev=>{if(b._lp){b._lp=false;return;} run({multi:ev.ctrlKey||ev.metaKey,range:ev.shiftKey});};
+  b.addEventListener("touchstart",()=>{b._t=(typeof performance!=="undefined"?performance.now():0);},{passive:true});
+  b.addEventListener("touchend",ev=>{const long=((typeof performance!=="undefined"?performance.now():0)-(b._t||0))>=500;
+    if(long){b._lp=true;ev.preventDefault();run({multi:true,range:false});}}); // long-press = comparar; impede o ghost click
+}
+// seleção de período unificada: navega (troca) / compara (multi) / intervalo (range), com âncora p/ Shift
+function applyPick(id,mod){
+  const uni=state.gran==="semana"?CHRONO.map(w=>w.k):granItems(state.gran).map(i=>i.id); // universo cronológico
+  if(mod.range&&state.pickAnchor&&uni.includes(state.pickAnchor)&&uni.includes(id)){
+    const a=uni.indexOf(state.pickAnchor),c=uni.indexOf(id),lo=Math.min(a,c),hi=Math.max(a,c);
+    state.picks=uni.slice(lo,hi+1); // âncora preservada p/ estender o intervalo
+  }else if(mod.multi){
+    const i=state.picks.indexOf(id);
+    if(i>=0){if(state.picks.length>1)state.picks.splice(i,1);}else state.picks.push(id); // mantém ao menos 1
+    state.pickAnchor=id;
+  }else{state.picks=[id];state.pickAnchor=id;} // clique simples = navega
+  if(state.gran==="semana")state.weekMonths=[...new Set(state.picks.map(k=>(WMETA[k]||{}).mes).filter(Boolean))];
+  state.pointSig=null;applyScope();
+}
+// chip de MÊS: clique simples = vai para o mês (mostra suas semanas, seleciona a mais recente); multi = soma/remove o mês
+function applyMonth(mid,mod){
+  const wksM=CHRONO.filter(w=>w.mes===mid).map(w=>w.k);
+  if(mod.multi){
+    let sel=(state.weekMonths||[]).slice();
     if(sel.includes(mid)){
-      if(sel.length>1){ // desmarca mês + remove suas semanas do escopo
-        sel=sel.filter(m=>m!==mid);
-        state.picks=state.picks.filter(k=>!wksM.includes(k));
-        if(!state.picks.length){const vis=CHRONO.filter(w=>sel.includes(w.mes));if(vis.length)state.picks=[vis[vis.length-1].k];}
-      }
-    }else{ // marca mês + adiciona todas as suas semanas ao escopo
-      sel.push(mid);wksM.forEach(k=>{if(!state.picks.includes(k))state.picks.push(k);});
-    }
-    state.weekMonths=sel;state.pointSig=null;applyScope();
-  });
-  bar.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{
-    const id=b.dataset.pick,i=state.picks.indexOf(id);
-    if(i>=0){if(state.picks.length>1)state.picks.splice(i,1);} // mantém ao menos 1 selecionado
-    else state.picks.push(id);
-    state.pointSig=null;applyScope();
-  });
+      if(sel.length>1){sel=sel.filter(m=>m!==mid);state.picks=state.picks.filter(k=>!wksM.includes(k));
+        if(!state.picks.length){const vis=CHRONO.filter(w=>sel.includes(w.mes));if(vis.length)state.picks=[vis[vis.length-1].k];}}
+    }else{sel.push(mid);wksM.forEach(k=>{if(!state.picks.includes(k))state.picks.push(k);});}
+    state.weekMonths=sel;
+  }else{state.weekMonths=[mid];state.picks=[wksM[wksM.length-1]];state.pickAnchor=state.picks[0];}
+  state.pointSig=null;applyScope();
 }
 
 /* ───────── VIEWS ───────── */
