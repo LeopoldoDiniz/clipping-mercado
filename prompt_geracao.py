@@ -11,38 +11,69 @@ IBGE (ibge.gov.br), Banco Central/Focus (bcb.gov.br), FGV/IBRE (portalibre.fgv.b
 IPEA (ipeadata.gov.br), MDIC/Comex Stat (gov.br/mdic), Receita Federal (gov.br/receitafederal),
 CADE (gov.br/cade), Sebrae (sebrae.com.br), Agência Senado (www12.senado.leg.br),
 Agência Câmara (camara.leg.br), Serasa Experian (serasaexperian.com.br),
-Valor Econômico (valor.globo.com), Exame (exame.com), InfoMoney (infomoney.com.br)
+Valor Econômico (valor.globo.com), Exame (exame.com), InfoMoney (infomoney.com.br),
+Estadão/Broadcast (estadao.com.br), Folha - Mercado (folha.uol.com.br), O Globo - Economia (oglobo.globo.com),
+Brazil Journal (braziljournal.com), NeoFeed (neofeed.com.br), Money Times (moneytimes.com.br),
+CNN Brasil - Macroeconomia (cnnbrasil.com.br), Poder360 (poder360.com.br), Agência Brasil/EBC (agenciabrasil.ebc.com.br),
+Tesouro Nacional (gov.br/tesouronacional) ⭐fiscal, Ministério da Fazenda (gov.br/fazenda) ⭐política,
+CNC/Pesquisas - PEIC/ICF (pesquisascnc.com.br) ⭐sondagem
 
 ## Indústria
 CNI / Portal da Indústria (portaldaindustria.com.br), FIESP (fiesp.com.br),
-ABDI (gov.br/abdi), ANFAVEA (anfavea.com.br), ABIMAQ (abimaq.org.br)
+ABDI (gov.br/abdi), ANFAVEA (anfavea.com.br), ABIMAQ (abimaq.org.br),
+S&P Global/PMI Brasil (pmi.spglobal.com) ⭐antecedente, Instituto Aço Brasil (acobrasil.org.br) ⭐,
+ABIQUIM (abiquim.org.br) ⭐, ABINEE (abinee.org.br) ⭐, ABIT (abit.org.br) ⭐, IEDI (iedi.org.br) ⭐,
+FIRJAN (firjan.com.br) ⭐, FIEMG (fiemg.com.br) ⭐, Sindipeças (sindipecas.org.br) ⭐, Abraciclo (abraciclo.com.br) ⭐,
+AutoData (autodata.com.br), Automotive Business (automotivebusiness.com.br)
 
 ## Comércio
 CNC (portaldocomercio.org.br), Fecomércio (fecomercio.com.br), CNDL/SPC (cndl.org.br),
-NielsenIQ (nielseniq.com), ABRAS / SuperHiper (abras.com.br), Fenabrave (fenabrave.org.br)
+NielsenIQ (nielseniq.com), ABRAS / SuperHiper (abras.com.br), Fenabrave (fenabrave.org.br),
+Índice Cielo/ICVA (blog.cielo.com.br) ⭐transacional, Equifax/BoaVista (equifax.com.br) ⭐, SBVC (sbvc.com.br) ⭐,
+IBEVAR (ibevar.org.br) ⭐, ABF/franchising (abf.com.br) ⭐, Abrasce/shoppings (abrasce.com.br) ⭐,
+ABAD/atacado (abad.com.br) ⭐, APAS/supermercados (apas.com.br) ⭐, IDV (idv.org.br),
+Consumidor Moderno (consumidormoderno.com.br), Diário do Comércio/ACSP (dcomercio.com.br),
+Novo Varejo (novovarejo.com.br), SuperVarejo (supervarejo.com.br), InfoVarejo (infovarejo.com.br)
 
 ## Serviços
 Febraban (febraban.org.br), ANEEL (gov.br/aneel), ANATEL (gov.br/anatel),
-ABES Software (abessoftware.com.br), EPBR energia (epbr.com.br), MIT Tech Review BR (mittechreview.com.br)
+ABES Software (abessoftware.com.br), EPBR energia (epbr.com.br), MIT Tech Review BR (mittechreview.com.br),
+ANBIMA (anbima.com.br) ⭐, CNseg/seguros (cnseg.org.br) ⭐, SUSEP (gov.br/susep) ⭐, ABECS/pagamentos (abecs.org.br) ⭐,
+Conexis/telecom (conexis.org.br) ⭐, CCEE/energia (ccee.org.br) ⭐, Brasscom/TIC (brasscom.org.br) ⭐,
+TELETIME (teletime.com.br), Tele.Síntese (telesintese.com.br), Convergência Digital (convergenciadigital.com.br),
+CanalEnergia (canalenergia.com.br), Mobile Time (mobiletime.com.br)
 
 ## Agro
 CNA Brasil (cnabrasil.org.br), CEPEA/Esalq (cepea.org.br) ⭐preço, Conab (conab.gov.br) ⭐safra,
 Embrapa (embrapa.br), MAPA (gov.br/agricultura), IMEA (imea.com.br), B3 / futuros agro (b3.com.br),
 Notícias Agrícolas (noticiasagricolas.com.br), Canal Rural (canalrural.com.br), Globo Rural (globorural.globo.com),
 AgFeed (agfeed.com.br), Scot Consultoria (scotconsultoria.com.br),
-ABIEC / carne (abiec.com.br), ABPA / aves e suínos (abpa-br.org), ABIOVE / soja (abiove.org.br), UNICA (unica.com.br)
+ABIEC / carne (abiec.com.br), ABPA / aves e suínos (abpa-br.org), ABIOVE / soja (abiove.org.br), UNICA (unica.com.br),
+Agrolink (agrolink.com.br), Compre Rural (comprerural.com), The Agribiz (theagribiz.com) ⭐negócio,
+Revista Cultivar (revistacultivar.com.br), BeefPoint/AgriPoint (beefpoint.com.br), Sou Agro (souagro.net),
+AgriBrasilis (agribrasilis.com), Forbes Agro (forbes.com.br) ⭐, Aprosoja (aprosojabrasil.com.br) ⭐,
+ABAG (abag.com.br) ⭐, Sociedade Rural Brasileira (srb.org.br), ABRAPA/algodão (abrapa.com.br) ⭐,
+Sistema OCB (somoscooperativismo.coop.br), FPA (fpagropecuaria.org.br) ⭐, ANDA/fertilizantes (anda.org.br) ⭐,
+Datagro (datagro.com) ⭐, Safras & Mercado (safras.com.br) ⭐, JBS (jbs.com.br)
 
 ## Construção civil
 CBIC / Hub de Dados (cbic.org.br) ⭐, SindusCon-SP (sindusconsp.com.br), CUB médio (cub.org.br) ⭐R$/m²,
 FGV — INCC (portalibre.fgv.br) ⭐custo, FipeZAP / imóveis (fipe.org.br) ⭐preço, SNIC / cimento (snic.org.br) ⭐atividade,
 ABRAINC (abrainc.org.br), Secovi-SP (secovi.com.br), ABRAMAT / materiais (abramat.org.br),
-SINAPI / Caixa (caixa.gov.br), ANAMACO (anamaco.com.br), Sienge (sienge.com.br)
+SINAPI / Caixa (caixa.gov.br), ANAMACO (anamaco.com.br), Sienge (sienge.com.br),
+ABECIP/crédito imob. (abecip.org.br) ⭐, Ministério das Cidades/MCMV (gov.br/cidades) ⭐, AECweb (aecweb.com.br),
+Massa Cinzenta/Cimento Itambé (cimentoitambe.com.br), Grandes Construções (grandesconstrucoes.com.br),
+O Empreiteiro (revistaoe.com.br), ABCP/cimento (abcp.org.br), CAU/BR (caubr.gov.br), CONFEA (confea.org.br),
+ADEMI-RJ (ademi.org.br) ⭐, MRV/RI (mrv.com.br) ⭐prévias, Cyrela/RI (cyrela.com.br) ⭐, Votorantim Cimentos (votorantimcimentos.com.br)
 
 ## E-commerce
 ABComm (abcomm.org) ⭐, Neotrust / Confi (neotrust.com.br) ⭐, MCC-ENET (mccenet.com.br) ⭐índice mensal,
 NIQ / Webshoppers (nielseniq.com), Conversion (conversion.com.br), E-commerce Brasil (ecommercebrasil.com.br),
 Mercado&Consumo (mercadoeconsumo.com.br), Nuvemshop (nuvemshop.com.br), VTEX (vtex.com), Mercado Livre (mercadolivre.com.br),
-Shopee (shopee.com.br), Amazon Brasil (amazon.com.br), Magalu (magazineluiza.com.br), Reclame Aqui (reclameaqui.com.br)
+Shopee (shopee.com.br), Amazon Brasil (amazon.com.br), Magalu (magazineluiza.com.br), Reclame Aqui (reclameaqui.com.br),
+E-Commerce News (ecommercenews.com.br), NOVAREJO (portalnovarejo.com.br), Meio&Mensagem/ProXXIma (meioemensagem.com.br),
+Câmara Bras. Economia Digital (camara-e.net), Senacon/MJSP (gov.br/mj) ⭐regulatório, Procon-SP (procon.sp.gov.br) ⭐,
+Grupo Casas Bahia (grupocasasbahia.com.br), SHEIN Group (sheingroup.com)
 
 # REFERÊNCIAS DE MERCADO (decision-grade) — as ⭐ acima são as réguas que o mercado usa para decidir.
 # Ancore a leitura de cada setor no número mais recente delas quando houver:
@@ -78,13 +109,14 @@ Pesquise nas fontes abaixo as notícias e dados econômicos relevantes do perío
 cobrindo os SEIS setores de forma equilibrada.
 
 # COBERTURA OBRIGATÓRIA DAS FONTES
-- Faça MÚLTIPLAS buscas (entre 16 e 28) para varrer as fontes de TODOS os seis setores,
+- Faça MÚLTIPLAS buscas (entre 30 e 48) para varrer as fontes de TODOS os seis setores,
   não apenas as macro/óbvias. Agro, construção civil e e-commerce têm fontes próprias — use-as.
 - Toda fonte que tiver publicado material relevante no período DEVE aparecer em ao menos um item do clipping.
-- Garanta que CADA UM dos seis setores tenha ao menos 1–2 itens, se houve notícia relevante no período.
+- Garanta que CADA UM dos seis setores tenha de 15 a 20 itens, se houve notícia relevante no período
+  (piso de 15 por setor com cobertura; use as fontes especializadas/diárias para dar volume real, sem encher linguiça).
 - AGRUPE notícias complementares sobre o mesmo tema em UM item; nesse caso, TODAS as fontes
   do agrupamento entram no array "fontes" do item, cada uma com seu próprio url.
-- Notícias independentes viram itens separados. Meta: entre 14 e 24 itens de clipping.
+- Notícias independentes viram itens separados. Meta por setor: 15 a 20 itens de clipping (90 a 120 no total).
 
 # FONTES PRIORITÁRIAS (por setor)
 {FONTES}
@@ -169,7 +201,8 @@ Estrutura exata:
   * novos_sinais "texto" e atualizacoes_sinais "texto_observacao": MÁXIMO 30 palavras.
   * porter "nota": UMA frase curta.
   Corte adjetivos e rodeios. Cada frase carrega informação; nada de generalidades.
-- clipping: 14 a 24 itens, cobrindo os SEIS setores + transversal. Agrupamentos com todas as fontes no array.
+- clipping: 15 a 20 itens POR SETOR (Indústria, Comércio, Serviços, Agro, Construção, E-commerce) + transversais,
+  totalizando ~90 a 120 itens. Agrupamentos com todas as fontes no array.
 - pestel: sempre as 6 dimensões. score de 0 a 10 = intensidade/relevância da dimensão na semana.
   Nos "setores" de cada dimensão, use qualquer combinação dos seis setores + "transversal".
 - porter: avaliação ESTRUTURAL das 5 forças competitivas (0 a 10) para os SEIS setores.
@@ -197,7 +230,7 @@ if __name__ == "__main__":
          "relevancia_atual": 68.0, "ultimo_periodo": "2026-W26"}
     ]
     p = montar_prompt("Semana 28 · Julho 2026", "2026-07-06", "2026-07-10", exemplo_hist)
-    assert "16 e 28" in p and "14 a 24 itens" in p and "IPP" in p and "PIM" in p
+    assert "30 e 48" in p and "15 a 20 itens" in p and "IPP" in p and "PIM" in p
     assert "NUNCA use como url" in p and "github.io" in p
     assert "agro" in p and "construcao" in p and "ecommerce" in p and '"porter"' in p
     print(f"Prompt montado: {len(p)} caracteres — 6 setores, porter, cobertura, URL e KPIs presentes")

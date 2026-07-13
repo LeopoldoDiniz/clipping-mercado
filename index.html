@@ -1640,7 +1640,12 @@ function applyData(sel,allData,metas){
   SIGNALS=adaptSignals(sel.longitudinal||[]);SIGNALS.forEach((s,i)=>{s.i=i;});
   MATRIX_REAL=(sel.longitudinal||[]).some(l=>l.severidade!=null&&l.iminencia!=null);
   PESTEL=adaptPestel(sel.pestel||[]);
-  NEWS=adaptNews(sel.clipping||[],WMETA[sel._k]);
+  // Notícias: agrega o clipping de TODAS as semanas do escopo (não só a de referência),
+  // dedup por título, mais recentes primeiro — espelha a agregação longitudinal dos sinais.
+  {const _wk=(typeof scopeKeys==="function")?scopeKeys():[sel._k];const _seen=new Set();const _agg=[];
+   for(let i=_wk.length-1;i>=0;i--){const _d=(allData||[]).find(x=>x._k===_wk[i]);if(!_d)continue;
+     adaptNews(_d.clipping||[],WMETA[_wk[i]]).forEach(n=>{const kk=(n.t||"").trim().toLowerCase();if(!kk||_seen.has(kk))return;_seen.add(kk);_agg.push(n);});}
+   NEWS=_agg.length?_agg:adaptNews(sel.clipping||[],WMETA[sel._k]);}
   PORTER_REAL=!!(sel.porter&&Object.keys(sel.porter).length);
   PORTER=PORTER_REAL?mergePorter(sel.porter):PORTER_BASE;
   // semana histórica: só indicadores oficiais + editorial macro derivado; sem clipping (busca retroativa não confiável)
