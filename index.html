@@ -784,7 +784,7 @@ const LENSES=[
 ];
 
 /* ───────── ESTADO ───────── */
-let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca","ipp"],indSetores:[]};
+let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca_acum","ipp"],indSetores:[]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
 
 /* ───────── HELPERS ───────── */
@@ -1140,10 +1140,26 @@ function chartPoints(){
   return {monthly:true,points:months.map(mid=>{const wm=wk.filter(w=>w.mes===mid);const lw=wm[wm.length-1];
     return {label:mesLbl(mid),idx:CHRONO.findIndex(c=>c.k===lw.k),partial:mid===maxMonth};})};
 }
+// preenche buracos de uma série p/ o gráfico (forward-fill + back-fill do 1º valor conhecido)
+function fillSeries(a){const f=(a||[]).slice();let last=null;for(let i=0;i<f.length;i++){if(f[i]!=null)last=f[i];else f[i]=last;}
+  const fst=f.find(v=>v!=null);for(let i=0;i<f.length;i++){if(f[i]==null)f[i]=(fst!=null?fst:0);}return f;}
+// IPCA vira 3 séries selecionáveis no gráfico: mês, acumulado no ano e projetado (Focus)
+function ipcaSubSeries(){
+  const k=KPIMAP.ipca;if(!k)return[];
+  const base={un:"%",flow:false,ico:k.ico,cor:k.cor};
+  return [
+    {...base,id:"ipca_mes",label:"IPCA (mês)",hist:fillSeries(k.hist),acum:fillSeries(k.hist)},
+    {...base,id:"ipca_acum",label:"IPCA (acum. ano)",hist:fillSeries(k.acum),acum:fillSeries(k.acum)},
+    {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj)}
+  ];
+}
+// universo de séries do gráfico: macros (IPCA expandido) + setoriais selecionados
+function chartUniverse(){return KPIS.flatMap(k=>k.id==="ipca"?ipcaSubSeries():[k]).concat(selSetorKpis());}
 function chartCard(){
   const W=680,H=240,pl=42,pr=48,pt=16,pb=34;
   const keys=state.chartSeries;
-  const series=keys.map(k=>KPIMAP[k]).filter(Boolean);
+  const umap=Object.fromEntries(chartUniverse().map(s=>[s.id,s]));
+  const series=keys.map(k=>umap[k]).filter(Boolean);
   const {monthly,points}=chartPoints();
   // valor por ponto: mensal+fluxo -> acumulado no ano; senão -> valor do período (nível/semana)
   const valOf=(s,p)=>{const raw=(monthly&&s.flow)?s.acum[p.idx]:s.hist[p.idx];return raw!=null?raw:s.hist[p.idx];};
@@ -1163,13 +1179,13 @@ function chartCard(){
     const above=si%2===0;
     const vlab=vs.map((v,i)=>`<text x="${x(i)}" y="${y(v)+(above?-9:15)}" text-anchor="middle" font-size="9" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
-  const chipSeries=KPIS.concat(selSetorKpis()); // macros + setoriais selecionados
+  const chipSeries=chartUniverse(); // macros (IPCA em mês/acum/projetado) + setoriais selecionados
   const chips=chipSeries.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
     return `<button class="schip ${on?'on':''}${k.setorial?' schip-setor':''}" data-series="${k.id}" style="${on?`--sc:${c}`:''}"><span class="sw" style="background:${on?c:'var(--border-strong)'}"></span>${k.label}</button>`;}).join("");
   const janela=n===1?"1 leitura":`${points[0].label} → ${points[n-1].label}`;
   const partial=points.some(p=>p.partial);
   const legend=monthly
-    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: IPCA, varejo, PIM, IPP, Serviços/PMS) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego, custo/m²). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
+    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: varejo, PIM, IPP, Serviços/PMS) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego, custo/m²). O <b>IPCA</b> entra em três séries próprias: <b>mês</b>, <b>acum. ano</b> e <b>projetado</b> (mediana Focus). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
     : `Valor de cada indicador <b>por semana</b> (S = nº da semana) · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}`;
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
@@ -1732,7 +1748,8 @@ function applyData(sel,allData,metas){
   if(!Array.isArray(state.indSetores))state.indSetores=[];
   state.indSetores=state.indSetores.filter(s=>KPIS_SETOR.some(k=>k.setor===s)||SETOR_MACRO[s]); // setores com dado real ou macro exclusivo
   state.chartSeries=state.chartSeries.filter(id=>!id.startsWith("s_")||KPIMAP[id]); // limpa séries setoriais órfãs
-  if(!state.chartSeries.every(id=>KPIMAP[id])){const ids=KPIS.map(k=>k.id);const pref=["ipca","ipp","selic","cambio"].filter(id=>KPIMAP[id]);state.chartSeries=(pref.length>=2?pref.slice(0,2):ids.slice(0,2));}
+  const validSeries=new Set(chartUniverse().map(s=>s.id)); // ids válidos (inclui IPCA mês/acum/projetado)
+  if(!state.chartSeries.every(id=>validSeries.has(id))){const pref=["ipca_acum","ipp","selic","cambio"].filter(id=>validSeries.has(id));state.chartSeries=(pref.length>=2?pref.slice(0,2):[...validSeries].slice(0,2));}
   if(sel.editorial&&sel.editorial.texto){EDITORIAL=sel.editorial.texto;LEITURA.quote=firstSentence(EDITORIAL);}
   SIGNALS=adaptSignals(sel.longitudinal||[]);SIGNALS.forEach((s,i)=>{s.i=i;});
   MATRIX_REAL=(sel.longitudinal||[]).some(l=>l.severidade!=null&&l.iminencia!=null);
