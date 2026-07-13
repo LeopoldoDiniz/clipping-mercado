@@ -500,6 +500,14 @@ let KPIS=[
    info:"Faturamento do comércio eletrônico brasileiro, variação sobre o mesmo período do ano anterior. Não há série oficial gratuita — acompanhado como indicador de mercado (Neotrust, ABComm, MCC-ENET)."},
 ];
 let KPIMAP=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+// Meta de inflação — NÃO é constante de negócio arbitrária: é a referência OFICIAL definida pelo
+// CMN (Conselho Monetário Nacional) e perseguida pelo BCB. Regime de meta contínua desde jan/2025:
+// centro 3,0% com tolerância de ±1,5 p.p. (piso 1,5% / teto 4,5%). O valor efetivo de cada semana
+// vem do "sub" do KPI do IPCA (o motor lê da fonte oficial). Este objeto é a ÚNICA fonte de
+// fallback/atribuição no código — se o CMN redefinir a meta, basta atualizar aqui (ou o motor
+// passa o novo valor pelos dados). Fonte: bcb.gov.br/controleinflacao/metainflacao.
+const META_INFLACAO={centro:3.0,tolerancia:1.5,fonte:"CMN · BCB",regime:"meta contínua (desde jan/2025)",url:"https://www.bcb.gov.br/controleinflacao/metainflacao"};
+const _metaCentro=()=>dec(META_INFLACAO.centro,1),_metaTeto=()=>dec(META_INFLACAO.centro+META_INFLACAO.tolerancia,1);
 let KPIS_SETOR=[]; // indicadores setoriais (incrementais aos macros) — preenchidos em applyData
 // setores com indicador setorial próprio, oficial (IBGE/BCB). Agro/E-commerce: fonte em validação (sem fabricar).
 // ordem: núcleo (já nos macros) → ativos (fonte própria) → em breve
@@ -1042,8 +1050,10 @@ function selicCard(k){
 // IPCA em dois cards: (1) mês + 12 meses  (2) acumulado no ano com ênfase na meta
 function ipcaCards(k){
   const m12=(/(?:12\s*m(?:eses)?)\s*([\d,]+)%/i.exec(k.sub)||[])[1];
-  const meta=(/meta\s*([\d,]+)%/i.exec(k.sub)||[])[1]||"3,0";
-  const teto=(/teto\s*([\d,]+)%/i.exec(k.sub)||[])[1]||"4,5";
+  // meta/teto: preferir o valor da semana (sub, vindo da fonte oficial); fallback = meta oficial vigente (CMN/BCB)
+  const meta=(/meta\s*([\d,]+)%/i.exec(k.sub)||[])[1]||_metaCentro();
+  const teto=(/teto\s*([\d,]+)%/i.exec(k.sub)||[])[1]||_metaTeto();
+  const metaFonte=`Meta definida pelo CMN (${META_INFLACAO.regime}) e perseguida pelo BCB — fonte oficial, não fixada em código.`;
   const d=refDate(k.sub);
   // (1) card do mês (leitura da semana)
   const cur=CHRONO.findIndex(w=>w.k===refKey());
@@ -1062,7 +1072,7 @@ function ipcaCards(k){
     gapTxt=` · <b style="color:${col}">${gap>=0?"+":""}${dec(gap,2)} p.p. vs meta</b>`;}
   const subAno=`Acumulado no ano · meta anual <b>${meta}%</b> (teto ${teto}%)${gapTxt} · IBGE${d?` ${d}`:""}`;
   const cAno=cardHTML({id:"ipca",ico:"🎯",label:"IPCA (acum. ano)",cor:corAno,val:av!=null?`${dec(av,2)}%`:k.val,unit:"no ano",sub:subAno,
-    info:"IPCA acumulado no ano (jan → mês de referência) pelo método composto do IBGE; reinicia em janeiro. Comparado à meta anual do CMN (3,0%, com limite superior de 4,5%). Ver metodologia.",insightId:"ipca"});
+    info:`IPCA acumulado no ano (jan → mês de referência) pelo método composto do IBGE; reinicia em janeiro. Comparado à meta do CMN (${meta}%, com limite superior de ${teto}%). ${metaFonte} Ver metodologia.`,insightId:"ipca"});
   // (3) card do projetado para o fim do ano — mediana do Boletim Focus/BCB, comparada à meta
   const pv=(k.proj&&cur>=0&&k.proj[cur]!=null)?k.proj[cur]:parseProj(k.sub);
   let cProj="";
@@ -1075,7 +1085,7 @@ function ipcaCards(k){
     const acimaTeto=(tn!=null&&pv>tn)?` · <b style="color:var(--risk)">acima do teto</b>`:"";
     const subP=`Projeção para o fim de ${anoRef} · mediana Focus/BCB · meta <b>${meta}%</b> (teto ${teto}%)${gapP}${acimaTeto}`;
     cProj=cardHTML({id:"ipca",ico:"🔮",label:"IPCA (projetado)",cor:corP,val:`${dec(pv,2)}%`,unit:`fim ${anoRef}`,sub:subP,
-      info:`Projeção do IPCA para o encerramento do ano vigente (${anoRef}), pela mediana das expectativas de mercado do Boletim Focus/BCB. Não é dado apurado: é consenso de analistas, revisado semanalmente. Comparado à meta anual do CMN (3,0%, teto 4,5%).`,insightId:"ipca"});
+      info:`Projeção do IPCA para o encerramento do ano vigente (${anoRef}), pela mediana das expectativas de mercado do Boletim Focus/BCB. Não é dado apurado: é consenso de analistas, revisado semanalmente. Comparado à meta do CMN (${meta}%, teto ${teto}%). ${metaFonte}`,insightId:"ipca"});
   }
   return cAno+cProj+cMes;   // acum. no ano → projetado (Focus) → variação do mês, logo após a SELIC
 }

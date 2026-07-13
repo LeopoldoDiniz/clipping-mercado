@@ -232,10 +232,15 @@ Estrutura exata:
   * Detalhes, datas e contexto vão em "sub", nunca no label. cor = "up"/"down"/"neutral"
     ("up" = leitura positiva para a economia, "down" = negativa, "neutral" = estável/ambígua).
   * O "sub" do IPCA DEVE seguir este formato exato, com os campos parseáveis pelo painel:
-    "Mês · acum. ano X,XX% · 12m Y,YY% · meta 3,0% (teto 4,5%) · IBGE mmm/aa · Projeção Focus 2026: Z,ZZ%"
+    "Mês · acum. ano X,XX% · 12m Y,YY% · meta M,M% (teto T,T%) · IBGE mmm/aa · Projeção Focus AAAA: Z,ZZ%"
     - "acum. ano" = IPCA acumulado no ano corrente (jan→mês de referência), dado REAL do IBGE.
-    - "Projeção Focus 2026" = mediana do Boletim Focus/BCB para o IPCA de fechamento do ano vigente
-      (número REAL do Focus mais recente; nunca invente). Atualize o ano quando virar 2027.
+    - "meta M,M% (teto T,T%)" = meta de inflação VIGENTE definida pelo CMN (Conselho Monetário
+      Nacional) e perseguida pelo BCB. NÃO fixe números de memória: consulte a fonte oficial
+      (bcb.gov.br/controleinflacao/metainflacao). No regime de meta contínua (desde 2025) o centro é
+      3,0% e a tolerância ±1,5 p.p. (teto 4,5%) — mas SEMPRE confirme o valor vigente na fonte, pois
+      o CMN pode redefinir a meta e o teto.
+    - "Projeção Focus AAAA" = mediana do Boletim Focus/BCB para o IPCA de fechamento do ano vigente
+      (número REAL do Focus mais recente; nunca invente). Use o ano corrente em AAAA.
   * SELIC e Câmbio também trazem "Projeção Focus AAAA: ..." no fim do "sub" (mediana Focus para o ano vigente).
 - novos_sinais: riscos/oportunidades identificados AGORA que não estão no histórico. severidade e iminencia de 0 a 10.
 - atualizacoes_sinais: para cada sinal do histórico que teve desdobramento OU reapareceu. Use o ID exato.
