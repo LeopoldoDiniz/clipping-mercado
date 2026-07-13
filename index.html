@@ -105,6 +105,10 @@
   .pk-picks{display:flex;flex-direction:column;gap:6px;flex:1 1 auto;min-width:0;margin-left:26px}
   .pk-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .wkchip.mo.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .pk-presets{display:inline-flex;align-items:center;gap:6px;flex:0 0 auto}
+  .pchip{font:600 11.5px var(--sans);padding:5px 11px;border:1px solid var(--border-strong);background:var(--surface-2);border-radius:99px;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+  .pchip:hover{color:var(--ink);border-color:var(--accent)}
+  .pchip[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
   .manchete{font-size:15.5px;font-weight:700;line-height:1.42;color:var(--ink);margin:0 0 13px}
   .hl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:0 0 13px}
   @media (max-width:680px){.hl-row{grid-template-columns:1fr}}
@@ -156,6 +160,9 @@
   .kpis{display:grid;grid-template-columns:repeat(8,minmax(140px,172px));justify-content:space-between;gap:14px}
   @media(max-width:1300px){.kpis{grid-template-columns:repeat(4,minmax(0,1fr));justify-content:stretch}}
   @media(max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  /* faixa macro do Panorama (SELIC + IPCA completo): 4 cards distribuídos, não a grade de 8 */
+  .kpis-macro{grid-template-columns:repeat(4,minmax(0,1fr));justify-content:stretch}
+  @media(max-width:760px){.kpis-macro{grid-template-columns:repeat(2,minmax(0,1fr))}}
   .k-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-end;font-size:11px;color:var(--ink-2);margin:12px 2px 0}
   .k-legend b{margin-right:3px;font-size:12px}
   .k-legend .k-legend-note{color:var(--ink-3);font-style:italic}
@@ -477,7 +484,7 @@ let WMETA=Object.fromEntries(WEEKS.map(w=>[w.k,w]));
 let KPIS=[
   {id:"selic",label:"SELIC",ico:"🏦",val:"14,15%",unit:"a.a.",cor:"down",sub:"Selic efetiva · BCB/SGS · 09/07",hist:[14.25,14.25,14.15,14.15],un:"%",
    info:"Taxa básica de juros da economia. Encarece (ou barateia) o crédito e os investimentos. Definida pelo Copom (meta) e apurada pelo Banco Central (efetiva). Fonte determinística: BCB/SGS série 432→4189."},
-  {id:"ipca",label:"IPCA",ico:"📈",val:"0,16%",unit:"mês",cor:"up",sub:"Acum. 12m 4,64% · IBGE · jun/26",hist:[0.35,0.28,0.22,0.16],un:"%",
+  {id:"ipca",label:"IPCA",ico:"📈",val:"0,16%",unit:"mês",cor:"up",sub:"Acum. 12m 4,64% · IBGE · jun/26 · Projeção Focus 2026: 5,16%",hist:[0.35,0.28,0.22,0.16],un:"%",
    info:"Inflação oficial ao consumidor. Mede a variação de preços da cesta das famílias. Calculado pelo IBGE; espelhado na série BCB/SGS 433 (mês) e 13522 (acum. 12m)."},
   {id:"cambio",label:"Câmbio US$",ico:"🌎",val:"R$ 5,13",unit:"",cor:"up",sub:"Dólar PTAX venda · BCB · 09/07",hist:[5.32,5.28,5.20,5.13],un:"R$",
    info:"Preço do dólar em reais (PTAX de venda). Afeta custo de insumos importados, exportações e inflação. Fonte: BCB/SGS série 1."},
@@ -913,6 +920,33 @@ function applyScope(){
   if(ALLDATA){const rk=refKey();const d=ALLDATA.find(x=>x._k===rk);if(d)applyData(d,ALLDATA,METAS);}
   render();
 }
+// atalhos de período: 1 clique para os escopos mais usados (mais recente / últimos N / tudo)
+const _presetN={semana:4,mes:3,trimestre:2,ano:99};
+function _presetItems(){return granItems(state.gran).map(i=>i.id);} // ids em ordem cronológica (asc)
+function periodPresets(){
+  const items=_presetItems(),N=Math.min(_presetN[state.gran]||3,items.length);
+  const sel=new Set(state.picks);
+  const isAll=items.length>0&&sel.size===items.length;
+  const isLast1=sel.size===1&&state.picks[0]===items[items.length-1];
+  const tail=items.slice(-N);
+  const isLastN=!isAll&&sel.size===tail.length&&tail.every(id=>sel.has(id));
+  const nomeN={semana:`Últimas ${N} sem`,mes:`Últimos ${N} meses`,trimestre:`Últimos ${N} tri`,ano:"Todos"}[state.gran];
+  const btnN=(items.length>N)?`<button class="pchip" data-preset="lastN" aria-pressed="${isLastN}">${nomeN}</button>`:"";
+  return `<div class="pk-presets"><span class="pk-lbl2" style="min-width:auto">Atalhos</span>`+
+    `<button class="pchip" data-preset="last1" aria-pressed="${isLast1}">Mais recente</button>`+
+    btnN+
+    `<button class="pchip" data-preset="all" aria-pressed="${isAll}">Todo o período</button></div>`;
+}
+function applyPreset(kind){
+  const items=_presetItems(),N=Math.min(_presetN[state.gran]||3,items.length);
+  let picks;
+  if(kind==="last1")picks=items.slice(-1);
+  else if(kind==="lastN")picks=items.slice(-N);
+  else picks=items.slice();
+  state.picks=picks;
+  if(state.gran==="semana")state.weekMonths=[...new Set(picks.map(k=>(WMETA[k]||{}).mes).filter(Boolean))];
+  state.pointSig=null;applyScope();
+}
 function renderPeriodBar(){
   const bar=document.getElementById("periodBar");if(!bar)return;
   const GRAN=[["semana","Semana"],["mes","Mês"],["trimestre","Trimestre"],["ano","Ano"]];
@@ -934,7 +968,8 @@ function renderPeriodBar(){
       return `<button class="wkchip ${on?'on':''}" data-pick="${it.id}" aria-pressed="${on}">${it.lbl}${sub}${pp}</button>`;}).join("");
     groups=`<div class="wkchips">${chips}</div>`;
   }
-  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div>${groups}`;
+  bar.innerHTML=`<span class="pk-lbl">Período</span><div class="gseg">${seg}</div>${periodPresets()}${groups}`;
+  bar.querySelectorAll("[data-preset]").forEach(b=>b.onclick=()=>applyPreset(b.dataset.preset));
   bar.querySelectorAll("[data-gran]").forEach(b=>b.onclick=()=>{
     if(state.gran===b.dataset.gran)return;
     state.gran=b.dataset.gran;
@@ -1028,7 +1063,21 @@ function ipcaCards(k){
   const subAno=`Acumulado no ano · meta anual <b>${meta}%</b> (teto ${teto}%)${gapTxt} · IBGE${d?` ${d}`:""}`;
   const cAno=cardHTML({id:"ipca",ico:"🎯",label:"IPCA (acum. ano)",cor:corAno,val:av!=null?`${dec(av,2)}%`:k.val,unit:"no ano",sub:subAno,
     info:"IPCA acumulado no ano (jan → mês de referência) pelo método composto do IBGE; reinicia em janeiro. Comparado à meta anual do CMN (3,0%, com limite superior de 4,5%). Ver metodologia.",insightId:"ipca"});
-  return cAno+cMes;   // acumulado no ano logo após a SELIC; variação do mês em seguida
+  // (3) card do projetado para o fim do ano — mediana do Boletim Focus/BCB, comparada à meta
+  const pv=(k.proj&&cur>=0&&k.proj[cur]!=null)?k.proj[cur]:parseProj(k.sub);
+  let cProj="";
+  if(pv!=null){
+    const anoRef=(/20\d\d/.exec(k.sub)||["2026"])[0];
+    let corP="neutral",gapP="";
+    if(mn!=null){const gp=pv-mn;const colp=(tn!=null&&pv>tn)?"var(--risk)":(gp>0?"var(--warn)":"var(--opp)");
+      corP=(tn!=null&&pv>tn)?"down":(gp>0?"neutral":"up");
+      gapP=` · <b style="color:${colp}">${gp>=0?"+":""}${dec(gp,2)} p.p. vs meta</b>`;}
+    const acimaTeto=(tn!=null&&pv>tn)?` · <b style="color:var(--risk)">acima do teto</b>`:"";
+    const subP=`Projeção para o fim de ${anoRef} · mediana Focus/BCB · meta <b>${meta}%</b> (teto ${teto}%)${gapP}${acimaTeto}`;
+    cProj=cardHTML({id:"ipca",ico:"🔮",label:"IPCA (projetado)",cor:corP,val:`${dec(pv,2)}%`,unit:`fim ${anoRef}`,sub:subP,
+      info:`Projeção do IPCA para o encerramento do ano vigente (${anoRef}), pela mediana das expectativas de mercado do Boletim Focus/BCB. Não é dado apurado: é consenso de analistas, revisado semanalmente. Comparado à meta anual do CMN (3,0%, teto 4,5%).`,insightId:"ipca"});
+  }
+  return cAno+cProj+cMes;   // acum. no ano → projetado (Focus) → variação do mês, logo após a SELIC
 }
 // legenda dos símbolos de leitura (seta/quadrado)
 function kpiLegend(){
@@ -1048,6 +1097,11 @@ function kpiItems(){
     else out.push(kpiCard(k));});
   KPIS.forEach(k=>{if(!KPI_ORDER.includes(k.id))out.push(kpiCard(k));}); // extras (ex.: confiança) ao fim
   return out.join("");
+}
+// destaque macro na tela inicial (Panorama): SELIC + IPCA completo (mês, acum. ano, projetado)
+function panoramaMacro(){
+  const map=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+  return (map.selic?selicCard(map.selic):"")+(map.ipca?ipcaCards(map.ipca):"");
 }
 // seletor multi-setor: adiciona indicadores setoriais (incrementais aos macros, não substitutivos)
 function setorSelector(){
@@ -1141,6 +1195,11 @@ function viewGeral(){
         </div>
         <div class="legend" style="margin-top:12px"><b>O que é:</b> índice 0–100 que resume a intensidade das forças da semana — média dos <b>scores PESTEL</b> ponderada pela <b>relevância dos sinais</b>. 0 = calmo, 100 = tensão máxima; acima de 65 pede atenção. <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">como é medido?</a></div>
       </div>
+    </div>
+
+    <div class="blk">
+      <div class="blk-h">Juros &amp; inflação <span class="audit-hint">▸ SELIC e IPCA (mês · acum. ano · projetado) — série completa na aba <a href="#" data-goto="indicadores" style="color:var(--accent);font-weight:600">Indicadores</a></span></div>
+      <div class="kpis kpis-macro">${panoramaMacro()}</div>
     </div>
 
     <div class="blk">
@@ -1520,17 +1579,20 @@ function kpiFamily(label){const l=(label||"").toLowerCase();
   if(/pim|prod\. ind|produção ind|indústria/.test(l))return"pim";
   return"outro";}
 const parseAcum=sub=>{const m=/acum\.\s*ano\s*(-?\d+(?:[.,]\d+)?)\s*%/i.exec(sub||"");return m?parseFloat(m[1].replace(",",".")):null;};
+// projeção anual do mercado (Boletim Focus/BCB) declarada no sub: "Projeção Focus 2026: 5,16%"
+const parseProj=sub=>{const m=/Projeç[aã]o\s+(?:Focus|mercado|BCB)?\s*20\d\d:\s*R?\$?\s*(-?\d+(?:[.,]\d+)?)/i.exec(sub||"");return m?parseFloat(m[1].replace(",",".")):null;};
 function adaptKpis(rawKpis,allData){
   const seen=new Set(),out=[];
   (rawKpis||[]).forEach(k=>{const fam=kpiFamily(k.label);if(fam!=="outro"&&seen.has(fam))return;seen.add(fam);
-    const meta=KPI_META[fam]||KPI_META.outro;const raw=[],rawA=[];
-    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);let v=null,a=null;
-      if(d){const kk=(d.kpis||[]).find(z=>kpiFamily(z.label)===fam);if(kk){v=parseNum(kk.valor);a=parseAcum(kk.sub);}}raw.push(v);rawA.push(a);});
+    const meta=KPI_META[fam]||KPI_META.outro;const raw=[],rawA=[],rawP=[];
+    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);let v=null,a=null,p=null;
+      if(d){const kk=(d.kpis||[]).find(z=>kpiFamily(z.label)===fam);if(kk){v=parseNum(kk.valor);a=parseAcum(kk.sub);p=parseProj(kk.sub);}}raw.push(v);rawA.push(a);rawP.push(p);});
     let last=null;const fwd=raw.map(v=>{if(v!=null)last=v;return last;});
     const fst=fwd.find(v=>v!=null);const hist=fwd.map(v=>v!=null?v:(fst!=null?fst:0));
     let lastA=null;const acum=rawA.map(v=>{if(v!=null)lastA=v;return lastA;}); // acum. ano, forward-fill
+    let lastP=null;const proj=rawP.map(v=>{if(v!=null)lastP=v;return lastP;}); // projeção anual Focus, forward-fill
     const flow=rawA.some(v=>v!=null); // fluxo (tem acumulado) vs nível (SELIC/câmbio/desemprego)
-    out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,flow,un:meta.un,
+    out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,proj,flow,un:meta.un,
       info:meta.info+(k.herdado_de?` Nesta edição, dado herdado de ${k.herdado_de}.`:"")});});
   return out;}
 const TAGVOC={tarifas:/tarifa|eua|estados unidos|comércio exterior|exporta/i,desenrola:/desenrola/i,energia:/energia|aneel|elétric|tarifári/i,juros:/selic|juro|copom|crédito|financ/i,cambio:/câmbio|dólar|balança comercial/i,safra:/safra|grão|soja|milho|agronegócio|conab/i,consumo:/consumo|varejo|venda|confiança|endivida/i,digital:/digital|tecnologia|\bia\b|automação|autoatendimento|e-commerce|marketplace/i,escala6x1:/6x1|jornada de trabalho|escala/i,copa:/copa do mundo|\bcopa\b/i,remessa:/remessa conforme|cross-border|importados de baixo/i,construcao:/construção|obra|incc|imobiliári/i};

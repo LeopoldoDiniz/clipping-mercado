@@ -231,6 +231,12 @@ Estrutura exata:
   * "label" CURTO (máximo 22 caracteres, ex: "SELIC", "IPCA-15", "Câmbio", "PIM (Indústria)", "IPP").
   * Detalhes, datas e contexto vão em "sub", nunca no label. cor = "up"/"down"/"neutral"
     ("up" = leitura positiva para a economia, "down" = negativa, "neutral" = estável/ambígua).
+  * O "sub" do IPCA DEVE seguir este formato exato, com os campos parseáveis pelo painel:
+    "Mês · acum. ano X,XX% · 12m Y,YY% · meta 3,0% (teto 4,5%) · IBGE mmm/aa · Projeção Focus 2026: Z,ZZ%"
+    - "acum. ano" = IPCA acumulado no ano corrente (jan→mês de referência), dado REAL do IBGE.
+    - "Projeção Focus 2026" = mediana do Boletim Focus/BCB para o IPCA de fechamento do ano vigente
+      (número REAL do Focus mais recente; nunca invente). Atualize o ano quando virar 2027.
+  * SELIC e Câmbio também trazem "Projeção Focus AAAA: ..." no fim do "sub" (mediana Focus para o ano vigente).
 - novos_sinais: riscos/oportunidades identificados AGORA que não estão no histórico. severidade e iminencia de 0 a 10.
 - atualizacoes_sinais: para cada sinal do histórico que teve desdobramento OU reapareceu. Use o ID exato.
 - Seja factual e específico (números, datas, fontes). Nada de generalidades vagas.
