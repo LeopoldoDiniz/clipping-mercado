@@ -1,6 +1,12 @@
 {
   "semanas": [
     {
+      "chave": "2026-W29",
+      "label": "Semana 29 · Julho 2026",
+      "arquivo": "2026-W29.json",
+      "ordem": 202629
+    },
+    {
       "chave": "2026-W28",
       "label": "Semana 28 · Julho 2026",
       "arquivo": "2026-W28.json",
@@ -169,5 +175,5 @@
       "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-07-11T12:00:00.000Z"
+  "atualizado_em": "2026-07-13T10:28:06.803352"
 }
