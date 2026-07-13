@@ -1,186 +1,127 @@
 {
   "periodo": "2026-W29",
   "label": "Semana 29 · Julho 2026",
-  "gerado_em": "2026-07-13T10:28:06.800723",
+  "gerado_em": "2026-07-13T12:26:54.590827",
   "editorial": {
-    "texto": "A Semana 29 apresenta um quadro macroeconômico com a Selic em 14,25% e inflação anual de 4,64%, indicando uma estabilização e alívio frente às projeções anteriores de juros mais altos. Apesar do \"Desenrola Adimplentes\" materializado, a cautela do consumidor e os custos de energia para PMEs persistem como desafios. Nas próximas semanas, a atenção se volta à capacidade das empresas em otimizar operações via digitalização e IA, e à real absorção dos custos, elementos cruciais para a resiliência do mercado.",
-    "gerado_em": "2026-07-13T10:27:11.283224",
-    "n_sinais_considerados": 11,
+    "texto": "A Semana 29 mostra inflação controlada (IPCA 0,16%) e desemprego em baixa (5,6%), oferecendo um respiro. Contudo, a queda na produção industrial (-0,2%) e a materialização dos custos de energia para PMEs acendem um alerta. A cautela do consumidor persiste, apesar do programa \"Desenrola Adimplentes\" em vigor. A atenção se volta à capacidade das empresas de absorver custos e otimizar operações via digitalização, enquanto monitoramos riscos como as tensões geopolíticas e as novas tarifas dos EUA.",
+    "gerado_em": "2026-07-13T12:26:08.926331",
+    "n_sinais_considerados": 12,
     "modelo": "gemini-2.5-flash"
   },
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "economico"
-      ],
-      "titulo": "Mercado Reduz Projeção de Inflação para 2026, mas Juros Seguem Elevados",
-      "texto": "O Boletim Focus de 6 de julho de 2026 reduziu a projeção do IPCA para 2026 de 5,33% para 5,30%, mantendo a Selic em 14% ao ano para o fim do período, com a taxa atual em 14,25%.",
-      "fontes": [
-        {
-          "nome": "Contadores.cnt.br",
-          "url": null
-        },
-        {
-          "nome": "Vermelho",
-          "url": null
-        },
-        {
-          "nome": "Estadão",
-          "url": null
-        },
-        {
-          "nome": "ADVFN",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "economico"
-      ],
-      "titulo": "IPCA de Junho Desacelera para 0,16%, Acumulando 4,64% em 12 Meses",
-      "texto": "O IPCA de junho de 2026 registrou alta de 0,16%, desacelerando em relação a maio. O acumulado nos últimos 12 meses atingiu 4,64%, conforme divulgado pelo IBGE em 10 de julho.",
-      "fontes": [
-        {
-          "nome": "Quinto Andar",
-          "url": null
-        },
-        {
-          "nome": "Brasil Indicadores",
-          "url": null
-        },
-        {
-          "nome": "IBGE",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        },
-        {
-          "nome": "Investidor10",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
+        "industria",
         "transversal",
         "servicos"
       ],
-      "titulo": "Bandeira Tarifária Amarela Mantida em Julho, Elevando Custos de Energia",
-      "texto": "A ANEEL confirmou a manutenção da bandeira tarifária amarela para julho de 2026, adicionando R$ 1,885 a cada 100 kWh. A medida reflete condições de geração menos favoráveis.",
+      "titulo": "Sondagem da CNI revela que 97% das indústrias serão impactadas pelo fim da escala 6x1",
+      "texto": "Uma sondagem especial da CNI aponta que 97% do setor industrial será impactado pela redução da jornada de trabalho, com 73% das indústrias rejeitando a medida por lei, prevendo aumento de custos e perda de competitividade.",
+      "fontes": [
+        {
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br/noticias/mercado-de-trabalho/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni/"
+        },
+        {
+          "nome": "Otimista",
+          "url": "https://ooptimista.com.br/noticia/97-das-industrias-serao-impactadas-pelo-fim-da-escala-de-trabalho-6x1-aponta-cni"
+        },
+        {
+          "nome": "Itatiaia",
+          "url": "https://www.itatiaia.com.br/noticia/maioria-da-industria-rejeita-fim-da-escala-6x1-e-preve-queda-na-producao"
+        },
+        {
+          "nome": "Sindratar-PE",
+          "url": "https://sindratarpe.org.br/industriais-sao-contrarios-ao-fim-da-escala-6x1/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal",
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Bandeira tarifária amarela é mantida em julho, com acréscimo na conta de luz",
+      "texto": "A ANEEL informou que a bandeira tarifária para julho de 2026 permanecerá amarela, adicionando R$ 1,885 a cada 100 kWh consumidos, refletindo condições de geração menos favoráveis.",
       "fontes": [
         {
           "nome": "ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br"
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/bandeira-tarifaria-em-julho-permanece-amarela"
         },
         {
-          "nome": "Reaja Agora News",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "titulo": "Tensão Geopolítica e Alta do Petróleo Impactam Mercados Globais",
-      "texto": "Mercados globais iniciam a semana sob tensão geopolítica devido a novos ataques dos EUA ao Irã, elevando a cautela dos investidores e impulsionando os preços do petróleo.",
-      "fontes": [
-        {
-          "nome": "Brazil Economy",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Anfavea Revisa Projeção de Vendas de Veículos para Cima em 2026",
-      "texto": "A Anfavea elevou a projeção de vendas de veículos para 2026, esperando superar 3 milhões de unidades, o maior volume desde 2014. O crescimento é impulsionado por programas federais.",
-      "fontes": [
-        {
-          "nome": "O TEMPO",
-          "url": null
+          "nome": "Viva",
+          "url": "https://vivario.org.br/contas-de-luz-continuarao-com-acrescimo-em-julho/"
         },
         {
-          "nome": "Sul Revendas",
-          "url": null
-        },
-        {
-          "nome": "Automotive Business",
-          "url": null
-        },
-        {
-          "nome": "Mecânica Online",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "IPP da Indústria Recua em Maio, mas Acumulado Anual Ainda é Elevado",
-      "texto": "O Índice de Preços ao Produtor (IPP) da indústria extrativa e de transformação registrou queda de 0,30% em maio de 2026. Contudo, o acumulado no ano é de 4,80%.",
-      "fontes": [
-        {
-          "nome": "CNN Brasil",
-          "url": null
-        },
-        {
-          "nome": "IBGE",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        },
-        {
-          "nome": "VRi Consulting",
-          "url": null
+          "nome": "CorreioWeb",
+          "url": "https://www.correiobraziliense.com.br/economia/2026/07/5196238-conta-de-luz-de-julho-2026-mantem-taxa-adicional-saiba-valores.html"
         }
       ]
     },
     {
       "setores": [
         "comercio",
+        "servicos",
         "transversal"
       ],
-      "titulo": "Endividamento Recorde e Cautela do Consumidor Preocupam Comércio",
-      "texto": "O crédito em atraso dos brasileiros atingiu R$ 247,6 bilhões no primeiro quadrimestre de 2026, um aumento de 50,7% em um ano, segundo a FecomercioSP.",
+      "titulo": "60 milhões de consumidores possuem compras parceladas, aponta CNDL/SPC Brasil",
+      "texto": "Pesquisa da CNDL/SPC Brasil revela que 60,1 milhões de consumidores tinham compras parceladas em dez/2025, com 38% ficando inadimplentes devido a parcelamentos.",
       "fontes": [
         {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
+          "nome": "CNDL/SPC Brasil / Varejo S.A",
+          "url": "https://varejosa.com.br/60-milhoes-de-consumidores-possuem-compras-parceladas-aponta-cndlspc-brasil/"
+        },
+        {
+          "nome": "PORTO RÁPIDO",
+          "url": "https://portorapido.com.br/60-milhoes-de-consumidores-possuem-compras-parceladas-aponta-cndlspc-brasil/"
         }
       ]
     },
     {
       "setores": [
+        "transversal",
         "comercio",
+        "servicos",
+        "industria"
+      ],
+      "titulo": "Inadimplência das empresas atinge nível recorde de R$ 229,9 bilhões em maio",
+      "texto": "A Serasa Experian reportou que mais de 9 milhões de CNPJs estavam negativados em maio de 2026, com o estoque de dívidas atingindo R$ 229,9 bilhões, o maior volume da série histórica. [cite: 13, 26, 32, 39 in previous search]",
+      "fontes": [
+        {
+          "nome": "Serasa Experian",
+          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/inadimplencia-das-empresas-segue-em-nivel-recorde-e-dividas-alcancam-r-229-9-bilhoes"
+        },
+        {
+          "nome": "Grupo Amanhã",
+          "url": "https://amanha.com.br/categoria/brasil/inadimplencia-das-empresas-mantem-patamar-recorde"
+        },
+        {
+          "nome": "Capital News",
+          "url": "https://www.capitalnews.com.br/economia/inadimplencia-das-empresas-segue-em-nivel-recorde-e-dividas-alcancam-r-229-9-bilhoes/492576"
+        },
+        {
+          "nome": "Migalhas",
+          "url": "https://www.migalhas.com.br/coluna/recuperacao-de-credito/447384/inadimplencia-recorde-e-o-risco-de-judicializar-sem-patrimonio"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
         "transversal"
       ],
-      "titulo": "Debate sobre Atualização dos Limites do Simples Nacional e MEI",
-      "texto": "FecomercioSP e CNC participam de debate na Câmara dos Deputados sobre a atualização dos limites do Simples Nacional e MEI, visando evitar aumento da carga tributária para PMEs.",
+      "titulo": "Pesquisa Febraban de Tecnologia Bancária 2026 destaca investimentos em IA",
+      "texto": "A Pesquisa Febraban de Tecnologia Bancária 2026 revela que o setor bancário brasileiro investe mais de R$ 50 bilhões em tecnologia, com a IA se consolidando como fator essencial de competitividade. [cite: 6, 24, 31 in previous search]",
       "fontes": [
         {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
+          "nome": "Febraban",
+          "url": "https://www.febraban.org.br/noticias"
         },
         {
-          "nome": "Sistema Comércio",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "AGU Rejeita Recurso da Enel e Mantém Processo de Caducidade da Concessão em SP",
-      "texto": "A Procuradoria Federal junto à Aneel rejeitou os argumentos da Enel, recomendando a continuidade do processo que pode levar à perda da concessão em São Paulo devido a falhas no serviço.",
-      "fontes": [
-        {
-          "nome": "G1",
-          "url": null
+          "nome": "Febraban Podcast",
+          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g"
         }
       ]
     },
@@ -188,16 +129,12 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Agenda do Agronegócio da Semana Inclui Dados de Safra e Produção",
-      "texto": "A semana de 13 a 17 de julho de 2026 terá a divulgação do Levantamento Sistemático de Produção Agrícola (IBGE) e a Estimativa para Safras Brasileiras de Grãos (Conab).",
+      "titulo": "Conab: Colheita de milho de inverno 2025/26 atinge 28,5% da área semeada",
+      "texto": "A Companhia Nacional de Abastecimento (Conab) informou em 08/07/2026 que a colheita de milho de inverno no Brasil atingiu 28,5% da área plantada da safra 2025/26. [cite: 7 in previous search]",
       "fontes": [
         {
-          "nome": "SAFRAS & Mercado",
-          "url": null
-        },
-        {
-          "nome": "Agromundo.NET",
-          "url": null
+          "nome": "SBA1",
+          "url": "https://sba1.com/noticias/conab-brasil-colheu-28-5-da-area-plantada-de-milho-de-inverno-2025-26/"
         }
       ]
     },
@@ -205,29 +142,34 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Preços de Commodities Agrícolas: Soja e Milho em Alta, Café e Pimenta Estáveis",
-      "texto": "Em 10 de julho, a soja e o milho registraram altas em Chicago e B3. Preços do café e da pimenta permaneceram estáveis ou com quedas no mercado internacional.",
+      "titulo": "Conab confirma conclusão da colheita de soja da safra 2025/26",
+      "texto": "A Conab confirmou a conclusão da colheita de soja no Brasil da safra 2025/26 em junho, enquanto a colheita do milho de verão segue atrasada. [cite: 40 in previous search]",
       "fontes": [
         {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
-        },
-        {
-          "nome": "Vietnam.vn",
-          "url": null
+          "nome": "Canal Terraviva",
+          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "construcao",
+        "transversal"
       ],
-      "titulo": "Santa Rosa Promove 1ª Semana da Agricultura Familiar para Valorizar Produtores",
-      "texto": "Santa Rosa (RS) realiza de 13 a 17 de julho a 1ª Semana da Agricultura Familiar, com programação técnica e educativa para fortalecer o setor local.",
+      "titulo": "Preço médio de imóveis residenciais sobe 2,42% no 1º semestre, abaixo da inflação",
+      "texto": "O índice FipeZAP revelou que o preço médio dos imóveis residenciais subiu 2,42% no primeiro semestre de 2026, valorização abaixo da inflação do período. [cite: 30 in previous search, 43 in previous search, 44 in previous search]",
       "fontes": [
         {
-          "nome": "Jornal Noroeste",
-          "url": null
+          "nome": "UOL",
+          "url": "https://www.uol.com.br/economia/ultimas-noticias/2026/07/01/preco-medio-de-imoveis-sobe-242-no-1-semestre-alta-abaixo-da-inflacao.htm"
+        },
+        {
+          "nome": "Mercado Imobiliário",
+          "url": "https://www.mercadoimobiliario.com/noticia/preco-de-imoveis-residenciais-sobe-2-42-no-1-semestre-de-2026/"
+        },
+        {
+          "nome": "ADEMI-RJ",
+          "url": "https://www.ademirj.com.br/ademis-news/2026/julho-de-2026/1-de-julho-de-2026/preco-de-imoveis-residenciais-sobe-2-42-no-pais-no-1-semestre-menos-do-que-a-inflacao/"
         }
       ]
     },
@@ -235,40 +177,135 @@
       "setores": [
         "construcao"
       ],
-      "titulo": "CUB Paulista Registra Maior Alta do Ano em Junho, Impactando Custos",
-      "texto": "O Custo Unitário Básico (CUB) paulista teve sua maior alta em 2026 no mês de junho, conforme divulgado pelo SindusCon-SP.",
+      "titulo": "Mitre (MTRE3) registra queda de 31,9% nas vendas líquidas no segundo trimestre",
+      "texto": "A construtora Mitre (MTRE3) reportou vendas líquidas de R$ 198,3 milhões no segundo trimestre de 2026, uma queda de 31,9% na comparação anual. [cite: 48 in previous search, 49 in previous search]",
       "fontes": [
         {
-          "nome": "SindusCon-SP",
-          "url": "https://www.sindusconsp.com.br"
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/mercados/mitre-mtre3-registra-queda-de-319-nas-vendas-liquidas-no-segundo-trimestre/"
         }
       ]
     },
     {
       "setores": [
-        "construcao",
-        "transversal"
+        "transversal",
+        "servicos"
       ],
-      "titulo": "SindusCon-SP Defende PEC do Trabalho Flexível para Evitar Impactos de Nova Escala",
-      "texto": "O presidente do SindusCon-SP defendeu no Senado a PEC do Trabalho Flexível em 1º de julho, alertando que a escala 5x2 aumentaria custos e prazos de obras devido à escassez de mão de obra.",
+      "titulo": "IBGE inicia coleta da Pesquisa Nacional de Saúde (PNS) 2026 em todo o país",
+      "texto": "O IBGE iniciou em julho a coleta da terceira edição da Pesquisa Nacional de Saúde (PNS 2026), que visitará cerca de 140 mil domicílios até novembro. [cite: 15 in previous search, 18 in previous search, 21 in previous search]",
       "fontes": [
         {
-          "nome": "SindusCon-SP",
-          "url": "https://www.sindusconsp.com.br"
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37270-ibge-inicia-coleta-em-todo-o-pais-da-pesquisa-nacional-de-saude-2026"
+        },
+        {
+          "nome": "O observador",
+          "url": "https://oobservador.com.br/ibge-inicia-coleta-da-pesquisa-nacional-de-saude-2026/"
         }
       ]
     },
     {
       "setores": [
-        "construcao",
-        "transversal"
+        "servicos"
       ],
-      "titulo": "Debate sobre Uso do FGTS: Blindar Recursos para Habitação e Saneamento",
-      "texto": "O SindusCon-SP defende blindar o FGTS contra usos impróprios, como compra de armas, reforçando seu papel no financiamento de habitação, saneamento e infraestrutura urbana.",
+      "titulo": "ANEEL realiza segunda rodada do Leilão de Transmissão nº 1 de 2026",
+      "texto": "A ANEEL realizou em 03/07/2026 a segunda rodada do Leilão de Transmissão nº 1 de 2026, ofertando 4 lotes de linhas de transmissão para garantir a expansão da infraestrutura. [cite: 9 in previous search, 27 in previous search]",
       "fontes": [
         {
-          "nome": "SindusCon-SP",
-          "url": "https://www.sindusconsp.com.br"
+          "nome": "ANEEL / YouTube",
+          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g"
+        },
+        {
+          "nome": "ANEEL",
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos",
+        "comercio"
+      ],
+      "titulo": "Confiança Empresarial avança em junho, impulsionada por indústria e serviços",
+      "texto": "A Confiança Empresarial, segundo o FGV IBRE, avançou pelo segundo mês consecutivo em junho de 2026, atingindo o maior nível desde maio de 2025, com destaque para Indústria e Serviços. [cite: 41 in previous search, 28 in previous search]",
+      "fontes": [
+        {
+          "nome": "FGV/IBRE",
+          "url": "https://portalibre.fgv.br/noticias/resumo-dos-resultados-das-sondagens-do-fgv-ibre-em-junho"
+        },
+        {
+          "nome": "IBRE - FGV",
+          "url": "https://portalibre.fgv.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Preços da soja avançam com demanda externa aquecida; café e boi gordo em queda",
+      "texto": "Os preços da soja avançam, com a saca acima de R$140,00 nos portos, impulsionados pela demanda global. Já o café e o boi gordo registraram queda nos contratos futuros na B3 em 08/07/2026.",
+      "fontes": [
+        {
+          "nome": "Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/soja/358320-soja-cepea-precos-avancam-com-demanda-externa-aquecida.html"
+        },
+        {
+          "nome": "Brasilagro",
+          "url": "https://brasilagro.com.br/noticias/agropecuarios-fecham-semestre-com-forte-queda-de-precos-no-campo"
+        },
+        {
+          "nome": "PatosJá",
+          "url": "https://www.patosja.com.br/noticia/soja-e-milho-fecham-em-alta-na-b3-enquanto-cafe-e-boi-gordo-registram-queda-103309"
+        },
+        {
+          "nome": "Farmnews",
+          "url": "https://www.farmnews.com.br/soja/preco-da-soja-alcanca-maior-patamar-medio-de-2026-na-parcial-de-julho/"
+        },
+        {
+          "nome": "Cepea",
+          "url": "https://www.cepea.esalq.usp.br/br/noticia/milho-cepea-precos-se-firmam-com-agentes-cautelosos-e-baixa-liquidez.aspx"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "CUB/m² Residencial Médio de Santa Catarina para julho de 2026 é de R$ 3.121,62",
+      "texto": "O Custo Unitário Básico da Construção (CUB/m²) Residencial Médio de Santa Catarina para julho de 2026 é de R$ 3.121,62, com variação mensal de 0,82%.",
+      "fontes": [
+        {
+          "nome": "Sinduscon-BNU",
+          "url": "https://sindusconbnu.org.br/cub/"
+        },
+        {
+          "nome": "INVEXO Lançamentos",
+          "url": "https://invexo.com.br/cub-sc-valor-atualizado-2026/"
+        },
+        {
+          "nome": "SENGE-SC",
+          "url": "https://senge-sc.org.br/tabela-do-cub/"
+        },
+        {
+          "nome": "MySide",
+          "url": "https://myside.com.br/cub-sc"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Eliminação do Brasil na Copa do Mundo 2026 altera planos de consumo para o varejo",
+      "texto": "A eliminação da Seleção Brasileira na Copa do Mundo 2026 deve mudar os planos de consumo, com o varejo precisando replanejar estoques e promoções temáticas. [cite: 47 in previous search]",
+      "fontes": [
+        {
+          "nome": "CenárioMT",
+          "url": "https://www.cenariomt.com.br/noticia/eliminacao-da-selecao-brasileira-muda-planos-de-consumo-para-o-restante-da-copa-do-mundo"
         }
       ]
     }
@@ -277,9 +314,20 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Reforma Tributária e Regulamentação",
-      "texto": "Debates sobre a regulamentação do IBS/CBS e a atualização dos limites do Simples Nacional e MEI seguem em pauta, impactando PMEs.",
-      "score": 7.0,
+      "tema": "Debate sobre legislação trabalhista e impacto na indústria",
+      "texto": "Propostas de alteração na jornada de trabalho e fim da escala 6x1 geram preocupação na indústria, que prevê aumento de custos e perda de competitividade. [cite: 3, 8, 12, 20, 36 in previous search]",
+      "score": 7.5,
+      "setores": [
+        "industria",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação em desaceleração, inadimplência em alta e projeções do Focus",
+      "texto": "O IPCA de junho desacelerou para 0,16%, mas a inadimplência de empresas e consumidores segue em níveis recordes. O Boletim Focus reduziu a projeção de IPCA para 2026 para 5,16%. [cite: 3, 4, 5, 8, 9, 13, 16, 20, 26, 32 in previous search, 39 in previous search]",
+      "score": 8.0,
       "setores": [
         "transversal",
         "comercio",
@@ -288,79 +336,72 @@
       ]
     },
     {
-      "dim": "E",
-      "nome": "Econômico",
-      "tema": "Inflação, Juros e Endividamento",
-      "texto": "Projeção de IPCA para 2026 recua, mas Selic permanece alta. Endividamento recorde do consumidor e bandeira amarela de energia pressionam.",
-      "score": 8.5,
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos"
-      ]
-    },
-    {
       "dim": "S",
       "nome": "Social",
-      "tema": "Mercado de Trabalho e Consumo",
-      "texto": "Escassez de mão de obra qualificada na construção civil e o endividamento familiar continuam sendo desafios sociais que afetam o consumo.",
-      "score": 7.5,
+      "tema": "Endividamento do consumidor e impacto na saúde",
+      "texto": "Pesquisas da CNDL/SPC Brasil mostram que o alto endividamento afeta a saúde física e mental dos consumidores, com muitos recorrendo a novos créditos para quitar dívidas antigas. [cite: 5, 16, 35 in previous search, 51 in previous search]",
+      "score": 8.5,
       "setores": [
-        "construcao",
         "comercio",
+        "servicos",
         "transversal"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Inovação e Digitalização",
-      "texto": "Avanço dos veículos eletrificados impulsiona o mercado automotivo, mas a produção nacional não acompanha a demanda.",
-      "score": 6.0,
-      "setores": [
-        "industria"
-      ]
-    },
-    {
-      "dim": "A",
-      "nome": "Ambiental",
-      "tema": "Condições Climáticas e Energia",
-      "texto": "Período seco e redução dos níveis de reservatórios hidrelétricos mantêm a bandeira tarifária amarela, elevando custos de energia.",
-      "score": 6.5,
+      "tema": "Adoção de IA no setor bancário e digitalização",
+      "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 indica que o setor bancário investe mais de R$ 50 bilhões em tecnologia, com a IA sendo crucial para competitividade e digitalização. [cite: 6, 24, 31 in previous search]",
+      "score": 7.0,
       "setores": [
         "servicos",
         "transversal"
       ]
     },
     {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Bandeira tarifária amarela e condições climáticas",
+      "texto": "A manutenção da bandeira tarifária amarela pela ANEEL em julho reflete condições menos favoráveis de geração, típicas do período seco, com redução nos níveis dos reservatórios. [cite: 2, 11, 23, 27 in previous search]",
+      "score": 6.0,
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "agro"
+      ]
+    },
+    {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulamentação e Concessões",
-      "texto": "A AGU rejeitou recurso da Enel, mantendo o processo de caducidade da concessão em SP, evidenciando rigor regulatório.",
-      "score": 7.0,
+      "tema": "Regulamentação do setor elétrico e leilões de transmissão",
+      "texto": "A ANEEL realizou um leilão de transmissão para expandir a infraestrutura elétrica, enquanto o debate sobre a escala 6x1 continua impactando o ambiente regulatório trabalhista. [cite: 9 in previous search, 27 in previous search, 3, 8, 12, 20, 36 in previous search]",
+      "score": 6.5,
       "setores": [
-        "servicos"
+        "servicos",
+        "industria",
+        "transversal"
       ]
     }
   ],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25%",
+      "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Taxa Selic atual, mantida a projeção de 14% para fim de 2026."
+      "sub": "Taxa básica de juros, atualizada em 12/07/2026. Projeção Focus 2026: 14,00% a.a."
     },
     {
-      "label": "IPCA",
+      "label": "IPCA (Jun/26)",
       "valor": "0,16%",
-      "cor": "down",
-      "sub": "Variação mensal em junho/2026. Acumulado 12 meses: 4,64%."
+      "cor": "up",
+      "sub": "Inflação oficial do país em junho de 2026, abaixo das projeções. Acumulado 12 meses: 4,64%."
     },
     {
       "label": "Câmbio (Dólar)",
-      "valor": "R$ 5,1323",
+      "valor": "R$ 5,22",
       "cor": "neutral",
-      "sub": "Dólar comercial para compra (PTAX) em 09/07/2026."
+      "sub": "Cotação indicativa do dólar em 13/07/2026. Projeção Focus 2026: R$ 5,20. [cite: 38 in previous search, 50 in previous search, 5, 8]"
     },
     {
       "label": "Desemprego",
@@ -508,7 +549,7 @@
       "fornecedores": 8,
       "compradores": 6,
       "substitutos": 5,
-      "nota": "A rivalidade é intensificada pela entrada de veículos importados, especialmente chineses."
+      "nota": "A rivalidade é alta, com pressão de custos e competitividade, e o poder de fornecedores é significativo."
     },
     "comercio": {
       "rivalidade": 8,
@@ -516,7 +557,7 @@
       "fornecedores": 5,
       "compradores": 8,
       "substitutos": 7,
-      "nota": "O endividamento do consumidor e a concorrência do e-commerce intensificam a pressão sobre o comércio tradicional."
+      "nota": "O poder dos compradores é elevado, impulsionado pelo endividamento e busca por promoções, mantendo a rivalidade intensa."
     },
     "servicos": {
       "rivalidade": 7,
@@ -524,7 +565,7 @@
       "fornecedores": 5,
       "compradores": 6,
       "substitutos": 6,
-      "nota": "Custos regulados de energia e falhas de serviço afetam a percepção e competitividade."
+      "nota": "A digitalização e a inovação tecnológica aumentam a rivalidade, mas o poder dos fornecedores de tecnologia é moderado."
     },
     "agro": {
       "rivalidade": 6,
@@ -532,7 +573,7 @@
       "fornecedores": 7,
       "compradores": 7,
       "substitutos": 3,
-      "nota": "O setor é influenciado por preços de commodities e condições climáticas, com baixa rivalidade interna."
+      "nota": "O setor sofre com a volatilidade dos preços das commodities e o poder de barganha dos compradores é considerável."
     },
     "construcao": {
       "rivalidade": 6,
@@ -540,7 +581,7 @@
       "fornecedores": 7,
       "compradores": 6,
       "substitutos": 3,
-      "nota": "A escassez de mão de obra qualificada e a pressão sobre custos são desafios estruturais."
+      "nota": "O custo dos materiais e a demanda por crédito imobiliário influenciam o poder dos fornecedores e compradores, respectivamente."
     },
     "ecommerce": {
       "rivalidade": 9,
@@ -548,10 +589,48 @@
       "fornecedores": 6,
       "compradores": 9,
       "substitutos": 7,
-      "nota": "A intensa rivalidade e o alto poder de barganha dos compradores definem o cenário."
+      "nota": "A rivalidade é altíssima, com muitos entrantes e um poder de barganha dos compradores muito forte, exigindo diferenciação constante."
     }
   },
   "longitudinal": [
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 88.05,
+      "severidade": 8.8,
+      "iminencia": 8.5,
+      "ultima_observacao": "A pesquisa CNDL/SPC Brasil confirma que 60,1 milhões de consumidores possuem compras parceladas e 38% ficaram inadimplentes, com 81% 'pedalando' dívidas. [cite: 5, 16, 35 in previous search]",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
+      "tipo": "risco",
+      "titulo": "Aumento dos Custos de Energia Elétrica para PMEs",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "materializado",
+      "relevancia": 86.5,
+      "severidade": 8.2,
+      "iminencia": 9.0,
+      "ultima_observacao": "A ANEEL manteve a bandeira tarifária amarela para julho, com acréscimo de R$ 1,885/100 kWh, confirmando a persistência dos custos elevados de energia. [cite: 2, 11, 23, 27 in previous search]",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-07-06",
+      "origem": "real"
+    },
     {
       "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
       "tipo": "oportunidade",
@@ -569,44 +648,6 @@
       "ultima_observacao": "O programa Desenrola Adimplentes teve importantes desdobramentos com a aprovação da Medida Provisória e a resolução do CMN, que estabelecem as condições e encargos financeiros para a nova linha de crédito. O programa está em fase de implementação e busca prevenir a inadimplência e reduzir o custo do crédito para trabalhadores informais.",
       "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
-      "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 85.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "O endividamento em atraso dos brasileiros atingiu recorde de R$ 247,6 bilhões no 1º quadrimestre de 2026, reforçando a cautela.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
-      "tipo": "risco",
-      "titulo": "Aumento dos Custos de Energia Elétrica para PMEs",
-      "dimensao": "E",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "status": "materializado",
-      "relevancia": 80.94,
-      "severidade": 7.5,
-      "iminencia": 9.0,
-      "ultima_observacao": "A manutenção da bandeira tarifária amarela em julho confirma a continuidade dos custos elevados de energia elétrica para PMEs.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-06",
       "origem": "real"
     },
     {
@@ -638,11 +679,11 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 70.25,
-      "severidade": 7.8,
+      "relevancia": 75.95,
+      "severidade": 7.2,
       "iminencia": 7.5,
-      "ultima_observacao": "A Copa do Mundo de 2026 está acelerando a adoção de soluções de autoatendimento no varejo e serviços, um exemplo prático da digitalização e 'Technology as a Service' (TaaS) para otimizar operações e atender à demanda crescente.",
-      "periodo_observacao": "2026-W28",
+      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 reforça a contínua digitalização do setor, com mais de 240 bilhões de transações anuais via mobile banking. [cite: 6, 24, 31 in previous search]",
+      "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -657,11 +698,11 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 61.4,
-      "severidade": 8.0,
-      "iminencia": 7.5,
-      "ultima_observacao": "A adoção de Inteligência Artificial por PMEs para otimização de processos está em aceleração, com essas empresas mostrando maior agilidade que as grandes. No entanto, a eficácia dessa adoção depende criticamente da capacidade das organizações de redesenhar funções e processos e de investir em treinamento adequado para seus colaboradores, superando a barreira da adaptação cultural.",
-      "periodo_observacao": "2026-W27",
+      "relevancia": 70.25,
+      "severidade": 6.5,
+      "iminencia": 7.0,
+      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 destaca investimentos de R$ 50 bilhões em tecnologia, com a IA se consolidando como essencial para o setor. [cite: 6, 24, 31 in previous search]",
+      "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
@@ -675,11 +716,11 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 55.8,
-      "severidade": 7.0,
-      "iminencia": 7.0,
-      "ultima_observacao": "O otimismo na indústria da construção se consolidou em junho, com a Sondagem da CNI e CBIC indicando que os empresários voltaram a projetar crescimento no lançamento de novos empreendimentos e serviços, além de melhoria nas expectativas de emprego e investimentos.",
-      "periodo_observacao": "2026-W28",
+      "relevancia": 58.25,
+      "severidade": 5.5,
+      "iminencia": 6.0,
+      "ultima_observacao": "A queda de 31,9% nas vendas líquidas da Mitre no 2T26 e a valorização de imóveis abaixo da inflação (FipeZAP) indicam um cenário misto na construção. [cite: 30 in previous search, 43 in previous search, 44 in previous search, 48 in previous search, 49 in previous search]",
+      "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-02",
       "origem": "real"
     },
@@ -693,31 +734,33 @@
         "transversal"
       ],
       "status": "em_curso",
-      "relevancia": 55.25,
+      "relevancia": 57.25,
       "severidade": 7.0,
       "iminencia": 7.5,
-      "ultima_observacao": "SindusCon-SP alerta para o aumento de custos e prazos de obras caso a escala de trabalho 5x2 seja imposta, defendendo flexibilidade.",
+      "ultima_observacao": "Sondagem da CNI indica que 97% das indústrias serão impactadas pelo fim da escala 6x1, prevendo aumento de custos e perda de competitividade. [cite: 3, 8, 12, 20, 36 in previous search]",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-09",
       "origem": "real"
     },
     {
-      "id": "9032fb4f-90f5-423f-a5d6-e0578821761d",
+      "id": "6cbb2976-4d12-4c66-a2b8-157f450c241d",
       "tipo": "risco",
-      "titulo": "Crise de Talentos em Engenharia Ameaça Setores Chave da Economia",
-      "dimensao": "S",
+      "titulo": "Aumento das tensões geopolíticas no Oriente Médio impacta mercados globais",
+      "dimensao": "P",
       "setores": [
+        "transversal",
         "industria",
+        "comercio",
         "servicos",
-        "transversal"
+        "agro"
       ],
-      "status": "em_curso",
-      "relevancia": 52.5,
-      "severidade": 7.0,
+      "status": "monitorar",
+      "relevancia": 53.75,
+      "severidade": 8.5,
       "iminencia": 8.0,
-      "ultima_observacao": "SindusCon-SP destaca a escassez de mão de obra qualificada na construção, inviabilizando aumento de quadro com nova escala de trabalho.",
+      "ultima_observacao": "O conflito entre EUA e Irã intensifica-se, elevando os temores sobre a oferta global de petróleo e a aversão ao risco nos mercados financeiros. [cite: 38 in previous search, 48 in previous search, 50 in previous search]",
       "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-02",
+      "data_identificacao": "2026-07-13",
       "origem": "real"
     }
   ]
