@@ -169,6 +169,17 @@ Estrutura exata:
     "construcao": {{"rivalidade": 6, "entrantes": 5, "fornecedores": 7, "compradores": 6, "substitutos": 3, "nota": "..."}},
     "ecommerce":  {{"rivalidade": 9, "entrantes": 8, "fornecedores": 6, "compradores": 9, "substitutos": 7, "nota": "..."}}
   }},
+  "analise": {{
+    "panorama": {{"acoes": [{{"ico": "💸", "txt": "ação macro/transversal prática da semana, ancorada nos dados (número/evento real)"}}]}},
+    "setores": {{
+      "industria":  {{"prov": "pergunta provocativa da semana no setor", "quote": "leitura em 1 frase com número/fato real", "edi": ["parágrafo curto factual", "parágrafo curto factual"], "acoes": [{{"ico": "⚡", "txt": "ação prática decorrente dos dados"}}]}},
+      "comercio":   {{"prov": "...", "quote": "...", "edi": ["..."], "acoes": [{{"ico": "🛒", "txt": "..."}}]}},
+      "servicos":   {{"prov": "...", "quote": "...", "edi": ["..."], "acoes": [{{"ico": "🤖", "txt": "..."}}]}},
+      "agro":       {{"prov": "...", "quote": "...", "edi": ["..."], "acoes": [{{"ico": "🌾", "txt": "..."}}]}},
+      "construcao": {{"prov": "...", "quote": "...", "edi": ["..."], "acoes": [{{"ico": "🏗️", "txt": "..."}}]}},
+      "ecommerce":  {{"prov": "...", "quote": "...", "edi": ["..."], "acoes": [{{"ico": "📦", "txt": "..."}}]}}
+    }}
+  }},
   "novos_sinais": [
     {{"tipo": "risco", "titulo": "...", "dimensao": "E", "setores": ["transversal"],
       "texto": "...", "fontes": ["Valor","BCB"],
@@ -209,6 +220,11 @@ Estrutura exata:
   É uma leitura de estrutura de mercado que muda DEVAGAR — seja consistente entre semanas, ajustando
   só quando houver mudança estrutural real (novo entrante relevante, consolidação, choque regulatório).
   "nota" = uma frase explicando a força dominante do setor. Valores 0 (força fraca) a 10 (força intensa).
+- analise: leitura ACIONÁVEL da semana, por setor, DERIVADA das notícias/sinais/indicadores desta semana.
+  Para cada um dos SEIS setores: "prov" (pergunta provocativa curta), "quote" (1 frase com número/fato real),
+  "edi" (1 a 2 parágrafos curtos e factuais, citando eventos/números reais desta semana),
+  "acoes" (3-4 ações práticas, cada uma {{"ico": emoji, "txt": frase curta}}). "panorama.acoes" = 4-5 ações
+  macro/transversais. Ancore TUDO nos dados desta semana — nunca invente fato que não apareça no clipping/sinais.
 - kpis: exatamente 7 indicadores, nesta ordem:
   1. SELIC  2. IPCA ou IPCA-15 (o mais recente)  3. Câmbio (dólar)  4. Desemprego (PNAD)
   5. Varejo (PMC/IBGE)  6. Produção Industrial (PIM-PF/IBGE)  7. IPP (Índice de Preços ao Produtor/IBGE)

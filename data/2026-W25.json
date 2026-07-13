@@ -642,5 +642,189 @@
         "val": -0.094
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "SELIC em 14,25% mantém capital caro; próximo corte será crítico para viabilidade de investimentos empresariais e demanda de crédito livre"
+        },
+        {
+          "ico": "⚖️",
+          "txt": "Propostas de tarifas dos EUA começam impactar concretamente: Sondagem CNI de junho cruzou linha 50 pontos em exportações pela primeira vez no ano"
+        },
+        {
+          "ico": "👥",
+          "txt": "Inadimplência recorde (75 Mi de brasileiros, 44,8% população adulta) materializa cautela do consumidor; Desenrola Adimplentes com adesão limitada de bancos privados"
+        },
+        {
+          "ico": "📱",
+          "txt": "Digitalização e IA consolidam-se como imperativos transversais; CADE intensifica regulação de big techs, formando estrutura de governança"
+        },
+        {
+          "ico": "⚡",
+          "txt": "Acordo EUA-Irã alivia custos: combustíveis caem 0,4%, IGP-M deflaciona 0,50%; mas geopolítica persiste como fator incerteza"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A indústria escolhe: abraçar incerteza das tarifas americanas ou encontrar em TaaS e IA o caminho para manter competitividade?",
+        "quote": "Sondagem Industrial CNI de junho registrou pela primeira vez no ano expectativas de exportação abaixo de 50 pontos, diretamente atribuída às propostas de novas tarifas dos EUA.",
+        "edi": [
+          "A indústria brasileira enfrenta pressões externas significativas. O Índice de Preços ao Produtor (IPP) registrou queda de 0,30% em maio, revertendo a alta de 2,62% anterior, puxado pela queda em alimentos (-2,05%) e extrativas (-5,90%). A Sondagem Industrial da CNI de junho mostrou deterioração nas expectativas de exportação, cruzando linha de 50 pontos pela primeira vez no ano, diretamente relacionada às propostas de novas tarifas dos EUA sobre produtos brasileiros.",
+          "Em contrapartida, confiança empresarial subiu em junho (indústria liderando). A Agência Nacional do Petróleo sinalizou queda gradual em combustíveis após acordo EUA-Irã, aliviando custos operacionais. Redução da SELIC para 14,25% ao ano favorece custo de capital, embora ainda desafiador. PIM (produção industrial) mantém-se em +0,7% ao mês."
+        ],
+        "acoes": [
+          {
+            "ico": "🎯",
+            "txt": "Diversificar mercados de exportação para mitigar risco geopolítico das tarifas americanas"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Acelerar investimentos em IA e automação para compensar pressões de preço no IPP"
+          },
+          {
+            "ico": "💡",
+            "txt": "Aproveitar queda de combustíveis para otimizar margem operacional"
+          },
+          {
+            "ico": "📊",
+            "txt": "Monitorar evolução IPP e inflação para antecipar ajustes de preços"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Como varejo retém consumidor quando inadimplência atinge recorde de 75 milhões de brasileiros negativados?",
+        "quote": "Inadimplência atingiu novo recorde em maio com 75,06 milhões de brasileiros (44,8% população adulta) negativados, com 85,41% de reincidência em 12 meses anteriores.",
+        "edi": [
+          "Comércio enfrenta um de seus maiores desafios: debilidade financeira do consumidor. Maio de 2026 registrou novo recorde de inadimplência com 75,06 milhões brasileiros negativados, representando 44,8% da população adulta. Taxa de reincidência é preocupante: 85,41% dos inadimplentes em maio já haviam sido negativados nos 12 meses anteriores, cada um devendo média de R$ 5.145,04.",
+          "Embora IPCA-15 tenha desacelerado para 0,41% em junho sinalizando melhora inflacionária, crédito continua concentrado em linhas direcionadas (carteira direcionada +1,0% vs. carteira livre +0,7%). Programa Desenrola Adimplentes (lançado 29/jun) oferece esperança, mas Febraban já prevê adesão limitada dos bancos privados, reduzindo impacto potencial. PMC (varejo) registrou -1,5% em abril (acumulado ano: +2,0%)."
+        ],
+        "acoes": [
+          {
+            "ico": "💳",
+            "txt": "Investir em políticas de retenção e renegociação de dívidas com clientes inadimplentes"
+          },
+          {
+            "ico": "📱",
+            "txt": "Acelerar digitalização para reduzir custos operacionais e competir por consumidor consciente"
+          },
+          {
+            "ico": "🔍",
+            "txt": "Monitorar Desenrola Adimplentes e ajustar estratégia creditícia conforme bancos aderirem"
+          },
+          {
+            "ico": "💰",
+            "txt": "Explorar parcerias com bancos públicos (Caixa, BB) que já aderiram ao programa"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Enquanto confiança empresarial sobe, como serviços mantêm ritmo com incerteza geopolítica crescente?",
+        "quote": "Índice de Confiança Empresarial (ICE) subiu 1,1 ponto em junho para 92,7 pontos (maior desde maio 2025), mas Indicador de Incerteza também subiu moderadamente.",
+        "edi": [
+          "Serviços apresenta sinais mistos. Positivamente, volume de serviços (PMS) cresceu 1,2% em abril (acumulado ano: 2,2%), e confiança empresarial subiu 1,1 ponto em junho atingindo 92,7 pontos, maior nível desde maio 2025, com setor entre os mais confiantes. Indústria de serviços liderou recuperação de confiança.",
+          "Cenário temperado pela incerteza econômica que também subiu em junho, influenciada por expectativas sobre política monetária, tensões geopolíticas e El Niño. Inadimplência do consumidor (75 Mi negativados) impacta demanda por serviços. ANEEL regulamentou sistemas de armazenamento de energia, e CADE prepara regulação intensificada de big techs, sinalizando ambiente regulatório em transformação."
+        ],
+        "acoes": [
+          {
+            "ico": "📈",
+            "txt": "Capitalizar confiança empresarial para expandir base clientes corporativos e recurring revenue"
+          },
+          {
+            "ico": "🔐",
+            "txt": "Fortalecer compliance e preparar-se para regulação crescente de tecnologia pelo CADE"
+          },
+          {
+            "ico": "🎯",
+            "txt": "Diversificar receitas com serviços complementares para mitigar incerteza geopolítica"
+          },
+          {
+            "ico": "⚡",
+            "txt": "Investir em eficiência via Technology as a Service (TaaS) e sistemas energia regulados"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Apreciação do real beneficia consumidor, mas exportadores agrícolas veem margem encolher na safra em avanço?",
+        "quote": "IPP de alimentos caiu 2,05% em maio, influenciada por redução em açúcar, leite e café devido avanço safra e apreciação real; safra grãos 2026 em 350,4 Mt.",
+        "edi": [
+          "Agro vivencia dinâmica de alívio de preços com riscos ao faturamento exportador. IPP de alimentos caiu 2,05% em maio, pressionado por redução em açúcar, leite e café resultado da safra em avanço e apreciação do real (cotado R$ 5,14 final junho). Indústrias extrativas também caíram 5,90% por menores preços petróleo bruto e minério ferro internacionais. Estimativa safra de grãos 2026 segue em 350,4 Mt, com incremento de 0,5% em relação mês anterior.",
+          "Câmbio apreciado favorece consumidor doméstico mas reduz atratividade preços internacionais para exportadores. Menor pressão inflacionária (IPCA-15 0,41%) mitiga custos insumos oferecendo respiro operacional. Perspectivas tarifas americanas e fenômeno El Niño permanecem como riscos de monitoramento crucial."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Aproveitar safra em avanço para renovar estoque e negociar com distribuidores"
+          },
+          {
+            "ico": "💱",
+            "txt": "Estruturar operações hedge cambial para proteger receitas exportação"
+          },
+          {
+            "ico": "📊",
+            "txt": "Monitorar El Niño e ajustar calendário produtivo conforme impactos climáticos"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Adotar tecnologias precisão agrícola para maximizar produtividade por hectare"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Com SELIC em 14,25% e custos em alta (+3,26% ano), confiança empresarial consegue sustentar demanda por novos empreendimentos?",
+        "quote": "Custo médio construção (SINAPI) atingiu R$ 1.953/m² maio (acumulado +3,26% ano); INCC subiu +0,88% mês e +3,47% acumulado.",
+        "edi": [
+          "Construção enfrenta pressão permanente de custos. Custo Médio de Construção (SINAPI) atingiu R$ 1.953/m² em maio, acumulando alta 3,26% no ano, enquanto INCC (custo construção mercado FGV) registrou variação mensal +0,88% e acumulado +3,47%. Pressão ocorre em contexto SELIC 14,25% ao ano, ainda elevada para financiamentos imobiliários.",
+          "Em contrapartida, confiança empresarial subiu em junho, indústria liderando melhora. Programa Minha Casa, Minha Vida impulsiona carteira crédito imobiliário (carteira direcionada +1,0% maio), oferecendo suporte demanda. Crédito livre, porém, segue fraco (+0,7%), indicando financiamentos não-direcionados continuam desafiadores. ANEEL regulamentou sistemas armazenamento energia (SAE), abrindo oportunidades inovação."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Aproveitar Minha Casa, Minha Vida e crédito direcionado para ampliar pipeline de obras"
+          },
+          {
+            "ico": "💰",
+            "txt": "Renegociar prazos e custos com fornecedores ante pressão de custos construção"
+          },
+          {
+            "ico": "📉",
+            "txt": "Monitorar evolução SELIC; redução futura pode liberar demanda reprimida"
+          },
+          {
+            "ico": "🌱",
+            "txt": "Investir eficiência energética (SAE regulados ANEEL) como diferencial competitivo"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Se e-commerce não mitigar inadimplência de 75 milhões brasileiros, como crescer em mercado onde cashback não resolve mais?",
+        "quote": "Inadimplência atinge 75,06 milhões brasileiros (44,8% população), endividamento médio R$ 5.145,04, impactando demanda e-commerce; reincidência 85,41%.",
+        "edi": [
+          "E-commerce em junho enfrenta ventos contrários estruturais. Inadimplência recorde 75,06 milhões brasileiros (44,8% população adulta) combinada com cautela consumidor já materializada reduz propensão compra online. IPCA-15 desacelerou 0,41% junho oferecendo alívio inflacionário beneficiando poder compra, mas reincidência 85,41% entre inadimplentes indica consumidores retomando compras carregam vulnerabilidade financeira.",
+          "Carteira crédito pessoa física cresceu apenas 0,7% maio (segmento livre), sinalizando dificuldade acesso crédito para financiar compras parceladas. Programa Desenrola Adimplentes pode oferecer margem melhoria, mas com adesão limitada bancos privados prevista Febraban reduz impacto. Confiança empresarial sobe (+1,1 ponto), oferecendo esperança para investimentos em tecnologia e experiência digital."
+        ],
+        "acoes": [
+          {
+            "ico": "🎁",
+            "txt": "Expandir programas fidelização e buy-now-pay-later (BNPL) com parceiros fintech"
+          },
+          {
+            "ico": "📊",
+            "txt": "Segmentar clientes por perfil risco e oferecer produtos (pré-pago, cashback) adequados"
+          },
+          {
+            "ico": "💳",
+            "txt": "Colaborar com Caixa e BB (Desenrola) para capturar consumidores em reabilitação creditícia"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Otimizar recomendação produtos via IA para maximizar conversão ante margem comprimida"
+          }
+        ]
+      }
+    }
   }
 }

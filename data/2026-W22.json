@@ -815,5 +815,189 @@
     "itens": 31,
     "brutos_verificados": 47,
     "aplicado_em": "2026-07-12"
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📊",
+          "txt": "Acompanhar decisão Copom próxima semana — SELIC em 14,50% é limite crítico para investimentos PMEs; IPCA-15 surpreendeu em 0,62% (acum. 3,02% ano), mantendo inflação acima teto"
+        },
+        {
+          "ico": "💳",
+          "txt": "Materializar Desenrola Adimplentes junto a crédito direcionado — cautela consumidor se materializou nesta semana; Fecomércio MG confirma endividamento familiar e restrição de crédito livre"
+        },
+        {
+          "ico": "🤖",
+          "txt": "Acelerar integração IA e TaaS — OLX integrou ChatGPT como primeiro marketplace nacional; competidores sem busca conversacional perdem descoberta de produtos"
+        },
+        {
+          "ico": "🌍",
+          "txt": "Aproveitar ciclo PIB em alta — Brasil 6ª maior crescimento global (1,1% trim, 1,8% anual, R$ 3,3 tri); indústria +1,6%; momento para expansão considerada"
+        },
+        {
+          "ico": "⚖️",
+          "txt": "Reforçar compliance regulatório — Senacon multou iFood/Keeta R$ 14M por opacidade (Portaria 61/2026); reforma tributária pressiona cadeia construção"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Com seis setores industriais confiantes e PIB industrial em alta, onde está o gargalo na industrialização das PMEs diante das tarifas dos EUA?",
+        "quote": "O número de setores industriais confiantes saltou de 1 para 6 em maio, com Índice de Confiança avançando 1,1 ponto para 97,1 pontos, conforme CNI/FGV.",
+        "edi": [
+          "Indústria sinalizou recuperação pela terceira semana consecutiva em maio: o Índice de Confiança subiu 1,1 ponto para 97,1, com ISA alcançando 98,7 pontos. O PIB do 1º trimestre aponta ganho macro: indústria +1,6%, contribuindo para crescimento de 1,1% da economia (R$ 3,3 trilhões), posicionando Brasil na 6ª maior alta global conforme IBGE.",
+          "Contrastes persistem: produção de aço recuou em maio, mas Índice de Confiança da Indústria do Aço atingiu 59,9 pontos, indicando otimismo. IPP caiu 0,30% em maio, revertendo altas anteriores, sinalizando pressão de custos em queda. Risco de tarifas dos EUA segue com alta relevância (100) sem desdobramentos concretizados na semana."
+        ],
+        "acoes": [
+          {
+            "ico": "🏭",
+            "txt": "Mapear os 6 setores confiantes — comunicar oportunidades de integração vertical e subcontratação"
+          },
+          {
+            "ico": "📊",
+            "txt": "Acompanhar SELIC próxima semana — 14,50% é limite crítico para aprovação de novos projetos"
+          },
+          {
+            "ico": "⚠️",
+            "txt": "Monitorar tarifas EUA — risco relevância 100 permanece sem concretização; urgência em planos B"
+          },
+          {
+            "ico": "💡",
+            "txt": "Explorar linhas de inovação — burocracia permanece obstáculo (relevância 57,55) para PMEs"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Dia Livre de Impostos reúne 100 mil lojas com vendas nominais em alta, mas cautela do consumidor se materializa — quando projeção nominal vira efetiva recuperação de margens?",
+        "quote": "Dia Livre de Impostos, em 28/05, reuniu mais de 100 mil lojas em 1.500 cidades; vendas nominais devem subir 1,6% em maio, 3,6% em junho e 3,0% em julho ante 2025.",
+        "edi": [
+          "Comércio navega entre impulsos pontuais e cautela estrutural. A 20ª edição do Dia Livre de Impostos (28/05) reuniu 100+ mil lojas em 1.500 cidades com descontos até 33%; projeções nominais apontam 1,6% (mai), 3,6% (jun) e 3,0% (jul) conforme IAV-IDV. Contudo, cautela do consumidor e endividamento familiar se materializaram conforme Fecomércio MG.",
+          "Crédito livre permanece restrito, com expansão concentrada em linhas direcionadas. Senacon multou iFood e Keeta em R$ 14 milhões por violação da Portaria 61/2026 (transparência de preços) em 28/05, elevando pressão regulatória. Sazonalidade inverno alimenta antecipação de estoque conforme JoomPulse (28/05)."
+        ],
+        "acoes": [
+          {
+            "ico": "🛍️",
+            "txt": "Fortalecer transparência de preços — cumprimento Portaria 61/2026 obrigatório; multas a concorrentes sinalizam rigor"
+          },
+          {
+            "ico": "💳",
+            "txt": "Integrar Desenrola Adimplentes em PDV — programas direcionados crescem; crédito livre restrito"
+          },
+          {
+            "ico": "🌱",
+            "txt": "Antecipar estoque sazonalidade inverno — varejo online já se posiciona conforme JoomPulse"
+          },
+          {
+            "ico": "🎯",
+            "txt": "Validar mix de vendas nominais vs. margens — projeções altas escondem pressão de endividamento"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Com AGU decidindo a favor da Anatel em postes e Claro adquirindo Desktop, como se reposicionar em consolidação telecom-infraestrutura?",
+        "quote": "AGU resolveu favorável à Anatel na disputa de postes (25/05); Anatel aprovou aquisição Desktop pela Claro (29/05); leilão reverso espectro agendado junho (R$ 20M); regulação cabos submarinos iniciada (26/05).",
+        "edi": [
+          "Serviços teve semana de inflexão regulatória intensa. AGU decidiu a favor da Anatel na disputa dos postes (25/05), movimentando infraestrutura telecom. Anatel iniciou discussão sobre regulação de cabos submarinos (26/05), tema estratégico. Leilão reverso de espectro móvel foi programado para junho (R$ 20M). Fundo soberano GIC entrou no capital da IHS Latin America, consolidando mercado de torres. Anatel aprovou aquisição da Desktop pela Claro (29/05).",
+          "NuCel lançou estratégia para público adolescente (27/05); seminário Educação Conectada 2026 foi realizado (27/05), discutindo conectividade escolar. Medidas contra robocalls foram prorrogadas até 2028 (28/05). CGI.br se posicionou sobre regulação de plataformas digitais (26/05). Senacon multou iFood e Keeta em R$ 14M por transparência (28/05)."
+        ],
+        "acoes": [
+          {
+            "ico": "📡",
+            "txt": "Acompanhar regulação cabos submarinos — infraestrutura crítica para TaaS e conectividade nacional"
+          },
+          {
+            "ico": "🏢",
+            "txt": "Avaliar consolidação Claro+Desktop — possíveis movimentos concorrenciais em banda larga"
+          },
+          {
+            "ico": "🎓",
+            "txt": "Participar Educação Conectada — conectividade escolar abre segmento B2B governamental"
+          },
+          {
+            "ico": "🛡️",
+            "txt": "Reforçar compliance transparência — multas iFood/Keeta sinalizam rigor regulatório SENACON"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "AgroBrasília reúne Embrapa com missão internacional sob 'Agro de Resultado' — tecnologia traz produtividade ou apenas eleva custos operacionais?",
+        "quote": "AgroBrasília 16ª edição (19-23/05) reuniu Embrapa com missão internacional; preço arroba bezerro recuou 4,9% (R$ 511,40 para R$ 486,20 em 22/05) com maior estabilidade.",
+        "edi": [
+          "Agro teve semana temática com AgroBrasília (19-23/05), 16ª edição em Brasília, onde Embrapa realizou missão internacional e agenda técnica sob tema 'Agro de Resultado'. Mercados monitoravam divulgação do PIB do 1º trimestre (29/05) como indicador-chave de demanda externa e interna para grãos.",
+          "Preço da arroba do bezerro caiu 4,9% em mai (R$ 511,40 em 30/04 para R$ 486,20 em 22/05), indicando maior estabilidade após volatilidade. Safra de grãos estimada em 348,7 Mt (variação +0,1% vs. mês anterior, IBGE/LSPA abr/26), sensível a ciclos macro e demanda."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Avaliar adoção tecnologia Embrapa — missão internacional traz tendências de produtividade global"
+          },
+          {
+            "ico": "📊",
+            "txt": "Monitorar estabilidade pecuária — arroba bezerro em piso importante; pressão de demanda"
+          },
+          {
+            "ico": "🚜",
+            "txt": "Integrar IA para otimização plantio/colheita — oportunidade em curso, relevância 44,75%"
+          },
+          {
+            "ico": "📈",
+            "txt": "Acompanhar PIB externo — safra de grãos sensível a ciclos globais (Brasil 6ª maior crescimento)"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "INCC sobe 0,77% e SindusCon-SP fecha convenções 5,15% — onde está a margem quando custos sobem mais que receita?",
+        "quote": "INCC-M subiu 0,77% em maio (acumulado 6,82% em 12 meses, FGV); SindusCon-SP assinou convenções com reajuste 5,15% em 27 municípios interior paulista (27/05).",
+        "edi": [
+          "Construção enfrentou pressões de custo em maio: INCC-M subiu 0,77% (acumulado 6,82% em 12 meses, segundo FGV); custo m² SINAPI registrou +0,72% mês (R$ 1.946/m², acum. +2,89% ano). SindusCon-SP assinou convenções coletivas com reajuste de 5,15% em Assis, Barretos, Jacareí, Salto, Ourinhos, Campinas e 21 municípios (27/05).",
+          "CBIC apresentou Indicadores Imobiliários do 1º trim (25/05) e promoveu evento 'Imersão Compras e Suprimentos' (26-27/05) debatendo impactos da reforma tributária na cadeia. Secovi-SP apontou resiliência do mercado imobiliário interior paulista apesar de desafios econômicos e políticos."
+        ],
+        "acoes": [
+          {
+            "ico": "💰",
+            "txt": "Acompanhar reforma tributária — CBIC identificou impactos críticos na cadeia suprimentos"
+          },
+          {
+            "ico": "📋",
+            "txt": "Revisar contratos coletivos — reajustes 5,15% já fechados SP refletem pressão salarial"
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Avaliar margens empreendimentos — INCC e custos m² em trajetória persistente de alta"
+          },
+          {
+            "ico": "📊",
+            "txt": "Integrar IA em licitações e compras — otimização é resposta direta a pressão suprimentos"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "OLX integra ChatGPT e se torna primeiro marketplace brasileiro com busca conversacional — integração IA é now or never para competidores?",
+        "quote": "OLX integrou catálogo ao ChatGPT entre 28-29/05/2026, tornando-se o primeiro marketplace brasileiro com busca conversacional de automóveis e bens de consumo.",
+        "edi": [
+          "E-commerce entrou na era de busca conversacional. OLX integrou catálogo ao ChatGPT (28-29/05), primeira marketplace brasileira com essa funcionalidade para automóveis e bens de consumo, segundo E-Commerce Brasil. ANYTOOLS apresentou no Fórum E-Commerce Brasil debate sobre 'Marketplaces a serviço do seu negócio', enfatizando adaptação de sellers à dinâmica de plataformas.",
+          "Artigo de Rodrigo Cursi (25/05) defendeu fim da guerra de preços, argumentando que competir por preço é estratégia perdedora frente à 'Temu-ficação'; diferenciação via autenticidade, curadoria e confiança ganham relevância. MP 1.357/2026 extinguiu taxa das blusinhas, reduzindo custos de importação. Senacon multou iFood/Keeta R$ 14M por transparência (28/05)."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Integrar busca conversacional IA — OLX marcou padrão; urgência competitiva de catch-up"
+          },
+          {
+            "ico": "🏪",
+            "txt": "Redefinir proposta valor — sair guerra de preços com curadoria/autenticidade/marca"
+          },
+          {
+            "ico": "💳",
+            "txt": "Conectar crédito direcionado em checkout — programas Desenrola/FGI expandem poder compra"
+          },
+          {
+            "ico": "🌐",
+            "txt": "Aproveitar simplificação tarifária MP 1.357 — redução custos libera recursos diferenciação"
+          }
+        ]
+      }
+    }
   }
 }

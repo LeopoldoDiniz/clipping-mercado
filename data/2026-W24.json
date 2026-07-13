@@ -745,5 +745,189 @@
     "itens": 31,
     "brutos_verificados": 33,
     "aplicado_em": "2026-07-12"
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📊",
+          "txt": "Datas sazonais (Dia dos Namorados R$ 2,84bi, Copa, festas juninas) sustentam crescimento varejo (+3,3%) apesar de cautela do consumidor"
+        },
+        {
+          "ico": "🤖",
+          "txt": "Digitalização (Wi-Fi 6 em 21,1%, GPUs como serviço, Wi-Fi inteligente B2B) oferece caminho para otimizar custos ante SELIC 14,50% e IPP +2,63%"
+        },
+        {
+          "ico": "📡",
+          "txt": "Conectividade ainda crítica (<15% rodovias) limita IoT/mobilidade inteligente; banda larga (Vivo +66k acessos) requer aceleração"
+        },
+        {
+          "ico": "💰",
+          "txt": "Endividamento familiar (materializado, relevância 95,94%) exige crédito responsável; Desenrola Adimplentes com taxa máxima 1,99%/mês oferece oportunidade"
+        },
+        {
+          "ico": "🌍",
+          "txt": "Tarifas EUA ameaçam exportações industriais; agro contrapõe com safra recorde (358,6 Mt) e pecuária em rota de -92,6% emissões"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Pode a indústria brasileira acelerar automação com IA enquanto navega dupla pressão de custos e tarifas americanas?",
+        "quote": "IPP (Índice de Preços ao Produtor) registrou alta de 2,63% ao mês em abril de 2026, indicando custos crescentes na cadeia industrial.",
+        "edi": [
+          "A indústria enfrenta dinâmica desafiadora. Índice de Preços ao Produtor (IPP) em alta de 2,63% ao mês pressiona margens, enquanto proposta de novas tarifas do USTR sobre produtos brasileiros ameaça exportações. Produção física (PIM) avança modestamente (+0,7% m/m, +2,7% acum. ano), sinalizando cautela nos investimentos.",
+          "Infraestrutura conectada ainda é limitante: menos de 15% das rodovias têm conectividade (Anfavea), impedindo adoção plena de IoT e veículos inteligentes. Oportunidade clara reside em digitalização (TaaS, IA) como diferencial de competitividade ante pressões econômicas."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Priorizar automação com IA para reduzir impacto inflacionário (IPP +2,63%)"
+          },
+          {
+            "ico": "🌐",
+            "txt": "Diversificar mercados de exportação além EUA, mitigando risco tarifário"
+          },
+          {
+            "ico": "📡",
+            "txt": "Investir em conectividade/IoT para otimizar cadeias (apenas <15% rodovias têm cobertura)"
+          },
+          {
+            "ico": "💼",
+            "txt": "Avaliar programas de crédito assistido (máx. 1,99%/mês) para capex em inovação"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O crescimento de 3,3% no varejo será sustentável ou apenas reflexo de picos sazonais sobre consumidor endividado?",
+        "quote": "CNC projetou R$ 2,84 bilhões em vendas no Dia dos Namorados de 2026, com chocolates a +22,7% e joias a +20%.",
+        "edi": [
+          "Semana de forte desempenho no varejo. Entre 6 e 12 de junho, crescimento de 3,3% no ICVA, impulsionado pelo Dia dos Namorados. CNC projeta R$ 2,84 bilhões em vendas na data, com destaque para chocolates (+22,7%) e joias (+20%). Em Minas Gerais, 43,6% dos comerciantes esperavam vendas superiores a 2025, com tíquete médio entre R$ 100 e R$ 200.",
+          "Junho como um todo deve faturar R$ 22,14 bilhões no varejo, somando Dia dos Namorados, festas juninas e Copa do Mundo. Porém, cautela persiste: SELIC em 14,50% a.a. e endividamento familiar (materializado em W27 com relevância 95,94%) limitam sustentabilidade. Regulatoriamente, reforço em regras de couvert (transparência obrigatória) protege consumidor mas complexifica operação."
+        ],
+        "acoes": [
+          {
+            "ico": "🎯",
+            "txt": "Maximizar Dia dos Namorados/Copa com estratégias omnichannel (e-commerce +13,1%)"
+          },
+          {
+            "ico": "💳",
+            "txt": "Oferecer parcelamento via Desenrola Adimplentes (1,99% a.m.) para contornar SELIC 14,50%"
+          },
+          {
+            "ico": "🛍️",
+            "txt": "Diversificar produtos (além chocolates/joias) com margens defensivas ante inflação"
+          },
+          {
+            "ico": "⚖️",
+            "txt": "Garantir compliance couvert/transparência para reduzir fricção regulatória"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Interrupções em plataformas de IA se multiplicam enquanto infraestrutura de conectividade ainda alcança <15% das rodovias — como escalar serviços digitais com esta fragilidade?",
+        "quote": "Wi-Fi 6 atinge 21,1% de adoção no Brasil, Vivo lidera com 66 mil acessos positivos de banda larga em abril, enquanto menos de 15% das rodovias têm conectividade (Anfavea).",
+        "edi": [
+          "Serviços navega expansão tecnológica com riscos infraestruturais. Wi-Fi 6 alcança 21,1% de adoção; Vivo lidera adições em banda larga (+66k acessos em abril); inovações como Wi-Fi inteligente para B2B (Alares) e GPUs como serviço (Claro) expandem portfólio TaaS. Regulatoriamente, Cade projeta aprovação PL Mercados Digitais em 2026 e ANPD intensifica fiscalização (processo sancionador contra Claro por compartilhamento indevido de dados com Serasa).",
+          "Porém, fragilidades persistem: interrupções em plataformas de IA se multiplicaram em 2026 (relatório Ookla/Downdetector); conectividade em rodovias alcança apenas <15%, impedindo IoT veicular/rural. Aplicativos governamentais somam 82 milhões de downloads desde janeiro, sinalizando apetite por e-gov. Desafio: escalar infraestrutura enquanto reduz-se orçamento da Anatel por cortes."
+        ],
+        "acoes": [
+          {
+            "ico": "🔒",
+            "txt": "Estruturar redundância em plataformas IA (interrupções se multiplicam em 2026)"
+          },
+          {
+            "ico": "📡",
+            "txt": "Acelerar expansão banda larga (Vivo +66k, mas <15% rodovias ainda descobertas)"
+          },
+          {
+            "ico": "🛡️",
+            "txt": "Reforçar compliance privacidade de dados (ANPD em ação contra Claro)"
+          },
+          {
+            "ico": "⚖️",
+            "txt": "Preparar para PL Mercados Digitais (aprovação esperada 2026) com conformidade e inovação"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Como pecuária brasileira concretizará redução de até 92,6% de emissões até 2050 mantendo competitividade e rentabilidade?",
+        "quote": "Conab projetou safra de grãos 2025/26 em recorde de 358,637 milhões de toneladas, com soja em 180,3 milhões e milho em 140,5 milhões.",
+        "edi": [
+          "Agro atravessa semana de recordes produtivos e oportunidades de sustentabilidade. 9º levantamento da Conab (11 de junho) projetou safra 2025/26 em recorde histórico de 358,637 milhões de toneladas: soja 180,3 Mt e milho 140,5 Mt. Consumo interno firma-se (milho, trigo, arroz conforme dados USDA em Cultivar), enquanto exportações de soja seguem robustas em junho.",
+          "Na frente ambiental, destaque: estudo ABIEC/FGV Agro apresentado à FAO (8 de junho) projeta redução de até 92,6% na intensidade de emissões da pecuária brasileira até 2050. Evento AGRO 360° (9 de junho, São Paulo) reuniu líderes (JBS, Mosaic, Rumo, FS, 3tentos, Vibra) para debater posicionamento do agro na nova ordem global, consolidando percepção de Brasil como player sustentável."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Capturar momentum de safra recorde (358,6 Mt) com logística e estocagem eficiente"
+          },
+          {
+            "ico": "🌱",
+            "txt": "Comunicar redução -92,6% emissões pecuária como diferencial nos mercados internacionais"
+          },
+          {
+            "ico": "📤",
+            "txt": "Manter força em exportações soja/grãos (demanda interna firme, externos fortes)"
+          },
+          {
+            "ico": "🤝",
+            "txt": "Participar em iniciativas ESG (AGRO 360°, FAO) para consolidar posicionamento global"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Com SINAPI acumulando +3,26% de inflação anual, como manter viabilidade econômica de novos empreendimentos em ambiente de SELIC 14,50%?",
+        "quote": "SINAPI registrou custo médio de R$ 1.953 por m² em maio de 2026, com alta mensal de 0,36% e acumulada de 3,26% no ano.",
+        "edi": [
+          "Construção enfrenta persistente pressão de custos na semana. SINAPI reporta custo médio de R$ 1.953/m² em maio, com variação mensal de +0,36% e acumulada no ano de +3,26%. INCC (FGV) confirma dinâmica inflacionária setorial: +0,88% mês, +3,47% acum. ano. Com SELIC mantida em 14,50% a.a., encarecem-se financiamentos imobiliários.",
+          "IPCA projetado em 5,11% para 2026 (Focus 12 de junho) sinaliza pressão inflacionária contínua, afetando viabilidade econômica de novos projetos. Compressão de margens força escolhas entre reduzir escopo, aumentar preço final (reduzindo demanda) ou buscar ganhos de produtividade. Crédito imobiliário torna-se desafio estrutural no triênio."
+        ],
+        "acoes": [
+          {
+            "ico": "📉",
+            "txt": "Atacar redução de custos via eficiência de produção (SINAPI +3,26% a.a.)"
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Otimizar mix de materiais e processos para mitigar SELIC 14,50%"
+          },
+          {
+            "ico": "💰",
+            "txt": "Avaliar linhas de crédito governo (Desenrola máx. 1,99%/mês) para capex obras"
+          },
+          {
+            "ico": "🔧",
+            "txt": "Investir em inovação construtiva (pré-moldados, automação) para ganhos de escala"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Com crescimento de 13,1% durante Dia dos Namorados, pode e-commerce manter ritmo após festas juninas e Copa do Mundo?",
+        "quote": "E-commerce cresceu 13,1% entre 6 e 12 de junho de 2026, enquanto lojas físicas avançaram apenas 0,6%, segundo ICVA.",
+        "edi": [
+          "E-commerce desponta como grande propulsor do varejo na semana. Registrou crescimento de 13,1% entre 6 e 12 de junho (Dia dos Namorados), contrastando com lojas físicas (+0,6%). Desempenho impulsionado por datas sazonais (Dia dos Namorados, Copa do Mundo, festas juninas) e pela mudança estrutural de preferência de consumidor por conveniência digital.",
+          "Oportunidade reside em consolidar essa trajetória pós-eventos através de retenção de clientes, personalização e logística eficiente. Com R$ 22,14 bilhões em vendas projetadas para junho (varejo geral) e e-commerce capturando fatia crescente, foco em omnichannel (integração física-digital) será diferencial. Cautela do consumidor (materializado, 95,94 relevância) reforça necessidade de ofertas acessíveis e parcelamento competitivo."
+        ],
+        "acoes": [
+          {
+            "ico": "🎪",
+            "txt": "Preparar estratégias para Copa (junho/julho) e festas juninas, capitalizando +13,1% crescimento"
+          },
+          {
+            "ico": "🔄",
+            "txt": "Integrar omnichannel (lojas físicas+digital) para compensar baixa performance loja física (+0,6%)"
+          },
+          {
+            "ico": "📊",
+            "txt": "Usar dados de Dia dos Namorados para personalizaçao e retenção pós-pico"
+          },
+          {
+            "ico": "🚚",
+            "txt": "Otimizar logística (prazos, custos) ante SELIC 14,50% e pressão em margens"
+          }
+        ]
+      }
+    }
   }
 }

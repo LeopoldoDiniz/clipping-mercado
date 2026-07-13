@@ -618,5 +618,189 @@
         "val": -0.094
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🤖",
+          "txt": "Inteligência Artificial como motor transversal: setor bancário investe R$ 50,4 bi em IA (crescimento 39%) — modelo viável para outras indústrias"
+        },
+        {
+          "ico": "💰",
+          "txt": "Aproveitar queda de Selic (14,25%) para renegociar dívidas e desendividamento familiar via Desenrola Adimplentes"
+        },
+        {
+          "ico": "⚠️",
+          "txt": "Monitorar risco tarifário americano: expectativa de exportação caiu abaixo de 50 pontos pela primeira vez no ano (CNI)"
+        },
+        {
+          "ico": "🌍",
+          "txt": "Febraban reforça ESG como ferramenta de mobilização de capital privado para transição climática — oportunidade de diferenciação"
+        },
+        {
+          "ico": "📊",
+          "txt": "Cautela do consumidor materializada: persiste apesar de melhora leve em confiança de comércio (102,6 pontos) e serviços"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Como converter o otimismo isolado da construção em resistência diante das tarifas americanas?",
+        "quote": "Sondagem Industrial CNI de junho revelou que expectativa de exportação caiu abaixo de 50 pontos pela primeira vez no ano, pressionada pelas propostas de tarifas dos EUA.",
+        "edi": [
+          "A indústria segue em contrastes. O IPP recuou 0,30% em maio, impulsionado principalmente pela queda de 2,05% em alimentos (açúcares). A produção geral cresceu 0,7% em abril, mas confiança dos industriários paulistas encerra junho em pessimismo (Icei-SP 45,4 pontos).",
+          "Contraponto: a indústria da construção mostra otimismo inédito desde fevereiro, com expectativa de novos projetos subindo 3,3 pontos para 52,5 pontos. Expectativas em contratações, compra de insumos e atividade geral também melhoraram, sinalizando confiança setorial."
+        ],
+        "acoes": [
+          {
+            "ico": "🛡️",
+            "txt": "Antecipar renegociações com fornecedores para mitigar exposição tarifária americana"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Acelerar automação e IA em processos para ganho de produtividade em contexto de pressão de preços"
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Captação agressiva de novos projetos de construção enquanto índice de expectativa (52,5) permanece elevado"
+          },
+          {
+            "ico": "📈",
+            "txt": "Monitorar fluxo de exportações semanalmente para ajustes rápidos às negociações comerciais com EUA"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Semiduráveis puxarão recuperação sustentada enquanto consumidor permanece endividado?",
+        "quote": "Confiança do comércio avançou 0,2% em junho para 102,6 pontos, impulsionada principalmente pelo segmento de bens semiduráveis (moda e vestuário), segundo CNC de 30 de junho.",
+        "edi": [
+          "Comércio interrompeu duas quedas consecutivas com avanço de 0,2% em junho (102,6 pontos). Segmento de semiduráveis foi o motor, especialmente moda e vestuário. Porém, realidade persiste: percepção dos varejistas sobre condições econômicas atuais ainda é de piora.",
+          "Cautela do consumidor e endividamento familiar são materializados como riscos de relevância máxima (100%), refletindo impacto direto nos setores de comércio e serviços. Varejo geral recuou 1,5% em volume (PMC, abril)."
+        ],
+        "acoes": [
+          {
+            "ico": "💳",
+            "txt": "Ampliar programas de crédito segmentado e Desenrola Adimplentes para semiduráveis com Selic em queda"
+          },
+          {
+            "ico": "📱",
+            "txt": "Reforçar presença omnichannel e checkout simplificado para converter consumidor digital e retraído"
+          },
+          {
+            "ico": "🎯",
+            "txt": "Focar moda e vestuário como âncoras de tráfego e ticket médio"
+          },
+          {
+            "ico": "📊",
+            "txt": "Monitorar índices de endividamento familiar via dados de crédito para antecipar ondas de cautela"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Como PMEs de serviços capturam oportunidades dos R$ 50,4 bilhões em investimentos tecnológicos bancários?",
+        "quote": "Setor bancário projeta investimento de R$ 50,4 bilhões em tecnologia em 2026, com crescimento de 39% em IA e 30% em nuvem, conforme Pesquisa Febraban de Tecnologia Bancária 2026.",
+        "edi": [
+          "Serviços, especialmente financeiro, atravessam transformação digital intensa. Bancos destinam R$ 50,4 bi à tecnologia em 2026 (alta 8%), priorizando IA (crescimento 39%) e nuvem (crescimento 30%) como pilares. Cibersegurança é prioridade de 100% dos bancos. Arrecadação federal atingiu recorde de R$ 266,8 bilhões em maio, refletindo recuperação de atividade.",
+          "Febraban reforça papel central do setor financeiro na mobilização de capital privado para transição climática (London Climate Action Week, 25 de junho), alinhando ESG com investimentos concretos e compromisso de emissões líquidas zero até 2050."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Desenvolver soluções de IA e TaaS para SMBs aproveitando demanda explícita de institutos financeiros"
+          },
+          {
+            "ico": "🔐",
+            "txt": "Oferecer serviços de cibersegurança gerenciada — 100% dos bancos priorizam área"
+          },
+          {
+            "ico": "💼",
+            "txt": "Parcerias estratégicas com fintech e bancos para integração nativa de cloud e APIs"
+          },
+          {
+            "ico": "🌍",
+            "txt": "Explorar demanda de serviços ESG e consultoria em transição climática — agenda bancária fortalecida"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Safra de 350,4 Mt compensará pressão de custos de insumos e energia?",
+        "quote": "Estimativa de safra de grãos para 2026 é de 350,4 Mt, com alta de 0,5% em relação ao mês anterior (IBGE/LSPA, maio 2026).",
+        "edi": [
+          "Agronegócio mantém perspectiva de crescimento com safra de 350,4 Mt estimada para 2026 (crescimento 0,5% vs. mês anterior). Porém, pressões inflacionárias refletem em preços de alimentos: IPCA registra impacto de 0,287 em alimentação/bebidas, com destaque para batata-inglesa e tomate que mais que dobraram de preço no primeiro semestre.",
+          "Bandeira tarifária em amarelo mantém pressão de custos de energia elétrica, impactando custos de produção e logística. Volatilidade de insumos afeta margem de rentabilidade, exigindo estratégias de hedging e otimização de cadeia."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Otimizar cadeia logística e armazenagem para reduzir desperdício e custos de transportes em contexto de alta energética"
+          },
+          {
+            "ico": "💰",
+            "txt": "Renegociar dívidas e buscar refinanciamento com Selic em trajetória de queda (14,25% em junho, projeção 13,50% fim 2026)"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em agricultura de precisão e IA para mitigar impacto de volatilidade de insumos e clima"
+          },
+          {
+            "ico": "📦",
+            "txt": "Diversificar canais de comercialização (direto, cooperativas, exportação) para contornar pressões de preços domésticos"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Otimismo de 52,5 pontos vai se converter em fluxo real de contratações e investimentos?",
+        "quote": "Pela primeira vez desde fevereiro, Sondagem Indústria da Construção CNI indicou aumento esperado de novos empreendimentos, com índice de expectativa subindo 3,3 pontos para 52,5 pontos em junho 2026.",
+        "edi": [
+          "Construção registra virada de sentimento inédita em meses. Índice de expectativa por novos projetos subiu 3,3 pontos em junho para 52,5 pontos, quebrando sequência de pessimismo. Expectativas em contratações, compra de insumos e nível de atividade também melhoraram significativamente, sinalizando confiança genuína em recuperação.",
+          "Custos mantêm pressão: SINAPI em R$ 1.953/m² (+0,36% mês, +3,26% ano) e INCC FGV +0,88% no mês (acumulado +3,47% ano). Queda de Selic (14,25%) oferece oportunidade de refinanciamento de projetos em carteira."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Acelerar aprovação de projetos em carteira e captação de novos para materializar otimismo enquanto índice de expectativa >50"
+          },
+          {
+            "ico": "💼",
+            "txt": "Reforçar captação de financiamentos com instituições financeiras diante de Selic em queda e demanda de projetos"
+          },
+          {
+            "ico": "👷",
+            "txt": "Renegociar contratos com fornecedores para mitigar pressão de custos (SINAPI acumula +3,26% no ano)"
+          },
+          {
+            "ico": "📋",
+            "txt": "Modernizar processos com BIM, cloud e IA para ganho de eficiência operacional e gestão de custos"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "E-commerce crescerá em consumidor cautelo endividado ou acompanhará retração do varejo geral?",
+        "quote": "Varejo geral (PMC) recuou 1,5% em volume no mês de abril (IBGE), sugerindo retração que afeta também canais digitais diante de cautela do consumidor.",
+        "edi": [
+          "E-commerce não teve menção direta em clipping/notícias da semana 26, mas setor acompanha dinâmica de cautela do consumidor materializada como risco máximo (relevância 100%). IPCA-15 em 0,41% (junho) com pressões em energia (0,185) e alimentos (0,287) pressionam poder de compra.",
+          "Varejo físico recuou 1,5% em volume (PMC, abril), sugerindo demanda geral deprimida. Contudo, segmento de semiduráveis (moda/vestuário) mostrou resiliência em comércio, sinalizando categorias com potencial de crescimento também em canais digitais em contexto de programas de crédito."
+        ],
+        "acoes": [
+          {
+            "ico": "💳",
+            "txt": "Ampliar oferta de programas de parcelamento, cupons e cashback para atrair consumidor retraído com Selic em queda"
+          },
+          {
+            "ico": "📱",
+            "txt": "Otimizar experiência mobile e checkout em 1-clique para reduzir fricção de conversão de consumidor cautelo"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em sistema de recomendação com IA para aumentar AOV e relevância de produtos"
+          },
+          {
+            "ico": "🎯",
+            "txt": "Focar em categorias resilientes (moda, vestuário, essenciais) que mostram demanda mesmo em contexto de cautela"
+          }
+        ]
+      }
+    }
   }
 }

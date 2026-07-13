@@ -613,5 +613,189 @@
         "val": -0.094
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "⚡",
+          "txt": "ANEEL destinou R$ 5,6 bilhões para redução de tarifas; regulamentação LED pode economizar 283-432 TWh até 2040"
+        },
+        {
+          "ico": "🤖",
+          "txt": "PMEs superam grandes empresas em adoção de IA, mas barreiras de treinamento e redesenho organizacional limitam exploração do potencial"
+        },
+        {
+          "ico": "📋",
+          "txt": "ESG consolidado como condição obrigatória para financiamento — não é mais diferencial, é pré-requisito"
+        },
+        {
+          "ico": "👥",
+          "txt": "Engenharia enfrenta crise de talento: 73% dos empregadores relatam dificuldade em recrutar qualificados"
+        },
+        {
+          "ico": "⛽",
+          "txt": "Retirada gradual de subsídios ao diesel (R$ 0,35/litro) pressiona custos operacionais em transporte e logística"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Com tarifas de energia reduzidas em R$ 5,6 bilhões, mas enfrentando crise de talento (73% com dificuldade), como a indústria acelerará inovação?",
+        "quote": "A regulamentação de eficiência energética para LEDs pode gerar economia acumulada de 283 a 432 TWh até 2040, reduzindo custos estruturais.",
+        "edi": [
+          "A indústria se depara com oportunidades contrabalanceadas. A ANEEL destinou R$ 5,6 bilhões para redução de tarifas em 19 estados, enquanto a primeira regulamentação nacional de eficiência energética para LEDs promete economia acumulada de 283 a 432 TWh até 2040. Simultaneamente, a retirada gradual de subsídios ao diesel (R$ 0,35/litro) pressiona custos operacionais.",
+          "A maior preocupação estrutural é a crise de talento no setor de engenharia, com 73% dos empregadores relatando dificuldades em recrutar profissionais qualificados. PMEs estão superando grandes corporações na adoção de IA, embora enfrentem barreiras significativas de treinamento e redesenho organizacional."
+        ],
+        "acoes": [
+          {
+            "ico": "💡",
+            "txt": "Mapear ganhos de eficiência energética (LEDs + ANEEL) para redução de custos estruturais"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em programas de treinamento em IA para contornar barreira de capacitação"
+          },
+          {
+            "ico": "🎓",
+            "txt": "Criar parcerias com universidades para pipeline de talentos em engenharia"
+          },
+          {
+            "ico": "💰",
+            "txt": "Priorizar projetos ESG para acessar financiamento estruturado"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Com o consumidor retraído e endividado, como linhas de crédito como 'Desenrola Adimplentes' conseguem recompor o poder de compra?",
+        "quote": "O IPCA em 5,33% pressiona especialmente alimentos (0,287 de variação) e habitação (0,185), enquanto a cautela do consumidor permanece materializada.",
+        "edi": [
+          "O comércio enfrenta pressões contrapostas. A cautela do consumidor e endividamento familiar continuam materializados, com varejistas ainda percebendo piora nas condições econômicas. O IPCA em 5,33% pressiona especialmente alimentos e habitação, reduzindo poder de compra.",
+          "Linhas de crédito como 'Desenrola Adimplentes' buscam recompor capacidade de consumo. A regulamentação de eficiência energética para LEDs oferece redução de custos operacionais em 3 a 5 anos, enquanto PMEs adotam IA para otimizar operações."
+        ],
+        "acoes": [
+          {
+            "ico": "📊",
+            "txt": "Potencializar linhas como 'Desenrola Adimplentes' para recompor poder de compra"
+          },
+          {
+            "ico": "🔌",
+            "txt": "Acelerar implementação de LEDs para ganhos de eficiência operacional (3-5 anos)"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Implantar soluções de IA para automação de processos críticos (gestão de estoque, preços)"
+          },
+          {
+            "ico": "📱",
+            "txt": "Reforçar canal digital como alavancagem ante retração do consumo offline"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Se PMEs já superam grandes empresas na adoção de IA, por que barreiras de treinamento seguem sendo o maior gargalo?",
+        "quote": "O volume de serviços cresceu +1,2% m/m (abr/26) com acúmulo anual de +2,2%, mas cautela do consumidor materializada limita expansão.",
+        "edi": [
+          "O setor avança modestamente (+1,2% em volume no mês, +2,2% acumulado) diante de cenário contraditório. A cautela do consumidor e endividamento familiar continuam materializados, reduzindo demanda por serviços complementares.",
+          "PMEs no setor lideram adoção de IA, superando grandes corporações em frequência de uso, mas o maior desafio é adaptação cultural e falta de treinamento. A crise de talento em engenharia (73% com dificuldade) impacta infraestrutura, enquanto ESG se consolida como condição para financiamento."
+        ],
+        "acoes": [
+          {
+            "ico": "🎯",
+            "txt": "Desenhar programas de treinamento em IA focados em redesenho de funções e processos"
+          },
+          {
+            "ico": "💳",
+            "txt": "Acessar linhas de crédito ESG para financiar transformação digital com sustentabilidade"
+          },
+          {
+            "ico": "👥",
+            "txt": "Estabelecer parcerias com universidades para pipeline de talentos em engenharia"
+          },
+          {
+            "ico": "📈",
+            "txt": "Explorar modelos de 'Technology as a Service' (TaaS) para diversificar receita"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Com a safra em 350,4 Mt e alimentos pressionando 0,287 no IPCA, como a cadeia agrícola se posiciona ante retirada de subsídios ao diesel?",
+        "quote": "A estimativa da safra 2026 é de 350,4 Mt, crescimento de +0,5% versus o mês anterior (IBGE/LSPA mai/26).",
+        "edi": [
+          "O agro encerra com safra projetada em 350,4 Mt (+0,5% versus maio), mantendo tendência incremental. Porém, a retirada gradual de subsídios ao diesel pressiona custos operacionais em mecanização e transporte.",
+          "A pressão de alimentos no IPCA (0,287 de variação) indica rigidez nos preços e potencial compressão de margens. ESG consolidado como condição para financiamento abre oportunidade de crédito estruturado. PMEs adotam IA para otimizar plantio, embora enfrentem barreiras de treinamento."
+        ],
+        "acoes": [
+          {
+            "ico": "🚜",
+            "txt": "Priorizar otimizações de mecanização e logística ante pressão de custos de diesel"
+          },
+          {
+            "ico": "🌱",
+            "txt": "Certificar práticas ESG para acessar financiamento estruturado com melhores taxas"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Implementar IA em gestão de safra (previsão, irrigação, insumos) com parceiros especializados"
+          },
+          {
+            "ico": "📊",
+            "txt": "Monitorar repasse de inflação de alimentos à renda agrícola (IPCA alimentos 0,287)"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Com custos SINAPI subindo +0,36% mês e Concrete Show enfatizando inovação, como a construção equilibra inflação de custos com investimento em tecnologia?",
+        "quote": "O custo médio m² na construção (SINAPI) é de R$ 1.953, com variação de +0,36% no mês e acúmulo de +3,26% no ano (IBGE/SINAPI mai/26).",
+        "edi": [
+          "A construção segue sob pressão inflacionária, com custos SINAPI em R$ 1.953/m² (+0,36% mês, +3,26% ano) e INCC subindo +0,88% mês (+3,47% ano). A regulamentação de eficiência energética para LEDs oferece redução pós-obra, enquanto ANEEL destinou R$ 5,6 bilhões para redução de tarifas em 19 estados.",
+          "O Concrete Show 2026 (26 mil profissionais esperados) enfatiza inovação, eficiência e sustentabilidade. A crise de talento em engenharia (73%) e demanda crescente de ESG para financiamento criam barreiras. Investimentos em sustentabilidade são pré-requisito."
+        ],
+        "acoes": [
+          {
+            "ico": "💡",
+            "txt": "Incorporar soluções de eficiência energética (LED, solar distribuída) no projeto"
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Participar do Concrete Show 2026 para atualizar-se em inovação e identificar fornecedores"
+          },
+          {
+            "ico": "📋",
+            "txt": "Certificar práticas ESG em projetos para garantir acesso a financiamento estruturado"
+          },
+          {
+            "ico": "👨‍🔧",
+            "txt": "Estruturar programa de trainee com universidades para pipeline de engenheiros"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Diante do consumidor retraído e endividado, como o e-commerce se diferencia no canal de maior retração?",
+        "quote": "A cautela do consumidor e endividamento familiar (-1,5% em varejo PMC m/m, abr/26) abrem margem para modelos assíncronos e marketplace de baixo ticket.",
+        "edi": [
+          "O e-commerce enfrenta pressão similarmente ao varejo: cautela do consumidor (-1,5% em volume PMC m/m) e endividamento materializado reduzem frequência e ticket. A inflação em alimentos (0,287 IPCA) comprime poder de compra especialmente em segmentos de subsistência.",
+          "A necessidade de linhas como 'Desenrola Adimplentes' e adoção acelerada de IA por PMEs sinalizam que plataformas de baixo ticket e pagamento parcelado ganham relevância. Regulamentação de eficiência energética e R$ 5,6 bilhões da ANEEL para redução de tarifas impactam custos de data centers e logística."
+        ],
+        "acoes": [
+          {
+            "ico": "💳",
+            "txt": "Ofertar parcelamento e linhas como 'Desenrola Adimplentes' para retomar poder de compra"
+          },
+          {
+            "ico": "📦",
+            "txt": "Otimizar custos de logística/data center com eficiência energética (ANEEL R$ 5,6 bi)"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Implantar IA em recomendação e preço dinâmico para maximizar conversão com ticket menor"
+          },
+          {
+            "ico": "🛒",
+            "txt": "Expandir modelo de marketplace B2C para segmentos de baixa renda com sortimento pulverizado"
+          }
+        ]
+      }
+    }
   }
 }

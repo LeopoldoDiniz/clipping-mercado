@@ -844,6 +844,7 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
         "kpis_setoriais": kpis_setoriais,   # Serviços/PMS, Construção/SINAPI, Agro/LSPA
         "pressoes_ipca": pressoes_ipca,     # impacto por grupo (IBGE/SIDRA 7060)
         "porter": dados.get("porter", {}),   # 5 Forças por setor (avaliação estrutural)
+        "analise": dados.get("analise"),     # leitura acionável por setor + ações do Panorama (dinâmica por semana)
         "longitudinal": longitudinal,
     }
     os.makedirs("data", exist_ok=True)

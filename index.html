@@ -573,6 +573,26 @@ const AGENDA=[
   {data:"22/jul",tag:"dado",titulo:"Sondagem da Construção (CNI/CBIC)",setor:"construcao"},
   {data:"23/jul",tag:"atencao",titulo:"Copom: próxima decisão de juros",setor:null}
 ];
+// AGENDA determinística: próximas divulgações oficiais recorrentes (IBGE/FGV/MDIC), calculadas
+// a partir da semana de referência — sempre coerentes com o período, sem datas fixas/chumbadas.
+function isoWeekFriday(key){const w=parseInt(String(key).replace(/\D/g,""),10)||1;const s=new Date(Date.UTC(2026,0,4));
+  const day=(s.getUTCDay()+6)%7;s.setUTCDate(s.getUTCDate()-day+(w-1)*7+4);return s;}
+function buildAgenda(){
+  const ref=isoWeekFriday(typeof refKey==="function"?refKey():"W01");
+  const rel=[
+    {d:2, t:"MDIC divulga a balança comercial do mês",setor:"agro"},
+    {d:3, t:"IBGE divulga a PIM — produção industrial",setor:"industria"},
+    {d:6, t:"FGV divulga o INCC-M — custo da construção",setor:"construcao"},
+    {d:10,t:"IBGE divulga o IPCA do mês",setor:null},
+    {d:11,t:"IBGE divulga a PMS — volume de serviços",setor:"servicos"},
+    {d:13,t:"IBGE divulga a PMC — volume do varejo",setor:"comercio"},
+    {d:24,t:"IBGE divulga o IPCA-15 (prévia da inflação)",setor:null}
+  ];
+  const out=rel.map(r=>{let dt=new Date(Date.UTC(ref.getUTCFullYear(),ref.getUTCMonth(),r.d));
+    if(dt<ref)dt=new Date(Date.UTC(ref.getUTCFullYear(),ref.getUTCMonth()+1,r.d));
+    return {data:`${String(dt.getUTCDate()).padStart(2,"0")}/${_MABBR2[dt.getUTCMonth()+1]}`,tag:"dado",titulo:r.t,setor:r.setor,_o:dt.getTime()};});
+  out.sort((a,b)=>a._o-b._o);return out.map(({_o,...x})=>x);
+}
 
 // Análise por setor (Leitura + ações + provocação). Panorama usa HERO/LEITURA/EDITORIAL.
 const SETOR_ANALISE={
@@ -1100,7 +1120,8 @@ function analiseGA(){
 }
 function viewGeral(){
   const P=pressao();
-  const agendaList=state.sector==="panorama"?AGENDA:AGENDA.filter(a=>!a.setor||a.setor===state.sector);
+  const _ag=buildAgenda();
+  const agendaList=state.sector==="panorama"?_ag:_ag.filter(a=>!a.setor||a.setor===state.sector);
   const secTag=state.sector==="panorama"?"":` · <span style="color:${SMETA[state.sector].cor};font-weight:700">${SMETA[state.sector].nome}</span>`;
   const L=leitura();const A=analiseGA();
   return `${periodBanner()}${histBanner()}${previaSetor()}<div class="vg">
@@ -1640,6 +1661,13 @@ function applyData(sel,allData,metas){
   SIGNALS=adaptSignals(sel.longitudinal||[]);SIGNALS.forEach((s,i)=>{s.i=i;});
   MATRIX_REAL=(sel.longitudinal||[]).some(l=>l.severidade!=null&&l.iminencia!=null);
   PESTEL=adaptPestel(sel.pestel||[]);
+  // Leitura/ações por setor + ações do Panorama: usa a análise gerada para a semana (sel.analise);
+  // senão, mantém o texto-base de referência. Base capturada 1x para restaurar ao trocar de semana.
+  if(!window.__saBase){window.__saBase=JSON.parse(JSON.stringify(SETOR_ANALISE));window.__laBase=JSON.parse(JSON.stringify(LEITURA.acoes));}
+  Object.keys(window.__saBase).forEach(k=>{SETOR_ANALISE[k]=JSON.parse(JSON.stringify(window.__saBase[k]));});
+  LEITURA.acoes=JSON.parse(JSON.stringify(window.__laBase));
+  if(sel.analise){if(sel.analise.setores)Object.assign(SETOR_ANALISE,sel.analise.setores);if(sel.analise.panorama&&Array.isArray(sel.analise.panorama.acoes))LEITURA.acoes=sel.analise.panorama.acoes;}
+  else if((sel.origem==="indicadores_oficiais")||(sel.busca_retroativa===false)){LEITURA.acoes=[];}  // semana histórica sem análise própria: não mostra ação congelada
   // Notícias: agrega o clipping de TODAS as semanas do escopo (não só a de referência),
   // dedup por título, mais recentes primeiro — espelha a agregação longitudinal dos sinais.
   {const _wk=(typeof scopeKeys==="function")?scopeKeys():[sel._k];const _seen=new Set();const _agg=[];

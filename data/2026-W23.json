@@ -516,5 +516,189 @@
     "itens": 13,
     "brutos_verificados": 17,
     "aplicado_em": "2026-07-12"
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💳",
+          "txt": "Acompanhar o repasse da queda da Selic às condições de crédito para PJ e PMEs"
+        },
+        {
+          "ico": "🇺🇸",
+          "txt": "Monitorar a evolução da proposta de novas tarifas dos EUA sobre produtos brasileiros"
+        },
+        {
+          "ico": "🤖",
+          "txt": "Priorizar investimentos em IA e Technology as a Service (TaaS) para ganho de eficiência"
+        },
+        {
+          "ico": "🤝",
+          "txt": "Avaliar adesão ao Desenrola Adimplentes como proteção contra endividamento familiar"
+        },
+        {
+          "ico": "📋",
+          "txt": "Cobrar simplificação do acesso a recursos de inovação para PMEs industriais"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A indústria brasileira segue em recuperação ou já mostra sinais de contração?",
+        "quote": "A Produção Industrial (PIM) cresceu 0,7% em abril, quarto mês seguido de alta (+2,7% em 12 meses), mas o PMI industrial de maio caiu de 52,6 para 49,1 pontos, sinalizando contração da atividade fabril.",
+        "edi": [
+          "O setor apresenta leitura dividida na Semana 23: dados oficiais do IBGE mostram a produção física em expansão consistente desde fevereiro, com IPP de 2,62% em abril (acum. ano 5,12%), revertendo a desaceleração anterior. Já o indicador de sentimento (PMI) antecipa piora para maio, o que reforça cautela para os próximos meses.",
+          "O risco da proposta de novas tarifas dos EUA sobre produtos brasileiros segue em curso e com relevância elevada (73/100), enquanto a burocracia no acesso a recursos de inovação para PMEs permanece como risco a monitorar. Do lado positivo, TaaS e adoção de IA seguem como oportunidades transversais de otimização para o setor."
+        ],
+        "acoes": [
+          {
+            "ico": "📊",
+            "txt": "Cruzar PIM (+0,7%) e IPP (+2,62%) para calibrar preços e volumes de abril"
+          },
+          {
+            "ico": "⚠️",
+            "txt": "Reavaliar exposição a exportações para os EUA diante do risco tarifário em curso"
+          },
+          {
+            "ico": "🏭",
+            "txt": "Testar TaaS/IA em linhas de produção para compensar a desaceleração do PMI"
+          },
+          {
+            "ico": "📋",
+            "txt": "Mapear linhas de crédito à inovação para reduzir a barreira burocrática às PMEs"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O consumo do comércio segue contido pela cautela do consumidor ou já reage a datas sazonais?",
+        "quote": "O volume de vendas do varejo (PMC) cresceu 0,7% em março (acum. ano +2,4%), enquanto o Dia dos Namorados deve movimentar R$ 26,4 bilhões com 100,1 milhões de consumidores, segundo CNDL/SPC Brasil.",
+        "edi": [
+          "A Cautela do Consumidor e Endividamento Familiar segue como risco materializado (relevância 100/100), com a confiança do comércio em queda em maio. Ainda assim, a data sazonal do Dia dos Namorados mostrou fôlego pontual: o Shopping Prataviera, em Caxias do Sul, projetou alta de 10% nas vendas para 12/06.",
+          "O Desenrola Adimplentes surge como oportunidade em curso para conter a inadimplência, junto ao avanço do crédito direcionado (Minha Casa Minha Vida, FGI) e à antecipação do 13º salário como alívio temporário às famílias."
+        ],
+        "acoes": [
+          {
+            "ico": "🛍️",
+            "txt": "Explorar datas sazonais (Dia dos Namorados) como alavanca de curto prazo"
+          },
+          {
+            "ico": "💳",
+            "txt": "Divulgar o Desenrola Adimplentes como ferramenta de retenção de clientes endividados"
+          },
+          {
+            "ico": "📉",
+            "txt": "Ajustar estoques e crédito ao consumidor ao cenário de cautela ainda materializado"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Adotar IA/TaaS em atendimento e gestão para compensar margens pressionadas"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "O setor de serviços mantém a expansão do PMI apesar da retração do PMS em março?",
+        "quote": "O PMI de Serviços atingiu 51,3 pontos em junho, oitavo mês seguido de expansão, contrastando com a retração de 1,1% do volume de serviços (PMS) em março (acum. ano ainda positivo, +2,3%).",
+        "edi": [
+          "A semana trouxe movimentação regulatória relevante: o CADE aprovou a venda da Oi Móvel para TIM, Vivo e Claro, avançando o projeto Norte Conectado, enquanto a Anatel abrirá consulta pública sobre regulação de IoT/M2M (8 a 30 de julho), tema que envolve cerca de 30 milhões de dispositivos conectados.",
+          "O tarifaço dos EUA também pressiona a telecom, setor que ainda perde R$ 12 bilhões por ano com pirataria na região. Do lado da demanda, o Dia dos Namorados reforça o consumo de serviços, dentro do total de R$ 26,4 bilhões estimado para comércio e serviços."
+        ],
+        "acoes": [
+          {
+            "ico": "📡",
+            "txt": "Acompanhar a consulta pública da Anatel sobre IoT/M2M (8-30/jul)"
+          },
+          {
+            "ico": "🤝",
+            "txt": "Avaliar impactos da consolidação Oi-TIM-Vivo-Claro na concorrência do setor"
+          },
+          {
+            "ico": "🔐",
+            "txt": "Reforçar antipirataria diante das perdas de R$ 12 bi/ano na região"
+          },
+          {
+            "ico": "📈",
+            "txt": "Sustentar a expansão do PMI de Serviços com foco em eficiência via TaaS/IA"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra de grãos 2026 segue sendo revisada para cima em meio à pressão de preços de alimentos?",
+        "quote": "A estimativa da safra de grãos (LSPA) chegou a 348,7 milhões de toneladas em abril, alta de 0,1% ante o mês anterior.",
+        "edi": [
+          "Sem clipping dedicado ao agro nesta semana, a leitura é derivada dos indicadores: a LSPA aponta manutenção da trajetória de alta da safra 2026, o que tende a sustentar oferta e favorecer a formação de preços ao produtor no médio prazo.",
+          "No lado da demanda, o grupo Alimentação e bebidas foi o que mais pressionou o IPCA de abril (0,287 p.p., o maior entre os grupos monitorados), indicando que a cadeia de alimentos segue relevante para a inflação, mesmo com a safra em expansão marginal."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Monitorar a atualização da LSPA como termômetro de oferta para a safra 2026"
+          },
+          {
+            "ico": "🍎",
+            "txt": "Acompanhar a pressão de Alimentação e bebidas no IPCA como sinal de repasse de preços"
+          },
+          {
+            "ico": "💳",
+            "txt": "Avaliar o efeito da queda da Selic no custo do crédito rural"
+          },
+          {
+            "ico": "📦",
+            "txt": "Preparar logística de escoamento para o volume adicional de grãos estimado"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo da construção segue pressionado mesmo com o corte da Selic sinalizado no período?",
+        "quote": "O custo médio da construção (SINAPI) subiu a R$ 1.946/m² em abril, alta de 0,72% no mês (acum. ano +2,89%), enquanto o INCC da FGV avançou 1,00% no mês (acum. ano +2,56%).",
+        "edi": [
+          "Os dois indicadores de custo da construção — SINAPI (insumos/mão de obra) e INCC (mercado) — seguem em trajetória de alta consistente em abril, o que mantém pressão sobre orçamentos de obra. Na agenda setorial, o Secovi-SP promoveu, em 02/06, encontro estratégico com associados sobre representatividade, economia e inovação no mercado imobiliário.",
+          "O avanço do crédito direcionado, citado no acompanhamento do Desenrola Adimplentes (Minha Casa Minha Vida e FGI), é o único sinal de crédito habitacional disponível nos dados desta semana, indicando possível alívio de financiamento à medida que a política monetária afrouxa."
+        ],
+        "acoes": [
+          {
+            "ico": "🧱",
+            "txt": "Repassar reajustes de SINAPI (+0,72%) e INCC (+1,00%) em orçamentos e contratos"
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Acompanhar desdobramentos do encontro estratégico do Secovi-SP"
+          },
+          {
+            "ico": "🏦",
+            "txt": "Monitorar expansão do crédito direcionado (MCMV/FGI) como alavanca de vendas"
+          },
+          {
+            "ico": "📉",
+            "txt": "Reavaliar cronogramas de obra frente ao acumulado de custo de +2,89% no ano"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Como o e-commerce brasileiro está se preparando para a agenda de IA e marketplace do segundo semestre?",
+        "quote": "O 17º Fórum E-Commerce Brasil ocorrerá em 28-30 de julho de 2026, no Anhembi, com plenárias dedicadas a IA, marketplace e logística.",
+        "edi": [
+          "Sem clipping direto de indicadores para o e-commerce nesta semana, o principal fato factual é a confirmação da 17ª edição do Fórum E-Commerce Brasil, que reunirá o setor em torno de IA, marketplace e logística — pauta tecnológica que dialoga com a consulta pública da Anatel sobre IoT/M2M (8-30/jul), ambas no eixo tecnológico do PESTEL.",
+          "Como leitura macro-derivada, o consumo sazonal do Dia dos Namorados (R$ 26,4 bilhões, 100,1 milhões de consumidores) e a oportunidade em curso de Digitalização/TaaS, que inclui o comércio entre os setores citados, sugerem ambiente favorável à venda digital, ainda que sem dado específico de faturamento online nesta semana."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Planejar participação no Fórum E-Commerce Brasil (28-30/jul, Anhembi)"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Avaliar cases de IA em marketplace e logística apresentados na agenda do fórum"
+          },
+          {
+            "ico": "📡",
+            "txt": "Acompanhar a consulta pública da Anatel sobre IoT, relevante para logística conectada"
+          },
+          {
+            "ico": "💳",
+            "txt": "Capturar demanda sazonal digital aproveitando o TaaS como diferencial competitivo"
+          }
+        ]
+      }
+    }
   }
 }

@@ -327,7 +327,7 @@
       "nome": "Econômico",
       "tema": "Inflação em desaceleração, inadimplência em alta e projeções do Focus",
       "texto": "O IPCA de junho desacelerou para 0,16%, mas a inadimplência de empresas e consumidores segue em níveis recordes. O Boletim Focus reduziu a projeção de IPCA para 2026 para 5,16%. [cite: 3, 4, 5, 8, 9, 13, 16, 20, 26, 32 in previous search, 39 in previous search]",
-      "score": 8.0,
+      "score": 8,
       "setores": [
         "transversal",
         "comercio",
@@ -352,7 +352,7 @@
       "nome": "Tecnológico",
       "tema": "Adoção de IA no setor bancário e digitalização",
       "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 indica que o setor bancário investe mais de R$ 50 bilhões em tecnologia, com a IA sendo crucial para competitividade e digitalização. [cite: 6, 24, 31 in previous search]",
-      "score": 7.0,
+      "score": 7,
       "setores": [
         "servicos",
         "transversal"
@@ -363,7 +363,7 @@
       "nome": "Ambiental",
       "tema": "Bandeira tarifária amarela e condições climáticas",
       "texto": "A manutenção da bandeira tarifária amarela pela ANEEL em julho reflete condições menos favoráveis de geração, típicas do período seco, com redução nos níveis dos reservatórios. [cite: 2, 11, 23, 27 in previous search]",
-      "score": 6.0,
+      "score": 6,
       "setores": [
         "transversal",
         "servicos",
@@ -416,7 +416,7 @@
       "cor": "down",
       "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26",
       "fonte": "IBGE",
-      "acum_ano": 2.0
+      "acum_ano": 2
     },
     {
       "label": "PIM (Indústria)",
@@ -625,7 +625,7 @@
       "status": "materializado",
       "relevancia": 86.5,
       "severidade": 8.2,
-      "iminencia": 9.0,
+      "iminencia": 9,
       "ultima_observacao": "A ANEEL manteve a bandeira tarifária amarela para julho, com acréscimo de R$ 1,885/100 kWh, confirmando a persistência dos custos elevados de energia. [cite: 2, 11, 23, 27 in previous search]",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-06",
@@ -644,7 +644,7 @@
       "status": "materializado",
       "relevancia": 86.34,
       "severidade": 7.5,
-      "iminencia": 9.0,
+      "iminencia": 9,
       "ultima_observacao": "O programa Desenrola Adimplentes teve importantes desdobramentos com a aprovação da Medida Provisória e a resolução do CMN, que estabelecem as condições e encargos financeiros para a nova linha de crédito. O programa está em fase de implementação e busca prevenir a inadimplência e reduzir o custo do crédito para trabalhadores informais.",
       "periodo_observacao": "2026-W28",
       "data_identificacao": "2026-07-02",
@@ -661,8 +661,8 @@
       ],
       "status": "em_curso",
       "relevancia": 79.5,
-      "severidade": 8.0,
-      "iminencia": 7.0,
+      "severidade": 8,
+      "iminencia": 7,
       "ultima_observacao": "A possibilidade de novas tarifas dos EUA sobre produtos brasileiros é mencionada como fator de aversão a risco no câmbio.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-02",
@@ -700,7 +700,7 @@
       "status": "em_curso",
       "relevancia": 70.25,
       "severidade": 6.5,
-      "iminencia": 7.0,
+      "iminencia": 7,
       "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 destaca investimentos de R$ 50 bilhões em tecnologia, com a IA se consolidando como essencial para o setor. [cite: 6, 24, 31 in previous search]",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-01",
@@ -718,7 +718,7 @@
       "status": "em_curso",
       "relevancia": 58.25,
       "severidade": 5.5,
-      "iminencia": 6.0,
+      "iminencia": 6,
       "ultima_observacao": "A queda de 31,9% nas vendas líquidas da Mitre no 2T26 e a valorização de imóveis abaixo da inflação (FipeZAP) indicam um cenário misto na construção. [cite: 30 in previous search, 43 in previous search, 44 in previous search, 48 in previous search, 49 in previous search]",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-02",
@@ -735,7 +735,7 @@
       ],
       "status": "em_curso",
       "relevancia": 57.25,
-      "severidade": 7.0,
+      "severidade": 7,
       "iminencia": 7.5,
       "ultima_observacao": "Sondagem da CNI indica que 97% das indústrias serão impactadas pelo fim da escala 6x1, prevendo aumento de custos e perda de competitividade. [cite: 3, 8, 12, 20, 36 in previous search]",
       "periodo_observacao": "2026-W29",
@@ -757,11 +757,195 @@
       "status": "monitorar",
       "relevancia": 53.75,
       "severidade": 8.5,
-      "iminencia": 8.0,
+      "iminencia": 8,
       "ultima_observacao": "O conflito entre EUA e Irã intensifica-se, elevando os temores sobre a oferta global de petróleo e a aversão ao risco nos mercados financeiros. [cite: 38 in previous search, 48 in previous search, 50 in previous search]",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-13",
       "origem": "real"
     }
-  ]
+  ],
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🤖",
+          "txt": "Otimizar custos via digitalização e automação para absorver aumentos trabalhistas (fim escala 6x1) e energéticos em contexto de bandeira amarela"
+        },
+        {
+          "ico": "💳",
+          "txt": "Estruturar crédito segmentado (PMEs, autônomos, informal) via programas como 'Desenrola Adimplentes' em cenário de inadimplência recorde (R$ 229,9 bilhões)"
+        },
+        {
+          "ico": "📦",
+          "txt": "Reposicionar mix de produtos para segmentos de valor e entrada, abandonando premium em contexto de cautela do consumidor (varejo -1,5%)"
+        },
+        {
+          "ico": "🌍",
+          "txt": "Hedgear câmbio e revisar sourcing diante de risco de novas tarifas dos EUA e tensões geopolíticas no Oriente Médio"
+        },
+        {
+          "ico": "🚀",
+          "txt": "Investir em diferenciação e P&D aproveitando janela de confiança empresarial em alta antes de novas incertezas materializarem"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Como absorver simultaneamente o impacto de custos da escala 6x1, energia cara e queda de produção (-0,2%) sem perder competitividade global?",
+        "quote": "97% das indústrias serão impactadas pelo fim da escala 6x1, com 73% das companhias rejeitando a medida conforme sondagem da CNI.",
+        "edi": [
+          "A semana amplifica pressões estruturais na indústria brasileira. A produção industrial caiu 0,2% em maio e a confiança empresarial, embora tenha avançado, enfrenta ameaças imediatas. A sondagem da CNI revela que 97% das indústrias sofrerão impacto do fim da escala 6x1, com 73% das companhias rejeitando a medida por prever aumento de custos e perda de competitividade.",
+          "Simultaneamente, a bandeira tarifária amarela mantém o acréscimo de R$ 1,885 a cada 100 kWh, amplificando pressão nos custos operacionais. O cenário exige resposta imediata em produtividade e eficiência, ou erosão de margens será inevitável."
+        ],
+        "acoes": [
+          {
+            "ico": "📊",
+            "txt": "Modelar cenários de aumento de custos trabalhistas e energéticos para otimizar alocação de recursos e ganhos de produtividade"
+          },
+          {
+            "ico": "⚡",
+            "txt": "Investir em eficiência energética e fontes alternativas para mitigar impacto da bandeira amarela em operações"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Acelerar adoção de automação e IA para compensar redução de jornada e aumento de custos trabalhistas"
+          },
+          {
+            "ico": "📋",
+            "txt": "Estruturar diálogo com fornecedores para renegociação de contratos antes da implementação da escala 6x1"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Como prosperar quando 60 milhões de consumidores estão endividados, 9 milhões de CNPJs estão negativados e vendas caem 1,5%?",
+        "quote": "60,1 milhões de consumidores possuem compras parceladas com 38% em inadimplência, enquanto volume de vendas do varejo cai 1,5% em abril.",
+        "edi": [
+          "O varejo enfrenta crise silenciosa de demanda. O volume de vendas caiu 1,5% em abril, enquanto a inadimplência paralisa crescimento. Pesquisa CNDL/SPC Brasil mostra que 60,1 milhões de consumidores carregam compras parceladas, e 38% ficaram inadimplentes. Mais de 9 milhões de CNPJs estavam negativados em maio, com dívidas atingindo recorde de R$ 229,9 bilhões.",
+          "A eliminação da Seleção na Copa do Mundo 2026 adiciona fator de desestímulo ao consumo, forçando replanejar de estratégias de estoque e promoção temática. A confiança empresarial avançou, mas demanda real permanece frágil."
+        ],
+        "acoes": [
+          {
+            "ico": "💳",
+            "txt": "Participar ativamente do programa 'Desenrola Adimplentes' para fidelizar clientes e recuperar consumidores em dificuldade"
+          },
+          {
+            "ico": "📱",
+            "txt": "Investir em canais digitais e marketplace para atingir consumidores com renda limitada e acesso reduzido a crédito"
+          },
+          {
+            "ico": "📊",
+            "txt": "Implementar análise preditiva de inadimplência para ajustar condições de parcelamento e reduzir exposição de risco"
+          },
+          {
+            "ico": "🎯",
+            "txt": "Reposicionar promoções e mix de produtos à realidade de consumo reduzido e busca por marcas de valor"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços crescem 1,2% mas enfrentam custos de energia cara — como escalar investimento em IA (R$ 50 bi) sem depreciar margens?",
+        "quote": "Serviços crescem 1,2% em abril com acúmulo de +2,2% no ano, enquanto setor bancário investe R$ 50 bilhões em tecnologia com bandeira tarifária amarela adicionando R$ 1,885/100 kWh.",
+        "edi": [
+          "Serviços apresenta dinâmica paradoxal: crescimento de volume de 1,2% em abril, acumulando +2,2% no ano, mas sob pressão de custos e incertezas regulatórias. O IBGE iniciou coleta da Pesquisa Nacional de Saúde 2026, abrangendo 140 mil domicílios, oferecendo inteligência sobre padrões de consumo de saúde e bem-estar.",
+          "Setor bancário investe mais de R$ 50 bilhões em tecnologia conforme pesquisa Febraban, com IA consolidada como fator essencial de competitividade. A bandeira tarifária amarela, porém, continua adicionando custos fixos, exigindo trade-off entre investimento tecnológico e eficiência operacional."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Aproveitar investimentos em IA e automação para aumentar produtividade e compensar custos energéticos persistentes"
+          },
+          {
+            "ico": "📊",
+            "txt": "Monetizar dados de comportamento do consumidor via analytics avançado para diferenciação de serviços"
+          },
+          {
+            "ico": "⚡",
+            "txt": "Negociar contratos de energia de longo prazo ou investir em fontes renováveis para estabilizar custos fixos"
+          },
+          {
+            "ico": "🏛️",
+            "txt": "Acompanhar regulamentações sobre IA e privacidade de dados para estar em conformidade com normas emergentes"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Com soja forte acima de R$ 140,00 mas café e boi em queda — como diversificar receita em portfólio dominado por commodities voláteis?",
+        "quote": "Colheita de soja 2025/26 concluída, safra de grãos em 350,4 Mt, milho de inverno em 28,5% de colheita e soja cotando acima de R$ 140,00 nos portos.",
+        "edi": [
+          "Agronegócio vive ciclos contrastantes. Colheita de soja foi concluída com sucesso, e Conab informa safra de grãos em 350,4 Mt. Milho de inverno registra 28,5% de colheita até 08/07, em ritmo normal.",
+          "Nos preços, soja avança com demanda externa aquecida, cotando acima de R$ 140,00 nos portos, mas café e boi gordo registraram quedas nos contratos futuros da B3, refletindo dinâmica de mercado seletiva e pressão em commodities não-soja. Esta volatilidade exige hedgeamento ativo e diversificação."
+        ],
+        "acoes": [
+          {
+            "ico": "📈",
+            "txt": "Maximizar hedge de soja para capturar demanda global aquecida e proteger receitas contra reversões"
+          },
+          {
+            "ico": "🔄",
+            "txt": "Diversificar portfólio de cultivos e produtos (não-soja) para reduzir exposição a ciclos de preço seletivos"
+          },
+          {
+            "ico": "📡",
+            "txt": "Investir em rastreabilidade e certificações para acessar prêmios em mercados diferenciados e sustentáveis"
+          },
+          {
+            "ico": "🧮",
+            "txt": "Monitorar condições de clima e custos de insumos para antecipar pressões de margem no milho safrinha"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Como construir esperança quando preços de imóveis crescem menos que inflação (2,42% vs 4,64% em 12 meses) e vendas despencam 32%?",
+        "quote": "Mitre registra queda de 31,9% em vendas líquidas no 2T26 (R$ 198,3 milhões), enquanto preços de imóveis subiram apenas 2,42% no semestre, abaixo da inflação acumulada.",
+        "edi": [
+          "Construção civil enfrenta contração significativa. Construtora Mitre viu vendas líquidas despencarem 31,9% no segundo trimestre para R$ 198,3 milhões. Preço médio de imóveis residenciais acumula alta de apenas 2,42% no primeiro semestre, valorização inferior à inflação de 4,64% em 12 meses.",
+          "Contrastando, custos de construção seguem em alta: SINAPI marca R$ 1.976/m² (+1,19% mês) e INCC/FGV avança 0,78% mensalmente, acumulando +4,27% no ano. Este descompasso entre custos subindo e receitas caindo erodem margens estruturalmente."
+        ],
+        "acoes": [
+          {
+            "ico": "📉",
+            "txt": "Revisar mix de produtos em portfólio, migrando para segmentos de renda média/baixa com melhor demanda"
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Otimizar processos construtivos e supply chain de materiais para reduzir custos em contexto de preços estagnados"
+          },
+          {
+            "ico": "💰",
+            "txt": "Redirecionar capital para projetos de menor ciclo, parcerias e PPPs para diversificar fontes de receita"
+          },
+          {
+            "ico": "🏛️",
+            "txt": "Monitorar programa de crédito imobiliário e políticas de subsídio para reativar demanda de habitação popular"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "E-commerce consegue ganhar share against-ciclicamente quando varejo cai 1,5% mas 60 milhões de consumidores buscam conveniência online?",
+        "quote": "Varejo geral cai 1,5% em abril, mas e-commerce pode ganhar share via digitalização de 60 milhões de consumidores endividados buscando conveniência e melhor preço.",
+        "edi": [
+          "E-commerce opera em oportunidade contra-cíclica. Enquanto varejo físico recua 1,5%, migração para canais digitais acelerada pelo endividamento estrutural oferece janela de growth. Com 60,1 milhões de consumidores carregando parcelamentos e buscando conveniência, plataformas de e-commerce ganham relevância na jornada de compra.",
+          "Confiança empresarial em alta fornece tailwind para investimentos em tech, marketing e logística. Investimentos em IA e tecnologia (R$ 50 bilhões do setor/financeiro) beneficiam plataformas via personalização, recomendação e eficiência operacional, criando vantagem competitiva contra varejo offline."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Expandir marketplace e parcerias com pequenos vendedores para aumentar inventário e SKUs sem capex"
+          },
+          {
+            "ico": "📱",
+            "txt": "Otimizar mobile experience e checkout para capturar consumidores em smartphones de menor poder aquisitivo"
+          },
+          {
+            "ico": "🎁",
+            "txt": "Criar programas de fidelização e crédito próprio para reter consumidores endividados e aumentar lifetime value"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em recomendação por IA e previsão de demanda para reduzir obsolescência de estoque e otimizar seleção"
+          }
+        ]
+      }
+    }
+  }
 }

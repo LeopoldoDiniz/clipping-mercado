@@ -677,5 +677,189 @@
         "val": -0.052
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📈",
+          "txt": "Navegar novo patamar de Selic (14,25%) com foco em eficiência operacional e redução de custos, especialmente energia"
+        },
+        {
+          "ico": "💳",
+          "txt": "Aproveitar Desenrola Adimplentes (até R$ 15 mil por banco) para recuperação de clientes inadimplentes e estímulo ao consumo"
+        },
+        {
+          "ico": "⚠️",
+          "txt": "Monitorar decisão sobre tarifas dos EUA (15/julho): risco de 37,5% em mais de 4 mil produtos; ameaça de US$ 14,9 bi em exportações"
+        },
+        {
+          "ico": "🤖",
+          "txt": "Acelerar digitalização, IA e autoatendimento como diferenciais competitivos ante custos crescentes e ambiente de juros altos"
+        },
+        {
+          "ico": "🏟️",
+          "txt": "Capturar demanda Copa 2026 (R$ 2,42 bi estimados em bares/restaurantes) com tecnologia de autoatendimento e logística ágil"
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Como a indústria mantém competitividade com triplo choque: tarifas de 37,5% dos EUA, escala 6x1 com 97% de impacto, e custos de energia acelerados?",
+        "quote": "Produção recuou 0,2% em maio interrompendo sequência de altas; 97% das indústrias seriam impactadas por eventual fim da escala 6x1; balança comercial com +40,6% em exportações na 1ª semana de julho.",
+        "edi": [
+          "Produção industrial brasileira registrou leve recuo de 0,2% em maio, quebrando sequência de quatro altas, com segmentos de coque e derivados de petróleo (-6,1%) e indústria extrativa (-2,6%) pressionando o resultado. Apesar da queda mensal, o acumulado do ano apresenta +1,4%.",
+          "Sondagem especial da CNI revela impacto crítico: 97% das indústrias seriam atingidas por redução de jornada; 73% rejeitam imposição da escala 6x1 por lei, com preocupações concentradas em aumento de custos e perda de competitividade. Audiências nos EUA sobre novas tarifas (25% adicionais = 37,5% acumuladas) ameaçam US$ 14,9 bi em exportações brasileiras, com decisão esperada para 15 de julho."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Reduzir custos de energia: ANEEL confirmou reajustes tarifários acima da inflação projetada (5,30%)"
+          },
+          {
+            "ico": "🌍",
+            "txt": "Diversificar mercados exportadores antes da decisão sobre tarifas dos EUA (15/julho)"
+          },
+          {
+            "ico": "🔧",
+            "txt": "Aumentar produtividade via automação e IA para compensar pressão de custos laborais"
+          },
+          {
+            "ico": "📊",
+            "txt": "Antecipar impactos regulatórios da escala 6x1 em cenário de juros a 14,25%"
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Pode o varejo manter impulso de confiança (102,6 pontos) com Selic a 14,25% e consumidor ainda endividado?",
+        "quote": "Confiança do varejo retornou ao crescimento em junho, atingindo 102,6 pontos (+0,2%), impulsionada por semiduráveis (roupas, calçados) com +1,1%; Desenrola Adimplentes oferece crédito até R$ 15 mil para renegociação.",
+        "edi": [
+          "Confiança dos empresários do comércio interrompeu sequência de quedas e avançou 0,2% em junho para 102,6 pontos, com destaque para bens semiduráveis (roupas e calçados) saltando 1,1%. Presidente da CNC ressalta necessidade de prudência diante de contexto inflacionário (IPCA 5,30%) e política monetária restritiva.",
+          "Copa do Mundo de 2026 impulsiona consumo específico: bares e restaurantes devem faturar R$ 2,42 bilhões durante torneio (+15,7% vs 2022). Desenrola Adimplentes (MP 1373/26 aprovada) destina R$ 3 bilhões e permite renegociar até R$ 15 mil por banco com juros reduzidos, buscando recuperar consumidor inadimplente."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Adotar autoatendimento para capturar demanda Copa sem expandir equipes (89% preferem varejo físico)"
+          },
+          {
+            "ico": "💰",
+            "txt": "Integrar Desenrola Adimplentes em fluxo de crédito para reativar cliente endividado"
+          },
+          {
+            "ico": "👕",
+            "txt": "Focar em semiduráveis (roupas, calçados) que mostram maior confiança e demanda"
+          },
+          {
+            "ico": "💳",
+            "txt": "Digitalizar checkout e parcelamento para capturar demanda com juros a 14,25%"
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Com 90%+ de conectividade digital já alcançada, como serviços se diferenciam além de infraestrutura?",
+        "quote": "Serviços cresceram +1,2% em volume em abril (acum. ano +2,2%); proporção de usuários internet ultrapassa 90% da população (168,7 mi pessoas em 2025); reajustes tarifários de energia superam inflação projetada de 5,30%.",
+        "edi": [
+          "Volume de serviços apresentou crescimento de 1,2% em abril com acumulado positivo de 2,2% no ano. Proporção de usuários internet no Brasil ultrapassou 90% da população de 10 anos ou mais em 2025, atingindo 168,7 milhões de pessoas – maior percentual desde 2016, sinalizando base sólida para expansão digital.",
+          "Copa do Mundo de 2026 catalisam adoção de autoatendimento em alimentação e serviços: estimativa de R$ 2,42 bi em faturamento de bares/restaurantes. ANEEL aprovou reajustes tarifários para três distribuidoras (Cocel, Energisa Tocantins, Enel São Paulo) com aumentos que superam inflação projetada, impactando custos operacionais de prestadores."
+        ],
+        "acoes": [
+          {
+            "ico": "☁️",
+            "txt": "Expandir SaaS/TaaS (Technology as a Service) para PMEs aproveitando conectividade crescente"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em IA para otimizar custos e atendimento ante reajustes de energia"
+          },
+          {
+            "ico": "🏟️",
+            "txt": "Posicionar soluções de autoatendimento para capturar demanda Copa em alimentação e varejo"
+          },
+          {
+            "ico": "📱",
+            "txt": "Digitalizar atendimento omnichannel aproveitando base de 168,7 mi usuários internet"
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Safra recorde e câmbio a R$ 5,11 impulsionam exportações (+40,6%), mas até quando durar a vantagem antes de pressão cambial?",
+        "quote": "Safra de grãos 2026 estimada em 350,4 Mt (+0,5% vs. mês anterior); exportações cresceram 40,6% em primeira semana de julho; balança comercial com superávit de US$ 2,27 bi; indústria extrativa +81,7% em exportações.",
+        "edi": [
+          "Estimativa de safra 2026 em 350,4 Mt confirma dinamismo do setor agrícola com revisão de +0,5% vs. mês anterior. FMI elevou projeção de crescimento do PIB brasileiro para 2,4% em 2026, considerando forte desempenho da safra agrícola como impulsor de exportações e atividade econômica.",
+          "Exportações cresceram 40,6% em primeira semana de julho, com indústria extrativa acelerando 81,7%. Balança comercial registrou superávit de US$ 2,27 bilhões nessa semana, elevando projeção anual para US$ 90 bilhões (+39,2% vs 2025). Câmbio projetado em R$ 5,20 oferece previsibilidade, mas pressão por apreciação pode reduzir margens exportadoras."
+        ],
+        "acoes": [
+          {
+            "ico": "🛡️",
+            "txt": "Implementar hedge cambial e gestão de risco de câmbio para blindar margens exportadoras"
+          },
+          {
+            "ico": "🌐",
+            "txt": "Diversificar destinos e produtos ante risco de tarifas dos EUA (decisão 15/julho) e possível apreciação do real"
+          },
+          {
+            "ico": "♻️",
+            "txt": "Investir em rastreabilidade e sustentabilidade para acessar mercados premium globais"
+          },
+          {
+            "ico": "💡",
+            "txt": "Antecipar eficiência de custos operacionais com IA e automação para cenário de câmbio apreciado"
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Construção retornou ao otimismo após 4 meses com índice em 52,5, mas Selic a 14,25% convida à cautela – é hora de investir?",
+        "quote": "Índice de expectativa para novos projetos subiu para 52,5 pontos em junho após 4 meses de pessimismo; intenção de investimentos cresceu para 43,7 pontos acima da média histórica; SINAPI em R$ 1.976/m² (+1,19% mês, +4,48% acum. ano).",
+        "edi": [
+          "Após quatro meses consecutivos de pessimismo, os empresários da indústria da construção voltaram a projetar crescimento em junho de 2026. Índice de expectativa para novos projetos subiu para 52,5 pontos conforme Sondagem CNI/CBIC. Houve avanço nas expectativas para nível de atividade, número de empregados e compras de insumos, com intenção de investimentos crescendo para 43,7 pontos, acima da média histórica.",
+          "Custo médio da construção atingiu R$ 1.976/m² em junho, com alta mensal de 1,19% e acumulada de 4,48% no ano (SINAPI). Índice FGV (INCC) também registrou +0,78% no mês com acumulado de +4,27%. Retorno de confiança sintonizado com visibilidade em novos projetos, mas Selic elevada para 14,25% pressiona viabilidade econômica de empreendimentos."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Capturar janela de otimismo lançando novos projetos antes de possível arrefecimento com juros altos"
+          },
+          {
+            "ico": "📋",
+            "txt": "Controlar escalada de custos de materiais (+4,48% ano): planejamento rigoroso de insumos"
+          },
+          {
+            "ico": "💸",
+            "txt": "Estruturar financiamento via Desenrola Adimplentes para cliente final com poder de compra limitado"
+          },
+          {
+            "ico": "🎯",
+            "txt": "Revisar viabilidade de projetos com Selic a 14,25%: fluxo de caixa e prazos críticos"
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Conectividade acima de 90%, Copa impulsionando gasto, mas consumidor cauteloso com juros a 14,25% – qual diferencial sustém crescimento?",
+        "quote": "Proporção de usuários internet ultrapassa 90% (168,7 mi pessoas em 2025); confiança varejo em 102,6 pontos; Copa estima R$ 2,42 bi em bares/restaurantes; Selic em 14,25% comprime crédito ao consumidor.",
+        "edi": [
+          "Base de usuários de internet no Brasil ultrapassou 90% da população em 2025, atingindo 168,7 milhões de pessoas – crescimento contínuo que expande mercado e oportunidades de conversão digital. Confiança de varejo voltou positiva em junho com 102,6 pontos, impulsionada por semiduráveis.",
+          "Copa do Mundo de 2026 catalisa consumo em bares, restaurantes e varejo, com estimativa de R$ 2,42 bilhões para alimentação (+15,7% vs 2022). Mas contexto de Selic a 14,25% e cautela do consumidor limita crescimento sustentado; Desenrola Adimplentes (até R$ 15 mil por banco) oferece oportunidade de alargamento de base com parcelamento acessível."
+        ],
+        "acoes": [
+          {
+            "ico": "📱",
+            "txt": "Otimizar experiência mobile e performance para base de 168,7 mi usuários internet"
+          },
+          {
+            "ico": "💳",
+            "txt": "Integrar Desenrola Adimplentes em checkout para ampliar acesso e converter cliente endividado"
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em IA para recomendação personalizada e eficiência operacional com juros altos"
+          },
+          {
+            "ico": "🏟️",
+            "txt": "Preparar logística e capacidade para picos de demanda Copa (R$ 2,42 bi em potencial de gasto)"
+          }
+        ]
+      }
+    }
   }
 }
