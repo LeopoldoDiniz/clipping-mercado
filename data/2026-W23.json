@@ -91,7 +91,8 @@
     },
     {
       "setores": [
-        "comercio"
+        "comercio",
+        "construcao"
       ],
       "titulo": "Prataviera Shopping (Caxias do Sul) projeta alta de 10% nas vendas no Dia dos Namorados",
       "texto": "Shopping em Caxias do Sul prevê crescimento de 10% nas vendas para o Dia dos Namorados, em 12/06/2026.",
@@ -214,7 +215,9 @@
       "score": 8,
       "setores": [
         "transversal",
-        "industria"
+        "industria",
+        "comercio",
+        "servicos"
       ]
     },
     {
@@ -245,7 +248,9 @@
       "tema": "Sem eventos ambientais reportados na semana",
       "texto": "Nenhuma notícia com foco ambiental foi verificada entre as fontes desta semana; dimensão sem cobertura factual.",
       "score": 0,
-      "setores": []
+      "setores": [
+        "transversal"
+      ]
     },
     {
       "dim": "L",
@@ -392,7 +397,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "status": "em_curso",
       "relevancia": 44.1,

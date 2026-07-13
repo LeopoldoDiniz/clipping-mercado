@@ -115,7 +115,8 @@
     },
     {
       "setores": [
-        "comercio"
+        "comercio",
+        "construcao"
       ],
       "titulo": "Fecomércio projeta faturamento do comércio +2,1% em junho",
       "texto": "Fecomércio/Sincomercio Jundiaí estimou crescimento de 2,1% no faturamento do comércio em junho de 2026, com R$ 78,6 bilhões nos cinco principais segmentos varejistas.",
@@ -441,7 +442,8 @@
       "setores": [
         "transversal",
         "comercio",
-        "ecommerce"
+        "ecommerce",
+        "servicos"
       ]
     },
     {
@@ -451,7 +453,8 @@
       "texto": "Comerciantes de MG e SP esperam tíquete de R$ 100-200 e vendas melhores que 2025; solteiros priorizam Copa do Mundo e encontros sociais (12/6).",
       "score": 5,
       "setores": [
-        "comercio"
+        "comercio",
+        "servicos"
       ]
     },
     {

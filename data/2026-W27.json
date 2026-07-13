@@ -33,7 +33,8 @@
       "setores": [
         "transversal",
         "industria",
-        "servicos"
+        "servicos",
+        "agro"
       ],
       "titulo": "Governo Libera Crédito para Subsídio ao Diesel e Inicia Retirada Gradual de Benefícios",
       "texto": "O governo federal publicou medida provisória abrindo crédito extraordinário de R$ 550 milhões para subsidiar a importação de óleo diesel rodoviário, com execução pela Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP). Paralelamente, o Ministério da Fazenda anunciou o início da retirada gradual dos subsídios aos combustíveis, começando com R$ 0,35 por litro do diesel, justificado pela estabilização dos preços internacionais do petróleo. Contudo, observou-se que a queda nos preços do petróleo não foi totalmente repassada pelas distribuidoras.",
@@ -162,7 +163,8 @@
       "setores": [
         "industria",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "titulo": "Setor de Engenharia Enfrenta Crise de Talento com Dificuldade de Recrutamento",
       "texto": "O setor da engenharia enfrenta uma das maiores crises de talento dos últimos anos, com 73% dos empregadores relatando dificuldades em recrutar profissionais qualificados. A situação é agravada pelo envelhecimento da força de trabalho e pela aceleração tecnológica, impactando indústrias como defesa e semicondutores.",
@@ -176,7 +178,8 @@
     {
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "titulo": "Concrete Show 2026 Destaca Inovação e Sustentabilidade no Setor da Construção",
       "texto": "O Concrete Show 2026, que ocorrerá em agosto, enfatizará a inovação, eficiência e sustentabilidade no setor da construção. O evento, que espera mais de 26 mil profissionais, adotará credenciamento pago para visitantes, buscando qualificar a audiência e ampliar as oportunidades de negócios e aplicação de novas tecnologias.",
@@ -208,7 +211,8 @@
       "setores": [
         "industria",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "titulo": "Coreia do Sul Anuncia Mega-Investimento em Inteligência Artificial",
       "texto": "O governo sul-coreano revelou um plano decenal de mais de 1 bilhão de euros para impulsionar a Inteligência Artificial, incluindo a construção de fábricas de semicondutores e centros de dados. Este é o terceiro e mais significativo investimento em IA anunciado pelo país em menos de um ano.",
@@ -246,7 +250,9 @@
         "transversal",
         "industria",
         "comercio",
-        "servicos"
+        "servicos",
+        "agro",
+        "ecommerce"
       ]
     },
     {
@@ -259,7 +265,8 @@
         "transversal",
         "industria",
         "comercio",
-        "servicos"
+        "servicos",
+        "agro"
       ]
     },
     {
@@ -309,7 +316,8 @@
       "setores": [
         "transversal",
         "industria",
-        "comercio"
+        "comercio",
+        "agro"
       ]
     }
   ],
@@ -432,7 +440,8 @@
       "setores": [
         "industria",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "status": "monitorar",
       "relevancia": 49.75,
@@ -449,7 +458,8 @@
       "setores": [
         "industria",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "status": "monitorar",
       "relevancia": 48.25,
@@ -482,7 +492,8 @@
       "dimensao": "E",
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "monitorar",
       "relevancia": 42.5,

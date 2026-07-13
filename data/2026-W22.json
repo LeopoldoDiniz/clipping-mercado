@@ -506,7 +506,8 @@
       "setores": [
         "transversal",
         "industria",
-        "comercio"
+        "comercio",
+        "servicos"
       ]
     },
     {
@@ -625,7 +626,8 @@
       "dimensao": "S",
       "setores": [
         "comercio",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "materializado",
       "relevancia": 90.94,
@@ -674,7 +676,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "status": "em_curso",
       "relevancia": 49,

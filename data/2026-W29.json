@@ -3,7 +3,7 @@
   "label": "Semana 29 · Julho 2026",
   "gerado_em": "2026-07-13T12:26:54.590827",
   "editorial": {
-    "texto": "A Semana 29 confirma trégua na inflação, mas fragilidade na atividade real. A Selic segue em 14,25% ao ano, com o Focus projetando recuo a 14,00% até o fim de 2026; o IPCA de junho desacelerou para 0,16%, levando o acumulado em 12 meses a 4,64%, e o dólar cotou R$5,22 em 13/07. Do lado real, porém, a Produção Industrial (PIM) recuou 0,2% em maio e o varejo (PMC) caiu 1,5% em abril, enquanto o desemprego subiu a 5,6% na PNAD Contínua — sinais que contrastam com a inflação baixa. Frente às semanas anteriores, dois riscos monitorados se materializaram: o custo de energia para PMEs, com a ANEEL mantendo a bandeira tarifária amarela em julho (acréscimo de R$1,885 a cada 100 kWh), e o Desenrola Adimplentes, que virou Medida Provisória aprovada e resolução do CMN. Também nova nesta semana é a escalada das tensões entre EUA e Irã, que eleva a aversão a risco nos mercados e pressiona o petróleo, somando-se ao risco monitorado de novas tarifas dos EUA sobre produtos brasileiros. Na indústria, a sondagem da CNI mostrou que 97% das empresas serão impactadas pelo fim da escala 6x1, com 73% rejeitando a mudança por temor de custos maiores — pressão que convive, paradoxalmente, com a Confiança Empresarial da FGV IBRE subindo pelo segundo mês seguido em junho. Em comércio e serviços, a Serasa Experian registrou R$229,9 bilhões em dívidas de CNPJs negativados, recorde da série histórica, enquanto a CNDL/SPC Brasil apurou 60,1 milhões de consumidores com compras parceladas, 38% deles inadimplentes. No agro, a soja avança acima de R$140 a saca nos portos por demanda externa, enquanto café e boi gordo recuaram na B3 em 08/07, e a Conab confirmou a colheita de soja concluída. Na construção, a Mitre reportou queda de 31,9% nas vendas líquidas do 2T26, ao mesmo tempo em que SINAPI, INCC e o CUB de Santa Catarina seguem subindo, espremendo margem. O e-commerce não teve manchete própria, mas herda o fluxo de consumidores endividados migrando de canal. O ponto de atenção para as próximas semanas é o quanto a tensão geopolítica e a pauta trabalhista podem travar o investimento antes do fim do ano.",
+    "texto": "A Semana 29 confirma trégua na inflação, mas fragilidade na atividade real. A Selic segue em 14,25% ao ano, com o Focus projetando recuo a 14,00% até o fim de 2026; o IPCA de junho desacelerou para 0,16%, levando o acumulado em 12 meses a 4,64%, e o dólar cotou R$5,22 em 13/07. Do lado real, porém, a Produção Industrial (PIM) recuou 0,2% em maio e o varejo (PMC) caiu 1,5% em abril, enquanto o desemprego subiu a 5,6% na PNAD Contínua — sinais que contrastam com a inflação baixa. Frente às semanas anteriores, dois riscos monitorados se materializaram: o custo de energia para PMEs, com a ANEEL mantendo a bandeira tarifária amarela em julho (acréscimo de R$1,885 a cada 100 kWh), e o Desenrola Adimplentes, que virou Medida Provisória aprovada e resolução do CMN. Também nova nesta semana é a escalada das tensões entre EUA e Irã, que eleva a aversão a risco nos mercados e pressiona o petróleo, somando-se ao risco monitorado de novas tarifas dos EUA sobre produtos brasileiros. Na indústria, a sondagem da CNI mostrou que 97% das empresas serão impactadas pelo fim da escala 6x1, com 73% rejeitando a mudança por temor de custos maiores — pressão que convive, paradoxalmente, com a Confiança Empresarial da FGV IBRE subindo pelo segundo mês seguido em junho. Em comércio e serviços, a Serasa Experian registrou R$229,9 bilhões em dívidas de CNPJs negativados, recorde da série histórica, enquanto a CNDL/SPC Brasil apurou 60,1 milhões de consumidores com compras parceladas, 38% deles inadimplentes. No agro, a soja avança acima de R$140 a saca nos portos por demanda externa, enquanto café e boi gordo recuaram na B3 em 08/07, e a Conab confirmou a colheita de soja concluída. Na construção, a Mitre reportou queda de 31,9% nas vendas líquidas do 2T26, ao mesmo tempo em que SINAPI, INCC e o CUB de Santa Catarina seguem subindo, espremendo margem. No e-commerce, a Receita anunciou o endurecimento do Remessa Conforme (uso de IA e corte de plataformas abaixo de 98% de conformidade), enquanto o Mercado Livre anunciou R$57 bilhões em investimento e 14 novos centros de distribuição — num setor que ainda absorve o consumidor endividado migrando de canal. O ponto de atenção para as próximas semanas é o quanto a tensão geopolítica e a pauta trabalhista podem travar o investimento antes do fim do ano.",
     "gerado_em": "2026-07-13T12:26:08.926331",
     "n_sinais_considerados": 12,
     "modelo": "claude-sonnet (reforço editorial)"
@@ -64,7 +64,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "ecommerce"
       ],
       "titulo": "60 milhões de consumidores possuem compras parceladas, aponta CNDL/SPC Brasil",
       "texto": "Pesquisa da CNDL/SPC Brasil revela que 60,1 milhões de consumidores tinham compras parceladas em dez/2025, com 38% ficando inadimplentes devido a parcelamentos.",
@@ -127,7 +128,8 @@
     },
     {
       "setores": [
-        "agro"
+        "agro",
+        "construcao"
       ],
       "titulo": "Conab: Colheita de milho de inverno 2025/26 atinge 28,5% da área semeada",
       "texto": "A Companhia Nacional de Abastecimento (Conab) informou em 08/07/2026 que a colheita de milho de inverno no Brasil atingiu 28,5% da área plantada da safra 2025/26. [cite: 7 in previous search]",
@@ -243,7 +245,8 @@
     },
     {
       "setores": [
-        "agro"
+        "agro",
+        "transversal"
       ],
       "titulo": "Preços da soja avançam com demanda externa aquecida; café e boi gordo em queda",
       "texto": "Os preços da soja avançam, com a saca acima de R$140,00 nos portos, impulsionados pela demanda global. Já o café e o boi gordo registraram queda nos contratos futuros na B3 em 08/07/2026.",
@@ -298,7 +301,8 @@
     {
       "setores": [
         "comercio",
-        "transversal"
+        "transversal",
+        "ecommerce"
       ],
       "titulo": "Eliminação do Brasil na Copa do Mundo 2026 altera planos de consumo para o varejo",
       "texto": "A eliminação da Seleção Brasileira na Copa do Mundo 2026 deve mudar os planos de consumo, com o varejo precisando replanejar estoques e promoções temáticas. [cite: 47 in previous search]",
@@ -308,6 +312,154 @@
           "url": "https://www.cenariomt.com.br/noticia/eliminacao-da-selecao-brasileira-muda-planos-de-consumo-para-o-restante-da-copa-do-mundo"
         }
       ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "transversal"
+      ],
+      "titulo": "Receita Federal vai endurecer fiscalização de compras internacionais no Remessa Conforme",
+      "texto": "A Receita Federal anunciou uso de inteligência artificial para comparar imagens de scanner com as declarações de vendedores e plataformas, e prevê excluir do programa quem tiver taxa de conformidade abaixo de 98%. A proposta \"Remessa Conforme 2.0\" prevê comunicação direta entre o Fisco e plataformas internacionais antes da publicação dos anúncios.",
+      "fontes": [
+        {
+          "nome": "A Capital da Notícia",
+          "url": "https://www.acapitaldanoticia.com.br/2026/07/receita-federal-vai-endurecer.html"
+        }
+      ],
+      "data": "10/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Mercado Livre anuncia investimento de R$ 57 bilhões no Brasil e 14 novos centros de distribuição",
+      "texto": "O aporte para 2026 representa alta de 50% ante 2025 e prevê a construção de 14 novos centros de distribuição, com foco em ampliar a cobertura logística nas regiões Norte, Nordeste e Centro-Oeste. Vendedores que usam o serviço Full ganham acesso a novos mercados sem mudanças operacionais.",
+      "fontes": [
+        {
+          "nome": "JoomPulse",
+          "url": "https://blog.joompulse.com/2026/07/08/investimento-mercado-livre-2026/"
+        }
+      ],
+      "data": "08/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "servicos"
+      ],
+      "titulo": "Correios fecham contrato de R$ 2,3 bilhões com o Banco do Brasil",
+      "texto": "O acordo, sem licitação, tem duração de cinco anos e cobre serviços de correspondência convencional, telemática e especial para agências do banco. O contrato ajuda a aliviar a situação financeira da estatal, que teve déficit de R$ 8,5 bilhões em 2025 e é peça-chave na malha de entregas do e-commerce no país.",
+      "fontes": [
+        {
+          "nome": "Correio da Manhã",
+          "url": "https://www.correiodamanha.com.br/economia/2026/07/300335-correios-ganham-folego-com-contrato-bilionario-do-banco-do-brasil.html"
+        }
+      ],
+      "data": "08/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "IPO da Shein avança após aval da China para listagem em Hong Kong",
+      "texto": "A CSRC (reguladora chinesa) autorizou em 10 de julho o avanço do IPO da Shein em Hong Kong, com listagem prevista entre setembro e outubro e valuation estimado entre US$ 40 bi e US$ 50 bi. No Brasil, a base de usuários ativos mensais da Shein cresceu 34% no 2º trimestre de 2026 ante igual período de 2025, segundo BTG Pactual/Sensor Tower.",
+      "fontes": [
+        {
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/07/10/ipo-shein-hong-kong-china/"
+        }
+      ],
+      "data": "10/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "Shopee destaca serviço Full e Social Commerce no Fórum E-Commerce Brasil",
+      "texto": "A Shopee vai apresentar no Fórum ECBR (28 a 30/07) seu ecossistema de fulfillment Full, com cinco centros operacionais no Brasil, além de recursos de Social Commerce. A empresa informou que o Shopee Live realiza mais de 5 mil transmissões diárias e conta com mais de 5 milhões de criadores e afiliados cadastrados.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/shopee-destaca-full-e-social-commerce-no-forum-e-commerce-brasil"
+        }
+      ],
+      "data": "12/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Live commerce e entregas rápidas redefinem a lógica dos marketplaces no Brasil",
+      "texto": "Entre maio de 2025 e maio de 2026, o número médio diário de lives no TikTok Shop cresceu 20 vezes e o GMV gerado por lives avançou 161 vezes. O prazo médio de entrega no e-commerce brasileiro caiu de 7-10 dias úteis para 1-3 dias, com cerca de 80% dos consumidores já esperando opções de entrega no mesmo dia.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/live-commerce-entregas-rapidas-e-a-nova-logica-dos-marketplaces"
+        }
+      ],
+      "data": "12/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "wBuy leva plataforma de e-commerce com mais de 200 integrações ao Fórum 2026",
+      "texto": "A wBuy vai apresentar no Fórum E-Commerce Brasil sua plataforma com mais de 200 aplicativos integrados, incluindo wBuy Pay (checkout com Apple Pay e Google Pay) e wBuy AI, um \"Commerce Concierge\" de atendimento autônomo. A empresa também lança na feira um recurso de Live Shopping.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/wbuy-leva-ecossistema-completo-de-e-commerce-e-novidades-para-o-forum-2026"
+        }
+      ],
+      "data": "12/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "Aftersale mostra como devoluções podem gerar receita e proteger margem no varejo",
+      "texto": "A empresa, que já gerenciou mais de 6 milhões de experiências de pós-compra para clientes como Samsung, Arezzo e Decathlon, vai apresentar no Fórum ECBR sua tese de automatizar a jornada de pós-venda para reter receita e evitar devoluções infundadas.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/aftersale-mostra-no-forum-como-devolucoes-podem-gerar-mais-receita-e-proteger-margem-no-varejo"
+        }
+      ],
+      "data": "13/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Sexto Grau defende que performance de elite em e-commerce exige tecnologia embarcada",
+      "texto": "Com mais de 280 projetos realizados e R$ 200 milhões em receita gerada para clientes de moda como Miss Pijama e Brandili, a Sexto Grau vai apresentar no Fórum ECBR sua metodologia proprietária OSC (Oferta, Site e Comunicação) combinada a ferramentas próprias de IA.",
+      "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/sexto-grau-leva-ao-forum-e-commerce-2026-a-tese-performance-de-elite-exige-tecnologia-embarcada"
+        }
+      ],
+      "data": "13/07/2026"
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Internet aberta volta ao centro da jornada de compra, aponta análise sobre mídia digital",
+      "texto": "Usuários passam mais de 60% do tempo online na internet aberta, mas quase 80% da verba publicitária digital ainda se concentra em plataformas fechadas. O texto destaca que a internet aberta gera mais pedidos assistidos, conversões em que o anúncio influencia a compra concluída depois em outro canal, relevante para estratégias de retail media no e-commerce.",
+      "fontes": [
+        {
+          "nome": "Meio & Mensagem (proXXIma)",
+          "url": "https://www.meioemensagem.com.br/proxxima/a-internet-aberta-voltou-ao-centro-da-jornada-de-compra"
+        }
+      ],
+      "data": "13/07/2026"
     }
   ],
   "pestel": [
@@ -319,6 +471,10 @@
       "score": 7.5,
       "setores": [
         "industria",
+        "comercio",
+        "servicos",
+        "construcao",
+        "ecommerce",
         "transversal"
       ]
     },
@@ -329,10 +485,13 @@
       "texto": "O IPCA de junho desacelerou para 0,16%, mas a inadimplência de empresas e consumidores segue em níveis recordes. O Boletim Focus reduziu a projeção de IPCA para 2026 para 5,16%. [cite: 3, 4, 5, 8, 9, 13, 16, 20, 26, 32 in previous search, 39 in previous search]",
       "score": 8,
       "setores": [
-        "transversal",
+        "industria",
         "comercio",
         "servicos",
-        "industria"
+        "agro",
+        "construcao",
+        "ecommerce",
+        "transversal"
       ]
     },
     {
@@ -344,6 +503,7 @@
       "setores": [
         "comercio",
         "servicos",
+        "ecommerce",
         "transversal"
       ]
     },
@@ -354,7 +514,9 @@
       "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 indica que o setor bancário investe mais de R$ 50 bilhões em tecnologia, com a IA sendo crucial para competitividade e digitalização. [cite: 6, 24, 31 in previous search]",
       "score": 7,
       "setores": [
+        "comercio",
         "servicos",
+        "ecommerce",
         "transversal"
       ]
     },
@@ -365,10 +527,12 @@
       "texto": "A manutenção da bandeira tarifária amarela pela ANEEL em julho reflete condições menos favoráveis de geração, típicas do período seco, com redução nos níveis dos reservatórios. [cite: 2, 11, 23, 27 in previous search]",
       "score": 6,
       "setores": [
-        "transversal",
-        "servicos",
         "industria",
-        "agro"
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "transversal"
       ]
     },
     {
@@ -378,8 +542,10 @@
       "texto": "A ANEEL realizou um leilão de transmissão para expandir a infraestrutura elétrica, enquanto o debate sobre a escala 6x1 continua impactando o ambiente regulatório trabalhista. [cite: 9 in previous search, 27 in previous search, 3, 8, 12, 20, 36 in previous search]",
       "score": 6.5,
       "setores": [
-        "servicos",
         "industria",
+        "comercio",
+        "servicos",
+        "construcao",
         "transversal"
       ]
     }
@@ -713,7 +879,8 @@
       "dimensao": "E",
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
       "relevancia": 58.25,

@@ -12,7 +12,8 @@
     {
       "setores": [
         "industria",
-        "transversal"
+        "transversal",
+        "agro"
       ],
       "titulo": "Audiências nos EUA sobre Novas Tarifas a Produtos Brasileiros Ameaçam Exportações",
       "texto": "A proposta dos Estados Unidos de aplicar uma tarifa adicional de 25% sobre produtos brasileiros entrou em nova fase nesta semana, com a realização de audiências públicas em Washington. Representantes de setores estratégicos da economia brasileira, como agropecuária e indústria, defenderam posições contra a medida, que pode atingir US$ 14,9 bilhões em exportações e elevar a taxação acumulada para até 37,5% em mais de 4 mil produtos. A CNI alertou que as novas tarifas podem elevar custos para empresas e consumidores em ambos os países, comprometendo cadeias produtivas integradas. A decisão final do governo americano é esperada para 15 de julho.",
@@ -68,7 +69,8 @@
     {
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "titulo": "Otimismo Retorna à Indústria da Construção com Expectativa de Novos Empreendimentos",
       "texto": "Após quatro meses de pessimismo, os empresários da indústria da construção voltaram a projetar crescimento no lançamento de novos empreendimentos e serviços em junho de 2026, conforme a Sondagem Indústria da Construção da CNI em parceria com a CBIC. O índice de expectativa para novos projetos subiu para 52,5 pontos, indicando perspectivas positivas. Também houve avanço nas expectativas para o nível de atividade, número de empregados e compras de insumos. A intenção de investimentos cresceu para 43,7 pontos, acima da média histórica do setor.",
@@ -126,7 +128,8 @@
         "transversal",
         "industria",
         "comercio",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "titulo": "Balança Comercial Brasileira Registra Forte Superávit na 1ª Semana de Julho e Projeção Anual é Elevada",
       "texto": "A balança comercial brasileira iniciou julho com um superávit de US$ 2,27 bilhões na primeira semana, impulsionado pelo crescimento de 40,6% nas exportações em comparação com o mesmo período de 2025. As exportações da indústria extrativa cresceram 81,7%, e da indústria de transformação, 39,4%. No acumulado do ano até a primeira semana de julho, o superávit atingiu US$ 44,63 bilhões, alta de 39,2%. O MDIC elevou a projeção oficial do superávit para US$ 90 bilhões em 2026, refletindo o bom desempenho e a expectativa de exportações mais elevadas.",
@@ -159,7 +162,9 @@
     },
     {
       "setores": [
-        "transversal"
+        "transversal",
+        "construcao",
+        "agro"
       ],
       "titulo": "FMI Eleva Projeção de Crescimento do PIB Brasileiro para 2,4% em 2026",
       "texto": "O Fundo Monetário Internacional (FMI) revisou para cima sua projeção de crescimento do Produto Interno Bruto (PIB) brasileiro para 2,4% em 2026, um aumento de 0,5 ponto percentual em relação à previsão anterior. A revisão considera a forte safra agrícola, que impulsionou as exportações e a atividade econômica, a política fiscal e o fortalecimento do consumo das famílias. A projeção para 2027 também foi elevada para 2,2%.",
@@ -253,7 +258,8 @@
     {
       "setores": [
         "comercio",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "titulo": "Copa do Mundo Impulsiona Autoatendimento em Varejo e Alimentação",
       "texto": "A Copa do Mundo de 2026 está impulsionando a adoção de terminais de autoatendimento nos setores de varejo e alimentação. A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) estima que bares e restaurantes devem faturar R$ 2,42 bilhões durante o torneio, com crescimento de 15,7% em relação a 2022. Para lidar com picos de demanda sem ampliar equipes, 89% dos consumidores preferem o varejo físico para compras de consumo imediato. A tecnologia de autoatendimento é vista como uma solução para garantir o atendimento em momentos de sobrecarga.",
@@ -324,7 +330,8 @@
         "industria",
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ]
     },
     {
@@ -336,7 +343,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "ecommerce"
       ]
     },
     {
@@ -348,7 +356,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "ecommerce"
       ]
     },
     {
@@ -372,7 +381,8 @@
       "setores": [
         "industria",
         "servicos",
-        "transversal"
+        "transversal",
+        "comercio"
       ]
     }
   ],
@@ -529,7 +539,8 @@
       "dimensao": "E",
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
       "relevancia": 62,

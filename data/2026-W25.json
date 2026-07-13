@@ -71,7 +71,8 @@
     {
       "setores": [
         "industria",
-        "transversal"
+        "transversal",
+        "agro"
       ],
       "titulo": "Preços da indústria recuam 0,30% em maio, puxados por alimentos e extrativas",
       "texto": "O Índice de Preços ao Produtor (IPP) das Indústrias Extrativas e de Transformação registrou queda de 0,30% em maio de 2026 frente a abril, revertendo a alta de 2,62% do mês anterior. Sete das 24 atividades industriais investigadas apresentaram queda de preços. O principal impacto negativo veio da indústria de alimentos (-2,05%), influenciada pela redução nos valores de açúcar, leite e café, devido ao avanço da safra e à apreciação do real frente ao dólar. As indústrias extrativas também registraram forte queda (-5,90%) devido aos menores preços de petróleo bruto e minério de ferro no mercado internacional. Em contrapartida, borracha e plástico (4,80%) e outros produtos químicos (2,14%) tiveram altas. O acumulado no ano foi de 4,80%, e em 12 meses, 1,99%.",
@@ -101,7 +102,8 @@
     {
       "setores": [
         "industria",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "titulo": "Sondagem Industrial da CNI aponta queda nas expectativas de exportação devido a tarifas dos EUA",
       "texto": "A Sondagem Industrial da Confederação Nacional da Indústria (CNI) de junho de 2026 revelou uma queda nas expectativas de quantidade exportada pela indústria brasileira para os próximos seis meses. O índice cruzou a linha divisória de 50 pontos pela primeira vez no ano, indicando uma expectativa de recuo. Essa mudança de perspectiva é atribuída à proposta de novas tarifas dos Estados Unidos sobre produtos brasileiros, sendo os EUA o principal destino das exportações industriais do Brasil. Além disso, os índices de expectativa de compra de insumos e de demanda por produtos também caíram, embora permaneçam acima de 50 pontos, indicando um crescimento menos intenso. A intenção de investir dos empresários também diminuiu.",
@@ -128,7 +130,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "titulo": "Inadimplência atinge novo recorde em maio, com alta reincidência de devedores",
       "texto": "O Brasil registrou um novo recorde de inadimplência em maio de 2026, com 75,06 milhões de consumidores com o nome negativado, representando 44,8% da população adulta. Dados da CNDL e SPC Brasil revelam que 85,41% dos consumidores que entraram na inadimplência em maio já haviam sido negativados nos 12 meses anteriores, com 65,92% ainda sem quitar dívidas antigas. O tempo médio entre o vencimento de uma dívida e o vencimento de outras pendências para reincidentes foi de 72,6 dias. Em média, cada inadimplente devia R$ 5.145,04.",
@@ -159,7 +162,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "titulo": "Crédito deve crescer 0,8% em maio, impulsionado por linhas direcionadas e programas governamentais",
       "texto": "A carteira total de crédito no Brasil deve crescer 0,8% em maio de 2026 em relação a abril, com uma aceleração do ritmo anual para 9,6%, segundo a Pesquisa Especial de Crédito da Febraban. O crescimento é sustentado principalmente pelas linhas com recursos direcionados, refletindo o impacto de programas governamentais. A carteira direcionada deve avançar 1,0% no mês, liderada pela Pessoa Jurídica (+1,5%) e pelo crédito imobiliário na Pessoa Física (+0,7%), favorecido pelo programa Minha Casa, Minha Vida. Já a carteira com recursos livres deve crescer 0,7% no mês, com expansão anual estável em 7,1%. A Febraban destaca a crescente concentração nas linhas direcionadas frente ao fraco desempenho das linhas com recursos livres.",
@@ -181,7 +185,9 @@
     {
       "setores": [
         "industria",
-        "transversal"
+        "transversal",
+        "construcao",
+        "agro"
       ],
       "titulo": "ANP prevê queda gradual nos preços de combustíveis após acordo EUA-Irã e fim de subsídios",
       "texto": "A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) observa uma queda paulatina nos preços dos combustíveis no mercado brasileiro após a assinatura de um acordo preliminar de paz entre Estados Unidos e Irã e a reabertura do Estreito de Ormuz. O diretor-geral da ANP, Artur Watt, afirmou em 24 de junho de 2026 que o mercado interno está abastecido pela produção nacional e importações, sem risco de desabastecimento. O diesel S-10, por exemplo, recuou 0,4% na semana encerrada em 20 de junho. No entanto, o Ministério da Fazenda sinaliza o término dos subsídios aos combustíveis, o que pode influenciar os preços futuros. A ANP também havia prorrogado a flexibilização dos estoques mínimos de gasolina e diesel até 30 de junho de 2026 devido ao conflito no Oriente Médio.",
@@ -353,7 +359,8 @@
       "score": 8.5,
       "setores": [
         "comercio",
-        "servicos"
+        "servicos",
+        "ecommerce"
       ]
     },
     {
@@ -376,7 +383,8 @@
       "score": 5.5,
       "setores": [
         "transversal",
-        "industria"
+        "industria",
+        "agro"
       ]
     },
     {

@@ -11,7 +11,8 @@
     {
       "setores": [
         "transversal",
-        "industria"
+        "industria",
+        "agro"
       ],
       "titulo": "Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela",
       "texto": "O Comitê de Política Monetária (Copom) do Banco Central reduziu a Taxa Selic em 0,25 ponto percentual, fixando-a em 14,25% ao ano. Esta é a terceira redução consecutiva no ciclo, com a decisão sendo tomada em 17 de junho de 2026. Apesar do corte, o comunicado do Copom manteve um tom cauteloso, citando a inflação ainda acima da meta e as incertezas do cenário global, especialmente as consequências dos conflitos no Oriente Médio. A projeção do Banco Safra é que a Selic encerre 2026 em 13,50% ao ano, refletindo um processo gradual de queda dos juros.",
@@ -175,7 +176,8 @@
     {
       "setores": [
         "industria",
-        "transversal"
+        "transversal",
+        "construcao"
       ],
       "titulo": "ANP Observa Queda Gradual nos Preços Internos de Combustíveis Após Acordo no Oriente Médio",
       "texto": "A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) informou em 24 e 25 de junho de 2026 que está observando uma queda paulatina nos preços dos combustíveis no mercado brasileiro, após a assinatura de um acordo preliminar de paz entre Estados Unidos e Irã e a reabertura do Estreito de Ormuz. Os futuros do Brent, referência para o petróleo, operam perto de US$ 73 por barril. A ANP também reiterou que o mercado interno de combustíveis está devidamente abastecido, sem risco de desabastecimento, e que a flexibilização dos estoques mínimos de gasolina e diesel foi prorrogada até 30 de junho de 2026.",
@@ -231,7 +233,8 @@
     {
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "titulo": "Indústria da Construção Projeta Aumento de Novos Empreendimentos e Serviços em Junho",
       "texto": "Pela primeira vez desde fevereiro, os empresários da indústria da construção passaram a projetar aumento de novos empreendimentos e serviços para os próximos seis meses, conforme a Sondagem Indústria da Construção da CNI, divulgada em 24 de junho de 2026. O índice de expectativa por novos projetos aumentou 3,3 pontos, atingindo 52,5 pontos, indicando otimismo. As expectativas em relação a novas contratações, compra de insumos e matérias-primas, e nível de atividade também melhoraram.",
@@ -313,7 +316,8 @@
       "setores": [
         "comercio",
         "servicos",
-        "transversal"
+        "transversal",
+        "ecommerce"
       ]
     },
     {
@@ -421,7 +425,8 @@
       "setores": [
         "industria",
         "comercio",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
       "relevancia": 76,
@@ -438,7 +443,8 @@
       "setores": [
         "industria",
         "comercio",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
       "relevancia": 73.25,
@@ -487,7 +493,8 @@
       "dimensao": "E",
       "setores": [
         "industria",
-        "servicos"
+        "servicos",
+        "construcao"
       ],
       "status": "monitorar",
       "relevancia": 46.25,
