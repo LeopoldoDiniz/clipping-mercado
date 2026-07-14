@@ -132,6 +132,8 @@
   :root[data-theme="dark"] .tab-hi[aria-selected="true"]{color:#08110F}
   .ctx{margin-left:auto;font-size:11.5px;color:var(--ink-3);white-space:nowrap;padding:4px 8px;background:none;border:0;cursor:pointer;font-family:var(--sans);display:inline-flex;align-items:center;gap:5px}
   .ctx:hover{color:var(--ink-2)}
+  /* badge discreta "período em curso" — período selecionado ainda não fechou */
+  .per-open{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3);border:1px solid var(--border-strong);border-radius:10px;padding:1px 7px;margin-left:7px;vertical-align:middle;white-space:nowrap;cursor:help}
   .ctx-i{width:14px;height:14px;border-radius:50%;border:1px solid var(--border-strong);display:inline-grid;place-items:center;font-size:9px;font-weight:800;font-style:italic;font-family:Georgia,serif}
   .ctx:hover .ctx-i{border-color:var(--accent);color:var(--accent)}
   .ev-date{font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:5px;padding:2px 7px;white-space:nowrap}
@@ -801,13 +803,26 @@ const MESNOME={"01":"Janeiro","02":"Fevereiro","03":"Março","04":"Abril","05":"
 const mesLbl=id=>{const[y,m]=id.split("-");return `${MESNOME[m]||m}/${y.slice(2)}`;};
 const triLbl=id=>`${id.slice(-1)}º tri ${id.slice(2,4)}`;
 const lastWeekOfMonth=mid=>{const ws=WEEKS.filter(w=>w.mes===mid).map(w=>+w.k.slice(1));return ws.length?Math.max(...ws):"";};
-// itens disponíveis por granularidade, em ordem cronológica (antigo→recente); parcial = período vigente (não fechado)
+// ── Calendário: um período está FECHADO quando seu último dia já passou (data real de hoje) ──
+function _hojeUTC(){const n=new Date();return Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate());}
+// último dia (ms UTC) do período; null se granularidade desconhecida
+function fimPeriodoUTC(g,id){
+  if(g==="mes")      {const y=+id.slice(0,4),m=+id.slice(5,7);return Date.UTC(y,m,0);}      // dia 0 do mês seguinte = último dia do mês
+  if(g==="trimestre"){const y=+id.slice(0,4),q=+id.slice(-1);return Date.UTC(y,q*3,0);}      // último dia do 3º mês do trimestre
+  if(g==="semestre") {const y=+id.slice(0,4),s=+id.slice(-1);return Date.UTC(y,s*6,0);}      // último dia do 6º mês do semestre
+  if(g==="ano")      {return Date.UTC(+id,11,31);}
+  if(g==="semana")   {const f=isoWeekFriday(id);return Date.UTC(f.getUTCFullYear(),f.getUTCMonth(),f.getUTCDate());} // sexta ISO
+  return null;
+}
+// true = o período já terminou por completo (hoje passou do último dia). Sem data conhecida → considera fechado.
+function periodoFechado(g,id){const fim=fimPeriodoUTC(g,id);return fim==null?true:_hojeUTC()>fim;}
+// itens disponíveis por granularidade, em ordem cronológica (antigo→recente); parcial = período ainda NÃO fechado (calendário real)
 function granItems(g){
   const uniq=a=>[...new Set(a)];
   if(g==="semana")return CHRONO.map(w=>({id:w.k,lbl:"Sem "+w.k.slice(1),sub:w.dt.replace(/ 20\d\d/,""),parcial:false}));
-  if(g==="mes"){const ids=uniq(WEEKS.map(w=>w.mes)).sort();const mx=ids[ids.length-1];return ids.map(id=>({id,lbl:mesLbl(id),parcial:id===mx}));}
-  if(g==="trimestre"){const ids=uniq(WEEKS.map(w=>w.tri)).sort();const mx=ids[ids.length-1];return ids.map(id=>({id,lbl:triLbl(id),parcial:id===mx}));}
-  const ids=uniq(WEEKS.map(w=>w.mes.slice(0,4))).sort();const mx=ids[ids.length-1];return ids.map(id=>({id,lbl:id,parcial:id===mx}));
+  if(g==="mes"){const ids=uniq(WEEKS.map(w=>w.mes)).sort();return ids.map(id=>({id,lbl:mesLbl(id),parcial:!periodoFechado("mes",id)}));}
+  if(g==="trimestre"){const ids=uniq(WEEKS.map(w=>w.tri)).sort();return ids.map(id=>({id,lbl:triLbl(id),parcial:!periodoFechado("trimestre",id)}));}
+  const ids=uniq(WEEKS.map(w=>w.mes.slice(0,4))).sort();return ids.map(id=>({id,lbl:id,parcial:!periodoFechado("ano",id)}));
 }
 // semanas do escopo, cronológicas (antigo→recente). Nunca vazio.
 function scopeKeys(){
@@ -825,17 +840,28 @@ function periodScope(){
     else{label=`Semanas ${weeks.map(k=>k.slice(1)).join(", ")}`;nota=`Escopo de ${weeks.length} semanas selecionadas. Relevância = pico do sinal no período.`;}
   }else if(g==="mes"){
     const its=granItems("mes").filter(i=>picks.includes(i.id));
-    label=its.map(i=>i.parcial?`${i.lbl} · parcial até sem ${lastWeekOfMonth(i.id)}`:i.lbl).join(" · ");
+    label=its.map(i=>i.lbl).join(" · "); // "em curso" fica na badge discreta, não no label
     nota=`Acumulado de ${weeks.length} semana(s) ${its.length>1?"dos meses selecionados":"do mês"}. Relevância = pico no período.`;
   }else if(g==="trimestre"){
     const its=granItems("trimestre").filter(i=>picks.includes(i.id));
-    label=its.map(i=>i.parcial?`${i.lbl} · parcial`:i.lbl).join(" · ");
+    label=its.map(i=>i.lbl).join(" · ");
     nota=`Acumulado de ${weeks.length} semana(s) do(s) trimestre(s). Relevância = pico no período.`;
   }else{
     label=`${picks.join(", ")} · acumulado no ano (YTD)`;
     nota=`Acumulado de ${weeks.length} semana(s) apuradas. Relevância = pico no período.`;
   }
   return {weeks,label,nota};
+}
+// Badge discreta: aparece quando o período selecionado (mês/tri/sem/ano) ainda NÃO fechou pelo calendário.
+// Semana já é um ponto fechado, então não recebe badge. Auto pela seleção — nenhum controle novo.
+function periodoAbertoBadge(){
+  const g=state.gran;
+  if(g==="semana")return "";
+  const abertos=granItems(g).filter(i=>state.picks.includes(i.id)&&i.parcial);
+  if(!abertos.length)return "";
+  const GN={mes:"mês",trimestre:"trimestre",semestre:"semestre",ano:"ano"};
+  const tip=`Leitura em curso — o ${GN[g]||"período"} selecionado ainda não terminou. O acumulado é parcial e continua mudando até o fechamento.`;
+  return ` <span class="per-open" title="${tip.replace(/"/g,'&quot;')}">◔ em curso</span>`;
 }
 function chartWeeks(){
   const weeks=scopeKeys();
@@ -987,7 +1013,7 @@ function renderHead(){
   const ctx=el(`<button class="ctx clickable" title="${dica.replace(/"/g,'&quot;')}">${state.sector!=="panorama"?`<b style="color:${m.cor}">${m.nome}</b> · `:""}${n} sinais · ${r} riscos <span class="ctx-i">i</span></button>`);
   ctx.onclick=openSinaisDrawer;
   ln.appendChild(ctx);
-  document.getElementById("weekCtx").textContent=label;
+  document.getElementById("weekCtx").innerHTML=`${label}${periodoAbertoBadge()}`;
   renderUpd();
   renderPeriodBar();
 }
@@ -1198,10 +1224,9 @@ function setorSelector(){
 function chartPoints(){
   const wk=chartWeeks();
   if(state.gran==="semana")return {monthly:false,points:wk.map(w=>({label:"S"+parseInt(w.k.slice(1),10),idx:CHRONO.findIndex(c=>c.k===w.k),dt:w.dt}))};
-  const maxMonth=[...new Set(WEEKS.map(w=>w.mes))].sort().pop();
   const months=[...new Set(wk.map(w=>w.mes))]; // cronológico (wk já é asc)
   return {monthly:true,points:months.map(mid=>{const wm=wk.filter(w=>w.mes===mid);const lw=wm[wm.length-1];
-    return {label:mesLbl(mid),idx:CHRONO.findIndex(c=>c.k===lw.k),partial:mid===maxMonth};})};
+    return {label:mesLbl(mid),idx:CHRONO.findIndex(c=>c.k===lw.k),partial:!periodoFechado("mes",mid)};})};
 }
 // preenche buracos de uma série p/ o gráfico (forward-fill + back-fill do 1º valor conhecido)
 function fillSeries(a){const f=(a||[]).slice();let last=null;for(let i=0;i<f.length;i++){if(f[i]!=null)last=f[i];else f[i]=last;}
