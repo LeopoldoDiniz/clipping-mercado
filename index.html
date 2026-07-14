@@ -790,7 +790,8 @@ const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
 /* ───────── HELPERS ───────── */
 const el=h=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstElementChild;};
 const dec=(n,c=1)=>Number(n).toFixed(c).replace(".",",");
-const inSector=arr=>state.sector==="panorama"||arr.includes(state.sector)||arr.includes("transversal");
+// filtro por setor: Panorama mostra tudo (inclui transversal); um setor mostra SÓ o que é dele.
+const inSector=arr=>state.sector==="panorama"||arr.includes(state.sector);
 const sectorChips=ids=>ids.map(id=>{const m=SMETA[id];return m?`<span class="chip"><span class="sw" style="background:${m.cor}"></span>${m.nome}</span>`:"";}).join("");
 const arrow=c=>c==="up"?"▲":c==="down"?"▼":"■";
 
@@ -851,9 +852,7 @@ function sigs(){
   if(weeks.length>1){list=list.map(s=>({...s,rel:sigPeriodRel(s,weeks)??s.rel}));} // agregado: pico no período
   return list.sort((a,b)=>b.rel-a.rel);
 }
-// Notícias: filtro ESTRITO por setor (só o setor escolhido) — macro/transversais ficam no Panorama.
-// (Evita que o fallback "transversal" traga notícias de todos os segmentos ao filtrar um setor.)
-const news=()=>state.sector==="panorama"?NEWS.slice():NEWS.filter(n=>(n.setores||[]).includes(state.sector));
+const news=()=>NEWS.filter(n=>inSector(n.setores));
 const pestel=()=>PESTEL.filter(p=>inSector(p.setores));
 // Pressão do ambiente por setor: média dos scores PESTEL do setor ponderada pela relevância dos sinais ativos.
 function pressao(){
@@ -1016,6 +1015,8 @@ function applyMonth(mid,mod){
 function periodBanner(){const {nota}=periodScope();return nota?`<div class="banner"><span>Σ</span><div>${nota}</div></div>`:"";}
 // marcação de indisponibilidade de busca retroativa de notícias (semanas anteriores ao motor)
 function histBanner(){if(!HIST_ONLY)return"";return `<div class="banner hist"><span>⧗</span><div><b>Busca retroativa de notícias indisponível.</b> Para semanas anteriores à <b>Semana 22</b> (início do motor), a cobertura de clipping/sinais <b>não é reproduzível de forma confiável</b> — a apuração retroativa não passa no nosso padrão de auditoria. Você vê os <b>indicadores oficiais (BCB/IBGE)</b> e a <b>leitura macro derivada</b> deles.</div></div>`;}
+// aviso quando um setor não tem itens próprios na seleção (filtro estrito): aponta os transversais no Panorama
+function setorVazioNota(oQue){return state.sector==="panorama"?"":`<div class="banner"><span>◔</span><div><b>Sem ${oQue} próprios de ${SMETA[state.sector].nome} nesta seleção.</b> Os ${oQue} <b>transversais</b> (macro — afetam todos os setores) aparecem no setor <b>Panorama geral</b>.</div></div>`;}
 
 const KC={up:"var(--opp)",down:"var(--risk)",neutral:"var(--neutral)"};
 // número a partir de string ("3,36%" -> 3.36)
@@ -1298,7 +1299,7 @@ function sigList(list){
 
 function viewPestel(){
   const list=pestel();
-  return `${periodBanner()}${histBanner()}
+  return `${periodBanner()}${histBanner()}${!list.length?setorVazioNota("forças PESTEL"):""}
   <div class="note"><span>▸</span><div>Clique numa <b>dimensão</b> ou numa <b>célula</b> do mapa para ver as notícias que a sustentam.</div></div>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
     ${list.map(p=>`<div class="card card-pad clickable" data-dim="${p.dim}">
@@ -1335,10 +1336,11 @@ function viewRiscos(){
   const opps=list.filter(s=>s.tipo==="oportunidade"&&(!sel||s.i===state.pointSig)).slice(0,12);
   const rks=list.filter(s=>s.tipo==="risco"&&(!sel||s.i===state.pointSig)).slice(0,12);
   const filterChip=sel?`<button class="btn" id="clearFilter" style="font-size:11px;padding:4px 9px">✕ limpar filtro</button>`:"";
+  const vazio=!list.length?setorVazioNota("sinais"):"";
   const col=(titulo,cor,ico,arr)=>`<div class="card card-pad">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="eyebrow" style="color:${cor}">${ico} ${titulo} (${arr.length})</span></div>
     ${arr.length?sigList(arr):'<p style="color:var(--ink-3);font-size:12.5px;margin:0">— nenhum nesta seleção</p>'}</div>`;
-  return `${periodBanner()}${histBanner()}
+  return `${periodBanner()}${histBanner()}${vazio}
   <div class="note"><span>▸</span><div><b>Matriz Risco × Oportunidade</b> — posição por <b>Impacto</b> (vertical) × <b>Iminência</b> (horizontal). Clique num <b>ponto</b> para filtrar; clique numa <b>prioridade</b> para ver as notícias.${(DATA_LOADED&&!MATRIX_REAL)?' <b>Eixos estimados</b> a partir da relevância e do status até o motor gerar impacto/iminência nativos.':''}</div></div>
   <div class="matrix-holder matrix-full"><span class="ax-y">Impacto →</span>
     <div class="matrix"><span class="quad q-tl">Preparar</span><span class="quad q-tr">Agir agora</span><span class="quad q-bl">Observar</span><span class="quad q-br">Monitorar de perto</span>${pts}</div>
@@ -1353,7 +1355,7 @@ function viewRiscos(){
 
 function viewCadeia(){
   const list=sigs();
-  return `${periodBanner()}${histBanner()}
+  return `${periodBanner()}${histBanner()}${!list.length?setorVazioNota("sinais"):""}
   <div class="note"><span>▸</span><div><b>Cadeia de Impacto Operacional</b> — reagrupa os sinais pelos vetores que a PME sente no caixa. Clique num <b>balde</b> para as notícias que o embasam.</div></div>
   <div class="cadeia">
     ${CADEIA.map(b=>{const items=list.filter(s=>s.cadeia===b.id);
