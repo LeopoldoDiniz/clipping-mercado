@@ -168,6 +168,10 @@
       "texto": "AGU decidiu a favor da Anatel na disputa dos postes (25/05); entidades divergiram sobre cessão obrigatória (27/05); Anatel e Aneel abriram novo capítulo, incluindo postes rurais em SC (28-29/05/2026).",
       "fontes": [
         {
+          "nome": "Café com Bytes",
+          "url": "https://cafecombytes.com.br/2026/05/25/agu-encerra-impasse-entre-aneel-e-anatel-sobre-compartilhamento-de-postes/"
+        },
+        {
           "nome": "TELETIME",
           "url": "https://teletime.com.br/25/05/2026/veja-no-boletim-teletime-agu-encerra-impasse-juridico-dos-postes/"
         },
@@ -342,7 +346,8 @@
       "fontes": [
         {
           "nome": "Farm News",
-          "url": "https://farmnews.com.br/mercado/preco-da-arroba-do-bezerro-mais-estavel-em-maio-de-2026/"
+          "url": "https://farmnews.com.br/mercado/preco-da-arroba-do-bezerro-mais-estavel-em-maio-de-2026/",
+          "ok": false
         }
       ]
     },
@@ -354,6 +359,10 @@
       "titulo": "Mercados agrícolas ficam atentos à divulgação do PIB do 1º trimestre",
       "texto": "Divulgação do PIB do 1º trimestre em 29/05/2026 foi apontada como indicador-chave capaz de influenciar os mercados agrícolas na semana de 25 a 29/05.",
       "fontes": [
+        {
+          "nome": "Min. Planejamento/IBGE",
+          "url": "https://www.gov.br/planejamento/pt-br/assuntos/noticias/2026/maio/pib-avanca-1-1-no-primeiro-trimestre-e-chega-a-r-3-3-trilhoes-aponta-ibge"
+        },
         {
           "nome": "Safras & Mercado",
           "url": "https://safras.com.br/o-que-deve-movimentar-o-agronegocio-e-os-mercados-entre-25-e-29-de-maio"

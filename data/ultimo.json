@@ -173,6 +173,10 @@
       "texto": "O índice FipeZAP revelou que o preço médio dos imóveis residenciais subiu 2,42% no primeiro semestre de 2026, valorização abaixo da inflação do período.",
       "fontes": [
         {
+          "nome": "Portas",
+          "url": "https://portas.com.br/dados-inteligencia/preco-imoveis-sobe-primeiro-semestre-2026-abaixo-inflacao/"
+        },
+        {
           "nome": "UOL",
           "url": "https://www.uol.com.br/economia/ultimas-noticias/2026/07/01/preco-medio-de-imoveis-sobe-242-no-1-semestre-alta-abaixo-da-inflacao.htm",
           "ok": false
@@ -209,6 +213,10 @@
       "titulo": "IBGE inicia coleta da Pesquisa Nacional de Saúde (PNS) 2026 em todo o país",
       "texto": "O IBGE iniciou em julho a coleta da terceira edição da Pesquisa Nacional de Saúde (PNS 2026), que visitará cerca de 140 mil domicílios até novembro.",
       "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-07/pesquisa-nacional-do-ibge-quer-saber-como-anda-saude-do-brasileiro"
+        },
         {
           "nome": "IBGE",
           "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37270-ibge-inicia-coleta-em-todo-o-pais-da-pesquisa-nacional-de-saude-2026"
@@ -287,7 +295,8 @@
         },
         {
           "nome": "Cepea",
-          "url": "https://www.cepea.esalq.usp.br/br/noticia/milho-cepea-precos-se-firmam-com-agentes-cautelosos-e-baixa-liquidez.aspx"
+          "url": "https://www.cepea.esalq.usp.br/br/noticia/milho-cepea-precos-se-firmam-com-agentes-cautelosos-e-baixa-liquidez.aspx",
+          "ok": false
         }
       ]
     },
@@ -298,6 +307,10 @@
       "titulo": "CUB/m² Residencial Médio de Santa Catarina para julho de 2026 é de R$ 3.121,62",
       "texto": "O Custo Unitário Básico da Construção (CUB/m²) Residencial Médio de Santa Catarina para julho de 2026 é de R$ 3.121,62, com variação mensal de 0,82%.",
       "fontes": [
+        {
+          "nome": "MySide",
+          "url": "https://myside.com.br/guia-balneario-camboriu/cub-sc"
+        },
         {
           "nome": "Sinduscon-BNU",
           "url": "https://sindusconbnu.org.br/cub/",
@@ -310,7 +323,8 @@
         },
         {
           "nome": "SENGE-SC",
-          "url": "https://senge-sc.org.br/tabela-do-cub/"
+          "url": "https://senge-sc.org.br/tabela-do-cub/",
+          "ok": false
         },
         {
           "nome": "MySide",

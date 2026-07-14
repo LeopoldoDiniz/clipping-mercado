@@ -66,7 +66,8 @@
         },
         {
           "nome": "YouTube - Jovem Pan News",
-          "url": "https://www.youtube.com/watch?v=QBdlDYzJrLE"
+          "url": "https://www.youtube.com/watch?v=QBdlDYzJrLE",
+          "ok": false
         },
         {
           "nome": "CNN Brasil",
@@ -168,7 +169,8 @@
         },
         {
           "nome": "Jovem Pan News",
-          "url": "https://www.youtube.com/watch?v=QBdlDYzJrLE"
+          "url": "https://www.youtube.com/watch?v=QBdlDYzJrLE",
+          "ok": false
         }
       ]
     },
@@ -207,6 +209,10 @@
       "titulo": "ANP prevê queda gradual nos preços de combustíveis após acordo EUA-Irã e fim de subsídios",
       "texto": "A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) observa uma queda paulatina nos preços dos combustíveis no mercado brasileiro após a assinatura de um acordo preliminar de paz entre Estados Unidos e Irã e a reabertura do Estreito de Ormuz. O diretor-geral da ANP, Artur Watt, afirmou em 24 de junho de 2026 que o mercado interno está abastecido pela produção nacional e importações, sem risco de desabastecimento. O diesel S-10, por exemplo, recuou 0,4% na semana encerrada em 20 de junho. No entanto, o Ministério da Fazenda sinaliza o término dos subsídios aos combustíveis, o que pode influenciar os preços futuros. A ANP também havia prorrogado a flexibilização dos estoques mínimos de gasolina e diesel até 30 de junho de 2026 devido ao conflito no Oriente Médio.",
       "fontes": [
+        {
+          "nome": "Diário Indúdia Commerce",
+          "url": "https://www.diarioinduscom.com.br/Noticias/885837/anp_ve_queda_paulatina_nos_precos_internos_de_combustiveis_apos_acordo_entre_eua_e_ira"
+        },
         {
           "nome": "EPBR",
           "url": "https://epbr.com.br/anp-ve-queda-paulatina-nos-precos-internos-de-combustiveis-apos-acordo-entre-eua-e-ira/",
@@ -272,6 +278,10 @@
       "fontes": [
         {
           "nome": "Canal Solar",
+          "url": "https://canalsolar.com.br/aneel-define-regras-outorga-sistemas-de-armazenamento/"
+        },
+        {
+          "nome": "Canal Solar",
           "url": "https://canalsolar.com.br/armazenamento-de-energia-como-ativo-regulado-o-que-muda-com-a-nova-resolucao-da-aneel/",
           "ok": false
         },
@@ -326,6 +336,10 @@
       "titulo": "IGP-M registra deflação de 0,50% em junho, impulsionado por queda em combustíveis e café",
       "texto": "O Índice Geral de Preços – Mercado (IGP-M) registrou deflação de 0,50% em junho de 2026, a primeira queda desde fevereiro, segundo dados do FGV IBRE. Em 12 meses, o índice acumula 3,16%. A deflação foi impulsionada pela queda nos preços de combustíveis (gasolina e etanol), minerais e café, que convergiram para patamares pré-guerra no Oriente Médio. O Índice de Preços ao Produtor Amplo (IPA), que tem maior peso no IGP-M, apresentou deflação de 0,97%.",
       "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portal.fgv.br/noticias/igp-m-junho-2026"
+        },
         {
           "nome": "Agência Brasil - EBC",
           "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/fgv-gasolina-etanol-e-cafe-recuam-e-ajudam-igp-m-cair-05-em-junho",

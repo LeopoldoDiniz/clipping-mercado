@@ -16,8 +16,13 @@
       "texto": "O Boletim Focus, divulgado nesta segunda-feira (29), indicou estabilidade nas projeções do mercado financeiro para os principais indicadores econômicos de 2026. O Índice Nacional de Preços ao Consumidor Amplo (IPCA) manteve-se em 5,33%, interrompendo uma sequência de 15 meses de altas consecutivas. A taxa básica de juros (Selic) foi projetada em 14%, sugerindo um corte em relação à taxa atual de 14,25%. A cotação do dólar para o final de 2026 também permaneceu estável em R$ 5,20. A projeção para o Produto Interno Bruto (PIB) de 2026 avançou ligeiramente de 1,98% para 1,99%.",
       "fontes": [
         {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-29062026/"
+        },
+        {
           "nome": "Gazeta Brazilian News",
-          "url": "https://gazetanews.com/mercado-mantem-em-533-projecao-de-inflacao-para-2026/"
+          "url": "https://gazetanews.com/mercado-mantem-em-533-projecao-de-inflacao-para-2026/",
+          "ok": false
         },
         {
           "nome": "Tribuna do Norte",
@@ -26,7 +31,8 @@
         },
         {
           "nome": "Jornal do Brasil",
-          "url": "https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html"
+          "url": "https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html",
+          "ok": false
         }
       ]
     },
@@ -42,7 +48,8 @@
       "fontes": [
         {
           "nome": "Gazeta Brazilian News",
-          "url": "https://gazetanews.com/governo-abre-credito-de-r-550-milhoes-para-subsidiar-diesel/"
+          "url": "https://gazetanews.com/governo-abre-credito-de-r-550-milhoes-para-subsidiar-diesel/",
+          "ok": false
         },
         {
           "nome": "Tribuna do Norte",
@@ -90,6 +97,10 @@
       "texto": "A Agência Nacional de Energia Elétrica (ANEEL) formalizou a destinação de até R$ 5,636 bilhões para reduzir as tarifas de energia elétrica em 19 estados, provenientes da repactuação de dívidas de geradoras hidrelétricas. Em contrapartida, a rápida expansão da geração distribuída de energia solar tem imposto desafios à rede elétrica, especialmente em períodos de baixo consumo e alta geração, exigindo a redução controlada da geração ('curtailment') e levantando a necessidade de soluções como o armazenamento em baterias.",
       "fontes": [
         {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-energia/aneel-confirma-repasse-de-r-56-bi-para-reduzir-conta-de-luz/"
+        },
+        {
           "nome": "Confaeab",
           "url": "https://confaeab.org.br/aneel-destinara-ate-r-56-bi-para-aliviar-conta-de-luz-em-19-estados/",
           "ok": false
@@ -111,6 +122,10 @@
       "titulo": "PMEs Lideram Adoção de IA, mas Enfrentam Barreiras de Treinamento e Organização",
       "texto": "Pequenas e médias empresas (PMEs) estão na vanguarda da adoção de Inteligência Artificial (IA), superando grandes corporações em frequência de uso. No entanto, um estudo da Deloitte aponta que o maior desafio não é a tecnologia em si, mas a adaptação da cultura organizacional, o redesenho de funções e a falta de treinamento adequado para os colaboradores, que impede a exploração total do potencial da IA. A OCDE e a Comissão Europeia também defendem a literacia em IA como prioridade nas escolas.",
       "fontes": [
+        {
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br/noticias/pmes-buscam-ia-para-ganhar-eficiencia-aponta-serasa-experian"
+        },
         {
           "nome": "RHmagazine",
           "url": "https://rhmagazine.pt/o-maior-desafio-da-ia-nas-empresas-nao-e-aquele-que-imagina-revela-estudo-da-deloitte/"
@@ -138,6 +153,10 @@
       "texto": "A agenda ESG (Ambiental, Social e Governança) deixou de ser exclusiva de grandes corporações e agora é uma condição obrigatória para o financiamento e acesso ao mercado para médias empresas, que buscam certificações de sustentabilidade. Bancos utilizam três eixos essenciais para classificar e aprovar financiamentos sustentáveis, e empresas que não medem seu impacto podem ter custos futuros consideravelmente maiores.",
       "fontes": [
         {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/negocios/agenda-esg-como-atrair-recursos-para-projetos-de-impacto-em-pmes/"
+        },
+        {
           "nome": "Conecta SC",
           "url": "https://conectasc.com.br/noticias-corporativas/esg-representa-uma-inovacao-no-mundo-dos-negocios/",
           "ok": false
@@ -156,6 +175,10 @@
       "titulo": "Governo Português Lança Estratégia Industrial Verde para Descarbonização e Investimento",
       "texto": "O Governo português determinou a elaboração da Estratégia Industrial Verde, visando posicionar Portugal como destino competitivo para investimentos industriais ligados à descarbonização, transição energética e inovação. A iniciativa busca identificar cadeias de valor prioritárias e mapear oportunidades de investimento tecnológico e econômico, aproveitando a vantagem energética nacional. Em Moçambique, a transição energética requer investimentos superiores a US$ 80 bilhões até 2050.",
       "fontes": [
+        {
+          "nome": "Ambiente Magazine",
+          "url": "https://www.ambientemagazine.com/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/"
+        },
         {
           "nome": "Ambiente Magazine",
           "url": "https://www.ambientemagazine.pt/2026/06/30/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/",
@@ -194,6 +217,10 @@
       "texto": "O Concrete Show 2026, que ocorrerá em agosto, enfatizará a inovação, eficiência e sustentabilidade no setor da construção. O evento, que espera mais de 26 mil profissionais, adotará credenciamento pago para visitantes, buscando qualificar a audiência e ampliar as oportunidades de negócios e aplicação de novas tecnologias.",
       "fontes": [
         {
+          "nome": "Concrete Show",
+          "url": "https://concreteshow.com.br/pt/evento/sustentabilidade.html"
+        },
+        {
           "nome": "Revista Grandes Construções",
           "url": "https://grandesconstrucoes.com.br/concrete-show-destaca-inovacao-eficiencia-e-sustentabilidade-no-setor/"
         }
@@ -207,8 +234,13 @@
       "texto": "O acordo de paz provisório entre EUA e Irã, que levou à queda dos preços do petróleo a níveis pré-guerra, trouxe alívio para as projeções de inflação e Selic no Brasil. Contudo, o tom 'hawkish' do Federal Reserve (Fed) dos EUA tem freado a recuperação de títulos de mercados emergentes, fortalecendo o dólar e criando obstáculos para posições em moeda local.",
       "fontes": [
         {
+          "nome": "Exame",
+          "url": "https://exame.com/invest/mercados/plano-para-definir-acordo-entre-eua-e-ira-derruba-petroleo-brent-vai-a-us-7878/"
+        },
+        {
           "nome": "Jornal do Brasil",
-          "url": "https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html"
+          "url": "https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html",
+          "ok": false
         },
         {
           "nome": "Valor Econômico",
@@ -228,6 +260,10 @@
       "texto": "O governo sul-coreano revelou um plano decenal de mais de 1 bilhão de euros para impulsionar a Inteligência Artificial, incluindo a construção de fábricas de semicondutores e centros de dados. Este é o terceiro e mais significativo investimento em IA anunciado pelo país em menos de um ano.",
       "fontes": [
         {
+          "nome": "Hoje Macau",
+          "url": "https://hojemacau.com.mo/2026/06/30/ia-coreia-do-sul-anuncia-plano-de-mais-de-um-biliao-de-euros/"
+        },
+        {
           "nome": "Jornal Notícias",
           "url": "https://www.jornalnoticias.co.mz/index.php/ciencia-tecnologia-e-ambiente/10899-coreia-do-sul-anuncia-plano-de-mais-de-um-biliao-para-desenvolver-inteligencia-artificial",
           "ok": false
@@ -243,6 +279,10 @@
       "titulo": "Programa de Governança Climática do TCE-AM Recebe Destaque Nacional",
       "texto": "O programa Blitz TCE-AM foi reconhecido em congresso nacional sobre governança climática, destacando-se como um modelo de fiscalização preventiva para identificar vulnerabilidades e fortalecer a capacidade de resposta dos órgãos públicos diante dos desafios ambientais.",
       "fontes": [
+        {
+          "nome": "TCE-AM",
+          "url": "https://www.tceam.tc.br/?p=85381"
+        },
         {
           "nome": "Portal do Amazonas",
           "url": "https://portalamazonas.com/programa-blitz-tce-am-e-destaque-em-congresso-nacional-sobre-governanca-climatica/"

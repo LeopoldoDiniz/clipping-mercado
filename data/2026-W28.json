@@ -19,6 +19,10 @@
       "texto": "A proposta dos Estados Unidos de aplicar uma tarifa adicional de 25% sobre produtos brasileiros entrou em nova fase nesta semana, com a realização de audiências públicas em Washington. Representantes de setores estratégicos da economia brasileira, como agropecuária e indústria, defenderam posições contra a medida, que pode atingir US$ 14,9 bilhões em exportações e elevar a taxação acumulada para até 37,5% em mais de 4 mil produtos. A CNI alertou que as novas tarifas podem elevar custos para empresas e consumidores em ambos os países, comprometendo cadeias produtivas integradas. A decisão final do governo americano é esperada para 15 de julho.",
       "fontes": [
         {
+          "nome": "TV Brasil",
+          "url": "https://tvbrasil.ebc.com.br/reporter-brasil/2026/07/eua-iniciam-audiencia-sobre-tarifa-de-25-produtos-brasileiros"
+        },
+        {
           "nome": "Revista Anamaco",
           "url": null
         },
@@ -44,6 +48,10 @@
       "titulo": "Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas",
       "texto": "A produção industrial brasileira registrou um recuo de 0,2% em maio de 2026 na comparação com o mês anterior, interrompendo uma sequência de quatro altas consecutivas, segundo dados da Pesquisa Industrial Mensal (PIM) do IBGE. O resultado negativo foi influenciado principalmente pelos segmentos de coque, produtos derivados do petróleo e biocombustíveis (-6,1%) e indústrias extrativas (-2,6%). Apesar da queda mensal, o acumulado no ano ainda apresenta avanço de 1,4%. A indústria opera 13,0% abaixo do nível recorde de maio de 2011, impactada pelos juros altos.",
       "fontes": [
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/industria-recua-02-em-maio-apos-4-altas-seguidas"
+        },
         {
           "nome": "IBGE",
           "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37207-producao-industrial-varia-0-2-em-maio"
@@ -76,6 +84,10 @@
       "texto": "Após quatro meses de pessimismo, os empresários da indústria da construção voltaram a projetar crescimento no lançamento de novos empreendimentos e serviços em junho de 2026, conforme a Sondagem Indústria da Construção da CNI em parceria com a CBIC. O índice de expectativa para novos projetos subiu para 52,5 pontos, indicando perspectivas positivas. Também houve avanço nas expectativas para o nível de atividade, número de empregados e compras de insumos. A intenção de investimentos cresceu para 43,7 pontos, acima da média histórica do setor.",
       "fontes": [
         {
+          "nome": "ALEC",
+          "url": "https://alec.org.br/sondagem-5/"
+        },
+        {
           "nome": "ABRAVIDRO",
           "url": null
         },
@@ -106,6 +118,10 @@
       "texto": "Uma sondagem especial da CNI revelou que 97% do setor industrial seria impactado por uma eventual redução da jornada de trabalho, e 73% das indústrias rejeitam a imposição da medida por lei. As principais preocupações apontadas são o aumento de custos, a perda de competitividade e a queda na produção. A jornada semanal de 44 horas é predominante em 85% das empresas, e o presidente da CNI, Ricardo Alban, alertou para as consequências negativas que uma mudança na legislação traria para a economia e os consumidores.",
       "fontes": [
         {
+          "nome": "SinPapel",
+          "url": "https://www.sinpapel.com.br/post/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni"
+        },
+        {
           "nome": "CNI",
           "url": "https://portaldaindustria.com.br/noticias/2026/07/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni/",
           "ok": false
@@ -135,6 +151,10 @@
       "titulo": "Balança Comercial Brasileira Registra Forte Superávit na 1ª Semana de Julho e Projeção Anual é Elevada",
       "texto": "A balança comercial brasileira iniciou julho com um superávit de US$ 2,27 bilhões na primeira semana, impulsionado pelo crescimento de 40,6% nas exportações em comparação com o mesmo período de 2025. As exportações da indústria extrativa cresceram 81,7%, e da indústria de transformação, 39,4%. No acumulado do ano até a primeira semana de julho, o superávit atingiu US$ 44,63 bilhões, alta de 39,2%. O MDIC elevou a projeção oficial do superávit para US$ 90 bilhões em 2026, refletindo o bom desempenho e a expectativa de exportações mais elevadas.",
       "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/balanca-comercial-de-julho-registra-superavit-de-us-2273-bilhoes-na-1a-semana/"
+        },
         {
           "nome": "MDIC",
           "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/balanca-comercial-preliminar-parcial-do-mes",
@@ -191,6 +211,10 @@
       "fontes": [
         {
           "nome": "ANEEL",
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3"
+        },
+        {
+          "nome": "ANEEL",
           "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3",
           "ok": false
         },
@@ -218,6 +242,10 @@
       "titulo": "Confiança do Varejo Volta a Crescer em Junho, Impulsionada por Semiduráveis",
       "texto": "A confiança dos empresários do comércio brasileiro interrompeu uma sequência de duas quedas mensais e avançou 0,2% em junho, atingindo 102,6 pontos após ajuste sazonal, segundo a Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC). O resultado foi impulsionado principalmente pelo segmento de bens semiduráveis (roupas, calçados), cuja confiança saltou 1,1%. Apesar da melhora, o presidente da CNC, José Roberto Tadros, ressalta a necessidade de prudência diante do contexto inflacionário e da política monetária.",
       "fontes": [
+        {
+          "nome": "Portal do Comércio/CNC",
+          "url": "https://portaldocomercio.org.br/acoes-institucionais/confianca-do-varejo-volta-a-crescer-em-junho-puxada-por-moda-e-calcados/"
+        },
         {
           "nome": "Fenacor",
           "url": null
@@ -269,6 +297,10 @@
       "titulo": "Copa do Mundo Impulsiona Autoatendimento em Varejo e Alimentação",
       "texto": "A Copa do Mundo de 2026 está impulsionando a adoção de terminais de autoatendimento nos setores de varejo e alimentação. A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) estima que bares e restaurantes devem faturar R$ 2,42 bilhões durante o torneio, com crescimento de 15,7% em relação a 2022. Para lidar com picos de demanda sem ampliar equipes, 89% dos consumidores preferem o varejo físico para compras de consumo imediato. A tecnologia de autoatendimento é vista como uma solução para garantir o atendimento em momentos de sobrecarga.",
       "fontes": [
+        {
+          "nome": "Bahia Econômica",
+          "url": "https://bahiaeconomica.com.br/wp/2026/07/06/copa-do-mundo-impulsiona-autoatendimento-em-varejo-e-alimentacao/"
+        },
         {
           "nome": "Bahia Economica",
           "url": null

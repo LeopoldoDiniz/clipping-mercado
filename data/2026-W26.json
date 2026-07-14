@@ -18,6 +18,10 @@
       "texto": "O Comitê de Política Monetária (Copom) do Banco Central reduziu a Taxa Selic em 0,25 ponto percentual, fixando-a em 14,25% ao ano. Esta é a terceira redução consecutiva no ciclo, com a decisão sendo tomada em 17 de junho de 2026. Apesar do corte, o comunicado do Copom manteve um tom cauteloso, citando a inflação ainda acima da meta e as incertezas do cenário global, especialmente as consequências dos conflitos no Oriente Médio. A projeção do Banco Safra é que a Selic encerre 2026 em 13,50% ao ano, refletindo um processo gradual de queda dos juros.",
       "fontes": [
         {
+          "nome": "Copom/Selic",
+          "url": "https://reajaagora.org.br/economia-brasileira-copom-reduz-selic-para-1425-em-junho-de-2026/"
+        },
+        {
           "nome": "Agência Brasil - EBC",
           "url": null
         },
@@ -42,6 +46,10 @@
       "titulo": "IPCA-15 Desacelera para 0,41% em Junho, mas Alimentos e Energia Pressionam",
       "texto": "O Índice Nacional de Preços ao Consumidor Amplo-15 (IPCA-15) registrou alta de 0,41% em junho de 2026, uma desaceleração em relação aos 0,62% de maio, mas ainda acima das expectativas do mercado. Divulgado em 25 de junho de 2026, o índice acumulado em 12 meses atingiu 4,80%, afastando-se do teto da meta de inflação do Banco Central. Os principais impactos vieram da energia elétrica residencial e de alimentos como batata-inglesa e tomate, que mais que dobraram de preço no primeiro semestre.",
       "fontes": [
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/ipca-15-junho-2026/"
+        },
         {
           "nome": "InfoMoney",
           "url": "https://www.infomoney.com.br"
@@ -80,6 +88,10 @@
       "texto": "A confiança dos empresários do comércio brasileiro interrompeu uma sequência de duas quedas mensais e avançou 0,2% em junho de 2026, atingindo 102,6 pontos, segundo dados da Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) divulgados em 30 de junho de 2026. O resultado, impulsionado principalmente pelo segmento de bens semiduráveis (moda e vestuário), mantém o indicador acima do nível de satisfação (100 pontos). Contudo, a percepção sobre as condições econômicas atuais ainda gera desconforto para a maioria dos varejistas.",
       "fontes": [
         {
+          "nome": "Sincovaga",
+          "url": "https://www.sincovaganoticias.com.br/confianca-do-varejo-volta-a-crescer-em-junho-puxada-por-moda-e-calcados/"
+        },
+        {
           "nome": "CNC - Enfoque",
           "url": "https://portaldocomercio.org.br"
         },
@@ -106,6 +118,10 @@
       "titulo": "Arrecadação Federal Bate Recorde Histórico em Maio, Impulsionada por Petróleo e Mudanças Tributárias",
       "texto": "A arrecadação federal de impostos e contribuições atingiu R$ 266,8 bilhões em maio de 2026, o maior valor já registrado para o mês na série histórica iniciada em 1995. O acumulado de janeiro a maio de 2026 superou R$ 1,32 trilhão, também um recorde para o período. Os dados, divulgados pela Receita Federal em 25 de junho de 2026, mostram que o desempenho foi impulsionado pelo aumento das receitas ligadas à extração de petróleo e gás natural, pela atividade econômica e por mudanças na tributação de fundos exclusivos e offshores.",
       "fontes": [
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/06/332033-arrecadacao-federal-bate-recorde-de-rs-2668-bilhoes-em-maio.html"
+        },
         {
           "nome": "Receita Federal (via Agência Brasil)",
           "url": "https://www.gov.br/receitafederal/pt-br"
@@ -183,6 +199,10 @@
       "texto": "A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP) informou em 24 e 25 de junho de 2026 que está observando uma queda paulatina nos preços dos combustíveis no mercado brasileiro, após a assinatura de um acordo preliminar de paz entre Estados Unidos e Irã e a reabertura do Estreito de Ormuz. Os futuros do Brent, referência para o petróleo, operam perto de US$ 73 por barril. A ANP também reiterou que o mercado interno de combustíveis está devidamente abastecido, sem risco de desabastecimento, e que a flexibilização dos estoques mínimos de gasolina e diesel foi prorrogada até 30 de junho de 2026.",
       "fontes": [
         {
+          "nome": "BiodieselBR",
+          "url": "https://www.biodieselbr.com/noticias/regulacao/dist/precos-dos-combustiveis-mantem-tendencia-e-tem-nova-queda-nos-postos-aponta-anp-100626"
+        },
+        {
           "nome": "ANP (via Sindiminas)",
           "url": "https://www.gov.br/anp/pt-br"
         },
@@ -205,7 +225,8 @@
       "fontes": [
         {
           "nome": "Fiesp (via Economia SP)",
-          "url": "https://www.fiesp.com.br"
+          "url": "https://www.fiesp.com.br",
+          "ok": false
         }
       ]
     },
@@ -240,6 +261,10 @@
       "texto": "Pela primeira vez desde fevereiro, os empresários da indústria da construção passaram a projetar aumento de novos empreendimentos e serviços para os próximos seis meses, conforme a Sondagem Indústria da Construção da CNI, divulgada em 24 de junho de 2026. O índice de expectativa por novos projetos aumentou 3,3 pontos, atingindo 52,5 pontos, indicando otimismo. As expectativas em relação a novas contratações, compra de insumos e matérias-primas, e nível de atividade também melhoraram.",
       "fontes": [
         {
+          "nome": "CBIC",
+          "url": "https://cbic.org.br/construcao-projeta-alta-de-novos-negocios-mostra-sondagem-da-cni-em-parceira-com-a-cbic/"
+        },
+        {
           "nome": "CNI - Portal da Indústria",
           "url": "https://noticias.portaldaindustria.com.br"
         },
@@ -257,6 +282,10 @@
       "titulo": "Fiesp Apresenta Estudo sobre Desafios da Descarbonização da Indústria",
       "texto": "A Federação das Indústrias do Estado de São Paulo (Fiesp), em parceria com a CNI, apresentou em 9 de junho de 2026 um estudo inédito sobre a trajetória de emissões da indústria até 2050. O estudo, coordenado pelo Departamento de Meio Ambiente da Fiesp, revela os desafios para a descarbonização da indústria, especialmente nos setores energointensivos. Soluções como hidrogênio verde, captura e armazenamento de carbono (CCS) e eletrificação de processos são consideradas cruciais, mas ainda distantes da realidade da maior parte do parque industrial brasileiro.",
       "fontes": [
+        {
+          "nome": "Sinproquim/Fiesp",
+          "url": "https://sinproquim.org.br/fiesp-apresentara-estudo-inedito-sobre-o-papel-da-industria-na-descarbonizacao-da-economia/"
+        },
         {
           "nome": "ABIFA",
           "url": null

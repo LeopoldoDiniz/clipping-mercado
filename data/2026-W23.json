@@ -134,12 +134,12 @@
       "setores": [
         "servicos"
       ],
-      "titulo": "Tarifaço dos EUA pressiona telecom; pirataria causa R$ 12 bi em perdas na região",
-      "texto": "Tarifas americanas impactam o setor de telecom no Brasil; pirataria gera R$ 12 bilhões em perdas anuais na região, em 03/06/2026.",
+      "titulo": "Pirataria audiovisual gera US$ 12 bilhões em perdas anuais na América Latina",
+      "texto": "Estudo aponta que a pirataria audiovisual causa cerca de US$ 12 bilhões em perdas por ano na América Latina, incluindo o Brasil (junho/2026).",
       "fontes": [
         {
-          "nome": "TELETIME",
-          "url": "https://teletime.com.br/03/06/2026/boletim-teletime-tarifaco/"
+          "nome": "Tela Viva",
+          "url": "https://telaviva.com.br/02/06/2026/pirataria-audiovisual-gera-perdas-de-us-12-bilhoes-por-ano-na-america-latina/"
         }
       ]
     },
@@ -163,6 +163,10 @@
       "titulo": "PMI de Serviços do Brasil estende sequência de expansão em junho",
       "texto": "PMI de Serviços do Brasil atingiu 51,3 pontos em junho de 2026, oitavo mês consecutivo de expansão, sob pressões inflacionárias.",
       "fontes": [
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/pmi-setor-de-servicos-do-brasil-ganha-forca-com-recuperacao-da-demanda/"
+        },
         {
           "nome": "Trading View / S&P Global",
           "url": "https://www.tradingview.com/news/te_news:564175:0-brazil-services-pmi-extends-growth-streak/"
