@@ -858,6 +858,8 @@ function sigs(){
 }
 const news=()=>NEWS.filter(n=>inSector(n.setores));
 const pestel=()=>PESTEL.filter(p=>inSector(p.setores));
+// resolve um sinal pela posição .i na lista atual (sigs() é reindexado e determinístico) — cobre curados e derivados
+const sigByI=i=>sigs().find(s=>s.i===i);
 // classifica uma notícia como risco/oportunidade pelo tom (ou null se meramente informativa)
 const _VOC_RISCO=/queda|caiu?|recuo|recua|crise|encarece|inadimpl|press[ãa]o|dificuldade|desacelera|contra[çc][ãa]o|d[ée]ficit|preju[íi]zo|demiss|greve|atraso|escassez|restri[çc]|tombo|piora|\brisco|amea[çc]|endivida|fech(a|ou|amento)|redu[çz]|custo(s)? (maior|mais alto|em alta)|alta d[eo]s? custo|tarifa[çc]o|sobretaxa|abaixo d[ae]|negativ|\bperda|desemprego|encolhe|desafio|tensã?o/i;
 const _VOC_OPP=/cresce|crescimento|avan[çc]|otimis|expans[ãa]o|investiment|aporte|oportunidade|lan[çc]a|inova[çc]|recorde|aquecid|impulsiona|recupera[çc]|\bmelhora|super[áa]vit|acelera[çc]|novo(s)? mercado|amplia|expande|\bforte|sobe\b|aumento das vendas|positiv|beneficia|aquece|dispara|elev(a|ou)/i;
@@ -1439,7 +1441,7 @@ function viewTraj(){
   </div>`).join("")}</div>`;
 }
 function openTraj(idx){
-  const s=SIGNALS[idx];const evs=newsForSig(s);
+  const s=sigByI(idx);if(!s)return;const evs=newsForSig(s);
   const hist=s.traj.map(step=>{const w=WMETA[step[0]];return `<div class="ev"><h5 style="display:flex;justify-content:space-between"><span>${w?w.lbl:step[0]}</span><span class="rel num">rel ${step[2]}</span></h5>
     <div style="font-size:11px;color:var(--ink-3);margin-bottom:6px">${w?w.dt:''} · status: <b style="color:var(--ink-2)">${step[1].replace("_"," ")}</b></div></div>`;}).join("");
   document.getElementById("drawerSub").textContent="Trajetória do sinal";
@@ -1568,7 +1570,7 @@ document.getElementById("view").addEventListener("click",e=>{
   const more=e.target.closest("[data-more]");if(more){e.preventDefault();e.stopPropagation();const w=more.closest(".clampw");const rest=w&&w.querySelector(".clamp-rest");if(rest){if(rest.hasAttribute("hidden")){rest.removeAttribute("hidden");more.textContent="ver menos";}else{rest.setAttribute("hidden","");more.textContent=more.dataset.more||"ver mais";}}return;}
   const goto=e.target.closest("[data-goto]");if(goto){e.preventDefault();state.lens=goto.dataset.goto;render();scrollTo({top:0,behavior:"smooth"});return;}
   const kpiI=e.target.closest("[data-kpi]");if(kpiI){const k=KPIMAP[kpiI.dataset.kpi]||KPIS.find(x=>x.id===kpiI.dataset.kpi);markActive(kpiI.closest(".kpi"));openDrawer("Indicador",k.label,[]);document.getElementById("drawerBody").innerHTML=`<div style="padding:14px 0"><p style="font-size:13.5px;color:var(--ink-2)">${k.info}</p><div class="legend" style="margin-top:10px">${k.sub}</div><a href="#" data-goto="metodologia" style="display:inline-block;margin-top:12px;color:var(--accent);font-weight:600;font-size:12.5px">Ver metodologia completa →</a></div>`;return;}
-  const sig=e.target.closest("[data-sig]");if(sig){const s=SIGNALS[+sig.dataset.sig];markActive(sig);openDrawer("Evidências do sinal",s.t,newsForSig(s));return;}
+  const sig=e.target.closest("[data-sig]");if(sig){const s=sigByI(+sig.dataset.sig);if(s){markActive(sig);openDrawer("Evidências do sinal",s.t,newsForSig(s));}return;}
   const dimC=e.target.closest(".cell[data-dim]");if(dimC){const d=dimC.dataset.dim,sec=dimC.dataset.sec;markActive(dimC);openDrawer(`${DIMS[d]} · ${SMETA[sec].nome}`,`${d} — ${PESTEL.find(x=>x.dim===d).tema}`,newsFor({dim:d,sector:sec}));return;}
   const dim=e.target.closest("[data-dim]");if(dim){const d=dim.dataset.dim;markActive(dim);openDrawer(`Dimensão ${DIMS[d]}`,PESTEL.find(x=>x.dim===d).tema,newsFor({dim:d}));return;}
   const cad=e.target.closest("[data-cadeia]");if(cad){const c=cad.dataset.cadeia;markActive(cad);openDrawer("Cadeia de impacto",CADEIA.find(x=>x.id===c).nome,newsFor({cadeia:c}));return;}
@@ -1584,7 +1586,7 @@ document.getElementById("view").addEventListener("click",e=>{
 });
 document.getElementById("drawerBody").addEventListener("click",e=>{
   const g=e.target.closest("[data-goto]");if(g){e.preventDefault();state.lens=g.dataset.goto;closeDrawer();render();scrollTo({top:0,behavior:"smooth"});return;}
-  const sg=e.target.closest("[data-sig]");if(sg){const s=SIGNALS[+sg.dataset.sig];openDrawer("Evidências do sinal",s.t,newsForSig(s));return;}
+  const sg=e.target.closest("[data-sig]");if(sg){const s=sigByI(+sg.dataset.sig);if(s)openDrawer("Evidências do sinal",s.t,newsForSig(s));return;}
 });
 // Fecha o drawer ao clicar fora dele (mantendo a navegação: gatilhos que abrem/atualizam o drawer não fecham).
 document.addEventListener("click",e=>{
