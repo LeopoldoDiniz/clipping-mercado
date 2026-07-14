@@ -49,8 +49,7 @@
       "fontes": [
         {
           "nome": "ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/bandeira-tarifaria-em-julho-permanece-amarela",
-          "ok": false
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/bandeira-tarifaria-em-julho-permanece-amarela"
         },
         {
           "nome": "Viva",
@@ -93,7 +92,7 @@
         "industria"
       ],
       "titulo": "Inadimplência das empresas atinge nível recorde de R$ 229,9 bilhões em maio",
-      "texto": "A Serasa Experian reportou que mais de 9 milhões de CNPJs estavam negativados em maio de 2026, com o estoque de dívidas atingindo R$ 229,9 bilhões, o maior volume da série histórica. [cite: 13, 26, 32, 39 in previous search]",
+      "texto": "A Serasa Experian reportou que mais de 9 milhões de CNPJs estavam negativados em maio de 2026, com o estoque de dívidas atingindo R$ 229,9 bilhões, o maior volume da série histórica.",
       "fontes": [
         {
           "nome": "Serasa Experian",
@@ -121,7 +120,7 @@
         "transversal"
       ],
       "titulo": "Pesquisa Febraban de Tecnologia Bancária 2026 destaca investimentos em IA",
-      "texto": "A Pesquisa Febraban de Tecnologia Bancária 2026 revela que o setor bancário brasileiro investe mais de R$ 50 bilhões em tecnologia, com a IA se consolidando como fator essencial de competitividade. [cite: 6, 24, 31 in previous search]",
+      "texto": "A Pesquisa Febraban de Tecnologia Bancária 2026 revela que o setor bancário brasileiro investe mais de R$ 50 bilhões em tecnologia, com a IA se consolidando como fator essencial de competitividade.",
       "fontes": [
         {
           "nome": "Febraban",
@@ -129,7 +128,8 @@
         },
         {
           "nome": "Febraban Podcast",
-          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g"
+          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g",
+          "ok": false
         }
       ]
     },
@@ -139,12 +139,15 @@
         "construcao"
       ],
       "titulo": "Conab: Colheita de milho de inverno 2025/26 atinge 28,5% da área semeada",
-      "texto": "A Companhia Nacional de Abastecimento (Conab) informou em 08/07/2026 que a colheita de milho de inverno no Brasil atingiu 28,5% da área plantada da safra 2025/26. [cite: 7 in previous search]",
+      "texto": "A Companhia Nacional de Abastecimento (Conab) informou que a colheita de milho de inverno no Brasil atingiu 28,5% da área plantada da safra 2025/26 até 04/07/2026.",
       "fontes": [
         {
-          "nome": "SBA1",
-          "url": "https://sba1.com/noticias/conab-brasil-colheu-28-5-da-area-plantada-de-milho-de-inverno-2025-26/",
-          "ok": false
+          "nome": "Agrimídia / Conab",
+          "url": "https://agrimidia.com.br/avicultura-industrial/2026/07/10/colheita-do-milho-de-inverno-acelera-e-atinge-285-da-area-no-brasil/"
+        },
+        {
+          "nome": "aRede / Conab",
+          "url": "https://arede.info/a-forca-do-agro/650166/brasil-colheu-285-da-area-plantada-de-milho-safrinha"
         }
       ]
     },
@@ -152,12 +155,12 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Conab confirma conclusão da colheita de soja da safra 2025/26",
-      "texto": "A Conab confirmou a conclusão da colheita de soja no Brasil da safra 2025/26 em junho, enquanto a colheita do milho de verão segue atrasada. [cite: 40 in previous search]",
+      "titulo": "Conab: colheita de soja 2025/26 chega a 99,8% da área, praticamente concluída",
+      "texto": "A Conab apontou que a colheita de soja da safra 2025/26 atingiu 99,8% da área semeada, praticamente concluída, enquanto o milho safrinha seguia em ritmo lento (3% da área).",
       "fontes": [
         {
-          "nome": "Canal Terraviva",
-          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g"
+          "nome": "Conab / Canal Rural",
+          "url": "https://www.canalrural.com.br/agricultura/conab-aponta-soja-em-998-da-area-colhida-e-milho-safrinha-em-3/"
         }
       ]
     },
@@ -167,7 +170,7 @@
         "transversal"
       ],
       "titulo": "Preço médio de imóveis residenciais sobe 2,42% no 1º semestre, abaixo da inflação",
-      "texto": "O índice FipeZAP revelou que o preço médio dos imóveis residenciais subiu 2,42% no primeiro semestre de 2026, valorização abaixo da inflação do período. [cite: 30 in previous search, 43 in previous search, 44 in previous search]",
+      "texto": "O índice FipeZAP revelou que o preço médio dos imóveis residenciais subiu 2,42% no primeiro semestre de 2026, valorização abaixo da inflação do período.",
       "fontes": [
         {
           "nome": "UOL",
@@ -190,7 +193,7 @@
         "construcao"
       ],
       "titulo": "Mitre (MTRE3) registra queda de 31,9% nas vendas líquidas no segundo trimestre",
-      "texto": "A construtora Mitre (MTRE3) reportou vendas líquidas de R$ 198,3 milhões no segundo trimestre de 2026, uma queda de 31,9% na comparação anual. [cite: 48 in previous search, 49 in previous search]",
+      "texto": "A construtora Mitre (MTRE3) reportou vendas líquidas de R$ 198,3 milhões no segundo trimestre de 2026, uma queda de 31,9% na comparação anual.",
       "fontes": [
         {
           "nome": "InfoMoney",
@@ -204,7 +207,7 @@
         "servicos"
       ],
       "titulo": "IBGE inicia coleta da Pesquisa Nacional de Saúde (PNS) 2026 em todo o país",
-      "texto": "O IBGE iniciou em julho a coleta da terceira edição da Pesquisa Nacional de Saúde (PNS 2026), que visitará cerca de 140 mil domicílios até novembro. [cite: 15 in previous search, 18 in previous search, 21 in previous search]",
+      "texto": "O IBGE iniciou em julho a coleta da terceira edição da Pesquisa Nacional de Saúde (PNS 2026), que visitará cerca de 140 mil domicílios até novembro.",
       "fontes": [
         {
           "nome": "IBGE",
@@ -222,11 +225,12 @@
         "servicos"
       ],
       "titulo": "ANEEL realiza segunda rodada do Leilão de Transmissão nº 1 de 2026",
-      "texto": "A ANEEL realizou em 03/07/2026 a segunda rodada do Leilão de Transmissão nº 1 de 2026, ofertando 4 lotes de linhas de transmissão para garantir a expansão da infraestrutura. [cite: 9 in previous search, 27 in previous search]",
+      "texto": "A ANEEL realizou em 03/07/2026 a segunda rodada do Leilão de Transmissão nº 1 de 2026, ofertando 4 lotes de linhas de transmissão para garantir a expansão da infraestrutura.",
       "fontes": [
         {
           "nome": "ANEEL / YouTube",
-          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g"
+          "url": "https://www.youtube.com/watch?v=s_t_L_D_0_g",
+          "ok": false
         },
         {
           "nome": "ANEEL",
@@ -242,7 +246,7 @@
         "comercio"
       ],
       "titulo": "Confiança Empresarial avança em junho, impulsionada por indústria e serviços",
-      "texto": "A Confiança Empresarial, segundo o FGV IBRE, avançou pelo segundo mês consecutivo em junho de 2026, atingindo o maior nível desde maio de 2025, com destaque para Indústria e Serviços. [cite: 41 in previous search, 28 in previous search]",
+      "texto": "A Confiança Empresarial, segundo o FGV IBRE, avançou pelo segundo mês consecutivo em junho de 2026, atingindo o maior nível desde maio de 2025, com destaque para Indústria e Serviços.",
       "fontes": [
         {
           "nome": "FGV/IBRE",
@@ -322,7 +326,7 @@
         "ecommerce"
       ],
       "titulo": "Eliminação do Brasil na Copa do Mundo 2026 altera planos de consumo para o varejo",
-      "texto": "A eliminação da Seleção Brasileira na Copa do Mundo 2026 deve mudar os planos de consumo, com o varejo precisando replanejar estoques e promoções temáticas. [cite: 47 in previous search]",
+      "texto": "A eliminação da Seleção Brasileira na Copa do Mundo 2026 deve mudar os planos de consumo, com o varejo precisando replanejar estoques e promoções temáticas.",
       "fontes": [
         {
           "nome": "CenárioMT",
@@ -484,7 +488,7 @@
       "dim": "P",
       "nome": "Político",
       "tema": "Debate sobre legislação trabalhista e impacto na indústria",
-      "texto": "Propostas de alteração na jornada de trabalho e fim da escala 6x1 geram preocupação na indústria, que prevê aumento de custos e perda de competitividade. [cite: 3, 8, 12, 20, 36 in previous search]",
+      "texto": "Propostas de alteração na jornada de trabalho e fim da escala 6x1 geram preocupação na indústria, que prevê aumento de custos e perda de competitividade.",
       "score": 7.5,
       "setores": [
         "industria",
@@ -499,7 +503,7 @@
       "dim": "E",
       "nome": "Econômico",
       "tema": "Inflação em desaceleração, inadimplência em alta e projeções do Focus",
-      "texto": "O IPCA de junho desacelerou para 0,16%, mas a inadimplência de empresas e consumidores segue em níveis recordes. O Boletim Focus reduziu a projeção de IPCA para 2026 para 5,16%. [cite: 3, 4, 5, 8, 9, 13, 16, 20, 26, 32 in previous search, 39 in previous search]",
+      "texto": "O IPCA de junho desacelerou para 0,16%, mas a inadimplência de empresas e consumidores segue em níveis recordes. O Boletim Focus reduziu a projeção de IPCA para 2026 para 5,16%.",
       "score": 8,
       "setores": [
         "industria",
@@ -515,7 +519,7 @@
       "dim": "S",
       "nome": "Social",
       "tema": "Endividamento do consumidor e impacto na saúde",
-      "texto": "Pesquisas da CNDL/SPC Brasil mostram que o alto endividamento afeta a saúde física e mental dos consumidores, com muitos recorrendo a novos créditos para quitar dívidas antigas. [cite: 5, 16, 35 in previous search, 51 in previous search]",
+      "texto": "Pesquisas da CNDL/SPC Brasil mostram que o alto endividamento afeta a saúde física e mental dos consumidores, com muitos recorrendo a novos créditos para quitar dívidas antigas.",
       "score": 8.5,
       "setores": [
         "comercio",
@@ -528,7 +532,7 @@
       "dim": "T",
       "nome": "Tecnológico",
       "tema": "Adoção de IA no setor bancário e digitalização",
-      "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 indica que o setor bancário investe mais de R$ 50 bilhões em tecnologia, com a IA sendo crucial para competitividade e digitalização. [cite: 6, 24, 31 in previous search]",
+      "texto": "A pesquisa Febraban de Tecnologia Bancária 2026 indica que o setor bancário investe mais de R$ 50 bilhões em tecnologia, com a IA sendo crucial para competitividade e digitalização.",
       "score": 7,
       "setores": [
         "comercio",
@@ -541,7 +545,7 @@
       "dim": "A",
       "nome": "Ambiental",
       "tema": "Bandeira tarifária amarela e condições climáticas",
-      "texto": "A manutenção da bandeira tarifária amarela pela ANEEL em julho reflete condições menos favoráveis de geração, típicas do período seco, com redução nos níveis dos reservatórios. [cite: 2, 11, 23, 27 in previous search]",
+      "texto": "A manutenção da bandeira tarifária amarela pela ANEEL em julho reflete condições menos favoráveis de geração, típicas do período seco, com redução nos níveis dos reservatórios.",
       "score": 6,
       "setores": [
         "industria",
@@ -556,7 +560,7 @@
       "dim": "L",
       "nome": "Legal",
       "tema": "Regulamentação do setor elétrico e leilões de transmissão",
-      "texto": "A ANEEL realizou um leilão de transmissão para expandir a infraestrutura elétrica, enquanto o debate sobre a escala 6x1 continua impactando o ambiente regulatório trabalhista. [cite: 9 in previous search, 27 in previous search, 3, 8, 12, 20, 36 in previous search]",
+      "texto": "A ANEEL realizou um leilão de transmissão para expandir a infraestrutura elétrica, enquanto o debate sobre a escala 6x1 continua impactando o ambiente regulatório trabalhista.",
       "score": 6.5,
       "setores": [
         "industria",
@@ -584,7 +588,7 @@
       "label": "Câmbio (Dólar)",
       "valor": "R$ 5,22",
       "cor": "neutral",
-      "sub": "Cotação indicativa do dólar em 13/07/2026. Projeção Focus 2026: R$ 5,20. [cite: 38 in previous search, 50 in previous search, 5, 8]"
+      "sub": "Cotação indicativa do dólar em 13/07/2026. Projeção Focus 2026: R$ 5,20."
     },
     {
       "label": "Desemprego",
@@ -789,7 +793,7 @@
       "relevancia": 88.05,
       "severidade": 8.8,
       "iminencia": 8.5,
-      "ultima_observacao": "A pesquisa CNDL/SPC Brasil confirma que 60,1 milhões de consumidores possuem compras parceladas e 38% ficaram inadimplentes, com 81% 'pedalando' dívidas. [cite: 5, 16, 35 in previous search]",
+      "ultima_observacao": "A pesquisa CNDL/SPC Brasil confirma que 60,1 milhões de consumidores possuem compras parceladas e 38% ficaram inadimplentes, com 81% 'pedalando' dívidas.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-01",
       "origem": "real"
@@ -809,7 +813,7 @@
       "relevancia": 86.5,
       "severidade": 8.2,
       "iminencia": 9,
-      "ultima_observacao": "A ANEEL manteve a bandeira tarifária amarela para julho, com acréscimo de R$ 1,885/100 kWh, confirmando a persistência dos custos elevados de energia. [cite: 2, 11, 23, 27 in previous search]",
+      "ultima_observacao": "A ANEEL manteve a bandeira tarifária amarela para julho, com acréscimo de R$ 1,885/100 kWh, confirmando a persistência dos custos elevados de energia.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-06",
       "origem": "real"
@@ -865,7 +869,7 @@
       "relevancia": 75.95,
       "severidade": 7.2,
       "iminencia": 7.5,
-      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 reforça a contínua digitalização do setor, com mais de 240 bilhões de transações anuais via mobile banking. [cite: 6, 24, 31 in previous search]",
+      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 reforça a contínua digitalização do setor, com mais de 240 bilhões de transações anuais via mobile banking.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-01",
       "origem": "real"
@@ -884,7 +888,7 @@
       "relevancia": 70.25,
       "severidade": 6.5,
       "iminencia": 7,
-      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 destaca investimentos de R$ 50 bilhões em tecnologia, com a IA se consolidando como essencial para o setor. [cite: 6, 24, 31 in previous search]",
+      "ultima_observacao": "A Pesquisa Febraban de Tecnologia Bancária 2026 destaca investimentos de R$ 50 bilhões em tecnologia, com a IA se consolidando como essencial para o setor.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-01",
       "origem": "real"
@@ -903,7 +907,7 @@
       "relevancia": 58.25,
       "severidade": 5.5,
       "iminencia": 6,
-      "ultima_observacao": "A queda de 31,9% nas vendas líquidas da Mitre no 2T26 e a valorização de imóveis abaixo da inflação (FipeZAP) indicam um cenário misto na construção. [cite: 30 in previous search, 43 in previous search, 44 in previous search, 48 in previous search, 49 in previous search]",
+      "ultima_observacao": "A queda de 31,9% nas vendas líquidas da Mitre no 2T26 e a valorização de imóveis abaixo da inflação (FipeZAP) indicam um cenário misto na construção.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-02",
       "origem": "real"
@@ -921,7 +925,7 @@
       "relevancia": 57.25,
       "severidade": 7,
       "iminencia": 7.5,
-      "ultima_observacao": "Sondagem da CNI indica que 97% das indústrias serão impactadas pelo fim da escala 6x1, prevendo aumento de custos e perda de competitividade. [cite: 3, 8, 12, 20, 36 in previous search]",
+      "ultima_observacao": "Sondagem da CNI indica que 97% das indústrias serão impactadas pelo fim da escala 6x1, prevendo aumento de custos e perda de competitividade.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-09",
       "origem": "real"
@@ -942,7 +946,7 @@
       "relevancia": 53.75,
       "severidade": 8.5,
       "iminencia": 8,
-      "ultima_observacao": "O conflito entre EUA e Irã intensifica-se, elevando os temores sobre a oferta global de petróleo e a aversão ao risco nos mercados financeiros. [cite: 38 in previous search, 48 in previous search, 50 in previous search]",
+      "ultima_observacao": "O conflito entre EUA e Irã intensifica-se, elevando os temores sobre a oferta global de petróleo e a aversão ao risco nos mercados financeiros.",
       "periodo_observacao": "2026-W29",
       "data_identificacao": "2026-07-13",
       "origem": "real"

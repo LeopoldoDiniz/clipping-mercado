@@ -210,9 +210,22 @@ Estrutura exata:
 - Se NENHUMA fonte de mercado publicou número no período, use "indicador_ecommerce": null. NUNCA estime/invente.
 
 # REGRAS DE URL (CRÍTICAS — VIOLAÇÃO INVALIDA O ITEM)
-- Todo url deve apontar para a matéria/release REAL no domínio OFICIAL da fonte
-  (os domínios estão listados junto às fontes acima).
-- Se não tiver o link exato da matéria, use a página oficial de notícias/imprensa daquela fonte.
+# Objetivo: ZERO link quebrado. Todo link do painel é auditável — o leitor clica e a matéria abre.
+- SÓ inclua um url que TENHA APARECIDO LITERALMENTE nos resultados da sua busca e que você
+  abriu/leu. COPIE o endereço exato retornado pela busca. É PROIBIDO "montar" ou "adivinhar"
+  um url combinando o domínio da fonte com um slug plausível (ex.: inventar
+  ".../sala-de-imprensa/titulo-da-materia" ou ".../2026/nome-do-release"). Slug inventado = 404 = item inválido.
+- NUNCA construa caminhos por dedução: nada de inserir datas (/2026/07/), IDs numéricos ou
+  títulos-em-kebab-case que você não viu no resultado da busca. Se você não copiou o link de um
+  resultado real, você NÃO tem o link.
+- Se a fonte publicou mas você não tem o url exato retornado pela busca, use a HOME ou a página
+  oficial e ESTÁVEL de notícias/imprensa daquela fonte (ex.: agenciadenoticias.ibge.gov.br,
+  gov.br/aneel/pt-br/centrais-de-conteudo/noticias) — nunca um endereço profundo adivinhado.
+- PREFIRA fontes primárias/institucionais estáveis (IBGE Agência de Notícias, gov.br, releases de RI)
+  a slugs profundos de portais pequenos, que apodrecem rápido.
+- MELHOR POUCO E REAL: um item com 1 url verificada vale mais que um item com 4 links plausíveis e
+  mortos. Se de um agrupamento só 1 link é confiável, entregue só esse 1. Não complete o array com
+  links "que deveriam existir".
 - NUNCA use como url: github.io, vercel.app, netlify, páginas do próprio portal de clipping,
   links de redirecionamento de busca, ou resultados de pesquisa do Google.
 
@@ -270,5 +283,6 @@ if __name__ == "__main__":
     p = montar_prompt("Semana 28 · Julho 2026", "2026-07-06", "2026-07-10", exemplo_hist)
     assert "30 e 48" in p and "15 a 20 itens" in p and "IPP" in p and "PIM" in p
     assert "NUNCA use como url" in p and "github.io" in p
+    assert "APARECIDO LITERALMENTE" in p and "adivinhar" in p and "MELHOR POUCO E REAL" in p
     assert "agro" in p and "construcao" in p and "ecommerce" in p and '"porter"' in p
     print(f"Prompt montado: {len(p)} caracteres — 6 setores, porter, cobertura, URL e KPIs presentes")
