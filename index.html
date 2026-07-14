@@ -851,7 +851,9 @@ function sigs(){
   if(weeks.length>1){list=list.map(s=>({...s,rel:sigPeriodRel(s,weeks)??s.rel}));} // agregado: pico no período
   return list.sort((a,b)=>b.rel-a.rel);
 }
-const news=()=>NEWS.filter(n=>inSector(n.setores));
+// Notícias: filtro ESTRITO por setor (só o setor escolhido) — macro/transversais ficam no Panorama.
+// (Evita que o fallback "transversal" traga notícias de todos os segmentos ao filtrar um setor.)
+const news=()=>state.sector==="panorama"?NEWS.slice():NEWS.filter(n=>(n.setores||[]).includes(state.sector));
 const pestel=()=>PESTEL.filter(p=>inSector(p.setores));
 // Pressão do ambiente por setor: média dos scores PESTEL do setor ponderada pela relevância dos sinais ativos.
 function pressao(){
