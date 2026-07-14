@@ -107,7 +107,8 @@
       "fontes": [
         {
           "nome": "CNI",
-          "url": "https://portaldaindustria.com.br/noticias/2026/07/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni/"
+          "url": "https://portaldaindustria.com.br/noticias/2026/07/97-das-industrias-serao-impactadas-pelo-fim-da-escala-6x1-mostra-sondagem-da-cni/",
+          "ok": false
         },
         {
           "nome": "Revista Portuária",
@@ -136,7 +137,8 @@
       "fontes": [
         {
           "nome": "MDIC",
-          "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/balanca-comercial-preliminar-parcial-do-mes"
+          "url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/balanca-comercial-preliminar-parcial-do-mes",
+          "ok": false
         },
         {
           "nome": "Exame",
@@ -189,7 +191,8 @@
       "fontes": [
         {
           "nome": "ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3"
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3",
+          "ok": false
         },
         {
           "nome": "Canal Solar",
@@ -201,7 +204,8 @@
         },
         {
           "nome": "EPBR",
-          "url": "https://epbr.com.br"
+          "url": "https://epbr.com.br",
+          "ok": false
         }
       ]
     },
@@ -247,7 +251,8 @@
         },
         {
           "nome": "Portal Gov.br",
-          "url": "https://www.gov.br/pt-br/noticias/financas-e-servicos/2026/06/governo-do-brasil-lanca-desenrola-adimplentes-para-facilitar-credito-e-reduzir-juros"
+          "url": "https://www.gov.br/pt-br/noticias/financas-e-servicos/2026/06/governo-do-brasil-lanca-desenrola-adimplentes-para-facilitar-credito-e-reduzir-juros",
+          "ok": false
         },
         {
           "nome": "LegisWeb",

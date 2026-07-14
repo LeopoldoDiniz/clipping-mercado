@@ -17,15 +17,18 @@
       "fontes": [
         {
           "nome": "Agência Brasil - EBC",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/copom-reduz-taxa-selic-para-1425-ao-ano"
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/copom-reduz-taxa-selic-para-1425-ao-ano",
+          "ok": false
         },
         {
           "nome": "Banco Safra - O Especialista",
-          "url": "https://www.safra.com.br/oespecialista/copom-reduz-a-taxa-selic-para-14-25-ao-ano"
+          "url": "https://www.safra.com.br/oespecialista/copom-reduz-a-taxa-selic-para-14-25-ao-ano",
+          "ok": false
         },
         {
           "nome": "Adriano Freire - Finanças",
-          "url": "https://www.adrianofreire.com.br/copom-junho-2026-selic-cai-a-14-25-o-que-muda/"
+          "url": "https://www.adrianofreire.com.br/copom-junho-2026-selic-cai-a-14-25-o-que-muda/",
+          "ok": false
         },
         {
           "nome": "ANBIMA",
@@ -33,7 +36,8 @@
         },
         {
           "nome": "BB InvesTalk - Banco do Brasil",
-          "url": "https://www.bb.com.br/site/pra-voce/investimentos/investalk/copom-reduz-selic-para-1425-aa/"
+          "url": "https://www.bb.com.br/site/pra-voce/investimentos/investalk/copom-reduz-selic-para-1425-aa/",
+          "ok": false
         }
       ]
     },
@@ -52,11 +56,13 @@
         },
         {
           "nome": "InfoMoney",
-          "url": "https://www.infomoney.com.br/economia/ipca-15-sobe-041-em-junho-um-pouco-abaixo-do-esperado-pelo-mercado/"
+          "url": "https://www.infomoney.com.br/economia/ipca-15-sobe-041-em-junho-um-pouco-abaixo-do-esperado-pelo-mercado/",
+          "ok": false
         },
         {
           "nome": "Informativo SPE: IPCA - BCB",
-          "url": "https://www.bcb.gov.br/content/estatisticas/docs_estatisticas/InformativoSPE/InformativoSPE_IPCA.pdf"
+          "url": "https://www.bcb.gov.br/content/estatisticas/docs_estatisticas/InformativoSPE/InformativoSPE_IPCA.pdf",
+          "ok": false
         },
         {
           "nome": "YouTube - Jovem Pan News",
@@ -64,7 +70,8 @@
         },
         {
           "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/economia/ipca-15-previa-da-inflacao-sobe-041-em-junho-diz-ibge/"
+          "url": "https://www.cnnbrasil.com.br/economia/ipca-15-previa-da-inflacao-sobe-041-em-junho-diz-ibge/",
+          "ok": false
         }
       ]
     },
@@ -87,7 +94,8 @@
         },
         {
           "nome": "Broadcast - O mercado financeiro em tempo real",
-          "url": "https://economia.estadao.com.br/noticias/geral,ibge-ipp-precos-medios-dos-alimentos-recuaram-em-2-05-em-maio-ante-a-abril,70004071333"
+          "url": "https://economia.estadao.com.br/noticias/geral,ibge-ipp-precos-medios-dos-alimentos-recuaram-em-2-05-em-maio-ante-a-abril,70004071333",
+          "ok": false
         },
         {
           "nome": "Canal Rural",
@@ -114,15 +122,18 @@
         },
         {
           "nome": "Revista Anamaco",
-          "url": "https://revistaanamaco.com.br/a-sondagem-industrial-realizada-pela-cni-mostra-que-os-empresarios-da-industria-passaram-a-projetar-queda-das-exportacoes-nos-proximos-seis-meses-a-perspectiva-de-recuo-das-vendas-internacionais-ocorre-apos-o-representante-comercial-dos-estados-unidos-propor-novas-tarifas-sobre-produtos-brasileiros/"
+          "url": "https://revistaanamaco.com.br/a-sondagem-industrial-realizada-pela-cni-mostra-que-os-empresarios-da-industria-passaram-a-projetar-queda-das-exportacoes-nos-proximos-seis-meses-a-perspectiva-de-recuo-das-vendas-internacionais-ocorre-apos-o-representante-comercial-dos-estados-unidos-propor-novas-tarifas-sobre-produtos-brasileiros/",
+          "ok": false
         },
         {
           "nome": "Broadcast - O mercado financeiro em tempo real",
-          "url": "https://economia.estadao.com.br/noticias/geral,cni-apos-proposta-de-novas-tarifas-dos-eua-industria-preve-queda-das-exportacoes-em-2026,70004068305"
+          "url": "https://economia.estadao.com.br/noticias/geral,cni-apos-proposta-de-novas-tarifas-dos-eua-industria-preve-queda-das-exportacoes-em-2026,70004068305",
+          "ok": false
         },
         {
           "nome": "CNI - Portal da Indústria",
-          "url": "https://www.portaldaindustria.com.br/noticias/2026/06/sondagem-industrial-empresarios-projetam-queda-nas-exportacoes-nos-proximos-meses/"
+          "url": "https://www.portaldaindustria.com.br/noticias/2026/06/sondagem-industrial-empresarios-projetam-queda-nas-exportacoes-nos-proximos-meses/",
+          "ok": false
         }
       ]
     },
@@ -138,11 +149,13 @@
       "fontes": [
         {
           "nome": "Monitor Mercantil",
-          "url": "https://monitormercantil.com.br/inadimplencia-8541-de-quem-entrou-em-maio-reincidiu/"
+          "url": "https://monitormercantil.com.br/inadimplencia-8541-de-quem-entrou-em-maio-reincidiu/",
+          "ok": false
         },
         {
           "nome": "Grupo Amanhã",
-          "url": "https://www.grupoamanha.com.br/noticia/reincidencia-atinge-854-dos-consumidores-inadimplentes"
+          "url": "https://www.grupoamanha.com.br/noticia/reincidencia-atinge-854-dos-consumidores-inadimplentes",
+          "ok": false
         },
         {
           "nome": "Diário do Pará",
@@ -150,7 +163,8 @@
         },
         {
           "nome": "Sobral Online",
-          "url": "https://sobralonline.com.br/inadimplencia-no-brasil-atinge-novo-recorde-em-maio-com-75-milhoes-de-pessoas-negativadas/"
+          "url": "https://sobralonline.com.br/inadimplencia-no-brasil-atinge-novo-recorde-em-maio-com-75-milhoes-de-pessoas-negativadas/",
+          "ok": false
         },
         {
           "nome": "Jovem Pan News",
@@ -170,7 +184,8 @@
       "fontes": [
         {
           "nome": "Broadcast - O mercado financeiro em tempo real",
-          "url": "https://economia.estadao.com.br/noticias/geral,febraban-credito-deve-crescer-0-8-em-maio-com-aceleracao-do-ritmo-anual-para-alta-de-9-6,70004069300"
+          "url": "https://economia.estadao.com.br/noticias/geral,febraban-credito-deve-crescer-0-8-em-maio-com-aceleracao-do-ritmo-anual-para-alta-de-9-6,70004069300",
+          "ok": false
         },
         {
           "nome": "FEBRABAN - Notícias",
@@ -194,19 +209,23 @@
       "fontes": [
         {
           "nome": "EPBR",
-          "url": "https://epbr.com.br/anp-ve-queda-paulatina-nos-precos-internos-de-combustiveis-apos-acordo-entre-eua-e-ira/"
+          "url": "https://epbr.com.br/anp-ve-queda-paulatina-nos-precos-internos-de-combustiveis-apos-acordo-entre-eua-e-ira/",
+          "ok": false
         },
         {
           "nome": "Sindiminas",
-          "url": "https://sindiminas.com.br/para-anp-previsao-de-medio-prazo-mostra-que-mercado-de-combustiveis-esta-abastecido/"
+          "url": "https://sindiminas.com.br/para-anp-previsao-de-medio-prazo-mostra-que-mercado-de-combustiveis-esta-abastecido/",
+          "ok": false
         },
         {
           "nome": "Baratão Combustíveis",
-          "url": "https://barataocombustiveis.com.br/anp-prorroga-estoques-minimos-como-fica-a-gasolina-e-o-diesel/"
+          "url": "https://barataocombustiveis.com.br/anp-prorroga-estoques-minimos-como-fica-a-gasolina-e-o-diesel/",
+          "ok": false
         },
         {
           "nome": "JC",
-          "url": "https://www.jornaldocomercio.com/_conteudo/2026/06/1253868-para-anp-previsao-de-medio-prazo-mostra-que-mercado-de-combustiveis-esta-abastecido.html"
+          "url": "https://www.jornaldocomercio.com/_conteudo/2026/06/1253868-para-anp-previsao-de-medio-prazo-mostra-que-mercado-de-combustiveis-esta-abastecido.html",
+          "ok": false
         }
       ]
     },
@@ -228,11 +247,13 @@
         },
         {
           "nome": "MAFM ADVOGADOS",
-          "url": "https://mafm.com.br/noticias/cade-aprova-sem-restricoes-fusao-entre-subsea7-e-saipem/"
+          "url": "https://mafm.com.br/noticias/cade-aprova-sem-restricoes-fusao-entre-subsea7-e-saipem/",
+          "ok": false
         },
         {
           "nome": "Senado Federal",
-          "url": "https://www12.senado.leg.br/noticias/materias/2026/06/30/projeto-torna-corrupcao-privada-infracao-contra-ordem-economica"
+          "url": "https://www12.senado.leg.br/noticias/materias/2026/06/30/projeto-torna-corrupcao-privada-infracao-contra-ordem-economica",
+          "ok": false
         },
         {
           "nome": "JOTA",
@@ -251,23 +272,28 @@
       "fontes": [
         {
           "nome": "Canal Solar",
-          "url": "https://canalsolar.com.br/armazenamento-de-energia-como-ativo-regulado-o-que-muda-com-a-nova-resolucao-da-aneel/"
+          "url": "https://canalsolar.com.br/armazenamento-de-energia-como-ativo-regulado-o-que-muda-com-a-nova-resolucao-da-aneel/",
+          "ok": false
         },
         {
           "nome": "Apine",
-          "url": "https://apine.org.br/aneel-adia-decisao-sobre-regulacao-de-cortes-de-energia/"
+          "url": "https://apine.org.br/aneel-adia-decisao-sobre-regulacao-de-cortes-de-energia/",
+          "ok": false
         },
         {
           "nome": "O TEMPO",
-          "url": "https://www.otempo.com.br/economia/aneel-aprova-revisao-de-receita-para-transmissoras-de-energia-em-2026-1.3387870"
+          "url": "https://www.otempo.com.br/economia/aneel-aprova-revisao-de-receita-para-transmissoras-de-energia-em-2026-1.3387870",
+          "ok": false
         },
         {
           "nome": "Tecflow",
-          "url": "https://tecflow.com.br/aneel-adia-decisao-sobre-regra-de-cortes-de-energia-apos-pedido-de-vista/"
+          "url": "https://tecflow.com.br/aneel-adia-decisao-sobre-regra-de-cortes-de-energia-apos-pedido-de-vista/",
+          "ok": false
         },
         {
           "nome": "ANEEL — Portal Gov.br",
-          "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudo/noticias"
+          "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudo/noticias",
+          "ok": false
         }
       ]
     },
@@ -280,7 +306,8 @@
       "fontes": [
         {
           "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br/noticias/confianca-empresarial-sobe-em-junho-e-atinge-maior-nivel-em-mais-de-um-ano"
+          "url": "https://portalibre.fgv.br/noticias/confianca-empresarial-sobe-em-junho-e-atinge-maior-nivel-em-mais-de-um-ano",
+          "ok": false
         },
         {
           "nome": "FGV IBRE",
@@ -301,7 +328,8 @@
       "fontes": [
         {
           "nome": "Agência Brasil - EBC",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/fgv-gasolina-etanol-e-cafe-recuam-e-ajudam-igp-m-cair-05-em-junho"
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/fgv-gasolina-etanol-e-cafe-recuam-e-ajudam-igp-m-cair-05-em-junho",
+          "ok": false
         }
       ]
     },

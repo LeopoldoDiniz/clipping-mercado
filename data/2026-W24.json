@@ -95,7 +95,8 @@
       "fontes": [
         {
           "nome": "FM Metrópole",
-          "url": "https://www.fmmetropole.com.br/noticias/local/comercio-de-osvaldo-cruz-esta-preparado-para-atender-os-clientes-no-dia-dos-namorados-12-06-2026"
+          "url": "https://www.fmmetropole.com.br/noticias/local/comercio-de-osvaldo-cruz-esta-preparado-para-atender-os-clientes-no-dia-dos-namorados-12-06-2026",
+          "ok": false
         }
       ]
     },

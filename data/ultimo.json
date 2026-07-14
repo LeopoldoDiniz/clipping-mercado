@@ -24,7 +24,8 @@
         },
         {
           "nome": "Otimista",
-          "url": "https://ooptimista.com.br/noticia/97-das-industrias-serao-impactadas-pelo-fim-da-escala-de-trabalho-6x1-aponta-cni"
+          "url": "https://ooptimista.com.br/noticia/97-das-industrias-serao-impactadas-pelo-fim-da-escala-de-trabalho-6x1-aponta-cni",
+          "ok": false
         },
         {
           "nome": "Itatiaia",
@@ -48,15 +49,18 @@
       "fontes": [
         {
           "nome": "ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/bandeira-tarifaria-em-julho-permanece-amarela"
+          "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/bandeira-tarifaria-em-julho-permanece-amarela",
+          "ok": false
         },
         {
           "nome": "Viva",
-          "url": "https://vivario.org.br/contas-de-luz-continuarao-com-acrescimo-em-julho/"
+          "url": "https://vivario.org.br/contas-de-luz-continuarao-com-acrescimo-em-julho/",
+          "ok": false
         },
         {
           "nome": "CorreioWeb",
-          "url": "https://www.correiobraziliense.com.br/economia/2026/07/5196238-conta-de-luz-de-julho-2026-mantem-taxa-adicional-saiba-valores.html"
+          "url": "https://www.correiobraziliense.com.br/economia/2026/07/5196238-conta-de-luz-de-julho-2026-mantem-taxa-adicional-saiba-valores.html",
+          "ok": false
         }
       ]
     },
@@ -76,7 +80,8 @@
         },
         {
           "nome": "PORTO RÁPIDO",
-          "url": "https://portorapido.com.br/60-milhoes-de-consumidores-possuem-compras-parceladas-aponta-cndlspc-brasil/"
+          "url": "https://portorapido.com.br/60-milhoes-de-consumidores-possuem-compras-parceladas-aponta-cndlspc-brasil/",
+          "ok": false
         }
       ]
     },
@@ -92,7 +97,8 @@
       "fontes": [
         {
           "nome": "Serasa Experian",
-          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/inadimplencia-das-empresas-segue-em-nivel-recorde-e-dividas-alcancam-r-229-9-bilhoes"
+          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/inadimplencia-das-empresas-segue-em-nivel-recorde-e-dividas-alcancam-r-229-9-bilhoes",
+          "ok": false
         },
         {
           "nome": "Grupo Amanhã",
@@ -100,7 +106,8 @@
         },
         {
           "nome": "Capital News",
-          "url": "https://www.capitalnews.com.br/economia/inadimplencia-das-empresas-segue-em-nivel-recorde-e-dividas-alcancam-r-229-9-bilhoes/492576"
+          "url": "https://www.capitalnews.com.br/economia/inadimplencia-das-empresas-segue-em-nivel-recorde-e-dividas-alcancam-r-229-9-bilhoes/492576",
+          "ok": false
         },
         {
           "nome": "Migalhas",
@@ -136,7 +143,8 @@
       "fontes": [
         {
           "nome": "SBA1",
-          "url": "https://sba1.com/noticias/conab-brasil-colheu-28-5-da-area-plantada-de-milho-de-inverno-2025-26/"
+          "url": "https://sba1.com/noticias/conab-brasil-colheu-28-5-da-area-plantada-de-milho-de-inverno-2025-26/",
+          "ok": false
         }
       ]
     },
@@ -163,7 +171,8 @@
       "fontes": [
         {
           "nome": "UOL",
-          "url": "https://www.uol.com.br/economia/ultimas-noticias/2026/07/01/preco-medio-de-imoveis-sobe-242-no-1-semestre-alta-abaixo-da-inflacao.htm"
+          "url": "https://www.uol.com.br/economia/ultimas-noticias/2026/07/01/preco-medio-de-imoveis-sobe-242-no-1-semestre-alta-abaixo-da-inflacao.htm",
+          "ok": false
         },
         {
           "nome": "Mercado Imobiliário",
@@ -171,7 +180,8 @@
         },
         {
           "nome": "ADEMI-RJ",
-          "url": "https://www.ademirj.com.br/ademis-news/2026/julho-de-2026/1-de-julho-de-2026/preco-de-imoveis-residenciais-sobe-2-42-no-pais-no-1-semestre-menos-do-que-a-inflacao/"
+          "url": "https://www.ademirj.com.br/ademis-news/2026/julho-de-2026/1-de-julho-de-2026/preco-de-imoveis-residenciais-sobe-2-42-no-pais-no-1-semestre-menos-do-que-a-inflacao/",
+          "ok": false
         }
       ]
     },
@@ -202,7 +212,8 @@
         },
         {
           "nome": "O observador",
-          "url": "https://oobservador.com.br/ibge-inicia-coleta-da-pesquisa-nacional-de-saude-2026/"
+          "url": "https://oobservador.com.br/ibge-inicia-coleta-da-pesquisa-nacional-de-saude-2026/",
+          "ok": false
         }
       ]
     },
@@ -257,15 +268,18 @@
         },
         {
           "nome": "Brasilagro",
-          "url": "https://brasilagro.com.br/noticias/agropecuarios-fecham-semestre-com-forte-queda-de-precos-no-campo"
+          "url": "https://brasilagro.com.br/noticias/agropecuarios-fecham-semestre-com-forte-queda-de-precos-no-campo",
+          "ok": false
         },
         {
           "nome": "PatosJá",
-          "url": "https://www.patosja.com.br/noticia/soja-e-milho-fecham-em-alta-na-b3-enquanto-cafe-e-boi-gordo-registram-queda-103309"
+          "url": "https://www.patosja.com.br/noticia/soja-e-milho-fecham-em-alta-na-b3-enquanto-cafe-e-boi-gordo-registram-queda-103309",
+          "ok": false
         },
         {
           "nome": "Farmnews",
-          "url": "https://www.farmnews.com.br/soja/preco-da-soja-alcanca-maior-patamar-medio-de-2026-na-parcial-de-julho/"
+          "url": "https://www.farmnews.com.br/soja/preco-da-soja-alcanca-maior-patamar-medio-de-2026-na-parcial-de-julho/",
+          "ok": false
         },
         {
           "nome": "Cepea",
@@ -282,11 +296,13 @@
       "fontes": [
         {
           "nome": "Sinduscon-BNU",
-          "url": "https://sindusconbnu.org.br/cub/"
+          "url": "https://sindusconbnu.org.br/cub/",
+          "ok": false
         },
         {
           "nome": "INVEXO Lançamentos",
-          "url": "https://invexo.com.br/cub-sc-valor-atualizado-2026/"
+          "url": "https://invexo.com.br/cub-sc-valor-atualizado-2026/",
+          "ok": false
         },
         {
           "nome": "SENGE-SC",
@@ -294,7 +310,8 @@
         },
         {
           "nome": "MySide",
-          "url": "https://myside.com.br/cub-sc"
+          "url": "https://myside.com.br/cub-sc",
+          "ok": false
         }
       ]
     },

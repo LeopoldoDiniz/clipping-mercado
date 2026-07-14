@@ -21,7 +21,8 @@
         },
         {
           "nome": "Tribuna do Norte",
-          "url": "https://www.tribunadonorte.com.br/noticia/mercado-mantem-em-5-33-projecao-de-inflacao-para-2026/563428"
+          "url": "https://www.tribunadonorte.com.br/noticia/mercado-mantem-em-5-33-projecao-de-inflacao-para-2026/563428",
+          "ok": false
         },
         {
           "nome": "Jornal do Brasil",
@@ -53,7 +54,8 @@
         },
         {
           "nome": "Esquerda.net",
-          "url": "https://www.esquerda.net/artigo/preco-do-petroleo-caiu-gasolineiras-nao-deram-por-isso/86720"
+          "url": "https://www.esquerda.net/artigo/preco-do-petroleo-caiu-gasolineiras-nao-deram-por-isso/86720",
+          "ok": false
         },
         {
           "nome": "Euronews",
@@ -89,11 +91,13 @@
       "fontes": [
         {
           "nome": "Confaeab",
-          "url": "https://confaeab.org.br/aneel-destinara-ate-r-56-bi-para-aliviar-conta-de-luz-em-19-estados/"
+          "url": "https://confaeab.org.br/aneel-destinara-ate-r-56-bi-para-aliviar-conta-de-luz-em-19-estados/",
+          "ok": false
         },
         {
           "nome": "Valor Econômico",
-          "url": "https://valor.globo.com/brasil/noticia/2026/06/29/expansao-dos-paineis-solares-poe-rede-eletrica-a-prova-durante-jogo-do-brasil.ghtml"
+          "url": "https://valor.globo.com/brasil/noticia/2026/06/29/expansao-dos-paineis-solares-poe-rede-eletrica-a-prova-durante-jogo-do-brasil.ghtml",
+          "ok": false
         }
       ]
     },
@@ -113,11 +117,13 @@
         },
         {
           "nome": "Agência Rix",
-          "url": "https://agenciarix.com.br/como-pequenas-empresas-estao-superando-as-grandes-no-uso-de-ia/"
+          "url": "https://agenciarix.com.br/como-pequenas-empresas-estao-superando-as-grandes-no-uso-de-ia/",
+          "ok": false
         },
         {
           "nome": "Pessoas 2030",
-          "url": "https://pessoas2030.pt/noticias/nova-literacia-em-inteligencia-artificial-deve-tornar-se-uma-prioridade-nas-escolas-defendem-a-ocde-e-a-comissao-europeia/"
+          "url": "https://pessoas2030.pt/noticias/nova-literacia-em-inteligencia-artificial-deve-tornar-se-uma-prioridade-nas-escolas-defendem-a-ocde-e-a-comissao-europeia/",
+          "ok": false
         }
       ]
     },
@@ -133,7 +139,8 @@
       "fontes": [
         {
           "nome": "Conecta SC",
-          "url": "https://conectasc.com.br/noticias-corporativas/esg-representa-uma-inovacao-no-mundo-dos-negocios/"
+          "url": "https://conectasc.com.br/noticias-corporativas/esg-representa-uma-inovacao-no-mundo-dos-negocios/",
+          "ok": false
         },
         {
           "nome": "Jornal de Notícias",
@@ -151,11 +158,13 @@
       "fontes": [
         {
           "nome": "Ambiente Magazine",
-          "url": "https://www.ambientemagazine.pt/2026/06/30/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/"
+          "url": "https://www.ambientemagazine.pt/2026/06/30/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/",
+          "ok": false
         },
         {
           "nome": "Jornal Notícias",
-          "url": "https://www.jornalnoticias.co.mz/index.php/economia/10898-necessarios-89-mil-milhoes-de-dolares-para-garantir-transicao-energetica"
+          "url": "https://www.jornalnoticias.co.mz/index.php/economia/10898-necessarios-89-mil-milhoes-de-dolares-para-garantir-transicao-energetica",
+          "ok": false
         }
       ]
     },
@@ -203,7 +212,8 @@
         },
         {
           "nome": "Valor Econômico",
-          "url": "https://valor.globo.com/mercados/noticia/2026/06/29/tom-hawkish-do-fed-freia-recuperacao-de-titulos-de-mercados-emergentes.ghtml"
+          "url": "https://valor.globo.com/mercados/noticia/2026/06/29/tom-hawkish-do-fed-freia-recuperacao-de-titulos-de-mercados-emergentes.ghtml",
+          "ok": false
         }
       ]
     },
@@ -219,7 +229,8 @@
       "fontes": [
         {
           "nome": "Jornal Notícias",
-          "url": "https://www.jornalnoticias.co.mz/index.php/ciencia-tecnologia-e-ambiente/10899-coreia-do-sul-anuncia-plano-de-mais-de-um-biliao-para-desenvolver-inteligencia-artificial"
+          "url": "https://www.jornalnoticias.co.mz/index.php/ciencia-tecnologia-e-ambiente/10899-coreia-do-sul-anuncia-plano-de-mais-de-um-biliao-para-desenvolver-inteligencia-artificial",
+          "ok": false
         }
       ]
     },

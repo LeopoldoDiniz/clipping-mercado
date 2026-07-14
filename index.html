@@ -1520,9 +1520,15 @@ function openTraj(idx){
 function viewNoticias(){
   const list=news();
   if(!list.length)return `${periodBanner()}${histBanner()}<div class="card card-pad"><p style="color:var(--ink-3);margin:0">${HIST_ONLY?"Sem clipping nesta semana — apenas indicadores oficiais (veja a aba Panorama).":"Sem notícias para este setor."}</p></div>`;
-  return `${periodBanner()}${histBanner()}<div class="news-grid">${list.map(n=>`<a class="nw-card" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4>
+  const semFonte=list.filter(n=>!n.verif).length;
+  const aviso=semFonte?`<div class="banner"><span>⚠</span><div><b>${semFonte} notícia(s) sem fonte verificável</b> nesta seleção — o link original está fora do ar (404). Ficam marcadas e não-clicáveis para preservar a auditabilidade; estão em fila para recuperação da fonte.</div></div>`:"";
+  return `${periodBanner()}${histBanner()}${aviso}<div class="news-grid">${list.map(n=>{
+    const dead=!n.verif;const tag=dead?"div":"a";const href=dead?"":`href="${n.url}" target="_blank" rel="noopener"`;
+    const srcs=n.src.map(([nm,lk,ok])=>`<span class="src ${lk&&ok?'linked':''}"${lk&&!ok?' style="opacity:.5;text-decoration:line-through" title="link fora do ar"':''}>${nm}${lk&&!ok?' ⚠':''}</span>`).join("");
+    const cta=dead?`<span class="go" style="margin-left:auto;color:var(--warn);font-weight:700;font-size:11px">⚠ fonte fora do ar</span>`:`<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span>`;
+    return `<${tag} class="nw-card${dead?' nw-dead':''}" ${href}><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4>
     <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px">${dateChip(n)}${sectorChips(n.setores)}<span class="chip">${DIMS[n.dim]}</span></div>
-    <p>${firstN(n.txt,1)||n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`;
+    <p>${firstN(n.txt,1)||n.txt}</p><div class="srcs">${srcs}${cta}</div></${tag}>`;}).join("")}</div>`;
 }
 
 // E-commerce: fontes em listas separadas por categoria
@@ -1766,10 +1772,12 @@ function adaptSignals(long){return (long||[]).map(l=>{
     cadeia:deriveCadeia(text),tema:deriveTags(text)[0]||null,obs:l.ultima_observacao||"",
     traj:traj.length?traj:[[refKey(),l.status,Math.round(rel)]],origem:l.origem};});}
 function adaptNews(clip,wm){const dataChip=wm?wm.dt.replace(/ 20\d\d/,""):null;
-  return (clip||[]).map(c=>{const text=c.titulo+" "+(c.texto||"");const wu=(c.fontes||[]).find(f=>f.url);
+  return (clip||[]).map(c=>{const text=c.titulo+" "+(c.texto||"");const fontes=c.fontes||[];
+    // link primário = 1ª fonte VIVA (auditável); se todas mortas, cai p/ a 1ª com url mas marca não-verificável
+    const vivas=fontes.filter(f=>f.url&&f.ok!==false);const wu=vivas[0]||fontes.find(f=>f.url);
     return {t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],
       dim:deriveDim(text),cadeia:deriveCadeia(text),temas:deriveTags(text),url:wu?wu.url:null,data:dataChip,
-      src:(c.fontes||[]).map(f=>[f.nome,f.url?1:0]),origem:"real"};});}
+      verif:vivas.length>0, src:fontes.map(f=>[f.nome,f.url?1:0,f.ok===false?0:1]),origem:"real"};});}
 const adaptPestel=p=>(p||[]).map(x=>({dim:x.dim,tema:x.tema,score:x.score,setores:x.setores||[],texto:x.texto}));
 const numOr=(v,d)=>(typeof v==="number"&&!isNaN(v))?v:d;
 function mergePorter(p){const out={};Object.keys(PORTER_BASE).forEach(sec=>{const b=PORTER_BASE[sec],r=p[sec];
@@ -1849,7 +1857,7 @@ function previaSetor(){
   return `<div class="banner"><span>◔</span><div><b>Prévia de ${SMETA[state.sector].nome}.</b> O motor ainda não gera dados próprios deste setor — a cobertura completa chega na próxima evolução do motor. Você vê abaixo a leitura geral da semana e os sinais transversais (que afetam todos os setores).</div></div>`;}
 function applyData(sel,allData,metas){
   WEEKS=metas;WMETA=Object.fromEntries(WEEKS.map(w=>[w.k,w]));CHRONO=WEEKS.slice().reverse();
-  longByWeek={};clipByWeek={};allData.forEach(d=>{longByWeek[d._k]=d.longitudinal||[];clipByWeek[d._k]=(d.clipping||[]).map(c=>({t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],url:(c.fontes||[]).find(f=>f.url)?.url||null}));});
+  longByWeek={};clipByWeek={};allData.forEach(d=>{longByWeek[d._k]=d.longitudinal||[];clipByWeek[d._k]=(d.clipping||[]).map(c=>{const fs=c.fontes||[];const u=fs.filter(f=>f.url&&f.ok!==false)[0]||fs.find(f=>f.url);return {t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],url:u?u.url:null};});});
   KPIS=adaptKpis(sel.kpis||[],allData);
   KPIS_SETOR=adaptKpisSetor(sel.kpis_setoriais||[],allData);
   KPIMAP=Object.fromEntries(KPIS.concat(KPIS_SETOR).map(k=>[k.id,k]));
