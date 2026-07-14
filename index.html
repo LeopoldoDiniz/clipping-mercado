@@ -848,12 +848,48 @@ function chartWeeks(){
 function sigPeriodRel(s,weeks){const pts=(s.traj||[]).filter(t=>weeks.includes(t[0]));if(!pts.length)return null;return Math.max(...pts.map(t=>t[2]));}
 function sigs(){
   const {weeks}=periodScope();
-  let list=SIGNALS.filter(s=>inSector(s.setores));
-  if(weeks.length>1){list=list.map(s=>({...s,rel:sigPeriodRel(s,weeks)??s.rel}));} // agregado: pico no período
-  return list.sort((a,b)=>b.rel-a.rel);
+  let curated=SIGNALS.filter(s=>inSector(s.setores)).map(s=>({...s}));
+  if(weeks.length>1){curated=curated.map(s=>({...s,rel:sigPeriodRel(s,weeks)??s.rel}));} // agregado: pico no período
+  // riscos/oportunidades DERIVADOS das notícias em escopo (a base do produto) + sinais curados do motor
+  const derived=newsSignals(curated);
+  const list=curated.concat(derived).sort((a,b)=>b.rel-a.rel);
+  list.forEach((s,i)=>{s.i=i;}); // reindexa p/ o vínculo ponto↔lista da matriz
+  return list;
 }
 const news=()=>NEWS.filter(n=>inSector(n.setores));
 const pestel=()=>PESTEL.filter(p=>inSector(p.setores));
+// classifica uma notícia como risco/oportunidade pelo tom (ou null se meramente informativa)
+const _VOC_RISCO=/queda|caiu?|recuo|recua|crise|encarece|inadimpl|press[ãa]o|dificuldade|desacelera|contra[çc][ãa]o|d[ée]ficit|preju[íi]zo|demiss|greve|atraso|escassez|restri[çc]|tombo|piora|\brisco|amea[çc]|endivida|fech(a|ou|amento)|redu[çz]|custo(s)? (maior|mais alto|em alta)|alta d[eo]s? custo|tarifa[çc]o|sobretaxa|abaixo d[ae]|negativ|\bperda|desemprego|encolhe|desafio|tensã?o/i;
+const _VOC_OPP=/cresce|crescimento|avan[çc]|otimis|expans[ãa]o|investiment|aporte|oportunidade|lan[çc]a|inova[çc]|recorde|aquecid|impulsiona|recupera[çc]|\bmelhora|super[áa]vit|acelera[çc]|novo(s)? mercado|amplia|expande|\bforte|sobe\b|aumento das vendas|positiv|beneficia|aquece|dispara|elev(a|ou)/i;
+function deriveTipo(text){const t=text||"";
+  const rc=(t.match(new RegExp(_VOC_RISCO.source,"gi"))||[]).length;
+  const oc=(t.match(new RegExp(_VOC_OPP.source,"gi"))||[]).length;
+  if(!rc&&!oc)return null; return oc>rc?"oportunidade":"risco";}
+// hash determinístico (0..1) p/ espalhar levemente os pontos na matriz sem Math.random
+function _jit(s){let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0;}return (h%1000)/1000;}
+// deriva sinais (risco/oportunidade) das NOTÍCIAS em escopo; dedup contra os curados por título
+function newsSignals(curated){
+  const norm=x=>(x||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9 ]/g,"").trim();
+  const seen=new Set((curated||[]).map(s=>norm(s.t)));
+  const rk=refKey(),out=[];
+  news().forEach(n=>{
+    const text=n.t+" "+(n.txt||"");
+    const tipo=deriveTipo(text); if(!tipo)return;
+    const key=norm(n.t); if(seen.has(key))return; seen.add(key);
+    const strong=/recorde|forte|crise|disparad?|bilh[õo]|maior|hist[óo]ric|colaps|dispara|salto|tombo/i.test(text);
+    const hasNum=/\d+[.,]?\d*\s*(%|bilh|milh|mil\b)/i.test(text);
+    const rec=/\bhoje\b|\bj[áa]\b|nesta semana|imediat|entra em vigor|a partir de|anuncia/i.test(text);
+    const j=_jit(n.t);
+    const imp=Math.max(2,Math.min(9, 4 + (strong?2.4:0) + (hasNum?1.4:0) + (tipo==="risco"?0.4:0) + j*0.8));
+    const imi=Math.max(2,Math.min(9, 4.6 + (rec?1.6:0) + (strong?0.9:0) + ((1-j)*0.8)));
+    out.push({t:n.t,tipo,dim:n.dim,setores:n.setores,status:"em_curso",
+      rel:Math.round(52+(strong?12:0)+(hasNum?6:0)+j*8),imp:Math.round(imp*10)/10,imi:Math.round(imi*10)/10,
+      cadeia:n.cadeia,tema:(n.temas||[])[0]||null,obs:n.txt||"",url:n.url,
+      traj:[[rk,"em_curso",60]],origem:"noticia"});
+  });
+  // limita p/ não poluir a matriz (Panorama tem muitas notícias); prioriza mais relevantes
+  return out.sort((a,b)=>b.rel-a.rel).slice(0,18);
+}
 // Pressão do ambiente por setor: média dos scores PESTEL do setor ponderada pela relevância dos sinais ativos.
 function pressao(){
   const ps=pestel();if(!ps.length)return PRESSAO;
@@ -1293,7 +1329,7 @@ function sigList(list){
   if(!list.length)return `<p style="color:var(--ink-3);font-size:13px;margin:0">Sem sinais para este setor nesta seleção.</p>`;
   return list.map(s=>`<div class="sig ${s.tipo} clickable ${state.pointSig===s.i?'sel':''}" data-sig="${s.i}"><div class="rail"></div><div class="body">
     <h4>${s.t} ${s.mock?'<span class="mock-badge">mock</span>':''}</h4>
-    <div class="meta"><span class="st ${s.status}">${s.status.replace("_"," ")}</span><span class="chip">${DIMS[s.dim]}</span>${sectorChips(s.setores)}<span class="rel num">rel ${dec(s.rel,0)}</span></div>
+    <div class="meta"><span class="st ${s.status}">${s.status.replace("_"," ")}</span><span class="chip">${DIMS[s.dim]}</span>${sectorChips(s.setores)}${s.origem==="noticia"?'<span class="chip" style="opacity:.75">📰 da notícia</span>':''}<span class="rel num">rel ${dec(s.rel,0)}</span></div>
     <p>${clampText(s.obs)}</p></div></div>`).join("");
 }
 
