@@ -1426,17 +1426,30 @@ function viewCadeia(){
   </div>`;
 }
 
+// 5 Forças com AJUSTE derivado das notícias: base estrutural (âncora) nudge pela pressão das notícias do setor
+function porterDerived(sec){
+  const base=PORTER[sec]; if(!base)return null;
+  const secNews=NEWS.filter(n=>inSector(n.setores));
+  const out={cadeia:base.cadeia,nota:base.nota};
+  Object.keys(PLABEL).forEach(k=>{
+    const ns=secNews.filter(n=>n.cadeia===base.cadeia[k]);
+    out["b_"+k]=base[k]; out["n_"+k]=ns.length;
+    out[k]=ns.length?Math.round(Math.max(0,Math.min(10, 0.6*base[k]+0.4*pestelScoreFrom(ns)))):base[k];
+  });
+  return out;
+}
 function viewPorter(){
   if(state.sector==="panorama")return `<div class="note"><span>▸</span><div>As <b>5 Forças de Porter</b> são uma leitura <b>por setor</b>. Escolha um setor acima para ver a estrutura competitiva.</div></div>`;
-  const m=SMETA[state.sector],p=PORTER[state.sector];
+  const m=SMETA[state.sector],p=porterDerived(state.sector);
   if(!p)return `<div class="card card-pad"><p style="margin:0;color:var(--ink-3)">Estrutura em preparação.</p></div>`;
   const bar=v=>`<div class="gauge" style="--v:${v*10};background:var(--surface-3)"><i style="background:${m.cor}"></i></div>`;
   return `${periodBanner()}${histBanner()}
-  <div class="note"><span>▸</span><div><b>Estrutura competitiva — ${m.nome}</b> ${PORTER_REAL?'':'<span class="mock-badge">preview</span> Intensidades ilustrativas (0–10).'} Avaliação estrutural das 5 forças (0–10); muda devagar. Clique numa <b>força</b> para ver as notícias abaixo.${p.nota?`<div style="margin-top:6px;color:var(--ink-2)">${p.nota}</div>`:''}</div></div>
+  <div class="note"><span>▸</span><div><b>Estrutura competitiva — ${m.nome}</b> ${PORTER_REAL?'':'<span class="mock-badge">preview</span> '}Base estrutural (0–10) <b>ajustada pela pressão das notícias</b> do setor no período. Clique numa <b>força</b> para ver as notícias que a sustentam.${p.nota?`<div style="margin-top:6px;color:var(--ink-2)">${p.nota}</div>`:''}</div></div>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
-    ${Object.keys(PLABEL).map(k=>`<div class="card card-pad force clickable" data-force="${k}">
+    ${Object.keys(PLABEL).map(k=>{const d=p[k]-p["b_"+k];const darr=d>0?`<span style="color:var(--risk)">▲${d}</span>`:d<0?`<span style="color:var(--opp)">▼${-d}</span>`:'';
+      return `<div class="card card-pad force clickable" data-force="${k}">
       <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px"><h4 style="font-size:13.5px">${PLABEL[k]}</h4><span class="num" style="font-weight:700;color:${m.cor}">${p[k]}</span></div>${bar(p[k])}
-      <div style="margin-top:9px"><span class="audit-hint">▸ ver notícias</span></div></div>`).join("")}
+      <div style="margin-top:9px;display:flex;justify-content:space-between;align-items:center"><span class="audit-hint">▸ ver notícias</span><span style="font-size:10.5px;color:var(--ink-3)">${p["n_"+k]?`${p["n_"+k]} notícia(s)${d?` · base ${p["b_"+k]} ${darr}`:''}`:'sem notícia'}</span></div></div>`;}).join("")}
   </div>
   <h2 class="section-t">Notícias da força selecionada</h2>
   <div class="card card-pad" id="forceEvidence"><p style="margin:0;color:var(--ink-3);font-size:13px">Selecione uma força acima para ver as matérias que a sustentam nesta semana.</p></div>`;
@@ -1447,10 +1460,37 @@ function renderForce(k){
   document.getElementById("forceEvidence").innerHTML=`<div class="eyebrow" style="margin-bottom:6px">${PLABEL[k]}</div>`+(list.length?`<div class="news">${list.map(n=>`<a class="nw" href="${n.url}" target="_blank" rel="noopener"><h4>${n.t} ${n.mock?'<span class="mock-badge">mock</span>':''}</h4><div style="margin-bottom:6px">${dateChip(n)}</div><p>${firstN(n.txt,1)||n.txt}</p><div class="srcs">${n.src.map(([nm,lk])=>`<span class="src ${lk?'linked':''}">${nm}</span>`).join("")}<span class="go" style="margin-left:auto;color:var(--accent);font-weight:700;font-size:11px">Ler na fonte ↗</span></div></a>`).join("")}</div>`:`<p style="margin:0;color:var(--ink-3);font-size:13px">Sem matéria diretamente vinculada a esta força nesta semana.</p>`);
 }
 
+// Trajetórias de TEMAS: evolução do volume+tom das notícias de cada tema, semana a semana, no setor/escopo
+const TEMA_LABELS={tarifas:"Tarifas e comércio exterior (EUA)",desenrola:"Desenrola e crédito",energia:"Custo de energia (ANEEL/tarifa)",juros:"Juros, Selic e crédito",cambio:"Câmbio",safra:"Safra e agro",consumo:"Consumo e varejo",digital:"Digitalização e IA",escala6x1:"Escala 6x1 e jornada",copa:"Copa do Mundo",remessa:"Remessa Conforme e importados",construcao:"Construção e imóveis"};
+let _TRAJ=[];
+function themeTraj(){
+  const {weeks}=periodScope(); // cronológico (asc)
+  const out=[];
+  Object.keys(TEMA_LABELS).forEach(key=>{
+    const re=TAGVOC[key]; if(!re)return;
+    let all=[];
+    const steps=weeks.map(wk=>{
+      const cl=(clipByWeek[wk]||[]).filter(c=>inSector(c.setores)&&re.test((c.t||"")+" "+(c.txt||"")));
+      all=all.concat(cl);
+      const w=cl.reduce((a,c)=>a+newsIntensity(c),0);
+      const rel=Math.min(100,Math.round(w*20));
+      return [wk, rel>=60?"materializado":rel>=25?"em_curso":"monitorar", rel];
+    });
+    if(!all.length||steps.reduce((a,s)=>a+s[2],0)<=0)return;
+    const riscos=all.filter(c=>deriveTipo((c.t||"")+" "+(c.txt||""))==="risco").length;
+    out.push({t:TEMA_LABELS[key],tema:key,tipo:riscos>=all.length/2?"risco":"oportunidade",
+      dim:deriveDim(all.map(c=>c.t).join(" ")),status:steps[steps.length-1][1],
+      obs:`${all.length} notícia(s) do tema no período · ${riscos} com tom de risco.`,
+      traj:steps,setores:[...new Set(all.flatMap(c=>c.setores||[]))]});
+  });
+  return out.sort((a,b)=>b.traj.reduce((x,s)=>x+s[2],0)-a.traj.reduce((x,s)=>x+s[2],0));
+}
 function viewTraj(){
-  const list=sigs().filter(s=>s.traj&&s.traj.length);
+  _TRAJ=themeTraj();_TRAJ.forEach((s,i)=>{s.i=i;});
+  const list=_TRAJ;
+  if(!list.length)return `${periodBanner()}${histBanner()}${setorVazioNota("temas")||""}<div class="card card-pad"><p style="color:var(--ink-3);margin:0">Sem temas com notícias nesta seleção.</p></div>`;
   return `${periodBanner()}${histBanner()}
-  <div class="note"><span>▸</span><div><b>Trajetórias</b> — como cada sinal evoluiu ao longo das semanas. Clique num card para abrir o <b>histórico completo com as notícias</b> de cada semana.</div></div>
+  <div class="note"><span>▸</span><div><b>Trajetórias de temas</b> — como cada tema recorrente evoluiu semana a semana (volume e tom das notícias). Clique num card para o <b>histórico com as notícias</b> de cada semana.</div></div>
   <div class="card card-pad">
   ${list.map(s=>`<div class="traj" data-traj="${s.i}">
     <div style="display:flex;gap:9px;align-items:center;flex-wrap:wrap">
@@ -1463,15 +1503,17 @@ function viewTraj(){
   </div>`).join("")}</div>`;
 }
 function openTraj(idx){
-  const s=sigByI(idx);if(!s)return;const evs=newsForSig(s);
-  const hist=s.traj.map(step=>{const w=WMETA[step[0]];return `<div class="ev"><h5 style="display:flex;justify-content:space-between"><span>${w?w.lbl:step[0]}</span><span class="rel num">rel ${step[2]}</span></h5>
-    <div style="font-size:11px;color:var(--ink-3);margin-bottom:6px">${w?w.dt:''} · status: <b style="color:var(--ink-2)">${step[1].replace("_"," ")}</b></div></div>`;}).join("");
-  document.getElementById("drawerSub").textContent="Trajetória do sinal";
+  const s=_TRAJ[idx];if(!s)return;const re=TAGVOC[s.tema];
+  const hist=s.traj.map(step=>{const w=WMETA[step[0]];
+    const cl=(clipByWeek[step[0]]||[]).filter(c=>inSector(c.setores)&&re.test((c.t||"")+" "+(c.txt||"")));
+    const items=cl.map(c=>`<div style="font-size:12px;margin:3px 0">• ${c.url?`<a href="${c.url}" target="_blank" rel="noopener" style="color:var(--accent)">${c.t}</a>`:c.t}</div>`).join("")||'<div style="font-size:11px;color:var(--ink-3)">— sem notícias do tema nesta semana</div>';
+    return `<div class="ev"><h5 style="display:flex;justify-content:space-between"><span>${w?w.lbl:step[0]}</span><span class="rel num">intensidade ${step[2]}</span></h5>
+      <div style="font-size:11px;color:var(--ink-3);margin-bottom:6px">${w?w.dt:''} · ${step[1].replace("_"," ")}</div>${items}</div>`;}).join("");
+  document.getElementById("drawerSub").textContent="Trajetória do tema";
   document.getElementById("drawerTitle").textContent=s.t;
   document.getElementById("drawerBody").innerHTML=
     `<div style="font-size:12.5px;color:var(--ink-2);margin:10px 0 4px">${s.obs}</div>
-     <div class="eyebrow" style="margin:16px 0 4px">Evolução semana a semana</div>${hist}
-     <div class="eyebrow" style="margin:16px 0 4px">Notícias que sustentam o sinal</div>${evs.length?evs.map(evCard).join(""):'<div class="ev-empty">Sem notícia vinculada nesta janela.</div>'}`;
+     <div class="eyebrow" style="margin:16px 0 4px">Evolução semana a semana</div>${hist}`;
   drawer.classList.add("open");drawer.setAttribute("aria-hidden","false");scrim.classList.add("on");
 }
 
@@ -1627,7 +1669,7 @@ document.addEventListener("click",e=>{
    O que o motor NÃO entrega ainda (impacto/iminência da matriz, cadeia, agenda,
    decomposição do IPCA, "o que fazer", setores Agro/Construção/E-commerce) é
    DERIVADO ou permanece como conteúdo editorial marcado, até a evolução do motor. */
-let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, LAST_UPDATE=null, longByWeek={}, PRESSOES_DATA=null;
+let DATA_LOADED=false, MATRIX_REAL=false, PORTER_REAL=false, HIST_ONLY=false, LAST_UPDATE=null, longByWeek={}, clipByWeek={}, PRESSOES_DATA=null;
 const MABBR=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const DOWAB=["dom","seg","ter","qua","qui","sex","sáb"];
 // motor roda seg e qui às 10:00 UTC = 07h (BRT, UTC-3)
@@ -1807,7 +1849,7 @@ function previaSetor(){
   return `<div class="banner"><span>◔</span><div><b>Prévia de ${SMETA[state.sector].nome}.</b> O motor ainda não gera dados próprios deste setor — a cobertura completa chega na próxima evolução do motor. Você vê abaixo a leitura geral da semana e os sinais transversais (que afetam todos os setores).</div></div>`;}
 function applyData(sel,allData,metas){
   WEEKS=metas;WMETA=Object.fromEntries(WEEKS.map(w=>[w.k,w]));CHRONO=WEEKS.slice().reverse();
-  longByWeek={};allData.forEach(d=>{longByWeek[d._k]=d.longitudinal||[];});
+  longByWeek={};clipByWeek={};allData.forEach(d=>{longByWeek[d._k]=d.longitudinal||[];clipByWeek[d._k]=(d.clipping||[]).map(c=>({t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],url:(c.fontes||[]).find(f=>f.url)?.url||null}));});
   KPIS=adaptKpis(sel.kpis||[],allData);
   KPIS_SETOR=adaptKpisSetor(sel.kpis_setoriais||[],allData);
   KPIMAP=Object.fromEntries(KPIS.concat(KPIS_SETOR).map(k=>[k.id,k]));
