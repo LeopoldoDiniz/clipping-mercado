@@ -892,9 +892,31 @@ function newsSignals(curated){
   // limita p/ não poluir a matriz (Panorama tem muitas notícias); prioriza mais relevantes
   return out.sort((a,b)=>b.rel-a.rel).slice(0,18);
 }
-// Pressão do ambiente por setor: média dos scores PESTEL do setor ponderada pela relevância dos sinais ativos.
+// intensidade de uma notícia p/ ponderar a força PESTEL (volume conta; tom/porte pesam mais)
+function newsIntensity(n){const text=(n.t||"")+" "+(n.txt||"");
+  const strong=/recorde|forte|crise|disparad?|bilh[õo]|maior|hist[óo]ric|colaps|salto|tombo|dispara/i.test(text)?1:0;
+  const num=/\d+[.,]?\d*\s*(%|bilh|milh)/i.test(text)?1:0;
+  const risk=deriveTipo(text)==="risco"?1:0;
+  return 1+strong*0.8+num*0.4+risk*0.3;}
+// score 0-10 de uma força a partir das notícias que a compõem (satura por volta de ~6 notícias)
+function pestelScoreFrom(arr){if(!arr||!arr.length)return 0;
+  const w=arr.reduce((a,n)=>a+newsIntensity(n),0);
+  return Math.max(0,Math.min(10, 2+1.35*w));}
+// PESTEL do setor atual DERIVADO das notícias; usa a narrativa do motor quando há entrada correspondente
+function pestelDerived(){
+  const base=news(); // notícias já no escopo + setor (estrito)
+  return Object.keys(DIMS).map(dim=>{
+    const ns=base.filter(n=>n.dim===dim); if(!ns.length)return null;
+    // narrativa do motor só quando a força está tagueada PARA este setor; senão, deriva das notícias
+    const motor=PESTEL.find(p=>p.dim===dim&&(state.sector==="panorama"||(p.setores||[]).includes(state.sector)));
+    return {dim,score:pestelScoreFrom(ns),tema:motor?motor.tema:ns[0].t,
+      texto:motor?motor.texto:ns.slice(0,2).map(n=>"• "+n.t).join("  "),
+      setores:motor?motor.setores:[state.sector],n:ns.length};
+  }).filter(Boolean).sort((a,b)=>b.score-a.score);
+}
+// Pressão do ambiente por setor: média dos scores PESTEL (derivados das notícias) + relevância dos sinais.
 function pressao(){
-  const ps=pestel();if(!ps.length)return PRESSAO;
+  const ps=pestelDerived();if(!ps.length)return PRESSAO;
   const sg=sigs();
   const avgScore=ps.reduce((a,p)=>a+p.score,0)/ps.length;         // 0–10
   const avgRel=sg.length?sg.reduce((a,s)=>a+s.rel,0)/sg.length:60; // 0–100
@@ -1336,9 +1358,9 @@ function sigList(list){
 }
 
 function viewPestel(){
-  const list=pestel();
+  const list=pestelDerived();
   return `${periodBanner()}${histBanner()}${!list.length?setorVazioNota("forças PESTEL"):""}
-  <div class="note"><span>▸</span><div>Clique numa <b>dimensão</b> ou numa <b>célula</b> do mapa para ver as notícias que a sustentam.</div></div>
+  <div class="note"><span>▸</span><div><b>Forças PESTEL derivadas das notícias</b> em escopo — o score reflete o <b>volume e o tom</b> do clipping do setor no período. Clique numa <b>dimensão</b> ou numa <b>célula</b> do mapa para ver as notícias que a sustentam.</div></div>
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
     ${list.map(p=>`<div class="card card-pad clickable" data-dim="${p.dim}">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
@@ -1350,15 +1372,15 @@ function viewPestel(){
       <div style="margin-top:8px"><span class="audit-hint">▸ ver evidências</span></div></div>`).join("")}
   </div>
   <h2 class="section-t">Cruzamento Setor × PESTEL</h2>
-  <div class="legend" style="margin-bottom:10px"><b>Como ler:</b> cada célula mostra o <b>score</b> (0–10) da dimensão para o setor — quanto mais intensa a cor, maior a pressão daquela força ali. Clique numa célula para as notícias.</div>
+  <div class="legend" style="margin-bottom:10px"><b>Como ler:</b> cada célula mede a <b>intensidade da força</b> (0–10) para o setor, a partir do <b>volume e tom das notícias</b> daquele setor no período. Quanto mais intensa a cor, mais forte a pressão ali. Clique numa célula para as notícias.</div>
   ${heatmap()}`;
 }
 function heatmap(){
   const cols=SECTORS.filter(s=>s.id!=="panorama");
   const scale=v=>`background:color-mix(in srgb, var(--accent) ${Math.round(Math.max(.1,Math.min(1,v/10))*100)}%, var(--surface-3))`;
   const rows=Object.keys(DIMS).map(d=>{
-    const p=PESTEL.find(x=>x.dim===d);
-    const cells=cols.map(c=>{const on=p&&p.setores.includes(c.id);const v=on?p.score:0;
+    // score DERIVADO: notícias da dimensão d classificadas para cada setor (volume + tom)
+    const cells=cols.map(c=>{const ns=NEWS.filter(n=>n.dim===d&&(n.setores||[]).includes(c.id));const v=pestelScoreFrom(ns);const on=v>0;
       return `<td class="cell ${on?'clickable':'off'}" ${on?`data-dim="${d}" data-sec="${c.id}"`:''} style="${on?scale(v):'background:var(--surface-2);color:var(--ink-3)'}">${on?dec(v,1):'·'}</td>`;}).join("");
     return `<tr><td class="lbl">${d} · ${DIMS[d]}</td>${cells}</tr>`;
   }).join("");
@@ -1571,8 +1593,8 @@ document.getElementById("view").addEventListener("click",e=>{
   const goto=e.target.closest("[data-goto]");if(goto){e.preventDefault();state.lens=goto.dataset.goto;render();scrollTo({top:0,behavior:"smooth"});return;}
   const kpiI=e.target.closest("[data-kpi]");if(kpiI){const k=KPIMAP[kpiI.dataset.kpi]||KPIS.find(x=>x.id===kpiI.dataset.kpi);markActive(kpiI.closest(".kpi"));openDrawer("Indicador",k.label,[]);document.getElementById("drawerBody").innerHTML=`<div style="padding:14px 0"><p style="font-size:13.5px;color:var(--ink-2)">${k.info}</p><div class="legend" style="margin-top:10px">${k.sub}</div><a href="#" data-goto="metodologia" style="display:inline-block;margin-top:12px;color:var(--accent);font-weight:600;font-size:12.5px">Ver metodologia completa →</a></div>`;return;}
   const sig=e.target.closest("[data-sig]");if(sig){const s=sigByI(+sig.dataset.sig);if(s){markActive(sig);openDrawer("Evidências do sinal",s.t,newsForSig(s));}return;}
-  const dimC=e.target.closest(".cell[data-dim]");if(dimC){const d=dimC.dataset.dim,sec=dimC.dataset.sec;markActive(dimC);openDrawer(`${DIMS[d]} · ${SMETA[sec].nome}`,`${d} — ${PESTEL.find(x=>x.dim===d).tema}`,newsFor({dim:d,sector:sec}));return;}
-  const dim=e.target.closest("[data-dim]");if(dim){const d=dim.dataset.dim;markActive(dim);openDrawer(`Dimensão ${DIMS[d]}`,PESTEL.find(x=>x.dim===d).tema,newsFor({dim:d}));return;}
+  const dimC=e.target.closest(".cell[data-dim]");if(dimC){const d=dimC.dataset.dim,sec=dimC.dataset.sec;markActive(dimC);openDrawer(`${DIMS[d]} · ${SMETA[sec].nome}`,`${d} — ${(PESTEL.find(x=>x.dim===d)||{}).tema||DIMS[d]}`,newsFor({dim:d,sector:sec}));return;}
+  const dim=e.target.closest("[data-dim]");if(dim){const d=dim.dataset.dim;markActive(dim);openDrawer(`Dimensão ${DIMS[d]}`,(PESTEL.find(x=>x.dim===d)||{}).tema||DIMS[d],newsFor({dim:d}));return;}
   const cad=e.target.closest("[data-cadeia]");if(cad){const c=cad.dataset.cadeia;markActive(cad);openDrawer("Cadeia de impacto",CADEIA.find(x=>x.id===c).nome,newsFor({cadeia:c}));return;}
   const pt=e.target.closest("[data-point]");if(pt){const idx=+pt.dataset.point;state.pointSig=state.pointSig===idx?null:idx;render();return;} // ponto só filtra; drawer abre ao clicar na prioridade
   if(e.target.closest("#clearFilter")){state.pointSig=null;render();return;}
