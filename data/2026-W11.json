@@ -5,8 +5,9 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 11), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,25. Destaques verificados da semana: Boletim Focus (13/03): IPCA de 2026 em 3,97%; IPCA de fevereiro fica em 0,70%; SINAPI sobe 0,23% em fevereiro; custo a R$ 1.925,08/m2. 6 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A Semana 11 de Março de 2026 é marcada por um cenário econômico de inflação persistente e atividade aquecida, conforme os dados divulgados. O IPCA de fevereiro registrou alta de 0,70%, superando janeiro (0,33%) e elevando o acumulado em 12 meses para 3,81%, aproximando-se do teto da meta de 4,5%. O Boletim Focus projeta o IPCA de 2026 em 3,97% e o PIB em 1,82%, com a taxa Selic mantida em 15,00% a.a., indicando uma política monetária focada no controle inflacionário. O câmbio se manteve em R$ 5,25.\n\nNo que tange à atividade econômica, o mercado de trabalho demonstra resiliência, com a taxa de desemprego em 5,4% no trimestre encerrado em janeiro. O consumo se destaca, com as vendas do varejo avançando 0,4% em janeiro, atingindo o ponto mais alto da série histórica. O setor de serviços também contribui para o dinamismo, com um crescimento de 0,3% no volume em janeiro, igualando o patamar recorde de out-nov/2025. A indústria, por sua vez, registrou um aumento de 2,2% na produção física em janeiro.\n\nSetorialmente, a construção civil observou um aumento de 0,23% no custo médio por metro quadrado em fevereiro, impulsionado pela alta de 0,36% nos materiais. O agronegócio mantém a projeção de uma safra recorde para 2025/26, com 344,1 milhões de toneladas de grãos, o que pode influenciar a oferta e os preços.\n\nO principal ponto de atenção reside na inflação. Apesar do crescimento da atividade, o IPCA em 0,70% em fevereiro e o acumulado de 3,81% em 12 meses sinalizam uma pressão inflacionária que exige acompanhamento contínuo, especialmente com a Selic em 15,00% a.a. e suas implicações para o custo de capital e o poder de compra.",
+    "origem": "gemini_retroativo",
+    "gerado_em": "2026-07-15T23:38:37.944758"
   },
   "clipping": [
     {
@@ -89,7 +90,74 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Estabilidade da política monetária e fiscal",
+      "texto": "A projeção do Boletim Focus de 13/03/2026 de manutenção da Selic para o fim de 2026, e a taxa atual de 15,00% a.a., indicam uma continuidade na política monetária. A meta de IPCA de 3,0% (teto 4,5%) reforça o foco na estabilidade de preços, sem notícias de grandes mudanças regulatórias ou políticas nesta semana.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Cenário de inflação persistente e atividade econômica em expansão",
+      "texto": "A inflação de fevereiro, em 0,70%, superou janeiro (0,33%) e levou o acumulado em 12 meses a 3,81%, aproximando-se do teto da meta. O Boletim Focus projeta o IPCA de 2026 em 3,97% e o PIB em 1,82%, enquanto a Selic se mantém em 15,00% a.a. O desemprego em 5,4% e o avanço do varejo (0,4%) e serviços (0,3%) em janeiro indicam aquecimento da atividade.",
+      "score": 8.5,
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "industria",
+        "construcao"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Melhora no mercado de trabalho e consumo aquecido",
+      "texto": "A taxa de desemprego em 5,4% no trimestre nov-dez-jan de 2026, combinada com o avanço recorde das vendas do varejo em 0,4% e do volume de serviços em 0,3% em janeiro, sugere uma melhora no poder de compra e na confiança do consumidor, impulsionando a demanda interna.",
+      "score": 7.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Inovação e eficiência como impulsionadores de produtividade",
+      "texto": "Embora não haja notícias específicas de avanços tecnológicos nesta semana, a continuidade do crescimento em setores como serviços e comércio, que atingem patamares recordes, sugere uma adaptação e otimização de processos que podem ser impulsionadas por tecnologias existentes.",
+      "score": 5.0,
+      "setores": [
+        "servicos",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Condições climáticas favoráveis para a produção agrícola",
+      "texto": "O 6º levantamento da Conab (mar/2026) manteve a projeção de safra 2025/26 recorde, com estimativas elevadas para soja (~178 milhões de toneladas) e milho (138,4 milhões). A estimativa da LSPA para a safra de grãos de 344,1 Mt reforça condições ambientais propícias para a produção agrícola.",
+      "score": 6.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Estabilidade regulatória e ambiente de negócios",
+      "texto": "Não foram divulgadas alterações ou eventos legais significativos nesta semana. A estabilidade da taxa Selic e as projeções econômicas do Boletim Focus indicam um ambiente regulatório previsível, sem grandes rupturas ou novas legislações impactando diretamente os setores.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -135,7 +203,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O crescimento de 2,2% na produção física em janeiro e o aumento de 0,32% nos preços ao produtor indicam um setor em expansão, mas com pressões de custo que podem fortalecer o poder dos fornecedores."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O avanço recorde de 0,4% nas vendas do varejo em janeiro reflete um mercado consumidor aquecido, intensificando a rivalidade e o poder de escolha dos compradores."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O volume de serviços avançou 0,3% em janeiro, igualando o patamar recorde, refletindo um setor dinâmico e com demanda consistente que pode atrair novos players e aumentar a rivalidade."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A projeção de safra recorde de 344,1 Mt para 2026, com alta oferta de grãos, pode fortalecer o poder de barganha dos compradores e gerar pressão nos preços, enquanto os custos de insumos podem ser impactados pela inflação."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O custo da construção subiu 0,23% em fevereiro, com materiais em +0,36%, indicando pressões nos custos e um poder considerável dos fornecedores, enquanto a demanda se mantém estável."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Embora sem dados diretos, o avanço recorde das vendas do varejo em 0,4% sugere um ambiente propício para o e-commerce, com alta rivalidade e poder dos compradores devido à facilidade de comparação e opções."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -242,5 +359,103 @@
         "val": 0.005
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Monitorar a trajetória da inflação de 0,70% em fevereiro e o acumulado de 3,81% em 12 meses, que se aproxima do teto da meta de 4,5%."
+        },
+        {
+          "ico": "📊",
+          "txt": "Avaliar o impacto da Selic mantida em 15,00% a.a. sobre o custo de capital e o endividamento das empresas."
+        },
+        {
+          "ico": "📈",
+          "txt": "Aproveitar o crescimento de 0,4% nas vendas do varejo e 0,3% no volume de serviços em janeiro, que atingiram recordes, para impulsionar a atividade."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Perspectivas de crescimento moderado, com atenção aos custos de produção.",
+        "quote": "A produção física da indústria avançou 2,2% em janeiro.",
+        "edi": [
+          "A indústria registrou um crescimento de 2,2% na produção física em janeiro, indicando uma recuperação. Os preços ao produtor subiram 0,32% no mesmo mês, sugerindo pressões de custo que podem ser repassadas."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Otimizar a gestão de custos de produção, considerando o aumento de 0,32% nos preços ao produtor em janeiro."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Cenário de forte demanda e expansão contínua do consumo.",
+        "quote": "As vendas do varejo avançaram 0,4% em janeiro, atingindo o ponto mais alto da série histórica.",
+        "edi": [
+          "O setor de comércio demonstrou robustez em janeiro, com as vendas do varejo crescendo 0,4% e alcançando um recorde histórico. Este desempenho é impulsionado pela melhora no mercado de trabalho, com desemprego em 5,4%, e reflete o aquecimento do consumo."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Investir em estratégias de vendas e marketing para capitalizar o avanço recorde de 0,4% nas vendas do varejo em janeiro."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Crescimento sustentado e atingindo patamares elevados de atividade.",
+        "quote": "O volume de serviços subiu 0,3% em janeiro e igualou o patamar recorde de out-nov/2025.",
+        "edi": [
+          "O setor de serviços manteve sua trajetória de crescimento, com um avanço de 0,3% em janeiro, igualando o recorde anterior. Este é o quinto mês consecutivo de alta, indicando uma demanda consistente e um setor resiliente."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Explorar oportunidades de expansão e inovação para manter o ritmo de crescimento do volume de serviços, que subiu 0,3% em janeiro."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Produção abundante com potencial impacto nos preços e na oferta.",
+        "quote": "O 6º levantamento da Conab manteve a safra 2025/26 recorde, com soja em ~178 milhões de toneladas e milho em 138,4 milhões.",
+        "edi": [
+          "O agronegócio projeta uma safra recorde para 2025/26, conforme o 6º levantamento da Conab, com volumes expressivos para soja e milho. A estimativa da LSPA de 344,1 Mt para a safra de grãos de 2026 reforça a alta oferta."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Planejar a logística e comercialização da safra recorde de 344,1 Mt, considerando a alta oferta de grãos."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Custos em ascensão, exigindo gestão eficiente de insumos.",
+        "quote": "O custo da construção (SINAPI) subiu 0,23% em fevereiro/2026, com custo médio de R$ 1.925,08/m2.",
+        "edi": [
+          "O setor da construção civil observou um aumento nos custos em fevereiro, com o SINAPI subindo 0,23% e o custo médio por metro quadrado atingindo R$ 1.925,08. Os materiais foram o principal vetor, com alta de 0,36%, indicando a necessidade de controle de despesas."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Revisar orçamentos e contratos, considerando o aumento de 0,23% no custo da construção em fevereiro e a alta de 0,36% nos materiais."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Crescimento impulsionado pelo varejo, com alta concorrência e foco na experiência do cliente.",
+        "quote": "As vendas do varejo avançaram 0,4% em janeiro, recorde da série.",
+        "edi": [
+          "Embora sem dados específicos, o e-commerce é beneficiado pelo desempenho recorde do varejo, que avançou 0,4% em janeiro. A digitalização e a conveniência continuam a impulsionar este canal, que se mostra cada vez mais competitivo."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Aprimorar a experiência do cliente e a logística para se destacar no ambiente de e-commerce, aproveitando o bom momento do varejo."
+          }
+        ]
+      }
+    }
   }
 }
