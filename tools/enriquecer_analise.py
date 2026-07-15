@@ -167,15 +167,28 @@ Regras: pestel sempre as 6 dimensões (score 0–10); porter os 6 setores (0–1
 
 # ── Gemini ───────────────────────────────────────────────────────────────────
 def _gerar(client, prompt, config):
-    from google.genai import types
-    try:
-        return client.models.generate_content(model=MODELO, contents=prompt, config=config)
-    except Exception as e:
-        s = str(e).lower()
-        if any(t in s for t in ("resource_exhausted", "429", "quota")) and any(
-                t in s for t in ("perday", "per day", "daily")):
-            return client.models.generate_content(model=MODELO_FALLBACK, contents=prompt, config=config)
-        raise
+    """Gera com retry em erros TRANSITÓRIOS (503/sobrecarga/limite por minuto) e
+    desvio para o fallback quando a cota DIÁRIA do primário estoura."""
+    esperas = [0, 12, 30, 60]
+    ultimo = None
+    for espera in esperas:
+        if espera:
+            time.sleep(espera)
+        try:
+            return client.models.generate_content(model=MODELO, contents=prompt, config=config)
+        except Exception as e:
+            ultimo = e
+            s = str(e).lower()
+            # cota DIÁRIA do primário → tenta uma vez no fallback (cota independente)
+            if any(t in s for t in ("resource_exhausted", "429", "quota")) and any(
+                    t in s for t in ("perday", "per day", "daily")):
+                return client.models.generate_content(model=MODELO_FALLBACK, contents=prompt, config=config)
+            # transitório (503/UNAVAILABLE/overloaded/limite por minuto) → espera e repete
+            if any(t in s for t in ("503", "unavailable", "overloaded", "high demand",
+                                    "rate", "429", "500", "internal", "deadline", "timeout")):
+                continue
+            raise
+    raise ultimo if ultimo else RuntimeError("falha ao gerar (sem exceção capturada)")
 
 def main():
     if DRY_RUN:
