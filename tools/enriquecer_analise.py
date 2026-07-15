@@ -62,7 +62,8 @@ _NUM = re.compile(r"\d{1,3}(?:\.\d{3})*,\d+|\d+,\d+|\d+%|r\$\s*\d[\d.,]*|us\$\s*
 def anchors(t):
     out = set()
     for m in _NUM.finditer(t or ""):
-        a = norm(m.group(0)).replace("r$", "").replace("us$", "").replace("%", "")
+        # apara pontuação de fronteira que os alternantes r$/us$ podem engolir (ex.: "1.925,08," → "1.925,08")
+        a = norm(m.group(0)).replace("r$", "").replace("us$", "").replace("%", "").strip(".,")
         if re.search(r"\d,\d|\d{2,}", a):
             out.add(a)
     return out
