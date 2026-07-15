@@ -4,3 +4,4 @@ tools/_cands.json
 tools/backfill_report.json
 tools/verif_report.json
 tools/supabase_seed.json
+tools/enriquecer_report.json

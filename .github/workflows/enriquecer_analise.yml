@@ -1,0 +1,39 @@
+name: Enriquecer análise retroativa (W1–W21)
+
+# Disparo MANUAL apenas. Preenche pestel/porter/analise/editorial das semanas de
+# backfill, sintetizando a partir do CLIPPING JÁ VERIFICADO (o Gemini roda SEM busca
+# na internet, então não re-busca nem inventa notícia). Gate de grounding pula a
+# semana se algum número da análise não tiver lastro no clipping/KPIs.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enriquecer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install google-genai
+
+      - name: Rodar o enriquecimento (Gemini, sem busca)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python tools/enriquecer_analise.py
+
+      - name: Publicar a camada analítica
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Enriquecimento retroativo W1-W21: pestel/porter/analise/editorial ($(date +'%Y-%m-%d'))"
+          git push
