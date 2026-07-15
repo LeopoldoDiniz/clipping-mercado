@@ -12,7 +12,7 @@
  * essas entram na worklist para adjudicação por busca real (agente/humano). Ver tools/README.md.
  */
 import fs from 'fs';
-import { execFile } from 'child_process';
+import { execFile, execFileSync } from 'child_process';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36';
 const argv = process.argv.slice(2);
@@ -40,33 +40,49 @@ function fetchUrl(url){
   if(cache.has(url)) return cache.get(url);
   const p = new Promise(res=>{
     const bf = 'tools/.body_' + Math.abs([...url].reduce((h,c)=>(h*31+c.charCodeAt(0))>>>0,7)) + '.tmp';
-    execFile('curl',['-s','-o',bf,'-w','%{http_code}','-A',UA,'-L','--max-time','22','--compressed',url],
-      {maxBuffer:1<<24},(e,out)=>{ const code=parseInt((out||'').trim(),10)||0; let body='';
-        try{body=fs.readFileSync(bf,'utf8');}catch(_){} try{fs.unlinkSync(bf);}catch(_){}
-        res({code, text:stripHtml(body), len:body.length}); });
+    execFile('curl',['-s','-o',bf,'-w','%{http_code} %{content_type}','-A',UA,'-L','--max-time','25','--compressed',url],
+      {maxBuffer:1<<25},(e,out)=>{
+        const parts=(out||'').trim().split(' '); const code=parseInt(parts[0],10)||0; const ctype=parts.slice(1).join(' ');
+        let text='', len=0, pdf=false, pdfOk=false;
+        try{
+          const buf=fs.readFileSync(bf); len=buf.length;
+          pdf = /application\/pdf/i.test(ctype) || buf.slice(0,5).toString('latin1')==='%PDF';
+          if(pdf){ // extrai o TEXTO do PDF p/ conferir conteúdo (não só a existência do arquivo)
+            try{ text=norm(execFileSync('pdftotext',['-q','-nopgbrk',bf,'-'],{maxBuffer:1<<26}).toString('utf8')).replace(/\s+/g,' '); pdfOk=text.length>0; }catch(_){ text=''; }
+          } else { text=stripHtml(buf.toString('utf8')); }
+        }catch(_){}
+        try{fs.unlinkSync(bf);}catch(_){}
+        res({code, text, len, pdf, pdfOk});
+      });
   });
   cache.set(url,p); return p;
 }
+// domínios oficiais em que um PDF que abre (200) já é auditável mesmo sem extração de texto
+const OFICIAL = /(^|\.)(gov\.br|bcb\.gov\.br|ibge\.gov\.br|conab\.gov\.br|fgv\.br|planalto\.gov\.br)(\/|$|:)/i;
 const ytId = url => (/youtube\.com\/watch\?v=([A-Za-z0-9_-]+)/.exec(url)||/youtu\.be\/([A-Za-z0-9_-]+)/.exec(url)||[])[1]||null;
 const ytOembed = url => new Promise(res=>execFile('curl',['-s','-o','/dev/null','-w','%{http_code}','--max-time','15',
   'https://www.youtube.com/oembed?url='+encodeURIComponent(url)+'&format=json'],(e,o)=>res(parseInt((o||'').trim(),10)||0)));
 
 async function pool(items,n,fn){const out=[];let i=0;const run=async()=>{while(i<items.length){const k=i++;out[k]=await fn(items[k]);}};await Promise.all(Array.from({length:Math.min(n,items.length)},run));return out;}
 
-function classify(item, fetched, ytCode){
+function classify(url, item, fetched, ytCode){
   if(fetched.code<200||fetched.code>=400) return {status:'morta', http:fetched.code};
   if(ytCode!=null && ytCode!==200) return {status:'fabricada', http:fetched.code, nota:'youtube '+ytCode};
   const body=fetched.text, anchors=numAnchors(item.titulo+' '+(item.texto||'')), toks=titleTokens(item.titulo);
   const numHit=anchors.filter(a=>body.includes(a)).length, tokHit=toks.filter(w=>body.includes(w)).length;
   const tokRatio=toks.length?tokHit/toks.length:0;
-  const shell=fetched.len<1500||/just a moment|cloudflare|enable javascript|attention required/i.test(body);
+  // PDF sem texto extraível (pdftotext ausente): aceita estrutural só de domínio oficial; senão revisar
+  if(fetched.pdf && !fetched.pdfOk){
+    return {status: OFICIAL.test(url)?'ok':'revisar', http:fetched.code, pdf:true, nota:'pdf estrutural (sem extração)'};
+  }
+  const shell=!fetched.pdf && (fetched.len<1500||/just a moment|cloudflare|enable javascript|attention required/i.test(body));
   let status;
   if(numHit>=1 && tokRatio>=0.34) status='ok';
   else if(numHit>=1 || tokRatio>=0.5) status='ok';
   else if(shell) status='revisar';
   else if(tokRatio>=0.25) status='revisar';
   else status='nao_confere';
-  return {status, http:fetched.code, numHit, tokHit, tokTot:toks.length, tokRatio:+tokRatio.toFixed(2), shell};
+  return {status, http:fetched.code, numHit, tokHit, tokTot:toks.length, tokRatio:+tokRatio.toFixed(2), shell, pdf:fetched.pdf};
 }
 const ARTE = /\[cite:|in previous search|\{\{|lorem ipsum|placeholder/i;
 
@@ -81,7 +97,7 @@ async function verifyWeek(wk){
   const rep=items.map((c,idx)=>{
     const srcs=(c.fontes||[]).map(s=>{
       if(!s.url) return {nome:s.nome, url:null, status:'sem_url'};
-      const cl=classify(c, fetchedMap.get(s.url), ytMap.has(s.url)?ytMap.get(s.url):null);
+      const cl=classify(s.url, c, fetchedMap.get(s.url), ytMap.has(s.url)?ytMap.get(s.url):null);
       if(APPLY && (cl.status==='morta'||cl.status==='fabricada') && s.ok!==false){ s.ok=false; touched=true; }
       return {nome:s.nome, url:s.url, okFlag:s.ok, ...cl};
     });
