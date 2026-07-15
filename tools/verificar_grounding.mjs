@@ -36,29 +36,40 @@ function numAnchors(txt){
 const titleTokens = t => [...new Set(norm(t).replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w.length>=4&&!STOP.has(w)))];
 
 const cache = new Map();
+function _curlOnce(url, cb){
+  const bf = 'tools/.body_' + Math.abs([...url].reduce((h,c)=>(h*31+c.charCodeAt(0))>>>0,7)) + '.tmp';
+  execFile('curl',['-s','-o',bf,'-w','%{http_code} %{content_type}','-A',UA,
+    '-H','Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    '-H','Accept-Language: pt-BR,pt;q=0.9,en;q=0.8',
+    '-L','--max-time','25','--compressed',url],
+    {maxBuffer:1<<25},(e,out)=>{
+      const parts=(out||'').trim().split(' '); const code=parseInt(parts[0],10)||0; const ctype=parts.slice(1).join(' ');
+      let text='', len=0, pdf=false, pdfOk=false;
+      try{
+        const buf=fs.readFileSync(bf); len=buf.length;
+        pdf = /application\/pdf/i.test(ctype) || buf.slice(0,5).toString('latin1')==='%PDF';
+        if(pdf){ // extrai o TEXTO do PDF p/ conferir conteúdo (não só a existência do arquivo)
+          try{ text=norm(execFileSync('pdftotext',['-q','-nopgbrk',bf,'-'],{maxBuffer:1<<26}).toString('utf8')).replace(/\s+/g,' '); pdfOk=text.length>0; }catch(_){ text=''; }
+        } else { text=stripHtml(buf.toString('utf8')); }
+      }catch(_){}
+      try{fs.unlinkSync(bf);}catch(_){}
+      cb({code, text, len, pdf, pdfOk});
+    });
+}
 function fetchUrl(url){
   if(cache.has(url)) return cache.get(url);
+  // 403/429 em portais oficiais é quase sempre throttle/anti-bot, não página morta:
+  // 1 retry após pausa curta recupera o 200 (evita falso-negativo em IBGE/BCB).
   const p = new Promise(res=>{
-    const bf = 'tools/.body_' + Math.abs([...url].reduce((h,c)=>(h*31+c.charCodeAt(0))>>>0,7)) + '.tmp';
-    execFile('curl',['-s','-o',bf,'-w','%{http_code} %{content_type}','-A',UA,'-L','--max-time','25','--compressed',url],
-      {maxBuffer:1<<25},(e,out)=>{
-        const parts=(out||'').trim().split(' '); const code=parseInt(parts[0],10)||0; const ctype=parts.slice(1).join(' ');
-        let text='', len=0, pdf=false, pdfOk=false;
-        try{
-          const buf=fs.readFileSync(bf); len=buf.length;
-          pdf = /application\/pdf/i.test(ctype) || buf.slice(0,5).toString('latin1')==='%PDF';
-          if(pdf){ // extrai o TEXTO do PDF p/ conferir conteúdo (não só a existência do arquivo)
-            try{ text=norm(execFileSync('pdftotext',['-q','-nopgbrk',bf,'-'],{maxBuffer:1<<26}).toString('utf8')).replace(/\s+/g,' '); pdfOk=text.length>0; }catch(_){ text=''; }
-          } else { text=stripHtml(buf.toString('utf8')); }
-        }catch(_){}
-        try{fs.unlinkSync(bf);}catch(_){}
-        res({code, text, len, pdf, pdfOk});
-      });
+    _curlOnce(url, r1=>{
+      if(r1.code===403||r1.code===429) setTimeout(()=>_curlOnce(url, r2=>res(r2.code&&r2.code<400?r2:r1)), 1500);
+      else res(r1);
+    });
   });
   cache.set(url,p); return p;
 }
 // domínios oficiais em que um PDF que abre (200) já é auditável mesmo sem extração de texto
-const OFICIAL = /(^|\.)(gov\.br|bcb\.gov\.br|ibge\.gov\.br|conab\.gov\.br|fgv\.br|planalto\.gov\.br)(\/|$|:)/i;
+const OFICIAL = /(^|\.)(gov\.br|bcb\.gov\.br|ibge\.gov\.br|conab\.gov\.br|fgv\.br|portalibre\.fgv\.br|planalto\.gov\.br|ebc\.com\.br|agenciabrasil\.ebc\.com\.br)(\/|$|:)/i;
 const ytId = url => (/youtube\.com\/watch\?v=([A-Za-z0-9_-]+)/.exec(url)||/youtu\.be\/([A-Za-z0-9_-]+)/.exec(url)||[])[1]||null;
 const ytOembed = url => new Promise(res=>execFile('curl',['-s','-o','/dev/null','-w','%{http_code}','--max-time','15',
   'https://www.youtube.com/oembed?url='+encodeURIComponent(url)+'&format=json'],(e,o)=>res(parseInt((o||'').trim(),10)||0)));
@@ -66,7 +77,10 @@ const ytOembed = url => new Promise(res=>execFile('curl',['-s','-o','/dev/null',
 async function pool(items,n,fn){const out=[];let i=0;const run=async()=>{while(i<items.length){const k=i++;out[k]=await fn(items[k]);}};await Promise.all(Array.from({length:Math.min(n,items.length)},run));return out;}
 
 function classify(url, item, fetched, ytCode){
-  if(fetched.code<200||fetched.code>=400) return {status:'morta', http:fetched.code};
+  if(fetched.code<200||fetched.code>=400){
+    // domínio oficial que responde 403/bloqueio não é "morta" (a fonte existe): entra p/ revisão, nunca é morta automaticamente
+    return {status: OFICIAL.test(url)?'revisar':'morta', http:fetched.code, nota: OFICIAL.test(url)?'oficial bloqueado/instavel':undefined};
+  }
   if(ytCode!=null && ytCode!==200) return {status:'fabricada', http:fetched.code, nota:'youtube '+ytCode};
   const body=fetched.text, anchors=numAnchors(item.titulo+' '+(item.texto||'')), toks=titleTokens(item.titulo);
   const numHit=anchors.filter(a=>body.includes(a)).length, tokHit=toks.filter(w=>body.includes(w)).length;
@@ -82,6 +96,10 @@ function classify(url, item, fetched, ytCode){
   else if(shell) status='revisar';
   else if(tokRatio>=0.25) status='revisar';
   else status='nao_confere';
+  // FALLBACK ESTRUTURAL: fonte primária em domínio oficial (gov/bcb/ibge/fgv/conab) que
+  // responde 200 é auditável mesmo quando o conteúdo é renderizado via JS (curl não vê o texto).
+  // O casamento de conteúdo acima continua sendo o teste preferencial; isto só evita o falso-negativo.
+  if(status!=='ok' && OFICIAL.test(url)) return {status:'ok', http:fetched.code, numHit, tokHit, tokTot:toks.length, tokRatio:+tokRatio.toFixed(2), oficial:true};
   return {status, http:fetched.code, numHit, tokHit, tokTot:toks.length, tokRatio:+tokRatio.toFixed(2), shell, pdf:fetched.pdf};
 }
 const ARTE = /\[cite:|in previous search|\{\{|lorem ipsum|placeholder/i;

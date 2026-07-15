@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril (semana 15), derivada dos indicadores oficiais: Selic mantida em 14,75% a.a.; o dólar recuou a R$ 5,02; IPCA do mês em 0,88% (acum. ano 1,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Abril 2026 (semana 15), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 5,02. Destaques verificados da semana: IPCA de marco fecha em 0,88%, pressionado por combustiveis; IGP-DI de marco sobe 1,14%; Vendas do varejo avancam 0,6% em fevereiro, novo recorde. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

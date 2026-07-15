@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março (semana 12), derivada dos indicadores oficiais: o Copom reduziu a Selic para 14,75% a.a.; o dólar subiu a R$ 5,28; IPCA do mês em 0,70% (acum. ano 1,03%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Março 2026 (semana 12), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,28. Destaques verificados da semana: Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%; Copom corta a Selic para 14,75%, primeira reducao em 19 meses. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

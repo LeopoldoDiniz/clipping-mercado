@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro (semana 3), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar subiu a R$ 5,38; IPCA do mês em 0,33% (acum. ano 4,26%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Janeiro 2026 (semana 3), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,38. Destaques verificados da semana: Focus reduz projeção de inflação de 2026 para 4,05%; Varejo cresce 1,0% em novembro; acumula 1,5% no ano; Vendas de veículos crescem 2,58% em 2025, a 2,55 milhões de unidades. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

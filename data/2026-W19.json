@@ -2,13 +2,53 @@
   "periodo": "2026-W19",
   "label": "Semana 19 · Maio 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Maio (semana 19), derivada dos indicadores oficiais: Selic mantida em 14,50% a.a.; o dólar recuou a R$ 4,90; IPCA do mês em 0,88% (acum. ano 1,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Maio 2026 (semana 19), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,90. Destaques verificados da semana: Ata do Copom detalha corte cauteloso da Selic a 14,50%; Producao industrial varia 0,1% em marco e acumula 3,1% no ano; Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Ata do Copom detalha corte cauteloso da Selic a 14,50%",
+      "texto": "A ata da 278a reuniao do Copom (divulgada em maio) detalhou o corte a 14,50%, com o comite enfatizando cautela diante da inflacao pressionada por combustiveis e do risco geopolitico.",
+      "fontes": [
+        {
+          "nome": "BCB / Copom",
+          "url": "https://www.bcb.gov.br/content/copom/atascopom/Copom278-not20260429278.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Producao industrial varia 0,1% em marco e acumula 3,1% no ano",
+      "texto": "A producao industrial (PIM/IBGE) variou 0,1% em marco/2026 ante fevereiro, com alta acumulada de 3,1% no ano e 4,3% na comparacao anual - 06/05.",
+      "fontes": [
+        {
+          "nome": "IBGE / PIM",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/46578-industria-nacional-varia-0-1-em-marco-e-acumula-alta-de-3-1-em-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%",
+      "texto": "O Boletim Focus de 08/05/2026 trouxe IPCA de 2026 em 4,91%, Selic (fim de 2026) em 13,00%, cambio a R$ 5,20 e IGP-M projetado em 5,60%.",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260508.pdf"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

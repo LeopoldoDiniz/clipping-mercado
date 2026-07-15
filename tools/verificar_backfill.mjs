@@ -51,7 +51,10 @@ function isoWeek(dateStr){
   return {year, week: 1+Math.round((dt-firstThu)/(7*864e5))};
 }
 function fetchUrl(url){return new Promise(res=>{const bf='tools/.bf_'+Math.abs([...url].reduce((h,c)=>(h*31+c.charCodeAt(0))>>>0,7))+'.tmp';
-  execFile('curl',['-s','-o',bf,'-w','%{http_code} %{content_type}','-A',UA,'-L','--max-time','25','--compressed',url],{maxBuffer:1<<25},(e,out)=>{
+  execFile('curl',['-s','-o',bf,'-w','%{http_code} %{content_type}','-A',UA,
+    '-H','Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    '-H','Accept-Language: pt-BR,pt;q=0.9,en;q=0.8',
+    '-L','--max-time','25','--compressed',url],{maxBuffer:1<<25},(e,out)=>{
     const parts=(out||'').trim().split(' ');const code=parseInt(parts[0],10)||0;const ct=parts.slice(1).join(' ');
     let raw='',text='',pdf=false,pdfOk=false;
     try{const buf=fs.readFileSync(bf);raw=buf.toString('latin1');pdf=/application\/pdf/i.test(ct)||buf.slice(0,5).toString('latin1')==='%PDF';

@@ -2,13 +2,27 @@
   "periodo": "2026-W17",
   "label": "Semana 17 · Abril 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril (semana 17), derivada dos indicadores oficiais: Selic mantida em 14,75% a.a.; o dólar subiu a R$ 5,01; IPCA do mês em 0,88% (acum. ano 1,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Abril 2026 (semana 17), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 5,01. Destaques verificados da semana: Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%. 1 item de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%",
+      "texto": "O Boletim Focus de 24/04/2026 elevou a mediana de IPCA de 2026 para 4,86%, com Selic (fim de 2026) em 13,00%, PIB de 1,85% e cambio a R$ 5,25.",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260424.pdf"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

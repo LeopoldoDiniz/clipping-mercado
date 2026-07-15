@@ -2,13 +2,66 @@
   "periodo": "2026-W20",
   "label": "Semana 20 · Maio 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Maio (semana 20), derivada dos indicadores oficiais: Selic mantida em 14,50% a.a.; o dólar subiu a R$ 5,07; IPCA do mês em 0,67% (acum. ano 2,60%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Maio 2026 (semana 20), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,67%; câmbio a R$ 5,07. Destaques verificados da semana: IPCA de abril fica em 0,67%, desacelerando ante marco; Vendas do varejo crescem 0,5% em marco; Volume de servicos recua 1,2% em marco. 4 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA de abril fica em 0,67%, desacelerando ante marco",
+      "texto": "O IPCA de abril/2026 ficou em 0,67%, desacelerando ante 0,88% de marco; acumulado de 4,39% em 12 meses - IBGE, 12/05.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/46648-em-abril-ipca-fica-em-0-67"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Vendas do varejo crescem 0,5% em marco",
+      "texto": "As vendas do varejo (PMC/IBGE) subiram 0,5% em marco/2026 ante fevereiro (ajuste sazonal), com alta de 4,0% na comparacao anual - 13/05.",
+      "fontes": [
+        {
+          "nome": "IBGE / PMC",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/46693-em-marco-vendas-no-varejo-crescem-0-5"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Volume de servicos recua 1,2% em marco",
+      "texto": "O volume de servicos (PMS/IBGE) recuou 1,2% em marco/2026 ante fevereiro, com destaque negativo para transportes; ainda +3,0% na comparacao anual - 15/05.",
+      "fontes": [
+        {
+          "nome": "IBGE / PMS",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/46746-volume-de-servicos-recua-1-2"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus (15/05): IPCA de 2026 em 4,92% e Selic a 13,25%",
+      "texto": "O Boletim Focus de 15/05/2026 trouxe IPCA de 2026 em 4,92%, Selic (fim de 2026) em 13,25%, cambio a R$ 5,20 e IGP-M projetado em 5,63%.",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260515.pdf"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

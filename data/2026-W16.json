@@ -2,13 +2,53 @@
   "periodo": "2026-W16",
   "label": "Semana 16 · Abril 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril (semana 16), derivada dos indicadores oficiais: Selic mantida em 14,75% a.a.; o dólar recuou a R$ 4,97; IPCA do mês em 0,88% (acum. ano 1,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Abril 2026 (semana 16), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,97. Destaques verificados da semana: Conab: 7o levantamento estima safra 2025/26 em 356,3 milhoes de t; Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%; Conab: producao de cana-de-acucar 2025/26 em 673,2 milhoes de t. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab: 7o levantamento estima safra 2025/26 em 356,3 milhoes de t",
+      "texto": "O 7o levantamento da Conab (14/04/2026) estimou a safra de graos 2025/26 em 356,3 milhoes de toneladas, com produtividade recorde da soja.",
+      "fontes": [
+        {
+          "nome": "Conab",
+          "url": "https://cast.conab.gov.br/post/2026-04-14_7_lev_graos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%",
+      "texto": "O Boletim Focus de 17/04/2026 trouxe mediana de IPCA de 2026 em 4,80%, Selic (fim de 2026) em 13,00%, PIB de 1,86% e cambio a R$ 5,30 - projecoes recalibradas pelo choque de precos.",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260417.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab: producao de cana-de-acucar 2025/26 em 673,2 milhoes de t",
+      "texto": "O 4o levantamento da Conab (17/04/2026) estimou a producao de cana-de-acucar da safra 2025/26 em 673,2 milhoes de toneladas.",
+      "fontes": [
+        {
+          "nome": "Conab",
+          "url": "https://cast.conab.gov.br/post/2026-04-17_4_lev_cana_1/"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

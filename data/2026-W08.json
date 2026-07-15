@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Fevereiro (semana 8), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,20; IPCA do mês em 0,33% (acum. ano 0,33%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Fevereiro 2026 (semana 8), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,20. Destaques verificados da semana: Brasil registra US$ 2,1 bi de superavit na 3a semana de fevereiro; Boletim Focus (18/02): IPCA de 2026 recua para 3,95%. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

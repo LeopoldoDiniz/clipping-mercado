@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro (semana 2), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,37; IPCA do mês em 0,18% (acum. ano 3,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Janeiro 2026 (semana 2), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,18%; câmbio a R$ 5,37. Destaques verificados da semana: IPCA de dezembro fica em 0,33% e fecha 2025 em 4,26%; PMI de serviços sobe a 53,7 em dezembro, maior expansão em 14 meses; PMI da indústria fica em 47,6 em dezembro, 8º mês em contração. 6 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

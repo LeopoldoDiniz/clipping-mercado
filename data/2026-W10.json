@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março (semana 10), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar subiu a R$ 5,29; IPCA do mês em 0,33% (acum. ano 0,33%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Março 2026 (semana 10), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,29. Destaques verificados da semana: PMI da industria fica em 47,3 em fevereiro, 11o mes em contracao; PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%; PMI de servicos sobe a 53,1 em fevereiro, 4a expansao seguida. 6 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

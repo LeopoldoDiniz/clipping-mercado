@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro (semana 1), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; dólar a R$ 5,44; IPCA do mês em 0,18% (acum. ano 3,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Janeiro 2026 (semana 1), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,18%; câmbio a R$ 5,44. Destaques verificados da semana: IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05%; Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano; Boletim Focus da virada: mercado projeta 2026. 5 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [

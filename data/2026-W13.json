@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março (semana 13), derivada dos indicadores oficiais: Selic mantida em 14,75% a.a.; o dólar recuou a R$ 5,24; IPCA do mês em 0,70% (acum. ano 1,03%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
+    "texto": "Leitura macro de Março 2026 (semana 13), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,24. Destaques verificados da semana: Ata do Copom nao indica novos cortes na Selic; Confianca do Consumidor sobe 2,0 pontos para 88,1 em marco; IPCA-15 de marco fica em 0,44%, pressionado por alimentos. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
