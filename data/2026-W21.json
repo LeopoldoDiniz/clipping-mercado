@@ -2,13 +2,106 @@
   "periodo": "2026-W21",
   "label": "Semana 21 · Maio 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real verificada, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Maio (semana 21), derivada dos indicadores oficiais: Selic mantida em 14,50% a.a.; o dólar recuou a R$ 5,01; IPCA do mês em 0,67% (acum. ano 2,60%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana",
+      "texto": "Boletim Focus de 22/05/2026: projeção de IPCA 2026 em alta pela 8ª semana consecutiva; medianas de Selic, câmbio e PIB revistas.",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260522.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IGP-10 desacelera para 0,89% em maio ante 2,94% em abril",
+      "texto": "O IGP-10 subiu 0,89% em maio de 2026, forte desaceleração ante os 2,94% de abril; IPA recuou, refletindo alívio em preços de bens primários. (FGV IBRE, ~20/mai)",
+      "fontes": [
+        {
+          "nome": "FGV IBRE / IGP-10",
+          "url": "https://portal.fgv.br/noticias/igp-10-maio-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA de abril fica em 0,67%, com transporte desacelerando",
+      "texto": "O IPCA de abril de 2026 subiu 0,67% (divulgado em 09/05), acumulando 2,60% no quadrimestre; transporte desacelerou após queda em passagens aéreas.",
+      "fontes": [
+        {
+          "nome": "IBGE / IPCA",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/46648-em-abril-ipca-fica-em-0-67"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "ANATEL publica Portaria 3.164 (22/mai) ampliando áreas locais de telefonia",
+      "texto": "A ANATEL publicou em 22/05/2026 a Portaria 3.164, ampliando áreas locais de telefonia fixa em oito estados; chamadas entre cidades de mesmo DDD passam a ser locais.",
+      "fontes": [
+        {
+          "nome": "ANATEL",
+          "url": "https://informacoes.anatel.gov.br/legislacao/instrucoes-de-fiscalizacao/2151-portaria-anatel-3164"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "industria"
+      ],
+      "titulo": "CBIC (22/mai): sondagem aponta pior produção da construção para um abril em três anos",
+      "texto": "Sondagem da CBIC divulgada em 22/05/2026: índice de produção da construção em 46,7 pontos em abril, queda de 7 pontos e pior resultado para o mês em três anos.",
+      "fontes": [
+        {
+          "nome": "CBIC / Sondagem",
+          "url": "https://cbic.org.br/sondagem-industrial-revela-pior-abril-da-producao-industrial-em-tres-anos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab: 8º levantamento aponta safra 2025/26 recorde de ~358 mi t",
+      "texto": "O 8º levantamento da Conab (maio/2026) projetou safra 2025/26 recorde de 357,97 milhões de toneladas, com soja em 180,1 milhões.",
+      "fontes": [
+        {
+          "nome": "Conab",
+          "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/safras/safra-de-graos/boletim-da-safra-de-graos/8o-levantamento-safra-2025-26/e-book_boletim-de-safras-8o-levantamento_2026.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "ANEC projeta embarque de ~14,5 mi t de soja em maio",
+      "texto": "A ANEC projetou embarque de até 14,5 milhões de toneladas de soja em maio de 2026, alta ante maio de 2025, com média diária elevada.",
+      "fontes": [
+        {
+          "nome": "ANEC / Safras",
+          "url": "https://safras.com.br/brasil-deve-embarcar-ate-14531-mi-de-t-de-soja-em-maio-aponta-anec"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {
