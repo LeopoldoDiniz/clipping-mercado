@@ -28,7 +28,23 @@ MODELO = "gemini-2.5-flash"
 MODELO_FALLBACK = "gemini-2.5-flash-lite"
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
 SETORES = ["industria", "comercio", "servicos", "agro", "construcao", "ecommerce"]
-SEMANAS = range(1, 22)  # W1..W21
+
+def _parse_semanas(spec):
+    """ENRIQ_SEMANAS: '' (todas W1-21) | '11' | '1-21' | '1,5,11'."""
+    spec = (spec or "").strip()
+    if not spec:
+        return list(range(1, 22))
+    out = []
+    for parte in spec.split(","):
+        parte = parte.strip()
+        if "-" in parte:
+            a, b = parte.split("-")
+            out += list(range(int(a), int(b) + 1))
+        elif parte:
+            out.append(int(parte))
+    return [n for n in out if 1 <= n <= 21]
+
+SEMANAS = _parse_semanas(os.environ.get("ENRIQ_SEMANAS"))
 
 # ── util ─────────────────────────────────────────────────────────────────────
 def norm(s):

@@ -6,6 +6,11 @@ name: Enriquecer análise retroativa (W1–W21)
 # semana se algum número da análise não tiver lastro no clipping/KPIs.
 on:
   workflow_dispatch:
+    inputs:
+      semanas:
+        description: "Semanas a enriquecer (vazio=todas W1-21; ex.: '11' ou '1-21' ou '1,5,11')"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -28,6 +33,7 @@ jobs:
       - name: Rodar o enriquecimento (Gemini, sem busca)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ENRIQ_SEMANAS: ${{ github.event.inputs.semanas }}
         run: python tools/enriquecer_analise.py
 
       - name: Publicar a camada analítica
