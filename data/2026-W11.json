@@ -2,13 +2,93 @@
   "periodo": "2026-W11",
   "label": "Semana 11 · Março 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Março (semana 11), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,25; IPCA do mês em 0,70% (acum. ano 1,03%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus (13/03): IPCA de 2026 em 3,97%",
+      "texto": "O Boletim Focus de 13/03/2026 projetou IPCA de 2026 em 3,97% e PIB em 1,82%, com a Selic mantida (projecao de fim de ano).",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20260313.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA de fevereiro fica em 0,70%",
+      "texto": "O IPCA subiu 0,70% em fevereiro/2026, acima de janeiro (0,33%), com acumulado de 3,81% em 12 meses - IBGE, 12/03.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/46059-em-fevereiro-ipca-fica-em-0-70"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "SINAPI sobe 0,23% em fevereiro; custo a R$ 1.925,08/m2",
+      "texto": "O custo da construcao (SINAPI/IBGE) subiu 0,23% em fevereiro/2026, com custo medio de R$ 1.925,08/m2; materiais +0,36% - 12/03.",
+      "fontes": [
+        {
+          "nome": "IBGE / SINAPI",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/46061-indice-nacional-da-construcao-civil-cresce-0-23-em-fevereiro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Vendas do varejo avancam 0,4% em janeiro, recorde da serie",
+      "texto": "As vendas do varejo (PMC/IBGE) subiram 0,4% em janeiro/2026, no ponto mais alto da serie historica - 11/03.",
+      "fontes": [
+        {
+          "nome": "IBGE / PMC",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/46049-vendas-do-varejo-variam-0-4-em-janeiro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Volume de servicos avanca 0,3% em janeiro e iguala recorde",
+      "texto": "O volume de servicos (PMS/IBGE) subiu 0,3% em janeiro/2026, quinta alta seguida, igualando o patamar recorde de out-nov/2025 - 13/03.",
+      "fontes": [
+        {
+          "nome": "IBGE / PMS",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/46092-servicos-avancam-0-3-em-janeiro-e-igualam-patamar-recorde"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Conab: 6o levantamento mantem safra 2025/26 recorde",
+      "texto": "O 6o levantamento da Conab (mar/2026) manteve a safra 2025/26 recorde, com soja em ~178 milhoes de toneladas e milho em 138,4 milhoes.",
+      "fontes": [
+        {
+          "nome": "Conab",
+          "url": "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/safras/safra-de-graos/boletim-da-safra-de-graos/6o-levantamento-safra-2025-26/e-book_boletim-de-safras-6o-levantamento_2026.pdf"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

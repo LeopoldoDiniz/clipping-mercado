@@ -2,13 +2,40 @@
   "periodo": "2026-W14",
   "label": "Semana 14 · Abril 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Abril (semana 14), derivada dos indicadores oficiais: Selic mantida em 14,75% a.a.; o dólar recuou a R$ 5,17; IPCA do mês em 0,70% (acum. ano 1,03%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em marco",
+      "texto": "O Indicador de Incerteza da Economia (FGV) subiu 9,2 pontos em marco/2026, a 115,0, impulsionado por tensoes no Oriente Medio e preco do petroleo.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE / JC",
+          "url": "https://www.jornaldocomercio.com/economia/2026/03/1243122-indicador-de-incerteza-sobe-92-pontos-em-marco-ante-fevereiro-mostra-fgv.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPC-S sobe 0,67% na 4a quadrissemana de marco",
+      "texto": "O IPC-S subiu 0,67% na quarta quadrissemana de marco/2026, com transportes acelerando a 1,51%, acumulando 3,47% em 12 meses - FGV, 01/04.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/inflacao-pelo-ipc-s-subiu-067-na-quarta-quadrissemana-de-marco-de-2026"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

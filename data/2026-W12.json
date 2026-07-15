@@ -2,13 +2,40 @@
   "periodo": "2026-W12",
   "label": "Semana 12 · Março 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Março (semana 12), derivada dos indicadores oficiais: o Copom reduziu a Selic para 14,75% a.a.; o dólar subiu a R$ 5,28; IPCA do mês em 0,70% (acum. ano 1,03%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%",
+      "texto": "O Boletim Focus de 16/03/2026 elevou o IPCA de 2026 para 4,10%, em meio a pressao de commodities pelo conflito no Oriente Medio.",
+      "fontes": [
+        {
+          "nome": "BCB / InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-macroeconomicas-16032026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Copom corta a Selic para 14,75%, primeira reducao em 19 meses",
+      "texto": "O Copom cortou a Selic em 0,25 ponto, a 14,75% em 18/03/2026, primeira reducao apos 19 meses, apesar da inflacao pressionada por petroleo.",
+      "fontes": [
+        {
+          "nome": "BCB / CNN",
+          "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/bc-corta-juro-em-025-ponto-e-reduz-selic-a-14-75-copom-marco-2026/"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

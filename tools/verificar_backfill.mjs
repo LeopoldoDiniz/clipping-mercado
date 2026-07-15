@@ -19,7 +19,8 @@ import fs from 'fs';
 const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36';
 const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 const strip=h=>norm(String(h).replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ');
-const OFICIAL=/(^|\.)(gov\.br|bcb\.gov\.br|ibge\.gov\.br|conab\.gov\.br|fgv\.br|portalibre\.fgv\.br|planalto\.gov\.br)(\/|$|:)/i;
+// domínios oficiais/públicos onde um 200 já é auditável (fonte primária ou agência pública de notícias do governo)
+const OFICIAL=/(^|\.)(gov\.br|bcb\.gov\.br|ibge\.gov\.br|conab\.gov\.br|fgv\.br|portalibre\.fgv\.br|planalto\.gov\.br|ebc\.com\.br|agenciabrasil\.ebc\.com\.br)(\/|$|:)/i;
 
 function numAnchors(txt){const t=txt||'',out=new Set();
   const push=re=>{let m;const r=new RegExp(re,'gi');while((m=r.exec(t)))out.add(norm(m[0]).replace(/\s+/g,''));};
