@@ -1,0 +1,40 @@
+name: Seed Supabase (memória de sinais W1–W29)
+
+# Disparo MANUAL apenas. Popula o Supabase com a memória de sinais do histórico
+# (derivada do clipping verificado, sem LLM) para o motor Gemini continuar as
+# trajetórias sem reset a partir de W30. Idempotente: só mexe nas linhas
+# origem='backfill_deterministico'; nunca toca nos sinais do Gemini.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerar o seed a partir do clipping atual
+        run: node tools/seed_supabase_gen.mjs
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install supabase
+
+      - name: Popular o Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python tools/seed_supabase.py
