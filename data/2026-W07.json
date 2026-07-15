@@ -2,13 +2,67 @@
   "periodo": "2026-W07",
   "label": "Semana 7 · Fevereiro 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Fevereiro (semana 7), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,23; IPCA do mês em 0,33% (acum. ano 0,33%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus (09/02): IPCA de 2026 recua para 3,97%",
+      "texto": "O Boletim Focus de 09/02/2026 reduziu a projecao de IPCA de 2026 para 3,97%, com Selic mantida em 12,25% e PIB em 1,80%.",
+      "fontes": [
+        {
+          "nome": "BCB / InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-09022026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA de janeiro fica em 0,33%",
+      "texto": "O IPCA subiu 0,33% em janeiro/2026, com acumulado de 4,44% em 12 meses - IBGE, 11/02.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45832-em-janeiro-ipca-fica-em-0-33"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Conab projeta safra 2025/26 recorde de 353,4 mi t",
+      "texto": "O 5o levantamento da Conab (fev/2026) projetou safra 2025/26 recorde de 353,37 milhoes de toneladas, com soja em 177,985 milhoes (+3,8%).",
+      "fontes": [
+        {
+          "nome": "Conab / Portos e Navios",
+          "url": "https://www.portosenavios.com.br/noticias/geral/conab-estima-em-353-milhoes-de-toneladas-producao-da-safra-2025-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Vendas do varejo recuam 0,4% em dezembro; 2025 fecha em +1,6%",
+      "texto": "As vendas do varejo (PMC/IBGE) cairam 0,4% em dezembro/2025 ante novembro, com o ano fechando em alta de 1,6% - 13/02.",
+      "fontes": [
+        {
+          "nome": "IBGE / PMC",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45895-vendas-no-comercio-variam-0-4-em-dezembro-e-fecham-2025-em-1-6"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

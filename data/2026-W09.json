@@ -2,13 +2,79 @@
   "periodo": "2026-W09",
   "label": "Semana 9 · Fevereiro 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Fevereiro (semana 9), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,15; IPCA do mês em 0,33% (acum. ano 0,33%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA-15 de fevereiro sobe 0,84%",
+      "texto": "A previa da inflacao (IPCA-15) de fevereiro/2026 subiu 0,84%, acima do esperado, acumulando 1,04% no ano - IBGE, 27/02.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45946-ipca-15-foi-de-0-84-em-fevereiro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Confianca da Industria sobe para 96,7 em fevereiro",
+      "texto": "O Indice de Confianca da Industria (FGV IBRE) subiu 0,6 ponto em fevereiro/2026, a 96,7, terceira alta consecutiva.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/system/files/2026-02/sondagem-da-industria-fgv_press-release_fev26_0.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Confianca do Consumidor cai para 86,1 em fevereiro, menor em 6 meses",
+      "texto": "O Indice de Confianca do Consumidor (FGV IBRE) caiu 1,2 ponto em fevereiro/2026, a 86,1, menor patamar desde agosto/2025.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE / Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/indicadores/confianca-consumidor-fevereiro-2026-fgv-icc-queda-expectativas/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Confianca de Servicos recua para 90,2 em fevereiro",
+      "texto": "O Indice de Confianca de Servicos (FGV IBRE) recuou 0,7 ponto em fevereiro/2026, a 90,2, interrompendo tres altas seguidas.",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portalibre.fgv.br/noticias/confianca-de-servicos-recuou-em-fevereiro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Preco do leite reage 5,43% em fevereiro apos 9 meses de queda",
+      "texto": "O preco do leite ao produtor (CEPEA) reagiu 5,43% em fevereiro/2026, a R$ 1,9966/L na media Brasil, apos nove meses de queda.",
+      "fontes": [
+        {
+          "nome": "CEPEA",
+          "url": "https://cepea.org.br/br/releases/leite-cepea-apos-cair-por-nove-meses-preco-do-leite-reage-no-inicio-de-2026.aspx"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

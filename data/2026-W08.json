@@ -2,13 +2,41 @@
   "periodo": "2026-W08",
   "label": "Semana 8 · Fevereiro 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Fevereiro (semana 8), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,20; IPCA do mês em 0,33% (acum. ano 0,33%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Brasil registra US$ 2,1 bi de superavit na 3a semana de fevereiro",
+      "texto": "O MDIC informou superavit de US$ 2,1 bilhoes na 3a semana de fevereiro/2026 (exportacoes US$ 5,79 bi, importacoes US$ 3,72 bi).",
+      "fontes": [
+        {
+          "nome": "MDIC",
+          "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2026/fevereiro/brasil-registra-quase-us-10-bi-de-corrente-de-comercio-na-3deg-semana-de-fevereiro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus (18/02): IPCA de 2026 recua para 3,95%",
+      "texto": "O Boletim Focus de 18/02/2026 reduziu o IPCA de 2026 para 3,95% (6a queda seguida), com Selic mantida em 12,25%.",
+      "fontes": [
+        {
+          "nome": "BCB / Economic News",
+          "url": "https://economicnewsbrasil.com.br/2026/02/18/relatorio-focus-18-fevereiro-2026/"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

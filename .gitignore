@@ -1,0 +1,5 @@
+tools/.bf_*
+tools/.body_*
+tools/_cands.json
+tools/backfill_report.json
+tools/verif_report.json

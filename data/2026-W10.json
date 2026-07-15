@@ -2,13 +2,93 @@
   "periodo": "2026-W10",
   "label": "Semana 10 · Março 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Março (semana 10), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar subiu a R$ 5,29; IPCA do mês em 0,33% (acum. ano 0,33%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "PMI da industria fica em 47,3 em fevereiro, 11o mes em contracao",
+      "texto": "O PMI industrial do Brasil ficou em 47,3 em fevereiro/2026 (S&P Global), 11o mes seguido abaixo de 50, com queda acentuada de novos pedidos.",
+      "fontes": [
+        {
+          "nome": "S&P Global",
+          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/87a5ea381482451cbf824f4334c9347a"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%",
+      "texto": "O PIB brasileiro cresceu 0,1% no 4o trimestre e fechou 2025 em alta de 2,3% (R$ 12,7 tri), com agropecuaria +11,7% - IBGE, 04/03.",
+      "fontes": [
+        {
+          "nome": "IBGE / Forbes",
+          "url": "https://forbes.com.br/forbes-money/2026/03/pib-do-brasil-avanca-01-no-4o-tri-e-fecha-2025-com-alta-de-23/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "PMI de servicos sobe a 53,1 em fevereiro, 4a expansao seguida",
+      "texto": "O PMI de servicos do Brasil subiu a 53,1 em fevereiro/2026 (S&P Global), quarta expansao consecutiva, com novos pedidos em alta.",
+      "fontes": [
+        {
+          "nome": "S&P Global",
+          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/b1e5f232c6ba4a9d9ca6ffd0af413a83"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Balanca comercial tem superavit de US$ 4,2 bi em fevereiro",
+      "texto": "A balanca comercial registrou superavit de US$ 4,2 bilhoes em fevereiro/2026, com exportacoes de US$ 26,3 bi (+15,6%) - 4o melhor fevereiro desde 1989.",
+      "fontes": [
+        {
+          "nome": "MDIC / Agencia Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-03/balanca-comercial-tem-quarto-melhor-resultado-para-fevereiro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Producao industrial cresce 1,8% em janeiro",
+      "texto": "A producao industrial (PIM/IBGE) subiu 1,8% em janeiro/2026 ante dezembro, maior alta desde junho/2024, interrompendo tres quedas seguidas - 06/03.",
+      "fontes": [
+        {
+          "nome": "IBGE / Agencia Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-03/industria-nacional-cresce-18-em-janeiro-de-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus (02/03): Selic de 2026 recua para 12,00%",
+      "texto": "O Boletim Focus de 02/03/2026 reduziu a Selic projetada para 12,00% ao fim de 2026, com IPCA em 3,91% e cambio em R$ 5,42.",
+      "fontes": [
+        {
+          "nome": "BCB / InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-02032026/"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {
