@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 16), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,97. Destaques verificados da semana: Conab: 7o levantamento estima safra 2025/26 em 356,3 milhoes de t; Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%; Conab: producao de cana-de-acucar 2025/26 em 673,2 milhoes de t. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Abril 2026 (semana 16), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,97. Destaques verificados da semana: Conab: 7o levantamento estima safra 2025/26 em 356,3 milhões de t; Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%; Conab: produção de cana-de-açúcar 2025/26 em 673,2 milhões de t. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -13,8 +13,8 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Conab: 7o levantamento estima safra 2025/26 em 356,3 milhoes de t",
-      "texto": "O 7o levantamento da Conab (14/04/2026) estimou a safra de graos 2025/26 em 356,3 milhoes de toneladas, com produtividade recorde da soja.",
+      "titulo": "Conab: 7o levantamento estima safra 2025/26 em 356,3 milhões de t",
+      "texto": "O 7o levantamento da Conab (14/04/2026) estimou a safra de grãos 2025/26 em 356,3 milhões de toneladas, com produtividade recorde da soja.",
       "fontes": [
         {
           "nome": "Conab",
@@ -27,7 +27,7 @@
         "transversal"
       ],
       "titulo": "Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%",
-      "texto": "O Boletim Focus de 17/04/2026 trouxe mediana de IPCA de 2026 em 4,80%, Selic (fim de 2026) em 13,00%, PIB de 1,86% e cambio a R$ 5,30 - projecoes recalibradas pelo choque de precos.",
+      "texto": "O Boletim Focus de 17/04/2026 trouxe mediana de IPCA de 2026 em 4,80%, Selic (fim de 2026) em 13,00%, PIB de 1,86% e câmbio a R$ 5,30 - projeções recalibradas pelo choque de preços.",
       "fontes": [
         {
           "nome": "BCB / Focus",
@@ -39,8 +39,8 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Conab: producao de cana-de-acucar 2025/26 em 673,2 milhoes de t",
-      "texto": "O 4o levantamento da Conab (17/04/2026) estimou a producao de cana-de-acucar da safra 2025/26 em 673,2 milhoes de toneladas.",
+      "titulo": "Conab: produção de cana-de-açúcar 2025/26 em 673,2 milhões de t",
+      "texto": "O 4o levantamento da Conab (17/04/2026) estimou a produção de cana-de-açúcar da safra 2025/26 em 673,2 milhões de toneladas.",
       "fontes": [
         {
           "nome": "Conab",

@@ -1486,7 +1486,7 @@ function renderForce(k){
 }
 
 // Trajetórias de TEMAS: evolução do volume+tom das notícias de cada tema, semana a semana, no setor/escopo
-const TEMA_LABELS={tarifas:"Tarifas e comércio exterior (EUA)",desenrola:"Desenrola e crédito",energia:"Custo de energia (ANEEL/tarifa)",juros:"Juros, Selic e crédito",cambio:"Câmbio",safra:"Safra e agro",consumo:"Consumo e varejo",digital:"Digitalização e IA",escala6x1:"Escala 6x1 e jornada",copa:"Copa do Mundo",remessa:"Remessa Conforme e importados",construcao:"Construção e imóveis"};
+const TEMA_LABELS={tarifas:"Tarifas e comércio exterior (EUA)",desenrola:"Desenrola e crédito",energia:"Custo de energia (ANEEL/tarifa)",juros:"Juros, Selic e crédito",cambio:"Câmbio",safra:"Safra e agro",consumo:"Consumo e varejo",digital:"Digitalização e IA",escala6x1:"Escala 6x1 e jornada",copa:"Copa do Mundo",remessa:"Remessa Conforme e importados",construcao:"Construção e imóveis",inflacao:"Inflação (IPCA/IGP)",atividade:"Atividade e indústria (PIM/PMI)",emprego:"Emprego e renda (CAGED/PNAD)",servicos:"Serviços (PMS)",combustiveis:"Combustíveis e petróleo"};
 let _TRAJ=[];
 function themeTraj(){
   const {weeks}=periodScope(); // cronológico (asc)
@@ -1762,7 +1762,7 @@ function adaptKpis(rawKpis,allData){
     out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,proj,flow,un:meta.un,
       info:meta.info+(k.herdado_de?` Nesta edição, dado herdado de ${k.herdado_de}.`:"")});});
   return out;}
-const TAGVOC={tarifas:/tarifa|eua|estados unidos|comércio exterior|exporta/i,desenrola:/desenrola/i,energia:/energia|aneel|elétric|tarifári/i,juros:/selic|juro|copom|crédito|financ/i,cambio:/câmbio|dólar|balança comercial/i,safra:/safra|grão|soja|milho|agronegócio|conab/i,consumo:/consumo|varejo|venda|confiança|endivida/i,digital:/digital|tecnologia|\bia\b|automação|autoatendimento|e-commerce|marketplace/i,escala6x1:/6x1|jornada de trabalho|escala/i,copa:/copa do mundo|\bcopa\b/i,remessa:/remessa conforme|cross-border|importados de baixo/i,construcao:/construção|obra|incc|imobiliári/i};
+const TAGVOC={tarifas:/tarifa|eua|estados unidos|comércio exterior|exporta/i,desenrola:/desenrola/i,energia:/energia|aneel|elétric|tarifári/i,juros:/selic|juro|copom|crédito|financ/i,cambio:/câmbio|dólar|balança comercial/i,safra:/safra|grão|soja|milho|agronegócio|conab|leite|caf[ée]|carne|boi|pecuár/i,consumo:/consumo|varejo|venda|confiança|endivida/i,digital:/digital|tecnologia|\bia\b|automação|autoatendimento|e-commerce|marketplace/i,escala6x1:/6x1|jornada de trabalho|escala/i,copa:/copa do mundo|\bcopa\b/i,remessa:/remessa conforme|cross-border|importados de baixo/i,construcao:/construção|obra|incc|sinapi|imobiliári/i,inflacao:/ipca|igp|\bipc\b|inflaç|deflaç/i,atividade:/\bpim\b|\bpmi\b|produç[ãa]o industrial|industrial|\bpib\b|atividade econ/i,emprego:/caged|pnad|desemprego|desocupa|\bemprego|vagas?\b/i,servicos:/\bpms\b|serviç/i,combustiveis:/diesel|petról|combustív|gasolina|\banp\b|barril/i};
 const deriveTags=t=>Object.keys(TAGVOC).filter(k=>TAGVOC[k].test(t||""));
 // vetor da Cadeia de Impacto — ordem por ESPECIFICIDADE (trabalho/câmbio/crédito/regulação antes de custos,
 // que era guloso demais e engolia sinais de trabalho/crédito por conterem a palavra "custo")

@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 13), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,24. Destaques verificados da semana: Ata do Copom nao indica novos cortes na Selic; Confianca do Consumidor sobe 2,0 pontos para 88,1 em marco; IPCA-15 de marco fica em 0,44%, pressionado por alimentos. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Março 2026 (semana 13), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,24. Destaques verificados da semana: Ata do Copom não indica novos cortes na Selic; Confiança do Consumidor sobe 2,0 pontos para 88,1 em março; IPCA-15 de março fica em 0,44%, pressionado por alimentos. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -13,8 +13,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Ata do Copom nao indica novos cortes na Selic",
-      "texto": "A ata do Copom (24/03/2026) indicou que magnitude e duracao do ciclo serao definidas ao longo do tempo, sem sinalizar novos cortes, ante turbulencia geopolitica.",
+      "titulo": "Ata do Copom não indica novos cortes na Selic",
+      "texto": "A ata do Copom (24/03/2026) indicou que magnitude e duração do ciclo serao definidas ao longo do tempo, sem sinalizar novos cortes, ante turbulência geopolítica.",
       "fontes": [
         {
           "nome": "BCB / Agencia Brasil",
@@ -26,8 +26,8 @@
       "setores": [
         "comercio"
       ],
-      "titulo": "Confianca do Consumidor sobe 2,0 pontos para 88,1 em marco",
-      "texto": "O Indice de Confianca do Consumidor (FGV IBRE) subiu 2,0 pontos em marco/2026, a 88,1, maxima desde dezembro, com melhora nas expectativas.",
+      "titulo": "Confiança do Consumidor sobe 2,0 pontos para 88,1 em março",
+      "texto": "O Índice de Confiança do Consumidor (FGV IBRE) subiu 2,0 pontos em março/2026, a 88,1, máxima desde dezembro, com melhora nas expectativas.",
       "fontes": [
         {
           "nome": "FGV IBRE / HNT",
@@ -39,8 +39,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "IPCA-15 de marco fica em 0,44%, pressionado por alimentos",
-      "texto": "A previa da inflacao (IPCA-15) de marco/2026 ficou em 0,44%, pressionada por alimentos e combustiveis; acumulado de 3,90% em 12 meses - 26/03.",
+      "titulo": "IPCA-15 de março fica em 0,44%, pressionado por alimentos",
+      "texto": "A previa da inflação (IPCA-15) de março/2026 ficou em 0,44%, pressionada por alimentos e combustíveis; acumulado de 3,90% em 12 meses - 26/03.",
       "fontes": [
         {
           "nome": "IBGE / Agencia Brasil",

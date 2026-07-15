@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 15), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 5,02. Destaques verificados da semana: IPCA de marco fecha em 0,88%, pressionado por combustiveis; IGP-DI de marco sobe 1,14%; Vendas do varejo avancam 0,6% em fevereiro, novo recorde. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Abril 2026 (semana 15), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 5,02. Destaques verificados da semana: IPCA de março fecha em 0,88%, pressionado por combustíveis; IGP-DI de março sobe 1,14%; Vendas do varejo avançam 0,6% em fevereiro, novo recorde. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -13,8 +13,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "IPCA de marco fecha em 0,88%, pressionado por combustiveis",
-      "texto": "O IPCA de marco/2026 ficou em 0,88%, acima dos 0,70% de fevereiro, com transporte pressionando (gasolina +4,59%); acumulado de 4,14% em 12 meses - 10/04.",
+      "titulo": "IPCA de março fecha em 0,88%, pressionado por combustíveis",
+      "texto": "O IPCA de março/2026 ficou em 0,88%, acima dos 0,70% de fevereiro, com transporte pressionando (gasolina +4,59%); acumulado de 4,14% em 12 meses - 10/04.",
       "fontes": [
         {
           "nome": "IBGE / Agencia Brasil",
@@ -26,8 +26,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "IGP-DI de marco sobe 1,14%",
-      "texto": "O IGP-DI subiu 1,14% em marco/2026, apos queda de 0,84% em fevereiro, com IPA/IPC/INCC impulsionando; acumulado de 0,50% no ano - FGV, 08/04.",
+      "titulo": "IGP-DI de março sobe 1,14%",
+      "texto": "O IGP-DI subiu 1,14% em março/2026, após queda de 0,84% em fevereiro, com IPA/IPC/INCC impulsionando; acumulado de 0,50% no ano - FGV, 08/04.",
       "fontes": [
         {
           "nome": "FGV IBRE",
@@ -39,8 +39,8 @@
       "setores": [
         "comercio"
       ],
-      "titulo": "Vendas do varejo avancam 0,6% em fevereiro, novo recorde",
-      "texto": "As vendas do varejo (PMC/IBGE) subiram 0,6% em fevereiro/2026, novo maximo da serie desde 2000; combustiveis +1,7% - 08/04.",
+      "titulo": "Vendas do varejo avançam 0,6% em fevereiro, novo recorde",
+      "texto": "As vendas do varejo (PMC/IBGE) subiram 0,6% em fevereiro/2026, novo máximo da série desde 2000; combustíveis +1,7% - 08/04.",
       "fontes": [
         {
           "nome": "IBGE / Agencia Brasil",
@@ -52,8 +52,8 @@
       "setores": [
         "industria"
       ],
-      "titulo": "Confianca da industria (ICEI) cai a 45,2, menor nivel desde 2020",
-      "texto": "O Indice de Confianca do Empresario Industrial (CNI) caiu 1,4 ponto em abril/2026, a 45,2, menor desde 2020, com 28 de 29 setores pessimistas - 09/04.",
+      "titulo": "Confiança da indústria (ICEI) cai a 45,2, menor nível desde 2020",
+      "texto": "O Índice de Confiança do Empresário Industrial (CNI) caiu 1,4 ponto em abril/2026, a 45,2, menor desde 2020, com 28 de 29 setores pessimistas - 09/04.",
       "fontes": [
         {
           "nome": "CNI / Agencia Brasil",
@@ -66,7 +66,7 @@
         "transversal"
       ],
       "titulo": "Boletim Focus (10/04): IPCA de 2026 em 5,30% e Selic a 14%",
-      "texto": "O Boletim Focus de 10/04/2026 trouxe IPCA de 2026 em 5,30% e Selic projetada em 14%, com cambio a R$ 5,20 - forte recalibracao ante o choque de precos.",
+      "texto": "O Boletim Focus de 10/04/2026 trouxe IPCA de 2026 em 5,30% e Selic projetada em 14%, com câmbio a R$ 5,20 - forte recalibração ante o choque de preços.",
       "fontes": [
         {
           "nome": "BCB / Focus",
@@ -79,8 +79,8 @@
         "servicos",
         "transversal"
       ],
-      "titulo": "Governo edita MP 1.349 com subsidio de R$ 1,20/L ao diesel",
-      "texto": "O governo editou a MP 1.349 (06/04/2026) com subsidio de R$ 1,20 por litro ao diesel (R$ 0,60 federal + R$ 0,60 estados) ate maio; custo de R$ 4 bilhoes.",
+      "titulo": "Governo edita MP 1.349 com subsídio de R$ 1,20/L ao diesel",
+      "texto": "O governo editou a MP 1.349 (06/04/2026) com subsídio de R$ 1,20 por litro ao diesel (R$ 0,60 federal + R$ 0,60 estados) até maio; custo de R$ 4 bilhões.",
       "fontes": [
         {
           "nome": "Min. Fazenda",
@@ -93,7 +93,7 @@
         "servicos"
       ],
       "titulo": "ANP publica novo edital da Oferta Permanente com 15 blocos",
-      "texto": "A ANP publicou em 06/04/2026 novo edital da Oferta Permanente de Partilha, adicionando 15 blocos exploratorios (total de 23), no pre-sal de Santos e Campos.",
+      "texto": "A ANP publicou em 06/04/2026 novo edital da Oferta Permanente de Partilha, adicionando 15 blocos exploratórios (total de 23), no pre-sal de Santos e Campos.",
       "fontes": [
         {
           "nome": "ANP / Brasil Energia",

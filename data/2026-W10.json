@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 10), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,29. Destaques verificados da semana: PMI da industria fica em 47,3 em fevereiro, 11o mes em contracao; PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%; PMI de servicos sobe a 53,1 em fevereiro, 4a expansao seguida. 6 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Março 2026 (semana 10), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,29. Destaques verificados da semana: PMI da indústria fica em 47,3 em fevereiro, 11o mês em contração; PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%; PMI de serviços sobe a 53,1 em fevereiro, 4a expansão seguida. 6 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -13,8 +13,8 @@
       "setores": [
         "industria"
       ],
-      "titulo": "PMI da industria fica em 47,3 em fevereiro, 11o mes em contracao",
-      "texto": "O PMI industrial do Brasil ficou em 47,3 em fevereiro/2026 (S&P Global), 11o mes seguido abaixo de 50, com queda acentuada de novos pedidos.",
+      "titulo": "PMI da indústria fica em 47,3 em fevereiro, 11o mês em contração",
+      "texto": "O PMI industrial do Brasil ficou em 47,3 em fevereiro/2026 (S&P Global), 11o mês seguido abaixo de 50, com queda acentuada de novos pedidos.",
       "fontes": [
         {
           "nome": "S&P Global",
@@ -27,7 +27,7 @@
         "transversal"
       ],
       "titulo": "PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%",
-      "texto": "O PIB brasileiro cresceu 0,1% no 4o trimestre e fechou 2025 em alta de 2,3% (R$ 12,7 tri), com agropecuaria +11,7% - IBGE, 04/03.",
+      "texto": "O PIB brasileiro cresceu 0,1% no 4o trimestre e fechou 2025 em alta de 2,3% (R$ 12,7 tri), com agropecuária +11,7% - IBGE, 04/03.",
       "fontes": [
         {
           "nome": "IBGE / Forbes",
@@ -39,8 +39,8 @@
       "setores": [
         "servicos"
       ],
-      "titulo": "PMI de servicos sobe a 53,1 em fevereiro, 4a expansao seguida",
-      "texto": "O PMI de servicos do Brasil subiu a 53,1 em fevereiro/2026 (S&P Global), quarta expansao consecutiva, com novos pedidos em alta.",
+      "titulo": "PMI de serviços sobe a 53,1 em fevereiro, 4a expansão seguida",
+      "texto": "O PMI de serviços do Brasil subiu a 53,1 em fevereiro/2026 (S&P Global), quarta expansão consecutiva, com novos pedidos em alta.",
       "fontes": [
         {
           "nome": "S&P Global",
@@ -53,8 +53,8 @@
         "transversal",
         "comercio"
       ],
-      "titulo": "Balanca comercial tem superavit de US$ 4,2 bi em fevereiro",
-      "texto": "A balanca comercial registrou superavit de US$ 4,2 bilhoes em fevereiro/2026, com exportacoes de US$ 26,3 bi (+15,6%) - 4o melhor fevereiro desde 1989.",
+      "titulo": "Balança comercial tem superávit de US$ 4,2 bi em fevereiro",
+      "texto": "A balança comercial registrou superávit de US$ 4,2 bilhões em fevereiro/2026, com exportações de US$ 26,3 bi (+15,6%) - 4o melhor fevereiro desde 1989.",
       "fontes": [
         {
           "nome": "MDIC / Agencia Brasil",
@@ -66,8 +66,8 @@
       "setores": [
         "industria"
       ],
-      "titulo": "Producao industrial cresce 1,8% em janeiro",
-      "texto": "A producao industrial (PIM/IBGE) subiu 1,8% em janeiro/2026 ante dezembro, maior alta desde junho/2024, interrompendo tres quedas seguidas - 06/03.",
+      "titulo": "Produção industrial cresce 1,8% em janeiro",
+      "texto": "A produção industrial (PIM/IBGE) subiu 1,8% em janeiro/2026 ante dezembro, maior alta desde junho/2024, interrompendo três quedas seguidas - 06/03.",
       "fontes": [
         {
           "nome": "IBGE / Agencia Brasil",
@@ -80,7 +80,7 @@
         "transversal"
       ],
       "titulo": "Boletim Focus (02/03): Selic de 2026 recua para 12,00%",
-      "texto": "O Boletim Focus de 02/03/2026 reduziu a Selic projetada para 12,00% ao fim de 2026, com IPCA em 3,91% e cambio em R$ 5,42.",
+      "texto": "O Boletim Focus de 02/03/2026 reduziu a Selic projetada para 12,00% ao fim de 2026, com IPCA em 3,91% e câmbio em R$ 5,42.",
       "fontes": [
         {
           "nome": "BCB / InfoMoney",

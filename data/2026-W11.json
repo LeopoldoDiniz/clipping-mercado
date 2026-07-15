@@ -14,7 +14,7 @@
         "transversal"
       ],
       "titulo": "Boletim Focus (13/03): IPCA de 2026 em 3,97%",
-      "texto": "O Boletim Focus de 13/03/2026 projetou IPCA de 2026 em 3,97% e PIB em 1,82%, com a Selic mantida (projecao de fim de ano).",
+      "texto": "O Boletim Focus de 13/03/2026 projetou IPCA de 2026 em 3,97% e PIB em 1,82%, com a Selic mantida (projeção de fim de ano).",
       "fontes": [
         {
           "nome": "BCB / Focus",
@@ -40,7 +40,7 @@
         "construcao"
       ],
       "titulo": "SINAPI sobe 0,23% em fevereiro; custo a R$ 1.925,08/m2",
-      "texto": "O custo da construcao (SINAPI/IBGE) subiu 0,23% em fevereiro/2026, com custo medio de R$ 1.925,08/m2; materiais +0,36% - 12/03.",
+      "texto": "O custo da construção (SINAPI/IBGE) subiu 0,23% em fevereiro/2026, com custo médio de R$ 1.925,08/m2; materiais +0,36% - 12/03.",
       "fontes": [
         {
           "nome": "IBGE / SINAPI",
@@ -52,8 +52,8 @@
       "setores": [
         "comercio"
       ],
-      "titulo": "Vendas do varejo avancam 0,4% em janeiro, recorde da serie",
-      "texto": "As vendas do varejo (PMC/IBGE) subiram 0,4% em janeiro/2026, no ponto mais alto da serie historica - 11/03.",
+      "titulo": "Vendas do varejo avançam 0,4% em janeiro, recorde da série",
+      "texto": "As vendas do varejo (PMC/IBGE) subiram 0,4% em janeiro/2026, no ponto mais alto da série histórica - 11/03.",
       "fontes": [
         {
           "nome": "IBGE / PMC",
@@ -65,8 +65,8 @@
       "setores": [
         "servicos"
       ],
-      "titulo": "Volume de servicos avanca 0,3% em janeiro e iguala recorde",
-      "texto": "O volume de servicos (PMS/IBGE) subiu 0,3% em janeiro/2026, quinta alta seguida, igualando o patamar recorde de out-nov/2025 - 13/03.",
+      "titulo": "Volume de serviços avança 0,3% em janeiro e iguala recorde",
+      "texto": "O volume de serviços (PMS/IBGE) subiu 0,3% em janeiro/2026, quinta alta seguida, igualando o patamar recorde de out-nov/2025 - 13/03.",
       "fontes": [
         {
           "nome": "IBGE / PMS",
@@ -80,7 +80,7 @@
         "transversal"
       ],
       "titulo": "Conab: 6o levantamento mantem safra 2025/26 recorde",
-      "texto": "O 6o levantamento da Conab (mar/2026) manteve a safra 2025/26 recorde, com soja em ~178 milhoes de toneladas e milho em 138,4 milhoes.",
+      "texto": "O 6o levantamento da Conab (mar/2026) manteve a safra 2025/26 recorde, com soja em ~178 milhões de toneladas e milho em 138,4 milhões.",
       "fontes": [
         {
           "nome": "Conab",

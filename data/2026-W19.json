@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Maio 2026 (semana 19), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,90. Destaques verificados da semana: Ata do Copom detalha corte cauteloso da Selic a 14,50%; Producao industrial varia 0,1% em marco e acumula 3,1% no ano; Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Maio 2026 (semana 19), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,90. Destaques verificados da semana: Ata do Copom detalha corte cauteloso da Selic a 14,50%; Produção industrial varia 0,1% em março e acumula 3,1% no ano; Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -14,7 +14,7 @@
         "transversal"
       ],
       "titulo": "Ata do Copom detalha corte cauteloso da Selic a 14,50%",
-      "texto": "A ata da 278a reuniao do Copom (divulgada em maio) detalhou o corte a 14,50%, com o comite enfatizando cautela diante da inflacao pressionada por combustiveis e do risco geopolitico.",
+      "texto": "A ata da 278a reunião do Copom (divulgada em maio) detalhou o corte a 14,50%, com o comitê enfatizando cautela diante da inflação pressionada por combustíveis e do risco geopolítico.",
       "fontes": [
         {
           "nome": "BCB / Copom",
@@ -26,8 +26,8 @@
       "setores": [
         "industria"
       ],
-      "titulo": "Producao industrial varia 0,1% em marco e acumula 3,1% no ano",
-      "texto": "A producao industrial (PIM/IBGE) variou 0,1% em marco/2026 ante fevereiro, com alta acumulada de 3,1% no ano e 4,3% na comparacao anual - 06/05.",
+      "titulo": "Produção industrial varia 0,1% em março e acumula 3,1% no ano",
+      "texto": "A produção industrial (PIM/IBGE) variou 0,1% em março/2026 ante fevereiro, com alta acumulada de 3,1% no ano e 4,3% na comparação anual - 06/05.",
       "fontes": [
         {
           "nome": "IBGE / PIM",
@@ -40,7 +40,7 @@
         "transversal"
       ],
       "titulo": "Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%",
-      "texto": "O Boletim Focus de 08/05/2026 trouxe IPCA de 2026 em 4,91%, Selic (fim de 2026) em 13,00%, cambio a R$ 5,20 e IGP-M projetado em 5,60%.",
+      "texto": "O Boletim Focus de 08/05/2026 trouxe IPCA de 2026 em 4,91%, Selic (fim de 2026) em 13,00%, câmbio a R$ 5,20 e IGP-M projetado em 5,60%.",
       "fontes": [
         {
           "nome": "BCB / Focus",

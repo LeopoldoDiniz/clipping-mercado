@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 12), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,28. Destaques verificados da semana: Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%; Copom corta a Selic para 14,75%, primeira reducao em 19 meses. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Março 2026 (semana 12), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,28. Destaques verificados da semana: Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%; Copom corta a Selic para 14,75%, primeira redução em 19 meses. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -14,7 +14,7 @@
         "transversal"
       ],
       "titulo": "Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%",
-      "texto": "O Boletim Focus de 16/03/2026 elevou o IPCA de 2026 para 4,10%, em meio a pressao de commodities pelo conflito no Oriente Medio.",
+      "texto": "O Boletim Focus de 16/03/2026 elevou o IPCA de 2026 para 4,10%, em meio a pressão de commodities pelo conflito no Oriente Médio.",
       "fontes": [
         {
           "nome": "BCB / InfoMoney",
@@ -26,8 +26,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Copom corta a Selic para 14,75%, primeira reducao em 19 meses",
-      "texto": "O Copom cortou a Selic em 0,25 ponto, a 14,75% em 18/03/2026, primeira reducao apos 19 meses, apesar da inflacao pressionada por petroleo.",
+      "titulo": "Copom corta a Selic para 14,75%, primeira redução em 19 meses",
+      "texto": "O Copom cortou a Selic em 0,25 ponto, a 14,75% em 18/03/2026, primeira redução após 19 meses, apesar da inflação pressionada por petróleo.",
       "fontes": [
         {
           "nome": "BCB / CNN",

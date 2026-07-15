@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro 2026 (semana 5), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses; CAGED: Brasil fecha 2025 com 1,279 milhao de empregos formais; IGP-M sobe 0,41% em janeiro. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Janeiro 2026 (semana 5), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses; CAGED: Brasil fecha 2025 com 1,279 milhão de empregos formais; IGP-M sobe 0,41% em janeiro. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -26,8 +26,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "CAGED: Brasil fecha 2025 com 1,279 milhao de empregos formais",
-      "texto": "O CAGED apontou saldo negativo de 618 mil vagas em dezembro/2025 (sazonal), com saldo anual de 1,279 milhao de empregos formais criados em 2025.",
+      "titulo": "CAGED: Brasil fecha 2025 com 1,279 milhão de empregos formais",
+      "texto": "O CAGED apontou saldo negativo de 618 mil vagas em dezembro/2025 (sazonal), com saldo anual de 1,279 milhão de empregos formais criados em 2025.",
       "fontes": [
         {
           "nome": "MTE / IstoE Dinheiro",

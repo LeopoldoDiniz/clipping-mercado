@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Fevereiro 2026 (semana 6), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: PMI da industria cai a 47,0 em janeiro; Boletim Focus (02/02): IPCA de 2026 em 3,99%; Brasil cria 115 mil empregos formais em janeiro. 5 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Fevereiro 2026 (semana 6), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: PMI da indústria cai a 47,0 em janeiro; Boletim Focus (02/02): IPCA de 2026 em 3,99%; Brasil cria 115 mil empregos formais em janeiro. 5 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -13,8 +13,8 @@
       "setores": [
         "industria"
       ],
-      "titulo": "PMI da industria cai a 47,0 em janeiro",
-      "texto": "O PMI industrial do Brasil recuou a 47,0 em janeiro/2026 (S&P Global), abaixo de 50, indicando contracao da producao e dos novos pedidos.",
+      "titulo": "PMI da indústria cai a 47,0 em janeiro",
+      "texto": "O PMI industrial do Brasil recuou a 47,0 em janeiro/2026 (S&P Global), abaixo de 50, indicando contração da produção e dos novos pedidos.",
       "fontes": [
         {
           "nome": "S&P Global / InfoMoney",
@@ -27,7 +27,7 @@
         "transversal"
       ],
       "titulo": "Boletim Focus (02/02): IPCA de 2026 em 3,99%",
-      "texto": "O Boletim Focus de 02/02/2026 manteve o IPCA de 2026 em torno de 3,99%, com Selic em 12,25% e cambio em R$ 5,50.",
+      "texto": "O Boletim Focus de 02/02/2026 manteve o IPCA de 2026 em torno de 3,99%, com Selic em 12,25% e câmbio em R$ 5,50.",
       "fontes": [
         {
           "nome": "BCB / InfoMoney",
@@ -40,7 +40,7 @@
         "transversal"
       ],
       "titulo": "Brasil cria 115 mil empregos formais em janeiro",
-      "texto": "O CAGED registrou saldo de 115.018 empregos formais em janeiro/2026, segundo o Ministerio do Trabalho e Emprego.",
+      "texto": "O CAGED registrou saldo de 115.018 empregos formais em janeiro/2026, segundo o Ministério do Trabalho e Emprego.",
       "fontes": [
         {
           "nome": "MTE",
@@ -52,8 +52,8 @@
       "setores": [
         "servicos"
       ],
-      "titulo": "PMI de servicos cai a 51,3 em janeiro",
-      "texto": "O PMI de servicos do Brasil recuou a 51,3 em janeiro/2026 (ante 53,7 em dezembro), com crescimento ainda acima de 50 mas desacelerando (S&P Global).",
+      "titulo": "PMI de serviços cai a 51,3 em janeiro",
+      "texto": "O PMI de serviços do Brasil recuou a 51,3 em janeiro/2026 (ante 53,7 em dezembro), com crescimento ainda acima de 50 mas desacelerando (S&P Global).",
       "fontes": [
         {
           "nome": "S&P Global",
@@ -66,8 +66,8 @@
         "transversal",
         "comercio"
       ],
-      "titulo": "Balanca comercial tem superavit de US$ 4,3 bi em janeiro",
-      "texto": "A balanca comercial registrou superavit de US$ 4,3 bilhoes em janeiro/2026, com exportacoes de US$ 25,2 bi e importacoes de US$ 20,8 bi.",
+      "titulo": "Balança comercial tem superávit de US$ 4,3 bi em janeiro",
+      "texto": "A balança comercial registrou superávit de US$ 4,3 bilhões em janeiro/2026, com exportações de US$ 25,2 bi e importações de US$ 20,8 bi.",
       "fontes": [
         {
           "nome": "MDIC / ADVFN",

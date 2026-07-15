@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 18), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,99. Destaques verificados da semana: INCC-M sobe 1,04% em abril, acelerando por materiais; IPCA-15 de abril fica em 0,89%, pressionado por alimentos; Copom corta a Selic para 14,50%, segunda reducao seguida. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Abril 2026 (semana 18), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,99. Destaques verificados da semana: INCC-M sobe 1,04% em abril, acelerando por materiais; IPCA-15 de abril fica em 0,89%, pressionado por alimentos; Copom corta a Selic para 14,50%, segunda redução seguida. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -14,7 +14,7 @@
         "construcao"
       ],
       "titulo": "INCC-M sobe 1,04% em abril, acelerando por materiais",
-      "texto": "O INCC-M subiu 1,04% em abril/2026, ante 0,36% em marco, sob influencia do grupo Materiais e Equipamentos; acumulado de 6,28% em 12 meses - FGV, 27/04.",
+      "texto": "O INCC-M subiu 1,04% em abril/2026, ante 0,36% em março, sob influência do grupo Materiais e Equipamentos; acumulado de 6,28% em 12 meses - FGV, 27/04.",
       "fontes": [
         {
           "nome": "FGV IBRE",
@@ -27,7 +27,7 @@
         "transversal"
       ],
       "titulo": "IPCA-15 de abril fica em 0,89%, pressionado por alimentos",
-      "texto": "A previa da inflacao (IPCA-15) de abril/2026 ficou em 0,89%, acelerando ante marco, com pressao de alimentos e transportes - IBGE, 23/04.",
+      "texto": "A previa da inflação (IPCA-15) de abril/2026 ficou em 0,89%, acelerando ante março, com pressão de alimentos e transportes - IBGE, 23/04.",
       "fontes": [
         {
           "nome": "IBGE",
@@ -39,8 +39,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Copom corta a Selic para 14,50%, segunda reducao seguida",
-      "texto": "Na 278a reuniao (28-29/04/2026), o Copom cortou a Selic em 0,25 ponto, a 14,50% ao ano (vigencia 30/04), a segunda reducao apos 14,75% em marco, apesar da inflacao pressionada.",
+      "titulo": "Copom corta a Selic para 14,50%, segunda redução seguida",
+      "texto": "Na 278a reunião (28-29/04/2026), o Copom cortou a Selic em 0,25 ponto, a 14,50% ao ano (vigência 30/04), a segunda redução após 14,75% em março, apesar da inflação pressionada.",
       "fontes": [
         {
           "nome": "BCB / Copom",
@@ -52,8 +52,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "IGP-M avanca 2,73% em abril com alta das materias-primas",
-      "texto": "O IGP-M subiu 2,73% em abril/2026, forte aceleracao ante 0,52% de marco, puxado por alta de 5,78% das materias-primas brutas no IPA - FGV, 29/04.",
+      "titulo": "IGP-M avança 2,73% em abril com alta das matérias-primas",
+      "texto": "O IGP-M subiu 2,73% em abril/2026, forte aceleração ante 0,52% de março, puxado por alta de 5,78% das matérias-primas brutas no IPA - FGV, 29/04.",
       "fontes": [
         {
           "nome": "FGV IBRE",
@@ -65,8 +65,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Desemprego sobe para 6,1% no trimestre ate marco",
-      "texto": "A taxa de desocupacao (PNAD Continua/IBGE) subiu a 6,1% no trimestre encerrado em marco/2026, com cerca de 6,6 milhoes de desocupados - 30/04.",
+      "titulo": "Desemprego sobe para 6,1% no trimestre até março",
+      "texto": "A taxa de desocupação (PNAD Continua/IBGE) subiu a 6,1% no trimestre encerrado em março/2026, com cerca de 6,6 milhões de desocupados - 30/04.",
       "fontes": [
         {
           "nome": "IBGE / PNAD",
@@ -78,8 +78,8 @@
       "setores": [
         "comercio"
       ],
-      "titulo": "Confianca do Consumidor sobe a 89,1 pontos em abril",
-      "texto": "O Indice de Confianca do Consumidor (FGV IBRE) subiu para 89,1 pontos em abril/2026, segundo mes seguido de alta, maxima desde dezembro - 30/04.",
+      "titulo": "Confiança do Consumidor sobe a 89,1 pontos em abril",
+      "texto": "O Índice de Confiança do Consumidor (FGV IBRE) subiu para 89,1 pontos em abril/2026, segundo mês seguido de alta, máxima desde dezembro - 30/04.",
       "fontes": [
         {
           "nome": "FGV IBRE",
@@ -92,7 +92,7 @@
         "transversal"
       ],
       "titulo": "Focus (30/04): IPCA de 2026 em 4,89% e IGP-M projetado a 5,50%",
-      "texto": "O Boletim Focus de 30/04/2026 trouxe IPCA de 2026 em 4,89%, Selic (fim de 2026) em 13,00%, cambio a R$ 5,25 e IGP-M projetado em 5,50%.",
+      "texto": "O Boletim Focus de 30/04/2026 trouxe IPCA de 2026 em 4,89%, Selic (fim de 2026) em 13,00%, câmbio a R$ 5,25 e IGP-M projetado em 5,50%.",
       "fontes": [
         {
           "nome": "BCB / Focus",

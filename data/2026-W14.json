@@ -5,7 +5,7 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 14), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,17. Destaques verificados da semana: Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em marco; IPC-S sobe 0,67% na 4a quadrissemana de marco. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
+    "texto": "Leitura macro de Abril 2026 (semana 14), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,17. Destaques verificados da semana: Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em março; IPC-S sobe 0,67% na 4a quadrissemana de março. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
     "origem": "derivado_indicadores"
   },
   "clipping": [
@@ -13,8 +13,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em marco",
-      "texto": "O Indicador de Incerteza da Economia (FGV) subiu 9,2 pontos em marco/2026, a 115,0, impulsionado por tensoes no Oriente Medio e preco do petroleo.",
+      "titulo": "Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em março",
+      "texto": "O Indicador de Incerteza da Economia (FGV) subiu 9,2 pontos em março/2026, a 115,0, impulsionado por tensões no Oriente Médio e preço do petróleo.",
       "fontes": [
         {
           "nome": "FGV IBRE / JC",
@@ -26,8 +26,8 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "IPC-S sobe 0,67% na 4a quadrissemana de marco",
-      "texto": "O IPC-S subiu 0,67% na quarta quadrissemana de marco/2026, com transportes acelerando a 1,51%, acumulando 3,47% em 12 meses - FGV, 01/04.",
+      "titulo": "IPC-S sobe 0,67% na 4a quadrissemana de março",
+      "texto": "O IPC-S subiu 0,67% na quarta quadrissemana de março/2026, com transportes acelerando a 1,51%, acumulando 3,47% em 12 meses - FGV, 01/04.",
       "fontes": [
         {
           "nome": "FGV IBRE",
