@@ -2,13 +2,93 @@
   "periodo": "2026-W02",
   "label": "Semana 2 · Janeiro 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Janeiro (semana 2), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar recuou a R$ 5,37; IPCA do mês em 0,18% (acum. ano 3,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA de dezembro fica em 0,33% e fecha 2025 em 4,26%",
+      "texto": "O IPCA subiu 0,33% em dezembro de 2025, encerrando o ano em 4,26%, abaixo do teto da meta (4,5%) — IBGE, 09/01.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45613-ipca-em-dezembro-vai-a-0-33-e-acumula-4-26-em-2025"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "PMI de serviços sobe a 53,7 em dezembro, maior expansão em 14 meses",
+      "texto": "O PMI de serviços do Brasil subiu a 53,7 em dezembro de 2025, maior expansão em 14 meses, com demanda mais forte (S&P Global, 06/01).",
+      "fontes": [
+        {
+          "nome": "S&P Global / CNN",
+          "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/pmi-mostra-melhora-em-servicos-do-brasil-em-dezembro-com-demanda-mais-forte/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "PMI da indústria fica em 47,6 em dezembro, 8º mês em contração",
+      "texto": "O PMI industrial do Brasil ficou em 47,6 em dezembro de 2025, oitavo mês seguido de contração, com recuo de novas encomendas (S&P Global).",
+      "fontes": [
+        {
+          "nome": "S&P Global",
+          "url": "https://pt.tradingeconomics.com/brazil/manufacturing-pmi/news/514032"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção industrial fica estável em novembro (0,0%)",
+      "texto": "A produção industrial ficou estável em novembro de 2025 (0,0% na série ajustada), acumulando 0,6% no ano — IBGE (PIM), 08/01.",
+      "fontes": [
+        {
+          "nome": "IBGE / PIM",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45596-producao-industrial-mostra-variacao-nula-em-novembro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Balança comercial tem saldo recorde em dezembro",
+      "texto": "A balança comercial registrou saldo recorde em dezembro/2025, com exportações de US$ 31 bilhões (+24,7%) e saldo de US$ 9,6 bi (MDIC).",
+      "fontes": [
+        {
+          "nome": "MDIC / Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/saldo-da-balanca-comercial-tem-recorde-em-dezembro-mas-encolhe-em-2025"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "SINAPI: construção sobe 0,51% em dezembro e fecha 2025 em 5,63%",
+      "texto": "O custo da construção (SINAPI/IBGE) subiu 0,51% em dezembro de 2025, fechando o ano em 5,63%, a R$ 1.891,63/m² — 09/01.",
+      "fontes": [
+        {
+          "nome": "IBGE / SINAPI",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45639-indice-nacional-da-construcao-civil-chega-a-0-51-em-dezembro-e-fecha-2025-com-alta-de-5-63"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

@@ -2,13 +2,81 @@
   "periodo": "2026-W01",
   "label": "Semana 1 · Janeiro 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Janeiro (semana 1), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; dólar a R$ 5,44; IPCA do mês em 0,18% (acum. ano 3,92%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05%",
+      "texto": "O IGP-M variou -0,01% em dezembro de 2025, encerrando o ano com deflação acumulada de 1,05% (FGV IBRE, 30/12).",
+      "fontes": [
+        {
+          "nome": "FGV IBRE",
+          "url": "https://portal.fgv.br/noticias/igp-m-dezembro-2025"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano",
+      "texto": "O dólar fechou 2025 cotado a R$ 5,48, queda de cerca de 11% frente ao real no ano, refletindo apreciação cambial (30/12/2025).",
+      "fontes": [
+        {
+          "nome": "Exame",
+          "url": "https://exame.com/invest/mercados/dolar-fechamento-hoje-30-12-2025/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Boletim Focus da virada: mercado projeta 2026",
+      "texto": "Boletim Focus do fim de dezembro/2025: projeções de PIB, IPCA e Selic para 2026, com a Selic encerrando 2025 em 15%.",
+      "fontes": [
+        {
+          "nome": "BCB / Focus",
+          "url": "https://www.bcb.gov.br/content/focus/focus/R20251226.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Exportações brasileiras batem recorde de US$ 348,7 bi em 2025",
+      "texto": "As exportações do Brasil somaram US$ 348,7 bilhões em 2025, recorde histórico, superando 2024 em cerca de US$ 9 bilhões (MDIC).",
+      "fontes": [
+        {
+          "nome": "MDIC",
+          "url": "https://www.gov.br/mdic/pt-br/assuntos/noticias/2026/janeiro/exportacoes-brasileiras-alcancam-us-349-bi-em-2025-e-batem-recorde-historico"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Agronegócio fecha 2025 com exportações recorde de US$ 169,2 bi",
+      "texto": "As exportações do agronegócio somaram US$ 169,2 bilhões em 2025 (+3%), com superávit de US$ 149,07 bi; soja liderou com US$ 43,5 bi (MAPA).",
+      "fontes": [
+        {
+          "nome": "Secom / MAPA",
+          "url": "https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2026/01/exportacoes-do-agronegocio-brasileiro-atingem-recorde-de-us-169-bilhoes-em-2025"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {

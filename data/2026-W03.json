@@ -2,13 +2,53 @@
   "periodo": "2026-W03",
   "label": "Semana 3 · Janeiro 2026",
   "gerado_em": "2026-07-11T12:00:00.000Z",
-  "origem": "indicadores_oficiais",
-  "busca_retroativa": false,
+  "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
+  "busca_retroativa": true,
   "editorial": {
     "texto": "Leitura macro de Janeiro (semana 3), derivada dos indicadores oficiais: Selic mantida em 15,00% a.a.; o dólar subiu a R$ 5,38; IPCA do mês em 0,33% (acum. ano 4,26%). Sem cobertura de clipping nesta semana — o motor de notícias passou a operar na Semana 22.",
     "origem": "derivado_indicadores"
   },
-  "clipping": [],
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus reduz projeção de inflação de 2026 para 4,05%",
+      "texto": "O Boletim Focus reduziu a projeção de IPCA de 2026 para 4,05%, com Selic vista em 12,25% ao fim do ano (~12/01).",
+      "fontes": [
+        {
+          "nome": "BCB / Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/mercado-reduz-para-405-expectativas-da-inflacao-para-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Varejo cresce 1,0% em novembro; acumula 1,5% no ano",
+      "texto": "As vendas do varejo (PMC/IBGE) subiram 1,0% em novembro/2025 ante outubro, com alta acumulada de 1,5% no ano — 14/01.",
+      "fontes": [
+        {
+          "nome": "IBGE / PMC",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/vendas-no-varejo-cresceram-15-ate-novembro-de-2025"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Vendas de veículos crescem 2,58% em 2025, a 2,55 milhões de unidades",
+      "texto": "Os emplacamentos de veículos cresceram 2,58% em 2025, somando 2.549.462 unidades, segundo a Fenabrave (16/01).",
+      "fontes": [
+        {
+          "nome": "Fenabrave",
+          "url": "https://reparacaoautomotiva.com.br/2026/01/16/fenabrave-vendas-veiculos-brasil-2025/"
+        }
+      ]
+    }
+  ],
   "pestel": [],
   "kpis": [
     {
