@@ -25,7 +25,7 @@ from datetime import datetime
 
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 MODELO = "gemini-2.5-flash"
-MODELO_FALLBACK = "gemini-2.5-flash-lite"
+MODELO_FALLBACK = "gemini-2.5-flash"  # flash-lite foi descontinuado (404); mantém o mesmo modelo
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
 SETORES = ["industria", "comercio", "servicos", "agro", "construcao", "ecommerce"]
 
@@ -56,7 +56,13 @@ def extrair_json(texto):
     ini, fim = texto.find("{"), texto.rfind("}")
     if ini == -1 or fim == -1:
         raise ValueError("resposta sem JSON")
-    return json.loads(texto[ini:fim + 1])
+    bruto = texto[ini:fim + 1]
+    try:
+        return json.loads(bruto)
+    except json.JSONDecodeError:
+        # o Gemini às vezes deixa quebra de linha/tab literais DENTRO de strings → inválido.
+        # troca caracteres de controle por espaço (fora de strings é whitespace inócuo).
+        return json.loads(re.sub(r"[\x00-\x1f]", " ", bruto))
 
 _NUM = re.compile(r"\d{1,3}(?:\.\d{3})*,\d+|\d+,\d+|\d+%|r\$\s*\d[\d.,]*|us\$\s*\d[\d.,]*|\d{3,}", re.I)
 def anchors(t):
@@ -201,7 +207,7 @@ def main():
     from google import genai
     from google.genai import types
     client = genai.Client(api_key=GEMINI_KEY)
-    cfg = types.GenerateContentConfig(temperature=0.4, max_output_tokens=32768)  # SEM tools = sem busca
+    cfg = types.GenerateContentConfig(temperature=0.2, max_output_tokens=32768)  # SEM tools = sem busca
 
     prev_ed, report, ok, pulados = "", [], 0, 0
     for n in SEMANAS:
