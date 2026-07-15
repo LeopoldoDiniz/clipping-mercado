@@ -5,8 +5,9 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Fevereiro 2026 (semana 9), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,15. Destaques verificados da semana: IPCA-15 de fevereiro sobe 0,84%; Confiança da Indústria sobe para 96,7 em fevereiro; Confiança do Consumidor cai para 86,1 em fevereiro, menor em 6 meses. 5 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A Semana 9 de fevereiro de 2026 reforça a complexidade do cenário econômico brasileiro, com novos dados que matizam as expectativas. A taxa básica de juros, Selic, permanece inalterada em 15,00% a.a., mantendo o custo de capital elevado e a política monetária restritiva. Um ponto de atenção é a prévia da inflação, o IPCA-15 de fevereiro, que registrou uma alta de 0,84%, superando as expectativas e acumulando 1,04% no ano. Este dado contrasta com a perspectiva de inflação futura mais controlada mencionada anteriormente, indicando que as pressões inflacionárias persistem no curto prazo. O câmbio do dólar, por sua vez, registrou R$ 5,15, uma leve variação em relação ao período anterior.\n\nNo que tange à atividade econômica, o quadro é misto e reflete a cautela. Enquanto a Confiança da Indústria demonstrou resiliência, subindo para 96,7 e marcando a terceira alta consecutiva, os setores diretamente ligados ao consumo mostram sinais de desaceleração. A Confiança do Consumidor caiu para 86,1, atingindo o menor patamar em seis meses, e a Confiança de Serviços recuou para 90,2, interrompendo uma sequência de altas. Esses indicadores corroboram a retração observada no volume de vendas do varejo (-0,7% em dezembro) e na produção física da indústria (-1,9% no mesmo mês), bem como no volume de serviços (-0,3%).\n\nSetorialmente, o agronegócio trouxe uma notícia positiva com a reação de 5,43% no preço do leite ao produtor, após nove meses de queda, embora a estimativa da safra de grãos para 2026 tenha sido revisada para baixo em 1,0%. A construção civil continua a ser impactada pelo aumento dos custos, com o custo médio por metro quadrado subindo +1,54% em janeiro. O ponto de atenção central reside na persistência das pressões inflacionárias, evidenciadas pelo IPCA-15, em um ambiente de Selic elevada, que continua a frear a atividade econômica e a confiança dos consumidores e prestadores de serviços, apesar da resiliência industrial.",
+    "origem": "gemini_retroativo",
+    "gerado_em": "2026-07-15T23:45:40.398542"
   },
   "clipping": [
     {
@@ -75,7 +76,70 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Estabilidade da Política Monetária",
+      "texto": "A manutenção da taxa Selic em 15,00% a.a. reflete a continuidade da política monetária restritiva, buscando conter a inflação que, conforme o IPCA-15 de fevereiro, subiu 0,84% e superou as expectativas, indicando a persistência de desafios no cenário econômico.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Pressões Inflacionárias e Atividade Contida",
+      "texto": "A prévia da inflação (IPCA-15) de fevereiro subiu 0,84%, acima do esperado, acumulando 1,04% no ano, enquanto a taxa Selic permanece em 15,00% a.a. A atividade econômica mantém sinais de desaceleração, com o volume de vendas do varejo contraindo -0,7% e a produção industrial recuando -1,9% em dezembro.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Cautela do Consumidor e Mercado de Trabalho Estável",
+      "texto": "A confiança do consumidor registrou uma queda para 86,1 em fevereiro, atingindo o menor patamar em seis meses, indicando maior cautela e impacto no consumo. Contudo, a taxa de desemprego se mantém em 6,5%, sugerindo estabilidade no mercado de trabalho.",
+      "score": 6.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Inovação e Digitalização (Leitura Transversal)",
+      "texto": "Embora não haja dados específicos, a dinâmica de mercado sugere uma contínua relevância da inovação e digitalização para a competitividade, especialmente em setores como serviços e comércio, que buscam eficiência e novas formas de engajamento com o consumidor para mitigar a cautela geral.",
+      "score": 5.0,
+      "setores": [
+        "servicos",
+        "ecommerce"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Desafios Climáticos e Sustentabilidade na Produção Agrícola",
+      "texto": "A estimativa da safra de grãos para 2026 foi revisada para 342,7 milhões de toneladas, representando uma redução de 1,0% em relação ao mês anterior, o que pode indicar impactos de fatores ambientais na produção. O preço do leite reagiu 5,43% em fevereiro, após um período de queda.",
+      "score": 5.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente Regulatório e Segurança Jurídica",
+      "texto": "O ambiente regulatório permanece como um pilar de estabilidade para os negócios, com a segurança jurídica sendo um fator contínuo na tomada de decisões de investimento, especialmente em um cenário de altas taxas de juros e inflação volátil, sem alterações diretas reportadas na semana.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -121,7 +185,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A indústria mostra sinais mistos, com a confiança em alta para 96,7, mas a produção física em queda de -1,9%, refletindo um ambiente de rivalidade acirrada e custo de capital elevado devido à Selic de 15,00% a.a."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O setor de comércio enfrenta um cenário desafiador com a queda da confiança do consumidor para 86,1 e a retração de -0,7% no volume de vendas, intensificando a rivalidade e o poder dos compradores em busca de melhores condições."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "A confiança de serviços recuou para 90,2 e o volume de serviços teve queda de -0,3%, indicando um ambiente competitivo onde a demanda mais fraca aumenta a pressão sobre os preços e a rivalidade entre os prestadores."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "O agronegócio apresenta um cenário misto, com a reação positiva do preço do leite em 5,43%, mas a estimativa da safra de grãos com redução de 1,0%, mantendo a pressão dos fornecedores de insumos e dos compradores de commodities."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O setor da construção civil continua sob pressão com o aumento dos custos, com o custo médio por m² subindo +1,54% e o INCC em +0,72%, o que fortalece o poder dos fornecedores e impacta a demanda dos compradores, desestimulados pela Selic de 15,00% a.a."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "O e-commerce, embora não tenha dados diretos, opera em um ambiente de altíssima rivalidade e grande poder de barganha dos compradores, impulsionado pela busca por conveniência e preços competitivos, refletindo a cautela do consumidor que caiu para 86,1."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -228,5 +341,127 @@
         "val": -0.017
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Acompanhar de perto a evolução do IPCA-15, que subiu 0,84% em fevereiro, pois indica pressões inflacionárias acima do esperado."
+        },
+        {
+          "ico": "📈",
+          "txt": "Avaliar o impacto da manutenção da taxa Selic em 15,00% a.a. nos custos de financiamento e investimento para todos os setores."
+        },
+        {
+          "ico": "📉",
+          "txt": "Monitorar a queda da Confiança do Consumidor para 86,1, o menor patamar em seis meses, como um sinal de alerta para a demanda interna."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Perspectiva de resiliência na confiança, mas com desafios na demanda e custos elevados.",
+        "quote": "A Confiança da Indústria subiu 0,6 ponto em fevereiro/2026, a 96,7, terceira alta consecutiva.",
+        "edi": [
+          "Apesar da melhora na confiança, a produção física da indústria registrou uma queda de -1,9% em dezembro, indicando que a percepção positiva pode não se traduzir imediatamente em aumento de volume. O setor continua a enfrentar o impacto da taxa Selic de 15,00% a.a. nos investimentos e custos operacionais."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Focar em otimização de custos e eficiência operacional para mitigar o impacto da Selic elevada e da queda na produção física."
+          },
+          {
+            "ico": "🏭",
+            "txt": "Buscar oportunidades em nichos de mercado menos sensíveis à demanda geral ou com maior capacidade de repasse de custos."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Cenário desafiador com retração da demanda e cautela do consumidor.",
+        "quote": "A Confiança do Consumidor caiu 1,2 ponto em fevereiro/2026, a 86,1, menor patamar desde agosto/2025.",
+        "edi": [
+          "A acentuada queda na confiança do consumidor, que atingiu o menor patamar em seis meses, reflete-se na retração de -0,7% no volume de vendas do varejo em dezembro. A persistência da taxa Selic em 15,00% a.a. continua a limitar o poder de compra e o acesso ao crédito, intensificando a cautela."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Desenvolver estratégias de precificação competitivas e promoções para estimular o consumo, dado o cenário de cautela."
+          },
+          {
+            "ico": "🛍️",
+            "txt": "Investir em experiência do cliente e canais de venda diversificados para se adaptar à menor confiança e poder de compra."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Perda de fôlego após período de alta, com demanda mais contida.",
+        "quote": "A Confiança de Serviços recuou 0,7 ponto em fevereiro/2026, a 90,2, interrompendo três altas seguidas.",
+        "edi": [
+          "Após um período de recuperação, o setor de serviços registrou um recuo na confiança em fevereiro, acompanhando a queda no volume de serviços de -0,3% em dezembro. A menor confiança do consumidor e a Selic em 15,00% a.a. impactam diretamente a demanda por serviços, que é sensível ao poder de compra."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Explorar a digitalização e automação para otimizar processos e reduzir custos, mantendo a competitividade em um cenário de menor demanda."
+          },
+          {
+            "ico": "💼",
+            "txt": "Focar na fidelização de clientes e na oferta de serviços de valor agregado para mitigar a retração da confiança."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Cenário misto, com recuperação de preços em alguns segmentos e desafios na produção.",
+        "quote": "O preço do leite reage 5,43% em fevereiro após 9 meses de queda.",
+        "edi": [
+          "O agronegócio apresenta um quadro de recuperação em alguns segmentos, como o preço do leite ao produtor, que reagiu 5,43% em fevereiro. No entanto, a estimativa da safra de grãos para 2026 foi revisada para 342,7 milhões de toneladas, representando uma redução de 1,0% em relação ao mês anterior, indicando desafios na produção."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Monitorar as condições climáticas e as projeções de safra para antecipar impactos na oferta e nos preços de commodities agrícolas."
+          },
+          {
+            "ico": "🚜",
+            "txt": "Avaliar investimentos em tecnologias que aumentem a produtividade e resiliência da produção, considerando a redução na estimativa da safra."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Pressão contínua de custos e impacto da Selic na demanda.",
+        "quote": "O Custo m² (SINAPI) subiu +1,54% mês em janeiro/2026, atingindo R$ 1.921.",
+        "edi": [
+          "O setor da construção civil continua a enfrentar um aumento significativo nos custos, com o custo médio por metro quadrado subindo +1,54% e o INCC registrando +0,72% em janeiro. A taxa Selic de 15,00% a.a. eleva o custo dos financiamentos, impactando a viabilidade de novos projetos e a capacidade de compra dos consumidores."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Revisar orçamentos e buscar alternativas de materiais e métodos construtivos para mitigar o impacto do aumento de custos."
+          },
+          {
+            "ico": "💰",
+            "txt": "Explorar linhas de crédito e parcerias que possam aliviar o custo de capital, dada a Selic em 15,00% a.a."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Crescimento sustentado, mas com desafios de demanda e concorrência intensificada pela cautela do consumidor.",
+        "quote": "A Confiança do Consumidor caiu para 86,1 em fevereiro, menor em 6 meses.",
+        "edi": [
+          "Embora não haja dados diretos, o e-commerce é impactado pela queda da confiança do consumidor para 86,1 e pela retração do varejo em -0,7%. A alta taxa Selic de 15,00% a.a. também afeta o poder de compra, levando os consumidores a serem mais seletivos e sensíveis a preços, intensificando a concorrência no ambiente digital."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimizar a experiência de compra online e a logística para se diferenciar em um mercado competitivo e com consumidor cauteloso."
+          },
+          {
+            "ico": "📱",
+            "txt": "Investir em marketing digital e personalização para atrair e reter clientes, compensando a menor confiança geral do consumidor."
+          }
+        ]
+      }
+    }
   }
 }

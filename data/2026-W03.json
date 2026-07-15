@@ -5,8 +5,9 @@
   "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro 2026 (semana 3), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,38. Destaques verificados da semana: Focus reduz projeção de inflação de 2026 para 4,05%; Varejo cresce 1,0% em novembro; acumula 1,5% no ano; Vendas de veículos crescem 2,58% em 2025, a 2,55 milhões de unidades. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A Semana 3 de janeiro de 2026 apresenta um cenário macroeconômico com sinais mistos, mas com expectativas de melhora no horizonte. O Boletim Focus revisou para baixo a projeção de IPCA para 2026, indicando 4,05%, e a Selic esperada para o fim do ano em 12,25%. Atualmente, a taxa básica de juros permanece em 15,00% a.a. e a inflação acumulada em 12 meses está em 4,26%, acima da meta de 3,0%. O câmbio se mantém em R$ 5,38 por dólar, um fator relevante para o comércio exterior e custos de importação. No que tange à atividade econômica, o varejo demonstrou resiliência, com um crescimento de 1,0% em novembro e um acumulado de 1,5% no ano. As vendas de veículos também reforçam essa tendência positiva, com alta de 2,58% em 2025, somando 2.549.462 unidades. O mercado de trabalho contribui para o consumo, com a taxa de desemprego em 6,5%. Em contraste, a indústria registrou uma leve contração de 0,1% na produção física em novembro, acumulando uma queda de 1,4% no ano, enquanto o setor de serviços teve uma variação mensal de -0,1%, mas mantém um crescimento acumulado de 2,8% no ano. Setorialmente, a agricultura mostra estabilidade, com a estimativa da safra de grãos de 2025 em 346,1 milhões de toneladas, com um aumento de 0,1% em relação ao mês anterior. Já o setor da construção civil enfrenta desafios com o aumento contínuo dos custos, com o custo médio por metro quadrado atingindo R$ 1.892 e o INCC subindo 0,21% no mês. O ponto de atenção reside na conciliação entre a inflação ainda elevada e a atividade econômica que mostra sinais de recuperação em alguns setores, mas desaceleração em outros. A expectativa de queda da Selic em 2026 pode aliviar o custo de capital, mas a cautela é fundamental diante dos indicadores atuais.",
+    "origem": "gemini_retroativo",
+    "gerado_em": "2026-07-15T23:41:35.432570"
   },
   "clipping": [
     {
@@ -49,7 +50,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Expectativas de política monetária",
+      "texto": "O Boletim Focus reduziu a projeção de IPCA para 2026 para 4,05% e a Selic vista em 12,25% ao fim do ano. Isso sinaliza uma percepção de estabilidade e possível flexibilização futura da política monetária, embora a taxa básica de juros atual permaneça em 15,00% a.a.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Desaceleração da inflação e atividade mista",
+      "texto": "A projeção de inflação para 2026 foi reduzida para 4,05%, com a Selic esperada em 12,25% ao fim do ano. O IPCA atual é de 4,26% em 12 meses, acima da meta de 3,0%. O varejo cresceu 1,0% em novembro, acumulando 1,5% no ano, e as vendas de veículos subiram 2,58% em 2025. Contudo, a produção industrial registrou queda de 0,1% no mês e acumula -1,4% no ano. O desemprego está em 6,5%.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Emprego e consumo resiliente",
+      "texto": "A taxa de desemprego em 6,5% indica um nível de ocupação que pode sustentar o consumo. As vendas do varejo cresceram 1,0% em novembro e as vendas de veículos aumentaram 2,58% em 2025, sugerindo alguma resiliência no poder de compra e na confiança do consumidor.",
+      "score": 6.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Inovação e eficiência operacional",
+      "texto": "Embora não haja dados diretos sobre tecnologia, a busca por eficiência e otimização de processos é uma constante em todos os setores, impulsionada por um cenário econômico que demanda competitividade e aprimoramento contínuo das operações.",
+      "score": 5.0,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Produção agrícola estável",
+      "texto": "A estimativa da safra de grãos para 2025 é de 346,1 Mt, com um leve aumento de 0,1% em relação ao mês anterior. Este dado indica estabilidade na produção agrícola, um fator importante para a segurança alimentar e para a balança comercial.",
+      "score": 5.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "A ausência de notícias sobre mudanças regulatórias ou novas legislações sugere um ambiente legal estável. As empresas operam sob as regras existentes, o que pode proporcionar previsibilidade, mas também exige conformidade contínua.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -95,7 +158,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O setor enfrenta desafios com a produção em queda e custos pressionados, mas a projeção de inflação menor pode aliviar no futuro."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O varejo mostra crescimento, impulsionado por vendas de veículos e um desemprego moderado, mas a concorrência é intensa."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O setor de serviços apresenta um crescimento acumulado positivo, apesar de uma leve retração mensal, indicando um ambiente competitivo."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra de grãos mantém-se estável, com um ambiente de produção robusto e demanda consistente."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O custo da construção continua a subir, impactando o setor que opera em um ambiente de juros elevados."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Beneficiado pelo crescimento do varejo, o e-commerce enfrenta alta rivalidade e poder dos compradores, exigindo constante inovação."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -202,5 +314,99 @@
         "val": -0.051
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Monitorar a evolução da inflação, que está em 4,26% em 12 meses, e as expectativas de redução da Selic para 12,25% em 2026, pois impactam diretamente o custo de capital e o poder de compra."
+        },
+        {
+          "ico": "📈",
+          "txt": "Acompanhar o desempenho do varejo, que cresceu 1,0% em novembro, e as vendas de veículos, que subiram 2,58% em 2025, como indicadores da resiliência do consumo."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Desafiador.",
+        "quote": "PIM (Indústria): -0,1% (Produção física m/m · acum. ano -1,4% · IBGE nov/25)",
+        "edi": [
+          "O setor industrial registrou uma queda de 0,1% na produção física em novembro, acumulando um recuo de 1,4% no ano. Este cenário de contração sugere pressões sobre a demanda ou a capacidade produtiva. Os preços ao produtor também caíram 0,35% no mês, refletindo um ambiente de baixa pressão inflacionária na cadeia produtiva, mas também podendo indicar margens apertadas."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Avaliar estratégias de otimização de custos e eficiência operacional para mitigar o impacto da queda de produção de 0,1% no mês."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Moderadamente positivo.",
+        "quote": "Varejo cresce 1,0% em novembro; acumula 1,5% no ano",
+        "edi": [
+          "As vendas do varejo apresentaram um crescimento de 1,0% em novembro, com um acumulado de 1,5% no ano, indicando uma recuperação gradual do consumo. As vendas de veículos também contribuíram para o otimismo, com um aumento de 2,58% em 2025, totalizando 2.549.462 unidades. O desemprego em 6,5% apoia essa tendência positiva no consumo."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Capitalizar o crescimento de 1,0% nas vendas do varejo em novembro, explorando oportunidades em segmentos de maior demanda."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Estável com desafios.",
+        "quote": "Serviços (PMS): -0,1% (Volume · var. m/m (aj.saz.) · acum. ano +2,8% · IBGE/PMS nov/25)",
+        "edi": [
+          "O volume de serviços registrou uma leve retração de 0,1% em novembro, após um crescimento acumulado de 2,8% no ano. Isso sugere uma estabilização após um período de expansão, com o setor buscando manter o ritmo em um ambiente de juros elevados (Selic em 15,00%) e inflação ainda presente (IPCA em 4,26%)."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Investir em digitalização e otimização para compensar a leve queda de 0,1% no volume de serviços em novembro e sustentar o crescimento acumulado de 2,8%."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Estável.",
+        "quote": "Safra de grãos (LSPA): 346,1 Mt (Estimativa da safra 2025 · +0,1% vs. mês anterior · IBGE/LSPA dez/25)",
+        "edi": [
+          "A estimativa da safra de grãos para 2025 manteve-se robusta em 346,1 milhões de toneladas, com um leve aumento de 0,1% em relação ao mês anterior. Este cenário indica estabilidade na produção agrícola, fundamental para o controle da inflação de alimentos e para a balança comercial, em um contexto de câmbio a R$ 5,38."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Monitorar as condições climáticas e de mercado para a safra de grãos de 346,1 Mt, buscando otimizar a comercialização."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Cauteloso.",
+        "quote": "Custo m² (SINAPI): R$ 1.892 (Custo médio da construção · +0,51% mês · acum. ano +5,63% · IBGE/SINAPI dez/25)",
+        "edi": [
+          "O custo médio da construção continuou a subir, atingindo R$ 1.892 por metro quadrado, com um aumento de 0,51% no mês e 5,63% no acumulado do ano. O INCC também registrou alta de 0,21% no mês e 5,94% no ano. Este aumento nos custos, combinado com a Selic em 15,00%, impõe desafios significativos ao setor, afetando a viabilidade de novos projetos e o acesso ao crédito."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Gerenciar proativamente o aumento do custo médio da construção de R$ 1.892 por m², buscando eficiência e negociação com fornecedores."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Promissor, mas competitivo.",
+        "quote": "Varejo cresce 1,0% em novembro; acumula 1,5% no ano",
+        "edi": [
+          "O setor de e-commerce, embora não tenha dados específicos, pode se beneficiar do crescimento geral do varejo, que subiu 1,0% em novembro e acumulou 1,5% no ano. A resiliência do consumo, evidenciada também pelas vendas de veículos que cresceram 2,58% em 2025, sugere um ambiente favorável para o comércio eletrônico, que se destaca pela conveniência e alcance. Contudo, a alta rivalidade e o poder do comprador exigem constante inovação e otimização da experiência do cliente."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Explorar o crescimento do varejo de 1,0% em novembro, investindo em plataformas e logística para o e-commerce."
+          }
+        ]
+      }
+    }
   }
 }

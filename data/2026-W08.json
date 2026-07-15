@@ -5,8 +5,9 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Fevereiro 2026 (semana 8), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,20. Destaques verificados da semana: Brasil registra US$ 2,1 bi de superávit na 3a semana de fevereiro; Boletim Focus (18/02): IPCA de 2026 recua para 3,95%. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A Semana 8 de fevereiro de 2026 aprofunda a complexidade do cenário macroeconômico brasileiro. A taxa básica de juros, Selic, permanece em 15,00% a.a., mantendo o custo de capital elevado. Contudo, o Boletim Focus trouxe uma perspectiva mais otimista para a inflação futura, com a projeção do IPCA de 2026 recuando para 3,95%, marcando a sexta queda consecutiva. A inflação acumulada em 12 meses, medida pelo IPCA, registrou 4,44% em janeiro, ainda próxima ao teto da meta. O câmbio do dólar registrou R$ 5,20, e o mercado de trabalho mantém sua estabilidade, com a taxa de desemprego em 6,5%.\n\nNo entanto, a atividade econômica mostra sinais de desaceleração mais acentuada. O volume de vendas do varejo contraiu -0,7% em dezembro, enquanto a produção física da indústria recuou -1,9% no mesmo mês. O setor de serviços também apresentou uma variação mensal negativa de -0,3%. Setorialmente, o comércio e os serviços refletem a cautela do consumidor. A indústria enfrenta uma retração mais profunda. A construção civil continua a ser um ponto de atenção devido ao aumento expressivo dos custos, com o custo médio por metro quadrado subindo +1,54% e o INCC em +0,72% em janeiro.\n\nNo agronegócio, a estimativa da safra de grãos para 2026 foi revisada para 342,7 milhões de toneladas, representando uma leve redução de -1,0% em comparação ao mês anterior. O ponto de atenção reside na conciliação entre as expectativas de inflação mais controlada, conforme o Boletim Focus, e a persistência da taxa Selic elevada, que continua a impactar negativamente a atividade econômica em diversos setores, especialmente varejo, indústria e serviços, que mostram sinais de contração mais acentuados.",
+    "origem": "gemini_retroativo",
+    "gerado_em": "2026-07-15T23:44:55.256622"
   },
   "clipping": [
     {
@@ -37,7 +38,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Estabilidade da Balança Comercial",
+      "texto": "A balança comercial brasileira registrou um superávit significativo de US$ 2,1 bilhões na terceira semana de fevereiro, refletindo a continuidade de políticas comerciais que favorecem as exportações e contribuem para a estabilidade econômica.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação em Recuo e Atividade em Desaceleração",
+      "texto": "O Boletim Focus aponta para uma redução da projeção do IPCA para 2026 para 3,95%, pela sexta vez consecutiva, indicando expectativas de controle inflacionário. No entanto, indicadores de atividade como varejo, indústria e serviços mostram contração mensal, enquanto a taxa Selic permanece em 15,00% a.a.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Estabilidade no Mercado de Trabalho e Cautela no Consumo",
+      "texto": "A taxa de desemprego mantém-se estável em 6,5%, indicando resiliência no mercado de trabalho. Contudo, a contração nas vendas do varejo e nos serviços pode sinalizar um arrefecimento no consumo, apesar da estabilidade do emprego.",
+      "score": 6.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Ausência de Destaques Tecnológicos",
+      "texto": "Não há informações específicas sobre avanços ou impactos tecnológicos relevantes para a economia brasileira nesta semana, mantendo um cenário de estabilidade neste quesito.",
+      "score": 5.0,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Variação na Estimativa da Safra Agrícola",
+      "texto": "A estimativa da safra de grãos para 2026 registrou uma leve redução de -1,0% em relação ao mês anterior, o que pode estar relacionado a fatores climáticos ou de manejo, impactando a produção agrícola.",
+      "score": 5.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Estabilidade Regulatória",
+      "texto": "Não foram divulgadas alterações ou eventos legais significativos que impactem diretamente o ambiente de negócios nesta semana, indicando um período de estabilidade regulatória.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -83,7 +146,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O setor industrial enfrenta um cenário desafiador com contração da produção e pressões de custo, limitando o poder de barganha frente a fornecedores."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O comércio varejista sente o impacto da retração nas vendas, com consumidores mais exigentes e alta rivalidade, exigindo estratégias de atração."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O setor de serviços apresenta leve contração, com rivalidade moderada e demanda impactada pela cautela do consumidor e juros elevados."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "O agronegócio enfrenta a volatilidade da safra, com poder de barganha dos compradores e fornecedores sendo fatores relevantes para a rentabilidade."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O setor da construção civil lida com o aumento expressivo dos custos, o que fortalece o poder dos fornecedores de insumos e impacta a margem."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "O e-commerce opera em um ambiente de alta rivalidade e forte poder de barganha dos compradores, refletindo a dinâmica do varejo em um cenário de cautela."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -190,5 +302,103 @@
         "val": -0.017
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Acompanhar de perto as projeções de inflação do Boletim Focus, que recuou para 3,95% para 2026, para antecipar movimentos da política monetária."
+        },
+        {
+          "ico": "💸",
+          "txt": "Avaliar o impacto da manutenção da Selic em 15,00% a.a. sobre o custo de capital e o endividamento das empresas, buscando otimizar estruturas de financiamento."
+        },
+        {
+          "ico": "💸",
+          "txt": "Monitorar a balança comercial, que registrou US$ 2,1 bilhões de superávit na 3a semana de fevereiro, como indicador de saúde externa e potencial para o câmbio."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "O setor industrial enfrenta um período de contração, impactado pela demanda interna e pelos custos de produção.",
+        "quote": "A produção física da indústria registrou -1,9% m/m em dezembro/25.",
+        "edi": [
+          "A indústria brasileira apresentou uma retração significativa na produção física no último mês de 2025, aprofundando a desaceleração observada anteriormente. Este cenário, combinado com a pressão de preços ao produtor, sugere um ambiente desafiador para o setor."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Revisar planos de produção e estoques em função da contração de -1,9% na produção física, buscando maior eficiência e adequação à demanda."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O comércio varejista mostra sinais de arrefecimento, apesar da estabilidade no mercado de trabalho, indicando cautela do consumidor.",
+        "quote": "O volume de vendas do varejo (PMC) registrou -0,7% m/m em dezembro/25.",
+        "edi": [
+          "As vendas do varejo registraram uma queda mensal, indicando uma cautela maior por parte dos consumidores. Embora a taxa de desemprego se mantenha estável, o poder de compra pode estar sendo afetado pela inflação acumulada e pelo custo do crédito."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Desenvolver estratégias de precificação e promoções para estimular o consumo, dado o recuo de -0,7% nas vendas do varejo e a cautela do mercado."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "O setor de serviços também desacelera, acompanhando a tendência de contração da atividade econômica geral.",
+        "quote": "O volume de serviços (PMS) apresentou variação de -0,3% m/m em dezembro/25.",
+        "edi": [
+          "O setor de serviços, que vinha mostrando resiliência, agora acompanha a tendência de contração da atividade econômica, com uma leve queda no volume mensal. A estabilidade do emprego pode mitigar impactos maiores, mas a demanda geral parece estar arrefecendo."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Otimizar a gestão de custos e a eficiência operacional para mitigar o impacto da contração de -0,3% no volume de serviços e manter a competitividade."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "O agronegócio observa uma leve revisão para baixo na estimativa da safra, mantendo a atenção sobre a produção e seus fatores.",
+        "quote": "A estimativa da safra de grãos para 2026 é de 342,7 Mt, uma redução de -1,0% vs. mês anterior.",
+        "edi": [
+          "A projeção para a safra de grãos de 2026 foi ligeiramente ajustada para baixo, indicando uma variação na expectativa de produção. Embora a safra ainda seja robusta, a atenção se volta para os fatores que podem influenciar a produtividade e o volume final."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Monitorar os fatores que levaram à redução de -1,0% na estimativa da safra de grãos para 2026 e seus potenciais impactos nos preços e na oferta."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "A construção civil continua a enfrentar o desafio do aumento dos custos, que se intensificam, pressionando a rentabilidade.",
+        "quote": "O custo médio da construção (SINAPI) subiu +1,54% no mês de janeiro/26.",
+        "edi": [
+          "O setor da construção civil registra um aumento acentuado nos custos, tanto no custo médio por metro quadrado quanto no índice de custo da construção. Essa pressão sobre os insumos e a mão de obra pode impactar a viabilidade de novos projetos e a rentabilidade das empresas."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Avaliar o impacto do aumento de +1,54% no custo médio da construção sobre o planejamento e orçamento de projetos, buscando alternativas de materiais e processos."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O e-commerce, como parte do varejo, provavelmente reflete a cautela do consumidor e a alta competitividade do mercado.",
+        "quote": "O volume de vendas do varejo (PMC) registrou -0,7% m/m em dezembro/25.",
+        "edi": [
+          "Embora não haja dados específicos para o e-commerce, a retração observada no volume de vendas do varejo sugere que o setor digital também pode estar sentindo o impacto da menor demanda e da cautela do consumidor. A alta competitividade é uma característica constante."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Reforçar estratégias de fidelização e otimização de custos logísticos, considerando a tendência de cautela do consumidor no varejo e a forte concorrência."
+          }
+        ]
+      }
+    }
   }
 }

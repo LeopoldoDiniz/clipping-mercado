@@ -5,8 +5,9 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro 2026 (semana 5), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses; CAGED: Brasil fecha 2025 com 1,279 milhão de empregos formais; IGP-M sobe 0,41% em janeiro. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A Semana 5 de janeiro de 2026 aprofunda o cenário macroeconômico de sinais mistos, conforme antecipado na semana anterior, com alguns indicadores confirmando tendências e outros apresentando novas dinâmicas. A taxa básica de juros, Selic, permanece em 15,00% a.a., mantendo o custo de capital elevado. A inflação acumulada em 12 meses, medida pelo IPCA, está em 4,26%, ainda acima da meta de 3,0%. O câmbio do dólar registrou R$ 5,23, uma leve variação em relação ao período anterior. Adicionalmente, o IGP-M subiu 0,41% em janeiro, com destaque para o IPC em +0,51% e o INCC em +0,63%, indicando pressões inflacionárias nos preços ao consumidor e nos custos da construção.\n\nNo mercado de trabalho, o Brasil encerrou 2025 com um saldo positivo de 1,279 milhão de empregos formais, um dado robusto que sustenta o consumo, com a taxa de desemprego mantida em 6,5%. A atividade econômica mostra nuances: o varejo demonstrou resiliência com crescimento de 1,1% em novembro, enquanto a indústria registrou uma leve contração de 0,1% na produção física no mesmo mês. O setor de serviços também apresentou variação mensal de -0,1%, mas mantém um crescimento acumulado de 2,8% no ano.\n\nSetorialmente, a construção civil é um destaque positivo, com a Confiança da Construção subindo para 94,0 em janeiro, o maior nível em dez meses. Contudo, o setor continua a enfrentar o desafio do aumento dos custos, com o custo médio por metro quadrado em R$ 1.892 e o INCC subindo 0,21% no mês. A agricultura mantém sua estabilidade, com a estimativa da safra de grãos de 2025 em 346,1 milhões de toneladas. O ponto de atenção reside na conciliação da inflação persistente e dos juros altos com a necessidade de estimular a atividade econômica, que apresenta recuperação em alguns setores e desaceleração em outros.",
+    "origem": "gemini_retroativo",
+    "gerado_em": "2026-07-15T23:42:51.123309"
   },
   "clipping": [
     {
@@ -49,7 +50,73 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Estabilidade da Política Monetária",
+      "texto": "O ambiente político permanece estável, com a política monetária ditada pelo Banco Central mantendo a taxa Selic em 15,00% a.a., um fator crucial para a estabilidade econômica geral, sem alterações legislativas destacadas na semana.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Juros Elevados e Inflação Persistente vs. Emprego e Confiança",
+      "texto": "A economia brasileira apresenta um cenário de juros elevados, com a Selic em 15,00% a.a., e inflação acumulada em 12 meses ainda acima da meta. Contudo, o mercado de trabalho demonstra resiliência, com a criação de 1,279 milhão de empregos formais em 2025 e a taxa de desemprego em 6,5%. A confiança da construção civil também registrou melhora significativa.",
+      "score": 7.5,
+      "setores": [
+        "transversal",
+        "construcao",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Mercado de Trabalho Robusto",
+      "texto": "O mercado de trabalho continua a ser um pilar de sustentação social, com a criação robusta de 1,279 milhão de empregos formais em 2025 e uma taxa de desemprego de 6,5%, contribuindo para a manutenção do poder de compra e consumo das famílias.",
+      "score": 7.0,
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Inovação e Eficiência Subjacentes",
+      "texto": "Não há informações diretas sobre avanços tecnológicos na semana, mas a digitalização e a inovação continuam sendo fatores subjacentes que impulsionam a eficiência e a competitividade em diversos setores da economia, embora sem dados específicos.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Estabilidade da Produção Agrícola",
+      "texto": "A estimativa da safra de grãos para 2025 em 346,1 milhões de toneladas indica a continuidade da produção agrícola, sem menções a eventos ambientais específicos que impactem diretamente a economia nesta semana.",
+      "score": 5.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Arcabouço Regulatório Estável",
+      "texto": "O arcabouço legal e regulatório permanece estável, com as políticas monetárias e fiscais em vigor influenciando o ambiente de negócios sem alterações legislativas destacadas na semana.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -95,7 +162,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A indústria enfrenta leve contração na produção e aumento nos preços ao produtor, indicando um ambiente desafiador com custos crescentes e demanda moderada."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O varejo demonstra crescimento no volume de vendas, mas a rivalidade e o poder dos compradores permanecem elevados em um cenário de inflação e diversas opções."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O setor de serviços apresenta uma leve retração mensal, mas mantém crescimento acumulado, indicando um ambiente competitivo com poder de barganha dos clientes e alternativas."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A agricultura mantém sua estabilidade na estimativa da safra, com poder de fornecedores de insumos e compradores de commodities influenciando o mercado."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "A confiança na construção civil melhora, mas o setor ainda lida com o aumento contínuo dos custos de materiais e mão de obra, enquanto os juros altos impactam a demanda."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Embora sem dados diretos, o e-commerce é caracterizado por alta rivalidade e facilidade de entrada, com forte poder de barganha dos consumidores e diversas opções de compra."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -202,5 +318,103 @@
         "val": -0.051
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "A taxa Selic permanece em 15,00% a.a., mantendo o custo de capital elevado e influenciando as decisões de investimento e consumo."
+        },
+        {
+          "ico": "📈",
+          "txt": "A criação de 1,279 milhão de empregos formais em 2025, conforme o CAGED, demonstra a resiliência do mercado de trabalho e impulsiona o consumo."
+        },
+        {
+          "ico": "🏗️",
+          "txt": "A Confiança da Construção subiu para 94,0 em janeiro, atingindo o maior nível em 10 meses, sinalizando otimismo no setor."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Perspectivas desafiadoras no curto prazo devido à leve retração na produção.",
+        "quote": "A Produção física m/m da indústria registrou -0,1% em novembro/25.",
+        "edi": [
+          "O setor industrial apresentou uma leve contração na produção física mensal, acumulando uma queda no ano. Os preços ao produtor, no entanto, registraram um leve aumento no mês, indicando pressões de custo."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Monitorar a evolução dos custos de produção, dado o aumento do IPP de 0,14% no mês, para otimizar a precificação."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Cenário positivo impulsionado pelo volume de vendas e mercado de trabalho robusto.",
+        "quote": "O Volume de vendas do varejo (PMC) cresceu 1,1% m/m em novembro/25.",
+        "edi": [
+          "O varejo continua a demonstrar resiliência, com um crescimento notável no volume de vendas. A criação de empregos formais em 2025 contribui para a sustentação do poder de compra e consumo."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Aproveitar o bom momento do varejo, que cresceu 1,1% em novembro, para otimizar estratégias de vendas e fidelização de clientes."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Crescimento acumulado positivo, apesar da leve retração mensal, indicando resiliência.",
+        "quote": "O Volume de serviços (PMS) registrou -0,1% m/m em novembro/25, mas acumula +2,8% no ano.",
+        "edi": [
+          "O setor de serviços teve uma leve retração no volume mensal, mas mantém um crescimento acumulado positivo no ano. O mercado de trabalho aquecido pode sustentar a demanda por serviços a médio prazo."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Investir em eficiências operacionais e inovação para mitigar a leve retração mensal de -0,1% no volume de serviços."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Estabilidade e perspectivas favoráveis para a safra, mantendo a contribuição econômica.",
+        "quote": "A Estimativa da safra de grãos 2025 é de 346,1 Mt, com +0,1% vs. mês anterior.",
+        "edi": [
+          "A agricultura mantém uma perspectiva estável, com a estimativa da safra de grãos para 2025 indicando um leve aumento em relação ao mês anterior. Este setor continua sendo um pilar da economia nacional."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Explorar oportunidades de exportação e otimização da cadeia de valor, dada a estabilidade da safra de grãos de 346,1 Mt."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Otimismo crescente, mas com desafios persistentes nos custos de materiais e mão de obra.",
+        "quote": "A Confiança da Construção subiu para 94,0 em janeiro, maior nível em 10 meses.",
+        "edi": [
+          "A confiança no setor da construção civil atingiu seu maior nível em dez meses, indicando um sentimento positivo. Contudo, os custos de construção, como o SINAPI e o INCC, continuam em ascensão, exigindo gestão atenta."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Gerenciar os custos de construção, que subiram 0,51% no mês (SINAPI), para manter a competitividade e a rentabilidade dos projetos."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Potencial de crescimento, alinhado à resiliência do varejo e ao comportamento do consumidor.",
+        "quote": "O Volume de vendas do varejo (PMC) cresceu 1,1% m/m em novembro/25.",
+        "edi": [
+          "Embora sem dados específicos, o e-commerce tende a seguir a tendência positiva do varejo, que demonstrou crescimento. A criação de empregos formais em 2025 favorece o consumo online, impulsionando o setor."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Capitalizar o crescimento do varejo, que subiu 1,1% em novembro, para expandir a presença digital e otimizar a logística de entrega."
+          }
+        ]
+      }
+    }
   }
 }

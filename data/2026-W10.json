@@ -5,8 +5,9 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 10), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,29. Destaques verificados da semana: PMI da indústria fica em 47,3 em fevereiro, 11o mês em contração; PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%; PMI de serviços sobe a 53,1 em fevereiro, 4a expansão seguida. 6 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A Semana 10 de março de 2026 apresenta um cenário econômico brasileiro de contrastes, com sinais de recuperação em alguns setores e a persistência de desafios em outros. A taxa básica de juros, Selic, mantém-se em 15,00% a.a., refletindo uma política monetária ainda restritiva, embora o Boletim Focus de 02/03/2026 tenha reduzido a projeção para 12,00% ao fim de 2026, acompanhada de um IPCA projetado em 3,91% e câmbio em R$ 5,42. Este otimismo futuro contrasta com a inflação de janeiro de 0,33% e o acumulado de 4,44% em 12 meses, e representa uma moderação em relação à prévia de fevereiro mencionada na semana anterior. O câmbio do dólar, por sua vez, registrou R$ 5,29.\n\nNo panorama macro, o PIB brasileiro fechou 2025 com alta de 2,3%, impulsionado pela agropecuária, que cresceu notáveis 11,7%. A balança comercial também trouxe notícias positivas, com um superávit de US$ 4,2 bilhões em fevereiro, graças ao aumento de 15,6% nas exportações. O mercado de trabalho mostra resiliência, com o desemprego em 5,4%.\n\nSetorialmente, a indústria apresenta um quadro misto. Enquanto o PMI industrial registrou o 11º mês consecutivo de contração em fevereiro, ficando em 47,3, a produção industrial surpreendeu com um crescimento de 1,8% em janeiro, interrompendo três quedas seguidas. O setor de serviços demonstra uma recuperação mais consistente, com o PMI subindo a 53,1 em fevereiro, sua quarta expansão seguida e aumento de novos pedidos, contrastando com a leve retração de 0,3% no volume de serviços em dezembro. O comércio, por sua vez, reflete a dualidade: forte nas exportações, mas com o varejo registrando queda de 0,7% em dezembro. O agronegócio, apesar do robusto crescimento do PIB, vê a estimativa da safra de grãos para 2026 revisada para baixo em 1,0%. A construção civil continua a ser impactada pelo aumento dos custos, com o custo médio por metro quadrado subindo 1,54% em janeiro.\n\nO ponto de atenção central reside na persistência da Selic elevada, que, apesar das projeções de queda, ainda impõe um custo de capital alto. A divergência entre indicadores de confiança (PMI serviços em alta) e dados de volume (varejo e serviços em queda em dezembro) sugere uma transição gradual, onde a expectativa de melhora ainda não se traduziu plenamente em todos os setores da atividade econômica. A recuperação da produção industrial é um sinal encorajador, mas a contração persistente do PMI exige cautela.",
+    "origem": "gemini_retroativo",
+    "gerado_em": "2026-07-15T23:46:34.341903"
   },
   "clipping": [
     {
@@ -89,7 +90,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Estabilidade da Política Econômica",
+      "texto": "A ausência de notícias políticas diretas na semana sugere uma continuidade na condução da política econômica. As projeções do Boletim Focus para Selic e IPCA indicam uma visão de estabilidade e controle futuro, o que pode ser interpretado como um ambiente político-econômico relativamente previsível, apesar da Selic atual em 15,00% a.a.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Cenário Misto com Sinais de Recuperação e Desafios",
+      "texto": "O cenário econômico é de contrastes. O PIB de 2025 cresceu 2,3%, com destaque para a agropecuária (+11,7%). A balança comercial registrou superávit de US$ 4,2 bilhões em fevereiro, impulsionada por exportações (+15,6%). O PMI de serviços está em expansão (53,1), e a produção industrial cresceu 1,8% em janeiro. Contudo, o PMI da indústria permanece em contração (47,3) pelo 11º mês, e a Selic em 15,00% a.a. ainda restringe o crédito, apesar das projeções de queda para 12,00% em 2026.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Estabilidade no Mercado de Trabalho e Consumo Cauteloso",
+      "texto": "O mercado de trabalho apresenta um cenário de relativa estabilidade, com a taxa de desemprego em 5,4% no trimestre nov-dez-jan 2026. A expansão do PMI de serviços e o crescimento da produção industrial em janeiro podem ter impactos positivos na geração de renda e emprego. No entanto, o volume de vendas do varejo em dezembro de 2025 registrou retração de 0,7%, indicando uma cautela persistente no consumo.",
+      "score": 6.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Inovação e Digitalização (Inferido)",
+      "texto": "Não há notícias diretas sobre tecnologia. Contudo, a dinâmica de setores como serviços e comércio, e a necessidade de otimização de custos na indústria e construção, sugerem uma pressão contínua por inovação e digitalização para ganhos de eficiência e competitividade. A expansão dos serviços pode ser um vetor para a adoção de novas tecnologias.",
+      "score": 5.0,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Impacto na Produção Agrícola",
+      "texto": "A estimativa da safra de grãos para 2026 foi revisada para baixo em 1,0% em janeiro, atingindo 342,7 milhões de toneladas. Este dado aponta para possíveis impactos de fatores ambientais ou climáticos na produção agrícola, que, apesar de ter impulsionado o PIB de 2025 com +11,7%, enfrenta desafios para o futuro próximo.",
+      "score": 5.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente Regulatório Estável (Inferido)",
+      "texto": "Não há informações específicas sobre mudanças ou eventos no ambiente legal. A estabilidade das projeções econômicas e a continuidade das políticas monetárias e fiscais, inferidas do Boletim Focus e da manutenção da Selic, sugerem um ambiente regulatório sem grandes alterações que afetem diretamente os negócios nesta semana.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -135,7 +198,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O setor industrial enfrenta alta rivalidade devido à contração persistente do PMI (47,3) e queda de novos pedidos. O alto custo de capital (Selic 15,00%) e o aumento de custos (IPP 0,32%) fortalecem fornecedores e desestimulam novos entrantes. Compradores ganham poder com a redução da demanda."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O comércio doméstico, com varejo em queda (-0,7% em dez/25), enfrenta alta rivalidade e forte poder dos compradores. No entanto, o bom desempenho das exportações (+15,6%) pode atrair novos entrantes para o comércio exterior, mas o cenário geral é de alta competitividade e poder do consumidor."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O setor de serviços, com PMI em expansão (53,1) e novos pedidos em alta, atrai novos entrantes e mantém uma rivalidade moderada. O poder de barganha dos compradores é equilibrado, mas a Selic elevada (15,00%) ainda pode impactar a demanda por serviços de maior valor agregado."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A agropecuária, com forte crescimento do PIB (+11,7% em 2025), possui baixa ameaça de substitutos e entrantes devido à alta intensidade de capital e riscos. Fornecedores de insumos e grandes compradores (processadores/exportadores) exercem poder significativo, e a revisão para baixo da safra (-1,0%) pode impactar a oferta."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "A construção civil enfrenta rivalidade moderada, mas o aumento contínuo dos custos (Custo m² +1,54%, INCC +0,28%) fortalece o poder dos fornecedores. A Selic em 15,00% a.a. eleva o custo de financiamento, impactando a demanda e o poder dos compradores, e desestimulando novos entrantes."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "O e-commerce, embora sem dados diretos, opera em um ambiente de altíssima rivalidade e facilidade de entrada, com forte poder dos compradores. A retração do varejo (-0,7% em dez/25) sugere um cenário desafiador para o consumo, aumentando a pressão competitiva e a busca por diferenciação."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -242,5 +354,135 @@
         "val": -0.017
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Acompanhar as projeções do Boletim Focus, que reduziu a Selic projetada para 12,00% ao fim de 2026, indicando expectativa de flexibilização monetária."
+        },
+        {
+          "ico": "💸",
+          "txt": "Observar a continuidade do crescimento econômico, que fechou 2025 em alta de 2,3%, com destaque para a agropecuária em +11,7%."
+        },
+        {
+          "ico": "💸",
+          "txt": "Monitorar o desempenho das exportações, que contribuíram para um superávit de US$ 4,2 bilhões em fevereiro, com um aumento de 15,6%."
+        },
+        {
+          "ico": "💸",
+          "txt": "Analisar a divergência entre o PMI da indústria, em contração pelo 11o mês (47,3), e o PMI de serviços, em expansão pela 4a vez (53,1)."
+        },
+        {
+          "ico": "💸",
+          "txt": "Avaliar a sustentabilidade da recuperação da produção industrial, que cresceu 1,8% em janeiro, interrompendo três quedas seguidas."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "O setor industrial mostra sinais mistos, com a persistente contração do PMI indicando desafios estruturais, mas a recuperação da produção em janeiro traz um alívio pontual.",
+        "quote": "O PMI industrial do Brasil ficou em 47,3 em fevereiro/2026, 11o mês seguido abaixo de 50.",
+        "edi": [
+          "A indústria brasileira continua a enfrentar um cenário de contração, evidenciado pelo PMI abaixo de 50 por quase um ano e a queda acentuada de novos pedidos. Contudo, a produção industrial registrou um crescimento de 1,8% em janeiro, a maior alta desde junho/2024, após três meses de queda, sugerindo uma possível, ainda que frágil, recuperação."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Investigar as categorias de produtos que impulsionaram o crescimento de 1,8% na produção industrial em janeiro para identificar nichos de resiliência."
+          },
+          {
+            "ico": "⚡",
+            "txt": "Avaliar o impacto da queda de novos pedidos na indústria, conforme o PMI de 47,3, na capacidade ociosa e nos estoques do setor."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O comércio exterior demonstra robustez, mas o varejo doméstico ainda enfrenta desafios, refletindo a cautela do consumidor e o impacto da política monetária.",
+        "quote": "A balança comercial registrou superávit de US$ 4,2 bilhões em fevereiro/2026, com exportações de US$ 26,3 bi (+15,6%).",
+        "edi": [
+          "A balança comercial brasileira apresentou um superávit significativo em fevereiro, impulsionado pelo forte crescimento das exportações. No entanto, o volume de vendas do varejo em dezembro de 2025 registrou retração de 0,7%, indicando que o consumo interno ainda não se recuperou plenamente, apesar da melhora no mercado de trabalho com o desemprego em 5,4%."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Explorar oportunidades de exportação, dado o superávit de US$ 4,2 bilhões e o aumento de 15,6% nas exportações em fevereiro."
+          },
+          {
+            "ico": "🛒",
+            "txt": "Analisar estratégias para estimular o consumo interno, considerando a retração de 0,7% no volume de vendas do varejo em dezembro."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "O setor de serviços exibe uma recuperação notável, com expansão contínua e aumento de novos pedidos, embora o volume geral de serviços ainda precise consolidar essa tendência.",
+        "quote": "O PMI de serviços do Brasil subiu a 53,1 em fevereiro/2026, quarta expansão consecutiva, com novos pedidos em alta.",
+        "edi": [
+          "O setor de serviços demonstra um dinamismo positivo, com o PMI atingindo 53,1 em fevereiro, marcando a quarta expansão consecutiva e um aumento nos novos pedidos. Este desempenho contrasta com a leve retração de 0,3% no volume de serviços em dezembro de 2025, sugerindo uma virada de tendência e uma maior confiança no início de 2026."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Identificar os segmentos de serviços que mais contribuem para a expansão do PMI de 53,1 e o aumento de novos pedidos."
+          },
+          {
+            "ico": "🤖",
+            "txt": "Avaliar como a queda projetada da Selic para 12,00% pode impulsionar ainda mais o setor de serviços, que é sensível ao custo de crédito."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "O agronegócio mantém sua posição de destaque na economia, mas a revisão para baixo da safra de grãos aponta para desafios futuros que merecem atenção.",
+        "quote": "O PIB brasileiro cresceu 0,1% no 4o trimestre e fechou 2025 em alta de 2,3%, com agropecuária +11,7%.",
+        "edi": [
+          "A agropecuária foi um dos pilares do crescimento do PIB em 2025, registrando uma impressionante alta de 11,7%. Contudo, a estimativa da safra de grãos para 2026 foi revisada para 342,7 milhões de toneladas em janeiro, representando uma queda de 1,0% em relação ao mês anterior, indicando potenciais desafios para a produção futura."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Monitorar de perto as próximas estimativas da safra de grãos, dada a revisão para baixo de 1,0% em janeiro, para antecipar impactos na oferta e preços."
+          },
+          {
+            "ico": "🌾",
+            "txt": "Analisar as oportunidades de investimento em tecnologias que mitiguem riscos climáticos e garantam a produtividade do setor, que contribuiu com +11,7% para o PIB de 2025."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O setor da construção civil continua a ser pressionado pelo aumento dos custos, o que pode impactar a viabilidade de novos projetos em um ambiente de juros elevados.",
+        "quote": "O Custo m² (SINAPI) registrou R$ 1.921, com aumento de +1,54% no mês em janeiro/2026.",
+        "edi": [
+          "A construção civil enfrenta um cenário de elevação contínua dos custos, com o custo médio por metro quadrado subindo 1,54% em janeiro e o INCC registrando alta de 0,28% em fevereiro. Este aumento nos insumos, combinado com a Selic em 15,00% a.a., representa um desafio significativo para a rentabilidade e o lançamento de novos empreendimentos no setor."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Explorar alternativas de materiais e tecnologias construtivas para mitigar o impacto do aumento de +1,54% no custo por m² em janeiro."
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Avaliar o efeito da Selic de 15,00% a.a. nos financiamentos imobiliários e na demanda por novos projetos de construção."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Embora sem dados diretos, o e-commerce provavelmente reflete a dualidade do comércio, com potencial de crescimento impulsionado pela digitalização, mas sensível à capacidade de consumo e à concorrência.",
+        "quote": "O volume de vendas do varejo (PMC) registrou -0,7% em dezembro/2025, indicando cautela no consumo.",
+        "edi": [
+          "Sem informações específicas para o e-commerce nesta semana, a leitura transversal aponta para um ambiente de consumo cauteloso, refletido na retração de 0,7% no volume de vendas do varejo em dezembro de 2025. No entanto, a expansão do PMI de serviços e a queda projetada da Selic podem sinalizar um ambiente mais favorável para o consumo digital no futuro, apesar da alta competitividade do setor."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Analisar o impacto do desemprego de 5,4% e da projeção de Selic a 12,00% no poder de compra do consumidor para o e-commerce."
+          },
+          {
+            "ico": "📦",
+            "txt": "Investigar tendências de consumo digital que possam contrariar a retração de 0,7% no varejo físico em dezembro, buscando oportunidades de nicho."
+          }
+        ]
+      }
+    }
   }
 }

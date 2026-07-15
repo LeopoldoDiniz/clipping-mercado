@@ -89,7 +89,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Estabilidade da Política Monetária",
+      "texto": "O controle da inflação, com o IPCA de 2025 em 4,26% e abaixo do teto da meta de 4,5%, sugere um ambiente de política monetária estável e previsível, fundamental para a confiança dos agentes econômicos. A taxa Selic mantida em 15,00% a.a. reforça essa postura.",
+      "score": 6.0,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Cenário Macroeconômico Misto",
+      "texto": "A economia apresenta sinais divergentes: inflação sob controle (IPCA 4,26%), balança comercial recorde (saldo de US$ 9,6 bi), e setor de serviços em expansão (PMI 53,7), contrastando com juros elevados (Selic 15,00% a.a.) e a indústria em contração (PMI 47,6).",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Dinamismo do Consumo e Emprego",
+      "texto": "A demanda mais forte no setor de serviços, refletida no PMI de 53,7, e a taxa de desemprego em 6,5% indicam um certo dinamismo no consumo e no mercado de trabalho, apesar dos desafios macroeconômicos e do crescimento moderado do varejo (0,6%).",
+      "score": 6.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Ausência de Fatores Disruptivos",
+      "texto": "Não há informações específicas sobre avanços ou disrupções tecnológicas relevantes para a semana no material fornecido, indicando um período de continuidade sem grandes impulsos ou desafios diretos advindos dessa dimensão.",
+      "score": 5.0,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Perspectivas Agrícolas Favoráveis",
+      "texto": "A estimativa positiva para a safra de grãos de 2025, com 346,1 milhões de toneladas e um aumento de 0,1% em relação ao mês anterior, aponta para condições ambientais e produtivas favoráveis no agronegócio.",
+      "score": 5.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Estabilidade Regulatória",
+      "texto": "A ausência de notícias sobre mudanças legislativas ou regulatórias significativas no material sugere um ambiente legal estável, sem novos riscos ou oportunidades diretas advindas dessa esfera para a semana em questão.",
+      "score": 5.0,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -135,7 +197,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O setor industrial enfrenta um cenário desafiador com contração contínua e recuo de novas encomendas, indicando forte pressão competitiva e poder de barganha dos compradores, enquanto fornecedores mantêm alguma força."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O setor comercial se beneficia de um saldo comercial robusto, mas o varejo doméstico mantém um ambiente de alta rivalidade e poder dos compradores, com facilidade de entrada para novos players."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O setor de serviços demonstra forte expansão impulsionada pela demanda, o que atenua a rivalidade e o poder dos compradores, apesar de um nível moderado de ameaça de novos entrantes e substitutos."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "O agronegócio projeta uma safra robusta, mas enfrenta o poder de barganha de fornecedores de insumos e grandes compradores, com barreiras de entrada elevadas e poucos substitutos diretos para seus produtos."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O setor da construção civil registra aumento nos custos, refletindo o poder dos fornecedores de insumos e materiais, o que pode pressionar a rivalidade e o poder de barganha dos compradores, com poucos substitutos."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "O e-commerce, embora não detalhado, opera em um ambiente de intensa rivalidade e alto poder de barganha dos compradores, impulsionado pela facilidade de entrada e a presença de muitos substitutos."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -242,5 +353,128 @@
         "val": -0.035
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Monitorar a taxa Selic de 15,00% a.a. e seu impacto nos custos de capital e na demanda agregada."
+        },
+        {
+          "ico": "💸",
+          "txt": "Avaliar o controle inflacionário, com o IPCA de 2025 em 4,26%, para projeções de custos e preços no planejamento estratégico."
+        },
+        {
+          "ico": "💸",
+          "txt": "Analisar o saldo recorde da balança comercial de US$ 9,6 bi em dezembro como um indicador de força externa da economia e oportunidades de exportação."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Perspectiva de continuidade da contração, com desafios na recuperação da demanda e pressão sobre os preços.",
+        "quote": "O PMI industrial do Brasil ficou em 47,6 em dezembro de 2025, oitavo mês seguido de contração, com recuo de novas encomendas.",
+        "edi": [
+          "O setor industrial encerrou 2025 em um cenário de retração, evidenciado pelo PMI abaixo de 50 por oito meses consecutivos e pela estabilidade da produção em novembro (0,0%). O recuo nas novas encomendas sinaliza que a demanda continua fraca, pressionando os preços ao produtor, que registraram queda de -0,35% em novembro."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Focar em otimização de custos e eficiência operacional diante da queda de -0,35% nos preços ao produtor."
+          },
+          {
+            "ico": "⚡",
+            "txt": "Explorar oportunidades de exportação, aproveitando o saldo recorde da balança comercial de US$ 9,6 bi."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Cenário misto, com potencial de crescimento impulsionado por exportações, mas com o varejo doméstico ainda em recuperação gradual.",
+        "quote": "A balança comercial registrou saldo recorde em dezembro/2025, com exportações de US$ 31 bilhões (+24,7%) e saldo de US$ 9,6 bi.",
+        "edi": [
+          "O comércio exterior demonstrou forte desempenho, com um saldo recorde na balança comercial em dezembro, impulsionado por um aumento significativo nas exportações. Internamente, o volume de vendas do varejo (PMC) cresceu 0,6% em outubro, indicando uma recuperação gradual, que pode ser complementada pela 'demanda mais forte' observada no setor de serviços."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Investir em estratégias de canais digitais para capturar a demanda crescente, especialmente em serviços."
+          },
+          {
+            "ico": "🛒",
+            "txt": "Analisar o impacto do câmbio de R$ 5,37 no custo de produtos importados e na competitividade de exportações."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Perspectiva positiva de crescimento, impulsionada pela forte demanda e expansão contínua, consolidando-se como motor da economia.",
+        "quote": "O PMI de serviços do Brasil subiu a 53,7 em dezembro de 2025, maior expansão em 14 meses, com demanda mais forte.",
+        "edi": [
+          "O setor de serviços se destaca como um motor de crescimento, registrando a maior expansão em 14 meses em dezembro, com o PMI atingindo 53,7. A 'demanda mais forte' impulsionou o volume de serviços, que já apresentava crescimento de 0,3% em outubro, consolidando uma trajetória positiva para o setor."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Expandir a oferta de serviços e capacidade para atender à 'demanda mais forte' e o PMI de 53,7."
+          },
+          {
+            "ico": "🤖",
+            "txt": "Avaliar a taxa de desemprego de 6,5% como um indicador de disponibilidade de mão de obra e potencial de consumo."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Perspectiva favorável para a produção agrícola, com potencial de contribuir para o saldo comercial e a estabilidade econômica.",
+        "quote": "A estimativa da safra 2025 é de 346,1 Mt, com +0,1% vs. mês anterior.",
+        "edi": [
+          "O agronegócio projeta uma safra de grãos robusta para 2025, com uma estimativa de 346,1 milhões de toneladas, superando ligeiramente a projeção do mês anterior. Este cenário positivo para a produção agrícola pode sustentar as exportações e contribuir para a balança comercial recorde."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Monitorar as condições climáticas e de mercado para a safra de grãos de 346,1 Mt."
+          },
+          {
+            "ico": "🌾",
+            "txt": "Buscar eficiência na cadeia de suprimentos para otimizar custos, considerando o IPCA de 4,26%."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Cenário de custos crescentes, que podem impactar a viabilidade de novos projetos e a demanda por imóveis.",
+        "quote": "O custo da construção (SINAPI/IBGE) subiu 0,51% em dezembro de 2025 e fechou o ano em 5,63%.",
+        "edi": [
+          "O setor da construção civil enfrentou um aumento contínuo nos custos em 2025, com o SINAPI registrando alta de 0,51% em dezembro e acumulando 5,63% no ano. O INCC também mostrou elevação de 0,21% no mês, indicando pressão sobre as margens e o preço final dos imóveis, que atingiu R$ 1.891,63/m²."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Revisar orçamentos e estratégias de precificação devido ao aumento de 0,51% no custo da construção (SINAPI)."
+          },
+          {
+            "ico": "🏗️",
+            "txt": "Negociar com fornecedores para mitigar o impacto do aumento de 5,63% nos custos anuais da construção."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Potencial de crescimento impulsionado pela demanda geral, mas em um ambiente altamente competitivo que exige diferenciação.",
+        "quote": "O PMI de serviços do Brasil subiu a 53,7 em dezembro de 2025, maior expansão em 14 meses, com demanda mais forte.",
+        "edi": [
+          "Embora não haja dados específicos, o e-commerce tende a se beneficiar do dinamismo da 'demanda mais forte' observada no setor de serviços e do crescimento do varejo (PMC de 0,6%). No entanto, o ambiente de alta rivalidade e o poder dos compradores, característicos do setor, exigem constante inovação e eficiência para capturar essa demanda."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimizar a experiência do cliente e a logística para se destacar na alta rivalidade do setor."
+          },
+          {
+            "ico": "📦",
+            "txt": "Aproveitar o cenário de 'demanda mais forte' nos serviços para impulsionar vendas online e explorar novas categorias."
+          }
+        ]
+      }
+    },
+    "editorial": "A economia brasileira encerrou 2025 e iniciou 2026 com um panorama de contrastes e pontos de atenção. Um dos destaques é o controle da inflação, com o IPCA de 2025 fechando em 4,26%, abaixo do teto da meta de 4,5%. Este resultado, em um contexto de Selic mantida em 15,00% a.a. e câmbio em R$ 5,37, sinaliza uma política monetária firme e eficaz na estabilização de preços.\n\nUma mudança significativa no cenário macroeconômico foi o desempenho do comércio exterior. A balança comercial registrou um saldo recorde de US$ 9,6 bilhões em dezembro, impulsionado por exportações robustas de US$ 31 bilhões, um crescimento de 24,7%. Este dado contrasta com a performance da indústria, que encerrou o ano em contração pelo oitavo mês consecutivo, com o PMI industrial em 47,6 e a produção industrial estável em 0,0% em novembro.\n\nEm contrapartida, o setor de serviços demonstrou forte vigor, com o PMI subindo a 53,7 em dezembro, sua maior expansão em 14 meses, impulsionado por uma demanda mais forte. O varejo, por sua vez, registrou um volume de vendas de 0,6% em outubro, indicando uma recuperação gradual. A construção civil, no entanto, viu seus custos aumentarem, com o SINAPI fechando 2025 em 5,63%. O agronegócio mantém uma perspectiva positiva, com a estimativa da safra de grãos para 2025 em 346,1 milhões de toneladas.\n\nO ponto de atenção reside na dicotomia entre a robustez do setor de serviços e do comércio exterior versus a persistente fragilidade da indústria. A alta taxa de juros, embora eficaz no controle inflacionário, continua a ser um fator de contenção para o investimento e a produção industrial. A taxa de desemprego em 6,5% sugere um mercado de trabalho com alguma resiliência, mas a sustentabilidade do consumo dependerá da evolução dos custos e da renda."
   }
 }
