@@ -188,7 +188,7 @@
   :root[data-theme="dark"] .info::after{background:#05100F;color:#F4F7F7}
   .info:hover::after,.info:focus-visible::after{opacity:1;visibility:visible}
   .chart-scroll{overflow-x:auto;margin:6px -4px 0}
-  .chart-scroll svg{display:block;max-width:720px;height:auto;margin-inline:auto} /* limita a altura via aspecto e centraliza — mantém proporção com os cards */
+  .chart-scroll svg{display:block;margin-inline:auto} /* altura fixa (attr height) e largura elástica (attr width); centraliza quando cabe, rola quando não */
   .schips{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
   .schip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;padding:5px 10px;border-radius:99px;
     border:1px solid var(--border);background:var(--surface);color:var(--ink-3);cursor:pointer}
@@ -1254,7 +1254,7 @@ function chartUniverse(){
   return gerais.concat(macrosSetor).concat(selSetorKpis());
 }
 function chartCard(){
-  const W=680,H=240,pl=42,pr=48,pt=16,pb=34;
+  const H=240,pl=42,pr=48,pt=16,pb=34;
   const keys=state.chartSeries;
   const umap=Object.fromEntries(chartUniverse().map(s=>[s.id,s]));
   const series=keys.map(k=>umap[k]).filter(Boolean);
@@ -1265,6 +1265,10 @@ function chartCard(){
   const all=series.flatMap(valsOf).filter(v=>v!=null);
   let mn=all.length?Math.min(...all):0,mx=all.length?Math.max(...all):1;if(mn===mx){mn-=1;mx+=1;}const pad=(mx-mn)*0.15;mn-=pad;mx+=pad;
   const n=points.length;
+  // eixo X elástico: cada ponto ganha um passo mínimo confortável (STEP). Poucas leituras => compacto (base 680,
+  // centralizado); muitas => largura cresce e o container (.chart-scroll) rola na horizontal. Altura fica fixa (H).
+  const STEP=50;
+  const W=Math.max(680,pl+pr+(n>1?(n-1)*STEP:0));
   const x=i=>n===1?pl+(W-pl-pr)/2:pl+(i*(W-pl-pr)/(n-1));
   const y=v=>pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));
   const gridY=4;
@@ -1288,7 +1292,7 @@ function chartCard(){
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
     <div class="legend" style="margin:2px 0 6px">${legend}</div>
-    <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
+    <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
       ${grid}${xlab}${lines}</svg></div>
     <div class="schips">${chips}</div></div>`;
 }
