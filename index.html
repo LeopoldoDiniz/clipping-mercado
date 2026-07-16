@@ -866,9 +866,17 @@ function periodoAbertoBadge(){
 }
 function chartWeeks(){
   const weeks=scopeKeys();
-  if(state.gran==="semana"&&weeks.length===1){ // semana única → ela + a imediatamente anterior (2 pontos)
+  if(state.gran==="semana"&&weeks.length===1){ // semana única (default) → janela de tendência
     const upto=CHRONO.findIndex(w=>w.k===weeks[0]);
-    return CHRONO.slice(Math.max(0,upto-1),upto+1);
+    const sel=CHRONO[upto];
+    if(sel){ // todas as semanas do mês da selecionada + as do mês anterior, até ela (as-of)
+      const meses=[...new Set(CHRONO.map(w=>w.mes))]; // cronológico
+      const mi=meses.indexOf(sel.mes);
+      const janela=new Set(meses.slice(Math.max(0,mi-1),mi+1)); // mês atual + anterior
+      const win=CHRONO.filter((w,i)=>janela.has(w.mes)&&i<=upto);
+      if(win.length>=2)return win;
+    }
+    return CHRONO.slice(Math.max(0,upto-1),upto+1); // fallback: ela + a imediatamente anterior
   }
   return CHRONO.filter(w=>weeks.includes(w.k)); // escopo agregado: apenas as semanas selecionadas
 }
@@ -1224,7 +1232,7 @@ function setorSelector(){
 // pontos do gráfico: semanal = por semana (S#); mensal/tri/ano = por mês (fechamento do mês no escopo)
 function chartPoints(){
   const wk=chartWeeks();
-  if(state.gran==="semana")return {monthly:false,points:wk.map(w=>({label:"S"+parseInt(w.k.slice(1),10),idx:CHRONO.findIndex(c=>c.k===w.k),dt:w.dt}))};
+  if(state.gran==="semana")return {monthly:false,points:wk.map(w=>({label:"S"+parseInt(w.k.slice(1),10),idx:CHRONO.findIndex(c=>c.k===w.k),dt:w.dt,mes:w.mes}))};
   const months=[...new Set(wk.map(w=>w.mes))]; // cronológico (wk já é asc)
   return {monthly:true,points:months.map(mid=>{const wm=wk.filter(w=>w.mes===mid);const lw=wm[wm.length-1];
     return {label:mesLbl(mid),idx:CHRONO.findIndex(c=>c.k===lw.k),partial:!periodoFechado("mes",mid)};})};
@@ -1275,6 +1283,17 @@ function chartCard(){
   const grid=Array.from({length:gridY+1},(_,i)=>{const gv=mn+(mx-mn)*i/gridY;const gy=y(gv);
     return `<line x1="${pl}" x2="${W-pr}" y1="${gy}" y2="${gy}" stroke="var(--border)" stroke-width="1"/><text x="${pl-7}" y="${gy+4}" text-anchor="end" font-size="12" fill="var(--ink-3)" font-family="var(--mono)">${dec(gv,1)}</text>`;}).join("");
   const xlab=points.map((p,i)=>`<text x="${x(i)}" y="${H-15}" text-anchor="middle" font-size="12" fill="var(--ink-3)">${p.label}${p.partial?' ·p':''}</text>`).join("");
+  // separadores de mês (visão semanal com >1 mês): linha pontilhada na fronteira + rótulo do mês por faixa
+  let seps="";
+  if(!monthly&&n>1&&points.every(p=>p.mes)){
+    const segs=[];let a=0;
+    for(let i=1;i<=n;i++){if(i===n||points[i].mes!==points[a].mes){segs.push({mes:points[a].mes,a,b:i-1});a=i;}}
+    seps=segs.map((g,gi)=>{
+      const line=gi>0?`<line x1="${(x(g.a-1)+x(g.a))/2}" x2="${(x(g.a-1)+x(g.a))/2}" y1="${pt-4}" y2="${H-pb+4}" stroke="var(--border-strong)" stroke-width="1" stroke-dasharray="3 4" opacity="0.55"/>`:"";
+      const cx=(x(g.a)+x(g.b))/2;
+      return `${line}<text x="${cx}" y="14" text-anchor="middle" font-size="11" font-weight="600" fill="var(--ink-3)">${mesLbl(g.mes)}</text>`;
+    }).join("");
+  }
   const lines=series.map((s,si)=>{const c=CHART_COLORS[si%CHART_COLORS.length];const vs=valsOf(s);
     const pts=vs.map((v,i)=>`${x(i)},${y(v)}`).join(" ");
     const dots=vs.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?5:3.5}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"/>`).join("");
@@ -1293,7 +1312,7 @@ function chartCard(){
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
     <div class="legend" style="margin:2px 0 6px">${legend}</div>
     <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
-      ${grid}${xlab}${lines}</svg></div>
+      ${grid}${seps}${xlab}${lines}</svg></div>
     <div class="schips">${chips}</div></div>`;
 }
 
