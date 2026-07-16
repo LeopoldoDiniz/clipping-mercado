@@ -1232,7 +1232,7 @@ function setorSelector(){
 // pontos do gráfico: semanal = por semana (S#); mensal/tri/ano = por mês (fechamento do mês no escopo)
 function chartPoints(){
   const wk=chartWeeks();
-  if(state.gran==="semana")return {monthly:false,points:wk.map(w=>({label:"S"+parseInt(w.k.slice(1),10),idx:CHRONO.findIndex(c=>c.k===w.k),dt:w.dt,mes:w.mes}))};
+  if(state.gran==="semana")return {monthly:false,points:wk.map(w=>({label:"S"+parseInt(w.k.slice(1),10),wnum:parseInt(w.k.slice(1),10),idx:CHRONO.findIndex(c=>c.k===w.k),dt:w.dt,mes:w.mes}))};
   const months=[...new Set(wk.map(w=>w.mes))]; // cronológico (wk já é asc)
   return {monthly:true,points:months.map(mid=>{const wm=wk.filter(w=>w.mes===mid);const lw=wm[wm.length-1];
     return {label:mesLbl(mid),idx:CHRONO.findIndex(c=>c.k===lw.k),partial:!periodoFechado("mes",mid)};})};
@@ -1273,16 +1273,21 @@ function chartCard(){
   const all=series.flatMap(valsOf).filter(v=>v!=null);
   let mn=all.length?Math.min(...all):0,mx=all.length?Math.max(...all):1;if(mn===mx){mn-=1;mx+=1;}const pad=(mx-mn)*0.15;mn-=pad;mx+=pad;
   const n=points.length;
-  // eixo X elástico: cada ponto ganha um passo mínimo confortável (STEP). Poucas leituras => compacto (base 680,
-  // centralizado); muitas => largura cresce e o container (.chart-scroll) rola na horizontal. Altura fica fixa (H).
-  const STEP=56;
-  const W=Math.max(680,pl+pr+(n>1?(n-1)*STEP:0));
+  // largura FIXA (preenche o container até um máximo) → os pontos se CONTRAEM à medida que mais
+  // períodos são selecionados, em vez de expandir/rolar. Altura fixa (H). Sem scroll horizontal.
+  const W=1200;
   const x=i=>n===1?pl+(W-pl-pr)/2:pl+(i*(W-pl-pr)/(n-1));
+  const gap=n>1?(W-pl-pr)/(n-1):(W-pl-pr); // espaço entre pontos adjacentes (unidades do viewBox)
+  // rótulo de semana conforme o espaço (estimativa de encavalamento): folgado → "Semana X",
+  // médio → "Sem. X", apertado → "SX" (o ano tem ~55 semanas).
+  const wkFmt=gap>=68?(w=>`Semana ${w}`):gap>=52?(w=>`Sem. ${w}`):(w=>`S${w}`);
+  // ralear rótulos de VALOR quando não couberem (mesmo princípio); sempre mostra o último ponto.
+  const vStride=Math.max(1,Math.ceil(51/gap));
   const y=v=>pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));
   const gridY=4;
   const grid=Array.from({length:gridY+1},(_,i)=>{const gv=mn+(mx-mn)*i/gridY;const gy=y(gv);
     return `<line x1="${pl}" x2="${W-pr}" y1="${gy}" y2="${gy}" stroke="var(--border)" stroke-width="1"/><text x="${pl-7}" y="${gy+4}" text-anchor="end" font-size="12" fill="var(--ink-3)" font-family="var(--mono)">${dec(gv,1)}</text>`;}).join("");
-  const xlab=points.map((p,i)=>`<text x="${x(i)}" y="${H-15}" text-anchor="middle" font-size="12" fill="var(--ink-3)">${p.label}${p.partial?' ·p':''}</text>`).join("");
+  const xlab=points.map((p,i)=>{const lbl=(!monthly&&p.wnum!=null)?wkFmt(p.wnum):p.label;return `<text x="${x(i)}" y="${H-15}" text-anchor="middle" font-size="12" fill="var(--ink-3)">${lbl}${p.partial?' ·p':''}</text>`;}).join("");
   // separadores de mês (visão semanal com >1 mês): linha pontilhada na fronteira + rótulo do mês por faixa
   let seps="";
   if(!monthly&&n>1&&points.every(p=>p.mes)){
@@ -1298,7 +1303,7 @@ function chartCard(){
     const pts=vs.map((v,i)=>`${x(i)},${y(v)}`).join(" ");
     const dots=vs.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?5:3.5}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"/>`).join("");
     const above=si%2===0;
-    const vlab=vs.map((v,i)=>`<text x="${x(i)}" y="${y(v)+(above?-11:19)}" text-anchor="middle" font-size="12" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
+    const vlab=vs.map((v,i)=>(i%vStride!==0&&i!==n-1)?"":`<text x="${x(i)}" y="${y(v)+(above?-11:19)}" text-anchor="middle" font-size="12" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
   const chipSeries=chartUniverse(); // macros (IPCA em mês/acum/projetado) + setoriais selecionados
   const chips=chipSeries.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
@@ -1311,7 +1316,7 @@ function chartCard(){
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
     <div class="legend" style="margin:2px 0 6px">${legend}</div>
-    <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
+    <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
       ${grid}${seps}${xlab}${lines}</svg></div>
     <div class="schips">${chips}</div></div>`;
 }
