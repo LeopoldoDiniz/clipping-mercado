@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 13), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,24. Destaques verificados da semana: Ata do Copom não indica novos cortes na Selic; Confiança do Consumidor sobe 2,0 pontos para 88,1 em março; IPCA-15 de março fica em 0,44%, pressionado por alimentos. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima terceira semana confirma um Banco Central cauteloso após o primeiro corte. A ata do Copom, divulgada em 24/03, indicou que a magnitude e a duração do ciclo de afrouxamento serão definidas ao longo do tempo, sem sinalizar novos cortes de imediato, diante da turbulência geopolítica — a Selic permanece em 14,75% a.a. A inflação segue no radar: o IPCA-15 de março ficou em 0,44%, pressionado por alimentos e combustíveis, com o acumulado de 12 meses em 3,90%. Do lado do consumidor, a notícia é positiva: o Índice de Confiança do Consumidor (FGV) subiu 2,0 pontos, atingindo 88,1, o maior nível desde dezembro, com melhora nas expectativas — um sinal de que, apesar da inflação, as famílias enxergam o futuro com mais otimismo. A atividade se mantém, com a indústria acumulando 2,2% (PIM) e a safra recorde de 344,1 milhões de toneladas sustentando a oferta agrícola. Na construção, os custos seguem comportados, com o metro quadrado a R$ 1.925 (SINAPI) e INCC de 0,28%. O ponto de atenção é o ritmo do ciclo de cortes: a combinação de inflação de alimentos e risco geopolítico sugere que o Banco Central avançará com parcimônia, mantendo o custo de capital elevado por mais tempo do que o mercado gostaria.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -49,7 +49,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Banco Central sinaliza cautela após o corte",
+      "texto": "A ata do Copom (24/03) indicou que magnitude e duração do ciclo serão definidas ao longo do tempo, sem sinalizar novos cortes, diante da turbulência geopolítica.",
+      "score": 7,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Prévia de inflação pressionada por alimentos",
+      "texto": "O IPCA-15 de março ficou em 0,44%, pressionado por alimentos e combustíveis, com acumulado de 3,90% em 12 meses; a Selic está em 14,75% a.a.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Confiança do consumidor em alta",
+      "texto": "O Índice de Confiança do Consumidor (FGV) subiu 2,0 pontos, a 88,1, máxima desde dezembro, com melhora nas expectativas.",
+      "score": 6.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde sustenta a oferta",
+      "texto": "A estimativa de safra de grãos está em 344,1 milhões de toneladas.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -95,7 +157,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "Com a Selic a 14,75% e a produção em 2,2% (PIM), a rivalidade é moderada; a cautela da ata limita a expectativa de novo alívio."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "A confiança do consumidor em 88,1 favorece a demanda, com poder de compra sensível à inflação de alimentos."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços estáveis (PMS 0,0%); a melhora de confiança sustenta a demanda por serviços."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Safra de 344,1 Mt reforça a oferta; a alta de alimentos no IPCA-15 (0,44%) mostra repasse ao consumidor."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Custo do m² a R$ 1.925 (SINAPI) com INCC de 0,28%; a cautela do BC atrasa a queda do custo de crédito."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; a confiança do consumidor em 88,1 favorece o consumo online."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -202,5 +313,99 @@
         "val": 0.005
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📊",
+          "txt": "Ler a cautela da ata do Copom como sinal de que a Selic (14,75%) pode ceder devagar; planejar caixa sem contar com cortes rápidos."
+        },
+        {
+          "ico": "🍎",
+          "txt": "Atenção ao IPCA-15 em 0,44%, pressionado por alimentos, ao repassar custos e definir preços."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A cautela do BC atrasa a retomada industrial?",
+        "quote": "A ata do Copom não sinalizou novos cortes na Selic.",
+        "edi": [
+          "A ata do Copom trouxe cautela, sem prometer novos cortes além dos 14,75%. Para a indústria, que acumula 2,2% (PIM), isso significa custo de capital ainda alto por mais tempo."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Planejar investimento sem contar com queda rápida do juro após a ata cautelosa."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "A confiança em alta vira venda?",
+        "quote": "A Confiança do Consumidor subiu a 88,1, máxima desde dezembro.",
+        "edi": [
+          "A confiança do consumidor subiu 2,0 pontos, a 88,1, a maior desde dezembro. A pressão de alimentos no IPCA-15 (0,44%), porém, pode limitar o poder de compra real."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Converter a confiança de 88,1 em venda com ofertas em categorias essenciais."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços aproveitam a confiança?",
+        "quote": "O volume de serviços está estável (PMS 0,0%).",
+        "edi": [
+          "Os serviços seguem estáveis (PMS 0,0%), mas a melhora de confiança (88,1) abre espaço para demanda. Eficiência digital protege a margem."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Usar a alta de confiança para lançar serviços com foco em conveniência."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra alivia a inflação de alimentos?",
+        "quote": "A safra está estimada em 344,1 milhões de toneladas.",
+        "edi": [
+          "O agro tem safra recorde (344,1 Mt), mas o IPCA-15 mostra alimentos ainda pressionando (0,44%). O escoamento e a logística são decisivos."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Planejar comercialização com a safra de 344,1 Mt e a demanda firme."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra cede com a Selic em 14,75%?",
+        "quote": "O custo do m² está em R$ 1.925 (SINAPI), com INCC de 0,28%.",
+        "edi": [
+          "O custo da obra segue comportado (SINAPI R$ 1.925, INCC 0,28%), mas a cautela do BC adia o barateamento do crédito imobiliário."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Revisar orçamentos com o INCC contido em 0,28% antes de novas pressões."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital captura a confiança em alta?",
+        "quote": "Sem dado direto; a confiança do consumidor está em 88,1.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se beneficia da confiança em 88,1. Conversão e frete decidem a competitividade."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Aproveitar a confiança de 88,1 com jornada de compra sem atrito."
+          }
+        ]
+      }
+    }
   }
 }

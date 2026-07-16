@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Maio 2026 (semana 20), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,67%; câmbio a R$ 5,07. Destaques verificados da semana: IPCA de abril fica em 0,67%, desacelerando ante março; Vendas do varejo crescem 0,5% em março; Volume de serviços recua 1,2% em março. 4 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A vigésima semana traz uma boa notícia para a inflação e um dado misto de atividade. O IPCA de abril ficou em 0,67%, desacelerando de forma relevante ante os 0,88% de março, com o acumulado de 12 meses em 4,39% — um alívio que sugere que o pior do choque de combustíveis pode ter ficado para trás. A atividade, porém, mostrou duas faces: o varejo subiu 0,5% em março, com alta de 4,0% na comparação anual, enquanto o volume de serviços recuou 1,2%, puxado pelos transportes, ainda que positivo em 3,0% no ano. No campo macro, o Boletim Focus de 15/05 seguiu ajustando as projeções, com o IPCA de 2026 em 4,92%, a Selic de fim de ano em 13,25%, o câmbio a R$ 5,20 e o IGP-M em 5,63% — sinal de que o mercado ainda vê riscos, apesar da desaceleração ao consumidor. A construção mantém custos elevados, com o INCC a 1,00% e o metro quadrado a R$ 1.946 (SINAPI). O ponto de atenção é a divergência entre a inflação corrente, que cede (IPCA 0,67%), e as projeções, que sobem: se a desaceleração se confirmar nos próximos meses, o Banco Central ganha espaço para dar sequência ao ciclo de cortes a partir da Selic atual de 14,50%; caso contrário, a cautela prevalecerá.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -62,7 +62,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Mercado eleva de novo a projeção de inflação",
+      "texto": "O Boletim Focus de 15/05 trouxe IPCA de 2026 em 4,92%, Selic (fim de 2026) em 13,25%, câmbio a R$ 5,20 e IGP-M projetado em 5,63%.",
+      "score": 6.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação ao consumidor desacelera",
+      "texto": "O IPCA de abril ficou em 0,67%, desacelerando ante 0,88% de março, com acumulado de 4,39% em 12 meses; a Selic está em 14,50% a.a.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Varejo cresce, serviços recuam",
+      "texto": "O varejo subiu 0,5% em março (+4,0% na comparação anual), enquanto o volume de serviços recuou 1,2%.",
+      "score": 6,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde sustenta a oferta",
+      "texto": "A estimativa de safra de grãos está em 348,7 milhões de toneladas.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -108,7 +170,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A produção em 0,3% (PIM) e a Selic a 14,50% mantêm a rivalidade moderada; o IPP em 2,28% ainda pressiona custos."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em alta de 0,5% (+4,0% no ano) sustenta a demanda, favorecido pela desaceleração do IPCA a 0,67%."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O volume de serviços recuou 1,2% em março (PMS -1,1% no indicador), sinal de acomodação após ciclo forte."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra de 348,7 Mt reforça a oferta; o câmbio a R$ 5,07 sustenta a receita em real."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC em 1,00% e o m² a R$ 1.946 (SINAPI) mantêm forte pressão de custo dos fornecedores."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; a desaceleração do IPCA (0,67%) melhora o poder de compra para o consumo online."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -215,5 +326,99 @@
         "val": 0.004
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📉",
+          "txt": "Aproveitar a desaceleração do IPCA a 0,67% em abril para revisar reajustes e planejar preços."
+        },
+        {
+          "ico": "🛎️",
+          "txt": "Atenção ao recuo de 1,2% em serviços: revisar demanda e capacidade no setor."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A indústria segue estável?",
+        "quote": "A produção industrial variou 0,3% (PIM).",
+        "edi": [
+          "A indústria segue estável (PIM 0,3%), com o IPP ainda em 2,28% pressionando custos. A Selic a 14,50% e a desinflação (IPCA 0,67%) melhoram o horizonte."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Planejar investimento com a inflação cedendo (0,67%) e a Selic a 14,50%."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O varejo acelera com a inflação cedendo?",
+        "quote": "As vendas do varejo cresceram 0,5% em março, +4,0% no ano.",
+        "edi": [
+          "O varejo subiu 0,5% em março (+4,0% na comparação anual), impulsionado pela desaceleração do IPCA a 0,67%, que devolve poder de compra às famílias."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Ampliar oferta aproveitando o poder de compra com o IPCA em 0,67%."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Por que os serviços recuaram?",
+        "quote": "O volume de serviços recuou 1,2% em março.",
+        "edi": [
+          "Os serviços recuaram 1,2% em março, com destaque negativo para transportes, ainda que positivos em 3,0% na comparação anual. É uma acomodação após um ciclo forte."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Reforçar retenção e eficiência diante do recuo de 1,2% em serviços."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra sustenta a receita?",
+        "quote": "A safra está estimada em 348,7 milhões de toneladas.",
+        "edi": [
+          "O agro mantém safra robusta (348,7 Mt) e câmbio a R$ 5,07 favorável à receita em real."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Programar comercialização aproveitando o câmbio a R$ 5,07."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra segue pressionado?",
+        "quote": "O INCC está em 1,00% e o m² a R$ 1.946 (SINAPI).",
+        "edi": [
+          "O custo da obra segue pressionado (INCC 1,00%, m² R$ 1.946). A Selic a 14,50% ajuda o financiamento, mas o material pesa."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Travar materiais diante do INCC persistente em 1,00%."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital ganha com a inflação menor?",
+        "quote": "Sem dado direto; o IPCA desacelerou a 0,67%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se beneficia da desinflação (IPCA 0,67%) e do varejo em alta (+0,5%). Conversão e frete definem a competitividade."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Capturar o poder de compra recuperado com ofertas e parcelamento."
+          }
+        ]
+      }
+    }
   }
 }

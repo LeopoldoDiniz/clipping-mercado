@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 15), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 5,02. Destaques verificados da semana: IPCA de março fecha em 0,88%, pressionado por combustíveis; IGP-DI de março sobe 1,14%; Vendas do varejo avançam 0,6% em fevereiro, novo recorde. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima quinta semana é marcada por um choque de preços com origem no petróleo e por respostas de política pública. O IPCA de março acelerou a 0,88%, ante 0,70% em fevereiro, com a gasolina subindo 4,59% e o acumulado de 12 meses chegando a 4,14%; no atacado, o IGP-DI avançou 1,14%. O Boletim Focus de 10/04 recalibrou fortemente o cenário, elevando o IPCA de 2026 a 5,30% e revisando a Selic projetada para 14%, com o câmbio a R$ 5,20. Diante da pressão, o governo editou a MP 1.349, com subsídio de R$ 1,20 por litro ao diesel (R$ 0,60 federal e R$ 0,60 dos estados) até maio, a um custo estimado de R$ 4 bilhões, enquanto a ANP publicou edital adicionando 15 blocos exploratórios no pré-sal. O contraste setorial é agudo: o varejo bateu recorde, com alta de 0,6% em fevereiro, mas a confiança da indústria (ICEI) desabou a 45,2, a menor desde 2020, com 28 de 29 setores pessimistas. A construção sentiu o repasse, com o INCC acelerando a 0,54% e o metro quadrado a R$ 1.932 (SINAPI). O ponto de atenção é a virada do regime inflacionário: o choque de petróleo ameaça interromper o ciclo de cortes iniciado em março, e a eficácia da MP do diesel será decisiva para conter a contaminação dos combustíveis sobre a inflação e as margens empresariais.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -102,7 +102,72 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Governo age contra o choque de combustíveis",
+      "texto": "O governo editou a MP 1.349 com subsídio de R$ 1,20 por litro ao diesel (R$ 0,60 federal e R$ 0,60 dos estados) e a ANP publicou edital com 15 novos blocos.",
+      "score": 7.5,
+      "setores": [
+        "transversal",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação acelera com o petróleo",
+      "texto": "O IPCA de março subiu 0,88% (gasolina +4,59%, 12 meses em 4,14%) e o IGP-DI avançou 1,14%; o Focus de 10/04 elevou o IPCA de 2026 a 5,30% e a Selic projetada a 14%.",
+      "score": 8.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Varejo recorde, mas indústria pessimista",
+      "texto": "As vendas do varejo subiram 0,6% em fevereiro (recorde da série), enquanto a confiança da indústria (ICEI) caiu a 45,2, a menor desde 2020.",
+      "score": 6.5,
+      "setores": [
+        "comercio",
+        "industria"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Petróleo e pré-sal no centro da agenda de energia",
+      "texto": "O edital da ANP adicionou 15 blocos exploratórios (total de 23) no pré-sal, enquanto a alta do petróleo pressiona os combustíveis.",
+      "score": 6.5,
+      "setores": [
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Medida provisória altera a conta do diesel",
+      "texto": "A MP 1.349 institui subsídio temporário de R$ 1,20/L ao diesel até maio, com custo estimado de R$ 4 bilhões.",
+      "score": 6,
+      "setores": [
+        "servicos",
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -148,7 +213,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A confiança industrial (ICEI) caiu a 45,2, menor desde 2020, com 28 de 29 setores pessimistas; o petróleo eleva o poder dos fornecedores."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 6,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 6,
+      "nota": "O varejo em recorde (+0,6%) sustenta a demanda, mas a alta de combustíveis (+1,7%) pressiona o custo de reposição."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "A MP do diesel (R$ 1,20/L) e o edital da ANP movimentam energia e logística, com custos ainda pressionados."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra de 348,4 Mt é robusta, mas o diesel caro pressiona o frete, mesmo com o subsídio de R$ 1,20/L."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC acelerou a 0,54% e o m² está em R$ 1.932 (SINAPI), com o choque de preços pressionando materiais."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o varejo recorde (+0,6%) favorece o online, mas o frete encarecido pesa na entrega."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -255,5 +369,103 @@
         "val": 0.001
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🛢️",
+          "txt": "Reprecificar diante do choque de petróleo: o IPCA de março subiu 0,88% e o Focus já projeta 5,30% para 2026."
+        },
+        {
+          "ico": "⛽",
+          "txt": "Aproveitar o subsídio de R$ 1,20/L ao diesel (MP 1.349) para segurar custo logístico até maio."
+        },
+        {
+          "ico": "🏭",
+          "txt": "Atenção à confiança industrial em 45,2 (menor desde 2020): revisar planos de produção e estoque."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Por que a indústria despencou de confiança?",
+        "quote": "A confiança industrial (ICEI) caiu a 45,2, a menor desde 2020.",
+        "edi": [
+          "A confiança da indústria (ICEI) recuou 1,4 ponto, a 45,2, menor desde 2020, com 28 de 29 setores pessimistas. O choque de custos (IPCA 0,88%, gasolina +4,59%) e o juro a 14,75% explicam o desânimo."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Revisar produção e travar insumos diante da confiança em 45,2 e do custo em alta."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O varejo recorde resiste ao combustível caro?",
+        "quote": "As vendas do varejo subiram 0,6% em fevereiro, recorde da série.",
+        "edi": [
+          "O varejo bateu recorde (+0,6% em fevereiro), mas combustíveis subiram 1,7% e a inflação acelera (IPCA 0,88%), ameaçando o poder de compra à frente."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Proteger volume com foco em essenciais enquanto a inflação (0,88%) acelera."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "A energia domina a agenda de serviços?",
+        "quote": "A ANP publicou edital com 15 novos blocos exploratórios no pré-sal.",
+        "edi": [
+          "Energia e logística concentram os holofotes: a MP 1.349 subsidia o diesel (R$ 1,20/L) e a ANP abriu 15 blocos. O petróleo, porém, mantém pressão sobre fretes."
+        ],
+        "acoes": [
+          {
+            "ico": "🚚",
+            "txt": "Usar o subsídio de R$ 1,20/L ao diesel para repactuar contratos logísticos até maio."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "O subsídio ao diesel salva a margem do agro?",
+        "quote": "A safra está em 348,4 Mt, com subsídio de R$ 1,20/L ao diesel.",
+        "edi": [
+          "A safra segue recorde (348,4 Mt) e o subsídio de R$ 1,20/L ao diesel alivia parte do frete. O petróleo alto, contudo, mantém risco de custo."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Aproveitar o subsídio ao diesel e travar frete para o escoamento da safra."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O choque de preços atinge a obra?",
+        "quote": "O INCC acelerou a 0,54% e o m² está em R$ 1.932 (SINAPI).",
+        "edi": [
+          "O custo da obra subiu, com INCC a 0,54% e m² a R$ 1.932 (SINAPI), refletindo o choque de preços nos materiais."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Travar materiais diante da aceleração do INCC (0,54%)."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital segura margem com frete caro?",
+        "quote": "Sem dado direto; o varejo recorde avançou 0,6%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce surfa o varejo recorde (+0,6%), mas o combustível caro (+1,7%) pressiona a logística de entrega."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimizar frete e rotas diante do combustível em alta (+1,7%)."
+          }
+        ]
+      }
+    }
   }
 }

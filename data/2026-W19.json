@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Maio 2026 (semana 19), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,90. Destaques verificados da semana: Ata do Copom detalha corte cauteloso da Selic a 14,50%; Produção industrial varia 0,1% em março e acumula 3,1% no ano; Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima nona semana consolida a leitura de um Banco Central que corta juros com o pé no freio. A ata da 278ª reunião detalhou o corte da Selic a 14,50%, enfatizando a cautela do comitê diante da inflação pressionada por combustíveis e do risco geopolítico — um afrouxamento condicional, não automático. As projeções reforçam o ambiente ainda tenso: o Boletim Focus de 08/05 trouxe o IPCA de 2026 em 4,91%, a Selic de fim de ano em 13,00%, o câmbio a R$ 5,20 e o IGP-M projetado em 5,60%, sinal de que a pressão de custos no atacado persiste. Na atividade, a indústria deu um sinal de estabilidade: a produção variou 0,1% em março, acumulando alta de 3,1% no ano e 4,3% na comparação anual. O consumo segue firme, com o varejo em 0,8% e o desemprego baixo, em 5,4%. Na construção, o custo disparou, com o INCC a 1,00% e o metro quadrado a R$ 1.946 (SINAPI). O ponto de atenção para as próximas semanas é a consistência da desinflação: com a Selic em 14,50% e um IGP-M projetado a 5,60%, a continuidade do ciclo de cortes dependerá de o choque de custos no atacado não se transmitir de forma persistente aos preços ao consumidor, o que definirá o espaço de crédito e investimento no segundo semestre.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -49,7 +49,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Banco Central detalha corte cauteloso",
+      "texto": "A ata do Copom detalhou o corte da Selic a 14,50%, com o comitê enfatizando cautela diante da inflação pressionada por combustíveis e do risco geopolítico.",
+      "score": 7,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação projetada segue elevada",
+      "texto": "O Boletim Focus de 08/05 trouxe IPCA de 2026 em 4,91%, Selic (fim de 2026) em 13,00%, câmbio a R$ 5,20 e IGP-M projetado em 5,60%.",
+      "score": 8,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo estável com desemprego baixo",
+      "texto": "O varejo mantém alta de 0,8% e o desemprego está em 5,4%, base para o consumo.",
+      "score": 5.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde sustenta a oferta",
+      "texto": "A estimativa de safra de grãos está em 348,7 milhões de toneladas.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -95,7 +157,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A produção industrial variou 0,1% em março (acum. 3,1% no ano); o corte da Selic a 14,50% começa a aliviar o custo de capital."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em 0,8% com desemprego a 5,4% sustenta a demanda; a Selic a 14,50% melhora as condições de crédito."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços estáveis (PMS 0,0%); o afrouxamento monetário (14,50%) tende a estimular a demanda."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra de 348,7 Mt reforça a oferta; o IGP-M projetado a 5,60% sinaliza pressão de custos de insumos."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC saltou a 1,00% (abril) e o m² está em R$ 1.946 (SINAPI), forte pressão dos fornecedores de materiais."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o corte da Selic a 14,50% favorece o crédito ao consumo online."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -202,5 +313,99 @@
         "val": 0.001
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "Aproveitar a Selic a 14,50% para reduzir o custo da dívida, atento à inflação projetada em 4,91% (Focus)."
+        },
+        {
+          "ico": "🏗️",
+          "txt": "Repactuar materiais diante do INCC a 1,00% e do m² a R$ 1.946 (SINAPI)."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A indústria retoma com o juro em queda?",
+        "quote": "A produção industrial variou 0,1% em março, com 3,1% no acumulado do ano.",
+        "edi": [
+          "A indústria mostra estabilidade (PIM +0,1% em março, +3,1% no ano, +4,3% na comparação anual). O corte da Selic a 14,50% começa a baratear o capital, favorecendo o investimento gradual."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Reavaliar CAPEX com a Selic recuando a 14,50% e a produção estável."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O crédito mais barato reacende o varejo?",
+        "quote": "O varejo mantém alta de 0,8%.",
+        "edi": [
+          "O varejo em 0,8% e o desemprego baixo (5,4%) dão base ao consumo. A Selic a 14,50% melhora o financiamento, embora a inflação (Focus 4,91%) peça cautela."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Preparar campanhas de crédito com a Selic em queda a 14,50%."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços aceleram com o afrouxamento?",
+        "quote": "O volume de serviços está estável (PMS 0,0%).",
+        "edi": [
+          "Os serviços seguem estáveis (PMS 0,0%). O corte da Selic a 14,50% abre espaço para demanda, com a digitalização protegendo margens."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Escalar oferta digital aproveitando o crédito mais barato (14,50%)."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra convive com custos em alta?",
+        "quote": "A safra está estimada em 348,7 milhões de toneladas.",
+        "edi": [
+          "O agro mantém safra robusta (348,7 Mt), mas o IGP-M projetado a 5,60% sinaliza insumos mais caros. O câmbio a R$ 5,20 sustenta a receita."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Fixar insumos diante da projeção de IGP-M a 5,60%."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra dispara?",
+        "quote": "O INCC subiu a 1,00% e o m² está em R$ 1.946 (SINAPI).",
+        "edi": [
+          "O custo da obra saltou, com INCC a 1,00% e m² a R$ 1.946 (SINAPI). O corte da Selic a 14,50% ajuda o financiamento, mas o material pressiona."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Travar materiais diante do INCC em 1,00%."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital ganha com crédito mais barato?",
+        "quote": "Sem dado direto; a Selic recuou a 14,50%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce tende a se beneficiar do crédito mais barato (Selic 14,50%) e do consumo estável (varejo 0,8%)."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Ampliar parcelamento à medida que a Selic recua a 14,50%."
+          }
+        ]
+      }
+    }
   }
 }

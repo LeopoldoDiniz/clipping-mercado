@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 16), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,97. Destaques verificados da semana: Conab: 7o levantamento estima safra 2025/26 em 356,3 milhões de t; Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%; Conab: produção de cana-de-açúcar 2025/26 em 673,2 milhões de t. 3 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima sexta semana é de recalibração de expectativas e força do agronegócio. O Boletim Focus de 17/04 ajustou o cenário: IPCA de 2026 em 4,80%, Selic de fim de ano em 13,00%, PIB de 1,86% e câmbio a R$ 5,30 — um retrato em que o mercado ainda vê espaço para o juro recuar da atual Selic de 14,75% a.a., mesmo com a inflação pressionada. O grande destaque é o campo: o 7º levantamento da Conab estimou a safra de grãos em 356,3 milhões de toneladas, com produtividade recorde da soja, e a produção de cana-de-açúcar em 673,2 milhões de toneladas — números que reforçam a oferta e a capacidade exportadora do país, com o câmbio favorável. A atividade doméstica segue firme, com o varejo acumulando alta de 0,8% e o desemprego baixo, em 5,4%, enquanto a construção mantém custos pressionados, com INCC de 0,54% e o metro quadrado a R$ 1.932 (SINAPI). O ponto de atenção é a distância entre a Selic atual (14,75%) e a projetada para o fim do ano (13,00%): se o choque de preços arrefecer, o ciclo de cortes ganha tração; se persistir, a convergência será mais lenta, o que mantém o custo de capital como variável central para as decisões de investimento.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -49,7 +49,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Recalibração das projeções macro",
+      "texto": "O Boletim Focus de 17/04 trouxe IPCA de 2026 em 4,80%, Selic (fim de 2026) em 13,00%, PIB de 1,86% e câmbio a R$ 5,30.",
+      "score": 6.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Mercado ajusta a trajetória de juros e câmbio",
+      "texto": "Com a inflação projetada em 4,80% e a Selic de fim de 2026 em 13,00% (Focus), o mercado precifica o ritmo do afrouxamento; a Selic atual está em 14,75% a.a.",
+      "score": 7,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo firme com desemprego baixo",
+      "texto": "O varejo acumula alta de 0,8% e o desemprego está em 5,4%, base para o consumo.",
+      "score": 5.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde e cana em alta",
+      "texto": "O 7º levantamento da Conab estimou a safra de grãos em 356,3 milhões de toneladas e a cana-de-açúcar em 673,2 milhões de toneladas.",
+      "score": 6.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -95,7 +157,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "Com a produção em 1,1% (PIM) e a Selic em 14,75%, a rivalidade é moderada; a projeção de Selic a 13,00% no fim do ano melhora o horizonte."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em 0,8% com desemprego a 5,4% sustenta a demanda, com poder de barganha do consumidor elevado."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços estáveis (PMS 0,0%), com rivalidade moderada e digitalização crescente."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra recorde de 356,3 Mt e a cana em 673,2 Mt ampliam a oferta e o poder de barganha dos compradores."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC em 0,54% e o m² a R$ 1.932 (SINAPI) mantêm pressão de custo; a Selic projetada a 13,00% anima o crédito futuro."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o varejo em 0,8% e a perspectiva de juro menor (13,00% no Focus) favorecem o consumo online."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -202,5 +313,99 @@
         "val": 0.001
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📉",
+          "txt": "Planejar com a projeção de Selic a 13,00% no fim de 2026 (Focus): antecipar decisões que dependem de crédito mais barato."
+        },
+        {
+          "ico": "🌾",
+          "txt": "Explorar a safra recorde (356,3 Mt) e a cana em 673,2 Mt para negociar volume e logística."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A perspectiva de juro menor destrava a indústria?",
+        "quote": "A produção industrial acumula alta de 1,1% (PIM).",
+        "edi": [
+          "A indústria segue em recuperação lenta (PIM 1,1%). Com a Selic atual em 14,75% e projeção de 13,00% para o fim do ano (Focus), o horizonte de investimento melhora gradualmente."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Estruturar projetos para capturar a queda projetada da Selic a 13,00%."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O consumo mantém o fôlego?",
+        "quote": "O varejo acumula alta de 0,8%.",
+        "edi": [
+          "O varejo em 0,8% e o desemprego baixo (5,4%) sustentam o consumo. A projeção de inflação em 4,80% (Focus) ainda pede cautela no repasse."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Calibrar preço com a inflação projetada em 4,80% para não perder volume."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços seguem estáveis?",
+        "quote": "O volume de serviços está estável (PMS 0,0%).",
+        "edi": [
+          "Os serviços seguem estáveis (PMS 0,0%). A digitalização é a alavanca de margem enquanto o juro recua devagar."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Investir em eficiência digital para capturar a demanda firme."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra recorde vira receita?",
+        "quote": "O 7º levantamento da Conab estimou a safra em 356,3 milhões de toneladas.",
+        "edi": [
+          "O agro tem safra recorde (356,3 Mt) e cana em 673,2 Mt. O câmbio a R$ 5,30 (Focus) sustenta a receita em real."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Antecipar comercialização e logística diante da safra de 356,3 Mt."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra cede com o juro projetado menor?",
+        "quote": "O INCC está em 0,54% e o m² a R$ 1.932 (SINAPI).",
+        "edi": [
+          "O custo da obra segue pressionado (INCC 0,54%, m² R$ 1.932). A projeção de Selic a 13,00% melhora a perspectiva de financiamento à frente."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Planejar financiamento mirando a Selic projetada a 13,00%."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital acompanha o varejo firme?",
+        "quote": "Sem dado direto; o varejo total avançou 0,8%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se apoia no varejo em 0,8% e na perspectiva de crédito mais barato (Selic 13,00% no Focus)."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Ampliar parcelamento à medida que o juro projetado cede a 13,00%."
+          }
+        ]
+      }
+    }
   }
 }

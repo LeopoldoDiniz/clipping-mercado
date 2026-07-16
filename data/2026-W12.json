@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Março 2026 (semana 12), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,28. Destaques verificados da semana: Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%; Copom corta a Selic para 14,75%, primeira redução em 19 meses. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima segunda semana marca uma virada relevante na política monetária: o Copom cortou a Selic para 14,75% em 18/03, a primeira redução em 19 meses. O movimento, de 0,25 ponto, acontece apesar de a inflação seguir pressionada pelo petróleo — o Boletim Focus de 16/03 elevou a projeção de IPCA de 2026 para 4,10%, refletindo o conflito no Oriente Médio. É um corte cauteloso, que sinaliza início de ciclo sem abrir mão da vigilância. Do lado da atividade, os sinais são mais construtivos: a produção industrial acumula alta de 2,2% (PIM), o varejo mantém avanço de 0,5% e o desemprego segue baixo, em 5,4%, um pano de fundo que dá conforto ao Banco Central para iniciar a queda dos juros. No campo, a safra recorde de 344,1 milhões de toneladas sustenta a oferta, ainda que o petróleo pressione fretes e insumos. Na construção, os custos permanecem comportados, com o metro quadrado a R$ 1.925 (SINAPI) e INCC de 0,28%. O ponto de atenção para as próximas semanas é o equilíbrio delicado entre o alívio monetário e o choque de custos externo: a trajetória da Selic dependerá de o petróleo arrefecer ou não, e cada surpresa inflacionária pode encurtar o espaço para novos cortes.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -36,7 +36,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Banco Central inicia o afrouxamento monetário",
+      "texto": "O Copom cortou a Selic para 14,75% em 18/03, a primeira redução em 19 meses, sinalizando início de ciclo apesar da inflação pressionada por petróleo.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Choque de commodities eleva a projeção de inflação",
+      "texto": "O Boletim Focus de 16/03 elevou o IPCA de 2026 para 4,10%, em meio ao conflito no Oriente Médio, enquanto a Selic recuou a 14,75% a.a.",
+      "score": 8,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo estável com desemprego baixo",
+      "texto": "O varejo mantém alta de 0,5% e o desemprego está em 5,4%, base para o consumo enquanto o crédito começa a ceder.",
+      "score": 6,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde sustenta a oferta",
+      "texto": "A estimativa de safra de grãos está em 344,1 milhões de toneladas.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -82,7 +144,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A produção em alta de 2,2% (PIM) e o início do corte de juros (Selic 14,75%) começam a aliviar o custo de capital."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em 0,5% com desemprego a 5,4% sustenta a demanda; o corte da Selic a 14,75% tende a estimular o crédito."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços estáveis (PMS 0,0%), com rivalidade moderada e concorrência digital."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Safra de 344,1 Mt reforça a escala; a alta do petróleo pressiona custos de insumos."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Custo do m² a R$ 1.925 (SINAPI) com INCC de 0,28%; o corte da Selic melhora a perspectiva de financiamento."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o início do ciclo de cortes (14,75%) favorece o crédito ao consumo online."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -189,5 +300,99 @@
         "val": 0.005
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "Aproveitar o início do ciclo de cortes (Selic a 14,75%) para renegociar dívidas e planejar crédito mais barato."
+        },
+        {
+          "ico": "🛢️",
+          "txt": "Monitorar o choque de petróleo que elevou o IPCA projetado a 4,10% (Focus) e pressiona custos importados."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "O corte de juros destrava o investimento industrial?",
+        "quote": "A produção industrial acumula alta de 2,2% (PIM).",
+        "edi": [
+          "A indústria mostra reação (PIM 2,2%) e o primeiro corte da Selic para 14,75% começa a baratear o capital. O risco é o choque de petróleo, que elevou o IPCA projetado a 4,10%."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Reavaliar projetos de CAPEX com a Selic iniciando queda em 14,75%."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O crédito mais barato reacende o varejo?",
+        "quote": "O varejo mantém alta de 0,5%, com desemprego a 5,4%.",
+        "edi": [
+          "O varejo em 0,5% e o desemprego baixo (5,4%) dão base ao consumo. O corte da Selic a 14,75% tende a melhorar as condições de financiamento ao longo do ano."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Preparar campanhas de crédito à medida que a Selic recua de 14,75%."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços seguram o ritmo?",
+        "quote": "O volume de serviços ficou estável (PMS 0,0%).",
+        "edi": [
+          "Os serviços estão estáveis (PMS 0,0%). A queda gradual do juro (14,75%) e a digitalização sustentam a competitividade."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Investir em eficiência digital aproveitando o custo de capital em queda."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra recorde convive com o petróleo em alta?",
+        "quote": "A safra está estimada em 344,1 milhões de toneladas.",
+        "edi": [
+          "O agro tem safra robusta (344,1 Mt), mas o choque de petróleo pressiona fretes e insumos. O câmbio a R$ 5,28 ajuda a receita."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Fixar preço de insumos diante da pressão do petróleo sobre custos."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O corte de juros anima a construção?",
+        "quote": "O custo do m² está em R$ 1.925 (SINAPI), com INCC de 0,28%.",
+        "edi": [
+          "O custo da obra está comportado (SINAPI R$ 1.925, INCC 0,28%). O início do ciclo de cortes (14,75%) melhora a perspectiva de crédito imobiliário."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Estruturar financiamento à obra aproveitando a virada na Selic (14,75%)."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital ganha com crédito mais barato?",
+        "quote": "Sem dado direto; o varejo total avançou 0,5%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce tende a se beneficiar do início do afrouxamento (Selic 14,75%) e do consumo estável."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Ampliar parcelamento à medida que o crédito barateia."
+          }
+        ]
+      }
+    }
   }
 }

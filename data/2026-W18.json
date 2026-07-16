@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 18), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,88%; câmbio a R$ 4,99. Destaques verificados da semana: INCC-M sobe 1,04% em abril, acelerando por materiais; IPCA-15 de abril fica em 0,89%, pressionado por alimentos; Copom corta a Selic para 14,50%, segunda redução seguida. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima oitava semana concentra decisões e dados de peso. Na 278ª reunião, encerrada em 29/04, o Copom cortou a Selic para 14,50%, a segunda redução seguida após os 14,75% de março — um afrouxamento que persiste mesmo com a inflação pressionada. E a pressão é evidente: o IGP-M disparou 2,73% em abril, ante 0,52% em março, puxado por uma alta de 5,78% nas matérias-primas brutas do IPA, enquanto o IPCA-15 de abril ficou em 0,89%. O Boletim Focus de 30/04 manteve o IPCA de 2026 em patamar elevado, projetando 4,89%. No mercado de trabalho, o dado ligou um sinal de alerta: a taxa de desocupação subiu a 6,1% no trimestre encerrado em março, atingindo 6,6 milhões de pessoas — ainda que a confiança do consumidor tenha avançado ao maior nível desde dezembro, a 89,1. Na construção, o custo saltou, com o INCC-M acelerando a 1,04% em abril (ante 0,36%) e acumulando 6,28% em 12 meses. O ponto de atenção é a aposta do Banco Central: ao cortar juros em meio a um choque de custos de atacado (IGP-M 2,73%), o Copom sinaliza confiança de que o repasse ao consumidor será limitado — uma leitura que as próximas divulgações de inflação e emprego colocarão à prova, com impacto direto sobre crédito, margens e decisões de investimento.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -101,7 +101,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Copom aprofunda o ciclo com novo corte",
+      "texto": "Na 278ª reunião (28-29/04), o Copom cortou a Selic para 14,50%, a segunda redução seguida após 14,75%, apesar da inflação pressionada.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Atacado dispara e inflação segue alta",
+      "texto": "O IGP-M avançou 2,73% em abril (ante 0,52%), com matérias-primas em +5,78%, e o IPCA-15 de abril ficou em 0,89%; o Focus de 30/04 projeta IPCA de 2026 em 4,89%.",
+      "score": 8.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Desemprego sobe, mas confiança melhora",
+      "texto": "A taxa de desocupação subiu a 6,1% no trimestre até março (6,6 milhões de pessoas), enquanto a confiança do consumidor avançou a 89,1.",
+      "score": 6.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde sustenta a oferta",
+      "texto": "A estimativa de safra de grãos está em 348,4 milhões de toneladas.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -147,7 +209,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O IGP-M em 2,73% e as matérias-primas em +5,78% elevam o poder dos fornecedores; o corte da Selic a 14,50% alivia parte do custo de capital."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "A confiança do consumidor em 89,1 favorece a demanda, mas o desemprego subindo a 6,1% acende alerta sobre a renda."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços estáveis (PMS 0,0%); o corte da Selic a 14,50% tende a estimular a demanda."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra de 348,4 Mt reforça a oferta; a alta do atacado (IGP-M 2,73%) pressiona insumos."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC-M disparou a 1,04% em abril (ante 0,36%), elevando fortemente o poder dos fornecedores de materiais."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; a confiança em 89,1 favorece o online, mas o desemprego a 6,1% pede atenção à renda."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -254,5 +365,103 @@
         "val": 0.001
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "Aproveitar o segundo corte da Selic (a 14,50%) para reduzir o custo da dívida, sem ignorar a inflação ainda alta."
+        },
+        {
+          "ico": "📈",
+          "txt": "Repactuar contratos indexados diante do IGP-M em 2,73% e das matérias-primas em +5,78%."
+        },
+        {
+          "ico": "👥",
+          "txt": "Atenção ao desemprego subindo a 6,1% (6,6 milhões): calibrar expectativa de demanda para o consumo."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "O corte de juros compensa o atacado em disparada?",
+        "quote": "O IGP-M avançou 2,73% em abril, com matérias-primas em +5,78%.",
+        "edi": [
+          "A indústria enfrenta atacado em disparada (IGP-M 2,73%, matérias-primas +5,78%), mas ganha algum alívio com o corte da Selic a 14,50%. O repasse de custos é o desafio central."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Travar insumos e revisar preços diante do IGP-M em 2,73%."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "A confiança segura o consumo com desemprego em alta?",
+        "quote": "A confiança do consumidor subiu a 89,1 pontos em abril.",
+        "edi": [
+          "A confiança do consumidor avançou a 89,1, mas o desemprego subiu a 6,1% (6,6 milhões). O corte da Selic a 14,50% ajuda o crédito, embora a renda peça atenção."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Converter a confiança de 89,1 em venda, com crédito facilitado pela Selic a 14,50%."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços aceleram com o juro em queda?",
+        "quote": "O volume de serviços está estável (PMS 0,0%).",
+        "edi": [
+          "Os serviços seguem estáveis (PMS 0,0%), mas o corte da Selic a 14,50% e a confiança em 89,1 abrem espaço para demanda."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Escalar oferta digital aproveitando o crédito mais barato (14,50%)."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "O atacado em alta pressiona insumos do agro?",
+        "quote": "A safra está em 348,4 Mt, com IGP-M em 2,73%.",
+        "edi": [
+          "A safra segue recorde (348,4 Mt), mas o IGP-M em 2,73% encarece insumos. A gestão de custos é decisiva."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Fixar insumos diante da alta do atacado (IGP-M 2,73%)."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra dispara?",
+        "quote": "O INCC-M subiu 1,04% em abril, ante 0,36% em março.",
+        "edi": [
+          "O INCC-M disparou a 1,04% em abril (ante 0,36%), com acumulado de 6,28% em 12 meses, forte pressão de materiais sobre a obra."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Renegociar e travar materiais diante do salto do INCC-M (1,04%)."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital sente a renda mais fraca?",
+        "quote": "Sem dado direto; o desemprego subiu a 6,1%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se apoia na confiança (89,1), mas o desemprego a 6,1% pede atenção ao poder de compra."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Ajustar mix e parcelamento à renda, com desemprego subindo a 6,1%."
+          }
+        ]
+      }
+    }
   }
 }

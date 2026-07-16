@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real verificada, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Maio 2026 (semana 21), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,50% a.a.; IPCA do mês em 0,67%; câmbio a R$ 5,01. Destaques verificados da semana: Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana; IGP-10 desacelera para 0,89% em maio ante 2,94% em abril; IPCA de abril fica em 0,67%, com transporte desacelerando. 7 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A vigésima primeira semana traz sinais de alívio no atacado e um alerta na construção. O IGP-10 subiu apenas 0,89% em maio, uma forte desaceleração ante os 2,94% de abril, com recuo do IPA — um indício de que o choque de custos que pressionou os preços nos meses anteriores começa a arrefecer, em linha com o IPCA de abril, que ficou em 0,67%. O Boletim Focus de 22/05, no entanto, mostrou a projeção de inflação de 2026 subindo pela oitava semana consecutiva, revelando que o mercado ainda precifica risco. No agro, os fundamentos seguem robustos: o 8º levantamento da Conab projetou safra recorde de 357,97 milhões de toneladas, com a soja em 180,1 milhões, e a ANEC estimou embarque de até 14,5 milhões de toneladas de soja em maio. O ponto negativo veio da construção: sondagem da CBIC apontou o índice de produção em 46,7 pontos em abril, queda de 7 pontos e o pior resultado para o mês em três anos, refletindo o peso do custo (INCC a 1,00%) e do crédito. No setor de serviços, a ANATEL publicou a Portaria 3.164, ampliando áreas locais de telefonia em oito estados. O ponto de atenção é a divergência entre a inflação corrente, que cede (IGP-10 a 0,89%, IPCA a 0,67%), e as projeções, que ainda sobem: a confirmação da desinflação nos próximos meses é o que abrirá espaço para a continuidade do ciclo de cortes a partir da Selic de 14,50%.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -102,7 +102,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "ANATEL redesenha as áreas locais de telefonia",
+      "texto": "A ANATEL publicou a Portaria 3.164, ampliando áreas locais de telefonia fixa em oito estados; chamadas entre cidades de mesmo DDD passam a ser locais.",
+      "score": 6,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Atacado desacelera e alivia a inflação",
+      "texto": "O IGP-10 subiu 0,89% em maio, forte desaceleração ante os 2,94% de abril, com recuo do IPA; o IPCA de abril ficou em 0,67%.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Construção com pior produção para um abril em três anos",
+      "texto": "Sondagem da CBIC apontou o índice de produção da construção em 46,7 pontos em abril, queda de 7 pontos e pior resultado para o mês em três anos.",
+      "score": 6,
+      "setores": [
+        "construcao",
+        "industria"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Regras de telefonia afetam o setor de comunicação",
+      "texto": "A Portaria 3.164 da ANATEL muda a lógica de tarifação de chamadas em oito estados, com impacto sobre operadoras e usuários.",
+      "score": 5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde e forte embarque de soja",
+      "texto": "O 8º levantamento da Conab projetou safra recorde de 357,97 milhões de toneladas (soja em 180,1 milhões) e a ANEC estimou embarque de até 14,5 milhões de toneladas de soja em maio.",
+      "score": 6.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Nova portaria regulatória em telecomunicações",
+      "texto": "A ANATEL publicou a Portaria 3.164, alterando a definição de áreas locais de telefonia fixa.",
+      "score": 5.5,
+      "setores": [
+        "servicos"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -148,7 +210,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A produção em 0,3% (PIM) e o IPP em 2,28% mantêm pressão de custos; a desaceleração do IGP-10 (0,89%) sinaliza algum alívio."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em 0,7% com desemprego a 5,4% sustenta a demanda, favorecido pela desinflação (IPCA 0,67%)."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "A Portaria 3.164 da ANATEL redefine tarifação em oito estados, com o volume de serviços ainda em acomodação (PMS -1,1%)."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra recorde de 357,97 Mt (soja 180,1 mi) e o embarque de 14,5 mi t ampliam a oferta e o poder de barganha dos compradores."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "A produção da construção caiu a 46,7 pontos (CBIC), pior abril em três anos, com o INCC em 1,00% e o m² a R$ 1.946 (SINAPI)."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; a desinflação (IPCA 0,67%) e o varejo em 0,7% favorecem o consumo online."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -255,5 +366,103 @@
         "val": 0.004
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📉",
+          "txt": "Aproveitar a desaceleração do atacado (IGP-10 a 0,89% ante 2,94%) para revisar contratos indexados."
+        },
+        {
+          "ico": "🏗️",
+          "txt": "Atenção à construção em 46,7 pontos (CBIC), pior abril em três anos: revisar cronogramas e capital de giro."
+        },
+        {
+          "ico": "🌾",
+          "txt": "Planejar logística para o embarque recorde de soja (14,5 mi t em maio, ANEC)."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "O alívio no atacado chega à indústria?",
+        "quote": "O IGP-10 subiu 0,89% em maio, ante 2,94% em abril.",
+        "edi": [
+          "A forte desaceleração do IGP-10 (0,89% ante 2,94%) sinaliza alívio de custos no atacado, embora o IPP siga em 2,28%. A produção industrial está estável (0,3%)."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Renegociar insumos aproveitando o recuo do atacado (IGP-10 a 0,89%)."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O consumo se firma com a inflação menor?",
+        "quote": "O varejo mantém alta de 0,7%, com IPCA de abril a 0,67%.",
+        "edi": [
+          "O varejo em 0,7% e a desinflação (IPCA 0,67%) reforçam o poder de compra. O desemprego baixo (5,4%) sustenta a demanda."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Explorar o poder de compra recuperado com a inflação em 0,67%."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Como a nova regra da ANATEL afeta o setor?",
+        "quote": "A ANATEL publicou a Portaria 3.164, ampliando áreas locais em oito estados.",
+        "edi": [
+          "A Portaria 3.164 da ANATEL redefine áreas locais de telefonia em oito estados, mudando a tarifação de chamadas. O volume de serviços ainda se acomoda (PMS -1,1%)."
+        ],
+        "acoes": [
+          {
+            "ico": "📡",
+            "txt": "Revisar planos e tarifas diante da Portaria 3.164 da ANATEL."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra recorde impulsiona os embarques?",
+        "quote": "A Conab projetou safra recorde de 357,97 milhões de toneladas.",
+        "edi": [
+          "O agro tem o melhor fundamento da semana: safra recorde de 357,97 Mt (soja em 180,1 mi) e embarque projetado de 14,5 mi t de soja em maio (ANEC)."
+        ],
+        "acoes": [
+          {
+            "ico": "🚢",
+            "txt": "Garantir logística portuária para o embarque de 14,5 mi t de soja."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Por que a produção da construção caiu?",
+        "quote": "A produção da construção ficou em 46,7 pontos (CBIC), pior abril em três anos.",
+        "edi": [
+          "A sondagem da CBIC apontou produção em 46,7 pontos em abril, queda de 7 pontos e pior resultado para o mês em três anos, com o INCC ainda em 1,00% e o m² a R$ 1.946 (SINAPI)."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Ajustar cronograma e giro diante da produção em 46,7 pontos (CBIC)."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital ganha com a inflação menor?",
+        "quote": "Sem dado direto; o IPCA de abril ficou em 0,67%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se beneficia da desinflação (IPCA 0,67%) e do varejo em 0,7%. Conversão e frete são decisivos."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Capturar o poder de compra recuperado com jornada de compra sem atrito."
+          }
+        ]
+      }
+    }
   }
 }

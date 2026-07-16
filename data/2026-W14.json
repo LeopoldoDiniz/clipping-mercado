@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Abril 2026 (semana 14), derivada dos indicadores oficiais e do clipping verificado. Selic em 14,75% a.a.; IPCA do mês em 0,70%; câmbio a R$ 5,17. Destaques verificados da semana: Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em março; IPC-S sobe 0,67% na 4a quadrissemana de março. 2 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A décima quarta semana é dominada pela escalada da incerteza. O Indicador de Incerteza da Economia (FGV) subiu 9,2 pontos, atingindo 115,0, impulsionado pelas tensões no Oriente Médio e pela alta do preço do petróleo — um ambiente que refreia decisões de investimento e consumo de maior valor. A pressão de custos já aparece nos preços: o IPC-S subiu 0,67% na quarta quadrissemana de março, com o grupo transportes acelerando a 1,51% e o acumulado em 12 meses chegando a 3,47%. É o petróleo se transmitindo à economia real via combustíveis e fretes. Ainda assim, a atividade resiste: o varejo mantém alta de 0,5%, o desemprego segue baixo, em 5,4%, e a safra recorde de 344,1 milhões de toneladas sustenta a oferta agrícola. A construção preserva custos comportados, com o metro quadrado a R$ 1.925 (SINAPI). O ponto de atenção para as próximas semanas é claro: com a Selic em 14,75% e o Banco Central em modo cauteloso, o choque de petróleo tem potencial de contaminar a inflação e a incerteza simultaneamente, estreitando o espaço para a continuidade do ciclo de cortes e exigindo gestão ativa de custos logísticos por parte das empresas.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -36,7 +36,70 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Risco geopolítico eleva a incerteza econômica",
+      "texto": "O Indicador de Incerteza da Economia (FGV) subiu 9,2 pontos, a 115,0, impulsionado por tensões no Oriente Médio e pelo preço do petróleo.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação semanal acelera por transportes",
+      "texto": "O IPC-S subiu 0,67% na quarta quadrissemana de março, com transportes acelerando a 1,51% e acumulado de 3,47% em 12 meses; a Selic está em 14,75% a.a.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo estável em meio à incerteza",
+      "texto": "O varejo mantém alta de 0,5% e o desemprego está em 5,4%, apesar do ambiente mais incerto.",
+      "score": 6,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Petróleo pressiona custos de transporte",
+      "texto": "A alta do petróleo, refletida no IPC-S de transportes (1,51%), eleva o custo logístico da economia.",
+      "score": 6,
+      "setores": [
+        "transversal",
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -82,7 +145,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A incerteza em 115,0 e a alta do petróleo elevam o custo de insumos e retraem decisões de investimento."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em 0,5% resiste, mas o transporte mais caro (IPC-S 1,51%) pressiona o custo de reposição."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços estáveis (PMS 0,0%); a incerteza elevada (115,0) recomenda cautela na expansão."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra de 344,1 Mt é robusta, mas o petróleo encarece frete e insumos, comprimindo margens."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Custo do m² a R$ 1.925 (SINAPI); a incerteza atrasa novos lançamentos apesar da Selic em 14,75%."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o frete mais caro (transportes +1,51%) pressiona a logística de entrega."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -189,5 +301,99 @@
         "val": 0.005
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🌍",
+          "txt": "Diante da incerteza em 115,0 e da alta do petróleo, revisar exposição a custos importados e a fretes."
+        },
+        {
+          "ico": "🚚",
+          "txt": "Com transportes acelerando a 1,51% (IPC-S), renegociar contratos logísticos e repactuar prazos."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A incerteza trava o investimento industrial?",
+        "quote": "O Indicador de Incerteza subiu 9,2 pontos, a 115,0.",
+        "edi": [
+          "A incerteza saltou a 115,0 (+9,2 pontos), refreando decisões de investimento. Com a Selic em 14,75% e o petróleo pressionando insumos, a indústria adota postura defensiva."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Adiar CAPEX não essencial enquanto a incerteza (115,0) permanece elevada."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O varejo resiste ao custo de transporte?",
+        "quote": "O varejo mantém alta de 0,5%.",
+        "edi": [
+          "O varejo segue em 0,5%, mas o transporte mais caro (IPC-S 1,51%) encarece a reposição. O desemprego baixo (5,4%) ainda sustenta a demanda."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Repassar com cautela a alta logística, preservando volume no consumo essencial."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços mantêm o ritmo na incerteza?",
+        "quote": "O volume de serviços está estável (PMS 0,0%).",
+        "edi": [
+          "Os serviços estão estáveis (PMS 0,0%). A incerteza elevada (115,0) recomenda cautela, com a digitalização protegendo a margem."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Focar eficiência e retenção diante do ambiente incerto."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "O petróleo corrói a margem do agro?",
+        "quote": "A safra está em 344,1 Mt, com transportes em alta de 1,51%.",
+        "edi": [
+          "O agro tem safra robusta (344,1 Mt), mas a alta de transportes (1,51%) e do petróleo eleva o custo de escoamento."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Travar frete e diesel diante da pressão de transportes (1,51%)."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "A incerteza adia lançamentos?",
+        "quote": "O custo do m² está em R$ 1.925 (SINAPI).",
+        "edi": [
+          "O custo segue comportado (SINAPI R$ 1.925), mas a incerteza em 115,0 e o crédito ainda caro (Selic 14,75%) recomendam cautela em novos lançamentos."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Escalonar lançamentos até a incerteza (115,0) arrefecer."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O frete mais caro pesa no digital?",
+        "quote": "Sem dado direto; transportes aceleraram 1,51% (IPC-S).",
+        "edi": [
+          "Sem indicador próprio, o e-commerce sente a alta de transportes (1,51%) no custo de entrega. Eficiência logística é decisiva."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimizar malha de entrega diante do frete pressionado (transportes +1,51%)."
+          }
+        ]
+      }
+    }
   }
 }
