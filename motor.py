@@ -31,10 +31,12 @@ if _raw_url.endswith("/rest/v1"):
 SUPABASE_URL = _raw_url.rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_KEY"].strip()
 MODELO          = "gemini-2.5-flash"        # primário: busca nativa, free tier
-# Fallback com COTA DIÁRIA SEPARADA (limite por modelo, não por chave). Suporta
-# grounding com Google Search e é o substituto vivo do extinto gemini-2.0-flash
-# (desligado pela Google em 01/06/2026). Usar SEMPRE o string estável, não o -preview.
-MODELO_FALLBACK = "gemini-2.5-flash-lite"   # cota diária independente do primário
+# Fallback: o antigo gemini-2.5-flash-lite foi DESCONTINUADO (retorna 404 "no longer
+# available") — assim como o gemini-2.0-flash antes dele. Sem alternativa gratuita
+# estável com grounding, o fallback aponta para o próprio primário: não resolve
+# estouro de cota DIÁRIA (mesma cota), mas evita o crash 404 e mantém o retry por
+# limite de MINUTO (RPM) funcionando. Trocar aqui se surgir novo modelo free com cota própria.
+MODELO_FALLBACK = "gemini-2.5-flash"
 
 # limiar abaixo do qual um sinal "dorme" após ciclos sem aparecer
 LIMIAR_DORMIR = 25.0
