@@ -16,8 +16,6 @@ import json
 
 from supabase import create_client
 
-ORIGEM = "backfill_deterministico"
-
 
 def _url():
     u = os.environ["SUPABASE_URL"].strip().rstrip("/")
@@ -34,12 +32,15 @@ def main():
     print(f"[seed] {len(seed)} sinais a inserir "
           f"({sum(len(s['observacoes']) for s in seed)} observações).")
 
-    # 1) limpa o seed anterior (só as linhas deste próprio backfill determinístico)
-    antigos = sb.table("sinais").select("id").eq("origem", ORIGEM).execute().data
+    # 1) limpa o seed anterior. A tabela 'sinais' não tem coluna 'origem' (o motor vivo
+    #    não a usa), então isolamos pelos TÍTULOS dos temas — que não colidem com os
+    #    sinais-evento criados pelo Gemini (títulos descritivos distintos). Idempotente.
+    titulos = [s["titulo"] for s in seed]
+    antigos = sb.table("sinais").select("id").in_("titulo", titulos).execute().data
     ids = [r["id"] for r in antigos]
     if ids:
         sb.table("observacoes").delete().in_("sinal_id", ids).execute()
-        sb.table("sinais").delete().eq("origem", ORIGEM).execute()
+        sb.table("sinais").delete().in_("id", ids).execute()
         print(f"[seed] removidos {len(ids)} sinais de seed anteriores (idempotência).")
 
     # 2) insere sinais + observações
@@ -58,8 +59,8 @@ def main():
         n_obs += len(rows)
         print(f"[seed] ✓ {s['titulo']}  ({len(rows)} obs)")
 
-    print(f"[seed] Concluído: {n_sig} sinais, {n_obs} observações "
-          f"(origem={ORIGEM}). O motor Gemini continua daqui em W30.")
+    print(f"[seed] Concluído: {n_sig} sinais, {n_obs} observações. "
+          "O motor Gemini continua daqui em W30.")
 
 
 if __name__ == "__main__":

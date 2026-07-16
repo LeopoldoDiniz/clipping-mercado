@@ -78,7 +78,7 @@ for(const key of Object.keys(TAGVOC)){
     materializado, ciclos_sem_aparecer:ciclos,
     relevancia_atual:relAtual, relevancia_pico:relPico, data_pico:segunda(lastN),
     ultimo_periodo:hits[hits.length-1].key, ultimo_ciclo_contado:hits[hits.length-1].key,
-    origem:"backfill_deterministico", _tema:key, observacoes,
+    _tema:key, observacoes,
   });
 }
 fs.writeFileSync("tools/supabase_seed.json", JSON.stringify(seed,null,2));
