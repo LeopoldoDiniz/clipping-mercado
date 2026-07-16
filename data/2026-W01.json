@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro 2026 (semana 1), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,18%; câmbio a R$ 5,44. Destaques verificados da semana: IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05%; Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano; Boletim Focus da virada: mercado projeta 2026. 5 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A primeira semana de 2026 consolida o balanço de um ano de juro alto e inflação sob controle. A Selic encerra 2025 em 15,00% a.a., enquanto o IGP-M recuou 0,01% em dezembro e fechou o ano em deflação de 1,05% — um contraste que ilustra o aperto monetário atuando sobre os preços no atacado. No varejo, o IPCA do mês ficou em 0,18%, e o consumo se manteve resiliente, com as vendas subindo 0,6% e a taxa de desemprego em 6,5%. O grande destaque vem do setor externo: as exportações brasileiras bateram recorde de US$ 348,7 bilhões em 2025, e o agronegócio contribuiu com US$ 169,2 bilhões, liderado pela soja (US$ 43,5 bi). O dólar encerrou o ano a R$ 5,48, com queda de cerca de 11% frente ao real, o que reforça a apreciação cambial mas comprime a receita exportadora em dólar. A indústria, por sua vez, fecha o ano quase estagnada (PIM 0,2%), refletindo o custo de capital elevado. O ponto de atenção para as próximas semanas é a transição da política monetária: com a Selic em 15,00% e a inflação contida, o mercado passa a precificar o momento e o ritmo de um eventual ciclo de cortes ao longo de 2026.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -77,7 +77,72 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Comércio exterior recorde reforça a pauta econômica",
+      "texto": "As exportações brasileiras somaram US$ 348,7 bilhões em 2025 e o agronegócio US$ 169,2 bilhões, recordes que sustentam a agenda de superávits.",
+      "score": 6.5,
+      "setores": [
+        "transversal",
+        "agro",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Ano fecha com juro alto e inflação contida",
+      "texto": "A Selic encerra 2025 em 15,00% a.a.; o IGP-M recuou 0,01% em dezembro e fechou o ano em deflação de 1,05%, e o IPCA do mês ficou em 0,18%.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo resiliente com desemprego em 6,5%",
+      "texto": "O varejo avançou 0,6% e a taxa de desemprego está em 6,5%, sinalizando mercado de trabalho ainda aquecido na virada do ano.",
+      "score": 6,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização segue como vetor de produtividade",
+      "texto": "Sem fato tecnológico específico na semana; a transformação digital permanece como pano de fundo estrutural para serviços e indústria.",
+      "score": 4.5,
+      "setores": [
+        "servicos",
+        "industria"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde ancora a oferta agrícola",
+      "texto": "A estimativa de safra de grãos está em 345,9 milhões de toneladas, e as exportações do agro (US$ 169,2 bilhões) confirmam a força do setor.",
+      "score": 6,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na virada do ano; o quadro institucional permanece previsível.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -123,7 +188,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A produção industrial praticamente estável (0,2%) mantém a rivalidade contida, mas o juro em 15,00% encarece o investimento."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em alta de 0,6% sustenta a demanda, com poder de barganha do consumidor elevado diante do crédito caro."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços avançam 0,3% (PMS), com rivalidade moderada e digitalização ampliando a concorrência."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Exportações recordes de US$ 169,2 bilhões e safra de 345,9 Mt fortalecem a escala; compradores externos ditam preço."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Custo do m² a R$ 1.882 (SINAPI) com INCC de 0,27% mantém pressão moderada de fornecedores de materiais."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto na semana; o varejo em 0,6% sugere ambiente favorável, com alta rivalidade e poder de comparação do comprador."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -230,5 +344,103 @@
         "val": -0.035
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "Planejar 2026 com a Selic em 15,00% a.a.: priorizar capital de giro barato e travar dívida antes de qualquer expansão."
+        },
+        {
+          "ico": "🌎",
+          "txt": "Aproveitar o recorde de exportações (US$ 348,7 bi) e o dólar a R$ 5,48 para prospectar mercados externos."
+        },
+        {
+          "ico": "🛒",
+          "txt": "Com o varejo em alta de 0,6% e desemprego a 6,5%, calibrar estoque para um consumo resiliente, porém sensível a juros."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Como a indústria retoma fôlego com juro a 15% e produção quase estagnada?",
+        "quote": "A produção industrial variou apenas 0,2% no fechamento do ano.",
+        "edi": [
+          "A indústria encerra 2025 praticamente estável (PIM 0,2%), com os preços ao produtor em queda (IPP -0,35%). O juro básico em 15,00% a.a. mantém o custo de capital elevado, exigindo cautela em novos investimentos."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Adiar CAPEX não essencial enquanto a Selic segue em 15,00% e a produção não reage."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O consumo aguenta o juro alto em 2026?",
+        "quote": "As vendas do varejo subiram 0,6% na leitura mais recente.",
+        "edi": [
+          "O varejo avançou 0,6% e o desemprego está em 6,5%, um consumo ainda firme. Mas o crédito caro (Selic 15,00%) recomenda foco em giro e em categorias essenciais."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Priorizar itens de ticket menor e promoções à vista, dado o crédito caro."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços mantêm o ritmo com a economia desacelerando?",
+        "quote": "O volume de serviços (PMS) subiu 0,3%.",
+        "edi": [
+          "Os serviços avançaram 0,3% (PMS), sustentando o emprego. A digitalização segue como diferencial competitivo num ambiente de juro alto."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Investir em autoatendimento e eficiência para proteger margem sem depender de crédito."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra recorde se converte em receita com o câmbio a R$ 5,48?",
+        "quote": "O agro exportou US$ 169,2 bilhões em 2025, com a soja em US$ 43,5 bi.",
+        "edi": [
+          "O agronegócio fechou 2025 com exportações recordes de US$ 169,2 bilhões (+3%) e safra estimada em 345,9 Mt. O dólar a R$ 5,48 favorece a receita em real."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Travar preço/câmbio de parte da safra com o dólar a R$ 5,48 para proteger a margem."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra cede em 2026?",
+        "quote": "O custo do m² está em R$ 1.882 (SINAPI), com INCC de 0,27%.",
+        "edi": [
+          "O custo da construção está em R$ 1.882/m² (SINAPI) com INCC de 0,27% no mês. O juro a 15,00% pesa sobre o financiamento imobiliário."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Contratar insumos-chave e estruturar financiamento antes de novas altas de custo."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital captura o consumo resiliente?",
+        "quote": "Sem dado direto; o varejo total avançou 0,6%.",
+        "edi": [
+          "Sem indicador próprio na semana, o e-commerce se apoia no varejo em alta de 0,6%. A concorrência por preço e frete tende a se intensificar num consumo sensível a juros."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Reforçar canal próprio (D2C) para reduzir dependência de marketplace e proteger margem."
+          }
+        ]
+      }
+    }
   }
 }

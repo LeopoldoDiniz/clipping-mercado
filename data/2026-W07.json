@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Fevereiro 2026 (semana 7), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: Boletim Focus (09/02): IPCA de 2026 recua para 3,97%; IPCA de janeiro fica em 0,33%; Conab projeta safra 2025/26 recorde de 353,4 mi t. 4 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A sétima semana combina inflação comportada, atividade fraca e um agronegócio em plena força. O IPCA subiu 0,33% em janeiro, com o acumulado de 12 meses em 4,44%, enquanto o Boletim Focus de 09/02 reduziu a projeção de inflação de 2026 para 3,97% e manteve a Selic vista em 12,25% ao fim do ano, com PIB de 1,80%. A atividade, porém, segue capenga: a produção industrial acumula queda de 1,9% (PIM) e o varejo recuou 0,4% em dezembro, fechando 2025 com alta modesta de 1,6%. O grande destaque vem do campo: o 5º levantamento da Conab projetou uma safra recorde de 353,4 milhões de toneladas para 2025/26, com a soja em 177,985 milhões (+3,8%), o que sustenta a receita exportadora com o câmbio a R$ 5,23. Na construção, o custo permanece pressionado, com INCC de 0,72% e o metro quadrado a R$ 1.921 (SINAPI). O ponto de atenção é o descompasso entre a inflação projetada, já perto da meta (3,97%), e a Selic ainda em 15,00% a.a.: quanto mais a atividade industrial e o varejo enfraquecem, maior a expectativa do mercado por um início de ciclo de cortes, cujo timing continua sendo a principal variável para investimento e crédito em 2026.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -63,7 +63,68 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Focus reduz projeção de inflação para 2026",
+      "texto": "O Boletim Focus de 09/02 baixou a projeção de IPCA de 2026 para 3,97%, com Selic mantida em 12,25% e PIB em 1,80%.",
+      "score": 6,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação de janeiro em 0,33% e 12 meses em 4,44%",
+      "texto": "O IPCA subiu 0,33% em janeiro, com acumulado de 4,44% em 12 meses; a Selic segue em 15,00% a.a.",
+      "score": 7.5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Varejo perde fôlego no fim de 2025",
+      "texto": "As vendas do varejo caíram 0,4% em dezembro, com o ano fechando em alta de 1,6%.",
+      "score": 5.5,
+      "setores": [
+        "comercio"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico específico na semana.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Conab projeta safra recorde de 353,4 Mt",
+      "texto": "O 5o levantamento da Conab projetou safra 2025/26 recorde de 353,4 milhões de toneladas, com soja em 177,985 milhões (+3,8%).",
+      "score": 6.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -109,7 +170,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "Com a produção em -1,9% (PIM) e juro a 15,00%, a rivalidade segue contida e o investimento caro."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo recuou 0,4% em dezembro (ano +1,6%), sinal de acomodação; poder do consumidor segue alto."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços recuaram 0,3% (PMS), com rivalidade moderada e concorrência digital."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "A safra recorde de 353,4 Mt, com soja em 177,985 mi (+3,8%), amplia a oferta e o poder de barganha dos compradores."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC em 0,72% e o m² a R$ 1.921 (SINAPI) mantêm pressão de custo dos fornecedores."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o varejo recuando 0,4% sugere disputa mais acirrada por conversão e preço."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -216,5 +326,99 @@
         "val": -0.017
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📊",
+          "txt": "Ler a inflação de 0,33% em janeiro (12m em 4,44%) como base para planejar reajustes e contratos."
+        },
+        {
+          "ico": "🌾",
+          "txt": "Explorar a safra recorde projetada (353,4 Mt) para negociar volume e logística de escoamento."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A indústria encontra piso?",
+        "quote": "A produção industrial recuou 1,9% (PIM) na leitura recente.",
+        "edi": [
+          "A indústria segue pressionada (PIM -1,9%), com o juro a 15,00% limitando o investimento. A projeção de IPCA em 3,97% (Focus) abre espaço para cortes de juros à frente, ainda não confirmados."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Preservar caixa e adiar expansão enquanto a Selic segue em 15,00%."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O varejo acomoda após um ano fraco?",
+        "quote": "As vendas do varejo caíram 0,4% em dezembro; 2025 fechou em +1,6%.",
+        "edi": [
+          "O varejo recuou 0,4% em dezembro, encerrando 2025 em alta modesta de 1,6%. Com a inflação de janeiro em 0,33%, o poder de compra ganha algum alívio."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Ajustar mix e preço ao consumo mais seletivo após o ano fraco (+1,6%)."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços seguram a atividade?",
+        "quote": "O volume de serviços recuou 0,3% (PMS).",
+        "edi": [
+          "Os serviços recuaram 0,3% (PMS), acomodando. A eficiência operacional é a alavanca no cenário de juro alto."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Priorizar automação e retenção para proteger margem."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra recorde se traduz em receita?",
+        "quote": "A Conab projetou safra 2025/26 recorde de 353,4 milhões de toneladas.",
+        "edi": [
+          "O agro tem o melhor fundamento da semana: safra recorde de 353,4 Mt, com soja em 177,985 mi (+3,8%). O câmbio a R$ 5,23 sustenta a receita em real."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Antecipar comercialização e logística diante da safra recorde de 353,4 Mt."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra segue pressionado?",
+        "quote": "O INCC está em 0,72% e o m² a R$ 1.921 (SINAPI).",
+        "edi": [
+          "O custo da obra segue pressionado: INCC de 0,72% e m² a R$ 1.921 (SINAPI). O crédito caro (Selic 15,00%) limita novos lançamentos."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Travar preços de materiais diante do INCC persistente em 0,72%."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital ganha share num varejo fraco?",
+        "quote": "Sem dado direto; o varejo caiu 0,4% em dezembro.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce disputa um bolo que recuou 0,4% em dezembro. Conversão e frete definem a competitividade."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Focar conversão e reputação para ganhar share num varejo em acomodação."
+          }
+        ]
+      }
+    }
   }
 }

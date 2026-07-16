@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real verificada + gate de data, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Janeiro 2026 (semana 4), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,29. Destaques verificados da semana: IPCA-15 de janeiro fica em 0,20%. 1 item de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A quarta semana de janeiro traz um respiro na inflação e confirma um consumo firme no início do ano. A prévia da inflação (IPCA-15) de janeiro ficou em 0,20%, abaixo dos 0,25% de dezembro, com destaque para a conta de luz mais barata — um sinal antecipado de alívio, ainda que a Selic permaneça em 15,00% a.a. Do lado da atividade, o varejo acumula alta de 1,1% e o desemprego segue em 6,5%, indicando que o consumo resiste ao juro elevado, enquanto a indústria continua fraca, com a produção recuando 0,1% (PIM) e os serviços também em leve queda (PMS -0,1%). No campo, a estimativa de safra de grãos se consolida em 346,1 milhões de toneladas, e o câmbio a R$ 5,29 mantém a receita exportadora atrativa em real. A construção segue com custos comportados, a R$ 1.892/m² (SINAPI) e INCC de 0,21% no mês. O ponto de atenção permanece o custo de capital: com a Selic em 15,00% e a inflação dando os primeiros sinais de desaceleração, o mercado segue atento ao momento em que o Banco Central poderá iniciar um ciclo de cortes, decisão que definirá o ritmo de investimento e crédito ao longo do ano.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -23,7 +23,69 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Agenda fiscal e monetária no radar",
+      "texto": "Sem evento político específico; a condução da Selic em 15,00% segue no centro das atenções.",
+      "score": 5,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Prévia da inflação em desaceleração",
+      "texto": "O IPCA-15 de janeiro ficou em 0,20%, ante 0,25% em dezembro, com conta de luz mais barata; a Selic segue em 15,00% a.a.",
+      "score": 7,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Consumo firme no início do ano",
+      "texto": "O varejo acumula alta de 1,1% na leitura recente, com desemprego em 6,5%.",
+      "score": 5.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização estrutural",
+      "texto": "Sem fato tecnológico na semana; eficiência digital segue como vetor competitivo.",
+      "score": 4.5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra em consolidação",
+      "texto": "A estimativa de safra de grãos está em 346,1 milhões de toneladas.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -69,7 +131,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A produção recuou 0,1% (PIM) e o juro a 15,00% mantém a rivalidade contida e o investimento caro."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "O varejo em alta de 1,1% sustenta a demanda, com poder de barganha do consumidor elevado."
+    },
+    "servicos": {
+      "rivalidade": 6,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Serviços recuaram 0,1% (PMS), com rivalidade moderada e concorrência digital crescente."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Safra estimada em 346,1 Mt fortalece a escala; compradores externos ditam preço."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 6,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Custo do m² a R$ 1.892 (SINAPI) com INCC de 0,21% mantém pressão moderada de fornecedores."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o varejo em 1,1% sugere ambiente favorável e alta rivalidade por preço."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -176,5 +287,99 @@
         "val": -0.051
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📉",
+          "txt": "Acompanhar a desaceleração do IPCA-15 (0,20%) como sinal antecipado da inflação, ainda com Selic a 15,00%."
+        },
+        {
+          "ico": "🛒",
+          "txt": "Com o varejo em 1,1%, manter estoque calibrado para um consumo firme no início do ano."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "A indústria reage ou segue estagnada?",
+        "quote": "A produção industrial recuou 0,1% (PIM) na leitura recente.",
+        "edi": [
+          "A indústria segue fraca, com PIM em -0,1%, sob o peso do juro a 15,00% a.a. A prévia de inflação em 0,20% (IPCA-15) sugere alívio de custos à frente."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Segurar CAPEX enquanto o juro permanece em 15,00% e a produção não reage."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O consumo mantém o fôlego do início de ano?",
+        "quote": "O varejo acumula alta de 1,1%.",
+        "edi": [
+          "O varejo em 1,1% e o desemprego em 6,5% indicam consumo firme. A conta de luz mais barata, refletida no IPCA-15 de 0,20%, alivia o orçamento das famílias."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Explorar a folga na conta de luz para campanhas de ticket médio."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços seguram o emprego?",
+        "quote": "O volume de serviços recuou 0,1% (PMS).",
+        "edi": [
+          "Os serviços recuaram 0,1% (PMS), acomodando após um ciclo forte. A eficiência digital segue como defesa de margem no juro alto."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Investir em automação para preservar margem sem novo crédito."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "A safra em 346,1 Mt sustenta a receita?",
+        "quote": "A estimativa de safra de grãos está em 346,1 milhões de toneladas.",
+        "edi": [
+          "O agro consolida a safra em 346,1 Mt, com o câmbio a R$ 5,29 ainda favorável à receita em real."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Aproveitar o câmbio a R$ 5,29 para travar parte da comercialização."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra dá trégua?",
+        "quote": "O custo do m² está em R$ 1.892 (SINAPI), com INCC de 0,21%.",
+        "edi": [
+          "O custo da construção está em R$ 1.892/m² (SINAPI) com INCC de 0,21%. O financiamento segue caro com a Selic a 15,00%."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Revisar orçamentos com a folga do INCC (0,21%) antes de novas altas."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital acompanha o varejo em alta?",
+        "quote": "Sem dado direto; o varejo total acumula 1,1%.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se apoia no varejo em 1,1%. A disputa por preço e frete tende a se manter intensa."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimizar frete e reputação para converter o consumo firme."
+          }
+        ]
+      }
+    }
   }
 }

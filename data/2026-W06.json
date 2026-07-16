@@ -5,8 +5,8 @@
   "origem": "backfill as-of (busca real + gate de conteudo e data de publicacao, jul/2026)",
   "busca_retroativa": true,
   "editorial": {
-    "texto": "Leitura macro de Fevereiro 2026 (semana 6), derivada dos indicadores oficiais e do clipping verificado. Selic em 15,00% a.a.; IPCA do mês em 0,33%; câmbio a R$ 5,23. Destaques verificados da semana: PMI da indústria cai a 47,0 em janeiro; Boletim Focus (02/02): IPCA de 2026 em 3,99%; Brasil cria 115 mil empregos formais em janeiro. 5 itens de clipping com fonte oficial confirmada (reconstrução as-of).",
-    "origem": "derivado_indicadores"
+    "texto": "A sexta semana traz um retrato de duas velocidades: uma indústria em contração e um mercado de trabalho aquecido. O PMI industrial caiu a 47,0 em janeiro, abaixo da linha de 50 que separa expansão de retração, em linha com a produção que recuou 1,9% (PIM). Em contraponto, o CAGED registrou a criação de 115 mil empregos formais no mês, sustentando a renda e, com ela, o consumo — o varejo acumula alta de 1,1%. Nos serviços, o PMI recuou a 51,3, ante 53,7 em dezembro, ainda em expansão, porém em ritmo menor. No campo macro, o Boletim Focus de 02/02 manteve a projeção de IPCA de 2026 em torno de 3,99%, com a Selic vista em 12,25% ao fim do ano e o câmbio projetado a R$ 5,50, num cenário que já incorpora o risco do conflito no Oriente Médio. A balança comercial ajudou, com superávit de US$ 4,3 bilhões em janeiro (exportações de US$ 25,2 bi). O ponto de atenção é a divergência entre atividade e emprego: enquanto a indústria pede juro menor para reagir, a solidez do mercado de trabalho e o risco externo sobre o câmbio e os combustíveis recomendam cautela ao Banco Central, que mantém a Selic em 15,00% a.a.",
+    "origem": "analise_claude"
   },
   "clipping": [
     {
@@ -76,7 +76,70 @@
       ]
     }
   ],
-  "pestel": [],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Choque externo entra no radar da política econômica",
+      "texto": "O Boletim Focus de 02/02 projeta Selic em 12,25% para o fim de 2026 e câmbio a R$ 5,50, com o conflito no Oriente Médio no horizonte de risco.",
+      "score": 6,
+      "setores": [
+        "transversal"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Indústria contrai e inflação projetada perto da meta",
+      "texto": "O PMI industrial caiu a 47,0 em janeiro (abaixo de 50) e o Focus manteve o IPCA de 2026 em torno de 3,99%, com a Selic ainda em 15,00% a.a.",
+      "score": 7.5,
+      "setores": [
+        "transversal",
+        "industria"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Mercado de trabalho gera 115 mil vagas",
+      "texto": "O CAGED registrou saldo de 115 mil empregos formais em janeiro, sustentando a renda e o consumo.",
+      "score": 6.5,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Serviços digitais desaceleram, mas seguem em expansão",
+      "texto": "O PMI de serviços recuou a 51,3 em janeiro (ante 53,7), mantendo-se acima de 50.",
+      "score": 5,
+      "setores": [
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Safra recorde sustenta a balança",
+      "texto": "A estimativa de safra segue em 346,1 milhões de toneladas, base da força exportadora do agro.",
+      "score": 5.5,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Ambiente regulatório estável",
+      "texto": "Sem novidades regulatórias relevantes na semana.",
+      "score": 4.5,
+      "setores": [
+        "transversal"
+      ]
+    }
+  ],
   "kpis": [
     {
       "label": "SELIC",
@@ -122,7 +185,56 @@
     }
   ],
   "longitudinal": [],
-  "porter": {},
+  "porter": {
+    "industria": {
+      "rivalidade": 6,
+      "entrantes": 4,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "O PMI a 47,0 confirma contração e novos pedidos fracos; a produção caiu 1,9% (PIM), pressionando margens."
+    },
+    "comercio": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 7,
+      "substitutos": 6,
+      "nota": "A geração de 115 mil vagas e o varejo em 1,1% sustentam a demanda, com poder do consumidor elevado."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "O PMI de serviços em 51,3 (ante 53,7) mostra expansão desacelerando, mantendo rivalidade elevada."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 6,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Safra de 346,1 Mt e superávit comercial de US$ 4,3 bi reforçam a escala e o poder exportador."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O INCC acelerou a 0,72% no mês, elevando o poder dos fornecedores de materiais."
+    },
+    "ecommerce": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 6,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Sem dado direto; o emprego formal em alta (115 mil) favorece o consumo online, com forte rivalidade por preço."
+    }
+  },
   "kpis_setoriais": [
     {
       "setor": "servicos",
@@ -229,5 +341,103 @@
         "val": -0.051
       }
     ]
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏭",
+          "txt": "Diante do PMI industrial em 47,0 (contração), revisar programação de produção e estoques para a demanda mais fraca."
+        },
+        {
+          "ico": "👷",
+          "txt": "Aproveitar a geração de 115 mil vagas formais para reter talentos, com o mercado de trabalho aquecido."
+        },
+        {
+          "ico": "🌎",
+          "txt": "Monitorar o câmbio projetado a R$ 5,50 no Focus e o risco geopolítico sobre custos importados."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Quanto tempo a indústria suporta em contração?",
+        "quote": "O PMI industrial caiu a 47,0 em janeiro, o oitavo mês abaixo de 50.",
+        "edi": [
+          "A indústria segue em contração: o PMI ficou em 47,0 e a produção recuou 1,9% (PIM). Com a Selic em 15,00% e o IPP em 0,14%, a recuperação depende de demanda, ainda ausente."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Ajustar capacidade e negociar prazos com fornecedores enquanto o PMI segue em 47,0."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "O emprego forte sustenta o varejo?",
+        "quote": "O Brasil criou 115 mil empregos formais em janeiro.",
+        "edi": [
+          "A geração de 115 mil vagas e o varejo em 1,1% dão suporte ao consumo. O crédito caro (Selic 15,00%) mantém o foco em essenciais e à vista."
+        ],
+        "acoes": [
+          {
+            "ico": "🏷️",
+            "txt": "Aproveitar a renda do novo emprego formal com ofertas segmentadas."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "A expansão de serviços resiste?",
+        "quote": "O PMI de serviços recuou a 51,3, ante 53,7 em dezembro.",
+        "edi": [
+          "Os serviços seguem em expansão, mas desacelerando (PMI 51,3 ante 53,7). A digitalização continua sendo o diferencial num ambiente de juro alto."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Reforçar canais digitais para sustentar crescimento com o PMI cedendo a 51,3."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "O agro sustenta o superávit?",
+        "quote": "A balança comercial teve superávit de US$ 4,3 bilhões em janeiro.",
+        "edi": [
+          "O agro ancora a balança: superávit de US$ 4,3 bi em janeiro (exportações de US$ 25,2 bi) e safra de 346,1 Mt. O câmbio projetado a R$ 5,50 favorece a receita."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Programar embarques aproveitando o superávit e o câmbio favorável."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "O custo de obra volta a subir?",
+        "quote": "O INCC acelerou a 0,72% no mês.",
+        "edi": [
+          "O INCC subiu 0,72%, sinalizando pressão renovada de materiais sobre o custo da obra (SINAPI a R$ 1.892/m²)."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Travar insumos-chave diante da aceleração do INCC (0,72%)."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O digital captura a renda do novo emprego?",
+        "quote": "Sem dado direto; foram criadas 115 mil vagas formais.",
+        "edi": [
+          "Sem indicador próprio, o e-commerce se beneficia da geração de 115 mil vagas. A disputa por preço e frete segue intensa."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Segmentar ofertas para o consumidor recém-empregado, otimizando frete."
+          }
+        ]
+      }
+    }
   }
 }
