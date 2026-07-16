@@ -188,6 +188,7 @@
   :root[data-theme="dark"] .info::after{background:#05100F;color:#F4F7F7}
   .info:hover::after,.info:focus-visible::after{opacity:1;visibility:visible}
   .chart-scroll{overflow-x:auto;margin:6px -4px 0}
+  .chart-scroll svg{display:block;max-width:720px;height:auto;margin-inline:auto} /* limita a altura via aspecto e centraliza — mantém proporção com os cards */
   .schips{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
   .schip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;padding:5px 10px;border-radius:99px;
     border:1px solid var(--border);background:var(--surface);color:var(--ink-3);cursor:pointer}
@@ -1241,8 +1242,17 @@ function ipcaSubSeries(){
     {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj)}
   ];
 }
-// universo de séries do gráfico: macros (IPCA expandido) + setoriais selecionados
-function chartUniverse(){return KPIS.flatMap(k=>k.id==="ipca"?ipcaSubSeries():[k]).concat(selSetorKpis());}
+// universo de séries do gráfico = espelho dos CARDS em tela:
+//   macros gerais (default) + macro exclusivo dos setores ativos (PIM/Varejo) + setoriais ativos.
+// Assim os chips do gráfico só oferecem o que já está visível como card (regra: geral por default;
+// os demais entram na medida em que o seletor de setor é ligado e seu card aparece).
+function chartUniverse(){
+  const map=Object.fromEntries(KPIS.map(k=>[k.id,k]));
+  const sub=k=>k.id==="ipca"?ipcaSubSeries():[k];
+  const gerais=KPIS.filter(k=>!KPI_EXCLUSIVO_SETOR.has(k.id)).flatMap(sub);
+  const macrosSetor=[...new Set(state.indSetores.map(s=>SETOR_MACRO[s]).filter(id=>id&&map[id]))].map(id=>map[id]);
+  return gerais.concat(macrosSetor).concat(selSetorKpis());
+}
 function chartCard(){
   const W=680,H=240,pl=42,pr=48,pt=16,pb=34;
   const keys=state.chartSeries;
@@ -1675,7 +1685,7 @@ document.getElementById("view").addEventListener("click",e=>{
   const traj=e.target.closest("[data-traj]");if(traj){markActive(traj);openTraj(+traj.dataset.traj);return;}
   const cs=e.target.closest("[data-series]");if(cs){e.preventDefault();const k=cs.dataset.series;const i=state.chartSeries.indexOf(k);if(i>=0){if(state.chartSeries.length>1)state.chartSeries.splice(i,1);}else{if(state.chartSeries.length>=3)state.chartSeries.shift();state.chartSeries.push(k);}render();return;}
   const isel=e.target.closest("[data-indsetor]");if(isel){e.preventDefault();const s=isel.dataset.indsetor;const i=state.indSetores.indexOf(s);
-    if(i>=0){state.indSetores.splice(i,1);state.chartSeries=state.chartSeries.filter(id=>id!=="s_"+s);} // ao remover, tira do gráfico também
+    if(i>=0){state.indSetores.splice(i,1);const mac=SETOR_MACRO[s];state.chartSeries=state.chartSeries.filter(id=>id!=="s_"+s&&id!==mac);} // ao remover, tira do gráfico também (setorial e macro exclusivo)
     else state.indSetores.push(s);
     render();return;}
 });
