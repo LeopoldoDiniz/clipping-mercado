@@ -1262,7 +1262,7 @@ function chartUniverse(){
   return gerais.concat(macrosSetor).concat(selSetorKpis());
 }
 function chartCard(){
-  const H=300,pl=44,pr=50,pt=22,pb=44;
+  const H=300,pl=38,pr=38,pt=22,pb=44;
   const keys=state.chartSeries;
   const umap=Object.fromEntries(chartUniverse().map(s=>[s.id,s]));
   const series=keys.map(k=>umap[k]).filter(Boolean);
@@ -1273,9 +1273,9 @@ function chartCard(){
   const all=series.flatMap(valsOf).filter(v=>v!=null);
   let mn=all.length?Math.min(...all):0,mx=all.length?Math.max(...all):1;if(mn===mx){mn-=1;mx+=1;}const pad=(mx-mn)*0.15;mn-=pad;mx+=pad;
   const n=points.length;
-  // largura FIXA (preenche o container até um máximo) → os pontos se CONTRAEM à medida que mais
-  // períodos são selecionados, em vez de expandir/rolar. Altura fixa (H). Sem scroll horizontal.
-  const W=1200;
+  // largura FIXA (preenche o container até um máximo, ~toda a faixa útil do card) → os pontos se
+  // CONTRAEM à medida que mais períodos são selecionados, em vez de expandir/rolar. Altura fixa (H).
+  const W=1440;
   const x=i=>n===1?pl+(W-pl-pr)/2:pl+(i*(W-pl-pr)/(n-1));
   const gap=n>1?(W-pl-pr)/(n-1):(W-pl-pr); // espaço entre pontos adjacentes (unidades do viewBox)
   // rótulo de semana conforme o espaço (estimativa de encavalamento): folgado → "Semana X",
