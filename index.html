@@ -1254,7 +1254,7 @@ function chartUniverse(){
   return gerais.concat(macrosSetor).concat(selSetorKpis());
 }
 function chartCard(){
-  const H=240,pl=42,pr=48,pt=16,pb=34;
+  const H=300,pl=44,pr=50,pt=22,pb=44;
   const keys=state.chartSeries;
   const umap=Object.fromEntries(chartUniverse().map(s=>[s.id,s]));
   const series=keys.map(k=>umap[k]).filter(Boolean);
@@ -1267,19 +1267,19 @@ function chartCard(){
   const n=points.length;
   // eixo X elástico: cada ponto ganha um passo mínimo confortável (STEP). Poucas leituras => compacto (base 680,
   // centralizado); muitas => largura cresce e o container (.chart-scroll) rola na horizontal. Altura fica fixa (H).
-  const STEP=50;
+  const STEP=56;
   const W=Math.max(680,pl+pr+(n>1?(n-1)*STEP:0));
   const x=i=>n===1?pl+(W-pl-pr)/2:pl+(i*(W-pl-pr)/(n-1));
   const y=v=>pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));
   const gridY=4;
   const grid=Array.from({length:gridY+1},(_,i)=>{const gv=mn+(mx-mn)*i/gridY;const gy=y(gv);
-    return `<line x1="${pl}" x2="${W-pr}" y1="${gy}" y2="${gy}" stroke="var(--border)" stroke-width="1"/><text x="${pl-6}" y="${gy+3}" text-anchor="end" font-size="9" fill="var(--ink-3)" font-family="var(--mono)">${dec(gv,1)}</text>`;}).join("");
-  const xlab=points.map((p,i)=>`<text x="${x(i)}" y="${H-12}" text-anchor="middle" font-size="9" fill="var(--ink-3)">${p.label}${p.partial?' ·p':''}</text>`).join("");
+    return `<line x1="${pl}" x2="${W-pr}" y1="${gy}" y2="${gy}" stroke="var(--border)" stroke-width="1"/><text x="${pl-7}" y="${gy+4}" text-anchor="end" font-size="12" fill="var(--ink-3)" font-family="var(--mono)">${dec(gv,1)}</text>`;}).join("");
+  const xlab=points.map((p,i)=>`<text x="${x(i)}" y="${H-15}" text-anchor="middle" font-size="12" fill="var(--ink-3)">${p.label}${p.partial?' ·p':''}</text>`).join("");
   const lines=series.map((s,si)=>{const c=CHART_COLORS[si%CHART_COLORS.length];const vs=valsOf(s);
     const pts=vs.map((v,i)=>`${x(i)},${y(v)}`).join(" ");
-    const dots=vs.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?4:3}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"/>`).join("");
+    const dots=vs.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?5:3.5}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"/>`).join("");
     const above=si%2===0;
-    const vlab=vs.map((v,i)=>`<text x="${x(i)}" y="${y(v)+(above?-9:15)}" text-anchor="middle" font-size="9" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
+    const vlab=vs.map((v,i)=>`<text x="${x(i)}" y="${y(v)+(above?-11:19)}" text-anchor="middle" font-size="12" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
   const chipSeries=chartUniverse(); // macros (IPCA em mês/acum/projetado) + setoriais selecionados
   const chips=chipSeries.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
