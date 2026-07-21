@@ -1,0 +1,136 @@
+name: Watchdog do portal
+
+# Confere se o portal está FRESCO e, se não estiver, re-dispara o clipping.
+#
+# Por que olhar o DADO e não o run: um run que falha é só um dos modos de falha.
+# O cron pode ser desativado pelo GitHub (60 dias sem atividade), o motor pode
+# "passar" sem commitar nada, o Gemini pode devolver 200 com JSON truncado.
+# Nenhum desses acende alerta de falha — todos aparecem na idade do ultimo.json.
+#
+# Não usa Gemini nem LLM: é jq + data. O único custo é a cota do clipping quando
+# ele de fato precisa ser re-disparado.
+on:
+  schedule:
+    - cron: "0 16 * * *"   # diário, 16h UTC (13h Divinópolis) — ~6h após o clipping
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write   # re-disparar clipping.yml
+  issues: write    # escalar para o humano
+
+env:
+  LIMITE_DIAS: 3      # com cron seg+qui, nada deveria passar de 3 dias
+  MAX_TENTATIVAS: 2   # teto de re-disparos em 48h — evita loop queimando cota
+  JANELA_HORAS: 48
+
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Conferir o frescor do portal
+        id: frescor
+        run: |
+          set -euo pipefail
+          gerado=$(jq -r '.gerado_em // empty' data/ultimo.json)
+          if [ -z "$gerado" ]; then
+            echo "ultimo.json sem 'gerado_em' — tratando como parado."
+            echo "idade=999" >> "$GITHUB_OUTPUT"
+            echo "label=ultimo.json corrompido" >> "$GITHUB_OUTPUT"
+            echo "fresco=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          idade=$(( ( $(date -u +%s) - $(date -u -d "$gerado" +%s) ) / 86400 ))
+          label=$(jq -r '.label // "?"' data/ultimo.json)
+          echo "Portal em '$label', gerado em $gerado — $idade dia(s) atrás."
+          echo "idade=$idade" >> "$GITHUB_OUTPUT"
+          echo "label=$label" >> "$GITHUB_OUTPUT"
+          if [ "$idade" -le "$LIMITE_DIAS" ]; then
+            echo "fresco=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "fresco=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Portal em dia — nada a fazer
+        if: steps.frescor.outputs.fresco == 'true'
+        run: |
+          echo "✅ Portal fresco (${{ steps.frescor.outputs.idade }} dia(s)). Sem ação." \
+            >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Decidir entre re-disparar ou escalar
+        if: steps.frescor.outputs.fresco == 'false'
+        id: decidir
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          # Já tem clipping rodando agora? Então só esperar — não empilhar.
+          rodando=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/clipping.yml/runs?per_page=10" \
+            --jq '[.workflow_runs[] | select(.status != "completed")] | length')
+          if [ "$rodando" -gt 0 ]; then
+            echo "Já existe clipping em execução — aguardando o desfecho."
+            echo "acao=aguardar" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Quantas tentativas já houve na janela? Conta QUALQUER disparo manual
+          # (do watchdog ou seu), não só os que falharam: assim o teto também
+          # segura o caso em que o run "passa" mas não atualiza nada.
+          desde=$(date -u -d "$JANELA_HORAS hours ago" +%Y-%m-%dT%H:%M:%SZ)
+          tentativas=$(gh api \
+            "repos/$GITHUB_REPOSITORY/actions/workflows/clipping.yml/runs?event=workflow_dispatch&per_page=30" \
+            --jq "[.workflow_runs[] | select(.created_at > \"$desde\")] | length")
+          echo "Tentativas nas últimas ${JANELA_HORAS}h: $tentativas (teto: $MAX_TENTATIVAS)"
+
+          if [ "$tentativas" -lt "$MAX_TENTATIVAS" ]; then
+            echo "acao=disparar" >> "$GITHUB_OUTPUT"
+          else
+            echo "acao=escalar" >> "$GITHUB_OUTPUT"
+          fi
+          echo "tentativas=$tentativas" >> "$GITHUB_OUTPUT"
+
+      - name: Re-disparar o clipping
+        if: steps.decidir.outputs.acao == 'disparar'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh workflow run clipping.yml --ref "${GITHUB_REF_NAME}"
+          echo "🔁 Portal com ${{ steps.frescor.outputs.idade }} dia(s) — clipping re-disparado." \
+            >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Escalar para o humano
+        if: steps.decidir.outputs.acao == 'escalar'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh label create portal-parado --color B60205 \
+            --description "Portal sem atualizar além do limite" 2>/dev/null || true
+
+          # Um alerta por episódio: se já tem issue aberta, não abre outra.
+          abertas=$(gh issue list --label portal-parado --state open --json number --jq 'length')
+          if [ "$abertas" -gt 0 ]; then
+            echo "Já existe alerta aberto — não vou duplicar."
+            echo "🔔 Alerta já aberto; portal segue parado." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          gh issue create \
+            --label portal-parado \
+            --title "Portal parado há ${{ steps.frescor.outputs.idade }} dias (${{ steps.frescor.outputs.label }})" \
+            --body "$(cat <<EOF
+          O watchdog re-disparou o clipping ${{ steps.decidir.outputs.tentativas }}x nas últimas ${JANELA_HORAS}h e o portal continua desatualizado. Parando as tentativas automáticas para não queimar cota à toa.
+
+          - **Última geração:** ${{ steps.frescor.outputs.label }}, há ${{ steps.frescor.outputs.idade }} dia(s)
+          - **Limite configurado:** ${LIMITE_DIAS} dias
+          - **Runs do clipping:** https://github.com/${GITHUB_REPOSITORY}/actions/workflows/clipping.yml
+
+          Provavelmente precisa de diagnóstico humano: erro novo no motor, credencial vencida, ou mudança de API. Feche esta issue depois de resolver — o watchdog volta a abrir uma nova se o problema repetir.
+          EOF
+          )"
+          echo "🔔 Alerta aberto: portal parado." >> "$GITHUB_STEP_SUMMARY"
