@@ -367,18 +367,44 @@ def _cota_diaria_esgotada(err):
     return esgotou and marca_diaria
 
 
+def _transitorio(err):
+    """True para erros passageiros do lado do Gemini (sobrecarga/instabilidade),
+    que passam sozinhos ao esperar alguns segundos. É o caso do 503 UNAVAILABLE
+    ('high demand'), que derrubou a coleta de 2026-07-20."""
+    s = str(err).lower()
+    return any(t in s for t in (
+        "503", "unavailable", "high demand", "overloaded",
+        "500", "internal", "502", "504", "deadline", "timeout"))
+
+
+# espera antes de cada tentativa: a 1ª é imediata, depois 20s, 45s e 90s
+_ESPERAS_RETRY = [0, 20, 45, 90]
+
+
 def _gerar(client, prompt, config):
-    """Chama o primário; se a cota DIÁRIA do primário estourar, refaz no fallback.
-    Retorna (resposta, modelo_usado)."""
-    try:
-        return client.models.generate_content(
-            model=MODELO, contents=prompt, config=config), MODELO
-    except Exception as e:
-        if _cota_diaria_esgotada(e):
-            print(f"[motor] Cota diária de {MODELO} esgotada — desviando para {MODELO_FALLBACK}.")
+    """Chama o primário com backoff em erros transitórios; se a cota DIÁRIA do
+    primário estourar, refaz no fallback. Retorna (resposta, modelo_usado)."""
+    ultimo = None
+    for i, espera in enumerate(_ESPERAS_RETRY):
+        if espera:
+            print(f"[motor] Gemini instável — aguardando {espera}s "
+                  f"(tentativa {i+1}/{len(_ESPERAS_RETRY)})...")
+            time.sleep(espera)
+        try:
             return client.models.generate_content(
-                model=MODELO_FALLBACK, contents=prompt, config=config), MODELO_FALLBACK
-        raise
+                model=MODELO, contents=prompt, config=config), MODELO
+        except Exception as e:
+            if _cota_diaria_esgotada(e):
+                print(f"[motor] Cota diária de {MODELO} esgotada — desviando para {MODELO_FALLBACK}.")
+                return client.models.generate_content(
+                    model=MODELO_FALLBACK, contents=prompt, config=config), MODELO_FALLBACK
+            if not _transitorio(e):
+                raise          # erro real (prompt inválido, chave errada): falha rápido
+            ultimo = e
+            print(f"[motor] Tentativa {i+1}/{len(_ESPERAS_RETRY)} falhou: {e}")
+
+    raise RuntimeError(
+        f"Gemini indisponível após {len(_ESPERAS_RETRY)} tentativas: {ultimo}")
 
 
 # ─────────────────────────────────────────────────────────
