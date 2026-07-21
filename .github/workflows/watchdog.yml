@@ -107,6 +107,9 @@ jobs:
         if: steps.decidir.outputs.acao == 'escalar'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IDADE: ${{ steps.frescor.outputs.idade }}
+          SEMANA: ${{ steps.frescor.outputs.label }}
+          TENTATIVAS: ${{ steps.decidir.outputs.tentativas }}
         run: |
           set -euo pipefail
           gh label create portal-parado --color B60205 \
@@ -120,17 +123,50 @@ jobs:
             exit 0
           fi
 
+          # Link direto do run que falhou — é a primeira coisa que o humano abre.
+          log_falha=$(gh api \
+            "repos/$GITHUB_REPOSITORY/actions/workflows/clipping.yml/runs?per_page=10" \
+            --jq '[.workflow_runs[] | select(.conclusion == "failure")][0].html_url // empty')
+          [ -n "$log_falha" ] || \
+            log_falha="https://github.com/$GITHUB_REPOSITORY/actions/workflows/clipping.yml"
+
+          # ATRIBUÍDA ao dono do repo: atribuição é gatilho de notificação por si só,
+          # independente de estar "watching". Sem isso o alerta depende do mesmo
+          # caminho ambiente que já falhou uma vez.
           gh issue create \
             --label portal-parado \
-            --title "Portal parado há ${{ steps.frescor.outputs.idade }} dias (${{ steps.frescor.outputs.label }})" \
+            --assignee "$GITHUB_REPOSITORY_OWNER" \
+            --title "Portal parado há $IDADE dias ($SEMANA)" \
             --body "$(cat <<EOF
-          O watchdog re-disparou o clipping ${{ steps.decidir.outputs.tentativas }}x nas últimas ${JANELA_HORAS}h e o portal continua desatualizado. Parando as tentativas automáticas para não queimar cota à toa.
+          O portal está há **$IDADE dia(s)** sem atualizar (última geração: $SEMANA).
+          O watchdog re-disparou o clipping ${TENTATIVAS}x nas últimas ${JANELA_HORAS}h sem sucesso
+          e parou de tentar, para não queimar cota do Gemini à toa.
 
-          - **Última geração:** ${{ steps.frescor.outputs.label }}, há ${{ steps.frescor.outputs.idade }} dia(s)
-          - **Limite configurado:** ${LIMITE_DIAS} dias
-          - **Runs do clipping:** https://github.com/${GITHUB_REPOSITORY}/actions/workflows/clipping.yml
+          **Nada foi perdido** — os dados vivem no git. O portal está velho, não corrompido.
 
-          Provavelmente precisa de diagnóstico humano: erro novo no motor, credencial vencida, ou mudança de API. Feche esta issue depois de resolver — o watchdog volta a abrir uma nova se o problema repetir.
+          ## 1. Abrir o log que falhou
+
+          $log_falha
+
+          ## 2. Identificar o erro
+
+          | No log aparece | Causa provável | O que fazer |
+          |---|---|---|
+          | \`RESOURCE_EXHAUSTED\` + \`PerDay\` | cota diária do Gemini | esperar a virada (meia-noite, Pacífico) e re-disparar |
+          | \`500\` / \`503\` / \`UNAVAILABLE\` repetido | instabilidade do Google | re-disparar mais tarde; o motor já tenta 4x sozinho |
+          | \`401\` / \`403\` / \`API key not valid\` | secret vencido | renovar **GEMINI_API_KEY** em Settings → Secrets → Actions |
+          | traceback novo em \`motor.py\` | mudança de API ou bug | precisa de correção no código |
+
+          ## 3. Re-disparar
+
+              gh workflow run clipping.yml --ref main
+
+          Ou: aba **Actions** → **Clipping Semanal** → **Run workflow**.
+
+          ## 4. Fechar esta issue
+
+          Enquanto ela estiver aberta o watchdog não abre outra — e volta a abrir uma nova
+          se o problema repetir. Limite configurado: ${LIMITE_DIAS} dias.
           EOF
           )"
-          echo "🔔 Alerta aberto: portal parado." >> "$GITHUB_STEP_SUMMARY"
+          echo "🔔 Alerta aberto e atribuído a $GITHUB_REPOSITORY_OWNER." >> "$GITHUB_STEP_SUMMARY"
