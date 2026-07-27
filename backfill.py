@@ -137,8 +137,8 @@ def rodar_completo(sb, chave, label, ini, fim):
 
     ativos = sb.table("sinais").select("*").neq("status", "dormindo").execute().data
     prompt = prompt_completo_retroativo(label, ini, fim, ativos)
-    texto = motor.gerar_analise(prompt)
-    dados = extrair_json(texto)
+    # gerar_analise já devolve o JSON convertido (a conversão roda dentro do retry)
+    dados = motor.gerar_analise(prompt)
 
     # FALLBACK: se o clipping veio vazio (limite da busca retroativa), tenta 1 vez
     # com um pedido focado só em divulgações econômicas oficiais daquele mês.
@@ -146,8 +146,7 @@ def rodar_completo(sb, chave, label, ini, fim):
         print(f"[backfill] {chave}: clipping vazio, tentando recuperação focada...")
         try:
             reforco = prompt_clipping_minimo(label, ini, fim)
-            t2 = motor.gerar_analise(reforco)
-            d2 = extrair_json(t2)
+            d2 = motor.gerar_analise(reforco)
             if d2.get("clipping"):
                 dados["clipping"] = d2["clipping"]
                 print(f"[backfill] {chave}: recuperados {len(d2['clipping'])} itens na 2ª tentativa.")

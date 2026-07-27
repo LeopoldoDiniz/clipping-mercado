@@ -1,11 +1,19 @@
 name: Watchdog do portal
 
-# Confere se o portal está FRESCO e, se não estiver, re-dispara o clipping.
+# Confere se a SEMANA CORRENTE já foi gerada e, se não foi, re-dispara o clipping.
 #
 # Por que olhar o DADO e não o run: um run que falha é só um dos modos de falha.
-# O cron pode ser desativado pelo GitHub (60 dias sem atividade), o motor pode
-# "passar" sem commitar nada, o Gemini pode devolver 200 com JSON truncado.
-# Nenhum desses acende alerta de falha — todos aparecem na idade do ultimo.json.
+# O cron pode ser desativado pelo GitHub (60 dias sem atividade) ou simplesmente
+# não disparar, o motor pode "passar" sem commitar nada, o Gemini pode devolver
+# 200 com JSON truncado. Nenhum desses acende alerta de falha.
+#
+# Por que a SEMANA e não a IDADE EM DIAS: o produto é semanal, e "dias desde a
+# última geração" só aproxima isso — mal, justamente quando mais importa. Em
+# 2026-07-26 (domingo) o watchdog resgatou a W30 no último dia da janela; na
+# segunda seguinte o dado tinha 1 dia de idade e parecia fresco, enquanto a W31
+# nunca havia sido gerada. O critério antigo ficaria cego até quinta. A pergunta
+# certa é binária: existe data/<semana ISO de hoje>.json e o ultimo.json aponta
+# para ela? Idade em dias segue no relatório, como informação, não como decisão.
 #
 # Não usa Gemini nem LLM: é jq + data. O único custo é a cota do clipping quando
 # ele de fato precisa ser re-disparado.
@@ -20,7 +28,6 @@ permissions:
   issues: write    # escalar para o humano
 
 env:
-  LIMITE_DIAS: 3      # com cron seg+qui, nada deveria passar de 3 dias
   MAX_TENTATIVAS: 2   # teto de re-disparos em 48h — evita loop queimando cota
   JANELA_HORAS: 48
 
@@ -31,33 +38,59 @@ jobs:
       - name: Baixar o repositório
         uses: actions/checkout@v4
 
-      - name: Conferir o frescor do portal
+      - name: Conferir se a semana corrente já foi gerada
         id: frescor
         run: |
           set -euo pipefail
-          gerado=$(jq -r '.gerado_em // empty' data/ultimo.json)
-          if [ -z "$gerado" ]; then
-            echo "ultimo.json sem 'gerado_em' — tratando como parado."
-            echo "idade=999" >> "$GITHUB_OUTPUT"
-            echo "label=ultimo.json corrompido" >> "$GITHUB_OUTPUT"
-            echo "fresco=false" >> "$GITHUB_OUTPUT"
-            exit 0
+
+          # %G-%V = ano+semana ISO, o MESMO calendário que motor.py usa em
+          # periodo_atual() (date.today().isocalendar()). Runner e motor rodam
+          # ambos em UTC, então as duas contas fecham.
+          semana=$(date -u +%G-W%V)
+          arquivo="data/${semana}.json"
+          apontado=$(jq -r '.periodo // empty' data/ultimo.json 2>/dev/null || true)
+          gerado=$(jq -r '.gerado_em // empty' data/ultimo.json 2>/dev/null || true)
+          label=$(jq -r '.label // "?"' data/ultimo.json 2>/dev/null || echo "?")
+
+          # A conversão da data fica dentro do if: sob 'set -e', um gerado_em
+          # malformado mataria o passo aqui — e o watchdog morrer calado é
+          # exatamente a falha silenciosa que ele existe para evitar.
+          if [ -n "$gerado" ] && ts=$(date -u -d "$gerado" +%s 2>/dev/null); then
+            idade=$(( ( $(date -u +%s) - ts ) / 86400 ))
+          else
+            idade=999
+            label="ultimo.json ilegível"
           fi
-          idade=$(( ( $(date -u +%s) - $(date -u -d "$gerado" +%s) ) / 86400 ))
-          label=$(jq -r '.label // "?"' data/ultimo.json)
-          echo "Portal em '$label', gerado em $gerado — $idade dia(s) atrás."
-          echo "idade=$idade" >> "$GITHUB_OUTPUT"
-          echo "label=$label" >> "$GITHUB_OUTPUT"
-          if [ "$idade" -le "$LIMITE_DIAS" ]; then
+
+          # Duas condições, porque são dois modos de falha distintos: o arquivo da
+          # semana pode não existir (motor não rodou/não commitou), ou existir sem
+          # que o ultimo.json tenha avançado (portal servindo semana velha).
+          motivo=""
+          if [ ! -f "$arquivo" ]; then
+            motivo="$arquivo não existe — a semana corrente nunca foi gerada"
+          elif [ "$apontado" != "$semana" ]; then
+            motivo="ultimo.json aponta para '${apontado:-vazio}', não para $semana"
+          fi
+
+          echo "Semana corrente: $semana | ultimo.json: ${apontado:-vazio} ('$label', $idade dia(s))"
+          {
+            echo "semana=$semana"
+            echo "idade=$idade"
+            echo "label=$label"
+          } >> "$GITHUB_OUTPUT"
+
+          if [ -z "$motivo" ]; then
             echo "fresco=true" >> "$GITHUB_OUTPUT"
           else
+            echo "PARADO: $motivo"
             echo "fresco=false" >> "$GITHUB_OUTPUT"
+            echo "motivo=$motivo" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Portal em dia — nada a fazer
         if: steps.frescor.outputs.fresco == 'true'
         run: |
-          echo "✅ Portal fresco (${{ steps.frescor.outputs.idade }} dia(s)). Sem ação." \
+          echo "✅ Semana ${{ steps.frescor.outputs.semana }} gerada (${{ steps.frescor.outputs.idade }} dia(s)). Sem ação." \
             >> "$GITHUB_STEP_SUMMARY"
 
       - name: Decidir entre re-disparar ou escalar
@@ -97,18 +130,22 @@ jobs:
         if: steps.decidir.outputs.acao == 'disparar'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # via env, não interpolado direto no script: o motivo carrega texto vindo
+          # do ultimo.json, e ${{ }} dentro de run: é substituição literal no shell.
+          MOTIVO: ${{ steps.frescor.outputs.motivo }}
         run: |
           set -euo pipefail
           gh workflow run clipping.yml --ref "${GITHUB_REF_NAME}"
-          echo "🔁 Portal com ${{ steps.frescor.outputs.idade }} dia(s) — clipping re-disparado." \
-            >> "$GITHUB_STEP_SUMMARY"
+          echo "🔁 $MOTIVO — clipping re-disparado." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Escalar para o humano
         if: steps.decidir.outputs.acao == 'escalar'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IDADE: ${{ steps.frescor.outputs.idade }}
-          SEMANA: ${{ steps.frescor.outputs.label }}
+          SEMANA: ${{ steps.frescor.outputs.semana }}
+          LABEL: ${{ steps.frescor.outputs.label }}
+          MOTIVO: ${{ steps.frescor.outputs.motivo }}
           TENTATIVAS: ${{ steps.decidir.outputs.tentativas }}
         run: |
           set -euo pipefail
@@ -136,9 +173,10 @@ jobs:
           gh issue create \
             --label portal-parado \
             --assignee "$GITHUB_REPOSITORY_OWNER" \
-            --title "Portal parado há $IDADE dias ($SEMANA)" \
+            --title "Semana $SEMANA não gerada (portal em '$LABEL')" \
             --body "$(cat <<EOF
-          O portal está há **$IDADE dia(s)** sem atualizar (última geração: $SEMANA).
+          A semana corrente (**$SEMANA**) não está no ar: $MOTIVO.
+          O portal segue servindo '$LABEL', gerado há $IDADE dia(s).
           O watchdog re-disparou o clipping ${TENTATIVAS}x nas últimas ${JANELA_HORAS}h sem sucesso
           e parou de tentar, para não queimar cota do Gemini à toa.
 
@@ -155,6 +193,7 @@ jobs:
           | \`RESOURCE_EXHAUSTED\` + \`PerDay\` | cota diária do Gemini | esperar a virada (meia-noite, Pacífico) e re-disparar |
           | \`500\` / \`503\` / \`UNAVAILABLE\` repetido | instabilidade do Google | re-disparar mais tarde; o motor já tenta 4x sozinho |
           | \`401\` / \`403\` / \`API key not valid\` | secret vencido | renovar **GEMINI_API_KEY** em Settings → Secrets → Actions |
+          | \`JSON inválido/truncado\` nas 4 tentativas | resposta grande demais para o teto | reduzir \`THINKING_COLETA\` ou o escopo do prompt em \`motor.py\` |
           | traceback novo em \`motor.py\` | mudança de API ou bug | precisa de correção no código |
 
           ## 3. Re-disparar
@@ -166,7 +205,8 @@ jobs:
           ## 4. Fechar esta issue
 
           Enquanto ela estiver aberta o watchdog não abre outra — e volta a abrir uma nova
-          se o problema repetir. Limite configurado: ${LIMITE_DIAS} dias.
+          se o problema repetir. O critério é binário: a issue deixa de fazer sentido
+          assim que \`data/${SEMANA}.json\` existir e o \`ultimo.json\` apontar para ela.
           EOF
           )"
           echo "🔔 Alerta aberto e atribuído a $GITHUB_REPOSITORY_OWNER." >> "$GITHUB_STEP_SUMMARY"

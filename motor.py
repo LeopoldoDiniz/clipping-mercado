@@ -42,6 +42,12 @@ MODELO_FALLBACK = "gemini-2.5-flash"
 LIMIAR_DORMIR = 25.0
 CICLOS_PARA_DORMIR = 3
 
+# Teto de tokens de RACIOCÍNIO da coleta. No 2.5, max_output_tokens cobre
+# raciocínio + resposta somados: sem teto aqui, o raciocínio come o orçamento e o
+# JSON sai cortado no meio (foi o que derrubou a coleta de 2026-07-27, em ~56 mil
+# caracteres). Limitando o raciocínio, a folga restante fica para a resposta.
+THINKING_COLETA = 8192
+
 # ─────────────────────────────────────────────────────────
 # FONTES OFICIAIS: mapa palavra-chave → homepage oficial.
 # Usado como fallback quando o Gemini devolve URL inválida/proibida.
@@ -367,23 +373,57 @@ def _cota_diaria_esgotada(err):
     return esgotou and marca_diaria
 
 
+class RespostaTruncada(RuntimeError):
+    """Resposta que chegou com HTTP 200 mas inutilizável: cortada por MAX_TOKENS,
+    vazia, ou com JSON quebrado. Não é erro de API — nenhuma exceção é levantada
+    pelo SDK —, mas o efeito prático é o mesmo, e a mesma chamada costuma passar na
+    tentativa seguinte. Por isso entra no circuito de retry em vez de derrubar o run."""
+
+
 def _transitorio(err):
     """True para erros passageiros do lado do Gemini (sobrecarga/instabilidade),
     que passam sozinhos ao esperar alguns segundos. É o caso do 503 UNAVAILABLE
     ('high demand'), que derrubou a coleta de 2026-07-20."""
+    if isinstance(err, RespostaTruncada):
+        return True
     s = str(err).lower()
     return any(t in s for t in (
         "503", "unavailable", "high demand", "overloaded",
         "500", "internal", "502", "504", "deadline", "timeout"))
 
 
+def _motivo_de_parada(resp):
+    """finish_reason do 1º candidato, normalizado ('MAX_TOKENS', 'STOP', ...).
+    None quando a resposta não expõe o campo — SDKs e versões variam, e a ausência
+    do dado nunca deve ser motivo de crash."""
+    try:
+        fr = resp.candidates[0].finish_reason
+    except (AttributeError, IndexError, TypeError):
+        return None
+    if fr is None:
+        return None
+    return getattr(fr, "name", str(fr)).rsplit(".", 1)[-1].upper()
+
+
 # espera antes de cada tentativa: a 1ª é imediata, depois 20s, 45s e 90s
 _ESPERAS_RETRY = [0, 20, 45, 90]
 
 
-def _gerar(client, prompt, config):
+def _gerar(client, prompt, config, validar=None):
     """Chama o primário com backoff em erros transitórios; se a cota DIÁRIA do
-    primário estourar, refaz no fallback. Retorna (resposta, modelo_usado)."""
+    primário estourar, refaz no fallback. Retorna (resultado, modelo_usado).
+
+    `validar` (opcional) recebe a resposta e devolve o que o chamador realmente
+    quer — no caso da coleta, o JSON já convertido. O ponto de fazer isso AQUI
+    dentro é que uma resposta imprestável passa a ser retentável: antes, um 200
+    com JSON truncado saía do loop como sucesso e só quebrava depois, fora do
+    alcance do retry (foi assim que 2026-07-27 morreu na 3ª tentativa). Sem
+    `validar`, devolve a resposta crua e o comportamento é o de sempre."""
+    def _executar(modelo):
+        resp = client.models.generate_content(
+            model=modelo, contents=prompt, config=config)
+        return (validar(resp) if validar else resp), modelo
+
     ultimo = None
     for i, espera in enumerate(_ESPERAS_RETRY):
         if espera:
@@ -391,13 +431,11 @@ def _gerar(client, prompt, config):
                   f"(tentativa {i+1}/{len(_ESPERAS_RETRY)})...")
             time.sleep(espera)
         try:
-            return client.models.generate_content(
-                model=MODELO, contents=prompt, config=config), MODELO
+            return _executar(MODELO)
         except Exception as e:
             if _cota_diaria_esgotada(e):
                 print(f"[motor] Cota diária de {MODELO} esgotada — desviando para {MODELO_FALLBACK}.")
-                return client.models.generate_content(
-                    model=MODELO_FALLBACK, contents=prompt, config=config), MODELO_FALLBACK
+                return _executar(MODELO_FALLBACK)
             if not _transitorio(e):
                 raise          # erro real (prompt inválido, chave errada): falha rápido
             ultimo = e
@@ -410,17 +448,52 @@ def _gerar(client, prompt, config):
 # ─────────────────────────────────────────────────────────
 # CHAMA O GEMINI com busca web nativa
 # ─────────────────────────────────────────────────────────
-def gerar_analise(prompt):
-    client = genai.Client(api_key=GEMINI_KEY)
-    grounding = types.Tool(google_search=types.GoogleSearch())
+def _config_coleta(grounding):
+    """Config da coleta. O thinking_config fica isolado num try porque SDK antigo
+    não conhece o parâmetro — e derrubar o run inteiro por causa de uma otimização
+    de orçamento seria trocar um modo de falha por outro."""
     # 6 setores + porter geram uma resposta maior; eleva o teto de saída para
     # evitar truncamento (2.5-flash suporta até 65k tokens de saída). Continua no free.
-    config = types.GenerateContentConfig(
-        tools=[grounding], temperature=0.4, max_output_tokens=65536)
-    resp, modelo = _gerar(client, prompt, config)
+    base = dict(tools=[grounding], temperature=0.4, max_output_tokens=65536)
+    try:
+        return types.GenerateContentConfig(
+            **base,
+            thinking_config=types.ThinkingConfig(thinking_budget=THINKING_COLETA))
+    except (AttributeError, TypeError) as e:
+        print(f"[motor] SDK sem thinking_config ({e}) — seguindo sem limitar o raciocínio.")
+        return types.GenerateContentConfig(**base)
+
+
+def _validar_coleta(resp):
+    """Converte a resposta da coleta em JSON, falhando de forma RETENTÁVEL quando
+    ela veio imprestável. Um corte por MAX_TOKENS chega com HTTP 200 e texto
+    aparentemente normal: sem esta checagem passa por sucesso e só estoura lá na
+    frente, no json.loads, já fora do retry."""
+    motivo = _motivo_de_parada(resp)
+    if motivo == "MAX_TOKENS":
+        raise RespostaTruncada(
+            "resposta cortada por MAX_TOKENS — raciocínio + resposta estouraram o teto")
+    texto = resp.text or ""
+    if not texto.strip():
+        raise RespostaTruncada(f"resposta vazia (finish_reason={motivo or 'desconhecido'})")
+    try:
+        return extrair_json(texto)
+    except (json.JSONDecodeError, ValueError) as e:
+        raise RespostaTruncada(
+            f"JSON inválido/truncado em {len(texto)} caracteres "
+            f"(finish_reason={motivo or 'desconhecido'}): {e}") from e
+
+
+def gerar_analise(prompt):
+    """Devolve o JSON da coleta JÁ convertido — a conversão acontece dentro do
+    retry, de propósito (ver _gerar)."""
+    client = genai.Client(api_key=GEMINI_KEY)
+    grounding = types.Tool(google_search=types.GoogleSearch())
+    dados, modelo = _gerar(client, prompt, _config_coleta(grounding),
+                           validar=_validar_coleta)
     if modelo != MODELO:
         print(f"[motor] Coleta concluída via fallback ({modelo}).")
-    return resp.text
+    return dados
 
 
 # ─────────────────────────────────────────────────────────
@@ -545,9 +618,8 @@ def main():
 
     prompt = montar_prompt(label, ini, fim, sinais_ativos)
     print("[motor] Chamando Gemini com busca web...")
-    texto = gerar_analise(prompt)
+    dados = gerar_analise(prompt)
 
-    dados = extrair_json(texto)
     print(f"[motor] JSON recebido: {len(dados.get('clipping', []))} notícias, "
           f"{len(dados.get('novos_sinais', []))} novos sinais, "
           f"{len(dados.get('atualizacoes_sinais', []))} atualizações")

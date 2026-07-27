@@ -6,10 +6,14 @@ name: Clipping Semanal
 # Como o motor respeita "1 ciclo = 1 semana", a quinta NÃO infla a relevância:
 # ela atualiza o que mudou e mantém o banco ativo (evita a pausa de 7 dias).
 # O botão de disparo manual (workflow_dispatch) usa a mesma lógica.
+#
+# Os minutos (:17) não são estética: agendamento no minuto :00 cai na faixa mais
+# disputada da fila do GitHub, onde o run atrasa muito — e às vezes é simplesmente
+# descartado, sem deixar registro. Foi o que aconteceu na segunda 2026-07-27.
 on:
   schedule:
-    - cron: "0 10 * * 1"
-    - cron: "0 10 * * 4"
+    - cron: "17 10 * * 1"
+    - cron: "17 10 * * 4"
   workflow_dispatch:
 
 permissions:
