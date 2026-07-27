@@ -158,43 +158,54 @@
       "label": "SELIC",
       "valor": "15,00% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 6/mar"
+      "sub": "Taxa básica de juros · BCB/SGS · 06/03/2026",
+      "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,33%",
       "cor": "neutral",
-      "sub": "Mês · acum. ano 0,33% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jan/26"
+      "sub": "Mês · acum. ano 0,33% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jan/26",
+      "fonte": "IBGE",
+      "acum_ano": 0.33
     },
     {
       "label": "Câmbio (US$)",
       "valor": "R$ 5,29",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB/SGS · 6/mar"
+      "sub": "Dólar PTAX venda · BCB · 06/03/2026",
+      "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
       "valor": "5,4%",
-      "cor": "up",
-      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026"
+      "cor": "down",
+      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026",
+      "fonte": "IBGE"
     },
     {
       "label": "Varejo (PMC)",
       "valor": "-0,7%",
-      "cor": "neutral",
-      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 1,6% · IBGE dez/25"
+      "cor": "down",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,6% · IBGE dez/25",
+      "fonte": "IBGE",
+      "acum_ano": 1.6
     },
     {
       "label": "PIM (Indústria)",
       "valor": "2,2%",
       "cor": "up",
-      "sub": "Produção física m/m · acum. ano 0,2% · IBGE jan/26"
+      "sub": "Produção física m/m · acum. ano 0,2% · IBGE jan/26",
+      "fonte": "IBGE",
+      "acum_ano": 0.2
     },
     {
       "label": "IPP",
       "valor": "0,32%",
       "cor": "down",
-      "sub": "Preços ao produtor m/m · acum. ano 0,32% · IBGE jan/26"
+      "sub": "Preços ao produtor m/m · acum. ano 0,32% · IBGE jan/26",
+      "fonte": "IBGE",
+      "acum_ano": 0.32
     }
   ],
   "longitudinal": [],

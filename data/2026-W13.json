@@ -116,44 +116,55 @@
     {
       "label": "SELIC",
       "valor": "14,75% a.a.",
-      "cor": "neutral",
-      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 27/mar"
+      "cor": "up",
+      "sub": "Taxa básica de juros · BCB/SGS · 27/03/2026",
+      "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,70%",
-      "cor": "neutral",
-      "sub": "Mês · acum. ano 1,03% · 12m 3,81% · meta 3,0% (teto 4,5%) · IBGE fev/26"
+      "cor": "down",
+      "sub": "Mês · acum. ano 1,03% · 12m 3,81% · meta 3,0% (teto 4,5%) · IBGE fev/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.03
     },
     {
       "label": "Câmbio (US$)",
       "valor": "R$ 5,24",
       "cor": "up",
-      "sub": "Dólar PTAX venda · BCB/SGS · 27/mar"
+      "sub": "Dólar PTAX venda · BCB · 27/03/2026",
+      "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
       "valor": "5,4%",
-      "cor": "neutral",
-      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026"
+      "cor": "down",
+      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026",
+      "fonte": "IBGE"
     },
     {
       "label": "Varejo (PMC)",
       "valor": "0,5%",
-      "cor": "neutral",
-      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 2,7% · IBGE jan/26"
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,7% · IBGE jan/26",
+      "fonte": "IBGE",
+      "acum_ano": 2.7
     },
     {
       "label": "PIM (Indústria)",
       "valor": "2,2%",
-      "cor": "neutral",
-      "sub": "Produção física m/m · acum. ano 0,2% · IBGE jan/26"
+      "cor": "up",
+      "sub": "Produção física m/m · acum. ano 0,2% · IBGE jan/26",
+      "fonte": "IBGE",
+      "acum_ano": 0.2
     },
     {
       "label": "IPP",
       "valor": "0,32%",
-      "cor": "neutral",
-      "sub": "Preços ao produtor m/m · acum. ano 0,32% · IBGE jan/26"
+      "cor": "down",
+      "sub": "Preços ao produtor m/m · acum. ano 0,32% · IBGE jan/26",
+      "fonte": "IBGE",
+      "acum_ano": 0.32
     }
   ],
   "longitudinal": [],

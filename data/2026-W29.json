@@ -1975,21 +1975,25 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "10,50%",
+      "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Projeção Focus 2026: 10,25%"
+      "sub": "Taxa básica de juros · BCB/SGS · 17/07/2026",
+      "fonte": "BCB/SGS"
     },
     {
-      "label": "IPCA-15",
-      "valor": "0,45%",
-      "cor": "down",
-      "sub": "Julho/2026 · acum. ano 3,52% · 12m 4,20% · meta 3,0% (teto 4,5%) · IBGE jul/26 · Projeção Focus 2026: 4,05%"
+      "label": "IPCA",
+      "valor": "0,16%",
+      "cor": "up",
+      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 3.36
     },
     {
-      "label": "Câmbio",
-      "valor": "R$ 5,40",
-      "cor": "down",
-      "sub": "Dólar comercial · Projeção Focus 2026: R$ 5,25"
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,12",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB · 17/07/2026",
+      "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
@@ -2000,11 +2004,11 @@
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "-1,5%",
-      "cor": "down",
-      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26",
+      "valor": "0,1%",
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE mai/26",
       "fonte": "IBGE",
-      "acum_ano": 2.0
+      "acum_ano": 1.7
     },
     {
       "label": "PIM (Indústria)",

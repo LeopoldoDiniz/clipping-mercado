@@ -1603,21 +1603,25 @@
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "10,75%",
+      "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Mantida em jul/2026 · Projeção Focus 2026: 10,50%"
+      "sub": "Taxa básica de juros · BCB/SGS · 24/07/2026",
+      "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,16%",
       "cor": "up",
-      "sub": "Jun/2026 · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26 · Projeção Focus 2026: 4,00%"
+      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 3.36
     },
     {
-      "label": "Câmbio (Dólar)",
-      "valor": "R$ 5,15",
-      "cor": "neutral",
-      "sub": "Fechamento 24/jul/2026 · Projeção Focus 2026: R$ 5,20"
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,07",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB · 24/07/2026",
+      "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",

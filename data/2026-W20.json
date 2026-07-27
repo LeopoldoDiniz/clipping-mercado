@@ -129,44 +129,55 @@
     {
       "label": "SELIC",
       "valor": "14,50% a.a.",
-      "cor": "neutral",
-      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 15/mai"
+      "cor": "up",
+      "sub": "Taxa básica de juros · BCB/SGS · 15/05/2026",
+      "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,67%",
       "cor": "up",
-      "sub": "Mês · acum. ano 2,60% · 12m 4,39% · meta 3,0% (teto 4,5%) · IBGE abr/26"
+      "sub": "Mês · acum. ano 2,60% · 12m 4,39% · meta 3,0% (teto 4,5%) · IBGE abr/26",
+      "fonte": "IBGE",
+      "acum_ano": 2.6
     },
     {
       "label": "Câmbio (US$)",
       "valor": "R$ 5,07",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB/SGS · 15/mai"
+      "sub": "Dólar PTAX venda · BCB · 15/05/2026",
+      "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
-      "valor": "5,4%",
-      "cor": "neutral",
-      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026"
+      "valor": "6,1%",
+      "cor": "down",
+      "sub": "PNAD Contínua · IBGE · jan-fev-mar 2026",
+      "fonte": "IBGE"
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "0,7%",
-      "cor": "down",
-      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 2,4% · IBGE mar/26"
+      "valor": "0,8%",
+      "cor": "neutral",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,4% · IBGE mar/26",
+      "fonte": "IBGE",
+      "acum_ano": 2.4
     },
     {
       "label": "PIM (Indústria)",
       "valor": "0,3%",
-      "cor": "neutral",
-      "sub": "Produção física m/m · acum. ano 4,4% · IBGE mar/26"
+      "cor": "down",
+      "sub": "Produção física m/m · acum. ano 4,4% · IBGE mar/26",
+      "fonte": "IBGE",
+      "acum_ano": 4.4
     },
     {
       "label": "IPP",
       "valor": "2,28%",
-      "cor": "neutral",
-      "sub": "Preços ao produtor m/m · acum. ano 2,43% · IBGE mar/26"
+      "cor": "down",
+      "sub": "Preços ao produtor m/m · acum. ano 2,43% · IBGE mar/26",
+      "fonte": "IBGE",
+      "acum_ano": 2.43
     }
   ],
   "longitudinal": [],

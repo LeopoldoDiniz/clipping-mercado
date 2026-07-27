@@ -428,43 +428,54 @@
       "label": "SELIC",
       "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros (meta Copom) · BCB/SGS · 10/jul"
+      "sub": "Taxa básica de juros · BCB/SGS · 10/07/2026",
+      "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,16%",
       "cor": "up",
-      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26 · Projeção Focus 2026: 5,30%"
+      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 3.36
     },
     {
       "label": "Câmbio (US$)",
       "valor": "R$ 5,11",
       "cor": "up",
-      "sub": "Dólar PTAX venda · BCB/SGS · 10/jul"
+      "sub": "Dólar PTAX venda · BCB · 10/07/2026",
+      "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
-      "valor": "5,4%",
-      "cor": "neutral",
-      "sub": "PNAD Contínua · IBGE · nov-dez-jan 2026"
+      "valor": "5,6%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · mar-abr-mai 2026",
+      "fonte": "IBGE"
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "-1,5%",
-      "cor": "neutral",
-      "sub": "Vol. vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26"
+      "valor": "-1,6%",
+      "cor": "down",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 2,0% · IBGE abr/26",
+      "fonte": "IBGE",
+      "acum_ano": 2.0
     },
     {
       "label": "PIM (Indústria)",
       "valor": "-0,2%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano 0,2% · IBGE mai/26"
+      "sub": "Produção física m/m · acum. ano 0,2% · IBGE mai/26",
+      "fonte": "IBGE",
+      "acum_ano": 0.2
     },
     {
       "label": "IPP",
       "valor": "-0,30%",
-      "cor": "neutral",
-      "sub": "Preços ao produtor m/m · acum. ano 4,80% · IBGE mai/26"
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano 4,80% · IBGE mai/26",
+      "fonte": "IBGE",
+      "acum_ano": 4.8
     }
   ],
   "longitudinal": [

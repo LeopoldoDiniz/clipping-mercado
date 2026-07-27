@@ -3,20 +3,31 @@ KPIS OFICIAIS — validador determinístico dos indicadores macro.
 
 O Gemini continua sendo a IA de BUSCA (clipping, sinais, editorial). Mas os
 NÚMEROS dos indicadores macro não podem depender do modelo: aqui eles são
-buscados direto nas APIs oficiais (BCB/SGS e IBGE/SIDRA) e SOBREPÕEM o que o
-Gemini tiver proposto — garantindo 100% de acurácia. Se a API oficial falhar
-para um indicador, mantém-se o valor do Gemini (nunca quebra o motor).
+buscados direto nas APIs oficiais (BCB/SGS, BCB/Olinda e IBGE/SIDRA).
+
+REGRA DURA: nenhum número macro sai daqui sem fonte oficial. Se todas as fontes
+de um indicador falharem, ele sai marcado como INDISPONÍVEL — e o motor herda o
+último valor oficial conhecido, com a data de referência à vista. O valor do
+Gemini NUNCA é publicado como indicador. Essa regra existe porque o contrário
+foi tentado: entre as semanas 29 e 31 de 2026 a API do BCB parou de responder de
+dentro do runner, o erro foi engolido em silêncio, e o portal publicou Selic de
+10,75% (real: 14,25%), câmbio R$ 5,25 (real: R$ 5,07) e IPCA 0,35% (real: 0,16%)
+— todos inventados pelo modelo, e ainda atribuídos a "BCB/SGS" na interface.
 
 Cada indicador traz, quando faz sentido: variação no mês, ACUMULADO NO ANO e 12 meses.
 
 Sem dependências novas: usa só a biblioteca padrão (urllib).
 Séries verificadas contra a realidade conhecida (jul/2026):
-  SELIC meta 432 (fallback efetiva 1178) · Câmbio PTAX venda 1 · IPCA mês 433 / 12m 13522
+  SELIC meta SGS 432 (fallback efetiva 1178)
+  Câmbio PTAX venda SGS 1 (fallback Olinda/PTAX — host distinto do SGS)
+  IPCA SIDRA 1737 v63(mês)/v69(ano)/v2265(12m) — FONTE PRIMÁRIA, o IBGE publica
+       o índice; SGS 433/13522 é só espelho e vira fallback
   Desemprego PNAD 6381 v4099 · Varejo PMC 8880 v11708(mês)/v11710(ano)
   PIM 8888 v11601(mês)/v11602(ano) · IPP 6903 v1396(mês)/v1395(ano)
 """
 import json
 import time
+import urllib.parse
 import urllib.request
 from datetime import date, timedelta
 
@@ -37,8 +48,14 @@ _CACHE = {}
 
 
 def _get(url, tries=3):
+    """GET com cache e retry curto. Devolve None quando a fonte não responde —
+    e DIZ isso no log. O silêncio aqui foi o que deixou o portal publicar Selic
+    de 10,75% por três semanas: a API do BCB parou de responder de dentro do
+    runner, o erro foi engolido, e o número inventado passou como se fosse dado."""
     if url in _CACHE:
         return _CACHE[url]
+    host = urllib.parse.urlsplit(url).netloc
+    erro = None
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=_UA)
@@ -49,17 +66,38 @@ def _get(url, tries=3):
                 j = json.loads(s)
                 _CACHE[url] = j
                 return j
-        except Exception:
-            pass
+            erro = f"resposta não-JSON ({s[:60]!r})"
+        except Exception as e:
+            erro = f"{type(e).__name__}: {e}"
         if i < tries - 1:
             time.sleep(1.0 * (i + 1))
+    print(f"[kpis] FONTE INDISPONÍVEL: {host} após {tries} tentativas — {erro}")
+    print(f"[kpis]   url: {url}")
     _CACHE[url] = None
     return None
 
 
-def _bcb(cod, n=60):
-    """Série BCB/SGS diária → lista [(date, valor_float)] mais antigo→recente."""
-    j = _get(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{cod}/dados/ultimos/{n}?formato=json")
+# Janela histórica das séries do BCB, em anos. Larga de propósito: uma requisição
+# por série atende TODAS as semanas do portal (o backfill filtra por data), em vez
+# de uma requisição por semana.
+_JANELA_ANOS = 3
+
+
+def _bcb(cod, n=None):
+    """Série BCB/SGS diária → lista [(date, valor_float)] mais antigo→recente.
+
+    Consulta por INTERVALO (dataInicial/dataFinal), não por 'ultimos/N'. O
+    endpoint /ultimos/ passou a responder HTTP 400 acima de ~20 observações
+    (verificado em 27/07/2026 nas séries 432 e 1), e todas as chamadas daqui
+    pediam de 24 a 60. Foi essa mudança — escondida pelo `except` silencioso do
+    _get — que tirou Selic, câmbio e IPCA do ar entre as semanas 29 e 31 de 2026.
+
+    `n` é mantido só por compatibilidade de assinatura: a janela é sempre larga."""
+    hoje = date.today()
+    ini = date(hoje.year - _JANELA_ANOS, 1, 1)
+    j = _get(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{cod}/dados?formato=json"
+             f"&dataInicial={ini.strftime('%d/%m/%Y')}"
+             f"&dataFinal={hoje.strftime('%d/%m/%Y')}")
     out = []
     for o in (j or []):
         try:
@@ -67,13 +105,59 @@ def _bcb(cod, n=60):
             out.append((date(y, m, d), float(str(o["valor"]).replace(",", "."))))
         except (ValueError, KeyError, TypeError):
             continue
-    return out
+    return sorted(out)
 
 
 def _bcb_mensal(cod, n=24):
     """Série BCB/SGS mensal → mesmo formato do SIDRA [(ano, mes, valor, periodo)]."""
     return [(d.year, d.month, v, f"{_MABBR[d.month]}/{str(d.year)[2:]}")
-            for (d, v) in _bcb(cod, n)]
+            for (d, v) in _bcb(cod)]
+
+
+def _olinda_ptax(ref, dias=12):
+    """PTAX venda pelo Olinda — host DIFERENTE do SGS (olinda.bcb.gov.br, não
+    api.bcb.gov.br). Existe porque foi exatamente o SGS que ficou inalcançável do
+    runner enquanto o resto do BCB seguia no ar: uma segunda porta para o mesmo
+    dado oficial. Mesmo formato de _bcb: [(date, valor)] antigo→recente."""
+    ini = (ref - timedelta(days=dias)).strftime("%m-%d-%Y")
+    fim = ref.strftime("%m-%d-%Y")
+    url = ("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/"
+           f"CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)"
+           f"?@dataInicial='{ini}'&@dataFinalCotacao='{fim}'"
+           "&$format=json&$select=cotacaoVenda,dataHoraCotacao")
+    j = _get(url)
+    out = []
+    for o in ((j or {}).get("value") or []):
+        try:
+            d = date.fromisoformat(str(o["dataHoraCotacao"])[:10])
+            out.append((d, float(o["cotacaoVenda"])))
+        except (ValueError, KeyError, TypeError):
+            continue
+    return sorted(out)
+
+
+def _sidra_ipca(n=36):
+    """IPCA direto do IBGE (tabela 1737): mês, acumulado no ano e 12 meses.
+    É a FONTE PRIMÁRIA — o IBGE é quem calcula e publica o IPCA; o SGS 433/13522
+    apenas espelha. Buscar no espelho era um salto desnecessário, e foi por ele
+    que o IPCA caiu junto quando o SGS parou. Devolve dict de listas no formato
+    do SIDRA [(ano, mes, valor, periodo)]."""
+    j = _get("https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63,69,2265"
+             f"/p/last%20{n}/h/n")
+    por_var = {"63": [], "69": [], "2265": []}
+    for x in (j or []):
+        cod, v = str(x.get("D2C", "")), x.get("V", "")
+        if cod not in por_var or v in ("...", "..", "-", None):
+            continue
+        try:
+            per = str(x.get("D3C", ""))          # AAAAMM
+            y, m = int(per[:4]), int(per[4:6])
+            por_var[cod].append((y, m, float(str(v).replace(",", ".")),
+                                 f"{_MABBR[m]}/{str(y)[2:]}"))
+        except (ValueError, TypeError):
+            continue
+    return {"mes": sorted(por_var["63"]), "ano": sorted(por_var["69"]),
+            "doze": sorted(por_var["2265"])}
 
 
 def _sidra(path):
@@ -149,20 +233,27 @@ def _ipca_acum_ano(serie_mensal, ano, mes_ref):
 def coletar_kpis(ref=None):
     """Monta os 7 KPIs macro oficiais válidos na data `ref` (default hoje).
     Retorna lista no schema canônico {label, valor, cor, sub, fonte, acum_ano?}.
-    Indicadores que a API não devolver saem como None (o motor mantém o do Gemini)."""
+    Indicador cuja fonte oficial não responder simplesmente NÃO entra na lista —
+    quem chama trata a ausência (ver validar_kpis). Nunca há preenchimento por
+    estimativa aqui."""
     ref = ref or date.today()
 
     selic = _bcb(432, 40) or _bcb(1178, 60)     # meta Copom; fallback efetiva
-    cambio = _bcb(1, 60)
-    ipca_m = _bcb_mensal(433, 24)
-    ipca_12 = _bcb_mensal(13522, 24)
-    desemp = _sidra("/t/6381/n1/all/v/4099/p/last%2018")
-    varejo_m = _sidra("/t/8880/n1/all/v/11708/p/last%2018/c11046/56734")
-    varejo_a = _sidra("/t/8880/n1/all/v/11710/p/last%2018/c11046/56734")
-    pim_m = _sidra("/t/8888/n1/all/v/11601/p/last%2018/c544/129314")
-    pim_a = _sidra("/t/8888/n1/all/v/11602/p/last%2018/c544/129314")
-    ipp_m = _sidra("/t/6903/n1/all/v/1396/p/last%2018")
-    ipp_a = _sidra("/t/6903/n1/all/v/1395/p/last%2018")
+    cambio = _bcb(1, 60) or _olinda_ptax(ref)   # SGS; fallback Olinda (outro host)
+
+    # IPCA: IBGE primeiro (fonte primária), SGS só como espelho de reserva.
+    _ipca = _sidra_ipca(36)
+    ipca_m, ipca_ano, ipca_12 = _ipca["mes"], _ipca["ano"], _ipca["doze"]
+    if not ipca_m:
+        print("[kpis] IPCA: SIDRA indisponível — tentando espelho BCB/SGS.")
+        ipca_m, ipca_ano, ipca_12 = _bcb_mensal(433), [], _bcb_mensal(13522)
+    desemp = _sidra("/t/6381/n1/all/v/4099/p/last%2036")
+    varejo_m = _sidra("/t/8880/n1/all/v/11708/p/last%2036/c11046/56734")
+    varejo_a = _sidra("/t/8880/n1/all/v/11710/p/last%2036/c11046/56734")
+    pim_m = _sidra("/t/8888/n1/all/v/11601/p/last%2036/c544/129314")
+    pim_a = _sidra("/t/8888/n1/all/v/11602/p/last%2036/c544/129314")
+    ipp_m = _sidra("/t/6903/n1/all/v/1396/p/last%2036")
+    ipp_a = _sidra("/t/6903/n1/all/v/1395/p/last%2036")
 
     out = {}
 
@@ -181,8 +272,8 @@ def coletar_kpis(ref=None):
         prev = _pick_diario([o for o in cambio if o[0] <= ca[0] - timedelta(days=20)], ca[0])
         out["cambio"] = {"label": "Câmbio (US$)", "valor": f"R$ {_br(ca[1])}",
                          "cor": _cor(ca[1], prev[1] if prev else None, True),
-                         "sub": f"Dólar PTAX venda · BCB/SGS · {ca[0].strftime('%d/%m/%Y')}",
-                         "fonte": "BCB/SGS"}
+                         "sub": f"Dólar PTAX venda · BCB · {ca[0].strftime('%d/%m/%Y')}",
+                         "fonte": "BCB/PTAX"}
 
     # IPCA (mês + acum. ano + 12m)
     ip = _pick_mensal(ipca_m, ref, 1, 10) if ipca_m else None
@@ -190,7 +281,13 @@ def coletar_kpis(ref=None):
         y, m, val = ip[0], ip[1], ip[2]
         prev = next((v for (yy, mm, v, *_ ) in reversed(ipca_m)
                      if (yy, mm) < (y, m)), None)
-        acum = _ipca_acum_ano(ipca_m, y, m)
+        # Acumulado no ano: prefere o PUBLICADO pelo IBGE (v69). O cálculo por
+        # composição só entra se o IBGE não devolver a série — número oficial
+        # ganha de número derivado, mesmo quando os dois deveriam coincidir.
+        acum = next((v for (yy, mm, v, *_ ) in reversed(ipca_ano or [])
+                     if (yy, mm) == (y, m)), None)
+        if acum is None:
+            acum = _ipca_acum_ano(ipca_m, y, m)
         i12 = next((v for (yy, mm, v, *_ ) in reversed(ipca_12) if (yy, mm) == (y, m)), None)
         meta_ipca = "meta 3,0% (teto 4,5%)"   # meta contínua de inflação (CMN)
         sub = f"Mês · {meta_ipca} · IBGE · {_MABBR[m]}/{str(y)[2:]}"
@@ -295,7 +392,7 @@ def coletar_ipca_grupos(ref=None):
     Escolhe o mês já DIVULGADO (~dia 10 do mês seguinte). None se a API falhar."""
     ref = ref or date.today()
     ids = ",".join(g[0] for g in _IPCA_GRUPOS)
-    raw = _sidra_raw(f"/t/7060/n1/all/v/63,66/p/last%2018/c315/{ids}")
+    raw = _sidra_raw(f"/t/7060/n1/all/v/63,66/p/last%2036/c315/{ids}")
     gmap, meses = {}, set()
     for x in raw:
         per = x.get("D3N", "")
@@ -341,12 +438,12 @@ def coletar_kpis_setoriais(ref=None):
     Serviços (PMS), Construção (SINAPI custo m²) e Agro (LSPA safra de grãos).
     Cada um traz numéricos (pt/acum/flow) para o gráfico. IBGE/SIDRA, determinístico."""
     ref = ref or date.today()
-    pms_m = _sidra("/t/5906/n1/all/v/11623/p/last%2018/c11046/56726")
-    pms_a = _sidra("/t/5906/n1/all/v/11625/p/last%2018/c11046/56726")
-    sin_c = _sidra("/t/2296/n1/all/v/48/p/last%2018")
-    sin_m = _sidra("/t/2296/n1/all/v/1196/p/last%2018")
-    sin_a = _sidra("/t/2296/n1/all/v/1197/p/last%2018")
-    lspa = _sidra("/t/6588/n1/all/v/35/p/last%2018/c48/39428")
+    pms_m = _sidra("/t/5906/n1/all/v/11623/p/last%2036/c11046/56726")
+    pms_a = _sidra("/t/5906/n1/all/v/11625/p/last%2036/c11046/56726")
+    sin_c = _sidra("/t/2296/n1/all/v/48/p/last%2036")
+    sin_m = _sidra("/t/2296/n1/all/v/1196/p/last%2036")
+    sin_a = _sidra("/t/2296/n1/all/v/1197/p/last%2036")
+    lspa = _sidra("/t/6588/n1/all/v/35/p/last%2036/c48/39428")
     out = []
 
     pm = _pick_mensal(pms_m, ref, 2, 13) if pms_m else None   # PMS ~45d de defasagem
@@ -425,41 +522,56 @@ def _familia(label):
     return L
 
 
+# As 7 famílias macro do painel. A lista é FECHADA de propósito: o painel é
+# construído a partir dela, não a partir do que o modelo resolveu devolver.
+_FAMILIAS_MACRO = {
+    "selic": ("SELIC", 0), "ipca": ("IPCA", 1), "cambio": ("Câmbio (US$)", 2),
+    "desemprego": ("Desemprego", 3), "varejo": ("Varejo (PMC)", 4),
+    "pim": ("PIM (Indústria)", 5), "ipp": ("IPP", 6),
+}
+
+# Marca que o motor lê para acionar a herança do último valor oficial conhecido.
+INDISPONIVEL = "—"
+
+
 def validar_kpis(kpis_gemini, ref=None, verbose=True):
-    """BLINDAGEM: substitui os números do Gemini pelos oficiais (fonte da verdade).
-    Mantém a ordem/estrutura; onde a API oficial falhar, preserva o do Gemini.
-    Registra no log toda divergência corrigida (auditoria)."""
-    oficiais = coletar_kpis(ref)
-    if not oficiais:
-        if verbose:
-            print("[kpis] APIs oficiais indisponíveis — mantendo KPIs do Gemini nesta rodada.")
-        return kpis_gemini or []
+    """Monta o painel macro EXCLUSIVAMENTE com números de fonte oficial.
 
+    O argumento `kpis_gemini` entra apenas como material de AUDITORIA: serve para
+    registrar no log o que o modelo tinha proposto e o quanto errou. Nenhum valor
+    dele chega ao painel — nem quando a fonte oficial falha.
+
+    Família sem dado oficial sai com valor INDISPONÍVEL e fonte None; o motor
+    (reconciliar_kpis) então herda o último valor oficial conhecido, com a semana
+    de referência à vista. Antes, esse caminho devolvia o número do Gemini, e foi
+    assim que uma Selic de 10,75% ficou três semanas no ar como se fosse do BCB."""
+    oficiais = coletar_kpis(ref) or []
     por_fam = {_familia(k["label"]): k for k in oficiais}
-    usados = set()
-    saida = []
+    proposto = {_familia(g.get("label", "")): str(g.get("valor", "")).strip()
+                for g in (kpis_gemini or [])}
 
-    # 1) para cada KPI do Gemini, sobrepõe pelo oficial da mesma família (se houver)
-    for g in (kpis_gemini or []):
-        fam = _familia(g.get("label", ""))
+    saida, faltando = [], []
+    for fam, (rotulo, _) in sorted(_FAMILIAS_MACRO.items(), key=lambda kv: kv[1][1]):
         of = por_fam.get(fam)
         if of:
-            usados.add(fam)
-            g_val = str(g.get("valor", "")).strip()
+            g_val = proposto.get(fam)
             if verbose and g_val and g_val != of["valor"]:
-                print(f"[kpis] {fam}: Gemini disse '{g_val}' → corrigido para OFICIAL '{of['valor']}'.")
+                print(f"[kpis] {fam}: Gemini disse '{g_val}' → OFICIAL '{of['valor']}'.")
             saida.append(dict(of))
         else:
-            saida.append(g)  # sem fonte oficial: mantém o do Gemini
+            faltando.append(fam)
+            if verbose:
+                descartado = proposto.get(fam)
+                extra = f" (descartado o valor '{descartado}' do Gemini)" if descartado else ""
+                print(f"[kpis] {fam}: SEM FONTE OFICIAL nesta rodada{extra} — "
+                      f"marcado como indisponível para herdar o último valor oficial.")
+            saida.append({"label": rotulo, "valor": INDISPONIVEL, "cor": "neutro",
+                          "sub": "Fonte oficial indisponível nesta coleta",
+                          "fonte": None})
 
-    # 2) garante que TODOS os oficiais apareçam (mesmo se o Gemini omitiu algum)
-    for fam, of in por_fam.items():
-        if fam not in usados:
-            saida.append(dict(of))
-
-    # 3) reordena na sequência canônica
-    ordem = {"selic": 0, "ipca": 1, "cambio": 2, "desemprego": 3, "varejo": 4, "pim": 5, "ipp": 6}
-    saida.sort(key=lambda k: ordem.get(_familia(k.get("label", "")), 99))
+    if verbose and faltando:
+        print(f"[kpis] ATENÇÃO: {len(faltando)}/{len(_FAMILIAS_MACRO)} indicadores "
+              f"sem fonte oficial: {', '.join(faltando)}")
     return saida
 
 

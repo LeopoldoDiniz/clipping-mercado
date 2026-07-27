@@ -848,14 +848,20 @@ def reconciliar_kpis(kpis, chave):
         if _kpi_indisponivel(kk.get("valor")):
             bucket = _kpi_bucket(kk.get("label"))
             for _, lbl_ant, kpis_ant in anteriores:
+                # SÓ herda de semana com procedência oficial ('fonte' preenchida).
+                # As semanas 29 a 31 de 2026 guardam números que o Gemini inventou
+                # enquanto a API do BCB estava fora (fonte=None); sem este filtro a
+                # herança os ressuscitaria e a contaminação viraria permanente.
                 cand = next((x for x in kpis_ant
                              if _kpi_bucket(x.get("label")) == bucket
+                             and x.get("fonte")
                              and not _kpi_indisponivel(_kpi_sem_proj(x.get("valor")))),
                             None)
                 if cand:
                     kk["valor"] = _kpi_sem_proj(cand.get("valor"))
-                    kk["sub"] = (f"Sem divulgação nesta semana; "
-                                 f"último dado conhecido ({lbl_ant}).")
+                    kk["sub"] = (f"Último dado oficial disponível ({lbl_ant}) — "
+                                 f"fonte não respondeu nesta coleta.")
+                    kk["fonte"] = cand.get("fonte")
                     kk["herdado_de"] = lbl_ant
                     break
         saida.append(kk)
