@@ -1,3 +1,9 @@
+# Insumos brutos e intermediários de análise: ficam no disco, fora do versionamento.
+# data/*.json (as semanas do portal) CONTINUA versionado — é o produto.
+data/raw/
+data/processed/
+__pycache__/
+
 tools/.bf_*
 tools/.body_*
 tools/_cands.json
