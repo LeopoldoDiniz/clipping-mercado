@@ -158,6 +158,7 @@
       "sub": "Mês · acum. ano 3,92% · 12m 4,46% · meta 3,0% (teto 4,5%) · IBGE nov/25 · Projeção Focus 2026: 4,06%",
       "fonte": "IBGE",
       "acum_ano": 3.92,
+      "ipca_12m": 4.46,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",

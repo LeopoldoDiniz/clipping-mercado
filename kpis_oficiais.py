@@ -348,6 +348,11 @@ def coletar_kpis(ref=None):
         out["ipca"] = {"label": "IPCA", "valor": f"{_br(val)}%",
                        "cor": _cor(val, prev, True), "sub": sub, "fonte": "IBGE",
                        "acum_ano": None if acum is None else round(acum, 2),
+                       # 12 MESES: a série de fato comparável à meta. Não reinicia em
+                       # janeiro (o acum. ano cai de ~4% para ~0,3% na virada, degrau
+                       # de calendário que no gráfico parece deflação) e é sobre ela
+                       # que o regime de meta contínua do CMN é definido.
+                       "ipca_12m": None if i12 is None else round(i12, 2),
                        # campos estruturados p/ o gráfico: linha da meta + nota de
                        # última revisão. Vão separados do 'sub' de propósito — texto
                        # é para o humano ler, número é para o gráfico desenhar.

@@ -1256,16 +1256,19 @@ function chartPoints(){
 // preenche buracos de uma série p/ o gráfico (forward-fill + back-fill do 1º valor conhecido)
 function fillSeries(a){const f=(a||[]).slice();let last=null;for(let i=0;i<f.length;i++){if(f[i]!=null)last=f[i];else f[i]=last;}
   const fst=f.find(v=>v!=null);for(let i=0;i<f.length;i++){if(f[i]==null)f[i]=(fst!=null?fst:0);}return f;}
-// IPCA vira 3 séries selecionáveis no gráfico: mês, acumulado no ano e projetado (Focus)
+// IPCA vira 4 séries selecionáveis: mês, 12 meses, acumulado no ano e projetado (Focus)
 function ipcaSubSeries(){
   const k=KPIMAP.ipca;if(!k)return[];
   const base={un:"%",flow:false,ico:k.ico,cor:k.cor};
-  // A meta acompanha as séries medidas no MESMO horizonte que ela: o ano.
-  // Acumulado no ano e projeção de fechamento se leem contra a meta anual; a
-  // variação MENSAL não, seria comparar um mês com um alvo de doze.
+  // A meta acompanha as séries medidas no MESMO horizonte que ela. A variação
+  // MENSAL fica de fora: comparar um mês com um alvo de doze induz erro.
   const meta={metaRef:k.metaRef,metaDesde:k.metaDesde,metaFonte:k.metaFonte};
   return [
     {...base,id:"ipca_mes",label:"IPCA (mês)",hist:fillSeries(k.hist),acum:fillSeries(k.hist)},
+    // 12 MESES é a leitura canônica contra a meta: o regime de meta CONTÍNUA do CMN
+    // é definido sobre a inflação acumulada em 12 meses, e a série não tem o degrau
+    // de janeiro que o acumulado no ano carrega.
+    {...base,id:"ipca_12m",label:"IPCA (12m)",hist:fillSeries(k.doze),acum:fillSeries(k.doze),...meta},
     {...base,id:"ipca_acum",label:"IPCA (acum. ano)",hist:fillSeries(k.acum),acum:fillSeries(k.acum),
      ...meta,metaParcial:true},
     {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj),...meta}
@@ -1353,7 +1356,7 @@ function chartCard(){
   const janela=n===1?"1 leitura":`${points[0].label} → ${points[n-1].label}`;
   const partial=points.some(p=>p.partial);
   const legend=monthly
-    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: varejo, PIM, IPP, Serviços/PMS) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego, custo/m²). O <b>IPCA</b> entra em três séries próprias: <b>mês</b>, <b>acum. ano</b> e <b>projetado</b> (mediana Focus). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
+    ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: varejo, PIM, IPP, Serviços/PMS) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego, custo/m²). O <b>IPCA</b> entra em quatro séries próprias: <b>mês</b>, <b>12m</b> (a comparável à meta), <b>acum. ano</b> e <b>projetado</b> (mediana Focus). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
     : `Valor de cada indicador <b>por semana</b> (S = nº da semana) · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}`;
   // Nota de rodapé da meta: diz DESDE QUANDO o valor vigora. Como o CMN revisa a
   // meta raramente, a informação útil não é "atualizado hoje" — é a data da última
@@ -1847,18 +1850,23 @@ function kpiFamily(label){const l=(label||"").toLowerCase();
 const parseAcum=sub=>{const m=/acum\.\s*ano\s*(-?\d+(?:[.,]\d+)?)\s*%/i.exec(sub||"");return m?parseFloat(m[1].replace(",",".")):null;};
 // projeção anual do mercado (Boletim Focus/BCB) declarada no sub: "Projeção Focus 2026: 5,16%"
 const parseProj=sub=>{const m=/Projeç[aã]o\s+(?:Focus|mercado|BCB)?\s*20\d\d:\s*R?\$?\s*(-?\d+(?:[.,]\d+)?)/i.exec(sub||"");return m?parseFloat(m[1].replace(",",".")):null;};
+// acumulado em 12 meses: campo estruturado (ipca_12m) é a fonte; o parse do texto
+// é só rede para semanas geradas antes de o campo existir.
+const parse12m=sub=>{const m=/\b12m\s*(-?\d+(?:[.,]\d+)?)\s*%/i.exec(sub||"");return m?parseFloat(m[1].replace(",",".")):null;};
 function adaptKpis(rawKpis,allData){
   const seen=new Set(),out=[];
   (rawKpis||[]).forEach(k=>{const fam=kpiFamily(k.label);if(fam!=="outro"&&seen.has(fam))return;seen.add(fam);
-    const meta=KPI_META[fam]||KPI_META.outro;const raw=[],rawA=[],rawP=[];
-    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);let v=null,a=null,p=null;
-      if(d){const kk=(d.kpis||[]).find(z=>kpiFamily(z.label)===fam);if(kk){v=parseNum(kk.valor);a=parseAcum(kk.sub);p=parseProj(kk.sub);}}raw.push(v);rawA.push(a);rawP.push(p);});
+    const meta=KPI_META[fam]||KPI_META.outro;const raw=[],rawA=[],rawP=[],raw12=[];
+    CHRONO.forEach(w=>{const d=allData.find(x=>x._k===w.k);let v=null,a=null,p=null,d12=null;
+      if(d){const kk=(d.kpis||[]).find(z=>kpiFamily(z.label)===fam);if(kk){v=parseNum(kk.valor);a=parseAcum(kk.sub);p=parseProj(kk.sub);
+        d12=(kk.ipca_12m!=null?kk.ipca_12m:parse12m(kk.sub));}}raw.push(v);rawA.push(a);rawP.push(p);raw12.push(d12);});
     let last=null;const fwd=raw.map(v=>{if(v!=null)last=v;return last;});
     const fst=fwd.find(v=>v!=null);const hist=fwd.map(v=>v!=null?v:(fst!=null?fst:0));
     let lastA=null;const acum=rawA.map(v=>{if(v!=null)lastA=v;return lastA;}); // acum. ano, forward-fill
     let lastP=null;const proj=rawP.map(v=>{if(v!=null)lastP=v;return lastP;}); // projeção anual Focus, forward-fill
+    let last12=null;const doze=raw12.map(v=>{if(v!=null)last12=v;return last12;}); // 12 meses, forward-fill
     const flow=rawA.some(v=>v!=null); // fluxo (tem acumulado) vs nível (SELIC/câmbio/desemprego)
-    out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,proj,flow,un:meta.un,
+    out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,proj,doze,flow,un:meta.un,
       // meta oficial do CMN (BCB/SGS 13521) — vira a linha de referência do gráfico
       metaRef:(k.meta_inflacao!=null?k.meta_inflacao:null),metaDesde:k.meta_desde||null,metaFonte:k.meta_fonte||null,
       info:meta.info+(k.herdado_de?` Nesta edição, dado herdado de ${k.herdado_de}.`:"")});});

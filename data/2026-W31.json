@@ -1977,6 +1977,7 @@
       "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26 · Projeção Focus 2026: 5,12%",
       "fonte": "IBGE",
       "acum_ano": 3.36,
+      "ipca_12m": 4.64,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
@@ -1986,9 +1987,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,10",
+      "valor": "R$ 5,12",
       "cor": "up",
-      "sub": "Dólar PTAX venda · BCB · 27/07/2026",
+      "sub": "Dólar PTAX venda · BCB · 28/07/2026",
       "fonte": "BCB/PTAX"
     },
     {
