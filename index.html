@@ -789,6 +789,9 @@ const LENSES=[
 /* ───────── ESTADO ───────── */
 let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca_acum","ipp"],indSetores:[]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
+// Cor da linha de referência (meta do CMN). Deliberadamente fora de CHART_COLORS:
+// se colidir com a cor de uma série, deixa de funcionar como régua.
+const META_COR="var(--risk,#E06B60)";
 
 /* ───────── HELPERS ───────── */
 const el=h=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstElementChild;};
@@ -1311,15 +1314,23 @@ function chartCard(){
     const pts=vs.map((v,i)=>`${x(i)},${y(v)}`).join(" ");
     const dots=vs.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?5:3.5}" fill="${c}" stroke="var(--surface)" stroke-width="1.5"/>`).join("");
     const above=si%2===0;
-    const vlab=vs.map((v,i)=>(i%vStride!==0&&i!==n-1)?"":`<text x="${x(i)}" y="${y(v)+(above?-11:19)}" text-anchor="middle" font-size="12" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
+    // paint-order="stroke": desenha um contorno na cor do fundo ANTES do texto, o que
+    // o mantém legível quando cruza a grade, a linha da meta ou o rótulo de outra
+    // série. Sem isso, valores próximos viravam um borrão ilegível.
+    const vlab=vs.map((v,i)=>(i%vStride!==0&&i!==n-1)?"":`<text x="${x(i)}" y="${y(v)+(above?-11:18)}" text-anchor="middle" font-size="11" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)" paint-order="stroke" stroke="var(--surface)" stroke-width="3.5" stroke-linejoin="round">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
   // Linha da META: horizontal e pontilhada, porque o valor do CMN só muda quando há
   // revisão — desenhar degraus sugeriria uma variação que não existe no período.
   let metaLine="";
   if(sMeta){
     const my=y(sMeta.metaRef);
-    metaLine=`<line x1="${pl}" x2="${W-pr}" y1="${my}" y2="${my}" stroke="var(--warn,#e0a94a)" stroke-width="2" stroke-dasharray="8 6" opacity="0.9"/>`
-      +`<text x="${W-pr-4}" y="${my-8}" text-anchor="end" font-size="12" font-weight="700" fill="var(--warn,#e0a94a)" font-family="var(--mono)">meta ${dec(sMeta.metaRef,1)}%</text>`;
+    // Cor FORA da paleta das séries (CHART_COLORS) de propósito: em --warn a linha
+    // ficava quase idêntica à série do IPCA acumulado e sumia dentro dela.
+    // Fina e discreta: é régua de referência, não uma oitava série disputando atenção.
+    // Rótulo à ESQUERDA porque a direita é onde vive o último valor de cada série,
+    // em negrito — era ali que "meta 3,0%" e "3,36%" se encavalavam.
+    metaLine=`<line x1="${pl}" x2="${W-pr}" y1="${my}" y2="${my}" stroke="${META_COR}" stroke-width="1.15" stroke-dasharray="5 5" opacity="0.95"/>`
+      +`<text x="${pl+5}" y="${my-6}" text-anchor="start" font-size="10.5" font-weight="600" fill="${META_COR}" font-family="var(--mono)" paint-order="stroke" stroke="var(--surface)" stroke-width="3" stroke-linejoin="round">meta ${dec(sMeta.metaRef,1)}%</text>`;
   }
   const chipSeries=chartUniverse(); // macros (IPCA em mês/acum/projetado) + setoriais selecionados
   const chips=chipSeries.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
@@ -1338,7 +1349,7 @@ function chartCard(){
     const MM=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
     const desde=d?`${MM[d.getMonth()]}/${d.getFullYear()}`:"—";
     notaMeta=`<div class="legend" style="margin:6px 0 0;font-size:12px;color:var(--ink-3)">`
-      +`<span style="display:inline-block;width:22px;border-top:2px dashed var(--warn,#e0a94a);vertical-align:middle;margin-right:6px"></span>`
+      +`<span style="display:inline-block;width:22px;border-top:1.5px dashed ${META_COR};vertical-align:middle;margin-right:6px"></span>`
       +`<b>Meta de inflação ${dec(sMeta.metaRef,1)}%</b> (teto ${dec(sMeta.metaRef+1.5,1)}%) definida pelo CMN, em vigor desde <b>${desde}</b>`
       +`${sMeta.metaFonte?` · fonte ${sMeta.metaFonte}`:""}. A linha só se desloca quando há revisão da meta.</div>`;
   }
