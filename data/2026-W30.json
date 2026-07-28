@@ -1612,9 +1612,15 @@
       "label": "IPCA",
       "valor": "0,16%",
       "cor": "up",
-      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26",
+      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26 · Projeção Focus 2026: 5,12%",
       "fonte": "IBGE",
-      "acum_ano": 3.36
+      "acum_ano": 3.36,
+      "meta_inflacao": 3.0,
+      "meta_desde": "2026-01-01",
+      "meta_fonte": "BCB/SGS 13521",
+      "projecao": 5.12,
+      "projecao_em": "2026-07-24",
+      "projecao_fonte": "Focus/BCB"
     },
     {
       "label": "Câmbio (US$)",

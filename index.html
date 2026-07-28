@@ -1247,7 +1247,10 @@ function ipcaSubSeries(){
   return [
     {...base,id:"ipca_mes",label:"IPCA (mês)",hist:fillSeries(k.hist),acum:fillSeries(k.hist)},
     {...base,id:"ipca_acum",label:"IPCA (acum. ano)",hist:fillSeries(k.acum),acum:fillSeries(k.acum)},
-    {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj)}
+    // só a série PROJETADA carrega a meta: é contra ela que a projeção faz sentido
+    // ser lida. Nas séries de mês e acumulado a linha seria ruído.
+    {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj),
+     metaRef:k.metaRef,metaDesde:k.metaDesde,metaFonte:k.metaFonte}
   ];
 }
 // universo de séries do gráfico = espelho dos CARDS em tela:
@@ -1270,7 +1273,12 @@ function chartCard(){
   // valor por ponto: mensal+fluxo -> acumulado no ano; senão -> valor do período (nível/semana)
   const valOf=(s,p)=>{const raw=(monthly&&s.flow)?s.acum[p.idx]:s.hist[p.idx];return raw!=null?raw:s.hist[p.idx];};
   const valsOf=s=>points.map(p=>valOf(s,p));
+  // META como referência magna: só entra quando a série projetada está selecionada.
+  const sMeta=series.find(s=>s.metaRef!=null)||null;
   const all=series.flatMap(valsOf).filter(v=>v!=null);
+  // a meta participa da escala — senão a linha pode cair fora da área visível
+  // justamente quando a projeção se distancia dela, que é quando ela mais importa.
+  if(sMeta) all.push(sMeta.metaRef);
   let mn=all.length?Math.min(...all):0,mx=all.length?Math.max(...all):1;if(mn===mx){mn-=1;mx+=1;}const pad=(mx-mn)*0.15;mn-=pad;mx+=pad;
   const n=points.length;
   // largura FIXA (preenche o container até um máximo, ~toda a faixa útil do card) → os pontos se
@@ -1305,6 +1313,14 @@ function chartCard(){
     const above=si%2===0;
     const vlab=vs.map((v,i)=>(i%vStride!==0&&i!==n-1)?"":`<text x="${x(i)}" y="${y(v)+(above?-11:19)}" text-anchor="middle" font-size="12" font-weight="${i===n-1?700:600}" fill="${c}" font-family="var(--mono)">${dec(v,2)}${s.un==='%'?'%':''}</text>`).join("");
     return `<polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>${dots}${vlab}`;}).join("");
+  // Linha da META: horizontal e pontilhada, porque o valor do CMN só muda quando há
+  // revisão — desenhar degraus sugeriria uma variação que não existe no período.
+  let metaLine="";
+  if(sMeta){
+    const my=y(sMeta.metaRef);
+    metaLine=`<line x1="${pl}" x2="${W-pr}" y1="${my}" y2="${my}" stroke="var(--warn,#e0a94a)" stroke-width="2" stroke-dasharray="8 6" opacity="0.9"/>`
+      +`<text x="${W-pr-4}" y="${my-8}" text-anchor="end" font-size="12" font-weight="700" fill="var(--warn,#e0a94a)" font-family="var(--mono)">meta ${dec(sMeta.metaRef,1)}%</text>`;
+  }
   const chipSeries=chartUniverse(); // macros (IPCA em mês/acum/projetado) + setoriais selecionados
   const chips=chipSeries.map(k=>{const on=keys.includes(k.id);const ci=keys.indexOf(k.id);const c=on?CHART_COLORS[ci%CHART_COLORS.length]:"var(--ink-3)";
     return `<button class="schip ${on?'on':''}${k.setorial?' schip-setor':''}" data-series="${k.id}" style="${on?`--sc:${c}`:''}"><span class="sw" style="background:${on?c:'var(--border-strong)'}"></span>${k.label}</button>`;}).join("");
@@ -1313,11 +1329,25 @@ function chartCard(){
   const legend=monthly
     ? `Valor <b>por mês</b> — <b>acumulado no ano</b> (fluxo: varejo, PIM, IPP, Serviços/PMS) ou <b>fechamento do mês</b> (nível: SELIC, câmbio, desemprego, custo/m²). O <b>IPCA</b> entra em três séries próprias: <b>mês</b>, <b>acum. ano</b> e <b>projetado</b> (mediana Focus). Cada ponto reflete o <b>mês de referência</b> mais recente (defasagem de divulgação; acum. reinicia em janeiro — <a href="#" data-goto="metodologia" style="color:var(--accent);font-weight:600">metodologia</a>).${partial?' <b>·p</b> = mês vigente parcial.':''} Fonte: BCB/SGS e IBGE/SIDRA (oficiais).`
     : `Valor de cada indicador <b>por semana</b> (S = nº da semana) · clique para comparar até 3 séries.${DATA_LOADED?' Fonte: BCB/SGS e IBGE/SIDRA (oficiais).':''}`;
+  // Nota de rodapé da meta: diz DESDE QUANDO o valor vigora. Como o CMN revisa a
+  // meta raramente, a informação útil não é "atualizado hoje" — é a data da última
+  // revisão, que só muda quando de fato houver uma nova.
+  let notaMeta="";
+  if(sMeta){
+    const d=sMeta.metaDesde?new Date(sMeta.metaDesde+"T00:00:00"):null;
+    const MM=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+    const desde=d?`${MM[d.getMonth()]}/${d.getFullYear()}`:"—";
+    notaMeta=`<div class="legend" style="margin:6px 0 0;font-size:12px;color:var(--ink-3)">`
+      +`<span style="display:inline-block;width:22px;border-top:2px dashed var(--warn,#e0a94a);vertical-align:middle;margin-right:6px"></span>`
+      +`<b>Meta de inflação ${dec(sMeta.metaRef,1)}%</b> (teto ${dec(sMeta.metaRef+1.5,1)}%) definida pelo CMN, em vigor desde <b>${desde}</b>`
+      +`${sMeta.metaFonte?` · fonte ${sMeta.metaFonte}`:""}. A linha só se desloca quando há revisão da meta.</div>`;
+  }
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
     <div class="legend" style="margin:2px 0 6px">${legend}</div>
     <div class="chart-scroll"><svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Gráfico de evolução dos indicadores">
-      ${grid}${seps}${xlab}${lines}</svg></div>
+      ${grid}${seps}${metaLine}${xlab}${lines}</svg></div>
+    ${notaMeta}
     <div class="schips">${chips}</div></div>`;
 }
 
@@ -1798,6 +1828,8 @@ function adaptKpis(rawKpis,allData){
     let lastP=null;const proj=rawP.map(v=>{if(v!=null)lastP=v;return lastP;}); // projeção anual Focus, forward-fill
     const flow=rawA.some(v=>v!=null); // fluxo (tem acumulado) vs nível (SELIC/câmbio/desemprego)
     out.push({id:fam,label:k.label,ico:meta.ico,val:k.valor,unit:"",cor:k.cor||"neutral",sub:k.sub||"",hist,acum,proj,flow,un:meta.un,
+      // meta oficial do CMN (BCB/SGS 13521) — vira a linha de referência do gráfico
+      metaRef:(k.meta_inflacao!=null?k.meta_inflacao:null),metaDesde:k.meta_desde||null,metaFonte:k.meta_fonte||null,
       info:meta.info+(k.herdado_de?` Nesta edição, dado herdado de ${k.herdado_de}.`:"")});});
   return out;}
 const TAGVOC={tarifas:/tarifa|eua|estados unidos|comércio exterior|exporta/i,desenrola:/desenrola/i,energia:/energia|aneel|elétric|tarifári/i,juros:/selic|juro|copom|crédito|financ/i,cambio:/câmbio|dólar|balança comercial/i,safra:/safra|grão|soja|milho|agronegócio|conab|leite|caf[ée]|carne|boi|pecuár/i,consumo:/consumo|varejo|venda|confiança|endivida/i,digital:/digital|tecnologia|\bia\b|automação|autoatendimento|e-commerce|marketplace/i,escala6x1:/6x1|jornada de trabalho|escala/i,copa:/copa do mundo|\bcopa\b/i,remessa:/remessa conforme|cross-border|importados de baixo/i,construcao:/construção|obra|incc|sinapi|imobiliári/i,inflacao:/ipca|igp|\bipc\b|inflaç|deflaç/i,atividade:/\bpim\b|\bpmi\b|produç[ãa]o industrial|industrial|\bpib\b|atividade econ/i,emprego:/caged|pnad|desemprego|desocupa|\bemprego|vagas?\b/i,servicos:/\bpms\b|serviç/i,combustiveis:/diesel|petról|combustív|gasolina|\banp\b|barril/i};

@@ -136,6 +136,39 @@ def _olinda_ptax(ref, dias=12):
     return sorted(out)
 
 
+def _focus_anual(indicador, ano):
+    """Mediana do Boletim Focus/BCB para o FECHAMENTO de `ano`, série histórica
+    completa → [(date_da_coleta, mediana)] antigo→recente.
+
+    baseCalculo=0 é a amostra completa de respondentes (a 1 seria a suavizada dos
+    últimos 30 dias). Devolver a série inteira, e não só a última coleta, é o que
+    permite reconstruir a projeção vigente em cada semana do histórico via
+    _pick_diario — sem isso, o backfill carimbaria a projeção de hoje em semanas
+    passadas, que é falsificação de série temporal."""
+    url = ("https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/"
+           "ExpectativasMercadoAnuais?$format=json&$top=5000"
+           "&$select=Data,Mediana&$orderby=Data asc"
+           f"&$filter=Indicador eq '{indicador}' and DataReferencia eq '{ano}'"
+           " and baseCalculo eq 0")
+    j = _get(urllib.parse.quote(url, safe=":/?&=$'"))
+    out = []
+    for o in ((j or {}).get("value") or []):
+        try:
+            out.append((date.fromisoformat(str(o["Data"])[:10]), float(o["Mediana"])))
+        except (ValueError, KeyError, TypeError):
+            continue
+    return sorted(out)
+
+
+def _meta_inflacao():
+    """Meta de inflação do CMN (BCB/SGS 13521) → [(date_de_vigencia, valor)].
+
+    Observação anual: o valor só muda quando o Conselho Monetário Nacional revisa
+    a meta. É por isso que ela vira uma linha reta no gráfico, com degrau apenas
+    na data da revisão — e não uma curva."""
+    return _bcb(13521)
+
+
 def _sidra_ipca(n=36):
     """IPCA direto do IBGE (tabela 1737): mês, acumulado no ano e 12 meses.
     É a FONTE PRIMÁRIA — o IBGE é quem calcula e publica o IPCA; o SGS 433/13522
@@ -289,15 +322,41 @@ def coletar_kpis(ref=None):
         if acum is None:
             acum = _ipca_acum_ano(ipca_m, y, m)
         i12 = next((v for (yy, mm, v, *_ ) in reversed(ipca_12) if (yy, mm) == (y, m)), None)
-        meta_ipca = "meta 3,0% (teto 4,5%)"   # meta contínua de inflação (CMN)
-        sub = f"Mês · {meta_ipca} · IBGE · {_MABBR[m]}/{str(y)[2:]}"
+        # META do CMN, oficial (SGS 13521), vigente na data de referência — e não
+        # mais um texto fixo no código. O teto é a meta + 1,5 p.p. de tolerância.
+        mt = _pick_diario(_meta_inflacao(), ref)
+        if mt:
+            meta_v, meta_desde = mt[1], mt[0]
+            meta_ipca = f"meta {_br(meta_v, 1)}% (teto {_br(meta_v + 1.5, 1)}%)"
+        else:
+            meta_v, meta_desde, meta_ipca = None, None, None
+
+        # PROJEÇÃO: mediana do Focus VIGENTE NAQUELA SEMANA (não a de hoje).
+        fc = _pick_diario(_focus_anual("IPCA", ref.year), ref)
+        proj_txt = (f" · Projeção Focus {ref.year}: {_br(fc[1])}%") if fc else ""
+
+        partes = ["Mês"]
         if acum is not None:
-            sub = (f"Mês · acum. ano {_br(acum)}%"
-                   + (f" · 12m {_br(i12)}%" if i12 is not None else "")
-                   + f" · {meta_ipca} · IBGE {_MABBR[m]}/{str(y)[2:]}")
+            partes.append(f"acum. ano {_br(acum)}%")
+        if i12 is not None:
+            partes.append(f"12m {_br(i12)}%")
+        if meta_ipca:
+            partes.append(meta_ipca)
+        partes.append(f"IBGE {_MABBR[m]}/{str(y)[2:]}")
+        sub = " · ".join(partes) + proj_txt
+
         out["ipca"] = {"label": "IPCA", "valor": f"{_br(val)}%",
                        "cor": _cor(val, prev, True), "sub": sub, "fonte": "IBGE",
-                       "acum_ano": None if acum is None else round(acum, 2)}
+                       "acum_ano": None if acum is None else round(acum, 2),
+                       # campos estruturados p/ o gráfico: linha da meta + nota de
+                       # última revisão. Vão separados do 'sub' de propósito — texto
+                       # é para o humano ler, número é para o gráfico desenhar.
+                       "meta_inflacao": meta_v,
+                       "meta_desde": meta_desde.isoformat() if meta_desde else None,
+                       "meta_fonte": "BCB/SGS 13521" if meta_v is not None else None,
+                       "projecao": None if not fc else round(fc[1], 2),
+                       "projecao_em": fc[0].isoformat() if fc else None,
+                       "projecao_fonte": "Focus/BCB" if fc else None}
 
     # Desemprego (PNAD, trimestre móvel)
     de = _pick_mensal(desemp, ref, 1, 28) if desemp else None
