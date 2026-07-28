@@ -16,6 +16,11 @@
     --ink:#12211F; --ink-2:#465A59; --ink-3:#7E9090;
     --accent:#0F6E68; --accent-2:#0B4F4A; --accent-soft:#DCEDEB;
     --risk:#BE4238; --opp:#2E8B57; --warn:#C08421; --neutral:#5A7180;
+    /* --meta: linha de referência (meta do CMN). Matiz ~292°, o único vão livre da
+       paleta — entre o roxo de --s-ser (258°) e o magenta de --s-eco (320°). Fica
+       fora de qualquer família já usada e sem a leitura de bom/ruim que verde,
+       âmbar e vermelho carregam: é régua, não julgamento. */
+    --meta:#C026D3;
     --risk-soft:#F6E2DF; --opp-soft:#DFF0E7; --warn-soft:#F6ECD7;
     --s-ind:#3B6FB0; --s-com:#C0872B; --s-ser:#6E5AA6; --s-agr:#4E9A4E; --s-con:#B0623C; --s-eco:#B5528C;
     --s-ind-soft:#E1E9F3; --s-com-soft:#F4E9D3; --s-ser-soft:#E9E4F1; --s-agr-soft:#E1EFE1; --s-con-soft:#F2E4DC; --s-eco-soft:#F5E2EE;
@@ -29,6 +34,7 @@
     --border:#26332F; --border-strong:#33443F; --ink:#E9EFED; --ink-2:#A4B5B2; --ink-3:#6E827F;
     --accent:#33B3A6; --accent-2:#4FC7BA; --accent-soft:#0E2B29;
     --risk:#E06B60; --opp:#4FB07C; --warn:#DBA544; --neutral:#7C93A2;
+    --meta:#E879F9;   /* mesmo matiz ~292°, clareado para o fundo escuro */
     --risk-soft:#2B1917; --opp-soft:#15271D; --warn-soft:#2A2213;
     --s-ind:#6C9BD6; --s-com:#D8A755; --s-ser:#9E8AD1; --s-agr:#6FB96F; --s-con:#CE8560; --s-eco:#D07FB0;
     --s-ind-soft:#16232F; --s-com-soft:#2A2314; --s-ser-soft:#211C2E; --s-agr-soft:#152616; --s-con-soft:#2A1E16; --s-eco-soft:#2A1622;
@@ -39,6 +45,11 @@
     --border:#D6DEDE; --border-strong:#C1CDCD; --ink:#12211F; --ink-2:#465A59; --ink-3:#7E9090;
     --accent:#0F6E68; --accent-2:#0B4F4A; --accent-soft:#DCEDEB;
     --risk:#BE4238; --opp:#2E8B57; --warn:#C08421; --neutral:#5A7180;
+    /* --meta: linha de referência (meta do CMN). Matiz ~292°, o único vão livre da
+       paleta — entre o roxo de --s-ser (258°) e o magenta de --s-eco (320°). Fica
+       fora de qualquer família já usada e sem a leitura de bom/ruim que verde,
+       âmbar e vermelho carregam: é régua, não julgamento. */
+    --meta:#C026D3;
     --risk-soft:#F6E2DF; --opp-soft:#DFF0E7; --warn-soft:#F6ECD7;
     --s-ind:#3B6FB0; --s-com:#C0872B; --s-ser:#6E5AA6; --s-agr:#4E9A4E; --s-con:#B0623C; --s-eco:#B5528C;
     --s-ind-soft:#E1E9F3; --s-com-soft:#F4E9D3; --s-ser-soft:#E9E4F1; --s-agr-soft:#E1EFE1; --s-con-soft:#F2E4DC; --s-eco-soft:#F5E2EE;
@@ -49,6 +60,7 @@
     --border:#26332F; --border-strong:#33443F; --ink:#E9EFED; --ink-2:#A4B5B2; --ink-3:#6E827F;
     --accent:#33B3A6; --accent-2:#4FC7BA; --accent-soft:#0E2B29;
     --risk:#E06B60; --opp:#4FB07C; --warn:#DBA544; --neutral:#7C93A2;
+    --meta:#E879F9;   /* mesmo matiz ~292°, clareado para o fundo escuro */
     --risk-soft:#2B1917; --opp-soft:#15271D; --warn-soft:#2A2213;
     --s-ind:#6C9BD6; --s-com:#D8A755; --s-ser:#9E8AD1; --s-agr:#6FB96F; --s-con:#CE8560; --s-eco:#D07FB0;
     --s-ind-soft:#16232F; --s-com-soft:#2A2314; --s-ser-soft:#211C2E; --s-agr-soft:#152616; --s-con-soft:#2A1E16; --s-eco-soft:#2A1622;
@@ -789,9 +801,10 @@ const LENSES=[
 /* ───────── ESTADO ───────── */
 let state={sector:"panorama",lens:"geral",gran:"semana",picks:["W28"],weekMonths:null,pointSig:null,chartSeries:["ipca_acum","ipp"],indSetores:[]};
 const CHART_COLORS=["var(--accent)","var(--s-com)","var(--s-ind)"];
-// Cor da linha de referência (meta do CMN). Deliberadamente fora de CHART_COLORS:
-// se colidir com a cor de uma série, deixa de funcionar como régua.
-const META_COR="var(--risk,#E06B60)";
+// Cor da linha de referência (meta do CMN): variável própria, --meta, e não uma cor
+// emprestada de outro papel. Deliberadamente fora de CHART_COLORS — se colidir com a
+// cor de uma série, deixa de funcionar como régua. Ver a definição no bloco de tema.
+const META_COR="var(--meta,#C026D3)";
 
 /* ───────── HELPERS ───────── */
 const el=h=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstElementChild;};
