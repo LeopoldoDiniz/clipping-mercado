@@ -1260,13 +1260,15 @@ function fillSeries(a){const f=(a||[]).slice();let last=null;for(let i=0;i<f.len
 function ipcaSubSeries(){
   const k=KPIMAP.ipca;if(!k)return[];
   const base={un:"%",flow:false,ico:k.ico,cor:k.cor};
+  // A meta acompanha as séries medidas no MESMO horizonte que ela: o ano.
+  // Acumulado no ano e projeção de fechamento se leem contra a meta anual; a
+  // variação MENSAL não, seria comparar um mês com um alvo de doze.
+  const meta={metaRef:k.metaRef,metaDesde:k.metaDesde,metaFonte:k.metaFonte};
   return [
     {...base,id:"ipca_mes",label:"IPCA (mês)",hist:fillSeries(k.hist),acum:fillSeries(k.hist)},
-    {...base,id:"ipca_acum",label:"IPCA (acum. ano)",hist:fillSeries(k.acum),acum:fillSeries(k.acum)},
-    // só a série PROJETADA carrega a meta: é contra ela que a projeção faz sentido
-    // ser lida. Nas séries de mês e acumulado a linha seria ruído.
-    {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj),
-     metaRef:k.metaRef,metaDesde:k.metaDesde,metaFonte:k.metaFonte}
+    {...base,id:"ipca_acum",label:"IPCA (acum. ano)",hist:fillSeries(k.acum),acum:fillSeries(k.acum),
+     ...meta,metaParcial:true},
+    {...base,id:"ipca_proj",label:"IPCA (projetado)",hist:fillSeries(k.proj),acum:fillSeries(k.proj),...meta}
   ];
 }
 // universo de séries do gráfico = espelho dos CARDS em tela:
@@ -1361,10 +1363,15 @@ function chartCard(){
     const d=sMeta.metaDesde?new Date(sMeta.metaDesde+"T00:00:00"):null;
     const MM=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
     const desde=d?`${MM[d.getMonth()]}/${d.getFullYear()}`:"—";
+    // Ressalva do acumulado: a meta é para o FECHAMENTO do ano. Em março, um
+    // acumulado abaixo da linha não significa meta cumprida — significa que só
+    // parte do ano passou. Sem esta frase o gráfico convida à leitura errada.
+    const parcial=series.some(s=>s.metaRef!=null&&s.metaParcial);
     notaMeta=`<div class="legend" style="margin:6px 0 0;font-size:12px;color:var(--ink-3)">`
       +`<span style="display:inline-block;width:22px;border-top:1.5px dashed ${META_COR};vertical-align:middle;margin-right:6px"></span>`
       +`<b>Meta de inflação ${dec(sMeta.metaRef,1)}%</b> (teto ${dec(sMeta.metaRef+1.5,1)}%) definida pelo CMN, em vigor desde <b>${desde}</b>`
-      +`${sMeta.metaFonte?` · fonte ${sMeta.metaFonte}`:""}. A linha só se desloca quando há revisão da meta.</div>`;
+      +`${sMeta.metaFonte?` · fonte ${sMeta.metaFonte}`:""}. A linha só se desloca quando há revisão da meta.`
+      +`${parcial?` <b>O acumulado no ano</b> é parcial e corre até dezembro: abaixo da linha em meses iniciais não significa meta cumprida.`:""}</div>`;
   }
   return `<div class="card card-pad">
     <div style="display:flex;justify-content:flex-end;margin-bottom:2px"><span class="eyebrow">${janela}</span></div>
