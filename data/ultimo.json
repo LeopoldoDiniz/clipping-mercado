@@ -1,1610 +1,231 @@
 {
   "periodo": "2026-W31",
   "label": "Semana 31 · Julho 2026",
-  "gerado_em": "2026-07-27T12:18:44.951741",
+  "gerado_em": "2026-07-30T12:13:50.249820",
   "editorial": {
-    "texto": "A Semana 31 de julho de 2026 desenha um cenário macroeconômico de ajustes e confirmações, com a inflação de doze meses mostrando um alívio, mas o custo da energia se consolidando como um desafio transversal. A taxa Selic, juro básico da economia, foi mantida em 10,75% pelo COPOM, mantendo o crédito em patamar elevado, embora a projeção Focus para o ano seja de 10,50%. O IPCA de julho registrou 0,35%, um aumento em relação ao mês anterior, mas a boa notícia é que o acumulado em doze meses recuou para 4,20%, voltando a ficar dentro do teto da meta (4,5%). O câmbio, por sua vez, fechou a semana em R$ 5,25, indicando uma leve desvalorização do real frente à cotação anterior.\n\nNo âmbito da atividade, o mercado de trabalho continua a apresentar melhoras, com a taxa de desocupação recuando para 8,1% em junho. O volume de vendas do varejo (PMC) cresceu 0,8% e a produção industrial (PIM) avançou 0,5% no mesmo período, ambos indicando expansão, embora em ritmo mais moderado que o observado no mês anterior. Os custos de produção, medidos pelo IPP, registraram uma alta de 0,2%, mostrando uma desaceleração na pressão de preços para os produtores. A materialização do \"Aumento dos Custos de Energia Elétrica para PMEs\" e do \"Custo de energia (ANEEL/tarifa)\" consolida um risco que vinha se intensificando, impactando transversalmente todos os setores. Novos sinais incluem a oportunidade de \"Programas de Capacitação em Digitalização para PMEs\" e \"Investimentos em Sustentabilidade na Construção e Indústria\", contrastando com o risco do \"Impacto da Reforma Tributária na Competitividade Setorial\".\n\nSetorialmente, a indústria, apesar do crescimento da produção, enfrenta o peso dos custos energéticos materializados e o risco das \"Proposta de Novas Tarifas dos EUA\" (84,75%), mas pode explorar a sustentabilidade. Comércio e serviços se beneficiam da queda do desemprego e do avanço do varejo, embora a \"Cautela do Consumidor e Endividamento Familiar\" (85,5%) ainda exija atenção, com a digitalização para PMEs emergindo como oportunidade. O agronegócio, além dos custos de energia e \"Combustíveis e petróleo\" (86,75%), observa o risco da \"Safra e agro\" (83,75%). A construção civil mantém o desafio de \"Construção e custos\" (80,75%), mas encontra nos investimentos em sustentabilidade um novo vetor. A digitalização e a \"Technology as a Service\" (84,0%) seguem como oportunidades transversais.\n\nO ponto de atenção para as próximas semanas reside na capacidade da economia de sustentar o crescimento da atividade em um ambiente de custos energéticos elevados e juros ainda restritivos, agora somados à incerteza sobre o \"Impacto da Reforma Tributária\". A agilidade na adoção de soluções digitais e sustentáveis será crucial para a competitividade das empresas.",
-    "gerado_em": "2026-07-27T12:17:45.955807",
+    "texto": "A Semana 31 de julho de 2026 revela um cenário macroeconômico de contínuos desafios e novas frentes de oportunidade. A taxa Selic, o juro básico da economia, foi mantida em 10,75% pelo Banco Central, consolidando um ambiente de crédito restritivo, embora a projeção Focus para o ano seja ligeiramente menor, em 10,50%. A inflação, medida pelo IPCA-15 de julho, registrou 0,45%, um aumento mensal em relação à leitura anterior, mas o acumulado em doze meses recuou para 4,15%, permanecendo dentro do teto da meta de 4,5%. O câmbio, por sua vez, mostrou uma valorização do real, fechando a semana em R$ 5,10, um alívio frente aos R$ 5,25 da semana passada.\n\nNo mercado de trabalho, a taxa de desocupação apresentou uma leve alta para 8,2% em junho, após a queda observada anteriormente. A atividade econômica mantém um ritmo, com o volume de vendas do varejo (PMC) crescendo 0,8% e a produção industrial (PIM) avançando 0,5% em junho. Contudo, os custos de produção, refletidos pelo IPP, registraram uma aceleração para 0,3% no mês. A materialização dos riscos de \"Aumento dos Custos de Energia Elétrica para PMEs\" e do \"Custo de energia (ANEEL/tarifa)\" permanece como um fator de pressão transversal, impactando todos os setores. Esta semana, novos sinais surgem: o risco do \"Impacto da IA na política monetária e decisões de juros\" e as oportunidades no \"Mercado de cannabis medicinal\" e na preparação da \"B3\" para \"moeda digital e ativos tokenizados\".\n\nSetorialmente, a indústria, apesar do crescimento da produção, continua a enfrentar os custos energéticos materializados e o risco das \"Proposta de Novas Tarifas dos EUA\" (84,75%), mas a \"Digitalização e 'Technology as a Service' (TaaS)\" (85,75%) oferece caminhos para otimização. Comércio e serviços, embora impulsionados pelo varejo, devem lidar com a \"Cautela do Consumidor e Endividamento Familiar\" (85,5%), enquanto a oportunidade de \"Serviços (PMS)\" (90,45%) se fortalece. O agronegócio observa o risco da \"Safra e agro\" (89,75%) e os custos de \"Combustíveis e petróleo\" (85,5%), mas pode se beneficiar das \"Tarifas e comércio exterior (EUA)\" (89,2%). A construção civil mantém o desafio de \"Construção e custos\" (86,75%).\n\nO ponto de atenção para as próximas semanas reside na capacidade de absorção dos custos elevados de energia e juros, agora somados à necessidade de adaptação às rápidas transformações tecnológicas, como a digitalização e a inteligência artificial, que começam a influenciar até mesmo a política monetária. A agilidade em explorar as novas oportunidades tecnológicas e de mercado será decisiva para a competitividade.",
+    "gerado_em": "2026-07-30T12:13:29.294393",
     "n_sinais_considerados": 15,
     "modelo": "gemini-2.5-flash"
   },
   "clipping": [
     {
       "setores": [
-        "transversal"
-      ],
-      "titulo": "BCB mantém Selic em 10,75% ao ano",
-      "texto": "O Comitê de Política Monetária (COPOM) do Banco Central decidiu manter a taxa básica de juros, a Selic, em 10,75% ao ano, sinalizando cautela com a inflação futura e o cenário econômico global. A decisão era amplamente esperada pelo mercado.",
-      "fontes": [
-        {
-          "nome": "Banco Central do Brasil",
-          "url": "https://www.bcb.gov.br/detalhenoticia/275/noticia"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "IPCA de julho fecha em 0,35%",
-      "texto": "O Índice Nacional de Preços ao Consumidor Amplo (IPCA) registrou variação de 0,35% em julho, desacelerando em relação ao mês anterior. O acumulado em 12 meses atingiu 4,20%, ainda acima do centro da meta de inflação.",
-      "fontes": [
-        {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37845-ipca-de-julho-varia-0-35"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Boletim Focus: Projeções estáveis para Selic e IPCA",
-      "texto": "O Boletim Focus do Banco Central mostrou estabilidade nas projeções do mercado para a taxa Selic e o IPCA de 2026, com leve ajuste para o câmbio. A mediana para a Selic ao final do ano permanece em 10,50%.",
-      "fontes": [
-        {
-          "nome": "Banco Central do Brasil",
-          "url": "https://www.bcb.gov.br/publicacoes/focus"
-        }
-      ]
-    },
-    {
-      "setores": [
         "transversal",
-        "servicos",
-        "comercio",
+        "agro"
+      ],
+      "titulo": "JBS expande presença na Coreia do Sul e EUA reabre importação de gado mexicano",
+      "texto": "A JBS assinou um memorando de entendimento com a Highland Foods para ampliar sua presença na Coreia do Sul. Nos EUA, a retomada gradual das importações de gado mexicano impulsionou as ações da JBS.",
+      "fontes": [
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": "https://www.estadao.com.br/economia"
+        },
+        {
+          "nome": "The AgriBiz",
+          "url": "https://www.theagribiz.com/ultimos-posts"
+        },
+        {
+          "nome": "Vero Notícias",
+          "url": null
+        },
+        {
+          "nome": "Estadão",
+          "url": "https://www.estadao.com.br/economia"
+        },
+        {
+          "nome": "Seu Dinheiro",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
         "industria"
       ],
-      "titulo": "Taxa de desocupação recua para 8,1% em junho",
-      "texto": "A Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua) divulgou que a taxa de desocupação no Brasil recuou para 8,1% em junho de 2026, indicando uma melhora no mercado de trabalho.",
+      "titulo": "Votorantim Cimentos investe R$ 260 milhões no Tocantins e disputa CSN Cimentos",
+      "texto": "A Votorantim Cimentos investirá R$ 260 milhões na fábrica de Xambioá (TO) para ampliar a produção de cimento. A empresa também está na disputa pela CSN Cimentos, aliada à italiana Cementir Holding.",
       "fontes": [
         {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37846-pnad-continua-taxa-de-desocupacao-recua"
+          "nome": "UOL Economia",
+          "url": null
+        },
+        {
+          "nome": "Estadão",
+          "url": "https://www.estadao.com.br/economia"
+        },
+        {
+          "nome": "TradingView",
+          "url": null
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "comercio"
-      ],
-      "titulo": "Vendas do varejo crescem 0,8% em junho",
-      "texto": "A Pesquisa Mensal de Comércio (PMC) do IBGE registrou um crescimento de 0,8% no volume de vendas do varejo em junho, impulsionado principalmente por bens duráveis e semiduráveis.",
-      "fontes": [
-        {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37847-pmc-vendas-do-varejo-crescem"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "industria"
-      ],
-      "titulo": "Produção Industrial avança 0,5% em junho",
-      "texto": "A Pesquisa Industrial Mensal (PIM-PF) do IBGE indicou um avanço de 0,5% na produção industrial em junho de 2026, sinalizando uma leve recuperação da atividade fabril no país.",
-      "fontes": [
-        {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37848-pim-pf-producao-industrial-avanca"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "industria"
-      ],
-      "titulo": "IPP varia 0,2% em junho",
-      "texto": "O Índice de Preços ao Produtor (IPP) registrou uma variação de 0,2% em junho, segundo o IBGE. O resultado reflete custos de produção mais controlados em diversos setores da indústria.",
-      "fontes": [
-        {
-          "nome": "IBGE / Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37849-ipp-varia-0-2"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Reforma Tributária: Debates sobre regulamentação no Senado",
-      "texto": "As discussões sobre a regulamentação da reforma tributária avançaram no Senado Federal nesta semana, com foco em alíquotas, regimes especiais e o impacto nos diferentes setores da economia brasileira.",
-      "fontes": [
-        {
-          "nome": "Agência Senado",
-          "url": "https://www12.senado.leg.br/noticias/materias/2026/07/29/reforma-tributaria-debates-avancam"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos",
         "ecommerce"
       ],
-      "titulo": "Sebrae lança programa de capacitação para digitalização de PMEs",
-      "texto": "O Sebrae anunciou o lançamento de um novo programa nacional de capacitação focado na digitalização de pequenas e médias empresas, visando impulsionar a adoção de e-commerce e ferramentas tecnológicas.",
+      "titulo": "Shopee expande logística com dez novos centros de distribuição no Brasil",
+      "texto": "A Shopee anunciou a inauguração de dez novos centros de distribuição em 2026, expandindo sua infraestrutura em mais de 60% e visando acelerar entregas e suportar vendedores.",
       "fontes": [
         {
-          "nome": "Sebrae",
-          "url": "https://sebrae.com.br/sites/PortalSebrae/noticias/sebrae-lanca-programa-digitalizacao"
+          "nome": "Revista Veja",
+          "url": null
+        },
+        {
+          "nome": "BB InvesTalk",
+          "url": null
+        },
+        {
+          "nome": "Mercado&Consumo",
+          "url": null
+        },
+        {
+          "nome": "Broadcast - O mercado financeiro em tempo real",
+          "url": "https://www.estadao.com.br/economia"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "comercio",
-        "servicos",
-        "industria"
+        "construcao",
+        "transversal"
       ],
-      "titulo": "Serasa Experian: Acesso ao crédito para PMEs melhora levemente",
-      "texto": "Relatório da Serasa Experian indicou uma leve melhora no acesso ao crédito para PMEs em junho, mas a inadimplência ainda é um fator de atenção para as instituições financeiras na concessão de novos empréstimos.",
+      "titulo": "INCC-M desacelera para 0,62% em julho, mas confiança da construção cai",
+      "texto": "O Índice Nacional de Custo da Construção – M (INCC-M) subiu 0,62% em julho, desacelerando ante junho. Contudo, o Índice de Confiança do Empresário Industrial da Construção (Icei) da CNI caiu 2,1 pontos.",
       "fontes": [
         {
-          "nome": "Serasa Experian",
-          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/noticias/acesso-credito-pme-melhora"
+          "nome": "Sinduscon-SP",
+          "url": "https://www.sindusconsp.com.br"
+        },
+        {
+          "nome": "Sinduscon-SP",
+          "url": "https://www.sindusconsp.com.br"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Mercado de capitais atinge volume recorde de R$ 361,8 bilhões no 1º semestre de 2026",
+      "texto": "As captações no mercado de capitais brasileiro somaram R$ 361,8 bilhões no 1º semestre de 2026, um crescimento de 9,8% e o maior volume da série histórica da Anbima.",
+      "fontes": [
+        {
+          "nome": "Anbima",
+          "url": "https://www.anbima.com.br/pt_br/imprensa/sala-de-imprensa.htm"
+        },
+        {
+          "nome": "Folha PE",
+          "url": "https://www1.folha.uol.com.br/mercado"
+        },
+        {
+          "nome": "Monitor Mercantil",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Crédito imobiliário cresce 23% no 1º semestre, totalizando R$ 180,9 bilhões",
+      "texto": "O crédito imobiliário no Brasil somou R$ 180,9 bilhões no 1º semestre de 2026, alta de 23% em relação a 2025, superando as expectativas da Abecip.",
+      "fontes": [
+        {
+          "nome": "Folha - UOL",
+          "url": "https://www1.folha.uol.com.br/mercado"
+        },
+        {
+          "nome": "Folha PE",
+          "url": "https://www1.folha.uol.com.br/mercado"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br"
+        },
+        {
+          "nome": "SINCODIV-RS",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Setor de seguros no Brasil: baixa cobertura e novas fronteiras como cannabis medicinal",
+      "texto": "Apenas 29% dos carros e 17% das casas no Brasil possuem seguro. O setor explora novas frentes, como a cannabis medicinal, e foca em inovação e IA.",
+      "fontes": [
+        {
+          "nome": "CNseg | Notícias do Seguro",
+          "url": "https://cnseg.org.br/noticias"
+        },
+        {
+          "nome": "CNseg | Notícias do Seguro",
+          "url": "https://cnseg.org.br/noticias"
+        },
+        {
+          "nome": "CNseg | O Portal do Seguro",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
         "industria",
         "comercio"
       ],
-      "titulo": "CADE aprova fusão no setor de alimentos",
-      "texto": "O Conselho Administrativo de Defesa Econômica (CADE) aprovou, sem restrições, uma importante fusão entre duas grandes empresas do setor de alimentos, impactando o mercado de bens de consumo no país.",
-      "fontes": [
-        {
-          "nome": "CADE",
-          "url": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-aprova-fusao-alimentos"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Tesouro Nacional divulga superávit primário em junho",
-      "texto": "O Tesouro Nacional informou um superávit primário nas contas do governo central em junho de 2026, reforçando o compromisso com o equilíbrio fiscal e a sustentabilidade da dívida pública brasileira.",
-      "fontes": [
-        {
-          "nome": "Tesouro Nacional",
-          "url": "https://www.gov.br/tesouronacional/pt-br/noticias/resultado-primario-junho"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Ministério da Fazenda discute novas propostas para arcabouço fiscal",
-      "texto": "O Ministério da Fazenda apresentou novas propostas e ajustes ao arcabouço fiscal, buscando aprimorar as regras para o controle dos gastos públicos e garantir a estabilidade macroeconômica a longo prazo.",
-      "fontes": [
-        {
-          "nome": "Ministério da Fazenda",
-          "url": "https://www.gov.br/fazenda/pt-br/noticias/fazenda-discute-arcabouco-fiscal"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos"
-      ],
-      "titulo": "CNC: Intenção de Consumo das Famílias recua levemente em julho",
-      "texto": "A Intenção de Consumo das Famílias (ICF) da Confederação Nacional do Comércio (CNC) registrou um leve recuo em julho, indicando uma postura mais cautelosa do consumidor diante das incertezas econômicas.",
-      "fontes": [
-        {
-          "nome": "CNC / Pesquisas",
-          "url": "https://pesquisascnc.com.br/icf-julho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos"
-      ],
-      "titulo": "FGV/IBRE: Sondagem de Serviços aponta otimismo",
-      "texto": "A Sondagem de Serviços da FGV IBRE revelou um aumento da confiança no setor em julho, com empresários mais otimistas em relação à demanda e ao faturamento para os próximos meses.",
-      "fontes": [
-        {
-          "nome": "FGV / IBRE",
-          "url": "https://portalibre.fgv.br/noticias/sondagem-servicos-julho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "agro"
-      ],
-      "titulo": "MDIC: Balança comercial registra superávit em julho",
-      "texto": "O Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) divulgou que a balança comercial brasileira registrou um superávit expressivo em julho, impulsionado pelas exportações do agronegócio.",
-      "fontes": [
-        {
-          "nome": "MDIC / Comex Stat",
-          "url": "https://www.gov.br/mdic/pt-br/comex-stat/noticias/balanca-comercial-julho"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Valor Econômico: Cenário de juros altos e investimentos",
-      "texto": "O Valor Econômico destacou em sua análise semanal que o cenário de juros ainda elevados continua a impactar as decisões de investimento das empresas, exigindo maior seletividade nos projetos.",
-      "fontes": [
-        {
-          "nome": "Valor Econômico",
-          "url": "https://valor.globo.com/noticia/2026/07/28/cenario-juros-altos-investimentos.ghtml"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Exame: Perspectivas para a economia brasileira no 2º semestre",
-      "texto": "A revista Exame publicou uma análise sobre as perspectivas econômicas para o segundo semestre de 2026, apontando desafios na inflação e oportunidades em setores específicos com a queda gradual da Selic.",
-      "fontes": [
-        {
-          "nome": "Exame",
-          "url": "https://exame.com/economia/perspectivas-economia-segundo-semestre-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "InfoMoney: Mercado financeiro reage a dados de inflação",
-      "texto": "O InfoMoney reportou a reação do mercado financeiro aos dados de inflação de julho, com investidores monitorando de perto os próximos passos do Banco Central e as expectativas para cortes de juros.",
-      "fontes": [
-        {
-          "nome": "InfoMoney",
-          "url": "https://www.infomoney.com.br/mercados/mercado-financeiro-reage-inflacao-julho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Agência Brasil: Medidas para impulsionar o empreendedorismo",
-      "texto": "A Agência Brasil destacou as novas medidas do governo federal para impulsionar o empreendedorismo e apoiar as PMEs, com foco em desburocratização e acesso a linhas de crédito facilitadas.",
-      "fontes": [
-        {
-          "nome": "Agência Brasil / EBC",
-          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026/07/medidas-empreendedorismo"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "PMI Industrial de julho sobe para 51,5 pontos",
-      "texto": "O Índice de Gerentes de Compras (PMI) Industrial do Brasil, medido pela S&P Global, subiu para 51,5 pontos em julho, indicando uma expansão da atividade fabril e aumento de novos pedidos.",
-      "fontes": [
-        {
-          "nome": "S&P Global / PMI Brasil",
-          "url": "https://pmi.spglobal.com/brazil-manufacturing-pmi-july-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Sondagem Industrial da CNI: Otimismo moderado para o 3º trimestre",
-      "texto": "A Sondagem Industrial da CNI revelou um otimismo moderado entre os empresários para o 3º trimestre de 2026, com expectativas de melhora na demanda, mas ainda preocupações com os custos de produção.",
-      "fontes": [
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/sondagem-industrial-cni-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Produção de veículos cresce 3% em julho",
-      "texto": "A ANFAVEA divulgou que a produção de veículos no Brasil cresceu 3% em julho, impulsionada pela recuperação das exportações e um leve aquecimento do mercado interno, superando as expectativas iniciais.",
-      "fontes": [
-        {
-          "nome": "ANFAVEA",
-          "url": "https://anfavea.com.br/noticias/producao-veiculos-julho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Vendas de máquinas e equipamentos registram alta de 1,5%",
-      "texto": "A ABIMAQ informou que as vendas de máquinas e equipamentos registraram uma alta de 1,5% em junho, impulsionadas por investimentos em modernização industrial e projetos de infraestrutura.",
-      "fontes": [
-        {
-          "nome": "ABIMAQ",
-          "url": "https://abimaq.org.br/noticias/vendas-maquinas-equipamentos-junho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Consumo aparente de aço tem leve recuperação",
-      "texto": "O Instituto Aço Brasil reportou uma leve recuperação no consumo aparente de aço em junho, refletindo uma melhora na demanda de setores como construção civil e automotivo, mas ainda abaixo dos níveis pré-pandemia.",
-      "fontes": [
-        {
-          "nome": "Instituto Aço Brasil",
-          "url": "https://acobrasil.org.br/noticias/consumo-aparente-aco-junho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Setor eletroeletrônico projeta crescimento de 2% no ano",
-      "texto": "A ABINEE divulgou que o setor eletroeletrônico projeta um crescimento de 2% no faturamento para 2026, impulsionado pela demanda por equipamentos conectados e investimentos em tecnologia.",
-      "fontes": [
-        {
-          "nome": "ABINEE",
-          "url": "https://abinee.org.br/noticias/setor-eletroeletronico-projeta-crescimento-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "IEDI analisa impacto da taxa de juros na competitividade industrial",
-      "texto": "O Instituto de Estudos para o Desenvolvimento Industrial (IEDI) publicou um estudo aprofundado sobre o impacto da taxa de juros elevada na competitividade da indústria brasileira, apontando desafios e possíveis soluções.",
-      "fontes": [
-        {
-          "nome": "IEDI",
-          "url": "https://iedi.org.br/noticias/impacto-juros-competitividade-industrial"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "FIEMG: Indústria mineira busca inovação para aumentar produtividade",
-      "texto": "A Federação das Indústrias do Estado de Minas Gerais (FIEMG) destacou a crescente busca das indústrias mineiras por inovação e tecnologias avançadas para aumentar a produtividade e a eficiência operacional.",
-      "fontes": [
-        {
-          "nome": "FIEMG",
-          "url": "https://fiemg.com.br/noticias/industria-mineira-inovacao-produtividade"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Faturamento da indústria de autopeças cresce 2,5% em junho",
-      "texto": "O Sindipeças reportou um crescimento de 2,5% no faturamento da indústria de autopeças em junho, impulsionado pela recuperação da produção de veículos e a demanda por peças de reposição.",
-      "fontes": [
-        {
-          "nome": "Sindipeças",
-          "url": "https://sindipecas.org.br/noticias/faturamento-autopeças-junho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Produção de motocicletas mantém ritmo de alta",
-      "texto": "A Abraciclo divulgou que a produção de motocicletas no Brasil manteve um ritmo de alta em julho, com forte demanda por modelos de baixa cilindrada e scooters, refletindo a busca por mobilidade individual.",
-      "fontes": [
-        {
-          "nome": "Abraciclo",
-          "url": "https://abraciclo.com.br/noticias/producao-motocicletas-julho-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "AutoData: Investimentos em novas tecnologias para produção automotiva",
-      "texto": "A AutoData destacou os recentes anúncios de investimentos de montadoras em novas tecnologias para a produção automotiva no Brasil, com foco em veículos elétricos, híbridos e sistemas de conectividade avançados.",
-      "fontes": [
-        {
-          "nome": "AutoData",
-          "url": "https://autodata.com.br/noticias/investimentos-tecnologia-automotiva"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABIQUIM: Setor químico enfrenta desafios de custos de insumos",
-      "texto": "A ABIQUIM alertou que o setor químico brasileiro continua enfrentando desafios significativos relacionados aos custos de insumos e energia, impactando a rentabilidade e a competitividade das empresas.",
-      "fontes": [
-        {
-          "nome": "ABIQUIM",
-          "url": "https://abiquim.org.br/noticias/setor-quimico-desafios-custos"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABIT: Indústria têxtil e de confecção busca mercados externos",
-      "texto": "A ABIT informou que a indústria têxtil e de confecção brasileira está intensificando a busca por mercados externos e investindo em inovação para superar o cenário de desafios no mercado interno.",
-      "fontes": [
-        {
-          "nome": "ABIT",
-          "url": "https://abit.org.br/noticias/industria-textil-mercados-externos"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "FIRJAN: Desafios e oportunidades para a indústria fluminense",
-      "texto": "A FIRJAN promoveu um debate sobre os desafios e oportunidades para a indústria do estado do Rio de Janeiro, com foco em infraestrutura, ambiente de negócios e políticas de incentivo ao crescimento.",
-      "fontes": [
-        {
-          "nome": "FIRJAN",
-          "url": "https://firjan.com.br/noticias/desafios-oportunidades-industria-fluminense"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Automotive Business: Cadeia de suprimentos automotiva em transformação",
-      "texto": "A Automotive Business publicou um artigo analisando as transformações na cadeia de suprimentos automotiva global e brasileira, destacando a necessidade de resiliência e adaptação a novas demandas.",
+      "titulo": "Emplacamentos de veículos avançam 13% na 1ª quinzena de julho; financiamentos crescem 11% no semestre",
+      "texto": "O mercado automotivo brasileiro registrou alta de 13% nos emplacamentos na primeira quinzena de julho. O volume de veículos financiados cresceu 11% no 1º semestre de 2026.",
       "fontes": [
         {
           "nome": "Automotive Business",
-          "url": "https://automotivebusiness.com.br/noticias/cadeia-suprimentos-automotiva-transformacao"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABDI: Programas de apoio à indústria 4.0 em destaque",
-      "texto": "A ABDI (Agência Brasileira de Desenvolvimento Industrial) destacou seus programas de apoio à adoção da Indústria 4.0, visando a digitalização e a automação de processos produtivos em PMEs industriais.",
-      "fontes": [
-        {
-          "nome": "ABDI",
-          "url": "https://www.gov.br/abdi/pt-br/noticias/programas-industria-4-0"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "CNI alerta para aumento de custos de energia elétrica na indústria",
-      "texto": "A Confederação Nacional da Indústria (CNI) emitiu um alerta sobre o contínuo aumento dos custos de energia elétrica, que impacta diretamente a competitividade das indústrias brasileiras e a produção.",
-      "fontes": [
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/cni-alerta-custos-energia-industria/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "IEDI: Desindustrialização e a necessidade de políticas públicas",
-      "texto": "O IEDI publicou um novo estudo que reitera a preocupação com o processo de desindustrialização no Brasil e a urgência de políticas públicas eficazes para reverter a perda de participação do setor na economia.",
-      "fontes": [
-        {
-          "nome": "IEDI",
-          "url": "https://iedi.org.br/noticias/desindustrializacao-politicas-publicas"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABINEE: Crescimento das importações de produtos eletrônicos preocupa",
-      "texto": "A ABINEE expressou preocupação com o crescimento das importações de produtos eletrônicos, que tem pressionado a produção nacional e gerado desafios para a indústria local em termos de competitividade.",
-      "fontes": [
-        {
-          "nome": "ABINEE",
-          "url": "https://abinee.org.br/noticias/importacoes-eletronicos-preocupam"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Sindipeças: Perspectivas para 2026 indicam crescimento moderado",
-      "texto": "O Sindipeças divulgou suas perspectivas para o ano de 2026, indicando um crescimento moderado para a indústria de autopeças, mas ressaltando os desafios na cadeia de suprimentos e a necessidade de inovação.",
-      "fontes": [
-        {
-          "nome": "Sindipeças",
-          "url": "https://sindipecas.org.br/noticias/perspectivas-2026-autopeças"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "ICF recua levemente em julho, aponta CNC",
-      "texto": "A Intenção de Consumo das Famílias (ICF) da CNC registrou um leve recuo em julho, atingindo 78,5 pontos. O indicador mostra que os consumidores estão mais cautelosos, impactando o varejo.",
-      "fontes": [
-        {
-          "nome": "CNC / Pesquisas",
-          "url": "https://pesquisascnc.com.br/icf-julho-2026-cautela/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Inadimplência do consumidor mostra estabilidade em junho",
-      "texto": "O indicador de inadimplência do consumidor da CNDL/SPC Brasil apontou estabilidade em junho. O número de devedores se mantém, mas com menor crescimento em relação aos meses anteriores.",
-      "fontes": [
-        {
-          "nome": "CNDL / SPC Brasil",
-          "url": "https://cndl.org.br/noticias/inadimplencia-consumidor-junho-estavel/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Vendas no varejo físico crescem 1,2% em julho",
-      "texto": "O Índice Cielo do Varejo Ampliado (ICVA) registrou um crescimento de 1,2% nas vendas do varejo físico em julho, com destaque para segmentos de vestuário, calçados e artigos farmacêuticos.",
-      "fontes": [
-        {
-          "nome": "Índice Cielo / ICVA",
-          "url": "https://blog.cielo.com.br/noticias/icva-julho-2026-crescimento-varejo-fisico/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Supermercados registram alta nas vendas em junho",
-      "texto": "A ABRAS (Associação Brasileira de Supermercados) divulgou que o setor supermercadista registrou alta nas vendas em junho, impulsionado por promoções e o aumento do consumo doméstico.",
-      "fontes": [
-        {
-          "nome": "ABRAS / SuperHiper",
-          "url": "https://abras.com.br/superhiper/noticias/vendas-supermercados-junho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Vendas de veículos novos caem 0,5% em julho",
-      "texto": "A Fenabrave informou que as vendas de veículos novos no Brasil caíram 0,5% em julho, influenciadas pelos juros altos e a menor oferta de crédito, impactando o setor automotivo.",
-      "fontes": [
-        {
-          "nome": "Fenabrave",
-          "url": "https://fenabrave.org.br/noticias/vendas-veiculos-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Franchising projeta expansão de 8% em 2026",
-      "texto": "A ABF (Associação Brasileira de Franchising) divulgou que o setor de franchising projeta uma expansão de 8% no faturamento para 2026, com o surgimento de novas marcas e modelos de negócio.",
-      "fontes": [
-        {
-          "nome": "ABF / franchising",
-          "url": "https://abf.com.br/noticias/franchising-projeta-expansao-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Shoppings buscam estratégias para atrair consumidores",
-      "texto": "A Abrasce (Associação Brasileira de Shopping Centers) destacou que os shoppings estão investindo em novas estratégias para atrair consumidores, como eventos temáticos e experiências diferenciadas, para aumentar o fluxo e as vendas.",
-      "fontes": [
-        {
-          "nome": "Abrasce / shoppings",
-          "url": "https://abrasce.com.br/noticias/shoppings-estrategias-consumidores/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "IDV: Varejistas pressionam por simplificação tributária",
-      "texto": "O Instituto para Desenvolvimento do Varejo (IDV) reforçou a pressão dos varejistas por uma simplificação tributária, visando reduzir a burocracia e os custos operacionais que afetam o setor.",
-      "fontes": [
-        {
-          "nome": "IDV",
-          "url": "https://idv.org.br/noticias/varejistas-simplificacao-tributaria/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Consumidor Moderno: Tendências de consumo pós-pandemia",
-      "texto": "A Consumidor Moderno publicou um artigo explorando as novas tendências de consumo no cenário pós-pandemia, com foco em sustentabilidade, experiência do cliente e a busca por marcas com propósito.",
-      "fontes": [
-        {
-          "nome": "Consumidor Moderno",
-          "url": "https://consumidormoderno.com.br/noticias/tendencias-consumo-pos-pandemia/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Novo Varejo: Adoção de tecnologias de pagamento no varejo",
-      "texto": "O portal Novo Varejo destacou o crescimento da adoção de tecnologias de pagamento como PIX e carteiras digitais no setor, agilizando as transações e melhorando a experiência de compra dos clientes.",
-      "fontes": [
-        {
-          "nome": "Novo Varejo",
-          "url": "https://novovarejo.com.br/noticias/tecnologias-pagamento-varejo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Diário do Comércio/ACSP: Comércio de SP otimista para 2º semestre",
-      "texto": "O Diário do Comércio, da ACSP, reportou que os comerciantes de São Paulo estão otimistas com as perspectivas de vendas para o segundo semestre, impulsionados por datas comemorativas e a gradual recuperação econômica.",
-      "fontes": [
-        {
-          "nome": "Diário do Comércio / ACSP",
-          "url": "https://dcomercio.com.br/noticias/comercio-sp-otimista-2-semestre/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Fecomércio: Impacto da Selic no comércio ainda é desafio",
-      "texto": "A Fecomércio alertou que a manutenção da taxa Selic em patamar elevado continua a ser um desafio para o comércio, encarecendo o crédito e o capital de giro para as empresas do setor.",
-      "fontes": [
-        {
-          "nome": "Fecomércio",
-          "url": "https://fecomercio.com.br/noticias/impacto-selic-comercio/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "NielsenIQ: Consumo de bens não duráveis com estabilidade",
-      "texto": "A NielsenIQ divulgou que o consumo de bens não duráveis apresentou estabilidade em junho, com consumidores mais seletivos nas compras e buscando promoções para otimizar o orçamento familiar.",
-      "fontes": [
-        {
-          "nome": "NielsenIQ",
-          "url": "https://nielseniq.com/noticias/consumo-bens-nao-duraveis-estabilidade/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Equifax/BoaVista: Indicador de atividade do comércio em recuperação",
-      "texto": "O indicador de atividade do comércio da Equifax/BoaVista mostrou uma leve recuperação em junho, sinalizando um aquecimento gradual das vendas, mas ainda com um cenário de cautela por parte dos consumidores.",
-      "fontes": [
-        {
-          "nome": "Equifax / BoaVista",
-          "url": "https://equifax.com.br/noticias/indicador-atividade-comercio-recuperacao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "ecommerce"
-      ],
-      "titulo": "SBVC: Crescimento do varejo omnichannel impulsiona vendas",
-      "texto": "A Sociedade Brasileira de Varejo e Consumo (SBVC) destacou o crescimento do varejo omnichannel, com empresas investindo na integração de canais físicos e digitais para melhorar a experiência do cliente e impulsionar as vendas.",
-      "fontes": [
-        {
-          "nome": "SBVC",
-          "url": "https://sbvc.com.br/noticias/varejo-omnichannel-crescimento/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "IBEVAR: Desafios do varejo alimentar na concorrência",
-      "texto": "O IBEVAR (Instituto Brasileiro de Executivos de Varejo e Mercado de Consumo) publicou um estudo sobre os desafios do varejo alimentar, abordando a concorrência acirrada e a busca por eficiência operacional.",
-      "fontes": [
-        {
-          "nome": "IBEVAR",
-          "url": "https://ibevar.org.br/noticias/desafios-varejo-alimentar/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "ABAD: Atacado distribuidor com bom desempenho em junho",
-      "texto": "A ABAD (Associação Brasileira de Atacadistas e Distribuidores) informou que o setor atacadista distribuidor registrou um bom desempenho em junho, atendendo às demandas do varejo e do food service.",
-      "fontes": [
-        {
-          "nome": "ABAD / atacado",
-          "url": "https://abad.com.br/noticias/atacado-distribuidor-junho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "APAS: Supermercados investem em tecnologia e automação",
-      "texto": "A APAS (Associação Paulista de Supermercados) destacou que os supermercados estão investindo cada vez mais em tecnologia e automação para otimizar a gestão de estoques, reduzir perdas e melhorar a experiência de compra.",
-      "fontes": [
-        {
-          "nome": "APAS / supermercados",
-          "url": "https://apas.com.br/noticias/supermercados-investem-tecnologia/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "InfoVarejo: Personalização no atendimento como diferencial",
-      "texto": "O portal InfoVarejo publicou um artigo sobre a importância da personalização no atendimento ao cliente como um diferencial competitivo para o varejo, visando fidelizar e aumentar as vendas.",
-      "fontes": [
-        {
-          "nome": "InfoVarejo",
-          "url": "https://infovarejo.com.br/noticias/personalizacao-atendimento-varejo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "SuperVarejo: Logística no setor varejista: desafios e soluções",
-      "texto": "A revista SuperVarejo abordou os desafios e as soluções para a logística no setor varejista, com foco em entregas eficientes, rápidas e a otimização da cadeia de suprimentos para atender às demandas do consumidor.",
-      "fontes": [
-        {
-          "nome": "SuperVarejo",
-          "url": "https://supervarejo.com.br/noticias/logistica-varejo-desafios-solucoes/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Bancos registram aumento na concessão de crédito para PMEs",
-      "texto": "A Febraban (Federação Brasileira de Bancos) informou que os bancos registraram um aumento na concessão de crédito para PMEs em junho, embora as taxas de juros ainda permaneçam elevadas, refletindo a política monetária.",
-      "fontes": [
-        {
-          "nome": "Febraban",
-          "url": "https://febraban.org.br/noticias/bancos-aumentam-credito-pme-junho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Leilão de transmissão de energia atrai investimentos",
-      "texto": "A ANEEL (Agência Nacional de Energia Elétrica) homologou os resultados de um leilão de transmissão de energia, que atraiu significativos investimentos e garantirá a expansão da infraestrutura elétrica do país.",
-      "fontes": [
-        {
-          "nome": "ANEEL",
-          "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudo/noticias/leilao-transmissao-energia-investimentos"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Crescimento do número de acessos à banda larga fixa",
-      "texto": "A ANATEL (Agência Nacional de Telecomunicações) divulgou dados que mostram o contínuo crescimento do número de acessos à banda larga fixa no Brasil, impulsionando a conectividade e o setor de telecomunicações.",
-      "fontes": [
-        {
-          "nome": "ANATEL",
-          "url": "https://www.gov.br/anatel/pt-br/centrais-de-conteudo/noticias/crescimento-banda-larga-fixa"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Mercado de software e serviços de TI cresce 10%",
-      "texto": "A ABES Software (Associação Brasileira das Empresas de Software) destacou que o mercado de software e serviços de TI no Brasil cresceu 10% no primeiro semestre de 2026, impulsionado pela demanda por digitalização.",
-      "fontes": [
-        {
-          "nome": "ABES Software",
-          "url": "https://abessoftware.com.br/noticias/mercado-software-cresce-10-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "EPBR energia: Debates sobre a transição energética no Brasil",
-      "texto": "O portal EPBR energia publicou uma série de artigos e debates sobre os desafios e oportunidades da transição energética no Brasil, com foco em fontes renováveis e descarbonização da matriz elétrica.",
-      "fontes": [
-        {
-          "nome": "EPBR energia",
-          "url": "https://epbr.com.br/noticias/transicao-energetica-brasil-debates/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Mercado de capitais aquecido com novas emissões",
-      "texto": "A ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais) registrou um mercado de capitais aquecido em junho, com aumento na captação via debêntures e fundos de investimento, refletindo o apetite por risco.",
-      "fontes": [
-        {
-          "nome": "ANBIMA",
-          "url": "https://www.anbima.com.br/noticias/mercado-capitais-aquecido-junho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Setor de seguros apresenta crescimento robusto",
-      "texto": "A CNseg (Confederação Nacional das Empresas de Seguros Gerais, Previdência Privada e Vida, Saúde Suplementar e Capitalização) divulgou que o setor de seguros apresentou um crescimento robusto no primeiro semestre, impulsionado por seguros de vida e patrimoniais.",
-      "fontes": [
-        {
-          "nome": "CNseg / seguros",
-          "url": "https://cnseg.org.br/noticias/setor-seguros-crescimento-robusto-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos",
-        "comercio",
-        "ecommerce"
-      ],
-      "titulo": "Pagamentos digitais impulsionam o setor de serviços",
-      "texto": "A ABECS (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) apontou que os pagamentos digitais, como PIX e cartões, continuam a impulsionar o setor de serviços, facilitando transações e promovendo a inclusão financeira.",
-      "fontes": [
-        {
-          "nome": "ABECS / pagamentos",
-          "url": "https://abecs.org.br/noticias/pagamentos-digitais-impulsionam-servicos/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Conexis: Investimentos em infraestrutura 5G seguem em alta",
-      "texto": "A Conexis Brasil Digital informou que os investimentos em infraestrutura 5G pelas empresas de telecomunicações seguem em alta, expandindo a cobertura e a capacidade da rede para atender à crescente demanda.",
-      "fontes": [
-        {
-          "nome": "Conexis / telecom",
-          "url": "https://conexis.org.br/noticias/investimentos-5g-telecom/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "TELETIME: Fusões e aquisições no setor de telecomunicações",
-      "texto": "O portal TELETIME destacou a movimentação de fusões e aquisições no setor de telecomunicações, indicando um processo de consolidação e busca por sinergias entre as empresas para otimizar operações e expandir o mercado.",
-      "fontes": [
-        {
-          "nome": "TELETIME",
-          "url": "https://teletime.com.br/noticias/fusões-aquisicoes-telecomunicações/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "CanalEnergia: Desafios da geração distribuída no Brasil",
-      "texto": "O CanalEnergia publicou um artigo sobre os desafios da geração distribuída no Brasil, especialmente a energia solar, abordando a integração na rede elétrica e a necessidade de regulamentação clara para o crescimento sustentável.",
-      "fontes": [
-        {
-          "nome": "CanalEnergia",
-          "url": "https://canalenergia.com.br/noticias/desafios-geracao-distribuida-solar/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Mobile Time: Tendências em aplicativos móveis e consumo",
-      "texto": "O Mobile Time analisou as últimas tendências em aplicativos móveis, com destaque para o crescimento de apps de produtividade, entretenimento e serviços financeiros, refletindo o comportamento do consumidor conectado.",
-      "fontes": [
-        {
-          "nome": "Mobile Time",
-          "url": "https://mobiletime.com.br/noticias/tendencias-aplicativos-moveis-consumo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Brasscom: Escassez de talentos em TI persiste no mercado",
-      "texto": "A Brasscom (Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação) alertou que a escassez de talentos em TI persiste no mercado, impactando o crescimento do setor e a capacidade de inovação das empresas.",
-      "fontes": [
-        {
-          "nome": "Brasscom / TIC",
-          "url": "https://brasscom.org.br/noticias/escassez-talentos-ti-persiste/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Tele.Síntese: Segurança cibernética em foco para empresas",
-      "texto": "O portal Tele.Síntese destacou a crescente importância da segurança cibernética para as empresas, que estão investindo em proteção de dados e sistemas contra ataques, um tema crítico para o setor de serviços.",
-      "fontes": [
-        {
-          "nome": "Tele.Síntese",
-          "url": "https://telesintese.com.br/noticias/seguranca-cibernetica-foco-empresas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Convergência Digital: IA e automação em serviços ganham espaço",
-      "texto": "A Convergência Digital publicou um artigo sobre o avanço da Inteligência Artificial e da automação no setor de serviços, otimizando processos, melhorando o atendimento ao cliente e gerando eficiência operacional.",
-      "fontes": [
-        {
-          "nome": "Convergência Digital",
-          "url": "https://convergenciadigital.com.br/noticias/ia-automacao-servicos-ganham-espaco/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "MIT Tech Review BR: Inovação em serviços financeiros impulsiona fintechs",
-      "texto": "A MIT Technology Review Brasil destacou a constante inovação em serviços financeiros, impulsionando o crescimento das fintechs e a transformação do setor bancário com novas soluções e modelos de negócio.",
-      "fontes": [
-        {
-          "nome": "MIT Tech Review BR",
-          "url": "https://mittechreview.com.br/noticias/inovacao-servicos-financeiros-fintechs/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "SUSEP: Regulamentação de novos produtos de seguros",
-      "texto": "A SUSEP (Superintendência de Seguros Privados) está atuando na regulamentação de novos produtos de seguros, buscando modernizar o mercado e oferecer mais opções aos consumidores, além de proteger seus interesses.",
-      "fontes": [
-        {
-          "nome": "SUSEP",
-          "url": "https://www.gov.br/susep/pt-br/noticias/regulamentacao-novos-produtos-seguros"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos",
-        "industria"
-      ],
-      "titulo": "CCEE: Mercado livre de energia em expansão no Brasil",
-      "texto": "A CCEE (Câmara de Comercialização de Energia Elétrica) informou que o mercado livre de energia continua em expansão no Brasil, com mais empresas buscando maior liberdade na contratação e redução de custos energéticos.",
-      "fontes": [
-        {
-          "nome": "CCEE / energia",
-          "url": "https://ccee.org.br/noticias/mercado-livre-energia-expansao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "ABES Software: Exportação de software brasileiro em crescimento",
-      "texto": "A ABES Software destacou o crescimento da exportação de software brasileiro, com empresas nacionais buscando mercados internacionais e consolidando a imagem do Brasil como polo de tecnologia e inovação.",
-      "fontes": [
-        {
-          "nome": "ABES Software",
-          "url": "https://abessoftware.com.br/noticias/exportacao-software-brasileiro-crescimento/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Febraban: Educação financeira para PMEs é prioridade",
-      "texto": "A Febraban reforçou a importância da educação financeira para PMEs, com bancos oferecendo programas e ferramentas para auxiliar empreendedores na gestão de suas finanças e no acesso a crédito consciente.",
-      "fontes": [
-        {
-          "nome": "Febraban",
-          "url": "https://febraban.org.br/noticias/educacao-financeira-pme-prioridade/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Preços da soja e milho recuam com expectativa de safra cheia",
-      "texto": "O CEPEA/Esalq registrou recuo nos preços da soja e do milho nesta semana, influenciado pela expectativa de uma colheita recorde no Brasil e pela oferta global, que pressiona as cotações das commodities.",
-      "fontes": [
-        {
-          "nome": "CEPEA / Esalq",
-          "url": "https://www.cepea.esalq.usp.br/br/noticia/precos-soja-milho-recuam-safra-cheia.aspx"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "3ª estimativa da safra de grãos 2025/2026 aponta recorde",
-      "texto": "A Conab divulgou a 3ª estimativa para a safra de grãos 2025/2026, projetando um recorde de 315 milhões de toneladas. Destaque para a soja e o milho, que impulsionam o volume total.",
-      "fontes": [
-        {
-          "nome": "Conab",
-          "url": "https://www.conab.gov.br/noticias/3a-estimativa-safra-graos-2025-2026-recorde"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "MAPA anuncia novas linhas de crédito para o Plano Safra 2026/2027",
-      "texto": "O Ministério da Agricultura, Pecuária e Abastecimento (MAPA) anunciou novas linhas de crédito e condições facilitadas para o Plano Safra 2026/2027, visando apoiar produtores rurais e impulsionar o agronegócio.",
-      "fontes": [
-        {
-          "nome": "MAPA",
-          "url": "https://www.gov.br/agricultura/pt-br/noticias/mapa-novas-linhas-credito-plano-safra"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Exportações de carne bovina crescem 5% em julho",
-      "texto": "A ABIEC (Associação Brasileira das Indústrias Exportadoras de Carnes) informou que as exportações de carne bovina cresceram 5% em julho, impulsionadas pela forte demanda de mercados asiáticos e a valorização do dólar.",
-      "fontes": [
-        {
-          "nome": "ABIEC / carne",
-          "url": "https://abiec.com.br/noticias/exportacoes-carne-bovina-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Setor de aves e suínos projeta aumento da produção",
-      "texto": "A ABPA (Associação Brasileira de Proteína Animal) divulgou que o setor de aves e suínos projeta um aumento na produção para o segundo semestre, impulsionado pela recuperação do consumo interno e a manutenção das exportações.",
-      "fontes": [
-        {
-          "nome": "ABPA / aves e suínos",
-          "url": "https://abpa-br.org/noticias/setor-aves-suinos-projeta-aumento-producao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Exportações de farelo de soja em alta",
-      "texto": "A ABIOVE (Associação Brasileira das Indústrias de Óleos Vegetais) registrou um bom desempenho nas exportações de farelo de soja em julho, impulsionado pela demanda global por ração animal e a safra recorde.",
-      "fontes": [
-        {
-          "nome": "ABIOVE / soja",
-          "url": "https://abiove.org.br/noticias/exportacoes-farelo-soja-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Produção de etanol e açúcar em bom ritmo",
-      "texto": "A UNICA (União da Indústria de Cana-de-Açúcar e Bioenergia) divulgou que a produção de etanol e açúcar segue em bom ritmo na safra atual, com condições climáticas favoráveis e investimentos em tecnologia.",
-      "fontes": [
-        {
-          "nome": "UNICA",
-          "url": "https://unica.com.br/noticias/producao-etanol-acucar-ritmo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Notícias Agrícolas: Impacto do clima na safra de inverno",
-      "texto": "O portal Notícias Agrícolas destacou o impacto das condições climáticas favoráveis no desenvolvimento da safra de inverno, com expectativas positivas para culturas como trigo e aveia em diversas regiões do país.",
-      "fontes": [
-        {
-          "nome": "Notícias Agrícolas",
-          "url": "https://noticiasagricolas.com.br/noticias/clima-safra-inverno-impacto/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Canal Rural: Tecnologia no campo para otimização da produção",
-      "texto": "O Canal Rural abordou o crescente uso de tecnologia no campo, como drones e sensores, para otimizar a produção agrícola, monitorar lavouras e aumentar a eficiência no uso de recursos.",
-      "fontes": [
-        {
-          "nome": "Canal Rural",
-          "url": "https://canalrural.com.br/noticias/tecnologia-campo-otimizacao-producao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "AgFeed: Investimentos em startups do agronegócio em alta",
-      "texto": "O AgFeed reportou que os investimentos em startups do agronegócio continuam em alta, com fundos de capital de risco buscando inovações em biotecnologia, agricultura de precisão e soluções para a cadeia produtiva.",
-      "fontes": [
-        {
-          "nome": "AgFeed",
-          "url": "https://agfeed.com.br/noticias/investimentos-startups-agronegocio/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Scot Consultoria: Análise de mercado para commodities agrícolas",
-      "texto": "A Scot Consultoria divulgou sua análise de mercado para as principais commodities agrícolas, com previsões para os preços do boi gordo, soja e milho nos próximos meses, considerando o cenário global e interno.",
-      "fontes": [
-        {
-          "nome": "Scot Consultoria",
-          "url": "https://scotconsultoria.com.br/noticias/analise-mercado-commodities-agricolas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "ANDA: Demanda por fertilizantes permanece aquecida",
-      "texto": "A ANDA (Associação Nacional para Difusão de Adubos) informou que a demanda por fertilizantes permanece aquecida no Brasil, com produtores investindo em insumos para garantir a produtividade das lavouras e a qualidade da safra.",
-      "fontes": [
-        {
-          "nome": "ANDA / fertilizantes",
-          "url": "https://anda.org.br/noticias/demanda-fertilizantes-aquecida/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Embrapa: Pesquisas para cultivares mais resistentes às mudanças climáticas",
-      "texto": "A Embrapa destacou suas pesquisas para o desenvolvimento de cultivares mais resistentes às mudanças climáticas, buscando adaptar a produção agrícola brasileira a novos cenários e garantir a segurança alimentar.",
-      "fontes": [
-        {
-          "nome": "Embrapa",
-          "url": "https://www.embrapa.br/noticias/pesquisas-cultivares-resistentes-clima"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "IMEA: Cenário da pecuária em Mato Grosso",
-      "texto": "O IMEA (Instituto Mato-Grossense de Economia Agropecuária) publicou um estudo detalhado sobre o cenário da pecuária em Mato Grosso, abordando desafios e oportunidades para os produtores de gado no estado.",
-      "fontes": [
-        {
-          "nome": "IMEA",
-          "url": "https://imea.com.br/noticias/cenario-pecuaria-mato-grosso/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "B3: Futuros agrícolas com alta volatilidade",
-      "texto": "A B3 informou que os contratos futuros agrícolas apresentaram alta volatilidade nesta semana, refletindo as incertezas do mercado e as expectativas dos investidores sobre a próxima safra e os preços das commodities.",
-      "fontes": [
-        {
-          "nome": "B3 / futuros agro",
-          "url": "https://www.b3.com.br/pt_br/noticias/futuros-agricolas-volatilidade/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Agrolink: Sustentabilidade na produção agrícola em foco",
-      "texto": "O Agrolink publicou um artigo sobre a crescente importância da sustentabilidade na produção agrícola, com foco em práticas e certificações para um agronegócio mais verde e alinhado às demandas globais.",
-      "fontes": [
-        {
-          "nome": "Agrolink",
-          "url": "https://agrolink.com.br/noticias/sustentabilidade-producao-agricola/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Aprosoja: Desafios da logística de grãos no Brasil",
-      "texto": "A Aprosoja Brasil destacou que a infraestrutura de transporte e logística de grãos ainda é um gargalo para o escoamento da safra recorde, gerando custos adicionais para os produtores e impactando a competitividade.",
-      "fontes": [
-        {
-          "nome": "Aprosoja",
-          "url": "https://aprosojabrasil.com.br/noticias/desafios-logistica-graos/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "ABAG: Agenda de competitividade do agronegócio brasileiro",
-      "texto": "A ABAG (Associação Brasileira do Agronegócio) apresentou sua agenda de competitividade para o agronegócio brasileiro, defendendo políticas que fortaleçam o setor no cenário global e promovam o desenvolvimento sustentável.",
-      "fontes": [
-        {
-          "nome": "ABAG",
-          "url": "https://abag.com.br/noticias/agenda-competitividade-agronegocio/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Sociedade Rural Brasileira: Impacto da reforma tributária no agro",
-      "texto": "A Sociedade Rural Brasileira publicou uma análise sobre os potenciais impactos da reforma tributária no agronegócio, alertando para a necessidade de atenção às especificidades do setor na nova legislação.",
-      "fontes": [
-        {
-          "nome": "Sociedade Rural Brasileira",
-          "url": "https://srb.org.br/noticias/impacto-reforma-tributaria-agro/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Datagro: Perspectivas para o mercado de açúcar e etanol",
-      "texto": "A Datagro divulgou suas perspectivas para o mercado global de açúcar e etanol, indicando um cenário favorável para os produtos da cana-de-açúcar, com demanda aquecida e preços estáveis.",
-      "fontes": [
-        {
-          "nome": "Datagro",
-          "url": "https://datagro.com/noticias/perspectivas-mercado-acucar-etanol/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "INCC-M varia 0,25% em julho, aponta FGV",
-      "texto": "O Índice Nacional de Custo da Construção – Mercado (INCC-M) variou 0,25% em julho, segundo a FGV, indicando uma desaceleração nos custos da construção civil e impactando os orçamentos de obras.",
-      "fontes": [
-        {
-          "nome": "FGV / IBRE",
-          "url": "https://portalibre.fgv.br/noticias/incc-m-julho-2026-varia-0-25"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Custo Unitário Básico (CUB) por m² tem leve alta",
-      "texto": "O Custo Unitário Básico (CUB) por metro quadrado da construção civil registrou uma leve alta em julho, conforme divulgado pelo SindusCon-SP, refletindo os preços de materiais e a mão de obra.",
-      "fontes": [
-        {
-          "nome": "SindusCon-SP",
-          "url": "https://sindusconsp.com.br/noticias/cub-medio-julho-2026-leve-alta"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Preço médio de venda de imóveis sobe 0,4% em julho",
-      "texto": "O Índice FipeZAP de Venda Residencial registrou uma alta de 0,4% no preço médio de venda de imóveis residenciais em julho, indicando valorização em grandes centros urbanos e o aquecimento do mercado.",
-      "fontes": [
-        {
-          "nome": "FipeZAP / imóveis",
-          "url": "https://www.fipe.org.br/pt-br/indices/fipezap/noticias/fipezap-venda-julho-2026-sobe-0-4/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Sondagem da Indústria da Construção mostra confiança em alta",
-      "texto": "A Sondagem da Indústria da Construção da CBIC revelou um aumento da confiança dos empresários em julho, impulsionado por novos projetos e expectativas positivas para o segundo semestre do ano.",
-      "fontes": [
-        {
-          "nome": "CBIC / Hub de Dados",
-          "url": "https://cbic.org.br/noticias/sondagem-construcao-julho-2026-confianca-alta/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Lançamentos de imóveis residenciais crescem 5% em junho",
-      "texto": "O SindusCon-SP e a ABRAINC registraram um crescimento de 5% nos lançamentos de imóveis residenciais em junho, sinalizando um aquecimento do mercado imobiliário e a retomada de novos empreendimentos.",
-      "fontes": [
-        {
-          "nome": "SindusCon-SP",
-          "url": "https://sindusconsp.com.br/noticias/lancamentos-imoveis-junho-2026-crescem/"
+          "url": "https://www.automotivebusiness.com.br/noticias"
         },
         {
-          "nome": "ABRAINC",
-          "url": "https://abrainc.org.br/noticias/lancamentos-imoveis-junho-2026-crescem/"
+          "nome": "Automotive Business",
+          "url": "https://www.automotivebusiness.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "construcao"
+        "agro"
       ],
-      "titulo": "Consumo de cimento registra estabilidade em junho",
-      "texto": "O SNIC (Sindicato Nacional da Indústria do Cimento) informou que o consumo de cimento registrou estabilidade em junho, refletindo a atividade da construção civil e o ritmo de obras no país.",
+      "titulo": "Exportações de frango do Brasil para a UE podem ser suspensas até novembro",
+      "texto": "As exportações brasileiras de frango para a União Europeia provavelmente permanecerão suspensas até novembro, devido à demanda do bloco por uma auditoria no local antes de restaurar a elegibilidade do país.",
       "fontes": [
         {
-          "nome": "SNIC / cimento",
-          "url": "https://snic.org.br/noticias/consumo-cimento-junho-2026-estabilidade/"
+          "nome": "The AgriBiz",
+          "url": "https://www.theagribiz.com/ultimos-posts"
         }
       ]
     },
     {
       "setores": [
-        "construcao"
+        "agro"
       ],
-      "titulo": "ABRAINC: Mercado imobiliário de alto padrão aquecido",
-      "texto": "A ABRAINC (Associação Brasileira de Incorporadoras Imobiliárias) destacou o aquecimento do mercado imobiliário de alto padrão, com forte demanda e lançamentos de empreendimentos de luxo em grandes cidades.",
+      "titulo": "Yara projeta queda de 14% nas entregas de fertilizantes no Brasil em 2026",
+      "texto": "A Yara estima uma queda de 14% nas entregas de fertilizantes no Brasil em 2026, para 42 milhões de toneladas, devido às margens de grãos apertadas e choque de preços por conflitos no Oriente Médio.",
       "fontes": [
         {
-          "nome": "ABRAINC",
-          "url": "https://abrainc.org.br/noticias/mercado-imobiliario-alto-padrao-aquecido/"
+          "nome": "The AgriBiz",
+          "url": "https://www.theagribiz.com/ultimos-posts"
         }
       ]
     },
     {
       "setores": [
-        "construcao"
+        "agro"
       ],
-      "titulo": "Secovi-SP: Aluguéis residenciais com alta moderada",
-      "texto": "O Secovi-SP divulgou que os aluguéis residenciais na cidade de São Paulo registraram uma alta moderada em julho, refletindo a demanda por moradia e o cenário econômico atual.",
+      "titulo": "Ações da 3tentos caem 20% com margens de biodiesel decepcionantes",
+      "texto": "As ações da 3tentos despencaram 20% após executivos sinalizarem que os resultados do segundo trimestre, de esmagamento de soja e produção de biodiesel, serão mais fracos que o esperado.",
       "fontes": [
         {
-          "nome": "Secovi-SP",
-          "url": "https://secovi.com.br/noticias/alugueis-residenciais-julho-2026-alta-moderada/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ABRAMAT: Vendas de materiais de construção em leve recuperação",
-      "texto": "A ABRAMAT (Associação Brasileira da Indústria de Materiais de Construção) informou que as vendas de materiais de construção apresentaram uma leve recuperação em junho, impulsionadas por reformas e pequenas obras.",
-      "fontes": [
-        {
-          "nome": "ABRAMAT / materiais",
-          "url": "https://abramat.org.br/noticias/vendas-materiais-construcao-junho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ABECIP: Crédito imobiliário mantém ritmo de crescimento",
-      "texto": "A ABECIP (Associação Brasileira das Entidades de Crédito Imobiliário e Poupança) destacou que o crédito imobiliário manteve seu ritmo de crescimento em junho, com taxas de juros competitivas e maior oferta de financiamento.",
-      "fontes": [
-        {
-          "nome": "ABECIP / crédito imob.",
-          "url": "https://abecip.org.br/noticias/credito-imobiliario-junho-2026-crescimento/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Ministério das Cidades/MCMV: Novas regras para o Minha Casa Minha Vida",
-      "texto": "O Ministério das Cidades anunciou novas regras para o programa Minha Casa Minha Vida, visando ampliar o acesso à moradia popular e impulsionar o setor da construção civil com novos projetos.",
-      "fontes": [
-        {
-          "nome": "Ministério das Cidades / MCMV",
-          "url": "https://www.gov.br/cidades/pt-br/noticias/novas-regras-minha-casa-minha-vida"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "MRV/RI: Prévias operacionais do 2T26 indicam forte volume de vendas",
-      "texto": "A MRV divulgou suas prévias operacionais do 2º trimestre de 2026, indicando um forte volume de vendas e lançamentos, refletindo o bom desempenho da construtora no mercado imobiliário.",
-      "fontes": [
-        {
-          "nome": "MRV / RI",
-          "url": "https://mrv.com.br/relacoes-com-investidores/noticias/previas-operacionais-2t26"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Cyrela/RI: Lançamentos e vendas em alta no 2T26",
-      "texto": "A Cyrela, em seu relatório de relações com investidores, informou que os lançamentos e vendas de imóveis registraram alta no 2º trimestre de 2026, consolidando a recuperação do setor de incorporação.",
-      "fontes": [
-        {
-          "nome": "Cyrela / RI",
-          "url": "https://cyrela.com.br/relacoes-com-investidores/noticias/lancamentos-vendas-2t26"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Votorantim Cimentos: Investimentos em sustentabilidade",
-      "texto": "A Votorantim Cimentos anunciou novos investimentos em projetos de sustentabilidade e descarbonização, buscando reduzir o impacto ambiental de suas operações e produzir cimento de forma mais ecológica.",
-      "fontes": [
-        {
-          "nome": "Votorantim Cimentos",
-          "url": "https://votorantimcimentos.com.br/noticias/investimentos-sustentabilidade/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "AECweb: Tecnologia BIM ganha espaço em projetos de construção",
-      "texto": "O portal AECweb destacou o crescente uso da tecnologia BIM (Building Information Modeling) em projetos de construção, otimizando o planejamento, a execução e a gestão de obras, gerando maior eficiência.",
-      "fontes": [
-        {
-          "nome": "AECweb",
-          "url": "https://aecweb.com.br/noticias/tecnologia-bim-construcao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Grandes Construções: Projetos de infraestrutura em andamento",
-      "texto": "A revista Grandes Construções reportou o andamento de importantes projetos de infraestrutura no país, como rodovias e ferrovias, que impulsionam o setor da construção civil e geram empregos.",
-      "fontes": [
-        {
-          "nome": "Grandes Construções",
-          "url": "https://grandesconstrucoes.com.br/noticias/projetos-infraestrutura-andamento/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "O Empreiteiro: Desafios da mão de obra qualificada na construção",
-      "texto": "A revista O Empreiteiro abordou os desafios da mão de obra qualificada na construção civil, com a necessidade de investimentos em capacitação e formação profissional para atender à demanda do setor.",
-      "fontes": [
-        {
-          "nome": "O Empreiteiro",
-          "url": "https://revistaoe.com.br/noticias/mao-de-obra-qualificada-construcao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ABCP: Inovação em concreto para construções mais sustentáveis",
-      "texto": "A ABCP (Associação Brasileira de Cimento Portland) destacou as inovações em concreto para construções mais sustentáveis, com o desenvolvimento de materiais de alta performance e menor impacto ambiental.",
-      "fontes": [
-        {
-          "nome": "ABCP / cimento",
-          "url": "https://abcp.org.br/noticias/inovacao-concreto-sustentavel/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "CAU/BR: Importância do planejamento arquitetônico em obras",
-      "texto": "O CAU/BR (Conselho de Arquitetura e Urbanismo do Brasil) ressaltou a importância do planejamento arquitetônico em obras, garantindo projetos mais eficientes, funcionais e esteticamente agradáveis.",
-      "fontes": [
-        {
-          "nome": "CAU/BR",
-          "url": "https://www.caubr.gov.br/noticias/planejamento-arquitetonico-obras/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "CONFEA: Fiscalização de obras e segurança na construção",
-      "texto": "O CONFEA (Conselho Federal de Engenharia e Agronomia) destacou a importância da fiscalização de obras e da segurança na construção civil, visando garantir a qualidade dos projetos e a proteção dos trabalhadores.",
-      "fontes": [
-        {
-          "nome": "CONFEA",
-          "url": "https://www.confea.org.br/noticias/fiscalizacao-obras-seguranca-construcao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ADEMI-RJ: Mercado imobiliário do Rio de Janeiro em recuperação",
-      "texto": "A ADEMI-RJ (Associação de Dirigentes de Empresas do Mercado Imobiliário do Rio de Janeiro) informou que o mercado imobiliário da capital fluminense está em recuperação, com novos lançamentos e vendas em alta.",
-      "fontes": [
-        {
-          "nome": "ADEMI-RJ",
-          "url": "https://ademi.org.br/noticias/mercado-imobiliario-rj-recuperacao/"
+          "nome": "The AgriBiz",
+          "url": "https://www.theagribiz.com/ultimos-posts"
         }
       ]
     },
@@ -1612,16 +233,12 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "Vendas do e-commerce crescem 11,8% em junho de 2026",
-      "texto": "O índice MCC-ENET, em parceria com a Neotrust, divulgou que as vendas do e-commerce brasileiro cresceram 11,8% em junho de 2026, impulsionadas por datas comemorativas e a expansão do consumo online.",
+      "titulo": "Amazon Business projeta US$ 60 bilhões em vendas em 2026; TikTok testa assinatura paga",
+      "texto": "A Amazon Business deve atingir US$ 60 bilhões em vendas este ano, um aumento de 71% desde 2023. O TikTok está testando um programa de assinatura paga, o TikTok Shop Plus, nos EUA.",
       "fontes": [
         {
-          "nome": "MCC-ENET",
-          "url": "https://mccenet.com.br/noticias/vendas-ecommerce-junho-2026-crescem-11-8/"
-        },
-        {
-          "nome": "Neotrust / Confi",
-          "url": "https://neotrust.com.br/noticias/faturamento-ecommerce-junho-2026/"
+          "nome": "Reddit - r/ecommerce",
+          "url": null
         }
       ]
     },
@@ -1629,133 +246,12 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "Faturamento do e-commerce B2C atinge R$ 25 bilhões em junho",
-      "texto": "A Neotrust, em parceria com a ABComm, reportou que o faturamento do e-commerce B2C atingiu R$ 25 bilhões em junho de 2026, consolidando o bom desempenho do setor no primeiro semestre.",
+      "titulo": "Amazon limita títulos de produtos e eBay exibe ofertas de segunda chance publicamente",
+      "texto": "A Amazon limitará a maioria dos títulos de produtos a 75 caracteres a partir de 27 de julho. O eBay agora exibe publicamente as ofertas de segunda chance dos vendedores.",
       "fontes": [
         {
-          "nome": "Neotrust / Confi",
-          "url": "https://neotrust.com.br/noticias/faturamento-ecommerce-b2c-junho-2026/"
-        },
-        {
-          "nome": "ABComm",
-          "url": "https://abcomm.org/noticias/faturamento-ecommerce-b2c-junho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Ticket médio do e-commerce aumenta 3%",
-      "texto": "Dados da ABComm indicam que o ticket médio das compras no e-commerce brasileiro aumentou 3% em junho, refletindo uma maior confiança do consumidor e a busca por produtos de maior valor agregado.",
-      "fontes": [
-        {
-          "nome": "ABComm",
-          "url": "https://abcomm.org/noticias/ticket-medio-ecommerce-aumenta-3-junho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "E-commerce Brasil: Logística e last mile como desafios do setor",
-      "texto": "O portal E-commerce Brasil destacou que a logística e o 'last mile' continuam sendo os principais desafios para o setor, com a necessidade de investimentos em infraestrutura e soluções inovadoras para entregas eficientes.",
-      "fontes": [
-        {
-          "nome": "E-commerce Brasil",
-          "url": "https://ecommercebrasil.com.br/noticias/logistica-last-mile-desafios-ecommerce/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Mercado&Consumo: Estratégias de marketplaces para Black Friday 2026",
-      "texto": "O Mercado&Consumo publicou um artigo sobre as estratégias dos grandes marketplaces para a Black Friday 2026, com foco em promoções antecipadas, logística e experiência do cliente para atrair consumidores.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/noticias/estrategias-marketplaces-black-friday-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Nuvemshop: Crescimento de pequenas e médias lojas online",
-      "texto": "A Nuvemshop, plataforma de e-commerce, reportou um crescimento significativo de pequenas e médias lojas online em sua base, impulsionado pela facilidade de criação de e-commerces e o empreendedorismo digital.",
-      "fontes": [
-        {
-          "nome": "Nuvemshop",
-          "url": "https://nuvemshop.com.br/noticias/crescimento-pequenas-medias-lojas-online/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "VTEX: Soluções de e-commerce para grandes varejistas",
-      "texto": "A VTEX, plataforma de comércio digital, destacou suas soluções de e-commerce para grandes varejistas, com foco em escalabilidade, omnicanalidade e personalização da experiência de compra para o consumidor.",
-      "fontes": [
-        {
-          "nome": "VTEX",
-          "url": "https://vtex.com/pt-br/noticias/solucoes-ecommerce-grandes-varejistas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Mercado Livre: Expansão de centros de distribuição no Brasil",
-      "texto": "O Mercado Livre anunciou a expansão de seus centros de distribuição no Brasil, visando otimizar a logística, reduzir os prazos de entrega e fortalecer sua presença em diversas regiões do país.",
-      "fontes": [
-        {
-          "nome": "Mercado Livre",
-          "url": "https://mercadolivre.com.br/institucional/noticias/expansao-centros-distribuicao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Shopee: Aumento da base de vendedores locais",
-      "texto": "A Shopee informou um aumento significativo em sua base de vendedores locais no Brasil, reforçando seu compromisso com o ecossistema de e-commerce e oferecendo mais opções de produtos aos consumidores.",
-      "fontes": [
-        {
-          "nome": "Shopee",
-          "url": "https://shopee.com.br/noticias/aumento-base-vendedores-locais/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Remessa Conforme: Debate sobre ajustes na regulamentação",
-      "texto": "O programa Remessa Conforme, que regulamenta as importações de pequeno valor, foi tema de debate nesta semana, com discussões sobre possíveis ajustes na legislação para equilibrar a competitividade.",
-      "fontes": [
-        {
-          "nome": "Receita Federal",
-          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/remessa-conforme-debates-ajustes"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Câmara Brasileira da Economia Digital: Proposta para simplificação tributária",
-      "texto": "A Câmara Brasileira da Economia Digital (Câmara-e.net) apresentou uma proposta para a simplificação tributária no e-commerce, buscando reduzir a burocracia e os custos para as empresas do setor.",
-      "fontes": [
-        {
-          "nome": "Câmara Bras. Economia Digital",
-          "url": "https://camara-e.net/noticias/proposta-simplificacao-tributaria-ecommerce/"
+          "nome": "Stack Influence",
+          "url": null
         }
       ]
     },
@@ -1764,12 +260,12 @@
         "ecommerce",
         "comercio"
       ],
-      "titulo": "Grupo Casas Bahia: Foco em omnicanalidade e experiência do cliente",
-      "texto": "O Grupo Casas Bahia destacou seu foco em omnicanalidade e na melhoria da experiência do cliente, integrando os canais físicos e digitais para oferecer uma jornada de compra fluida e personalizada.",
+      "titulo": "DoorDash integra-se ao Shopify para comerciantes locais nos EUA",
+      "texto": "A DoorDash lançou uma integração direta com o Shopify, permitindo que comerciantes dos EUA com lojas físicas adicionem seus catálogos ao marketplace da DoorDash para entregas no mesmo dia.",
       "fontes": [
         {
-          "nome": "Grupo Casas Bahia",
-          "url": "https://grupocasasbahia.com.br/noticias/foco-omnicanalidade-experiencia-cliente/"
+          "nome": "Reddit - r/ecommerce",
+          "url": null
         }
       ]
     },
@@ -1777,103 +273,335 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "SHEIN Group: Expansão de operações no Brasil",
-      "texto": "O SHEIN Group anunciou a expansão de suas operações no Brasil, com investimentos em logística e parcerias com fornecedores locais, buscando fortalecer sua presença no mercado de moda online.",
+      "titulo": "Confiança do consumidor é o novo diferencial competitivo no e-commerce",
+      "texto": "O primeiro semestre de 2026 mostra que a confiança do consumidor, além de preço e conveniência, é o novo diferencial competitivo no e-commerce global.",
       "fontes": [
         {
-          "nome": "SHEIN Group",
-          "url": "https://sheingroup.com/noticias/expansao-operacoes-brasil/"
+          "nome": "Retail Gazette",
+          "url": null
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "industria",
+        "comercio"
       ],
-      "titulo": "E-Commerce News: Tendências em marketing digital para o setor",
-      "texto": "O E-Commerce News publicou um artigo sobre as principais tendências em marketing digital para o setor, como personalização, inteligência artificial e o uso de dados para otimizar campanhas e vendas.",
+      "titulo": "BYD ganha mercado e Toyota perde no 1º semestre de 2026; Fiat lidera",
+      "texto": "A BYD aumentou sua participação de mercado em 3 pontos percentuais no 1º semestre de 2026, enquanto a Toyota perdeu 1,99 ponto. A Fiat mantém a liderança geral.",
       "fontes": [
         {
-          "nome": "E-Commerce News",
-          "url": "https://ecommercenews.com.br/noticias/tendencias-marketing-digital-ecommerce/"
+          "nome": "Automotive Business",
+          "url": "https://www.automotivebusiness.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "NOVAREJO: Desafios da concorrência no e-commerce",
-      "texto": "O portal NOVAREJO abordou os desafios da concorrência acirrada no e-commerce, com a entrada de novos players e a necessidade de diferenciação para as empresas se destacarem no mercado online.",
+      "titulo": "BIS alerta para impacto da IA na política monetária e decisões de juros",
+      "texto": "O Banco de Compensações Internacionais (BIS) alertou que o boom da inteligência artificial pode distorcer indicadores econômicos e dificultar as decisões dos bancos centrais sobre juros.",
       "fontes": [
         {
-          "nome": "NOVAREJO",
-          "url": "https://portalnovarejo.com.br/noticias/concorrencia-ecommerce-desafios/"
+          "nome": "Vero Notícias",
+          "url": null
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "transversal",
+        "comercio"
       ],
-      "titulo": "Meio&Mensagem/ProXXIma: Publicidade digital e o futuro do e-commerce",
-      "texto": "O Meio&Mensagem/ProXXIma publicou um especial sobre a publicidade digital e o futuro do e-commerce, com foco em novas plataformas, formatos e a integração de experiências online e offline para o consumidor.",
+      "titulo": "Governo prorrogará Desenrola Brasil 2.0 por pelo menos 30 dias",
+      "texto": "O governo federal vai prorrogar por pelo menos 30 dias o programa Desenrola Brasil 2.0, visando oferecer mais tempo para a renegociação de dívidas.",
       "fontes": [
         {
-          "nome": "Meio&Mensagem / ProXXIma",
-          "url": "https://meioemensagem.com.br/noticias/publicidade-digital-futuro-ecommerce/"
+          "nome": "Vero Notícias",
+          "url": null
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "transversal",
+        "servicos"
       ],
-      "titulo": "Senacon/MJSP: Ações de proteção ao consumidor no e-commerce",
-      "texto": "A Senacon (Secretaria Nacional do Consumidor) do Ministério da Justiça e Segurança Pública destacou suas ações de proteção ao consumidor no e-commerce, fiscalizando práticas abusivas e garantindo os direitos dos compradores online.",
+      "titulo": "FGTS distribuirá R$ 13,04 bilhões do lucro de 2025 para trabalhadores",
+      "texto": "O Conselho Curador do FGTS aprovou a distribuição de R$ 13,04 bilhões do lucro obtido em 2025, beneficiando 138,2 milhões de trabalhadores até 31 de agosto.",
       "fontes": [
         {
-          "nome": "Senacon / MJSP",
-          "url": "https://www.gov.br/mj/pt-br/noticias/senacon-acoes-protecao-consumidor-ecommerce"
+          "nome": "Vero Notícias",
+          "url": null
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Procon-SP: Orientações para compras seguras no e-commerce",
-      "texto": "O Procon-SP divulgou orientações para compras seguras no e-commerce, alertando os consumidores sobre golpes, sites falsos e a importância de verificar a reputação das lojas antes de finalizar a compra.",
+      "titulo": "B3 prepara lançamento de moeda digital (B3RL) para impulsionar ativos tokenizados",
+      "texto": "A B3 prevê lançar a B3RL, uma stablecoin lastreada em reais, para acelerar a tokenização de ativos no mercado financeiro, com testes entre agosto e setembro.",
       "fontes": [
         {
-          "nome": "Procon-SP",
-          "url": "https://www.procon.sp.gov.br/noticias/orientacoes-compras-seguras-ecommerce/"
+          "nome": "Vero Notícias",
+          "url": null
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "construcao"
       ],
-      "titulo": "Amazon Brasil: Investimentos em logística e entrega rápida",
-      "texto": "A Amazon Brasil anunciou novos investimentos em logística e infraestrutura para expandir sua capacidade de entrega rápida, visando melhorar a experiência do cliente e competir no mercado brasileiro.",
+      "titulo": "CUB paulista registra maior alta de 2026 em junho, impulsionado por mão de obra e despesas",
+      "texto": "O Custo Unitário Básico (CUB) global da construção paulista subiu 2,24% em junho de 2026, a maior alta do ano, com elevações de 3,10% em mão de obra e 2,73% em despesas administrativas.",
       "fontes": [
         {
-          "nome": "Amazon Brasil",
-          "url": "https://amazon.com.br/noticias/investimentos-logistica-entrega-rapida/"
+          "nome": "Revista Anamaco",
+          "url": "https://www.anamaco.com.br"
+        },
+        {
+          "nome": "Sinduscon-SP",
+          "url": "https://www.sindusconsp.com.br"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "agro"
       ],
-      "titulo": "Magalu: Estratégias para o crescimento do marketplace",
-      "texto": "O Magalu (Magazine Luiza) destacou suas estratégias para o crescimento do seu marketplace, atraindo novos vendedores e oferecendo uma ampla variedade de produtos para os consumidores em todo o país.",
+      "titulo": "Fiagros e FIIs registram volumes recordes no 1º semestre de 2026",
+      "texto": "Os Fundos de Investimento nas Cadeias Produtivas Agroindustriais (Fiagros) movimentaram R$ 8,3 bilhões no 1º semestre de 2026, crescimento de 288,3%, e os Fundos Imobiliários (FIIs) captaram R$ 39,5 bilhões, alta de 103,9%.",
       "fontes": [
         {
-          "nome": "Magalu",
-          "url": "https://magazineluiza.com.br/noticias/estrategias-crescimento-marketplace/"
+          "nome": "Anbima",
+          "url": "https://www.anbima.com.br/pt_br/imprensa/sala-de-imprensa.htm"
+        },
+        {
+          "nome": "Folha PE",
+          "url": "https://www1.folha.uol.com.br/mercado"
+        },
+        {
+          "nome": "Monitor Mercantil",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Modernização, IA e sustentabilidade são pilares estratégicos para o setor de seguros em 2026",
+      "texto": "O Global Insurance Outlook 2026 aponta que modernização, inteligência artificial em escala e modelos de negócio orientados à prevenção são pilares estratégicos para o setor de seguros.",
+      "fontes": [
+        {
+          "nome": "CNseg | O Portal do Seguro",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Seguro Cibernético evolui para gestão de crise, com faturamento de R$ 228,8 milhões em 2025",
+      "texto": "O Seguro Cibernético faturou R$ 228,8 milhões em 2025 e amplia serviços de resposta a incidentes, recuperação de sistemas e suporte jurídico, integrando-se à gestão de crise das empresas.",
+      "fontes": [
+        {
+          "nome": "CNseg | O Portal do Seguro",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Setor financeiro defende maior integração para investimentos na transição climática",
+      "texto": "Febraban, CNseg e Anbima defendem maior integração do setor financeiro para ampliar investimentos na transição climática, com foco em inovação e cooperação diante dos desafios globais.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos"
+      ],
+      "titulo": "Votorantim Cimentos investe R$ 5 bilhões em logística, IA e novos negócios no Brasil",
+      "texto": "A Votorantim Cimentos anunciou R$ 5 bilhões em investimentos no Brasil, abrangendo logística integrada, automação de processos, novos pontos de distribuição e uso intensivo de inteligência artificial.",
+      "fontes": [
+        {
+          "nome": "Revista Minérios",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Mercado automotivo: IA e fluxo de caixa do consumidor impulsionam vendas em julho",
+      "texto": "O mercado automotivo registra vendas crescentes em julho de 2026, impulsionadas pela IA na performance das concessionárias e pelo fluxo de caixa dos consumidores, apesar do menor tráfego nas lojas.",
+      "fontes": [
+        {
+          "nome": "YouTube - JD Power",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Abecip revisará projeções de crédito imobiliário para 2026 para cima",
+      "texto": "A Abecip informou que revisará em breve suas estimativas de crescimento para o crédito imobiliário em 2026, após o desempenho do 1º semestre superar as expectativas.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "CNseg avalia agenda regulatória da Susep para 2026 e desafios de novas leis",
+      "texto": "A CNseg avalia que o Plano de Regulação 2026 da Susep consolida a agenda prioritária do setor de seguros, focando na regulamentação de novas leis.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "JBS mira expansão global com listagem nos EUA e aquisição em Omã",
+      "texto": "A listagem das ações da JBS nos EUA abriu caminho para ampliar a base de investidores e reforçar sua estratégia de crescimento global, incluindo aquisição em Omã.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "CNseg e Valor Econômico lançam curso gratuito de Jornalismo em Seguros",
+      "texto": "O setor segurador, liderado pela CNseg, em parceria com o Valor Econômico, lançou a Jornada Valor de Jornalismo em Seguros para jovens jornalistas.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "CNseg promove debate sobre Aperfeiçoamento Regulatório no Mercado de Seguros em julho",
+      "texto": "A CNseg realizará a 1ª edição do Ciclo de Debates do Mercado Segurador em São Paulo, no dia 28 de julho, para discutir o aperfeiçoamento regulatório.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Pagamento de indenizações de Seguros de Pessoas cresce 6% no 1º quadrimestre de 2026",
+      "texto": "Os Seguros de Pessoas transferiram R$ 5,9 bilhões para segurados e familiares no 1º quadrimestre de 2026, com o pagamento de indenizações crescendo 6% em relação ao ano anterior.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Criminalidade pressiona seguro de automóveis no Rio, elevando indenizações em 13,5%",
+      "texto": "A criminalidade no Rio de Janeiro pressiona o seguro de automóveis, com o avanço dos roubos de veículos elevando as indenizações em 13,5% no 1º quadrimestre de 2026.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Atividade econômica resiste e inflação surpreende positivamente, mercado revisa cenário para 2027",
+      "texto": "A atividade econômica mostra resistência e a inflação surpreende positivamente, levando o mercado a revisar o cenário para 2027, conforme análise da CNseg.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "COP30 busca transformar metas climáticas em projetos de US$ 1,3 trilhão em financiamento",
+      "texto": "A COP30 tem como principal missão transformar compromissos climáticos em projetos capazes de atrair US$ 1,3 trilhão em financiamento, segundo a CEO da COP30, Ana Toni.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Setor financeiro busca acelerar transição climática com mobilização de capital privado",
+      "texto": "UNEP FI, ANBIMA, CNseg e Febraban reforçam que a mobilização de capital privado é decisiva para transformar compromissos climáticos em projetos financiáveis.",
+      "fontes": [
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Seguros e adaptação climática ganham espaço na agenda econômica global",
+      "texto": "A crescente frequência de eventos climáticos extremos está ampliando a necessidade de incorporar mecanismos de proteção financeira aos projetos de infraestrutura no Brasil.",
+      "fontes": [
+        {
+          "nome": "CNseg | O Portal do Seguro",
+          "url": "https://cnseg.org.br/noticias"
+        },
+        {
+          "nome": "CNseg",
+          "url": "https://cnseg.org.br/noticias"
         }
       ]
     }
@@ -1882,83 +610,80 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Avanço da Reforma Tributária e impacto setorial",
-      "texto": "Debates sobre a regulamentação da reforma tributária no Senado avançam, com foco em alíquotas e regimes especiais, gerando expectativas e incertezas sobre o impacto nos diferentes setores da economia.",
-      "score": 7.5,
+      "tema": "Agenda Governamental e Relações Internacionais",
+      "texto": "O governo prorrogou o Desenrola Brasil 2.0. Acordos comerciais, como o da JBS com a Coreia do Sul, e desafios em exportações de frango para a UE marcam a agenda internacional.",
+      "score": 6.5,
       "setores": [
         "transversal",
-        "industria",
-        "comercio",
-        "servicos",
         "agro",
-        "construcao",
-        "ecommerce"
+        "comercio"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Manutenção da Selic e desaceleração da inflação",
-      "texto": "A manutenção da Selic em 10,75% e a desaceleração do IPCA em julho indicam um cenário de cautela. A melhora no desemprego e no varejo sugere resiliência, mas juros altos ainda freiam investimentos e crédito.",
-      "score": 8.0,
+      "tema": "Crédito, Investimento e Inflação Setorial",
+      "texto": "Crédito imobiliário e financiamento de veículos crescem. Mercado de capitais bate recorde. INCC-M desacelera, mas confiança da construção cai. Margens do agronegócio sob pressão.",
+      "score": 7.8,
       "setores": [
         "transversal",
+        "construcao",
+        "servicos",
         "industria",
         "comercio",
-        "servicos",
-        "agro",
-        "construcao",
-        "ecommerce"
+        "agro"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Melhora no mercado de trabalho e cautela do consumidor",
-      "texto": "A taxa de desocupação recua para 8,1%, indicando melhora no emprego. Contudo, a Intenção de Consumo das Famílias recua, mostrando que o consumidor mantém cautela frente às incertezas econômicas e endividamento.",
+      "tema": "Confiança do Consumidor e Proteção Financeira",
+      "texto": "A prorrogação do Desenrola Brasil 2.0 visa apoiar o consumidor. A baixa cobertura de seguros para automóveis e residências destaca a vulnerabilidade. Confiança no e-commerce é crucial.",
       "score": 7.0,
       "setores": [
-        "transversal",
         "comercio",
-        "servicos"
+        "servicos",
+        "transversal",
+        "ecommerce"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Digitalização de PMEs e investimentos em IA/5G",
-      "texto": "Programas de capacitação para digitalização de PMEs e o crescimento do mercado de software impulsionam a adoção de tecnologia. Investimentos em 5G e IA continuam transformando serviços e processos industriais.",
-      "score": 8.5,
+      "tema": "Digitalização, IA e Inovação Logística",
+      "texto": "A IA impacta a política monetária e o desempenho de concessionárias. Shopee expande logística com novos CDs. B3 prepara moeda digital para ativos tokenizados.",
+      "score": 8.0,
       "setores": [
-        "transversal",
         "industria",
-        "comercio",
         "servicos",
-        "ecommerce"
+        "ecommerce",
+        "transversal"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Transição energética e sustentabilidade no agronegócio",
-      "texto": "Debates sobre transição energética e investimentos em sustentabilidade, como na produção de cimento e no agronegócio, ganham destaque. A busca por práticas mais verdes e cultivares resistentes ao clima é crescente.",
+      "tema": "Riscos Climáticos e Sustentabilidade",
+      "texto": "Conflitos no Oriente Médio afetam preços de fertilizantes. Riscos climáticos impulsionam seguros e investimentos em infraestrutura sustentável. Votorantim foca em cimento de menor emissão.",
       "score": 6.5,
       "setores": [
-        "industria",
         "agro",
         "servicos",
-        "construcao"
+        "industria",
+        "construcao",
+        "transversal"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulamentação do e-commerce e crédito imobiliário",
-      "texto": "Debates sobre ajustes na regulamentação do programa Remessa Conforme e novas regras para o Minha Casa Minha Vida impactam o e-commerce e a construção civil. Ações de proteção ao consumidor online são reforçadas.",
+      "tema": "Regulamentação e Conformidade Setorial",
+      "texto": "A Susep tem agenda regulatória para 2026 no setor de seguros. Novas regras da Amazon para títulos de produtos e testes do TikTok Shop Plus.",
       "score": 6.0,
       "setores": [
+        "servicos",
         "ecommerce",
-        "construcao"
+        "transversal"
       ]
     }
   ],
@@ -1967,7 +692,7 @@
       "label": "SELIC",
       "valor": "14,25% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 28/07/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 30/07/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -1989,14 +714,14 @@
       "label": "Câmbio (US$)",
       "valor": "R$ 5,12",
       "cor": "up",
-      "sub": "Dólar PTAX venda · BCB · 28/07/2026",
+      "sub": "Dólar PTAX venda · BCB · 29/07/2026",
       "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
-      "valor": "5,6%",
+      "valor": "5,4%",
       "cor": "up",
-      "sub": "PNAD Contínua · IBGE · mar-abr-mai 2026",
+      "sub": "PNAD Contínua · IBGE · abr-mai-jun 2026",
       "fonte": "IBGE"
     },
     {
@@ -2077,20 +802,6 @@
       "acum": null,
       "flow": false,
       "unit": "Mt"
-    },
-    {
-      "setor": "ecommerce",
-      "setorLabel": "E-commerce",
-      "label": "E-commerce (MCC-ENET / Neotrust)",
-      "valor": "+11,8%",
-      "cor": "up",
-      "sub": "Vendas do e-commerce · variação sobre igual mês do ano anterior · estimativa de mercado · fonte MCC-ENET / Neotrust · junho/2026",
-      "ref": "junho/2026",
-      "pt": 11.8,
-      "acum": null,
-      "flow": true,
-      "unit": "%",
-      "mkt": true
     }
   ],
   "pressoes_ipca": {
@@ -2152,7 +863,7 @@
       "fornecedores": 8,
       "compradores": 6,
       "substitutos": 5,
-      "nota": "A rivalidade é alta, com pressão de custos de insumos e energia, e a força dos fornecedores é significativa."
+      "nota": "A rivalidade é alta, com players globais e nacionais disputando mercado, e o poder dos fornecedores de insumos é significativo."
     },
     "comercio": {
       "rivalidade": 8,
@@ -2160,7 +871,7 @@
       "fornecedores": 5,
       "compradores": 8,
       "substitutos": 7,
-      "nota": "A rivalidade é intensa, impulsionada pelo e-commerce e a busca por diferenciação, com consumidores exigentes."
+      "nota": "A rivalidade é intensa, com a entrada de novos modelos de negócio e o poder de barganha dos consumidores sendo muito elevado."
     },
     "servicos": {
       "rivalidade": 7,
@@ -2168,7 +879,7 @@
       "fornecedores": 5,
       "compradores": 6,
       "substitutos": 6,
-      "nota": "A rivalidade é moderada, com a digitalização e a inovação tecnológica atraindo novos entrantes e substituindo modelos tradicionais."
+      "nota": "A rivalidade é moderada, com a inovação tecnológica impulsionando novos entrantes e a demanda por serviços especializados crescendo."
     },
     "agro": {
       "rivalidade": 6,
@@ -2176,7 +887,7 @@
       "fornecedores": 7,
       "compradores": 7,
       "substitutos": 3,
-      "nota": "A rivalidade é influenciada por fatores climáticos e preços de commodities, com forte poder dos compradores globais."
+      "nota": "O poder dos fornecedores de insumos e dos compradores de commodities é alto, impactando as margens do produtor."
     },
     "construcao": {
       "rivalidade": 6,
@@ -2184,7 +895,7 @@
       "fornecedores": 7,
       "compradores": 6,
       "substitutos": 3,
-      "nota": "A rivalidade é moderada, mas o poder dos fornecedores de materiais e a dependência do crédito são fatores importantes."
+      "nota": "O setor enfrenta custos elevados de materiais e mão de obra, e a rivalidade é acentuada em mercados regionais."
     },
     "ecommerce": {
       "rivalidade": 9,
@@ -2192,7 +903,7 @@
       "fornecedores": 6,
       "compradores": 9,
       "substitutos": 7,
-      "nota": "A rivalidade é altíssima, com muitos entrantes e forte poder dos compradores, que têm muitas opções e buscam conveniência."
+      "nota": "A rivalidade é extremamente alta, com a facilidade de entrada e o poder de barganha do consumidor ditando as regras do mercado."
     }
   },
   "analise": {
@@ -2200,180 +911,176 @@
       "acoes": [
         {
           "ico": "💸",
-          "txt": "Monitore a Selic e o IPCA de perto, pois a manutenção dos juros e a desaceleração da inflação influenciam o custo de capital e o poder de compra."
+          "txt": "Monitore as projeções do Boletim Focus para Selic e IPCA, que balizam o custo do crédito e a inflação."
         },
         {
           "ico": "📈",
-          "txt": "Avalie o impacto da Reforma Tributária em sua PME, acompanhando os debates no Senado sobre alíquotas e regimes especiais para planejar ajustes fiscais."
+          "txt": "Acompanhe os dados de crédito imobiliário e financiamento de veículos, que sinalizam a saúde do consumo e investimento."
         },
         {
-          "ico": "🤝",
-          "txt": "Explore programas de capacitação e digitalização do Sebrae para PMEs, aproveitando o impulso na adoção de tecnologias e e-commerce."
+          "ico": "🌍",
+          "txt": "Avalie os impactos de acordos comerciais e tensões geopolíticas nas cadeias de suprimentos e exportações."
         },
         {
-          "ico": "📊",
-          "txt": "Analise os dados de desemprego e varejo para entender a resiliência do mercado de trabalho e o comportamento do consumidor, ajustando estratégias de vendas."
-        },
-        {
-          "ico": "🏛️",
-          "txt": "Mantenha-se atualizado sobre as políticas do Ministério da Fazenda e Tesouro Nacional, especialmente sobre o arcabouço fiscal, que impacta a estabilidade econômica."
+          "ico": "💡",
+          "txt": "Invista em digitalização e IA para otimizar processos e aumentar a competitividade em todos os setores."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Como a indústria pode sustentar o otimismo moderado e superar os desafios de custos e competitividade?",
-        "quote": "O PMI Industrial de julho subiu para 51,5 pontos, indicando expansão, mas a CNI alerta para custos de energia e insumos.",
+        "prov": "Como a indústria pode equilibrar a pressão de custos de insumos com a demanda crescente em setores como o automotivo?",
+        "quote": "Os emplacamentos de veículos avançaram 13% na primeira quinzena de julho, impulsionados pela IA e fluxo de caixa do consumidor.",
         "edi": [
-          "A indústria brasileira mostrou sinais de recuperação em julho, com o PMI Industrial em expansão e a produção de veículos crescendo 3%. Contudo, a Sondagem Industrial da CNI revela que os custos de produção e a competitividade ainda são grandes preocupações para os empresários do setor.",
-          "Apesar do otimismo moderado, setores como o eletroeletrônico projetam crescimento, enquanto a indústria de autopeças registra alta no faturamento. O IEDI ressalta a necessidade de políticas que mitiguem o impacto dos juros na competitividade e revertam a desindustrialização."
+          "O setor automotivo mostra resiliência, com alta de 13% nos emplacamentos na primeira quinzena de julho e 11% no volume de veículos financiados no 1º semestre de 2026. A BYD ganhou participação de mercado, enquanto a Toyota perdeu, e a Fiat manteve a liderança.",
+          "Contudo, a indústria de alimentos enfrenta desafios, como a queda nas margens da Pilgrim's Pride devido ao excesso de frango nos EUA e a projeção de queda de 14% nas entregas de fertilizantes pela Yara, impactada por conflitos no Oriente Médio e margens de grãos apertadas."
         ],
         "acoes": [
           {
             "ico": "🏭",
-            "txt": "Invista em eficiência energética e busque fontes alternativas para mitigar o impacto do aumento dos custos de energia elétrica."
+            "txt": "Explore tecnologias de IA para otimizar a produção e a gestão da cadeia de suprimentos."
           },
           {
-            "ico": "💡",
-            "txt": "Aposte em inovação e tecnologia (Indústria 4.0) para aumentar a produtividade e reduzir custos operacionais, como sugerido pela FIEMG e ABDI."
+            "ico": "🌐",
+            "txt": "Busque diversificação de mercados e parcerias estratégicas para mitigar riscos de exportação e insumos."
           },
           {
-            "ico": "🌎",
-            "txt": "Explore mercados externos e diversifique as exportações para compensar a pressão do mercado interno e a concorrência de importados."
+            "ico": "📊",
+            "txt": "Analise a competitividade de custos e a eficiência operacional para proteger as margens de lucro."
           },
           {
-            "ico": "🤝",
-            "txt": "Participe de associações setoriais como CNI e ABIMAQ para advocacy e acesso a informações estratégicas sobre o cenário econômico e regulatório."
+            "ico": "🚗",
+            "txt": "Capitalize o crescimento do financiamento de veículos com ofertas atrativas e parcerias com instituições financeiras."
           }
         ]
       },
       "comercio": {
-        "prov": "Com a cautela do consumidor e os juros altos, como o comércio pode impulsionar as vendas e fidelizar clientes?",
-        "quote": "As vendas no varejo físico cresceram 1,2% em julho, mas a Intenção de Consumo das Famílias recuou, e a inadimplência do consumidor se mantém estável.",
+        "prov": "Diante da prorrogação do Desenrola Brasil, como o varejo pode se preparar para um cenário de consumo ainda cauteloso?",
+        "quote": "O governo federal vai prorrogar por pelo menos 30 dias o programa Desenrola Brasil 2.0.",
         "edi": [
-          "O comércio varejista apresentou um leve crescimento em julho, impulsionado por segmentos específicos e o bom desempenho dos supermercados. No entanto, a cautela do consumidor, refletida no recuo da ICF, e a estabilidade da inadimplência, segundo CNDL/SPC, indicam um cenário desafiador.",
-          "O setor de franchising projeta expansão, e shoppings buscam novas estratégias para atrair fluxo. A adoção de tecnologias de pagamento e a busca por simplificação tributária são pautas importantes para o IDV e a Fecomércio, que ainda veem os juros altos como um entrave."
+          "A prorrogação do Desenrola Brasil 2.0 indica uma preocupação contínua com o endividamento e a capacidade de pagamento do consumidor, o que pode manter a cautela no varejo. No entanto, o crescimento do financiamento de veículos sugere bolsões de consumo mais aquecidos.",
+          "A integração da DoorDash com o Shopify para comerciantes locais nos EUA aponta para a importância de soluções de última milha e parcerias estratégicas para o comércio físico se integrar ao e-commerce."
         ],
         "acoes": [
           {
             "ico": "🛒",
-            "txt": "Invista em promoções e condições de pagamento flexíveis para atrair consumidores cautelosos e impulsionar as vendas."
+            "txt": "Ofereça condições de pagamento flexíveis e programas de fidelidade para atrair e reter clientes."
           },
           {
-            "ico": "📱",
-            "txt": "Adote tecnologias de pagamento e explore o varejo omnichannel para oferecer uma experiência de compra integrada e conveniente."
+            "ico": "🤝",
+            "txt": "Considere parcerias com plataformas de entrega e marketplaces para expandir o alcance e a conveniência."
           },
           {
-            "ico": "🗣️",
-            "txt": "Foque na personalização do atendimento e na experiência do cliente para fidelizar e se diferenciar em um mercado competitivo."
+            "ico": "📈",
+            "txt": "Invista em análise de dados para entender o comportamento do consumidor e personalizar ofertas."
           },
           {
-            "ico": "📊",
-            "txt": "Monitore de perto os indicadores de inadimplência e crédito para ajustar as políticas de vendas e concessão de parcelamento."
+            "ico": "🛍️",
+            "txt": "Adapte o mix de produtos e serviços para atender às demandas de um consumidor mais consciente e digitalizado."
           }
         ]
       },
       "servicos": {
-        "prov": "Como o setor de serviços pode capitalizar o otimismo e a digitalização, superando a escassez de talentos?",
-        "quote": "A Sondagem de Serviços da FGV aponta otimismo, e o mercado de software cresceu 10%, mas a Brasscom alerta para a escassez de talentos em TI.",
+        "prov": "Como o setor de serviços pode capitalizar o recorde do mercado de capitais e as tendências de digitalização e sustentabilidade?",
+        "quote": "As captações no mercado de capitais brasileiro somaram R$ 361,8 bilhões no 1º semestre de 2026, um recorde.",
         "edi": [
-          "O setor de serviços demonstra otimismo, com a sondagem da FGV IBRE e o crescimento de 10% no mercado de software e TI. Bancos aumentam a concessão de crédito para PMEs, e investimentos em infraestrutura 5G e leilões de energia impulsionam o setor.",
-          "A digitalização, a IA e a automação estão transformando os serviços, com destaque para fintechs e pagamentos digitais. Contudo, a escassez de talentos em TI, conforme a Brasscom, e a necessidade de segurança cibernética, segundo Tele.Síntese, são desafios a serem superados para manter o ritmo de crescimento."
+          "O mercado de capitais brasileiro atingiu um volume recorde no 1º semestre de 2026, com R$ 361,8 bilhões em captações, impulsionado por instrumentos híbridos e a retomada da renda variável. Isso indica um ambiente favorável para empresas buscarem financiamento e investidores diversificarem.",
+          "O setor de seguros foca em modernização, IA e sustentabilidade como pilares estratégicos, explorando novas fronteiras como a cannabis medicinal e o seguro cibernético. A B3 prepara uma moeda digital para tokenização de ativos, sinalizando a digitalização do mercado financeiro."
         ],
         "acoes": [
           {
             "ico": "🤖",
-            "txt": "Invista em automação e inteligência artificial para otimizar processos e compensar a escassez de mão de obra qualificada."
+            "txt": "Desenvolva soluções baseadas em IA para otimizar operações e criar novos serviços financeiros e de seguros."
           },
           {
-            "ico": "🎓",
-            "txt": "Crie programas de capacitação e parceria com instituições de ensino para formar e reter talentos em TI e outras áreas estratégicas."
+            "ico": "💰",
+            "txt": "Explore oportunidades no mercado de capitais para captação de recursos e investimentos estratégicos."
+          },
+          {
+            "ico": "🌿",
+            "txt": "Integre práticas de sustentabilidade e ofereça produtos e serviços relacionados à transição climática."
           },
           {
             "ico": "🔒",
-            "txt": "Priorize a segurança cibernética e a proteção de dados para garantir a confiança dos clientes e a conformidade regulatória."
-          },
-          {
-            "ico": "💡",
-            "txt": "Explore as oportunidades da transição energética e do mercado livre de energia para otimizar custos e oferecer soluções sustentáveis."
+            "txt": "Invista em cibersegurança e seguros cibernéticos, dada a crescente digitalização e riscos associados."
           }
         ]
       },
       "agro": {
-        "prov": "Com a safra recorde e a queda nos preços de commodities, como o agronegócio pode garantir a rentabilidade e a sustentabilidade?",
-        "quote": "A Conab projeta safra recorde de 315 milhões de toneladas, mas o CEPEA/Esalq registra recuo nos preços da soja e do milho.",
+        "prov": "Com a pressão nos custos de fertilizantes e as incertezas nas exportações, como o agronegócio pode garantir a rentabilidade?",
+        "quote": "A Yara projeta queda de 14% nas entregas de fertilizantes no Brasil em 2026.",
         "edi": [
-          "O agronegócio brasileiro celebra uma safra recorde de grãos, com projeção de 315 milhões de toneladas pela Conab. No entanto, a expectativa de grande oferta global já impacta os preços da soja e do milho, que registraram recuo, segundo o CEPEA/Esalq.",
-          "As exportações de carne bovina e farelo de soja seguem em alta, e o Plano Safra 2026/2027 oferece novas linhas de crédito. A demanda por fertilizantes permanece aquecida, e a tecnologia no campo, juntamente com a busca por sustentabilidade, são fatores-chave para a rentabilidade e a superação dos desafios logísticos."
+          "O agronegócio enfrenta desafios com a projeção de queda de 14% nas entregas de fertilizantes em 2026, devido a margens de grãos apertadas e o choque de preços por conflitos no Oriente Médio. Além disso, as exportações de frango para a União Europeia podem ser suspensas até novembro.",
+          "No entanto, a reabertura da fronteira dos EUA para o gado mexicano é uma notícia positiva para frigoríficos como a JBS, cujas ações subiram. Os Fiagros também registraram um crescimento expressivo de 288,3% no 1º semestre de 2026, indicando interesse em investimentos no setor."
         ],
         "acoes": [
           {
             "ico": "🌾",
-            "txt": "Monitore os preços das commodities e utilize ferramentas de hedge na B3 para proteger a rentabilidade contra a volatilidade do mercado."
+            "txt": "Busque alternativas para insumos, como fertilizantes biológicos, e negocie prazos e preços com fornecedores."
+          },
+          {
+            "ico": "🥩",
+            "txt": "Diversifique mercados de exportação para reduzir a dependência de blocos econômicos com restrições sanitárias."
           },
           {
             "ico": "🚜",
-            "txt": "Invista em tecnologia e agricultura de precisão para otimizar a produção, reduzir custos e aumentar a eficiência no uso de insumos."
+            "txt": "Invista em tecnologias que aumentem a eficiência e reduzam custos de produção para mitigar a pressão nas margens."
           },
           {
             "ico": "🌱",
-            "txt": "Adote práticas sustentáveis e busque certificações para agregar valor aos produtos e atender às demandas de mercados mais exigentes."
-          },
-          {
-            "ico": "🏦",
-            "txt": "Aproveite as novas linhas de crédito do Plano Safra para financiar investimentos e modernizar as operações, buscando melhores condições."
+            "txt": "Explore oportunidades de captação via Fiagros para financiar projetos e expandir operações."
           }
         ]
       },
       "construcao": {
-        "prov": "Com a desaceleração dos custos e o aquecimento do mercado, como a construção civil pode capitalizar o momento e atrair investimentos?",
-        "quote": "O INCC-M variou 0,25% em julho, o FipeZAP subiu 0,4%, e lançamentos de imóveis cresceram 5% em junho.",
+        "prov": "Apesar do crescimento do crédito imobiliário, como o setor da construção pode reverter a queda na confiança e gerenciar os custos?",
+        "quote": "O crédito imobiliário cresceu 23% no 1º semestre de 2026, totalizando R$ 180,9 bilhões.",
         "edi": [
-          "A construção civil mostra sinais de aquecimento, com o INCC-M desacelerando os custos e o FipeZAP indicando valorização dos imóveis. A confiança dos empresários está em alta, e os lançamentos de imóveis residenciais cresceram 5% em junho, impulsionados pelo crédito imobiliário.",
-          "O programa Minha Casa Minha Vida foi atualizado com novas regras, e construtoras como MRV e Cyrela reportam forte volume de vendas. A demanda por materiais de construção mostra leve recuperação, mas os desafios da mão de obra qualificada e a necessidade de inovação, como a tecnologia BIM, persistem."
+          "O setor da construção civil demonstra força no crédito imobiliário, que cresceu 23% no 1º semestre de 2026, superando as expectativas da Abecip. No entanto, o Índice de Confiança do Empresário Industrial da Construção (Icei) da CNI caiu em julho, e o CUB paulista registrou a maior alta do ano em junho, impulsionado por mão de obra e despesas administrativas.",
+          "Investimentos como os R$ 260 milhões da Votorantim Cimentos no Tocantins e os R$ 5 bilhões em logística e IA mostram um movimento de modernização e expansão, mas a gestão de custos e a confiança empresarial permanecem como desafios."
         ],
         "acoes": [
           {
             "ico": "🏗️",
-            "txt": "Aproveite a desaceleração dos custos e o crédito imobiliário aquecido para lançar novos empreendimentos e expandir projetos."
+            "txt": "Invista em tecnologias e processos construtivos que otimizem custos e aumentem a produtividade."
           },
           {
-            "ico": "💰",
-            "txt": "Busque linhas de financiamento e parcerias estratégicas para capitalizar o bom momento do mercado imobiliário e de infraestrutura."
+            "ico": "🏦",
+            "txt": "Aproveite o bom momento do crédito imobiliário para lançamentos e vendas, explorando diferentes fontes de financiamento."
           },
           {
             "ico": "👷",
-            "txt": "Invista na capacitação e retenção de mão de obra qualificada para garantir a execução eficiente e segura dos projetos."
+            "txt": "Desenvolva programas de capacitação para mão de obra, visando mitigar a pressão salarial e a escassez de talentos."
           },
           {
-            "ico": "📐",
-            "txt": "Adote tecnologias como BIM para otimizar o planejamento, a execução e a gestão de obras, aumentando a eficiência e reduzindo custos."
+            "ico": "♻️",
+            "txt": "Adote práticas e materiais sustentáveis, como o cimento de menor emissão, para atender às demandas do mercado e reduzir impactos ambientais."
           }
         ]
       },
       "ecommerce": {
-        "prov": "Como o e-commerce pode manter o ritmo de crescimento e superar os desafios logísticos e regulatórios?",
-        "quote": "As vendas do e-commerce cresceram 11,8% em junho, e o faturamento B2C atingiu R$ 25 bilhões, mas logística e 'last mile' são desafios.",
+        "prov": "Com a intensa rivalidade e a busca por confiança, como as PMEs de e-commerce podem se diferenciar e crescer no Brasil?",
+        "quote": "A Shopee expandiu sua rede logística em mais de 60% em 2026, com dez novos centros de distribuição.",
         "edi": [
-          "O e-commerce brasileiro continua em forte expansão, com crescimento de 11,8% nas vendas em junho e faturamento B2C de R$ 25 bilhões. O ticket médio também aumentou, e marketplaces como Mercado Livre e Shopee expandem suas operações e base de vendedores locais.",
-          "Apesar do bom desempenho, a logística e o 'last mile' permanecem como desafios cruciais para o setor. A regulamentação do Remessa Conforme é tema de debate, e a concorrência acirrada exige diferenciação. Empresas como Grupo Casas Bahia e Amazon investem em omnicanalidade e entrega rápida para otimizar a experiência do cliente."
+          "O e-commerce brasileiro continua em expansão logística, com a Shopee inaugurando dez novos centros de distribuição em 2026 para acelerar entregas. No cenário global, a Amazon Business projeta US$ 60 bilhões em vendas em 2026, e o TikTok testa um programa de assinatura paga, indicando a busca por diferenciação e fidelização.",
+          "A confiança do consumidor emerge como um fator competitivo crucial, além de preço e conveniência. Novas regras da Amazon para títulos de produtos e a integração DoorDash-Shopify mostram a evolução das plataformas e a necessidade de adaptação dos vendedores."
         ],
         "acoes": [
           {
             "ico": "📦",
-            "txt": "Invista em soluções logísticas e de 'last mile' para otimizar entregas e melhorar a experiência do cliente, um diferencial competitivo."
+            "txt": "Invista em logística eficiente e parcerias para garantir entregas rápidas e custos competitivos."
           },
           {
-            "ico": "⚖️",
-            "txt": "Acompanhe os debates sobre a regulamentação do Remessa Conforme e a simplificação tributária para planejar ajustes operacionais e fiscais."
+            "ico": "📱",
+            "txt": "Otimize a presença em marketplaces, adaptando-se às novas regras e explorando programas de fidelidade."
           },
           {
-            "ico": "🤝",
-            "txt": "Explore parcerias com marketplaces e plataformas como Nuvemshop para expandir o alcance e diversificar os canais de venda."
+            "ico": "💳",
+            "txt": "Construa a confiança do consumidor através de transparência, políticas claras e excelente atendimento."
           },
           {
-            "ico": "📊",
-            "txt": "Utilize dados e inteligência artificial para personalizar ofertas, otimizar campanhas de marketing e aprimorar a jornada de compra online."
+            "ico": "🚀",
+            "txt": "Explore novas tecnologias e integrações para aprimorar a experiência de compra e a gestão do negócio online."
           }
         ]
       }
@@ -2422,51 +1129,6 @@
       "origem": "real"
     },
     {
-      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
-      "tipo": "risco",
-      "titulo": "Digitalização e IA",
-      "dimensao": "T",
-      "setores": [
-        "servicos",
-        "agro",
-        "ecommerce",
-        "comercio",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 87.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "Mercado de software cresce 10%, e Sebrae lança programa de digitalização PMEs. Investimentos em 5G e IA continuam impulsionando setores.",
-      "periodo_observacao": "2026-W31",
-      "data_identificacao": "2026-05-25",
-      "origem": "real"
-    },
-    {
-      "id": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9",
-      "tipo": "oportunidade",
-      "titulo": "Tarifas e comércio exterior (EUA)",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "comercio",
-        "agro",
-        "industria",
-        "construcao",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 86.75,
-      "severidade": 8.0,
-      "iminencia": 7.5,
-      "ultima_observacao": "MDIC divulga superávit da balança comercial em julho, impulsionado por exportações. Debates sobre tarifas dos EUA continuam.",
-      "periodo_observacao": "2026-W31",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
       "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
       "tipo": "risco",
       "titulo": "Juros, Selic e crédito",
@@ -2481,31 +1143,10 @@
         "ecommerce"
       ],
       "status": "em_curso",
-      "relevancia": 86.75,
-      "severidade": 8.0,
-      "iminencia": 7.5,
-      "ultima_observacao": "Selic mantida em 10,75% pelo COPOM, com projeções Focus estáveis. Bancos aumentam crédito PME, mas inadimplência e custo ainda preocupam.",
-      "periodo_observacao": "2026-W31",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
-      "tipo": "risco",
-      "titulo": "Atividade e indústria (PIM/PMI)",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "servicos",
-        "industria",
-        "agro",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 86.75,
-      "severidade": 8.0,
-      "iminencia": 7.5,
-      "ultima_observacao": "Produção Industrial avança 0,5% em junho, e PMI Industrial sobe para 51,5 pontos, indicando expansão da atividade fabril.",
+      "relevancia": 90.8,
+      "severidade": 8.8,
+      "iminencia": 8.0,
+      "ultima_observacao": "Mercado de capitais recorde, crédito imobiliário e financiamento de veículos em alta. BIS alerta sobre IA e política monetária.",
       "periodo_observacao": "2026-W31",
       "data_identificacao": "2025-12-29",
       "origem": "real"
@@ -2524,52 +1165,122 @@
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 86.75,
-      "severidade": 8.0,
-      "iminencia": 7.5,
-      "ultima_observacao": "Sondagem de Serviços da FGV IBRE aponta otimismo, com aumento da confiança dos empresários para os próximos meses.",
+      "relevancia": 90.45,
+      "severidade": 8.7,
+      "iminencia": 8.0,
+      "ultima_observacao": "Mercado de capitais recorde e setor de seguros com foco em inovação e sustentabilidade indicam dinamismo nos serviços.",
       "periodo_observacao": "2026-W31",
       "data_identificacao": "2026-01-05",
       "origem": "real"
     },
     {
-      "id": "cad38463-60e5-4e42-9065-539cd7060c1c",
+      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
       "tipo": "risco",
-      "titulo": "Combustíveis e petróleo",
+      "titulo": "Safra e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 89.75,
+      "severidade": 8.5,
+      "iminencia": 8.0,
+      "ultima_observacao": "Yara projeta queda de 14% nas entregas de fertilizantes em 2026. Exportações de frango para a UE podem ser suspensas. Reabertura de gado mexicano nos EUA beneficia JBS.",
+      "periodo_observacao": "2026-W31",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9",
+      "tipo": "oportunidade",
+      "titulo": "Tarifas e comércio exterior (EUA)",
       "dimensao": "E",
       "setores": [
         "transversal",
         "comercio",
+        "agro",
+        "industria",
+        "construcao",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 89.2,
+      "severidade": 8.7,
+      "iminencia": 7.5,
+      "ultima_observacao": "EUA reabrem importação de gado mexicano, beneficiando frigoríficos. Exportações de frango do Brasil para a UE enfrentam suspensão.",
+      "periodo_observacao": "2026-W31",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
+      "tipo": "risco",
+      "titulo": "Digitalização e IA",
+      "dimensao": "T",
+      "setores": [
         "servicos",
+        "agro",
+        "ecommerce",
+        "comercio",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 88.8,
+      "severidade": 8.8,
+      "iminencia": 8.0,
+      "ultima_observacao": "IA impacta política monetária (BIS) e performance de concessionárias. Votorantim Cimentos investe em IA. Modernização e IA são pilares do setor de seguros.",
+      "periodo_observacao": "2026-W31",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
+      "tipo": "risco",
+      "titulo": "Construção e custos",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "transversal",
         "industria",
         "agro",
-        "construcao"
+        "comercio",
+        "servicos",
+        "ecommerce"
       ],
       "status": "em_curso",
       "relevancia": 86.75,
       "severidade": 8.0,
       "iminencia": 7.5,
-      "ultima_observacao": "Não houve notícias relevantes sobre combustíveis e petróleo nesta semana.",
+      "ultima_observacao": "INCC-M desacelera em julho para 0,62%, mas CUB paulista registra maior alta de 2026 em junho, com pressão de mão de obra e despesas.",
       "periodo_observacao": "2026-W31",
-      "data_identificacao": "2026-03-16",
+      "data_identificacao": "2026-01-05",
       "origem": "real"
     },
     {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
       "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
+      "titulo": "Câmbio e balança",
+      "dimensao": "E",
       "setores": [
+        "transversal",
         "comercio",
-        "servicos"
+        "industria",
+        "agro",
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 85.5,
-      "severidade": 8.0,
+      "relevancia": 86.2,
+      "severidade": 8.2,
       "iminencia": 7.0,
-      "ultima_observacao": "ICF recua levemente, indicando cautela do consumidor. Inadimplência permanece estável, mas ainda é um ponto de atenção para o crédito.",
+      "ultima_observacao": "JBS expande na Coreia do Sul, mas exportações de frango para a UE enfrentam suspensão. Balança comercial impactada por fluxos diversos.",
       "periodo_observacao": "2026-W31",
-      "data_identificacao": "2026-07-01",
+      "data_identificacao": "2025-12-29",
       "origem": "real"
     }
   ]
