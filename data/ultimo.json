@@ -1,777 +1,448 @@
 {
   "periodo": "2026-W32",
   "label": "Semana 32 · Agosto 2026",
-  "gerado_em": "2026-08-04T18:03:46.863885",
+  "gerado_em": "2026-08-06T12:24:13.253307",
   "editorial": {
-    "texto": "A Semana 32 de agosto de 2026 apresenta um cenário macroeconômico marcado por uma política monetária significativamente mais restritiva e sinais mistos na atividade. A taxa Selic, o juro básico da economia, está em 14,25%, um patamar elevado que contrasta com os 10,75% reportados na semana anterior, consolidando um ambiente de crédito caro, embora a projeção Focus para o ano seja ligeiramente menor, em 13,75%. A inflação, medida pelo IPCA-15 de julho, registrou um surpreendente 0,06% mensal, indicando descompressão de preços no curto prazo. Contudo, o acumulado em doze meses, de 4,52%, atinge o teto da meta (4,5%), e a projeção Focus para o ano, de 5,03%, ainda preocupa. O câmbio, por sua vez, mantém-se estável em R$ 5,10.\n\nA principal mudança estrutural deste ciclo é a consolidação do custo da energia elétrica. Os riscos de \"Aumento dos Custos de Energia Elétrica para PMEs\" e \"Custo de energia (ANEEL/tarifa)\" estão materializados em 100% de relevância, impactando transversalmente todos os setores. Não foram identificados novos sinais esta semana, mas a evolução dos riscos e oportunidades existentes demanda atenção.\n\nNo mercado de trabalho, a taxa de desocupação despencou para 5,4% no segundo trimestre de 2026, uma melhora expressiva em relação aos 8,2% anteriores, impulsionando a relevância do risco \"Emprego e renda (CAGED/PNAD)\" para 84,75%. No entanto, a atividade econômica desacelera: o volume de vendas do varejo (PMC) cresceu apenas 0,1% em maio, e a produção industrial (PIM) contraiu 0,2% no mesmo mês. Os custos de produção, refletidos pelo IPP, recuaram 0,77% em junho, aliviando pressões inflacionárias futuras, mas também sinalizando menor dinamismo.\n\nSetorialmente, a indústria enfrenta a contração da produção e os custos energéticos materializados, além do crescente risco das \"Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros\" (89,75%), enquanto a oportunidade de \"Tarifas e comércio exterior (EUA)\" (80,28%) perde relevância. Comércio e serviços, apesar do emprego robusto, devem lidar com a \"Cautela do Consumidor e Endividamento Familiar\" (89,75%) e o risco de \"Consumo e varejo\" (89,75%), embora a oportunidade em \"Serviços (PMS)\" (91,5%) continue a se fortalecer. O agronegócio observa o risco da \"Safra e agro\" (91,5%) e os custos de \"Combustíveis e petróleo\" (89,75%) em ascensão. A construção civil mantém o desafio de \"Construção e custos\" (85,5%), agravado pelos juros elevados.\n\nO ponto de atenção para as próximas semanas reside na dicotomia entre a melhoria do emprego e a desaceleração da atividade econômica, tudo sob o peso de juros muito altos e custos de energia materializados. A capacidade de as empresas absorverem esses custos e se adaptarem a um ambiente de menor crescimento, apesar do desemprego em baixa, será crucial.",
-    "gerado_em": "2026-08-04T18:03:20.958843",
+    "texto": "A Semana 32 de agosto de 2026 revela um quadro macroeconômico que contrasta acentuadamente com a leitura anterior, exigindo um ajuste de rota na nossa análise. A taxa Selic, o juro básico da economia, encontra-se em 10,75% — um patamar significativamente mais baixo do que os 14,25% reportados previamente, indicando uma política monetária que busca algum alívio, embora a projeção Focus para o ano ainda seja de 10,50%. Contudo, a inflação, medida pelo IPCA-15 de julho, subiu para 0,32% mensal, com o acumulado em doze meses em 3,95%, ainda dentro da meta de 3,0% (teto 4,5%), mas com o IPP em +0,45% sinalizando pressões futuras nos custos. O câmbio do dólar estabilizou em R$ 5,20. O mercado de trabalho, por sua vez, mostra deterioração, com a taxa de desocupação em 7,8% em junho, revertendo a melhora observada anteriormente. A atividade econômica também desacelera, com o volume de vendas do varejo (PMC) contraindo 0,5% e a produção industrial (PIM) recuando 1,2% em junho.\n\nNeste ciclo, os custos de energia elétrica para PMEs e as tarifas da ANEEL permanecem materializados em 100% de relevância, um desafio transversal consolidado. Três novos sinais emergiram: a \"Pressão regulatória internacional sobre marketplaces\", o \"Impacto do julgamento antitruste do Google no marketing digital\" e o \"Avanço da bioenergia com usinas a biometano\", este último uma oportunidade promissora para a matriz energética.\n\nSetorialmente, a indústria enfrenta a contração da produção e os custos energéticos materializados, além da persistência do risco de \"Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros\" (86,75%). Comércio e serviços sentem o peso da \"Cautela do Consumidor e Endividamento Familiar\" (93,5%) e a queda do varejo, embora a oportunidade em \"Serviços (PMS)\" (92,75%) siga em ascensão, agora com os desafios regulatórios e de marketing digital. O agronegócio vê o risco da \"Safra e agro\" intensificar-se (95,75%). A construção civil lida com o aumento do risco \"Construção e custos\" (92,05%) e o impacto dos juros elevados (92,75%).\n\nO ponto de atenção para as próximas semanas reside na dissonância entre a Selic mais baixa e a desaceleração da atividade econômica, acompanhada pelo aumento do desemprego e a retomada das pressões inflacionárias nos custos de produção. A capacidade de absorver os custos de energia materializados e navegar pelos novos riscos regulatórios, enquanto se busca capitalizar a oportunidade da bioenergia, será crucial para a resiliência empresarial.",
+    "gerado_em": "2026-08-06T12:23:47.236199",
     "n_sinais_considerados": 15,
     "modelo": "gemini-2.5-flash"
   },
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "comercio"
+        "ecommerce",
+        "transversal"
       ],
-      "titulo": "IPCA-15 desacelera para 0,06% em julho, menor taxa mensal de 2026",
-      "texto": "A prévia da inflação (IPCA-15) registrou 0,06% em julho, após 0,41% em junho, acumulando 3,51% no ano e 4,52% em 12 meses. A taxa de 0,06% surpreendeu analistas, ficando abaixo das projeções do mercado financeiro.",
+      "titulo": "Mercado Livre supera US$ 10 bilhões em receita no 2º trimestre de 2026, impulsionado por crescimento no Brasil",
+      "texto": "O Mercado Livre anunciou receita líquida de US$ 10,2 bilhões no segundo trimestre de 2026, um crescimento de 50% anual. O Brasil liderou o avanço do GMV em 39%, com investimentos em frete grátis e cartões de crédito.",
       "fontes": [
         {
-          "nome": "IBGE - Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br"
+          "nome": "Mirian Gasparin",
+          "url": null
         },
         {
-          "nome": "Folha - Economia",
-          "url": "https://www1.folha.uol.com.br/mercado"
+          "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br"
         },
         {
           "nome": "UOL Economia",
           "url": null
         },
         {
-          "nome": "IBGE - Painel de Indicadores",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Boletim Focus de 3 de agosto reduz projeção da Selic para 13,75% em 2026",
-      "texto": "Pela primeira vez desde março, o mercado financeiro reduziu as expectativas para a taxa Selic, projetando 13,75% para o final de 2026. A taxa atual, definida pelo Copom em 17 de junho, é de 14,25%.",
-      "fontes": [
-        {
-          "nome": "LegisWeb",
-          "url": null
-        },
-        {
-          "nome": "Monitor Mercantil",
-          "url": null
-        },
-        {
-          "nome": "XP Investimentos",
-          "url": null
-        },
-        {
-          "nome": "Revista Veja",
-          "url": null
-        },
-        {
-          "nome": "InfoMoney",
-          "url": "https://www.infomoney.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "comercio"
-      ],
-      "titulo": "Boletim Focus projeta IPCA de 5,03% para 2026, acima da meta",
-      "texto": "O Boletim Focus de 3 de agosto indicou uma redução na projeção do IPCA para 5,03% em 2026, na quinta queda consecutiva. A estimativa, porém, permanece acima do teto da meta de inflação de 4,5%.",
-      "fontes": [
-        {
-          "nome": "Monitor Mercantil",
-          "url": null
-        },
-        {
-          "nome": "Revista Veja",
-          "url": null
-        },
-        {
-          "nome": "InfoMoney",
-          "url": "https://www.infomoney.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos",
-        "comercio",
-        "industria",
-        "construcao"
-      ],
-      "titulo": "Taxa de desocupação cai para 5,4% no trimestre encerrado em junho de 2026",
-      "texto": "A Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua) do IBGE registrou queda na taxa de desocupação para 5,4% no trimestre de abril a junho de 2026. Este é o menor nível para o período da série histórica. [cite: 14 (previous step), 18 (previous step), 41 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Correio dos Municípios",
-          "url": null
-        },
-        {
-          "nome": "TV Prefeito",
-          "url": null
-        },
-        {
-          "nome": "G1",
+          "nome": "Guia do Investidor",
           "url": null
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "industria",
-        "servicos"
+        "ecommerce"
       ],
-      "titulo": "Confiança Empresarial recua em julho, com piora na Indústria e Serviços",
-      "texto": "O Índice de Confiança Empresarial (ICE) da FGV IBRE caiu 1,4 ponto em julho, para 91,3 pontos, devolvendo as altas anteriores. A piora foi observada principalmente na Indústria e nos Serviços. [cite: 48 (previous step), 12, 30]",
+      "titulo": "Shopee expande operação fulfillment com dez novos CDs no Brasil em 2026",
+      "texto": "A Shopee anunciou a abertura de dez novos centros de distribuição no Brasil em 2026, totalizando 26 unidades. A expansão visa acelerar entregas e melhorar a experiência de compra para vendedores e consumidores.",
       "fontes": [
-        {
-          "nome": "Estadão Conteúdo",
-          "url": "https://www.estadao.com.br/economia"
-        },
-        {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "FGV IBRE - Resumo das Sondagens",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "industria",
-        "comercio",
-        "servicos",
-        "construcao"
-      ],
-      "titulo": "IGP-DI registra queda de 0,79% em julho, acumulando 3,59% em 12 meses",
-      "texto": "O Índice Geral de Preços - Disponibilidade Interna (IGP-DI) da FGV IBRE apresentou queda de 0,79% em julho de 2026. O índice acumulado nos últimos 12 meses foi de 3,59%.",
-      "fontes": [
-        {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "FGV - IGP-DI",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "MQL5 - FGV Brazil IGP-DI Inflation Index",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Ministério da Fazenda projeta inflação de 5,1% em 2026, acima da meta",
-      "texto": "O Ministério da Fazenda revisou suas projeções para a inflação em 2026 para 5,1%, superando o teto da meta de 4,5%. Fatores como o El Niño e o choque de petróleo são citados como influências.",
-      "fontes": [
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "CMN mantém meta de inflação em 3,0% para 2026 e adota meta contínua a partir de 2025",
-      "texto": "O Conselho Monetário Nacional (CMN) manteve a meta de inflação em 3,0% para 2026, com teto de 4,5%. A partir de 2025, o horizonte de convergência da meta passa a ser contínuo.",
-      "fontes": [
-        {
-          "nome": "XP.conteudo",
-          "url": null
-        },
-        {
-          "nome": "Itaú Private Insights",
-          "url": null
-        },
-        {
-          "nome": "Genial Analisa",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Boletim Focus mantém projeção de câmbio em R$ 5,20 para 2026",
-      "texto": "O Boletim Focus de 3 de agosto manteve a projeção para a cotação do dólar em R$ 5,20 para o final de 2026, estável há pelo menos cinco semanas. Para 2027, houve leve recuo para R$ 5,28.",
-      "fontes": [
-        {
-          "nome": "LegisWeb",
-          "url": null
-        },
-        {
-          "nome": "Monitor Mercantil",
-          "url": null
-        },
-        {
-          "nome": "Revista Veja",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "PMI Industrial do Brasil cai para 47,5 em julho, indicando contração",
-      "texto": "O S&P Global Brazil Manufacturing PMI recuou de 50,8 em junho para 47,5 em julho, sinalizando uma deterioração na saúde do setor e a contração mais rápida desde fevereiro. [cite: 3 (previous step), 49 (previous step)]",
-      "fontes": [
-        {
-          "nome": "S&P Global PMI",
-          "url": "https://www.pmi.spglobal.com/public?language=pt"
-        },
-        {
-          "nome": "Trading Economics",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Queda acentuada em novas encomendas na indústria, a maior desde abril de 2023",
-      "texto": "O PMI de julho indicou a queda mais acentuada em novas encomendas em mais de três anos. A retração foi impulsionada pela demanda doméstica e internacional, com menores vendas para China, Europa e América Latina. [cite: 3 (previous step)]",
-      "fontes": [
-        {
-          "nome": "S&P Global PMI",
-          "url": "https://www.pmi.spglobal.com/public?language=pt"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "IPP registra queda de 0,77% em junho, com recuo na indústria extrativa",
-      "texto": "O Índice de Preços ao Produtor (IPP) do IBGE caiu 0,77% em junho, após -0,30% em maio. A indústria extrativa teve queda de 11,85%, influenciando o resultado geral. [cite: 7 (previous step), 10 (previous step), 13 (previous step), 17 (previous step), 31 (previous step)]",
-      "fontes": [
-        {
-          "nome": "IBGE - Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        },
-        {
-          "nome": "SBA1",
-          "url": null
-        },
-        {
-          "nome": "Acessa.com",
-          "url": null
-        },
-        {
-          "nome": "ADVFN",
-          "url": null
-        },
-        {
-          "nome": "IBGE - IPP",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Indústrias cortam produção e empregos em julho devido à queda nas vendas",
-      "texto": "Em resposta à diminuição das vendas, as empresas industriais reduziram os níveis de produção e voltaram a cortar empregos em julho, encerrando uma sequência de cinco meses de criação de vagas. [cite: 3 (previous step)]",
-      "fontes": [
-        {
-          "nome": "S&P Global PMI",
-          "url": "https://www.pmi.spglobal.com/public?language=pt"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Pressões de custos na indústria recuam, mas permanecem elevadas em julho",
-      "texto": "As taxas de inflação de custos de insumos e preços de produção na indústria diminuíram em julho, mas ainda se mantiveram historicamente elevadas, impactando o ambiente de negócios. [cite: 3 (previous step)]",
-      "fontes": [
-        {
-          "nome": "S&P Global PMI",
-          "url": "https://www.pmi.spglobal.com/public?language=pt"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Confiança na indústria piora em julho, impactada por novas tarifas dos EUA",
-      "texto": "A confiança empresarial na indústria recuou em julho, refletindo preocupações com as novas tarifas de importação dos Estados Unidos, que afetam a competitividade do setor. [cite: 48 (previous step), 30]",
-      "fontes": [
-        {
-          "nome": "Estadão Conteúdo",
-          "url": "https://www.estadao.com.br/economia"
-        },
-        {
-          "nome": "FGV IBRE - Resumo das Sondagens",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Usiminas fornece aço para fragatas da Marinha do Brasil",
-      "texto": "A Usiminas é a única siderúrgica brasileira a fornecer aço plano para o Programa Fragatas Classe Tamandaré (PFCT), participando da construção de quatro navios militares da Marinha do Brasil. [cite: 32 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Instituto Aço Brasil",
-          "url": "https://www.acobrasil.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Ternium recebe principal prêmio de sustentabilidade da indústria do aço",
-      "texto": "A Ternium foi reconhecida com o prêmio de Campeã de Sustentabilidade, concedido pela Associação Mundial do Aço (worldsteel), demonstrando compromisso com o desenvolvimento sustentável. [cite: 32 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Instituto Aço Brasil",
-          "url": "https://www.acobrasil.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Instituto Aço Brasil agenda Congresso Aço Brasil 2026 para setembro",
-      "texto": "O Instituto Aço Brasil realizará o Congresso Aço Brasil 2026 nos dias 29 e 30 de setembro em São Paulo. O evento reunirá os principais stakeholders para debater as perspectivas do setor. [cite: 9 (previous step), 32 (previous step), 42 (previous step), 47 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Instituto Aço Brasil - Eventos",
-          "url": "https://www.acobrasil.org.br"
-        },
-        {
-          "nome": "Instituto Aço Brasil",
-          "url": "https://www.acobrasil.org.br"
-        },
-        {
-          "nome": "Congresso Aço Brasil 2026",
-          "url": "https://www.acobrasil.org.br"
-        },
-        {
-          "nome": "ExpoAço - Congresso Aço Brasil 2026",
-          "url": "https://www.acobrasil.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Produção industrial brasileira varia -0,2% em maio, após quatro meses de alta",
-      "texto": "A Pesquisa Industrial Mensal - Produção Física (PIM-PF) do IBGE indicou uma variação de -0,2% na produção industrial em maio de 2026 em comparação com abril, interrompendo quatro meses de crescimento.",
-      "fontes": [
-        {
-          "nome": "IBGE - PIM-PF Brazil",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        },
-        {
-          "nome": "IBGE - Painel de Indicadores",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Indústria capixaba cresceu 22,6% no 1º trimestre de 2026, acima da média nacional",
-      "texto": "A produção industrial do Espírito Santo apresentou um dinamismo de 22,6% no primeiro trimestre de 2026, superando a média nacional. O destaque foi o crescimento da indústria extrativa.",
-      "fontes": [
-        {
-          "nome": "Observatório Findes",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "IBGE: indústria acumula alta de 3,1% em 2026 até março",
-      "texto": "A Pesquisa Industrial Mensal (PIM) do IBGE indicou que a indústria brasileira acumulou alta de 3,1% em 2026 até março, com expansão de 4,3% em relação a março de 2025.",
-      "fontes": [
-        {
-          "nome": "Monitor Mercantil",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Varejo paulista projeta alta tímida de 0,7% em agosto, influenciado pelo Dia dos Pais",
-      "texto": "A FecomercioSP estima um crescimento de 0,7% nas vendas do varejo paulista em agosto, com receita maior em R$ 567 milhões. A expectativa é impulsionada pelo Dia dos Pais, mas com cautela. [cite: 4 (previous step), 5 (previous step), 8 (previous step), 11 (previous step)]",
-      "fontes": [
-        {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
-        },
-        {
-          "nome": "Vitória News",
-          "url": null
-        },
-        {
-          "nome": "Portal do Holanda",
-          "url": "https://anda.org.br"
-        },
-        {
-          "nome": "Acessa.com",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "PMEs hesitam em investir no Dia dos Pais, com 65,6% sem ações promocionais",
-      "texto": "Pesquisa da Serasa Experian revela que 65,6% das pequenas e médias empresas (PMEs) não planejam ações promocionais para o Dia dos Pais. Apenas 34,4% consideram ou planejam iniciativas. [cite: 15 (previous step), 30 (previous step), 33 (previous step), 37 (previous step), 38 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Boca Notícias",
-          "url": null
-        },
-        {
-          "nome": "Revista VEJA",
-          "url": null
-        },
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br"
-        },
         {
           "nome": "E-Commerce Brasil",
+          "url": "https://www.ecommercebrasil.com.br"
+        },
+        {
+          "nome": "JC Logística",
+          "url": null
+        },
+        {
+          "nome": "E-Commerce Uptate",
+          "url": null
+        },
+        {
+          "nome": "Estadão",
+          "url": "https://www.estadao.com.br/economia"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Novas ferramentas de e-commerce focam em IA, automação e pagamentos transfronteiriços",
+      "texto": "Lançamentos de ferramentas para e-commerce incluem avanços em entregas por drones, editores de imagem/vídeo com IA, busca em sites, publicidade AI-nativa e automação de armazéns.",
+      "fontes": [
+        {
+          "nome": "Practical Ecommerce",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "transversal"
+      ],
+      "titulo": "Fórum E-Commerce Brasil 2026 destaca IA, dados e logística como pilares do comércio digital",
+      "texto": "A 17ª edição do Fórum E-Commerce Brasil reuniu mais de 62 mil participantes, focando em inteligência artificial, dados, meios de pagamento, conteúdo e logística para orientar decisões no varejo digital.",
+      "fontes": [
+        {
+          "nome": "Fórum E-Commerce Brasil",
           "url": "https://www.ecommercebrasil.com.br"
         }
       ]
     },
     {
       "setores": [
-        "comercio"
+        "ecommerce",
+        "transversal"
       ],
-      "titulo": "Endividamento familiar e juros elevados continuam a segurar o consumo",
-      "texto": "A FecomercioSP aponta que o alto percentual de famílias endividadas (74,8% em SP em julho) e os juros elevados tendem a retrair o consumo, apesar do mercado de trabalho aquecido. [cite: 4 (previous step), 8 (previous step), 11 (previous step)]",
+      "titulo": "Regulamentação e crescimento de marketplaces são temas centrais no e-commerce",
+      "texto": "Marketplaces superam lojas online, exigindo adaptação estratégica. A União Europeia impôs multa ao AliExpress por controle insuficiente de produtos ilegais e falsificados, aumentando a pressão regulatória.",
       "fontes": [
         {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
+          "nome": "Cross-Border Commerce Association",
+          "url": null
         },
         {
-          "nome": "Portal do Holanda",
-          "url": "https://anda.org.br"
-        },
-        {
-          "nome": "Acessa.com",
+          "nome": "Reddit /r/ecommerce",
           "url": null
         }
       ]
     },
     {
       "setores": [
-        "comercio"
+        "ecommerce",
+        "transversal"
       ],
-      "titulo": "Farmácias e perfumarias lideram expectativas de vendas para o Dia dos Pais",
-      "texto": "Os segmentos de farmácias e perfumarias (alta de 3,7%) e lojas de roupas (alta de 1,7%) são os que mais esperam faturar no Dia dos Pais, focando em 'autocuidado'. [cite: 4 (previous step), 8 (previous step), 11 (previous step)]",
+      "titulo": "Julgamento antitruste do Google pode remodelar estratégias de SEO e publicidade digital",
+      "texto": "O julgamento antitruste contra o Google em agosto pode redefinir o marketing digital, levando a maior diversidade de mecanismos de busca e regulamentações mais rígidas sobre dados e publicidade.",
       "fontes": [
         {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
-        },
-        {
-          "nome": "Portal do Holanda",
-          "url": "https://anda.org.br"
-        },
-        {
-          "nome": "Acessa.com",
+          "nome": "eCommerce Expo 2026",
           "url": null
         }
       ]
     },
     {
       "setores": [
-        "comercio"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Vendas de bens duráveis, como móveis e eletroeletrônicos, devem cair em agosto",
-      "texto": "Móveis e decoração (-1,3%) e eletroeletrônicos (-0,8%) devem ter desempenho negativo em agosto. Consumidores evitam novas dívidas em um cenário de juros elevados e endividamento. [cite: 4 (previous step), 8 (previous step), 11 (previous step)]",
+      "titulo": "ANEEL mantém bandeira tarifária amarela em agosto de 2026",
+      "texto": "A ANEEL decidiu manter a bandeira tarifária amarela para agosto de 2026, com cobrança adicional de R$ 1,885 a cada 100 kWh. A medida reflete condições menos favoráveis de geração de energia devido ao período seco.",
       "fontes": [
         {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
+          "nome": "Gazeta do Povo",
+          "url": null
         },
         {
-          "nome": "Portal do Holanda",
-          "url": "https://anda.org.br"
+          "nome": "Portal Gov.br",
+          "url": null
         },
         {
-          "nome": "Acessa.com",
+          "nome": "Agência iNFRA",
+          "url": null
+        },
+        {
+          "nome": "Celetro",
+          "url": null
+        },
+        {
+          "nome": "VEJA",
           "url": null
         }
       ]
     },
     {
       "setores": [
-        "comercio"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Vendas no varejo brasileiro crescem 0,1% em maio, após queda em abril",
-      "texto": "O volume de vendas no comércio varejista nacional cresceu 0,1% em maio, na comparação com o mês anterior. A alta veio após uma queda de 1,6% na passagem de março para abril.",
+      "titulo": "PMI de serviços do Brasil cai a 49,7 pontos em julho, indicando contração após 9 meses",
+      "texto": "O Índice dos Gerentes de Compras (PMI) do setor de serviços brasileiro recuou para 49,7 pontos em julho, a primeira contração em nove meses. Pressões inflacionárias e retração da demanda foram citadas.",
       "fontes": [
         {
-          "nome": "ParaibaOnline",
+          "nome": "S&P Global",
           "url": null
         },
         {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br"
-        },
-        {
-          "nome": "IBGE - Pesquisa Mensal de Comércio",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        },
-        {
-          "nome": "IBGE - Painel de Indicadores",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        },
-        {
-          "nome": "IBGE - Agência de Notícias",
-          "url": "https://agenciadenoticias.ibge.gov.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "'Panorama do Comércio' da FecomercioSP aborda novos hábitos de consumo",
-      "texto": "A edição de agosto do 'Panorama do Comércio' da FecomercioSP analisa a profunda transformação do comércio, incluindo os impactos de apostas online, expansão do e-commerce e canetas emagrecedoras. [cite: 25 (previous step)]",
-      "fontes": [
-        {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Mercado de canetas emagrecedoras movimenta R$13,3 bilhões em farmácias",
-      "texto": "O boletim da FecomercioSP destaca que o Brasil importa mais canetas emagrecedoras do que celulares, com o setor movimentando R$13,3 bilhões em farmácias em um ano, reorganizando a cesta de consumo. [cite: 25 (previous step)]",
-      "fontes": [
-        {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Maioria das PMEs que investem no Dia dos Pais buscam aumentar vendas",
-      "texto": "Entre as PMEs que planejam ações para o Dia dos Pais, 44,6% têm como principal objetivo aumentar as vendas, seguido por fortalecimento da marca (21,5%) e atração de novos clientes (21,1%). [cite: 37 (previous step), 38 (previous step)]",
-      "fontes": [
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br"
-        },
-        {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Limitação de orçamento é principal desafio para PMEs no Dia dos Pais",
-      "texto": "A principal dificuldade para PMEs investirem no Dia dos Pais é a limitação de orçamento e os altos custos de campanhas, citados por 28,4% dos empreendedores. A concorrência também é um fator. [cite: 33 (previous step), 37 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Confiança Empresarial em Serviços piora em julho com enfraquecimento da demanda",
-      "texto": "A confiança no setor de Serviços recuou em julho, com empresas percebendo um enfraquecimento da demanda. Este movimento contribuiu para a queda geral da confiança empresarial. [cite: 48 (previous step), 30]",
-      "fontes": [
-        {
-          "nome": "Estadão Conteúdo",
+          "nome": "Broadcast",
           "url": "https://www.estadao.com.br/economia"
-        },
-        {
-          "nome": "FGV IBRE - Resumo das Sondagens",
-          "url": "https://portalibre.fgv.br"
         }
       ]
     },
     {
       "setores": [
-        "servicos"
+        "servicos",
+        "industria",
+        "transversal"
       ],
-      "titulo": "FGV IBRE divulga Síntese das Sondagens de julho em 4 de agosto",
-      "texto": "A Fundação Getulio Vargas (FGV IBRE) publicou em 4 de agosto a Síntese das Sondagens de julho de 2026, que inclui análises sobre a confiança nos serviços e outros setores.",
+      "titulo": "Axia investirá R$ 8,7 bilhões na expansão da transmissão de energia até 2030",
+      "texto": "A Axia Energia anunciou investimento de R$ 8,7 bilhões em 12 projetos de transmissão de energia até 2030, gerando mais de 17 mil empregos. O anúncio foi feito em 5 de agosto de 2026.",
       "fontes": [
         {
-          "nome": "FGV IBRE - Calendário de Divulgação",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "FGV IBRE - Resumo das Sondagens",
-          "url": "https://portalibre.fgv.br"
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "servicos"
+        "servicos",
+        "agro",
+        "transversal"
       ],
-      "titulo": "FGV IBRE divulgará Sondagem de Serviços de agosto em 28 de agosto",
-      "texto": "O calendário da FGV IBRE prevê a divulgação da Sondagem de Serviços referente a agosto de 2026 para o dia 28 de agosto. Este indicador fornece tendências de curto prazo para o setor. [cite: 21 (previous step), 44 (previous step)]",
+      "titulo": "Primeira usina a biometano do país inicia operação no LRCAP 2026",
+      "texto": "Uma usina a biometano, com investimento de R$ 180 milhões e capacidade de 23,4 MW, iniciou operação no LRCAP 2026. A usina pode abastecer cerca de 300 mil pessoas.",
       "fontes": [
         {
-          "nome": "FGV IBRE - Sondagem de Serviços",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "FGV IBRE - Sondagem de Serviços",
-          "url": "https://portalibre.fgv.br"
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "servicos"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "IPC-S da FGV IBRE cai 0,08% na quarta quadrissemana de julho de 2026",
-      "texto": "A inflação medida pelo Índice de Preços ao Consumidor - Semanal (IPC-S) da FGV IBRE caiu 0,08% na quarta quadrissemana de julho de 2026. [cite: 12, 40 (previous step)]",
+      "titulo": "ANEEL prorroga tratamento excepcional para antecipação da CCC a Roraima Energia",
+      "texto": "A ANEEL prorrogou o tratamento excepcional para antecipação da Conta de Desenvolvimento Energético (CCC) para a Roraima Energia, visando garantir a continuidade do fornecimento.",
       "fontes": [
         {
-          "nome": "FGV IBRE",
-          "url": "https://portalibre.fgv.br"
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "USDA mantém condição da soja estável e aponta leve deterioração do milho nos EUA",
-      "texto": "O Departamento de Agricultura dos EUA (USDA) reportou em 3 de agosto condições estáveis para a soja (63% boas/excelentes) e leve piora para o milho (61% boas/excelentes). [cite: 29 (previous step)]",
+      "titulo": "Prestação de contas do Procel entra em consulta pública",
+      "texto": "A prestação de contas do Programa Nacional de Conservação de Energia Elétrica (Procel) foi aberta para consulta pública em 5 de agosto de 2026, buscando transparência e participação.",
       "fontes": [
         {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Desenvolvimento das lavouras de soja e milho nos EUA segue acima da média",
-      "texto": "Apesar das variações de qualidade, o desenvolvimento das culturas de soja (88% florescimento, 62% vagens) e milho nos EUA está adiantado em relação à média histórica, reforçando perspectivas de safra cheia. [cite: 29 (previous step)]",
+      "titulo": "Cade aprova compra de SPEs da Serena pela Odata",
+      "texto": "O Conselho Administrativo de Defesa Econômica (Cade) aprovou a compra de Sociedades de Propósito Específico (SPEs) da Serena pela Odata em 5 de agosto de 2026.",
       "fontes": [
         {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Soja recua em Chicago com clima favorável nos EUA e pressão do petróleo",
-      "texto": "Os futuros da soja na Bolsa de Chicago abriram agosto em baixa, influenciados por previsões de chuvas em áreas produtoras dos EUA e queda de quase 6% nos preços do petróleo. [cite: 36 (previous step)]",
+      "titulo": "Abertura de mercado de energia exigirá esforço de regulação até 2027",
+      "texto": "A abertura do mercado de energia no Brasil demandará um esforço regulatório significativo até 2027, conforme discussões em 4 de agosto de 2026.",
       "fontes": [
         {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "Cotações da soja recuam no fim de julho, mas médias mensais são as maiores de 2026",
-      "texto": "Os preços da soja caíram no final de julho devido à melhora da safra dos EUA e desvalorização do petróleo. Contudo, as médias mensais dos Indicadores CEPEA/ESALQ foram as maiores de 2026.",
+      "titulo": "ONS debate desafios da transformação energética",
+      "texto": "O Operador Nacional do Sistema Elétrico (ONS) debateu os desafios da transformação energética em 5 de agosto de 2026, focando na integração de novas fontes e flexibilidade da rede.",
       "fontes": [
         {
-          "nome": "AgroComm",
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Cepel vê regulação como chave para a flexibilidade do setor elétrico",
+      "texto": "O Cepel (Centro de Pesquisas de Energia Elétrica) destacou a regulação como fator crucial para a flexibilidade do setor elétrico, em notícia de 5 de agosto de 2026.",
+      "fontes": [
+        {
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Energisa avança em projetos híbridos para ampliar flexibilidade da rede",
+      "texto": "A Energisa está investindo em projetos híbridos para aumentar a flexibilidade da rede elétrica, conforme noticiado em 5 de agosto de 2026.",
+      "fontes": [
+        {
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Reservatórios do Sul operam com 85,2% da capacidade em 5 de agosto",
+      "texto": "Os reservatórios da região Sul do Brasil subiram 0,5 p.p. e operam com 85,2% da capacidade em 5 de agosto de 2026, indicando boas condições hídricas.",
+      "fontes": [
+        {
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "ANEEL autoriza recondução excepcional de presidentes dos Conselhos de Consumidores",
+      "texto": "A ANEEL autorizou a recondução excepcional de presidentes dos Conselhos de Consumidores em 5 de agosto de 2026, visando a continuidade da representação.",
+      "fontes": [
+        {
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Minerais estratégicos podem adicionar R$ 192,1 bilhões ao PIB brasileiro até 2050",
+      "texto": "Minerais críticos e estratégicos têm potencial para contribuir com R$ 192,1 bilhões ao PIB brasileiro até 2050, impulsionando a indústria e serviços.",
+      "fontes": [
+        {
+          "nome": "CanalEnergia",
+          "url": "https://www.canalenergia.com.br/noticias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Brazil Windpower 2026 debate soluções para curtailment e investimentos em renováveis",
+      "texto": "O Brazil Windpower 2026, de 27 a 29 de outubro, discutirá soluções para o curtailment e a retomada de investimentos em energias renováveis, com foco na transição energética.",
+      "fontes": [
+        {
+          "nome": "Canal Energia",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "CUB Residencial Médio de Santa Catarina atinge R$ 3.151,24/m² em agosto de 2026",
+      "texto": "O Custo Unitário Básico (CUB) Residencial Médio em Santa Catarina registrou R$ 3.151,24/m² em agosto de 2026, com variação mensal de 0,95%. O indicador é chave para orçamentos da construção civil.",
+      "fontes": [
+        {
+          "nome": "Odeza Empreendimentos",
           "url": null
         },
         {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Indicador do milho Cepea/Esalq fica estável no fim de julho, mas sobe 3% no mês",
-      "texto": "O indicador do milho Cepea/Esalq (Campinas/SP) registrou pequenas variações no fim de julho, mas acumulou alta de quase 3% no mês. Compradores seguem retraídos com avanço da colheita.",
-      "fontes": [
-        {
-          "nome": "Sou Agro",
-          "url": "https://souagro.net"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Feijão carioca pressionado por maior oferta; feijão preto segue mais estável",
-      "texto": "A maior disponibilidade de feijão no mercado, com a sobreposição de safras, pressionou as cotações do carioca em julho. O feijão preto mostrou mais estabilidade devido à menor produção esperada no Paraná.",
-      "fontes": [
-        {
-          "nome": "Sou Agro",
-          "url": "https://souagro.net"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Jundiaí adere ao CAF e retoma Casa da Agricultura para produtores rurais",
-      "texto": "A Prefeitura de Jundiaí anunciou a adesão ao Cadastro Nacional da Agricultura Familiar (CAF) e a retomada da Casa da Agricultura, ampliando o atendimento técnico e o suporte aos agricultores. [cite: 39 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Prefeitura de Jundiaí",
+          "nome": "SENGE-SC",
           "url": null
+        },
+        {
+          "nome": "Facebook / Leonel Ribeiro",
+          "url": null
+        },
+        {
+          "nome": "MySide",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "MRV divulga resultados do 2º trimestre de 2026 em 12 de agosto",
+      "texto": "A MRV Engenharia e Participações S.A. (MRVE3) agendou a divulgação de seus resultados do segundo trimestre de 2026 para 12 de agosto, após o fechamento do mercado.",
+      "fontes": [
+        {
+          "nome": "MRV RI",
+          "url": "https://www.mrv.com.br/institucional/pt/a-mrv/releases"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "transversal"
+      ],
+      "titulo": "MRV confirma Bradesco como intermediário em programa de recompra de ações",
+      "texto": "A MRV (MRVE3) confirmou o Banco Bradesco S.A. como intermediário para seu programa de recompra de ações, complementando informações de junho de 2025. O comunicado foi em 4 de agosto de 2026.",
+      "fontes": [
+        {
+          "nome": "AVNews",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "PMI industrial do Brasil cai a 47,5 pontos em julho, indicando forte retração",
+      "texto": "O PMI industrial do Brasil caiu de 50,8 em junho para 47,5 pontos em julho de 2026, a queda mais acentuada nos novos pedidos desde abril de 2023. A produção e o emprego foram reduzidos.",
+      "fontes": [
+        {
+          "nome": "S&P Global",
+          "url": null
+        },
+        {
+          "nome": "Jornal do Comércio",
+          "url": null
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Congresso Brasileiro de Fertilizantes da ANDA será em 25 de agosto de 2026",
+      "texto": "A 13ª edição do Congresso Brasileiro de Fertilizantes da ANDA ocorrerá em 25 de agosto de 2026, presencial e online, reunindo líderes para discutir o futuro do agronegócio e fertilizantes.",
+      "fontes": [
+        {
+          "nome": "Adfert",
+          "url": null
+        },
+        {
+          "nome": "Anda",
+          "url": "https://anda.org.br"
         }
       ]
     },
@@ -780,246 +451,44 @@
         "agro",
         "transversal"
       ],
-      "titulo": "Tensão geopolítica no Oriente Médio impacta mercados globais de commodities",
-      "texto": "A reversão no petróleo e as incertezas geopolíticas no Oriente Médio mantêm os mercados sob tensão, afetando commodities. O conflito é citado como fator de pressão inflacionária e interrupção na cadeia de suprimentos. [cite: 35 (previous step), 36 (previous step)]",
+      "titulo": "Entregas de fertilizantes caem 14,7% em maio; produção nacional recua 26%",
+      "texto": "As entregas de fertilizantes no Brasil caíram 14,7% em maio de 2026, totalizando 3,16 milhões de toneladas. A produção nacional recuou 26%, impactada por geopolítica, crédito e juros.",
       "fontes": [
-        {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
-        },
-        {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "China compra mais 488 mil toneladas de soja 26/27 dos EUA, informa USDA",
-      "texto": "O USDA informou em 3 de agosto uma nova venda de 488 mil toneladas de soja da safra 26/27 dos EUA para a China. Isso indica uma demanda ativa por parte do país asiático.",
-      "fontes": [
-        {
-          "nome": "AgroComm",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Mercado interno de boi gordo firme com oportunidades para pecuaristas",
-      "texto": "O mercado interno de boi gordo apresenta firmeza, criando oportunidades para pecuaristas defenderem suas margens. O cenário é de estabilidade, com cotações em R$ 347,90/@ em SP em 3 de agosto. [cite: 34 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Nosso Campo Agriculture",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "INCC-DI registra alta de 0,62% em julho, acumulando 6,40% em 12 meses",
-      "texto": "O Índice Nacional de Custo de Construção - Disponibilidade Interna (INCC-DI) da FGV IBRE subiu 0,62% em julho, com acumulado de 6,40% nos últimos 12 meses.",
-      "fontes": [
-        {
-          "nome": "FGV - Índices Econômicos",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "Remessa Online",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Confiança da construção avança 0,8 ponto em julho, em contraste com outros setores",
-      "texto": "A confiança no setor da construção avançou 0,8 ponto em julho, para 92,5 pontos, em contraste com a queda geral da confiança empresarial e a piora na indústria e serviços. [cite: 48 (previous step), 30]",
-      "fontes": [
-        {
-          "nome": "Estadão Conteúdo",
-          "url": "https://www.estadao.com.br/economia"
-        },
-        {
-          "nome": "FGV IBRE - Resumo das Sondagens",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "FGV IBRE divulgará INCC-M de agosto em 26 de agosto",
-      "texto": "O calendário da FGV IBRE prevê a divulgação do Índice Nacional de Custo de Construção - Mercado (INCC-M) referente a agosto de 2026 para o dia 26 de agosto.",
-      "fontes": [
-        {
-          "nome": "FGV IBRE - Calendário de Divulgação",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "INCC-DI mede variação de preços de materiais, serviços e mão de obra na construção",
-      "texto": "O INCC-DI, calculado pela FGV IBRE, monitora a evolução dos preços de materiais, serviços e mão de obra na construção civil em sete capitais brasileiras, sendo um importante termômetro do setor.",
-      "fontes": [
-        {
-          "nome": "MQL5 - FGV Brazil IGP-DI Inflation Index",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "Debit - INCC-DI",
-          "url": "https://portalibre.fgv.br"
-        },
-        {
-          "nome": "FGV IBRE - INCC",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Atualização metodológica do INCC em 2023 permite cálculo por padrões construtivos",
-      "texto": "Em julho de 2023, o INCC passou por uma atualização metodológica que permite o cálculo do índice para distintos padrões construtivos (econômico, médio e alto) em sete cidades.",
-      "fontes": [
-        {
-          "nome": "FGV IBRE - INCC",
-          "url": "https://portalibre.fgv.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Shopee expande rede logística no Brasil com 10 novos centros de distribuição em 2026",
-      "texto": "A Shopee anunciou a abertura de 10 novos centros de distribuição em 2026, aumentando sua rede para 26 unidades no país. O objetivo é acelerar as entregas e fortalecer o suporte aos vendedores. [cite: 12 (previous step), 20 (previous step), 22 (previous step), 27 (previous step), 28 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Revista Veja",
-          "url": null
-        },
-        {
-          "nome": "JC Logística",
-          "url": null
-        },
-        {
-          "nome": "Shopee Brasil",
-          "url": "https://shopee.com.br"
-        },
-        {
-          "nome": "Estadão",
-          "url": "https://www.estadao.com.br/economia"
-        },
-        {
-          "nome": "Tecnologística",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Novos centros da Shopee gerarão 1,8 mil empregos e processarão 2 milhões de pedidos/dia",
-      "texto": "Quatro das novas unidades da Shopee, localizadas em Piracicaba, Ibitinga, Rio de Janeiro e Minas Gerais, terão capacidade para processar mais de 2 milhões de pedidos por dia e gerar cerca de 1,8 mil empregos. [cite: 12 (previous step), 20 (previous step), 28 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Revista Veja",
-          "url": null
-        },
-        {
-          "nome": "JC Logística",
-          "url": null
-        },
-        {
-          "nome": "Tecnologística",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Shopee implementa novas regras de faturamento de comissões para afiliados PJ a partir de 1º de agosto",
-      "texto": "A partir de 1º de agosto de 2026, o programa de afiliados da Shopee exige faturamento individual de comissões por vendedor via Nota Fiscal de Serviços Eletrônica (NFS-e) para afiliados pessoa jurídica. [cite: 22 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Shopee Brasil",
-          "url": "https://shopee.com.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Expansão logística da Shopee reduziu tempo médio de entrega em mais de um dia no 1T26",
-      "texto": "Os investimentos em logística da Shopee resultaram na redução do tempo médio de entrega em mais de um dia no primeiro trimestre de 2026, em comparação com o mesmo período do ano anterior. [cite: 12 (previous step), 28 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Revista Veja",
-          "url": null
-        },
-        {
-          "nome": "Tecnologística",
-          "url": null
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "FecomercioSP aborda expansão do e-commerce no 'Panorama do Comércio' de agosto",
-      "texto": "A publicação da FecomercioSP de agosto analisa a profunda transformação do comércio, incluindo o impacto da expansão do e-commerce nos hábitos de consumo dos brasileiros. [cite: 25 (previous step)]",
-      "fontes": [
-        {
-          "nome": "FecomercioSP",
-          "url": "https://www.fecomerciomg.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce",
-        "comercio"
-      ],
-      "titulo": "PMEs do e-commerce cautelosas com Dia dos Pais devido a orçamento limitado",
-      "texto": "PMEs, incluindo as do e-commerce, mostram cautela em investir no Dia dos Pais, citando limitações orçamentárias e altos custos de campanhas como os principais desafios. [cite: 15 (previous step), 30 (previous step), 33 (previous step), 37 (previous step), 38 (previous step)]",
-      "fontes": [
-        {
-          "nome": "Boca Notícias",
-          "url": null
-        },
-        {
-          "nome": "Revista VEJA",
-          "url": null
-        },
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br"
-        },
         {
           "nome": "CNN Brasil",
           "url": "https://www.cnnbrasil.com.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Eventos do agronegócio em agosto de 2026 incluem congressos de aviação agrícola e defensivos",
+      "texto": "Agosto de 2026 terá diversos eventos no agro, como o Congresso da Aviação Agrícola (18-20/ago), o Congresso Brasileiro de Ciência das Plantas Daninhas (3-6/ago) e o AgrochemShow (3-4/ago).",
+      "fontes": [
+        {
+          "nome": "AgriBrasilis",
+          "url": "https://agribrasilis.com"
         },
         {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br"
+          "nome": "Agribrasilis - Inside Agribusiness",
+          "url": "https://agribrasilis.com"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "industria",
+        "transversal"
+      ],
+      "titulo": "25º Congresso Brasileiro do Agronegócio (ABAG e B3) em 10 de agosto de 2026",
+      "texto": "O 25º Congresso Brasileiro do Agronegócio, organizado pela ABAG e B3, ocorrerá em 10 de agosto de 2026, discutindo a integração entre agricultura e indústria para impulsionar inovação e sustentabilidade.",
+      "fontes": [
+        {
+          "nome": "ABAG e B3",
+          "url": "https://www.b3.com.br"
         }
       ]
     }
@@ -1028,63 +497,67 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Negociações comerciais e tarifas internacionais",
-      "texto": "O ministro do Desenvolvimento, Indústria e Comércio Exterior cumpre agenda na Índia para ampliar o comércio bilateral em meio às tarifas dos EUA sobre produtos brasileiros.",
-      "score": 6.5,
+      "tema": "Regulamentação e Geopolítica",
+      "texto": "Pressão regulatória sobre marketplaces (UE) e discussões sobre tarifas dos EUA impactam o cenário político-econômico. Abertura do mercado de energia exige esforço regulatório.",
+      "score": 7.0,
       "setores": [
         "transversal",
-        "industria",
-        "comercio",
-        "agro"
+        "ecommerce",
+        "servicos",
+        "industria"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Inflação, juros e atividade econômica",
-      "texto": "A prévia da inflação (IPCA-15) desacelerou em julho, mas as projeções para o IPCA em 2026 seguem acima da meta. O mercado reduziu a expectativa para a Selic. [cite: 2, 3, 4, 6, 7, 8, 23, 43 (previous step)]",
+      "tema": "Desaceleração da Atividade e Pressões de Custo",
+      "texto": "PMI industrial e de serviços em contração indica desaceleração. Inflação de custos persiste, impactando margens. Investimentos em infraestrutura e e-commerce são destaques positivos.",
       "score": 7.8,
       "setores": [
         "transversal",
-        "comercio",
         "industria",
         "servicos",
-        "construcao",
+        "comercio",
         "agro",
-        "ecommerce"
+        "ecommerce",
+        "construcao"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Emprego, renda e hábitos de consumo",
-      "texto": "A taxa de desocupação caiu para 5,4% no trimestre encerrado em junho. O endividamento familiar e os novos hábitos de consumo, como o mercado de canetas emagrecedoras, impactam o varejo. [cite: 14 (previous step), 18 (previous step), 41 (previous step), 4 (previous step), 8 (previous step), 11 (previous step), 25 (previous step)]",
-      "score": 8.0,
+      "tema": "Confiança do Consumidor e Emprego",
+      "texto": "Aumento de empregos em logística de e-commerce. Confiança dos negócios melhora com expectativas pós-eleitorais. Custos de energia afetam o poder de compra do consumidor.",
+      "score": 6.5,
       "setores": [
         "transversal",
-        "comercio",
-        "servicos"
+        "ecommerce",
+        "servicos",
+        "construcao"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Expansão logística e digitalização no e-commerce",
-      "texto": "A Shopee expandiu sua rede logística com 10 novos centros de distribuição no Brasil, visando entregas mais rápidas. A digitalização e o e-commerce continuam a transformar o varejo. [cite: 12 (previous step), 20 (previous step), 22 (previous step), 27 (previous step), 28 (previous step)]",
-      "score": 7.0,
+      "tema": "Avanço da IA e Digitalização",
+      "texto": "IA e automação são centrais no e-commerce e serviços. Novas ferramentas digitais impulsionam eficiência. Tecnologia em rastreabilidade e bioenergia no agro.",
+      "score": 8.0,
       "setores": [
         "ecommerce",
-        "comercio",
-        "servicos"
+        "servicos",
+        "industria",
+        "agro"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Impacto do clima e geopolítica nas commodities agrícolas",
-      "texto": "As condições climáticas nos EUA e as tensões geopolíticas no Oriente Médio afetam os preços do petróleo e as cotações da soja, influenciando o mercado agrícola global. [cite: 29 (previous step), 35 (previous step), 36 (previous step)]",
-      "score": 5.5,
+      "tema": "Transição Energética e Sustentabilidade",
+      "texto": "Operação de usina a biometano e debates sobre energias renováveis. Período seco impacta geração hídrica e mantém bandeira amarela.",
+      "score": 7.0,
       "setores": [
+        "servicos",
+        "industria",
         "agro",
         "transversal"
       ]
@@ -1092,20 +565,23 @@
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Regulamentação e conformidade fiscal no e-commerce",
-      "texto": "A Shopee implementou novas regras de faturamento de comissões para afiliados PJ a partir de 1º de agosto, buscando maior conformidade fiscal e transparência financeira. [cite: 22 (previous step)]",
-      "score": 6.0,
+      "tema": "Regulamentação e Conformidade",
+      "texto": "Regulamentação de marketplaces (DSA) e antitruste do Google. Esforço regulatório na abertura do mercado de energia. Programa de recompra de ações da MRV em conformidade.",
+      "score": 7.0,
       "setores": [
-        "ecommerce"
+        "ecommerce",
+        "servicos",
+        "transversal",
+        "construcao"
       ]
     }
   ],
   "kpis": [
     {
       "label": "SELIC",
-      "valor": "14,25% a.a.",
-      "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 04/08/2026",
+      "valor": "14,00% a.a.",
+      "cor": "up",
+      "sub": "Taxa básica de juros · BCB/SGS · 06/08/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -1125,9 +601,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,11",
+      "valor": "R$ 5,12",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 04/08/2026",
+      "sub": "Dólar PTAX venda · BCB · 05/08/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -1215,6 +691,20 @@
       "acum": null,
       "flow": false,
       "unit": "Mt"
+    },
+    {
+      "setor": "ecommerce",
+      "setorLabel": "E-commerce",
+      "label": "E-commerce (Mercado Livre)",
+      "valor": "+50%",
+      "cor": "up",
+      "sub": "Receita líquida e rendimentos financeiros · variação sobre igual período do ano anterior · estimativa de mercado · fonte Mercado Livre · 2º Tri/2026",
+      "ref": "2º Tri/2026",
+      "pt": 50.0,
+      "acum": null,
+      "flow": true,
+      "unit": "%",
+      "mkt": true
     }
   ],
   "pressoes_ipca": {
@@ -1276,7 +766,7 @@
       "fornecedores": 8,
       "compradores": 6,
       "substitutos": 5,
-      "nota": "A rivalidade é alta e o poder dos fornecedores de insumos é significativo, impactando custos."
+      "nota": "Forte rivalidade e poder de fornecedores, com retração da demanda e aumento de custos."
     },
     "comercio": {
       "rivalidade": 8,
@@ -1284,7 +774,7 @@
       "fornecedores": 5,
       "compradores": 8,
       "substitutos": 7,
-      "nota": "Alta rivalidade e poder de barganha dos compradores, com facilidade de substituição de produtos."
+      "nota": "Alta rivalidade e poder de barganha dos compradores, com entrada de novos modelos de varejo."
     },
     "servicos": {
       "rivalidade": 7,
@@ -1292,7 +782,7 @@
       "fornecedores": 5,
       "compradores": 6,
       "substitutos": 6,
-      "nota": "Rivalidade moderada e entrada de novos players, com clientes buscando diferenciação e valor."
+      "nota": "Rivalidade moderada, com crescente impacto da digitalização e regulamentação."
     },
     "agro": {
       "rivalidade": 6,
@@ -1300,7 +790,7 @@
       "fornecedores": 7,
       "compradores": 7,
       "substitutos": 3,
-      "nota": "Setor com barreiras de entrada, mas com forte influência de fornecedores de insumos e compradores de commodities."
+      "nota": "Poder de fornecedores (fertilizantes) e compradores (commodities) é elevado, com barreiras para novos entrantes."
     },
     "construcao": {
       "rivalidade": 6,
@@ -1308,7 +798,7 @@
       "fornecedores": 7,
       "compradores": 6,
       "substitutos": 3,
-      "nota": "Rivalidade acirrada e dependência de fornecedores de materiais, com substitutos limitados para o produto final."
+      "nota": "Poder de fornecedores de materiais e custos elevados, com rivalidade e entrada moderadas."
     },
     "ecommerce": {
       "rivalidade": 9,
@@ -1316,7 +806,7 @@
       "fornecedores": 6,
       "compradores": 9,
       "substitutos": 7,
-      "nota": "Extrema rivalidade e baixo custo de entrada, com alto poder dos compradores e muitas opções de substituição."
+      "nota": "Extrema rivalidade e alto poder dos compradores, com facilidade de entrada e muitos substitutos."
     }
   },
   "analise": {
@@ -1324,156 +814,156 @@
       "acoes": [
         {
           "ico": "💸",
-          "txt": "Monitore a decisão do Copom sobre a Selic (4-5/ago), crucial para o custo de capital."
-        },
-        {
-          "ico": "📈",
-          "txt": "Acompanhe as projeções de inflação do Focus, que seguem acima da meta para 2026."
+          "txt": "Monitore de perto os indicadores de inflação (IPCA) e juros (SELIC) para antecipar movimentos de política monetária."
         },
         {
           "ico": "🌍",
-          "txt": "Avalie o impacto das tensões geopolíticas no Oriente Médio sobre preços de energia e commodities."
-        },
-        {
-          "ico": "💼",
-          "txt": "Considere a melhora no mercado de trabalho (desocupação em 5,4%) como suporte ao consumo."
+          "txt": "Avalie o impacto das tensões geopolíticas no Oriente Médio e possíveis tarifas dos EUA sobre cadeias de suprimentos e custos."
         },
         {
           "ico": "📊",
-          "txt": "Analise os dados de confiança empresarial da FGV para entender o sentimento dos negócios."
+          "txt": "Utilize sondagens de confiança (FGV/IBRE) para calibrar expectativas de demanda e investimento em todos os setores."
+        },
+        {
+          "ico": "💡",
+          "txt": "Invista em digitalização e IA para otimizar processos e reduzir custos, mitigando a desaceleração da atividade econômica."
+        },
+        {
+          "ico": "⚖️",
+          "txt": "Acompanhe a evolução da reforma tributária e novas regulamentações para entender seus impactos setoriais."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Como a queda da produção e novas tarifas dos EUA impactarão a competitividade industrial?",
-        "quote": "O PMI Industrial do Brasil caiu para 47,5 em julho, indicando a contração mais rápida desde fevereiro. [cite: 3 (previous step), 49 (previous step)]",
+        "prov": "Como a indústria pode reverter a queda acentuada nos novos pedidos e a retração da produção?",
+        "quote": "O PMI industrial do Brasil caiu para 47,5 pontos em julho, a maior queda nos novos pedidos desde abril de 2023.",
         "edi": [
-          "O setor industrial enfrenta um ambiente desafiador, com o PMI de manufatura registrando forte contração em julho, impulsionada por uma queda acentuada nas novas encomendas, tanto domésticas quanto internacionais. Empresas estão cortando produção e empregos, embora as pressões de custos tenham recuado, permanecendo elevadas. [cite: 3 (previous step)]",
-          "A confiança na indústria piorou em julho, com preocupações sobre novas tarifas de importação dos Estados Unidos, o que pode agravar a perda de competitividade. No entanto, o IPP de junho mostrou uma queda geral nos preços ao produtor, com destaque para o avanço no setor de móveis. [cite: 48 (previous step), 30, 7 (previous step), 10 (previous step), 13 (previous step), 17 (previous step), 31 (previous step)]"
+          "O setor industrial enfrenta um ambiente operacional desafiador, com a queda do PMI para 47,5 pontos em julho, indicando retração. A demanda interna e externa diminuiu, levando à redução da produção e do emprego.",
+          "As pressões inflacionárias nos custos de insumos, como eletrônicos e combustíveis, continuam elevadas, embora a taxa de inflação de custos tenha desacelerado. A guerra no Oriente Médio e a concorrência global contribuem para o cenário adverso."
         ],
         "acoes": [
           {
             "ico": "⚡",
-            "txt": "Revise cadeias de suprimentos para mitigar riscos de tarifas e choques externos."
+            "txt": "Reavalie estratégias de precificação e negociação com fornecedores para mitigar o impacto dos custos elevados."
+          },
+          {
+            "ico": "📈",
+            "txt": "Busque novos mercados e diversifique a base de clientes para compensar a retração da demanda interna e externa."
           },
           {
             "ico": "🏭",
-            "txt": "Invista em eficiência operacional para compensar pressões de custos elevadas."
-          },
-          {
-            "ico": "🤝",
-            "txt": "Busque novos mercados e parcerias para diversificar a demanda e reduzir dependência."
+            "txt": "Invista em automação e eficiência operacional para reduzir custos e aumentar a competitividade em um cenário de demanda fraca."
           }
         ]
       },
       "comercio": {
-        "prov": "O Dia dos Pais será suficiente para reverter a cautela do consumidor e o endividamento?",
-        "quote": "O varejo paulista projeta alta tímida de 0,7% em agosto, apesar do Dia dos Pais. [cite: 4 (previous step), 5 (previous step), 8 (previous step), 11 (previous step)]",
+        "prov": "Quais estratégias o comércio deve adotar para lidar com a cautela do consumidor e o aumento da inadimplência?",
+        "quote": "O Índice Cielo/ICVA e pesquisas da CNDL/SPC indicam cautela do consumidor e aumento da inadimplência.",
         "edi": [
-          "O comércio varejista enfrenta um cenário de cautela do consumidor, com o varejo paulista projetando uma alta tímida de 0,7% em agosto, mesmo com o Dia dos Pais. A maioria das PMEs hesita em investir em ações promocionais para a data, citando endividamento familiar e juros elevados como fatores de contenção do consumo. [cite: 4 (previous step), 5 (previous step), 8 (previous step), 11 (previous step), 15 (previous step), 30 (previous step), 33 (previous step), 37 (previous step), 38 (previous step)]",
-          "Enquanto farmácias e perfumarias e lojas de roupas esperam crescimento, bens duráveis como móveis e eletroeletrônicos devem registrar queda. A Pesquisa Mensal de Comércio (PMC) de maio mostrou um crescimento de 0,1% nas vendas, após uma queda em abril. [cite: 4 (previous step), 8 (previous step), 11 (previous step), 13, 14, 18, 19, 26]"
+          "A cautela do consumidor e o endividamento familiar continuam sendo fatores de risco para o comércio. O aumento da inadimplência de PMEs pressiona o acesso a crédito, afetando a capacidade de investimento e capital de giro.",
+          "Apesar dos desafios, o e-commerce continua a crescer, com o Mercado Livre registrando receita recorde. A digitalização e a oferta de soluções de pagamento flexíveis podem impulsionar as vendas."
         ],
         "acoes": [
           {
             "ico": "🛒",
-            "txt": "Ofereça condições de pagamento flexíveis para atrair consumidores endividados."
+            "txt": "Ofereça condições de pagamento flexíveis e programas de fidelidade para atrair e reter clientes."
           },
           {
-            "ico": "🎁",
-            "txt": "Crie campanhas de marketing direcionadas e personalizadas para datas sazonais."
+            "ico": "💳",
+            "txt": "Analise o perfil de crédito dos clientes e gerencie o risco de inadimplência, especialmente para PMEs."
           },
           {
-            "ico": "💡",
-            "txt": "Explore nichos de mercado e produtos de 'autocuidado' com demanda crescente."
+            "ico": "📱",
+            "txt": "Invista em canais digitais e e-commerce para alcançar consumidores que buscam conveniência e preços competitivos."
           }
         ]
       },
       "servicos": {
-        "prov": "A percepção de enfraquecimento da demanda no setor de serviços é um sinal de alerta para o segundo semestre?",
-        "quote": "A confiança empresarial em Serviços piorou em julho, com empresas percebendo enfraquecimento da demanda. [cite: 48 (previous step), 30]",
+        "prov": "Como o setor de serviços pode se adaptar à contração da atividade e aos custos de energia elevados?",
+        "quote": "O PMI de serviços caiu para 49,7 pontos em julho, a primeira contração em nove meses, enquanto a bandeira tarifária amarela persiste.",
         "edi": [
-          "O setor de serviços registrou uma piora na confiança empresarial em julho, com empresas percebendo um enfraquecimento da demanda. Este movimento contribuiu para a queda geral da confiança nos negócios, apesar de outros setores mostrarem resiliência. [cite: 48 (previous step), 30]",
-          "A FGV IBRE divulgou a Síntese das Sondagens de julho, que detalha o cenário de confiança. A divulgação da Sondagem de Serviços de agosto será um indicador importante para confirmar as tendências de curto prazo no setor. [cite: 15, 30, 21 (previous step), 44 (previous step)]"
+          "O setor de serviços registrou sua primeira contração em nove meses em julho, com o PMI caindo para 49,7 pontos. A retração da demanda e as pressões inflacionárias são os principais desafios.",
+          "A manutenção da bandeira tarifária amarela em agosto significa custos de energia elétrica mais altos para empresas e consumidores. Investimentos em infraestrutura de energia e fontes renováveis são pautas importantes."
         ],
         "acoes": [
           {
             "ico": "🤖",
-            "txt": "Invista em digitalização e automação para otimizar processos e reduzir custos."
+            "txt": "Explore a automação de processos e a inteligência artificial para otimizar operações e reduzir custos."
           },
           {
-            "ico": "👨‍💻",
-            "txt": "Desenvolva novos serviços ou adapte os existentes para atender demandas emergentes."
+            "ico": "⚡",
+            "txt": "Avalie a eficiência energética e a possibilidade de migrar para o mercado livre de energia ou investir em geração própria."
           },
           {
-            "ico": "📈",
-            "txt": "Monitore de perto os indicadores de demanda e confiança para ajustes rápidos na estratégia."
+            "ico": "💼",
+            "txt": "Adapte a oferta de serviços às novas demandas do mercado, focando em soluções de maior valor agregado e digitalização."
           }
         ]
       },
       "agro": {
-        "prov": "Como as condições climáticas globais e tensões geopolíticas afetarão a safra e os preços agrícolas no Brasil?",
-        "quote": "Soja recua em Chicago com clima favorável nos EUA e pressão do petróleo. [cite: 36 (previous step)]",
+        "prov": "Quais os impactos da queda nas entregas de fertilizantes e como o setor pode se preparar para a próxima safra?",
+        "quote": "As entregas de fertilizantes caíram 14,7% em maio, e a produção nacional recuou 26%, impactando a safra 2026/2027.",
         "edi": [
-          "O agronegócio global está sob influência das condições climáticas nos EUA, que mostram desenvolvimento favorável para soja e milho, e das tensões geopolíticas no Oriente Médio, que impactam os preços do petróleo. Isso levou à queda dos futuros da soja em Chicago. [cite: 29 (previous step), 35 (previous step), 36 (previous step)]",
-          "No Brasil, as cotações da soja recuaram no fim de julho, mas as médias mensais foram as maiores de 2026. O milho também teve alta no mês, enquanto o feijão carioca foi pressionado pela maior oferta. O mercado de boi gordo interno mostra-se firme. [cite: 31, 32, 29, 34 (previous step)]"
+          "O setor agropecuário enfrenta desafios com a queda nas entregas de fertilizantes em maio e a retração da produção nacional. Fatores geopolíticos, restrição de crédito e juros elevados contribuem para este cenário.",
+          "Eventos como o Congresso Brasileiro de Fertilizantes e o Congresso Brasileiro do Agronegócio são cruciais para debater soluções e estratégias. A inovação em bioenergia e tecnologia para rastreabilidade são oportunidades."
         ],
         "acoes": [
           {
             "ico": "🌾",
-            "txt": "Acompanhe de perto os relatórios de safra globais e as cotações internacionais de commodities."
+            "txt": "Monitore os preços dos fertilizantes e planeje as compras com antecedência para a próxima safra."
           },
           {
-            "ico": "💰",
-            "txt": "Gerencie riscos de câmbio e preços de insumos, considerando a volatilidade do petróleo."
+            "ico": "🌱",
+            "txt": "Busque alternativas sustentáveis e tecnologias para otimizar o uso de insumos e reduzir a dependência externa."
           },
           {
-            "ico": "🚜",
-            "txt": "Explore programas de incentivo e suporte técnico, como o CAF, para agricultura familiar."
+            "ico": "🤝",
+            "txt": "Participe de eventos do setor para networking e acesso a novas tecnologias e informações de mercado."
           }
         ]
       },
       "construcao": {
-        "prov": "Apesar do avanço na confiança, os custos da construção continuarão a pressionar o setor?",
-        "quote": "O INCC-DI registrou alta de 0,62% em julho, acumulando 6,40% em 12 meses.",
+        "prov": "Como o setor da construção civil pode manter o ritmo de crescimento diante da pressão de custos e juros?",
+        "quote": "O CUB Residencial Médio de SC atingiu R$ 3.151,24/m² em agosto, com variação mensal de 0,95%, refletindo a pressão de custos.",
         "edi": [
-          "O setor da construção civil demonstrou um avanço na confiança em julho, contrastando com a piora em outros setores. No entanto, os custos continuam a ser um fator relevante, com o INCC-DI registrando alta de 0,62% em julho e acumulando 6,40% em 12 meses. [cite: 48 (previous step), 30, 23, 24]",
-          "O INCC-DI é um indicador crucial para o setor, medindo a variação de preços de materiais, serviços e mão de obra. A atualização metodológica de 2023 permite uma análise mais detalhada por padrões construtivos, auxiliando na gestão de projetos."
+          "O Custo Unitário Básico (CUB) na construção civil continua em alta, com o CUB Residencial Médio de Santa Catarina registrando R$ 3.151,24/m² em agosto. Isso indica pressão nos custos de materiais e mão de obra.",
+          "Apesar dos desafios, empresas como a MRV continuam com suas agendas de RI, com divulgação de resultados e programas de recompra de ações, sinalizando confiança nos fundamentos."
         ],
         "acoes": [
           {
             "ico": "🏗️",
-            "txt": "Monitore o INCC-DI e INCC-M para gerenciar custos de projetos e reajustes contratuais."
+            "txt": "Otimize a gestão de projetos e o planejamento financeiro para absorver o aumento dos custos de construção."
           },
           {
-            "ico": "💲",
-            "txt": "Busque otimização de processos e negociação com fornecedores para mitigar a alta de custos."
+            "ico": "💰",
+            "txt": "Explore linhas de crédito imobiliário e parcerias estratégicas para viabilizar novos empreendimentos."
           },
           {
-            "ico": "🤝",
-            "txt": "Aproveite o avanço da confiança para prospectar novos projetos e investimentos no setor."
+            "ico": "innov",
+            "txt": "Invista em tecnologias e métodos construtivos inovadores para aumentar a eficiência e reduzir o desperdício."
           }
         ]
       },
       "ecommerce": {
-        "prov": "A expansão logística da Shopee e a nova regulamentação de afiliados sinalizam um mercado mais maduro e competitivo?",
-        "quote": "Shopee expande rede logística no Brasil com 10 novos centros de distribuição em 2026. [cite: 12 (previous step), 20 (previous step), 22 (previous step), 27 (previous step), 28 (previous step)]",
+        "prov": "Quais as oportunidades e desafios para o e-commerce em um cenário de forte concorrência e crescente regulamentação?",
+        "quote": "O Mercado Livre registrou receita recorde de US$ 10,2 bilhões no 2º trimestre, enquanto a Shopee expande sua logística com 10 novos CDs.",
         "edi": [
-          "O setor de e-commerce continua em expansão, com a Shopee anunciando 10 novos centros de distribuição no Brasil em 2026, visando entregas mais rápidas e suporte aos vendedores. Essa expansão já resultou na redução do tempo médio de entrega no primeiro trimestre. [cite: 12 (previous step), 20 (previous step), 22 (previous step), 27 (previous step), 28 (previous step)]",
-          "No entanto, o ambiente regulatório também se ajusta, com a Shopee implementando novas regras de faturamento de comissões para afiliados PJ a partir de 1º de agosto, buscando maior conformidade fiscal. PMEs do e-commerce, assim como as do comércio tradicional, demonstram cautela para o Dia dos Pais. [cite: 22 (previous step), 15 (previous step), 30 (previous step), 33 (previous step), 37 (previous step), 38 (previous step)]"
+          "O e-commerce brasileiro demonstra forte crescimento, com o Mercado Livre atingindo receita recorde e a Shopee expandindo significativamente sua malha logística com 10 novos centros de distribuição.",
+          "Apesar do otimismo, o setor enfrenta desafios regulatórios, como a multa da UE ao AliExpress, e a necessidade de adaptação a novas ferramentas e tecnologias, incluindo IA e automação."
         ],
         "acoes": [
           {
             "ico": "📦",
-            "txt": "Invista em logística e otimização de entregas para melhorar a experiência do cliente."
+            "txt": "Invista em infraestrutura logística e fulfillment para garantir entregas rápidas e eficientes."
           },
           {
-            "ico": "⚖️",
-            "txt": "Adapte-se às novas regulamentações fiscais e de faturamento para garantir conformidade."
+            "ico": "📈",
+            "txt": "Explore novas tecnologias, como IA e automação, para otimizar a experiência do cliente e a gestão de vendas."
           },
           {
-            "ico": "📱",
-            "txt": "Desenvolva estratégias de marketing digital e promoções eficazes para datas sazonais."
+            "ico": "🌐",
+            "txt": "Monitore as regulamentações de comércio eletrônico e cross-border para garantir a conformidade e evitar penalidades."
           }
         ]
       }
@@ -1495,7 +985,7 @@
       "relevancia": 100.0,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "Não houve notícias diretas sobre aumento dos custos de energia elétrica para PMEs nesta semana.",
+      "ultima_observacao": "Manutenção da bandeira tarifária amarela em agosto confirma custos elevados de energia elétrica para PMEs.",
       "periodo_observacao": "2026-W32",
       "data_identificacao": "2026-07-06",
       "origem": "real"
@@ -1514,11 +1004,115 @@
       ],
       "status": "materializado",
       "relevancia": 100.0,
-      "severidade": 9.5,
-      "iminencia": 9.5,
-      "ultima_observacao": "CNI alerta para o aumento dos custos de energia elétrica na indústria. ANEEL homologa leilão de transmissão, mas o custo ainda é alto.",
-      "periodo_observacao": "2026-W31",
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "A ANEEL manteve a bandeira tarifária amarela em agosto, confirmando o custo elevado da energia.",
+      "periodo_observacao": "2026-W32",
       "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "tipo": "risco",
+      "titulo": "Safra e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "Queda de 14,7% nas entregas de fertilizantes em maio e retração de 26% na produção nacional impactam a safra 2026/2027.",
+      "periodo_observacao": "2026-W32",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 93.5,
+      "severidade": 9.0,
+      "iminencia": 8.8,
+      "ultima_observacao": "PMI de serviços em contração (49,7 em julho) e PMI industrial em forte queda (47,5 em julho) reforçam cautela do consumidor e impacto na atividade.",
+      "periodo_observacao": "2026-W32",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
+      "tipo": "risco",
+      "titulo": "Consumo e varejo",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "construcao",
+        "industria",
+        "servicos",
+        "transversal",
+        "ecommerce",
+        "agro"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "PMI de serviços em contração e industrial em forte queda indicam desaceleração do consumo e varejo.",
+      "periodo_observacao": "2026-W32",
+      "data_identificacao": "2026-01-12",
+      "origem": "real"
+    },
+    {
+      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
+      "tipo": "risco",
+      "titulo": "Atividade e indústria (PIM/PMI)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "agro",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "PMI industrial do Brasil caiu para 47,5 pontos em julho, indicando forte retração da atividade.",
+      "periodo_observacao": "2026-W32",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29",
+      "tipo": "oportunidade",
+      "titulo": "Serviços (PMS)",
+      "dimensao": "E",
+      "setores": [
+        "servicos",
+        "ecommerce",
+        "comercio",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "PMI de serviços do Brasil caiu para 49,7 pontos em julho, a primeira contração em nove meses.",
+      "periodo_observacao": "2026-W32",
+      "data_identificacao": "2026-01-05",
       "origem": "real"
     },
     {
@@ -1545,126 +1139,26 @@
       "origem": "real"
     },
     {
-      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
       "tipo": "risco",
-      "titulo": "Safra e agro",
+      "titulo": "Construção e custos",
       "dimensao": "E",
       "setores": [
+        "construcao",
+        "transversal",
+        "industria",
         "agro",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 91.5,
-      "severidade": 9.0,
-      "iminencia": 8.0,
-      "ultima_observacao": "USDA reporta condições estáveis para soja e leve piora para milho nos EUA, com desenvolvimento acima da média. Soja recua em Chicago. [cite: 29 (previous step), 36 (previous step)]",
-      "periodo_observacao": "2026-W32",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29",
-      "tipo": "oportunidade",
-      "titulo": "Serviços (PMS)",
-      "dimensao": "E",
-      "setores": [
-        "servicos",
-        "ecommerce",
         "comercio",
-        "transversal",
-        "industria",
-        "construcao"
+        "servicos",
+        "ecommerce"
       ],
       "status": "em_curso",
-      "relevancia": 91.5,
-      "severidade": 9.0,
-      "iminencia": 8.0,
-      "ultima_observacao": "Confiança empresarial em Serviços piora em julho, com empresas percebendo enfraquecimento da demanda. [cite: 48 (previous step), 30]",
+      "relevancia": 92.05,
+      "severidade": 8.8,
+      "iminencia": 8.5,
+      "ultima_observacao": "CUB Residencial Médio de SC em R$ 3.151,24/m² em agosto, com variação mensal de 0,95%, indicando pressão contínua nos custos.",
       "periodo_observacao": "2026-W32",
       "data_identificacao": "2026-01-05",
-      "origem": "real"
-    },
-    {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
-      "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 89.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "Endividamento familiar (74,8% em SP) e juros elevados continuam a segurar o consumo, impactando o varejo e a confiança das PMEs. [cite: 4 (previous step), 8 (previous step), 11 (previous step)]",
-      "periodo_observacao": "2026-W32",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
-      "tipo": "risco",
-      "titulo": "Consumo e varejo",
-      "dimensao": "E",
-      "setores": [
-        "comercio",
-        "construcao",
-        "industria",
-        "servicos",
-        "transversal",
-        "ecommerce",
-        "agro"
-      ],
-      "status": "em_curso",
-      "relevancia": 89.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "Varejo paulista projeta alta tímida de 0,7% em agosto. PMEs hesitam em investir no Dia dos Pais devido à cautela do consumidor. [cite: 4 (previous step), 5 (previous step), 8 (previous step), 11 (previous step), 15 (previous step), 30 (previous step), 33 (previous step), 37 (previous step), 38 (previous step)]",
-      "periodo_observacao": "2026-W32",
-      "data_identificacao": "2026-01-12",
-      "origem": "real"
-    },
-    {
-      "id": "cad38463-60e5-4e42-9065-539cd7060c1c",
-      "tipo": "risco",
-      "titulo": "Combustíveis e petróleo",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos",
-        "industria",
-        "agro",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 89.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "Preços do petróleo caem quase 6%, impactando mercados de commodities e influenciando a queda dos futuros da soja. [cite: 36 (previous step)]",
-      "periodo_observacao": "2026-W32",
-      "data_identificacao": "2026-03-16",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 89.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "Novas tarifas dos EUA sobre produtos brasileiros preocupam a indústria, contribuindo para a queda da confiança empresarial. [cite: 48 (previous step), 30]",
-      "periodo_observacao": "2026-W32",
-      "data_identificacao": "2026-07-02",
       "origem": "real"
     }
   ]
