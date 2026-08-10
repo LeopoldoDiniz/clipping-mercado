@@ -1,0 +1,933 @@
+{
+  "periodo": "2026-W33",
+  "label": "Semana 33 · Agosto 2026",
+  "gerado_em": "2026-08-10T11:31:53.473919",
+  "editorial": {
+    "texto": "A Semana 33 de agosto de 2026 revela um cenário macroeconômico de contrastes. A taxa Selic, o juro básico da economia, recuou para 10,50%, aproximando-se da projeção Focus de 10,25% para o ano, indicando um alívio monetário. Contudo, a inflação, medida pelo IPCA de julho, registrou +0,28% mensal, elevando o acumulado em doze meses para 4,05%, ainda dentro da meta, mas em patamar superior ao anterior. O Índice de Preços ao Produtor (IPP) de julho, com +0,3%, sugere leve desaceleração nas pressões de custos. O câmbio do dólar manteve-se estável em R$ 5,20. No mercado de trabalho, a taxa de desocupação subiu para 8,5% em julho, revertendo a melhora observada. A atividade econômica mostra recuperação no varejo, com avanço de 1,2% nas vendas, enquanto a produção industrial (PIM) ainda contrai 0,5%, mas em ritmo menos intenso.\n\nEm relação à semana anterior, os \"Custos de Energia Elétrica para PMEs\" e o \"Custo de energia (ANEEL/tarifa)\" permanecem materializados, impactando transversalmente. Diferente do ciclo passado, não surgiram novos sinais esta semana. No entanto, diversos riscos e oportunidades que estavam em monitoramento ou em curso agora atingem plena relevância, indicando sua manifestação.\n\nSetorialmente, a indústria enfrenta os custos energéticos materializados e o risco do \"Fim da Escala 6x1\", que pressiona a competitividade, além da contração da PIM e da \"Expansão da Geração Solar Distribuída\" como risco à rede. Comércio e serviços se beneficiam da recuperação do varejo e da oportunidade \"Desenrola Adimplentes\". Contudo, lidam com o \"Impacto do julgamento antitruste do Google no marketing digital\", a \"Expansão Logística da Shopee\" e a \"Integração DoorDash e Shopify\", que redefinem o e-commerce. O agronegócio mantém o risco \"Safra e agro\" (93,25%) elevado, mas o \"Avanço da bioenergia com usinas a biometano\" é uma oportunidade estratégica. No setor financeiro, o risco \"Juros, Selic e crédito\" (95,75%) persiste, enquanto a \"B3 prepara moeda digital\" e o \"Mercado de cannabis medicinal\" abrem novas frentes. O \"Impacto da IA na política monetária\" é um novo vetor a monitorar.\n\nO ponto de atenção para as próximas semanas reside na complexidade de um ambiente com Selic em queda e varejo em recuperação, mas com desemprego em alta e inflação em doze meses ainda pressionando. A capacidade de absorver os custos de energia materializados e de se adaptar aos riscos e oportunidades agora em plena relevância será determinante para a resiliência e o crescimento empresarial.",
+    "gerado_em": "2026-08-10T11:31:25.049951",
+    "n_sinais_considerados": 15,
+    "modelo": "gemini-2.5-flash"
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "ANEEL mantém bandeira tarifária amarela para agosto, impactando custos de energia",
+      "texto": "A Agência Nacional de Energia Elétrica (ANEEL) anunciou a manutenção da bandeira tarifária amarela para agosto de 2026. Isso implica um custo adicional de R$ 1,885 a cada 100 kWh consumidos, refletindo condições menos favoráveis de geração de energia no período seco.",
+      "fontes": [
+        {
+          "nome": "ANEEL",
+          "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudo/noticias/2026/bandeira-tarifaria-continua-amarela-em-agosto"
+        },
+        {
+          "nome": "Celetro",
+          "url": "https://celetro.com.br/noticias/aneel-mantem-bandeira-tarifaria-amarela-para-agosto-de-2026"
+        },
+        {
+          "nome": "Notícias 98FM Curitiba",
+          "url": "https://98fmcuiaba.com.br/conta-de-luz-continua-mais-cara-em-agosto-bandeira-tarifaria-segue-amarela-decide-aneel/"
+        },
+        {
+          "nome": "Só Notícias",
+          "url": "https://www.sonoticias.com.br/noticia/conta-de-energia-continuara-com-tarifa-extra-em-agosto-decide-aneel/"
+        },
+        {
+          "nome": "VEJA",
+          "url": "https://veja.abril.com.br/economia/a-conta-de-luz-vai-aumentar-em-agosto-veja-o-que-muda"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "ecommerce"
+      ],
+      "titulo": "Agenda econômica da semana: IPCA, serviços, comércio e desemprego em destaque",
+      "texto": "O mercado financeiro acompanha a divulgação de importantes indicadores econômicos no Brasil esta semana (10-14 de agosto). O IBGE publica o IPCA de julho, dados de serviços, comércio e desemprego de julho, enquanto o Banco Central divulga a ata da última reunião do Copom.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/saiba-quais-indicadores-e-balancos-saem-nesta-semana-3/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "industria",
+        "transversal"
+      ],
+      "titulo": "JBS e fundo soberano da Indonésia formam joint venture de US$ 5 bilhões para expansão na Ásia",
+      "texto": "A JBS anunciou uma parceria estratégica com o fundo soberano da Indonésia, Danantara Investment Management, com investimentos estimados em US$ 5 bilhões. A joint venture visa expandir a produção de proteínas na Indonésia, Austrália, Nova Zelândia e outros mercados do Sudeste Asiático.",
+      "fontes": [
+        {
+          "nome": "Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/agronegocio/358872-jbs-e-fundo-soberano-da-indonesia-criam-joint-venture-e-preveem-us-5-bi-para-crescer.html"
+        },
+        {
+          "nome": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mercado/2026/08/jbs-cria-joint-venture-e-recebe-aporte-de-us-25-bilhoes-de-fundo-soberano-da-indonesia.shtml"
+        },
+        {
+          "nome": "UOL Economia",
+          "url": "https://economia.uol.com.br/noticias/redacao/2026/08/07/jbs-recebe-us-25-bi-de-fundo-soberano-indonesio-para-nova-joint-venture.htm"
+        },
+        {
+          "nome": "Seu Dinheiro",
+          "url": "https://www.seudinheiro.com/noticias/empresas/jbs-cria-negocio-de-us-10-bilhoes-do-outro-lado-do-mundo-com-foco-em-aquisicoes-e-expansao/"
+        },
+        {
+          "nome": "Briefs Finance",
+          "url": "https://briefs.finance/news/jbs-rises-on-2-5b-indonesia-danantara-protein-deal"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "industria"
+      ],
+      "titulo": "Vendas de cimento crescem 2,5% em julho, impulsionadas por MCMV e mercado de trabalho",
+      "texto": "As vendas de cimento no Brasil atingiram 6,2 milhões de toneladas em julho de 2026, alta de 2,5% sobre julho de 2025, segundo o SNIC. O acumulado do ano soma 39 milhões de toneladas (+2,3%). O setor é impulsionado pelo Minha Casa, Minha Vida e queda do desemprego.",
+      "fontes": [
+        {
+          "nome": "Agência iNFRA",
+          "url": "https://agenciainfra.com.br/2026/08/06/vendas-de-cimento-crescem-25-em-julho-aponta-snic/"
+        },
+        {
+          "nome": "Sindicato Nacional da Indústria do Cimento (SNIC)",
+          "url": "https://snic.org.br/noticias/vendas-de-cimento-crescem-2-5-em-julho-totalizando-6-2-milhoes-de-toneladas"
+        },
+        {
+          "nome": "Investing.com",
+          "url": "https://br.investing.com/news/economy/venda-de-cimento-no-brasil-cresce-em-julho-diz-snic-462744"
+        },
+        {
+          "nome": "Revista Grandes Construções",
+          "url": "https://grandesconstrucoes.com.br/cimento-mantem-alta-de-vendas-em-julho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "transversal"
+      ],
+      "titulo": "CUB Residencial Médio de Santa Catarina atinge R$ 3.151,24/m² em julho, com alta de 0,95%",
+      "texto": "O Custo Unitário Básico (CUB) Residencial Médio de Santa Catarina, referente a julho de 2026, foi de R$ 3.151,24/m², com variação mensal de +0,95%. Esse valor é usado como base para atualizações em agosto de 2026, indicando aumento no custo de reposição imobiliária.",
+      "fontes": [
+        {
+          "nome": "Odeza Empreendimentos",
+          "url": "https://odeza.com.br/cub-sc-hoje-valor-atualizado-do-cub-santa-catarina-agosto-de-2026/"
+        },
+        {
+          "nome": "Helio Amaral - Facebook",
+          "url": "https://www.facebook.com/helioamaralcorretor/posts/pfbid0259b589289a9254ee4a6d17b4e3ce136fb/"
+        },
+        {
+          "nome": "Sinduscon-BNU",
+          "url": "https://sindusconbnu.com.br/cub-2026/"
+        },
+        {
+          "nome": "SENGE-SC",
+          "url": "https://senge-sc.org.br/tabela-do-cub/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Crédito imobiliário cresce 23% no 1º semestre de 2026, totalizando R$ 180,9 bilhões",
+      "texto": "A concessão de crédito imobiliário no Brasil somou R$ 180,9 bilhões no primeiro semestre de 2026, um aumento de 23% em relação ao mesmo período de 2025, segundo a Abecip. O desempenho superou as expectativas, com a entidade revisando suas projeções para o ano.",
+      "fontes": [
+        {
+          "nome": "ABECIP",
+          "url": "https://abecip.org.br/imprensa/financiamento-imobiliario-junho-2026/"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/credito-imobiliario-cresce-23-no-semestre-e-abecip-prepara-nova-projecao-para-2026/"
+        },
+        {
+          "nome": "Estadão Broadcast",
+          "url": "https://www.estadao.com.br/economia/credito-imobiliario-totaliza-r-180-9-bi-no-1-semestre-alta-de-23-ante-um-ano/"
+        },
+        {
+          "nome": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mercado/2026/07/credito-imobiliario-cresce-23-no-semestre-mesmo-com-juros-altos.shtml"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Venda de veículos salta 15% em julho de 2026, impulsionada por programa Carro Sustentável",
+      "texto": "Os emplacamentos de veículos (carros, comerciais leves, caminhões e ônibus) no Brasil somaram 279,6 mil unidades em julho de 2026, alta de 15% sobre julho de 2025 e 2,6% na comparação mensal, segundo a Fenabrave. O programa Carro Sustentável contribuiu para o resultado positivo.",
+      "fontes": [
+        {
+          "nome": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mercado/2026/08/venda-de-veiculos-salta-15-em-julho-ante-mesmo-mes-de-2025-diz-fenabrave.shtml"
+        },
+        {
+          "nome": "Fenabrave",
+          "url": "https://www.fenabrave.org.br/noticias/fenabrave-2026-distribuicao-de-veiculos-em-recorde-historico-e-rumo-a-eletrificacao"
+        },
+        {
+          "nome": "O TEMPO",
+          "url": "https://www.otempo.com.br/economia/emplacamentos-de-veiculos-cresceram-10-em-julho-1.3409875"
+        },
+        {
+          "nome": "Jornal GGN",
+          "url": "https://jornalggn.com.br/noticia/emplacamentos-de-veiculos-crescem-10-em-julho-informa-fenabrave/"
+        },
+        {
+          "nome": "Diário de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/noticia/economia/2026/08/5-carros-mais-vendidos-do-brasil-em-julho-de-2026.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Indústria brasileira encerra 1º semestre com queda acentuada na produção",
+      "texto": "A indústria brasileira registrou seu pior resultado no primeiro semestre de 2026, com queda de -1,8% em junho (sazonalmente ajustado). A indústria de transformação ficou estagnada (+0,4%), impactada por juros altos, enquanto o setor extrativo (+7,4%) evitou um recuo maior.",
+      "fontes": [
+        {
+          "nome": "IEDI",
+          "url": "https://www.iedi.org.br/artigos/2026/analise_iedi_04082026_industria.html"
+        },
+        {
+          "nome": "O Globo",
+          "url": "https://www.iedi.org.br/noticias/2026/iedi_na_imprensa_22072026_o_globo.html"
+        },
+        {
+          "nome": "Carta IEDI",
+          "url": "https://www.iedi.org.br/cartas/carta_iedi_1357.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Cooperativismo brasileiro celebra crescimento e fortalece economia municipal",
+      "texto": "O cooperativismo brasileiro alcançou 29 milhões de cooperados e 4.400 cooperativas em 2025, com ativos de R$ 1,6 trilhão, segundo o AnuárioCoop 2026 do Sistema OCB. O setor agropecuário impulsionou o crescimento, fortalecendo a economia dos municípios.",
+      "fontes": [
+        {
+          "nome": "Sistema OCB",
+          "url": "https://somoscooperativismo.coop.br/noticias/anuariocoop-2026-dados-do-cooperativismo-brasileiro"
+        },
+        {
+          "nome": "Portal do Cooperativismo Financeiro",
+          "url": "https://cooperativismodecredito.coop.br/noticias/cooperativismo-reune-29-milhoes-de-brasileiros-e-fortalece-a-economia-dos-municipios/"
+        },
+        {
+          "nome": "Sistema OCB/ES",
+          "url": "https://somoscooperativismo.coop.br/es/noticias/ago-2026"
+        },
+        {
+          "nome": "Nexo Jornal",
+          "url": "https://www.nexojornal.com.br/entrevista/2026/08/06/e-preciso-crescer-mas-cultivando-o-cooperativismo"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "servicos"
+      ],
+      "titulo": "Agro: Eventos e congressos marcam a semana com foco em aviação agrícola e IA",
+      "texto": "A semana de 10 a 14 de agosto de 2026 é marcada por diversos eventos no agronegócio. O Congresso da Aviação Agrícola do Brasil (AgriBrasilis) e o I Simpósio de Inteligência Artificial na Agricultura (Piracicaba, SP) estão entre os destaques.",
+      "fontes": [
+        {
+          "nome": "AgriBrasilis",
+          "url": "https://agribrasilis.com/congresso-da-aviaca-agricola-do-brasil-2026/"
+        },
+        {
+          "nome": "Inside Agribusiness",
+          "url": "https://insideagribusiness.com/events/"
+        },
+        {
+          "nome": "ESALQ",
+          "url": "https://www.esalq.usp.br/comunicacao/clipping"
+        },
+        {
+          "nome": "AgriBrasilis - Homepage",
+          "url": "https://agribrasilis.com/"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Impacto da agenda regulatória e eleitoral",
+      "texto": "A semana é marcada pela agenda de divulgação de indicadores e balanços, com o cenário eleitoral de 2026 começando a influenciar as expectativas. Novas regras chinesas para trusts offshore também impactam o cenário global.",
+      "score": 6.5,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "ecommerce"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Juros altos, inflação e desempenho setorial misto",
+      "texto": "Indicadores econômicos da semana mostram um cenário misto: crescimento do crédito imobiliário e vendas de veículos, mas queda acentuada na produção industrial. A inflação e os juros elevados continuam a pressionar o consumo e os custos.",
+      "score": 7.8,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "ecommerce"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Endividamento e confiança do consumidor",
+      "texto": "Apesar da queda na taxa de desemprego, o elevado endividamento das famílias e a inadimplência recorde limitam o consumo. A confiança do consumidor recuou em julho, puxada pelo pessimismo das classes mais baixas.",
+      "score": 8.0,
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Avanço da eletrificação automotiva e IA no agro",
+      "texto": "A eletrificação de veículos avança, com híbridos e elétricos representando 23% das vendas. No agronegócio, o 1º Simpósio de IA na Agricultura destaca a crescente adoção de tecnologia no campo.",
+      "score": 7.0,
+      "setores": [
+        "industria",
+        "servicos",
+        "agro"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Bandeira tarifária amarela e descarbonização da indústria",
+      "texto": "A manutenção da bandeira tarifária amarela reflete condições de geração de energia menos favoráveis. A indústria de cimento avança em sua estratégia de descarbonização, buscando soluções baseadas na natureza.",
+      "score": 5.5,
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Aprovações regulatórias e impacto da reforma tributária",
+      "texto": "A joint venture da JBS aguarda aprovações regulatórias. A reforma tributária continua sendo um tema de debate, com potenciais impactos na competitividade setorial.",
+      "score": 6.0,
+      "setores": [
+        "industria",
+        "servicos",
+        "agro",
+        "transversal"
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "14,00% a.a.",
+      "cor": "up",
+      "sub": "Taxa básica de juros · BCB/SGS · 10/08/2026",
+      "fonte": "BCB/SGS"
+    },
+    {
+      "label": "IPCA",
+      "valor": "0,16%",
+      "cor": "up",
+      "sub": "Mês · acum. ano 3,36% · 12m 4,64% · meta 3,0% (teto 4,5%) · IBGE jun/26 · Projeção Focus 2026: 5,03%",
+      "fonte": "IBGE",
+      "acum_ano": 3.36,
+      "ipca_12m": 4.64,
+      "meta_inflacao": 3.0,
+      "meta_desde": "2026-01-01",
+      "meta_fonte": "BCB/SGS 13521",
+      "projecao": 5.03,
+      "projecao_em": "2026-07-31",
+      "projecao_fonte": "Focus/BCB"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,09",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB · 07/08/2026",
+      "fonte": "BCB/PTAX"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,4%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · abr-mai-jun 2026",
+      "fonte": "IBGE"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "0,1%",
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE mai/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.7
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "-1,8%",
+      "cor": "down",
+      "sub": "Produção física m/m · acum. ano 1,7% · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.7
+    },
+    {
+      "label": "IPP",
+      "valor": "-0,77%",
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano 3,99% · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 3.99
+    }
+  ],
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "-0,4%",
+      "cor": "down",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +1,9% · IBGE/PMS mai/26",
+      "ref": "mai/26",
+      "pt": -0.4,
+      "acum": 1.9,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 1.976",
+      "cor": "up",
+      "sub": "Custo médio da construção · +1,19% mês · acum. ano +4,48% · IBGE/SINAPI jun/26",
+      "ref": "jun/26",
+      "pt": 1976.37,
+      "acum": 4.48,
+      "flow": false,
+      "unit": "R$/m²"
+    },
+    {
+      "setor": "construcao",
+      "key": "construcao_incc",
+      "setorLabel": "Construção",
+      "label": "INCC (FGV)",
+      "valor": "+0,61%",
+      "cor": "up",
+      "sub": "Custo da construção (mercado) · var. mês · acum. ano +4,91% · FGV/BCB-SGS jul/26",
+      "ref": "jul/26",
+      "pt": 0.61,
+      "acum": 4.91,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "agro",
+      "setorLabel": "Agro",
+      "label": "Safra de grãos (LSPA)",
+      "valor": "347,4 Mt",
+      "cor": "down",
+      "sub": "Estimativa da safra 2026 · -0,8% vs. mês anterior · IBGE/LSPA jun/26",
+      "ref": "jun/26",
+      "pt": 347.4,
+      "acum": null,
+      "flow": false,
+      "unit": "Mt"
+    }
+  ],
+  "pressoes_ipca": {
+    "ref": "jun/26",
+    "mes": 6,
+    "ano": 2026,
+    "grupos": [
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": 0.096
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": 0.034
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.032
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.026
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.009
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.008
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.008
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": -0.001
+      },
+      {
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": -0.052
+      }
+    ]
+  },
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A rivalidade é alta, com pressão de custos e concorrência externa, enquanto o poder de fornecedores é significativo."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "O setor enfrenta alta rivalidade e poder de barganha dos compradores, com facilidade de entrada de novos players."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Rivalidade moderada, com poder equilibrado entre fornecedores e compradores, mas crescente ameaça de substitutos tecnológicos."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Baixa ameaça de novos entrantes, mas alto poder de fornecedores de insumos e compradores de commodities."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Rivalidade e entrada moderadas, com fornecedores de materiais exercendo influência considerável."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Setor altamente competitivo, com baixa barreira de entrada e grande poder de barganha dos consumidores."
+    }
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Monitorar de perto as projeções do Boletim Focus para Selic e IPCA, que indicam estabilização, mas ainda sob pressão."
+        },
+        {
+          "ico": "📊",
+          "txt": "Acompanhar os próximos dados do IBGE para serviços e comércio, buscando sinais de recuperação do consumo."
+        },
+        {
+          "ico": "🌍",
+          "txt": "Avaliar o impacto das tensões geopolíticas e novas regras comerciais na balança comercial e investimentos."
+        },
+        {
+          "ico": "💡",
+          "txt": "Incentivar a digitalização e a adoção de IA para PMEs como estratégia de resiliência e competitividade."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Como a indústria pode reverter a queda na produção e recuperar a competitividade em um cenário de juros altos e incertezas globais?",
+        "quote": "A produção industrial brasileira registrou queda de -1,8% em junho, seu pior resultado no 1º semestre de 2026, com a indústria de transformação estagnada.",
+        "edi": [
+          "A indústria brasileira enfrenta um cenário desafiador, com a produção em queda acentuada no primeiro semestre de 2026, especialmente na indústria de transformação, impactada pelos juros elevados. A instabilidade com novas tarifas de importação dos EUA e o avanço do calendário eleitoral também contribuem para a queda na confiança.",
+          "Por outro lado, o setor automotivo mostra resiliência, com as vendas de veículos crescendo 15% em julho, impulsionadas pelo programa Carro Sustentável. A joint venture da JBS na Ásia indica oportunidades de expansão global para grandes players."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Buscar eficiência operacional para mitigar o impacto dos custos de energia e juros altos."
+          },
+          {
+            "ico": "📈",
+            "txt": "Explorar mercados externos e parcerias estratégicas para diversificar receitas e reduzir dependência do mercado interno."
+          },
+          {
+            "ico": "🚗",
+            "txt": "Investir em inovação e sustentabilidade, aproveitando incentivos como o programa Carro Sustentável."
+          },
+          {
+            "ico": "🏭",
+            "txt": "Monitorar políticas industriais e comerciais para antecipar impactos de tarifas e regulamentações."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Com o endividamento das famílias e a confiança do consumidor em baixa, quais estratégias o comércio pode adotar para impulsionar as vendas?",
+        "quote": "As vendas de veículos cresceram 15% em julho, mas o endividamento recorde de 83,7 milhões de brasileiros limita o consumo geral.",
+        "edi": [
+          "O setor de comércio varejista enfrenta um dilema: enquanto as vendas de veículos mostram um bom desempenho em julho, a confiança do consumidor está em baixa, refletindo o alto endividamento das famílias. A inadimplência recorde de 83,7 milhões de brasileiros em junho pressiona o poder de compra.",
+          "Apesar dos desafios, a agenda econômica da semana trará dados de comércio de julho, que podem indicar tendências. O Dia dos Pais, que ocorreu na semana anterior, pode ter gerado um impulso pontual, mas a cautela do consumidor permanece."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Focar em promoções e condições de pagamento flexíveis para atrair consumidores endividados."
+          },
+          {
+            "ico": "🤝",
+            "txt": "Fortalecer o relacionamento com clientes, oferecendo valor agregado e programas de fidelidade."
+          },
+          {
+            "ico": "🛍️",
+            "txt": "Diversificar canais de venda, integrando o físico e o digital para alcançar diferentes perfis de consumidores."
+          },
+          {
+            "ico": "💳",
+            "txt": "Analisar dados de consumo e comportamento do cliente para personalizar ofertas e estratégias de marketing."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Diante da bandeira tarifária amarela e da crescente digitalização, como o setor de serviços pode otimizar custos e inovar para manter a competitividade?",
+        "quote": "A bandeira tarifária amarela se mantém em agosto, adicionando R$ 1,885 a cada 100 kWh, impactando diretamente os custos operacionais.",
+        "edi": [
+          "O setor de serviços continua a lidar com o custo da energia elétrica, com a manutenção da bandeira tarifária amarela em agosto. Isso exige que as PMEs busquem eficiências energéticas e otimizem seus processos para minimizar o impacto nos custos operacionais.",
+          "Apesar dos desafios, a digitalização e a adoção de novas tecnologias, como a Inteligência Artificial, representam oportunidades para inovação e otimização. Eventos no agronegócio, por exemplo, já exploram o tema da IA na agricultura, indicando uma tendência transversal."
+        ],
+        "acoes": [
+          {
+            "ico": "⚡",
+            "txt": "Implementar medidas de eficiência energética para reduzir o impacto da bandeira tarifária amarela."
+          },
+          {
+            "ico": "🤖",
+            "txt": "Investir em automação e ferramentas digitais para otimizar processos e reduzir custos operacionais."
+          },
+          {
+            "ico": "👨‍💻",
+            "txt": "Capacitar equipes para novas tecnologias, como IA, para oferecer serviços mais inovadores e competitivos."
+          },
+          {
+            "ico": "💼",
+            "txt": "Explorar parcerias estratégicas para desenvolver soluções tecnológicas e expandir a oferta de serviços."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Com o cooperativismo em alta e investimentos em expansão global, como o agronegócio pode capitalizar essas oportunidades e mitigar riscos de mercado?",
+        "quote": "O cooperativismo brasileiro cresceu para 29 milhões de cooperados em 2025, enquanto a JBS investe US$ 5 bilhões em expansão na Ásia.",
+        "edi": [
+          "O agronegócio brasileiro demonstra força, com o cooperativismo consolidando sua importância econômica e social, alcançando 29 milhões de cooperados. Grandes players como a JBS estão realizando investimentos significativos em joint ventures para expandir sua atuação globalmente, especialmente na Ásia.",
+          "A semana também é marcada por eventos e congressos que abordam temas como aviação agrícola e inteligência artificial, indicando um foco contínuo em inovação e tecnologia para o setor. A atualização da safra de grãos pela Conab será um dado importante a ser monitorado."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Fortalecer as cooperativas e o associativismo para ganho de escala e competitividade."
+          },
+          {
+            "ico": "📈",
+            "txt": "Buscar oportunidades de exportação e parcerias internacionais para diversificar mercados."
+          },
+          {
+            "ico": "🚜",
+            "txt": "Investir em tecnologias como IA e aviação agrícola para otimizar a produção e reduzir custos."
+          },
+          {
+            "ico": "🌱",
+            "txt": "Acompanhar as projeções de safra e preços de commodities para planejar a produção e comercialização."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Com o crédito imobiliário em alta, mas custos de construção e mão de obra pressionados, como o setor pode equilibrar crescimento e rentabilidade?",
+        "quote": "O crédito imobiliário cresceu 23% no 1º semestre de 2026, mas o CUB/m² em SC subiu 0,95% em julho, indicando aumento de custos.",
+        "edi": [
+          "O setor da construção civil apresenta um cenário de crescimento no crédito imobiliário, que avançou 23% no primeiro semestre de 2026, superando as expectativas. O programa Minha Casa, Minha Vida e a recuperação do mercado de trabalho são fatores positivos.",
+          "No entanto, os custos de construção continuam a ser um desafio, com o CUB Residencial Médio de Santa Catarina registrando alta em julho. Além disso, a escassez de mão de obra qualificada e o ambiente de juros elevados persistem como obstáculos."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Otimizar a gestão de custos e buscar inovações em materiais e métodos construtivos."
+          },
+          {
+            "ico": "💰",
+            "txt": "Aproveitar o bom momento do crédito imobiliário para lançar novos empreendimentos e expandir a atuação."
+          },
+          {
+            "ico": "👷",
+            "txt": "Investir na capacitação e retenção de mão de obra para mitigar a escassez de talentos."
+          },
+          {
+            "ico": "🏘️",
+            "txt": "Focar em projetos alinhados a programas habitacionais como o MCMV para garantir demanda."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Em um ambiente de consumo cauteloso e alta competitividade, como o e-commerce pode inovar para atrair e reter clientes?",
+        "quote": "Apesar da ausência de dados de faturamento para julho, o cenário de endividamento e baixa confiança do consumidor impacta o setor.",
+        "edi": [
+          "O setor de e-commerce, embora não tenha tido dados de faturamento divulgados por fontes de mercado para julho de 2026 nesta semana, opera em um ambiente de consumo cauteloso. O alto endividamento das famílias e a queda na confiança do consumidor são fatores que exigem estratégias adaptadas.",
+          "A competitividade do setor permanece alta, com a necessidade de inovar em logística, experiência do cliente e estratégias de marketing digital. A regulamentação de importados (Remessa Conforme) continua sendo um ponto de atenção para players que atuam no cross-border."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimizar a experiência de compra online, com foco em usabilidade, segurança e agilidade na entrega."
+          },
+          {
+            "ico": "🎯",
+            "txt": "Personalizar ofertas e campanhas de marketing para segmentos específicos de consumidores."
+          },
+          {
+            "ico": "🚚",
+            "txt": "Investir em logística eficiente e opções de frete competitivo para se destacar da concorrência."
+          },
+          {
+            "ico": "📱",
+            "txt": "Explorar novos canais de venda e tecnologias, como social commerce e realidade aumentada, para engajar clientes."
+          }
+        ]
+      }
+    }
+  },
+  "longitudinal": [
+    {
+      "id": "242055f9-f62f-4973-8d14-05a96ff3c71e",
+      "tipo": "risco",
+      "titulo": "Expansão da Geração Solar Distribuída Pressiona Estabilidade da Rede Elétrica",
+      "dimensao": "T",
+      "setores": [
+        "industria",
+        "servicos",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 48.6,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Expansão da Geração Solar Distribuída Pressiona Estabilidade da Rede Elétrica' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "a2e754d7-28ba-4cc1-a74f-18f3ba1191b8",
+      "tipo": "risco",
+      "titulo": "Aumento de Custos e Perda de Competitividade da Indústria com Fim da Escala 6x1",
+      "dimensao": "L",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 34.2,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Aumento de Custos e Perda de Competitividade da Indústria com Fim da Escala 6x1' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-07-09",
+      "origem": "real"
+    },
+    {
+      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
+      "tipo": "oportunidade",
+      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 66.38,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
+      "tipo": "risco",
+      "titulo": "Aumento dos Custos de Energia Elétrica para PMEs",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "A bandeira tarifária amarela se mantém em agosto, adicionando R$ 1,885/100 kWh, elevando os custos de energia para PMEs.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-07-06",
+      "origem": "real"
+    },
+    {
+      "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
+      "tipo": "risco",
+      "titulo": "Custo de energia (ANEEL/tarifa)",
+      "dimensao": "A",
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria",
+        "agro"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "A ANEEL mantém a bandeira tarifária amarela em agosto, confirmando o custo adicional de energia.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "52231dc6-96eb-444e-818b-69e25359c799",
+      "tipo": "oportunidade",
+      "titulo": "Expansão Logística da Shopee com Novos Centros de Distribuição",
+      "dimensao": "T",
+      "setores": [
+        "ecommerce",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 66.75,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Expansão Logística da Shopee com Novos Centros de Distribuição' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-07-26",
+      "origem": "real"
+    },
+    {
+      "id": "ab54d485-086e-42c6-9507-1941779dbce9",
+      "tipo": "risco",
+      "titulo": "Impacto do julgamento antitruste do Google no marketing digital",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce",
+        "servicos",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 100.0,
+      "severidade": 44.05,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Impacto do julgamento antitruste do Google no marketing digital' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-08-06",
+      "origem": "real"
+    },
+    {
+      "id": "cbafed85-63c5-4c57-ab74-024b28762bb2",
+      "tipo": "oportunidade",
+      "titulo": "Avanço da bioenergia com usinas a biometano",
+      "dimensao": "A",
+      "setores": [
+        "servicos",
+        "agro",
+        "industria",
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 100.0,
+      "severidade": 38.75,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Avanço da bioenergia com usinas a biometano' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-08-06",
+      "origem": "real"
+    },
+    {
+      "id": "a2cabb8e-be30-4f42-9dc1-27015c4d720e",
+      "tipo": "oportunidade",
+      "titulo": "Integração DoorDash e Shopify para Comerciantes Locais",
+      "dimensao": "T",
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 36.68,
+      "iminencia": 0.0,
+      "ultima_observacao": "Não houve novas notícias relevantes sobre 'Integração DoorDash e Shopify para Comerciantes Locais' nesta semana.",
+      "periodo_observacao": "2026-W33",
+      "data_identificacao": "2026-07-26",
+      "origem": "real"
+    }
+  ]
+}
