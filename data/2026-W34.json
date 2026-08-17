@@ -1,0 +1,1179 @@
+{
+  "periodo": "2026-W34",
+  "label": "Semana 34 · Agosto 2026",
+  "gerado_em": "2026-08-17T10:57:16.069586",
+  "editorial": {
+    "texto": "A Semana 34 de agosto de 2026 apresenta um cenário macroeconômico com movimentos decisivos e contrastantes. A taxa Selic, o juro básico da economia, surpreende com um salto para 14,00%, distanciando-se da projeção Focus de 13,50% para o ano e indicando um aperto monetário mais intenso do que o observado na semana anterior. Em contrapartida, o mercado de trabalho demonstra notável resiliência, com a taxa de desocupação atingindo o patamar histórico de 5,4% em junho, um avanço significativo que impulsiona a renda disponível. A inflação, medida pelo IPCA de julho, registrou um modesto 0,07% no mês, mas o acumulado em doze meses se mantém em 4,44%, ainda próximo do teto da meta de 4,5%. O câmbio do dólar permanece relativamente estável em R$5,15, ligeiramente acima da projeção de R$5,10. Contudo, a atividade industrial, conforme o PMI de manufatura de julho, segue em contração, com índice de 47,5, enquanto o varejo avançou 0,5% em junho, mostrando um crescimento mais moderado.\n\nEm comparação com a semana anterior, a elevação da Selic é a mudança mais impactante, intensificando o risco de \"Juros, Selic e crédito\", que agora atinge 98,05% de relevância. Os \"Custos de Energia Elétrica para PMEs\" e o \"Custo de energia (ANEEL/tarifa)\" permanecem materializados, impactando transversalmente as cadeias produtivas. Não foram identificados novos sinais relevantes neste ciclo. A oportunidade \"Desenrola Adimplentes\" mantém sua relevância, embora tenha recuado de seu pico, indicando que a linha de crédito continua ativa, mas a atenção do mercado se ajusta.\n\nSetorialmente, a indústria continua a enfrentar o desafio da contração, evidenciada pelo PMI, somado aos custos energéticos materializados e ao risco da \"Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros\". Para comércio e serviços, a melhora no emprego é um alento, mas a \"Cautela do Consumidor e Endividamento Familiar\" e o risco de \"Consumo e varejo\" permanecem em curso, exigindo estratégias de retenção e atração. A \"Digitalização e IA\" e a \"Digitalização e 'Technology as a Service' (TaaS)\" emergem como oportunidades cruciais para a otimização de processos e competitividade nestes setores. O agronegócio segue monitorando o risco \"Safra e agro\", enquanto a construção lida com o risco persistente de \"Construção e custos\".\n\nO ponto de atenção para as próximas semanas reside na complexa interação entre uma política monetária mais restritiva, sinalizada pela Selic em 14,00%, e a robusta recuperação do mercado de trabalho. A capacidade das empresas de absorver o custo do crédito elevado e os custos de energia materializados, enquanto exploram as oportunidades da digitalização, será determinante para a manutenção do crescimento e da resiliência em um ambiente de desaceleração industrial e inflação ainda acima da meta.",
+    "gerado_em": "2026-08-17T10:56:46.066641",
+    "n_sinais_considerados": 15,
+    "modelo": "gemini-2.5-flash"
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "Confiança do Empresário Industrial (ICEI) sobe em agosto, mas setor mantém pessimismo por 20 meses",
+      "texto": "O ICEI avançou 1,9 ponto em agosto de 2026, atingindo 46,3 pontos, interrompendo duas quedas mensais. Contudo, o indicador permanece abaixo de 50 pontos, sinalizando pessimismo industrial por 20 meses consecutivos.",
+      "fontes": [
+        {
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://www.portaldaindustria.com.br/cni/canais/icei-indice-de-confianca-do-empresario-industrial/"
+        },
+        {
+          "nome": "A Notícia do Ceará",
+          "url": "https://anoticiace.com.br/confianca-da-industria-cresce-19-ponto-em-agosto-aponta-cni/"
+        },
+        {
+          "nome": "Rede Povo de Notícias",
+          "url": "https://redepovodenoticias.com.br/confianca-do-empresario-industrial-registra-melhora-em-agosto-mas-segue-abaixo-da-linha-de-50-pontos-agosto-de-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "PMI Industrial do Brasil recua para 47,5 em julho, indicando deterioração do setor",
+      "texto": "O S&P Global Brazil Manufacturing PMI caiu para 47,5 em julho de 2026, de 50,8 em junho. Isso sinaliza uma deterioração renovada no setor, com a contração mais acentuada desde fevereiro.",
+      "fontes": [
+        {
+          "nome": "S&P Global/PMI Brasil",
+          "url": "https://pmi.spglobal.com/Public/Release/PressReleases"
+        },
+        {
+          "nome": "Trading Economics",
+          "url": "https://tradingeconomics.com/brazil/manufacturing-pmi"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Produção de veículos no Brasil registra melhor julho em 7 anos, mas exportações caem",
+      "texto": "A produção de veículos atingiu 253,9 mil unidades em julho de 2026, o melhor julho em sete anos, com alta de 5,9% sobre julho de 2025. As exportações, contudo, recuaram 18,4%.",
+      "fontes": [
+        {
+          "nome": "Folha - Mercado",
+          "url": "https://www1.folha.uol.com.br/mercado/"
+        },
+        {
+          "nome": "UOL Economia",
+          "url": "https://economia.uol.com.br/"
+        },
+        {
+          "nome": "Jornal Cruzeiro do Sul",
+          "url": "https://www.jornalcruzeiro.com.br/"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Emplacamentos de veículos em julho de 2026 são o terceiro melhor mês da história, impulsionados por programas de crédito",
+      "texto": "O Brasil registrou 504.574 emplacamentos em julho de 2026, alta de 10,2% sobre julho de 2025, sendo o terceiro melhor julho histórico. O acumulado do ano soma 3,2 milhões de unidades.",
+      "fontes": [
+        {
+          "nome": "Fenabrave",
+          "url": "https://www.fenabrave.org.br/noticias/"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Fiat Strada lidera vendas de carros em julho de 2026, com SUVs e eletrificados em ascensão",
+      "texto": "A Fiat Strada emplacou 14.912 unidades em julho, mantendo a liderança. SUVs e veículos eletrificados mostram forte avanço no ranking dos mais vendidos, refletindo mudanças no mercado.",
+      "fontes": [
+        {
+          "nome": "Localiza Seminovos",
+          "url": "https://www.localizaseminovos.com.br/blog/"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Fenabrave revisa projeção de alta do mercado total para 8% em 2026, apesar de desafios",
+      "texto": "A Fenabrave elevou sua projeção para o mercado automotivo em 2026 para 2,9 milhões de unidades e crescimento de 8%. O setor ainda enfrenta desafios como juros e tributação.",
+      "fontes": [
+        {
+          "nome": "AutoData",
+          "url": "https://www.autodata.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Programa Move Brasil para veículos pesados aproxima-se do teto de R$ 21,2 bilhões",
+      "texto": "O programa Move Brasil para pesados somou R$ 19,9 bilhões em valores aprovados pelo BNDES até julho, em quase 19 mil operações. Aproxima-se do teto de R$ 21,2 bilhões.",
+      "fontes": [
+        {
+          "nome": "Frota&Cia",
+          "url": "https://frotaecia.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "34º Congresso & ExpoFenabrave aborda eletrificação e desafios geopolíticos do setor automotivo",
+      "texto": "O evento, de 17 a 19 de agosto de 2026, discute a eletrificação (híbridos e elétricos representam 23% das vendas) e o impacto de tensões internacionais nas cadeias de suprimentos.",
+      "fontes": [
+        {
+          "nome": "Fenabrave",
+          "url": "https://www.fenabrave.org.br/noticias/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção brasileira de veículos cresce 8,8% no 1º semestre de 2026, o melhor desde 2019",
+      "texto": "Foram fabricados 1,37 milhão de veículos entre janeiro e junho de 2026, um crescimento de 8,8% sobre o mesmo período de 2025. A Anfavea revisou projeções para cima.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Vendas do comércio varejista crescem 0,5% em junho, mas juros e endividamento limitam consumo",
+      "texto": "As vendas do varejo cresceram 0,5% em junho (vs. maio), superando projeções, e 1,9% no semestre. Contudo, o endividamento das famílias e juros elevados ainda pressionam.",
+      "fontes": [
+        {
+          "nome": "CNC/Pesquisas",
+          "url": "https://pesquisascnc.com.br/"
+        },
+        {
+          "nome": "Folha PE",
+          "url": "https://www.folhape.com.br/"
+        },
+        {
+          "nome": "Portal Contábeis",
+          "url": "https://www.contabeis.com.br/"
+        },
+        {
+          "nome": "Jovem Pan News - Facebook",
+          "url": "https://www.facebook.com/JovemPanNews/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "CNC projeta crescimento de 0,6% para o varejo restrito em julho de 2026",
+      "texto": "A Confederação Nacional do Comércio (CNC) projeta um crescimento de 0,6% no volume do varejo restrito para julho de 2026, com ajuste sazonal.",
+      "fontes": [
+        {
+          "nome": "CNC/Pesquisas",
+          "url": "https://pesquisascnc.com.br/"
+        },
+        {
+          "nome": "Folha PE",
+          "url": "https://www.folhape.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "82% das famílias brasileiras possuem dívidas em julho de 2026, com 29,5% da renda comprometida",
+      "texto": "Pesquisa da CNC de julho de 2026 revela que 82% das famílias brasileiras estão endividadas, comprometendo em média 29,5% da renda mensal.",
+      "fontes": [
+        {
+          "nome": "CNC/Pesquisas",
+          "url": "https://pesquisascnc.com.br/"
+        },
+        {
+          "nome": "Portal Contábeis",
+          "url": "https://www.contabeis.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Dia dos Pais 2026 deve movimentar R$ 8,52 bilhões no varejo brasileiro, segundo CNC",
+      "texto": "A CNC projeta que o Dia dos Pais de 2026 movimentará R$ 8,52 bilhões no varejo brasileiro, indicando um aquecimento pontual para o comércio.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio/ACSP",
+          "url": "https://dcomercio.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "IA reduz custos no Hirota e pode gerar economia de até 30% em dois anos",
+      "texto": "A adoção de Inteligência Artificial no Hirota Supermercados está projetada para reduzir custos em até 30% em dois anos, otimizando operações e processos.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio/ACSP",
+          "url": "https://dcomercio.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Varejo aposta em qualificação profissional para superar dificuldade de contratação",
+      "texto": "Diante da dificuldade em contratar mão de obra qualificada, o varejo está investindo em programas de qualificação profissional para seus colaboradores.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio/ACSP",
+          "url": "https://dcomercio.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Inflação de energia elétrica residencial puxa alta do IPCA em julho de 2026",
+      "texto": "O grupo Habitação acelerou para 0,99% em julho, puxado pela energia elétrica residencial, que subiu 3,09%, sendo o principal impacto individual no IPCA.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/ipca-inflacao-sobe-007-em-julho-um-pouco-acima-do-esperado-pelo-mercado/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Produção de grãos na safra 2025/26 estimada em 360,8 milhões de toneladas, 2,4% superior",
+      "texto": "A Conab estima a safra de grãos 2025/26 em 360,8 milhões de toneladas, um aumento de 2,4% (8,5 milhões de toneladas) sobre a safra anterior, impulsionada pela área cultivada.",
+      "fontes": [
+        {
+          "nome": "Conab",
+          "url": "https://www.conab.gov.br/noticias/"
+        },
+        {
+          "nome": "MundoCoop",
+          "url": "https://mundocoop.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab eleva projeção recorde para safra de milho do Brasil em 2025/26 para 142,96 milhões de toneladas",
+      "texto": "A Conab estimou a safra total de milho 2025/26 em um recorde de 142,96 milhões de toneladas, impulsionada pelo aumento da estimativa da segunda safra.",
+      "fontes": [
+        {
+          "nome": "Forbes Agro",
+          "url": "https://forbes.com.br/forbesagro/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportações do agronegócio brasileiro atingem recorde de US$ 16,34 bilhões em julho de 2026",
+      "texto": "As exportações do agronegócio somaram US$ 16,34 bilhões em julho de 2026, um recorde para o mês e aumento de 5,4% em relação a 2025. Soja e carne lideraram as vendas.",
+      "fontes": [
+        {
+          "nome": "MAPA",
+          "url": "https://www.gov.br/agricultura/pt-br/assuntos/noticias"
+        },
+        {
+          "nome": "CNN Brasil - Macroeconomia",
+          "url": "https://www.cnnbrasil.com.br/business/macroeconomia/"
+        },
+        {
+          "nome": "LegisWeb",
+          "url": "https://www.legisweb.com.br/noticia/?id=29107"
+        },
+        {
+          "nome": "Facebook - Jornal A SHAMA",
+          "url": "https://www.facebook.com/ashamajornal/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab prevê safra de cana-de-açúcar 2026/27 em 709,1 milhões de toneladas, alta de 5,3%",
+      "texto": "A primeira pesquisa da Conab para a safra 2026/27 de cana-de-açúcar indica produção de 709,1 milhões de toneladas, um aumento de 5,3% sobre a temporada anterior.",
+      "fontes": [
+        {
+          "nome": "Conab",
+          "url": "https://www.conab.gov.br/noticias/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Previsão para safra de trigo de 2026 é cortada para 5,8 milhões de toneladas devido ao El Niño",
+      "texto": "A Conab cortou a previsão para a safra brasileira de trigo de 2026 para 5,8 milhões de toneladas. Há temores sobre o impacto do El Niño na região Sul.",
+      "fontes": [
+        {
+          "nome": "Forbes Agro",
+          "url": "https://forbes.com.br/forbesagro/"
+        },
+        {
+          "nome": "MundoCoop",
+          "url": "https://mundocoop.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Relação de troca entre fertilizantes e commodities agrícolas melhora em julho",
+      "texto": "A relação de troca entre os preços dos fertilizantes e das principais commodities agrícolas melhorou em julho, devido à valorização das commodities e queda nos preços dos fertilizantes.",
+      "fontes": [
+        {
+          "nome": "CNN Brasil - Macroeconomia",
+          "url": "https://www.cnnbrasil.com.br/business/macroeconomia/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Ministério das Cidades autoriza verba extra para concluir obras do Minha Casa, Minha Vida",
+      "texto": "O Ministério das Cidades autorizou aportes adicionais para garantir a conclusão e legalização de empreendimentos do Minha Casa, Minha Vida (MCMV) vinculados ao FAR e FDS.",
+      "fontes": [
+        {
+          "nome": "O TEMPO",
+          "url": "https://www.otempo.com.br/economia/ministerio-das-cidades-autoriza-verba-extra-para-concluir-obras-do-minha-casa-minha-vida-1.3400000"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Minha Casa, Minha Vida 2026 oferece imóveis com até 100% de subsídio para famílias vulneráveis",
+      "texto": "As regras aprimoradas do MCMV em 2026 permitem imóveis com até 100% de subsídio para famílias que recebem Bolsa Família ou BPC, ou com membros com microcefalia.",
+      "fontes": [
+        {
+          "nome": "Inscrição Minha Casa, Minha Vida 2026",
+          "url": "https://inscricaominhascasaminhavida2026.com.br/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Ministério das Cidades confirma contratação de 1.260 novas unidades habitacionais do MCMV",
+      "texto": "Portarias do Ministério das Cidades autorizam a contratação de 1.260 novas unidades habitacionais do MCMV em cinco estados, com recursos do Fundo de Arrendamento Residencial (FAR).",
+      "fontes": [
+        {
+          "nome": "CBIC / Hub de Dados",
+          "url": "https://cbic.org.br/noticias/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Prefeitura de Fortaleza anuncia mais 2.600 moradias pelo Minha Casa, Minha Vida",
+      "texto": "Fortaleza terá 2.608 novas unidades habitacionais do MCMV em dez bairros, confirmadas pelo Ministério das Cidades. Isso beneficiará cerca de 8 mil pessoas e combaterá o déficit habitacional.",
+      "fontes": [
+        {
+          "nome": "Prefeitura de Fortaleza",
+          "url": "https://www.fortaleza.ce.gov.br/noticias/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Programa Minha Casa, Minha Vida 2026 apresenta cenário favorável para aquisição da casa própria",
+      "texto": "O MCMV em 2026 oferece um cenário mais favorável para a casa própria, com subsídios e condições de financiamento acessíveis, incluindo a Faixa 4 para rendas maiores.",
+      "fontes": [
+        {
+          "nome": "Direcional Engenharia",
+          "url": "https://www.direcional.com.br/blog/minha-casa-minha-vida-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA desacelera para 0,07% em julho de 2026, acumulado em 12 meses fica abaixo do teto da meta",
+      "texto": "O IPCA de julho foi de 0,07%, acumulando 3,44% no ano e 4,44% em 12 meses, ficando abaixo do teto da meta de 4,5%.",
+      "fontes": [
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/"
+        },
+        {
+          "nome": "Jovem Pan News - Facebook",
+          "url": "https://www.facebook.com/JovemPanNews/"
+        },
+        {
+          "nome": "Acia Araçatuba",
+          "url": "https://aciaaracatuba.com.br/noticia/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "CMN mantém meta de inflação em 3,0% para 2026 com tolerância de 1,5 p.p.",
+      "texto": "O Conselho Monetário Nacional (CMN) manteve a meta de inflação em 3,0% para 2026, com margem de tolerância de 1,5 ponto percentual (teto de 4,5%).",
+      "fontes": [
+        {
+          "nome": "Expert XP",
+          "url": "https://conteudos.xpi.com.br/economia/cmn-mantem-meta-de-inflacao-em-30-e-altera-horizonte-de-convergencia/"
+        },
+        {
+          "nome": "Genial Analisa",
+          "url": "https://www.genialanalisa.com.br/cmn-muda-regime-mas-mantem-a-meta-para-a-inflacao/"
+        },
+        {
+          "nome": "Blog Itaú Private Insights",
+          "url": "https://privateinsights.itau.com.br/cmn-define-meta-de-inflacao-em-3-para-2026/"
+        },
+        {
+          "nome": "Exibe Normativo",
+          "url": "https://www.exibenormativo.com.br/normativo/2023/CMN/5091"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Taxa de desemprego recua para 5,4% em junho de 2026, o menor nível da série histórica",
+      "texto": "O desemprego recuou para 5,4% em junho de 2026, registrando o menor nível na série histórica. Este dado indica uma melhora no mercado de trabalho.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio/ACSP",
+          "url": "https://dcomercio.com.br/"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Políticas Públicas e Regulamentação Setorial",
+      "texto": "O Ministério das Cidades autorizou verba extra e novas contratações para o Minha Casa, Minha Vida, visando concluir obras e expandir o acesso à moradia.",
+      "score": 7.0,
+      "setores": [
+        "transversal",
+        "construcao"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Inflação, Juros e Atividade Econômica",
+      "texto": "A inflação desacelerou em julho (IPCA 0,07%), e o acumulado em 12 meses ficou abaixo do teto da meta. O desemprego atingiu o menor nível em junho, mas o endividamento das famílias persiste.",
+      "score": 7.8,
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "ecommerce"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Confiança do Consumidor e Mercado de Trabalho",
+      "texto": "A confiança industrial permanece em pessimismo, mas o desemprego recua. O alto endividamento das famílias e a cautela do consumidor continuam a impactar o varejo.",
+      "score": 6.5,
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "industria"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Digitalização e Eletrificação na Indústria e Comércio",
+      "texto": "A eletrificação avança no setor automotivo, com híbridos e elétricos ganhando participação. A IA também é vista como ferramenta para redução de custos no varejo.",
+      "score": 7.0,
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Impactos Climáticos na Produção Agrícola",
+      "texto": "O El Niño gera temores sobre a safra de trigo no Sul, levando a um corte na previsão de produção. Condições climáticas favoráveis beneficiam a cana-de-açúcar.",
+      "score": 6.0,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Regulamentação e Incentivos Governamentais",
+      "texto": "O CMN mantém a meta de inflação, e o Ministério das Cidades flexibiliza regras do MCMV com subsídios e verbas extras, impactando diretamente o setor de construção.",
+      "score": 7.5,
+      "setores": [
+        "transversal",
+        "construcao"
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "14,00% a.a.",
+      "cor": "up",
+      "sub": "Taxa básica de juros · BCB/SGS · 17/08/2026",
+      "fonte": "BCB/SGS"
+    },
+    {
+      "label": "IPCA",
+      "valor": "0,07%",
+      "cor": "up",
+      "sub": "Mês · acum. ano 3,44% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jul/26 · Projeção Focus 2026: 5,02%",
+      "fonte": "IBGE",
+      "acum_ano": 3.44,
+      "ipca_12m": 4.44,
+      "meta_inflacao": 3.0,
+      "meta_desde": "2026-01-01",
+      "meta_fonte": "BCB/SGS 13521",
+      "projecao": 5.02,
+      "projecao_em": "2026-08-07",
+      "projecao_fonte": "Focus/BCB"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,22",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB · 14/08/2026",
+      "fonte": "BCB/PTAX"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,4%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · abr-mai-jun 2026",
+      "fonte": "IBGE"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "0,5%",
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,9% · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.9
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "-1,8%",
+      "cor": "down",
+      "sub": "Produção física m/m · acum. ano 1,7% · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.7
+    },
+    {
+      "label": "IPP",
+      "valor": "-0,77%",
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano 3,99% · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 3.99
+    }
+  ],
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "+0,0%",
+      "cor": "neutral",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,0% · IBGE/PMS jun/26",
+      "ref": "jun/26",
+      "pt": 0.0,
+      "acum": 2.0,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 1.985",
+      "cor": "up",
+      "sub": "Custo médio da construção · +0,44% mês · acum. ano +4,94% · IBGE/SINAPI jul/26",
+      "ref": "jul/26",
+      "pt": 1985.1,
+      "acum": 4.94,
+      "flow": false,
+      "unit": "R$/m²"
+    },
+    {
+      "setor": "construcao",
+      "key": "construcao_incc",
+      "setorLabel": "Construção",
+      "label": "INCC (FGV)",
+      "valor": "+0,61%",
+      "cor": "up",
+      "sub": "Custo da construção (mercado) · var. mês · acum. ano +4,91% · FGV/BCB-SGS jul/26",
+      "ref": "jul/26",
+      "pt": 0.61,
+      "acum": 4.91,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "agro",
+      "setorLabel": "Agro",
+      "label": "Safra de grãos (LSPA)",
+      "valor": "353,0 Mt",
+      "cor": "up",
+      "sub": "Estimativa da safra 2026 · +1,6% vs. mês anterior · IBGE/LSPA jul/26",
+      "ref": "jul/26",
+      "pt": 353.0,
+      "acum": null,
+      "flow": false,
+      "unit": "Mt"
+    }
+  ],
+  "pressoes_ipca": {
+    "ref": "jul/26",
+    "mes": 7,
+    "ano": 2026,
+    "grupos": [
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": 0.152
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.055
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.023
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": 0.01
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.002
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.002
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": -0.002
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": -0.031
+      },
+      {
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": -0.145
+      }
+    ]
+  },
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 5,
+      "nota": "A rivalidade é alta, especialmente com importados, e o poder de barganha dos fornecedores de insumos ainda é significativo."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "A intensa rivalidade e o alto poder dos compradores, somados ao endividamento, pressionam as margens e a adaptabilidade do setor."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "A rivalidade é moderada, com a entrada de novos players e a digitalização aumentando a pressão por inovação e diferenciação."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "O poder dos fornecedores de insumos é relevante, e os compradores internacionais exercem forte influência sobre os preços das commodities."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "O setor enfrenta poder de barganha dos fornecedores de materiais e a dependência de políticas públicas para impulsionar a demanda."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "A rivalidade é extremamente alta, com muitos entrantes e um forte poder de barganha dos consumidores, exigindo constante inovação e eficiência."
+    }
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "💸",
+          "txt": "Monitore as projeções do Boletim Focus para Selic e IPCA, ajustando estratégias de custo e precificação."
+        },
+        {
+          "ico": "📈",
+          "txt": "Aproveite a melhora no mercado de trabalho e o crescimento do varejo para otimizar vendas e serviços."
+        },
+        {
+          "ico": "🏦",
+          "txt": "Avalie o impacto do endividamento das famílias nas políticas de crédito e cobrança para PMEs."
+        },
+        {
+          "ico": "🌍",
+          "txt": "Considere o cenário de desaceleração global e tensões geopolíticas ao planejar exportações e cadeias de suprimentos."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Como a indústria pode reverter o pessimismo persistente e capitalizar os nichos de crescimento?",
+        "quote": "O ICEI subiu 1,9 ponto em agosto, mas a indústria completa 20 meses de falta de confiança.",
+        "edi": [
+          "Apesar de uma leve melhora na confiança em agosto, o setor industrial brasileiro ainda opera em território pessimista, com o PMI de manufatura em contração. A produção de veículos, contudo, teve um julho forte, impulsionada por vendas internas e programas de incentivo, embora as exportações tenham recuado.",
+          "A eletrificação do setor automotivo e o avanço de veículos eletrificados representam um nicho de crescimento, exigindo adaptação das cadeias de produção e distribuição. A cautela com os custos e a busca por eficiência são cruciais neste cenário."
+        ],
+        "acoes": [
+          {
+            "ico": "⚙️",
+            "txt": "Invista em tecnologias para otimizar a produção e reduzir custos operacionais, mitigando o impacto do pessimismo."
+          },
+          {
+            "ico": "🚗",
+            "txt": "Explore oportunidades no mercado de veículos eletrificados e adapte a oferta para atender à demanda crescente."
+          },
+          {
+            "ico": "📊",
+            "txt": "Monitore de perto os indicadores de confiança e produção para identificar pontos de inflexão e ajustar estratégias."
+          },
+          {
+            "ico": "🤝",
+            "txt": "Participe de eventos setoriais como o ExpoFenabrave para entender tendências e fazer networking estratégico."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Com o endividamento das famílias, como o varejo pode sustentar o crescimento das vendas e atrair consumidores?",
+        "quote": "As vendas do varejo cresceram 0,5% em junho, mas 82% das famílias estão endividadas em julho.",
+        "edi": [
+          "O comércio varejista registrou um crescimento modesto em junho, superando as expectativas, e a CNC projeta uma leve alta para julho. No entanto, o cenário é desafiador devido ao alto endividamento das famílias, que compromete uma parcela significativa da renda mensal.",
+          "Apesar da cautela geral, datas comemorativas como o Dia dos Pais ainda prometem movimentar o setor. A aposta em qualificação profissional e a adoção de IA para redução de custos são estratégias para enfrentar a pressão e a dificuldade de contratação."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Ofereça condições de pagamento flexíveis e programas de fidelidade para atrair e reter clientes endividados."
+          },
+          {
+            "ico": "👨‍👩‍👧‍👦",
+            "txt": "Crie campanhas de marketing focadas em datas comemorativas para impulsionar vendas pontuais."
+          },
+          {
+            "ico": "🎓",
+            "txt": "Invista na qualificação da equipe de vendas e atendimento para melhorar a experiência do cliente."
+          },
+          {
+            "ico": "💡",
+            "txt": "Explore soluções de IA para otimizar a gestão de estoque, precificação e atendimento, reduzindo custos."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Quais as oportunidades para o setor de serviços em um cenário de inflação controlada e digitalização crescente?",
+        "quote": "A inflação desacelerou em julho, mas a energia elétrica residencial puxou a alta do grupo Habitação.",
+        "edi": [
+          "A desaceleração da inflação em julho, com o IPCA em 0,07%, pode gerar um ambiente mais favorável para o consumo de serviços, apesar do impacto da energia elétrica residencial no grupo Habitação. A digitalização e a Inteligência Artificial continuam a ser vetores de transformação.",
+          "A busca por eficiência e redução de custos, como demonstrado pela aplicação de IA no varejo, sinaliza oportunidades para empresas de serviços de tecnologia e consultoria. O mercado de trabalho, com a queda do desemprego, também pode impulsionar a demanda por serviços."
+        ],
+        "acoes": [
+          {
+            "ico": "🤖",
+            "txt": "Desenvolva e ofereça soluções de IA para PMEs em diversos setores, focando em otimização de processos."
+          },
+          {
+            "ico": "💡",
+            "txt": "Invista em eficiência energética para mitigar o impacto dos custos de energia nos serviços."
+          },
+          {
+            "ico": "📈",
+            "txt": "Capacite equipes para atender às novas demandas do mercado, aproveitando a melhora no emprego."
+          },
+          {
+            "ico": "🤝",
+            "txt": "Busque parcerias com empresas de outros setores para oferecer soluções integradas e agregar valor."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Como o agronegócio pode mitigar riscos climáticos e manter o ritmo recorde de exportações?",
+        "quote": "A safra de grãos 2025/26 é recorde, e as exportações do agronegócio atingiram US$ 16,34 bilhões em julho.",
+        "edi": [
+          "O agronegócio brasileiro continua em alta, com projeções recordes para as safras de grãos e milho 2025/26. As exportações em julho de 2026 atingiram um valor recorde, impulsionadas principalmente pela soja e carne. A relação de troca entre fertilizantes e commodities melhorou.",
+          "Contudo, a safra de trigo de 2026 teve sua previsão cortada devido a temores sobre o impacto do El Niño na região Sul. A gestão de riscos climáticos e a diversificação de mercados são essenciais para manter a resiliência do setor."
+        ],
+        "acoes": [
+          {
+            "ico": "🌾",
+            "txt": "Invista em tecnologias de monitoramento climático e seguros agrícolas para mitigar riscos de safra."
+          },
+          {
+            "ico": "🌍",
+            "txt": "Explore novos mercados para diversificar as exportações e reduzir a dependência de poucos destinos."
+          },
+          {
+            "ico": "🌱",
+            "txt": "Otimize o uso de fertilizantes e insumos, aproveitando a melhora na relação de troca."
+          },
+          {
+            "ico": "📈",
+            "txt": "Acompanhe as projeções da Conab para planejar o plantio e a comercialização das safras futuras."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Como o setor da construção civil pode aproveitar os incentivos do MCMV para impulsionar o crescimento e a inovação?",
+        "quote": "O Ministério das Cidades autorizou verba extra e novas contratações para o Minha Casa, Minha Vida.",
+        "edi": [
+          "O programa Minha Casa, Minha Vida (MCMV) é um forte motor para a construção civil, com o Ministério das Cidades autorizando verbas extras para conclusão de obras e a contratação de milhares de novas unidades habitacionais. As regras de 2026 incluem subsídios de até 100% para famílias de baixa renda.",
+          "Essa expansão representa uma oportunidade significativa para construtoras e incorporadoras, especialmente aquelas focadas no segmento de habitação popular. A agilidade na execução e a conformidade com as novas diretrizes são cruciais para capitalizar esses incentivos."
+        ],
+        "acoes": [
+          {
+            "ico": "🏗️",
+            "txt": "Busque ativamente projetos e licitações do MCMV, focando nas regiões com maior demanda e incentivos."
+          },
+          {
+            "ico": "💰",
+            "txt": "Analise as novas regras de subsídio do MCMV para otimizar a oferta de imóveis para diferentes faixas de renda."
+          },
+          {
+            "ico": "⏱️",
+            "txt": "Agilize processos de aprovação e execução de obras para aproveitar os aportes adicionais e prazos."
+          },
+          {
+            "ico": " inovação",
+            "txt": "Invista em métodos construtivos eficientes e sustentáveis para atender às exigências do programa."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Em um cenário sem dados de faturamento recentes, como o e-commerce pode se preparar para o próximo ciclo de crescimento?",
+        "quote": "Não há dados de faturamento do e-commerce divulgados por fontes de mercado para julho/agosto de 2026.",
+        "edi": [
+          "A ausência de dados de faturamento mensal do e-commerce por fontes de mercado para julho/agosto de 2026 indica uma lacuna na visibilidade do desempenho recente do setor. Contudo, o avanço da digitalização e a eletrificação no setor automotivo, por exemplo, mostram uma tendência de maior integração tecnológica nos hábitos de consumo.",
+          "Apesar da falta de indicadores específicos para o período, o setor deve continuar focado em otimização logística, experiência do cliente e adaptação às regulamentações, como a Remessa Conforme, que impactam diretamente as operações de marketplaces e vendas internacionais."
+        ],
+        "acoes": [
+          {
+            "ico": "📦",
+            "txt": "Otimize a logística de entrega e a experiência de checkout para garantir a satisfação do cliente."
+          },
+          {
+            "ico": "📱",
+            "txt": "Invista em marketing digital e presença em marketplaces para manter a visibilidade e o alcance."
+          },
+          {
+            "ico": "⚖️",
+            "txt": "Monitore as atualizações da Remessa Conforme e outras regulamentações para garantir conformidade."
+          },
+          {
+            "ico": "📈",
+            "txt": "Analise dados internos de vendas e comportamento do consumidor para identificar tendências e oportunidades."
+          }
+        ]
+      }
+    }
+  },
+  "longitudinal": [
+    {
+      "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
+      "tipo": "risco",
+      "titulo": "Aumento dos Custos de Energia Elétrica para PMEs",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 9.0,
+      "ultima_observacao": "A energia elétrica residencial subiu 3,09% em julho de 2026, sendo o principal impacto individual no IPCA, elevando custos para PMEs.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2026-07-06",
+      "origem": "real"
+    },
+    {
+      "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
+      "tipo": "risco",
+      "titulo": "Custo de energia (ANEEL/tarifa)",
+      "dimensao": "A",
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria",
+        "agro"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 9.0,
+      "ultima_observacao": "A alta da energia elétrica residencial (3,09% em julho) impacta diretamente os custos operacionais, especialmente para PMEs.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
+      "tipo": "risco",
+      "titulo": "Digitalização e IA",
+      "dimensao": "T",
+      "setores": [
+        "servicos",
+        "agro",
+        "ecommerce",
+        "comercio",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 98.05,
+      "severidade": 9.8,
+      "iminencia": 9.5,
+      "ultima_observacao": "Adoção de IA no varejo para redução de custos e eletrificação no setor automotivo demonstram avanço da digitalização e IA.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
+      "tipo": "risco",
+      "titulo": "Juros, Selic e crédito",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "construcao",
+        "industria",
+        "agro",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 98.05,
+      "severidade": 9.8,
+      "iminencia": 9.5,
+      "ultima_observacao": "A Selic foi cortada para 14,00%, e o IPCA desacelerou, mas o endividamento das famílias ainda limita o acesso ao crédito.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
+      "tipo": "risco",
+      "titulo": "Atividade e indústria (PIM/PMI)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "agro",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "O PMI de manufatura caiu para 47,5 em julho, indicando contração na atividade industrial.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "tipo": "risco",
+      "titulo": "Safra e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 94.5,
+      "severidade": 9.5,
+      "iminencia": 8.5,
+      "ultima_observacao": "A safra de grãos 2025/26 é recorde, e as exportações do agronegócio em julho atingiram valor recorde. Contudo, o El Niño ameaça a safra de trigo.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "O alto endividamento das famílias (82% em julho) e a cautela do consumidor continuam a impactar o varejo.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    },
+    {
+      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
+      "tipo": "risco",
+      "titulo": "Construção e custos",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "transversal",
+        "industria",
+        "agro",
+        "comercio",
+        "servicos",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "O Ministério das Cidades autorizou verba extra para concluir obras do MCMV, indicando atenção aos custos e projetos.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2026-01-05",
+      "origem": "real"
+    },
+    {
+      "id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
+      "tipo": "risco",
+      "titulo": "Emprego e renda (CAGED/PNAD)",
+      "dimensao": "S",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "A taxa de desemprego recuou para 5,4% em junho de 2026, o menor nível histórico, indicando melhora no emprego e renda.",
+      "periodo_observacao": "2026-W34",
+      "data_identificacao": "2026-01-26",
+      "origem": "real"
+    }
+  ]
+}

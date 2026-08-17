@@ -1,6 +1,12 @@
 {
   "semanas": [
     {
+      "chave": "2026-W34",
+      "label": "Semana 34 · Agosto 2026",
+      "arquivo": "2026-W34.json",
+      "ordem": 202634
+    },
+    {
       "chave": "2026-W33",
       "label": "Semana 33 · Agosto 2026",
       "arquivo": "2026-W33.json",
@@ -199,5 +205,5 @@
       "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-08-13T11:16:05.428390"
+  "atualizado_em": "2026-08-17T10:57:16.073358"
 }
