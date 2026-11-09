@@ -1,10 +1,10 @@
 {
-  "periodo": "2026-W39",
-  "label": "Semana 39 · Setembro 2026",
-  "gerado_em": "2026-11-09T20:29:18.207340",
+  "periodo": "2026-W40",
+  "label": "Semana 40 · Setembro 2026",
+  "gerado_em": "2026-11-09T20:32:32.820932",
   "editorial": {
-    "texto": "A Semana 39 mostrou que o alívio da inflação em agosto foi passageiro. O IPCA-15, prévia da inflação oficial, subiu 0,70% em setembro, acima dos 0,53% esperados e a maior taxa para o mês desde 2021, puxado pela conta de luz, que subiu 7,42% com o fim do bônus de Itaipu. O Banco Central passou a ver 90% de chance de a inflação estourar o teto da meta em 2026, projetou IPCA de 5,2% e reduziu o crescimento esperado do PIB para 1,8%. A ata do Copom confirmou a desaceleração da economia. O Boletim Focus elevou a inflação projetada a 4,92%, interrompendo três semanas de queda, mas passou a prever a Selic, o juro básico, em 13,50% no fim do ano. A arrecadação federal bateu recorde para agosto, com R$ 235,6 bilhões.\n\nO que mudou: materializou-se o risco de energia mais cara, e a Aneel elevou para 9,4% o reajuste médio previsto em 2026. Entram na memória dois sinais novos: a volta da inflação de energia e o risco de vazamento de dados com o uso de IA no varejo, que saltou de 39% para 65% dos funcionários em um ano.\n\nNa indústria, a intenção de investir caiu ao menor nível desde 2020. No comércio, a confiança do consumidor recuou a 84,2 pontos, a menor desde 2022, e as encomendas internacionais de até US$ 50 subiram 74% em agosto. Nos serviços, a Senacon abriu 70 processos contra postos por preço abusivo de combustíveis. No agro, a Conab estimou safra recorde de café, de 67,6 milhões de sacas, o que pressiona as cotações. Na construção, a confiança caiu a 90,5 pontos e o custo desacelerou para 0,25%. No e-commerce, as vendas online de bens de consumo cresceram 58% em 12 meses.\n\nO ponto de atenção é a energia: revise orçamentos e contratos atrelados ao IPCA antes do quarto trimestre.",
-    "gerado_em": "2026-11-09T20:29:13.569270",
+    "texto": "A Semana 40 fechou setembro com um contraste nítido: a indústria perde força enquanto o emprego resiste. A produção industrial caiu 0,6% em agosto, a maior queda para o mês desde 2022, com 16 de 25 ramos em retração, e a confiança da indústria medida pela FGV recuou a 91,3 pontos. Já o desemprego ficou em 5,3%, o menor para o trimestre até agosto, com ocupação recorde de 103,5 milhões de pessoas, e o Caged registrou 165,8 mil vagas formais, acima do esperado. Na inflação, o IGP-M, índice dos aluguéis, subiu 1,57% em setembro, e o Boletim Focus elevou a projeção do IPCA de 2026 para 4,99%, mantendo a Selic, o juro básico, em 13,50% no fim do ano. A dívida bruta chegou a 82,9% do PIB, o maior nível em cinco anos.\n\nO que mudou: Brasil e Estados Unidos criaram um grupo específico para negociar o tarifaço, avanço concreto sobre um sinal que acompanhamos desde agosto. Entram na memória dois sinais novos: o risco da dívida pública em alta e a oportunidade de exportação de pequenas empresas por marketplaces.\n\nNa indústria, a venda de máquinas agrícolas caiu 22,4% no ano, com produtor endividado. No comércio, as famílias enfrentam juros maiores, inadimplência de 6% e endividamento de 49,9% da renda, e reduzem as idas a restaurantes. Os serviços geraram 110,3 mil das vagas de agosto. No agro, o boi gordo subiu 5,42% em setembro e o bezerro bateu recorde. Na construção, o crédito imobiliário da poupança cresceu 46,6% em agosto, mas a caderneta perdeu R$ 9,5 bilhões em saques. No e-commerce, a Shopee abriu plataforma para pequenas empresas venderem na Argentina e no México.\n\nO ponto de atenção é o reajuste de aluguéis pelo IGP-M em outubro: negocie antes da renovação e ajuste estoques à demanda mais fraca.",
+    "gerado_em": "2026-11-09T20:32:27.790909",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
@@ -12,101 +12,67 @@
     {
       "setores": [
         "transversal",
-        "comercio",
         "servicos"
       ],
-      "titulo": "IPCA-15 sobe 0,70% em setembro, acima do esperado",
-      "texto": "Prévia da inflação reverte a deflação de agosto e é a maior para setembro desde 2021; em 12 meses, sobe a 4,47%. Mercado esperava cerca de 0,53%.",
+      "titulo": "Desemprego fica em 5,3%, menor para o trimestre até agosto",
+      "texto": "PNAD: 103,5 milhões de ocupados, recorde da série; renda média de R$ 3.777. Construção (+306 mil) e indústria (+265 mil) puxaram a ocupação.",
       "fontes": [
         {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/poder-economia/previa-da-inflacao-sobe-070-em-setembro-pressionada-pela-energia/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/29/09/2026/economia/taxa-de-desemprego-cai-para-53-a-menor-para-o-trimestre-ate-agosto/"
         },
         {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4349067/ipca-15-sobe-0-70-em-setembro-maior-taxa-desde-abril"
+          "nome": "Diario de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11725242-desemprego-fica-em-53-ate-agosto-e-populacao-ocupada-atinge-recorde-aponta-ibge.html"
         },
         {
-          "nome": "Bora Investir (B3)",
-          "url": "https://borainvestir.b3.com.br/noticias/ipca-15-previa-da-inflacao-oficial-de-setembro-fica-em-070-acima-do-esperado/"
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/carreira/2026/09/taxa-de-desemprego-cai-para-53-a-menor-para-o-trimestre-ate-agosto/"
         }
       ]
     },
     {
       "setores": [
         "transversal",
-        "servicos",
-        "industria"
+        "servicos"
       ],
-      "titulo": "Fim do bônus de Itaipu faz luz subir 7,42% na prévia",
-      "texto": "Energia elétrica residencial teve impacto de 0,29 ponto no IPCA-15 de setembro; todos os grupos pesquisados subiram.",
+      "titulo": "Caged: 165,8 mil vagas em agosto, acima do esperado",
+      "texto": "Saldo superou a projeção em cerca de 70 mil vagas; no ano, 1,13 milhão de postos, 25,2% abaixo de 2025. Serviços geraram 110,3 mil vagas.",
       "fontes": [
         {
-          "nome": "Cenário Energia",
-          "url": "https://cenarioenergia.com.br/2026/09/25/ipca-15-energia-eletrica-residencia-setembro/"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/economia-brasileira/ipca-15-setembro-2026-energia-eletrica-bonus-itaipu/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "BC vê 90% de chance de a inflação estourar o teto em 2026",
-      "texto": "Relatório de Política Monetária projeta IPCA de 5,2% no ano e reduz o crescimento do PIB para 1,8%.",
-      "fontes": [
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/poder-economia/bc-ve-90-de-chance-de-ipca-estourar-teto-da-meta-em-2026/"
+          "nome": "Agência Gov",
+          "url": "https://agenciagov.ebc.com.br/noticias/202609/novo-caged-emprego-formal-gera-165-8-mil-vagas-em-agosto-e-acumula-1-13-milhao-de-postos-no-ano"
         },
         {
           "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4348807/chance-de-estouro-do-teto-da-meta-de-inflacao-em-2026-e-de-90-avalia-bc-"
+          "url": "https://www.dgabc.com.br/Noticia/4349758/caged-saldo-liquido-de-emprego-formal-e-positivo-em-165-827-vagas-em-agosto"
         },
         {
-          "nome": "Diario de Pernambuco",
-          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11724785-banco-central-reduz-projecao-de-crescimento-da-economia-para-18.html"
+          "nome": "IstoÉ",
+          "url": "https://istoe.com.br/criacao-empregos-formais-brasil-agosto-caged"
         }
       ]
     },
     {
       "setores": [
-        "transversal"
+        "transversal",
+        "construcao",
+        "comercio"
       ],
-      "titulo": "Ata do Copom confirma desaceleração da economia",
-      "texto": "Documento diz que o PIB do 2º trimestre confirmou a moderação da atividade e eleva a projeção de IPCA de 2026 para 5,2%.",
+      "titulo": "IGP-M sobe 1,57% em setembro, puxado pelo atacado",
+      "texto": "Após deflação de 0,22% em agosto, o índice que corrige aluguéis acumula 3,34% em 12 meses, base dos reajustes de outubro.",
       "fontes": [
         {
-          "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/09/1264103-pib-do-2-trimestre-confirmou-desaceleracao-apontada-por-outros-indicadores-diz-ata-do-copom.html"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/29/09/2026/economia/atacado-puxa-alta-de-157-do-igp-m-em-setembro/"
         },
         {
-          "nome": "ASA",
-          "url": "https://www.asa.com.br/central-de-conteudos/macroeconomia/ata-do-copom-selic"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Focus sobe IPCA de 2026 para 4,92% e corta PIB para 1,88%",
-      "texto": "Boletim de 21/09 interrompe três semanas de queda da inflação projetada e prevê Selic de 13,50% no fim do ano.",
-      "fontes": [
-        {
-          "nome": "Safras",
-          "url": "https://safras.com.br/previsao-de-inflacao-2026-sobe-a-492-e-para-2027-fica-em-430-focus/"
+          "nome": "O Hoje",
+          "url": "https://ohoje.com/2026/09/29/igp-m-acelera-e-registra-inflacao-de-157-em-setembro/"
         },
         {
           "nome": "Paraíba Business",
-          "url": "https://paraibabusiness.com.br/focus-ipca-de-2026-sobe-pela-primeira-vez-em-um-mes-mas-selic-recua-a-1350/"
-        },
-        {
-          "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/09/1263944-mediana-de-ipca-2026-passa-de-490-para-492-diz-focus-acima-do-teto-da-meta-de-inflacao.html"
+          "url": "https://paraibabusiness.com.br/alugueis-indice-de-reajuste-sobe-e-acumula-alta-de-334/"
         }
       ]
     },
@@ -114,38 +80,100 @@
       "setores": [
         "transversal"
       ],
-      "titulo": "Arrecadação federal bate recorde para agosto: R$ 235,6 bi",
-      "texto": "Alta real de 8,25% sobre 2025, puxada por IRRF, IRPJ e petróleo; no ano, a receita soma R$ 2,112 trilhões.",
+      "titulo": "Focus eleva IPCA de 2026 para 4,99% e corta PIB para 1,86%",
+      "texto": "Segunda alta seguida da inflação projetada, após o IPCA-15; Selic de 13,50% no fim do ano mantida.",
       "fontes": [
         {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/forbes-money/2026/09/arrecadacao-federal-agosto-recorde-petroleo-235-bilhoes/"
-        },
-        {
           "nome": "Bora Investir (B3)",
-          "url": "https://borainvestir.b3.com.br/noticias/arrecadacao-federal-ultrapassa-r-2-trilhoes-em-oito-meses/"
+          "url": "https://borainvestir.b3.com.br/noticias/focus-mercado-eleva-projecao-de-inflacao-para-499-e-reduz-pib/"
         },
         {
-          "nome": "Fenacon",
-          "url": "https://fenacon.org.br/noticias/arrecadacao-federal-ultrapassa-r-2-trilhoes-em-oito-meses/"
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4349436/mediana-de-ipca-2026-sobe-de-4-92-para-4-99-projeta-focus"
+        },
+        {
+          "nome": "Safras",
+          "url": "https://safras.com.br/previsao-de-inflacao-sobe-para-499-em-2026-e-431-em-2027-focus/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Contas públicas têm déficit de R$ 10 bilhões em agosto",
+      "texto": "Resultado veio melhor que o esperado, mas a dívida bruta subiu a 82,9% do PIB, maior patamar em cinco anos, com juros de R$ 1,18 trilhão em 12 meses.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/30/09/2026/economia/contas-publicas-tem-deficit-de-r-10-bilhoes-em-agosto/"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/divida-bruta-do-brasil-sobe-a-829-do-pib-em-agosto/"
+        },
+        {
+          "nome": "Genial",
+          "url": "https://analisa.genialinvestimentos.com.br/macroeconomia-brasil/Fiscal-Ago26-Surpresa-positiva-no-primario-contrasta-com-deterioracao-da-divida-publica"
         }
       ]
     },
     {
       "setores": [
         "transversal",
-        "comercio"
+        "industria",
+        "agro"
       ],
-      "titulo": "Confiança do consumidor cai a 84,2, menor nível desde 2022",
-      "texto": "FGV: quinta queda seguida, puxada pelas expectativas; renda baixa amenizou a queda.",
+      "titulo": "Brasil e EUA criam grupo para negociar o tarifaço",
+      "texto": "Decisão saiu da reunião ministerial do G20 em Milwaukee; os EUA devem apresentar proposta de escopo nas próximas semanas.",
       "fontes": [
         {
-          "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/09/1264453-fgv-confianca-do-consumidor-cai-05-ponto-em-setembro-ante-agosto-para-842-pontos.html"
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/comercio-exterior/2026/09/30/brasil-e-estados-unidos-criam-grupo-especifico-para-negociar-tarifaco/"
         },
         {
-          "nome": "Tribuna do Sertão",
-          "url": "https://tribunadosertao.com.br/geral/2026/09/24/984565-fgv-aponta-queda-de-05-ponto-na-confianca-do-consumidor-em-setembro"
+          "nome": "Diario de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11725373-brasil-e-eua-criam-grupo-especifico-para-negociar-tarifaco.html"
+        },
+        {
+          "nome": "Agrolink",
+          "url": "https://www.agrolink.com.br/noticias/brasil-e-eua-criam-grupo-especifico-para-negociar-tarifaco_519384.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "Alckmin sinaliza retomada da negociação com os EUA",
+      "texto": "Vice-presidente disse estar otimista e argumentou que o superávit americano com o Brasil não justifica as tarifas.",
+      "fontes": [
+        {
+          "nome": "O Hoje",
+          "url": "https://ohoje.com/2026/09/29/alckmin-sinaliza-retomada-de-negociacao-com-os-eua/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Ibovespa sobe 5,03% em setembro e dólar fica estável",
+      "texto": "Bolsa fechou o mês aos 186.340 pontos; o dólar terminou setembro a R$ 5,17, com euforia pré-eleitoral no radar.",
+      "fontes": [
+        {
+          "nome": "BB Investalk",
+          "url": "https://investalk.bb.com.br/noticias/mercado/mercado-agora-30-09-26"
+        },
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/dolar-fecha-setembro-em-queda-enquanto-ibovespa-avanca-503/"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/ibovespa-30-9-26-lils/"
         }
       ]
     },
@@ -153,184 +181,180 @@
       "setores": [
         "industria"
       ],
-      "titulo": "Intenção de investir da indústria é a menor em seis anos",
-      "texto": "Índice da CNI caiu de 52,6 para 51,3 pontos, menor nível desde agosto de 2020, com perda de ritmo da atividade e incerteza maior.",
+      "titulo": "Produção industrial cai 0,6% em agosto, pior para o mês desde 2022",
+      "texto": "Queda veio acima da previsão (-0,1%); 16 de 25 ramos recuaram e a produção cai 1,2% em um ano.",
       "fontes": [
         {
-          "nome": "Portal da Indústria",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/intencao-de-investir-da-industria-e-a-menor-em-6-anos-aponta-cni/"
-        },
-        {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4348214/indice-que-mede-intencao-de-investimento-da-industria-e-o-menor-em-6-anos-diz-cni"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/intencao-de-investimentos-da-industria-cai-ao-menor-nivel-desde-2020-diz-cni/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "construcao"
-      ],
-      "titulo": "Intenção de investir na construção cai ao menor nível desde 2019",
-      "texto": "Indicador da indústria da construção passou de 42,4 para 39,7 pontos em setembro, segundo a CNI.",
-      "fontes": [
-        {
-          "nome": "CBIC",
-          "url": "https://cbic.org.br/cni-intencao-de-investir-da-industria-e-a-menor-em-seis-anos/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "servicos"
-      ],
-      "titulo": "Aneel eleva para 9,4% o reajuste médio de energia em 2026",
-      "texto": "Projeção do efeito tarifário médio subiu; R$ 5,5 bilhões da UBP vão conter reajustes, sobretudo no Norte e Nordeste.",
-      "fontes": [
-        {
-          "nome": "Cenário Energia",
-          "url": "https://cenarioenergia.com.br/2026/09/21/aneel-eleva-projecao-de-reajuste-medio-das-tarifas-de-energia-para-94-em-2026/"
-        },
-        {
-          "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/energia/2026/09/21/tarifa-sobe-94-mas-norte-e-nordeste-recebem-r-55-bi-para-conter-reajuste/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "servicos"
-      ],
-      "titulo": "ANP multa distribuidoras em mais de R$ 200 milhões",
-      "texto": "Penalidades por alta abusiva de preços de combustíveis se baseiam nas MPs 1.340 e 1.349, editadas em março e abril.",
-      "fontes": [
-        {
-          "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/combustivel/2026/09/23/anp-multa-distribuidoras-em-mais-de-r-200-milhoes-por-alta-abusiva-de-precos/"
-        },
-        {
-          "nome": "Diario de Pernambuco",
-          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11724699-distribuidoras-de-combustivel-sao-multadas-em-rs-200-milhoes-por-aumento-abusivo-dos-precos.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "titulo": "Senacon abre 70 processos contra postos por preço abusivo",
-      "texto": "Fiscalização em SP, RJ, PR e ES encontrou alta de margem acima de 70%; a ANP recebeu ao menos 330 denúncias.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/22/09/2026/economia/senacon-instaura-70-processos-contra-postos-por-suspeita-de-aumento-abusivo-de-combustiveis/"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/senacon-aciona-70-postos-apos-denuncias-de-aumentos-abusivos-nos-combustiveis/"
-        },
-        {
-          "nome": "eixos",
-          "url": "https://eixos.com.br/combustiveis-e-bioenergia/senacon-inicia-operacao-para-apurar-abusos-nos-precos-de-combustiveis/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "agro"
-      ],
-      "titulo": "Consumo de café no varejo sobe 4,65% com preço menor",
-      "texto": "Abic: alta no segundo quadrimestre e 2,29% no ano até agosto; o preço médio caiu em todas as categorias.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/23/09/2026/noticias-varejo/consumo-de-cafe-no-varejo-sobe-465-e-preco-ao-consumidor-recua-mostra-abic/"
-        },
-        {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4348600/consumo-de-cafe-no-varejo-sobe-4-65-e-preco-ao-consumidor-recua-mostra-abic"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/consumo-de-cafe-no-brasil-cresce-465-no-segundo-quadrimestre-impulsionado-por-queda-nos-precos-ao-consumidor/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "ecommerce"
-      ],
-      "titulo": "Compras internacionais disparam após fim da taxa das blusinhas",
-      "texto": "Abit: encomendas de até US$ 50 passaram de 15,2 milhões para 26,5 milhões em agosto, alta de 74%; entidade chama a lei de retrocesso.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/23/09/2026/ecommerce/compras-internacionais-disparam-desde-o-fim-da-taxa-das-blusinhas-diz-abit/"
-        },
-        {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4348490/compras-internacionais-disparam-desde-o-fim-da-taxa-das-blusinhas-diz-abit"
-        },
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/brasil/sem-taxa-das-blusinhas-compras-internacionais-sobem-74-em-agosto/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "titulo": "Uso ativo de IA no varejo salta de 39% para 65% em um ano",
-      "texto": "Netskope: 97% dos funcionários usam aplicações com IA; dados pessoais e de pagamento são 56% das violações de políticas.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/22/09/2026/inovacao/uso-ativo-de-aplicacoes-de-ia-no-varejo-salta-de-39-para-65-em-um-ano/"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/empresas-e-negocios/inteligencia-artificial/ia-varejo-uso-sobe-65-dados-pessoais-violacoes-netskope/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Expectativas pesam e consumidor segue cauteloso",
-      "texto": "FGV vê dificuldade de recuperação nos próximos meses por causa do endividamento e da inadimplência das famílias.",
-      "fontes": [
-        {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/?p=422852"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "BC projeta IPCA de 0,65% em setembro e 0,29% em outubro",
-      "texto": "Projeções de curto prazo do Relatório de Política Monetária indicam retomada da inflação mensal após a deflação de agosto.",
-      "fontes": [
-        {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4348809/bc-projeta-ipca-de-0-65-em-setembro-e-0-29-em-outubro-de-2026"
+          "nome": "Safras",
+          "url": "https://safras.com.br/producao-industrial-recua-06-em-agosto-ante-julho-previsao-era-de-01/"
         },
         {
           "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/09/1264455-bc-projeta-ipca-de-065-em-setembro-e-029-em-outubro-de-2026.html"
+          "url": "https://www.jornaldocomercio.com/economia/2026/10/1265491-queda-de-06-da-industria-em-agosto-e-a-mais-intensa-para-o-mes-desde-2022-diz-ibge.html"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/economia-brasileira/producao-industrial-recua-06-em-agosto-e-interrompe-alta-de-julho-segundo-ibge/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Bens de consumo pressionam a indústria em agosto",
+      "texto": "Segmento liderou a queda da produção; bens intermediários acumulam quatro meses seguidos de resultados negativos.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/02/10/2026/economia/pressionada-por-bens-de-consumo-producao-industrial-cai-06-em-agosto/"
+        },
+        {
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/mercados/429072-producao-industrial-cai-06-em-agosto-e-reforca-sinais-de-fraqueza-da-economia/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Confiança da indústria cai 2,4 pontos, a 91,3",
+      "texto": "FGV: terceira queda seguida, menor nível desde novembro de 2025; 16 de 19 setores perderam confiança e a demanda recuou.",
+      "fontes": [
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4349429/indice-de-confianca-da-industria-medido-pela-fgv-cai-2-4-pontos-em-setembro-a-91-3-pontos"
+        },
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/economia/confianca-da-industria-do-brasil-cai-em-setembro-com-demanda-menor-e-pessimismo-sobre-futuro-diz-fgv/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "agro"
+      ],
+      "titulo": "Receita de máquinas agrícolas cai 22,4% até agosto",
+      "texto": "Abimaq: R$ 36,3 bilhões no ano, com produtor endividado e crédito caro; exportações sobem 12,7%.",
+      "fontes": [
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/venda-de-maquinas-agricolas-recua-em-agosto-diz-abimaq/"
+        },
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/receita-de-maquinas-agricolas-cai-22-4-ate-agosto-indica-a-abimaq"
+        },
+        {
+          "nome": "Brasilagro",
+          "url": "https://brasilagro.com.br/conteudo/vendas-de-maquinas-agricolas-cairam-224-entre-janeiro-e-agosto-de-2026.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Indústria de máquinas acumula queda de 13,2% no ano",
+      "texto": "Segundo a Abimaq, o recuo do segmento agrícola supera o do conjunto do setor de máquinas e equipamentos.",
+      "fontes": [
+        {
+          "nome": "Comprerural",
+          "url": "https://comprerural.com/abimaq-venda-de-maquina-agricola-cai-por-divida-e-impacto-do-cambio-em-commodity/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Juros para famílias sobem e inadimplência chega a 6%",
+      "texto": "Dados do BC de agosto mostram famílias sob pressão de juros, atrasos e endividamento, que atingiu 49,9% da renda anual em julho.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/29/09/2026/economia/juros-para-familias-sobem-em-agosto-e-inadimplencia-chega-a-6/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Comer fora fica mais caro e brasileiro vai menos a restaurantes",
+      "texto": "Índice da Alelo com a Fipe associa preços mais altos de refeições à queda da frequência, com supermercados ganhando espaço.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/29/09/2026/foodservice/comer-fora-esta-mais-caro-e-brasileiro-reduz-ida-a-restaurantes/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "construcao"
+      ],
+      "titulo": "IGP-M alto favorece reajuste de aluguel em shoppings",
+      "texto": "Alta de 1,57% em setembro eleva a correção de contratos de lojistas atrelados ao índice.",
+      "fontes": [
+        {
+          "nome": "Eu Quero Investir",
+          "url": "https://euqueroinvestir.com/economia/igp-m-sobe-157-em-setembro-e-favorece-reajuste-de-aluguel-em-shoppings"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Nordeste lidera ritmo de emprego formal em agosto",
+      "texto": "Região gerou 59,4 mil vagas, o maior crescimento relativo do país; a Paraíba teve a maior alta entre os estados, de 1,59%.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/trabalho/2026/09/29/caged-nordeste-lidera-ritmo-de-emprego-em-agosto-e-paraiba-tem-maior-alta-do-pais/"
+        },
+        {
+          "nome": "Eu Quero Investir",
+          "url": "https://euqueroinvestir.com/economia/caged-emprego-formal-cria-1658-mil-vagas-em-agosto-e-supera-11-milhao-no-ano"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Serviços geram 110,3 mil vagas formais em agosto",
+      "texto": "Setor foi o maior empregador do mês no Caged, sustentando o mercado de trabalho apesar da desaceleração.",
+      "fontes": [
+        {
+          "nome": "Agência Gov",
+          "url": "https://agenciagov.ebc.com.br/noticias/202609/novo-caged-emprego-formal-gera-165-8-mil-vagas-em-agosto-e-acumula-1-13-milhao-de-postos-no-ano"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Renda média do trabalho fica em R$ 3.777",
+      "texto": "Rendimento se aproxima do recorde de R$ 3.804 do 1º trimestre; Genial vê mercado de trabalho apertado.",
+      "fontes": [
+        {
+          "nome": "Genial",
+          "url": "https://analisa.genialinvestimentos.com.br/macroeconomia-brasil/PNAD-Ago26-Desemprego-estavel-e-renda-em-aceleracao-mantem-mercado-de-trabalho-apertado"
+        },
+        {
+          "nome": "Jornal de Brasília",
+          "url": "https://jornaldebrasilia.com.br/noticias/economia/populacao-ocupada-e-a-maior-da-serie-historica/"
         }
       ]
     },
@@ -339,12 +363,16 @@
         "servicos",
         "transversal"
       ],
-      "titulo": "Dólar cai a R$ 5,18 na sexta e Ibovespa recua com Petrobras",
-      "texto": "Bolsa ignorou o alívio externo em 25/09, pressionada pela petroleira.",
+      "titulo": "Juros da dívida pública somam R$ 1,18 trilhão em 12 meses",
+      "texto": "Despesa equivale a 8,86% do PIB e eleva o déficit nominal a 9,48% do PIB.",
       "fontes": [
         {
-          "nome": "Money Times",
-          "url": "https://www.moneytimes.com.br/ibovespa-25-9-26-lils/"
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/juros-da-divida-publica-chegam-a-r-118-trilhao-em-12-meses-e-pressionam-divida-do-brasil/"
+        },
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/contas-publicas-tem-deficit-primario-de-r-949-bi-ate-agosto/"
         }
       ]
     },
@@ -352,20 +380,16 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Conab estima safra recorde de café: 67,6 milhões de sacas",
-      "texto": "Alta de 19,6% sobre 2025; arábica soma 48,2 milhões de sacas (+34,8%) e conilon 19,4 milhões (-6,6%).",
+      "titulo": "Boi gordo sobe 5,42% em setembro e chega a R$ 363",
+      "texto": "Indicador Cepea em São Paulo atingiu R$ 363,05 por arroba em 29/09; preços de toda a cadeia renovaram máximas reais.",
       "fontes": [
         {
-          "nome": "Agência Gov",
-          "url": "https://agenciagov.ebc.com.br/noticias/202609/producao-de-cafe-e-estimada-em-67-6-milhoes-de-sacas-influenciada-por-bienalidade-positiva-em-2026"
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/pecuaria/boi-gordo-sobe-542-em-setembro-e-bezerro-atinge-recorde-historico-aponta-cepea/"
         },
         {
           "nome": "Canal Rural",
-          "url": "https://canalrural.com.br/agricultura/safra-de-cafe-de-2026-e-estimada-em-676-milhoes-de-sacas-diz-conab"
-        },
-        {
-          "nome": "Safras",
-          "url": "https://safras.com.br/brasil-deve-colher-67606-milhoes-de-sacas-de-cafe-em-2026-conab/"
+          "url": "https://www.canalrural.com.br/radar/boi-precos-medios-de-toda-a-cadeia-renovam-maximas-em-setembro/"
         }
       ]
     },
@@ -373,16 +397,34 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Safra recorde de café pressiona cotações em Nova York",
-      "texto": "Contratos fecharam em queda moderada com a estimativa da Conab pesando sobre o mercado.",
+      "titulo": "Bezerro bate recorde de R$ 3.437 por cabeça",
+      "texto": "Maior valor da série do Cepea desde 2000 encarece a reposição e aperta a margem do pecuarista.",
       "fontes": [
         {
-          "nome": "Safras",
-          "url": "https://safras.com.br/cafe-fecha-com-perdas-moderadas-em-ny-com-estimativa-de-safra-recorde-da-conab-pesando/"
+          "nome": "Comprerural",
+          "url": "https://comprerural.com/bezerro-bate-recorde-de-r-3437-mil-e-muda-a-conta-de-quem-vai-repor-o-rebanho/"
         },
         {
-          "nome": "Safras",
-          "url": "https://safras.com.br/cotacoes-do-cafe-seguem-sob-pressao-com-melhores-expectativas-de-oferta/"
+          "nome": "Agrolink",
+          "url": "https://www.agrolink.com.br/noticias/bezerro--relacao-de-troca-chega-ao-pior-nivel-desde-2021_519186.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "industria"
+      ],
+      "titulo": "Produtor endividado trava compra de máquinas",
+      "texto": "Abimaq atribui a queda de 22,8% em agosto ao endividamento, ao custo do financiamento e ao câmbio sobre commodities.",
+      "fontes": [
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/?p=55638"
+        },
+        {
+          "nome": "Boca",
+          "url": "https://boca.com.br/agronegocio/receita-maquinas-agricolas-brasil-queda-agosto-2026"
         }
       ]
     },
@@ -390,46 +432,12 @@
       "setores": [
         "agro"
       ],
-      "titulo": "Plantio da soja 2026/27 chega a 0,5% da área",
-      "texto": "Conab: ritmo abaixo da média histórica, com Paraná, Mato Grosso do Sul e Santa Catarina avançando com apoio das chuvas.",
+      "titulo": "Tratores somam 7.252 unidades vendidas em agosto",
+      "texto": "Mesmo com a retração do mercado interno, exportações de máquinas agrícolas chegam a US$ 1,15 bilhão no ano.",
       "fontes": [
         {
           "nome": "Revista Cultivar",
-          "url": "https://revistacultivar.com.br/noticias/soja-2026-27-alcanca-0-5-da-area-semeada-no-brasil"
-        },
-        {
-          "nome": "Brasilagro",
-          "url": "https://brasilagro.com.br/conteudo/plantio-de-soja-segue-lento-mesmo-com-antecipacao-em-alguns-estados.html"
-        },
-        {
-          "nome": "Agência Gov",
-          "url": "https://agenciagov.ebc.com.br/noticias/202609/safra-2026-2027-comeca-a-avancar-com-apoio-das-chuvas"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Exportação de café cai 6,6% no ano até agosto",
-      "texto": "Brasil embarcou 3,8 milhões de sacas em agosto, mas o acumulado segue abaixo de 2025, segundo dados citados pela Conab.",
-      "fontes": [
-        {
-          "nome": "Revista Cultivar",
-          "url": "https://revistacultivar.com.br/noticias/safra-de-cafe-deve-atingir-recorde-de-67-6-milhoes-de-sacas"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Abic condiciona alta do consumo de café ao El Niño",
-      "texto": "Entidade diz que a continuidade depende do clima, da estabilidade de preços da indústria e de promoções no varejo.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/23/09/2026/noticias-varejo/consumo-de-cafe-no-varejo-sobe-465-e-preco-ao-consumidor-recua-mostra-abic/"
+          "url": "https://revistacultivar.com.br/noticias/receita-de-maquinas-agricolas-cai-22-4-ate-agosto-indica-a-abimaq"
         }
       ]
     },
@@ -437,16 +445,16 @@
       "setores": [
         "construcao"
       ],
-      "titulo": "Confiança da construção cai a 90,5 pontos em setembro",
-      "texto": "FGV: recuo de 1,4 ponto; o nível de uso da capacidade caiu a 78,1%, e o índice está no menor nível de 2026.",
+      "titulo": "Construção cria 20,8 mil vagas formais em agosto",
+      "texto": "Setor liderou o avanço relativo entre os segmentos no Caged; na PNAD, a ocupação na construção subiu 306 mil.",
       "fontes": [
         {
-          "nome": "Acessa",
-          "url": "https://www.acessa.com/economia/2026/09/340915-fgv-indice-de-confianca-da-construcao-recua-14-ponto-em-setembro-a-905-pontos.html"
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/construcao-civil-cria-208-mil-vagas-e-lidera-avanco-entre-setores-no-mes/"
         },
         {
-          "nome": "Tribuna do Sertão",
-          "url": "https://tribunadosertao.com.br/geral/2026/09/25/985260-fgv-indice-de-confianca-da-construcao-recua-14-ponto-em-setembro-a-905-pontos"
+          "nome": "Diario de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11725242-desemprego-fica-em-53-ate-agosto-e-populacao-ocupada-atinge-recorde-aponta-ibge.html"
         }
       ]
     },
@@ -454,16 +462,20 @@
       "setores": [
         "construcao"
       ],
-      "titulo": "INCC-M desacelera a 0,25% em setembro",
-      "texto": "Após 0,85% em agosto, o custo da construção da FGV acumula 5,86% no ano e 6,61% em 12 meses; materiais subiram 0,17%.",
+      "titulo": "Crédito imobiliário da poupança soma R$ 16,97 bi em agosto",
+      "texto": "Abecip: alta de 46,6% em um ano; no ano, R$ 132,5 bilhões (+37,5%), mas a poupança perdeu R$ 9,5 bilhões em saques.",
       "fontes": [
         {
-          "nome": "SindusCon-SP",
-          "url": "https://sindusconsp.com.br/wp-content/uploads/2026/09/INCC-M_FGV_press-release_Set26.pdf"
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/09/1265219-credito-imobiliario-totaliza-rs-1697-bilhoes-em-agosto-alta-de-466-em-um-ano-diz-abecip.html"
         },
         {
-          "nome": "SindusCon-SP",
-          "url": "https://sindusconsp.com.br/incc-m-sobe-025-em-setembro/"
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/credito-imobiliario-da-poupanca-cresce-375-ate-agosto/"
+        },
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/credito-imobiliario-cresce-466-em-agosto-e-soma-r-1325-bilhoes-no-ano/"
         }
       ]
     },
@@ -471,25 +483,30 @@
       "setores": [
         "construcao"
       ],
-      "titulo": "MCMV autoriza 2.574 novas moradias em oito estados",
-      "texto": "Portaria publicada em 18/09 lista propostas aptas; Mato Grosso concentra o maior volume.",
+      "titulo": "Imóveis residenciais acumulam alta de 14,73% em 12 meses",
+      "texto": "IGMI-R, índice da Abecip, mostra valorização forte até agosto, enquanto o crédito com recursos livres caiu 63,3%.",
       "fontes": [
         {
-          "nome": "Mixvale",
-          "url": "https://www.mixvale.com.br/2026/09/25/minha-casa-minha-vida-tera-2-574-novas-moradias-em-8-estados/"
+          "nome": "Let's Money",
+          "url": "https://www.letsmoney.com.br/credito/abecip-credito-imobiliario-poupanca-agosto/"
         }
       ]
     },
     {
       "setores": [
-        "construcao"
+        "construcao",
+        "comercio"
       ],
-      "titulo": "Governo prorroga prazo de entrega de obras do MCMV",
-      "texto": "Portaria MCID 1.268, de 21/09, estende em 24 meses o prazo para concluir moradias contratadas pela Portaria 523/2021.",
+      "titulo": "Aluguéis com aniversário em outubro sobem 3,34%",
+      "texto": "Contratos corrigidos pelo IGP-M terão reajuste pelo acumulado de 12 meses até setembro.",
       "fontes": [
         {
-          "nome": "CBIC",
-          "url": "https://cbic.org.br/minha-casa-minha-vida-ministerio-prorroga-prazo-para-conclusao-e-entrega-de-moradias/"
+          "nome": "Sou Brasília",
+          "url": "https://soubrasilia.com/igpm-setembro-2026-reajuste-aluguel-outubro-3-34/"
+        },
+        {
+          "nome": "Debit",
+          "url": "https://www.debit.com.br/blog/igp-m-setembro-2026"
         }
       ]
     },
@@ -497,12 +514,20 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "E-commerce de bens de consumo cresce 58% em 12 meses",
-      "texto": "Worldpanel: compras de abastecimento avançam 94% no canal online, e a IA começa a disputar a decisão de compra.",
+      "titulo": "Shopee lança plataforma de exportação para PMEs brasileiras",
+      "texto": "Vendedores poderão vender para Argentina e México com logística operada pela Shopee e sem taxa extra de adesão.",
       "fontes": [
         {
           "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/25/09/2026/ecommerce/e-commerce-de-bens-de-consumo-cresce-58-e-ia-entra-na-decisao-de-compra/"
+          "url": "https://mercadoeconsumo.com.br/29/09/2026/ecommerce/shopee-lanca-plataforma-de-exportacao-para-pmes-brasileiras-na-america-latina/"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4349748/shopee-lanca-plataforma-de-exportacao-para-pequenas-e-medias-empresas-do-brasil"
+        },
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/09/1265046-shopee-lanca-plataforma-de-exportacao-para-pequenas-e-medias-empresas-do-brasil.html"
         }
       ]
     },
@@ -510,34 +535,30 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "Remessas de até US$ 50 somam US$ 526 milhões em agosto",
-      "texto": "Valor subiu 79% sobre 2025, segundo dados da Receita compilados pela Abit; o ICMS estadual continua sendo cobrado.",
+      "titulo": "Piloto da Shopee teve 19 mil vendedores e 1,4 milhão de produtos",
+      "texto": "Com a ampliação, a empresa quer alcançar mais de 150 mil vendedores brasileiros; adesão é por convite na Central do Vendedor.",
       "fontes": [
         {
-          "nome": "Central do Varejo",
-          "url": "https://centraldovarejo.com.br/compras-internacionais-disparam-74-em-agosto-apos-fim-da-taxa-das-blusinhas-aponta-abit/"
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/shopee-lanca-plataforma-de-exportacao-para-ajudar-pmes-brasileiras-a-expandir-para-a-america-latina/"
         },
         {
-          "nome": "Tribuna do Sertão",
-          "url": "https://tribunadosertao.com.br/geral/2026/09/22/983637-compras-internacionais-disparam-apos-a-retirada-da-taxa-das-blusinhas-aponta-abit"
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/09/30/exportacao-pela-shopee-vendedores/"
         }
       ]
     },
     {
       "setores": [
         "ecommerce",
-        "servicos"
+        "comercio"
       ],
-      "titulo": "Pix: novas regras de segurança passam a valer em 21/09",
-      "texto": "Parte das mudanças da Resolução BCB 587 entra em vigor imediatamente; obrigações de atendimento a fraudes começam em fevereiro de 2027.",
+      "titulo": "Exportar pelo marketplace exige checar regras de cada país",
+      "texto": "Guia orienta conferir elegibilidade de produtos na Argentina e no México; prazo médio de entrega ainda não foi divulgado.",
       "fontes": [
         {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/poder-economia/entenda-quais-sao-as-mudancas-no-pix-anunciadas-pelo-bc/"
-        },
-        {
-          "nome": "Diário do Nordeste",
-          "url": "https://diariodonordeste.verdesmares.com.br/negocios/bc-permite-pix-automatico-em-conta-salario-e-atualiza-regras-de-seguranca-veja-mudancas-1.3792414"
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/empresas-e-negocios/como-funciona-a-plataforma-internacional-shopee-para-vendedores-brasileiros/"
         }
       ]
     }
@@ -546,32 +567,32 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Fiscalização de preços de combustíveis",
-      "texto": "Senacon abre 70 processos contra postos e ANP multa distribuidoras em mais de R$ 200 milhões.",
-      "score": 5.9,
+      "tema": "Negociação do tarifaço",
+      "texto": "Brasil e EUA criam grupo específico no G20; Alckmin sinaliza retomada das conversas.",
+      "score": 6.5,
       "setores": [
-        "comercio",
-        "servicos",
-        "industria"
+        "transversal",
+        "industria",
+        "agro"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Inflação volta a subir",
-      "texto": "IPCA-15 de 0,70% e BC com 90% de chance de estouro do teto; PIB projetado cai a 1,8%.",
-      "score": 7.5,
+      "tema": "Indústria cai, emprego resiste",
+      "texto": "PIM recua 0,6% em agosto, mas desemprego fica em 5,3% e Caged cria 165,8 mil vagas.",
+      "score": 7.4,
       "setores": [
         "transversal",
-        "comercio",
+        "industria",
         "servicos"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Confiança do consumidor no menor nível desde 2022",
-      "texto": "Índice da FGV cai a 84,2 pontos, quinta queda seguida, com expectativas piores.",
+      "tema": "Famílias endividadas",
+      "texto": "Endividamento chega a 49,9% da renda e inadimplência a 6%; consumidor corta idas a restaurantes.",
       "score": 7.0,
       "setores": [
         "comercio",
@@ -581,21 +602,20 @@
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "IA no varejo",
-      "texto": "Uso ativo de IA no varejo vai de 39% a 65%; dados pessoais concentram 56% das violações de políticas.",
-      "score": 6.4,
+      "tema": "Exportação via marketplace",
+      "texto": "Shopee abre plataforma para PMEs venderem na Argentina e no México com logística própria.",
+      "score": 6.0,
       "setores": [
-        "comercio",
         "ecommerce",
-        "servicos"
+        "comercio"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Chuvas e plantio",
-      "texto": "Plantio da soja em 0,5%, abaixo da média; Abic vincula consumo de café ao El Niño.",
-      "score": 5.9,
+      "tema": "Pecuária em alta",
+      "texto": "Boi gordo sobe 5,42% e bezerro bate recorde, com oferta restrita de animais.",
+      "score": 5.6,
       "setores": [
         "agro"
       ]
@@ -603,13 +623,12 @@
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Efeito da lei das blusinhas",
-      "texto": "Encomendas de até US$ 50 sobem 74% em agosto; Abit chama a lei de retrocesso.",
-      "score": 6.7,
+      "tema": "Reajuste de aluguéis",
+      "texto": "IGP-M de 1,57% em setembro leva a 3,34% o reajuste de contratos com aniversário em outubro.",
+      "score": 5.8,
       "setores": [
-        "ecommerce",
-        "comercio",
-        "industria"
+        "construcao",
+        "comercio"
       ]
     }
   ],
@@ -618,36 +637,36 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "up",
-      "sub": "Taxa básica de juros · BCB/SGS · 25/09/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 02/10/2026",
       "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "-0,32%",
       "cor": "up",
-      "sub": "Mês · acum. ano 3,11% · 12m 4,22% · meta 3,0% (teto 4,5%) · IBGE ago/26 · Projeção Focus 2026: 4,99%",
+      "sub": "Mês · acum. ano 3,11% · 12m 4,22% · meta 3,0% (teto 4,5%) · IBGE ago/26 · Projeção Focus 2026: 5,01%",
       "fonte": "IBGE",
       "acum_ano": 3.11,
       "ipca_12m": 4.22,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
-      "projecao": 4.99,
-      "projecao_em": "2026-09-25",
+      "projecao": 5.01,
+      "projecao_em": "2026-10-02",
       "projecao_fonte": "Focus/BCB"
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,20",
+      "valor": "R$ 5,22",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 25/09/2026",
+      "sub": "Dólar PTAX venda · BCB · 02/10/2026",
       "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
       "valor": "5,3%",
-      "cor": "up",
-      "sub": "PNAD Contínua · IBGE · mai-jun-jul 2026",
+      "cor": "neutral",
+      "sub": "PNAD Contínua · IBGE · jun-jul-ago 2026",
       "fonte": "IBGE"
     },
     {
@@ -668,11 +687,11 @@
     },
     {
       "label": "IPP",
-      "valor": "-0,83%",
-      "cor": "up",
-      "sub": "Preços ao produtor m/m · acum. ano 3,09% · IBGE jul/26",
+      "valor": "0,34%",
+      "cor": "down",
+      "sub": "Preços ao produtor m/m · acum. ano 3,45% · IBGE ago/26",
       "fonte": "IBGE",
-      "acum_ano": 3.09
+      "acum_ano": 3.45
     }
   ],
   "kpis_setoriais": [
@@ -836,157 +855,157 @@
     "panorama": {
       "acoes": [
         {
-          "ico": "⚡",
-          "txt": "Fim do bônus de Itaipu: reprograme o orçamento de energia para setembro e outubro."
+          "ico": "🏭",
+          "txt": "Indústria em queda: ajuste estoques à demanda mais fraca do 4º trimestre."
         },
         {
-          "ico": "📈",
-          "txt": "Inflação volta a subir: revise reajustes de contratos atrelados ao IPCA."
+          "ico": "👷",
+          "txt": "Mercado de trabalho apertado: planeje contratações de fim de ano com antecedência."
         },
         {
-          "ico": "🏦",
-          "txt": "BC vê PIB de 1,8%: mantenha metas conservadoras para o 4º trimestre."
+          "ico": "🏢",
+          "txt": "IGP-M de 1,57%: negocie reajustes de aluguel de outubro antes da renovação."
         },
         {
-          "ico": "⛽",
-          "txt": "Fiscalização de combustíveis: documente custos antes de repassar preços."
+          "ico": "💳",
+          "txt": "Inadimplência de 6%: mantenha crédito seletivo ao consumidor."
         },
         {
-          "ico": "🔐",
-          "txt": "IA no varejo: defina regras de uso para não expor dados de clientes."
+          "ico": "🌎",
+          "txt": "Exportadores: acompanhem o grupo Brasil-EUA sobre tarifas."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Com intenção de investir no menor nível em seis anos, quem vai ampliar capacidade em 2027?",
-        "quote": "Intenção de investir da indústria caiu a 51,3 pontos, menor desde agosto de 2020.",
+        "prov": "Produção em queda e confiança em baixa: o 4º trimestre será de ajuste de estoques?",
+        "quote": "Produção industrial caiu 0,6% em agosto, pior resultado para o mês desde 2022.",
         "edi": [
-          "A CNI registrou a quarta queda seguida da intenção de investimento, e na construção o indicador caiu ao menor nível desde 2019.",
-          "A Aneel elevou para 9,4% o reajuste médio de energia de 2026 e a ANP multou distribuidoras de combustíveis em mais de R$ 200 milhões."
+          "A PIM recuou com 16 de 25 ramos em queda, pressionada por bens de consumo, e a confiança da indústria da FGV caiu a 91,3 pontos.",
+          "A Abimaq registrou queda de 22,4% na receita de máquinas agrícolas no ano, e Brasil e EUA criaram grupo para negociar o tarifaço."
         ],
         "acoes": [
           {
-            "ico": "🏭",
-            "txt": "Priorize investimentos de eficiência, com retorno rápido."
+            "ico": "📦",
+            "txt": "Reduza estoques de bens de consumo diante da demanda fraca."
           },
           {
-            "ico": "⚡",
-            "txt": "Negocie contratos de energia no mercado livre antes dos reajustes."
+            "ico": "🌎",
+            "txt": "Prepare pleitos setoriais para o grupo Brasil-EUA."
           },
           {
-            "ico": "📊",
-            "txt": "Reveja o orçamento de 2027 com PIB projetado de 1,8%."
+            "ico": "🚜",
+            "txt": "Fornecedores do agro: ofereçam financiamento próprio para destravar vendas."
           }
         ]
       },
       "comercio": {
-        "prov": "Consumidor pessimista e importado sem imposto: onde está sua vantagem?",
-        "quote": "Encomendas internacionais de até US$ 50 subiram 74% em agosto, segundo a Abit.",
+        "prov": "Famílias com metade da renda comprometida: quanto do seu fluxo depende do crediário?",
+        "quote": "Endividamento das famílias chegou a 49,9% da renda anual.",
         "edi": [
-          "A confiança do consumidor caiu ao menor nível desde 2022 e a prévia da inflação subiu 0,70%, pressionada pela luz.",
-          "As compras internacionais dispararam após o fim da taxa das blusinhas, enquanto o café teve consumo maior com preço em queda."
+          "Os dados do BC mostraram juros e inadimplência em alta para as famílias, que também reduzem as idas a restaurantes por causa do preço.",
+          "O IGP-M de 1,57% em setembro eleva o reajuste de aluguéis em shoppings e lojas com contrato atrelado ao índice."
         ],
         "acoes": [
           {
-            "ico": "🏷️",
-            "txt": "Use promoções em itens com preço em queda, como café."
+            "ico": "🏬",
+            "txt": "Negocie a troca do IGP-M pelo IPCA no aluguel da loja."
           },
           {
-            "ico": "🚚",
-            "txt": "Destaque pronta-entrega contra o importado barato."
+            "ico": "💳",
+            "txt": "Ofereça Pix e parcelamento sem juros curtos em vez de crediário longo."
           },
           {
-            "ico": "🔐",
-            "txt": "Treine equipes no uso seguro de IA com dados de clientes."
+            "ico": "🍽️",
+            "txt": "Food service: crie combos de preço fixo para recuperar frequência."
           }
         ]
       },
       "servicos": {
-        "prov": "Inflação de volta e juro ainda alto: seus preços acompanham os custos?",
-        "quote": "BC vê 90% de chance de a inflação estourar o teto em 2026.",
+        "prov": "Emprego recorde com indústria caindo: até quando os serviços seguram a economia?",
+        "quote": "Serviços geraram 110,3 mil das 165,8 mil vagas formais de agosto.",
         "edi": [
-          "O Relatório de Política Monetária elevou a projeção de inflação para 5,2% e reduziu o PIB para 1,8%; a ata do Copom confirmou a desaceleração.",
-          "A CNI avaliou o corte da Selic como insuficiente, e as novas regras do Pix começaram a valer em 21/09."
+          "O Caged superou as expectativas, com serviços como maior empregador, e a PNAD mostrou ocupação recorde e renda média de R$ 3.777.",
+          "As contas públicas tiveram déficit menor que o esperado, mas a dívida bruta subiu a 82,9% do PIB."
         ],
         "acoes": [
           {
-            "ico": "📈",
-            "txt": "Reajuste contratos de serviço pela inflação acumulada."
+            "ico": "👥",
+            "txt": "Reforce retenção de talentos em mercado de trabalho apertado."
           },
           {
-            "ico": "💳",
-            "txt": "Adapte a cobrança às novas regras do Pix."
+            "ico": "💰",
+            "txt": "Ajuste preços à renda em alta do público empregado."
           },
           {
-            "ico": "🏦",
-            "txt": "Evite dívidas longas a juro fixo antes de novos cortes."
+            "ico": "📊",
+            "txt": "Monitore o risco fiscal ao planejar captações."
           }
         ]
       },
       "agro": {
-        "prov": "Safra recorde de café com preço caindo: hora de vender ou estocar?",
-        "quote": "Conab estima safra recorde de café de 67,6 milhões de sacas, alta de 19,6%.",
+        "prov": "Boi recorde e bezerro mais caro ainda: a conta da reposição fecha?",
+        "quote": "Boi gordo subiu 5,42% em setembro, a R$ 363,05 por arroba.",
         "edi": [
-          "A Conab projetou a maior safra de café da série, com o arábica em alta de 34,8%, o que pressionou as cotações em Nova York.",
-          "O plantio da soja 2026/27 chegou a 0,5% da área, abaixo da média, com chuvas favorecendo o Sul e o Mato Grosso do Sul."
+          "O Cepea registrou máximas reais em toda a cadeia da pecuária, com o bezerro no maior valor da série, o que aperta a reposição.",
+          "No lado dos insumos, a venda de máquinas agrícolas caiu 22,4% no ano com produtor endividado."
         ],
         "acoes": [
           {
-            "ico": "☕",
-            "txt": "Escalone vendas de café para reduzir risco de preço."
+            "ico": "🐂",
+            "txt": "Escalone a venda de boi gordo para aproveitar a alta."
           },
           {
-            "ico": "🌱",
-            "txt": "Acompanhe as chuvas antes de acelerar o plantio."
+            "ico": "🐄",
+            "txt": "Recalcule a margem de reposição com o bezerro a R$ 3.437."
           },
           {
-            "ico": "📉",
-            "txt": "Avalie hedge diante da pressão de oferta."
+            "ico": "🚜",
+            "txt": "Adie compra de máquinas até o crédito rural baratear."
           }
         ]
       },
       "construcao": {
-        "prov": "Custo desacelerando e confiança caindo: o problema agora é demanda?",
-        "quote": "Confiança da construção caiu 1,4 ponto em setembro, para 90,5 pontos.",
+        "prov": "Crédito recorde e poupança sangrando: o funding do imobiliário aguenta 2027?",
+        "quote": "Crédito imobiliário da poupança somou R$ 16,97 bilhões em agosto, alta de 46,6%.",
         "edi": [
-          "A FGV mostrou a confiança da construção no menor nível de 2026, com uso da capacidade em 78,1%, enquanto o INCC-M desacelerou para 0,25%.",
-          "O governo autorizou 2.574 moradias do MCMV e prorrogou em 24 meses o prazo de obras antigas."
+          "A Abecip mostrou crédito forte no ano, mas a poupança perdeu R$ 9,5 bilhões em saques e o crédito com recursos livres caiu 63,3%.",
+          "No emprego, a construção criou 20,8 mil vagas formais em agosto e somou 306 mil ocupados a mais na PNAD."
         ],
         "acoes": [
           {
-            "ico": "🏠",
-            "txt": "Inscreva projetos nas próximas portarias do MCMV."
+            "ico": "🏦",
+            "txt": "Antecipe repasses enquanto há funding da poupança."
           },
           {
-            "ico": "🧱",
-            "txt": "Aproveite o custo mais estável para fechar compras de materiais."
+            "ico": "👷",
+            "txt": "Garanta equipes: a construção disputa mão de obra."
           },
           {
-            "ico": "📑",
-            "txt": "Revise cronogramas de obras com prazo prorrogado."
+            "ico": "🏢",
+            "txt": "Revise reajustes de aluguel pelo IGP-M de 3,34%."
           }
         ]
       },
       "ecommerce": {
-        "prov": "Online de bens de consumo cresce 58%: seu sortimento de abastecimento está online?",
-        "quote": "E-commerce de bens de consumo cresceu 58% em 12 meses, segundo a Worldpanel.",
+        "prov": "Exportar para Argentina e México pelo marketplace: seu catálogo está pronto?",
+        "quote": "Shopee lançou plataforma para PMEs brasileiras venderem na Argentina e no México.",
         "edi": [
-          "As compras de abastecimento avançaram 94% no canal online e a IA começa a influenciar a escolha de produtos.",
-          "As remessas de até US$ 50 somaram US$ 526 milhões em agosto, alta de 79%, após o fim da taxa das blusinhas."
+          "A Shopee ampliou a plataforma internacional após piloto com 19 mil vendedores e 1,4 milhão de produtos, assumindo a logística até os dois países.",
+          "A expectativa é alcançar mais de 150 mil vendedores brasileiros, com adesão por convite."
         ],
         "acoes": [
           {
-            "ico": "🛒",
-            "txt": "Coloque itens de abastecimento no online com recompra fácil."
+            "ico": "🌎",
+            "txt": "Teste a exportação com itens de maior margem."
           },
           {
-            "ico": "🤖",
-            "txt": "Prepare o catálogo para recomendações por IA."
+            "ico": "📋",
+            "txt": "Cheque as regras de produto de cada país antes de anunciar."
           },
           {
             "ico": "📦",
-            "txt": "Compare preço final com o importado, incluindo ICMS."
+            "txt": "Ajuste embalagem e prazo para entregas internacionais."
           }
         ]
       }
@@ -1015,23 +1034,6 @@
       "origem": "real"
     },
     {
-      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
-      "tipo": "risco",
-      "titulo": "Remessa Conforme e importados",
-      "dimensao": "L",
-      "setores": [
-        "ecommerce"
-      ],
-      "status": "materializado",
-      "relevancia": 100,
-      "severidade": 7.5,
-      "iminencia": 7.0,
-      "ultima_observacao": "Abit: encomendas de até US$ 50 sobem 74% em agosto após o fim da taxa.",
-      "periodo_observacao": "2026-W39",
-      "data_identificacao": "2026-07-13",
-      "origem": "real"
-    },
-    {
       "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
       "tipo": "risco",
       "titulo": "Juros, Selic e crédito",
@@ -1049,32 +1051,9 @@
       "relevancia": 96.8,
       "severidade": 9.8,
       "iminencia": 9.0,
-      "ultima_observacao": "Ata do Copom e RPM: projeção de IPCA 2026 sobe a 5,2%; PIB reduzido a 1,8%; Focus prevê Selic de 13,50%.",
-      "periodo_observacao": "2026-W39",
+      "ultima_observacao": "Juros para famílias sobem em agosto; inadimplência de 6%; dívida bruta a 82,9% do PIB.",
+      "periodo_observacao": "2026-W40",
       "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
-      "tipo": "risco",
-      "titulo": "Digitalização e IA",
-      "dimensao": "T",
-      "setores": [
-        "servicos",
-        "agro",
-        "ecommerce",
-        "comercio",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 96.8,
-      "severidade": 9.8,
-      "iminencia": 9.0,
-      "ultima_observacao": "Uso ativo de IA no varejo sobe de 39% para 65%; e-commerce de bens de consumo cresce 58%.",
-      "periodo_observacao": "2026-W39",
-      "data_identificacao": "2026-05-25",
       "origem": "real"
     },
     {
@@ -1092,8 +1071,8 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "Conab estima safra recorde de café de 67,6 mi sacas; plantio da soja em 0,5%.",
-      "periodo_observacao": "2026-W39",
+      "ultima_observacao": "Boi gordo sobe 5,42% em setembro e bezerro bate recorde; máquinas agrícolas caem 22,4% no ano.",
+      "periodo_observacao": "2026-W40",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -1113,32 +1092,9 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "Intenção de investir da indústria cai a 51,3 pontos, menor desde 2020 (CNI).",
-      "periodo_observacao": "2026-W39",
+      "ultima_observacao": "PIM cai 0,6% em agosto, pior agosto desde 2022; confiança da indústria FGV cai a 91,3.",
+      "periodo_observacao": "2026-W40",
       "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
-      "tipo": "risco",
-      "titulo": "Construção e custos",
-      "dimensao": "E",
-      "setores": [
-        "construcao",
-        "transversal",
-        "industria",
-        "agro",
-        "comercio",
-        "servicos",
-        "ecommerce"
-      ],
-      "status": "em_curso",
-      "relevancia": 93.8,
-      "severidade": 9.3,
-      "iminencia": 8.5,
-      "ultima_observacao": "INCC-M desacelera a 0,25% em setembro; confiança da construção cai a 90,5.",
-      "periodo_observacao": "2026-W39",
-      "data_identificacao": "2026-01-05",
       "origem": "real"
     },
     {
@@ -1154,31 +1110,85 @@
       "relevancia": 92.75,
       "severidade": 9.0,
       "iminencia": 8.5,
-      "ultima_observacao": "Confiança do consumidor FGV cai a 84,2, menor desde 2022, quinta queda seguida.",
-      "periodo_observacao": "2026-W39",
+      "ultima_observacao": "Endividamento das famílias chega a 49,9% da renda; consumidor reduz idas a restaurantes.",
+      "periodo_observacao": "2026-W40",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
     {
-      "id": "cad38463-60e5-4e42-9065-539cd7060c1c",
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
       "tipo": "risco",
-      "titulo": "Combustíveis e petróleo",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Brasil e EUA criam grupo específico para negociar o tarifaço no G20.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-07-02",
+      "origem": "real"
+    },
+    {
+      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
+      "tipo": "risco",
+      "titulo": "Câmbio e balança",
       "dimensao": "E",
       "setores": [
         "transversal",
         "comercio",
-        "servicos",
         "industria",
         "agro",
+        "servicos",
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 90.45,
-      "severidade": 8.7,
-      "iminencia": 8.0,
-      "ultima_observacao": "ANP multa distribuidoras em mais de R$ 200 mi e Senacon abre 70 processos contra postos.",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Ibovespa sobe 5,03% em setembro; dólar estável a R$ 5,17.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
+      "tipo": "risco",
+      "titulo": "Emprego e renda (CAGED/PNAD)",
+      "dimensao": "S",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "PNAD: desemprego de 5,3% e ocupação recorde de 103,5 mi; Caged cria 165,8 mil vagas em agosto.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-01-26",
+      "origem": "real"
+    },
+    {
+      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
+      "tipo": "risco",
+      "titulo": "Remessa Conforme e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce"
+      ],
+      "status": "materializado",
+      "relevancia": 91.97,
+      "severidade": 7.5,
+      "iminencia": 7.0,
+      "ultima_observacao": "Abit: encomendas de até US$ 50 sobem 74% em agosto após o fim da taxa.",
       "periodo_observacao": "2026-W39",
-      "data_identificacao": "2026-03-16",
+      "data_identificacao": "2026-07-13",
       "origem": "real"
     }
   ]
