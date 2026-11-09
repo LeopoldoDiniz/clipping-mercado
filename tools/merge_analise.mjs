@@ -1,7 +1,7 @@
 /**
  * MERGE + GATE da camada analítica autoral (Claude) para semanas de backfill.
  * Lê um JSON { "W11": {pestel,porter,analise,editorial}, ... }, e para cada semana:
- *  - roda o MESMO gate de grounding do enriquecer_analise.py (todo número factual da
+ *  - roda o gate de grounding (todo número factual da
  *    análise/editorial tem de existir no clipping/KPIs da semana);
  *  - se passar, grava pestel/porter/analise + editorial (origem 'analise_claude'),
  *    preservando clipping/kpis/setoriais/pressoes; se falhar, NÃO grava e lista os números.

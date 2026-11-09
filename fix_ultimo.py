@@ -1,7 +1,7 @@
 """
 FIX_ULTIMO — solução definitiva e determinística.
 
-Não depende do motor, do Gemini nem do Supabase. Apenas OLHA a pasta data/,
+Não depende do motor nem de IA. Apenas OLHA a pasta data/,
 encontra todos os arquivos de semana (AAAA-Www.json), escolhe o MAIS RECENTE
 (maior ano+semana) e reescreve:
   - data/ultimo.json  = cópia exata do arquivo da semana mais recente

@@ -2,7 +2,7 @@ name: Backfill KPIs oficiais
 
 # Disparo manual. Reescreve os indicadores macro de TODO o histórico (data/*.json)
 # com os valores OFICIAIS (BCB/SGS e IBGE/SIDRA) válidos na sexta de cada semana,
-# incluindo o acumulado no ano. NÃO usa Gemini nem Supabase — só APIs públicas.
+# incluindo o acumulado no ano. NÃO usa IA — só APIs públicas.
 on:
   workflow_dispatch:
 

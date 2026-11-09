@@ -1,56 +1,46 @@
 """
-MOTOR DO CLIPPING DE MERCADO
-Roda no GitHub Actions toda segunda-feira.
-Fluxo: carrega histórico do Supabase → chama Gemini com busca web →
-processa resposta → recalcula relevância → grava de volta → gera dados do portal.
+MOTOR DO CLIPPING DE MERCADO — v3 (IA via Claude, memória no repositório)
+
+A parte de IA (busca web + redação) é feita pelo Claude numa sessão (local ou rotina
+agendada na nuvem), sem API. O motor cuida de tudo o que é determinístico, em 3 passos:
+
+  python motor.py preparar  2026-W46   → data/raw/2026-W46/prompt_coleta.md
+      (Claude pesquisa e grava data/raw/2026-W46/coleta.json, no formato definido em prompt_geracao.py)
+  python motor.py processar 2026-W46   → valida a coleta, atualiza data/sinais.json,
+                                          grava data/raw/2026-W46/prompt_editorial.md
+      (Claude escreve data/raw/2026-W46/editorial.txt)
+  python motor.py publicar  2026-W46   → KPIs oficiais (BCB/IBGE) + data/2026-W46.json,
+                                          data/ultimo.json e data/index.json
+
+Sem a semana, usa a semana ISO atual. A memória longitudinal vive em
+data/sinais.json. Semanas passadas devem ser processadas
+em ORDEM CRONOLÓGICA: a memória evolui semana a semana (persistência, decaimento).
 """
 import os
+import sys
 import json
 import re
 import glob
-import time
+import uuid
 from datetime import date, datetime, timedelta
-
-from google import genai
-from google.genai import types
-from supabase import create_client
 
 from prompt_geracao import montar_prompt
 from kpis_oficiais import validar_kpis, coletar_kpis_setoriais, coletar_ipca_grupos
 
 # ─────────────────────────────────────────────────────────
-# CONFIGURAÇÃO (as chaves vêm dos GitHub Secrets via ambiente)
+# CONFIGURAÇÃO
 # ─────────────────────────────────────────────────────────
-GEMINI_KEY   = os.environ["GEMINI_API_KEY"].strip()
-# Limpa a URL do Supabase: remove espaços, o sufixo /rest/v1 (caminho interno
-# que a biblioteca adiciona sozinha) e barra(s) no final. Deixa só o domínio raiz.
-_raw_url = os.environ["SUPABASE_URL"].strip()
-_raw_url = _raw_url.rstrip("/")
-if _raw_url.endswith("/rest/v1"):
-    _raw_url = _raw_url[:-len("/rest/v1")]
-SUPABASE_URL = _raw_url.rstrip("/")
-SUPABASE_KEY = os.environ["SUPABASE_KEY"].strip()
-MODELO          = "gemini-2.5-flash"        # primário: busca nativa, free tier
-# Fallback: o antigo gemini-2.5-flash-lite foi DESCONTINUADO (retorna 404 "no longer
-# available") — assim como o gemini-2.0-flash antes dele. Sem alternativa gratuita
-# estável com grounding, o fallback aponta para o próprio primário: não resolve
-# estouro de cota DIÁRIA (mesma cota), mas evita o crash 404 e mantém o retry por
-# limite de MINUTO (RPM) funcionando. Trocar aqui se surgir novo modelo free com cota própria.
-MODELO_FALLBACK = "gemini-2.5-flash"
+MEMORIA = "data/sinais.json"          # sinais + observações
+RAW = "data/raw"                      # insumos de trabalho por semana (fora do git)
+SETORES = ("industria", "comercio", "servicos", "agro", "construcao", "ecommerce")
 
 # limiar abaixo do qual um sinal "dorme" após ciclos sem aparecer
 LIMIAR_DORMIR = 25.0
 CICLOS_PARA_DORMIR = 3
 
-# Teto de tokens de RACIOCÍNIO da coleta. No 2.5, max_output_tokens cobre
-# raciocínio + resposta somados: sem teto aqui, o raciocínio come o orçamento e o
-# JSON sai cortado no meio (foi o que derrubou a coleta de 2026-07-27, em ~56 mil
-# caracteres). Limitando o raciocínio, a folga restante fica para a resposta.
-THINKING_COLETA = 8192
-
 # ─────────────────────────────────────────────────────────
 # FONTES OFICIAIS: mapa palavra-chave → homepage oficial.
-# Usado como fallback quando o Gemini devolve URL inválida/proibida.
+# Usado como fallback quando a coleta traz URL inválida/proibida.
 # ─────────────────────────────────────────────────────────
 FONTES_OFICIAIS = {
     "ibge": "https://agenciadenoticias.ibge.gov.br",
@@ -309,7 +299,7 @@ def normalizar_clipping(itens):
 
 
 # ─────────────────────────────────────────────────────────
-# FÓRMULA DE RELEVÂNCIA (espelha a função SQL do Supabase)
+# FÓRMULA DE RELEVÂNCIA
 # ─────────────────────────────────────────────────────────
 def calcular_relevancia(severidade, iminencia, persistencia, corroboracao,
                         materializado, ciclos_sem_aparecer):
@@ -324,16 +314,27 @@ def calcular_relevancia(severidade, iminencia, persistencia, corroboracao,
 # ─────────────────────────────────────────────────────────
 # PERÍODO: calcula o rótulo da semana ISO atual
 # ─────────────────────────────────────────────────────────
-def periodo_atual():
-    hoje = date.today()
-    ano, semana, _ = hoje.isocalendar()
-    inicio = hoje - timedelta(days=hoje.weekday())
+def periodo_atual(chave=None):
+    """Rótulo/intervalo da semana ISO. Sem chave, usa a semana de hoje."""
+    if chave:
+        a, s = chave.upper().split("-W")
+        inicio = date.fromisocalendar(int(a), int(s), 1)
+    else:
+        hoje = date.today()
+        inicio = hoje - timedelta(days=hoje.weekday())
+    ano, semana, _ = inicio.isocalendar()
     fim = inicio + timedelta(days=4)
     meses = ["", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
              "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
     label = f"Semana {semana} · {meses[inicio.month]} {ano}"
     chave = f"{ano}-W{semana:02d}"
     return chave, label, inicio.isoformat(), fim.isoformat()
+
+
+def _data_ref(chave):
+    """Data que entra nos registros da memória: hoje, ou a sexta da semana se ela já passou
+    (backfill) — para a memória não datar sinais de setembro como de novembro."""
+    return min(date.today(), _sexta_da_chave(chave))
 
 
 def _sexta_da_chave(chave):
@@ -346,7 +347,7 @@ def _sexta_da_chave(chave):
 
 
 # ─────────────────────────────────────────────────────────
-# EXTRAI JSON da resposta do Gemini (tolerante a lixo em volta)
+# EXTRAI JSON da coleta (tolerante a lixo em volta)
 # ─────────────────────────────────────────────────────────
 def extrair_json(texto):
     # remove cercas de markdown se houver
@@ -355,157 +356,120 @@ def extrair_json(texto):
     ini = texto.find("{")
     fim = texto.rfind("}")
     if ini == -1 or fim == -1:
-        raise ValueError("Resposta do Gemini não contém JSON.")
+        raise ValueError("Coleta não contém JSON.")
     return json.loads(texto[ini:fim + 1])
 
 
 # ─────────────────────────────────────────────────────────
-# FALLBACK DE MODELO: se a COTA DIÁRIA do primário estourar, desvia para o
-# secundário (cota diária independente). Não confundir com o limite por MINUTO
-# (RPM), que se resolve esperando segundos — esse é tratado por backoff.
+# MEMÓRIA LONGITUDINAL (data/sinais.json)
 # ─────────────────────────────────────────────────────────
-def _cota_diaria_esgotada(err):
-    """True só quando o erro indica esgotamento da cota DIÁRIA (RPD), que não
-    adianta esperar segundos — ela só renova à meia-noite (Pacífico)."""
-    s = str(err).lower()
-    esgotou = any(t in s for t in ("resource_exhausted", "429", "quota", "exhausted"))
-    marca_diaria = any(t in s for t in ("perday", "per day", "requests per day", "daily"))
-    return esgotou and marca_diaria
+def _agora():
+    return datetime.utcnow().isoformat() + "+00:00"
 
 
-class RespostaTruncada(RuntimeError):
-    """Resposta que chegou com HTTP 200 mas inutilizável: cortada por MAX_TOKENS,
-    vazia, ou com JSON quebrado. Não é erro de API — nenhuma exceção é levantada
-    pelo SDK —, mas o efeito prático é o mesmo, e a mesma chamada costuma passar na
-    tentativa seguinte. Por isso entra no circuito de retry em vez de derrubar o run."""
+def carregar_memoria():
+    with open(MEMORIA, encoding="utf-8") as f:
+        return json.load(f)
 
 
-def _transitorio(err):
-    """True para erros passageiros do lado do Gemini (sobrecarga/instabilidade),
-    que passam sozinhos ao esperar alguns segundos. É o caso do 503 UNAVAILABLE
-    ('high demand'), que derrubou a coleta de 2026-07-20."""
-    if isinstance(err, RespostaTruncada):
-        return True
-    s = str(err).lower()
-    return any(t in s for t in (
-        "503", "unavailable", "high demand", "overloaded",
-        "500", "internal", "502", "504", "deadline", "timeout"))
+def salvar_memoria(mem):
+    mem["atualizado_em"] = _agora()
+    tmp = MEMORIA + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(mem, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, MEMORIA)
 
 
-def _motivo_de_parada(resp):
-    """finish_reason do 1º candidato, normalizado ('MAX_TOKENS', 'STOP', ...).
-    None quando a resposta não expõe o campo — SDKs e versões variam, e a ausência
-    do dado nunca deve ser motivo de crash."""
-    try:
-        fr = resp.candidates[0].finish_reason
-    except (AttributeError, IndexError, TypeError):
-        return None
-    if fr is None:
-        return None
-    return getattr(fr, "name", str(fr)).rsplit(".", 1)[-1].upper()
+def sinais_ativos(mem):
+    return [s for s in mem["sinais"] if s.get("status") != "dormindo"]
 
 
-# espera antes de cada tentativa: a 1ª é imediata, depois 20s, 45s e 90s
-_ESPERAS_RETRY = [0, 20, 45, 90]
+def ranquear(sinais):
+    """Ordem por relevância com DESEMPATE FIXO: mais recentemente atualizado primeiro,
+    depois o mais antigo na memória — o mesmo empate dá sempre o mesmo resultado."""
+    s = sorted(sinais, key=lambda x: (x.get("criado_em") or ""))
+    s = sorted(s, key=lambda x: (x.get("atualizado_em") or ""), reverse=True)
+    return sorted(s, key=lambda x: -(x.get("relevancia_atual") or 0))
 
 
-def _gerar(client, prompt, config, validar=None):
-    """Chama o primário com backoff em erros transitórios; se a cota DIÁRIA do
-    primário estourar, refaz no fallback. Retorna (resultado, modelo_usado).
-
-    `validar` (opcional) recebe a resposta e devolve o que o chamador realmente
-    quer — no caso da coleta, o JSON já convertido. O ponto de fazer isso AQUI
-    dentro é que uma resposta imprestável passa a ser retentável: antes, um 200
-    com JSON truncado saía do loop como sucesso e só quebrava depois, fora do
-    alcance do retry (foi assim que 2026-07-27 morreu na 3ª tentativa). Sem
-    `validar`, devolve a resposta crua e o comportamento é o de sempre."""
-    def _executar(modelo):
-        resp = client.models.generate_content(
-            model=modelo, contents=prompt, config=config)
-        return (validar(resp) if validar else resp), modelo
-
-    ultimo = None
-    for i, espera in enumerate(_ESPERAS_RETRY):
-        if espera:
-            print(f"[motor] Gemini instável — aguardando {espera}s "
-                  f"(tentativa {i+1}/{len(_ESPERAS_RETRY)})...")
-            time.sleep(espera)
-        try:
-            return _executar(MODELO)
-        except Exception as e:
-            if _cota_diaria_esgotada(e):
-                print(f"[motor] Cota diária de {MODELO} esgotada — desviando para {MODELO_FALLBACK}.")
-                return _executar(MODELO_FALLBACK)
-            if not _transitorio(e):
-                raise          # erro real (prompt inválido, chave errada): falha rápido
-            ultimo = e
-            print(f"[motor] Tentativa {i+1}/{len(_ESPERAS_RETRY)} falhou: {e}")
-
-    raise RuntimeError(
-        f"Gemini indisponível após {len(_ESPERAS_RETRY)} tentativas: {ultimo}")
+def observacoes_de(mem, sinal_id, n):
+    """Últimas n observações do sinal (mais recente primeiro)."""
+    obs = [o for o in mem["observacoes"] if o["sinal_id"] == sinal_id]
+    obs.sort(key=lambda o: (_ordem_chave(o.get("periodo", "")), o.get("criado_em") or ""),
+             reverse=True)
+    return obs[:n]
 
 
 # ─────────────────────────────────────────────────────────
-# CHAMA O GEMINI com busca web nativa
+# CONFERÊNCIA DA COLETA (o que o Claude gravou em coleta.json)
+# Erro = bloqueia o processamento. Aviso = segue, mas fica registrado.
 # ─────────────────────────────────────────────────────────
-def _config_coleta(grounding):
-    """Config da coleta. O thinking_config fica isolado num try porque SDK antigo
-    não conhece o parâmetro — e derrubar o run inteiro por causa de uma otimização
-    de orçamento seria trocar um modo de falha por outro."""
-    # 6 setores + porter geram uma resposta maior; eleva o teto de saída para
-    # evitar truncamento (2.5-flash suporta até 65k tokens de saída). Continua no free.
-    base = dict(tools=[grounding], temperature=0.4, max_output_tokens=65536)
-    try:
-        return types.GenerateContentConfig(
-            **base,
-            thinking_config=types.ThinkingConfig(thinking_budget=THINKING_COLETA))
-    except (AttributeError, TypeError) as e:
-        print(f"[motor] SDK sem thinking_config ({e}) — seguindo sem limitar o raciocínio.")
-        return types.GenerateContentConfig(**base)
+def _palavras(t):
+    return len(str(t or "").split())
 
 
-def _validar_coleta(resp):
-    """Converte a resposta da coleta em JSON, falhando de forma RETENTÁVEL quando
-    ela veio imprestável. Um corte por MAX_TOKENS chega com HTTP 200 e texto
-    aparentemente normal: sem esta checagem passa por sucesso e só estoura lá na
-    frente, no json.loads, já fora do retry."""
-    motivo = _motivo_de_parada(resp)
-    if motivo == "MAX_TOKENS":
-        raise RespostaTruncada(
-            "resposta cortada por MAX_TOKENS — raciocínio + resposta estouraram o teto")
-    texto = resp.text or ""
-    if not texto.strip():
-        raise RespostaTruncada(f"resposta vazia (finish_reason={motivo or 'desconhecido'})")
-    try:
-        return extrair_json(texto)
-    except (json.JSONDecodeError, ValueError) as e:
-        raise RespostaTruncada(
-            f"JSON inválido/truncado em {len(texto)} caracteres "
-            f"(finish_reason={motivo or 'desconhecido'}): {e}") from e
-
-
-def gerar_analise(prompt):
-    """Devolve o JSON da coleta JÁ convertido — a conversão acontece dentro do
-    retry, de propósito (ver _gerar)."""
-    client = genai.Client(api_key=GEMINI_KEY)
-    grounding = types.Tool(google_search=types.GoogleSearch())
-    dados, modelo = _gerar(client, prompt, _config_coleta(grounding),
-                           validar=_validar_coleta)
-    if modelo != MODELO:
-        print(f"[motor] Coleta concluída via fallback ({modelo}).")
-    return dados
+def conferir_coleta(dados, ativos):
+    erros, avisos = [], []
+    for k in ("clipping", "pestel", "kpis", "porter", "analise"):
+        if not dados.get(k):
+            erros.append(f"campo obrigatório ausente/vazio: {k}")
+    clip = dados.get("clipping") or []
+    por_setor = {s: sum(1 for it in clip if s in (it.get("setores") or [])) for s in SETORES}
+    for s, n in por_setor.items():
+        if n < 15:
+            avisos.append(f"clipping {s}: {n} itens (meta 15-20)")
+    longos = [it.get("titulo", "")[:50] for it in clip if _palavras(it.get("texto")) > 35]
+    if longos:
+        avisos.append(f"{len(longos)} itens de clipping com texto > 35 palavras")
+    proibidas = [f.get("url") for it in clip for f in (it.get("fontes") or [])
+                 if f.get("url") and not url_valida(f.get("url"))]
+    if proibidas:
+        avisos.append(f"{len(proibidas)} URLs inválidas/proibidas (serão trocadas pela home oficial)")
+    dims = [p.get("dim") for p in dados.get("pestel") or []]
+    if sorted(dims) != sorted("PESTAL"):
+        erros.append(f"pestel deve ter as 6 dimensões P,E,S,T,A,L — veio {dims}")
+    if len(dados.get("kpis") or []) != 7:
+        erros.append(f"kpis deve ter 7 itens — veio {len(dados.get('kpis') or [])}")
+    faltam_porter = [s for s in SETORES if s not in (dados.get("porter") or {})]
+    if faltam_porter:
+        erros.append(f"porter sem os setores: {faltam_porter}")
+    faltam_an = [s for s in SETORES if s not in ((dados.get("analise") or {}).get("setores") or {})]
+    if faltam_an:
+        erros.append(f"analise sem os setores: {faltam_an}")
+    ids = {s["id"] for s in ativos}
+    desconhecidos = [u.get("id") for u in dados.get("atualizacoes_sinais") or []
+                     if u.get("id") not in ids]
+    if desconhecidos:
+        avisos.append(f"{len(desconhecidos)} atualizações com id fora dos sinais ativos (ignoradas)")
+    for n in dados.get("novos_sinais") or []:
+        if n.get("tipo") not in ("risco", "oportunidade") or n.get("dimensao") not in list("PESTAL"):
+            erros.append(f"novo sinal com tipo/dimensão inválido: {n.get('titulo', '')[:50]}")
+    resumo = (f"{len(clip)} notícias ({', '.join(f'{s} {n}' for s, n in por_setor.items())}) · "
+              f"{len(dados.get('novos_sinais') or [])} novos sinais · "
+              f"{len(dados.get('atualizacoes_sinais') or [])} atualizações")
+    return erros, avisos, resumo
 
 
 # ─────────────────────────────────────────────────────────
-# PROCESSA a resposta e atualiza o Supabase
+# PROCESSA a coleta e atualiza a memória
 # ─────────────────────────────────────────────────────────
-def processar(dados, sb, chave_periodo, sinais_ativos):
+def processar(dados, mem, chave_periodo, sinais_ativos):
+    hoje = _data_ref(chave_periodo).isoformat()
+    por_id = {s["id"]: s for s in mem["sinais"]}
     # mapa dos sinais que existiram antes (para detectar quais NÃO reapareceram)
     reaparecidos = set()
 
+    def _obs(sid, texto, status, relev, fontes, delta):
+        mem["observacoes"].append({
+            "id": str(uuid.uuid4()), "sinal_id": sid, "periodo": chave_periodo,
+            "data": hoje, "texto": texto, "status_resultante": status,
+            "relevancia_resultante": relev, "fontes": fontes or [],
+            "delta": round(delta, 2), "criado_em": _agora(),
+        })
+
     # 1. ATUALIZAÇÕES de sinais existentes
     for upd in dados.get("atualizacoes_sinais", []):
-        sid = upd["id"]
+        sid = upd.get("id")
         sinal = next((s for s in sinais_ativos if s["id"] == sid), None)
         if not sinal:
             continue
@@ -530,6 +494,7 @@ def processar(dados, sb, chave_periodo, sinais_ativos):
         relev = calcular_relevancia(sev, imin, nova_persistencia,
                                     nova_corroboracao, materializado, 0)
         pico = max(relev, sinal["relevancia_pico"])
+        relev_antes = sinal["relevancia_atual"]
 
         campos = {
             "status": upd.get("novo_status", sinal["status"]),
@@ -538,20 +503,14 @@ def processar(dados, sb, chave_periodo, sinais_ativos):
             "materializado": materializado, "ciclos_sem_aparecer": 0,
             "relevancia_atual": relev, "relevancia_pico": pico,
             "ultimo_periodo": chave_periodo,
-            "atualizado_em": datetime.utcnow().isoformat(),
+            "atualizado_em": _agora(),
         }
         if ciclo_novo:
             campos["ultimo_ciclo_contado"] = chave_periodo
-        sb.table("sinais").update(campos).eq("id", sid).execute()
+        por_id[sid].update(campos)
 
-        sb.table("observacoes").insert({
-            "sinal_id": sid, "periodo": chave_periodo,
-            "texto": upd["texto_observacao"],
-            "status_resultante": upd.get("novo_status", sinal["status"]),
-            "relevancia_resultante": relev,
-            "fontes": upd.get("fontes", []),
-            "delta": round(relev - sinal["relevancia_atual"], 2),
-        }).execute()
+        _obs(sid, upd.get("texto_observacao", ""), campos["status"], relev,
+             upd.get("fontes", []), relev - relev_antes)
 
     # 2. SINAIS que NÃO reapareceram → decaimento (SÓ em ciclo novo)
     for sinal in sinais_ativos:
@@ -568,94 +527,72 @@ def processar(dados, sb, chave_periodo, sinais_ativos):
         novo_status = sinal["status"]
         if relev < LIMIAR_DORMIR and ciclos >= CICLOS_PARA_DORMIR:
             novo_status = "dormindo"
-        sb.table("sinais").update({
+        por_id[sinal["id"]].update({
             "ciclos_sem_aparecer": ciclos, "relevancia_atual": relev,
             "status": novo_status,
             "ultimo_ciclo_contado": chave_periodo,
-            "atualizado_em": datetime.utcnow().isoformat(),
-        }).eq("id", sinal["id"]).execute()
+            "atualizado_em": _agora(),
+        })
 
     # 3. NOVOS sinais
     for novo in dados.get("novos_sinais", []):
         relev = calcular_relevancia(novo["severidade"], novo["iminencia"],
                                     1, len(novo.get("fontes", [])),
                                     novo.get("materializado", False), 0)
-        res = sb.table("sinais").insert({
+        sid = str(uuid.uuid4())
+        mem["sinais"].append({
+            "id": sid,
             "tipo": novo["tipo"], "titulo": novo["titulo"],
             "dimensao": novo["dimensao"], "setores": novo["setores"],
-            "data_identificacao": date.today().isoformat(),
+            "data_identificacao": hoje,
             "status": "materializado" if novo.get("materializado") else "monitorar",
             "severidade": novo["severidade"], "iminencia": novo["iminencia"],
             "persistencia": 1, "corroboracao": len(novo.get("fontes", [])),
             "materializado": novo.get("materializado", False),
             "ciclos_sem_aparecer": 0,
             "relevancia_atual": relev, "relevancia_pico": relev,
-            "data_pico": date.today().isoformat(),
+            "data_pico": hoje,
             "ultimo_periodo": chave_periodo,
+            "criado_em": _agora(), "atualizado_em": _agora(),
             "ultimo_ciclo_contado": chave_periodo,
-        }).execute()
-        sid = res.data[0]["id"]
-        sb.table("observacoes").insert({
-            "sinal_id": sid, "periodo": chave_periodo,
-            "texto": novo["texto"], "status_resultante": "monitorar",
-            "relevancia_resultante": relev, "fontes": novo.get("fontes", []),
-            "delta": relev,
-        }).execute()
+        })
+        _obs(sid, novo["texto"], "monitorar", relev, novo.get("fontes", []), relev)
 
 
 # ─────────────────────────────────────────────────────────
-# MAIN
+# EDITORIAL longitudinal — o motor monta o prompt; o Claude escreve o texto
 # ─────────────────────────────────────────────────────────
-def main():
-    sb = create_client(SUPABASE_URL, SUPABASE_KEY)
-    chave, label, ini, fim = periodo_atual()
-    print(f"[motor] Período: {label} ({chave})")
-
-    # carrega sinais ativos (não dormindo) para a revisão longitudinal
-    resp = sb.table("sinais").select("*").neq("status", "dormindo").execute()
-    sinais_ativos = resp.data
-    print(f"[motor] {len(sinais_ativos)} sinais ativos carregados do Supabase")
-
-    prompt = montar_prompt(label, ini, fim, sinais_ativos)
-    print("[motor] Chamando Gemini com busca web...")
-    dados = gerar_analise(prompt)
-
-    print(f"[motor] JSON recebido: {len(dados.get('clipping', []))} notícias, "
-          f"{len(dados.get('novos_sinais', []))} novos sinais, "
-          f"{len(dados.get('atualizacoes_sinais', []))} atualizações")
-
-    processar(dados, sb, chave, sinais_ativos)
-    print("[motor] Supabase atualizado.")
-
-    # gera o EDITORIAL longitudinal (lê a memória inteira do sistema)
-    print("[motor] Gerando editorial analítico...")
-    editorial = gerar_editorial(sb, chave, label, dados)
-    if editorial:
-        print(f"[motor] Editorial gerado ({editorial['n_sinais_considerados']} sinais considerados).")
-    else:
-        print("[motor] Sem editorial nesta edição (segue sem bloquear).")
-
-    # gera o arquivo de dados do portal (o HTML lê daqui)
-    gerar_dados_portal(dados, sb, chave, label, editorial)
-    print("[motor] Concluído com sucesso.")
+def _editorial_anterior(chave):
+    """Editorial da semana publicada IMEDIATAMENTE anterior a esta (não o ultimo.json,
+    que no backfill seria uma semana do futuro)."""
+    ordem = _ordem_chave(chave)
+    melhor, texto = -1, ""
+    for fn in glob.glob("data/*.json"):
+        m = re.match(r"(\d{4}-W\d+)\.json$", os.path.basename(fn))
+        if not m:
+            continue
+        o = _ordem_chave(m.group(1))
+        if melhor < o < ordem:
+            try:
+                with open(fn, encoding="utf-8") as f:
+                    t = (json.load(f).get("editorial") or {}).get("texto", "")
+            except (OSError, json.JSONDecodeError):
+                t = ""
+            if t:
+                melhor, texto = o, t
+    return texto
 
 
-
-def _coletar_contexto_editorial(sb, chave, dados):
+def _coletar_contexto_editorial(mem, chave, dados):
     """Reúne as TRÊS camadas que tornam o editorial longitudinal:
        (1) estado atual, (2) trajetória histórica dos sinais, (3) editorial anterior."""
     # (1) sinais ativos ranqueados por relevância — a fotografia de agora
-    ativos = sb.table("sinais").select("*").neq("status", "dormindo") \
-               .order("relevancia_atual", desc=True).limit(15).execute().data
+    ativos = ranquear(sinais_ativos(mem))[:15]
 
     # (2) trajetória: para cada sinal ativo, as últimas 4 observações (evolução no tempo)
     trajetorias = []
     for s in ativos:
-        try:
-            obs = sb.table("observacoes").select("periodo,texto,status_resultante,relevancia_resultante") \
-                    .eq("sinal_id", s["id"]).order("criado_em", desc=True).limit(4).execute().data
-        except Exception:
-            obs = []
+        obs = observacoes_de(mem, s["id"], 4)
         historico = " | ".join(
             f"{o.get('periodo','?')}: {o.get('status_resultante','')} (rel {o.get('relevancia_resultante','?')})"
             for o in reversed(obs)
@@ -670,31 +607,19 @@ def _coletar_contexto_editorial(sb, chave, dados):
     materializados = [s for s in ativos if s["status"] == "materializado"]
     novos = dados.get("novos_sinais", [])
 
-    # (3) editorial da semana anterior — para dar continuidade narrativa
-    editorial_anterior = ""
-    try:
-        if os.path.exists("data/ultimo.json"):
-            with open("data/ultimo.json", encoding="utf-8") as f:
-                ant = json.load(f)
-            editorial_anterior = (ant.get("editorial") or {}).get("texto", "")
-    except Exception:
-        editorial_anterior = ""
-
     return {
         "trajetorias": trajetorias,
         "n_ativos": len(ativos),
         "n_materializados": len(materializados),
         "materializados": [s["titulo"] for s in materializados],
         "novos": [n.get("titulo", "") for n in novos],
-        "editorial_anterior": editorial_anterior,
+        "editorial_anterior": _editorial_anterior(chave),
         "kpis": dados.get("kpis", []),
     }
 
 
-def gerar_editorial(sb, chave, label, dados):
-    """Gera a análise editorial longitudinal — lê a MEMÓRIA inteira do sistema,
-       não só a semana. Retorna dict {texto, gerado_em} ou None em caso de falha."""
-    ctx = _coletar_contexto_editorial(sb, chave, dados)
+def montar_prompt_editorial(mem, chave, label, dados):
+    ctx = _coletar_contexto_editorial(mem, chave, dados)
 
     kpis_txt = " | ".join(f"{k.get('label','')}: {k.get('valor','')} ({k.get('sub','')})"
                           for k in ctx["kpis"])
@@ -735,47 +660,7 @@ de riscos e oportunidades ao longo das semanas.
 - Tom: sóbrio, seguro, de quem acompanha o cenário há tempo. Português do Brasil.
 
 Responda SOMENTE com o texto do editorial, sem título, sem aspas, sem markdown."""
-
-    # Retry com backoff: a 2ª chamada ao Gemini (editorial) costuma bater no
-    # rate limit da cota gratuita logo após a coleta pesada. Espera e tenta de novo.
-    client = genai.Client(api_key=GEMINI_KEY)
-    esperas = [0, 20, 40]  # 1ª tentativa imediata; depois espera 20s, 40s
-    ultimo_erro = None
-    for i, espera in enumerate(esperas):
-        if espera:
-            print(f"[motor] Editorial: aguardando {espera}s antes de nova tentativa (rate limit)...")
-            time.sleep(espera)
-        try:
-            resp, modelo = _gerar(
-                client, prompt, types.GenerateContentConfig(temperature=0.5))
-            texto = (resp.text or "").strip()
-            if texto:
-                return {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
-                        "n_sinais_considerados": ctx["n_ativos"], "modelo": modelo}
-            ultimo_erro = "resposta vazia"
-        except Exception as e:
-            ultimo_erro = str(e)
-            print(f"[motor] Editorial tentativa {i+1}/{len(esperas)} falhou: {e}")
-
-    # ÚLTIMO RECURSO: uma tentativa limpa no modelo secundário, seja qual for o erro
-    # do primário (cota diária, limite por minuto travado ou erro ambíguo). O secundário
-    # tem cota/limites independentes, então costuma passar quando o primário está saturado.
-    try:
-        print(f"[motor] Editorial: última tentativa no fallback {MODELO_FALLBACK}...")
-        resp = genai.Client(api_key=GEMINI_KEY).models.generate_content(
-            model=MODELO_FALLBACK, contents=prompt,
-            config=types.GenerateContentConfig(temperature=0.5))
-        texto = (resp.text or "").strip()
-        if texto:
-            print(f"[motor] Editorial gerado no fallback {MODELO_FALLBACK}.")
-            return {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
-                    "n_sinais_considerados": ctx["n_ativos"], "modelo": MODELO_FALLBACK}
-    except Exception as e:
-        ultimo_erro = str(e)
-        print(f"[motor] Editorial: fallback {MODELO_FALLBACK} também falhou: {e}")
-
-    print(f"[motor] Editorial não gerado após {len(esperas)} tentativas + fallback ({ultimo_erro}).")
-    return None
+    return prompt, ctx["n_ativos"]
 
 
 def _kpi_indisponivel(v):
@@ -821,7 +706,7 @@ def reconciliar_kpis(kpis, chave):
     Se um KPI não foi divulgado nesta semana ('Não disponível', 'Não divulgado',
     'Sem dados', etc.), busca nas semanas anteriores (data/*.json) o valor real
     mais recente do MESMO indicador e o assume como parâmetro, anotando no 'sub'
-    a semana de referência. Não depende do Gemini obedecer — é código puro.
+    a semana de referência. Não depende da IA obedecer — é código puro.
     """
     ordem_atual = _ordem_chave(chave)
     anteriores = []
@@ -849,7 +734,7 @@ def reconciliar_kpis(kpis, chave):
             bucket = _kpi_bucket(kk.get("label"))
             for _, lbl_ant, kpis_ant in anteriores:
                 # SÓ herda de semana com procedência oficial ('fonte' preenchida).
-                # As semanas 29 a 31 de 2026 guardam números que o Gemini inventou
+                # As semanas 29 a 31 de 2026 guardam números que a IA inventou
                 # enquanto a API do BCB estava fora (fonte=None); sem este filtro a
                 # herança os ressuscitaria e a contaminação viraria permanente.
                 cand = next((x for x in kpis_ant
@@ -868,25 +753,19 @@ def reconciliar_kpis(kpis, chave):
     return saida
 
 
-def gerar_dados_portal(dados, sb, chave, label, editorial=None):
+def gerar_dados_portal(dados, mem, chave, label, editorial=None):
     """Gera data/<periodo>.json que o frontend consome."""
-    # busca os sinais mais relevantes para a revisão longitudinal do portal
-    top = sb.table("sinais").select("*").neq("status", "dormindo") \
-            .order("relevancia_atual", desc=True).limit(9).execute()
+    # os sinais mais relevantes para a revisão longitudinal do portal (desempate fixo)
+    top = ranquear(sinais_ativos(mem))[:9]
 
-    # para cada sinal do topo, busca a observação mais recente (o texto vivo da trajetória)
+    # para cada sinal do topo, a observação mais recente (o texto vivo da trajetória)
     longitudinal = []
-    for s in top.data:
+    for s in top:
         ultima_obs, ultima_per = "", ""
-        try:
-            obs = sb.table("observacoes").select("texto,periodo") \
-                    .eq("sinal_id", s["id"]) \
-                    .order("criado_em", desc=True).limit(1).execute()
-            if obs.data:
-                ultima_obs = obs.data[0].get("texto", "")
-                ultima_per = obs.data[0].get("periodo", "")
-        except Exception:
-            pass  # sem observação: o portal usa um texto padrão
+        obs = observacoes_de(mem, s["id"], 1)
+        if obs:  # sem observação: o portal usa um texto padrão
+            ultima_obs = obs[0].get("texto", "")
+            ultima_per = obs[0].get("periodo", "")
         longitudinal.append({
             "id": s["id"], "tipo": s["tipo"], "titulo": s["titulo"],
             "dimensao": s["dimensao"], "setores": s["setores"],
@@ -898,15 +777,15 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
             "origem": s.get("origem") or "real",
         })
 
-    # BLINDAGEM DE ACURÁCIA: o Gemini busca, mas os NÚMEROS macro são validados/
+    # BLINDAGEM DE ACURÁCIA: a IA busca, mas os NÚMEROS macro são validados/
     # sobrepostos pelos valores OFICIAIS (BCB/IBGE) válidos na sexta desta semana,
-    # já com acumulado no ano. Se a API oficial falhar, mantém o valor do Gemini.
+    # já com acumulado no ano. Se a API oficial falhar, mantém o valor da coleta.
     ref_kpi = _sexta_da_chave(chave)
     kpis_validados = validar_kpis(dados.get("kpis", []), ref=ref_kpi)
     # ponto 1a — herança determinística caso algum indicador não venha da API oficial
     kpis_final = reconciliar_kpis(kpis_validados, chave)
     # indicadores setoriais + pressões do IPCA por grupo: OFICIAIS (IBGE), determinísticos.
-    # Válidos na sexta desta semana (mesma lógica de defasagem dos macros). Não passam pelo Gemini.
+    # Válidos na sexta desta semana (mesma lógica de defasagem dos macros). Não passam pela IA.
     # Falha aqui NUNCA quebra o motor: cai para vazio/None e o front-end degrada com elegância.
     try:
         kpis_setoriais = coletar_kpis_setoriais(ref=ref_kpi)
@@ -919,7 +798,7 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
         print(f"[pressoes_ipca] indisponível nesta rodada: {e}")
         pressoes_ipca = None
 
-    # E-commerce: NÃO há série oficial gratuita. Se o Gemini capturou a manchete mensal de uma
+    # E-commerce: NÃO há série oficial gratuita. Se a coleta capturou a manchete mensal de uma
     # fonte de MERCADO (MCC-ENET/ABComm/Neotrust), publica com atribuição + badge de estimativa.
     try:
         ie = dados.get("indicador_ecommerce") or {}
@@ -1009,5 +888,143 @@ def gerar_dados_portal(dados, sb, chave, label, editorial=None):
         json.dump(indice, f, ensure_ascii=False, indent=2)
 
 
+# ─────────────────────────────────────────────────────────
+# ENTRADA: preparar → (Claude: coleta.json) → processar → (Claude: editorial.txt) → publicar
+# ─────────────────────────────────────────────────────────
+def _pasta(chave):
+    p = os.path.join(RAW, chave)
+    os.makedirs(p, exist_ok=True)
+    return p
+
+
+def _ultimo_ciclo(mem):
+    return max((s.get("ultimo_ciclo_contado") or "" for s in mem["sinais"]),
+               key=_ordem_chave, default="")
+
+
+def _semana_anterior(chave):
+    a, s = chave.split("-W")
+    seg = date.fromisocalendar(int(a), int(s), 1) - timedelta(days=7)
+    ano, sem, _ = seg.isocalendar()
+    return f"{ano}-W{sem:02d}"
+
+
+def _checar_ordem(mem, chave, permitir_pulo):
+    """A memória só avança em ordem: a semana anterior a esta precisa já estar nela.
+    Repetir a MESMA semana é permitido (atualização de quinta)."""
+    ult = _ultimo_ciclo(mem)
+    if _ordem_chave(chave) < _ordem_chave(ult):
+        sys.exit(f"[motor] ERRO: a memória já está em {ult}; {chave} é anterior. "
+                 f"Semanas passadas só podem ser processadas em ordem cronológica.")
+    if chave != ult and _semana_anterior(chave) != ult and not permitir_pulo:
+        sys.exit(f"[motor] ERRO: a memória está em {ult} e a próxima semana esperada é a "
+                 f"seguinte a ela — não {chave}. Use --pular só se o salto for intencional.")
+
+
+def cmd_preparar(chave, label, ini, fim, permitir_pulo):
+    mem = carregar_memoria()
+    _checar_ordem(mem, chave, permitir_pulo)
+    ativos = sinais_ativos(mem)
+    pasta = _pasta(chave)
+    prompt = montar_prompt(label, ini, fim, ativos)
+    with open(os.path.join(pasta, "prompt_coleta.md"), "w", encoding="utf-8") as f:
+        f.write(prompt)
+    print(f"[motor] {label} ({chave}) · {ini} a {fim} · {len(ativos)} sinais ativos na memória")
+    print(f"[motor] Prompt da coleta: {pasta}/prompt_coleta.md")
+    print(f"[motor] Próximo: gravar a coleta em {pasta}/coleta.json e rodar 'processar {chave}'")
+
+
+def _ler_coleta(pasta):
+    fn = os.path.join(pasta, "coleta.json")
+    if not os.path.exists(fn):
+        sys.exit(f"[motor] ERRO: falta {fn}")
+    with open(fn, encoding="utf-8") as f:
+        return extrair_json(f.read())
+
+
+def cmd_processar(chave, label, permitir_pulo, forcar):
+    pasta = _pasta(chave)
+    marca = os.path.join(pasta, "processado.json")
+    if os.path.exists(marca) and not forcar:
+        sys.exit(f"[motor] ERRO: {chave} já foi processada ({marca}). Reprocessar duplicaria "
+                 f"observações; restaure {pasta}/sinais_antes.json ou use --forcar.")
+    mem = carregar_memoria()
+    _checar_ordem(mem, chave, permitir_pulo)
+    ativos = sinais_ativos(mem)
+    dados = _ler_coleta(pasta)
+
+    erros, avisos, resumo = conferir_coleta(dados, ativos)
+    print(f"[motor] Coleta: {resumo}")
+    for a in avisos:
+        print(f"[motor] aviso: {a}")
+    if erros:
+        for e in erros:
+            print(f"[motor] ERRO: {e}")
+        sys.exit("[motor] Coleta reprovada na conferência — nada foi gravado.")
+
+    with open(os.path.join(pasta, "sinais_antes.json"), "w", encoding="utf-8") as f:
+        json.dump(mem, f, ensure_ascii=False, indent=2)
+    n_sin, n_obs = len(mem["sinais"]), len(mem["observacoes"])
+    processar(dados, mem, chave, ativos)
+    salvar_memoria(mem)
+    print(f"[motor] Memória atualizada: sinais {n_sin}→{len(mem['sinais'])}, "
+          f"observações {n_obs}→{len(mem['observacoes'])}")
+
+    prompt, n_ativos = montar_prompt_editorial(mem, chave, label, dados)
+    with open(os.path.join(pasta, "prompt_editorial.md"), "w", encoding="utf-8") as f:
+        f.write(prompt)
+    with open(marca, "w", encoding="utf-8") as f:
+        json.dump({"chave": chave, "em": _agora(), "n_sinais_considerados": n_ativos,
+                   "avisos": avisos}, f, ensure_ascii=False, indent=2)
+    print(f"[motor] Prompt do editorial: {pasta}/prompt_editorial.md")
+    print(f"[motor] Próximo: gravar o texto em {pasta}/editorial.txt e rodar 'publicar {chave}'")
+
+
+def cmd_publicar(chave, label):
+    pasta = _pasta(chave)
+    marca = os.path.join(pasta, "processado.json")
+    if not os.path.exists(marca):
+        sys.exit(f"[motor] ERRO: rode 'processar {chave}' antes de publicar.")
+    mem = carregar_memoria()
+    if _ultimo_ciclo(mem) != chave:
+        sys.exit(f"[motor] ERRO: a memória já avançou para {_ultimo_ciclo(mem)}; publicar {chave} "
+                 f"agora mostraria o longitudinal de outra semana.")
+    with open(marca, encoding="utf-8") as f:
+        info = json.load(f)
+    dados = _ler_coleta(pasta)
+
+    editorial = None
+    fn_ed = os.path.join(pasta, "editorial.txt")
+    if os.path.exists(fn_ed):
+        with open(fn_ed, encoding="utf-8") as f:
+            texto = f.read().strip()
+        if texto:
+            n = _palavras(texto)
+            if not 280 <= n <= 360:
+                print(f"[motor] aviso: editorial com {n} palavras (meta 280-360)")
+            editorial = {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
+                         "n_sinais_considerados": info.get("n_sinais_considerados"),
+                         "modelo": "claude"}
+    if not editorial:
+        print("[motor] aviso: sem editorial nesta edição (segue sem bloquear).")
+
+    gerar_dados_portal(dados, mem, chave, label, editorial)
+    print(f"[motor] Publicado: data/{chave}.json (+ index.json/ultimo.json). Concluído.")
+
+
+def main(argv):
+    args = [a for a in argv if not a.startswith("--")]
+    flags = {a for a in argv if a.startswith("--")}
+    if not args or args[0] not in ("preparar", "processar", "publicar"):
+        sys.exit("uso: python motor.py preparar|processar|publicar [AAAA-Www] [--pular] [--forcar]")
+    chave, label, ini, fim = periodo_atual(args[1] if len(args) > 1 else None)
+    if args[0] == "preparar":
+        cmd_preparar(chave, label, ini, fim, "--pular" in flags)
+    elif args[0] == "processar":
+        cmd_processar(chave, label, "--pular" in flags, "--forcar" in flags)
+    else:
+        cmd_publicar(chave, label)
+
+
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

@@ -2,7 +2,7 @@ name: Corrigir ultimo.json
 
 # Disparo manual. Reconstrói ultimo.json e index.json a partir dos arquivos
 # de semana já existentes em data/, apontando para a semana mais recente.
-# Não usa Gemini nem Supabase — é rápido e seguro.
+# Não usa IA — é rápido e seguro.
 on:
   workflow_dispatch:
 

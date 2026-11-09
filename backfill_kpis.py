@@ -2,7 +2,7 @@
 BACKFILL DE KPIS OFICIAIS — reescreve os indicadores macro de TODO o histórico
 (data/*.json) com os valores OFICIAIS (BCB/IBGE) válidos na sexta-feira de cada
 semana, incluindo o acumulado no ano. Corrige de uma vez a base inteira, até a
-semana mais antiga, SEM usar o Gemini.
+semana mais antiga, SEM usar IA.
 
 Não precisa de secrets (usa só APIs públicas). Rode no GitHub Actions
 (workflow kpis_backfill.yml) ou localmente: `python backfill_kpis.py`.
@@ -22,7 +22,7 @@ def _preservar_oficiais(novos, antigos):
 
     A assimetria é proposital: valor antigo COM fonte é dado oficial já conferido e
     merece sobreviver a uma indisponibilidade passageira; valor antigo SEM fonte é
-    resquício do Gemini e deve ser varrido, que é justamente o objetivo desta
+    resquício da IA e deve ser varrido, que é justamente o objetivo desta
     passada. Sem esta função, um BCB fora do ar durante o backfill transformaria o
     histórico inteiro em travessões."""
     por_fam = {}

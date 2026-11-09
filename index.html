@@ -533,7 +533,7 @@ const SETOR_IND=[
   {id:"servicos",nome:"Serviços",ico:"🛎️",fonte:true,info:"Volume de serviços prestados (PMS/IBGE), variação mês contra mês com ajuste sazonal; acumulado no ano compara jan–mês vs igual período do ano anterior. Fonte determinística: IBGE/SIDRA tabela 5906."},
   {id:"construcao",nome:"Construção",ico:"🏗️",fonte:true,info:"Custo médio da construção civil por m² (SINAPI/IBGE): materiais + mão de obra, com variação no mês e acumulada no ano. Fonte determinística: IBGE/SIDRA tabela 2296, variáveis 48/1196/1197."},
   {id:"agro",nome:"Agro",ico:"🌾",fonte:true,info:"Estimativa da produção nacional de grãos (cereais, leguminosas e oleaginosas) do ano-safra, revista mensalmente pelo IBGE. Fonte determinística: IBGE/SIDRA tabela 6588 (LSPA), variável 35."},
-  {id:"ecommerce",nome:"E-commerce",ico:"🛍️",fonte:false,info:"Sem série oficial gratuita de faturamento; proxy de pagamentos do BCB em validação (será tratado no motor, não pelo Gemini). Entra sem fabricar dado."}
+  {id:"ecommerce",nome:"E-commerce",ico:"🛍️",fonte:false,info:"Sem série oficial gratuita de faturamento; proxy de pagamentos do BCB em validação (será tratado no motor, não pela IA). Entra sem fabricar dado."}
 ];
 const SETOR_IMETA=Object.fromEntries(SETOR_IND.map(s=>[s.id,s]));
 // meta (ícone/explicação) por CHAVE de indicador — permite vários indicadores no mesmo setor
@@ -1736,10 +1736,10 @@ function viewMetodologia(){
       <div style="display:grid;gap:8px">
         <div class="legend" style="border-color:color-mix(in srgb,var(--opp) 40%,var(--border))"><b style="color:var(--opp)">A IA FAZ:</b> ler e resumir as matérias, classificar por setor e dimensão, propor severidade/iminência, redigir o editorial e agrupar notícias do mesmo tema — sempre com <b>busca web</b> (grounding) sobre as fontes verificadas.</div>
         <div class="legend" style="border-color:color-mix(in srgb,var(--risk) 40%,var(--border))"><b style="color:var(--risk)">A IA NÃO FAZ:</b> inventar números macro (vêm da API oficial), criar URLs de fonte (validadas contra domínios oficiais) nem decidir a relevância final (fórmula determinística).</div>
-        <p style="font-size:12px;color:var(--ink-3);margin:2px 0 0">Modelo: Gemini 2.5 Flash (fallback automático 2.5 Flash-Lite) · temperatura baixa · resposta em JSON estruturado, normalizada antes de publicar.</p></div></div>
+        <p style="font-size:12px;color:var(--ink-3);margin:2px 0 0">Modelo: Claude (Anthropic), em rotina agendada · resposta em JSON estruturado, conferida e normalizada pelo motor antes de publicar.</p></div></div>
 
     <div class="card card-pad"><h4 style="margin-bottom:10px">🧠 Memória longitudinal</h4>
-      <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">Sinais e observações ficam num banco versionado (Supabase). A cada semana o sistema <b>relê a memória inteira</b> — não só a semana corrente — para dar continuidade às trajetórias e ao editorial.</p>
+      <p style="font-size:12.5px;color:var(--ink-2);margin:0 0 8px">Sinais e observações ficam num arquivo versionado no próprio repositório (<a href="./data/sinais.json" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">data/sinais.json</a>). A cada semana o sistema <b>relê a memória inteira</b> — não só a semana corrente — para dar continuidade às trajetórias e ao editorial.</p>
       <p style="font-size:12px;color:var(--ink-3);margin:0">É isso que permite a aba <a href="#" data-goto="trajetorias" style="color:var(--accent);font-weight:600">Trajetórias</a> mostrar a evolução de cada sinal ao longo do tempo.</p></div>
 
     <div class="card card-pad"><h4 style="margin-bottom:10px">Σ Período selecionado e agregação</h4>

@@ -1,14 +1,14 @@
 """
 KPIS OFICIAIS — validador determinístico dos indicadores macro.
 
-O Gemini continua sendo a IA de BUSCA (clipping, sinais, editorial). Mas os
+A IA continua responsável pela BUSCA (clipping, sinais, editorial). Mas os
 NÚMEROS dos indicadores macro não podem depender do modelo: aqui eles são
 buscados direto nas APIs oficiais (BCB/SGS, BCB/Olinda e IBGE/SIDRA).
 
 REGRA DURA: nenhum número macro sai daqui sem fonte oficial. Se todas as fontes
 de um indicador falharem, ele sai marcado como INDISPONÍVEL — e o motor herda o
-último valor oficial conhecido, com a data de referência à vista. O valor do
-Gemini NUNCA é publicado como indicador. Essa regra existe porque o contrário
+último valor oficial conhecido, com a data de referência à vista. O valor da
+IA NUNCA é publicado como indicador. Essa regra existe porque o contrário
 foi tentado: entre as semanas 29 e 31 de 2026 a API do BCB parou de responder de
 dentro do runner, o erro foi engolido em silêncio, e o portal publicou Selic de
 10,75% (real: 14,25%), câmbio R$ 5,25 (real: R$ 5,07) e IPCA 0,35% (real: 0,16%)
@@ -411,7 +411,7 @@ def coletar_kpis(ref=None):
 
 
 # ─────────────────── INDICADORES SETORIAIS + PRESSÕES DO IPCA ───────────────────
-# Determinísticos (IBGE/SIDRA), como os macros. NÃO passam pelo Gemini.
+# Determinísticos (IBGE/SIDRA), como os macros. NÃO passam pela IA.
 def _cor_delta(v):
     if v is None:
         return "neutral"
@@ -598,21 +598,21 @@ _FAMILIAS_MACRO = {
 INDISPONIVEL = "—"
 
 
-def validar_kpis(kpis_gemini, ref=None, verbose=True):
+def validar_kpis(kpis_coleta, ref=None, verbose=True):
     """Monta o painel macro EXCLUSIVAMENTE com números de fonte oficial.
 
-    O argumento `kpis_gemini` entra apenas como material de AUDITORIA: serve para
+    O argumento `kpis_coleta` entra apenas como material de AUDITORIA: serve para
     registrar no log o que o modelo tinha proposto e o quanto errou. Nenhum valor
     dele chega ao painel — nem quando a fonte oficial falha.
 
     Família sem dado oficial sai com valor INDISPONÍVEL e fonte None; o motor
     (reconciliar_kpis) então herda o último valor oficial conhecido, com a semana
-    de referência à vista. Antes, esse caminho devolvia o número do Gemini, e foi
+    de referência à vista. Antes, esse caminho devolvia o número da IA, e foi
     assim que uma Selic de 10,75% ficou três semanas no ar como se fosse do BCB."""
     oficiais = coletar_kpis(ref) or []
     por_fam = {_familia(k["label"]): k for k in oficiais}
     proposto = {_familia(g.get("label", "")): str(g.get("valor", "")).strip()
-                for g in (kpis_gemini or [])}
+                for g in (kpis_coleta or [])}
 
     saida, faltando = [], []
     for fam, (rotulo, _) in sorted(_FAMILIAS_MACRO.items(), key=lambda kv: kv[1][1]):
@@ -620,13 +620,13 @@ def validar_kpis(kpis_gemini, ref=None, verbose=True):
         if of:
             g_val = proposto.get(fam)
             if verbose and g_val and g_val != of["valor"]:
-                print(f"[kpis] {fam}: Gemini disse '{g_val}' → OFICIAL '{of['valor']}'.")
+                print(f"[kpis] {fam}: coleta disse '{g_val}' → OFICIAL '{of['valor']}'.")
             saida.append(dict(of))
         else:
             faltando.append(fam)
             if verbose:
                 descartado = proposto.get(fam)
-                extra = f" (descartado o valor '{descartado}' do Gemini)" if descartado else ""
+                extra = f" (descartado o valor '{descartado}' da coleta)" if descartado else ""
                 print(f"[kpis] {fam}: SEM FONTE OFICIAL nesta rodada{extra} — "
                       f"marcado como indisponível para herdar o último valor oficial.")
             saida.append({"label": rotulo, "valor": INDISPONIVEL, "cor": "neutro",

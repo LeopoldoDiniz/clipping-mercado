@@ -1,10 +1,10 @@
 """
 PROMPT DE GERAÇÃO — Clipping de Mercado
-Este é o "cérebro" do sistema: a instrução que orienta o Gemini a produzir
+Este é o "cérebro" do sistema: a instrução que orienta a IA a produzir
 o clipping semanal completo, no formato JSON exato que o portal espera.
 """
 
-# Fontes validadas por setor — o Gemini prioriza busca nelas (grounding).
+# Fontes validadas por setor — a IA prioriza busca nelas (grounding).
 FONTES = """
 ## Macro / transversais
 IBGE (ibge.gov.br), Banco Central/Focus (bcb.gov.br), FGV/IBRE (portalibre.fgv.br),
@@ -86,7 +86,7 @@ def montar_prompt(periodo_label, data_inicio, data_fim, historico_sinais):
     """
     periodo_label: ex "Semana 27 · Julho 2026"
     data_inicio, data_fim: intervalo da semana
-    historico_sinais: lista de sinais ativos vindos do Supabase (para a revisão longitudinal)
+    historico_sinais: lista de sinais ativos da memória data/sinais.json (para a revisão longitudinal)
     """
 
     if historico_sinais:
