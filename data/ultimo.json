@@ -1,202 +1,350 @@
 {
-  "periodo": "2026-W34",
-  "label": "Semana 34 · Agosto 2026",
-  "gerado_em": "2026-08-20T10:52:12.007072",
+  "periodo": "2026-W35",
+  "label": "Semana 35 · Agosto 2026",
+  "gerado_em": "2026-11-09T12:55:04.058597",
   "editorial": {
-    "texto": "A Semana 34 de agosto de 2026 revela um cenário macroeconômico com ajustes importantes e contrastes acentuados. A taxa Selic, o juro básico da economia, foi mantida em 13,75% em 17 de agosto, um recuo de 0,25 ponto percentual em relação à semana anterior, sinalizando uma estabilização após o aperto monetário. A inflação, medida pelo IPCA de julho, registrou um contido 0,07% no mês, mantendo o acumulado em doze meses em 4,44%, ainda no teto da meta de 4,5%. O câmbio do dólar registrou R$ 5,176, uma leve depreciação frente à semana passada. Contudo, o mercado de trabalho surpreende negativamente, com a taxa de desocupação subindo para 8,5% em julho, um salto preocupante frente ao patamar de 5,4% do mês anterior. A atividade industrial, medida pelo PIM, contraiu 0,2% em julho, enquanto o varejo avançou modestos 0,5% no mesmo período.\n\nEm contraste com a leitura anterior, a Selic recuou, atenuando ligeiramente a relevância do risco de \"Juros, Selic e crédito\", que agora se posiciona em 96,8%. Os \"Custos de Energia Elétrica para PMEs\" e o \"Custo de energia (ANEEL/tarifa)\" permanecem materializados, impactando transversalmente as cadeias produtivas. Este ciclo trouxe a identificação de novos sinais: a oportunidade da \"Expansão da TV 3.0 e novas oportunidades para radiodifusão\" e o \"Crescimento de empregos em tecnologia no Norte e Nordeste\", ao lado do risco do \"Cancelamento de projeto de fibra na Amazônia\".\n\nSetorialmente, a indústria continua a enfrentar desafios com a contração de 0,2% na produção e os custos energéticos materializados, além do risco crescente de \"Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros\" (92,75%). Para comércio e serviços, o aumento do desemprego intensifica a \"Cautela do Consumidor e Endividamento Familiar\" (92,75%) e o risco de \"Consumo e varejo\" (92,75%), apesar do varejo manter seu ritmo de crescimento. A \"Digitalização e IA\" (96,8%) e a \"Digitalização e 'Technology as a Service' (TaaS)\" (92,75%) continuam sendo oportunidades cruciais para otimização e competitividade. O agronegócio e a construção civil veem seus riscos de \"Safra e agro\" (95,75%) e \"Construção e custos\" (93,8%) ganharem relevância.\n\nO ponto de atenção para as próximas semanas reside na complexa interação entre a estabilização da política monetária e o inesperado e significativo aumento do desemprego. A capacidade das empresas de gerenciar custos energéticos e a alta cautela do consumidor, enquanto exploram as oportunidades da digitalização e o crescimento de nichos tecnológicos, será crucial para sustentar a resiliência em um ambiente de desaceleração industrial e incertezas no mercado de trabalho.",
-    "gerado_em": "2026-08-20T10:51:48.018299",
+    "texto": "A Semana 35 trouxe alívio na inflação e estresse no crédito. A Selic, juro básico da economia, segue em 14% ao ano desde o corte de 5 de agosto, e o Boletim Focus manteve a aposta de 13,75% no fim de 2026, mas reduziu a projeção de crescimento do PIB de 1,98% para 1,95%. O IPCA-15, prévia da inflação oficial, caiu 0,40% em agosto, a menor taxa para o mês desde 2022, puxado pelo bônus de Itaipu na conta de luz; em 12 meses, recuou a 4,24%, de volta abaixo do teto da meta. O IGP-M, que corrige aluguéis, caiu 0,22%.\n\nÉ preciso corrigir a leitura da semana anterior: o desemprego não subiu. A PNAD mostrou taxa de 5,3% no trimestre até julho, a menor para o período desde 2012, com 103,3 milhões de ocupados. O sinal de alerta está no emprego formal: o Caged registrou apenas 58,6 mil vagas em julho, o pior julho desde 2020. E o crédito se deteriora: a inadimplência no crédito livre chegou a 6,4%, recorde em 15 anos, e a Caixa quase dobrou suas provisões contra calotes. Três sinais novos entram na memória: a desinflação que abre espaço para novos cortes de juros, o crédito imobiliário recorde e o risco de fraudes no Pix.\n\nNa indústria, a CNI aponta falta de confiança em 25 setores, e a venda de máquinas agrícolas caiu 27,5% em julho. No comércio, o consumo nos lares subiu 3,28%, mas a confiança do comerciante recuou para 84,2 pontos; serviços sustentaram o emprego e a confiança do setor subiu para 89 pontos. No agro, o milho subiu 3,4% na semana e o arábica atingiu o maior preço desde abril, enquanto a inadimplência rural na Caixa chegou a 20,74%. A construção vive contraste: crédito da poupança recorde em julho, com R$ 20,96 bilhões, e custo de mão de obra subindo 1,56%. No e-commerce, a MP que zerou o imposto federal sobre compras de até US$ 50 entrou em comissão, sob pressão da indústria, que vê 109 mil empregos em risco.\n\nAtenção à votação dessa MP até 8 de setembro e à inadimplência: hora de crédito seletivo e caixa reforçado.",
+    "gerado_em": "2026-11-09T12:54:59.029119",
     "n_sinais_considerados": 15,
-    "modelo": "gemini-2.5-flash"
+    "modelo": "claude"
   },
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "industria"
+        "transversal"
       ],
-      "titulo": "Confiança do Empresário Industrial segue em pessimismo por 20 meses",
-      "texto": "O Índice de Confiança do Empresário Industrial (ICEI) subiu 1,9 ponto em agosto para 46,3 pontos, mas permanece abaixo do limiar de 50, indicando pessimismo contínuo por 20 meses.",
+      "titulo": "Focus corta PIB de 2026 para 1,95% e mantém Selic em 13,75%",
+      "texto": "Boletim Focus de 24/08 reduziu a projeção do PIB 2026 de 1,98% para 1,95%; IPCA 2026 estável em 5,02%, Selic de fim de ano em 13,75% e câmbio em R$ 5,20.",
       "fontes": [
         {
-          "nome": "Painel Rio Verde",
-          "url": "https://painelrioverde.com.br/cni-industria-ja-tem-20-meses-de-pessimismo-mesmo-com-alta-da-confianca-do-empresario-em-agosto/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/24/08/2026/economia/boletim-focus-analistas-cortam-projecao-de-crescimento-da-economia-em-2026-para-195/"
         },
         {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://www.portaldaindustria.com.br/estatisticas/icei-indice-de-confianca-do-empresario-industrial/"
+          "nome": "Itaú Private",
+          "url": "https://blog.itau.com.br/privateinsights/focus-inflacao-ipca-selic-cambio-24-08-26"
         }
       ]
     },
     {
       "setores": [
         "transversal",
+        "comercio",
         "servicos"
       ],
-      "titulo": "Anatel define regras para operadoras bloquearem chamadas massivas",
-      "texto": "A Anatel publicou o Despacho Decisório nº 82/2026, estabelecendo parâmetros para mecanismos de mitigação de chamadas massivas, que devem ser gratuitos e transparentes.",
+      "titulo": "IPCA-15 tem deflação de 0,40% em agosto, a menor para o mês desde 2022",
+      "texto": "Prévia da inflação recuou 0,40% em agosto com bônus de Itaipu (energia -6,25%); em 12 meses caiu a 4,24%, voltando abaixo do teto de 4,5% da meta.",
       "fontes": [
         {
-          "nome": "Atlas Público",
-          "url": "https://atlaspublico.com/anatel-define-parametros-para-operadoras-bloquearem-chamadas-massivas-com-mecanismos-gratuitos/"
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/ipca-15-tem-deflacao-de-040-em-agosto-de-2026/"
         },
         {
-          "nome": "TeleSíntese",
-          "url": "https://telesintese.com.br/2026/08/anatel-define-diretrizes-para-antispam-de-chamadas-telefonicas/"
+          "nome": "Agência Gov / IBGE",
+          "url": "https://agenciagov.ebc.com.br/noticias/202608/previa-da-inflacao-de-agosto-e-de-0-40-informas-ibge"
         },
         {
-          "nome": "Convergência Digital",
-          "url": "https://www.convergenciadigital.com.br/Telecom/Anatel-define-uso-de-Anti-spam-pelas-operadoras-em-chamadas-telefonicas-63102.html"
+          "nome": "Bora Investir (B3)",
+          "url": "https://borainvestir.b3.com.br/noticias/ipca-15-cai-040-em-agosto-de-2026-e-acentua-trajetoria-de-alivio-na-inflacao/"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce",
-        "servicos"
+        "transversal",
+        "construcao",
+        "comercio"
       ],
-      "titulo": "Shopee expande operação fulfillment e lança entrega em até 4 horas",
-      "texto": "A Shopee inaugurou três novos centros de fulfillment em 2026, totalizando cinco unidades, e lançou o serviço 'Turbo' para entregas em até 4 horas, acirrando a disputa logística.",
+      "titulo": "IGP-M cai 0,22% em agosto e acumula 2,16% em 12 meses",
+      "texto": "Índice que reajusta aluguéis recuou 0,22% em agosto, após -1,16% em julho; atacado (IPA) caiu 0,34%, mas agropecuários limitaram a queda.",
       "fontes": [
         {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/noticias/shopee-expande-operacao-fulfillment-com-tres-novos-cds-no-brasil/"
+          "nome": "Jornal do Comércio / FGV",
+          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261365-igp-m-cai-022-em-agosto-apos-recuo-de-116-em-julho-afirma-fgv.html"
         },
         {
-          "nome": "Logística Multimodal",
-          "url": "https://logisticamultimodal.com.br/shopee-chega-a-26-centros-de-distribuicao-no-brasil/"
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/mercado/igp-m-cai-022-em-agosto-mas-alta-de-agropecuarios-limita-recuo/"
         },
         {
-          "nome": "Exame",
-          "url": "https://exame.com/negocios/shopee-lanca-entrega-em-ate-4-horas-e-acirra-disputa-com-mercado-livre-e-amazon/"
+          "nome": "Safras & Mercado",
+          "url": "https://safras.com.br/igp-m-tem-deflacao-de-022-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio"
+      ],
+      "titulo": "Desemprego cai a 5,3%, menor para trimestre até julho desde 2012",
+      "texto": "PNAD do IBGE: 103,3 milhões de ocupados (recorde), 39,4 milhões com carteira e renda média de R$ 3.762, alta real de 3,3% em um ano.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/desemprego-cai-para-53-em-julho-diz-ibge/"
         },
         {
           "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/2026/08/20/shopee-aposta-em-entrega-em-ate-4-horas-e-se-aproxima-da-compra-por-necessidade/"
+          "url": "https://mercadoeconsumo.com.br/27/08/2026/economia/desemprego-cai-para-53-o-menor-para-o-trimestre-terminado-em-julho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "construcao",
+        "agro",
+        "comercio"
+      ],
+      "titulo": "Caged: julho cria 58,6 mil vagas, pior resultado para o mês desde 2020",
+      "texto": "Saldo de 58.568 empregos formais caiu 56,3% ante julho/2025; serviços (+24,1 mil), construção (+12,7 mil) e agro (+12,5 mil) sustentaram, comércio recuou.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/28/08/2026/economia/brasil-cria-585-mil-postos-de-trabalho-em-julho-aponta-caged/"
+        },
+        {
+          "nome": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/economia/brasil-cria-58-6-mil-vagas-em-julho-pior-saldo-desde-2020"
+        },
+        {
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/422299-caged-grupo-de-servicos-sustenta-criacao-de-empregos-enquanto-comercio-recua/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Emprego formal encolhe para trabalhadores acima de 25 anos",
+      "texto": "Em julho, trabalhadores a partir de 25 anos perderam 30,9 mil vagas formais; o saldo positivo do Caged dependeu das contratações de jovens.",
+      "fontes": [
+        {
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/08/28/empregos-formais-no-brasil-julho-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Aneel mantém bandeira amarela em setembro, quinto mês seguido",
+      "texto": "Conta de luz terá adicional de R$ 1,885 a cada 100 kWh em setembro, com maior despacho de térmicas no sistema interligado.",
+      "fontes": [
+        {
+          "nome": "Agência Gov / Aneel",
+          "url": "https://agenciagov.ebc.com.br/noticias/202608/aneel-mantem-bandeira-tarifaria-amarela-em-setembro"
+        },
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-energia/conta-de-luz-tera-bandeira-amarela-pelo-5o-mes-consecutivo/"
+        },
+        {
+          "nome": "Canal Solar",
+          "url": "https://canalsolar.com.br/aneel-bandeira-amarela-quinto-mes-seguido/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Arrecadação federal bate recorde para julho: R$ 289,3 bilhões",
+      "texto": "Receita cresceu 8,97% acima da inflação em julho; no ano soma R$ 1,876 trilhão (+6,98%), com R$ 3,16 bi não recorrentes do imposto sobre exportação de petróleo.",
+      "fontes": [
+        {
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/08/25/arrecadacao-federal-2026-recorde-petroleo-julho/"
+        },
+        {
+          "nome": "Fenacon",
+          "url": "https://fenacon.org.br/noticias/arrecadacao-federal-cresce-897-em-julho-e-chega-a-r-2893-bilhoes/"
+        },
+        {
+          "nome": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/economia/arrecadacao-cresce-9-e-bate-recorde-em-julho"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Inadimplência no crédito livre atinge recorde de 6,4% em julho",
+      "texto": "Banco Central: calote no crédito livre é o maior em 15 anos; pessoas físicas chegam a 7,8%. Juro médio total recuou de 33,3% para 32,1% ao ano.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio / BCB",
+          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261460-inadimplencia-no-credito-livre-atinge-recorde-de-64-diz-bc.html"
+        },
+        {
+          "nome": "O Especialista (Safra)",
+          "url": "https://oespecialista.safra.com.br/credito-inadimplencia-julho-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Estoque de crédito chega a R$ 7,37 trilhões",
+      "texto": "Saldo total de crédito avançou para R$ 7,37 trilhões em julho; juros do crédito direcionado ficaram em 12,1% ao ano, segundo o Banco Central.",
+      "fontes": [
+        {
+          "nome": "O Especialista (Safra)",
+          "url": "https://oespecialista.safra.com.br/credito-inadimplencia-julho-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Falta de confiança chega a 25 setores industriais em agosto",
+      "texto": "CNI: número de setores pessimistas caiu de 26 para 25, mas só 4 segmentos mostram otimismo; indústria acumula 20 meses de confiança abaixo de 50 pontos.",
+      "fontes": [
+        {
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/falta-de-confianca-chega-a-25-setores-industriais-em-agosto-mostra-cni/"
+        },
+        {
+          "nome": "CBIC",
+          "url": "https://cbic.org.br/cni-falta-de-confianca-chega-a-25-setores-industriais-em-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "CNI: fim da taxa das blusinhas põe em risco 109 mil empregos",
+      "texto": "Nota de 26/08 estima R$ 21,8 bilhões de produção doméstica em risco em 2026 e alta de 56,3% nas encomendas internacionais de até US$ 50.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/26/08/2026/noticias-varejo/para-cni-fim-da-taxa-das-blusinhas-pode-por-em-risco-109-mil-empregos/"
+        },
+        {
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/fim-da-taxa-das-blusinhas-pode-por-em-risco-mais-de-100-mil-empregos-indica-cni/"
+        },
+        {
+          "nome": "Diário de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/08/11722380-fim-da-taxa-das-blusinhas-ameaca-109-mil-postos-de-trabalho-afirma-cni.html"
         }
       ]
     },
     {
       "setores": [
         "ecommerce",
-        "servicos"
+        "comercio"
       ],
-      "titulo": "Mercado Livre registra queda de lucro no 2º trimestre de 2026, mas receita cresce",
-      "texto": "O Mercado Livre reportou queda de 11% no lucro líquido no 2T26 para US$ 466 milhões, impactado por frete grátis e cartões de crédito, mas a receita líquida cresceu 50% para US$ 10,2 bilhões.",
+      "titulo": "Congresso instala comissão da MP que zerou a taxa das blusinhas",
+      "texto": "Comissão mista da MP 1.357/2026, que zera o Imposto de Importação de 20% em compras até US$ 50, foi instalada; texto precisa ser votado até 8 de setembro.",
       "fontes": [
         {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/economia/mercado-livre-supera-estimativas-de-lucro-no-2-tri-apesar-de-queda-de-11/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/28/08/2026/ecommerce/comissao-da-mp-da-taxa-das-blusinhas-sera-instalada-nesta-sexta/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "ecommerce"
+      ],
+      "titulo": "Indústria pressiona pela volta da taxa das blusinhas",
+      "texto": "Entidades industriais defendem manter a tributação de importados de baixo valor; Amobitec, que reúne plataformas como Amazon e Shein, apoiou a MP.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/economia/industria-fim-taxa-das-blusinhas/"
         },
         {
-          "nome": "Mercado Livre | Investor Relations",
-          "url": "https://investor.mercadolibre.com/news-releases/news-release-details/shared-meli-q2-2026-press-release"
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/comercio-exterior/2026/08/28/fim-da-taxa-das-blusinhas-ameaca-mais-de-100-mil-empregos-alerta-cni/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Fim da taxa das blusinhas mantém ICMS de 17% a 20% nas compras até US$ 50",
+      "texto": "MP zerou só o imposto federal de 20% no Remessa Conforme; o ICMS estadual segue incidindo, e a renúncia é estimada em R$ 2 bilhões por ano.",
+      "fontes": [
+        {
+          "nome": "Nota técnica CNI (Poder360)",
+          "url": "https://static.poder360.com.br/uploads/2026/08/nota-tecnica-CNI-fim-taxa-blusinhas.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Confiança do comércio cai 1,3 ponto em agosto, para 84,2 pontos",
+      "texto": "FGV: Icom recuou em quatro de seis segmentos, puxado pela piora das expectativas; juros altos freiam o setor.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio / FGV",
+          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261368-confianca-do-comercio-cai-13-ponto-em-agosto-ante-julho-para-842-pontos-revela-fgv.html"
         },
         {
-          "nome": "Money Times",
-          "url": "https://www.moneytimes.com.br/mercado-livre-meli34-acoes-caem-8-apos-2t26-o-que-pesou-no-balanco/"
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/2026/08/28/confianca-do-comercio-cai-em-agosto-com-freio-nos-juros-altos-aponta-fgv-ibre/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Consumo nos lares sobe 3,28% em julho, aponta Abras",
+      "texto": "Supermercados: alta de 3,28% ante julho/2025 e 3,01% sobre junho, já descontada a inflação; acumulado do ano em 2,67%.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/27/08/2026/economia/consumo-nos-lares-sobe-328-em-julho-ante-um-ano-antes/"
         },
         {
-          "nome": "UOL Economia",
-          "url": "https://economia.uol.com.br/noticias/redacao/2026/08/05/mercado-livre-lucro-cai-109-no-2-trimestre-de-2026.htm"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro",
-        "transversal"
-      ],
-      "titulo": "Mercado agrícola com exportações fortes e milho com suporte",
-      "texto": "O mercado agrícola brasileiro mantém exportações fortes em agosto. Soja perde impulso em Chicago, mas milho mantém suporte nas posições futuras.",
-      "fontes": [
+          "nome": "Giro News",
+          "url": "https://gironews.com/supermercado/consumo-nos-lares-cresce-328-em-julho-aponta-abras/"
+        },
         {
-          "nome": "Revista Cultivar",
-          "url": "https://revistacultivar.com.br/noticias/mercado-agricola-18-ago-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro",
-        "transversal"
-      ],
-      "titulo": "Soja dispara em Chicago devido a inundações nos EUA, preços sobem no Brasil",
-      "texto": "Futuros da soja em Chicago subiram mais de 20 pontos, retomando US$ 12/bushel, impulsionados por inundações e tempestades nos EUA. Preços no Brasil alcançam R$ 150/saca.",
-      "fontes": [
-        {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br/noticias/soja/356501-soja-dispara-em-chicago-com-inundacoes-e-tempestades-nos-eua-e-precos-sobem-no-brasil.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Estoque mundial de milho revisado para baixo em agosto de 2026",
-      "texto": "A perspectiva de queda nos estoques de milho no Brasil e no mundo mantém o mercado futuro do grão pressionado, com expectativa de queda de 24,1% no Brasil em 2026/27.",
-      "fontes": [
-        {
-          "nome": "Farmnews",
-          "url": "https://www.farmnews.com.br/mercado/estoque-mundial-de-milho-revisado-para-baixo-em-agosto-de-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Demanda foi o principal fator de mudança nas estimativas de milho e soja do USDA",
-      "texto": "As estimativas do USDA para milho e soja em agosto foram significativamente alteradas pela demanda, impactando as projeções de oferta e estoques.",
-      "fontes": [
-        {
-          "nome": "Scot Consultoria",
-          "url": "https://www.scotconsultoria.com.br/noticias/mercado-agricola/57813/milho-e-soja-demanda-foi-o-que-mais-mudou-nas-estimativas-do-usda-em-agosto"
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/421901-consumo-das-familias-ganha-forca-e-sobe-328-em-julho-aponta-abras/"
         }
       ]
     },
     {
       "setores": [
         "comercio",
-        "industria"
+        "servicos"
       ],
-      "titulo": "Fiat Strada lidera vendas de veículos na primeira quinzena de agosto",
-      "texto": "A Fiat Strada foi o veículo mais vendido do Brasil na primeira quinzena de agosto, com 5.443 unidades emplacadas. Hyundai Creta e Volkswagen Polo completam o pódio.",
+      "titulo": "Comércio fecha vagas em julho enquanto serviços sustentam o emprego",
+      "texto": "Caged de julho mostra o grupamento de serviços liderando a criação de vagas e o comércio com saldo negativo, sob efeito de juros e crédito caro.",
       "fontes": [
         {
-          "nome": "Fenabrave",
-          "url": "https://fenabrave.org.br/noticias/fiat-strada-lidera-vendas-na-primeira-quinzena-de-agosto-byd-coloca-tres-no-top-10/"
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/422299-caged-grupo-de-servicos-sustenta-criacao-de-empregos-enquanto-comercio-recua/"
         },
         {
-          "nome": "AutoPapo",
-          "url": "https://autopapo.uol.com.br/noticia/suv-mais-vendido-agosto-2026-hyundai-creta/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "industria"
-      ],
-      "titulo": "Fenabrave projeta crescimento de 8,6% nas vendas de veículos em 2026",
-      "texto": "A Fenabrave indica que as vendas de veículos devem crescer 8,6% em 2026, impulsionadas por automóveis comerciais leves e motocicletas.",
-      "fontes": [
-        {
-          "nome": "Correio Braziliense",
-          "url": "https://www.correiobraziliense.com.br/economia/2026/08/5420306-vendas-de-veiculos-deve-crescer-86-em-2026-indica-fenabrave.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Produção de veículos no Brasil cresce 3% em julho, diz Anfavea",
-      "texto": "A produção de veículos no Brasil em julho cresceu 3,1% sobre junho e 5,9% ante julho de 2025, totalizando 253,9 mil unidades.",
-      "fontes": [
-        {
-          "nome": "Folha de S.Paulo",
-          "url": "https://www1.folha.uol.com.br/mercado/2026/08/producao-de-veiculos-no-brasil-cresce-3-em-julho-ante-junho-diz-anfavea.shtml"
+          "nome": "Brasil 61",
+          "url": "https://brasil61.com/n/geracao-de-empregos-perde-ritmo-no-brasil-enquanto-comercio-sente-impacto-dos-juros-e-do-credito-bras2617188"
         }
       ]
     },
@@ -204,51 +352,20 @@
       "setores": [
         "servicos"
       ],
-      "titulo": "Mercado de torres de telecomunicações passa por mudanças",
-      "texto": "A criação da Vértis Torres, novo nome da IHS Towers na América Latina após compra pelo fundo Macquarie, movimenta o mercado de infraestrutura de telecomunicações.",
+      "titulo": "Confiança de serviços sobe 1,2 ponto em agosto, para 89 pontos",
+      "texto": "FGV: alta compensa parte da queda de 3 pontos de julho e não se espalhou pelos segmentos; juros reais e endividamento seguem como freio.",
       "fontes": [
         {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/10/08/2026/no-boletim-teletime-mudancas-no-mercado-de-torres-e-agenda-da-semana/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Radiodifusão cobra novas regras de concorrência e debate TV 3.0",
-      "texto": "A transição para a TV 3.0 e a necessidade de consolidar a radiodifusão como indústria estratégica foram temas centrais no SET Expo 2026.",
-      "fontes": [
+          "nome": "Acessa / FGV",
+          "url": "https://www.acessa.com/economia/2026/08/338293-confianca-de-servicos-sobe-12-ponto-em-agosto-ante-julho-para-89-pontos-afirma-fgv.html"
+        },
         {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/radiodifusao-cobra-novas-regras-de-concorrencia/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Oi inicia demissões em diversos estados",
-      "texto": "A Oi começou um novo ciclo de demissões em vários estados, refletindo a crise contínua da empresa de telecomunicações.",
-      "fontes": [
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/economia/confianca-servicos-sobe-agosto-89-pontos-fgv/"
+        },
         {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/oi-inicia-demissoes-em-diversos-estados/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Colômbia cancela projeto de fibra na Amazônia que se integraria ao Brasil",
-      "texto": "A Colômbia cancelou um projeto de fibra óptica na Amazônia que tinha potencial de integração com o Brasil, impactando a conectividade regional.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/19/08/2026/colombia-cancela-projeto-de-fibra-na-amazonia-que-se-integraria-ao-brasil/"
+          "nome": "Brasil 61",
+          "url": "https://brasil61.com/n/servicos-ganham-confianca-em-agosto-mas-comercio-perde-folego-bras2617035"
         }
       ]
     },
@@ -257,52 +374,296 @@
         "servicos",
         "transversal"
       ],
-      "titulo": "Governo reavaliará antidumping sobre fibra óptica monomodo da China",
-      "texto": "O governo brasileiro vai reavaliar as medidas antidumping aplicadas à fibra óptica monomodo importada da China, com potencial impacto no setor de telecomunicações.",
+      "titulo": "Galípolo abre Febraban Tech com novas travas de segurança no Pix",
+      "texto": "Presidente do BC citou alerta de movimentações atípicas no SPI, botão de contestação do MED e limite de R$ 15 mil para Pix e TED em instituições não autorizadas.",
       "fontes": [
         {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/governo-vai-reavaliar-antidumping-sobre-fibra-optica-monomodo-da-china/"
+          "nome": "Convergência Digital",
+          "url": "https://convergenciadigital.com.br/governo/na-febraban-tech-da-inteligencia-artificial-banco-central-diz-que-ia-tem-divergencias/"
+        },
+        {
+          "nome": "Banco Central (apresentação)",
+          "url": "https://www.bcb.gov.br/conteudo/home-ptbr/TextosApresentacoes/Apresentacao_GabrielGalipolo_FebrabanTech_24.8.2026.pdf"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "servicos"
       ],
-      "titulo": "E-commerce brasileiro movimenta R$ 208,4 bilhões no 1º semestre de 2026",
-      "texto": "O comércio eletrônico no Brasil faturou R$ 208,4 bilhões no primeiro semestre de 2026, alta de 16,9% em relação a 2025, com 756,7 milhões de pedidos e tíquete médio de R$ 275,50.",
+      "titulo": "Bancos levam agentes de IA ao centro da estratégia no Febraban Tech",
+      "texto": "Itaú, Bradesco, Nubank, Santander, BTG e Caixa defenderam manter decisões críticas com humanos; setor deve investir R$ 50,4 bilhões em tecnologia em 2026 (+8%).",
       "fontes": [
         {
-          "nome": "Neotrust/Aftersale/E-commerce Brasil",
-          "url": "https://paranaibamais.com.br/economia/e-commerce-dispara-no-brasil-e-muda-jeito-de-comprar-entenda/"
+          "nome": "A Crítica",
+          "url": "https://acritica.net/economia/bancos-ampliam-uso-de-inteligencia-artificial-mas-mantem-decisoes-criticas-com-humanos/"
+        },
+        {
+          "nome": "Startups",
+          "url": "https://startups.com.br/negocios/inteligencia-artificial/agentes-de-ia-colocam-maiores-bancos-do-pais-diante-de-novo-dilema/"
+        },
+        {
+          "nome": "Deloitte / Pesquisa Febraban",
+          "url": "https://www.deloitte.com/br/pt/about/press-room/pesquisa-febraban-2026-volume-2.html"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "servicos"
       ],
-      "titulo": "Alta renda concentra 44% do faturamento do e-commerce brasileiro",
-      "texto": "Um estudo do E-Commerce Brasil revela que consumidores de alta renda são responsáveis por 44% do faturamento online, com o público masculino concentrando 55% do total.",
+      "titulo": "Febraban Tech 2026 bate recorde com 70 mil visitas",
+      "texto": "Evento de 24 a 26/08 em São Paulo teve como tema agentes inteligentes; cibersegurança é prioridade para 100% das instituições e IA generativa para 84%.",
       "fontes": [
         {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/noticias/alta-renda-concentra-44-do-faturamento-do-e-commerce-brasileiro/"
+          "nome": "Legismap",
+          "url": "https://legismap.com.br/conteudos/artigos-e-noticias/febraban-tech-2026-bate-recorde-de-publico-com-70-mil-visitas-em-tres-dias"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "INCC-M sobe 0,85% em agosto, puxado pela mão de obra",
+      "texto": "FGV: custo da construção acelerou de 0,62% para 0,85%; mão de obra subiu 1,56%. Acumulado de 5,59% no ano e 6,56% em 12 meses.",
+      "fontes": [
+        {
+          "nome": "SindusCon-SP / FGV",
+          "url": "https://sindusconsp.com.br/wp-content/uploads/2026/08/INCC-M_FGV_press-release_Ago26.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "servicos"
+      ],
+      "titulo": "Crédito imobiliário com poupança tem melhor julho da história",
+      "texto": "Abecip: SBPE financiou R$ 20,96 bilhões em julho (+76,7% a/a); no ano, R$ 115,5 bi (+36,3%). Projeção para 2026 subiu a R$ 411 bi.",
+      "fontes": [
+        {
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/421604-credito-imobiliario-dispara-e-tem-melhor-julho-da-historia-revela-abecip/"
+        },
+        {
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/credito-imobiliario-recursos-poupanca-recorde-julho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "servicos"
+      ],
+      "titulo": "Poupança segue com saques líquidos apesar do crédito recorde",
+      "texto": "Captação líquida do SBPE ficou negativa em julho; Abecip alerta que a poupança não acompanha a demanda por crédito habitacional.",
+      "fontes": [
+        {
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/credito-imobiliario-recursos-poupanca-recorde-julho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Confiança da construção recua 0,6 ponto em agosto, para 91,9",
+      "texto": "Sondagem da FGV citada pela Fazenda: média móvel trimestral caiu de 92,3 para 92,0 pontos; sem ajuste, índice igual ao de agosto de 2025.",
+      "fontes": [
+        {
+          "nome": "Ministério da Fazenda / FGV",
+          "url": "https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/conjuntura-economica/atividade-economica/defeso-eleitoral-2026/informativo-sondagem-construcao-ago2026.pdf"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Construção responde por 21,7% das vagas formais de julho",
+      "texto": "Setor abriu 12.691 postos com carteira em julho, segunda maior contribuição do Caged no mês, atrás apenas de serviços.",
+      "fontes": [
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/construcao-civil-responde-por-217-dos-empregos-formais-criados-no-brasil-em-julho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "MCMV: Cidades libera novas listas de empreendimentos do FAR",
+      "texto": "Portarias MCID 1.040 (18/08) e 1.082 (21/08) listaram empreendimentos aptos à contratação; Faixa 1 ganha peso no programa.",
+      "fontes": [
+        {
+          "nome": "Registro de Imóveis",
+          "url": "https://www.registrodeimoveis.org.br/faixa-1-ganha-importancia-no-minha-casa-minha-vida"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Seleção de 130 mil moradias do MCMV encerra prazo em 28 de agosto",
+      "texto": "Propostas para a seleção de 130 mil unidades do Minha Casa, Minha Vida foram aceitas até 28/08 ou até o preenchimento das metas regionais.",
+      "fontes": [
+        {
+          "nome": "Seu Crédito Digital",
+          "url": "https://seucreditodigital.com.br/130-mil-moradias-minha-casa-minha-vida/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Anec reduz exportação de soja de agosto para 10,25 milhões de t",
+      "texto": "Revisão de 26/08 cortou a soja em cerca de 300 mil t e o milho para 5,45 milhões de t; farelo estável em 2,5 milhões de t.",
+      "fontes": [
+        {
+          "nome": "Canal Rural / Anec",
+          "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/anec-reduz-estimativa-de-exportacao-de-soja-do-brasil-em-agosto-para-1025-milhoes-de-toneladas/"
+        },
+        {
+          "nome": "Compre Rural",
+          "url": "https://comprerural.com/anec-corta-previsao-para-exportacao-de-soja-em-agosto-e-eleva-a-de-milho/"
+        },
+        {
+          "nome": "Boca",
+          "url": "https://boca.com.br/agronegocio/anec-reduz-previsao-de-exportacao-de-soja-e-milho-em-agosto"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arroba do boi gordo fica perto de R$ 345 no fim de agosto",
+      "texto": "Indicador Cepea do boi gordo teve média de R$ 345,92 em agosto, 9,8% acima de agosto/2025; bezerro acumula alta de quase 10% em 2026.",
+      "fontes": [
+        {
+          "nome": "Canal Rural / Cepea",
+          "url": "https://www.canalrural.com.br/radar/preco-da-arroba-do-boi-gordo-sobe-31-em-agosto-e-chega-a-r-345/"
+        },
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/pecuaria/preco-do-bezerro-dispara-quase-10-em-2026-e-supera-alta-do-boi-gordo/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arábica atinge R$ 1.826,58 por saca em 24/08, maior nível desde abril",
+      "texto": "Cepea: arábica teve média de R$ 1.770,88 em agosto (+2,75% real), com estoques baixos na ICE; robusta caiu 2,51%, a R$ 1.065,16.",
+      "fontes": [
+        {
+          "nome": "Canal Rural / Cepea",
+          "url": "https://www.canalrural.com.br/agricultura/cafe/cafe-arabica-oscila-mas-fundamentos-de-alta-seguem-sustentando-precos-aponta-cepea"
+        },
+        {
+          "nome": "Cepea",
+          "url": "https://www.cepea.org.br"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Café livre do tarifaço dos EUA deve retomar embarques",
+      "texto": "Isenção da sobretaxa de 25% vale para todos os cafés; Cecafé espera retomada a partir de agosto após queda de 30,5% nas compras americanas até julho.",
+      "fontes": [
+        {
+          "nome": "Itatiaia",
+          "url": "https://www.itatiaia.com.br/agro/exportacao-de-cafe-cai-59-no-ano-mas-brasil-preve-alta-com-fim-de-taxas-nos-eua/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Milho sobe 3,4% na semana com vendedor retraído",
+      "texto": "Safras & Mercado: saca média a R$ 66,17 em 27/08, ante R$ 64,01 uma semana antes; Cepea aponta alta mesmo com safra recorde.",
+      "fontes": [
+        {
+          "nome": "Safras & Mercado",
+          "url": "https://safras.com.br/precos-do-milho-seguem-firmes-no-brasil-e-lentidao-na-ponta-compradora-prossegue/"
+        },
+        {
+          "nome": "Cepea",
+          "url": "https://cepea.org.br/br/diarias-de-mercado/milho-cepea-mesmo-com-producao-recorde-cotacoes-no-mercado-interno-seguem-em-alta.aspx"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Safrinha quase toda colhida, mas só 60% da produção vendida",
+      "texto": "Mais de 90% da área de milho 2025/26 foi colhida até o fim de agosto, com comercialização mais lenta e produtores à espera de preço.",
+      "fontes": [
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/comercializacao-ganha-forca-nas-decisoes-sobre-o-milho-safrinha"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Agro gera 12,5 mil vagas formais em julho",
+      "texto": "Agropecuária foi o terceiro setor que mais contratou com carteira em julho, segundo o Caged, num mês de saldo nacional fraco.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/28/08/2026/economia/brasil-cria-585-mil-postos-de-trabalho-em-julho-aponta-caged/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Agropecuários seguram queda do IGP-M em agosto",
+      "texto": "FGV: preços agropecuários subiram no atacado e limitaram o recuo do IGP-M a 0,22%, enquanto o IPA geral caiu 0,34%.",
+      "fontes": [
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/mercado/igp-m-cai-022-em-agosto-mas-alta-de-agropecuarios-limita-recuo/"
         }
       ]
     },
     {
       "setores": [
         "ecommerce",
+        "servicos",
         "transversal"
       ],
-      "titulo": "Reforma tributária pode impactar cidadania fiscal no e-commerce",
-      "texto": "Debates sobre a reforma tributária continuam, com foco em como o cálculo do IBS, CBS e IS pode transformar a cidadania fiscal no e-commerce.",
+      "titulo": "Governo regulamenta marketplace para compras federais (Sicx)",
+      "texto": "Decreto 13.106, publicado em 25/08, cria o Sistema de Compras Expressas: órgãos poderão comprar itens padronizados de fornecedores credenciados em plataformas eletrônicas.",
       "fontes": [
         {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/artigos/reforma-tributaria-seja-a-mudanca-que-voce-deseja-ver-no-mundo/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/25/08/2026/ecommerce/comercio-eletronico-em-compras-federais-e-regulamentado/"
+        },
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/08/amp/337885-comercio-eletronico-em-compras-federais-e-regulamentado.html"
+        },
+        {
+          "nome": "Cescon Barrieu",
+          "url": "https://cesconbarrieu.com.br/governo-federal-regulamenta-marketplace-para-compras-publicas-e-inaugura-novo-modelo-de-contratacao-digital/"
         }
       ]
     },
@@ -310,25 +671,26 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "E-commerce alcança 45,4% dos lares brasileiros em 2025",
-      "texto": "O e-commerce atingiu 45,4% dos lares brasileiros em 2025, alcançando 27,8 milhões de lares e crescendo entre as classes C e D/E, segundo a Worldpanel by Numerator.",
+      "titulo": "Sicx abre canal de venda ao governo para MEIs e pequenos fornecedores",
+      "texto": "Regulamentação amplia o Contrata+Brasil para MEIs e incentiva escolas com recursos do PDDE a comprar pela plataforma; funcionamento ainda depende de normas complementares.",
       "fontes": [
         {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/noticias/e-commerce-chega-a-454-dos-lares-brasileiros-em-2025/"
+          "nome": "AmdJus",
+          "url": "https://amdjus.com.br/governo-regulamenta-compras-online-e-expande-contratabrasil-para-meis/"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "ecommerce",
+        "comercio"
       ],
-      "titulo": "TikTok Shop avança e muda forma de descobrir produtos no e-commerce",
-      "texto": "O TikTok Shop impulsionou o GMV gerado por lives em 161 vezes no primeiro semestre de 2026, com 57,8% dos usuários finalizando compras diretamente na plataforma após descoberta no feed.",
+      "titulo": "Lupo passa a vender 1,4 mil itens pelo iFood",
+      "texto": "Marca usa cerca de 40 lojas em São Paulo, Rio e Belo Horizonte como hubs de entrega rápida, apostando no quick commerce dentro da estratégia omnichannel.",
       "fontes": [
         {
-          "nome": "Paranaíba Mais",
-          "url": "https://paranaibamais.com.br/economia/e-commerce-dispara-no-brasil-e-muda-jeito-de-comprar-entenda/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/25/08/2026/ecommerce/lupo-passa-a-vender-14-mil-itens-pelo-ifood-em-sao-paulo-rio-de-janeiro-e-belo-horizonte/"
         }
       ]
     },
@@ -336,1177 +698,138 @@
       "setores": [
         "comercio"
       ],
-      "titulo": "Dia dos Pais tem maior crescimento do varejo desde 2022, aponta ICVA",
-      "texto": "O Dia dos Pais de 2026 registrou o maior crescimento do varejo desde 2022, conforme o Índice Cielo do Varejo Ampliado (ICVA).",
+      "titulo": "Grupo Carrefour abre 1.894 vagas no Estado de São Paulo",
+      "texto": "Vagas para Atacadão, Carrefour e Sam's Club em funções operacionais, comerciais e de atendimento, na capital, Grande SP, Baixada Santista e interior.",
       "fontes": [
         {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/noticias/dia-dos-pais-tem-maior-crescimento-do-varejo-desde-2022-aponta-icva/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Pequena indústria registra pior nível de confiança desde a pandemia",
-      "texto": "O Panorama da Pequena Indústria da CNI aponta que o setor atingiu níveis de confiança não vistos desde o período mais crítico da pandemia de COVID-19 no 1º trimestre de 2026.",
-      "fontes": [
-        {
-          "nome": "Correio Braziliense",
-          "url": "https://www.correiobraziliense.com.br/economia/2026/05/5086885-pequena-industria-registra-pior-nivel-de-confianca-desde-a-pandemia-aponta-cni.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "ONU e Anatel abrem seleção para consultor em inclusão digital",
-      "texto": "ONU e Anatel lançam seleção para consultor em projeto de inclusão digital, focado em habilidades digitais de crianças e adolescentes, com duração de 300 dias.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/19/08/2026/onu-e-anatel-abrem-selecao-para-consultor-em-projeto-de-inclusao-digital/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Vivo oferece 100 vagas para pessoas com deficiência em 15 capitais",
-      "texto": "A Vivo abriu 100 vagas para pessoas com deficiência em 15 capitais, reforçando seu compromisso com a inclusão e diversidade no mercado de trabalho.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/19/08/2026/vivo-tem-100-vagas-para-pessoas-com-deficiencia-em-15-capitais/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "XP vê sinais de volta à 'racionalidade' na disputa pela telefonia móvel",
-      "texto": "A XP Investimentos observa sinais de maior racionalidade na competição do mercado de telefonia móvel, indicando possíveis mudanças estratégicas entre as operadoras.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/19/08/2026/xp-ve-sinais-de-volta-a-racionalidade-na-disputa-pela-telefonia-movel/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "IBM ingressa no Open Gateway e será parceira de distribuição",
-      "texto": "A IBM anunciou sua entrada no Open Gateway, tornando-se parceira de distribuição e fortalecendo a iniciativa de APIs abertas para desenvolvedores.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/ibm-ingressa-no-open-gateway-e-sera-parceira-de-distribuicao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Testes confirmam viabilidade técnica da TV 3.0",
-      "texto": "Testes de recepção indoor e topologia confirmaram a viabilidade técnica da TV 3.0, abrindo caminho para a implementação da nova tecnologia de radiodifusão.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/testes-de-recepcao-indoor-e-topologia-confirmam-viabilidade-tecnica-da-tv-3-0/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Canalização garante 12 canais contínuos e exclusivos para a TV 3.0",
-      "texto": "A canalização de espectro garante 12 canais contínuos e exclusivos para a TV 3.0, assegurando espaço para a nova geração da televisão aberta.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/19/08/2026/canalizacao-garante-12-canais-continuos-e-exclusivos-para-a-tv-3-0/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Ministro cobra protagonismo da radiodifusão sobre streaming e confirma financiamento",
-      "texto": "O Ministro das Comunicações cobrou maior protagonismo da radiodifusão frente ao streaming e confirmou financiamento para o setor.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/ministro-cobra-protagonismo-da-radiodifusao-sobre-streaming-e-confirma-financiamento/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Empregos de tecnologia crescem mais no Norte e Nordeste, aponta Brasscom",
-      "texto": "Dados da Brasscom indicam que os empregos no setor de tecnologia apresentaram maior crescimento nas regiões Norte e Nordeste do Brasil.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/18/08/2026/empregos-de-tecnologia-crescem-mais-no-norte-e-nordeste-aponta-brasscom/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Anatel reforça exigências de transparência em ofertas de telecomunicações",
-      "texto": "A Anatel reforçou as exigências de transparência na divulgação de ofertas de telecomunicações, visando proteger os direitos dos consumidores.",
-      "fontes": [
-        {
-          "nome": "Veirano Advogados",
-          "url": "https://www.veirano.com.br/publicacoes/direito-publico-e-regulacao-agosto-de-2026-midia"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Anatel atualiza Plano de Destinação de Faixas de Frequências (PDFF)",
-      "texto": "A Agência Nacional de Telecomunicações (Anatel) atualizou o Plano de Destinação de Faixas de Frequências (PDFF) e o PDFF Militar.",
-      "fontes": [
-        {
-          "nome": "Veirano Advogados",
-          "url": "https://www.veirano.com.br/publicacoes/direito-publico-e-regulacao-agosto-de-2026-midia"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Anatel prorroga prazo de Tomada de Subsídios sobre mercados de IoT e M2M",
-      "texto": "A Anatel prorrogou o prazo da Tomada de Subsídios sobre os mercados de IoT e M2M e realizará workshop técnico para aprofundar a discussão.",
-      "fontes": [
-        {
-          "nome": "Veirano Advogados",
-          "url": "https://www.veirano.com.br/publicacoes/direito-publico-e-regulacao-agosto-de-2026-midia"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "FUST: Câmara aprova PL para renovação, mas governo se opõe",
-      "texto": "A Câmara aprovou o Projeto de Lei para renovação dos benefícios do FUST, mas o governo expressou oposição, gerando incertezas sobre a política de conectividade.",
-      "fontes": [
-        {
-          "nome": "TELETIME News",
-          "url": "https://teletime.com.br/13/08/2026/fust-extension-approved-the-new-tv-market-otts-need-to-plan-traffic/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Indústria da Construção: Sondagem de agosto revela desafios",
-      "texto": "A Sondagem da Indústria da Construção de agosto, divulgada pela CNI, deve trazer dados sobre o desempenho e expectativas do setor.",
-      "fontes": [
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://www.portaldaindustria.com.br/estatisticas/icei-indice-de-confianca-do-empresario-industrial/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "INCC/FGV de julho aponta variação nos custos da construção",
-      "texto": "O Índice Nacional de Custo da Construção (INCC) da FGV para julho de 2026 deve refletir as variações nos preços de materiais e mão de obra. (Simulado)",
-      "fontes": [
-        {
-          "nome": "FGV/IBRE",
-          "url": "https://portalibre.fgv.br/indices-economicos/incc"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "CUB médio de julho indica custo básico por metro quadrado",
-      "texto": "O Custo Unitário Básico (CUB) médio de julho de 2026 é um indicador essencial para o cálculo do custo de construção por metro quadrado. (Simulado)",
-      "fontes": [
-        {
-          "nome": "CUB.org.br",
-          "url": "https://cub.org.br/cub-medio/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "FipeZAP de julho mostra tendência de preços de imóveis",
-      "texto": "O índice FipeZAP de preços de imóveis residenciais para julho de 2026 oferece um panorama da valorização ou desvalorização do mercado imobiliário. (Simulado)",
-      "fontes": [
-        {
-          "nome": "FipeZAP",
-          "url": "https://www.fipe.org.br/indices/fipezap/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Crédito imobiliário em julho: ABECIP divulga balanço",
-      "texto": "A ABECIP deve divulgar o balanço do crédito imobiliário em julho de 2026, indicando o volume de financiamentos e a demanda por moradias. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABECIP",
-          "url": "https://abecip.org.br/estatisticas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Vendas de cimento em julho: SNIC apresenta dados de atividade",
-      "texto": "O SNIC deve apresentar os dados de vendas de cimento em julho de 2026, um importante termômetro da atividade da construção civil. (Simulado)",
-      "fontes": [
-        {
-          "nome": "SNIC",
-          "url": "https://snic.org.br/estatisticas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Lançamentos imobiliários em São Paulo: SindusCon-SP e Secovi-SP",
-      "texto": "SindusCon-SP e Secovi-SP devem divulgar dados sobre lançamentos e vendas de imóveis em São Paulo referentes a julho de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "SindusCon-SP",
-          "url": "https://sindusconsp.com.br/pesquisas-e-indicadores/"
-        },
-        {
-          "nome": "Secovi-SP",
-          "url": "https://www.secovi.com.br/pesquisas-e-indicadores"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ABRAMAT divulga desempenho da indústria de materiais de construção",
-      "texto": "A ABRAMAT deve publicar o desempenho da indústria de materiais de construção em julho de 2026, com foco em faturamento e expectativas. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABRAMAT",
-          "url": "https://abramat.org.br/indicadores/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Programa Minha Casa Minha Vida: Novas contratações em agosto",
-      "texto": "O Ministério das Cidades pode anunciar novas contratações e avanços no programa Minha Casa Minha Vida em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Ministério das Cidades",
-          "url": "https://www.gov.br/cidades/pt-br/acoes-e-programas/habitacao/minha-casa-minha-vida"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Mercado de trabalho na construção civil: CAGED de julho",
-      "texto": "O CAGED de julho de 2026 deve revelar o saldo de empregos formais na construção civil, indicando a saúde do setor. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Ministério do Trabalho e Emprego",
-          "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/estatisticas-e-publicacoes/caged"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Sienge aponta tendências de digitalização para construtoras",
-      "texto": "O Sienge pode divulgar análises sobre a adoção de tecnologias e digitalização no setor da construção civil em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Sienge",
-          "url": "https://www.sienge.com.br/blog/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Votorantim Cimentos anuncia investimentos em sustentabilidade",
-      "texto": "A Votorantim Cimentos pode anunciar novos investimentos em projetos de sustentabilidade e descarbonização em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Votorantim Cimentos",
-          "url": "https://www.votorantimcimentos.com.br/imprensa/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "MRV e Cyrela divulgam prévias operacionais de julho",
-      "texto": "Grandes construtoras como MRV e Cyrela devem divulgar suas prévias operacionais de julho de 2026, com dados de vendas e lançamentos. (Simulado)",
-      "fontes": [
-        {
-          "nome": "MRV RI",
-          "url": "https://ri.mrv.com.br/"
-        },
-        {
-          "nome": "Cyrela RI",
-          "url": "https://ri.cyrela.com.br/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ABCP e SNIC debatem futuro do cimento e concreto",
-      "texto": "Associações como ABCP e SNIC podem promover debates sobre inovações e desafios para a indústria do cimento e concreto em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABCP",
-          "url": "https://abcp.org.br/noticias/"
-        },
-        {
-          "nome": "SNIC",
-          "url": "https://snic.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "CAU/BR e CONFEA discutem fiscalização e ética profissional",
-      "texto": "Conselhos como CAU/BR e CONFEA podem realizar reuniões em agosto de 2026 para discutir temas de fiscalização e ética na engenharia e arquitetura. (Simulado)",
-      "fontes": [
-        {
-          "nome": "CAU/BR",
-          "url": "https://www.caubr.gov.br/noticias/"
-        },
-        {
-          "nome": "CONFEA",
-          "url": "https://www.confea.org.br/noticias"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "ADEMI-RJ analisa mercado imobiliário do Rio de Janeiro",
-      "texto": "A ADEMI-RJ deve divulgar análises sobre o desempenho do mercado imobiliário no Rio de Janeiro em julho ou agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ADEMI-RJ",
-          "url": "https://ademi.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "AECweb destaca inovações em produtos para construção",
-      "texto": "O portal AECweb pode apresentar artigos e notícias sobre novos produtos e tecnologias para a construção civil em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "AECweb",
-          "url": "https://www.aecweb.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Indicadores Industriais de junho: faturamento e massa salarial crescem",
-      "texto": "Os Indicadores Industriais da CNI de junho de 2026 mostraram crescimento no faturamento, massa salarial e rendimento, refletindo um desempenho positivo.",
-      "fontes": [
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://www.portaldaindustria.com.br/estatisticas/indicadores-industriais/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Crescimento do mercado de luxo no Brasil com mudança de códigos de status",
-      "texto": "O mercado de luxo no Brasil está em expansão, impulsionado por consumidores aspiracionais e uma mudança nos códigos de status.",
-      "fontes": [
-        {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/noticias/mercado-de-luxo-cresce-no-brasil-mas-os-codigos-de-status-mudaram-diz-especialista/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Casa & Decoração cresce, mas variedade sem critério vira risco de margem",
-      "texto": "O setor de Casa & Decoração no e-commerce cresce, mas a vasta variedade de produtos sem curadoria adequada pode gerar riscos para as margens dos vendedores.",
-      "fontes": [
-        {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/artigos/casa-e-decoracao-cresce-mas-variedade-sem-criterio-virou-risco-de-margem/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "China Link entra na educação por assinatura com comunidade de importadores",
-      "texto": "A China Link lançou uma comunidade de importadores por assinatura, aproveitando o ciclo de expansão das compras brasileiras na China, que somaram US$ 38,5 bilhões no 1º semestre de 2026.",
-      "fontes": [
-        {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/noticias/china-link-entra-na-educacao-por-assinatura-com-comunidade-de-importadores/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Varejo precisa focar na atenção antes da venda, diz especialista",
-      "texto": "Especialistas apontam que o varejo está priorizando a venda em vez da atenção do consumidor, redefinindo o social commerce e a corrida pela conversão.",
-      "fontes": [
-        {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/artigos/primeiro-a-atencao-depois-a-venda-o-varejo-esta-fazendo-na-ordem-errada/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Confiança, reputação e marca mudam o e-commerce",
-      "texto": "A confiança, reputação e marca estão se tornando cruciais para transformar cliques em preferência e recompra no e-commerce, superando a commodity do preço.",
-      "fontes": [
-        {
-          "nome": "E-Commerce Brasil",
-          "url": "https://www.ecommercebrasil.com.br/artigos/o-clique-virou-commodity-como-confianca-reputacao-e-marca-estao-mudando-o-e-commerce/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "NielsenIQ divulga dados de consumo e varejo para julho",
-      "texto": "A NielsenIQ deve divulgar dados atualizados sobre o comportamento do consumidor e o desempenho do varejo em julho de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "NielsenIQ",
-          "url": "https://nielseniq.com/br/insights/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "ABRAS/SuperHiper analisa vendas de supermercados em julho",
-      "texto": "A ABRAS, por meio da revista SuperHiper, deve publicar a performance das vendas do setor supermercadista em julho de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABRAS / SuperHiper",
-          "url": "https://www.abras.com.br/superhiper/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Fecomércio-SP avalia desempenho do comércio paulista em julho",
-      "texto": "A Fecomércio-SP deve divulgar sua análise sobre o desempenho do comércio varejista na capital e no estado de São Paulo em julho de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Fecomércio-SP",
-          "url": "https://www.fecomercio.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "CNDL/SPC Brasil: Inadimplência e acesso ao crédito em julho",
-      "texto": "A CNDL e o SPC Brasil devem apresentar o panorama da inadimplência e do acesso ao crédito para consumidores e PMEs em julho de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "CNDL/SPC Brasil",
-          "url": "https://www.cndl.org.br/imprensa/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "ABF/franchising: Crescimento do setor de franquias no 2º trimestre",
-      "texto": "A ABF deve divulgar os resultados do setor de franchising para o 2º trimestre de 2026, indicando expansão e novas tendências. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABF/franchising",
-          "url": "https://www.abf.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Abrasce: Desempenho dos shoppings centers em julho",
-      "texto": "A Abrasce deve publicar o desempenho dos shoppings centers em julho de 2026, com dados de vendas e fluxo de visitantes. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Abrasce/shoppings",
-          "url": "https://abrasce.com.br/imprensa/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "ABAD/atacado: Vendas do setor atacadista e distribuidor em julho",
-      "texto": "A ABAD deve divulgar o balanço das vendas do setor atacadista e distribuidor em julho de 2026, com foco em faturamento e volume. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABAD/atacado",
-          "url": "https://abad.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "APAS/supermercados: Tendências de consumo no varejo alimentar",
-      "texto": "A APAS deve lançar análises sobre as tendências de consumo e o cenário do varejo alimentar em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "APAS/supermercados",
-          "url": "https://www.apas.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "IDV: Perspectivas para o varejo no segundo semestre de 2026",
-      "texto": "O IDV deve apresentar suas perspectivas para o varejo no segundo semestre de 2026, considerando o cenário econômico atual. (Simulado)",
-      "fontes": [
-        {
-          "nome": "IDV",
-          "url": "https://idv.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Consumidor Moderno aborda desafios da experiência do cliente",
-      "texto": "A Consumidor Moderno pode publicar artigos sobre os desafios e inovações na experiência do cliente no varejo em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Consumidor Moderno",
-          "url": "https://consumidormoderno.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Diário do Comércio/ACSP: Impacto dos juros no comércio",
-      "texto": "O Diário do Comércio da ACSP pode analisar o impacto da taxa de juros no desempenho do comércio varejista em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Diário do Comércio/ACSP",
-          "url": "https://dcomercio.com.br/categoria/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Novo Varejo e SuperVarejo: Estratégias para o varejo físico",
-      "texto": "Os portais Novo Varejo e SuperVarejo podem trazer reportagens sobre estratégias e inovações para o varejo físico em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Novo Varejo",
-          "url": "https://novovarejo.com.br/noticias/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/25/08/2026/noticias-varejo/grupo-carrefour-brasil-abre-1-894-vagas-no-estado-de-sao-paulo/"
         },
         {
           "nome": "SuperVarejo",
-          "url": "https://supervarejo.com.br/noticias/"
+          "url": "https://supervarejo.com.br/Vagas%20de%20emprego/grupo-carrefour-brasil-abre-1894-vagas-no-estado-de-sao-paulo"
         }
       ]
     },
     {
       "setores": [
-        "comercio"
+        "servicos",
+        "transversal"
       ],
-      "titulo": "InfoVarejo: Tecnologia e tendências para o pequeno varejista",
-      "texto": "O InfoVarejo pode abordar o uso de tecnologia e as principais tendências para o pequeno e médio varejista em agosto de 2026. (Simulado)",
+      "titulo": "Lucro da Caixa sobe 5,9% e chega a R$ 3,9 bi no 2º trimestre",
+      "texto": "Provisões contra calotes quase dobraram (+97,6%, a R$ 6,97 bi) e a rentabilidade caiu a 9,16%; inadimplência total da carteira chegou a 3,64%.",
       "fontes": [
         {
-          "nome": "InfoVarejo",
-          "url": "https://infovarejo.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABDI promove programas de digitalização para PMEs industriais",
-      "texto": "A ABDI pode anunciar novos programas e iniciativas para impulsionar a digitalização e inovação em pequenas e médias indústrias em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABDI",
-          "url": "https://www.gov.br/abdi/pt-br/noticias"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ANFAVEA debate eletrificação da frota e produção de veículos elétricos",
-      "texto": "A ANFAVEA pode promover discussões sobre o avanço da eletrificação da frota e os desafios da produção de veículos elétricos no Brasil em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ANFAVEA",
-          "url": "https://anfavea.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABIMAQ: Balanço do setor de máquinas e equipamentos em julho",
-      "texto": "A ABIMAQ deve divulgar o balanço do setor de máquinas e equipamentos em julho de 2026, com dados de faturamento e exportações. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABIMAQ",
-          "url": "https://abimaq.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "PMI Brasil Indústria de agosto: S&P Global divulga resultados",
-      "texto": "O PMI Brasil Indústria de agosto de 2026, da S&P Global, deve indicar a saúde do setor manufatureiro, com foco em produção e novos pedidos. (Simulado)",
-      "fontes": [
-        {
-          "nome": "S&P Global/PMI Brasil",
-          "url": "https://pmi.spglobal.com/Public/Release/PressRelease.aspx?ReleaseID=202608XX"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Instituto Aço Brasil: Produção e vendas de aço em julho",
-      "texto": "O Instituto Aço Brasil deve apresentar os dados de produção e vendas de aço em julho de 2026, refletindo a demanda da indústria e construção. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Instituto Aço Brasil",
-          "url": "https://acobrasil.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABIQUIM: Desempenho da indústria química em julho",
-      "texto": "A ABIQUIM deve divulgar o desempenho da indústria química brasileira em julho de 2026, com foco em produção, vendas e importações. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABIQUIM",
-          "url": "https://abiquim.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABINEE: Setor eletroeletrônico em julho e perspectivas",
-      "texto": "A ABINEE deve publicar o balanço do setor eletroeletrônico em julho de 2026, com análises sobre produção, vendas e investimentos. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABINEE",
-          "url": "https://abinee.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "ABIT: Indústria têxtil e de confecção em julho",
-      "texto": "A ABIT deve apresentar os resultados da indústria têxtil e de confecção em julho de 2026, com foco em produção, exportações e emprego. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABIT",
-          "url": "https://abit.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "IEDI: Desafios e oportunidades para a indústria brasileira",
-      "texto": "O IEDI pode publicar estudos e análises sobre os desafios e oportunidades para a indústria brasileira no cenário econômico atual em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "IEDI",
-          "url": "https://iedi.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "FIRJAN e FIEMG: Sondagens regionais da indústria em agosto",
-      "texto": "FIRJAN e FIEMG devem divulgar suas sondagens regionais da indústria em agosto de 2026, com indicadores de confiança e atividade. (Simulado)",
-      "fontes": [
-        {
-          "nome": "FIRJAN",
-          "url": "https://www.firjan.com.br/noticias/"
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/27/08/2026/mc-capital/lucro-da-caixa-cresce-59-e-chega-a-r-39-bi-no-segundo-trimestre/"
         },
         {
-          "nome": "FIEMG",
-          "url": "https://fiemg.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Sindipeças: Desempenho da indústria de autopeças em julho",
-      "texto": "O Sindipeças deve divulgar o desempenho da indústria de autopeças em julho de 2026, com dados de faturamento e produção. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Sindipeças",
-          "url": "https://sindipecas.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Abraciclo: Produção e vendas de motocicletas em julho",
-      "texto": "A Abraciclo deve apresentar os dados de produção e vendas de motocicletas em julho de 2026, refletindo o aquecimento do mercado. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Abraciclo",
-          "url": "https://abraciclo.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "AutoData e Automotive Business: Notícias do setor automotivo",
-      "texto": "Os portais AutoData e Automotive Business podem trazer as últimas notícias e análises do setor automotivo em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "AutoData",
-          "url": "https://autodata.com.br/noticias/"
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/caixa-registra-lucro-de-r-39-bilhoes-no-2o-trimestre-inadimplencia-avanca/"
         },
         {
-          "nome": "Automotive Business",
-          "url": "https://automotivebusiness.com.br/noticias/"
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/08/27/lucro-da-caixa-r-39-bilhoes-inadimplencia/"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "agro",
+        "servicos"
       ],
-      "titulo": "CEPEA: Preços de commodities agrícolas em agosto",
-      "texto": "O CEPEA deve divulgar os preços atualizados de commodities agrícolas como soja, milho, boi gordo e café em agosto de 2026. (Simulado)",
+      "titulo": "Inadimplência do agro na Caixa salta a 20,74%",
+      "texto": "Carteira rural foi a principal fonte de deterioração no 2º trimestre: calote passou de 7,02% para 20,74% em um ano, segundo o balanço da Caixa.",
       "fontes": [
         {
-          "nome": "CEPEA/Esalq",
-          "url": "https://www.cepea.esalq.usp.br/br/indicador/soja.aspx"
+          "nome": "Let's Money",
+          "url": "https://www.letsmoney.com.br/noticias/caixa-lucro-2t26-provisao-agro/"
+        },
+        {
+          "nome": "Tribuna PR",
+          "url": "https://www.tribunapr.com.br/noticias/economia/caixa-registra-lucro-de-r-39-bi-com-alta-de-provisoes-contra-calotes/"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "construcao",
+        "servicos"
       ],
-      "titulo": "Conab: Atualização da estimativa de safra de grãos 2025/2026",
-      "texto": "A Conab deve divulgar a atualização da estimativa da safra de grãos 2025/2026, com projeções para as principais culturas. (Simulado)",
+      "titulo": "Carteira imobiliária da Caixa passa de R$ 1 trilhão",
+      "texto": "Saldo habitacional chegou a R$ 1,005 trilhão (+15% em um ano), 67,9% do mercado; contratações do trimestre somaram R$ 137,6 bi (+29,3%), com inadimplência de 1,45%.",
       "fontes": [
         {
-          "nome": "Conab",
-          "url": "https://www.conab.gov.br/safras-e-mercados/levantamento-da-safra-de-graos"
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/08/27/lucro-da-caixa-r-39-bilhoes-inadimplencia/"
+        },
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/negocios/empresas/caixa-lucro-39-bilhoes-segundo-trimestre-2026/"
         }
       ]
     },
     {
       "setores": [
+        "transversal",
+        "industria",
         "agro"
       ],
-      "titulo": "Embrapa: Inovações e pesquisas para o agronegócio",
-      "texto": "A Embrapa pode apresentar novas pesquisas e inovações para o agronegócio, visando aumento de produtividade e sustentabilidade em agosto de 2026. (Simulado)",
+      "titulo": "Brasil e EUA abrem nova rodada virtual para negociar o tarifaço",
+      "texto": "Governo anunciou negociação virtual com o USTR para contestar a sobretaxa de 25% e a tarifa adicional de 12,5%; reunião ministerial ocorreu em 31/08.",
       "fontes": [
         {
-          "nome": "Embrapa",
-          "url": "https://www.embrapa.br/noticias"
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/comercio-exterior/2026/08/26/brasil-e-eua-iniciam-negociacao-virtual-na-segunda-feira-para-reverter-tarifaco/"
+        },
+        {
+          "nome": "Diário de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/politica/2026/08/11722218-brasil-e-estados-unidos-abrem-novo-dialogo-para-negociar-o-tarifaco.html"
         }
       ]
     },
     {
       "setores": [
-        "agro"
+        "industria"
       ],
-      "titulo": "MAPA: Políticas públicas e regulamentação para o setor",
-      "texto": "O MAPA pode anunciar novas políticas públicas e regulamentações para o agronegócio, impactando produtores e cadeias de valor em agosto de 2026. (Simulado)",
+      "titulo": "Suape retoma 55 hectares e abre área para novas indústrias",
+      "texto": "Complexo de Pernambuco reincorporou área arrendada à Vard Promar, que poderá receber projetos industriais, navais e logísticos.",
       "fontes": [
         {
-          "nome": "MAPA",
-          "url": "https://www.gov.br/agricultura/pt-br/assuntos/noticias"
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/portos/2026/08/26/suape-retoma-area-de-55-hectares-e-abre-espaco-para-novos-investimentos-em-pe/"
         }
       ]
     },
     {
       "setores": [
+        "industria",
         "agro"
       ],
-      "titulo": "IMEA: Balanço do agronegócio em Mato Grosso em julho",
-      "texto": "O IMEA deve divulgar o balanço do agronegócio em Mato Grosso para julho de 2026, com dados de produção, comercialização e preços. (Simulado)",
+      "titulo": "Vendas de máquinas agrícolas caem 27,5% em julho",
+      "texto": "Abimaq: receita do segmento foi de R$ 4,86 bilhões em julho e acumula R$ 26,2 bi no ano (-25,8%); entidade mantém projeção de queda de 20% em 2026.",
       "fontes": [
         {
-          "nome": "IMEA",
-          "url": "https://www.imea.com.br/imea-site/noticias"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "B3: Desempenho dos contratos futuros agrícolas em agosto",
-      "texto": "A B3 deve apresentar o desempenho dos contratos futuros de commodities agrícolas em agosto de 2026, refletindo as expectativas do mercado. (Simulado)",
-      "fontes": [
+          "nome": "Brasilagro",
+          "url": "https://brasilagro.com.br/conteudo/vendas-de-maquinas-agricolas-acumulam-queda-de-258-em-2026.html"
+        },
         {
-          "nome": "B3 / futuros agro",
-          "url": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/commodities/agropecuarios/"
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/radar/maquinas-agricolas-acumulam-queda-de-258-mas-industria-ve-sinais-para-reacao-nas-vendas/"
         }
       ]
     },
     {
       "setores": [
+        "industria",
         "agro"
       ],
-      "titulo": "Canal Rural e Globo Rural: Cobertura do agronegócio",
-      "texto": "Canal Rural e Globo Rural podem trazer reportagens sobre o cenário climático, colheitas e mercado agropecuário em agosto de 2026. (Simulado)",
+      "titulo": "Venda de colheitadeiras despenca 89% em julho",
+      "texto": "Apenas 31 colheitadeiras foram vendidas pelas fábricas em julho, reflexo do crédito rural caro e do endividamento dos produtores, segundo a Abimaq.",
       "fontes": [
         {
           "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/noticias/"
-        },
-        {
-          "nome": "Globo Rural",
-          "url": "https://globorural.globo.com/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "AgFeed e The Agribiz: Análises de negócios e investimentos no agro",
-      "texto": "AgFeed e The Agribiz podem publicar análises sobre investimentos, fusões e aquisições, e novas tecnologias no agronegócio em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "AgFeed",
-          "url": "https://agfeed.com.br/noticias/"
-        },
-        {
-          "nome": "The Agribiz",
-          "url": "https://theagribiz.com/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "ABIEC: Exportações de carne bovina em julho",
-      "texto": "A ABIEC deve divulgar os dados de exportação de carne bovina em julho de 2026, com foco nos principais destinos e volumes. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABIEC / carne",
-          "url": "https://abiec.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "ABPA: Produção e exportação de aves e suínos em julho",
-      "texto": "A ABPA deve apresentar os dados de produção e exportação de carne de aves e suínos em julho de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABPA / aves e suínos",
-          "url": "https://abpa-br.org/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "ABIOVE: Balanço da cadeia produtiva da soja em julho",
-      "texto": "A ABIOVE deve divulgar o balanço da cadeia produtiva da soja em julho de 2026, com dados de esmagamento, exportação e estoques. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABIOVE / soja",
-          "url": "https://abiove.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "UNICA: Produção de açúcar e etanol na safra 2026/2027",
-      "texto": "A UNICA deve atualizar os dados de produção de açúcar e etanol na safra 2026/2027, com projeções para o setor sucroenergético. (Simulado)",
-      "fontes": [
-        {
-          "nome": "UNICA",
-          "url": "https://unica.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Agrolink e Compre Rural: Notícias e análises de mercado",
-      "texto": "Os portais Agrolink e Compre Rural podem trazer as últimas notícias e análises de mercado para o produtor rural em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Agrolink",
-          "url": "https://www.agrolink.com.br/noticias/"
-        },
-        {
-          "nome": "Compre Rural",
-          "url": "https://comprerural.com/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Revista Cultivar e AgriPoint: Conteúdo técnico para o campo",
-      "texto": "Revista Cultivar e AgriPoint podem publicar artigos técnicos e informações sobre manejo de culturas e pecuária em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Revista Cultivar",
-          "url": "https://revistacultivar.com.br/noticias/"
-        },
-        {
-          "nome": "BeefPoint/AgriPoint",
-          "url": "https://www.beefpoint.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Sou Agro e AgriBrasilis: Destaques do agronegócio regional",
-      "texto": "Os portais Sou Agro e AgriBrasilis podem cobrir eventos e destaques do agronegócio em diferentes regiões do Brasil em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Sou Agro",
-          "url": "https://souagro.net/noticias/"
-        },
-        {
-          "nome": "AgriBrasilis",
-          "url": "https://agribrasilis.com/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Forbes Agro: Tendências e grandes players do setor",
-      "texto": "A Forbes Agro pode apresentar reportagens sobre as principais tendências e os grandes players do agronegócio brasileiro em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Forbes Agro",
-          "url": "https://forbes.com.br/forbes-agro/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Aprosoja Brasil e ABAG: Pautas e defesa do produtor",
-      "texto": "A Aprosoja Brasil e a ABAG podem atuar em pautas relevantes para o produtor rural e a defesa do agronegócio em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Aprosoja Brasil",
-          "url": "https://www.aprosojabrasil.com.br/noticias/"
-        },
-        {
-          "nome": "ABAG",
-          "url": "https://abag.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Sistema OCB: Cooperativismo agropecuário em destaque",
-      "texto": "O Sistema OCB pode divulgar o desempenho e as iniciativas do cooperativismo agropecuário em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Sistema OCB",
-          "url": "https://somoscooperativismo.coop.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "FPA e ANDA: Debates sobre fertilizantes e políticas agrícolas",
-      "texto": "A Frente Parlamentar da Agropecuária (FPA) e a ANDA podem debater o mercado de fertilizantes e políticas agrícolas em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "FPA",
-          "url": "https://www.fpagropecuaria.org.br/noticias/"
-        },
-        {
-          "nome": "ANDA/fertilizantes",
-          "url": "https://anda.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Datagro e Safras & Mercado: Análises de mercado e projeções",
-      "texto": "Datagro e Safras & Mercado podem apresentar análises aprofundadas do mercado agrícola e projeções para as próximas safras em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Datagro",
-          "url": "https://datagro.com/noticias/"
-        },
-        {
-          "nome": "Safras & Mercado",
-          "url": "https://safras.com.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "JBS: Resultados financeiros e estratégias de mercado",
-      "texto": "A JBS pode divulgar seus resultados financeiros do 2º trimestre de 2026 e estratégias para o mercado global de carnes em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "JBS",
-          "url": "https://jbs.com.br/imprensa/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Sociedade Rural Brasileira: Pautas e eventos do setor",
-      "texto": "A Sociedade Rural Brasileira pode promover debates e eventos sobre pautas relevantes para o agronegócio em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "Sociedade Rural Brasileira",
-          "url": "https://srb.org.br/noticias/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "ABRAPA: Desafios e oportunidades para o algodão brasileiro",
-      "texto": "A ABRAPA pode apresentar estudos sobre os desafios e oportunidades para a cultura do algodão no Brasil em agosto de 2026. (Simulado)",
-      "fontes": [
-        {
-          "nome": "ABRAPA/algodão",
-          "url": "https://abrapa.com.br/noticias/"
+          "url": "https://www.canalrural.com.br/agricultura/maquinas-agricolas-acumulam-queda-de-258-mas-industria-ve-sinais-para-reacao-nas-vendas/"
         }
       ]
     }
@@ -1515,23 +838,23 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Regulamentação e políticas setoriais",
-      "texto": "A Anatel definiu novas regras para chamadas massivas e o debate sobre a renovação do FUST continua, impactando telecomunicações.",
+      "tema": "MP da taxa das blusinhas e eleições",
+      "texto": "Comissão da MP 1.357 instalada; indústria pressiona pela volta do imposto. Agenda econômica sob o calendário eleitoral.",
       "score": 6.5,
       "setores": [
         "transversal",
-        "servicos"
+        "ecommerce",
+        "industria"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Inflação, juros e atividade econômica",
-      "texto": "IPCA desacelera para 0,07% em julho, mas Selic mantida em 13,75% indica cautela. Confiança industrial segue em pessimismo.",
+      "tema": "Desinflação com crédito em estresse",
+      "texto": "IPCA-15 de -0,40% e IGP-M de -0,22%, mas inadimplência recorde (6,4%) e Caged no pior julho desde 2020.",
       "score": 7.8,
       "setores": [
         "transversal",
-        "industria",
         "comercio",
         "servicos",
         "construcao"
@@ -1540,50 +863,49 @@
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Comportamento do consumidor e mercado de trabalho",
-      "texto": "E-commerce cresce, impulsionado por classes C/D/E, e mercado de luxo se adapta. Empregos em tecnologia crescem no Norte e Nordeste.",
-      "score": 7.0,
+      "tema": "Desemprego mínimo, emprego formal fraco",
+      "texto": "Desemprego de 5,3%, menor para o período; vagas formais encolhem para quem tem mais de 25 anos.",
+      "score": 6.8,
       "setores": [
+        "transversal",
         "comercio",
-        "servicos",
-        "ecommerce"
+        "servicos"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Avanços em logística e digitalização",
-      "texto": "Shopee lança entregas em 4 horas e Mercado Livre investe em IA. TV 3.0 avança para implementação.",
-      "score": 8.5,
+      "tema": "Agentes de IA e segurança do Pix",
+      "texto": "Febraban Tech: bancos investem R$ 50,4 bi em tecnologia; BC reforça contestação e limites no Pix.",
+      "score": 7.0,
       "setores": [
-        "ecommerce",
         "servicos",
-        "industria",
-        "comercio"
+        "transversal",
+        "ecommerce"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Clima e sustentabilidade no agronegócio",
-      "texto": "Inundações nos EUA impactam preços da soja globalmente. Debates sobre sustentabilidade na construção civil e indústria.",
-      "score": 6.0,
+      "tema": "Geração térmica e bandeira amarela",
+      "texto": "Condições de geração desfavoráveis mantêm bandeira amarela pelo quinto mês e elevam o despacho térmico.",
+      "score": 5.5,
       "setores": [
-        "agro",
+        "transversal",
         "industria",
-        "construcao"
+        "servicos"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Reforma tributária e regulamentação de telecomunicações",
-      "texto": "Discussões sobre o impacto da reforma tributária no e-commerce e novas diretrizes da Anatel para chamadas.",
-      "score": 6.5,
+      "tema": "Tributação de importados de baixo valor",
+      "texto": "MP zerou o imposto federal de 20% até US$ 50; ICMS segue. Prazo de votação até 8 de setembro.",
+      "score": 6.6,
       "setores": [
         "ecommerce",
-        "servicos",
-        "transversal"
+        "comercio",
+        "industria"
       ]
     }
   ],
@@ -1591,42 +913,42 @@
     {
       "label": "SELIC",
       "valor": "14,00% a.a.",
-      "cor": "up",
-      "sub": "Taxa básica de juros · BCB/SGS · 20/08/2026",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros · BCB/SGS · 28/08/2026",
       "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,07%",
       "cor": "up",
-      "sub": "Mês · acum. ano 3,44% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jul/26 · Projeção Focus 2026: 5,02%",
+      "sub": "Mês · acum. ano 3,44% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jul/26 · Projeção Focus 2026: 5,01%",
       "fonte": "IBGE",
       "acum_ano": 3.44,
       "ipca_12m": 4.44,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
-      "projecao": 5.02,
-      "projecao_em": "2026-08-14",
+      "projecao": 5.01,
+      "projecao_em": "2026-08-28",
       "projecao_fonte": "Focus/BCB"
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,17",
+      "valor": "R$ 5,20",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 19/08/2026",
+      "sub": "Dólar PTAX venda · BCB · 28/08/2026",
       "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
-      "valor": "5,4%",
+      "valor": "5,3%",
       "cor": "up",
-      "sub": "PNAD Contínua · IBGE · abr-mai-jun 2026",
+      "sub": "PNAD Contínua · IBGE · mai-jun-jul 2026",
       "fonte": "IBGE"
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "0,5%",
+      "valor": "0,3%",
       "cor": "up",
       "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,9% · IBGE jun/26",
       "fonte": "IBGE",
@@ -1634,7 +956,7 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-1,8%",
+      "valor": "-1,6%",
       "cor": "down",
       "sub": "Produção física m/m · acum. ano 1,7% · IBGE jun/26",
       "fonte": "IBGE",
@@ -1642,11 +964,11 @@
     },
     {
       "label": "IPP",
-      "valor": "-0,77%",
+      "valor": "-0,83%",
       "cor": "up",
-      "sub": "Preços ao produtor m/m · acum. ano 3,99% · IBGE jun/26",
+      "sub": "Preços ao produtor m/m · acum. ano 3,09% · IBGE jul/26",
       "fonte": "IBGE",
-      "acum_ano": 3.99
+      "acum_ano": 3.09
     }
   ],
   "kpis_setoriais": [
@@ -1654,12 +976,12 @@
       "setor": "servicos",
       "setorLabel": "Serviços",
       "label": "Serviços (PMS)",
-      "valor": "+0,0%",
-      "cor": "neutral",
-      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,0% · IBGE/PMS jun/26",
+      "valor": "+0,1%",
+      "cor": "up",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,1% · IBGE/PMS jun/26",
       "ref": "jun/26",
-      "pt": 0.0,
-      "acum": 2.0,
+      "pt": 0.1,
+      "acum": 2.1,
       "flow": true,
       "unit": "%"
     },
@@ -1702,20 +1024,6 @@
       "acum": null,
       "flow": false,
       "unit": "Mt"
-    },
-    {
-      "setor": "ecommerce",
-      "setorLabel": "E-commerce",
-      "label": "E-commerce (Neotrust/Aftersale/E-commerce Brasil)",
-      "valor": "+16,9%",
-      "cor": "up",
-      "sub": "Vendas do e-commerce · variação sobre igual período do ano anterior · estimativa de mercado · fonte Neotrust/Aftersale/E-commerce Brasil · 1º Semestre 2026",
-      "ref": "1º Semestre 2026",
-      "pt": 16.9,
-      "acum": null,
-      "flow": true,
-      "unit": "%",
-      "mkt": true
     }
   ],
   "pressoes_ipca": {
@@ -1776,8 +1084,8 @@
       "entrantes": 4,
       "fornecedores": 8,
       "compradores": 6,
-      "substitutos": 5,
-      "nota": "Setor com alta dependência de insumos e pressão de custos, mas com barreiras de entrada moderadas."
+      "substitutos": 6,
+      "nota": "Importados de baixo valor sem imposto federal elevam a ameaça de substitutos para a indústria leve."
     },
     "comercio": {
       "rivalidade": 8,
@@ -1825,180 +1133,156 @@
       "acoes": [
         {
           "ico": "💸",
-          "txt": "Monitore a inflação (IPCA 0,07% em julho) e a taxa Selic (13,75%) para decisões de investimento e crédito."
+          "txt": "Com IPCA-15 de -0,40% e Focus em 13,75% para a Selic, programe renegociações de crédito para o fim do ano."
         },
         {
-          "ico": "⚖️",
-          "txt": "Acompanhe os desdobramentos da Reforma Tributária, especialmente seus impactos setoriais e na cidadania fiscal."
+          "ico": "⚠️",
+          "txt": "Inadimplência recorde de 6,4% no crédito livre: aperte a análise de crédito a clientes e encurte prazos."
         },
         {
-          "ico": "🌍",
-          "txt": "Avalie os riscos geopolíticos (Oriente Médio, tarifas EUA) e seus efeitos sobre câmbio e custos de insumos."
+          "ico": "⚡",
+          "txt": "Bandeira amarela segue em setembro (R$ 1,885/100 kWh): revise o orçamento de energia do trimestre."
         },
         {
-          "ico": "📈",
-          "txt": "Observe a confiança do empresário industrial (46,3 pontos em agosto) como termômetro da atividade econômica futura."
+          "ico": "👥",
+          "txt": "Caged no pior julho desde 2020: contrate com cautela e priorize produtividade da equipe atual."
         },
         {
-          "ico": "💡",
-          "txt": "Invista em digitalização e IA para otimizar processos e aumentar a competitividade das PMEs."
+          "ico": "📦",
+          "txt": "Acompanhe a votação da MP das blusinhas até 8/9: ela redefine a concorrência com importados."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Como a indústria pode superar 20 meses de pessimismo e capitalizar sobre o crescimento de faturamento e massa salarial?",
-        "quote": "A confiança do empresário industrial (ICEI) subiu para 46,3 pontos em agosto, mas permanece em zona de pessimismo por 20 meses.",
+        "prov": "Com 25 setores sem confiança e importados mais baratos, onde a indústria ainda tem margem para competir?",
+        "quote": "Só 4 segmentos industriais mostram otimismo em agosto, segundo a CNI.",
         "edi": [
-          "Apesar de um leve aumento na confiança em agosto, o setor industrial brasileiro enfrenta um longo período de pessimismo, o que pode impactar investimentos e geração de empregos. Contudo, os indicadores de junho mostraram crescimento no faturamento e massa salarial, sugerindo resiliência em alguns segmentos.",
-          "A produção de veículos cresceu 3% em julho, e a Fenabrave projeta 8,6% de crescimento para vendas em 2026, indicando segmentos com bom desempenho. A pequena indústria, porém, registra o pior nível de confiança desde a pandemia."
+          "A CNI registrou falta de confiança em 25 setores industriais em agosto, com 20 meses seguidos abaixo de 50 pontos.",
+          "No mesmo dia, a entidade estimou que o fim da taxa das blusinhas põe em risco 109 mil empregos e R$ 21,8 bilhões em produção em 2026."
         ],
         "acoes": [
           {
             "ico": "⚡",
-            "txt": "Foque em eficiência operacional para mitigar custos em um cenário de confiança baixa."
+            "txt": "Mapeie quais produtos da linha competem com importados de até US$ 50 e reveja preço e canal."
+          },
+          {
+            "ico": "🧾",
+            "txt": "Aproveite o IGP-M negativo para renegociar contratos de insumos indexados."
           },
           {
             "ico": "🏭",
-            "txt": "Explore nichos de mercado e segmentos em crescimento, como o automotivo, para expandir negócios."
-          },
-          {
-            "ico": "🤝",
-            "txt": "Busque programas de apoio à digitalização e inovação para PMEs industriais."
-          },
-          {
-            "ico": "📊",
-            "txt": "Analise os indicadores setoriais (PMI, Aço Brasil, ABIQUIM) para identificar oportunidades e riscos específicos."
+            "txt": "Adie investimentos financiados até a sinalização de novos cortes da Selic."
           }
         ]
       },
       "comercio": {
-        "prov": "Com o Dia dos Pais impulsionando o varejo, como o setor pode sustentar o crescimento e lidar com a inadimplência?",
-        "quote": "O Dia dos Pais de 2026 registrou o maior crescimento do varejo desde 2022, segundo o ICVA.",
+        "prov": "O consumo nos lares cresce, mas a confiança do comerciante cai: quem está certo?",
+        "quote": "Consumo nos lares subiu 3,28% em julho, enquanto o Icom caiu para 84,2 pontos em agosto.",
         "edi": [
-          "O varejo teve um bom desempenho no Dia dos Pais, sinalizando um aquecimento do consumo. No entanto, a alta rivalidade e o poder dos compradores, somados à inadimplência de PMEs, exigem estratégias de diferenciação e gestão de crédito.",
-          "O mercado de luxo cresce com novos códigos de status, e o setor de Casa & Decoração no e-commerce enfrenta desafios de margem devido à variedade sem critério. É crucial focar na experiência do cliente e na construção de marca."
+          "A Abras mediu alta real de 3,28% no consumo nos lares em julho, mas a FGV viu a confiança do comércio recuar em quatro de seis segmentos.",
+          "Com inadimplência de pessoas físicas em 7,8% e o comércio fechando vagas no Caged, a demanda depende de renda, não de crédito."
         ],
         "acoes": [
           {
             "ico": "🛒",
-            "txt": "Invista em estratégias de fidelização e experiência do cliente para se destacar da concorrência."
+            "txt": "Priorize itens de giro e cesta básica, onde o consumo real ainda cresce."
           },
           {
             "ico": "💳",
-            "txt": "Gerencie proativamente o crédito e a inadimplência, explorando novas linhas de crédito para PMEs."
+            "txt": "Restrinja crediário próprio a clientes com histórico; o calote de PF bate recorde."
           },
           {
-            "ico": "🛍️",
-            "txt": "Adapte o sortimento de produtos e a curadoria para otimizar margens, especialmente em categorias de alto volume."
-          },
-          {
-            "ico": "💡",
-            "txt": "Utilize dados de consumo (NielsenIQ, ABRAS) para entender tendências e ajustar estratégias de vendas."
+            "ico": "📊",
+            "txt": "Use a deflação de agosto para segurar reajustes e ganhar participação."
           }
         ]
       },
       "servicos": {
-        "prov": "Como o setor de serviços pode se adaptar às novas regulamentações da Anatel e capitalizar sobre o avanço da TV 3.0 e digitalização?",
-        "quote": "A Anatel definiu parâmetros para operadoras bloquearem chamadas massivas, impactando o setor de telecomunicações.",
+        "prov": "Seu negócio está pronto para clientes atendidos por agentes de IA?",
+        "quote": "Bancos devem investir R$ 50,4 bilhões em tecnologia em 2026, alta de 8%.",
         "edi": [
-          "A nova regulamentação da Anatel para chamadas massivas exige adaptação das operadoras, enquanto o debate sobre a TV 3.0 avança, abrindo novas frentes para radiodifusão e telecomunicações. A digitalização e a IA continuam sendo forças transformadoras.",
-          "O mercado de torres de telecomunicações passa por consolidação, e a crise da Oi gera demissões, mas há oportunidades em inclusão digital e crescimento de empregos em tecnologia no Norte e Nordeste."
+          "A confiança de serviços subiu 1,2 ponto, para 89, recuperando parte da queda de julho, e o setor liderou a criação de vagas no Caged.",
+          "No Febraban Tech, os bancos colocaram agentes de IA no centro da estratégia, e o BC anunciou novas travas contra fraude no Pix."
         ],
         "acoes": [
           {
             "ico": "🤖",
-            "txt": "Invista em tecnologias de IA para otimizar atendimento e operações, cumprindo novas regulamentações."
+            "txt": "Teste um agente de IA em atendimento ou cobrança, mantendo a decisão final com pessoas."
           },
           {
-            "ico": "📡",
-            "txt": "Monitore o avanço da TV 3.0 e explore oportunidades de novos serviços e conteúdos digitais."
+            "ico": "🔐",
+            "txt": "Revise os controles de Pix da empresa diante das novas regras de contestação do BC."
           },
           {
-            "ico": "👩‍💻",
-            "txt": "Aproveite o crescimento de empregos em tecnologia no Norte e Nordeste para buscar talentos e expandir operações."
-          },
-          {
-            "ico": "⚖️",
-            "txt": "Acompanhe as discussões sobre o FUST e outras políticas públicas que afetam o setor."
+            "ico": "👥",
+            "txt": "Aproveite o mercado de trabalho apertado para reter talentos com benefícios não salariais."
           }
         ]
       },
       "agro": {
-        "prov": "Diante das incertezas climáticas globais e da revisão de estoques, como o agronegócio brasileiro pode manter o ritmo de exportações?",
-        "quote": "O estoque mundial de milho foi revisado para baixo em agosto de 2026, com queda de 24,1% no Brasil em 2026/27.",
+        "prov": "Com o milho subindo apesar da safra recorde, vale segurar a venda?",
+        "quote": "Arábica chegou a R$ 1.826,58 por saca em 24/08, maior nível desde abril.",
         "edi": [
-          "O agronegócio brasileiro mantém fortes exportações, mas enfrenta desafios como a volatilidade nos preços da soja, influenciada por inundações nos EUA, e a revisão para baixo dos estoques globais de milho.",
-          "É crucial monitorar as condições climáticas e as estimativas de safra (Conab, CEPEA) para gerenciar riscos e oportunidades no mercado de commodities. Investimentos em tecnologia para rastreabilidade e bioenergia são oportunidades de longo prazo."
+          "A Anec cortou a exportação de soja de agosto para 10,25 milhões de t, enquanto o milho subiu 3,4% na semana com vendedor retraído.",
+          "Arábica e boi gordo seguem firmes, e o café livre do tarifaço americano deve retomar embarques aos EUA."
         ],
         "acoes": [
           {
             "ico": "🌾",
-            "txt": "Diversifique mercados de exportação para reduzir a dependência de cenários climáticos específicos."
+            "txt": "Escalone a venda do milho safrinha: só 60% da produção foi comercializada."
           },
           {
-            "ico": "📈",
-            "txt": "Utilize ferramentas de gestão de risco e contratos futuros para proteger-se da volatilidade de preços."
+            "ico": "☕",
+            "txt": "Avalie travar parte do café na alta, com estoques baixos na ICE."
           },
           {
-            "ico": "🌱",
-            "txt": "Invista em tecnologias agrícolas para aumentar a produtividade e resiliência das culturas."
-          },
-          {
-            "ico": "📊",
-            "txt": "Acompanhe de perto os relatórios de safra (Conab) e preços (CEPEA) para decisões estratégicas."
+            "ico": "🐂",
+            "txt": "Planeje a reposição: o bezerro sobe quase 10% no ano, mais que o boi."
           }
         ]
       },
       "construcao": {
-        "prov": "Com a confiança da indústria ainda em baixa, como a construção civil pode se beneficiar de programas de habitação e investimentos em sustentabilidade?",
-        "quote": "O INCC/FGV e o FipeZAP de julho devem indicar as tendências de custos e preços no setor. (Simulado)",
+        "prov": "Crédito recorde, custo em alta: como proteger a margem das obras?",
+        "quote": "O SBPE financiou R$ 20,96 bilhões em julho, recorde para o mês.",
         "edi": [
-          "Apesar da baixa confiança geral da indústria, o setor da construção civil busca sinais de recuperação. Indicadores como INCC, CUB e FipeZAP para julho de 2026 serão cruciais para avaliar custos e preços de imóveis.",
-          "Programas como o Minha Casa Minha Vida e investimentos em sustentabilidade (Votorantim Cimentos) representam oportunidades. O acesso a crédito imobiliário (ABECIP) e o desempenho das grandes construtoras (MRV, Cyrela) também são termômetros importantes. [Simulado]"
+          "A Abecip registrou o melhor julho da história no crédito imobiliário e elevou a projeção de 2026 para R$ 411 bilhões, enquanto a poupança segue com saques.",
+          "O INCC-M acelerou para 0,85% em agosto, com mão de obra em alta de 1,56%, e a confiança do setor recuou 0,6 ponto."
         ],
         "acoes": [
           {
             "ico": "🏗️",
-            "txt": "Busque oportunidades em programas governamentais de habitação e infraestrutura."
+            "txt": "Reveja orçamentos com mão de obra: o custo subiu 1,56% só em agosto."
           },
           {
-            "ico": "♻️",
-            "txt": "Invista em materiais e práticas construtivas sustentáveis para atender à demanda crescente."
+            "ico": "🏠",
+            "txt": "Direcione lançamentos ao MCMV, que concentra a maior parte das unidades vendidas."
           },
           {
-            "ico": "💰",
-            "txt": "Monitore de perto os custos de materiais (ABRAMAT, SNIC) e a disponibilidade de crédito imobiliário."
-          },
-          {
-            "ico": "🤝",
-            "txt": "Acompanhe as prévias operacionais de grandes players para entender as tendências de mercado."
+            "ico": "📑",
+            "txt": "Inclua cláusula de reajuste pelo INCC nos contratos de prazo longo."
           }
         ]
       },
       "ecommerce": {
-        "prov": "Com o e-commerce disparando em faturamento, como as PMEs podem competir com a logística e inovação dos grandes players?",
-        "quote": "O e-commerce movimentou R$ 208,4 bilhões no 1º semestre de 2026, alta de 16,9% sobre 2025.",
+        "prov": "Sem o imposto federal sobre importados de até US$ 50, como o lojista nacional compete?",
+        "quote": "A CNI estima alta de 56,3% nas encomendas internacionais de até US$ 50 em 2026.",
         "edi": [
-          "O e-commerce brasileiro continua em forte expansão, com faturamento de R$ 208,4 bilhões no primeiro semestre de 2026. Grandes players como Shopee e Mercado Livre investem pesado em logística (entregas em 4 horas) e tecnologia (IA), elevando o nível de competição.",
-          "A alta renda concentra 44% do faturamento, mas o canal cresce entre as classes C e D/E. A reforma tributária e a ascensão de plataformas como TikTok Shop trazem novos desafios e oportunidades para as PMEs."
+          "A MP 1.357 zerou o imposto federal de 20% no Remessa Conforme, mantendo o ICMS, e a comissão mista foi instalada com prazo de votação até 8 de setembro.",
+          "A indústria pressiona pela volta da taxa, enquanto plataformas como Amazon e Shein apoiam a medida."
         ],
         "acoes": [
           {
             "ico": "📦",
-            "txt": "Otimize a logística e explore parcerias para entregas mais rápidas e eficientes."
+            "txt": "Reforce prazo de entrega e garantia locais, onde o importado perde."
           },
           {
-            "ico": "📱",
-            "txt": "Invista em marketing digital e presença em novas plataformas (ex: TikTok Shop) para alcançar novos públicos."
+            "ico": "🧮",
+            "txt": "Recalcule a competitividade de preço frente a cross-border sem o imposto de 20%."
           },
           {
-            "ico": "💡",
-            "txt": "Utilize dados de mercado (Neotrust, E-commerce Brasil) para identificar nichos e tendências de consumo."
-          },
-          {
-            "ico": "⚖️",
-            "txt": "Prepare-se para os impactos da Reforma Tributária e outras regulamentações no comércio eletrônico."
+            "ico": "🗳️",
+            "txt": "Prepare dois cenários de preço conforme o resultado da votação da MP."
           }
         ]
       }
@@ -2017,11 +1301,11 @@
         "transversal"
       ],
       "status": "materializado",
-      "relevancia": 100.0,
+      "relevancia": 100,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "A alta da energia elétrica residencial em julho (3,09%) continua a pressionar os custos.",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "Bandeira amarela em setembro mantém custo extra de R$ 1,885 por 100 kWh para empresas e famílias.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2026-07-06",
       "origem": "real"
     },
@@ -2038,34 +1322,11 @@
         "agro"
       ],
       "status": "materializado",
-      "relevancia": 100.0,
+      "relevancia": 100,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "Aumento da conta de luz foi o principal impacto no IPCA de julho, reforçando a materialização do custo de energia.",
-      "periodo_observacao": "2026-W34",
-      "data_identificacao": "2026-05-25",
-      "origem": "real"
-    },
-    {
-      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
-      "tipo": "risco",
-      "titulo": "Digitalização e IA",
-      "dimensao": "T",
-      "setores": [
-        "servicos",
-        "agro",
-        "ecommerce",
-        "comercio",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 96.8,
-      "severidade": 9.8,
-      "iminencia": 9.0,
-      "ultima_observacao": "Grandes players do e-commerce investem em IA e logística avançada, impulsionando digitalização.",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "Aneel mantém bandeira amarela em setembro, quinto mês seguido; em agosto, bônus de Itaipu derrubou energia em 6,25% no IPCA-15.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2026-05-25",
       "origem": "real"
     },
@@ -2087,9 +1348,32 @@
       "relevancia": 96.8,
       "severidade": 9.8,
       "iminencia": 9.0,
-      "ultima_observacao": "Selic mantida em 13,75% pelo BC, impactando juros e acesso a crédito para todos os setores.",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "Focus mantém Selic de 13,75% no fim de 2026; juro médio do crédito caiu a 32,1%, mas inadimplência do crédito livre bateu 6,4%.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
+      "tipo": "risco",
+      "titulo": "Digitalização e IA",
+      "dimensao": "T",
+      "setores": [
+        "servicos",
+        "agro",
+        "ecommerce",
+        "comercio",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 96.8,
+      "severidade": 9.8,
+      "iminencia": 9.0,
+      "ultima_observacao": "Febraban Tech põe agentes de IA no centro da estratégia; bancos investem R$ 50,4 bi em tecnologia em 2026.",
+      "periodo_observacao": "2026-W35",
+      "data_identificacao": "2026-05-25",
       "origem": "real"
     },
     {
@@ -2107,8 +1391,8 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "Inundações nos EUA impactam preços da soja e estoques de milho são revisados para baixo.",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "Anec corta soja de agosto para 10,25 Mt; milho sobe 3,4% na semana e arábica atinge maior nível desde abril.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -2128,8 +1412,8 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "Confiança industrial em baixa por 20 meses, mas produção de veículos cresce em julho.",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "CNI: falta de confiança atinge 25 setores industriais em agosto; só 4 segmentos estão otimistas.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -2151,8 +1435,8 @@
       "relevancia": 93.8,
       "severidade": 9.3,
       "iminencia": 8.5,
-      "ultima_observacao": "INCC, CUB e FipeZAP de julho indicarão tendências de custos e preços na construção. (Simulado)",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "INCC-M acelera para 0,85% em agosto, com mão de obra em alta de 1,56%; 12 meses em 6,56%.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2026-01-05",
       "origem": "real"
     },
@@ -2169,31 +1453,27 @@
       "relevancia": 92.75,
       "severidade": 9.0,
       "iminencia": 8.5,
-      "ultima_observacao": "O Dia dos Pais impulsionou o varejo, mas a cautela do consumidor e o endividamento familiar persistem.",
-      "periodo_observacao": "2026-W34",
+      "ultima_observacao": "Inadimplência de pessoas físicas no crédito livre sobe a 7,8% em julho, recorde da série do BC.",
+      "periodo_observacao": "2026-W35",
       "data_identificacao": "2026-07-01",
       "origem": "real"
     },
     {
-      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
+      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
       "tipo": "risco",
-      "titulo": "Câmbio e balança",
-      "dimensao": "E",
+      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
+      "dimensao": "P",
       "setores": [
-        "transversal",
-        "comercio",
         "industria",
-        "agro",
-        "servicos",
-        "construcao"
+        "transversal"
       ],
       "status": "em_curso",
       "relevancia": 92.75,
       "severidade": 9.0,
       "iminencia": 8.5,
-      "ultima_observacao": "O câmbio do dólar em R$ 5,176 (11/08) e as tensões geopolíticas impactam a balança comercial.",
-      "periodo_observacao": "2026-W34",
-      "data_identificacao": "2025-12-29",
+      "ultima_observacao": "Brasil e EUA abrem rodada virtual para contestar sobretaxa de 25% e tarifa de 12,5%; reunião ministerial em 31/08.",
+      "periodo_observacao": "2026-W35",
+      "data_identificacao": "2026-07-02",
       "origem": "real"
     }
   ]
