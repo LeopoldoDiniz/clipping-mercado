@@ -1,176 +1,35 @@
 {
-  "periodo": "2026-W35",
-  "label": "Semana 35 · Agosto 2026",
-  "gerado_em": "2026-11-09T12:55:04.058597",
+  "periodo": "2026-W36",
+  "label": "Semana 36 · Agosto 2026",
+  "gerado_em": "2026-11-09T13:06:05.490744",
   "editorial": {
-    "texto": "A Semana 35 trouxe alívio na inflação e estresse no crédito. A Selic, juro básico da economia, segue em 14% ao ano desde o corte de 5 de agosto, e o Boletim Focus manteve a aposta de 13,75% no fim de 2026, mas reduziu a projeção de crescimento do PIB de 1,98% para 1,95%. O IPCA-15, prévia da inflação oficial, caiu 0,40% em agosto, a menor taxa para o mês desde 2022, puxado pelo bônus de Itaipu na conta de luz; em 12 meses, recuou a 4,24%, de volta abaixo do teto da meta. O IGP-M, que corrige aluguéis, caiu 0,22%.\n\nÉ preciso corrigir a leitura da semana anterior: o desemprego não subiu. A PNAD mostrou taxa de 5,3% no trimestre até julho, a menor para o período desde 2012, com 103,3 milhões de ocupados. O sinal de alerta está no emprego formal: o Caged registrou apenas 58,6 mil vagas em julho, o pior julho desde 2020. E o crédito se deteriora: a inadimplência no crédito livre chegou a 6,4%, recorde em 15 anos, e a Caixa quase dobrou suas provisões contra calotes. Três sinais novos entram na memória: a desinflação que abre espaço para novos cortes de juros, o crédito imobiliário recorde e o risco de fraudes no Pix.\n\nNa indústria, a CNI aponta falta de confiança em 25 setores, e a venda de máquinas agrícolas caiu 27,5% em julho. No comércio, o consumo nos lares subiu 3,28%, mas a confiança do comerciante recuou para 84,2 pontos; serviços sustentaram o emprego e a confiança do setor subiu para 89 pontos. No agro, o milho subiu 3,4% na semana e o arábica atingiu o maior preço desde abril, enquanto a inadimplência rural na Caixa chegou a 20,74%. A construção vive contraste: crédito da poupança recorde em julho, com R$ 20,96 bilhões, e custo de mão de obra subindo 1,56%. No e-commerce, a MP que zerou o imposto federal sobre compras de até US$ 50 entrou em comissão, sob pressão da indústria, que vê 109 mil empregos em risco.\n\nAtenção à votação dessa MP até 8 de setembro e à inadimplência: hora de crédito seletivo e caixa reforçado.",
-    "gerado_em": "2026-11-09T12:54:59.029119",
+    "texto": "A Semana 36 confirmou a desaceleração que vínhamos apontando, com o agro segurando o resultado. O PIB cresceu 0,5% no segundo trimestre, acima do esperado, mas abaixo do 1,1% do primeiro; a agropecuária avançou 2,8%, a indústria só 0,1% e o consumo das famílias caiu 0,4%. O Boletim Focus reduziu pela segunda semana a projeção de crescimento de 2026, para 1,92%, e a de inflação, para 5,01%, mantendo a Selic, o juro básico, em 13,75% no fim do ano. O câmbio ajudou: a balança teve superávit de US$ 7,4 bilhões em agosto, o dólar fechou a sexta em R$ 5,13 e a bolsa teve a melhor semana desde janeiro.\n\nA mudança mais importante foi a materialização de um risco que acompanhávamos há semanas: o Congresso aprovou o fim da taxa das blusinhas, com imposto zero para compras de até US$ 50 e de 30% até US$ 3 mil, e o texto foi à sanção. Entram na memória dois sinais novos: a fragilidade financeira de grandes varejistas, com doze das mil maiores empresas em alerta, e o projeto que limita o reajuste da conta de luz à inflação, aprovado em comissão do Senado.\n\nNa indústria, a produção subiu 0,2% em julho, mas o PMI de agosto caiu a 46,3, a pior marca em 40 meses; a exceção foi a venda de veículos, com o melhor agosto desde 2013. No comércio e nos serviços, a pressão vem do bolso: 82% das famílias estão endividadas e a inadimplência subiu a 29,9%, puxada pela baixa renda, enquanto 9,2 milhões de empresas estão negativadas. No agro, a soja exportada cresceu 5,2% em agosto, mas o milho segue fraco. Na construção, o preço dos imóveis subiu 0,53% no mês, acima da inflação, e o custo por metro quadrado continua em alta. No e-commerce, Shein e AliExpress celebraram a decisão, e a indústria reagiu.\n\nO ponto de atenção é o consumo: com renda comprometida e crédito caro, o segundo semestre pede metas conservadoras, crédito seletivo e foco em produtos essenciais.",
+    "gerado_em": "2026-11-09T13:06:01.507707",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
   "clipping": [
     {
       "setores": [
-        "transversal"
-      ],
-      "titulo": "Focus corta PIB de 2026 para 1,95% e mantém Selic em 13,75%",
-      "texto": "Boletim Focus de 24/08 reduziu a projeção do PIB 2026 de 1,98% para 1,95%; IPCA 2026 estável em 5,02%, Selic de fim de ano em 13,75% e câmbio em R$ 5,20.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/24/08/2026/economia/boletim-focus-analistas-cortam-projecao-de-crescimento-da-economia-em-2026-para-195/"
-        },
-        {
-          "nome": "Itaú Private",
-          "url": "https://blog.itau.com.br/privateinsights/focus-inflacao-ipca-selic-cambio-24-08-26"
-        }
-      ]
-    },
-    {
-      "setores": [
         "transversal",
-        "comercio",
-        "servicos"
+        "agro",
+        "industria",
+        "comercio"
       ],
-      "titulo": "IPCA-15 tem deflação de 0,40% em agosto, a menor para o mês desde 2022",
-      "texto": "Prévia da inflação recuou 0,40% em agosto com bônus de Itaipu (energia -6,25%); em 12 meses caiu a 4,24%, voltando abaixo do teto de 4,5% da meta.",
+      "titulo": "PIB cresce 0,5% no 2º trimestre, acima do esperado",
+      "texto": "IBGE: economia desacelerou de 1,1% no 1º trimestre para 0,5%; alta de 2,0% em um ano. Agro subiu 2,8%, indústria 0,1% e consumo das famílias caiu 0,4%.",
       "fontes": [
         {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/poder-economia/ipca-15-tem-deflacao-de-040-em-agosto-de-2026/"
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/2026/09/01/pib-do-brasil-cresce-05-no-segundo-trimestre-de-2026-impulsionado-pelo-agro/"
         },
         {
-          "nome": "Agência Gov / IBGE",
-          "url": "https://agenciagov.ebc.com.br/noticias/202608/previa-da-inflacao-de-agosto-e-de-0-40-informas-ibge"
+          "nome": "Itatiaia",
+          "url": "https://www.itatiaia.com.br/economia/pib-sobe-05-com-agro-forte-mas-consumo-das-familias-perde-forca/"
         },
         {
           "nome": "Bora Investir (B3)",
-          "url": "https://borainvestir.b3.com.br/noticias/ipca-15-cai-040-em-agosto-de-2026-e-acentua-trajetoria-de-alivio-na-inflacao/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "construcao",
-        "comercio"
-      ],
-      "titulo": "IGP-M cai 0,22% em agosto e acumula 2,16% em 12 meses",
-      "texto": "Índice que reajusta aluguéis recuou 0,22% em agosto, após -1,16% em julho; atacado (IPA) caiu 0,34%, mas agropecuários limitaram a queda.",
-      "fontes": [
-        {
-          "nome": "Jornal do Comércio / FGV",
-          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261365-igp-m-cai-022-em-agosto-apos-recuo-de-116-em-julho-afirma-fgv.html"
-        },
-        {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/mercado/igp-m-cai-022-em-agosto-mas-alta-de-agropecuarios-limita-recuo/"
-        },
-        {
-          "nome": "Safras & Mercado",
-          "url": "https://safras.com.br/igp-m-tem-deflacao-de-022-agosto/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos",
-        "comercio"
-      ],
-      "titulo": "Desemprego cai a 5,3%, menor para trimestre até julho desde 2012",
-      "texto": "PNAD do IBGE: 103,3 milhões de ocupados (recorde), 39,4 milhões com carteira e renda média de R$ 3.762, alta real de 3,3% em um ano.",
-      "fontes": [
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/poder-economia/desemprego-cai-para-53-em-julho-diz-ibge/"
-        },
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/27/08/2026/economia/desemprego-cai-para-53-o-menor-para-o-trimestre-terminado-em-julho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos",
-        "construcao",
-        "agro",
-        "comercio"
-      ],
-      "titulo": "Caged: julho cria 58,6 mil vagas, pior resultado para o mês desde 2020",
-      "texto": "Saldo de 58.568 empregos formais caiu 56,3% ante julho/2025; serviços (+24,1 mil), construção (+12,7 mil) e agro (+12,5 mil) sustentaram, comércio recuou.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/28/08/2026/economia/brasil-cria-585-mil-postos-de-trabalho-em-julho-aponta-caged/"
-        },
-        {
-          "nome": "SBT News",
-          "url": "https://sbtnews.sbt.com.br/noticia/economia/brasil-cria-58-6-mil-vagas-em-julho-pior-saldo-desde-2020"
-        },
-        {
-          "nome": "Monitor do Mercado",
-          "url": "https://monitordomercado.com.br/noticias/422299-caged-grupo-de-servicos-sustenta-criacao-de-empregos-enquanto-comercio-recua/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Emprego formal encolhe para trabalhadores acima de 25 anos",
-      "texto": "Em julho, trabalhadores a partir de 25 anos perderam 30,9 mil vagas formais; o saldo positivo do Caged dependeu das contratações de jovens.",
-      "fontes": [
-        {
-          "nome": "Economic News Brasil",
-          "url": "https://economicnewsbrasil.com.br/2026/08/28/empregos-formais-no-brasil-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos",
-        "industria",
-        "comercio"
-      ],
-      "titulo": "Aneel mantém bandeira amarela em setembro, quinto mês seguido",
-      "texto": "Conta de luz terá adicional de R$ 1,885 a cada 100 kWh em setembro, com maior despacho de térmicas no sistema interligado.",
-      "fontes": [
-        {
-          "nome": "Agência Gov / Aneel",
-          "url": "https://agenciagov.ebc.com.br/noticias/202608/aneel-mantem-bandeira-tarifaria-amarela-em-setembro"
-        },
-        {
-          "nome": "Poder360",
-          "url": "https://www.poder360.com.br/poder-energia/conta-de-luz-tera-bandeira-amarela-pelo-5o-mes-consecutivo/"
-        },
-        {
-          "nome": "Canal Solar",
-          "url": "https://canalsolar.com.br/aneel-bandeira-amarela-quinto-mes-seguido/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Arrecadação federal bate recorde para julho: R$ 289,3 bilhões",
-      "texto": "Receita cresceu 8,97% acima da inflação em julho; no ano soma R$ 1,876 trilhão (+6,98%), com R$ 3,16 bi não recorrentes do imposto sobre exportação de petróleo.",
-      "fontes": [
-        {
-          "nome": "Economic News Brasil",
-          "url": "https://economicnewsbrasil.com.br/2026/08/25/arrecadacao-federal-2026-recorde-petroleo-julho/"
-        },
-        {
-          "nome": "Fenacon",
-          "url": "https://fenacon.org.br/noticias/arrecadacao-federal-cresce-897-em-julho-e-chega-a-r-2893-bilhoes/"
-        },
-        {
-          "nome": "SBT News",
-          "url": "https://sbtnews.sbt.com.br/noticia/economia/arrecadacao-cresce-9-e-bate-recorde-em-julho"
+          "url": "https://borainvestir.b3.com.br/noticias/pib-do-brasil-cresce-05-no-segundo-trimestre-mostra-ibge/"
         }
       ]
     },
@@ -180,592 +39,12 @@
         "comercio",
         "servicos"
       ],
-      "titulo": "Inadimplência no crédito livre atinge recorde de 6,4% em julho",
-      "texto": "Banco Central: calote no crédito livre é o maior em 15 anos; pessoas físicas chegam a 7,8%. Juro médio total recuou de 33,3% para 32,1% ao ano.",
-      "fontes": [
-        {
-          "nome": "Jornal do Comércio / BCB",
-          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261460-inadimplencia-no-credito-livre-atinge-recorde-de-64-diz-bc.html"
-        },
-        {
-          "nome": "O Especialista (Safra)",
-          "url": "https://oespecialista.safra.com.br/credito-inadimplencia-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "servicos"
-      ],
-      "titulo": "Estoque de crédito chega a R$ 7,37 trilhões",
-      "texto": "Saldo total de crédito avançou para R$ 7,37 trilhões em julho; juros do crédito direcionado ficaram em 12,1% ao ano, segundo o Banco Central.",
-      "fontes": [
-        {
-          "nome": "O Especialista (Safra)",
-          "url": "https://oespecialista.safra.com.br/credito-inadimplencia-julho-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Falta de confiança chega a 25 setores industriais em agosto",
-      "texto": "CNI: número de setores pessimistas caiu de 26 para 25, mas só 4 segmentos mostram otimismo; indústria acumula 20 meses de confiança abaixo de 50 pontos.",
-      "fontes": [
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/falta-de-confianca-chega-a-25-setores-industriais-em-agosto-mostra-cni/"
-        },
-        {
-          "nome": "CBIC",
-          "url": "https://cbic.org.br/cni-falta-de-confianca-chega-a-25-setores-industriais-em-agosto/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "ecommerce",
-        "comercio"
-      ],
-      "titulo": "CNI: fim da taxa das blusinhas põe em risco 109 mil empregos",
-      "texto": "Nota de 26/08 estima R$ 21,8 bilhões de produção doméstica em risco em 2026 e alta de 56,3% nas encomendas internacionais de até US$ 50.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/26/08/2026/noticias-varejo/para-cni-fim-da-taxa-das-blusinhas-pode-por-em-risco-109-mil-empregos/"
-        },
-        {
-          "nome": "CNI / Portal da Indústria",
-          "url": "https://noticias.portaldaindustria.com.br/noticias/economia/fim-da-taxa-das-blusinhas-pode-por-em-risco-mais-de-100-mil-empregos-indica-cni/"
-        },
-        {
-          "nome": "Diário de Pernambuco",
-          "url": "https://www.diariodepernambuco.com.br/economia/2026/08/11722380-fim-da-taxa-das-blusinhas-ameaca-109-mil-postos-de-trabalho-afirma-cni.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce",
-        "comercio"
-      ],
-      "titulo": "Congresso instala comissão da MP que zerou a taxa das blusinhas",
-      "texto": "Comissão mista da MP 1.357/2026, que zera o Imposto de Importação de 20% em compras até US$ 50, foi instalada; texto precisa ser votado até 8 de setembro.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/28/08/2026/ecommerce/comissao-da-mp-da-taxa-das-blusinhas-sera-instalada-nesta-sexta/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
-        "ecommerce"
-      ],
-      "titulo": "Indústria pressiona pela volta da taxa das blusinhas",
-      "texto": "Entidades industriais defendem manter a tributação de importados de baixo valor; Amobitec, que reúne plataformas como Amazon e Shein, apoiou a MP.",
-      "fontes": [
-        {
-          "nome": "Diário do Comércio",
-          "url": "https://diariodocomercio.com.br/economia/industria-fim-taxa-das-blusinhas/"
-        },
-        {
-          "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/comercio-exterior/2026/08/28/fim-da-taxa-das-blusinhas-ameaca-mais-de-100-mil-empregos-alerta-cni/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Fim da taxa das blusinhas mantém ICMS de 17% a 20% nas compras até US$ 50",
-      "texto": "MP zerou só o imposto federal de 20% no Remessa Conforme; o ICMS estadual segue incidindo, e a renúncia é estimada em R$ 2 bilhões por ano.",
-      "fontes": [
-        {
-          "nome": "Nota técnica CNI (Poder360)",
-          "url": "https://static.poder360.com.br/uploads/2026/08/nota-tecnica-CNI-fim-taxa-blusinhas.pdf"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Confiança do comércio cai 1,3 ponto em agosto, para 84,2 pontos",
-      "texto": "FGV: Icom recuou em quatro de seis segmentos, puxado pela piora das expectativas; juros altos freiam o setor.",
-      "fontes": [
-        {
-          "nome": "Jornal do Comércio / FGV",
-          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261368-confianca-do-comercio-cai-13-ponto-em-agosto-ante-julho-para-842-pontos-revela-fgv.html"
-        },
-        {
-          "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/2026/08/28/confianca-do-comercio-cai-em-agosto-com-freio-nos-juros-altos-aponta-fgv-ibre/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Consumo nos lares sobe 3,28% em julho, aponta Abras",
-      "texto": "Supermercados: alta de 3,28% ante julho/2025 e 3,01% sobre junho, já descontada a inflação; acumulado do ano em 2,67%.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/27/08/2026/economia/consumo-nos-lares-sobe-328-em-julho-ante-um-ano-antes/"
-        },
-        {
-          "nome": "Giro News",
-          "url": "https://gironews.com/supermercado/consumo-nos-lares-cresce-328-em-julho-aponta-abras/"
-        },
-        {
-          "nome": "Monitor do Mercado",
-          "url": "https://monitordomercado.com.br/noticias/421901-consumo-das-familias-ganha-forca-e-sobe-328-em-julho-aponta-abras/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "titulo": "Comércio fecha vagas em julho enquanto serviços sustentam o emprego",
-      "texto": "Caged de julho mostra o grupamento de serviços liderando a criação de vagas e o comércio com saldo negativo, sob efeito de juros e crédito caro.",
-      "fontes": [
-        {
-          "nome": "Monitor do Mercado",
-          "url": "https://monitordomercado.com.br/noticias/422299-caged-grupo-de-servicos-sustenta-criacao-de-empregos-enquanto-comercio-recua/"
-        },
-        {
-          "nome": "Brasil 61",
-          "url": "https://brasil61.com/n/geracao-de-empregos-perde-ritmo-no-brasil-enquanto-comercio-sente-impacto-dos-juros-e-do-credito-bras2617188"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Confiança de serviços sobe 1,2 ponto em agosto, para 89 pontos",
-      "texto": "FGV: alta compensa parte da queda de 3 pontos de julho e não se espalhou pelos segmentos; juros reais e endividamento seguem como freio.",
-      "fontes": [
-        {
-          "nome": "Acessa / FGV",
-          "url": "https://www.acessa.com/economia/2026/08/338293-confianca-de-servicos-sobe-12-ponto-em-agosto-ante-julho-para-89-pontos-afirma-fgv.html"
-        },
-        {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/economia/confianca-servicos-sobe-agosto-89-pontos-fgv/"
-        },
-        {
-          "nome": "Brasil 61",
-          "url": "https://brasil61.com/n/servicos-ganham-confianca-em-agosto-mas-comercio-perde-folego-bras2617035"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "Galípolo abre Febraban Tech com novas travas de segurança no Pix",
-      "texto": "Presidente do BC citou alerta de movimentações atípicas no SPI, botão de contestação do MED e limite de R$ 15 mil para Pix e TED em instituições não autorizadas.",
-      "fontes": [
-        {
-          "nome": "Convergência Digital",
-          "url": "https://convergenciadigital.com.br/governo/na-febraban-tech-da-inteligencia-artificial-banco-central-diz-que-ia-tem-divergencias/"
-        },
-        {
-          "nome": "Banco Central (apresentação)",
-          "url": "https://www.bcb.gov.br/conteudo/home-ptbr/TextosApresentacoes/Apresentacao_GabrielGalipolo_FebrabanTech_24.8.2026.pdf"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Bancos levam agentes de IA ao centro da estratégia no Febraban Tech",
-      "texto": "Itaú, Bradesco, Nubank, Santander, BTG e Caixa defenderam manter decisões críticas com humanos; setor deve investir R$ 50,4 bilhões em tecnologia em 2026 (+8%).",
-      "fontes": [
-        {
-          "nome": "A Crítica",
-          "url": "https://acritica.net/economia/bancos-ampliam-uso-de-inteligencia-artificial-mas-mantem-decisoes-criticas-com-humanos/"
-        },
-        {
-          "nome": "Startups",
-          "url": "https://startups.com.br/negocios/inteligencia-artificial/agentes-de-ia-colocam-maiores-bancos-do-pais-diante-de-novo-dilema/"
-        },
-        {
-          "nome": "Deloitte / Pesquisa Febraban",
-          "url": "https://www.deloitte.com/br/pt/about/press-room/pesquisa-febraban-2026-volume-2.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Febraban Tech 2026 bate recorde com 70 mil visitas",
-      "texto": "Evento de 24 a 26/08 em São Paulo teve como tema agentes inteligentes; cibersegurança é prioridade para 100% das instituições e IA generativa para 84%.",
-      "fontes": [
-        {
-          "nome": "Legismap",
-          "url": "https://legismap.com.br/conteudos/artigos-e-noticias/febraban-tech-2026-bate-recorde-de-publico-com-70-mil-visitas-em-tres-dias"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "INCC-M sobe 0,85% em agosto, puxado pela mão de obra",
-      "texto": "FGV: custo da construção acelerou de 0,62% para 0,85%; mão de obra subiu 1,56%. Acumulado de 5,59% no ano e 6,56% em 12 meses.",
-      "fontes": [
-        {
-          "nome": "SindusCon-SP / FGV",
-          "url": "https://sindusconsp.com.br/wp-content/uploads/2026/08/INCC-M_FGV_press-release_Ago26.pdf"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao",
-        "servicos"
-      ],
-      "titulo": "Crédito imobiliário com poupança tem melhor julho da história",
-      "texto": "Abecip: SBPE financiou R$ 20,96 bilhões em julho (+76,7% a/a); no ano, R$ 115,5 bi (+36,3%). Projeção para 2026 subiu a R$ 411 bi.",
-      "fontes": [
-        {
-          "nome": "Monitor do Mercado",
-          "url": "https://monitordomercado.com.br/noticias/421604-credito-imobiliario-dispara-e-tem-melhor-julho-da-historia-revela-abecip/"
-        },
-        {
-          "nome": "Portas",
-          "url": "https://portas.com.br/noticias/credito-imobiliario-recursos-poupanca-recorde-julho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao",
-        "servicos"
-      ],
-      "titulo": "Poupança segue com saques líquidos apesar do crédito recorde",
-      "texto": "Captação líquida do SBPE ficou negativa em julho; Abecip alerta que a poupança não acompanha a demanda por crédito habitacional.",
-      "fontes": [
-        {
-          "nome": "Portas",
-          "url": "https://portas.com.br/noticias/credito-imobiliario-recursos-poupanca-recorde-julho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Confiança da construção recua 0,6 ponto em agosto, para 91,9",
-      "texto": "Sondagem da FGV citada pela Fazenda: média móvel trimestral caiu de 92,3 para 92,0 pontos; sem ajuste, índice igual ao de agosto de 2025.",
-      "fontes": [
-        {
-          "nome": "Ministério da Fazenda / FGV",
-          "url": "https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/conjuntura-economica/atividade-economica/defeso-eleitoral-2026/informativo-sondagem-construcao-ago2026.pdf"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Construção responde por 21,7% das vagas formais de julho",
-      "texto": "Setor abriu 12.691 postos com carteira em julho, segunda maior contribuição do Caged no mês, atrás apenas de serviços.",
-      "fontes": [
-        {
-          "nome": "Paraíba Business",
-          "url": "https://paraibabusiness.com.br/construcao-civil-responde-por-217-dos-empregos-formais-criados-no-brasil-em-julho/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "MCMV: Cidades libera novas listas de empreendimentos do FAR",
-      "texto": "Portarias MCID 1.040 (18/08) e 1.082 (21/08) listaram empreendimentos aptos à contratação; Faixa 1 ganha peso no programa.",
-      "fontes": [
-        {
-          "nome": "Registro de Imóveis",
-          "url": "https://www.registrodeimoveis.org.br/faixa-1-ganha-importancia-no-minha-casa-minha-vida"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "Seleção de 130 mil moradias do MCMV encerra prazo em 28 de agosto",
-      "texto": "Propostas para a seleção de 130 mil unidades do Minha Casa, Minha Vida foram aceitas até 28/08 ou até o preenchimento das metas regionais.",
-      "fontes": [
-        {
-          "nome": "Seu Crédito Digital",
-          "url": "https://seucreditodigital.com.br/130-mil-moradias-minha-casa-minha-vida/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Anec reduz exportação de soja de agosto para 10,25 milhões de t",
-      "texto": "Revisão de 26/08 cortou a soja em cerca de 300 mil t e o milho para 5,45 milhões de t; farelo estável em 2,5 milhões de t.",
-      "fontes": [
-        {
-          "nome": "Canal Rural / Anec",
-          "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/anec-reduz-estimativa-de-exportacao-de-soja-do-brasil-em-agosto-para-1025-milhoes-de-toneladas/"
-        },
-        {
-          "nome": "Compre Rural",
-          "url": "https://comprerural.com/anec-corta-previsao-para-exportacao-de-soja-em-agosto-e-eleva-a-de-milho/"
-        },
-        {
-          "nome": "Boca",
-          "url": "https://boca.com.br/agronegocio/anec-reduz-previsao-de-exportacao-de-soja-e-milho-em-agosto"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Arroba do boi gordo fica perto de R$ 345 no fim de agosto",
-      "texto": "Indicador Cepea do boi gordo teve média de R$ 345,92 em agosto, 9,8% acima de agosto/2025; bezerro acumula alta de quase 10% em 2026.",
-      "fontes": [
-        {
-          "nome": "Canal Rural / Cepea",
-          "url": "https://www.canalrural.com.br/radar/preco-da-arroba-do-boi-gordo-sobe-31-em-agosto-e-chega-a-r-345/"
-        },
-        {
-          "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/pecuaria/preco-do-bezerro-dispara-quase-10-em-2026-e-supera-alta-do-boi-gordo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Arábica atinge R$ 1.826,58 por saca em 24/08, maior nível desde abril",
-      "texto": "Cepea: arábica teve média de R$ 1.770,88 em agosto (+2,75% real), com estoques baixos na ICE; robusta caiu 2,51%, a R$ 1.065,16.",
-      "fontes": [
-        {
-          "nome": "Canal Rural / Cepea",
-          "url": "https://www.canalrural.com.br/agricultura/cafe/cafe-arabica-oscila-mas-fundamentos-de-alta-seguem-sustentando-precos-aponta-cepea"
-        },
-        {
-          "nome": "Cepea",
-          "url": "https://www.cepea.org.br"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro",
-        "transversal"
-      ],
-      "titulo": "Café livre do tarifaço dos EUA deve retomar embarques",
-      "texto": "Isenção da sobretaxa de 25% vale para todos os cafés; Cecafé espera retomada a partir de agosto após queda de 30,5% nas compras americanas até julho.",
+      "titulo": "Consumo das famílias recua 0,4% no trimestre",
+      "texto": "Pela ótica da demanda, o consumo das famílias caiu 0,4% no 2º trimestre, primeiro sinal claro de perda de fôlego do varejo com juros e endividamento altos.",
       "fontes": [
         {
           "nome": "Itatiaia",
-          "url": "https://www.itatiaia.com.br/agro/exportacao-de-cafe-cai-59-no-ano-mas-brasil-preve-alta-com-fim-de-taxas-nos-eua/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Milho sobe 3,4% na semana com vendedor retraído",
-      "texto": "Safras & Mercado: saca média a R$ 66,17 em 27/08, ante R$ 64,01 uma semana antes; Cepea aponta alta mesmo com safra recorde.",
-      "fontes": [
-        {
-          "nome": "Safras & Mercado",
-          "url": "https://safras.com.br/precos-do-milho-seguem-firmes-no-brasil-e-lentidao-na-ponta-compradora-prossegue/"
-        },
-        {
-          "nome": "Cepea",
-          "url": "https://cepea.org.br/br/diarias-de-mercado/milho-cepea-mesmo-com-producao-recorde-cotacoes-no-mercado-interno-seguem-em-alta.aspx"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Safrinha quase toda colhida, mas só 60% da produção vendida",
-      "texto": "Mais de 90% da área de milho 2025/26 foi colhida até o fim de agosto, com comercialização mais lenta e produtores à espera de preço.",
-      "fontes": [
-        {
-          "nome": "Revista Cultivar",
-          "url": "https://revistacultivar.com.br/noticias/comercializacao-ganha-forca-nas-decisoes-sobre-o-milho-safrinha"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Agro gera 12,5 mil vagas formais em julho",
-      "texto": "Agropecuária foi o terceiro setor que mais contratou com carteira em julho, segundo o Caged, num mês de saldo nacional fraco.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/28/08/2026/economia/brasil-cria-585-mil-postos-de-trabalho-em-julho-aponta-caged/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro",
-        "transversal"
-      ],
-      "titulo": "Agropecuários seguram queda do IGP-M em agosto",
-      "texto": "FGV: preços agropecuários subiram no atacado e limitaram o recuo do IGP-M a 0,22%, enquanto o IPA geral caiu 0,34%.",
-      "fontes": [
-        {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/mercado/igp-m-cai-022-em-agosto-mas-alta-de-agropecuarios-limita-recuo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce",
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "Governo regulamenta marketplace para compras federais (Sicx)",
-      "texto": "Decreto 13.106, publicado em 25/08, cria o Sistema de Compras Expressas: órgãos poderão comprar itens padronizados de fornecedores credenciados em plataformas eletrônicas.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/25/08/2026/ecommerce/comercio-eletronico-em-compras-federais-e-regulamentado/"
-        },
-        {
-          "nome": "Acessa",
-          "url": "https://www.acessa.com/economia/2026/08/amp/337885-comercio-eletronico-em-compras-federais-e-regulamentado.html"
-        },
-        {
-          "nome": "Cescon Barrieu",
-          "url": "https://cesconbarrieu.com.br/governo-federal-regulamenta-marketplace-para-compras-publicas-e-inaugura-novo-modelo-de-contratacao-digital/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "Sicx abre canal de venda ao governo para MEIs e pequenos fornecedores",
-      "texto": "Regulamentação amplia o Contrata+Brasil para MEIs e incentiva escolas com recursos do PDDE a comprar pela plataforma; funcionamento ainda depende de normas complementares.",
-      "fontes": [
-        {
-          "nome": "AmdJus",
-          "url": "https://amdjus.com.br/governo-regulamenta-compras-online-e-expande-contratabrasil-para-meis/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce",
-        "comercio"
-      ],
-      "titulo": "Lupo passa a vender 1,4 mil itens pelo iFood",
-      "texto": "Marca usa cerca de 40 lojas em São Paulo, Rio e Belo Horizonte como hubs de entrega rápida, apostando no quick commerce dentro da estratégia omnichannel.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/25/08/2026/ecommerce/lupo-passa-a-vender-14-mil-itens-pelo-ifood-em-sao-paulo-rio-de-janeiro-e-belo-horizonte/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Grupo Carrefour abre 1.894 vagas no Estado de São Paulo",
-      "texto": "Vagas para Atacadão, Carrefour e Sam's Club em funções operacionais, comerciais e de atendimento, na capital, Grande SP, Baixada Santista e interior.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/25/08/2026/noticias-varejo/grupo-carrefour-brasil-abre-1-894-vagas-no-estado-de-sao-paulo/"
-        },
-        {
-          "nome": "SuperVarejo",
-          "url": "https://supervarejo.com.br/Vagas%20de%20emprego/grupo-carrefour-brasil-abre-1894-vagas-no-estado-de-sao-paulo"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos",
-        "transversal"
-      ],
-      "titulo": "Lucro da Caixa sobe 5,9% e chega a R$ 3,9 bi no 2º trimestre",
-      "texto": "Provisões contra calotes quase dobraram (+97,6%, a R$ 6,97 bi) e a rentabilidade caiu a 9,16%; inadimplência total da carteira chegou a 3,64%.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/27/08/2026/mc-capital/lucro-da-caixa-cresce-59-e-chega-a-r-39-bi-no-segundo-trimestre/"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/caixa-registra-lucro-de-r-39-bilhoes-no-2o-trimestre-inadimplencia-avanca/"
-        },
-        {
-          "nome": "Economic News Brasil",
-          "url": "https://economicnewsbrasil.com.br/2026/08/27/lucro-da-caixa-r-39-bilhoes-inadimplencia/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro",
-        "servicos"
-      ],
-      "titulo": "Inadimplência do agro na Caixa salta a 20,74%",
-      "texto": "Carteira rural foi a principal fonte de deterioração no 2º trimestre: calote passou de 7,02% para 20,74% em um ano, segundo o balanço da Caixa.",
-      "fontes": [
-        {
-          "nome": "Let's Money",
-          "url": "https://www.letsmoney.com.br/noticias/caixa-lucro-2t26-provisao-agro/"
-        },
-        {
-          "nome": "Tribuna PR",
-          "url": "https://www.tribunapr.com.br/noticias/economia/caixa-registra-lucro-de-r-39-bi-com-alta-de-provisoes-contra-calotes/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao",
-        "servicos"
-      ],
-      "titulo": "Carteira imobiliária da Caixa passa de R$ 1 trilhão",
-      "texto": "Saldo habitacional chegou a R$ 1,005 trilhão (+15% em um ano), 67,9% do mercado; contratações do trimestre somaram R$ 137,6 bi (+29,3%), com inadimplência de 1,45%.",
-      "fontes": [
-        {
-          "nome": "Economic News Brasil",
-          "url": "https://economicnewsbrasil.com.br/2026/08/27/lucro-da-caixa-r-39-bilhoes-inadimplencia/"
-        },
-        {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/negocios/empresas/caixa-lucro-39-bilhoes-segundo-trimestre-2026/"
+          "url": "https://www.itatiaia.com.br/economia/pib-sobe-05-com-agro-forte-mas-consumo-das-familias-perde-forca/"
         }
       ]
     },
@@ -775,16 +54,200 @@
         "industria",
         "agro"
       ],
-      "titulo": "Brasil e EUA abrem nova rodada virtual para negociar o tarifaço",
-      "texto": "Governo anunciou negociação virtual com o USTR para contestar a sobretaxa de 25% e a tarifa adicional de 12,5%; reunião ministerial ocorreu em 31/08.",
+      "titulo": "Exportações sobem 5,5% e importações 3,4% no PIB do trimestre",
+      "texto": "Setor externo ajudou o PIB do 2º trimestre; a economia movimentou cerca de R$ 3,4 trilhões no período, segundo o IBGE.",
+      "fontes": [
+        {
+          "nome": "Correio da Manhã",
+          "url": "https://www.correiodamanha.com.br/economia/2026/09/amp/315728-pib-do-brasil-cresce-05-no-2-trimestre-e-economia-movimenta-rs-34-trilhoes.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus corta PIB de 2026 para 1,92% e IPCA para 5,01%",
+      "texto": "Boletim de 31/08: segunda queda seguida na projeção de crescimento; Selic de 13,75% no fim de 2026 e 12% em 2027; dólar em R$ 5,20.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/31/08/2026/economia/boletim-focus-mercado-preve-reducao-da-inflacao-e-do-pib-de-2026/"
+        },
+        {
+          "nome": "Forbes",
+          "url": "https://forbes.com.br/forbes-money/2026/08/mercado-reduz-projecao-para-inflacao-e-pib-mostra-focus/"
+        },
+        {
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/422583-boletim-focus-mercado-reduz-projecao-de-inflacao-para-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "agro",
+        "industria"
+      ],
+      "titulo": "Balança tem superávit de US$ 7,4 bilhões em agosto",
+      "texto": "Exportações de US$ 33,16 bi e importações de US$ 25,76 bi; saldo 23,8% maior que em agosto/2025. MDIC elevou a projeção de 2026 para US$ 90 bi.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/balanca-comercial-registra-superavit-de-us-74-bi-em-agosto/"
+        },
+        {
+          "nome": "Tribuna PR",
+          "url": "https://www.tribunapr.com.br/noticias/economia/balanca-comercial-registra-superavit-de-us-74-bilhoes-em-agosto/"
+        },
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/superavit-da-balanca-comercial-cresce-238-e-alcanca-us-74-bilhoes-em-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "agro"
+      ],
+      "titulo": "Vendas aos EUA sobem 12,1% em agosto, mas só por preço",
+      "texto": "Exportações aos EUA somaram US$ 3,19 bi, com preço médio 8,6% maior e volume 3,1% menor; no ano caem 9,7%. Tarifas atingem cerca de 20% do comércio.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/exportacoes-para-os-eua-tem-queda-de-97-no-ano-e-alta-em-agosto/"
+        },
+        {
+          "nome": "SBT News / MDIC",
+          "url": "https://sbtnews.sbt.com.br/noticia/economia/tarifas-afetaram-comercio-com-os-eua-em-agosto-diz-mdic"
+        },
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/04/09/2026/economia/precos-maiores-sustentam-alta-das-exportacoes-aos-eua-em-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "EUA são o único grande parceiro com déficit para o Brasil",
+      "texto": "Em agosto, o comércio com os EUA ficou negativo em US$ 824 milhões para o Brasil, enquanto os demais grandes parceiros geraram superávit.",
+      "fontes": [
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/exportacoes-do-brasil-aos-eua-sobem-121-em-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "agro"
+      ],
+      "titulo": "Ministros cobram Greer e chamam tarifaço de injusto",
+      "texto": "Vieira e Elias Rosa se reuniram virtualmente com o representante comercial dos EUA em 31/08; nova reunião ministerial ficou sem data.",
       "fontes": [
         {
           "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/comercio-exterior/2026/08/26/brasil-e-eua-iniciam-negociacao-virtual-na-segunda-feira-para-reverter-tarifaco/"
+          "url": "https://movimentoeconomico.com.br/economia/comercio-exterior/2026/08/31/ministros-brasileiros-confrontam-eua-sobre-tarifas-em-reuniao-com-greer/"
         },
         {
-          "nome": "Diário de Pernambuco",
-          "url": "https://www.diariodepernambuco.com.br/politica/2026/08/11722218-brasil-e-estados-unidos-abrem-novo-dialogo-para-negociar-o-tarifaco.html"
+          "nome": "A Gazeta",
+          "url": "https://www.agazeta.com.br/economia/brasil-diz-aos-eua-que-tarifaco-e-injusto-e-discriminatorio-e-negociacoes-devem-continuar-0826"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Ibovespa tem melhor semana desde janeiro, com alta de 5,40%",
+      "texto": "Índice fechou 04/09 em 185.147 pontos; na quarta (2) disparou 3,05% e o dólar caiu a R$ 5,106. Na sexta, o dólar terminou a R$ 5,13.",
+      "fontes": [
+        {
+          "nome": "Investidor10",
+          "url": "https://investidor10.com.br/noticias/ibovespa-garante-a-melhor-semana-desde-janeiro-com-alta-de-5-40-122470/"
+        },
+        {
+          "nome": "TradeMap",
+          "url": "https://trademap.com.br/noticias/news-8273651"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos",
+        "comercio"
+      ],
+      "titulo": "Comissão do Senado aprova inflação como teto do reajuste da luz",
+      "texto": "PL 170/2026 obriga a Aneel a limitar reajustes ao IPCA, salvo justificativa técnica; segue para a CAE em caráter terminativo.",
+      "fontes": [
+        {
+          "nome": "Agência Senado",
+          "url": "https://www12.senado.leg.br/noticias/materias/2026/09/03/ci-aprova-inflacao-como-limite-de-reajuste-de-conta-de-luz"
+        },
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-congresso/senado-aprova-inflacao-como-teto-para-reajuste-da-conta-de-luz/"
+        },
+        {
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/423315-senado-aprova-teto-da-inflacao-para-reajuste-anual-de-conta-de-luz/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Senado aprova regime para reduzir tarifas de energia no Norte",
+      "texto": "Comissão aprovou em 02/09 regime especial para conter tarifas na região; Roraima teve reajuste de 24,13% em 2026, muito acima da média nacional.",
+      "fontes": [
+        {
+          "nome": "Agência iNFRA",
+          "url": "https://agenciainfra.com/blog/comissao-do-senado-aprova-regime-para-reduzir-tarifas-de-energia-no-norte/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Nordeste cresce 2,4% em 12 meses e supera o Brasil",
+      "texto": "Etene/BNB: região avançou 2,4% até junho, contra 1,5% do país, com Pernambuco liderando (3,1%); indústria nacional ficou abaixo de 1%.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/2026/09/02/nordeste-cresce-24-e-supera-o-brasil-no-1o-semestre-aponta-estudo-do-etene-bnb/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Confiança empresarial cai 0,5 ponto em agosto, para 91,1",
+      "texto": "FGV: ICE recuou com queda forte na indústria e no comércio, compensada em parte por serviços.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio / FGV",
+          "url": "https://www.jornaldocomercio.com/economia/2026/08/1261638-confianca-empresarial-medida-pela-fgv-cai-05-ponto-em-agosto-ante-julho-para-911-pontos.html"
+        },
+        {
+          "nome": "Tribuna do Sertão",
+          "url": "https://tribunadosertao.com.br/geral/2026/08/31/970288-confianca-empresarial-medida-pela-fgv-cai-05-ponto-em-agosto"
         }
       ]
     },
@@ -792,44 +255,447 @@
       "setores": [
         "industria"
       ],
-      "titulo": "Suape retoma 55 hectares e abre área para novas indústrias",
-      "texto": "Complexo de Pernambuco reincorporou área arrendada à Vard Promar, que poderá receber projetos industriais, navais e logísticos.",
+      "titulo": "Produção industrial sobe 0,2% em julho e interrompe duas quedas",
+      "texto": "IBGE: alta puxada por bens duráveis e de capital; ante julho/2025, queda de 0,5%. Média móvel trimestral recuou 0,8%.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/02/09/2026/economia/producao-da-industria-interrompe-2-meses-de-queda-e-sobe-02-em-julho/"
+        },
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/producao-industrial-varia-02-em-julho-diz-ibge/"
+        },
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/economia/producao-industrial-julho/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "PMI industrial cai a 46,3, maior contração em 40 meses",
+      "texto": "S&P Global: pedidos menores, demanda fraca, custos em alta e incerteza eleitoral derrubaram o índice de agosto, abaixo dos 47,5 de julho.",
+      "fontes": [
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/economia/pmi-industria-brasileira-tem-maior-contracao-em-40-meses/"
+        },
+        {
+          "nome": "Trading Economics",
+          "url": "https://tradingeconomics.com/brazil/manufacturing-pmi/news/572215"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "agro"
+      ],
+      "titulo": "Agroindústria recua 2,9% em julho",
+      "texto": "Produção agroindustrial caiu pressionada por alimentos e produtos não alimentícios, na contramão do resultado geral da indústria.",
+      "fontes": [
+        {
+          "nome": "Canal Rural",
+          "url": "https://canalrural.com.br/economia/agroindustria-recua-29-em-julho-pressionada-por-alimentos-e-produtos-nao-alimenticios"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Indústria do Rio Grande do Norte tem a maior retração do país",
+      "texto": "Produção potiguar acumula queda de 12,4% no ano, a pior entre os locais pesquisados pelo IBGE.",
+      "fontes": [
+        {
+          "nome": "Agora RN",
+          "url": "https://agorarn.com.br/ultimas/industria-do-rn-a-maior-retracao-do-pais/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Venda de veículos cresce 16,9% em agosto, melhor agosto desde 2013",
+      "texto": "Fenabrave: 503.768 emplacamentos no mês; leves subiram 22,7%. Polo e Strada lideraram; caminhões acumulam queda de 5% no ano.",
+      "fontes": [
+        {
+          "nome": "Autoentusiastas",
+          "url": "https://autoentusiastas.com.br/2026/09/mercado-o-melhor-agosto-desde-2013/"
+        },
+        {
+          "nome": "AutoData",
+          "url": "https://www.autodata.com.br/noticias/2026/09/02/mercado-de-veiculos-cresce-19-no-ano-puxado-por-programas-do-governo-e-promocoes/134628/"
+        },
+        {
+          "nome": "AutoData",
+          "url": "https://www.autodata.com.br/noticias/2026/09/02/queda-nas-vendas-de-caminhoes-chega-a-5-ate-agosto/134646/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "ecommerce"
+      ],
+      "titulo": "CNI chama fim da taxa das blusinhas de retrocesso",
+      "texto": "Após a aprovação no Congresso, a CNI reafirmou que a taxa impediu a entrada de R$ 4,5 bilhões em importados; Firjan também se opôs à votação.",
+      "fontes": [
+        {
+          "nome": "CNI / Portal da Indústria",
+          "url": "https://noticias.portaldaindustria.com.br/posicionamentos/aprovacao-da-lei-que-extingue-taxa-das-blusinhas-e-retrocesso-economico-avalia-cni/"
+        },
+        {
+          "nome": "Diário do Rio",
+          "url": "https://www.diariodorio.com/economia/2026/09/01/firjan-divulga-comunicado-contra-a-votacao-da-taxa-das-blusinhas.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Congresso aprova fim da taxa das blusinhas; texto vai à sanção",
+      "texto": "Câmara e Senado aprovaram em 03/09 a MP 1.357: imposto zero até US$ 50 e 30% até US$ 3 mil; ICMS continua e impactos serão avaliados a cada três meses.",
       "fontes": [
         {
           "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/portos/2026/08/26/suape-retoma-area-de-55-hectares-e-abre-espaco-para-novos-investimentos-em-pe/"
+          "url": "https://movimentoeconomico.com.br/economia/consumo/2026/09/03/senado-aprova-mp-da-taxa-das-blusinhas-e-isencao-se-torna-definitiva/"
+        },
+        {
+          "nome": "Congresso em Foco",
+          "url": "https://www.congressoemfoco.com.br/noticia/121957/senado-aprova-mp-do-fim-da-taxa-das-blusinhas-texto-vai-a-sancao"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/senado-aprova-mp-que-zera-taxa-das-blusinhas-que-segue-a-sancao-presidencial-gaep/"
         }
       ]
     },
     {
       "setores": [
-        "industria",
-        "agro"
+        "ecommerce"
       ],
-      "titulo": "Vendas de máquinas agrícolas caem 27,5% em julho",
-      "texto": "Abimaq: receita do segmento foi de R$ 4,86 bilhões em julho e acumula R$ 26,2 bi no ano (-25,8%); entidade mantém projeção de queda de 20% em 2026.",
+      "titulo": "Câmara aprova MP das blusinhas antes do Senado",
+      "texto": "Deputados aprovaram o texto no mesmo dia, com emenda que cria avaliação trimestral dos impactos sobre os setores nacionais.",
       "fontes": [
         {
-          "nome": "Brasilagro",
-          "url": "https://brasilagro.com.br/conteudo/vendas-de-maquinas-agricolas-acumulam-queda-de-258-em-2026.html"
+          "nome": "Congresso em Foco",
+          "url": "https://www.congressoemfoco.com.br/noticia/121950/camara-aprova-mp-do-fim-da-taxa-das-blusinhas-texto-vai-ao-senado"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Relatora mantém estrutura da MP, mas muda o texto",
+      "texto": "Senadora Leila Barros disse em 01/09, após sessão suspensa, que haveria ajustes, preservando a isenção para compras de até US$ 50.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/01/09/2026/economia/relatora-da-mp-das-blusinhas-diz-que-havera-mudanca-em-texto-apesar-de-estrutura-mantida/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "Shein comemora: fim da taxa é vitória do consumidor",
+      "texto": "Plataforma, com mais de 50 milhões de clientes e 45 mil vendedores no país, diz que classes C, D e E serão as mais beneficiadas; AliExpress também apoiou.",
+      "fontes": [
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/09/338867-shein-fim-da-taxa-das-blusinhas-e-vitoria-para-consumidor-brasileiro.html"
+        },
+        {
+          "nome": "Diário de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11723200-shein-fim-da-taxa-das-blusinhas-e-vitoria-para-consumidores-brasileiros.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "servicos"
+      ],
+      "titulo": "Agentes de IA devem assumir busca, comparação e compra",
+      "texto": "Estudo WGSN/Blip prevê o modelo B2AI2C, em que a marca é escolhida sem o cliente visitar o site; empresas precisam expor preço e estoque legíveis por IA.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/04/09/2026/inovacao/agentes-de-ia-devem-assumir-etapas-de-busca-comparacao-e-compra-aponta-estudo/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Varejo tem 12 grandes empresas em sinal de alerta financeiro",
+      "texto": "Monitor RGF-BIZDOC: entre as mil maiores do país, 12 varejistas estão em alerta; Casas Bahia, Tok&Stok e GPA já estão em recuperação.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/03/09/2026/mc-capital/varejo-tem-12-grandes-empresas-em-sinal-de-alerta-financeiro/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Grandes redes fecharam mais de 1,1 mil lojas desde 2022",
+      "texto": "Casas Bahia, Americanas, Carrefour, Marisa e Magazine Luiza encolheram a rede física, segundo levantamento do Broadcast.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/30/08/2026/mc-capital/varejo-descobre-o-custo-de-ser-grande-e-fecha-mais-de-11-mil-lojas-desde-2022/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "transversal"
+      ],
+      "titulo": "Inadimplência das famílias sobe a 29,9% em agosto",
+      "texto": "PEIC/CNC: 82% das famílias têm dívidas, recorde repetido; 12,5% dizem não conseguir pagar atrasados, maior parcela desde fevereiro.",
+      "fontes": [
+        {
+          "nome": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/economia/endividamento-atinge-82-das-familias-brasileiras-em-agosto"
+        },
+        {
+          "nome": "Sou Brasília",
+          "url": "https://soubrasilia.com/peic-cnc-agosto-2026-endividamento-82-inadimplencia-baixa-renda"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Calote cresce entre famílias de até três salários mínimos",
+      "texto": "Faixa de menor renda foi a única com alta da inadimplência em agosto; acima de dez salários, o índice caiu a 14,9%.",
+      "fontes": [
+        {
+          "nome": "Gazeta do Povo",
+          "url": "https://www.gazetadopovo.com.br/economia/dividas-atingem-82-familias-baixa-renda-sofre-alta-inadimplencia/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "titulo": "Empresas inadimplentes chegam a 9,2 milhões, com R$ 238,6 bi",
+      "texto": "Serasa Experian (01/09): dívidas de empresas bateram recorde em julho; micro e pequenas somam 8,7 milhões de CNPJs negativados.",
+      "fontes": [
+        {
+          "nome": "Serasa Experian",
+          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/indicadores/inadimplencia-chegou-a-9-milhoes-de-empresas-em-julho-e-dividas-somaram-238-bilhoes-revela-serasa-experian/"
+        },
+        {
+          "nome": "Monitor do Mercado",
+          "url": "https://monitordomercado.com.br/noticias/423536-empresas-batem-recorde-de-endividamento-em-julho-micro-e-pequenas-concentram-maior-volume/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Varejo vai precisar de mais caixa com a nova forma de recolher tributos",
+      "texto": "Mudança na liquidação de impostos da reforma tributária deve pressionar o fluxo de caixa; IA aparece como ferramenta para achar eficiência.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/31/08/2026/noticias-varejo/o-varejo-vai-precisar-de-mais-caixa-a-ia-pode-ajudar-a-encontrar-onde-ele-esta/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Preço dos imóveis sobe 0,53% em agosto e supera a inflação",
+      "texto": "FipeZap: alta de 3,44% no ano e cerca de 5,5% em 12 meses nas 56 cidades; metro quadrado médio em R$ 9.954. Manaus lidera (11,42%).",
+      "fontes": [
+        {
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/precos-de-imoveis-sobem-acima-da-inflacao-em-agosto/"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/alta-no-preco-dos-imoveis-residenciais-supera-inflacao-e-atinge-546-em-12-meses/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "São Paulo tem valorização de imóveis abaixo da inflação",
+      "texto": "Capital paulista subiu 3,63% em 12 meses até agosto, entre as menores altas; Vitória teve a maior alta mensal (+1,31%).",
+      "fontes": [
+        {
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/preco-imoveis-sao-paulo-moema-santana-perdizes/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "servicos"
+      ],
+      "titulo": "PIB: construção e serviços sustentam emprego enquanto indústria trava",
+      "texto": "Indústria avançou só 0,1% no trimestre, segundo o IBGE; construção segue apoiada no crédito imobiliário e no MCMV.",
+      "fontes": [
+        {
+          "nome": "Bora Investir (B3)",
+          "url": "https://borainvestir.b3.com.br/noticias/pib-do-brasil-cresce-05-no-segundo-trimestre-mostra-ibge/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Agro cresce 2,8% e lidera o PIB do 2º trimestre",
+      "texto": "Agropecuária foi o principal motor da economia no trimestre, compensando indústria quase parada e consumo em queda.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/2026/09/01/pib-do-brasil-cresce-05-no-segundo-trimestre-de-2026-impulsionado-pelo-agro/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Agro desacelera ao longo do ano, aponta Etene/BNB",
+      "texto": "Crescimento mensal da agropecuária caiu de 12,5% em janeiro para 2,5% em junho, apesar de ainda liderar em 12 meses.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/2026/09/02/nordeste-cresce-24-e-supera-o-brasil-no-1o-semestre-aponta-estudo-do-etene-bnb/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Boi gordo fecha a semana a R$ 347,70 por arroba",
+      "texto": "Cepea: indicador subiu 0,96% nos primeiros dias de setembro; soja a R$ 160,87 e milho a R$ 70,93 em 04/09.",
+      "fontes": [
+        {
+          "nome": "Boca / Cepea",
+          "url": "https://boca.com.br/agronegocio/alta-da-soja-e-boi-gordo-contrasta-com-queda-do-milho"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "SindusCon-SP divulga CUB de agosto: R$ 2.686,65/m² no padrão normal",
+      "texto": "Tabela de agosto do Custo Unitário Básico paulista traz R-1 baixo a R$ 2.190,76/m² e alto a R$ 3.249,37/m², referência para contratos e reajustes de obras.",
+      "fontes": [
+        {
+          "nome": "Portal DORI / SindusCon-SP",
+          "url": "https://portaldori.com.br/2026/09/03/sinduscon-divulga-tabelas-de-custo-unitario-basico-no-estado-de-sao-paulo-referencia-agosto-de-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Custo da construção em Goiás sobe 0,529% em agosto",
+      "texto": "Sinduscon-GO: CUB R-16 alto padrão chega a R$ 2.857,85/m²; alta de 5,28% no ano e 7,53% em 12 meses, acima da inflação.",
+      "fontes": [
+        {
+          "nome": "Jornal Opção",
+          "url": "https://www.jornalopcao.com.br/ultimas-noticias/custo-da-construcao-em-goias-sobe-0529-em-agosto-e-chega-a-r-28-mil-por-m²-864408/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Custo de obra em João Pessoa sobe só 0,10% em agosto",
+      "texto": "Sinduscon-JP: CUB R-1 padrão baixo fechou agosto em R$ 1.642,62/m², bem abaixo das capitais do Sudeste e Centro-Oeste.",
+      "fontes": [
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/sinduscon-jp-divulga-custo-da-construcao-em-joao-pessoa-veja-os-valores/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportação de soja cresce 5,2% em agosto, a 9,81 milhões de t",
+      "texto": "Secex: preço médio de US$ 449,70/t e receita 14% maior; no ano, embarques somam 92,8 milhões de t (+7,2%).",
+      "fontes": [
+        {
+          "nome": "Agrolink",
+          "url": "https://www.agrolink.com.br/noticias/soja--brasil-exporta-9-81-milhoes-de-toneladas-em-agosto_518635.html"
         },
         {
           "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/radar/maquinas-agricolas-acumulam-queda-de-258-mas-industria-ve-sinais-para-reacao-nas-vendas/"
+          "url": "https://www.canalrural.com.br/economia/exportacao-de-soja-cresce-52-em-agosto-e-receita-avanca-14/"
+        },
+        {
+          "nome": "Compre Rural",
+          "url": "https://www.comprerural.com/secex-exportacao-de-soja-em-agosto-cresce-52-em-volume-e-14-em-receita/"
         }
       ]
     },
     {
       "setores": [
+        "agro",
         "industria",
-        "agro"
+        "transversal"
       ],
-      "titulo": "Venda de colheitadeiras despenca 89% em julho",
-      "texto": "Apenas 31 colheitadeiras foram vendidas pelas fábricas em julho, reflexo do crédito rural caro e do endividamento dos produtores, segundo a Abimaq.",
+      "titulo": "Óleo cru e soja puxam o saldo comercial de agosto",
+      "texto": "Petróleo bruto e soja lideraram as exportações do mês, que somaram US$ 33,16 bilhões, segundo o MDIC.",
       "fontes": [
         {
-          "nome": "Canal Rural",
-          "url": "https://www.canalrural.com.br/agricultura/maquinas-agricolas-acumulam-queda-de-258-mas-industria-ve-sinais-para-reacao-nas-vendas/"
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/oleo-cru-e-soja-puxam-saldo-comercial-em-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Milho segue com embarques fracos apesar da safrinha",
+      "texto": "Exportações de milho em julho foram 79,8% do volume de julho/2025, e agosto não mostrou a aceleração típica da colheita da segunda safra.",
+      "fontes": [
+        {
+          "nome": "Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticias/milho/425994-brasil-fecha-julho-com-1-9-milhao-de-toneladas-de-milho-exportadas-e-expectativa-de-avanco-em-agosto.amp.html"
         }
       ]
     }
@@ -838,74 +704,73 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "MP da taxa das blusinhas e eleições",
-      "texto": "Comissão da MP 1.357 instalada; indústria pressiona pela volta do imposto. Agenda econômica sob o calendário eleitoral.",
-      "score": 6.5,
+      "tema": "Tarifaço e agenda no Congresso",
+      "texto": "Ministros cobram o USTR; Congresso aprova fim da taxa das blusinhas e avança teto para a conta de luz.",
+      "score": 6.8,
       "setores": [
         "transversal",
-        "ecommerce",
-        "industria"
+        "industria",
+        "ecommerce"
       ]
     },
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Desinflação com crédito em estresse",
-      "texto": "IPCA-15 de -0,40% e IGP-M de -0,22%, mas inadimplência recorde (6,4%) e Caged no pior julho desde 2020.",
-      "score": 7.8,
+      "tema": "PIB desacelera, consumo recua",
+      "texto": "PIB de 0,5% no 2º tri com consumo das famílias em -0,4%; PMI industrial a 46,3; superávit de US$ 7,4 bi.",
+      "score": 7.6,
       "setores": [
         "transversal",
+        "industria",
         "comercio",
-        "servicos",
-        "construcao"
+        "agro"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Desemprego mínimo, emprego formal fraco",
-      "texto": "Desemprego de 5,3%, menor para o período; vagas formais encolhem para quem tem mais de 25 anos.",
-      "score": 6.8,
+      "tema": "Endividamento recorde das famílias",
+      "texto": "82% das famílias endividadas e inadimplência de 29,9%, com alta concentrada na baixa renda.",
+      "score": 7.0,
       "setores": [
-        "transversal",
         "comercio",
-        "servicos"
+        "servicos",
+        "transversal"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Agentes de IA e segurança do Pix",
-      "texto": "Febraban Tech: bancos investem R$ 50,4 bi em tecnologia; BC reforça contestação e limites no Pix.",
-      "score": 7.0,
+      "tema": "Comércio por agentes de IA",
+      "texto": "Estudo prevê agentes de IA intermediando busca e compra; empresas precisam de dados legíveis por máquina.",
+      "score": 6.5,
       "setores": [
+        "ecommerce",
         "servicos",
-        "transversal",
-        "ecommerce"
+        "comercio"
       ]
     },
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Geração térmica e bandeira amarela",
-      "texto": "Condições de geração desfavoráveis mantêm bandeira amarela pelo quinto mês e elevam o despacho térmico.",
-      "score": 5.5,
+      "tema": "El Niño e plantio da safra 2026/27",
+      "texto": "Fim do vazio sanitário em meados de setembro abre plantio da soja sob alerta de chuvas irregulares do El Niño.",
+      "score": 5.8,
       "setores": [
-        "transversal",
-        "industria",
-        "servicos"
+        "agro"
       ]
     },
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Tributação de importados de baixo valor",
-      "texto": "MP zerou o imposto federal de 20% até US$ 50; ICMS segue. Prazo de votação até 8 de setembro.",
-      "score": 6.6,
+      "tema": "Importados e tarifas de energia",
+      "texto": "MP 1.357 aprovada: zero até US$ 50, 30% até US$ 3 mil. PL 170/2026 limita reajuste da luz ao IPCA.",
+      "score": 6.9,
       "setores": [
         "ecommerce",
         "comercio",
-        "industria"
+        "industria",
+        "transversal"
       ]
     }
   ],
@@ -914,29 +779,29 @@
       "label": "SELIC",
       "valor": "14,00% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 28/08/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 04/09/2026",
       "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,07%",
       "cor": "up",
-      "sub": "Mês · acum. ano 3,44% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jul/26 · Projeção Focus 2026: 5,01%",
+      "sub": "Mês · acum. ano 3,44% · 12m 4,44% · meta 3,0% (teto 4,5%) · IBGE jul/26 · Projeção Focus 2026: 5,00%",
       "fonte": "IBGE",
       "acum_ano": 3.44,
       "ipca_12m": 4.44,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
-      "projecao": 5.01,
-      "projecao_em": "2026-08-28",
+      "projecao": 5.0,
+      "projecao_em": "2026-09-04",
       "projecao_fonte": "Focus/BCB"
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,20",
-      "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 28/08/2026",
+      "valor": "R$ 5,13",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB · 04/09/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -956,11 +821,11 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-1,6%",
-      "cor": "down",
-      "sub": "Produção física m/m · acum. ano 1,7% · IBGE jun/26",
+      "valor": "0,0%",
+      "cor": "up",
+      "sub": "Produção física m/m · acum. ano -0,5% · IBGE jul/26",
       "fonte": "IBGE",
-      "acum_ano": 1.7
+      "acum_ano": -0.5
     },
     {
       "label": "IPP",
@@ -1132,157 +997,157 @@
     "panorama": {
       "acoes": [
         {
-          "ico": "💸",
-          "txt": "Com IPCA-15 de -0,40% e Focus em 13,75% para a Selic, programe renegociações de crédito para o fim do ano."
+          "ico": "📉",
+          "txt": "PIB de 0,5% e consumo das famílias em -0,4%: revise metas de vendas do 2º semestre para baixo."
         },
         {
-          "ico": "⚠️",
-          "txt": "Inadimplência recorde de 6,4% no crédito livre: aperte a análise de crédito a clientes e encurte prazos."
+          "ico": "💳",
+          "txt": "Inadimplência das famílias em 29,9%: endureça o crediário e priorize Pix e cartão."
+        },
+        {
+          "ico": "🌎",
+          "txt": "Superávit de US$ 7,4 bi e dólar a R$ 5,13: bom momento para travar câmbio de importações."
         },
         {
           "ico": "⚡",
-          "txt": "Bandeira amarela segue em setembro (R$ 1,885/100 kWh): revise o orçamento de energia do trimestre."
-        },
-        {
-          "ico": "👥",
-          "txt": "Caged no pior julho desde 2020: contrate com cautela e priorize produtividade da equipe atual."
+          "txt": "Acompanhe o PL 170/2026: o teto do reajuste da luz pode mudar o orçamento de energia de 2027."
         },
         {
           "ico": "📦",
-          "txt": "Acompanhe a votação da MP das blusinhas até 8/9: ela redefine a concorrência com importados."
+          "txt": "Com a MP das blusinhas aprovada, recalcule a concorrência com importados de até US$ 50."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Com 25 setores sem confiança e importados mais baratos, onde a indústria ainda tem margem para competir?",
-        "quote": "Só 4 segmentos industriais mostram otimismo em agosto, segundo a CNI.",
+        "prov": "Com o PMI na pior marca em 40 meses, o repique de julho é recuperação ou soluço?",
+        "quote": "PMI industrial caiu para 46,3 em agosto, a maior contração em 40 meses.",
         "edi": [
-          "A CNI registrou falta de confiança em 25 setores industriais em agosto, com 20 meses seguidos abaixo de 50 pontos.",
-          "No mesmo dia, a entidade estimou que o fim da taxa das blusinhas põe em risco 109 mil empregos e R$ 21,8 bilhões em produção em 2026."
+          "A produção industrial subiu 0,2% em julho, interrompendo duas quedas, mas o PMI de agosto despencou a 46,3 e a indústria cresceu só 0,1% no PIB do trimestre.",
+          "A venda de veículos foi exceção, com o melhor agosto desde 2013, enquanto a aprovação do fim da taxa das blusinhas reacendeu a reação da CNI."
         ],
         "acoes": [
           {
-            "ico": "⚡",
-            "txt": "Mapeie quais produtos da linha competem com importados de até US$ 50 e reveja preço e canal."
-          },
-          {
-            "ico": "🧾",
-            "txt": "Aproveite o IGP-M negativo para renegociar contratos de insumos indexados."
-          },
-          {
             "ico": "🏭",
-            "txt": "Adie investimentos financiados até a sinalização de novos cortes da Selic."
+            "txt": "Planeje produção para demanda fraca: o PMI indica queda de pedidos."
+          },
+          {
+            "ico": "🚗",
+            "txt": "Fornecedores da cadeia automotiva: aproveitem o ciclo forte de emplacamentos."
+          },
+          {
+            "ico": "💱",
+            "txt": "Use o dólar a R$ 5,13 para antecipar compra de insumos importados."
           }
         ]
       },
       "comercio": {
-        "prov": "O consumo nos lares cresce, mas a confiança do comerciante cai: quem está certo?",
-        "quote": "Consumo nos lares subiu 3,28% em julho, enquanto o Icom caiu para 84,2 pontos em agosto.",
+        "prov": "Se o consumo das famílias já caiu no PIB, quanto do seu crediário está em risco?",
+        "quote": "82% das famílias estão endividadas e a inadimplência subiu a 29,9% em agosto.",
         "edi": [
-          "A Abras mediu alta real de 3,28% no consumo nos lares em julho, mas a FGV viu a confiança do comércio recuar em quatro de seis segmentos.",
-          "Com inadimplência de pessoas físicas em 7,8% e o comércio fechando vagas no Caged, a demanda depende de renda, não de crédito."
+          "O consumo das famílias recuou 0,4% no 2º trimestre e a PEIC mostrou inadimplência em alta, concentrada nas famílias de até três salários mínimos.",
+          "Doze grandes varejistas estão em alerta financeiro e as maiores redes fecharam mais de 1,1 mil lojas desde 2022."
         ],
         "acoes": [
           {
             "ico": "🛒",
-            "txt": "Priorize itens de giro e cesta básica, onde o consumo real ainda cresce."
+            "txt": "Ajuste o mix para itens essenciais e de menor tíquete."
           },
           {
             "ico": "💳",
-            "txt": "Restrinja crediário próprio a clientes com histórico; o calote de PF bate recorde."
+            "txt": "Revise limites de crediário para clientes de baixa renda."
           },
           {
-            "ico": "📊",
-            "txt": "Use a deflação de agosto para segurar reajustes e ganhar participação."
+            "ico": "🏬",
+            "txt": "Avalie lojas de baixa rentabilidade antes de expandir."
           }
         ]
       },
       "servicos": {
-        "prov": "Seu negócio está pronto para clientes atendidos por agentes de IA?",
-        "quote": "Bancos devem investir R$ 50,4 bilhões em tecnologia em 2026, alta de 8%.",
+        "prov": "Seu negócio está preparado para ser escolhido por um agente de IA?",
+        "quote": "Ibovespa subiu 5,40% na semana, a melhor desde janeiro.",
         "edi": [
-          "A confiança de serviços subiu 1,2 ponto, para 89, recuperando parte da queda de julho, e o setor liderou a criação de vagas no Caged.",
-          "No Febraban Tech, os bancos colocaram agentes de IA no centro da estratégia, e o BC anunciou novas travas contra fraude no Pix."
+          "O mercado financeiro reagiu bem ao PIB acima do esperado: a bolsa teve a melhor semana do ano e o dólar caiu a R$ 5,13.",
+          "No setor elétrico, comissões do Senado aprovaram o teto de reajuste pelo IPCA e um regime especial para reduzir tarifas no Norte."
         ],
         "acoes": [
           {
             "ico": "🤖",
-            "txt": "Teste um agente de IA em atendimento ou cobrança, mantendo a decisão final com pessoas."
+            "txt": "Organize preços, estoques e políticas em formato legível por agentes de IA."
           },
           {
-            "ico": "🔐",
-            "txt": "Revise os controles de Pix da empresa diante das novas regras de contestação do BC."
+            "ico": "⚡",
+            "txt": "Negocie contratos de energia considerando o possível teto pela inflação."
           },
           {
-            "ico": "👥",
-            "txt": "Aproveite o mercado de trabalho apertado para reter talentos com benefícios não salariais."
+            "ico": "📊",
+            "txt": "Aproveite o alívio do mercado para captar ou renegociar dívidas."
           }
         ]
       },
       "agro": {
-        "prov": "Com o milho subindo apesar da safra recorde, vale segurar a venda?",
-        "quote": "Arábica chegou a R$ 1.826,58 por saca em 24/08, maior nível desde abril.",
+        "prov": "O agro segura o PIB; quem segura o agro na safra 2026/27?",
+        "quote": "A agropecuária cresceu 2,8% no 2º trimestre e liderou o PIB.",
         "edi": [
-          "A Anec cortou a exportação de soja de agosto para 10,25 milhões de t, enquanto o milho subiu 3,4% na semana com vendedor retraído.",
-          "Arábica e boi gordo seguem firmes, e o café livre do tarifaço americano deve retomar embarques aos EUA."
+          "O agro foi o principal motor do PIB do trimestre, mas o Etene/BNB mostra desaceleração ao longo do ano, de 12,5% em janeiro para 2,5% em junho.",
+          "No mercado, o boi gordo seguiu firme a R$ 347,70, enquanto a agroindústria recuou 2,9% em julho."
         ],
         "acoes": [
           {
             "ico": "🌾",
-            "txt": "Escalone a venda do milho safrinha: só 60% da produção foi comercializada."
-          },
-          {
-            "ico": "☕",
-            "txt": "Avalie travar parte do café na alta, com estoques baixos na ICE."
+            "txt": "Planeje o plantio da soja com cautela diante do risco de chuvas irregulares."
           },
           {
             "ico": "🐂",
-            "txt": "Planeje a reposição: o bezerro sobe quase 10% no ano, mais que o boi."
+            "txt": "Aproveite a arroba firme para escalonar vendas de boi."
+          },
+          {
+            "ico": "💵",
+            "txt": "Com superávit recorde, avalie travar parte da receita em dólar."
           }
         ]
       },
       "construcao": {
-        "prov": "Crédito recorde, custo em alta: como proteger a margem das obras?",
-        "quote": "O SBPE financiou R$ 20,96 bilhões em julho, recorde para o mês.",
+        "prov": "Imóvel subindo acima da inflação é sinal de demanda ou de falta de oferta?",
+        "quote": "Preço dos imóveis subiu 0,53% em agosto e cerca de 5,5% em 12 meses, segundo o FipeZap.",
         "edi": [
-          "A Abecip registrou o melhor julho da história no crédito imobiliário e elevou a projeção de 2026 para R$ 411 bilhões, enquanto a poupança segue com saques.",
-          "O INCC-M acelerou para 0,85% em agosto, com mão de obra em alta de 1,56%, e a confiança do setor recuou 0,6 ponto."
+          "O FipeZap mostrou valorização acima da inflação, com Manaus, Salvador e Vitória à frente e São Paulo abaixo do IPCA.",
+          "O PIB confirma a construção apoiada no crédito imobiliário e no MCMV, enquanto a indústria de materiais segue fraca."
         ],
         "acoes": [
           {
             "ico": "🏗️",
-            "txt": "Reveja orçamentos com mão de obra: o custo subiu 1,56% só em agosto."
+            "txt": "Priorize praças com valorização acima de 9% ao ano, como Salvador e Vitória."
           },
           {
             "ico": "🏠",
-            "txt": "Direcione lançamentos ao MCMV, que concentra a maior parte das unidades vendidas."
+            "txt": "Mantenha foco no MCMV, que sustenta lançamentos e vendas."
           },
           {
             "ico": "📑",
-            "txt": "Inclua cláusula de reajuste pelo INCC nos contratos de prazo longo."
+            "txt": "Revise preços de tabela: o mercado absorve reajustes acima do IPCA."
           }
         ]
       },
       "ecommerce": {
-        "prov": "Sem o imposto federal sobre importados de até US$ 50, como o lojista nacional compete?",
-        "quote": "A CNI estima alta de 56,3% nas encomendas internacionais de até US$ 50 em 2026.",
+        "prov": "Com o imposto zero até US$ 50 definitivo, qual é o diferencial do vendedor nacional?",
+        "quote": "Congresso aprovou em 03/09 imposto zero para compras de até US$ 50 e 30% até US$ 3 mil.",
         "edi": [
-          "A MP 1.357 zerou o imposto federal de 20% no Remessa Conforme, mantendo o ICMS, e a comissão mista foi instalada com prazo de votação até 8 de setembro.",
-          "A indústria pressiona pela volta da taxa, enquanto plataformas como Amazon e Shein apoiam a medida."
+          "Câmara e Senado aprovaram a MP 1.357 no mesmo dia, com avaliação trimestral de impactos; Shein e AliExpress comemoraram e a indústria reagiu.",
+          "Estudo da WGSN e da Blip indica que agentes de IA devem assumir a busca e a compra, exigindo dados de produto legíveis por máquina."
         ],
         "acoes": [
           {
             "ico": "📦",
-            "txt": "Reforce prazo de entrega e garantia locais, onde o importado perde."
+            "txt": "Destaque entrega rápida e troca fácil, onde o cross-border perde."
+          },
+          {
+            "ico": "🤖",
+            "txt": "Estruture o catálogo para leitura por agentes de IA."
           },
           {
             "ico": "🧮",
-            "txt": "Recalcule a competitividade de preço frente a cross-border sem o imposto de 20%."
-          },
-          {
-            "ico": "🗳️",
-            "txt": "Prepare dois cenários de preço conforme o resultado da votação da MP."
+            "txt": "Reprecifique a linha que concorre com importados de até US$ 50."
           }
         ]
       }
@@ -1325,9 +1190,26 @@
       "relevancia": 100,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "Aneel mantém bandeira amarela em setembro, quinto mês seguido; em agosto, bônus de Itaipu derrubou energia em 6,25% no IPCA-15.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "Comissão do Senado aprova IPCA como teto do reajuste da conta de luz (PL 170/2026).",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
+      "tipo": "risco",
+      "titulo": "Remessa Conforme e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce"
+      ],
+      "status": "materializado",
+      "relevancia": 97.19,
+      "severidade": 7.5,
+      "iminencia": 7.0,
+      "ultima_observacao": "Congresso aprova a MP: imposto zero para compras até US$ 50 e 30% até US$ 3 mil; texto vai à sanção.",
+      "periodo_observacao": "2026-W36",
+      "data_identificacao": "2026-07-13",
       "origem": "real"
     },
     {
@@ -1348,8 +1230,8 @@
       "relevancia": 96.8,
       "severidade": 9.8,
       "iminencia": 9.0,
-      "ultima_observacao": "Focus mantém Selic de 13,75% no fim de 2026; juro médio do crédito caiu a 32,1%, mas inadimplência do crédito livre bateu 6,4%.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "Focus mantém Selic em 13,75% no fim de 2026; Ibovespa tem melhor semana desde janeiro (+5,40%) com queda do dólar.",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -1371,8 +1253,8 @@
       "relevancia": 96.8,
       "severidade": 9.8,
       "iminencia": 9.0,
-      "ultima_observacao": "Febraban Tech põe agentes de IA no centro da estratégia; bancos investem R$ 50,4 bi em tecnologia em 2026.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "Estudo WGSN/Blip prevê agentes de IA intermediando busca, comparação e compra no e-commerce.",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2026-05-25",
       "origem": "real"
     },
@@ -1391,8 +1273,8 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "Anec corta soja de agosto para 10,25 Mt; milho sobe 3,4% na semana e arábica atinge maior nível desde abril.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "Agro cresce 2,8% e lidera o PIB do 2º tri; boi gordo a R$ 347,70 em 04/09.",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -1412,8 +1294,8 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "CNI: falta de confiança atinge 25 setores industriais em agosto; só 4 segmentos estão otimistas.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "PIM sobe 0,2% em julho, mas PMI de agosto cai a 46,3 (pior em 40 meses) e indústria cresce só 0,1% no PIB.",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -1435,8 +1317,8 @@
       "relevancia": 93.8,
       "severidade": 9.3,
       "iminencia": 8.5,
-      "ultima_observacao": "INCC-M acelera para 0,85% em agosto, com mão de obra em alta de 1,56%; 12 meses em 6,56%.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "CUB de agosto sobe 0,53% em Goiás (7,5% em 12 meses); SindusCon-SP publica CUB R-1 normal a R$ 2.686,65/m².",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2026-01-05",
       "origem": "real"
     },
@@ -1453,27 +1335,9 @@
       "relevancia": 92.75,
       "severidade": 9.0,
       "iminencia": 8.5,
-      "ultima_observacao": "Inadimplência de pessoas físicas no crédito livre sobe a 7,8% em julho, recorde da série do BC.",
-      "periodo_observacao": "2026-W35",
+      "ultima_observacao": "PEIC: inadimplência das famílias sobe a 29,9% em agosto; 82% endividadas e 12,5% sem condição de pagar.",
+      "periodo_observacao": "2026-W36",
       "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 92.75,
-      "severidade": 9.0,
-      "iminencia": 8.5,
-      "ultima_observacao": "Brasil e EUA abrem rodada virtual para contestar sobretaxa de 25% e tarifa de 12,5%; reunião ministerial em 31/08.",
-      "periodo_observacao": "2026-W35",
-      "data_identificacao": "2026-07-02",
       "origem": "real"
     }
   ]
