@@ -15,17 +15,17 @@
       "status": "em_curso",
       "severidade": 9.0,
       "iminencia": 8.5,
-      "persistencia": 15,
-      "corroboracao": 55,
+      "persistencia": 16,
+      "corroboracao": 57,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 92.75,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-01",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-01 22:02:28.323258+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
@@ -44,14 +44,14 @@
       "persistencia": 10,
       "corroboracao": 43,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 74.2,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 64.92,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-01",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-01 22:02:29.217006+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "c330066d-d634-418a-bcc5-05a55d14573b",
@@ -94,14 +94,14 @@
       "persistencia": 9,
       "corroboracao": 32,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 71.04,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 62.16,
       "relevancia_pico": 88.8,
       "data_pico": "2026-07-01",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-01 22:26:07.789992+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
@@ -120,14 +120,14 @@
       "persistencia": 5,
       "corroboracao": 18,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 65.2,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 57.05,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-02",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-02 11:39:15.82312+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
@@ -145,14 +145,14 @@
       "persistencia": 13,
       "corroboracao": 35,
       "materializado": false,
-      "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 92.75,
+      "ciclos_sem_aparecer": 1,
+      "relevancia_atual": 83.48,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-02",
       "ultimo_periodo": "2026-W36",
       "criado_em": "2026-07-02 12:09:29.56169+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
@@ -167,17 +167,17 @@
       "status": "em_curso",
       "severidade": 7.5,
       "iminencia": 7.0,
-      "persistencia": 8,
-      "corroboracao": 31,
+      "persistencia": 9,
+      "corroboracao": 33,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 79.75,
-      "relevancia_pico": 79.75,
+      "relevancia_atual": 81.75,
+      "relevancia_pico": 81.75,
       "data_pico": "2026-07-02",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-02 14:44:59.817441+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "242055f9-f62f-4973-8d14-05a96ff3c71e",
@@ -196,14 +196,14 @@
       "persistencia": 3,
       "corroboracao": 9,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 56.72,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 49.63,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-02",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-02 15:01:05.509302+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "9032fb4f-90f5-423f-a5d6-e0578821761d",
@@ -222,14 +222,14 @@
       "persistencia": 6,
       "corroboracao": 10,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 55.4,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 48.47,
       "relevancia_pico": 69.25,
       "data_pico": "2026-07-02",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-02 15:01:06.010235+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
@@ -249,14 +249,14 @@
       "persistencia": 7,
       "corroboracao": 24,
       "materializado": true,
-      "ciclos_sem_aparecer": 1,
-      "relevancia_atual": 100,
+      "ciclos_sem_aparecer": 2,
+      "relevancia_atual": 94.0,
       "relevancia_pico": 100,
       "data_pico": "2026-07-06",
       "ultimo_periodo": "2026-W35",
       "criado_em": "2026-07-06 13:37:33.009684+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "a2e754d7-28ba-4cc1-a74f-18f3ba1191b8",
@@ -274,14 +274,14 @@
       "persistencia": 2,
       "corroboracao": 5,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 44.92,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 39.3,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-09",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-09 12:46:51.034207+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "5b449109-612b-4f61-bbcf-ee076daf0485",
@@ -299,14 +299,14 @@
       "persistencia": 1,
       "corroboracao": 4,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 28.6,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 25.02,
       "relevancia_pico": 80.45,
       "data_pico": "2026-07-09",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-09 12:46:51.480333+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "6cbb2976-4d12-4c66-a2b8-157f450c241d",
@@ -327,14 +327,14 @@
       "persistencia": 4,
       "corroboracao": 17,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 57.4,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 50.22,
       "relevancia_pico": 71.75,
       "data_pico": "2026-07-13",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-13 12:25:56.884788+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "2ba931c7-e4bd-4a25-bfc7-2b428c9c27df",
@@ -354,14 +354,14 @@
       "persistencia": 8,
       "corroboracao": 22,
       "materializado": false,
-      "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 82.75,
+      "ciclos_sem_aparecer": 1,
+      "relevancia_atual": 74.48,
       "relevancia_pico": 82.75,
       "data_pico": "2026-07-16",
       "ultimo_periodo": "2026-W36",
       "criado_em": "2026-07-16 11:40:27.553541+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "86def449-bc52-4826-86b1-dd4bc1fc0a6a",
@@ -378,14 +378,14 @@
       "persistencia": 4,
       "corroboracao": 9,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 51.0,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 44.62,
       "relevancia_pico": 65.5,
       "data_pico": "2026-07-16",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-16 11:40:28.067337+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "28c1a2f5-4d2c-4959-9116-1a7c7abfaec1",
@@ -402,14 +402,14 @@
       "persistencia": 5,
       "corroboracao": 7,
       "materializado": false,
-      "ciclos_sem_aparecer": 1,
-      "relevancia_atual": 48.6,
+      "ciclos_sem_aparecer": 2,
+      "relevancia_atual": 43.2,
       "relevancia_pico": 54.0,
       "data_pico": "2026-07-16",
       "ultimo_periodo": "2026-W35",
       "criado_em": "2026-07-16 11:40:28.605449+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9",
@@ -431,14 +431,14 @@
       "persistencia": 17,
       "corroboracao": 23,
       "materializado": false,
-      "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 90.45,
+      "ciclos_sem_aparecer": 1,
+      "relevancia_atual": 81.41,
       "relevancia_pico": 90.45,
       "data_pico": "2026-07-13",
       "ultimo_periodo": "2026-W36",
       "criado_em": "2026-07-16 11:47:02.624119+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
@@ -459,14 +459,14 @@
       "persistencia": 12,
       "corroboracao": 29,
       "materializado": true,
-      "ciclos_sem_aparecer": 0,
+      "ciclos_sem_aparecer": 1,
       "relevancia_atual": 100,
       "relevancia_pico": 100,
       "data_pico": "2026-07-13",
       "ultimo_periodo": "2026-W36",
       "criado_em": "2026-07-16 11:47:03.513566+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
@@ -486,17 +486,17 @@
       "status": "em_curso",
       "severidade": 9.8,
       "iminencia": 9.0,
-      "persistencia": 30,
-      "corroboracao": 35,
+      "persistencia": 31,
+      "corroboracao": 36,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 96.8,
       "relevancia_pico": 98.05,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:04.367972+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
@@ -515,17 +515,17 @@
       "status": "em_curso",
       "severidade": 9.0,
       "iminencia": 8.5,
-      "persistencia": 23,
-      "corroboracao": 39,
+      "persistencia": 24,
+      "corroboracao": 41,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 92.75,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:05.240143+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
@@ -542,17 +542,17 @@
       "status": "em_curso",
       "severidade": 9.5,
       "iminencia": 9.0,
-      "persistencia": 19,
-      "corroboracao": 45,
+      "persistencia": 20,
+      "corroboracao": 48,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 95.75,
       "relevancia_pico": 95.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:05.758087+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
@@ -572,17 +572,17 @@
       "status": "em_curso",
       "severidade": 9.0,
       "iminencia": 8.5,
-      "persistencia": 24,
-      "corroboracao": 41,
+      "persistencia": 25,
+      "corroboracao": 42,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 92.75,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:06.279301+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
@@ -602,17 +602,17 @@
       "status": "em_curso",
       "severidade": 9.8,
       "iminencia": 9.0,
-      "persistencia": 13,
-      "corroboracao": 47,
+      "persistencia": 14,
+      "corroboracao": 49,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 96.8,
       "relevancia_pico": 98.05,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:07.083199+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "ae9438fb-5676-4600-a145-cef944c2483a",
@@ -624,20 +624,20 @@
         "transversal"
       ],
       "data_identificacao": "2026-07-06",
-      "status": "em_curso",
+      "status": "dormindo",
       "severidade": 4.9,
       "iminencia": 4.5,
       "persistencia": 1,
       "corroboracao": 2,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 27.52,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 24.08,
       "relevancia_pico": 72.15,
       "data_pico": "2026-07-06",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-16 11:47:07.628722+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
@@ -651,17 +651,17 @@
       "status": "materializado",
       "severidade": 7.5,
       "iminencia": 7.0,
-      "persistencia": 7,
-      "corroboracao": 17,
+      "persistencia": 8,
+      "corroboracao": 18,
       "materializado": true,
       "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 97.19,
-      "relevancia_pico": 97.19,
+      "relevancia_atual": 99.69,
+      "relevancia_pico": 99.69,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:07.925954+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
@@ -681,17 +681,17 @@
       "status": "em_curso",
       "severidade": 9.3,
       "iminencia": 8.5,
-      "persistencia": 21,
-      "corroboracao": 38,
+      "persistencia": 22,
+      "corroboracao": 39,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 93.8,
       "relevancia_pico": 93.8,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:08.212682+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "f89c40f5-4951-4e74-885d-fc3c38a68321",
@@ -711,17 +711,17 @@
       "status": "em_curso",
       "severidade": 7.0,
       "iminencia": 8.5,
-      "persistencia": 36,
-      "corroboracao": 37,
+      "persistencia": 37,
+      "corroboracao": 39,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 85.75,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:08.50286+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
@@ -739,17 +739,17 @@
       "status": "em_curso",
       "severidade": 9.5,
       "iminencia": 9.0,
-      "persistencia": 25,
-      "corroboracao": 40,
+      "persistencia": 26,
+      "corroboracao": 42,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
       "relevancia_atual": 95.75,
       "relevancia_pico": 95.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:08.788453+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
@@ -765,17 +765,17 @@
       "status": "em_curso",
       "severidade": 9.0,
       "iminencia": 8.5,
-      "persistencia": 12,
-      "corroboracao": 18,
+      "persistencia": 13,
+      "corroboracao": 19,
       "materializado": false,
-      "ciclos_sem_aparecer": 1,
-      "relevancia_atual": 83.48,
+      "ciclos_sem_aparecer": 0,
+      "relevancia_atual": 92.75,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W35",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:09.092962+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29",
@@ -794,17 +794,17 @@
       "status": "em_curso",
       "severidade": 8.7,
       "iminencia": 8.0,
-      "persistencia": 18,
-      "corroboracao": 29,
+      "persistencia": 19,
+      "corroboracao": 30,
       "materializado": false,
-      "ciclos_sem_aparecer": 1,
-      "relevancia_atual": 81.41,
+      "ciclos_sem_aparecer": 0,
+      "relevancia_atual": 90.45,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-13",
-      "ultimo_periodo": "2026-W35",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-07-16 11:47:09.38439+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "cad38463-60e5-4e42-9065-539cd7060c1c",
@@ -826,14 +826,14 @@
       "persistencia": 13,
       "corroboracao": 22,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 72.36,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 63.31,
       "relevancia_pico": 92.75,
       "data_pico": "2026-07-06",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-16 11:47:09.669655+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "8321565b-9a09-414c-9445-b67c15694ce2",
@@ -851,14 +851,14 @@
       "persistencia": 3,
       "corroboracao": 7,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 40.0,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 35.0,
       "relevancia_pico": 54.75,
       "data_pico": "2026-07-26",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-26 17:10:57.903582+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "ade2a8fc-b879-47ea-9779-0feec01c48f0",
@@ -871,20 +871,20 @@
         "transversal"
       ],
       "data_identificacao": "2026-07-26",
-      "status": "em_curso",
+      "status": "dormindo",
       "severidade": 3.9,
       "iminencia": 4.0,
       "persistencia": 1,
       "corroboracao": 4,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 26.92,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 23.56,
       "relevancia_pico": 92.2,
       "data_pico": "2026-07-26",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-26 17:10:58.327748+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "64c1547f-16fc-4bd4-9bd5-1c66696aefc2",
@@ -902,14 +902,14 @@
       "persistencia": 4,
       "corroboracao": 6,
       "materializado": true,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 66.75,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 58.41,
       "relevancia_pico": 83.44,
       "data_pico": "2026-07-26",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-26 17:10:58.746888+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "52231dc6-96eb-444e-818b-69e25359c799",
@@ -927,14 +927,14 @@
       "persistencia": 3,
       "corroboracao": 21,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 55.8,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 48.82,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-26",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-26 17:10:59.17439+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "a2cabb8e-be30-4f42-9dc1-27015c4d720e",
@@ -952,14 +952,14 @@
       "persistencia": 1,
       "corroboracao": 4,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 29.16,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 25.52,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-26",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-26 17:10:59.59155+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "4b26f2f5-912e-4ce8-aa92-69f3148d02bb",
@@ -978,14 +978,14 @@
       "persistencia": 2,
       "corroboracao": 6,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 29.88,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 26.14,
       "relevancia_pico": 40.5,
       "data_pico": "2026-07-26",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-26 17:11:00.020223+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "dbd2404b-0f9f-4db1-8650-2e0ef281e664",
@@ -1000,20 +1000,20 @@
         "ecommerce"
       ],
       "data_identificacao": "2026-07-27",
-      "status": "monitorar",
+      "status": "dormindo",
       "severidade": 3.5,
       "iminencia": 3.0,
       "persistencia": 2,
       "corroboracao": 4,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 25.4,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 22.22,
       "relevancia_pico": 48.5,
       "data_pico": "2026-07-27",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-27 12:17:21.026023+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "5b7d6fb5-fbf2-46ab-9089-05dc031f579a",
@@ -1036,14 +1036,14 @@
       "persistencia": 3,
       "corroboracao": 7,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 41.4,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 36.22,
       "relevancia_pico": 57.5,
       "data_pico": "2026-07-27",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-27 12:17:21.453948+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "137d0e27-dcfd-4a0b-b998-806e7c6c8831",
@@ -1061,14 +1061,14 @@
       "persistencia": 2,
       "corroboracao": 8,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 39.0,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 34.12,
       "relevancia_pico": 51.5,
       "data_pico": "2026-07-27",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-27 12:17:21.882317+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "4d6ddaba-8808-4610-955f-352c0e2d7e7e",
@@ -1086,14 +1086,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 33.12,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 28.98,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-30",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-30 12:13:06.897263+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "fc2d834b-c370-4d84-bc6d-196b74d62cf6",
@@ -1110,14 +1110,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 33.12,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 28.98,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-30",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-30 12:13:07.289078+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "dc29b788-f40f-4bec-a2d2-40382cdcc1d7",
@@ -1129,20 +1129,20 @@
         "transversal"
       ],
       "data_identificacao": "2026-07-30",
-      "status": "monitorar",
+      "status": "dormindo",
       "severidade": 3.7,
       "iminencia": 3.0,
       "persistencia": 1,
       "corroboracao": 2,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 21.16,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 18.51,
       "relevancia_pico": 100.0,
       "data_pico": "2026-07-30",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-07-30 12:13:07.685411+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "ffcacfb6-cf68-493e-98cc-c4c78620f1fb",
@@ -1154,20 +1154,20 @@
         "transversal"
       ],
       "data_identificacao": "2026-08-06",
-      "status": "monitorar",
+      "status": "dormindo",
       "severidade": 3.4,
       "iminencia": 3.0,
       "persistencia": 2,
       "corroboracao": 2,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 21.92,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 19.18,
       "relevancia_pico": 47.75,
       "data_pico": "2026-08-06",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-08-06 12:23:24.924954+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "ab54d485-086e-42c6-9507-1941779dbce9",
@@ -1180,20 +1180,20 @@
         "transversal"
       ],
       "data_identificacao": "2026-08-06",
-      "status": "monitorar",
+      "status": "dormindo",
       "severidade": 3.6,
       "iminencia": 3.0,
       "persistencia": 1,
       "corroboracao": 3,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 22.48,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 19.67,
       "relevancia_pico": 100.0,
       "data_pico": "2026-08-06",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-08-06 12:23:25.234639+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "cbafed85-63c5-4c57-ab74-024b28762bb2",
@@ -1213,14 +1213,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 33.12,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 28.98,
       "relevancia_pico": 100.0,
       "data_pico": "2026-08-06",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-08-06 12:23:25.541092+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "a9616c4d-5922-4729-a85d-057d210915a4",
@@ -1237,14 +1237,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 34.8,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 30.45,
       "relevancia_pico": 43.5,
       "data_pico": "2026-08-20",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-08-20 10:51:24.013936+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "af57d510-46f4-4995-9652-7201b96aacd1",
@@ -1262,14 +1262,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 30.0,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 26.25,
       "relevancia_pico": 37.5,
       "data_pico": "2026-08-20",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-08-20 10:51:24.336436+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "ea937cef-69a7-48d5-9c81-efe35b4c2c37",
@@ -1287,14 +1287,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 2,
-      "relevancia_atual": 34.8,
+      "ciclos_sem_aparecer": 3,
+      "relevancia_atual": 30.45,
       "relevancia_pico": 43.5,
       "data_pico": "2026-08-20",
       "ultimo_periodo": "2026-W34",
       "criado_em": "2026-08-20 10:51:24.632904+00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "725680af-17af-4edb-a51f-140170f1d76b",
@@ -1310,17 +1310,17 @@
       "status": "monitorar",
       "severidade": 6.5,
       "iminencia": 6.0,
-      "persistencia": 2,
-      "corroboracao": 3,
+      "persistencia": 3,
+      "corroboracao": 5,
       "materializado": false,
       "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 47.75,
-      "relevancia_pico": 47.75,
+      "relevancia_atual": 53.75,
+      "relevancia_pico": 53.75,
       "data_pico": "2026-08-28",
-      "ultimo_periodo": "2026-W36",
+      "ultimo_periodo": "2026-W37",
       "criado_em": "2026-11-09T12:53:57.253634+00:00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "0303cf86-9f6f-4924-969d-5a78ef05114d",
@@ -1338,14 +1338,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 1,
-      "relevancia_atual": 38.7,
+      "ciclos_sem_aparecer": 2,
+      "relevancia_atual": 34.4,
       "relevancia_pico": 43.0,
       "data_pico": "2026-08-28",
       "ultimo_periodo": "2026-W35",
       "criado_em": "2026-11-09T12:53:57.253634+00:00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "8c4fe33b-0e28-4116-a3e7-169b6d7d8abb",
@@ -1364,14 +1364,14 @@
       "persistencia": 1,
       "corroboracao": 2,
       "materializado": false,
-      "ciclos_sem_aparecer": 1,
-      "relevancia_atual": 36.23,
+      "ciclos_sem_aparecer": 2,
+      "relevancia_atual": 32.2,
       "relevancia_pico": 40.25,
       "data_pico": "2026-08-28",
       "ultimo_periodo": "2026-W35",
       "criado_em": "2026-11-09T12:53:57.253634+00:00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "4cd6fec4-ffd6-4291-ba08-dc04ceab4538",
@@ -1389,14 +1389,14 @@
       "persistencia": 1,
       "corroboracao": 1,
       "materializado": false,
-      "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 43.0,
+      "ciclos_sem_aparecer": 1,
+      "relevancia_atual": 38.7,
       "relevancia_pico": 43.0,
       "data_pico": "2026-09-04",
       "ultimo_periodo": "2026-W36",
       "criado_em": "2026-11-09T13:05:48.691782+00:00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     },
     {
       "id": "f107e4f9-5f85-416d-b6ad-31f8e6b157d5",
@@ -1416,14 +1416,64 @@
       "persistencia": 1,
       "corroboracao": 2,
       "materializado": false,
-      "ciclos_sem_aparecer": 0,
-      "relevancia_atual": 35.25,
+      "ciclos_sem_aparecer": 1,
+      "relevancia_atual": 31.73,
       "relevancia_pico": 35.25,
       "data_pico": "2026-09-04",
       "ultimo_periodo": "2026-W36",
       "criado_em": "2026-11-09T13:05:48.691782+00:00",
-      "atualizado_em": "2026-11-09T13:05:48.691782+00:00",
-      "ultimo_ciclo_contado": "2026-W36"
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
+    },
+    {
+      "id": "e22aab6b-f239-4346-9c51-ea25c42542d9",
+      "tipo": "risco",
+      "titulo": "Crise institucional no STF e caso Banco Master",
+      "dimensao": "P",
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "data_identificacao": "2026-09-11",
+      "status": "monitorar",
+      "severidade": 6.0,
+      "iminencia": 6.0,
+      "persistencia": 1,
+      "corroboracao": 2,
+      "materializado": false,
+      "ciclos_sem_aparecer": 0,
+      "relevancia_atual": 42.0,
+      "relevancia_pico": 42.0,
+      "data_pico": "2026-09-11",
+      "ultimo_periodo": "2026-W37",
+      "criado_em": "2026-11-09T18:18:15.883179+00:00",
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
+    },
+    {
+      "id": "a78327cd-5fc9-41a3-baf0-94c105e20441",
+      "tipo": "risco",
+      "titulo": "Cota chinesa limita exportação de carne bovina",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "industria"
+      ],
+      "data_identificacao": "2026-09-11",
+      "status": "materializado",
+      "severidade": 6.5,
+      "iminencia": 7.5,
+      "persistencia": 1,
+      "corroboracao": 2,
+      "materializado": true,
+      "ciclos_sem_aparecer": 0,
+      "relevancia_atual": 59.38,
+      "relevancia_pico": 59.38,
+      "data_pico": "2026-09-11",
+      "ultimo_periodo": "2026-W37",
+      "criado_em": "2026-11-09T18:18:15.883179+00:00",
+      "atualizado_em": "2026-11-09T18:18:15.883179+00:00",
+      "ultimo_ciclo_contado": "2026-W37"
     }
   ],
   "observacoes": [
@@ -10759,7 +10809,242 @@
       ],
       "delta": 35.25,
       "criado_em": "2026-11-09T13:05:48.691782+00:00"
+    },
+    {
+      "id": "69a4bfa3-06ff-44f4-80fc-ff4aa85da7e5",
+      "sinal_id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Focus mantém Selic de 13,75% no fim de 2026; mercado espera corte de 0,25 ponto no Copom de 15-16/09.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 96.8,
+      "fontes": [
+        "Focus/BCB"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "76e1be46-bbc4-49f2-8dae-c2d3d0c52c27",
+      "sinal_id": "f89c40f5-4951-4e74-885d-fc3c38a68321",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "IPCA cai 0,32% em agosto, maior deflação desde 2022; 12 meses em 4,22%, dentro da meta. IGP-DI +0,06%.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 85.75,
+      "fontes": [
+        "IBGE",
+        "FGV"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "f3536f03-580c-4178-9c26-a0148a3e048c",
+      "sinal_id": "725680af-17af-4edb-a51f-140170f1d76b",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Deflação de agosto reforça aposta de quinto corte seguido da Selic, para 13,75%.",
+      "status_resultante": "monitorar",
+      "relevancia_resultante": 53.75,
+      "fontes": [
+        "IBGE",
+        "Focus/BCB"
+      ],
+      "delta": 6.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "081033aa-eb62-42e6-b015-a9fca3e75aee",
+      "sinal_id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Produção de veículos tem melhor agosto desde 2019; PIM Regional mostra queda em 11 de 18 locais e Nordeste em -4,1%.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 95.75,
+      "fontes": [
+        "Anfavea",
+        "IBGE"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "45b65c4f-21b7-404e-8696-ae77b9ddf8db",
+      "sinal_id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "IBGE prevê safra recorde de 352,9 Mt; frango exporta +24,8% em agosto; plantio da soja 2026/27 começa no Paraná.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 95.75,
+      "fontes": [
+        "IBGE",
+        "ABPA",
+        "AgRural"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "2fdd5a6e-37b5-4f89-a887-4aeaf5d00368",
+      "sinal_id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Dólar fecha a semana a R$ 5,13 (-0,11%); exportação de veículos cai 31,7% com a Argentina.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 92.75,
+      "fontes": [
+        "B3",
+        "Anfavea"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "f2ea703d-fa97-496f-ac32-2a2272014cb4",
+      "sinal_id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Lula sanciona a lei que zera o imposto federal até US$ 50 (PLV 13/2026); ICMS permanece.",
+      "status_resultante": "materializado",
+      "relevancia_resultante": 99.69,
+      "fontes": [
+        "Planalto"
+      ],
+      "delta": 2.5,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "763956f1-c1f8-4a1c-b252-8debcc4f8446",
+      "sinal_id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "ICVA: varejo cai 2,0% real em agosto, pior agosto desde 2020 e 15º mês de queda.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 92.75,
+      "fontes": [
+        "Cielo"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "1972e254-5958-4293-9ec8-b8601ca4e04e",
+      "sinal_id": "24441022-20e8-4a69-afed-041851f13279",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "ICF recua 0,3% em setembro; 83,9 milhões de inadimplentes, recorde da Serasa.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 92.75,
+      "fontes": [
+        "CNC",
+        "Serasa"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "8e42cd9d-f609-4265-893e-a46f84a12e79",
+      "sinal_id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Só 48% das famílias veem o emprego com otimismo, menor nível desde 2022 (ICF/CNC).",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 92.75,
+      "fontes": [
+        "CNC"
+      ],
+      "delta": 9.27,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "c8891907-3749-4984-aa17-4054f3023849",
+      "sinal_id": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "PMS estável em julho (0,0%), abaixo do esperado; informação e comunicação cai 2,5%.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 90.45,
+      "fontes": [
+        "IBGE"
+      ],
+      "delta": 9.04,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "152061d4-74a2-4871-9fa7-f7be763ecf08",
+      "sinal_id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Sinapi sobe 0,44% em agosto; 12 meses em 7,03% e m² a R$ 1.993,76.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 93.8,
+      "fontes": [
+        "IBGE"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "c0402b88-8c6e-4672-bb19-130dd6b289b1",
+      "sinal_id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "FGTS amplia em R$ 500 milhões descontos do MCMV; nova portaria de empreendimentos aptos no FAR.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 81.75,
+      "fontes": [
+        "FGTS",
+        "MCidades"
+      ],
+      "delta": 2.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "33361645-0289-4aa3-90d6-464f123b3fd2",
+      "sinal_id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Amazon abre CD no ES com entrega no mesmo dia; e-commerce cresce 5,1% em agosto contra 1,2% da loja física.",
+      "status_resultante": "em_curso",
+      "relevancia_resultante": 96.8,
+      "fontes": [
+        "Amazon",
+        "Cielo"
+      ],
+      "delta": 0.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "d17e7c09-7f81-4945-aa06-3c34cde48774",
+      "sinal_id": "e22aab6b-f239-4346-9c51-ea25c42542d9",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Tensão no Supremo em torno do caso Master derruba a bolsa e pode elevar o risco jurídico e travar investimentos em crédito privado.",
+      "status_resultante": "monitorar",
+      "relevancia_resultante": 42.0,
+      "fontes": [
+        "Times Brasil",
+        "Diario de Pernambuco"
+      ],
+      "delta": 42.0,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
+    },
+    {
+      "id": "0652d179-ad15-4512-b5e9-4a732ca42da8",
+      "sinal_id": "a78327cd-5fc9-41a3-baf0-94c105e20441",
+      "periodo": "2026-W37",
+      "data": "2026-09-11",
+      "texto": "Com a cota de 1,106 milhão de t esgotada, a tarifa chinesa sobe a 55% e os embarques de agosto caíram 27,1%.",
+      "status_resultante": "monitorar",
+      "relevancia_resultante": 59.38,
+      "fontes": [
+        "MDIC",
+        "SBT News"
+      ],
+      "delta": 59.38,
+      "criado_em": "2026-11-09T18:18:15.883179+00:00"
     }
   ],
-  "atualizado_em": "2026-11-09T13:05:48.691782+00:00"
+  "atualizado_em": "2026-11-09T18:18:15.883179+00:00"
 }

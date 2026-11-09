@@ -1,0 +1,1315 @@
+{
+  "periodo": "2026-W37",
+  "label": "Semana 37 · Setembro 2026",
+  "gerado_em": "2026-11-09T18:18:38.179685",
+  "editorial": {
+    "texto": "A Semana 37 trouxe a melhor notícia de preços do ano e a confirmação de que o consumo continua fraco. O IPCA, inflação oficial, caiu 0,32% em agosto, a maior deflação desde 2022, puxado pelo bônus de Itaipu na conta de luz; em 12 meses, ficou em 4,22%, dentro da meta pelo segundo mês. O Boletim Focus reduziu a inflação projetada para 2026 a 5,00% e elevou o crescimento para 1,93%, e o mercado passou a esperar o quinto corte seguido da Selic, o juro básico, de 14% para 13,75% na reunião de 15 e 16 de setembro. O dólar fechou a semana em R$ 5,13.\n\nA leitura da semana anterior se confirma: o alívio nos preços ainda não chegou ao bolso. Também se consolidou o risco que acompanhávamos: Lula sancionou a lei que zera o imposto federal sobre compras de até US$ 50. Entram na memória dois sinais novos: a crise no Supremo em torno do caso Banco Master, que derrubou a bolsa na sexta, e o esgotamento da cota chinesa para carne bovina, que já derrubou as exportações.\n\nNa indústria, a produção de veículos teve o melhor agosto desde 2019, mas as exportações caíram 31,7% com a retração argentina, e a produção do Nordeste recuou 4,1% em julho. No comércio, o índice da Cielo mostrou queda real de 2,0% nas vendas, pior agosto desde 2020, e a inadimplência chegou ao recorde de 83,9 milhões de pessoas; os serviços ficaram estáveis em julho. No agro, o frango exportou 24,8% mais, enquanto a carne bovina caiu 27,1%. Na construção, o custo subiu 0,44% e acumula 7,03% em 12 meses, e o FGTS ampliou em R$ 500 milhões os descontos do Minha Casa, Minha Vida. No e-commerce, a Amazon abriu centro no Espírito Santo com entrega no mesmo dia.\n\nPara as próximas semanas, o corte de juros ajuda pouco no curto prazo: mantenha crédito seletivo, preços estáveis e caixa reforçado.",
+    "gerado_em": "2026-11-09T18:18:30.039059",
+    "n_sinais_considerados": 15,
+    "modelo": "claude"
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "IPCA cai 0,32% em agosto, maior deflação desde 2022",
+      "texto": "Bônus de Itaipu derrubou a conta de luz em 7,63%; sem energia, o índice ficaria perto de zero. Inflação soma 3,11% no ano e 4,22% em 12 meses.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/inflacao-cai-032-em-agosto-acumulado-em-12-meses-e-de-422/"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4346357/ipca-tem-em-agosto-deflacao-mais-intensa-desde-2022"
+        },
+        {
+          "nome": "BB Investalk",
+          "url": "https://investalk.bb.com.br/radar/ibge-habitacao-transportes-alimentacao-e-comunicacao-tem-deflacao-no-ipca-de-agosto"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Inflação em 12 meses fica dentro da meta pelo segundo mês",
+      "texto": "Com 4,22% em 12 meses, o IPCA segue abaixo do teto de 4,5%; habitação, transportes, alimentação e comunicação tiveram deflação em agosto.",
+      "fontes": [
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/ipca-em-12-meses-fica-em-422-em-agosto-e-tem-2o-mes-seguido-dentro-da-meta/"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/inflacao-de-agosto-fica-em-032"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Inflação da baixa renda também cai 0,32% em agosto",
+      "texto": "O INPC, que mede a inflação das famílias de menor renda, recuou 0,32% e acumula 3,98% em 12 meses, aliviando o orçamento do consumidor popular.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/inflacao-da-baixa-renda-cai-032-em-agosto-acumula-398/"
+        },
+        {
+          "nome": "IstoÉ Dinheiro",
+          "url": "https://istoedinheiro.com.br/ipca-deflacao-agosto-0-32-inpc"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus reduz IPCA de 2026 para 5,00% e sobe PIB para 1,93%",
+      "texto": "Boletim de 08/09 manteve Selic de 13,75% no fim do ano e dólar a R$ 5,20; IPCA de 2027 projetado em 4,29%.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/mercado-reduz-projecao-da-inflacao-para-5-ainda-acima-da-meta/"
+        },
+        {
+          "nome": "O Hoje",
+          "url": "https://ohoje.com/2026/09/08/mercado-reduz-previsao-de-inflacao-para-5-e-eleva-projecao-do-pib-em-2026/"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4345692/mercado-financeiro-reduz-previsao-da-inflacao-para-5-este-ano"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Mercado projeta corte da Selic para 13,75% na próxima semana",
+      "texto": "Com a deflação de agosto, analistas esperam o quinto corte seguido no Copom de 15 e 16 de setembro, de 0,25 ponto.",
+      "fontes": [
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4346812/mercado-projeta-corte-da-selic-para-13-75"
+        },
+        {
+          "nome": "Diario de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/09/11723875-mercado-projeta-corte-da-selic-para-1375.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "agro"
+      ],
+      "titulo": "IGP-DI sobe 0,06% em agosto com preços ao produtor",
+      "texto": "Após queda de 0,86% em julho, preços agropecuários no atacado compensaram a deflação ao consumidor; índice acumula 2,63% em 12 meses.",
+      "fontes": [
+        {
+          "nome": "Safras",
+          "url": "https://safras.com.br/igp-di-de-agosto-tem-inflacao-de-006/"
+        },
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/economia/igp-di-sobe-006-em-agosto-com-pressao-dos-precos-agropecuarios-aponta-fgv/"
+        },
+        {
+          "nome": "Trademap",
+          "url": "https://trademap.com.br/noticias/news-8275379"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Crise no STF e caso Master pesam na bolsa na sexta",
+      "texto": "Ibovespa caiu 0,56% em 11/09 com realização de lucros e tensão institucional, mas subiu 1,11% na semana; dólar fechou a R$ 5,13.",
+      "fontes": [
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/investimentos/bolsa/ibovespa-cai-056-com-realizacao-de-lucros-e-crise-no-stf-no-radar-dolar-sobe-a-r-513-com-maior-cautela-politica/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Economistas veem risco de investimento travado com crise no STF",
+      "texto": "Especialistas apontam incerteza em produtos de crédito privado e clima de desânimo; plenário analisa relatório da PF sobre o Banco Master em 15/09.",
+      "fontes": [
+        {
+          "nome": "Diario de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/politica/2026/09/11723697-crise-no-stf-trava-investimentos-e-gera-clima-de-desanimo-na-economia-avalia-especialista.html"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/crise-no-stf-pode-elevar-risco-juridico-e-frear-investimentos-no-brasil-afirma-economista/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção de veículos tem melhor agosto desde 2019",
+      "texto": "Anfavea: 271,2 mil unidades, alta de 9,4% sobre agosto de 2025 e de 6,8% sobre julho; parte do avanço vem de montagem com kits importados.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/producao-de-carros-em-agosto-tem-melhor-resultado-desde-2019/"
+        },
+        {
+          "nome": "Motorshow",
+          "url": "https://motorshow.com.br/producao-de-veiculos-em-agosto-2026"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/economia-brasileira/producao-de-veiculos-cresce-94-em-agosto-aponta-anfavea/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Exportação de veículos cai 31,7% com retração argentina",
+      "texto": "Foram 39,8 mil unidades em agosto; a Argentina responde por 95% da queda e carros chineses avançam no Uruguai e no Chile. No ano, recuo de 22,9%.",
+      "fontes": [
+        {
+          "nome": "Autodata",
+          "url": "https://www.autodata.com.br/noticias/2026/09/08/exportacoes-de-veiculos-recuam-com-menor-demanda-da-argentina/134946/"
+        },
+        {
+          "nome": "Bloomberg Línea",
+          "url": "https://www.bloomberglinea.com.br/negocios/brasil-perde-mercado-automotivo-na-argentina-com-avanco-de-carros-chineses-diz-anfavea/"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/09/producao-veiculos-brasil-anfa-vea-agosto-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Venda de veículos recua 1,6% em agosto ante julho",
+      "texto": "Os emplacamentos somaram 275,1 mil unidades; a produção cresce mais que as vendas, e mais da metade dos importados vem da China.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/economia/producao-veiculos-cresce-agosto-anfavea/"
+        },
+        {
+          "nome": "Trademap",
+          "url": "https://trademap.com.br/noticias/news-8278264"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção de ônibus cai 6,2% no ano, aponta Anfavea",
+      "texto": "Exportações de ônibus recuam 30,3% em 2026, enquanto os emplacamentos de agosto crescem 17,6% em um ano.",
+      "fontes": [
+        {
+          "nome": "Diário do Transporte",
+          "url": "https://diariodotransporte.com.br/2026/09/08/producao-de-onibus-cai-62-e-exportacoes-recuam-303-em-2026-emplacamentos-de-agosto-crescem-176-em-um-ano-mostra-anfavea/amp/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Indústria cai em 11 de 18 locais em julho ante 2025",
+      "texto": "PIM Regional: Pará (-8,9%), Maranhão (-6,3%) e Rio Grande do Norte (-4,5%) lideram as quedas; Espírito Santo (+12,8%) e Rio Grande do Sul (+7,0%) sobem.",
+      "fontes": [
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/producao-industrial-cai-em-11-dos-18-locais-pesquisados-em-julho-ante-julho-de-2025-diz-ibge/"
+        },
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/09/339342-producao-industrial-cai-em-11-dos-18-locais-pesquisados-em-julho-ante-julho-de-2025-diz-ibge.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Indústria do Nordeste recua 4,1% em julho",
+      "texto": "Queda foi oito vezes a nacional; alimentos (+2,9%) e bebidas (+3,0%) cresceram, mas minerais não metálicos caíram 7,6%.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/geral/redacao/2026/09/11/industria-do-ne-recua-41-em-julho-mas-desempenho-entre-estados-e-mais-desigual/"
+        },
+        {
+          "nome": "O Povo",
+          "url": "https://mais.opovo.com.br/jornal/economia/2026/09/11/industria-do-ceara-recua-44-e-apresenta-queda-de-32-no-ano.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "ICVA: varejo cai 2,0% em agosto, pior agosto desde 2020",
+      "texto": "Índice da Cielo marca 15 meses seguidos de queda real; duráveis recuam 4,6%, serviços 3,7% e não duráveis 0,4%.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/11/09/2026/noticias-varejo/varejo-recua-20-em-agosto-e-completa-15-meses-de-queda/"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/geral/2026/09/varejo-brasileiro-vendas-caem-2-agosto-cielo/"
+        },
+        {
+          "nome": "Cielo",
+          "url": "https://blog.cielo.com.br/indice-icva/vendas-varejo-agosto-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Intenção de consumo das famílias recua 0,3% em setembro",
+      "texto": "ICF da CNC cai a 104,5 pontos; só 48% veem o emprego com otimismo, menor fatia desde 2022, e a queda atinge todas as faixas de renda.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/intencao-de-consumo-das-familias-recua-03-em-setembro-diz-cnc/"
+        },
+        {
+          "nome": "Monitor Mercantil",
+          "url": "https://monitormercantil.com.br/intencao-de-consumo-das-familias-tem-nova-queda-impulsionada-por-piora-no-credito/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Inadimplentes chegam a 83,9 milhões, recorde da Serasa",
+      "texto": "Dívidas somam R$ 586,4 bilhões; o ritmo de alta desacelera e as renegociações no Limpa Nome crescem 41% no trimestre.",
+      "fontes": [
+        {
+          "nome": "Diário do Pará",
+          "url": "https://diariodopara.com.br/seu-bolso/inadimplencia-dispara-no-brasil-839-milhoes-de-pessoas-estao-com-dividas-cartao-preocupa/"
+        },
+        {
+          "nome": "Serasa",
+          "url": "https://www.serasa.com.br/imprensa/negociacao-dividas-cresce-41-trimestre/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "ecommerce",
+        "industria"
+      ],
+      "titulo": "Lula sanciona fim da taxa das blusinhas",
+      "texto": "Lei zera o imposto federal de 20% nas compras de até US$ 50; o ICMS estadual continua e o governo deverá avaliar os efeitos no comércio nacional.",
+      "fontes": [
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4346183/lula-sanciona-fim-da-taxa-das-blusinhas-para-compras-de-ate-us%24-50"
+        },
+        {
+          "nome": "Fenacon",
+          "url": "https://fenacon.org.br/noticias/isencao-da-taxa-das-blusinhas-em-compras-ate-us-50-e-sancionada/"
+        },
+        {
+          "nome": "Central do Varejo",
+          "url": "https://centraldovarejo.com.br/lula-sanciona-fim-definitivo-da-taxa-das-blusinhas/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "industria"
+      ],
+      "titulo": "Lula chama de 'meio falso' discurso de prejuízo do varejo",
+      "texto": "Presidente rebateu empresários; a CNI estima 109 mil empregos em risco e R$ 21,8 bilhões a menos de produção nacional em 2026.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/10/09/2026/noticias-varejo/lula-considera-meio-falso-discurso-de-empresarios-sobre-prejuizo-com-fim-da-taxa-de-blusinhas/"
+        },
+        {
+          "nome": "Diário do Nordeste",
+          "url": "https://diariodonordeste.verdesmares.com.br/pontopoder/lula-considera-meio-falso-discurso-de-empresarios-sobre-prejuizo-com-fim-da-taxa-de-blusinhas-1.3790736"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Volume de serviços fica estável em julho",
+      "texto": "PMS veio em 0,0%, abaixo da previsão de 0,2%; setor está 0,2% abaixo do recorde e acumula 2,4% em 12 meses.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/volume-de-servicos-fica-estavel-em-julho/"
+        },
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/10/09/2026/servicos/setor-de-servicos-fica-estavel-em-julho-e-sobe-24-em-12-meses/"
+        },
+        {
+          "nome": "Safras",
+          "url": "https://safras.com.br/servicos-ficam-estaveis-em-julho-ante-junho-previsao-era-de-02/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Informação e comunicação cai 2,5% e segura os serviços",
+      "texto": "Foi a única das cinco atividades em queda no mês; o volume recuou em 14 das 27 unidades da Federação.",
+      "fontes": [
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/setor-de-servicos-do-brasil-decepciona-e-fica-estavel-em-julho/"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/09/setor-servicos-estavel-julho-desaceleracao-pms/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Turismo sobe 2,7% em julho, mas cai 2,6% em um ano",
+      "texto": "Atividades turísticas avançaram no mês de férias, porém seguem abaixo do nível de julho de 2025, segundo o IBGE.",
+      "fontes": [
+        {
+          "nome": "IstoÉ Dinheiro",
+          "url": "https://istoedinheiro.com.br/turismo-brasil-atividades-crescem-julho-2026"
+        },
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/setor-de-servicos-fica-estavel-em-julho-e-turismo-reforca-perspectivas-para-a-paraiba/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Mato Grosso do Sul lidera queda nos serviços, com -9,6%",
+      "texto": "Estado teve a maior retração anual do país em julho, na contramão da estabilidade nacional.",
+      "fontes": [
+        {
+          "nome": "Campo Grande News",
+          "url": "https://www.campograndenews.com.br/economia/ms-lidera-queda-nacional-no-volume-de-servicos"
+        },
+        {
+          "nome": "Midiamax",
+          "url": "https://midiamax.com.br/cotidiano/economia/2026/servicos-ficam-estaveis-brasil-julho-ms-tem-queda-96-ano/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportação de frango sobe 24,8% em agosto",
+      "texto": "ABPA: 492,6 mil toneladas e receita de US$ 997,9 milhões (+42,7%), segundo maior valor mensal da série; China foi o principal destino.",
+      "fontes": [
+        {
+          "nome": "Band",
+          "url": "https://www.band.com.br/agro/exportacoes-de-carne-de-frango-somam-4926-mil-toneladas-em-agosto"
+        },
+        {
+          "nome": "Paraíba Business",
+          "url": "https://paraibabusiness.com.br/exportacao-de-frango-do-brasil-cresce-248-em-agosto/"
+        },
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/agronegocio/exportacao-frango-bovina-agosto/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Cota chinesa derruba exportação de carne bovina em agosto",
+      "texto": "Volume caiu 27,1% e receita 19,7%, para US$ 1,2 bilhão; acima da cota de 1,106 milhão de toneladas, a tarifa chinesa sobe para 55%.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/08/09/2026/economia/cota-chinesa-faz-exportacao-de-carne-bovina-recuar-271-em-agosto/"
+        },
+        {
+          "nome": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/economia/cota-de-carne-explica-78-da-queda-das-exportacoes-a-china"
+        },
+        {
+          "nome": "Trademap",
+          "url": "https://trademap.com.br/noticias/news-8279194"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "EUA e Arábia Saudita compensam parte da perda chinesa",
+      "texto": "Exportadores de carne bovina diversificam mercados; no acumulado do ano, os embarques ainda crescem, com 2,2 milhões de toneladas.",
+      "fontes": [
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/empresas-e-negocios/agro/exportacao-carne-bovina-agosto-diversificacao-mercados/"
+        },
+        {
+          "nome": "Brasilagro",
+          "url": "https://brasilagro.com.br/conteudo/sem-china-exportacao-de-carne-bovina-cai-23-em-relacao-a-2025.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "IBGE prevê safra recorde de 352,9 milhões de toneladas",
+      "texto": "LSPA de agosto: alta de 2,0% sobre 2025, com soja em 174,8 milhões e milho segunda safra em 112,1 milhões de toneladas.",
+      "fontes": [
+        {
+          "nome": "Compre Rural",
+          "url": "https://comprerural.com/em-agosto-ibge-preve-safra-de-3529-milhoes-de-toneladas-para-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Paraná abre plantio da soja 2026/27; MT encerra vazio",
+      "texto": "Fim do vazio sanitário libera a semeadura; em Mato Grosso, o Imea diz que o plantio só ganha ritmo com chuvas regulares.",
+      "fontes": [
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/agricultura/parana-inicia-plantio-da-soja-2026-27-apos-fim-do-vazio-sanitario/"
+        },
+        {
+          "nome": "Itatiaia",
+          "url": "https://www.itatiaia.com.br/agro/fim-do-vazio-sanitario-exige-cautela-no-plantio-da-soja-em-mato-grosso/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Café arábica recua com perspectiva de oferta maior",
+      "texto": "Indicador caiu 1,47% em 09/09; em Nova York, o contrato de dezembro perdeu 5,5% na semana anterior com clima favorável à safra 2027.",
+      "fontes": [
+        {
+          "nome": "Brasil 61",
+          "url": "https://brasil61.com/n/cafe-hoje-arabica-recua-1-47-nesta-quarta-feira-9-pagr266515"
+        },
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/precos-do-cafe-recuam-com-melhora-nas-perspectivas-de-oferta"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arroba do boi gordo sobe a R$ 348,35 em São Paulo",
+      "texto": "Mercado firme em 09/09, acima da média de agosto de R$ 345,92, sustentado pela oferta restrita de animais.",
+      "fontes": [
+        {
+          "nome": "Brasil 61",
+          "url": "https://brasil61.com/n/boi-gordo-hoje-arroba-registra-alta-nesta-quarta-feira-9-pagr266517"
+        },
+        {
+          "nome": "Governo de Goiás",
+          "url": "https://goias.gov.br/agricultura/bovinos-agro-em-dados-setembro-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Custo da construção sobe 0,44% em agosto, diz IBGE",
+      "texto": "Sinapi: metro quadrado a R$ 1.993,76; mão de obra subiu 0,55% e materiais 0,35%. Em 12 meses, alta de 7,03%.",
+      "fontes": [
+        {
+          "nome": "Poder360",
+          "url": "https://www.poder360.com.br/poder-economia/custo-da-construcao-sobe-044-em-agosto-diz-ibge/"
+        },
+        {
+          "nome": "CBIC",
+          "url": "https://cbic.org.br/custo-nacional-da-construcao-varia-044-em-agosto-aponta-sinapi/"
+        },
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/09/amp/339475-incc-sinapi-sobe-044-em-agosto-apos-avanco-identico-em-julho-mostra-ibge.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "MCMV: portaria lista novos empreendimentos aptos no FAR",
+      "texto": "Portaria MCID 1.174, publicada em 08/09, divulga propostas aptas à contratação de moradias urbanas com recursos do FAR.",
+      "fontes": [
+        {
+          "nome": "CBIC",
+          "url": "https://cbic.org.br/mcid-divulga-propostas-com-aptidao-a-contratacao-no-mcmv-far/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "FGTS amplia em R$ 500 milhões os descontos do MCMV",
+      "texto": "Conselho Curador elevou o orçamento de subsídios de 2026 de R$ 12,5 bilhões para R$ 13 bilhões.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/habitacao/2026/09/11/mcmv-governo-amplia-em-r-500-milhoes-subsidios-para-habitacao-popular/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "industria"
+      ],
+      "titulo": "Minerais não metálicos caem 7,6% no Nordeste",
+      "texto": "Segmento ligado a cimento e cerâmica teve a pior queda na indústria nordestina em julho, sinal de obra mais lenta na região.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/geral/redacao/2026/09/11/industria-do-ne-recua-41-em-julho-mas-desempenho-entre-estados-e-mais-desigual/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Amazon abre CD no Espírito Santo com entrega no mesmo dia",
+      "texto": "Unidade em Cariacica, operada pela DHL, processa mais de 420 mil pacotes por semana em 31 mil m², no modelo FBA.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/11/09/2026/noticias-varejo/amazon-abre-cd-no-espirito-santo-e-passa-a-oferecer-entrega-no-mesmo-dia/"
+        },
+        {
+          "nome": "DHL",
+          "url": "https://www.dhl.com/br-pt/home/imprensa/arquivo-de-imprensa/2026/amazon-acelera-entregas-no-espirito-santo-com-novo-centro-de-distribuicao-em-parceria-com-a-dhl-supply-chain-em-cariacica.html"
+        },
+        {
+          "nome": "Mundo Logística",
+          "url": "https://mundologistica.com.br/noticias/amazon-dhl-supply-chain-centro-distribuicao-espirito-santo"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "E-commerce cresce 5,1% em agosto e supera loja física",
+      "texto": "No ICVA, as vendas online subiram 5,1% em termos nominais, contra 1,2% do varejo físico.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/11/09/2026/noticias-varejo/varejo-recua-20-em-agosto-e-completa-15-meses-de-queda/amp/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Lei das blusinhas exige avaliação periódica de impacto",
+      "texto": "Texto sancionado (PLV 13/2026) obriga o governo a medir os efeitos do imposto zero sobre o comércio nacional.",
+      "fontes": [
+        {
+          "nome": "Reforma Tributária",
+          "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/lula-sanciona-o-fim-da-taxa-das-blusinhas/"
+        },
+        {
+          "nome": "Jornal Opção",
+          "url": "https://www.jornalopcao.com.br/ultimas-noticias/fim-da-taxa-das-blusinhas-compras-de-ate-us-50-ficam-sem-imposto-de-20-veja-o-que-muda-866733/"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Crise institucional no STF",
+      "texto": "Caso Banco Master e tensão no Supremo pesam na bolsa e elevam o risco jurídico percebido por investidores.",
+      "score": 6.6,
+      "setores": [
+        "transversal",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Deflação e consumo fraco",
+      "texto": "IPCA de -0,32% abre espaço para corte da Selic, mas o ICVA cai 2,0% e os serviços ficam estáveis.",
+      "score": 7.4,
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Inadimplência recorde",
+      "texto": "83,9 milhões de inadimplentes e menor otimismo com o emprego desde 2022 limitam o consumo das famílias.",
+      "score": 7.0,
+      "setores": [
+        "comercio",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Logística de entrega no mesmo dia",
+      "texto": "Amazon abre CD no Espírito Santo e amplia a entrega rápida; e-commerce cresce acima da loja física.",
+      "score": 6.2,
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Início do plantio da soja",
+      "texto": "Fim do vazio sanitário libera o plantio; em Mato Grosso, o ritmo depende da regularização das chuvas.",
+      "score": 5.8,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Lei das blusinhas sancionada",
+      "texto": "Imposto federal zero até US$ 50 vira lei; ICMS segue e o governo terá de medir os impactos no comércio.",
+      "score": 6.8,
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "industria"
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "14,00% a.a.",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros · BCB/SGS · 11/09/2026",
+      "fonte": "BCB/SGS"
+    },
+    {
+      "label": "IPCA",
+      "valor": "-0,32%",
+      "cor": "up",
+      "sub": "Mês · acum. ano 3,11% · 12m 4,22% · meta 3,0% (teto 4,5%) · IBGE ago/26 · Projeção Focus 2026: 4,90%",
+      "fonte": "IBGE",
+      "acum_ano": 3.11,
+      "ipca_12m": 4.22,
+      "meta_inflacao": 3.0,
+      "meta_desde": "2026-01-01",
+      "meta_fonte": "BCB/SGS 13521",
+      "projecao": 4.9,
+      "projecao_em": "2026-09-11",
+      "projecao_fonte": "Focus/BCB"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,09",
+      "cor": "up",
+      "sub": "Dólar PTAX venda · BCB · 11/09/2026",
+      "fonte": "BCB/PTAX"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,3%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · mai-jun-jul 2026",
+      "fonte": "IBGE"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "0,3%",
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,9% · IBGE jun/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.9
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "0,0%",
+      "cor": "up",
+      "sub": "Produção física m/m · acum. ano -0,5% · IBGE jul/26",
+      "fonte": "IBGE",
+      "acum_ano": -0.5
+    },
+    {
+      "label": "IPP",
+      "valor": "-0,83%",
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano 3,09% · IBGE jul/26",
+      "fonte": "IBGE",
+      "acum_ano": 3.09
+    }
+  ],
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "+0,1%",
+      "cor": "up",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,1% · IBGE/PMS jun/26",
+      "ref": "jun/26",
+      "pt": 0.1,
+      "acum": 2.1,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 1.994",
+      "cor": "up",
+      "sub": "Custo médio da construção · +0,44% mês · acum. ano +5,41% · IBGE/SINAPI ago/26",
+      "ref": "ago/26",
+      "pt": 1993.76,
+      "acum": 5.41,
+      "flow": false,
+      "unit": "R$/m²"
+    },
+    {
+      "setor": "construcao",
+      "key": "construcao_incc",
+      "setorLabel": "Construção",
+      "label": "INCC (FGV)",
+      "valor": "+0,66%",
+      "cor": "up",
+      "sub": "Custo da construção (mercado) · var. mês · acum. ano +5,60% · FGV/BCB-SGS ago/26",
+      "ref": "ago/26",
+      "pt": 0.66,
+      "acum": 5.6,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "agro",
+      "setorLabel": "Agro",
+      "label": "Safra de grãos (LSPA)",
+      "valor": "352,9 Mt",
+      "cor": "neutral",
+      "sub": "Estimativa da safra 2026 · -0,0% vs. mês anterior · IBGE/LSPA ago/26",
+      "ref": "ago/26",
+      "pt": 352.9,
+      "acum": null,
+      "flow": false,
+      "unit": "Mt"
+    }
+  ],
+  "pressoes_ipca": {
+    "ref": "ago/26",
+    "mes": 8,
+    "ano": 2026,
+    "grupos": [
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.133
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.032
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": 0.029
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.022
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.006
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": -0.004
+      },
+      {
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": -0.073
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": -0.174
+      },
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": -0.29
+      }
+    ]
+  },
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Importados de baixo valor sem imposto federal elevam a ameaça de substitutos para a indústria leve."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Alta rivalidade e poder dos compradores, com entrada facilitada por novos formatos."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Fragmentado, com rivalidade crescente e diferenciação por especialização."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Setor com altas barreiras de entrada e forte influência de fornecedores e compradores globais."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Setor cíclico, com custos de insumos relevantes e menor ameaça de substitutos."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Altíssima rivalidade e poder dos compradores, com constante entrada de novos players e modelos."
+    }
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "📉",
+          "txt": "IPCA negativo em agosto: segure reajustes de preço e use a inflação baixa como argumento de venda."
+        },
+        {
+          "ico": "🏦",
+          "txt": "Com corte da Selic esperado, prepare a renegociação de dívidas caras para as próximas semanas."
+        },
+        {
+          "ico": "💳",
+          "txt": "83,9 milhões de inadimplentes: mantenha análise de crédito rigorosa e priorize Pix."
+        },
+        {
+          "ico": "⚖️",
+          "txt": "Acompanhe a crise no STF: volatilidade pode encarecer captações em crédito privado."
+        },
+        {
+          "ico": "📦",
+          "txt": "Lei das blusinhas sancionada: revise preço e argumento contra importados de até US$ 50."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "O recorde de produção de veículos se sustenta com exportações em queda de 31,7%?",
+        "quote": "Produção de veículos somou 271,2 mil unidades em agosto, melhor resultado desde 2019.",
+        "edi": [
+          "A Anfavea registrou o melhor agosto de produção desde 2019, com parte do volume vindo de montagem de kits importados, enquanto as vendas recuaram 1,6% no mês.",
+          "No mapa regional, a indústria caiu em 11 de 18 locais em julho, com o Nordeste recuando 4,1%, oito vezes a média nacional."
+        ],
+        "acoes": [
+          {
+            "ico": "🚗",
+            "txt": "Fornecedores automotivos: aproveitem o pico de produção, mas sem ampliar capacidade fixa."
+          },
+          {
+            "ico": "🌎",
+            "txt": "Exportadores para a Argentina: busquem mercados alternativos diante da concorrência chinesa."
+          },
+          {
+            "ico": "🏭",
+            "txt": "No Nordeste, revise metas regionais à luz da queda de 4,1% da indústria."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Inflação negativa e consumo em queda: o problema é preço ou renda comprometida?",
+        "quote": "Varejo caiu 2,0% em agosto, pior agosto desde 2020, segundo o ICVA.",
+        "edi": [
+          "O ICVA mostrou o 15º mês de queda real do varejo, com duráveis em -4,6%, e a intenção de consumo recuou 0,3% em setembro.",
+          "A sanção do fim da taxa das blusinhas reabriu o embate entre governo e varejo; Lula chamou de 'meio falso' o discurso de prejuízo."
+        ],
+        "acoes": [
+          {
+            "ico": "🛒",
+            "txt": "Reforce promoções de itens essenciais, onde a queda é menor (-0,4%)."
+          },
+          {
+            "ico": "💳",
+            "txt": "Ofereça renegociação a clientes inadimplentes: acordos cresceram 41% no trimestre."
+          },
+          {
+            "ico": "🏷️",
+            "txt": "Aproveite a deflação para comunicar estabilidade de preços."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Serviços estáveis perto do recorde: é teto ou pausa?",
+        "quote": "Volume de serviços ficou estável em julho, 0,2% abaixo do recorde da série.",
+        "edi": [
+          "A PMS de julho veio em 0,0%, abaixo do esperado, com informação e comunicação em queda de 2,5% e turismo em alta de 2,7% no mês.",
+          "No mercado financeiro, a crise no STF e o caso Master derrubaram a bolsa na sexta, embora a semana tenha fechado em alta."
+        ],
+        "acoes": [
+          {
+            "ico": "✈️",
+            "txt": "Turismo: prepare a temporada de fim de ano, com demanda ainda abaixo de 2025."
+          },
+          {
+            "ico": "📊",
+            "txt": "Diversifique fontes de crédito para reduzir exposição à volatilidade institucional."
+          },
+          {
+            "ico": "💻",
+            "txt": "Empresas de TI e telecom: revisem projeções após queda de 2,5% no mês."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Frango em alta e boi limitado pela cota: como redistribuir as vendas externas?",
+        "quote": "Exportação de frango subiu 24,8% em agosto, para 492,6 mil toneladas.",
+        "edi": [
+          "As carnes tiveram sinais opostos: o frango bateu o segundo maior faturamento da série, enquanto a carne bovina caiu 27,1% com o esgotamento da cota chinesa.",
+          "O IBGE manteve a previsão de safra recorde de 352,9 milhões de toneladas e o plantio da soja 2026/27 começou no Paraná."
+        ],
+        "acoes": [
+          {
+            "ico": "🐔",
+            "txt": "Avicultores: aproveitem a demanda chinesa e a receita recorde."
+          },
+          {
+            "ico": "🐂",
+            "txt": "Frigoríficos: direcionem embarques para EUA e Arábia Saudita."
+          },
+          {
+            "ico": "🌱",
+            "txt": "Em Mato Grosso, só acelere o plantio com chuvas regulares."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Custo subindo 7% ao ano: quanto da margem do MCMV ainda resiste?",
+        "quote": "Sinapi subiu 0,44% em agosto e acumula 7,03% em 12 meses.",
+        "edi": [
+          "O custo da construção manteve alta de 0,44% pelo segundo mês, com a mão de obra subindo mais que os materiais.",
+          "Do lado da demanda, o FGTS ampliou em R$ 500 milhões os descontos do MCMV e o governo publicou nova lista de empreendimentos aptos no FAR."
+        ],
+        "acoes": [
+          {
+            "ico": "👷",
+            "txt": "Negocie mão de obra com antecedência: é o item que mais sobe."
+          },
+          {
+            "ico": "🏠",
+            "txt": "Inscreva projetos nas portarias do FAR para garantir contratação."
+          },
+          {
+            "ico": "📑",
+            "txt": "Atualize orçamentos com o m² de R$ 1.993,76 do Sinapi."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Entrega no mesmo dia vira padrão: sua operação acompanha?",
+        "quote": "Amazon abriu CD no Espírito Santo com capacidade para 420 mil pacotes por semana.",
+        "edi": [
+          "A Amazon inaugurou centro em Cariacica com a DHL e passou a entregar no mesmo dia no estado, ampliando a disputa logística no Sudeste.",
+          "O ICVA mostrou o e-commerce crescendo 5,1% em agosto, contra 1,2% da loja física, enquanto a lei das blusinhas foi sancionada."
+        ],
+        "acoes": [
+          {
+            "ico": "🚚",
+            "txt": "Avalie fulfillment de marketplaces para competir em prazo."
+          },
+          {
+            "ico": "📦",
+            "txt": "Destaque entrega rápida e troca fácil contra o cross-border."
+          },
+          {
+            "ico": "📈",
+            "txt": "Reforce investimento no canal online, que cresce mais que a loja."
+          }
+        ]
+      }
+    }
+  },
+  "longitudinal": [
+    {
+      "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
+      "tipo": "risco",
+      "titulo": "Custo de energia (ANEEL/tarifa)",
+      "dimensao": "A",
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria",
+        "agro"
+      ],
+      "status": "materializado",
+      "relevancia": 100,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "Comissão do Senado aprova IPCA como teto do reajuste da conta de luz (PL 170/2026).",
+      "periodo_observacao": "2026-W36",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
+      "tipo": "risco",
+      "titulo": "Remessa Conforme e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce"
+      ],
+      "status": "materializado",
+      "relevancia": 99.69,
+      "severidade": 7.5,
+      "iminencia": 7.0,
+      "ultima_observacao": "Lula sanciona a lei que zera o imposto federal até US$ 50 (PLV 13/2026); ICMS permanece.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2026-07-13",
+      "origem": "real"
+    },
+    {
+      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
+      "tipo": "risco",
+      "titulo": "Juros, Selic e crédito",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "construcao",
+        "industria",
+        "agro",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 96.8,
+      "severidade": 9.8,
+      "iminencia": 9.0,
+      "ultima_observacao": "Focus mantém Selic de 13,75% no fim de 2026; mercado espera corte de 0,25 ponto no Copom de 15-16/09.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
+      "tipo": "risco",
+      "titulo": "Digitalização e IA",
+      "dimensao": "T",
+      "setores": [
+        "servicos",
+        "agro",
+        "ecommerce",
+        "comercio",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 96.8,
+      "severidade": 9.8,
+      "iminencia": 9.0,
+      "ultima_observacao": "Amazon abre CD no ES com entrega no mesmo dia; e-commerce cresce 5,1% em agosto contra 1,2% da loja física.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "tipo": "risco",
+      "titulo": "Safra e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "IBGE prevê safra recorde de 352,9 Mt; frango exporta +24,8% em agosto; plantio da soja 2026/27 começa no Paraná.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
+      "tipo": "risco",
+      "titulo": "Atividade e indústria (PIM/PMI)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "agro",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "Produção de veículos tem melhor agosto desde 2019; PIM Regional mostra queda em 11 de 18 locais e Nordeste em -4,1%.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
+      "tipo": "risco",
+      "titulo": "Aumento dos Custos de Energia Elétrica para PMEs",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "comercio",
+        "servicos",
+        "transversal"
+      ],
+      "status": "materializado",
+      "relevancia": 94.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "Bandeira amarela em setembro mantém custo extra de R$ 1,885 por 100 kWh para empresas e famílias.",
+      "periodo_observacao": "2026-W35",
+      "data_identificacao": "2026-07-06",
+      "origem": "real"
+    },
+    {
+      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
+      "tipo": "risco",
+      "titulo": "Construção e custos",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "transversal",
+        "industria",
+        "agro",
+        "comercio",
+        "servicos",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 93.8,
+      "severidade": 9.3,
+      "iminencia": 8.5,
+      "ultima_observacao": "Sinapi sobe 0,44% em agosto; 12 meses em 7,03% e m² a R$ 1.993,76.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2026-01-05",
+      "origem": "real"
+    },
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "ICF recua 0,3% em setembro; 83,9 milhões de inadimplentes, recorde da Serasa.",
+      "periodo_observacao": "2026-W37",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    }
+  ]
+}
