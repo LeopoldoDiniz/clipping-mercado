@@ -1,6 +1,12 @@
 {
   "semanas": [
     {
+      "chave": "2026-W41",
+      "label": "Semana 41 · Outubro 2026",
+      "arquivo": "2026-W41.json",
+      "ordem": 202641
+    },
+    {
       "chave": "2026-W40",
       "label": "Semana 40 · Setembro 2026",
       "arquivo": "2026-W40.json",
@@ -241,5 +247,5 @@
       "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-11-09T20:32:32.830388"
+  "atualizado_em": "2026-11-10T13:34:53.570980"
 }
