@@ -18,31 +18,36 @@
       "chave": "2026-W44",
       "label": "Semana 44 · Outubro 2026",
       "arquivo": "2026-W44.json",
-      "ordem": 202644
+      "ordem": 202644,
+      "status": "fechada"
     },
     {
       "chave": "2026-W43",
       "label": "Semana 43 · Outubro 2026",
       "arquivo": "2026-W43.json",
-      "ordem": 202643
+      "ordem": 202643,
+      "status": "fechada"
     },
     {
       "chave": "2026-W42",
       "label": "Semana 42 · Outubro 2026",
       "arquivo": "2026-W42.json",
-      "ordem": 202642
+      "ordem": 202642,
+      "status": "fechada"
     },
     {
       "chave": "2026-W41",
       "label": "Semana 41 · Outubro 2026",
       "arquivo": "2026-W41.json",
-      "ordem": 202641
+      "ordem": 202641,
+      "status": "fechada"
     },
     {
       "chave": "2026-W40",
       "label": "Semana 40 · Setembro 2026",
       "arquivo": "2026-W40.json",
-      "ordem": 202640
+      "ordem": 202640,
+      "status": "fechada"
     },
     {
       "chave": "2026-W39",
@@ -279,5 +284,5 @@
       "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-11-10T14:32:36.384534"
+  "atualizado_em": "2026-11-10T14:49:53.576378"
 }

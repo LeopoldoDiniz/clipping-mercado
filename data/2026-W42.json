@@ -1,10 +1,11 @@
 {
   "periodo": "2026-W42",
   "label": "Semana 42 · Outubro 2026",
-  "gerado_em": "2026-11-10T13:37:21.282758",
+  "status": "fechada",
+  "gerado_em": "2026-11-10T14:49:21.179591",
   "editorial": {
     "texto": "A Semana 42, encurtada pelo feriado de 12 de outubro, confirmou um consumo parado e expectativas de inflação em alta. O Boletim Focus elevou a projeção do IPCA de 2026 para 5,22%, a quarta alta seguida, depois da inflação de 0,82% em setembro, e reduziu o dólar esperado para o fim do ano a R$ 5,15. A Selic, o juro básico, segue em 13,75%. Na atividade, o IBC-Br, prévia do PIB do Banco Central, subiu 0,3% em agosto, acima do esperado, puxado pela indústria, mas o trimestre até agosto ainda acumula queda de 0,6%. As vendas do varejo cresceram só 0,1% em agosto, contra 0,7% projetados, e os serviços recuaram 0,1%.\n\nO que mudou: o efeito do fim da taxa das blusinhas ganhou escala, com as compras internacionais de até US$ 50 subindo 82% em setembro, segundo o BTG. Entram na memória dois sinais novos: a expectativa de inflação acima de 5% em 2026 e a pressão do importado barato sobre o varejo de moda.\n\nNa indústria, a produção cresceu 0,9% no IBC-Br de agosto, mas móveis e eletrodomésticos caíram 4,2% no varejo. No comércio, o índice da Cielo mostrou queda real de 3,9% em setembro, o pior setembro desde 2020, e no Dia das Crianças o faturamento subiu 4,2%, com os presentes em queda de 5,7%. Nos serviços, o turismo cresceu 2,5% em agosto. No agro, a Conab projetou safra recorde de 367,1 milhões de toneladas em 2026/27, com a menor expansão de área em 20 anos, e Mato Grosso chegou a 33% da soja plantada. Na construção, a CBIC começou a estudar o efeito da redução da jornada de trabalho. No e-commerce, as vendas online subiram 5,1% em setembro.\n\nO ponto de atenção é o fim de ano: com consumo fraco e inflação em alta, planeje Black Friday e Natal com estoques enxutos e preços de entrada acessíveis.",
-    "gerado_em": "2026-11-10T13:37:15.202483",
+    "gerado_em": "2026-11-10T14:49:17.224805",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
@@ -488,9 +489,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,7%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -1,2% · IBGE ago/26",
+      "sub": "Produção física m/m · acum. ano 0,8% · IBGE ago/26",
       "fonte": "IBGE",
-      "acum_ano": -1.2
+      "acum_ano": 0.8
     },
     {
       "label": "IPP",

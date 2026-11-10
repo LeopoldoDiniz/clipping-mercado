@@ -1,10 +1,11 @@
 {
   "periodo": "2026-W44",
   "label": "Semana 44 · Outubro 2026",
-  "gerado_em": "2026-11-10T13:59:42.481790",
+  "status": "fechada",
+  "gerado_em": "2026-11-10T14:49:32.277508",
   "editorial": {
     "texto": "A Semana 44 foi marcada pelo choque do resultado eleitoral. Lula foi reeleito no segundo turno com 51,79% dos votos válidos, contra 48,21% de Flávio Bolsonaro, e o mercado, que vinha apostando no resultado oposto, reagiu com força: na segunda-feira, a bolsa caiu 13,88%, com acionamento do circuit breaker, e o dólar subiu 8,21%. Na semana, o dólar avançou 9,15%, a maior alta desde 2008, e fechou a R$ 5,44, enquanto a bolsa caiu 18,12%, a pior semana desde março de 2020. A Selic, o juro básico, segue em 13,75%. Na economia real, o quadro é de emprego forte e famílias apertadas: o desemprego caiu a 5,2%, o menor para o terceiro trimestre desde 2012, mas o endividamento das famílias bateu recorde de 50,1% da renda, e os juros do crédito livre à pessoa física subiram a 62,4% ao ano. O IGP-M, índice dos aluguéis, subiu 1,47% em outubro.\n\nO que mudou: a aposta do mercado na oposição, que sustentou a bolsa recorde e o dólar abaixo de R$ 5 nas semanas anteriores, foi desfeita em um único pregão. Entram na memória dois sinais novos: o choque cambial pós-eleição e o endividamento recorde das famílias.\n\nNa indústria, a confiança subiu em 27 de 29 setores em outubro, em pesquisa feita antes da eleição. No comércio, o consumo nos lares caiu 1,46% em setembro e a confiança do comerciante recuou. Nos serviços, a ocupação chegou ao recorde de 103,6 milhões de pessoas. No agro, o boi gordo atingiu R$ 389,90 por arroba, maior valor real da série do Cepea. Na construção, o custo subiu 0,35% e o setor estimou precisar de 288 mil trabalhadores a mais com jornada de 40 horas. No e-commerce, 71% dos consumidores pretendem comprar no 11.11 e na Black Friday.\n\nO ponto de atenção é o repasse do dólar: revise preços de importados e trave câmbio em parcelas.",
-    "gerado_em": "2026-11-10T13:59:38.199138",
+    "gerado_em": "2026-11-10T14:49:25.487907",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
@@ -459,9 +460,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,7%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -1,2% · IBGE ago/26",
+      "sub": "Produção física m/m · acum. ano 0,8% · IBGE ago/26",
       "fonte": "IBGE",
-      "acum_ano": -1.2
+      "acum_ano": 0.8
     },
     {
       "label": "IPP",

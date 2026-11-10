@@ -1,10 +1,11 @@
 {
   "periodo": "2026-W40",
   "label": "Semana 40 · Setembro 2026",
-  "gerado_em": "2026-11-09T20:32:32.820932",
+  "status": "fechada",
+  "gerado_em": "2026-11-10T14:49:12.096021",
   "editorial": {
     "texto": "A Semana 40 fechou setembro com um contraste nítido: a indústria perde força enquanto o emprego resiste. A produção industrial caiu 0,6% em agosto, a maior queda para o mês desde 2022, com 16 de 25 ramos em retração, e a confiança da indústria medida pela FGV recuou a 91,3 pontos. Já o desemprego ficou em 5,3%, o menor para o trimestre até agosto, com ocupação recorde de 103,5 milhões de pessoas, e o Caged registrou 165,8 mil vagas formais, acima do esperado. Na inflação, o IGP-M, índice dos aluguéis, subiu 1,57% em setembro, e o Boletim Focus elevou a projeção do IPCA de 2026 para 4,99%, mantendo a Selic, o juro básico, em 13,50% no fim do ano. A dívida bruta chegou a 82,9% do PIB, o maior nível em cinco anos.\n\nO que mudou: Brasil e Estados Unidos criaram um grupo específico para negociar o tarifaço, avanço concreto sobre um sinal que acompanhamos desde agosto. Entram na memória dois sinais novos: o risco da dívida pública em alta e a oportunidade de exportação de pequenas empresas por marketplaces.\n\nNa indústria, a venda de máquinas agrícolas caiu 22,4% no ano, com produtor endividado. No comércio, as famílias enfrentam juros maiores, inadimplência de 6% e endividamento de 49,9% da renda, e reduzem as idas a restaurantes. Os serviços geraram 110,3 mil das vagas de agosto. No agro, o boi gordo subiu 5,42% em setembro e o bezerro bateu recorde. Na construção, o crédito imobiliário da poupança cresceu 46,6% em agosto, mas a caderneta perdeu R$ 9,5 bilhões em saques. No e-commerce, a Shopee abriu plataforma para pequenas empresas venderem na Argentina e no México.\n\nO ponto de atenção é o reajuste de aluguéis pelo IGP-M em outubro: negocie antes da renovação e ajuste estoques à demanda mais fraca.",
-    "gerado_em": "2026-11-09T20:32:27.790909",
+    "gerado_em": "2026-11-10T14:49:07.311541",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
@@ -681,9 +682,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,7%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -1,2% · IBGE ago/26",
+      "sub": "Produção física m/m · acum. ano 0,8% · IBGE ago/26",
       "fonte": "IBGE",
-      "acum_ano": -1.2
+      "acum_ano": 0.8
     },
     {
       "label": "IPP",

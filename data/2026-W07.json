@@ -174,9 +174,9 @@
       "label": "PIM (Indústria)",
       "valor": "-1,9%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -0,1% · IBGE dez/25",
+      "sub": "Produção física m/m · acum. ano 0,6% · IBGE dez/25",
       "fonte": "IBGE",
-      "acum_ano": -0.1
+      "acum_ano": 0.6
     },
     {
       "label": "IPP",

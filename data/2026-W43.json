@@ -1,10 +1,11 @@
 {
   "periodo": "2026-W43",
   "label": "Semana 43 · Outubro 2026",
-  "gerado_em": "2026-11-10T13:57:13.766848",
+  "status": "fechada",
+  "gerado_em": "2026-11-10T14:49:25.043121",
   "editorial": {
     "texto": "A Semana 43 foi a véspera do segundo turno, e o mercado chegou otimista. O dólar fechou a sexta-feira abaixo de R$ 5, a R$ 4,99, e a bolsa subiu 0,47%, para 205 mil pontos, acumulando alta de 10% em outubro, mesmo com pesquisas apontando empate entre os candidatos. Na inflação, o IPCA-15, prévia da inflação oficial, desacelerou para 0,32% em outubro, abaixo do esperado, com queda de luz, água e passagens aéreas, mas os alimentos voltaram a subir; em 12 meses, a prévia foi a 4,62%. O Boletim Focus manteve a projeção de 2026 em 5,22%, e a Selic, o juro básico, segue em 13,75%. A arrecadação federal bateu recorde em setembro, com R$ 239,4 bilhões, embora o crescimento sem receitas atípicas tenha sido de 3,69%.\n\nO que mudou: a conta de luz voltou a subir, com reajuste de 7,25% em Goiás aprovado pela Aneel, e o petróleo em alta, com o Brent a US$ 116, ampliou a defasagem do diesel da Petrobras para R$ 3,53 por litro, 145 dias sem reajuste. Entram na memória dois sinais novos: o risco de reajuste dos combustíveis após a eleição e a Black Friday estendida desde o 11.11.\n\nNa indústria, a importação de aço subiu 34,6% em setembro, com o Vietnã passando a China nos aços planos. No comércio e no e-commerce, a Abiacom projeta R$ 16,6 bilhões em vendas online na semana da Black Friday, alta de 24%. Nos serviços, a queda das passagens aéreas ajudou a conter a prévia da inflação. No agro, Mato Grosso chegou a 75,81% da soja plantada, mas o Imea reduziu a produtividade esperada por causa do El Niño. Na construção, as vendas de imóveis em São Paulo subiram 36,9% em agosto, mas o valor vendido caiu 12,8% e a oferta cresceu 50,7%.\n\nO ponto de atenção é o pós-eleição: prepare o orçamento de frete para um possível reajuste do diesel e trave o câmbio enquanto o dólar está abaixo de R$ 5.",
-    "gerado_em": "2026-11-10T13:57:08.643932",
+    "gerado_em": "2026-11-10T14:49:21.557824",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
@@ -415,9 +416,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,7%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -1,2% · IBGE ago/26",
+      "sub": "Produção física m/m · acum. ano 0,8% · IBGE ago/26",
       "fonte": "IBGE",
-      "acum_ano": -1.2
+      "acum_ano": 0.8
     },
     {
       "label": "IPP",

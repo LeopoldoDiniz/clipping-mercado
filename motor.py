@@ -35,8 +35,8 @@ RAW = "data/raw"                      # insumos de trabalho por semana (fora do 
 SETORES = ("industria", "comercio", "servicos", "agro", "construcao", "ecommerce")
 
 # limiar abaixo do qual um sinal "dorme" após ciclos sem aparecer
-LIMIAR_DORMIR = 25.0
-CICLOS_PARA_DORMIR = 3
+# Regra de dormência ABOLIDA em 10/11/2026 (decisão do usuário): nenhum sinal sai da memória ativa.
+# A relevância continua decaindo quando o sinal não reaparece; o ranqueamento cuida da prioridade.
 
 # ─────────────────────────────────────────────────────────
 # FONTES OFICIAIS: mapa palavra-chave → homepage oficial.
@@ -381,7 +381,8 @@ def salvar_memoria(mem):
 
 
 def sinais_ativos(mem):
-    return [s for s in mem["sinais"] if s.get("status") != "dormindo"]
+    """Todos os sinais (sem dormência desde 10/11/2026)."""
+    return list(mem["sinais"])
 
 
 def ranquear(sinais):
@@ -525,8 +526,6 @@ def processar(dados, mem, chave_periodo, sinais_ativos):
                                     sinal["persistencia"], sinal["corroboracao"],
                                     sinal["materializado"], ciclos)
         novo_status = sinal["status"]
-        if relev < LIMIAR_DORMIR and ciclos >= CICLOS_PARA_DORMIR:
-            novo_status = "dormindo"
         por_id[sinal["id"]].update({
             "ciclos_sem_aparecer": ciclos, "relevancia_atual": relev,
             "status": novo_status,

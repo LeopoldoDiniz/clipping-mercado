@@ -1,10 +1,11 @@
 {
   "periodo": "2026-W41",
   "label": "Semana 41 · Outubro 2026",
-  "gerado_em": "2026-11-10T13:34:53.549734",
+  "status": "fechada",
+  "gerado_em": "2026-11-10T14:49:16.820223",
   "editorial": {
     "texto": "A Semana 41 foi dominada por dois fatos: a eleição e a volta da inflação acima do teto. No primeiro turno, em 4 de outubro, Flávio Bolsonaro terminou à frente de Lula, e o mercado reagiu na segunda-feira com a bolsa subindo 7,85%, acima de 200 mil pontos pela primeira vez, o dólar caindo 4,12% e os juros futuros recuando mais de um ponto. O segundo turno será em 25 de outubro. Na inflação, o IPCA subiu 0,82% em setembro, acima dos 0,60% esperados, e o acumulado em 12 meses foi a 4,58%, acima do teto de 4,5%. O Boletim Focus elevou a projeção de 2026 para 5,01%, mas manteve a Selic, o juro básico, em 13,50% no fim do ano. A balança comercial teve superávit de US$ 7,74 bilhões em setembro.\n\nO que mudou: a energia, risco que acompanhamos, foi o maior peso da inflação, com a conta de luz subindo 7,98% após o fim do bônus de Itaipu. Entram na memória dois sinais novos: a volatilidade eleitoral até o segundo turno e o avanço dos carros eletrificados importados, já que dos 434 mil vendidos no ano só 72 mil foram fabricados no país.\n\nNa indústria, a produção de veículos teve o melhor setembro desde 2014 e os emplacamentos bateram recorde. No comércio, a CNC projeta alta de apenas 1,8% nas vendas do Dia das Crianças, com presentes 6,7% mais caros. Nos serviços, o índice de gerentes de compras caiu a 49,2 pontos, sinal de contração. No agro, a exportação de carne bovina caiu 35,1% com a cota chinesa esgotada. Na construção, o custo subiu 0,30% e o metro quadrado chegou perto de R$ 2 mil. No e-commerce, Correios e AliExpress renovaram a parceria de olho na Black Friday.\n\nO ponto de atenção é o segundo turno: evite decisões grandes antes de 25 de outubro e aproveite o dólar mais baixo para travar importações.",
-    "gerado_em": "2026-11-10T13:34:43.994175",
+    "gerado_em": "2026-11-10T14:49:12.490174",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
@@ -565,9 +566,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,7%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -1,2% · IBGE ago/26",
+      "sub": "Produção física m/m · acum. ano 0,8% · IBGE ago/26",
       "fonte": "IBGE",
-      "acum_ano": -1.2
+      "acum_ano": 0.8
     },
     {
       "label": "IPP",
@@ -634,54 +635,54 @@
     }
   ],
   "pressoes_ipca": {
-    "ref": "ago/26",
-    "mes": 8,
+    "ref": "set/26",
+    "mes": 9,
     "ano": 2026,
     "grupos": [
       {
-        "nome": "Despesas pessoais",
-        "ico": "🎭",
-        "val": 0.133
-      },
-      {
-        "nome": "Saúde e cuidados",
-        "ico": "➕",
-        "val": 0.032
-      },
-      {
-        "nome": "Educação",
-        "ico": "📚",
-        "val": 0.029
-      },
-      {
-        "nome": "Artigos de residência",
-        "ico": "🛋️",
-        "val": 0.022
-      },
-      {
-        "nome": "Vestuário",
-        "ico": "👕",
-        "val": 0.006
-      },
-      {
-        "nome": "Comunicação",
-        "ico": "📱",
-        "val": -0.004
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": 0.353
       },
       {
         "nome": "Alimentação e bebidas",
         "ico": "🍎",
-        "val": -0.073
+        "val": 0.179
       },
       {
         "nome": "Transportes",
         "ico": "🚌",
-        "val": -0.174
+        "val": 0.179
       },
       {
-        "nome": "Habitação",
-        "ico": "⚡",
-        "val": -0.29
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.033
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.029
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.027
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.011
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.009
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": 0.002
       }
     ]
   },

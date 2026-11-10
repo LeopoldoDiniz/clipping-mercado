@@ -2,10 +2,10 @@
   "periodo": "2026-W46",
   "label": "Semana 46 · Novembro 2026",
   "status": "em_andamento",
-  "gerado_em": "2026-11-10T14:32:36.378951",
+  "gerado_em": "2026-11-10T14:49:53.572377",
   "editorial": {
     "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
-    "gerado_em": "2026-11-10T14:23:56.541351",
+    "gerado_em": "2026-11-10T14:49:32.685604",
     "n_sinais_considerados": 15,
     "modelo": "claude",
     "abertura_de": "Semana 45 · Novembro 2026"
@@ -358,9 +358,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,8%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -2,5% · IBGE set/26",
+      "sub": "Produção física m/m · acum. ano 0,4% · IBGE set/26",
       "fonte": "IBGE",
-      "acum_ano": -2.5
+      "acum_ano": 0.4
     },
     {
       "label": "IPP",
