@@ -287,7 +287,7 @@ def coletar_kpis(ref=None):
     varejo_m = _sidra("/t/8880/n1/all/v/11708/p/last%2036/c11046/56734")
     varejo_a = _sidra("/t/8880/n1/all/v/11710/p/last%2036/c11046/56734")
     pim_m = _sidra("/t/8888/n1/all/v/11601/p/last%2036/c544/129314")
-    pim_a = _sidra("/t/8888/n1/all/v/11602/p/last%2036/c544/129314")
+    pim_a = _sidra("/t/8888/n1/all/v/11603/p/last%2036/c544/129314")
     ipp_m = _sidra("/t/6903/n1/all/v/1396/p/last%2036")
     ipp_a = _sidra("/t/6903/n1/all/v/1395/p/last%2036")
 
