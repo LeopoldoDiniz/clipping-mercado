@@ -593,6 +593,14 @@ def gerar_dados_portal(dados, T, C, chave, label, editorial=None, status="fechad
     # já com acumulado no ano. Se a API oficial falhar, mantém o valor da coleta.
     ref_kpi = ref_kpi or _sexta_da_chave(chave)
     kpis_validados = validar_kpis(dados.get("kpis", []), ref=ref_kpi)
+    # Fonte fora do ar: antes de herdar da semana anterior, mantém o último valor OFICIAL já
+    # publicado NESTA semana (ex.: rodada diária em ambiente sem acesso ao BCB/IBGE).
+    publicado = _ler_json(f"data/{chave}.json", {}) or {}
+    ja = {_kpi_bucket(x.get("label")): x for x in publicado.get("kpis") or []
+          if x.get("fonte") and not x.get("herdado_de") and not _kpi_indisponivel(x.get("valor"))}
+    kpis_validados = [dict(ja[_kpi_bucket(k.get("label"))])
+                      if _kpi_indisponivel(k.get("valor")) and _kpi_bucket(k.get("label")) in ja else k
+                      for k in kpis_validados]
     # ponto 1a — herança determinística caso algum indicador não venha da API oficial
     kpis_final = reconciliar_kpis(kpis_validados, chave)
     # indicadores setoriais + pressões do IPCA por grupo: OFICIAIS (IBGE), determinísticos.
@@ -608,6 +616,14 @@ def gerar_dados_portal(dados, T, C, chave, label, editorial=None, status="fechad
     except Exception as e:
         print(f"[pressoes_ipca] indisponível nesta rodada: {e}")
         pressoes_ipca = None
+    # mesma regra para setoriais e pressões: sem resposta da fonte, mantém o já publicado na semana
+    if not kpis_setoriais:
+        kpis_setoriais = [x for x in publicado.get("kpis_setoriais") or [] if not x.get("mkt")]
+        if kpis_setoriais:
+            print("[setoriais] fonte sem resposta — mantidos os valores oficiais já publicados nesta semana.")
+    if not pressoes_ipca and publicado.get("pressoes_ipca"):
+        pressoes_ipca = publicado["pressoes_ipca"]
+        print("[pressoes_ipca] fonte sem resposta — mantido o quadro já publicado nesta semana.")
 
     # E-commerce: NÃO há série oficial gratuita. Se a coleta capturou a manchete mensal de uma
     # fonte de MERCADO (MCC-ENET/ABComm/Neotrust), publica com atribuição + badge de estimativa.

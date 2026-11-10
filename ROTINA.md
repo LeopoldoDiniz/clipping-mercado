@@ -77,6 +77,8 @@ Retomada: se `trabalho/W_PREV/processado.json` já existe mas `data/W_PREV.json`
 `"status": "em_andamento"`, pule o `fechar` e continue do passo 4.
 
 ## 5. Conferência e publicação
+- Indicadores oficiais: se o motor imprimir `FONTE INDISPONÍVEL`, NÃO edite números à mão — o motor
+  mantém o último valor oficial já publicado na semana. Apenas registre no resumo quais fontes falharam.
 - Nenhum comando pode ter terminado com `ERRO`. Se algo falhar e você não conseguir corrigir só com
   dados, **não faça push**: relate o erro.
 - `git add -A && git commit -m "Rotina <HOJE>: <resumo>"` com a linha final
