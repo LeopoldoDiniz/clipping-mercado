@@ -1,96 +1,34 @@
 {
-  "periodo": "2026-W45",
-  "label": "Semana 45 · Novembro 2026",
-  "status": "fechada",
-  "gerado_em": "2026-11-10T14:24:02.219139",
+  "periodo": "2026-W46",
+  "label": "Semana 46 · Novembro 2026",
+  "status": "em_andamento",
+  "gerado_em": "2026-11-10T14:32:36.378951",
   "editorial": {
     "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
     "gerado_em": "2026-11-10T14:23:56.541351",
     "n_sinais_considerados": 15,
-    "modelo": "claude"
+    "modelo": "claude",
+    "abertura_de": "Semana 45 · Novembro 2026"
   },
   "clipping": [
     {
       "setores": [
-        "transversal",
-        "servicos",
-        "construcao"
+        "transversal"
       ],
-      "titulo": "Copom mantém Selic em 13,75% e interrompe ciclo de cortes",
-      "texto": "Decisão unânime de 04/11 surpreendeu parte do mercado, que esperava corte; comitê citou piora do câmbio e do cenário inflacionário.",
+      "titulo": "Focus eleva Selic de 2026 para 13,75% após pausa do Copom",
+      "texto": "Boletim de 09/11: IPCA de 2026 mantido em 5,22%, IPCA de 2027 sobe a 4,90%, dólar a R$ 5,35 e PIB cai para 1,75%.",
       "fontes": [
         {
           "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4366888/bc-copom-interrompe-ciclo-de-calibracao-e-mantem-taxa-selic-em-13-75-ao-ano"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/no-primeiro-copom-apos-eleicao-selic-e-mantida-em-1375-ao-ano-e-interrompe-ciclo-de-cortes/"
-        },
-        {
-          "nome": "Seu Dinheiro",
-          "url": "https://www.seudinheiro.com/2026/economia/copom-segura-selic-em-1375-e-interrompe-ciclo-de-cortes-nos-juros-mlim/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Copom projeta IPCA de 5,6% em 2026 e 4,7% em 2027",
-      "texto": "Comitê citou câmbio e El Niño entre os riscos; próxima reunião será em 8 e 9 de dezembro.",
-      "fontes": [
-        {
-          "nome": "Muita Informação",
-          "url": "https://muitainformacao.com.br/negocios/banco-central-surpreende-mercado-mantem-selic-em-1375-e-interrompe-sequencia-de-cinco-cortes-nos-juros/"
-        },
-        {
-          "nome": "Diario de Pernambuco",
-          "url": "https://www.diariodepernambuco.com.br/economia/2026/11/11728373-selic-banco-central-mantem-juros-basicos-em-1375-ao-ano.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal"
-      ],
-      "titulo": "Primeiro Focus pós-eleição eleva dólar para R$ 5,34",
-      "texto": "Projeção do IPCA de 2026 sobe a 5,22%, Selic de fim de ano a 13,50% e PIB cai para 1,76%; IPCA de 2027 vai a 4,76%.",
-      "fontes": [
-        {
-          "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/economia/2026/11/03/primeiro-focus-pos-eleicao-eleva-projecoes-de-inflacao-selic-e-dolar-para-2026/"
-        },
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/03/11/2026/economia/focus-eleva-estimativas-para-selic-inflacao-e-dolar-projecao-do-pib-e-reduzida/"
-        },
-        {
-          "nome": "Bora Investir (B3)",
-          "url": "https://borainvestir.b3.com.br/noticias/focus-mercado-eleva-projecao-para-inflacao-juros-e-dolar-em-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "transversal",
-        "industria",
-        "agro"
-      ],
-      "titulo": "Balança tem superávit recorde para outubro: US$ 9,32 bi",
-      "texto": "Exportações subiram 20%, puxadas pelo petróleo; vendas aos EUA cresceram 11,4% e à China caíram 5,3%.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/07/11/2026/economia/balanca-comercial-tem-maior-superavit-para-outubro-desde-1989/"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/brasil/balanca-comercial-tem-superavit-de-us-93-bilhoes-em-outubro-alta-de-39-em-um-ano-e-exportacoes-sobem-20/"
+          "url": "https://www.dgabc.com.br/Noticia/4367626/crescimento-do-pib-de-2026-passa-de-1-76-para-1-75-aponta-focus"
         },
         {
           "nome": "A Crítica",
-          "url": "https://acritica.net/economia/exportacoes-crescem-20-e-brasil-registra-superavit-recorde-para-outubro-em-37-anos/"
+          "url": "https://acritica.net/economia/focus-9-novembro-selic-13-75-ipca-2027-dolar-5-35-pib/"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-09112026/"
         }
       ]
     },
@@ -99,119 +37,67 @@
         "transversal",
         "servicos"
       ],
-      "titulo": "Caged cria 121,3 mil vagas em setembro, pior setembro desde 2020",
-      "texto": "Geração caiu cerca de 25% frente a agosto; no ano, 1,25 milhão de vagas, 27,9% abaixo de 2025. Serviços lideraram.",
+      "titulo": "Bolsa sobe 2,2% e volta a 172 mil pontos; dólar fica em R$ 5,50",
+      "texto": "Na segunda, 09/11, investidores avaliaram o primeiro pronunciamento de Lula após a reeleição; a bolsa segue longe dos 205 mil pontos pré-eleição.",
       "fontes": [
         {
-          "nome": "Agência Gov",
-          "url": "https://agenciagov.ebc.com.br/noticias/202611/brasil-gera-121-3-mil-empregos-formais-em-setembro-e-saldo-no-ano-chega-a-1-24-milhao-de-novos-postos-com-carteira-assinada"
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-9-novembro-2026/"
         },
         {
-          "nome": "IstoÉ",
-          "url": "https://istoe.com.br/brasil-cria-121-mil-empregos-formais-setembro-2026"
-        },
-        {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/economia/caged-brasil-cria-1213-mil-vagas-em-setembro-mas-perde-ritmo/"
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/ibovespa-sobe-222-dolar-tem-baixa-e-termina-o-dia-cotado-a-r-550"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "servicos"
+        "transversal"
       ],
-      "titulo": "Dólar fecha a R$ 5,51, maior nível desde dezembro de 2025",
-      "texto": "Moeda subiu cerca de 1,2% na semana; Ibovespa teve a primeira semana positiva após três de perdas, aos 168.498 pontos.",
+      "titulo": "Lula promete manter regras fiscais, sem medidas concretas",
+      "texto": "Em rede nacional, o presidente citou preocupação com dívida e juros e meta de investimento acima de 20% do PIB, sem detalhar como atingi-la.",
       "fontes": [
         {
-          "nome": "Acessa",
-          "url": "https://www.acessa.com/economia/2026/11/343800-dolar-sobe-para-rs-551-com-dados-de-emprego-nos-eua.html"
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4367623/lula-fala-sobre-juros-divida-publica-e-seguranca-apos-reeleicao"
         },
         {
-          "nome": "Brasil 61",
-          "url": "https://brasil61.com/n/ibovespa-sobe-1-39-e-fecha-aos-168-498-45-pontos-nesta-sexta-feira-6-bras2617440.amp"
-        },
-        {
-          "nome": "A Crítica",
-          "url": "https://acritica.net/economia/dolar-fecha-r-550-primeira-vez-ano-ibovespa-sobe-139/"
+          "nome": "Mixvale",
+          "url": "https://www.mixvale.com.br/2026/11/08/lula-faz-pronunciamento-em-rede-nacional-e-fala-em-responsabilidade-fiscal/"
         }
       ]
     },
     {
       "setores": [
-        "industria"
-      ],
-      "titulo": "Produção industrial cai 0,8% em setembro, 4ª queda em cinco meses",
-      "texto": "Recuo veio pior que o previsto (-0,4%); 17 de 25 ramos caíram e a produção recua 2,5% em um ano.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/05/11/2026/economia/producao-da-industria-recua-08-em-setembro-4a-queda-em-cinco-meses/"
-        },
-        {
-          "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/11/1269381-producao-industrial-cai-08-em-setembro-ante-agosto-revela-ibge.html"
-        },
-        {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/geral/2026/11/industria-cai-setembro-maior-queda-dois-anos-e-meio/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "Bens de capital recuam 1,9% em setembro",
-      "texto": "A produção de máquinas e equipamentos caiu no mês; a indústria está 16,5% abaixo do recorde de maio de 2011.",
-      "fontes": [
-        {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/geral/2026/11/industria-cai-setembro-maior-queda-dois-anos-e-meio/"
-        },
-        {
-          "nome": "IstoÉ",
-          "url": "https://istoe.com.br/industria-brasileira-queda-producao-setembro-2026"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria"
-      ],
-      "titulo": "PMI industrial sobe a 46,1 em outubro, mas segue em contração",
-      "texto": "S&P Global: produção cai pelo sexto mês e empresas citam perturbações ligadas ao segundo turno; perda de empregos é a maior em 2,5 anos.",
-      "fontes": [
-        {
-          "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/11/1269088-pmi-industrial-do-brasil-sobe-a-461-pontos-em-outubro-apos-448-em-setembro-mostra-s-p-global.html"
-        },
-        {
-          "nome": "Forbes Brasil",
-          "url": "https://forbes.com.br/forbes-money/2026/11/a-industria-brasileira-segue-em-queda-em-outubro-e-as-empresas-citam-perturbacoes-na-razao-das-eleicoes/"
-        },
-        {
-          "nome": "Notícias Agrícolas",
-          "url": "https://www.noticiasagricolas.com.br/noticia/410273"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "industria",
         "comercio"
       ],
-      "titulo": "Emplacamentos caem 4% em outubro, mas sobem 12,6% no ano",
-      "texto": "Fenabrave: 489,1 mil unidades no mês, com dois dias úteis a menos; projeção de 2026 foi elevada para alta de 12,8%.",
+      "titulo": "ICVA: varejo cai 4,0% real em outubro, 17º mês de queda",
+      "texto": "Cielo: duráveis e semiduráveis recuam 8,9% e serviços 8,5%; o Centro-Oeste tem a maior queda, de 5,4%.",
       "fontes": [
         {
-          "nome": "A Crítica",
-          "url": "https://acritica.net/economia/venda-de-veiculos-novos-deve-crescer-128-em-2026-e-chegar-a-56-milhoes-de-unidades/"
+          "nome": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/11/10/cielo-icva-aponta-queda-anual-de-4-das-vendas-do-varejo-em-outubro-descontada-a-inflacao.html"
         },
         {
-          "nome": "Acessa",
-          "url": "https://www.acessa.com/economia/2026/11/343620-fenabrave-preve-aumento-de-128-na-venda-de-veiculos-novos-em-2026.html"
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/vendas-do-varejo-caem-4-em-outubro-aponta-icva-da-cielo/"
+        },
+        {
+          "nome": "Antena 1",
+          "url": "https://www.antena1.com.br/noticias/icva-mostra-queda-real-de-4-nas-vendas-no-varejo-no-brasil-em-outubro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Calote dos consumidores lidera causas de recuperação judicial no varejo",
+      "texto": "Monitor RGF-BizDoc: 1.024 varejistas em recuperação judicial e 1.711 em falência em setembro; inadimplência aparece em 55% dos pedidos.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/10/11/2026/noticias-varejo/calote-dos-consumidores-pressiona-o-caixa-do-varejo-e-lidera-causas-de-recuperacao-judicial"
         }
       ]
     },
@@ -220,20 +106,12 @@
         "ecommerce",
         "comercio"
       ],
-      "titulo": "Shopee, Mercado Livre e Magalu antecipam Black Friday para o 11.11",
-      "texto": "Plataformas somam mais de R$ 125 milhões em cupons; Black Friday oficial será em 27 de novembro.",
+      "titulo": "E-commerce recua 0,5% em outubro, enquanto loja física sobe 1,9%",
+      "texto": "No ICVA nominal de outubro, o canal online ficou atrás do físico, às vésperas do 11.11.",
       "fontes": [
         {
-          "nome": "Gazeta SP",
-          "url": "https://www.gazetasp.com.br/economia/shopee-mercado-livre-e-magalu-adiantam-black-friday-de-27-de-novembro-para-o-dia-11-com-r-125-milhoes-em-cupons/"
-        },
-        {
-          "nome": "NSC Total",
-          "url": "https://www.nsctotal.com.br/economia/black-friday-antecipada-125-milhoes-cupons"
-        },
-        {
-          "nome": "Correio 24 Horas",
-          "url": "https://www.correio24horas.com.br/economia/shopee-mercado-livre-e-magalu-antecipam-black-friday-2026-com-r-125-milhoes-em-cupons-1126"
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/vendas-do-varejo-caem-4-em-outubro-aponta-icva-da-cielo/"
         }
       ]
     },
@@ -241,60 +119,123 @@
       "setores": [
         "ecommerce"
       ],
-      "titulo": "Shopee libera R$ 48 milhões em cupons para 11.11 e Black Friday",
-      "texto": "Plataforma terá 30 centros de distribuição operando em novembro e dezembro; 85% dos pedidos em SP chegam em até dois dias.",
+      "titulo": "11.11 deve movimentar R$ 3,17 bilhões, alta de 21%",
+      "texto": "Neotrust projeta a data como a de maior concentração de vendas do ano depois da Black Friday.",
       "fontes": [
         {
-          "nome": "Diário do Comércio",
-          "url": "https://diariodocomercio.com.br/trends/shopee-libera-r-48-milhoes-em-cupons-e-abre-hoje-sua-maior-temporada-de-descontos-do-ano-no-brasil/"
+          "nome": "Exame",
+          "url": "https://exame.com/tecnologia/examelab/11-11-2026-onde-encontrar-ofertas-como-comparar/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "servicos"
+      ],
+      "titulo": "Nubank e Shopee fazem parceria de pagamentos para o 11.11",
+      "texto": "Clientes Nubank terão cupons de até 50% e show transmitido no app em 10/11.",
+      "fontes": [
+        {
+          "nome": "Portal Filipe Mello",
+          "url": "https://www.portalfilipemello.com/2026/11/nubank-e-shopee-anunciam-o-1111-com.html"
+        },
+        {
+          "nome": "Brasil Inovador",
+          "url": "https://brasilinovador.com.br/nubank-e-shopee-articulam-parceria-estrategica-de-pagamentos-e-live-commerce-para-o-11-11/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Recuperação judicial no agro cresce 57,5% no 3º trimestre",
+      "texto": "São 1.416 empresas em recuperação; grãos e fibras concentram 800 casos, alta de 74% em um ano.",
+      "fontes": [
+        {
+          "nome": "RCN67",
+          "url": "https://rcn67.com.br/campo-grande/recuperacao-judicial-agro-cresce-57-5-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportação de milho acelera no início de novembro",
+      "texto": "Ritmo diário de embarques supera novembro de 2025 em 20,1%, com receita diária 33,8% maior.",
+      "fontes": [
+        {
+          "nome": "Portal do Agronegócio",
+          "url": "https://portaldoagronegocio.com.br/agricultura/milho-e-sorgo/noticias/exportacoes-de-milho-aceleram-em-novembro-e-ritmo-diario-supera-2025-em-20-1"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Embarques de carne bovina começam novembro perto de 2025",
+      "texto": "Primeira parcial do mês mostra média diária semelhante à de novembro do ano passado.",
+      "fontes": [
+        {
+          "nome": "Farm News",
+          "url": "https://farmnews.com.br/mercado/exportacao-de-carne-bovina-primeira-parcial-de-novembro-de-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "industria"
+      ],
+      "titulo": "Exportações de outubro: indústria extrativa sobe 53,5%",
+      "texto": "Agropecuária somou cerca de R$ 4,7 bilhões à receita e a transformação cresceu 7,7%, segundo dados da Secex.",
+      "fontes": [
+        {
+          "nome": "NX1",
+          "url": "https://nx1.com.br/2026/11/10/agro-amplia-exportacoes-e-ajuda-brasil-a-movimentar-r-365-bilhoes-em-outubro/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Câmara de BH muda cálculo do ISS da construção civil",
+      "texto": "Deduções ficam restritas aos casos previstos em lei; impacto nos preços de obras ainda não foi estimado.",
+      "fontes": [
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/2026/11/10/camara-bh-aprova-mudanca-iss-construcao-civil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Fortaleza terá 550 moradias do MCMV em terreno da União",
+      "texto": "Área de 55,6 mil m² foi destinada ao Minha Casa, Minha Vida – Entidades.",
+      "fontes": [
+        {
+          "nome": "Opinião CE",
+          "url": "https://www.opiniaoce.com.br/fortaleza/2026/11/10/capital-tera-550-novas-moradias-populares-em-terreno-da-uniao/"
         }
       ]
     },
     {
       "setores": [
         "construcao",
-        "servicos"
+        "comercio"
       ],
-      "titulo": "Construção pede transição de cinco anos para o fim da escala 6x1",
-      "texto": "CBIC entregou 11 pleitos ao ministro do Trabalho; setor estima perda de 600 milhões de horas e 300 mil contratações necessárias.",
+      "titulo": "Procon de Maringá acha variação de até 50,5% em materiais de construção",
+      "texto": "Pesquisa ocorre em meio à reconstrução de imóveis atingidos por tornado na região.",
       "fontes": [
         {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/05/11/2026/economia/construcao-defende-periodo-de-transicao-de-5-anos-para-acabar-com-jornada-6x1/"
-        },
-        {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4367039/construcao-defende-periodo-de-transicao-de-5-anos-para-acabar-com-jornada-6x1"
-        },
-        {
-          "nome": "Movimento Econômico",
-          "url": "https://movimentoeconomico.com.br/construcao-civil/2026/11/05/construcao-civil-propoe-transicao-de-cinco-anos-para-nova-jornada-5x2/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Chuva acelera plantio da soja em MT e GO, diz Conab",
-      "texto": "Boletim de 05/11 aponta avanço da semeadura no Centro-Oeste, mas excesso de chuva prejudica trigo e arroz no Sul.",
-      "fontes": [
-        {
-          "nome": "Brasil 61",
-          "url": "https://brasil61.com/n/chuva-acelera-plantio-da-soja-em-mt-e-go-mas-prejudica-trigo-e-arroz-no-sul-aponta-conab-bras2617410.amp"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Plantio da soja em MT chega perto de 90%",
-      "texto": "Avanço acima da média de cinco anos favorece a janela do milho segunda safra, segundo o Imea.",
-      "fontes": [
-        {
-          "nome": "Revista Cultivar",
-          "url": "https://revistacultivar.com.br/noticias/avanco-da-soja-pode-favorecer-plantio-do-milho-em-mt"
+          "nome": "Maringá Mais",
+          "url": "https://www.maringamais.com.br/2026/11/10/procon-aponta-variacao-de-ate-5051-nos-precos-de-materiais-de-construcao/"
         }
       ]
     }
@@ -373,7 +314,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 06/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 10/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -393,9 +334,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,50",
+      "valor": "R$ 5,51",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 06/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 09/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -636,24 +577,24 @@
         ]
       },
       "comercio": {
-        "prov": "Juros parados e dólar alto: o Natal vai ser de quê?",
-        "quote": "Copom manteve a Selic em 13,75% e interrompeu o ciclo de cortes.",
+        "prov": "Com o calote do consumidor levando varejistas à recuperação judicial, quanto do seu caixa depende de quem pode não pagar?",
+        "quote": "O varejo caiu 4,0% real em outubro, o 17º mês seguido de queda, segundo o ICVA da Cielo.",
         "edi": [
-          "O BC interrompeu os cortes de juros citando câmbio e inflação, e o Focus elevou o dólar esperado para R$ 5,34.",
-          "Os emplacamentos caíram 4% em outubro, mas o ano segue 12,6% acima de 2025."
+          "O ICVA mostrou nova queda real em outubro, com bens duráveis em -8,9% e serviços em -8,5%; a Cielo descreve um consumidor mais seletivo, que adia compras.",
+          "Levantamento do Monitor RGF-BizDoc aponta 1.024 varejistas em recuperação judicial em setembro, com a inadimplência dos clientes presente em 55% dos pedidos."
         ],
         "acoes": [
           {
-            "ico": "🎄",
-            "txt": "Compre estoque de Natal com cautela cambial."
-          },
-          {
             "ico": "💳",
-            "txt": "Mantenha crédito seletivo."
+            "txt": "Reduza vendas a prazo para clientes sem histórico; prefira Pix e cartão."
           },
           {
-            "ico": "🏷️",
-            "txt": "Defina preços de importados com o dólar atual."
+            "ico": "📦",
+            "txt": "Evite estoques de duráveis, o segmento que mais cai."
+          },
+          {
+            "ico": "🧾",
+            "txt": "Monitore a saúde financeira de fornecedores e parceiros do varejo."
           }
         ]
       },
@@ -680,68 +621,68 @@
         ]
       },
       "agro": {
-        "prov": "Plantio adiantado em MT: a janela do milho safrinha está garantida?",
-        "quote": "Plantio da soja em Mato Grosso chegou perto de 90%.",
+        "prov": "Exportação firme e recuperações judiciais em alta: o problema do agro é preço ou dívida?",
+        "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
         "edi": [
-          "O avanço acima da média em Mato Grosso favorece o milho segunda safra, e a Conab apontou chuva acelerando o plantio no Centro-Oeste.",
-          "No Sul, o excesso de chuva prejudicou trigo e arroz."
+          "Grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano, refletindo endividamento e juros altos.",
+          "No comércio exterior, a exportação de milho acelerou no início de novembro, com ritmo diário 20,1% acima de 2025, e a carne bovina começou o mês perto do ano passado."
         ],
         "acoes": [
           {
+            "ico": "🏦",
+            "txt": "Renegocie dívidas rurais antes do vencimento da safra."
+          },
+          {
             "ico": "🌽",
-            "txt": "Garanta sementes e insumos do milho safrinha."
+            "txt": "Aproveite o ritmo forte de exportação de milho para vender estoques."
           },
           {
-            "ico": "💱",
-            "txt": "Aproveite o dólar alto para vender a próxima safra."
-          },
-          {
-            "ico": "🌧️",
-            "txt": "No Sul, avalie perdas de trigo para seguro."
+            "ico": "🤝",
+            "txt": "Exija garantias em vendas a prazo para produtores de grãos."
           }
         ]
       },
       "construcao": {
-        "prov": "Fim da 6x1 e Selic parada: 2027 ficou mais caro para construir?",
-        "quote": "Construção pede transição de cinco anos para o fim da escala 6x1.",
+        "prov": "Preço de material variando 50% na mesma cidade: você está comprando bem?",
+        "quote": "Procon de Maringá encontrou variação de até 50,5% nos preços de materiais de construção.",
         "edi": [
-          "A CBIC entregou 11 pleitos ao Ministério do Trabalho e estima 300 mil contratações necessárias com a escala 5x2.",
-          "O Copom manteve a Selic, interrompendo o ciclo de cortes que vinha aliviando o crédito imobiliário."
+          "Em Belo Horizonte, a Câmara mudou o cálculo do ISS da construção civil, restringindo deduções, sem estimativa de impacto nos preços.",
+          "Em Fortaleza, a União destinou terreno de 55,6 mil m² para 550 moradias do MCMV – Entidades."
         ],
         "acoes": [
           {
-            "ico": "👷",
-            "txt": "Inclua o custo da nova jornada nos orçamentos de 2027."
-          },
-          {
-            "ico": "🏦",
-            "txt": "Antecipe repasses enquanto o funding está disponível."
-          },
-          {
             "ico": "🧱",
-            "txt": "Compre insumos importados antes de novos repasses cambiais."
+            "txt": "Faça cotação ampla de materiais: a dispersão de preços é alta."
+          },
+          {
+            "ico": "🧾",
+            "txt": "Em BH, recalcule o ISS das obras com as novas regras."
+          },
+          {
+            "ico": "🏠",
+            "txt": "Acompanhe chamamentos do MCMV – Entidades em terrenos da União."
           }
         ]
       },
       "ecommerce": {
-        "prov": "Black Friday começa no 11.11: sua operação aguenta duas semanas de pico?",
-        "quote": "Shopee, Mercado Livre e Magalu somam mais de R$ 125 milhões em cupons.",
+        "prov": "O online recuou em outubro: o 11.11 vai compensar ou apenas antecipar compras?",
+        "quote": "O e-commerce recuou 0,5% nominal em outubro, enquanto a loja física subiu 1,9%, segundo a Cielo.",
         "edi": [
-          "As plataformas anteciparam as campanhas para o 11.11, e a Shopee terá 30 centros de distribuição operando em novembro e dezembro.",
-          "Com o dólar a R$ 5,51, produtos importados ficam mais caros para o consumidor."
+          "A Neotrust projeta R$ 3,17 bilhões no 11.11, alta de 21%, a maior data do ano depois da Black Friday.",
+          "Nubank e Shopee fecharam parceria de pagamentos para a data, com cupons de até 50% para clientes do banco."
         ],
         "acoes": [
           {
             "ico": "🗓️",
-            "txt": "Distribua ofertas entre 11.11 e 27/11."
+            "txt": "Concentre ofertas no 11.11 e prepare a segunda onda para 27/11."
           },
           {
-            "ico": "🚚",
-            "txt": "Reforce logística para duas semanas de pico."
+            "ico": "💳",
+            "txt": "Ofereça condições de pagamento parceladas sem juros em itens de maior tíquete."
           },
           {
-            "ico": "💱",
-            "txt": "Reprecifique importados com o dólar atual."
+            "ico": "📊",
+            "txt": "Compare o resultado do 11.11 com outubro para ajustar a Black Friday."
           }
         ]
       }

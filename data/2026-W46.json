@@ -1,0 +1,883 @@
+{
+  "periodo": "2026-W46",
+  "label": "Semana 46 · Novembro 2026",
+  "status": "em_andamento",
+  "gerado_em": "2026-11-10T14:32:36.378951",
+  "editorial": {
+    "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
+    "gerado_em": "2026-11-10T14:23:56.541351",
+    "n_sinais_considerados": 15,
+    "modelo": "claude",
+    "abertura_de": "Semana 45 · Novembro 2026"
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus eleva Selic de 2026 para 13,75% após pausa do Copom",
+      "texto": "Boletim de 09/11: IPCA de 2026 mantido em 5,22%, IPCA de 2027 sobe a 4,90%, dólar a R$ 5,35 e PIB cai para 1,75%.",
+      "fontes": [
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4367626/crescimento-do-pib-de-2026-passa-de-1-76-para-1-75-aponta-focus"
+        },
+        {
+          "nome": "A Crítica",
+          "url": "https://acritica.net/economia/focus-9-novembro-selic-13-75-ipca-2027-dolar-5-35-pib/"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-09112026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Bolsa sobe 2,2% e volta a 172 mil pontos; dólar fica em R$ 5,50",
+      "texto": "Na segunda, 09/11, investidores avaliaram o primeiro pronunciamento de Lula após a reeleição; a bolsa segue longe dos 205 mil pontos pré-eleição.",
+      "fontes": [
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-9-novembro-2026/"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/ibovespa-sobe-222-dolar-tem-baixa-e-termina-o-dia-cotado-a-r-550"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Lula promete manter regras fiscais, sem medidas concretas",
+      "texto": "Em rede nacional, o presidente citou preocupação com dívida e juros e meta de investimento acima de 20% do PIB, sem detalhar como atingi-la.",
+      "fontes": [
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4367623/lula-fala-sobre-juros-divida-publica-e-seguranca-apos-reeleicao"
+        },
+        {
+          "nome": "Mixvale",
+          "url": "https://www.mixvale.com.br/2026/11/08/lula-faz-pronunciamento-em-rede-nacional-e-fala-em-responsabilidade-fiscal/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "ICVA: varejo cai 4,0% real em outubro, 17º mês de queda",
+      "texto": "Cielo: duráveis e semiduráveis recuam 8,9% e serviços 8,5%; o Centro-Oeste tem a maior queda, de 5,4%.",
+      "fontes": [
+        {
+          "nome": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/11/10/cielo-icva-aponta-queda-anual-de-4-das-vendas-do-varejo-em-outubro-descontada-a-inflacao.html"
+        },
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/vendas-do-varejo-caem-4-em-outubro-aponta-icva-da-cielo/"
+        },
+        {
+          "nome": "Antena 1",
+          "url": "https://www.antena1.com.br/noticias/icva-mostra-queda-real-de-4-nas-vendas-no-varejo-no-brasil-em-outubro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Calote dos consumidores lidera causas de recuperação judicial no varejo",
+      "texto": "Monitor RGF-BizDoc: 1.024 varejistas em recuperação judicial e 1.711 em falência em setembro; inadimplência aparece em 55% dos pedidos.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/10/11/2026/noticias-varejo/calote-dos-consumidores-pressiona-o-caixa-do-varejo-e-lidera-causas-de-recuperacao-judicial"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "E-commerce recua 0,5% em outubro, enquanto loja física sobe 1,9%",
+      "texto": "No ICVA nominal de outubro, o canal online ficou atrás do físico, às vésperas do 11.11.",
+      "fontes": [
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/vendas-do-varejo-caem-4-em-outubro-aponta-icva-da-cielo/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "11.11 deve movimentar R$ 3,17 bilhões, alta de 21%",
+      "texto": "Neotrust projeta a data como a de maior concentração de vendas do ano depois da Black Friday.",
+      "fontes": [
+        {
+          "nome": "Exame",
+          "url": "https://exame.com/tecnologia/examelab/11-11-2026-onde-encontrar-ofertas-como-comparar/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "servicos"
+      ],
+      "titulo": "Nubank e Shopee fazem parceria de pagamentos para o 11.11",
+      "texto": "Clientes Nubank terão cupons de até 50% e show transmitido no app em 10/11.",
+      "fontes": [
+        {
+          "nome": "Portal Filipe Mello",
+          "url": "https://www.portalfilipemello.com/2026/11/nubank-e-shopee-anunciam-o-1111-com.html"
+        },
+        {
+          "nome": "Brasil Inovador",
+          "url": "https://brasilinovador.com.br/nubank-e-shopee-articulam-parceria-estrategica-de-pagamentos-e-live-commerce-para-o-11-11/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Recuperação judicial no agro cresce 57,5% no 3º trimestre",
+      "texto": "São 1.416 empresas em recuperação; grãos e fibras concentram 800 casos, alta de 74% em um ano.",
+      "fontes": [
+        {
+          "nome": "RCN67",
+          "url": "https://rcn67.com.br/campo-grande/recuperacao-judicial-agro-cresce-57-5-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportação de milho acelera no início de novembro",
+      "texto": "Ritmo diário de embarques supera novembro de 2025 em 20,1%, com receita diária 33,8% maior.",
+      "fontes": [
+        {
+          "nome": "Portal do Agronegócio",
+          "url": "https://portaldoagronegocio.com.br/agricultura/milho-e-sorgo/noticias/exportacoes-de-milho-aceleram-em-novembro-e-ritmo-diario-supera-2025-em-20-1"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Embarques de carne bovina começam novembro perto de 2025",
+      "texto": "Primeira parcial do mês mostra média diária semelhante à de novembro do ano passado.",
+      "fontes": [
+        {
+          "nome": "Farm News",
+          "url": "https://farmnews.com.br/mercado/exportacao-de-carne-bovina-primeira-parcial-de-novembro-de-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro",
+        "industria"
+      ],
+      "titulo": "Exportações de outubro: indústria extrativa sobe 53,5%",
+      "texto": "Agropecuária somou cerca de R$ 4,7 bilhões à receita e a transformação cresceu 7,7%, segundo dados da Secex.",
+      "fontes": [
+        {
+          "nome": "NX1",
+          "url": "https://nx1.com.br/2026/11/10/agro-amplia-exportacoes-e-ajuda-brasil-a-movimentar-r-365-bilhoes-em-outubro/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Câmara de BH muda cálculo do ISS da construção civil",
+      "texto": "Deduções ficam restritas aos casos previstos em lei; impacto nos preços de obras ainda não foi estimado.",
+      "fontes": [
+        {
+          "nome": "NC News",
+          "url": "https://ncnews.com.br/2026/11/10/camara-bh-aprova-mudanca-iss-construcao-civil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Fortaleza terá 550 moradias do MCMV em terreno da União",
+      "texto": "Área de 55,6 mil m² foi destinada ao Minha Casa, Minha Vida – Entidades.",
+      "fontes": [
+        {
+          "nome": "Opinião CE",
+          "url": "https://www.opiniaoce.com.br/fortaleza/2026/11/10/capital-tera-550-novas-moradias-populares-em-terreno-da-uniao/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "comercio"
+      ],
+      "titulo": "Procon de Maringá acha variação de até 50,5% em materiais de construção",
+      "texto": "Pesquisa ocorre em meio à reconstrução de imóveis atingidos por tornado na região.",
+      "fontes": [
+        {
+          "nome": "Maringá Mais",
+          "url": "https://www.maringamais.com.br/2026/11/10/procon-aponta-variacao-de-ate-5051-nos-precos-de-materiais-de-construcao/"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Primeiras semanas do novo mandato",
+      "texto": "Mercado aguarda sinais fiscais do governo reeleito; dólar sobe a R$ 5,51.",
+      "score": 7.2,
+      "setores": [
+        "transversal",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Juros param de cair",
+      "texto": "Copom mantém 13,75% e projeta IPCA de 5,6%; indústria cai 0,8% em setembro.",
+      "score": 7.8,
+      "setores": [
+        "transversal",
+        "industria",
+        "construcao"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Emprego perde fôlego",
+      "texto": "Caged cria 121,3 mil vagas, pior setembro desde 2020.",
+      "score": 6.6,
+      "setores": [
+        "servicos",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Black Friday no 11.11",
+      "texto": "Plataformas antecipam campanhas com R$ 125 milhões em cupons.",
+      "score": 6.2,
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Chuvas no plantio",
+      "texto": "Chuva acelera a soja no Centro-Oeste, mas prejudica trigo e arroz no Sul.",
+      "score": 5.8,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Fim da escala 6x1",
+      "texto": "Construção pede cinco anos de transição e estima 300 mil contratações necessárias.",
+      "score": 6.5,
+      "setores": [
+        "construcao",
+        "servicos",
+        "comercio"
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "13,75% a.a.",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros · BCB/SGS · 10/11/2026",
+      "fonte": "BCB/SGS"
+    },
+    {
+      "label": "IPCA",
+      "valor": "0,82%",
+      "cor": "down",
+      "sub": "Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeção Focus 2026: 5,22%",
+      "fonte": "IBGE",
+      "acum_ano": 3.95,
+      "ipca_12m": 4.58,
+      "meta_inflacao": 3.0,
+      "meta_desde": "2026-01-01",
+      "meta_fonte": "BCB/SGS 13521",
+      "projecao": 5.22,
+      "projecao_em": "2026-11-06",
+      "projecao_fonte": "Focus/BCB"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,51",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB · 09/11/2026",
+      "fonte": "BCB/PTAX"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,2%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · jul-ago-set 2026",
+      "fonte": "IBGE"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "0,1%",
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.7
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "-0,8%",
+      "cor": "down",
+      "sub": "Produção física m/m · acum. ano -2,5% · IBGE set/26",
+      "fonte": "IBGE",
+      "acum_ano": -2.5
+    },
+    {
+      "label": "IPP",
+      "valor": "1,54%",
+      "cor": "down",
+      "sub": "Preços ao produtor m/m · acum. ano 5,04% · IBGE set/26",
+      "fonte": "IBGE",
+      "acum_ano": 5.04
+    }
+  ],
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "-0,1%",
+      "cor": "down",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +1,7% · IBGE/PMS ago/26",
+      "ref": "ago/26",
+      "pt": -0.1,
+      "acum": 1.7,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 2.000",
+      "cor": "up",
+      "sub": "Custo médio da construção · +0,30% mês · acum. ano +5,72% · IBGE/SINAPI set/26",
+      "ref": "set/26",
+      "pt": 1999.73,
+      "acum": 5.72,
+      "flow": false,
+      "unit": "R$/m²"
+    },
+    {
+      "setor": "construcao",
+      "key": "construcao_incc",
+      "setorLabel": "Construção",
+      "label": "INCC (FGV)",
+      "valor": "+0,37%",
+      "cor": "up",
+      "sub": "Custo da construção (mercado) · var. mês · acum. ano +6,22% · FGV/BCB-SGS out/26",
+      "ref": "out/26",
+      "pt": 0.37,
+      "acum": 6.22,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "agro",
+      "setorLabel": "Agro",
+      "label": "Safra de grãos (LSPA)",
+      "valor": "354,5 Mt",
+      "cor": "up",
+      "sub": "Estimativa da safra 2026 · +0,4% vs. mês anterior · IBGE/LSPA set/26",
+      "ref": "set/26",
+      "pt": 354.5,
+      "acum": null,
+      "flow": false,
+      "unit": "Mt"
+    }
+  ],
+  "pressoes_ipca": {
+    "ref": "set/26",
+    "mes": 9,
+    "ano": 2026,
+    "grupos": [
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": 0.353
+      },
+      {
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": 0.179
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": 0.179
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.033
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.029
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.027
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.011
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.009
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": 0.002
+      }
+    ]
+  },
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Importados de baixo valor sem imposto federal elevam a ameaça de substitutos para a indústria leve."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Alta rivalidade e poder dos compradores, com entrada facilitada por novos formatos."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Fragmentado, com rivalidade crescente e diferenciação por especialização."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Setor com altas barreiras de entrada e forte influência de fornecedores e compradores globais."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Setor cíclico, com custos de insumos relevantes e menor ameaça de substitutos."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Altíssima rivalidade e poder dos compradores, com constante entrada de novos players e modelos."
+    }
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "Selic parada em 13,75%: não conte com juros menores no 1º trimestre."
+        },
+        {
+          "ico": "💱",
+          "txt": "Dólar a R$ 5,51: reajuste tabelas de importados e insumos."
+        },
+        {
+          "ico": "🏭",
+          "txt": "Indústria em queda: ajuste produção à demanda de fim de ano."
+        },
+        {
+          "ico": "🛍️",
+          "txt": "11.11 abre a Black Friday: ative ofertas já nesta semana."
+        },
+        {
+          "ico": "👷",
+          "txt": "Fim da escala 6x1: simule custos de pessoal para 2027."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Quatro quedas em cinco meses: a indústria entra em recessão?",
+        "quote": "Produção industrial caiu 0,8% em setembro, a quarta queda em cinco meses.",
+        "edi": [
+          "A PIM recuou com 17 de 25 ramos em queda e bens de capital em -1,9%, sinal de investimento fraco.",
+          "O PMI de outubro subiu a 46,1, mas segue em contração, e o superávit comercial foi recorde para o mês, puxado pelo petróleo."
+        ],
+        "acoes": [
+          {
+            "ico": "🏭",
+            "txt": "Reduza turnos e estoques onde a demanda caiu."
+          },
+          {
+            "ico": "💱",
+            "txt": "Exportadores: aproveitem o dólar a R$ 5,51."
+          },
+          {
+            "ico": "🔧",
+            "txt": "Adie investimentos em máquinas até o cenário clarear."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Com o calote do consumidor levando varejistas à recuperação judicial, quanto do seu caixa depende de quem pode não pagar?",
+        "quote": "O varejo caiu 4,0% real em outubro, o 17º mês seguido de queda, segundo o ICVA da Cielo.",
+        "edi": [
+          "O ICVA mostrou nova queda real em outubro, com bens duráveis em -8,9% e serviços em -8,5%; a Cielo descreve um consumidor mais seletivo, que adia compras.",
+          "Levantamento do Monitor RGF-BizDoc aponta 1.024 varejistas em recuperação judicial em setembro, com a inadimplência dos clientes presente em 55% dos pedidos."
+        ],
+        "acoes": [
+          {
+            "ico": "💳",
+            "txt": "Reduza vendas a prazo para clientes sem histórico; prefira Pix e cartão."
+          },
+          {
+            "ico": "📦",
+            "txt": "Evite estoques de duráveis, o segmento que mais cai."
+          },
+          {
+            "ico": "🧾",
+            "txt": "Monitore a saúde financeira de fornecedores e parceiros do varejo."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Emprego desacelera: o pleno emprego chegou ao limite?",
+        "quote": "Caged criou 121,3 mil vagas em setembro, o pior setembro desde 2020.",
+        "edi": [
+          "A criação de vagas caiu cerca de 25% frente a agosto, com os serviços ainda liderando as contratações.",
+          "A construção pediu cinco anos de transição para o fim da escala 6x1, tema que afeta todo o setor de serviços."
+        ],
+        "acoes": [
+          {
+            "ico": "👥",
+            "txt": "Planeje contratações de fim de ano com prudência."
+          },
+          {
+            "ico": "📋",
+            "txt": "Simule o impacto do fim da 6x1 nos turnos."
+          },
+          {
+            "ico": "📊",
+            "txt": "Revise metas de 2027 com PIB de 1,76%."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Exportação firme e recuperações judiciais em alta: o problema do agro é preço ou dívida?",
+        "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
+        "edi": [
+          "Grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano, refletindo endividamento e juros altos.",
+          "No comércio exterior, a exportação de milho acelerou no início de novembro, com ritmo diário 20,1% acima de 2025, e a carne bovina começou o mês perto do ano passado."
+        ],
+        "acoes": [
+          {
+            "ico": "🏦",
+            "txt": "Renegocie dívidas rurais antes do vencimento da safra."
+          },
+          {
+            "ico": "🌽",
+            "txt": "Aproveite o ritmo forte de exportação de milho para vender estoques."
+          },
+          {
+            "ico": "🤝",
+            "txt": "Exija garantias em vendas a prazo para produtores de grãos."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Preço de material variando 50% na mesma cidade: você está comprando bem?",
+        "quote": "Procon de Maringá encontrou variação de até 50,5% nos preços de materiais de construção.",
+        "edi": [
+          "Em Belo Horizonte, a Câmara mudou o cálculo do ISS da construção civil, restringindo deduções, sem estimativa de impacto nos preços.",
+          "Em Fortaleza, a União destinou terreno de 55,6 mil m² para 550 moradias do MCMV – Entidades."
+        ],
+        "acoes": [
+          {
+            "ico": "🧱",
+            "txt": "Faça cotação ampla de materiais: a dispersão de preços é alta."
+          },
+          {
+            "ico": "🧾",
+            "txt": "Em BH, recalcule o ISS das obras com as novas regras."
+          },
+          {
+            "ico": "🏠",
+            "txt": "Acompanhe chamamentos do MCMV – Entidades em terrenos da União."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "O online recuou em outubro: o 11.11 vai compensar ou apenas antecipar compras?",
+        "quote": "O e-commerce recuou 0,5% nominal em outubro, enquanto a loja física subiu 1,9%, segundo a Cielo.",
+        "edi": [
+          "A Neotrust projeta R$ 3,17 bilhões no 11.11, alta de 21%, a maior data do ano depois da Black Friday.",
+          "Nubank e Shopee fecharam parceria de pagamentos para a data, com cupons de até 50% para clientes do banco."
+        ],
+        "acoes": [
+          {
+            "ico": "🗓️",
+            "txt": "Concentre ofertas no 11.11 e prepare a segunda onda para 27/11."
+          },
+          {
+            "ico": "💳",
+            "txt": "Ofereça condições de pagamento parceladas sem juros em itens de maior tíquete."
+          },
+          {
+            "ico": "📊",
+            "txt": "Compare o resultado do 11.11 com outubro para ajustar a Black Friday."
+          }
+        ]
+      }
+    }
+  },
+  "longitudinal": [
+    {
+      "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
+      "tipo": "risco",
+      "titulo": "Custo de energia (ANEEL/tarifa)",
+      "dimensao": "A",
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria",
+        "agro"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "Aneel aprova 7,25% na Equatorial Goiás e 1,92% provisório na Neoenergia Brasília.",
+      "periodo_observacao": "2026-W43",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
+      "tipo": "risco",
+      "titulo": "Juros, Selic e crédito",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "construcao",
+        "industria",
+        "agro",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 96.8,
+      "severidade": 9.8,
+      "iminencia": 9.0,
+      "ultima_observacao": "Copom mantém Selic em 13,75% em 04/11 e interrompe o ciclo de cortes.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "tipo": "risco",
+      "titulo": "Safra e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "Plantio da soja em MT perto de 90%; chuva favorece o Centro-Oeste.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
+      "tipo": "risco",
+      "titulo": "Atividade e indústria (PIM/PMI)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "agro",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "PIM cai 0,8% em setembro, 4ª queda em cinco meses; PMI de outubro em 46,1.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
+      "tipo": "risco",
+      "titulo": "Câmbio e balança",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "industria",
+        "agro",
+        "servicos",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Superávit recorde para outubro (US$ 9,32 bi); dólar a R$ 5,51, maior desde dez/2025.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
+      "tipo": "risco",
+      "titulo": "Emprego e renda (CAGED/PNAD)",
+      "dimensao": "S",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Caged cria 121,3 mil vagas em setembro, pior setembro desde 2020.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2026-01-26",
+      "origem": "real"
+    },
+    {
+      "id": "f89c40f5-4951-4e74-885d-fc3c38a68321",
+      "tipo": "risco",
+      "titulo": "Inflação (IPCA/IGP)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 85.75,
+      "severidade": 7.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Copom projeta IPCA de 5,6% em 2026; Focus eleva IPCA 2027 para 4,76%.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
+      "tipo": "risco",
+      "titulo": "Construção e custos",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "transversal",
+        "industria",
+        "agro",
+        "comercio",
+        "servicos",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 84.42,
+      "severidade": 9.3,
+      "iminencia": 8.5,
+      "ultima_observacao": "INCC-M sobe 0,35% em outubro; confiança da construção a 90,7.",
+      "periodo_observacao": "2026-W44",
+      "data_identificacao": "2026-01-05",
+      "origem": "real"
+    },
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 83.48,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Endividamento das famílias atinge 50,1% da renda; consumo nos lares cai 1,46% em setembro.",
+      "periodo_observacao": "2026-W44",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    }
+  ]
+}
