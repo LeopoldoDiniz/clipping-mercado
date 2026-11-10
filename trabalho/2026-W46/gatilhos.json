@@ -1,11 +1,4 @@
 {
   "data": "2026-11-10",
-  "setores": {
-    "panorama": [
-      "indicador Câmbio (US$) atualizado: R$ 5,58"
-    ],
-    "industria": [
-      "indicador PIM (Indústria) atualizado: -0,8%"
-    ]
-  }
+  "setores": {}
 }

@@ -1,5 +1,5 @@
 {
- "versao": 4,
+ "versao": 5,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -777,7 +777,10 @@
   "mão-de-obra": "trabalho",
   "renda": "trabalho",
   "salários": "trabalho",
-  "talentos": "trabalho"
+  "talentos": "trabalho",
+  "Embraer": "atividade",
+  "Ditália": "atividade",
+  "arroba": "agro"
  },
  "leituras": [
   {
@@ -4875,7 +4878,13 @@
    "versao": 4,
    "data": "2026-11-10",
    "motivo": "leituras genéricas herdadas dos sinais recalculadas pela classificação atual (106 refeitas, 50 removidas por não haver notícia do tema na semana)"
+  },
+  {
+   "versao": 5,
+   "data": "2026-11-10",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: Embraer→atividade, Ditália→atividade, arroba→agro"
   }
  ],
- "atualizado_em": "2026-11-10T17:33:01.385682+00:00"
+ "atualizado_em": "2026-11-10T17:49:42.577473+00:00"
 }

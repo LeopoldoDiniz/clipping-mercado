@@ -34,5 +34,12 @@
         "indicador PIM (Indústria) atualizado: -0,8%"
       ]
     }
+  },
+  {
+    "data": "2026-11-10",
+    "em": "2026-11-10T17:50:34.714944+00:00",
+    "noticias_novas": 4,
+    "total_semana": 19,
+    "gatilhos": {}
   }
 ]

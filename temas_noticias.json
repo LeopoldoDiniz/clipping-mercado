@@ -8521,6 +8521,38 @@
      "construcao",
      "comercio"
     ]
+   },
+   {
+    "titulo": "Ata do Copom sinaliza Selic de 13,75% por mais tempo",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Embraer tem receita recorde, mas lucro ajustado cai 15,6% no 3º trimestre",
+    "palavra": "Embraer",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Fábrica falida da Ditália vai a leilão por R$ 48 milhões",
+    "palavra": "Ditália",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Arroba do boi sobe R$ 5 em Goiás e Mato Grosso",
+    "palavra": "arroba",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
    }
   ]
  }
