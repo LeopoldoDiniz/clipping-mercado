@@ -1592,7 +1592,7 @@
       "label": "SELIC",
       "valor": "14,00% a.a.",
       "cor": "up",
-      "sub": "Taxa básica de juros · BCB/SGS · 20/08/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 21/08/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -1607,14 +1607,14 @@
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
       "projecao": 5.02,
-      "projecao_em": "2026-08-14",
+      "projecao_em": "2026-08-21",
       "projecao_fonte": "Focus/BCB"
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,17",
+      "valor": "R$ 5,16",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 19/08/2026",
+      "sub": "Dólar PTAX venda · BCB · 21/08/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -1626,7 +1626,7 @@
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "0,5%",
+      "valor": "0,3%",
       "cor": "up",
       "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,9% · IBGE jun/26",
       "fonte": "IBGE",
@@ -1634,7 +1634,7 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-1,8%",
+      "valor": "-1,6%",
       "cor": "down",
       "sub": "Produção física m/m · acum. ano 1,5% · IBGE jun/26",
       "fonte": "IBGE",
@@ -1642,11 +1642,11 @@
     },
     {
       "label": "IPP",
-      "valor": "-0,77%",
+      "valor": "-0,81%",
       "cor": "up",
-      "sub": "Preços ao produtor m/m · acum. ano 3,99% · IBGE jun/26",
+      "sub": "Preços ao produtor m/m · acum. ano 3,95% · IBGE jun/26",
       "fonte": "IBGE",
-      "acum_ano": 3.99
+      "acum_ano": 3.95
     }
   ],
   "kpis_setoriais": [

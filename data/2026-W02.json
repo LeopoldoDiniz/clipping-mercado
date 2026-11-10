@@ -162,12 +162,12 @@
     },
     {
       "label": "IPCA",
-      "valor": "0,18%",
+      "valor": "0,33%",
       "cor": "down",
-      "sub": "Mês · acum. ano 3,92% · 12m 4,46% · meta 3,0% (teto 4,5%) · IBGE nov/25 · Projeção Focus 2026: 4,05%",
+      "sub": "Mês · acum. ano 4,26% · 12m 4,26% · meta 3,0% (teto 4,5%) · IBGE dez/25 · Projeção Focus 2026: 4,05%",
       "fonte": "IBGE",
-      "acum_ano": 3.92,
-      "ipca_12m": 4.46,
+      "acum_ano": 4.26,
+      "ipca_12m": 4.26,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
@@ -199,7 +199,7 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-0,1%",
+      "valor": "-0,2%",
       "cor": "down",
       "sub": "Produção física m/m · acum. ano 0,6% · IBGE nov/25",
       "fonte": "IBGE",
@@ -207,14 +207,151 @@
     },
     {
       "label": "IPP",
-      "valor": "-0,35%",
-      "cor": "down",
-      "sub": "Preços ao produtor m/m · acum. ano -4,64% · IBGE nov/25",
+      "valor": "-0,47%",
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano -4,31% · IBGE out/25",
       "fonte": "IBGE",
-      "acum_ano": -4.64
+      "acum_ano": -4.31
     }
   ],
-  "longitudinal": [],
+  "longitudinal": [
+    {
+      "id": "tema-atividade",
+      "tipo": "risco",
+      "titulo": "Atividade: indústria e serviços",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "3 notícia(s) do tema na semana. Ex.: PMI de serviços sobe a 53,7 em dezembro, maior expansão em 14 meses.",
+      "periodo_observacao": "2026-W02",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 3
+    },
+    {
+      "id": "tema-exterior",
+      "tipo": "oportunidade",
+      "titulo": "Comércio exterior e tarifas",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 50.0,
+      "severidade": 6.7,
+      "iminencia": 3.3,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Balança comercial tem saldo recorde em dezembro.",
+      "periodo_observacao": "2026-W02",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 50.0,
+      "severidade": 6.7,
+      "iminencia": 3.3,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: IPCA de dezembro fica em 0,33% e fecha 2025 em 4,26%.",
+      "periodo_observacao": "2026-W02",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-construcao",
+      "tipo": "risco",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
+      "setores": [
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 33.0,
+      "severidade": 3.3,
+      "iminencia": 3.3,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: SINAPI: construção sobe 0,51% em dezembro e fecha 2025 em 5,63%.",
+      "periodo_observacao": "2026-W02",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-agro",
+      "tipo": "risco",
+      "titulo": "Safra, clima e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 16.5,
+      "severidade": 3.3,
+      "iminencia": 0.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Agronegócio fecha 2025 com exportações recorde de US$ 169,2 bi.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    },
+    {
+      "id": "tema-cambio",
+      "tipo": "risco",
+      "titulo": "Câmbio e mercado financeiro",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 16.5,
+      "severidade": 3.3,
+      "iminencia": 0.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    },
+    {
+      "id": "tema-juros",
+      "tipo": "risco",
+      "titulo": "Juros e política monetária",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 16.5,
+      "severidade": 3.3,
+      "iminencia": 0.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Boletim Focus da virada: mercado projeta 2026.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    }
+  ],
   "porter": {
     "industria": {
       "rivalidade": 7,

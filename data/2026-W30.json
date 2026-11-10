@@ -1639,15 +1639,15 @@
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "0,1%",
+      "valor": "0,2%",
       "cor": "up",
-      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE mai/26",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,8% · IBGE mai/26",
       "fonte": "IBGE",
-      "acum_ano": 1.7
+      "acum_ano": 1.8
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-0,2%",
+      "valor": "-1,0%",
       "cor": "down",
       "sub": "Produção física m/m · acum. ano 1,4% · IBGE mai/26",
       "fonte": "IBGE",

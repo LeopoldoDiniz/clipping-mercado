@@ -190,7 +190,7 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "0,2%",
+      "valor": "0,0%",
       "cor": "up",
       "sub": "Produção física m/m · acum. ano 0,8% · IBGE out/25",
       "fonte": "IBGE",
@@ -198,14 +198,112 @@
     },
     {
       "label": "IPP",
-      "valor": "-0,35%",
-      "cor": "down",
-      "sub": "Preços ao produtor m/m · acum. ano -4,64% · IBGE nov/25",
+      "valor": "-0,47%",
+      "cor": "up",
+      "sub": "Preços ao produtor m/m · acum. ano -4,31% · IBGE out/25",
       "fonte": "IBGE",
-      "acum_ano": -4.64
+      "acum_ano": -4.31
     }
   ],
-  "longitudinal": [],
+  "longitudinal": [
+    {
+      "id": "tema-agro",
+      "tipo": "risco",
+      "titulo": "Safra, clima e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Agronegócio fecha 2025 com exportações recorde de US$ 169,2 bi.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-cambio",
+      "tipo": "risco",
+      "titulo": "Câmbio e mercado financeiro",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-exterior",
+      "tipo": "oportunidade",
+      "titulo": "Comércio exterior e tarifas",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Exportações brasileiras batem recorde de US$ 348,7 bi em 2025.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05%.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-juros",
+      "tipo": "risco",
+      "titulo": "Juros e política monetária",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Boletim Focus da virada: mercado projeta 2026.",
+      "periodo_observacao": "2026-W01",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 1
+    }
+  ],
   "porter": {
     "industria": {
       "rivalidade": 6,

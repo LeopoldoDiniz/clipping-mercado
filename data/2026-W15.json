@@ -215,7 +215,7 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "1,1%",
+      "valor": "0,9%",
       "cor": "down",
       "sub": "Produção física m/m · acum. ano -0,2% · IBGE fev/26",
       "fonte": "IBGE",
@@ -230,7 +230,123 @@
       "acum_ano": 0.15
     }
   ],
-  "longitudinal": [],
+  "longitudinal": [
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "2 notícia(s) do tema na semana. Ex.: IPCA de março fecha em 0,88%, pressionado por combustíveis.",
+      "periodo_observacao": "2026-W15",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-juros",
+      "tipo": "risco",
+      "titulo": "Juros e política monetária",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 75.0,
+      "severidade": 10.0,
+      "iminencia": 5.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (10/04): IPCA de 2026 em 5,30% e Selic a 14%.",
+      "periodo_observacao": "2026-W15",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-combustiveis",
+      "tipo": "risco",
+      "titulo": "Combustíveis, petróleo e geopolítica",
+      "dimensao": "E",
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 75.0,
+      "severidade": 5.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "2 notícia(s) do tema na semana. Ex.: Governo edita MP 1.349 com subsídio de R$ 1,20/L ao diesel.",
+      "periodo_observacao": "2026-W15",
+      "data_identificacao": "2026-W15",
+      "origem": "real",
+      "direcao": "novo",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-consumo",
+      "tipo": "risco",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
+      "setores": [
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 50.0,
+      "severidade": 5.0,
+      "iminencia": 5.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Vendas do varejo avançam 0,6% em fevereiro, novo recorde.",
+      "periodo_observacao": "2026-W15",
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-atividade",
+      "tipo": "risco",
+      "titulo": "Atividade: indústria e serviços",
+      "dimensao": "E",
+      "setores": [
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 37.5,
+      "severidade": 2.5,
+      "iminencia": 5.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Confiança da indústria (ICEI) cai a 45,2, menor nível desde 2020.",
+      "periodo_observacao": "2026-W15",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "retomado",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-fiscal",
+      "tipo": "risco",
+      "titulo": "Fiscal, eleição e instituições",
+      "dimensao": "P",
+      "setores": [
+        "transversal"
+      ],
+      "status": "monitorar",
+      "relevancia": 12.5,
+      "severidade": 2.5,
+      "iminencia": 0.0,
+      "ultima_observacao": "",
+      "periodo_observacao": "",
+      "data_identificacao": "2026-W14",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    }
+  ],
   "porter": {
     "industria": {
       "rivalidade": 6,

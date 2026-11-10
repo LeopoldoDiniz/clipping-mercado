@@ -1,5 +1,5 @@
 {
- "versao": 3,
+ "versao": 4,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -784,7 +784,7 @@
    "tema": "agro",
    "periodo": "2026-W01",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Agronegócio fecha 2025 com exportações recorde de US$ 169,2 bi.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Agronegócio fecha 2025 com exportações recorde de US$ 169,2 bi.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -793,22 +793,10 @@
    "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W01",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus da virada: mercado projeta 2026.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20251226.pdf\"}"
-   ],
-   "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
    "tema": "cambio",
    "periodo": "2026-W01",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -820,7 +808,7 @@
    "tema": "exterior",
    "periodo": "2026-W01",
    "tipo": "oportunidade",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Exportações brasileiras batem recorde de US$ 348,7 bi em 2025 (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Exportações brasileiras batem recorde de US$ 348,7 bi em 2025.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -833,7 +821,7 @@
    "tema": "inflacao",
    "periodo": "2026-W01",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05% (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -846,7 +834,7 @@
    "tema": "juros",
    "periodo": "2026-W01",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus da virada: mercado projeta 2026.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus da virada: mercado projeta 2026.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -858,7 +846,7 @@
    "tema": "atividade",
    "periodo": "2026-W02",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: PMI de serviços sobe a 53,7 em dezembro, maior expansão em 14 meses (+2).",
+   "texto": "3 notícia(s) do tema na semana. Ex.: PMI de serviços sobe a 53,7 em dezembro, maior expansão em 14 meses.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -869,22 +857,10 @@
    "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W02",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Balança comercial tem saldo recorde em dezembro.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"MDIC / Agência Brasil\",\"url\":\"https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/saldo-da-balanca-comercial-tem-recorde-em-dezembro-mas-encolhe-em-2025\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "construcao",
    "periodo": "2026-W02",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: SINAPI: construção sobe 0,51% em dezembro e fecha 2025 em 5,63%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: SINAPI: construção sobe 0,51% em dezembro e fecha 2025 em 5,63%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -896,7 +872,7 @@
    "tema": "exterior",
    "periodo": "2026-W02",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Balança comercial tem saldo recorde em dezembro.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Balança comercial tem saldo recorde em dezembro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -908,7 +884,7 @@
    "tema": "inflacao",
    "periodo": "2026-W02",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IPCA de dezembro fica em 0,33% e fecha 2025 em 4,26%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA de dezembro fica em 0,33% e fecha 2025 em 4,26%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -920,7 +896,7 @@
    "tema": "consumo",
    "periodo": "2026-W03",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Varejo cresce 1,0% em novembro; acumula 1,5% no ano (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Varejo cresce 1,0% em novembro; acumula 1,5% no ano.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -930,22 +906,10 @@
    "origem_sinal": "f481cf12-14c9-4cbb-86b1-a377e170d266"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W03",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus reduz projeção de inflação de 2026 para 4,05%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Agência Brasil\",\"url\":\"https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/mercado-reduz-para-405-expectativas-da-inflacao-para-2026\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W03",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus reduz projeção de inflação de 2026 para 4,05%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Focus reduz projeção de inflação de 2026 para 4,05%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -957,7 +921,7 @@
    "tema": "inflacao",
    "periodo": "2026-W04",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IPCA-15 de janeiro fica em 0,20%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA-15 de janeiro fica em 0,20%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -969,7 +933,7 @@
    "tema": "construcao",
    "periodo": "2026-W05",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -979,22 +943,10 @@
    "origem_sinal": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb"
   },
   {
-   "tema": "consumo",
-   "periodo": "2026-W05",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"FGV IBRE / Times Brasil\",\"url\":\"https://timesbrasil.com.br/brasil/indicadores/confianca-construcao-inicia-2026-alta-fgv/\"}"
-   ],
-   "origem_sinal": "f481cf12-14c9-4cbb-86b1-a377e170d266"
-  },
-  {
    "tema": "inflacao",
    "periodo": "2026-W05",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IGP-M sobe 0,41% em janeiro.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IGP-M sobe 0,41% em janeiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1006,7 +958,7 @@
    "tema": "trabalho",
    "periodo": "2026-W05",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: CAGED: Brasil fecha 2025 com 1,279 milhão de empregos formais.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: CAGED: Brasil fecha 2025 com 1,279 milhão de empregos formais.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1018,7 +970,7 @@
    "tema": "atividade",
    "periodo": "2026-W06",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: PMI da indústria cai a 47,0 em janeiro (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: PMI da indústria cai a 47,0 em janeiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1028,23 +980,10 @@
    "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W06",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Boletim Focus (02/02): IPCA de 2026 em 3,99% (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-02022026/\"}",
-    "{\"nome\":\"MDIC / ADVFN\",\"url\":\"https://br.advfn.com/jornal/2026/02/brasil-balanca-comercial-tem-superavit-de-us-4-3-bilhoes-em-janeiro\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "exterior",
    "periodo": "2026-W06",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Balança comercial tem superávit de US$ 4,3 bi em janeiro.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Balança comercial tem superávit de US$ 4,3 bi em janeiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1053,22 +992,10 @@
    "origem_sinal": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W06",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (02/02): IPCA de 2026 em 3,99%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-02022026/\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W06",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (02/02): IPCA de 2026 em 3,99%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (02/02): IPCA de 2026 em 3,99%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1080,7 +1007,7 @@
    "tema": "trabalho",
    "periodo": "2026-W06",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Brasil cria 115 mil empregos formais em janeiro.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Brasil cria 115 mil empregos formais em janeiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1092,7 +1019,7 @@
    "tema": "agro",
    "periodo": "2026-W07",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Conab projeta safra 2025/26 recorde de 353,4 mi t.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Conab projeta safra 2025/26 recorde de 353,4 mi t.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1101,22 +1028,10 @@
    "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W07",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (09/02): IPCA de 2026 recua para 3,97%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-09022026/\"}"
-   ],
-   "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
    "tema": "consumo",
    "periodo": "2026-W07",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Vendas do varejo recuam 0,4% em dezembro; 2025 fecha em +1,6%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Vendas do varejo recuam 0,4% em dezembro; 2025 fecha em +1,6%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1128,7 +1043,7 @@
    "tema": "inflacao",
    "periodo": "2026-W07",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Boletim Focus (09/02): IPCA de 2026 recua para 3,97% (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA de janeiro fica em 0,33%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1141,7 +1056,7 @@
    "tema": "juros",
    "periodo": "2026-W07",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (09/02): IPCA de 2026 recua para 3,97%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (09/02): IPCA de 2026 recua para 3,97%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1153,7 +1068,7 @@
    "tema": "exterior",
    "periodo": "2026-W08",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Brasil registra US$ 2,1 bi de superávit na 3a semana de fevereiro.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Brasil registra US$ 2,1 bi de superávit na 3a semana de fevereiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1162,22 +1077,10 @@
    "origem_sinal": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W08",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (18/02): IPCA de 2026 recua para 3,95%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Economic News\",\"url\":\"https://economicnewsbrasil.com.br/2026/02/18/relatorio-focus-18-fevereiro-2026/\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W08",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (18/02): IPCA de 2026 recua para 3,95%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (18/02): IPCA de 2026 recua para 3,95%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1189,7 +1092,7 @@
    "tema": "agro",
    "periodo": "2026-W09",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Preço do leite reage 5,43% em fevereiro após 9 meses de queda.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Preço do leite reage 5,43% em fevereiro após 9 meses de queda.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1201,7 +1104,7 @@
    "tema": "atividade",
    "periodo": "2026-W09",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Confiança de Serviços recua para 90,2 em fevereiro.",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Confiança da Indústria sobe para 96,7 em fevereiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1213,7 +1116,7 @@
    "tema": "consumo",
    "periodo": "2026-W09",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Confiança da Indústria sobe para 96,7 em fevereiro (+2).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Confiança do Consumidor cai para 86,1 em fevereiro, menor em 6 meses.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1227,7 +1130,7 @@
    "tema": "inflacao",
    "periodo": "2026-W09",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IPCA-15 de fevereiro sobe 0,84%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA-15 de fevereiro sobe 0,84%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1236,22 +1139,10 @@
    "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
   },
   {
-   "tema": "agro",
-   "periodo": "2026-W10",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"IBGE / Forbes\",\"url\":\"https://forbes.com.br/forbes-money/2026/03/pib-do-brasil-avanca-01-no-4o-tri-e-fecha-2025-com-alta-de-23/\"}"
-   ],
-   "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
-  },
-  {
    "tema": "atividade",
    "periodo": "2026-W10",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: PMI da indústria fica em 47,3 em fevereiro, 11o mês em contração (+3).",
+   "texto": "4 notícia(s) do tema na semana. Ex.: PMI da indústria fica em 47,3 em fevereiro, 11o mês em contração.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1263,23 +1154,10 @@
    "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W10",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Balança comercial tem superávit de US$ 4,2 bi em fevereiro (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"MDIC / Agencia Brasil\",\"url\":\"https://agenciabrasil.ebc.com.br/economia/noticia/2026-03/balanca-comercial-tem-quarto-melhor-resultado-para-fevereiro\"}",
-    "{\"nome\":\"BCB / InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-02032026/\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "exterior",
    "periodo": "2026-W10",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Balança comercial tem superávit de US$ 4,2 bi em fevereiro.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Balança comercial tem superávit de US$ 4,2 bi em fevereiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1288,22 +1166,10 @@
    "origem_sinal": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W10",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (02/03): Selic de 2026 recua para 12,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-02032026/\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W10",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (02/03): Selic de 2026 recua para 12,00%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (02/03): Selic de 2026 recua para 12,00%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1315,7 +1181,7 @@
    "tema": "agro",
    "periodo": "2026-W11",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Conab: 6o levantamento mantem safra 2025/26 recorde.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Conab: 6o levantamento mantem safra 2025/26 recorde.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1327,7 +1193,7 @@
    "tema": "atividade",
    "periodo": "2026-W11",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Volume de serviços avança 0,3% em janeiro e iguala recorde.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Volume de serviços avança 0,3% em janeiro e iguala recorde.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1339,7 +1205,7 @@
    "tema": "construcao",
    "periodo": "2026-W11",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: SINAPI sobe 0,23% em fevereiro; custo a R$ 1.925,08/m2.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: SINAPI sobe 0,23% em fevereiro; custo a R$ 1.925,08/m2.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1351,7 +1217,7 @@
    "tema": "consumo",
    "periodo": "2026-W11",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Vendas do varejo avançam 0,4% em janeiro, recorde da série.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Vendas do varejo avançam 0,4% em janeiro, recorde da série.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1363,7 +1229,7 @@
    "tema": "inflacao",
    "periodo": "2026-W11",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Boletim Focus (13/03): IPCA de 2026 em 3,97% (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA de fevereiro fica em 0,70%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1376,7 +1242,7 @@
    "tema": "juros",
    "periodo": "2026-W11",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (13/03): IPCA de 2026 em 3,97%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (13/03): IPCA de 2026 em 3,97%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1385,35 +1251,10 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "combustiveis",
-   "periodo": "2026-W12",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Copom corta a Selic para 14,75%, primeira redução em 19 meses.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / CNN\",\"url\":\"https://www.cnnbrasil.com.br/economia/macroeconomia/bc-corta-juro-em-025-ponto-e-reduz-selic-a-14-75-copom-marco-2026/\"}"
-   ],
-   "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
-  },
-  {
-   "tema": "inflacao",
-   "periodo": "2026-W12",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Boletim Focus (16/03): IPCA de 2026 sobe para 4,10% (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-macroeconomicas-16032026/\"}",
-    "{\"nome\":\"BCB / CNN\",\"url\":\"https://www.cnnbrasil.com.br/economia/macroeconomia/bc-corta-juro-em-025-ponto-e-reduz-selic-a-14-75-copom-marco-2026/\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W12",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Copom corta a Selic para 14,75%, primeira redução em 19 meses.",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1422,22 +1263,10 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "combustiveis",
-   "periodo": "2026-W13",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IPCA-15 de março fica em 0,44%, pressionado por alimentos.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"IBGE / Agencia Brasil\",\"url\":\"https://agenciabrasil.ebc.com.br/economia/noticia/2026-03/previa-da-inflacao-de-marco-fica-em-044-pressionada-por-alimentos\"}"
-   ],
-   "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
-  },
-  {
    "tema": "consumo",
    "periodo": "2026-W13",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Confiança do Consumidor sobe 2,0 pontos para 88,1 em março.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Confiança do Consumidor sobe 2,0 pontos para 88,1 em março.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1449,7 +1278,7 @@
    "tema": "inflacao",
    "periodo": "2026-W13",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IPCA-15 de março fica em 0,44%, pressionado por alimentos.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA-15 de março fica em 0,44%, pressionado por alimentos.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1461,7 +1290,7 @@
    "tema": "juros",
    "periodo": "2026-W13",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Ata do Copom não indica novos cortes na Selic.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Ata do Copom não indica novos cortes na Selic.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1470,22 +1299,10 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "combustiveis",
-   "periodo": "2026-W14",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em março.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"FGV IBRE / JC\",\"url\":\"https://www.jornaldocomercio.com/economia/2026/03/1243122-indicador-de-incerteza-sobe-92-pontos-em-marco-ante-fevereiro-mostra-fgv.html\"}"
-   ],
-   "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
-  },
-  {
    "tema": "inflacao",
    "periodo": "2026-W14",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IPC-S sobe 0,67% na 4a quadrissemana de março.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPC-S sobe 0,67% na 4a quadrissemana de março.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1497,7 +1314,7 @@
    "tema": "atividade",
    "periodo": "2026-W15",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Confiança da indústria (ICEI) cai a 45,2, menor nível desde 2020.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Confiança da indústria (ICEI) cai a 45,2, menor nível desde 2020.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1506,22 +1323,10 @@
    "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W15",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (10/04): IPCA de 2026 em 5,30% e Selic a 14%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260410.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "combustiveis",
    "periodo": "2026-W15",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: IPCA de março fecha em 0,88%, pressionado por combustíveis (+3).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Governo edita MP 1.349 com subsídio de R$ 1,20/L ao diesel.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1533,22 +1338,10 @@
    "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
   },
   {
-   "tema": "construcao",
-   "periodo": "2026-W15",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: IGP-DI de março sobe 1,14%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"FGV IBRE\",\"url\":\"https://portalibre.fgv.br/system/files/divulgacao/noticias/mat-complementar/2026-04/IGP-DI_FGV_press%20release_Mar26.pdf\"}"
-   ],
-   "origem_sinal": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb"
-  },
-  {
    "tema": "consumo",
    "periodo": "2026-W15",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Vendas do varejo avançam 0,6% em fevereiro, novo recorde (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Vendas do varejo avançam 0,6% em fevereiro, novo recorde.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1561,7 +1354,7 @@
    "tema": "inflacao",
    "periodo": "2026-W15",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: IPCA de março fecha em 0,88%, pressionado por combustíveis (+2).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: IPCA de março fecha em 0,88%, pressionado por combustíveis.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1575,7 +1368,7 @@
    "tema": "juros",
    "periodo": "2026-W15",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (10/04): IPCA de 2026 em 5,30% e Selic a 14%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (10/04): IPCA de 2026 em 5,30% e Selic a 14%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1587,7 +1380,7 @@
    "tema": "agro",
    "periodo": "2026-W16",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Conab: 7o levantamento estima safra 2025/26 em 356,3 milhões de t (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Conab: 7o levantamento estima safra 2025/26 em 356,3 milhões de t.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1597,46 +1390,10 @@
    "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W16",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260417.pdf\"}"
-   ],
-   "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
-   "tema": "cambio",
-   "periodo": "2026-W16",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260417.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
-   "tema": "inflacao",
-   "periodo": "2026-W16",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260417.pdf\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W16",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1645,70 +1402,22 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W17",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260424.pdf\"}"
-   ],
-   "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
-   "tema": "cambio",
-   "periodo": "2026-W17",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260424.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
-   "tema": "inflacao",
-   "periodo": "2026-W17",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260424.pdf\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W17",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
     "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260424.pdf\"}"
    ],
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
-  },
-  {
-   "tema": "cambio",
-   "periodo": "2026-W18",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (30/04): IPCA de 2026 em 4,89% e IGP-M projetado a 5,50%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260430.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
   },
   {
    "tema": "construcao",
    "periodo": "2026-W18",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: INCC-M sobe 1,04% em abril, acelerando por materiais.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: INCC-M sobe 1,04% em abril, acelerando por materiais.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1720,7 +1429,7 @@
    "tema": "consumo",
    "periodo": "2026-W18",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Confiança do Consumidor sobe a 89,1 pontos em abril.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Confiança do Consumidor sobe a 89,1 pontos em abril.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1732,7 +1441,7 @@
    "tema": "inflacao",
    "periodo": "2026-W18",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: IPCA-15 de abril fica em 0,89%, pressionado por alimentos (+3).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: IPCA-15 de abril fica em 0,89%, pressionado por alimentos.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1747,7 +1456,7 @@
    "tema": "juros",
    "periodo": "2026-W18",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Copom corta a Selic para 14,50%, segunda redução seguida (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Copom corta a Selic para 14,50%, segunda redução seguida.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1760,7 +1469,7 @@
    "tema": "trabalho",
    "periodo": "2026-W18",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Desemprego sobe para 6,1% no trimestre até março.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Desemprego sobe para 6,1% no trimestre até março.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1772,7 +1481,7 @@
    "tema": "atividade",
    "periodo": "2026-W19",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Produção industrial varia 0,1% em março e acumula 3,1% no ano.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Produção industrial varia 0,1% em março e acumula 3,1% no ano.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1781,47 +1490,10 @@
    "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W19",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260508.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
-   "tema": "combustiveis",
-   "periodo": "2026-W19",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Ata do Copom detalha corte cauteloso da Selic a 14,50%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Copom\",\"url\":\"https://www.bcb.gov.br/content/copom/atascopom/Copom278-not20260429278.pdf\"}"
-   ],
-   "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
-  },
-  {
-   "tema": "inflacao",
-   "periodo": "2026-W19",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Ata do Copom detalha corte cauteloso da Selic a 14,50% (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Copom\",\"url\":\"https://www.bcb.gov.br/content/copom/atascopom/Copom278-not20260429278.pdf\"}",
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260508.pdf\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W19",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Ata do Copom detalha corte cauteloso da Selic a 14,50% (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Ata do Copom detalha corte cauteloso da Selic a 14,50%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1834,7 +1506,7 @@
    "tema": "atividade",
    "periodo": "2026-W20",
    "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Volume de serviços recua 1,2% em março.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Volume de serviços recua 1,2% em março.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1843,22 +1515,10 @@
    "origem_sinal": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W20",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (15/05): IPCA de 2026 em 4,92% e Selic a 13,25%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260515.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "consumo",
    "periodo": "2026-W20",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Vendas do varejo crescem 0,5% em março.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Vendas do varejo crescem 0,5% em março.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1870,7 +1530,7 @@
    "tema": "inflacao",
    "periodo": "2026-W20",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: IPCA de abril fica em 0,67%, desacelerando ante março (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: IPCA de abril fica em 0,67%, desacelerando ante março.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1883,7 +1543,7 @@
    "tema": "juros",
    "periodo": "2026-W20",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Focus (15/05): IPCA de 2026 em 4,92% e Selic a 13,25%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Focus (15/05): IPCA de 2026 em 4,92% e Selic a 13,25%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1895,7 +1555,7 @@
    "tema": "agro",
    "periodo": "2026-W21",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Conab: 8º levantamento aponta safra 2025/26 recorde de ~358 mi t (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Conab: 8º levantamento aponta safra 2025/26 recorde de ~358 mi t.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1905,34 +1565,10 @@
    "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W21",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260522.pdf\"}"
-   ],
-   "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
-   "tema": "cambio",
-   "periodo": "2026-W21",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"BCB / Focus\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260522.pdf\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "construcao",
    "periodo": "2026-W21",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: CBIC (22/mai): sondagem aponta pior produção da construção para um abril em três anos.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: CBIC (22/mai): sondagem aponta pior produção da construção para um abril em três anos.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1944,7 +1580,7 @@
    "tema": "inflacao",
    "periodo": "2026-W21",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana (+2).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: IGP-10 desacelera para 0,89% em maio ante 2,94% em abril.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1958,7 +1594,7 @@
    "tema": "juros",
    "periodo": "2026-W21",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1970,7 +1606,7 @@
    "tema": "atividade",
    "periodo": "2026-W22",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: PIB cresce 1,1% no 1º trimestre e Brasil tem 6ª maior alta do mundo (+2).",
+   "texto": "4 notícia(s) do tema na semana. Ex.: Confiança da indústria sobe pelo terceiro mês, aponta FGV.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1986,7 +1622,7 @@
    "tema": "cambio",
    "periodo": "2026-W22",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Ibovespa tem pior mês desde 2023 com fuga de estrangeiros.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Ibovespa tem pior mês desde 2023 com fuga de estrangeiros.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -1999,7 +1635,7 @@
    "tema": "construcao",
    "periodo": "2026-W22",
    "tipo": "risco",
-   "texto": "5 notícia(s) do tema nesta semana. Ex.: AgroBrasília 2026 reúne tecnologia e negócios com participação da Embrapa (+4).",
+   "texto": "3 notícia(s) do tema na semana. Ex.: INCC-M acelera para 0,77% em maio.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2016,7 +1652,7 @@
    "tema": "consumo",
    "periodo": "2026-W22",
    "tipo": "risco",
-   "texto": "5 notícia(s) do tema nesta semana. Ex.: Confiança da indústria sobe pelo terceiro mês, aponta FGV (+4).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Vendas no varejo devem subir em maio, junho e julho.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2035,7 +1671,7 @@
    "tema": "digital",
    "periodo": "2026-W22",
    "tipo": "risco",
-   "texto": "5 notícia(s) do tema nesta semana. Ex.: CGI.br se posiciona sobre regulação de plataformas digitais (+4).",
+   "texto": "8 notícia(s) do tema na semana. Ex.: Anatel inicia discussão sobre regulação de cabos submarinos.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2051,26 +1687,6 @@
    "origem_sinal": "bf08e65c-7bad-4ac3-a382-38944116ffa6"
   },
   {
-   "tema": "energia",
-   "periodo": "2026-W22",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: IPCA-15 de maio surpreende e fecha em 0,62% (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Exame\",\"url\":\"https://exame.com/economia/ipca-15-previa-da-inflacao-desacelera-e-fecha-maio-em-062/\"}",
-    "{\"nome\":\"CNN Brasil\",\"url\":\"https://www.cnnbrasil.com.br/economia/macroeconomia/previa-inflacao-ipca-15-maio-2026/\"}",
-    "{\"nome\":\"SAFRAS & Mercado\",\"url\":\"https://safras.com.br/ipca-15-sobe-062-em-maio-projecao-era-de-053\"}",
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/ipca-15-sobe-062-em-maio-acima-do-esperado-pelo-mercado/\"}",
-    "{\"nome\":\"Café com Bytes\",\"url\":\"https://cafecombytes.com.br/2026/05/25/agu-encerra-impasse-entre-aneel-e-anatel-sobre-compartilhamento-de-postes/\"}",
-    "{\"nome\":\"TELETIME\",\"url\":\"https://teletime.com.br/25/05/2026/veja-no-boletim-teletime-agu-encerra-impasse-juridico-dos-postes/\"}",
-    "{\"nome\":\"TELETIME\",\"url\":\"https://teletime.com.br/27/05/2026/veja-no-boletim-teletime-divergencia-nos-postes-e-educacao-conectada-2026/\"}",
-    "{\"nome\":\"TELETIME\",\"url\":\"https://teletime.com.br/28/05/2026/veja-no-boletim-teletime-novo-capitulo-para-postes-e-vivo-no-pib/\"}",
-    "{\"nome\":\"TELETIME\",\"url\":\"https://teletime.com.br/29/05/2026/boletim-teletime-claro-desktop/\"}"
-   ],
-   "origem_sinal": "c0ba55f3-3fe8-4165-827b-89019e0349a0"
-  },
-  {
    "tema": "exterior",
    "periodo": "2026-W22",
    "tipo": "risco",
@@ -2084,7 +1700,7 @@
    "tema": "inflacao",
    "periodo": "2026-W22",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: IPCA-15 de maio surpreende e fecha em 0,62% (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: IPCA-15 de maio surpreende e fecha em 0,62%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2110,7 +1726,7 @@
    "tema": "atividade",
    "periodo": "2026-W23",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: Boletim Focus eleva projeção de IPCA para 5,09% pela 12ª semana seguida, com Selic a 13,25% (+3).",
+   "texto": "3 notícia(s) do tema na semana. Ex.: PMI industrial do Brasil desaba para 49,1 pontos em maio, indicando contração.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2130,7 +1746,7 @@
    "tema": "construcao",
    "periodo": "2026-W23",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Secovi-SP reúne associados em encontro estratégico sobre o setor imobiliário.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Secovi-SP reúne associados em encontro estratégico sobre o setor imobiliário.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2181,23 +1797,10 @@
    "origem_sinal": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W23",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus eleva projeção de IPCA para 5,09% pela 12ª semana seguida, com Selic a 13,25%.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-01062026/\"}",
-    "{\"nome\":\"TrendsCE\",\"url\":\"https://www.trendsce.com.br/2026/06/01/minuto-mercado-1o-de-junho-de-2026/\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W23",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus eleva projeção de IPCA para 5,09% pela 12ª semana seguida, com Selic a 13,25%.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus eleva projeção de IPCA para 5,09% pela 12ª semana seguida, com Selic a 13,25%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2207,22 +1810,10 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "trabalho",
-   "periodo": "2026-W23",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Mercado de renda fixa reage a dados de emprego dos EUA.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/onde-investir/renda-fixa-hoje-03062026/\"}"
-   ],
-   "origem_sinal": "0c0ff752-5240-4611-a346-53b0e8c9f867"
-  },
-  {
    "tema": "agro",
    "periodo": "2026-W24",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: ABIEC e FGV Agro projetam queda de até 92,6% nas emissões da pecuária até 2050 (+3).",
+   "texto": "5 notícia(s) do tema na semana. Ex.: ABIEC e FGV Agro projetam queda de até 92,6% nas emissões da pecuária até 2050.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2236,22 +1827,10 @@
    "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W24",
-   "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim TELETIME: GPUs como serviço e regulação de IA.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"TELETIME\",\"url\":\"https://teletime.com.br/10/06/2026/boletim-teletime-gpus/\"}"
-   ],
-   "origem_sinal": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29"
-  },
-  {
    "tema": "cambio",
    "periodo": "2026-W24",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: BCB divulga Focus de 12 de junho com expectativas de mercado.",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Ibovespa recua com queda da Vale e tensões geopolíticas.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2260,22 +1839,10 @@
    "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
   },
   {
-   "tema": "construcao",
-   "periodo": "2026-W24",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Orientações sobre couvert e gorjeta no Dia dos Namorados.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Tribuna de Minas\",\"url\":\"https://tribunademinas.com.br/noticias/defesa-consumidor/12-06-2026/couvert-gorjeta-e-troca-o-que-vale-no-dia-dos-namorados.html\"}"
-   ],
-   "origem_sinal": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb"
-  },
-  {
    "tema": "consumo",
    "periodo": "2026-W24",
    "tipo": "risco",
-   "texto": "6 notícia(s) do tema nesta semana. Ex.: Comércio espera tíquete médio de até R$ 200 no Dia dos Namorados (+5).",
+   "texto": "8 notícia(s) do tema na semana. Ex.: Comércio espera tíquete médio de até R$ 200 no Dia dos Namorados.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2293,7 +1860,7 @@
    "tema": "digital",
    "periodo": "2026-W24",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: ICVA: varejo cresce 3,3% no Dia dos Namorados, com e-commerce em alta (+2).",
+   "texto": "14 notícia(s) do tema na semana. Ex.: Boletim TELETIME: regulação de IoT e orçamento da Anatel.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2304,36 +1871,10 @@
    "origem_sinal": "bf08e65c-7bad-4ac3-a382-38944116ffa6"
   },
   {
-   "tema": "exterior",
-   "periodo": "2026-W24",
-   "tipo": "oportunidade",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Exportações de soja seguem fortes em junho, aponta Cultivar.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Revista Cultivar\",\"url\":\"https://revistacultivar.com.br/noticias/mercado-agricola-9-jun-2026\"}",
-    "{\"nome\":\"Revista Cultivar\",\"url\":\"https://revistacultivar.com/news/agricultural-market-9-June-2026\"}"
-   ],
-   "origem_sinal": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9"
-  },
-  {
-   "tema": "inflacao",
-   "periodo": "2026-W24",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Focus: mercado eleva projeção de IPCA 2026 e Selic para 13,50% (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Money Times\",\"url\":\"https://www.moneytimes.com.br/economistas-elevam-inflacao-para-2026-e-projetam-selic-em-1350-confira-o-focus-desta-segunda-feira-08/\"}",
-    "{\"nome\":\"Banco Central do Brasil\",\"url\":\"https://www.bcb.gov.br/content/focus/focus/R20260612.pdf\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W24",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Focus: mercado eleva projeção de IPCA 2026 e Selic para 13,50% (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Focus: mercado eleva projeção de IPCA 2026 e Selic para 13,50%.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2343,28 +1884,10 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "agro",
-   "periodo": "2026-W25",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Preços da indústria recuam 0,30% em maio, puxados por alimentos e extrativas (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"IBGE - Agência de Notícias\",\"url\":\"https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34221-indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio\"}",
-    "{\"nome\":\"ac24agro\",\"url\":\"https://www.ac24agro.com/precos-da-industria-recuam-03-em-maio-mas-acumulam-alta-de-48-em-2026/\"}",
-    "{\"nome\":\"Broadcast - O mercado financeiro em tempo real\",\"url\":\"https://economia.estadao.com.br/noticias/geral,ibge-ipp-precos-medios-dos-alimentos-recuaram-em-2-05-em-maio-ante-a-abril,70004071333\"}",
-    "{\"nome\":\"Canal Rural\",\"url\":\"https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/\"}",
-    "{\"nome\":\"Metrópoles\",\"url\":\"https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge\"}",
-    "{\"nome\":\"FGV IBRE\",\"url\":\"https://portal.fgv.br/noticias/igp-m-junho-2026\"}",
-    "{\"nome\":\"Agência Brasil - EBC\",\"url\":\"https://agenciabrasil.ebc.com.br/economia/noticia/2026/06/fgv-gasolina-etanol-e-cafe-recuam-e-ajudam-igp-m-cair-05-em-junho\"}"
-   ],
-   "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
-  },
-  {
    "tema": "atividade",
    "periodo": "2026-W25",
    "tipo": "oportunidade",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Cade intensifica atuação em concorrência, investigando big techs e aprovando fusões (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Sondagem Industrial da CNI aponta queda nas expectativas de exportação devido a tarifas dos EUA.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2380,26 +1903,10 @@
    "origem_sinal": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29"
   },
   {
-   "tema": "cambio",
-   "periodo": "2026-W25",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Preços da indústria recuam 0,30% em maio, puxados por alimentos e extrativas.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"IBGE - Agência de Notícias\",\"url\":\"https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34221-indice-de-precos-ao-produtor-ipp-e-de-0-30-em-maio\"}",
-    "{\"nome\":\"ac24agro\",\"url\":\"https://www.ac24agro.com/precos-da-industria-recuam-03-em-maio-mas-acumulam-alta-de-48-em-2026/\"}",
-    "{\"nome\":\"Broadcast - O mercado financeiro em tempo real\",\"url\":\"https://economia.estadao.com.br/noticias/geral,ibge-ipp-precos-medios-dos-alimentos-recuaram-em-2-05-em-maio-ante-a-abril,70004071333\"}",
-    "{\"nome\":\"Canal Rural\",\"url\":\"https://www.canalrural.com.br/noticias/economia/ipp-cai-030-em-maio-informa-ibge/\"}",
-    "{\"nome\":\"Metrópoles\",\"url\":\"https://www.metropoles.com/economia/inflacao-da-industria-cai-em-maio-depois-de-2-altas-seguidas-diz-ibge\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "combustiveis",
    "periodo": "2026-W25",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: IPCA-15 desacelera para 0,41% em junho, mas inflação acumulada segue acima da meta (+3).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: ANP prevê queda gradual nos preços de combustíveis após acordo EUA-Irã e fim de subsídios.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2424,20 +1931,6 @@
    "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
   },
   {
-   "tema": "construcao",
-   "periodo": "2026-W25",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Crédito deve crescer 0,8% em maio, impulsionado por linhas direcionadas e programas governamentais.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Broadcast - O mercado financeiro em tempo real\",\"url\":\"https://economia.estadao.com.br/noticias/geral,febraban-credito-deve-crescer-0-8-em-maio-com-aceleracao-do-ritmo-anual-para-alta-de-9-6,70004069300\"}",
-    "{\"nome\":\"FEBRABAN - Notícias\",\"url\":\"https://portal.febraban.org.br/noticias/saldo-da-carteira-de-credito-deve-crescer-08-em-maio-com-maior-concentracao-em-recursos-direcionados/\"}",
-    "{\"nome\":\"Febraban\",\"url\":\"https://portal.febraban.org.br/noticias/credito-total-deve-crescer-02-em-janeiro-com-pf-09-e-expansao-da-carteira-anual-104/\"}"
-   ],
-   "origem_sinal": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb"
-  },
-  {
    "tema": "consumo",
    "periodo": "2026-W25",
    "tipo": "risco",
@@ -2456,7 +1949,7 @@
    "tema": "energia",
    "periodo": "2026-W25",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: IPCA-15 desacelera para 0,41% em junho, mas inflação acumulada segue acima da meta (+2).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: ANEEL regulamenta armazenamento de energia e adia decisão sobre cortes de geração.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2497,7 +1990,7 @@
    "tema": "inflacao",
    "periodo": "2026-W25",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Copom reduz taxa Selic para 14,25% ao ano em meio a incertezas globais (+2).",
+   "texto": "3 notícia(s) do tema na semana. Ex.: IPCA-15 desacelera para 0,41% em junho, mas inflação acumulada segue acima da meta.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2520,7 +2013,7 @@
    "tema": "juros",
    "periodo": "2026-W25",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Copom reduz taxa Selic para 14,25% ao ano em meio a incertezas globais (+2).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Copom reduz taxa Selic para 14,25% ao ano em meio a incertezas globais.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2538,22 +2031,10 @@
    "origem_sinal": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9"
   },
   {
-   "tema": "agro",
-   "periodo": "2026-W26",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Copom/Selic\",\"url\":\"https://reajaagora.org.br/economia-brasileira-copom-reduz-selic-para-1425-em-junho-de-2026/\"}"
-   ],
-   "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
-  },
-  {
    "tema": "atividade",
    "periodo": "2026-W26",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: Sondagem Industrial da CNI Aponta Queda na Expectativa de Exportações e Investimentos (+3).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Sondagem Industrial da CNI Aponta Queda na Expectativa de Exportações e Investimentos.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2570,7 +2051,7 @@
    "tema": "combustiveis",
    "periodo": "2026-W26",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Arrecadação Federal Bate Recorde Histórico em Maio, Impulsionada por Petróleo e Mudanças Tributárias (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: ANP Observa Queda Gradual nos Preços Internos de Combustíveis Após Acordo no Oriente Médio.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2624,7 +2105,7 @@
    "tema": "energia",
    "periodo": "2026-W26",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: IPCA-15 Desacelera para 0,41% em Junho, mas Alimentos e Energia Pressionam (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: ANEEL Conclui Cálculo de Tarifas de Transmissão para Ciclo 2026/2027 e Formaliza Redução em Contas de Luz.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2635,25 +2116,10 @@
    "origem_sinal": "c0ba55f3-3fe8-4165-827b-89019e0349a0"
   },
   {
-   "tema": "exterior",
-   "periodo": "2026-W26",
-   "tipo": "oportunidade",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Sondagem Industrial da CNI Aponta Queda na Expectativa de Exportações e Investimentos (+2).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"CNI - Portal da Indústria\",\"url\":\"https://noticias.portaldaindustria.com.br\"}",
-    "{\"nome\":\"ANEEL - Portal Gov.br\",\"url\":\"https://www.gov.br/aneel/pt-br\"}",
-    "{\"nome\":\"BiodieselBR\",\"url\":\"https://www.biodieselbr.com/noticias/regulacao/dist/precos-dos-combustiveis-mantem-tendencia-e-tem-nova-queda-nos-postos-aponta-anp-100626\"}",
-    "{\"nome\":\"ANP (via Jornal do Comércio)\",\"url\":\"https://www.gov.br/anp/pt-br\"}"
-   ],
-   "origem_sinal": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9"
-  },
-  {
    "tema": "inflacao",
    "periodo": "2026-W26",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: IPCA-15 Desacelera para 0,41% em Junho, mas Alimentos e Energia Pressionam.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2667,7 +2133,7 @@
    "tema": "juros",
    "periodo": "2026-W26",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela (+1).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2687,45 +2153,10 @@
    "origem_sinal": "c330066d-d634-418a-bcc5-05a55d14573b"
   },
   {
-   "tema": "atividade",
-   "periodo": "2026-W27",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026 (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-29062026/\"}",
-    "{\"nome\":\"Gazeta Brazilian News\",\"url\":\"https://gazetanews.com/mercado-mantem-em-533-projecao-de-inflacao-para-2026/\"}",
-    "{\"nome\":\"Tribuna do Norte\",\"url\":\"https://www.tribunadonorte.com.br/noticia/mercado-mantem-em-5-33-projecao-de-inflacao-para-2026/563428\"}",
-    "{\"nome\":\"Jornal do Brasil\",\"url\":\"https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html\"}",
-    "{\"nome\":\"Ambiente Magazine\",\"url\":\"https://www.ambientemagazine.com/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/\"}",
-    "{\"nome\":\"Ambiente Magazine\",\"url\":\"https://www.ambientemagazine.pt/2026/06/30/governo-avanca-com-estrategia-industrial-verde-para-atrair-investimento-e-acelerar-descarbonizacao/\"}",
-    "{\"nome\":\"Jornal Notícias\",\"url\":\"https://www.jornalnoticias.co.mz/index.php/economia/10898-necessarios-89-mil-milhoes-de-dolares-para-garantir-transicao-energetica\"}"
-   ],
-   "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
-   "tema": "cambio",
-   "periodo": "2026-W27",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026 (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-29062026/\"}",
-    "{\"nome\":\"Gazeta Brazilian News\",\"url\":\"https://gazetanews.com/mercado-mantem-em-533-projecao-de-inflacao-para-2026/\"}",
-    "{\"nome\":\"Tribuna do Norte\",\"url\":\"https://www.tribunadonorte.com.br/noticia/mercado-mantem-em-5-33-projecao-de-inflacao-para-2026/563428\"}",
-    "{\"nome\":\"Jornal do Brasil\",\"url\":\"https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html\"}",
-    "{\"nome\":\"Exame\",\"url\":\"https://exame.com/invest/mercados/plano-para-definir-acordo-entre-eua-e-ira-derruba-petroleo-brent-vai-a-us-7878/\"}",
-    "{\"nome\":\"Valor Econômico\",\"url\":\"https://valor.globo.com/mercados/noticia/2026/06/29/tom-hawkish-do-fed-freia-recuperacao-de-titulos-de-mercados-emergentes.ghtml\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
    "tema": "combustiveis",
    "periodo": "2026-W27",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Governo Libera Crédito para Subsídio ao Diesel e Inicia Retirada Gradual de Benefícios (+1).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Governo Libera Crédito para Subsídio ao Diesel e Inicia Retirada Gradual de Benefícios.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2772,7 +2203,7 @@
    "tema": "digital",
    "periodo": "2026-W27",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: Brasil Regulamenta Eficiência Energética para Lâmpadas e Luminárias LED (+3).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: PMEs Lideram Adoção de IA, mas Enfrentam Barreiras de Treinamento e Organização.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2792,7 +2223,7 @@
    "tema": "energia",
    "periodo": "2026-W27",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Brasil Regulamenta Eficiência Energética para Lâmpadas e Luminárias LED (+1).",
+   "texto": "5 notícia(s) do tema na semana. Ex.: Brasil Regulamenta Eficiência Energética para Lâmpadas e Luminárias LED.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2817,27 +2248,10 @@
    "origem_sinal": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W27",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026 (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/boletim-focus-projecoes-29062026/\"}",
-    "{\"nome\":\"Gazeta Brazilian News\",\"url\":\"https://gazetanews.com/mercado-mantem-em-533-projecao-de-inflacao-para-2026/\"}",
-    "{\"nome\":\"Tribuna do Norte\",\"url\":\"https://www.tribunadonorte.com.br/noticia/mercado-mantem-em-5-33-projecao-de-inflacao-para-2026/563428\"}",
-    "{\"nome\":\"Jornal do Brasil\",\"url\":\"https://www.jb.com.br/economia/2026/06/1049983-paz-no-golfo-estabiliza-ipca-e-selic.html\"}",
-    "{\"nome\":\"Exame\",\"url\":\"https://exame.com/invest/mercados/plano-para-definir-acordo-entre-eua-e-ira-derruba-petroleo-brent-vai-a-us-7878/\"}",
-    "{\"nome\":\"Valor Econômico\",\"url\":\"https://valor.globo.com/mercados/noticia/2026/06/29/tom-hawkish-do-fed-freia-recuperacao-de-titulos-de-mercados-emergentes.ghtml\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W27",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026 (+3).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2883,23 +2297,10 @@
    "origem_sinal": "9032fb4f-90f5-423f-a5d6-e0578821761d"
   },
   {
-   "tema": "agro",
-   "periodo": "2026-W28",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Audiências nos EUA sobre Novas Tarifas a Produtos Brasileiros Ameaçam Exportações (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"TV Brasil\",\"url\":\"https://tvbrasil.ebc.com.br/reporter-brasil/2026/07/eua-iniciam-audiencia-sobre-tarifa-de-25-produtos-brasileiros\"}",
-    "{\"nome\":\"Exame\",\"url\":\"https://exame.com\"}"
-   ],
-   "origem_sinal": "8efde42b-8518-43b4-83e2-a9d3cfd50439"
-  },
-  {
    "tema": "atividade",
    "periodo": "2026-W28",
    "tipo": "risco",
-   "texto": "4 notícia(s) do tema nesta semana. Ex.: Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas (+3).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -2910,33 +2311,6 @@
     "{\"nome\":\"Exame\",\"url\":\"https://exame.com\"}"
    ],
    "origem_sinal": "28fdfd33-21e8-4484-80da-d3c58da0d72b"
-  },
-  {
-   "tema": "cambio",
-   "periodo": "2026-W28",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Balança Comercial Brasileira Registra Forte Superávit na 1ª Semana de Julho e Projeção Anual é Elevada (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"InfoMoney\",\"url\":\"https://www.infomoney.com.br/economia/balanca-comercial-de-julho-registra-superavit-de-us-2273-bilhoes-na-1a-semana/\"}",
-    "{\"nome\":\"MDIC\",\"url\":\"https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/balanca-comercial-preliminar-parcial-do-mes\"}",
-    "{\"nome\":\"Exame\",\"url\":\"https://exame.com\"}"
-   ],
-   "origem_sinal": "0936f489-6f29-449d-bbaf-01646b7acbdc"
-  },
-  {
-   "tema": "combustiveis",
-   "periodo": "2026-W28",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Metrópoles\",\"url\":\"https://www.metropoles.com/brasil/industria-recua-02-em-maio-apos-4-altas-seguidas\"}",
-    "{\"nome\":\"IBGE\",\"url\":\"https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/37207-producao-industrial-varia-0-2-em-maio\"}"
-   ],
-   "origem_sinal": "cad38463-60e5-4e42-9065-539cd7060c1c"
   },
   {
    "tema": "construcao",
@@ -2994,7 +2368,7 @@
    "tema": "exterior",
    "periodo": "2026-W28",
    "tipo": "oportunidade",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Audiências nos EUA sobre Novas Tarifas a Produtos Brasileiros Ameaçam Exportações (+2).",
+   "texto": "2 notícia(s) do tema na semana. Ex.: Audiências nos EUA sobre Novas Tarifas a Produtos Brasileiros Ameaçam Exportações.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3006,25 +2380,10 @@
    "origem_sinal": "077732a1-ac8f-41d1-8d5f-0a682d9e06c9"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W28",
-   "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: ANEEL Abre Consulta Pública para Leilões de Energia e Aprova Reajustes Tarifários (+1).",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"ANEEL\",\"url\":\"https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3\"}",
-    "{\"nome\":\"ANEEL\",\"url\":\"https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-aprova-abertura-de-consulta-publica-sobre-o-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3\"}",
-    "{\"nome\":\"EPBR\",\"url\":\"https://epbr.com.br\"}",
-    "{\"nome\":\"Exame\",\"url\":\"https://exame.com\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W28",
    "tipo": "risco",
-   "texto": "3 notícia(s) do tema nesta semana. Ex.: Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas (+2).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus Reduz Projeção do IPCA para 2026 e Mantém Selic Estável.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3056,7 +2415,7 @@
    "tema": "agro",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "23 notícia(s) do tema nesta semana. Ex.: Balança comercial brasileira registra superávit em junho, impulsionado por commodities (+22).",
+   "texto": "33 notícia(s) do tema na semana. Ex.: Conab atualiza projeções para a safra de grãos 2025/2026.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3091,7 +2450,7 @@
    "tema": "atividade",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "5 notícia(s) do tema nesta semana. Ex.: CADE aprova fusões e aquisições em setores estratégicos (+4).",
+   "texto": "15 notícia(s) do tema na semana. Ex.: Produção industrial recua em maio, impactada por juros altos e demanda fraca.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3107,7 +2466,7 @@
    "tema": "cambio",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Balança comercial brasileira registra superávit em junho, impulsionado por commodities.",
+   "texto": "3 notícia(s) do tema na semana. Ex.: ANBIMA registra aumento na captação de fundos de investimento.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3131,7 +2490,7 @@
    "tema": "construcao",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "15 notícia(s) do tema nesta semana. Ex.: INCC-M da FGV desacelera em julho, mas custos ainda preocupam (+14).",
+   "texto": "24 notícia(s) do tema na semana. Ex.: INCC-M da FGV desacelera em julho, mas custos ainda preocupam.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3157,7 +2516,7 @@
    "tema": "consumo",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "31 notícia(s) do tema nesta semana. Ex.: Confiança do Consumidor da FGV registra leve queda em julho (+30).",
+   "texto": "17 notícia(s) do tema na semana. Ex.: Confiança do Consumidor da FGV registra leve queda em julho.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3199,7 +2558,7 @@
    "tema": "digital",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "27 notícia(s) do tema nesta semana. Ex.: Receita Federal intensifica fiscalização de empresas de tecnologia (+26).",
+   "texto": "13 notícia(s) do tema na semana. Ex.: Sebrae lança programa de capacitação para PMEs em transformação digital.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3237,7 +2596,7 @@
    "tema": "ecommerce",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "2 notícia(s) do tema nesta semana. Ex.: Câmara Brasileira da Economia Digital debate regulamentação do cross-border (+1).",
+   "texto": "22 notícia(s) do tema na semana. Ex.: SBVC destaca tendências de omnicanalidade no varejo brasileiro.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3250,7 +2609,7 @@
    "tema": "energia",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "7 notícia(s) do tema nesta semana. Ex.: Setor siderúrgico brasileiro mantém produção estável, mas com desafios de custo (+6).",
+   "texto": "5 notícia(s) do tema na semana. Ex.: CNI alerta para desafios da indústria na transição energética.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -3277,22 +2636,10 @@
    "origem_sinal": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0"
   },
   {
-   "tema": "inflacao",
-   "periodo": "2026-W29",
-   "tipo": "risco",
-   "texto": "1 notícia(s) do tema nesta semana. Ex.: Boletim Focus revisa projeções de IPCA e Selic para 2026 e 2027.",
-   "status": "em_curso",
-   "materializado": false,
-   "fontes": [
-    "{\"nome\":\"Banco Central/Focus\",\"url\":\"https://www.bcb.gov.br/publicacoes/focus\"}"
-   ],
-   "origem_sinal": "f89c40f5-4951-4e74-885d-fc3c38a68321"
-  },
-  {
    "tema": "juros",
    "periodo": "2026-W29",
    "tipo": "risco",
-   "texto": "12 notícia(s) do tema nesta semana. Ex.: Boletim Focus revisa projeções de IPCA e Selic para 2026 e 2027 (+11).",
+   "texto": "1 notícia(s) do tema na semana. Ex.: Boletim Focus revisa projeções de IPCA e Selic para 2026 e 2027.",
    "status": "em_curso",
    "materializado": false,
    "fontes": [
@@ -5523,7 +4870,12 @@
    "versao": 3,
    "data": "2026-11-10",
    "motivo": "motor passa a usar temas no lugar dos sinais: dimensão/tipo padrão por tema, leituras semanais derivadas das observações dos sinais, ciclo 2026-W45"
+  },
+  {
+   "versao": 4,
+   "data": "2026-11-10",
+   "motivo": "leituras genéricas herdadas dos sinais recalculadas pela classificação atual (106 refeitas, 50 removidas por não haver notícia do tema na semana)"
   }
  ],
- "atualizado_em": "2026-11-10T17:21:40.843643+00:00"
+ "atualizado_em": "2026-11-10T17:33:01.385682+00:00"
 }

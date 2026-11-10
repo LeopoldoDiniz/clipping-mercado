@@ -187,7 +187,7 @@
     },
     {
       "label": "PIM (Indústria)",
-      "valor": "-1,9%",
+      "valor": "-2,0%",
       "cor": "down",
       "sub": "Produção física m/m · acum. ano 0,6% · IBGE dez/25",
       "fonte": "IBGE",
@@ -195,14 +195,151 @@
     },
     {
       "label": "IPP",
-      "valor": "0,14%",
+      "valor": "-0,35%",
       "cor": "down",
-      "sub": "Preços ao produtor m/m · acum. ano -4,51% · IBGE dez/25",
+      "sub": "Preços ao produtor m/m · acum. ano -4,64% · IBGE nov/25",
       "fonte": "IBGE",
-      "acum_ano": -4.51
+      "acum_ano": -4.64
     }
   ],
-  "longitudinal": [],
+  "longitudinal": [
+    {
+      "id": "tema-atividade",
+      "tipo": "risco",
+      "titulo": "Atividade: indústria e serviços",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "servicos",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "2 notícia(s) do tema na semana. Ex.: PMI da indústria cai a 47,0 em janeiro.",
+      "periodo_observacao": "2026-W06",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-juros",
+      "tipo": "risco",
+      "titulo": "Juros e política monetária",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 58.5,
+      "severidade": 6.7,
+      "iminencia": 5.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Boletim Focus (02/02): IPCA de 2026 em 3,99%.",
+      "periodo_observacao": "2026-W06",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-trabalho",
+      "tipo": "risco",
+      "titulo": "Emprego e trabalho",
+      "dimensao": "S",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 58.5,
+      "severidade": 6.7,
+      "iminencia": 5.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Brasil cria 115 mil empregos formais em janeiro.",
+      "periodo_observacao": "2026-W06",
+      "data_identificacao": "2026-W05",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-exterior",
+      "tipo": "oportunidade",
+      "titulo": "Comércio exterior e tarifas",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 41.5,
+      "severidade": 3.3,
+      "iminencia": 5.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Balança comercial tem superávit de US$ 4,3 bi em janeiro.",
+      "periodo_observacao": "2026-W06",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "retomado",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
+      "dimensao": "E",
+      "setores": [
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 33.5,
+      "severidade": 6.7,
+      "iminencia": 0.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: IGP-M sobe 0,41% em janeiro.",
+      "periodo_observacao": "2026-W05",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    },
+    {
+      "id": "tema-construcao",
+      "tipo": "risco",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
+      "setores": [
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 16.5,
+      "severidade": 3.3,
+      "iminencia": 0.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses.",
+      "periodo_observacao": "2026-W05",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    },
+    {
+      "id": "tema-consumo",
+      "tipo": "risco",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
+      "setores": [
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 16.5,
+      "severidade": 3.3,
+      "iminencia": 0.0,
+      "ultima_observacao": "1 notícia(s) do tema na semana. Ex.: Varejo cresce 1,0% em novembro; acumula 1,5% no ano.",
+      "periodo_observacao": "2026-W03",
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
+    }
+  ],
   "porter": {
     "industria": {
       "rivalidade": 6,

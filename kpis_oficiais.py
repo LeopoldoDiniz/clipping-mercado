@@ -25,6 +25,7 @@ Séries verificadas contra a realidade conhecida (jul/2026):
   Desemprego PNAD 6381 v4099 · Varejo PMC 8880 v11708(mês)/v11710(ano)
   PIM 8888 v11601(mês)/v11602(ano) · IPP 6903 v1396(mês)/v1395(ano)
 """
+import gzip
 import json
 import time
 import urllib.parse
@@ -60,7 +61,10 @@ def _get(url, tries=3):
         try:
             req = urllib.request.Request(url, headers=_UA)
             with urllib.request.urlopen(req, timeout=12) as r:
-                t = r.read().decode("utf-8")
+                raw = r.read()
+            if raw[:2] == bytes([0x1F, 0x8B]):   # alguns servidores (IBGE) compactam sem pedir
+                raw = gzip.decompress(raw)
+            t = raw.decode("utf-8")
             s = t.strip()
             if s.startswith("[") or s.startswith("{"):
                 j = json.loads(s)
@@ -222,14 +226,50 @@ def _rel_date(y, m, add_m, day):
     return date(yy, mm, min(day, 28))
 
 
-def _pick_mensal(serie, ref, add_m, day):
+# Calendário OFICIAL de divulgação do IBGE (api/v3/calendario): data real em que cada mês de
+# referência foi publicado. Substitui o dia estimado (que errava o mês do card em backfill).
+_CAL_PRODUTO = {
+    "ipca": "Índice Nacional de Preços ao Consumidor Amplo",          # nome exato (exclui IPCA-15/E)
+    "pim": "PIM-PF Brasil#pimpf1",
+    "varejo": "Pesquisa Mensal de Comércio",
+    "desemprego": "Divulgação mensal#pnadc1",                          # mês = fim do trimestre móvel
+    "ipp": "Índice de Preços ao Produtor - Indústrias Extrativas e de Transformação",
+}
+
+
+def _calendario_ibge():
+    """{familia: {(ano, mes_ref): date_divulgacao}} — vazio se a API não responder."""
+    if "_cal_ibge" in _CACHE:
+        return _CACHE["_cal_ibge"]
+    hoje = date.today()
+    url = (f"https://servicodados.ibge.gov.br/api/v3/calendario/?de=01-01-{hoje.year - _JANELA_ANOS}"
+           f"&ate=12-31-{hoje.year + 1}&qtd=5000")
+    out = {f: {} for f in _CAL_PRODUTO}
+    try:
+        j = _get(url) or {}
+        for it in j.get("items", []):
+            for fam, nome in _CAL_PRODUTO.items():
+                if (it.get("nome_produto") or "").strip() == nome:
+                    y, m = it.get("ano_referencia_inicio"), it.get("mes_referencia_inicio")
+                    d, mo, a = it["data_divulgacao"][:10].split("/")
+                    if y and m:
+                        out[fam][(int(y), int(m))] = date(int(a), int(mo), int(d))
+    except Exception as e:
+        print(f"[kpis] calendário IBGE indisponível ({e}) — usando datas estimadas.")
+    _CACHE["_cal_ibge"] = out
+    return out
+
+
+def _pick_mensal(serie, ref, add_m, day, fam=None):
     """Último obs mensal já DIVULGADO até a data ref (respeita o calendário).
-    Com ref >= hoje (rodada diária), a presença do dado na API já prova a divulgação:
-    o calendário estimado só vale para semanas passadas (backfill)."""
+    Data de divulgação: a OFICIAL do calendário do IBGE quando existe; senão, a estimada.
+    Com ref >= hoje (rodada diária), a presença do dado na API já prova a divulgação."""
     best = None
     ao_vivo = ref >= date.today()
+    cal = _calendario_ibge().get(fam, {}) if fam else {}
     for (y, m, val, per) in serie:
-        if ao_vivo or _rel_date(y, m, add_m, day) <= ref:
+        rel = cal.get((y, m)) or _rel_date(y, m, add_m, day)
+        if ao_vivo or rel <= ref:
             if best is None or (y, m) > (best[0], best[1]):
                 best = (y, m, val, per)
     return best
@@ -312,7 +352,7 @@ def coletar_kpis(ref=None):
                          "fonte": "BCB/PTAX"}
 
     # IPCA (mês + acum. ano + 12m)
-    ip = _pick_mensal(ipca_m, ref, 1, 9) if ipca_m else None
+    ip = _pick_mensal(ipca_m, ref, 1, 9, "ipca") if ipca_m else None
     if ip:
         y, m, val = ip[0], ip[1], ip[2]
         prev = next((v for (yy, mm, v, *_ ) in reversed(ipca_m)
@@ -367,7 +407,7 @@ def coletar_kpis(ref=None):
                        "projecao_fonte": "Focus/BCB" if fc else None}
 
     # Desemprego (PNAD, trimestre móvel)
-    de = _pick_mensal(desemp, ref, 1, 28) if desemp else None
+    de = _pick_mensal(desemp, ref, 1, 28, "desemprego") if desemp else None
     if de:
         y, m, val, per = de
         prev = next((v for (yy, mm, v, *_ ) in reversed(desemp) if (yy, mm) < (y, m)), None)
@@ -376,7 +416,7 @@ def coletar_kpis(ref=None):
                              "sub": f"PNAD Contínua · IBGE · {per}", "fonte": "IBGE"}
 
     # Varejo PMC (mês aj. sazonal + acum. ano)
-    va = _pick_mensal(varejo_m, ref, 2, 13) if varejo_m else None
+    va = _pick_mensal(varejo_m, ref, 2, 13, "varejo") if varejo_m else None
     if va:
         y, m, val, _ = va
         prev = next((v for (yy, mm, v, *_ ) in reversed(varejo_m) if (yy, mm) < (y, m)), None)
@@ -387,7 +427,7 @@ def coletar_kpis(ref=None):
                          "acum_ano": None if acum is None else round(acum, 2)}
 
     # PIM (produção física mês + acum. ano)
-    pi = _pick_mensal(pim_m, ref, 2, 2) if pim_m else None
+    pi = _pick_mensal(pim_m, ref, 2, 2, "pim") if pim_m else None
     if pi:
         y, m, val, _ = pi
         prev = next((v for (yy, mm, v, *_ ) in reversed(pim_m) if (yy, mm) < (y, m)), None)
@@ -398,7 +438,7 @@ def coletar_kpis(ref=None):
                       "acum_ano": None if acum is None else round(acum, 2)}
 
     # IPP (preços ao produtor mês + acum. ano)
-    pp = _pick_mensal(ipp_m, ref, 1, 28) if ipp_m else None
+    pp = _pick_mensal(ipp_m, ref, 1, 28, "ipp") if ipp_m else None
     if pp:
         y, m, val, _ = pp
         prev = next((v for (yy, mm, v, *_ ) in reversed(ipp_m) if (yy, mm) < (y, m)), None)
