@@ -27,6 +27,7 @@ Séries verificadas contra a realidade conhecida (jul/2026):
 """
 import gzip
 import json
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -234,6 +235,9 @@ _CAL_PRODUTO = {
     "varejo": "Pesquisa Mensal de Comércio",
     "desemprego": "Divulgação mensal#pnadc1",                          # mês = fim do trimestre móvel
     "ipp": "Índice de Preços ao Produtor - Indústrias Extrativas e de Transformação",
+    "pms": "Pesquisa Mensal de Serviços",
+    "sinapi": "Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil",
+    "lspa": "Levantamento Sistemático da Produção Agrícola",
 }
 
 
@@ -260,13 +264,47 @@ def _calendario_ibge():
     return out
 
 
+def _calendario_fgv_incc():
+    """Calendário OFICIAL da FGV/IBRE para o INCC-DI (série SGS 192): {(ano, mes_ref): data}.
+    O site da FGV só aceita TLS com cifra antiga — contexto afrouxado SÓ para esta consulta."""
+    if "_cal_fgv" in _CACHE:
+        return _CACHE["_cal_fgv"]
+    import ssl
+    hoje = date.today()
+    url = ("https://portalibre.fgv.br/calendario-de-divulgacao?field_divulgacao_data_value="
+           f"{hoje.year - _JANELA_ANOS}-01-01&field_divulgacao_data_value_1={hoje.year + 1}-12-31")
+    out = {}
+    try:
+        ctx = ssl.create_default_context()
+        ctx.set_ciphers("DEFAULT@SECLEVEL=1")
+        req = urllib.request.Request(url, headers=_UA)
+        with urllib.request.urlopen(req, timeout=40, context=ctx) as r:
+            raw = r.read()
+        if raw[:2] == bytes([0x1F, 0x8B]):
+            raw = gzip.decompress(raw)
+        s = raw.decode("utf-8")
+        itens = re.findall(r'field-divulgacao-data"><div class="field-content">(\d\d)/(\d\d)/(\d{4})</div>'
+                           r'.*?views-field-title"><span class="field-content">(.*?)</span>', s, flags=re.S)
+        abrev = {n[:3]: i for i, n in enumerate(_MABBR) if n}
+        for d, mo, a, titulo in itens:
+            if "INCC-DI" not in titulo:
+                continue
+            m = re.search(r"([A-Za-zçÇ]+)/(\d{4})\s*$", titulo.strip())
+            if m and m.group(1)[:3].lower() in abrev:
+                out[(int(m.group(2)), abrev[m.group(1)[:3].lower()])] = date(int(a), int(mo), int(d))
+    except Exception as e:
+        print(f"[kpis] calendário FGV indisponível ({type(e).__name__}: {e}) — INCC com data estimada.")
+    _CACHE["_cal_fgv"] = out
+    return out
+
+
 def _pick_mensal(serie, ref, add_m, day, fam=None):
     """Último obs mensal já DIVULGADO até a data ref (respeita o calendário).
     Data de divulgação: a OFICIAL do calendário do IBGE quando existe; senão, a estimada.
     Com ref >= hoje (rodada diária), a presença do dado na API já prova a divulgação."""
     best = None
     ao_vivo = ref >= date.today()
-    cal = _calendario_ibge().get(fam, {}) if fam else {}
+    cal = (_calendario_fgv_incc() if fam == "incc" else _calendario_ibge().get(fam, {})) if fam else {}
     for (y, m, val, per) in serie:
         rel = cal.get((y, m)) or _rel_date(y, m, add_m, day)
         if ao_vivo or rel <= ref:
@@ -523,7 +561,9 @@ def coletar_ipca_grupos(ref=None):
             gmap[key][g]["peso"] = val
         else:
             gmap[key][g]["var"] = val
-    disp = [k for k in meses if (ref >= date.today() or _rel_date(k[0], k[1], 1, 9) <= ref)]
+    cal = _calendario_ibge().get("ipca", {})   # grupos saem junto com o IPCA do mês
+    disp = [k for k in meses if (ref >= date.today()
+                                 or (cal.get(k) or _rel_date(k[0], k[1], 1, 9)) <= ref)]
     if not disp:
         return None
     ano, mes = max(disp)
@@ -553,7 +593,7 @@ def coletar_kpis_setoriais(ref=None):
     lspa = _sidra("/t/6588/n1/all/v/35/p/last%2036/c48/39428")
     out = []
 
-    pm = _pick_mensal(pms_m, ref, 2, 13) if pms_m else None   # PMS ~45d de defasagem
+    pm = _pick_mensal(pms_m, ref, 2, 13, "pms") if pms_m else None   # PMS ~45d de defasagem
     if pm:
         y, m, val, _ = pm
         pa = next((v for (yy, mm, v, *_ ) in pms_a if (yy, mm) == (y, m)), None)
@@ -565,7 +605,7 @@ def coletar_kpis_setoriais(ref=None):
                     "sub": sub, "ref": f"{_MABBR[m]}/{str(y)[2:]}", "pt": round(val, 2),
                     "acum": None if pa is None else round(pa, 2), "flow": True, "unit": "%"})
 
-    sc = _pick_mensal(sin_c, ref, 1, 8) if sin_c else None
+    sc = _pick_mensal(sin_c, ref, 1, 8, "sinapi") if sin_c else None
     if sc:
         y, m, val, _ = sc
         sm = next((v for (yy, mm, v, *_ ) in sin_m if (yy, mm) == (y, m)), None)
@@ -580,7 +620,7 @@ def coletar_kpis_setoriais(ref=None):
                     "acum": None if sa is None else round(sa, 2), "flow": False, "unit": "R$/m²"})
 
     incc = _bcb_mensal(192, 20)   # INCC/FGV var % mensal (custo de mercado da construção; SGS cap=20 obs)
-    ic = _pick_mensal(incc, ref, 1, 6) if incc else None
+    ic = _pick_mensal(incc, ref, 1, 6, "incc") if incc else None
     if ic:
         y, m, val, _ = ic
         ica = _ipca_acum_ano(incc, y, m)   # acumulado no ano: compõe as variações mensais (jan→ref)
@@ -593,7 +633,7 @@ def coletar_kpis_setoriais(ref=None):
                     "pt": round(val, 2), "acum": None if ica is None else round(ica, 2),
                     "flow": True, "unit": "%"})
 
-    ls = _pick_mensal(lspa, ref, 1, 8) if lspa else None
+    ls = _pick_mensal(lspa, ref, 1, 8, "lspa") if lspa else None
     if ls:
         y, m, val, _ = ls
         lp = _prev_mensal(lspa, y, m)

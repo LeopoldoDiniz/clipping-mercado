@@ -361,10 +361,10 @@
       "label": "Serviços (PMS)",
       "valor": "+0,3%",
       "cor": "up",
-      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,9% · IBGE/PMS out/25",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,8% · IBGE/PMS out/25",
       "ref": "out/25",
       "pt": 0.3,
-      "acum": 2.9,
+      "acum": 2.8,
       "flow": true,
       "unit": "%"
     },

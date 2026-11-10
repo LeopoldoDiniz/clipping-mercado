@@ -422,7 +422,7 @@
       "sub": "Custo da construção (mercado) · var. mês · acum. ano +1,00% · FGV/BCB-SGS fev/26",
       "ref": "fev/26",
       "pt": 0.28,
-      "acum": 1,
+      "acum": 1.0,
       "flow": true,
       "unit": "%"
     },

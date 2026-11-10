@@ -648,10 +648,10 @@
       "label": "Serviços (PMS)",
       "valor": "+1,2%",
       "cor": "up",
-      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,2% · IBGE/PMS abr/26",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,4% · IBGE/PMS abr/26",
       "ref": "abr/26",
       "pt": 1.2,
-      "acum": 2.2,
+      "acum": 2.4,
       "flow": true,
       "unit": "%"
     },
@@ -739,7 +739,7 @@
       {
         "nome": "Educação",
         "ico": "📚",
-        "val": 0
+        "val": 0.0
       },
       {
         "nome": "Transportes",

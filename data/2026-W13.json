@@ -370,10 +370,10 @@
       "label": "Serviços (PMS)",
       "valor": "+0,0%",
       "cor": "neutral",
-      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +3,2% · IBGE/PMS jan/26",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +3,3% · IBGE/PMS jan/26",
       "ref": "jan/26",
-      "pt": 0,
-      "acum": 3.2,
+      "pt": 0.0,
+      "acum": 3.3,
       "flow": true,
       "unit": "%"
     },
@@ -400,7 +400,7 @@
       "sub": "Custo da construção (mercado) · var. mês · acum. ano +1,00% · FGV/BCB-SGS fev/26",
       "ref": "fev/26",
       "pt": 0.28,
-      "acum": 1,
+      "acum": 1.0,
       "flow": true,
       "unit": "%"
     },

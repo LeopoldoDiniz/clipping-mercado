@@ -409,10 +409,10 @@
       "label": "Serviços (PMS)",
       "valor": "+0,3%",
       "cor": "up",
-      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,9% · IBGE/PMS out/25",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,8% · IBGE/PMS out/25",
       "ref": "out/25",
       "pt": 0.3,
-      "acum": 2.9,
+      "acum": 2.8,
       "flow": true,
       "unit": "%"
     },
@@ -447,65 +447,65 @@
       "setor": "agro",
       "setorLabel": "Agro",
       "label": "Safra de grãos (LSPA)",
-      "valor": "346,1 Mt",
+      "valor": "345,9 Mt",
       "cor": "up",
-      "sub": "Estimativa da safra 2025 · +0,1% vs. mês anterior · IBGE/LSPA dez/25",
-      "ref": "dez/25",
-      "pt": 346.1,
+      "sub": "Estimativa da safra 2025 · +0,1% vs. mês anterior · IBGE/LSPA nov/25",
+      "ref": "nov/25",
+      "pt": 345.9,
       "acum": null,
       "flow": false,
       "unit": "Mt"
     }
   ],
   "pressoes_ipca": {
-    "ref": "nov/25",
-    "mes": 11,
+    "ref": "dez/25",
+    "mes": 12,
     "ano": 2025,
     "grupos": [
       {
-        "nome": "Habitação",
-        "ico": "⚡",
-        "val": 0.08
-      },
-      {
-        "nome": "Despesas pessoais",
-        "ico": "🎭",
-        "val": 0.079
-      },
-      {
         "nome": "Transportes",
         "ico": "🚌",
-        "val": 0.045
-      },
-      {
-        "nome": "Vestuário",
-        "ico": "👕",
-        "val": 0.023
-      },
-      {
-        "nome": "Educação",
-        "ico": "📚",
-        "val": 0.001
-      },
-      {
-        "nome": "Alimentação e bebidas",
-        "ico": "🍎",
-        "val": -0.002
+        "val": 0.15
       },
       {
         "nome": "Saúde e cuidados",
         "ico": "➕",
-        "val": -0.005
+        "val": 0.071
       },
       {
-        "nome": "Comunicação",
-        "ico": "📱",
-        "val": -0.009
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": 0.058
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.037
       },
       {
         "nome": "Artigos de residência",
         "ico": "🛋️",
-        "val": -0.035
+        "val": 0.022
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.021
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.017
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": 0.005
+      },
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": -0.051
       }
     ]
   },
