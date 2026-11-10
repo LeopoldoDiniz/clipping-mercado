@@ -27,6 +27,7 @@ Séries verificadas contra a realidade conhecida (jul/2026):
 """
 import gzip
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -47,6 +48,36 @@ _MES = {"janeiro": 1, "fevereiro": 2, "março": 3, "marco": 3, "abril": 4,
 # Cache por URL: a mesma série é reaproveitada entre semanas (backfill chama a
 # coleta várias vezes). Guarda até falhas (None) para não repetir retries lentos.
 _CACHE = {}
+
+# Cópia versionada dos calendários oficiais (IBGE e FGV). Atualizada sempre que a fonte responde;
+# usada quando a fonte não responde (ex.: ambiente da nuvem que recusa servicodados.ibge.gov.br).
+_CAL_ARQ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "calendarios_oficiais.json")
+
+
+def _cal_arquivo(chave, novo=None):
+    """Lê (novo=None) ou mescla e grava (novo=dict) um calendário no arquivo versionado."""
+    try:
+        with open(_CAL_ARQ, encoding="utf-8") as f:
+            arq = json.load(f)
+    except (OSError, ValueError):
+        arq = {}
+    salvo = arq.get(chave, {})
+    if novo is None:
+        out = {}
+        for fam, itens in salvo.items():
+            out[fam] = {(int(k[:4]), int(k[5:])): date.fromisoformat(v) for k, v in itens.items()}
+        return out
+    for fam, itens in novo.items():
+        atual = salvo.setdefault(fam, {})
+        for (y, m), d in itens.items():
+            atual[f"{y}-{m:02d}"] = d.isoformat()
+        salvo[fam] = dict(sorted(atual.items()))
+    arq[chave] = salvo
+    try:
+        with open(_CAL_ARQ, "w", encoding="utf-8") as f:
+            json.dump(arq, f, ensure_ascii=False, indent=1, sort_keys=True)
+    except OSError:
+        pass
 
 
 def _get(url, tries=3):
@@ -260,6 +291,12 @@ def _calendario_ibge():
                         out[fam][(int(y), int(m))] = date(int(a), int(mo), int(d))
     except Exception as e:
         print(f"[kpis] calendário IBGE indisponível ({e}) — usando datas estimadas.")
+    if all(len(v) for v in out.values()):
+        _cal_arquivo("ibge", out)
+    else:
+        arq = _cal_arquivo("ibge")
+        out = {f: (out.get(f) or arq.get(f, {})) for f in _CAL_PRODUTO}
+        print("[kpis] calendário IBGE: usando a cópia versionada (calendarios_oficiais.json).")
     _CACHE["_cal_ibge"] = out
     return out
 
@@ -294,6 +331,11 @@ def _calendario_fgv_incc():
                 out[(int(m.group(2)), abrev[m.group(1)[:3].lower()])] = date(int(a), int(mo), int(d))
     except Exception as e:
         print(f"[kpis] calendário FGV indisponível ({type(e).__name__}: {e}) — INCC com data estimada.")
+    if out:
+        _cal_arquivo("fgv", {"incc": out})
+    else:
+        out = _cal_arquivo("fgv").get("incc", {})
+        print("[kpis] calendário FGV: usando a cópia versionada (calendarios_oficiais.json).")
     _CACHE["_cal_fgv"] = out
     return out
 

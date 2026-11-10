@@ -869,6 +869,15 @@ def _ref_viva(chave):
     return min(date.today(), _domingo_da_chave(chave))
 
 
+def _arquivo_livre(pasta, base):
+    """<pasta>/<base>.json; se já existir (2ª rodada no mesmo dia), <base>-rodada2.json e assim por diante."""
+    fn, n = os.path.join(pasta, f"{base}.json"), 1
+    while os.path.exists(fn):
+        n += 1
+        fn = os.path.join(pasta, f"{base}-rodada{n}.json")
+    return fn
+
+
 def _ler_json(fn, padrao=None):
     if not os.path.exists(fn):
         return padrao
@@ -1013,7 +1022,7 @@ def cmd_atualizar(chave, label):
     disparos = _gatilhos(coleta, inc, novas, T, C, chave)
     os.makedirs(os.path.join(pasta, "incrementos"), exist_ok=True)
     if os.path.exists(fn_inc):
-        os.replace(fn_inc, os.path.join(pasta, "incrementos", f"{hoje}.json"))
+        os.replace(fn_inc, _arquivo_livre(os.path.join(pasta, "incrementos"), hoje))
     _gravar_json(fn_col, coleta)
     diario = _ler_json(os.path.join(pasta, "diario.json"), []) or []
     diario.append({"data": hoje, "em": _agora(), "noticias_novas": len(novas),
@@ -1060,7 +1069,7 @@ def cmd_previa(chave, label):
     if os.path.exists(fn_an):
         _aplicar_analise(coleta, _ler_json(fn_an))
         os.makedirs(os.path.join(pasta, "analises"), exist_ok=True)
-        os.replace(fn_an, os.path.join(pasta, "analises", f"{date.today().isoformat()}.json"))
+        os.replace(fn_an, _arquivo_livre(os.path.join(pasta, "analises"), date.today().isoformat()))
         _gravar_json(os.path.join(pasta, "coleta.json"), coleta)
         print("[motor] Análise atualizada pelos gatilhos.")
     T, C = TM.carregar()
