@@ -1,32 +1,109 @@
 {
-  "periodo": "2026-W42",
-  "label": "Semana 42 · Outubro 2026",
-  "gerado_em": "2026-11-10T13:37:21.282758",
+  "periodo": "2026-W43",
+  "label": "Semana 43 · Outubro 2026",
+  "gerado_em": "2026-11-10T13:57:13.766848",
   "editorial": {
-    "texto": "A Semana 42, encurtada pelo feriado de 12 de outubro, confirmou um consumo parado e expectativas de inflação em alta. O Boletim Focus elevou a projeção do IPCA de 2026 para 5,22%, a quarta alta seguida, depois da inflação de 0,82% em setembro, e reduziu o dólar esperado para o fim do ano a R$ 5,15. A Selic, o juro básico, segue em 13,75%. Na atividade, o IBC-Br, prévia do PIB do Banco Central, subiu 0,3% em agosto, acima do esperado, puxado pela indústria, mas o trimestre até agosto ainda acumula queda de 0,6%. As vendas do varejo cresceram só 0,1% em agosto, contra 0,7% projetados, e os serviços recuaram 0,1%.\n\nO que mudou: o efeito do fim da taxa das blusinhas ganhou escala, com as compras internacionais de até US$ 50 subindo 82% em setembro, segundo o BTG. Entram na memória dois sinais novos: a expectativa de inflação acima de 5% em 2026 e a pressão do importado barato sobre o varejo de moda.\n\nNa indústria, a produção cresceu 0,9% no IBC-Br de agosto, mas móveis e eletrodomésticos caíram 4,2% no varejo. No comércio, o índice da Cielo mostrou queda real de 3,9% em setembro, o pior setembro desde 2020, e no Dia das Crianças o faturamento subiu 4,2%, com os presentes em queda de 5,7%. Nos serviços, o turismo cresceu 2,5% em agosto. No agro, a Conab projetou safra recorde de 367,1 milhões de toneladas em 2026/27, com a menor expansão de área em 20 anos, e Mato Grosso chegou a 33% da soja plantada. Na construção, a CBIC começou a estudar o efeito da redução da jornada de trabalho. No e-commerce, as vendas online subiram 5,1% em setembro.\n\nO ponto de atenção é o fim de ano: com consumo fraco e inflação em alta, planeje Black Friday e Natal com estoques enxutos e preços de entrada acessíveis.",
-    "gerado_em": "2026-11-10T13:37:15.202483",
+    "texto": "A Semana 43 foi a véspera do segundo turno, e o mercado chegou otimista. O dólar fechou a sexta-feira abaixo de R$ 5, a R$ 4,99, e a bolsa subiu 0,47%, para 205 mil pontos, acumulando alta de 10% em outubro, mesmo com pesquisas apontando empate entre os candidatos. Na inflação, o IPCA-15, prévia da inflação oficial, desacelerou para 0,32% em outubro, abaixo do esperado, com queda de luz, água e passagens aéreas, mas os alimentos voltaram a subir; em 12 meses, a prévia foi a 4,62%. O Boletim Focus manteve a projeção de 2026 em 5,22%, e a Selic, o juro básico, segue em 13,75%. A arrecadação federal bateu recorde em setembro, com R$ 239,4 bilhões, embora o crescimento sem receitas atípicas tenha sido de 3,69%.\n\nO que mudou: a conta de luz voltou a subir, com reajuste de 7,25% em Goiás aprovado pela Aneel, e o petróleo em alta, com o Brent a US$ 116, ampliou a defasagem do diesel da Petrobras para R$ 3,53 por litro, 145 dias sem reajuste. Entram na memória dois sinais novos: o risco de reajuste dos combustíveis após a eleição e a Black Friday estendida desde o 11.11.\n\nNa indústria, a importação de aço subiu 34,6% em setembro, com o Vietnã passando a China nos aços planos. No comércio e no e-commerce, a Abiacom projeta R$ 16,6 bilhões em vendas online na semana da Black Friday, alta de 24%. Nos serviços, a queda das passagens aéreas ajudou a conter a prévia da inflação. No agro, Mato Grosso chegou a 75,81% da soja plantada, mas o Imea reduziu a produtividade esperada por causa do El Niño. Na construção, as vendas de imóveis em São Paulo subiram 36,9% em agosto, mas o valor vendido caiu 12,8% e a oferta cresceu 50,7%.\n\nO ponto de atenção é o pós-eleição: prepare o orçamento de frete para um possível reajuste do diesel e trave o câmbio enquanto o dólar está abaixo de R$ 5.",
+    "gerado_em": "2026-11-10T13:57:08.643932",
     "n_sinais_considerados": 15,
     "modelo": "claude"
   },
   "clipping": [
     {
       "setores": [
-        "transversal"
+        "transversal",
+        "comercio",
+        "servicos"
       ],
-      "titulo": "Focus eleva IPCA de 2026 para 5,22% e reduz dólar para R$ 5,15",
-      "texto": "Quarta alta seguida da inflação projetada após o IPCA de setembro; PIB mantido em 1,85%.",
+      "titulo": "IPCA-15 desacelera a 0,32% em outubro, abaixo do esperado",
+      "texto": "Prévia caiu pela metade frente a setembro, com queda de luz, água e passagens; alimentos subiram. Em 12 meses, 4,62%.",
       "fontes": [
         {
           "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/13/10/2026/economia/projecao-do-focus-para-a-inflacao-de-2026-sobe-a-522-esta-e-a-quarta-alta-consecutiva/"
+          "url": "https://mercadoeconsumo.com.br/23/10/2026/economia/previa-da-inflacao-oficial-cai-pela-metade-e-fecha-outubro-em-032/"
         },
         {
-          "nome": "JB",
-          "url": "https://www.jb.com.br/economia/2026/10/1061217-inflacao-para-2026-sobe-para-522-no-focus-acima-do-teto-da-meta.html"
+          "nome": "Agência Gov",
+          "url": "https://agenciagov.ebc.com.br/noticias/202610/previa-da-inflacao-de-outubro-e-menor-com-queda-de-precos-de-agua-e-luz"
         },
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/economia/ipca-15-desacelera-para-032-em-outubro-mas-inflacao-em-12-meses-sobe-a-462/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Alimentação em casa pressiona a prévia de outubro",
+      "texto": "Alimentação e bebidas lideraram a alta do IPCA-15, enquanto energia e passagens aéreas seguraram o índice.",
+      "fontes": [
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/economia/alimentacao-e-bebidas-lideram-pressao-no-ipca-15-de-outubro/"
+        },
+        {
+          "nome": "Gazeta do Povo",
+          "url": "https://www.gazetadopovo.com.br/economia/ipca-15-previa-inflacao-outubro-sobe-disparada-alimentos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Focus mantém IPCA de 2026 em 5,22%",
+      "texto": "Boletim de 19/10 interrompe a sequência de altas da inflação projetada, ainda acima do teto da meta.",
+      "fontes": [
         {
           "nome": "Safras",
-          "url": "https://safras.com.br/focus-eleva-estimativa-de-inflacao-em-2026-e-reduz-projecao-do-dolar-e-da-selic/"
+          "url": "https://safras.com.br/?p=89622"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Arrecadação federal soma R$ 239,4 bi em setembro, recorde",
+      "texto": "Alta real de 5,62%, mas de 3,69% sem receitas atípicas; no ano, R$ 2,351 trilhões (+6,97%).",
+      "fontes": [
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/geral/2026/10/arrecadacao-federal-cresce-562-em-setembro-e-atinge-recorde-historico/"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4354196/arrecadacao-no-ano-ate-setembro-soma-r-2-351-trilhoes-alta-real-de-6-97-ante-2025"
+        },
+        {
+          "nome": "Economic News Brasil",
+          "url": "https://economicnewsbrasil.com.br/2026/10/22/arrecadacao-federal-de-setembro-recorde-ajuste/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Dólar fecha abaixo de R$ 5 na véspera do 2º turno",
+      "texto": "Ibovespa subiu 0,47% em 23/10, aos 205.082 pontos, e acumula 10,06% em outubro; pesquisas mostram empate.",
+      "fontes": [
+        {
+          "nome": "BB Investalk",
+          "url": "https://investalk.bb.com.br/noticias/mercado/mercado-agora-23-10-26"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/investimentos/bolsa/ibovespa-sobe-047-e-dolar-cai-abaixo-de-r-5-no-ultimo-pregao-antes-do-segundo-turno/"
+        },
+        {
+          "nome": "O Povo",
+          "url": "https://mais.opovo.com.br/jornal/economia/2026/10/24/bolsa-fecha-em-alta-de-047-e-dolar-cai-no-ultimo-pregao-antes-do-segundo-turno.html"
         }
       ]
     },
@@ -36,42 +113,49 @@
         "industria",
         "servicos"
       ],
-      "titulo": "IBC-Br sobe 0,3% em agosto, acima do esperado",
-      "texto": "Prévia do PIB do BC teve indústria em +0,9% e serviços em +0,2%; agro caiu 1,8%. No trimestre até agosto, queda de 0,6%.",
+      "titulo": "Empate nas pesquisas e Brent a US$ 116 marcam a semana",
+      "texto": "Último pregão antes do 2º turno teve Datafolha empatado e petróleo em alta no exterior.",
       "fontes": [
         {
-          "nome": "Agência Gov",
-          "url": "https://agenciagov.ebc.com.br/noticias/202610/com-crescimento-de-0-3-em-agosto-bc-aponta-pib-1-6-maior-nos-ultimos-12-meses"
-        },
-        {
-          "nome": "Bora Investir (B3)",
-          "url": "https://borainvestir.b3.com.br/noticias/ibc-br-atividade-economica-tem-alta-de-03-em-agosto/"
-        },
-        {
-          "nome": "BB Investalk",
-          "url": "https://investalk.bb.com.br/radar/bc-ibc-br-de-agosto-sobe-034-ante-queda-de-022-em-julho-e-acima-da-mediana-das-projecoes"
+          "nome": "Investidor10",
+          "url": "https://investidor10.com.br/noticias/empate-no-datafolha-e-brent-a-us-116-marcam-ultimo-pregao-antes-do-2-turno-123460/"
         }
       ]
     },
     {
       "setores": [
-        "transversal",
-        "comercio"
+        "industria",
+        "servicos",
+        "agro"
       ],
-      "titulo": "Varejo sobe só 0,1% em agosto, abaixo das projeções",
-      "texto": "PMC: mercado esperava 0,7%; na comparação anual, alta de 0,4% contra 1,6% previstos. XP vê PIB do 3º trimestre em -0,2%.",
+      "titulo": "Defasagem do diesel da Petrobras chega a R$ 3,53 por litro",
+      "texto": "Abicom: diesel está 145 dias sem reajuste e defasagem supera a subvenção; mercado espera reajuste após a eleição.",
       "fontes": [
         {
-          "nome": "DGABC",
-          "url": "https://www.dgabc.com.br/Noticia/4352839/vendas-do-varejo-crescem-0-1-em-agosto-ante-julho-aponta-ibge"
-        },
-        {
           "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/15/10/2026/noticias-varejo/vendas-no-comercio-varejista-tem-variacao-de-01-em-agosto/"
+          "url": "https://mercadoeconsumo.com.br/23/10/2026/economia/defasagem-do-diesel-nas-refinarias-da-petrobras-ultrapassa-subvencao-e-atinge-r-353-l/"
         },
         {
-          "nome": "Brapi",
-          "url": "https://brapi.dev/news/varejo-sobe-so-0-1-em-agosto-e-reforca-cenario-de-pib-46396ce7"
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/10/1267555-abicom-alta-do-brent-faz-diesel-da-petrobras-se-aproximar-do-valor-do-subsidio.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "servicos"
+      ],
+      "titulo": "Aneel aprova reajuste de 7,25% na Equatorial Goiás",
+      "texto": "Neoenergia Brasília teve alta provisória de 1,92%; novas tarifas valem desde 22/10.",
+      "fontes": [
+        {
+          "nome": "Cenário Energia",
+          "url": "https://cenarioenergia.com.br/2026/10/20/aneel-aprova-novas-tarifas-de-energia-para-neoenergia-brasilia-e-equatorial-goias/"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4353732/aneel-aprova-provisoriamente-alta-media-de-1-92-para-consumidores-da-neoenergia-brasilia"
         }
       ]
     },
@@ -79,112 +163,61 @@
       "setores": [
         "industria"
       ],
-      "titulo": "Indústria cresce 0,9% no IBC-Br de agosto",
-      "texto": "Componente industrial da prévia do PIB reagiu no mês, depois da queda de 0,4% em julho.",
+      "titulo": "Importação de aço sobe 34,6% em setembro",
+      "texto": "Aço Brasil: 600 mil toneladas no mês; vendas internas caíram 2,3%; Vietnã supera a China como origem de aços planos.",
       "fontes": [
         {
-          "nome": "Agência Gov",
-          "url": "https://agenciagov.ebc.com.br/noticias/202610/com-crescimento-de-0-3-em-agosto-bc-aponta-pib-1-6-maior-nos-ultimos-12-meses"
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/economia/producao-aco-minas-gerais-2/"
         },
         {
-          "nome": "Eu Quero Investir",
-          "url": "https://euqueroinvestir.com/economia/ibc-br-sobe-03-em-agosto-e-acumula-alta-de-16-em-12-meses"
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/geral/2026/10/vietna-supera-china-como-principal-fonte-de-importacoes-de-aco-do-brasil/"
         }
       ]
     },
     {
       "setores": [
         "industria",
-        "comercio"
+        "transversal"
       ],
-      "titulo": "Móveis e eletrodomésticos caem 4,2% no varejo de agosto",
-      "texto": "Bens duráveis seguem como o ponto fraco do comércio, enquanto seis das oito atividades cresceram no mês.",
+      "titulo": "IPI tem a maior alta entre os tributos em setembro",
+      "texto": "Arrecadação do imposto sobre produtos industrializados foi de R$ 11 bi para R$ 13,3 bi em um ano.",
       "fontes": [
         {
-          "nome": "BP Money",
-          "url": "https://bpmoney.com.br/?p=427281"
-        },
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/empresas-e-negocios/servicos-e-varejo/vendas-do-varejo-crescem-01-em-agosto-apos-queda-no-mes-anterior-aponta-ibge/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "ICVA: varejo cai 3,9% em setembro, pior setembro desde 2020",
-      "texto": "16º mês seguido de queda real; e-commerce sobe 5,1% e loja física recua 0,1%; São Paulo tem a maior retração.",
-      "fontes": [
-        {
-          "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/empresas-e-negocios/servicos-e-varejo/varejo-cai-39-em-setembro-e-acumula-16-meses-seguidos-de-retracao-real-aponta-icva/"
-        },
-        {
-          "nome": "Cielo",
-          "url": "https://blog.cielo.com.br/indice-icva/vendas-varejo-setembro-2026/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Dia das Crianças: varejo fatura 4,2% mais, mas presentes caem",
-      "texto": "ICVA da semana de 6 a 12/10: segmentos de presentes recuaram 5,7% e vestuário 1,9%; Norte e Nordeste lideraram.",
-      "fontes": [
-        {
-          "nome": "Cielo",
-          "url": "https://blog.cielo.com.br/indice-icva/vendas-varejo-dia-das-criancas-2026/"
-        },
-        {
-          "nome": "Band",
-          "url": "https://www.band.com.br/nacional/brasil/dia-das-criancas-comercio-comemora-alta-de-3-nas-vendas-202610100037"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Dia das Crianças frustra metade do comércio em Minas",
-      "texto": "70% das compras ficaram entre R$ 50 e R$ 200, segundo levantamento do setor em Minas Gerais.",
-      "fontes": [
-        {
-          "nome": "Diário do Comércio",
-          "url": "https://diariodocomercio.com.br/economia/dia-das-criancas-vendas-minas-gerais/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "comercio"
-      ],
-      "titulo": "Varejo cresce 6,3% no 3º trimestre, aponta Stone",
-      "texto": "Índice do Varejo Stone: combustíveis (+14,1%) e supermercados (+10,4%) lideram; vestuário e calçados caem 3,5%. Setembro recua 0,3% no mês.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/13/10/2026/noticias-varejo/vendas-do-varejo-avancam-63-no-terceiro-trimestre/"
-        },
-        {
-          "nome": "Viva",
-          "url": "https://viva.com.br/dinheiro/varejo-avanca-63-no-trimestre-mas-credito-limita-recuperacao.html"
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/geral/2026/10/arrecadacao-federal-cresce-562-em-setembro-e-atinge-recorde-historico/"
         }
       ]
     },
     {
       "setores": [
         "comercio",
-        "servicos"
+        "ecommerce"
       ],
-      "titulo": "Bares e restaurantes crescem 15,5% no Dia das Crianças",
-      "texto": "Consumo em alimentação fora de casa avançou na data, na contramão dos segmentos de presentes.",
+      "titulo": "Black Friday deve movimentar R$ 16,6 bi no e-commerce",
+      "texto": "Abiacom projeta alta de 24,4% na semana da data, em 27/11; Confi/Neotrust estima R$ 13,3 bi em quatro dias.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/22/10/2026/black-friday/black-friday-2026-deve-movimentar-mais-de-r-16-bilhoes-no-e-commerce/"
+        },
+        {
+          "nome": "Gironews",
+          "url": "https://gironews.com/varejo-digital/black-friday-deve-movimentar-r-166-bilhoes-no-e-commerce-brasileiro-em-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "E-commerce deve faturar R$ 259,8 bilhões em 2026",
+      "texto": "Projeção anual da Abiacom acompanha a estimativa da ABComm, acima de R$ 258 bilhões.",
       "fontes": [
         {
           "nome": "Gironews",
-          "url": "https://gironews.com/food-service/consumo-em-bares-e-restaurantes-cresce-155-no-dia-das-criancas/"
+          "url": "https://gironews.com/varejo-digital/black-friday-deve-movimentar-r-166-bilhoes-no-e-commerce-brasileiro-em-2026/"
         }
       ]
     },
@@ -192,180 +225,76 @@
       "setores": [
         "servicos"
       ],
-      "titulo": "Volume de serviços cai 0,1% em agosto",
-      "texto": "PMS: só serviços às famílias cresceram (+2,1%); setor está 0,3% abaixo do recorde e sobe 2,2% em 12 meses.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/14/10/2026/servicos/setor-de-servicos-cai-01-de-julho-para-agosto-mostra-ibge/"
-        },
-        {
-          "nome": "Jornal do Comércio",
-          "url": "https://www.jornaldocomercio.com/economia/2026/10/1266801-volume-de-servicos-prestados-cai-01-em-agosto-ante-julho-mostra-ibge.html"
-        },
-        {
-          "nome": "IstoÉ Dinheiro",
-          "url": "https://istoedinheiro.com.br/setor-servicos-recua-agosto-2026-ibge"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Turismo cresce 2,5% em agosto",
-      "texto": "Índice de atividades turísticas avançou na passagem de julho para agosto, enquanto o total de serviços recuou.",
-      "fontes": [
-        {
-          "nome": "Paraíba Business",
-          "url": "https://paraibabusiness.com.br/turismo-cresce-25-em-agosto-enquanto-servicos-recuam-no-brasil/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "servicos"
-      ],
-      "titulo": "Transportes e serviços profissionais recuam em agosto",
-      "texto": "Transportes (-0,2%), profissionais e administrativos (-0,2%) e outros serviços (-1%) caíram no mês.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/14/10/2026/servicos/setor-de-servicos-cai-01-de-julho-para-agosto-mostra-ibge/amp/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Conab prevê safra recorde de 367,1 milhões de t em 2026/27",
-      "texto": "1º levantamento: alta de 1,4%, com soja em 181,6 milhões de t; área cresce 2,3%, a menor expansão em 20 anos.",
-      "fontes": [
-        {
-          "nome": "Agência Gov",
-          "url": "https://agenciagov.ebc.com.br/noticias/202610/primeiro-levantamento-da-safra-de-graos-2026-27-estima-producao-acima-de-367-milhoes-de-toneladas"
-        },
-        {
-          "nome": "Safras",
-          "url": "https://safras.com.br/conab-projeta-safra-de-graos-do-brasil-em-2026-27-de-367140-milhoes-de-toneladas/"
-        },
-        {
-          "nome": "Brasilagro",
-          "url": "https://brasilagro.com.br/conteudo/conab-ve-nova-safra-recorde-em-202627-com-alta-na-soja-e-queda-no-arroz.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "IBGE estima safra recorde de 354,5 milhões de t em 2026",
-      "texto": "LSPA de setembro: alta de 2,4% sobre 2025; milho em 143,3 milhões de t e trigo em queda de 24%.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/15/10/2026/economia/ibge-estima-safra-de-graos-recorde-em-2026-3545-milhoes-de-toneladas/"
-        },
-        {
-          "nome": "CNN Brasil",
-          "url": "https://www.cnnbrasil.com.br/agro/safra-de-graos-deve-bater-recorde-em-2026-estima-ibge/"
-        },
-        {
-          "nome": "Comprerural",
-          "url": "https://comprerural.com/em-setembro-safra-prevista-pelo-ibge-para-2026-e-de-3545-milhoes-de-toneladas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Produção de grãos deve crescer apesar do El Niño",
-      "texto": "Conab projeta aumento da produção, mas com produtividade média cerca de 0,9% menor.",
-      "fontes": [
-        {
-          "nome": "Acessa",
-          "url": "https://www.acessa.com/economia/2026/10/342318-producao-brasileira-de-graos-deve-aumentar-apesar-do-el-nino.html"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "agro"
-      ],
-      "titulo": "Mato Grosso semeia 33% da soja e recupera ritmo",
-      "texto": "Plantio passou de 10,23% para 33,28% da área prevista em uma semana, segundo o Imea.",
-      "fontes": [
-        {
-          "nome": "CNA",
-          "url": "https://cnabrasil.org.br/noticias/mato-grosso-semeia-33-da-soja-e-recupera-ritmo-de-plantio-na-safra-2026-27"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "CBIC estuda impacto da redução da jornada na construção",
-      "texto": "Conselho da entidade debateu em 14/10 os efeitos de uma jornada menor; estudo será apresentado em 27/10, em Goiânia.",
-      "fontes": [
-        {
-          "nome": "CBIC",
-          "url": "https://cbic.org.br/cbic-debate-temas-estrategicos-e-cenarios-para-o-setor-em-reuniao-do-conselho-administrativo/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "construcao"
-      ],
-      "titulo": "BB vê setor imobiliário resiliente, puxado pelo econômico",
-      "texto": "Dados da Abrainc mostram o segmento econômico respondendo pela maior parte de lançamentos e vendas.",
-      "fontes": [
-        {
-          "nome": "BB Investalk",
-          "url": "https://investalk.bb.com.br/noticias/mercado/setorial-construcao-202610"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce",
-        "comercio"
-      ],
-      "titulo": "Compras internacionais de até US$ 50 sobem 82% em setembro",
-      "texto": "BTG vê retomada consistente após o fim da taxa das blusinhas, com efeitos competitivos sobre o varejo de moda.",
-      "fontes": [
-        {
-          "nome": "Mercado&Consumo",
-          "url": "https://mercadoeconsumo.com.br/16/10/2026/noticias-varejo/compras-internacionais-abaixo-de-us-50-sobem-82-apos-fim-da-taxa-das-blusinhas/"
-        }
-      ]
-    },
-    {
-      "setores": [
-        "ecommerce"
-      ],
-      "titulo": "E-commerce cresce 5,1% em setembro, contra loja física em queda",
-      "texto": "No ICVA, o canal online segue avançando enquanto o varejo físico recua 0,1%.",
+      "titulo": "Passagens aéreas caem e ajudam a frear a inflação",
+      "texto": "Queda de tarifas aéreas, luz e água compensou a alta dos alimentos no IPCA-15 de outubro.",
       "fontes": [
         {
           "nome": "Times Brasil",
-          "url": "https://timesbrasil.com.br/empresas-e-negocios/servicos-e-varejo/varejo-cai-39-em-setembro-e-acumula-16-meses-seguidos-de-retracao-real-aponta-icva/"
+          "url": "https://timesbrasil.com.br/brasil/indicadores/ipca-15-outubro-2026-passagens-aereas-alimentos-daycoval/"
+        },
+        {
+          "nome": "Agência Gov",
+          "url": "https://agenciagov.ebc.com.br/noticias/202610/previa-da-inflacao-de-outubro-e-menor-com-queda-de-precos-de-agua-e-luz"
         }
       ]
     },
     {
       "setores": [
-        "ecommerce"
+        "agro"
       ],
-      "titulo": "E-commerce sobe 3,1% no Dia das Crianças, abaixo da loja física",
-      "texto": "Na semana da data, o físico cresceu 4,5% e o online 3,1%, segundo a Cielo.",
+      "titulo": "Plantio da soja em MT chega a 75,81%",
+      "texto": "Imea prevê passar de 80% até o fim de outubro; estimativa de 48,88 milhões de toneladas foi mantida.",
       "fontes": [
         {
-          "nome": "Cielo",
-          "url": "https://blog.cielo.com.br/indice-icva/vendas-varejo-dia-das-criancas-2026/"
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/mt-safra-2026-27-plantio-da-soja-chega-a-75-81"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/agro/imea-mantem-projecoes-da/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Imea reduz produtividade da soja de MT por risco do El Niño",
+      "texto": "Boletim de 19/10 revisou para baixo a produtividade esperada; clima de novembro e dezembro será decisivo.",
+      "fontes": [
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/mt-safra-2026-27-plantio-da-soja-chega-a-75-81"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-agro/2026/10/imea-mantem-projecoes-da-safra-2026-27-de-soja-e-milho-de-mt/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Vendas de imóveis em SP sobem 36,9% em agosto",
+      "texto": "Secovi-SP: 10.813 unidades vendidas, 71% pelo MCMV; mas o VGV caiu 12,8%, para R$ 4,74 bi.",
+      "fontes": [
+        {
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/vendas-de-imoveis-em-sp-sobem-37-em-agosto-mas-valores-caem/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Oferta de imóveis novos em SP cresce 50,7%",
+      "texto": "Estoque chegou a 98 mil unidades em agosto, com valor de R$ 70,6 bilhões.",
+      "fontes": [
+        {
+          "nome": "Portas",
+          "url": "https://portas.com.br/noticias/vendas-de-imoveis-em-sp-sobem-37-em-agosto-mas-valores-caem/"
         }
       ]
     }
@@ -374,9 +303,9 @@
     {
       "dim": "P",
       "nome": "Político",
-      "tema": "Reta final do segundo turno",
-      "texto": "Mercado segue precificando o resultado de 25/10, com dólar projetado em R$ 5,15 pelo Focus.",
-      "score": 6.8,
+      "tema": "Véspera do segundo turno",
+      "texto": "Pesquisas empatadas e mercado otimista: bolsa sobe 10% em outubro e dólar fica abaixo de R$ 5.",
+      "score": 7.4,
       "setores": [
         "transversal",
         "servicos"
@@ -385,32 +314,30 @@
     {
       "dim": "E",
       "nome": "Econômico",
-      "tema": "Inflação sobe nas projeções, atividade oscila",
-      "texto": "Focus eleva IPCA a 5,22%; IBC-Br sobe 0,3% em agosto, mas varejo e serviços ficam estagnados.",
-      "score": 7.3,
+      "tema": "Prévia da inflação desacelera",
+      "texto": "IPCA-15 de 0,32% em outubro, abaixo do esperado; arrecadação bate recorde em setembro.",
+      "score": 6.8,
       "setores": [
         "transversal",
-        "comercio",
-        "servicos"
+        "comercio"
       ]
     },
     {
       "dim": "S",
       "nome": "Social",
-      "tema": "Consumo seletivo em datas comemorativas",
-      "texto": "Dia das Crianças cresce 4,2% nominal, mas presentes caem 5,7%; restaurantes sobem.",
-      "score": 6.3,
+      "tema": "Alimentos mais caros",
+      "texto": "Alimentação em casa lidera a alta da prévia, pressionando o orçamento das famílias.",
+      "score": 6.4,
       "setores": [
-        "comercio",
-        "servicos"
+        "comercio"
       ]
     },
     {
       "dim": "T",
       "nome": "Tecnológico",
-      "tema": "Cross-border acelera",
-      "texto": "Compras internacionais de até US$ 50 crescem 82% em setembro, pressionando o varejo de moda.",
-      "score": 6.6,
+      "tema": "Black Friday digital",
+      "texto": "Abiacom projeta R$ 16,6 bi no e-commerce na semana da Black Friday.",
+      "score": 6.0,
       "setores": [
         "ecommerce",
         "comercio"
@@ -419,9 +346,9 @@
     {
       "dim": "A",
       "nome": "Ambiental",
-      "tema": "Safra recorde sob El Niño",
-      "texto": "Conab prevê 367,1 Mt em 2026/27, com produtividade menor; plantio em MT recupera ritmo.",
-      "score": 6.2,
+      "tema": "El Niño e produtividade",
+      "texto": "Imea reduz a produtividade esperada da soja de MT por risco climático.",
+      "score": 6.4,
       "setores": [
         "agro"
       ]
@@ -429,13 +356,13 @@
     {
       "dim": "L",
       "nome": "Legal",
-      "tema": "Redução da jornada de trabalho",
-      "texto": "CBIC estuda impactos de uma jornada menor na construção civil.",
-      "score": 5.5,
+      "tema": "Preço de combustíveis",
+      "texto": "Diesel com defasagem de R$ 3,53 por litro e 145 dias sem reajuste.",
+      "score": 6.2,
       "setores": [
-        "construcao",
-        "servicos",
-        "comercio"
+        "industria",
+        "agro",
+        "servicos"
       ]
     }
   ],
@@ -444,29 +371,29 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 16/10/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 23/10/2026",
       "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
       "valor": "0,82%",
       "cor": "down",
-      "sub": "Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeção Focus 2026: 5,22%",
+      "sub": "Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeção Focus 2026: 5,19%",
       "fonte": "IBGE",
       "acum_ano": 3.95,
       "ipca_12m": 4.58,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
-      "projecao": 5.22,
-      "projecao_em": "2026-10-16",
+      "projecao": 5.19,
+      "projecao_em": "2026-10-23",
       "projecao_fonte": "Focus/BCB"
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,08",
+      "valor": "R$ 5,04",
       "cor": "up",
-      "sub": "Dólar PTAX venda · BCB · 16/10/2026",
+      "sub": "Dólar PTAX venda · BCB · 23/10/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -662,157 +589,157 @@
     "panorama": {
       "acoes": [
         {
-          "ico": "📈",
-          "txt": "Focus a 5,22%: inclua inflação acima do teto nos orçamentos de 2027."
-        },
-        {
-          "ico": "🛒",
-          "txt": "Varejo estagnado: priorize giro de estoque e itens essenciais."
-        },
-        {
-          "ico": "🎄",
-          "txt": "Prepare Black Friday e Natal com ofertas de tíquete acessível."
-        },
-        {
-          "ico": "🌎",
-          "txt": "Moda e acessórios: o importado de até US$ 50 cresce 82%; reforce diferenciais locais."
-        },
-        {
           "ico": "🗳️",
-          "txt": "Segundo turno em 25/10: mantenha planos B para câmbio e juros."
+          "txt": "Segundo turno no domingo: adie decisões grandes até o resultado."
+        },
+        {
+          "ico": "⛽",
+          "txt": "Diesel defasado: prepare o orçamento de frete para um reajuste após a eleição."
+        },
+        {
+          "ico": "💱",
+          "txt": "Dólar abaixo de R$ 5: trave câmbio de importações do 1º trimestre."
+        },
+        {
+          "ico": "🛍️",
+          "txt": "Black Friday em 27/11: finalize estoque e campanhas até o início de novembro."
+        },
+        {
+          "ico": "🥫",
+          "txt": "Alimentos em alta: revise preços e mix do varejo alimentar."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "A indústria reagiu em agosto ou foi só um respiro?",
-        "quote": "A indústria cresceu 0,9% no IBC-Br de agosto.",
+        "prov": "Diesel defasado e aço importado: qual custo sobe primeiro?",
+        "quote": "Defasagem do diesel da Petrobras chegou a R$ 3,53 por litro.",
         "edi": [
-          "A prévia do PIB do Banco Central mostrou reação industrial em agosto, mas o trimestre até agosto ainda acumula queda de 0,6%.",
-          "No varejo, móveis e eletrodomésticos caíram 4,2%, sinal de demanda fraca por bens duráveis."
+          "A Abicom apontou diesel 145 dias sem reajuste e defasagem acima da subvenção, com expectativa de correção após a eleição.",
+          "A importação de aço subiu 34,6% em setembro e a Aneel aprovou reajuste de 7,25% na energia em Goiás."
         ],
         "acoes": [
           {
-            "ico": "🏭",
-            "txt": "Não amplie produção de duráveis sem pedidos firmes."
+            "ico": "⛽",
+            "txt": "Negocie contratos de frete antes do reajuste."
           },
           {
-            "ico": "📦",
-            "txt": "Prepare estoques enxutos para o fim de ano."
+            "ico": "🏗️",
+            "txt": "Siderurgia: monitore o avanço do aço vietnamita."
           },
           {
-            "ico": "💱",
-            "txt": "Monitore o câmbio até o segundo turno."
+            "ico": "⚡",
+            "txt": "Em Goiás, recalcule custos com a tarifa 7,25% maior."
           }
         ]
       },
       "comercio": {
-        "prov": "Varejo estagnado e presentes em queda: o Natal vai repetir o Dia das Crianças?",
-        "quote": "Varejo caiu 3,9% em setembro, pior setembro desde 2020, segundo o ICVA.",
+        "prov": "Alimentos subindo e Black Friday chegando: onde cortar margem?",
+        "quote": "Alimentação e bebidas lideraram a alta do IPCA-15 de outubro.",
         "edi": [
-          "A PMC subiu só 0,1% em agosto, abaixo do esperado, e o ICVA registrou o 16º mês de queda real em setembro.",
-          "No Dia das Crianças, o faturamento cresceu 4,2%, mas os segmentos de presentes caíram 5,7%, enquanto bares e restaurantes avançaram."
+          "A prévia da inflação desacelerou para 0,32%, mas os alimentos voltaram a pressionar o orçamento doméstico.",
+          "A Black Friday de 27/11 deve movimentar R$ 16,6 bilhões no e-commerce, segundo a Abiacom."
         ],
         "acoes": [
           {
-            "ico": "🎁",
-            "txt": "Monte kits de presente de até R$ 200, faixa de 70% das compras."
+            "ico": "🛒",
+            "txt": "Proteja a margem de alimentos com marcas próprias."
           },
           {
-            "ico": "⛽",
-            "txt": "Supermercados e postos sustentam o trimestre: reforce conveniência."
+            "ico": "🏷️",
+            "txt": "Defina já os itens-âncora da Black Friday."
           },
           {
-            "ico": "👗",
-            "txt": "Moda: diferencie-se do importado com troca fácil e pronta-entrega."
+            "ico": "💳",
+            "txt": "Ofereça Pix com desconto para reduzir taxas."
           }
         ]
       },
       "servicos": {
-        "prov": "Serviços perto do recorde, mas parados: onde está o próximo crescimento?",
-        "quote": "Volume de serviços caiu 0,1% em agosto e está 0,3% abaixo do recorde.",
+        "prov": "Arrecadação recorde e dólar abaixo de R$ 5: o cenário pós-eleição está precificado?",
+        "quote": "Arrecadação federal somou R$ 239,4 bilhões em setembro, recorde.",
         "edi": [
-          "A PMS mostrou queda leve, com só os serviços às famílias crescendo, e o turismo subiu 2,5% no mês.",
-          "O IBC-Br registrou alta de 0,2% nos serviços em agosto, e o Focus elevou a inflação projetada para 5,22%."
+          "A Receita registrou recorde em setembro, mas o crescimento sem receitas atípicas foi de 3,69%.",
+          "Passagens aéreas e energia caíram no IPCA-15, aliviando custos de serviços."
         ],
         "acoes": [
           {
             "ico": "✈️",
-            "txt": "Turismo: aproveite a alta para vender pacotes de fim de ano."
+            "txt": "Aproveite passagens mais baratas para viagens corporativas."
           },
           {
-            "ico": "🍽️",
-            "txt": "Food service: invista em datas comemorativas, que trouxeram alta."
+            "ico": "📊",
+            "txt": "Prepare cenários para o pós-eleição."
           },
           {
-            "ico": "📈",
-            "txt": "Reajuste contratos considerando inflação acima de 5%."
+            "ico": "🏦",
+            "txt": "Avalie captar com juros futuros em queda."
           }
         ]
       },
       "agro": {
-        "prov": "Safra recorde com área crescendo pouco: produtividade será o diferencial?",
-        "quote": "Conab prevê safra recorde de 367,1 milhões de toneladas em 2026/27.",
+        "prov": "Produtividade revisada para baixo: a safra recorde ainda se sustenta?",
+        "quote": "Plantio da soja em Mato Grosso chegou a 75,81% em 23/10.",
         "edi": [
-          "O primeiro levantamento da Conab projeta nova safra recorde, mas com a menor expansão de área em 20 anos e produtividade 0,9% menor.",
-          "O IBGE estimou 354,5 milhões de toneladas para 2026, e o plantio da soja em Mato Grosso recuperou o ritmo, chegando a 33%."
+          "O plantio acelerou em Mato Grosso, mas o Imea reduziu a produtividade esperada por causa do El Niño.",
+          "A defasagem do diesel sinaliza risco de alta no frete durante o plantio."
         ],
         "acoes": [
           {
             "ico": "🌱",
-            "txt": "Invista em produtividade, não em área."
+            "txt": "Monitore lavouras em novembro e dezembro, fase crítica."
           },
           {
-            "ico": "🌽",
-            "txt": "Planeje a safrinha com o plantio de soja recuperado."
+            "ico": "🚚",
+            "txt": "Feche frete antes do reajuste do diesel."
           },
           {
-            "ico": "🍬",
-            "txt": "Usinas: aproveitem a safra de cana 5,3% maior."
+            "ico": "📉",
+            "txt": "Considere hedge diante do risco climático."
           }
         ]
       },
       "construcao": {
-        "prov": "Jornada menor na obra: sua produtividade aguenta?",
-        "quote": "CBIC debateu os efeitos da redução da jornada de trabalho na construção civil.",
+        "prov": "Vende mais unidades e fatura menos: o MCMV está achatando o tíquete?",
+        "quote": "Vendas de imóveis em São Paulo subiram 36,9% em agosto, com VGV 12,8% menor.",
         "edi": [
-          "A entidade vai apresentar estudo sobre o impacto de uma jornada menor no setor em 27 de outubro, em Goiânia.",
-          "Análise do BB indica atividade imobiliária resiliente, sustentada pelo segmento econômico."
+          "O Secovi-SP registrou 10.813 unidades vendidas em agosto, 71% pelo MCMV, mas com valor geral de vendas em queda.",
+          "A oferta de imóveis novos cresceu 50,7%, para 98 mil unidades."
         ],
         "acoes": [
           {
-            "ico": "👷",
-            "txt": "Simule custos com uma jornada menor nos orçamentos."
-          },
-          {
             "ico": "🏠",
-            "txt": "Mantenha foco no segmento econômico, que sustenta vendas."
+            "txt": "Calibre lançamentos de médio padrão ao estoque alto."
           },
           {
             "ico": "📊",
-            "txt": "Invista em produtividade de canteiro para compensar mão de obra cara."
+            "txt": "Acompanhe a velocidade de vendas por faixa de preço."
+          },
+          {
+            "ico": "🏦",
+            "txt": "Planeje funding com juros futuros em queda."
           }
         ]
       },
       "ecommerce": {
-        "prov": "Cross-border cresce 82%: sua loja online compete em preço ou em serviço?",
-        "quote": "Compras internacionais de até US$ 50 cresceram 82% em setembro.",
+        "prov": "Black Friday de R$ 16,6 bi: sua logística aguenta o pico?",
+        "quote": "Black Friday deve movimentar R$ 16,6 bilhões no e-commerce, segundo a Abiacom.",
         "edi": [
-          "O BTG vê retomada consistente das compras internacionais após o fim da taxa das blusinhas, com efeito maior sobre a moda.",
-          "O e-commerce cresceu 5,1% em setembro no ICVA, mas no Dia das Crianças ficou atrás da loja física, com alta de 3,1%."
+          "A Abiacom projeta alta de 24,4% na semana da Black Friday, e a Confi/Neotrust estima R$ 13,3 bilhões entre 26 e 29 de novembro.",
+          "O e-commerce brasileiro deve faturar R$ 259,8 bilhões em 2026."
         ],
         "acoes": [
           {
-            "ico": "🚚",
-            "txt": "Compita em prazo e troca, não só em preço."
+            "ico": "📦",
+            "txt": "Reforce estoque e transportadora para 27/11."
           },
           {
-            "ico": "🛍️",
-            "txt": "Prepare Black Friday com estoque nacional de pronta-entrega."
+            "ico": "🎯",
+            "txt": "Planeje campanhas desde o 11.11."
           },
           {
-            "ico": "📱",
-            "txt": "Use a loja física como ponto de retirada para ganhar conveniência."
+            "ico": "💻",
+            "txt": "Teste o site para picos de acesso."
           }
         ]
       }
@@ -835,48 +762,8 @@
       "relevancia": 100,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "Energia elétrica sobe 7,98% no IPCA de setembro, maior impacto individual.",
-      "periodo_observacao": "2026-W41",
-      "data_identificacao": "2026-05-25",
-      "origem": "real"
-    },
-    {
-      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
-      "tipo": "risco",
-      "titulo": "Remessa Conforme e importados",
-      "dimensao": "L",
-      "setores": [
-        "ecommerce"
-      ],
-      "status": "materializado",
-      "relevancia": 100,
-      "severidade": 7.5,
-      "iminencia": 7.0,
-      "ultima_observacao": "BTG: compras de até US$ 50 sobem 82% em setembro após o fim da taxa.",
-      "periodo_observacao": "2026-W42",
-      "data_identificacao": "2026-07-13",
-      "origem": "real"
-    },
-    {
-      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
-      "tipo": "risco",
-      "titulo": "Digitalização e IA",
-      "dimensao": "T",
-      "setores": [
-        "servicos",
-        "agro",
-        "ecommerce",
-        "comercio",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 96.8,
-      "severidade": 9.8,
-      "iminencia": 9.0,
-      "ultima_observacao": "E-commerce cresce 5,1% em setembro no ICVA, enquanto a loja física recua.",
-      "periodo_observacao": "2026-W42",
+      "ultima_observacao": "Aneel aprova 7,25% na Equatorial Goiás e 1,92% provisório na Neoenergia Brasília.",
+      "periodo_observacao": "2026-W43",
       "data_identificacao": "2026-05-25",
       "origem": "real"
     },
@@ -895,9 +782,93 @@
       "relevancia": 95.75,
       "severidade": 9.5,
       "iminencia": 9.0,
-      "ultima_observacao": "Conab prevê safra 2026/27 de 367,1 Mt; IBGE estima 354,5 Mt em 2026; MT semeia 33%.",
-      "periodo_observacao": "2026-W42",
+      "ultima_observacao": "MT chega a 75,81% de soja plantada; Imea reduz produtividade pelo El Niño.",
+      "periodo_observacao": "2026-W43",
       "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
+      "tipo": "risco",
+      "titulo": "Remessa Conforme e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce"
+      ],
+      "status": "materializado",
+      "relevancia": 94.22,
+      "severidade": 7.5,
+      "iminencia": 7.0,
+      "ultima_observacao": "BTG: compras de até US$ 50 sobem 82% em setembro após o fim da taxa.",
+      "periodo_observacao": "2026-W42",
+      "data_identificacao": "2026-07-13",
+      "origem": "real"
+    },
+    {
+      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
+      "tipo": "risco",
+      "titulo": "Câmbio e balança",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "industria",
+        "agro",
+        "servicos",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Dólar abaixo de R$ 5 e Ibovespa a 205 mil pontos na véspera do 2º turno.",
+      "periodo_observacao": "2026-W43",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "cad38463-60e5-4e42-9065-539cd7060c1c",
+      "tipo": "risco",
+      "titulo": "Combustíveis e petróleo",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "industria",
+        "agro",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 90.45,
+      "severidade": 8.7,
+      "iminencia": 8.0,
+      "ultima_observacao": "Defasagem do diesel chega a R$ 3,53/l; Brent a US$ 116.",
+      "periodo_observacao": "2026-W43",
+      "data_identificacao": "2026-03-16",
+      "origem": "real"
+    },
+    {
+      "id": "bf08e65c-7bad-4ac3-a382-38944116ffa6",
+      "tipo": "risco",
+      "titulo": "Digitalização e IA",
+      "dimensao": "T",
+      "setores": [
+        "servicos",
+        "agro",
+        "ecommerce",
+        "comercio",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 87.12,
+      "severidade": 9.8,
+      "iminencia": 9.0,
+      "ultima_observacao": "E-commerce cresce 5,1% em setembro no ICVA, enquanto a loja física recua.",
+      "periodo_observacao": "2026-W42",
+      "data_identificacao": "2026-05-25",
       "origem": "real"
     },
     {
@@ -913,79 +884,11 @@
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 95.75,
+      "relevancia": 86.17,
       "severidade": 9.5,
       "iminencia": 9.0,
       "ultima_observacao": "IBC-Br sobe 0,3% em agosto, com indústria em +0,9%.",
       "periodo_observacao": "2026-W42",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
-      "tipo": "risco",
-      "titulo": "Consumo e varejo",
-      "dimensao": "E",
-      "setores": [
-        "comercio",
-        "construcao",
-        "industria",
-        "servicos",
-        "transversal",
-        "ecommerce",
-        "agro"
-      ],
-      "status": "em_curso",
-      "relevancia": 92.75,
-      "severidade": 9.0,
-      "iminencia": 8.5,
-      "ultima_observacao": "PMC sobe 0,1% em agosto; ICVA cai 3,9% em setembro; Dia das Crianças +4,2% nominal.",
-      "periodo_observacao": "2026-W42",
-      "data_identificacao": "2026-01-12",
-      "origem": "real"
-    },
-    {
-      "id": "7093ea1f-8135-4e3c-a2d9-9c8e26e8ce29",
-      "tipo": "oportunidade",
-      "titulo": "Serviços (PMS)",
-      "dimensao": "E",
-      "setores": [
-        "servicos",
-        "ecommerce",
-        "comercio",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 90.45,
-      "severidade": 8.7,
-      "iminencia": 8.0,
-      "ultima_observacao": "PMS cai 0,1% em agosto; turismo sobe 2,5%.",
-      "periodo_observacao": "2026-W42",
-      "data_identificacao": "2026-01-05",
-      "origem": "real"
-    },
-    {
-      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
-      "tipo": "risco",
-      "titulo": "Juros, Selic e crédito",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "comercio",
-        "servicos",
-        "construcao",
-        "industria",
-        "agro",
-        "ecommerce"
-      ],
-      "status": "em_curso",
-      "relevancia": 87.12,
-      "severidade": 9.8,
-      "iminencia": 9.0,
-      "ultima_observacao": "Juros futuros caem mais de 1 ponto após o 1º turno; Focus prevê Selic de 13,50%.",
-      "periodo_observacao": "2026-W41",
       "data_identificacao": "2025-12-29",
       "origem": "real"
     },
@@ -1007,9 +910,32 @@
       "relevancia": 85.75,
       "severidade": 7.0,
       "iminencia": 8.5,
-      "ultima_observacao": "Focus eleva IPCA 2026 para 5,22%, quarta alta seguida.",
-      "periodo_observacao": "2026-W42",
+      "ultima_observacao": "IPCA-15 de outubro desacelera a 0,32%; Focus mantém 5,22%.",
+      "periodo_observacao": "2026-W43",
       "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
+      "tipo": "risco",
+      "titulo": "Consumo e varejo",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "construcao",
+        "industria",
+        "servicos",
+        "transversal",
+        "ecommerce",
+        "agro"
+      ],
+      "status": "em_curso",
+      "relevancia": 83.48,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "PMC sobe 0,1% em agosto; ICVA cai 3,9% em setembro; Dia das Crianças +4,2% nominal.",
+      "periodo_observacao": "2026-W42",
+      "data_identificacao": "2026-01-12",
       "origem": "real"
     }
   ]
