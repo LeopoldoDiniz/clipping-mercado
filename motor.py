@@ -1,42 +1,40 @@
 """
-MOTOR DO CLIPPING DE MERCADO — v3 (IA via Claude, memória no repositório)
+MOTOR DO CLIPPING DE MERCADO — v5 (IA via Claude, memória de TEMAS no repositório)
 
 A parte de IA (busca web + redação) é feita pelo Claude numa sessão (local ou rotina
 agendada na nuvem), sem API. O motor cuida de tudo o que é determinístico, em 3 passos:
 
   python motor.py preparar  2026-W46   → data/raw/2026-W46/prompt_coleta.md
       (Claude pesquisa e grava data/raw/2026-W46/coleta.json, no formato definido em prompt_geracao.py)
-  python motor.py processar 2026-W46   → valida a coleta, atualiza data/sinais.json,
+  python motor.py processar 2026-W46   → valida a coleta, atualiza temas.json/temas_noticias.json,
                                           grava data/raw/2026-W46/prompt_editorial.md
       (Claude escreve data/raw/2026-W46/editorial.txt)
   python motor.py publicar  2026-W46   → KPIs oficiais (BCB/IBGE) + data/2026-W46.json,
                                           data/ultimo.json e data/index.json
 
-Sem a semana, usa a semana ISO atual. A memória longitudinal vive em
-data/sinais.json. Semanas passadas devem ser processadas
-em ORDEM CRONOLÓGICA: a memória evolui semana a semana (persistência, decaimento).
+Sem a semana, usa a semana ISO atual. A memória longitudinal vive em temas.json (temas, dicionário
+palavra→tema, leituras semanais) e temas_noticias.json (palavra e tema de cada notícia) — ver
+temas_motor.py. data/sinais.json ficou congelado como histórico em 10/11/2026.
+Semanas devem ser fechadas em ORDEM CRONOLÓGICA.
 """
 import os
 import sys
 import json
 import re
 import glob
-import uuid
 from datetime import date, datetime, timedelta
 
 from prompt_geracao import montar_prompt
 from kpis_oficiais import validar_kpis, coletar_kpis_setoriais, coletar_ipca_grupos
+import temas_motor as TM
 
 # ─────────────────────────────────────────────────────────
 # CONFIGURAÇÃO
 # ─────────────────────────────────────────────────────────
-MEMORIA = "data/sinais.json"          # sinais + observações
+MEMORIA_SINAIS_CONGELADA = "data/sinais.json"   # histórico; não é mais lido nem gravado
 RAW = "data/raw"                      # insumos de trabalho por semana (fora do git)
 SETORES = ("industria", "comercio", "servicos", "agro", "construcao", "ecommerce")
 
-# limiar abaixo do qual um sinal "dorme" após ciclos sem aparecer
-# Regra de dormência ABOLIDA em 10/11/2026 (decisão do usuário): nenhum sinal sai da memória ativa.
-# A relevância continua decaindo quando o sinal não reaparece; o ranqueamento cuida da prioridade.
 
 # ─────────────────────────────────────────────────────────
 # FONTES OFICIAIS: mapa palavra-chave → homepage oficial.
@@ -299,19 +297,6 @@ def normalizar_clipping(itens):
 
 
 # ─────────────────────────────────────────────────────────
-# FÓRMULA DE RELEVÂNCIA
-# ─────────────────────────────────────────────────────────
-def calcular_relevancia(severidade, iminencia, persistencia, corroboracao,
-                        materializado, ciclos_sem_aparecer):
-    base = (severidade * 0.35 + iminencia * 0.25
-            + min(persistencia, 10) * 0.20
-            + min(corroboracao, 10) * 0.20)
-    mult = 1.25 if materializado else 1.0
-    decay = max(1.0 - (ciclos_sem_aparecer * 0.10), 0.4)
-    return round(min(base * 10 * mult * decay, 100), 2)
-
-
-# ─────────────────────────────────────────────────────────
 # PERÍODO: calcula o rótulo da semana ISO atual
 # ─────────────────────────────────────────────────────────
 def periodo_atual(chave=None):
@@ -333,7 +318,7 @@ def periodo_atual(chave=None):
 
 def _data_ref(chave):
     """Data que entra nos registros da memória: hoje, ou a sexta da semana se ela já passou
-    (backfill) — para a memória não datar sinais de setembro como de novembro."""
+    (backfill) — para a memória não datar registros de setembro como de novembro."""
     return min(date.today(), _sexta_da_chave(chave))
 
 
@@ -361,44 +346,11 @@ def extrair_json(texto):
 
 
 # ─────────────────────────────────────────────────────────
-# MEMÓRIA LONGITUDINAL (data/sinais.json)
+# MEMÓRIA LONGITUDINAL: temas (temas.json + temas_noticias.json) — ver temas_motor.py.
+# data/sinais.json fica CONGELADO como histórico (não é mais lido nem gravado).
 # ─────────────────────────────────────────────────────────
 def _agora():
     return datetime.utcnow().isoformat() + "+00:00"
-
-
-def carregar_memoria():
-    with open(MEMORIA, encoding="utf-8") as f:
-        return json.load(f)
-
-
-def salvar_memoria(mem):
-    mem["atualizado_em"] = _agora()
-    tmp = MEMORIA + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(mem, f, ensure_ascii=False, indent=2)
-    os.replace(tmp, MEMORIA)
-
-
-def sinais_ativos(mem):
-    """Todos os sinais (sem dormência desde 10/11/2026)."""
-    return list(mem["sinais"])
-
-
-def ranquear(sinais):
-    """Ordem por relevância com DESEMPATE FIXO: mais recentemente atualizado primeiro,
-    depois o mais antigo na memória — o mesmo empate dá sempre o mesmo resultado."""
-    s = sorted(sinais, key=lambda x: (x.get("criado_em") or ""))
-    s = sorted(s, key=lambda x: (x.get("atualizado_em") or ""), reverse=True)
-    return sorted(s, key=lambda x: -(x.get("relevancia_atual") or 0))
-
-
-def observacoes_de(mem, sinal_id, n):
-    """Últimas n observações do sinal (mais recente primeiro)."""
-    obs = [o for o in mem["observacoes"] if o["sinal_id"] == sinal_id]
-    obs.sort(key=lambda o: (_ordem_chave(o.get("periodo", "")), o.get("criado_em") or ""),
-             reverse=True)
-    return obs[:n]
 
 
 # ─────────────────────────────────────────────────────────
@@ -409,7 +361,7 @@ def _palavras(t):
     return len(str(t or "").split())
 
 
-def conferir_coleta(dados, ativos):
+def conferir_coleta(dados, T):
     erros, avisos = [], []
     for k in ("clipping", "pestel", "kpis", "porter", "analise"):
         if not dados.get(k):
@@ -437,125 +389,11 @@ def conferir_coleta(dados, ativos):
     faltam_an = [s for s in SETORES if s not in ((dados.get("analise") or {}).get("setores") or {})]
     if faltam_an:
         erros.append(f"analise sem os setores: {faltam_an}")
-    ids = {s["id"] for s in ativos}
-    desconhecidos = [u.get("id") for u in dados.get("atualizacoes_sinais") or []
-                     if u.get("id") not in ids]
-    if desconhecidos:
-        avisos.append(f"{len(desconhecidos)} atualizações com id fora dos sinais ativos (ignoradas)")
-    for n in dados.get("novos_sinais") or []:
-        if n.get("tipo") not in ("risco", "oportunidade") or n.get("dimensao") not in list("PESTAL"):
-            erros.append(f"novo sinal com tipo/dimensão inválido: {n.get('titulo', '')[:50]}")
+    erros += TM.conferir(clip, dados.get("leituras_temas"), dados.get("novos_temas"), T)
     resumo = (f"{len(clip)} notícias ({', '.join(f'{s} {n}' for s, n in por_setor.items())}) · "
-              f"{len(dados.get('novos_sinais') or [])} novos sinais · "
-              f"{len(dados.get('atualizacoes_sinais') or [])} atualizações")
+              f"{len(dados.get('leituras_temas') or {})} leituras de tema · "
+              f"{len(dados.get('novos_temas') or [])} temas novos")
     return erros, avisos, resumo
-
-
-# ─────────────────────────────────────────────────────────
-# PROCESSA a coleta e atualiza a memória
-# ─────────────────────────────────────────────────────────
-def processar(dados, mem, chave_periodo, sinais_ativos):
-    hoje = _data_ref(chave_periodo).isoformat()
-    por_id = {s["id"]: s for s in mem["sinais"]}
-    # mapa dos sinais que existiram antes (para detectar quais NÃO reapareceram)
-    reaparecidos = set()
-
-    def _obs(sid, texto, status, relev, fontes, delta):
-        mem["observacoes"].append({
-            "id": str(uuid.uuid4()), "sinal_id": sid, "periodo": chave_periodo,
-            "data": hoje, "texto": texto, "status_resultante": status,
-            "relevancia_resultante": relev, "fontes": fontes or [],
-            "delta": round(delta, 2), "criado_em": _agora(),
-        })
-
-    # 1. ATUALIZAÇÕES de sinais existentes
-    for upd in dados.get("atualizacoes_sinais", []):
-        sid = upd.get("id")
-        sinal = next((s for s in sinais_ativos if s["id"] == sid), None)
-        if not sinal:
-            continue
-        reaparecidos.add(sid)
-
-        # CICLO ≠ EXECUÇÃO: só conta ciclo novo se este sinal ainda não teve
-        # ciclo contado NESTA semana. Repetições na mesma semana (2ª automática
-        # ou botão) atualizam texto/status/corroboração, mas NÃO incrementam
-        # persistência — preservando a calibração de 1 ciclo = 1 semana.
-        ciclo_novo = (sinal.get("ultimo_ciclo_contado") != chave_periodo)
-
-        if ciclo_novo and upd.get("reapareceu"):
-            nova_persistencia = sinal["persistencia"] + 1
-        else:
-            nova_persistencia = sinal["persistencia"]
-
-        nova_corroboracao = sinal["corroboracao"] + len(upd.get("fontes", []))
-        materializado = upd.get("materializado", sinal["materializado"])
-        sev = upd.get("severidade", sinal["severidade"])
-        imin = upd.get("iminencia", sinal["iminencia"])
-
-        relev = calcular_relevancia(sev, imin, nova_persistencia,
-                                    nova_corroboracao, materializado, 0)
-        pico = max(relev, sinal["relevancia_pico"])
-        relev_antes = sinal["relevancia_atual"]
-
-        campos = {
-            "status": upd.get("novo_status", sinal["status"]),
-            "severidade": sev, "iminencia": imin,
-            "persistencia": nova_persistencia, "corroboracao": nova_corroboracao,
-            "materializado": materializado, "ciclos_sem_aparecer": 0,
-            "relevancia_atual": relev, "relevancia_pico": pico,
-            "ultimo_periodo": chave_periodo,
-            "atualizado_em": _agora(),
-        }
-        if ciclo_novo:
-            campos["ultimo_ciclo_contado"] = chave_periodo
-        por_id[sid].update(campos)
-
-        _obs(sid, upd.get("texto_observacao", ""), campos["status"], relev,
-             upd.get("fontes", []), relev - relev_antes)
-
-    # 2. SINAIS que NÃO reapareceram → decaimento (SÓ em ciclo novo)
-    for sinal in sinais_ativos:
-        if sinal["id"] in reaparecidos:
-            continue
-        # Se este sinal já teve ciclo contado nesta semana, é repetição:
-        # não decai de novo. O decaimento só acontece uma vez por semana.
-        if sinal.get("ultimo_ciclo_contado") == chave_periodo:
-            continue
-        ciclos = sinal["ciclos_sem_aparecer"] + 1
-        relev = calcular_relevancia(sinal["severidade"], sinal["iminencia"],
-                                    sinal["persistencia"], sinal["corroboracao"],
-                                    sinal["materializado"], ciclos)
-        novo_status = sinal["status"]
-        por_id[sinal["id"]].update({
-            "ciclos_sem_aparecer": ciclos, "relevancia_atual": relev,
-            "status": novo_status,
-            "ultimo_ciclo_contado": chave_periodo,
-            "atualizado_em": _agora(),
-        })
-
-    # 3. NOVOS sinais
-    for novo in dados.get("novos_sinais", []):
-        relev = calcular_relevancia(novo["severidade"], novo["iminencia"],
-                                    1, len(novo.get("fontes", [])),
-                                    novo.get("materializado", False), 0)
-        sid = str(uuid.uuid4())
-        mem["sinais"].append({
-            "id": sid,
-            "tipo": novo["tipo"], "titulo": novo["titulo"],
-            "dimensao": novo["dimensao"], "setores": novo["setores"],
-            "data_identificacao": hoje,
-            "status": "materializado" if novo.get("materializado") else "monitorar",
-            "severidade": novo["severidade"], "iminencia": novo["iminencia"],
-            "persistencia": 1, "corroboracao": len(novo.get("fontes", [])),
-            "materializado": novo.get("materializado", False),
-            "ciclos_sem_aparecer": 0,
-            "relevancia_atual": relev, "relevancia_pico": relev,
-            "data_pico": hoje,
-            "ultimo_periodo": chave_periodo,
-            "criado_em": _agora(), "atualizado_em": _agora(),
-            "ultimo_ciclo_contado": chave_periodo,
-        })
-        _obs(sid, novo["texto"], "monitorar", relev, novo.get("fontes", []), relev)
 
 
 # ─────────────────────────────────────────────────────────
@@ -582,47 +420,26 @@ def _editorial_anterior(chave):
     return texto
 
 
-def _coletar_contexto_editorial(mem, chave, dados):
+def _coletar_contexto_editorial(T, C, chave, dados):
     """Reúne as TRÊS camadas que tornam o editorial longitudinal:
-       (1) estado atual, (2) trajetória histórica dos sinais, (3) editorial anterior."""
-    # (1) sinais ativos ranqueados por relevância — a fotografia de agora
-    ativos = ranquear(sinais_ativos(mem))[:15]
-
-    # (2) trajetória: para cada sinal ativo, as últimas 4 observações (evolução no tempo)
-    trajetorias = []
-    for s in ativos:
-        obs = observacoes_de(mem, s["id"], 4)
-        historico = " | ".join(
-            f"{o.get('periodo','?')}: {o.get('status_resultante','')} (rel {o.get('relevancia_resultante','?')})"
-            for o in reversed(obs)
-        )
-        trajetorias.append(
-            f"- [{s['tipo'].upper()}] \"{s['titulo']}\" (dim {s['dimensao']}, setores {','.join(s['setores'])}) "
-            f"| relevância atual {s['relevancia_atual']}, pico {s.get('relevancia_pico','?')}, "
-            f"status {s['status']} | trajetória: {historico or 'primeira aparição'}"
-        )
-
-    # sinais que MUDARAM de status recentemente (materializados/adormecidos este ciclo)
-    materializados = [s for s in ativos if s["status"] == "materializado"]
-    novos = dados.get("novos_sinais", [])
-
+       (1) estado atual e (2) trajetória dos temas (contagem semanal calculada + leitura), (3) editorial anterior."""
+    trajetorias, materializados = TM.contexto_editorial(T, C, chave)
     return {
         "trajetorias": trajetorias,
-        "n_ativos": len(ativos),
-        "n_materializados": len(materializados),
-        "materializados": [s["titulo"] for s in materializados],
-        "novos": [n.get("titulo", "") for n in novos],
+        "n_ativos": len(trajetorias),
+        "materializados": materializados,
+        "novos": [n.get("nome", "") for n in dados.get("novos_temas") or []],
         "editorial_anterior": _editorial_anterior(chave),
         "kpis": dados.get("kpis", []),
     }
 
 
-def montar_prompt_editorial(mem, chave, label, dados):
-    ctx = _coletar_contexto_editorial(mem, chave, dados)
+def montar_prompt_editorial(T, C, chave, label, dados):
+    ctx = _coletar_contexto_editorial(T, C, chave, dados)
 
     kpis_txt = " | ".join(f"{k.get('label','')}: {k.get('valor','')} ({k.get('sub','')})"
                           for k in ctx["kpis"])
-    traj_txt = "\n".join(ctx["trajetorias"]) or "(sem sinais acumulados ainda)"
+    traj_txt = "\n".join(ctx["trajetorias"]) or "(sem temas com notícias recentes)"
     cont_txt = (f"No editorial da semana anterior, escrevemos:\n\"{ctx['editorial_anterior']}\"\n"
                 f"Dê continuidade: confirme, ajuste ou contraste aquela leitura com o que mudou."
                 if ctx["editorial_anterior"] else
@@ -639,12 +456,12 @@ quer saber o que esperar e como se posicionar — a síntese do que passou é se
 # INDICADORES (fechamento de {label})
 {kpis_txt}
 
-# MEMÓRIA LONGITUDINAL — sinais acumulados e sua evolução no tempo (base das projeções)
+# MEMÓRIA LONGITUDINAL — temas: notícias por semana (calculado), direção e leitura vigente (base das projeções)
 {traj_txt}
 
 # MUDANÇAS RELEVANTES NESTE CICLO
-- Sinais já materializados (o previsto ocorreu): {', '.join(ctx['materializados']) or 'nenhum'}
-- Novos sinais identificados esta semana: {', '.join(ctx['novos']) or 'nenhum'}
+- Temas com risco ou oportunidade materializado nesta semana: {', '.join(ctx['materializados']) or 'nenhum'}
+- Temas novos nesta semana: {', '.join(ctx['novos']) or 'nenhum'}
 
 # AGENDA DAS PRÓXIMAS SEMANAS (divulgações e eventos com data marcada)
 {agenda_txt}
@@ -655,14 +472,14 @@ quer saber o que esperar e como se posicionar — a síntese do que passou é se
 # COMO ESCREVER
 - ESTRUTURA OBRIGATÓRIA, nesta ordem, em texto corrido de 280 a 360 palavras, sem listas:
   (1) PERSPECTIVA — abre o texto: o que esperar nas próximas semanas. Cenário principal e riscos,
-      ancorados na trajetória dos sinais (relevância subindo/caindo, iminência) e na agenda acima.
+      ancorados na trajetória dos temas (esquentando/esfriando, leitura vigente) e na agenda acima.
       Cite as datas que importam. É a maior parte do texto.
   (2) POR SETOR — uma projeção curta por bloco (indústria; comércio e serviços; agro; construção;
       e-commerce): o que deve acontecer e o que fazer.
   (3) RESUMO — fecha o texto: em duas ou três frases, o que aconteceu na semana que passou, com os
       números-chave.
 - Toda PROJEÇÃO é marcada como tal ("a tendência é", "o cenário mais provável", "se X, então Y")
-  e se apoia num dado ou sinal citado. Nunca apresente previsão como fato consumado.
+  e se apoia num dado ou tema citado. Nunca apresente previsão como fato consumado.
 - Se o editorial anterior fez uma projeção, diga em uma frase se ela se confirmou ou não.
 - Linguagem FORMAL, mas SEM jargão: um empresário de PME deve entender sem dicionário. Termo técnico
   (ex.: Selic) é explicado em poucas palavras na própria frase.
@@ -763,30 +580,13 @@ def reconciliar_kpis(kpis, chave):
     return saida
 
 
-def gerar_dados_portal(dados, mem, chave, label, editorial=None, status="fechada", ref_kpi=None):
+def gerar_dados_portal(dados, T, C, chave, label, editorial=None, status="fechada", ref_kpi=None,
+                       leituras=None):
     """Gera data/<periodo>.json que o frontend consome.
-    status: "fechada" (memória consolidada) ou "em_andamento" (prévia diária)."""
-    # os sinais mais relevantes para a revisão longitudinal do portal (desempate fixo)
-    top = ranquear(sinais_ativos(mem))[:9]
-
-    # para cada sinal do topo, a observação mais recente (o texto vivo da trajetória)
-    longitudinal = []
-    for s in top:
-        ultima_obs, ultima_per = "", ""
-        obs = observacoes_de(mem, s["id"], 1)
-        if obs:  # sem observação: o portal usa um texto padrão
-            ultima_obs = obs[0].get("texto", "")
-            ultima_per = obs[0].get("periodo", "")
-        longitudinal.append({
-            "id": s["id"], "tipo": s["tipo"], "titulo": s["titulo"],
-            "dimensao": s["dimensao"], "setores": s["setores"],
-            "status": s["status"], "relevancia": s["relevancia_atual"],
-            # eixos da Matriz Risco × Oportunidade (impacto = severidade, iminência)
-            "severidade": s.get("severidade"), "iminencia": s.get("iminencia"),
-            "ultima_observacao": ultima_obs, "periodo_observacao": ultima_per,
-            "data_identificacao": s.get("data_identificacao", ""),
-            "origem": s.get("origem") or "real",
-        })
+    status: "fechada" (memória consolidada) ou "em_andamento" (prévia diária).
+    leituras: leituras de tema ainda não consolidadas (prévia da semana corrente)."""
+    # bloco longitudinal do portal = os temas mais relevantes (números calculados das notícias)
+    longitudinal = TM.longitudinal(T, C, chave, leituras)
 
     # BLINDAGEM DE ACURÁCIA: a IA busca, mas os NÚMEROS macro são validados/
     # sobrepostos pelos valores OFICIAIS (BCB/IBGE) válidos na sexta desta semana,
@@ -914,9 +714,8 @@ def _pasta(chave):
     return p
 
 
-def _ultimo_ciclo(mem):
-    return max((s.get("ultimo_ciclo_contado") or "" for s in mem["sinais"]),
-               key=_ordem_chave, default="")
+def _ultimo_ciclo(T):
+    return TM.ultimo_ciclo(T)
 
 
 def _semana_anterior(chave):
@@ -926,10 +725,10 @@ def _semana_anterior(chave):
     return f"{ano}-W{sem:02d}"
 
 
-def _checar_ordem(mem, chave, permitir_pulo):
+def _checar_ordem(T, chave, permitir_pulo):
     """A memória só avança em ordem: a semana anterior a esta precisa já estar nela.
     Repetir a MESMA semana é permitido (atualização de quinta)."""
-    ult = _ultimo_ciclo(mem)
+    ult = _ultimo_ciclo(T)
     if _ordem_chave(chave) < _ordem_chave(ult):
         sys.exit(f"[motor] ERRO: a memória já está em {ult}; {chave} é anterior. "
                  f"Semanas passadas só podem ser processadas em ordem cronológica.")
@@ -939,14 +738,13 @@ def _checar_ordem(mem, chave, permitir_pulo):
 
 
 def cmd_preparar(chave, label, ini, fim, permitir_pulo):
-    mem = carregar_memoria()
-    _checar_ordem(mem, chave, permitir_pulo)
-    ativos = sinais_ativos(mem)
+    T, C = TM.carregar()
+    _checar_ordem(T, chave, permitir_pulo)
     pasta = _pasta(chave)
-    prompt = montar_prompt(label, ini, fim, ativos)
+    prompt = montar_prompt(label, ini, fim, TM.texto_para_coleta(T, C, _semana_anterior(chave)))
     with open(os.path.join(pasta, "prompt_coleta.md"), "w", encoding="utf-8") as f:
         f.write(prompt)
-    print(f"[motor] {label} ({chave}) · {ini} a {fim} · {len(ativos)} sinais ativos na memória")
+    print(f"[motor] {label} ({chave}) · {ini} a {fim} · {len(T['temas'])} temas na memória")
     print(f"[motor] Prompt da coleta: {pasta}/prompt_coleta.md")
     print(f"[motor] Próximo: gravar a coleta em {pasta}/coleta.json e rodar 'processar {chave}'")
 
@@ -964,13 +762,12 @@ def cmd_processar(chave, label, permitir_pulo, forcar):
     marca = os.path.join(pasta, "processado.json")
     if os.path.exists(marca) and not forcar:
         sys.exit(f"[motor] ERRO: {chave} já foi processada ({marca}). Reprocessar duplicaria "
-                 f"observações; restaure {pasta}/sinais_antes.json ou use --forcar.")
-    mem = carregar_memoria()
-    _checar_ordem(mem, chave, permitir_pulo)
-    ativos = sinais_ativos(mem)
+                 f"leituras; restaure {pasta}/temas_antes.json ou use --forcar.")
+    T, C = TM.carregar()
+    _checar_ordem(T, chave, permitir_pulo)
     dados = _ler_coleta(pasta)
 
-    erros, avisos, resumo = conferir_coleta(dados, ativos)
+    erros, avisos, resumo = conferir_coleta(dados, T)
     print(f"[motor] Coleta: {resumo}")
     for a in avisos:
         print(f"[motor] aviso: {a}")
@@ -979,19 +776,22 @@ def cmd_processar(chave, label, permitir_pulo, forcar):
             print(f"[motor] ERRO: {e}")
         sys.exit("[motor] Coleta reprovada na conferência — nada foi gravado.")
 
-    with open(os.path.join(pasta, "sinais_antes.json"), "w", encoding="utf-8") as f:
-        json.dump(mem, f, ensure_ascii=False, indent=2)
-    n_sin, n_obs = len(mem["sinais"]), len(mem["observacoes"])
-    processar(dados, mem, chave, ativos)
-    salvar_memoria(mem)
-    print(f"[motor] Memória atualizada: sinais {n_sin}→{len(mem['sinais'])}, "
-          f"observações {n_obs}→{len(mem['observacoes'])}")
+    with open(os.path.join(pasta, "temas_antes.json"), "w", encoding="utf-8") as f:
+        json.dump(T, f, ensure_ascii=False, indent=1)
+    n_lei = len(T.get("leituras", []))
+    criados, novas = TM.registrar(T, C, chave, dados.get("clipping", []), dados.get("novos_temas"),
+                                  _data_ref(chave).isoformat())
+    TM.consolidar_leituras(T, chave, dados.get("leituras_temas"))
+    TM.salvar(T, C)
+    print(f"[motor] Memória de temas atualizada: leituras {n_lei}→{len(T['leituras'])}, "
+          f"{len(C['semanas'].get(chave, []))} notícias classificadas, "
+          f"{len(novas)} palavras novas, {len(criados)} temas novos")
 
-    prompt, n_ativos = montar_prompt_editorial(mem, chave, label, dados)
+    prompt, n_ativos = montar_prompt_editorial(T, C, chave, label, dados)
     with open(os.path.join(pasta, "prompt_editorial.md"), "w", encoding="utf-8") as f:
         f.write(prompt)
     with open(marca, "w", encoding="utf-8") as f:
-        json.dump({"chave": chave, "em": _agora(), "n_sinais_considerados": n_ativos,
+        json.dump({"chave": chave, "em": _agora(), "n_temas_considerados": n_ativos,
                    "avisos": avisos}, f, ensure_ascii=False, indent=2)
     print(f"[motor] Prompt do editorial: {pasta}/prompt_editorial.md")
     print(f"[motor] Próximo: gravar o texto em {pasta}/editorial.txt e rodar 'publicar {chave}'")
@@ -1002,9 +802,9 @@ def cmd_publicar(chave, label):
     marca = os.path.join(pasta, "processado.json")
     if not os.path.exists(marca):
         sys.exit(f"[motor] ERRO: rode 'processar {chave}' antes de publicar.")
-    mem = carregar_memoria()
-    if _ultimo_ciclo(mem) != chave:
-        sys.exit(f"[motor] ERRO: a memória já avançou para {_ultimo_ciclo(mem)}; publicar {chave} "
+    T, C = TM.carregar()
+    if _ultimo_ciclo(T) != chave:
+        sys.exit(f"[motor] ERRO: a memória já avançou para {_ultimo_ciclo(T)}; publicar {chave} "
                  f"agora mostraria o longitudinal de outra semana.")
     with open(marca, encoding="utf-8") as f:
         info = json.load(f)
@@ -1020,7 +820,7 @@ def cmd_publicar(chave, label):
             if not 280 <= n <= 360:
                 print(f"[motor] aviso: editorial com {n} palavras (meta 280-360)")
             editorial = {"texto": texto, "gerado_em": datetime.utcnow().isoformat(),
-                         "n_sinais_considerados": info.get("n_sinais_considerados"),
+                         "n_temas_considerados": info.get("n_temas_considerados"),
                          "modelo": "claude"}
     if not editorial:
         print("[motor] aviso: sem editorial nesta edição (segue sem bloquear).")
@@ -1028,13 +828,14 @@ def cmd_publicar(chave, label):
     # semanas da rotina diária fecham com referência no domingo (órgãos publicam no fim de semana)
     ref = (_domingo_da_chave(chave) if _ordem_chave(chave) >= _ordem_chave(PRIMEIRA_SEMANA_DIARIA)
            else None)
-    gerar_dados_portal(dados, mem, chave, label, editorial, status="fechada", ref_kpi=ref)
+    gerar_dados_portal(dados, T, C, chave, label, editorial, status="fechada", ref_kpi=ref)
     print(f"[motor] Publicado: data/{chave}.json (+ index.json/ultimo.json). Concluído.")
 
 
 # ─────────────────────────────────────────────────────────
 # ROTINA DIÁRIA (v4): atualizar → (análise, se houver gatilho) → previa;  fechar na segunda
-#   - a memória de sinais NÃO é tocada no dia a dia; é consolidada uma vez, no 'fechar'
+#   - no dia a dia só a classificação da semana corrente é gravada (temas_noticias.json + dicionário);
+#     as leituras dos temas são consolidadas uma vez, no 'fechar'
 #   - gatilhos para reescrever análise são REGRA DE CÓDIGO (não julgamento da IA)
 # ─────────────────────────────────────────────────────────
 GATILHO_NOTICIAS_SETOR = 3
@@ -1074,7 +875,7 @@ def _base_coleta(chave):
     return {"clipping": [], "pestel": pub.get("pestel", []), "kpis": pub.get("kpis", []),
             "indicador_ecommerce": None, "porter": pub.get("porter", {}),
             "analise": pub.get("analise") or {"panorama": {"acoes": []}, "setores": {}},
-            "novos_sinais": [], "atualizacoes_sinais": [], "_kpis_vistos": {}}
+            "leituras_temas": {}, "novos_temas": [], "_kpis_vistos": {}}
 
 
 def _chave_item(it):
@@ -1084,10 +885,9 @@ def _chave_item(it):
     return url or re.sub(r"\W+", " ", (it.get("titulo") or "").lower()).strip()
 
 
-def _conferir_incremento(inc, ativos):
+def _conferir_incremento(inc, T):
     """Mesmas regras de qualidade da coleta semanal, aplicadas só ao que entrou no dia."""
     erros = []
-    ids = {s["id"] for s in ativos}
     for i, it in enumerate(inc.get("clipping", [])):
         if not it.get("titulo") or not it.get("texto"):
             erros.append(f"clipping[{i}] sem título/texto")
@@ -1099,9 +899,7 @@ def _conferir_incremento(inc, ativos):
         fontes = it.get("fontes") or []
         if not fontes or not all(url_valida(f.get("url", "")) for f in fontes):
             erros.append(f"clipping[{i}] sem fonte com URL válida")
-    for a in inc.get("atualizacoes_sinais", []):
-        if a.get("id") not in ids:
-            erros.append(f"atualização para id desconhecido: {a.get('id')}")
+    erros += TM.conferir(inc.get("clipping", []), inc.get("leituras_temas"), inc.get("novos_temas"), T)
     return erros
 
 
@@ -1115,33 +913,34 @@ def _mesclar(coleta, inc):
             vistos.add(k)
             coleta["clipping"].append(it)
             novas.append(it)
-    # sinais: uma atualização por id na semana (a do dia mais recente prevalece; fontes somam)
-    por_id = {a["id"]: a for a in coleta["atualizacoes_sinais"]}
-    for a in inc.get("atualizacoes_sinais", []):
-        velho = por_id.get(a["id"])
+    # leituras de tema: uma por tema na semana (a do dia mais recente prevalece; fontes somam;
+    # materializado não volta atrás dentro da semana)
+    lei = coleta.setdefault("leituras_temas", {})
+    for tid, l in (inc.get("leituras_temas") or {}).items():
+        velho = lei.get(tid)
         if velho:
-            fontes = list(dict.fromkeys((velho.get("fontes") or []) + (a.get("fontes") or [])))
-            mat = bool(velho.get("materializado")) or bool(a.get("materializado"))
-            velho.update(a)
+            fontes = list(dict.fromkeys((velho.get("fontes") or []) + (l.get("fontes") or [])))
+            mat = bool(velho.get("materializado")) or velho.get("status") == "materializado" \
+                or bool(l.get("materializado"))
+            velho.update(l)
             velho["fontes"] = fontes
             if mat:
                 velho["materializado"] = True
-                velho["novo_status"] = "materializado"
+                velho["status"] = "materializado"
         else:
-            por_id[a["id"]] = dict(a)
-    coleta["atualizacoes_sinais"] = list(por_id.values())
-    titulos = {n.get("titulo", "").strip().lower() for n in coleta["novos_sinais"]}
-    for n in inc.get("novos_sinais", []):
-        t = n.get("titulo", "").strip().lower()
-        if t and t not in titulos:
-            titulos.add(t)
-            coleta["novos_sinais"].append(n)
+            lei[tid] = dict(l)
+    ids = {n["id"] for n in coleta.setdefault("novos_temas", [])}
+    for n in inc.get("novos_temas") or []:
+        if n["id"] not in ids:
+            ids.add(n["id"])
+            coleta["novos_temas"].append(n)
     return novas
 
 
-def _gatilhos(coleta, inc, novas, mem, chave):
+def _gatilhos(coleta, inc, novas, T, C, chave):
     """REGRA (aprovada em 10/11/2026): reescreve a análise do setor quando
-    (a) saiu um dos 7 indicadores, (b) um sinal materializou, (c) entraram >= 3 notícias novas no setor."""
+    (a) saiu um dos 7 indicadores, (b) um risco/oportunidade de tema materializou,
+    (c) entraram >= 3 notícias novas no setor."""
     disparos = {}
 
     def _marca(setor, motivo):
@@ -1162,16 +961,11 @@ def _gatilhos(coleta, inc, novas, mem, chave):
                 _marca(_KPI_SETOR[b], f"indicador {k.get('label')} atualizado: {k.get('valor')}")
             vistos[b] = assinatura
     coleta["kpis"] = oficiais
-    # (b) materialização
-    setores_sinal = {s["id"]: s.get("setores", []) for s in mem["sinais"]}
-    for a in inc.get("atualizacoes_sinais", []):
-        if a.get("materializado") or a.get("novo_status") == "materializado":
-            for s in setores_sinal.get(a["id"], []) or ["panorama"]:
-                _marca("panorama" if s == "transversal" else s, f"sinal materializou: {a['id'][:8]}")
-    for n in inc.get("novos_sinais", []):
-        if n.get("materializado"):
-            for s in n.get("setores", []) or ["panorama"]:
-                _marca("panorama" if s == "transversal" else s, f"novo sinal já materializado: {n.get('titulo')}")
+    # (b) materialização (setores = onde as notícias do tema caíram nas últimas 4 semanas)
+    for tid, l in (inc.get("leituras_temas") or {}).items():
+        if l.get("materializado") or l.get("status") == "materializado":
+            for s in TM.setores_do_tema(T, C, chave, tid) or ["panorama"]:
+                _marca("panorama" if s == "transversal" else s, f"tema materializou: {tid}")
     # (c) volume de notícias novas por setor
     cont = {}
     for it in novas:
@@ -1188,17 +982,19 @@ def cmd_atualizar(chave, label):
     """Rodada diária, passo 1: incorpora trabalho/<semana>/incremento.json e calcula gatilhos."""
     pasta = _pasta(chave)
     fn_col, fn_inc = os.path.join(pasta, "coleta.json"), os.path.join(pasta, "incremento.json")
-    mem = carregar_memoria()
+    T, C = TM.carregar()
     coleta = _ler_json(fn_col) or _base_coleta(chave)
     inc = _ler_json(fn_inc, {"clipping": []})
-    erros = _conferir_incremento(inc, sinais_ativos(mem))
+    erros = _conferir_incremento(inc, T)
     if erros:
         for e in erros:
             print(f"[motor] ERRO: {e}")
         sys.exit("[motor] Incremento reprovado — nada foi gravado.")
     novas = _mesclar(coleta, inc)
-    disparos = _gatilhos(coleta, inc, novas, mem, chave)
     hoje = date.today().isoformat()
+    criados, palavras = TM.registrar(T, C, chave, coleta["clipping"], coleta.get("novos_temas"), hoje)
+    TM.salvar(T, C)
+    disparos = _gatilhos(coleta, inc, novas, T, C, chave)
     os.makedirs(os.path.join(pasta, "incrementos"), exist_ok=True)
     if os.path.exists(fn_inc):
         os.replace(fn_inc, os.path.join(pasta, "incrementos", f"{hoje}.json"))
@@ -1208,7 +1004,8 @@ def cmd_atualizar(chave, label):
                    "total_semana": len(coleta["clipping"]), "gatilhos": disparos})
     _gravar_json(os.path.join(pasta, "diario.json"), diario)
     _gravar_json(os.path.join(pasta, "gatilhos.json"), {"data": hoje, "setores": disparos})
-    print(f"[motor] {label}: +{len(novas)} notícias (semana: {len(coleta['clipping'])})")
+    print(f"[motor] {label}: +{len(novas)} notícias (semana: {len(coleta['clipping'])}) · "
+          f"{len(palavras)} palavras novas no dicionário, {len(criados)} temas novos")
     if disparos:
         for s, m in disparos.items():
             print(f"[motor] GATILHO {s}: {'; '.join(m)}")
@@ -1238,7 +1035,7 @@ def _editorial_aberto(chave):
 
 
 def cmd_previa(chave, label):
-    """Rodada diária, passo 2: publica a semana corrente como 'em andamento' (memória intocada)."""
+    """Rodada diária, passo 2: publica a semana corrente como 'em andamento' (leituras não consolidadas)."""
     pasta = _pasta(chave)
     coleta = _ler_json(os.path.join(pasta, "coleta.json"))
     if not coleta:
@@ -1250,9 +1047,10 @@ def cmd_previa(chave, label):
         os.replace(fn_an, os.path.join(pasta, "analises", f"{date.today().isoformat()}.json"))
         _gravar_json(os.path.join(pasta, "coleta.json"), coleta)
         print("[motor] Análise atualizada pelos gatilhos.")
-    mem = carregar_memoria()
-    gerar_dados_portal(coleta, mem, chave, label, _editorial_aberto(chave),
-                       status="em_andamento", ref_kpi=_ref_viva(chave))
+    T, C = TM.carregar()
+    gerar_dados_portal(coleta, T, C, chave, label, _editorial_aberto(chave),
+                       status="em_andamento", ref_kpi=_ref_viva(chave),
+                       leituras=coleta.get("leituras_temas") or None)
     print(f"[motor] Prévia publicada: data/{chave}.json (em andamento).")
 
 

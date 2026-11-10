@@ -449,121 +449,196 @@
   ],
   "longitudinal": [
     {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "id": "tema-consumo",
       "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
       "setores": [
         "comercio",
-        "servicos"
+        "servicos",
+        "transversal",
+        "construcao",
+        "ecommerce"
       ],
       "status": "materializado",
-      "relevancia": 100,
+      "relevancia": 82.5,
+      "severidade": 8.2,
+      "iminencia": 5.0,
       "ultima_observacao": "A cautela do consumidor e o endividamento familiar continuam sendo fatores relevantes. Embora a confiança do comércio tenha apresentado uma leve alta em junho, a percepção dos varejistas sobre as condições econômicas atuais ainda é de piora, indicando que a cautela persiste entre os consumidores.",
       "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 1
     },
     {
-      "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
-      "tipo": "oportunidade",
-      "titulo": "Aceleração da Adoção de Inteligência Artificial por PMEs para Otimização de Processos",
-      "dimensao": "T",
+      "id": "tema-atividade",
+      "tipo": "risco",
+      "titulo": "Atividade: indústria e serviços",
+      "dimensao": "E",
       "setores": [
         "industria",
-        "comercio",
+        "transversal",
         "servicos",
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 76,
+      "relevancia": 70.5,
+      "severidade": 4.1,
+      "iminencia": 10.0,
+      "ultima_observacao": "4 notícia(s) do tema nesta semana. Ex.: Sondagem Industrial da CNI Aponta Queda na Expectativa de Exportações e Investimentos (+3).",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-cambio",
+      "tipo": "risco",
+      "titulo": "Câmbio e mercado financeiro",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 64.5,
+      "severidade": 2.9,
+      "iminencia": 10.0,
+      "ultima_observacao": "1 notícia(s) do tema nesta semana. Ex.: Preços da indústria recuam 0,30% em maio, puxados por alimentos e extrativas.",
+      "periodo_observacao": "2026-W25",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro"
+      ],
+      "status": "em_curso",
+      "relevancia": 64.5,
+      "severidade": 2.9,
+      "iminencia": 10.0,
+      "ultima_observacao": "2 notícia(s) do tema nesta semana. Ex.: Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela (+1).",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-energia",
+      "tipo": "risco",
+      "titulo": "Energia elétrica e transição",
+      "dimensao": "A",
+      "setores": [
+        "industria",
+        "transversal",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 59.0,
+      "severidade": 1.8,
+      "iminencia": 10.0,
+      "ultima_observacao": "2 notícia(s) do tema nesta semana. Ex.: IPCA-15 Desacelera para 0,41% em Junho, mas Alimentos e Energia Pressionam (+1).",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-W25",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-digital",
+      "tipo": "oportunidade",
+      "titulo": "Digitalização, IA e meios de pagamento",
+      "dimensao": "T",
+      "setores": [
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 50.0,
+      "severidade": 10.0,
+      "iminencia": 0.0,
       "ultima_observacao": "A aceleração da adoção de Inteligência Artificial por PMEs e grandes empresas segue em curso. O setor bancário, conforme a Pesquisa Febraban de Tecnologia Bancária 2026, prioriza a IA, com um crescimento de 39% nos investimentos na área. A IA é vista como central para ganhos de eficiência e diferenciação competitiva, inclusive na experiência do cliente.",
       "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
+      "data_identificacao": "2026-W21",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 0
     },
     {
-      "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
-      "tipo": "oportunidade",
-      "titulo": "Digitalização e 'Technology as a Service' (TaaS)",
-      "dimensao": "T",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 73.25,
-      "ultima_observacao": "A digitalização e a adoção de 'Technology as a Service' (TaaS) continuam em forte ascensão, especialmente no setor bancário. A Pesquisa Febraban de Tecnologia Bancária 2026 aponta um investimento significativo em nuvem (crescimento de 30%), reforçando a migração de sistemas para ambientes externos e a busca por soluções como serviço.",
-      "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
+      "id": "tema-juros",
       "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 71.75,
-      "ultima_observacao": "A proposta de novas tarifas dos EUA sobre produtos brasileiros continua a impactar as expectativas da indústria nacional. A Sondagem Industrial da CNI de junho de 2026 mostra que os empresários esperam queda nas exportações pela primeira vez no ano, diretamente influenciados por essa incerteza.",
-      "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
-      "tipo": "oportunidade",
-      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
+      "titulo": "Juros e política monetária",
       "dimensao": "E",
       "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
+        "transversal",
+        "industria",
+        "agro"
       ],
       "status": "em_curso",
-      "relevancia": 53.4,
-      "ultima_observacao": "Não houve menção direta ou desdobramento sobre o 'Desenrola Adimplentes' nas fontes pesquisadas para a semana 26 de 2026.",
+      "relevancia": 39.5,
+      "severidade": 2.9,
+      "iminencia": 5.0,
+      "ultima_observacao": "2 notícia(s) do tema nesta semana. Ex.: Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela (+1).",
       "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 1
     },
     {
-      "id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
-      "tipo": "oportunidade",
-      "titulo": "Otimismo na Indústria da Construção com Novos Projetos",
+      "id": "tema-combustiveis",
+      "tipo": "risco",
+      "titulo": "Combustíveis, petróleo e geopolítica",
       "dimensao": "E",
       "setores": [
         "industria",
-        "servicos",
-        "construcao"
+        "transversal",
+        "construcao",
+        "agro"
+      ],
+      "status": "em_curso",
+      "relevancia": 31.0,
+      "severidade": 1.2,
+      "iminencia": 5.0,
+      "ultima_observacao": "2 notícia(s) do tema nesta semana. Ex.: Arrecadação Federal Bate Recorde Histórico em Maio, Impulsionada por Petróleo e Mudanças Tributárias (+1).",
+      "periodo_observacao": "2026-W26",
+      "data_identificacao": "2026-W15",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-construcao",
+      "tipo": "oportunidade",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "industria",
+        "servicos"
       ],
       "status": "monitorar",
-      "relevancia": 46.25,
+      "relevancia": 31.0,
+      "severidade": 1.2,
+      "iminencia": 5.0,
       "ultima_observacao": "Pela primeira vez em meses, a Sondagem Indústria da Construção da CNI indica que os empresários do setor esperam aumento de novos empreendimentos e serviços para os próximos seis meses, com melhora nas expectativas de contratações e compras de insumos.",
       "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "c330066d-d634-418a-bcc5-05a55d14573b",
-      "tipo": "risco",
-      "titulo": "Burocracia no Acesso a Recursos de Inovação para PMEs",
-      "dimensao": "L",
-      "setores": [
-        "industria"
-      ],
-      "status": "monitorar",
-      "relevancia": 30.1,
-      "ultima_observacao": "Não houve menção direta ou desdobramento sobre a 'Burocracia no Acesso a Recursos de Inovação para PMEs' nas fontes pesquisadas para a semana 26 de 2026.",
-      "periodo_observacao": "2026-W26",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 1
     }
   ],
   "kpis_setoriais": [

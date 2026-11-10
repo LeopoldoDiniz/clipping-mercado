@@ -19,7 +19,8 @@
           "nome": "InfoMoney",
           "url": "https://www.infomoney.com.br/economia/boletim-focus-projecoes-09112026/"
         }
-      ]
+      ],
+      "palavra": "Focus"
     },
     {
       "setores": [
@@ -37,7 +38,8 @@
           "nome": "Metrópoles",
           "url": "https://www.metropoles.com/brasil/ibovespa-sobe-222-dolar-tem-baixa-e-termina-o-dia-cotado-a-r-550"
         }
-      ]
+      ],
+      "palavra": "Ibovespa"
     },
     {
       "setores": [
@@ -54,7 +56,8 @@
           "nome": "Mixvale",
           "url": "https://www.mixvale.com.br/2026/11/08/lula-faz-pronunciamento-em-rede-nacional-e-fala-em-responsabilidade-fiscal/"
         }
-      ]
+      ],
+      "palavra": "regras-fiscais"
     },
     {
       "setores": [
@@ -75,7 +78,8 @@
           "nome": "Antena 1",
           "url": "https://www.antena1.com.br/noticias/icva-mostra-queda-real-de-4-nas-vendas-no-varejo-no-brasil-em-outubro"
         }
-      ]
+      ],
+      "palavra": "ICVA"
     },
     {
       "setores": [
@@ -88,7 +92,8 @@
           "nome": "Mercado&Consumo",
           "url": "https://mercadoeconsumo.com.br/10/11/2026/noticias-varejo/calote-dos-consumidores-pressiona-o-caixa-do-varejo-e-lidera-causas-de-recuperacao-judicial"
         }
-      ]
+      ],
+      "palavra": "recuperação-judicial"
     },
     {
       "setores": [
@@ -102,7 +107,8 @@
           "nome": "Canal Rural",
           "url": "https://www.canalrural.com.br/economia/vendas-do-varejo-caem-4-em-outubro-aponta-icva-da-cielo/"
         }
-      ]
+      ],
+      "palavra": "e-commerce"
     },
     {
       "setores": [
@@ -115,7 +121,8 @@
           "nome": "Exame",
           "url": "https://exame.com/tecnologia/examelab/11-11-2026-onde-encontrar-ofertas-como-comparar/"
         }
-      ]
+      ],
+      "palavra": "11.11"
     },
     {
       "setores": [
@@ -133,7 +140,8 @@
           "nome": "Brasil Inovador",
           "url": "https://brasilinovador.com.br/nubank-e-shopee-articulam-parceria-estrategica-de-pagamentos-e-live-commerce-para-o-11-11/"
         }
-      ]
+      ],
+      "palavra": "11.11"
     },
     {
       "setores": [
@@ -146,7 +154,8 @@
           "nome": "RCN67",
           "url": "https://rcn67.com.br/campo-grande/recuperacao-judicial-agro-cresce-57-5-2026"
         }
-      ]
+      ],
+      "palavra": "agronegócio"
     },
     {
       "setores": [
@@ -159,7 +168,8 @@
           "nome": "Portal do Agronegócio",
           "url": "https://portaldoagronegocio.com.br/agricultura/milho-e-sorgo/noticias/exportacoes-de-milho-aceleram-em-novembro-e-ritmo-diario-supera-2025-em-20-1"
         }
-      ]
+      ],
+      "palavra": "milho"
     },
     {
       "setores": [
@@ -172,7 +182,8 @@
           "nome": "Farm News",
           "url": "https://farmnews.com.br/mercado/exportacao-de-carne-bovina-primeira-parcial-de-novembro-de-2026"
         }
-      ]
+      ],
+      "palavra": "carne"
     },
     {
       "setores": [
@@ -186,7 +197,8 @@
           "nome": "NX1",
           "url": "https://nx1.com.br/2026/11/10/agro-amplia-exportacoes-e-ajuda-brasil-a-movimentar-r-365-bilhoes-em-outubro/"
         }
-      ]
+      ],
+      "palavra": "exportações"
     },
     {
       "setores": [
@@ -199,7 +211,8 @@
           "nome": "NC News",
           "url": "https://ncnews.com.br/2026/11/10/camara-bh-aprova-mudanca-iss-construcao-civil/"
         }
-      ]
+      ],
+      "palavra": "ISS"
     },
     {
       "setores": [
@@ -212,7 +225,8 @@
           "nome": "Opinião CE",
           "url": "https://www.opiniaoce.com.br/fortaleza/2026/11/10/capital-tera-550-novas-moradias-populares-em-terreno-da-uniao/"
         }
-      ]
+      ],
+      "palavra": "MCMV"
     },
     {
       "setores": [
@@ -226,7 +240,8 @@
           "nome": "Maringá Mais",
           "url": "https://www.maringamais.com.br/2026/11/10/procon-aponta-variacao-de-ate-5051-nos-precos-de-materiais-de-construcao/"
         }
-      ]
+      ],
+      "palavra": "materiais"
     }
   ],
   "pestel": [
@@ -323,9 +338,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,51",
+      "valor": "R$ 5,58",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 09/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 10/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -347,9 +362,9 @@
       "label": "PIM (Indústria)",
       "valor": "-0,8%",
       "cor": "down",
-      "sub": "Produção física m/m · acum. ano -2,5% · IBGE set/26",
+      "sub": "Produção física m/m · acum. ano 0,4% · IBGE set/26",
       "fonte": "IBGE",
-      "acum_ano": -2.5
+      "acum_ano": 0.4
     },
     {
       "label": "IPP",
@@ -571,62 +586,44 @@
       }
     }
   },
-  "novos_sinais": [
-    {
+  "_kpis_vistos": {
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 10/11/2026",
+    "ipca": "0,82%|Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeç",
+    "cambio": "R$ 5,58|Dólar PTAX venda · BCB · 10/11/2026",
+    "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
+    "varejo": "0,1%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
+    "pim": "-0,8%|Produção física m/m · acum. ano 0,4% · IBGE set/26",
+    "ipp": "1,54%|Preços ao produtor m/m · acum. ano 5,04% · IBGE set/26"
+  },
+  "leituras_temas": {
+    "juros": {
       "tipo": "risco",
-      "titulo": "Onda de recuperações judiciais no varejo e no agro",
-      "dimensao": "E",
-      "setores": [
-        "comercio",
-        "agro"
-      ],
-      "texto": "1.024 varejistas em recuperação judicial e alta de 57,5% nos casos do agro no 3º trimestre, com calote e juros altos.",
-      "fontes": [
-        "Monitor RGF-BizDoc",
-        "RCN67"
-      ],
-      "severidade": 7.0,
-      "iminencia": 7.5,
-      "materializado": true
-    }
-  ],
-  "atualizacoes_sinais": [
-    {
-      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
-      "reapareceu": true,
-      "texto_observacao": "Focus de 09/11 eleva a Selic de fim de 2026 para 13,75%, após a pausa do Copom.",
+      "status": "em_curso",
+      "texto": "Focus de 09/11 eleva a Selic de fim de 2026 para 13,75%, após a pausa do Copom.",
       "fontes": [
         "Focus/BCB"
-      ],
-      "novo_status": "em_curso"
+      ]
     },
-    {
-      "id": "f481cf12-14c9-4cbb-86b1-a377e170d266",
-      "reapareceu": true,
-      "texto_observacao": "ICVA cai 4,0% real em outubro, 17º mês seguido; duráveis -8,9%.",
+    "consumo": {
+      "tipo": "risco",
+      "status": "materializado",
+      "materializado": true,
+      "texto": "ICVA cai 4,0% real em outubro, 17º mês seguido; calote lidera as causas de recuperação judicial de 1.024 varejistas.",
       "fontes": [
-        "Cielo"
-      ],
-      "novo_status": "em_curso"
+        "Cielo",
+        "Monitor RGF-BizDoc"
+      ]
     },
-    {
-      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
-      "reapareceu": true,
-      "texto_observacao": "Recuperação judicial no agro sobe 57,5% no 3º tri; exportação de milho acelera em novembro.",
+    "agro": {
+      "tipo": "risco",
+      "status": "materializado",
+      "texto": "Recuperação judicial no agro sobe 57,5% no 3º trimestre; exportação de milho acelera em novembro.",
       "fontes": [
         "RCN67",
         "Secex"
       ],
-      "novo_status": "em_curso"
+      "materializado": true
     }
-  ],
-  "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 10/11/2026",
-    "ipca": "0,82%|Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeç",
-    "cambio": "R$ 5,51|Dólar PTAX venda · BCB · 09/11/2026",
-    "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
-    "varejo": "0,1%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
-    "pim": "-0,8%|Produção física m/m · acum. ano -2,5% · IBGE set/26",
-    "ipp": "1,54%|Preços ao produtor m/m · acum. ano 5,04% · IBGE set/26"
-  }
+  },
+  "novos_temas": []
 }

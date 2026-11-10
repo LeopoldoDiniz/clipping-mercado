@@ -2391,175 +2391,196 @@
   },
   "longitudinal": [
     {
-      "id": "d89bb2d3-3866-4c5a-9913-3491bbfb6635",
-      "tipo": "oportunidade",
-      "titulo": "Desenrola Adimplentes: Nova Linha de Crédito para Prevenção de Inadimplência",
+      "id": "tema-agro",
+      "tipo": "risco",
+      "titulo": "Safra, clima e agro",
       "dimensao": "E",
       "setores": [
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 94.06,
-      "severidade": 8.5,
-      "iminencia": 7.0,
-      "ultima_observacao": "Não houve novas notícias diretas sobre o 'Desenrola Adimplentes' nesta semana, mas a recuperação de crédito de consumidores foi observada.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "adb7ae3f-956b-4b3f-98f4-15399f5990ef",
-      "tipo": "risco",
-      "titulo": "Aumento dos Custos de Energia Elétrica para PMEs",
-      "dimensao": "E",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos",
-        "transversal"
-      ],
-      "status": "materializado",
-      "relevancia": 92.5,
-      "severidade": 9.0,
-      "iminencia": 9.0,
-      "ultima_observacao": "ANEEL aprovou reajustes tarifários, impactando os custos de energia elétrica para empresas e residências.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-06",
-      "origem": "real"
-    },
-    {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
-      "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 88.05,
-      "severidade": 8.8,
-      "iminencia": 8.5,
-      "ultima_observacao": "A confiança do consumidor registrou leve queda, e a PEIC indica cautela na intenção de consumo, reforçando o endividamento familiar.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "257a435e-47e0-4c53-b207-1ba238cd6157",
-      "tipo": "oportunidade",
-      "titulo": "Digitalização e 'Technology as a Service' (TaaS)",
-      "dimensao": "T",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 80.5,
-      "severidade": 8.0,
-      "iminencia": 8.2,
-      "ultima_observacao": "Sebrae lança programa de capacitação em transformação digital, reforçando a digitalização e TaaS para PMEs.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 79.5,
-      "severidade": 8.0,
-      "iminencia": 7.0,
-      "ultima_observacao": "A possibilidade de novas tarifas dos EUA sobre produtos brasileiros é mencionada como fator de aversão a risco no câmbio.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "14e200b0-2eb1-422c-8a38-14c9cd867262",
-      "tipo": "oportunidade",
-      "titulo": "Aceleração da Adoção de Inteligência Artificial por PMEs para Otimização de Processos",
-      "dimensao": "T",
-      "setores": [
-        "industria",
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 75.75,
-      "severidade": 7.5,
-      "iminencia": 7.8,
-      "ultima_observacao": "MIT Tech Review BR e IBEVAR abordam avanços em IA e seu impacto na otimização de processos em PMEs.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "2a3e3f46-e22a-4e1d-828b-b7f6d5f179e0",
-      "tipo": "oportunidade",
-      "titulo": "Otimismo na Indústria da Construção com Novos Projetos",
-      "dimensao": "E",
-      "setores": [
-        "industria",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 64.25,
-      "severidade": 6.5,
-      "iminencia": 7.0,
-      "ultima_observacao": "CBIC aponta otimismo moderado e ABRAINC projeta crescimento de lançamentos imobiliários, indicando novos projetos.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "9032fb4f-90f5-423f-a5d6-e0578821761d",
-      "tipo": "risco",
-      "titulo": "Crise de Talentos em Engenharia Ameaça Setores Chave da Economia",
-      "dimensao": "S",
-      "setores": [
-        "industria",
-        "servicos",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 59.3,
-      "severidade": 7.8,
-      "iminencia": 8.0,
-      "ultima_observacao": "A escassez de mão de obra qualificada na indústria e serviços persiste, com o setor de construção também alertando para o problema.",
-      "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "6cbb2976-4d12-4c66-a2b8-157f450c241d",
-      "tipo": "risco",
-      "titulo": "Aumento das tensões geopolíticas no Oriente Médio impacta mercados globais",
-      "dimensao": "P",
-      "setores": [
-        "transversal",
-        "industria",
-        "comercio",
-        "servicos",
         "agro"
       ],
-      "status": "monitorar",
-      "relevancia": 53.75,
-      "severidade": 8.5,
-      "iminencia": 8.0,
-      "ultima_observacao": "O conflito entre EUA e Irã intensifica-se, elevando os temores sobre a oferta global de petróleo e a aversão ao risco nos mercados financeiros. [cite: 38 in previous search, 48 in previous search, 50 in previous search]",
+      "status": "em_curso",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "23 notícia(s) do tema nesta semana. Ex.: Balança comercial brasileira registra superávit em junho, impulsionado por commodities (+22).",
       "periodo_observacao": "2026-W29",
-      "data_identificacao": "2026-07-13",
-      "origem": "real"
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "retomado",
+      "noticias_semana": 33
+    },
+    {
+      "id": "tema-construcao",
+      "tipo": "risco",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "industria",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 77.5,
+      "severidade": 8.2,
+      "iminencia": 7.3,
+      "ultima_observacao": "15 notícia(s) do tema nesta semana. Ex.: INCC-M da FGV desacelera em julho, mas custos ainda preocupam (+14).",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 24
+    },
+    {
+      "id": "tema-ecommerce",
+      "tipo": "risco",
+      "titulo": "E-commerce, marketplaces e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 67.0,
+      "severidade": 6.7,
+      "iminencia": 6.7,
+      "ultima_observacao": "2 notícia(s) do tema nesta semana. Ex.: Câmara Brasileira da Economia Digital debate regulamentação do cross-border (+1).",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W22",
+      "origem": "real",
+      "direcao": "retomado",
+      "noticias_semana": 22
+    },
+    {
+      "id": "tema-consumo",
+      "tipo": "risco",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "transversal",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 56.5,
+      "severidade": 6.1,
+      "iminencia": 5.2,
+      "ultima_observacao": "31 notícia(s) do tema nesta semana. Ex.: Confiança do Consumidor da FGV registra leve queda em julho (+30).",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 17
+    },
+    {
+      "id": "tema-atividade",
+      "tipo": "risco",
+      "titulo": "Atividade: indústria e serviços",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "transversal",
+        "comercio",
+        "construcao",
+        "agro"
+      ],
+      "status": "em_curso",
+      "relevancia": 51.5,
+      "severidade": 5.8,
+      "iminencia": 4.5,
+      "ultima_observacao": "5 notícia(s) do tema nesta semana. Ex.: CADE aprova fusões e aquisições em setores estratégicos (+4).",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 15
+    },
+    {
+      "id": "tema-digital",
+      "tipo": "risco",
+      "titulo": "Digitalização, IA e meios de pagamento",
+      "dimensao": "T",
+      "setores": [
+        "servicos",
+        "transversal",
+        "comercio",
+        "ecommerce",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 45.5,
+      "severidade": 5.2,
+      "iminencia": 3.9,
+      "ultima_observacao": "27 notícia(s) do tema nesta semana. Ex.: Receita Federal intensifica fiscalização de empresas de tecnologia (+26).",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W21",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 13
+    },
+    {
+      "id": "tema-energia",
+      "tipo": "risco",
+      "titulo": "Energia elétrica e transição",
+      "dimensao": "A",
+      "setores": [
+        "servicos",
+        "industria",
+        "transversal",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 27.0,
+      "severidade": 3.9,
+      "iminencia": 1.5,
+      "ultima_observacao": "7 notícia(s) do tema nesta semana. Ex.: Setor siderúrgico brasileiro mantém produção estável, mas com desafios de custo (+6).",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W25",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 5
+    },
+    {
+      "id": "tema-cambio",
+      "tipo": "risco",
+      "titulo": "Câmbio e mercado financeiro",
+      "dimensao": "E",
+      "setores": [
+        "servicos",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 12.0,
+      "severidade": 1.5,
+      "iminencia": 0.9,
+      "ultima_observacao": "1 notícia(s) do tema nesta semana. Ex.: Balança comercial brasileira registra superávit em junho, impulsionado por commodities.",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 3
+    },
+    {
+      "id": "tema-trabalho",
+      "tipo": "risco",
+      "titulo": "Emprego e trabalho",
+      "dimensao": "S",
+      "setores": [
+        "industria",
+        "servicos",
+        "construcao",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 12.0,
+      "severidade": 1.5,
+      "iminencia": 0.9,
+      "ultima_observacao": "A escassez de mão de obra qualificada na indústria e serviços persiste, com o setor de construção também alertando para o problema.",
+      "periodo_observacao": "2026-W29",
+      "data_identificacao": "2026-W05",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 3
     }
   ]
 }

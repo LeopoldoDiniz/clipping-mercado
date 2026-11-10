@@ -13,3 +13,4 @@ tools/verif_report.json
 # só os prompts e o backup da memória ficam fora.
 trabalho/**/prompt_*.md
 trabalho/**/sinais_antes.json
+trabalho/**/temas_antes.json

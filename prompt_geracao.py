@@ -82,22 +82,13 @@ Grupo Casas Bahia (grupocasasbahia.com.br), SHEIN Group (sheingroup.com)
 """.strip()
 
 
-def montar_prompt(periodo_label, data_inicio, data_fim, historico_sinais):
+def montar_prompt(periodo_label, data_inicio, data_fim, temas_texto):
     """
     periodo_label: ex "Semana 27 · Julho 2026"
     data_inicio, data_fim: intervalo da semana
-    historico_sinais: lista de sinais ativos da memória data/sinais.json (para a revisão longitudinal)
+    temas_texto: temas vigentes com leitura e palavras do dicionário (temas_motor.texto_para_coleta)
     """
-
-    if historico_sinais:
-        hist_texto = "\n".join([
-            f"- [{s['id']}] ({s['tipo']}, dim {s['dimensao']}, setores {s['setores']}) "
-            f"\"{s['titulo']}\" | status atual: {s['status']} | "
-            f"relevância: {s['relevancia_atual']} | visto pela última vez em: {s['ultimo_periodo']}"
-            for s in historico_sinais
-        ])
-    else:
-        hist_texto = "(Nenhum sinal anterior — esta é uma das primeiras execuções.)"
+    hist_texto = temas_texto or "(sem temas cadastrados)"
 
     return f"""Você é um analista sênior de inteligência de mercado da Formatar Consultoria,
 em Divinópolis/MG, produzindo o clipping estratégico da semana para uma consultoria
@@ -121,7 +112,7 @@ cobrindo os SEIS setores de forma equilibrada.
 # FONTES PRIORITÁRIAS (por setor)
 {FONTES}
 
-# SETORES (marque cada item com um ou mais) — vale para CLIPPING, PESTEL e SINAIS (longitudinal), não só clipping
+# SETORES (marque cada item com um ou mais) — vale para CLIPPING e PESTEL
 - "industria", "comercio", "servicos", "agro", "construcao", "ecommerce"
 - "transversal" = afeta todos os setores (ex: SELIC, câmbio, reforma tributária)
 - REGRA: se o item é ESPECÍFICO de um setor, ele DEVE conter a tag daquele setor (não deixe só "transversal"):
@@ -135,15 +126,15 @@ cobrindo os SEIS setores de forma equilibrada.
   construção civil (INCC, crédito imobiliário, lançamentos, sondagens CBIC/CNI) e e-commerce
   (faturamento, marketplaces, cross-border/Remessa Conforme, logística) são tão relevantes quanto os demais.
   E-commerce NÃO pode ficar sem clipping: busque nas fontes próprias do setor a cada rodada.
-- SINAIS (novos_sinais/longitudinal): além de riscos macro, promova a SINAL rastreável os desdobramentos
-  REGULATÓRIOS (ANEEL, leilões, Remessa Conforme, reforma tributária, marcos legais) e TRABALHISTAS
-  (escala 6x1, jornada, encargos) quando materiais — não os deixe só como notícia solta.
 
-# HISTÓRICO DE SINAIS ATIVOS (para a revisão longitudinal)
-Avalie CADA sinal abaixo à luz das notícias novas desta semana. Para cada um, decida:
-- Houve desdobramento? (nova observação)
-- O status mudou? (monitorar → em_curso → materializado)
-- Ele reapareceu nas fontes desta semana? (se sim, persistência aumenta; se não, marque visto=false)
+# TEMAS (memória interna — NÃO aparecem no portal e NÃO filtram notícias)
+Cada item do clipping recebe o campo interno "palavra": UMA palavra que resume o assunto da notícia.
+- A mais específica possível (ex.: gasolina, arroba, IPP). Proibidas: preços, mercado, setor,
+  economia, vendas, Brasil, inflação, juros.
+- Nomeia o SUJEITO da notícia (quem age ou o que foi medido), não o motivo.
+- Use as palavras já existentes abaixo sempre que couberem. Palavra nova: informe também "tema"
+  (id de um tema existente). Assunto sem tema que se repete: crie o tema em "novos_temas".
+Depois de classificar, escreva a LEITURA da semana para cada tema que teve notícia relevante.
 
 {hist_texto}
 
@@ -153,7 +144,7 @@ Estrutura exata:
 
 {{
   "clipping": [
-    {{"setores": ["industria"], "titulo": "...", "texto": "...",
+    {{"setores": ["industria"], "titulo": "...", "texto": "...", "palavra": "PIM",
       "fontes": [
         {{"nome": "IBGE / PIM", "url": "https://agenciadenoticias.ibge.gov.br/..."}},
         {{"nome": "CNI", "url": "https://noticias.portaldaindustria.com.br/..."}}
@@ -191,16 +182,10 @@ Estrutura exata:
       "ecommerce":  {{"prov": "...", "quote": "...", "edi": ["..."], "acoes": [{{"ico": "📦", "txt": "..."}}]}}
     }}
   }},
-  "novos_sinais": [
-    {{"tipo": "risco", "titulo": "...", "dimensao": "E", "setores": ["transversal"],
-      "texto": "...", "fontes": ["Valor","BCB"],
-      "severidade": 8.0, "iminencia": 7.0, "materializado": false}}
-  ],
-  "atualizacoes_sinais": [
-    {{"id": "SINAL_ID_DO_HISTORICO", "reapareceu": true, "texto_observacao": "...",
-      "novo_status": "materializado", "fontes": ["IBGE"],
-      "severidade": 8.0, "iminencia": 7.5, "materializado": true}}
-  ]
+  "leituras_temas": {{
+    "juros": {{"tipo": "risco", "status": "em_curso", "texto": "...", "fontes": ["BCB"]}}
+  }},
+  "novos_temas": []
 }}
 
 # INDICADOR DE E-COMMERCE (fonte de MERCADO — não há série oficial gratuita)
@@ -233,7 +218,7 @@ Estrutura exata:
 - SÍNTESE OBRIGATÓRIA em TODOS os campos de texto — o painel mostra highlights curtos, ninguém lê parágrafos:
   * clipping "texto": MÁXIMO 35 palavras (1 a 2 frases factuais, com número/data).
   * pestel "texto": MÁXIMO 30 palavras (o essencial da força na semana).
-  * novos_sinais "texto" e atualizacoes_sinais "texto_observacao": MÁXIMO 30 palavras.
+  * leituras_temas "texto": MÁXIMO 30 palavras.
   * porter "nota": UMA frase curta.
   Corte adjetivos e rodeios. Cada frase carrega informação; nada de generalidades.
 - clipping: 15 a 20 itens POR SETOR (Indústria, Comércio, Serviços, Agro, Construção, E-commerce) + transversais,
@@ -244,11 +229,11 @@ Estrutura exata:
   É uma leitura de estrutura de mercado que muda DEVAGAR — seja consistente entre semanas, ajustando
   só quando houver mudança estrutural real (novo entrante relevante, consolidação, choque regulatório).
   "nota" = uma frase explicando a força dominante do setor. Valores 0 (força fraca) a 10 (força intensa).
-- analise: leitura ACIONÁVEL da semana, por setor, DERIVADA das notícias/sinais/indicadores desta semana.
+- analise: leitura ACIONÁVEL da semana, por setor, DERIVADA das notícias/indicadores desta semana.
   Para cada um dos SEIS setores: "prov" (pergunta provocativa curta), "quote" (1 frase com número/fato real),
   "edi" (1 a 2 parágrafos curtos e factuais, citando eventos/números reais desta semana),
   "acoes" (3-4 ações práticas, cada uma {{"ico": emoji, "txt": frase curta}}). "panorama.acoes" = 4-5 ações
-  macro/transversais. Ancore TUDO nos dados desta semana — nunca invente fato que não apareça no clipping/sinais.
+  macro/transversais. Ancore TUDO nos dados desta semana — nunca invente fato que não apareça no clipping.
 - kpis: exatamente 7 indicadores, nesta ordem:
   1. SELIC  2. IPCA ou IPCA-15 (o mais recente)  3. Câmbio (dólar)  4. Desemprego (PNAD)
   5. Varejo (PMC/IBGE)  6. Produção Industrial (PIM-PF/IBGE)  7. IPP (Índice de Preços ao Produtor/IBGE)
@@ -266,8 +251,10 @@ Estrutura exata:
     - "Projeção Focus AAAA" = mediana do Boletim Focus/BCB para o IPCA de fechamento do ano vigente
       (número REAL do Focus mais recente; nunca invente). Use o ano corrente em AAAA.
   * SELIC e Câmbio também trazem "Projeção Focus AAAA: ..." no fim do "sub" (mediana Focus para o ano vigente).
-- novos_sinais: riscos/oportunidades identificados AGORA que não estão no histórico. severidade e iminencia de 0 a 10.
-- atualizacoes_sinais: para cada sinal do histórico que teve desdobramento OU reapareceu. Use o ID exato.
+- leituras_temas: {{"<id do tema>": {{"tipo": "risco"|"oportunidade", "status": "monitorar"|"em_curso"|"materializado",
+  "texto": "1 frase factual com número/data da semana", "fontes": ["..."]}}}} — só temas com notícia na semana.
+  "materializado" = o risco/oportunidade previsto aconteceu de fato nesta semana.
+- novos_temas (raro): [{{"id": "...", "nome": "...", "dimensao": "P|E|S|T|A|L", "tipo": "risco"|"oportunidade"}}].
 - Seja factual e específico (números, datas, fontes). Nada de generalidades vagas.
 - Texto em português do Brasil, tom analítico e objetivo.
 """
@@ -275,11 +262,7 @@ Estrutura exata:
 
 # Teste rápido de montagem (não chama a API)
 if __name__ == "__main__":
-    exemplo_hist = [
-        {"id": "abc-123", "tipo": "risco", "dimensao": "E", "setores": ["industria", "transversal"],
-         "titulo": "Câmbio alto", "status": "em_curso",
-         "relevancia_atual": 68.0, "ultimo_periodo": "2026-W26"}
-    ]
+    exemplo_hist = "- cambio — Câmbio e mercado financeiro | leitura vigente (2026-W26): ... | palavras: dólar, Ibovespa"
     p = montar_prompt("Semana 28 · Julho 2026", "2026-07-06", "2026-07-10", exemplo_hist)
     assert "30 e 48" in p and "15 a 20 itens" in p and "IPP" in p and "PIM" in p
     assert "NUNCA use como url" in p and "github.io" in p

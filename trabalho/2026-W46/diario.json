@@ -20,5 +20,19 @@
         "3 notícias novas no setor"
       ]
     }
+  },
+  {
+    "data": "2026-11-10",
+    "em": "2026-11-10T17:21:50.086876+00:00",
+    "noticias_novas": 0,
+    "total_semana": 15,
+    "gatilhos": {
+      "panorama": [
+        "indicador Câmbio (US$) atualizado: R$ 5,58"
+      ],
+      "industria": [
+        "indicador PIM (Indústria) atualizado: -0,8%"
+      ]
+    }
   }
 ]

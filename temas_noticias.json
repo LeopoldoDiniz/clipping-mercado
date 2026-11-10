@@ -1,0 +1,8527 @@
+{
+ "versao": 1,
+ "gerado_em": "2026-11-10",
+ "semanas": {
+  "2026-W01": [
+   {
+    "titulo": "IGP-M recua 0,01% em dezembro e encerra 2025 em -1,05%",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar encerra 2025 a R$ 5,48, queda de ~11% no ano",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Boletim Focus da virada: mercado projeta 2026",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Exportações brasileiras batem recorde de US$ 348,7 bi em 2025",
+    "palavra": "exportações",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Agronegócio fecha 2025 com exportações recorde de US$ 169,2 bi",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W02": [
+   {
+    "titulo": "IPCA de dezembro fica em 0,33% e fecha 2025 em 4,26%",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "PMI de serviços sobe a 53,7 em dezembro, maior expansão em 14 meses",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "PMI da indústria fica em 47,6 em dezembro, 8º mês em contração",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Produção industrial fica estável em novembro (0,0%)",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Balança comercial tem saldo recorde em dezembro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "SINAPI: construção sobe 0,51% em dezembro e fecha 2025 em 5,63%",
+    "palavra": "SINAPI",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   }
+  ],
+  "2026-W03": [
+   {
+    "titulo": "Focus reduz projeção de inflação de 2026 para 4,05%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Varejo cresce 1,0% em novembro; acumula 1,5% no ano",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Vendas de veículos crescem 2,58% em 2025, a 2,55 milhões de unidades",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio"
+    ]
+   }
+  ],
+  "2026-W04": [
+   {
+    "titulo": "IPCA-15 de janeiro fica em 0,20%",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W05": [
+   {
+    "titulo": "Confiança da Construção sobe para 94,0 em janeiro, maior nível em 10 meses",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CAGED: Brasil fecha 2025 com 1,279 milhão de empregos formais",
+    "palavra": "Caged",
+    "tema": "trabalho",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IGP-M sobe 0,41% em janeiro",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W06": [
+   {
+    "titulo": "PMI da indústria cai a 47,0 em janeiro",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Boletim Focus (02/02): IPCA de 2026 em 3,99%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Brasil cria 115 mil empregos formais em janeiro",
+    "palavra": "Caged",
+    "tema": "trabalho",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "PMI de serviços cai a 51,3 em janeiro",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Balança comercial tem superávit de US$ 4,3 bi em janeiro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   }
+  ],
+  "2026-W07": [
+   {
+    "titulo": "Boletim Focus (09/02): IPCA de 2026 recua para 3,97%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IPCA de janeiro fica em 0,33%",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Conab projeta safra 2025/26 recorde de 353,4 mi t",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo recuam 0,4% em dezembro; 2025 fecha em +1,6%",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   }
+  ],
+  "2026-W08": [
+   {
+    "titulo": "Brasil registra US$ 2,1 bi de superávit na 3a semana de fevereiro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Boletim Focus (18/02): IPCA de 2026 recua para 3,95%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W09": [
+   {
+    "titulo": "IPCA-15 de fevereiro sobe 0,84%",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança da Indústria sobe para 96,7 em fevereiro",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Confiança do Consumidor cai para 86,1 em fevereiro, menor em 6 meses",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança de Serviços recua para 90,2 em fevereiro",
+    "palavra": "serviços",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Preço do leite reage 5,43% em fevereiro após 9 meses de queda",
+    "palavra": "leite",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W10": [
+   {
+    "titulo": "PMI da indústria fica em 47,3 em fevereiro, 11o mês em contração",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PIB fecha 2025 em alta de 2,3%; 4o tri +0,1%",
+    "palavra": "PIB",
+    "tema": "atividade",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "PMI de serviços sobe a 53,1 em fevereiro, 4a expansão seguida",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Balança comercial tem superávit de US$ 4,2 bi em fevereiro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Produção industrial cresce 1,8% em janeiro",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Boletim Focus (02/03): Selic de 2026 recua para 12,00%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W11": [
+   {
+    "titulo": "Boletim Focus (13/03): IPCA de 2026 em 3,97%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IPCA de fevereiro fica em 0,70%",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "SINAPI sobe 0,23% em fevereiro; custo a R$ 1.925,08/m2",
+    "palavra": "SINAPI",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo avançam 0,4% em janeiro, recorde da série",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Volume de serviços avança 0,3% em janeiro e iguala recorde",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Conab: 6o levantamento mantem safra 2025/26 recorde",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W12": [
+   {
+    "titulo": "Boletim Focus (16/03): IPCA de 2026 sobe para 4,10%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Copom corta a Selic para 14,75%, primeira redução em 19 meses",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W13": [
+   {
+    "titulo": "Ata do Copom não indica novos cortes na Selic",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança do Consumidor sobe 2,0 pontos para 88,1 em março",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "IPCA-15 de março fica em 0,44%, pressionado por alimentos",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W14": [
+   {
+    "titulo": "Indicador de Incerteza da Economia sobe 9,2 pontos, a 115,0 em março",
+    "palavra": "incerteza",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IPC-S sobe 0,67% na 4a quadrissemana de março",
+    "palavra": "IPC-S",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W15": [
+   {
+    "titulo": "IPCA de março fecha em 0,88%, pressionado por combustíveis",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IGP-DI de março sobe 1,14%",
+    "palavra": "IGP-DI",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo avançam 0,6% em fevereiro, novo recorde",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria (ICEI) cai a 45,2, menor nível desde 2020",
+    "palavra": "ICEI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Boletim Focus (10/04): IPCA de 2026 em 5,30% e Selic a 14%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo edita MP 1.349 com subsídio de R$ 1,20/L ao diesel",
+    "palavra": "diesel",
+    "tema": "combustiveis",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANP publica novo edital da Oferta Permanente com 15 blocos",
+    "palavra": "petróleo",
+    "tema": "combustiveis",
+    "setores": [
+     "servicos"
+    ]
+   }
+  ],
+  "2026-W16": [
+   {
+    "titulo": "Conab: 7o levantamento estima safra 2025/26 em 356,3 milhões de t",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Focus (17/04): IPCA de 2026 em 4,80% e Selic projetada a 13,00%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Conab: produção de cana-de-açúcar 2025/26 em 673,2 milhões de t",
+    "palavra": "cana",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W17": [
+   {
+    "titulo": "Focus (24/04): IPCA de 2026 em 4,86% e Selic a 13,00%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W18": [
+   {
+    "titulo": "INCC-M sobe 1,04% em abril, acelerando por materiais",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "IPCA-15 de abril fica em 0,89%, pressionado por alimentos",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Copom corta a Selic para 14,50%, segunda redução seguida",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IGP-M avança 2,73% em abril com alta das matérias-primas",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Desemprego sobe para 6,1% no trimestre até março",
+    "palavra": "desemprego",
+    "tema": "trabalho",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança do Consumidor sobe a 89,1 pontos em abril",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Focus (30/04): IPCA de 2026 em 4,89% e IGP-M projetado a 5,50%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W19": [
+   {
+    "titulo": "Ata do Copom detalha corte cauteloso da Selic a 14,50%",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Produção industrial varia 0,1% em março e acumula 3,1% no ano",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Focus (08/05): IPCA de 2026 em 4,91% e IGP-M a 5,60%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W20": [
+   {
+    "titulo": "IPCA de abril fica em 0,67%, desacelerando ante março",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo crescem 0,5% em março",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Volume de serviços recua 1,2% em março",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Focus (15/05): IPCA de 2026 em 4,92% e Selic a 13,25%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W21": [
+   {
+    "titulo": "Boletim Focus (22/mai): mediana da inflação 2026 sobe pela 8ª semana",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IGP-10 desacelera para 0,89% em maio ante 2,94% em abril",
+    "palavra": "IGP-10",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IPCA de abril fica em 0,67%, com transporte desacelerando",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANATEL publica Portaria 3.164 (22/mai) ampliando áreas locais de telefonia",
+    "palavra": "telefonia",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CBIC (22/mai): sondagem aponta pior produção da construção para um abril em três anos",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Conab: 8º levantamento aponta safra 2025/26 recorde de ~358 mi t",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ANEC projeta embarque de ~14,5 mi t de soja em maio",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W22": [
+   {
+    "titulo": "IPCA-15 de maio surpreende e fecha em 0,62%",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria sobe pelo terceiro mês, aponta FGV",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PIB cresce 1,1% no 1º trimestre e Brasil tem 6ª maior alta do mundo",
+    "palavra": "PIB",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Ibovespa tem pior mês desde 2023 com fuga de estrangeiros",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IGP-M desacelera para 0,84% em maio",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Produção de aço recua, mas confiança da siderurgia sobe",
+    "palavra": "siderurgia",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Número de setores industriais confiantes sobe de 1 para 6, diz CNI",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Vendas no varejo devem subir em maio, junho e julho",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Dia Livre de Impostos reúne mais de 100 mil lojas em 28/05",
+    "palavra": "impostos",
+    "tema": "regulacao",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Disputa regulatória dos postes de energia avança em etapas ao longo de maio",
+    "palavra": "postes",
+    "tema": "regulacao",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel inicia discussão sobre regulação de cabos submarinos",
+    "palavra": "Anatel",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Leilão reverso de espectro móvel é agendado para junho",
+    "palavra": "espectro",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "GIC entra no capital da IHS Latin America",
+    "palavra": "torres",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CGI.br se posiciona sobre regulação de plataformas digitais",
+    "palavra": "bigtechs",
+    "tema": "regulacao",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Seminário Educação Conectada 2026 é realizado",
+    "palavra": "conectividade",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "NuCel lança estratégia voltada ao mercado teen",
+    "palavra": "operadora",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Vivo divulga sua contribuição ao PIB nacional",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Medidas contra robocalls são prorrogadas até 2028",
+    "palavra": "robocalls",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel aprova aquisição da Desktop pela Claro",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Senacon multa iFood e Keeta em R$14 milhões por falta de transparência",
+    "palavra": "Senacon",
+    "tema": "regulacao",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "AgroBrasília 2026 reúne tecnologia e negócios com participação da Embrapa",
+    "palavra": "Embrapa",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Preço da arroba do bezerro recua e se estabiliza em maio",
+    "palavra": "bezerro",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Mercados agrícolas ficam atentos à divulgação do PIB do 1º trimestre",
+    "palavra": "commodities",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "INCC-M acelera para 0,77% em maio",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "SindusCon-SP fecha convenções coletivas com reajuste de 5,15% no interior paulista",
+    "palavra": "salários",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Secovi-SP aponta mercado imobiliário resiliente no interior paulista",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CBIC apresenta Indicadores Imobiliários Nacionais do 1º trimestre",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CBIC debate reforma tributária e cadeia de suprimentos da construção",
+    "palavra": "tributária",
+    "tema": "regulacao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Artigo defende fim da guerra de preços no e-commerce",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "OLX se torna primeiro marketplace brasileiro integrado ao ChatGPT",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "ANYTOOLS debate adaptação de sellers aos marketplaces no Fórum ECBR",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W23": [
+   {
+    "titulo": "Boletim Focus eleva projeção de IPCA para 5,09% pela 12ª semana seguida, com Selic a 13,25%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Ibovespa cai pela quinta sessão seguida e fecha junho em baixa",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Mercado de renda fixa reage a dados de emprego dos EUA",
+    "palavra": "renda-fixa",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "PMI industrial do Brasil desaba para 49,1 pontos em maio, indicando contração",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Produção industrial brasileira avança 0,7% em abril, aponta IBGE",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Prataviera Shopping (Caxias do Sul) projeta alta de 10% nas vendas no Dia dos Namorados",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Dia dos Namorados deve movimentar R$ 26 bilhões no comércio e serviços",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CADE aprova venda da Oi Móvel para TIM, Vivo e Claro",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Pirataria audiovisual gera US$ 12 bilhões em perdas anuais na América Latina",
+    "palavra": "pirataria",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel abre consulta pública para rediscutir regulação da Internet das Coisas",
+    "palavra": "IoT",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "PMI de Serviços do Brasil estende sequência de expansão em junho",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Secovi-SP reúne associados em encontro estratégico sobre o setor imobiliário",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Fórum E-Commerce Brasil 2026 chega à 17ª edição em julho, no Anhembi",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W24": [
+   {
+    "titulo": "Focus: mercado eleva projeção de IPCA 2026 e Selic para 13,50%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Ibovespa recua com queda da Vale e tensões geopolíticas",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "BCB divulga Focus de 12 de junho com expectativas de mercado",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Comércio espera tíquete médio de até R$ 200 no Dia dos Namorados",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Orientações sobre couvert e gorjeta no Dia dos Namorados",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Solteiros planejam Dia dos Namorados com Copa do Mundo e amigos",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Comércio de Osvaldo Cruz se mobiliza para o Dia dos Namorados",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ICVA: varejo cresce 3,3% no Dia dos Namorados, com e-commerce em alta",
+    "palavra": "ICVA",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Fecomércio projeta faturamento do comércio +2,1% em junho",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CNC: Dia dos Namorados deve movimentar R$ 2,84 bilhões no varejo",
+    "palavra": "namorados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo deve movimentar R$ 22,14 bilhões com datas sazonais de junho",
+    "palavra": "sazonalidade",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Boletim TELETIME: regulação de IoT e orçamento da Anatel",
+    "palavra": "Anatel",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Wi-Fi 6 atinge 21% de adoção no Brasil",
+    "palavra": "Wi-Fi",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Vivo lidera adições em banda larga em abril",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ANPD abre processo sancionador contra Claro por acordo com Serasa",
+    "palavra": "dados",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Apps do governo federal superam big techs em downloads",
+    "palavra": "aplicativos",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Cade espera aprovação da Lei dos Mercados Digitais em 2026",
+    "palavra": "bigtechs",
+    "tema": "regulacao",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Data centers espaciais ampliam desafio de sustentabilidade orbital",
+    "palavra": "datacenters",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Alares lança Wi-Fi inteligente para o mercado B2B",
+    "palavra": "Wi-Fi",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Boletim TELETIME: números de telecom e regulação de ciber",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Rede celular privativa do governo será operada como SMVNO",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Boletim TELETIME: GPUs como serviço e regulação de IA",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel inicia monitoramento permanente de faixas móveis",
+    "palavra": "Anatel",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Interrupções em plataformas de IA se multiplicam em 2026",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Falta de conectividade nas rodovias trava veículo inteligente, diz Anfavea",
+    "palavra": "conectividade",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Estudantes brasileiros vencem competição de TIC da Huawei",
+    "palavra": "Huawei",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ABIEC e FGV Agro projetam queda de até 92,6% nas emissões da pecuária até 2050",
+    "palavra": "pecuária",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "AGRO 360º discute posicionamento do Brasil na nova ordem global",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Conab eleva safra de grãos 2025/26 a recorde de 358,6 milhões de toneladas",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Mercado agrícola: consumo firme de milho, trigo e arroz, aponta Cultivar",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportações de soja seguem fortes em junho, aponta Cultivar",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W25": [
+   {
+    "titulo": "Copom reduz taxa Selic para 14,25% ao ano em meio a incertezas globais",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IPCA-15 desacelera para 0,41% em junho, mas inflação acumulada segue acima da meta",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Preços da indústria recuam 0,30% em maio, puxados por alimentos e extrativas",
+    "palavra": "IPP",
+    "tema": "inflacao",
+    "setores": [
+     "industria",
+     "transversal",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sondagem Industrial da CNI aponta queda nas expectativas de exportação devido a tarifas dos EUA",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Inadimplência atinge novo recorde em maio, com alta reincidência de devedores",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Crédito deve crescer 0,8% em maio, impulsionado por linhas direcionadas e programas governamentais",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ANP prevê queda gradual nos preços de combustíveis após acordo EUA-Irã e fim de subsídios",
+    "palavra": "combustíveis",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "transversal",
+     "construcao",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Cade intensifica atuação em concorrência, investigando big techs e aprovando fusões",
+    "palavra": "Cade",
+    "tema": "regulacao",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ANEEL regulamenta armazenamento de energia e adia decisão sobre cortes de geração",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança Empresarial sobe em junho, mas incerteza econômica persiste",
+    "palavra": "empresarial",
+    "tema": "atividade",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IGP-M registra deflação de 0,50% em junho, impulsionado por queda em combustíveis e café",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Febraban prevê baixa adesão de bancos privados ao programa Desenrola Adimplentes",
+    "palavra": "Desenrola",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W26": [
+   {
+    "titulo": "Copom Reduz Taxa Selic para 14,25% ao Ano em Meio a Cenário de Cautela",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "IPCA-15 Desacelera para 0,41% em Junho, mas Alimentos e Energia Pressionam",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Sondagem Industrial da CNI Aponta Queda na Expectativa de Exportações e Investimentos",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança do Comércio Volta a Crescer em Junho, Impulsionada por Semiduráveis",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Arrecadação Federal Bate Recorde Histórico em Maio, Impulsionada por Petróleo e Mudanças Tributárias",
+    "palavra": "arrecadação",
+    "tema": "fiscal",
+    "setores": [
+     "transversal",
+     "servicos",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Setor Bancário Prevê Investimento de R$ 50,4 Bilhões em Tecnologia em 2026, com Foco em IA e Nuvem",
+    "palavra": "bancos",
+    "tema": "cambio",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANEEL Conclui Cálculo de Tarifas de Transmissão para Ciclo 2026/2027 e Formaliza Redução em Contas de Luz",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANP Observa Queda Gradual nos Preços Internos de Combustíveis Após Acordo no Oriente Médio",
+    "palavra": "combustíveis",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Confiança da Indústria Paulista Recua em Junho, Mantendo Cenário de Pessimismo",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Preços da Indústria Caem 0,30% em Maio, Impulsionados por Alimentos e Químicos",
+    "palavra": "IPP",
+    "tema": "inflacao",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Indústria da Construção Projeta Aumento de Novos Empreendimentos e Serviços em Junho",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Fiesp Apresenta Estudo sobre Desafios da Descarbonização da Indústria",
+    "palavra": "descarbonização",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Febraban Defende Papel do Setor Financeiro no Avanço da Agenda Climática Global",
+    "palavra": "Febraban",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   }
+  ],
+  "2026-W27": [
+   {
+    "titulo": "Mercado Financeiro Mantém Projeções para IPCA, Selic e Câmbio em 2026",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo Libera Crédito para Subsídio ao Diesel e Inicia Retirada Gradual de Benefícios",
+    "palavra": "diesel",
+    "tema": "combustiveis",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Brasil Regulamenta Eficiência Energética para Lâmpadas e Luminárias LED",
+    "palavra": "eficiência",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANEEL Destina R$ 5,6 Bilhões para Redução da Tarifa de Energia; Expansão Solar Desafia Rede",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "PMEs Lideram Adoção de IA, mas Enfrentam Barreiras de Treinamento e Organização",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "industria",
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Agenda ESG se Consolida e Financiamento Sustentável Torna-se Essencial para PMEs",
+    "palavra": "ESG",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo Português Lança Estratégia Industrial Verde para Descarbonização e Investimento",
+    "palavra": "descarbonização",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Setor de Engenharia Enfrenta Crise de Talento com Dificuldade de Recrutamento",
+    "palavra": "talentos",
+    "tema": "trabalho",
+    "setores": [
+     "industria",
+     "servicos",
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Concrete Show 2026 Destaca Inovação e Sustentabilidade no Setor da Construção",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Acordo de Paz no Golfo e Postura do Fed Influenciam Mercados Emergentes",
+    "palavra": "geopolítica",
+    "tema": "combustiveis",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Coreia do Sul Anuncia Mega-Investimento em Inteligência Artificial",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "industria",
+     "servicos",
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Programa de Governança Climática do TCE-AM Recebe Destaque Nacional",
+    "palavra": "ESG",
+    "tema": "energia",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos"
+    ]
+   }
+  ],
+  "2026-W28": [
+   {
+    "titulo": "Audiências nos EUA sobre Novas Tarifas a Produtos Brasileiros Ameaçam Exportações",
+    "palavra": "tarifas",
+    "tema": "exterior",
+    "setores": [
+     "industria",
+     "transversal",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produção Industrial Recua 0,2% em Maio, Quebrando Sequência de Altas",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Otimismo Retorna à Indústria da Construção com Expectativa de Novos Empreendimentos",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Indústria Rejeita Fim da Escala 6x1 e Prevê Aumento de Custos e Perda de Competitividade",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Balança Comercial Brasileira Registra Forte Superávit na 1ª Semana de Julho e Projeção Anual é Elevada",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "FMI Eleva Projeção de Crescimento do PIB Brasileiro para 2,4% em 2026",
+    "palavra": "PIB",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "construcao",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ANEEL Abre Consulta Pública para Leilões de Energia e Aprova Reajustes Tarifários",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança do Varejo Volta a Crescer em Junho, Impulsionada por Semiduráveis",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo Avança com o Programa Desenrola Adimplentes para Facilitar Acesso a Crédito",
+    "palavra": "Desenrola",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Copa do Mundo Impulsiona Autoatendimento em Varejo e Alimentação",
+    "palavra": "autoatendimento",
+    "tema": "digital",
+    "setores": [
+     "comercio",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Proporção de Usuários da Internet no Brasil Ultrapassa 90% em 2025, Aponta IBGE",
+    "palavra": "internet",
+    "tema": "digital",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Boletim Focus Reduz Projeção do IPCA para 2026 e Mantém Selic Estável",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W29": [
+   {
+    "titulo": "Boletim Focus revisa projeções de IPCA e Selic para 2026 e 2027",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos",
+     "agro",
+     "construcao",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Confiança do Consumidor da FGV registra leve queda em julho",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Balança comercial brasileira registra superávit em junho, impulsionado por commodities",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Senado avança em discussões sobre regulamentação da reforma tributária",
+    "palavra": "tributária",
+    "tema": "regulacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Receita Federal intensifica fiscalização de empresas de tecnologia",
+    "palavra": "Receita",
+    "tema": "fiscal",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CADE aprova fusões e aquisições em setores estratégicos",
+    "palavra": "Cade",
+    "tema": "regulacao",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Sebrae lança programa de capacitação para PMEs em transformação digital",
+    "palavra": "digitalização",
+    "tema": "digital",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Serasa Experian aponta aumento da inadimplência de PMEs em junho",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Tesouro Nacional divulga dados fiscais positivos para o primeiro semestre",
+    "palavra": "Tesouro",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CNC/PEIC indica estabilidade na intenção de consumo das famílias em julho",
+    "palavra": "ICF",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Produção industrial recua em maio, impactada por juros altos e demanda fraca",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PMI Industrial do Brasil desacelera em julho, aponta S&P Global",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "CNI alerta para desafios da indústria na transição energética",
+    "palavra": "transição",
+    "tema": "energia",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Vendas de veículos novos crescem em junho, mas ritmo ainda é lento",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABIMAQ registra queda na demanda por máquinas e equipamentos no 2º trimestre",
+    "palavra": "máquinas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Setor siderúrgico brasileiro mantém produção estável, mas com desafios de custo",
+    "palavra": "siderurgia",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABIQUIM projeta crescimento moderado para a indústria química em 2026",
+    "palavra": "química",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABINEE aponta desafios na cadeia de suprimentos para eletrônicos",
+    "palavra": "eletrônicos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Indústria têxtil e de confecção busca inovação para superar crise",
+    "palavra": "têxtil",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "IEDI defende políticas de estímulo à reindustrialização brasileira",
+    "palavra": "reindustrialização",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "FIRJAN aponta queda no emprego industrial no Rio de Janeiro",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "FIEMG promove debate sobre futuro da indústria mineira",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Sindipeças projeta estabilidade para o setor de autopeças em 2026",
+    "palavra": "autopeças",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Abraciclo registra alta nas vendas de motocicletas em junho",
+    "palavra": "motocicletas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "AutoData analisa impacto da eletrificação na indústria automotiva",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Automotive Business destaca investimentos em novas fábricas no Brasil",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo recuam em maio, aponta Pesquisa Mensal de Comércio do IBGE",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "CNC projeta crescimento moderado para o comércio em 2026",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Fecomércio SP alerta para alta dos custos operacionais no varejo",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "CNDL/SPC registra aumento na busca por crédito, mas com cautela",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABRAS aponta estabilidade nas vendas de supermercados em junho",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Fenabrave registra queda nas vendas de veículos usados em junho",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Índice Cielo do Varejo Ampliado (ICVA) mostra desaceleração em junho",
+    "palavra": "ICVA",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Equifax/BoaVista indica aumento na recuperação de crédito de consumidores",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "SBVC destaca tendências de omnicanalidade no varejo brasileiro",
+    "palavra": "omnicanalidade",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "IBEVAR analisa impacto da inteligência artificial no varejo",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABF projeta expansão do franchising no segundo semestre de 2026",
+    "palavra": "franchising",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Abrasce registra recuperação gradual do fluxo de shoppings em junho",
+    "palavra": "shoppings",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABAD destaca importância do atacado distribuidor para o abastecimento nacional",
+    "palavra": "atacado",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "APAS aponta desafios logísticos para supermercados em grandes centros",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "IDV defende simplificação tributária para o varejo",
+    "palavra": "tributos",
+    "tema": "regulacao",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Consumidor Moderno aborda novas estratégias de fidelização",
+    "palavra": "fidelização",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Diário do Comércio/ACSP analisa impacto do e-commerce no varejo físico",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Novo Varejo destaca o papel da tecnologia na otimização de estoques",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Febraban aponta crescimento do crédito para pessoas físicas em junho",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ANEEL aprova reajustes tarifários para distribuidoras de energia",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ANATEL discute novas regras para o 5G e expansão da conectividade",
+    "palavra": "5G",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ABES Software projeta crescimento do mercado de software no Brasil",
+    "palavra": "software",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "EPBR energia analisa leilões de transmissão de energia",
+    "palavra": "transmissão",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "MIT Tech Review BR aborda avanços em inteligência artificial generativa",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ANBIMA registra aumento na captação de fundos de investimento",
+    "palavra": "fundos",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CNseg aponta crescimento do mercado de seguros no Brasil",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "SUSEP regulamenta novas modalidades de seguros digitais",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ABECS registra crescimento nas transações com cartões em junho",
+    "palavra": "cartões",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Conexis Brasil Digital debate desafios da infraestrutura de telecomunicações",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CCEE divulga dados de consumo de energia no mercado livre",
+    "palavra": "CCEE",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Brasscom projeta alta demanda por profissionais de TI",
+    "palavra": "talentos",
+    "tema": "trabalho",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "TELETIME aborda investimentos em satélites para conectividade rural",
+    "palavra": "satélites",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Tele.Síntese analisa impacto da inteligência artificial nas redes de telecomunicações",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Convergência Digital destaca desafios da segurança cibernética",
+    "palavra": "cibersegurança",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CanalEnergia reporta novos projetos de energia renovável",
+    "palavra": "renováveis",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mobile Time discute o futuro dos pagamentos móveis no Brasil",
+    "palavra": "pagamentos",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Conab atualiza projeções para a safra de grãos 2025/2026",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Preços da soja e do milho recuam no mercado interno, aponta CEPEA",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "CNA Brasil defende modernização da infraestrutura logística para o agronegócio",
+    "palavra": "escoamento",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Embrapa desenvolve novas variedades de culturas resistentes à seca",
+    "palavra": "Embrapa",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "MAPA anuncia medidas de apoio à agricultura familiar",
+    "palavra": "agricultura",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "IMEA projeta aumento da área plantada de milho em Mato Grosso",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "B3 registra alta nos contratos futuros de café",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Notícias Agrícolas destaca impacto do clima na safra de inverno",
+    "palavra": "safra",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Canal Rural debate sustentabilidade na pecuária brasileira",
+    "palavra": "pecuária",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Globo Rural aborda o avanço da tecnologia no campo",
+    "palavra": "agtech",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "AgFeed analisa fusões e aquisições no setor de agronegócio",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Scot Consultoria projeta estabilidade nos preços do boi gordo",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABIEC destaca crescimento das exportações de carne bovina",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABPA projeta aumento na produção de aves e suínos",
+    "palavra": "aves",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABIOVE apresenta dados sobre o processamento de soja no Brasil",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "UNICA reporta avanço da moagem de cana-de-açúcar",
+    "palavra": "cana",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Agrolink destaca inovações em fertilizantes e defensivos",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Compre Rural analisa mercado de terras agrícolas",
+    "palavra": "terras",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "The Agribiz aborda desafios da sucessão familiar no agronegócio",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Revista Cultivar apresenta novas tecnologias para o manejo de pragas",
+    "palavra": "pragas",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "BeefPoint/AgriPoint discute tendências do mercado de carne",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sou Agro destaca o papel das cooperativas no desenvolvimento rural",
+    "palavra": "cooperativas",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "AgriBrasilis analisa mercado de bioinsumos no Brasil",
+    "palavra": "bioinsumos",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Forbes Agro aborda investimentos em agtechs e inovação no campo",
+    "palavra": "agtech",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Aprosoja Brasil defende políticas para escoamento da safra",
+    "palavra": "escoamento",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABAG debate segurança alimentar e o papel do agronegócio",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sociedade Rural Brasileira alerta para impacto da carga tributária",
+    "palavra": "tributos",
+    "tema": "regulacao",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABRAPA divulga estimativa de produção de algodão para 2026",
+    "palavra": "algodão",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sistema OCB destaca crescimento do cooperativismo agropecuário",
+    "palavra": "cooperativas",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "FPA defende pautas do agronegócio no Congresso Nacional",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ANDA reporta alta nos preços de fertilizantes importados",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Datagro analisa mercado global de açúcar e etanol",
+    "palavra": "açúcar",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Safras & Mercado projeta safra recorde de café no Brasil",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "JBS anuncia investimentos em tecnologia para rastreabilidade",
+    "palavra": "rastreabilidade",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "INCC-M da FGV desacelera em julho, mas custos ainda preocupam",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CBIC aponta otimismo moderado para o setor da construção civil",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CUB médio registra alta em junho, impactando custos de obras",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "FipeZAP aponta valorização dos imóveis em grandes cidades",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "SNIC reporta estabilidade nas vendas de cimento em junho",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "SindusCon-SP destaca desafios da mão de obra qualificada",
+    "palavra": "mão-de-obra",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABRAINC projeta crescimento de lançamentos imobiliários",
+    "palavra": "lançamentos",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Secovi-SP analisa mercado de locação de imóveis",
+    "palavra": "locação",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABRAMAT aponta alta nos preços de materiais de construção",
+    "palavra": "materiais",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "SINAPI/Caixa divulga custos de referência para obras",
+    "palavra": "SINAPI",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ANAMACO registra queda nas vendas do comércio de materiais",
+    "palavra": "materiais",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Sienge aborda digitalização na gestão de obras",
+    "palavra": "obras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABECIP projeta estabilidade no crédito imobiliário em 2026",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Ministério das Cidades anuncia novas fases do MCMV",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "AECweb destaca projetos de arquitetura sustentável",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Massa Cinzenta/Cimento Itambé aborda inovações em concreto",
+    "palavra": "concreto",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Grandes Construções analisa mercado de infraestrutura",
+    "palavra": "infraestrutura",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "O Empreiteiro discute desafios da gestão de projetos",
+    "palavra": "obras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABCP promove seminário sobre novas tecnologias em cimento",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CAU/BR debate ética e responsabilidade na arquitetura",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CONFEA discute fiscalização de obras e serviços de engenharia",
+    "palavra": "obras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ADEMI-RJ projeta crescimento do mercado imobiliário no Rio",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MRV divulga prévias operacionais positivas para o 2º trimestre",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Cyrela anuncia novos empreendimentos de alto padrão",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Votorantim Cimentos investe em soluções de baixo carbono",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Neotrust/Confi registra crescimento do e-commerce em junho",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "ABComm projeta faturamento recorde para o e-commerce no 2º semestre",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "MCC-ENET aponta alta no tíquete médio do e-commerce em junho",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "NielsenIQ/Webshoppers destaca tendências de consumo online",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Conversion analisa desempenho de SEO para e-commerce",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "E-commerce Brasil debate logística e 'last mile' no varejo online",
+    "palavra": "logística",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Mercado&Consumo aborda o futuro dos marketplaces",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Nuvemshop lança novas ferramentas para pequenas e médias lojas",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "VTEX destaca soluções de comércio unificado para grandes empresas",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Mercado Livre registra forte crescimento no 2º trimestre",
+    "palavra": "MercadoLivre",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee expande atuação em categorias de produtos no Brasil",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Amazon Brasil investe em logística para entregas rápidas",
+    "palavra": "Amazon",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Magalu lança nova campanha de marketing com foco em tecnologia",
+    "palavra": "Magalu",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Reclame Aqui registra aumento de reclamações sobre atraso em entregas",
+    "palavra": "logística",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "E-Commerce News aborda tendências de pagamento no varejo digital",
+    "palavra": "pagamentos",
+    "tema": "digital",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "NOVAREJO destaca a importância da experiência do cliente no e-commerce",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Meio&Mensagem/ProXXIma discute publicidade digital e personalização",
+    "palavra": "publicidade",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Câmara Brasileira da Economia Digital debate regulamentação do cross-border",
+    "palavra": "cross-border",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Senacon/MJSP monitora conformidade de plataformas com Remessa Conforme",
+    "palavra": "Remessa",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Procon-SP alerta para golpes em compras online",
+    "palavra": "golpes",
+    "tema": "digital",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Grupo Casas Bahia investe em logística para e-commerce",
+    "palavra": "logística",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "SHEIN Group expande centro de distribuição no Brasil",
+    "palavra": "SHEIN",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W30": [
+   {
+    "titulo": "IPCA de junho fica em 0,16%, acumulando 4,64% em 12 meses",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos",
+     "agro",
+     "construcao",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "IPCA-15 de junho é de 0,41%, com Alimentação e Transportes como maiores impactos",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos",
+     "agro",
+     "construcao",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "IPCA-E do 2º trimestre de 2026 atinge 1,93%",
+    "palavra": "IPCA-E",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos",
+     "agro",
+     "construcao",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Sondagem Industrial da CNI: condições financeiras melhoram, mas carga tributária e juros ainda preocupam",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Preço de matérias-primas na indústria recua, mas segue elevado, aponta CNI",
+    "palavra": "matérias-primas",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Produção de aço bruto cresce 2,5% em junho, mas confiança do setor recua",
+    "palavra": "siderurgia",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Importações de aço disparam 52,4% em junho, superando vendas internas",
+    "palavra": "aço",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Fenabrave revisa para cima projeção de vendas de veículos para 2026, para 7,9%",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Venda de veículos na União Europeia avança 6% no 1º semestre, com eletrificados em alta",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Volkswagen reduz projeção de receita para 2026 após queda de 9,5% no lucro do 2º trimestre",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Mercado de reposição automotiva no Brasil deverá dobrar até 2040",
+    "palavra": "autopeças",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Votorantim Cimentos investe R$ 260 milhões em fábrica no Tocantins para ampliar produção",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Votorantim Cimentos anuncia R$ 5 bilhões em investimentos no Brasil, focando em IA e logística",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Jetour investe R$ 400 milhões no Brasil e busca local para fábrica",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "GWM projeta faturar R$ 20 milhões com caminhões a hidrogênio em 2026",
+    "palavra": "hidrogênio",
+    "tema": "energia",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Faturamento da indústria de máquinas e equipamentos cresce 1,5% em junho",
+    "palavra": "máquinas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Setor eletroeletrônico registra alta de 0,9% na produção em junho",
+    "palavra": "eletrônicos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Indústria têxtil e de confecção busca inovação e sustentabilidade para competitividade",
+    "palavra": "têxtil",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "IEDI destaca desafios para a reindustrialização e necessidade de políticas de longo prazo",
+    "palavra": "reindustrialização",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Indicadores da FIRJAN mostram recuperação gradual da indústria fluminense",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "FIEMG projeta crescimento moderado para a indústria mineira no segundo semestre",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Vendas de autopeças para o mercado de reposição mantêm ritmo forte no 1º semestre",
+    "palavra": "autopeças",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Produção de motocicletas cresce 5% em junho, impulsionada pela demanda por transporte individual",
+    "palavra": "motocicletas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Intenção de Consumo das Famílias (ICF) de julho indica estabilidade, mas com cautela",
+    "palavra": "ICF",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Inadimplência do consumidor mostra leve recuo em junho, mas segue elevada",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo por meios de pagamento crescem 3,1% em junho, impulsionadas pelo Dia dos Namorados",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Fiat Strada lidera vendas de veículos em julho (parcial) com 11.437 unidades",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Volkswagen Polo assume a segunda colocação nas vendas de veículos em julho (parcial)",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Vendas de carros sobem 20,1% no 1º semestre de 2026, aponta Fenabrave",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Vendas de supermercados crescem 1,8% em junho, com destaque para a cesta básica",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Setor de franchising mantém expansão, com novas redes e formatos de negócio",
+    "palavra": "franchising",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Fluxo de pessoas em shoppings centers aumenta 2,5% em junho, indicando recuperação",
+    "palavra": "shoppings",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Atacado distribuidor registra crescimento de 2,1% no 1º semestre",
+    "palavra": "atacado",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo online impulsiona vendas, mas lojas físicas buscam novas estratégias de experiência",
+    "palavra": "omnicanalidade",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Estudo revela preferência do consumidor por marcas com propósito e sustentabilidade",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Comércio de Belo Horizonte projeta aumento nas vendas para o segundo semestre",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Tendências de personalização e experiência do cliente dominam o varejo",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Tecnologia e logística são desafios para pequenos e médios varejistas",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Crescimento do e-commerce exige adaptação das lojas físicas",
+    "palavra": "omnicanalidade",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Indicador de recuperação de crédito mostra melhora gradual",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Concessão de crédito para pessoas físicas e jurídicas cresce 0,7% em junho",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Leilão de transmissão de energia atrai R$ 15 bilhões em investimentos",
+    "palavra": "transmissão",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Setor de telecomunicações registra aumento no número de acessos de banda larga",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mercado de software e serviços de TI cresce 8% no 1º semestre, impulsionado por digitalização",
+    "palavra": "software",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Investimentos em energia renovável continuam em alta, com projetos solares e eólicos",
+    "palavra": "renováveis",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Inteligência Artificial e automação transformam o setor de serviços",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mercado de capitais brasileiro atrai novos investidores, com destaque para fundos de infraestrutura",
+    "palavra": "capitais",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Setor de seguros cresce 4,2% em maio, impulsionado por seguros de vida e patrimoniais",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Novas regulamentações para o mercado de seguros visam transparência e proteção ao consumidor",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Transações com cartões crescem 5% em junho, com aumento do uso de pagamentos por aproximação",
+    "palavra": "cartões",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Empresas de telecomunicações investem em 5G e fibra óptica para expandir cobertura",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Consumo de energia elétrica cresce 1,5% em junho, impulsionado pela indústria e comércio",
+    "palavra": "eletricidade",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Escassez de talentos em TI continua sendo um desafio para o setor",
+    "palavra": "talentos",
+    "tema": "trabalho",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Fusões e aquisições no setor de telecomunicações aquecem o mercado",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Novas tecnologias de nuvem e cibersegurança ganham destaque",
+    "palavra": "nuvem",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Preços da soja recuam 1,2% na semana, influenciados pela safra americana",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Preço do milho sobe 0,8%, com demanda aquecida para ração animal",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Boi gordo tem valorização de 0,5% na semana, com exportações em alta",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Preço do café arábica registra queda de 0,3%, com oferta global",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Conab projeta safra de grãos 2025/2026 recorde de 315 milhões de toneladas",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportações do agronegócio atingem US$ 15 bilhões em junho, com destaque para soja e carne",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "MAPA libera R$ 400 bilhões para crédito rural no Plano Safra 2026/2027",
+    "palavra": "PlanoSafra",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produção de soja em Mato Grosso atinge novo recorde, com alta produtividade",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Clima favorável impulsiona colheita de inverno no Sul do país",
+    "palavra": "safra",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Crescimento do mercado de orgânicos impulsiona pequenos produtores",
+    "palavra": "orgânicos",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Investimentos em startups do agronegócio crescem 15% no 1º semestre",
+    "palavra": "agtech",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportações de carne bovina brasileira batem recorde em junho",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produção de aves e suínos mantém ritmo forte, atendendo demanda interna e externa",
+    "palavra": "aves",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Indústria de óleo de soja projeta aumento no processamento de grãos",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produção de açúcar e etanol cresce na safra atual, com bom desempenho das usinas",
+    "palavra": "açúcar",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Festival do Agronegócio Sou+Agro em Itu/SP de 31/07 a 02/08/2026",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Vendas de fertilizantes crescem 7% no 1º semestre, impulsionadas pela demanda agrícola",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "INCC-M de julho registra alta de 0,28%, desacelerando em relação a junho",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CUB/m² de julho em alta de 0,32%, refletindo custos de materiais",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Preço médio de venda de imóveis residenciais sobe 0,45% em junho",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Consumo de cimento cresce 1,1% em junho, indicando leve aquecimento",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Sondagem da Construção de julho aponta otimismo moderado, mas com desafios de mão de obra",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Financiamentos imobiliários crescem 12% no 1º semestre de 2026, impulsionados pela Selic estável",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABECIP projeta crescimento de 16% no volume de financiamentos imobiliários em 2026",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Lançamentos de imóveis residenciais crescem 5% no 2º trimestre, com foco em médio padrão",
+    "palavra": "lançamentos",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Mercado imobiliário de São Paulo mostra resiliência, com demanda por locação e compra",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Vendas de materiais de construção crescem 0,8% em junho, com destaque para acabamentos",
+    "palavra": "materiais",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Custos de obras do SINAPI registram alta de 0,25% em junho",
+    "palavra": "SINAPI",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Novas regras para o Minha Casa Minha Vida ampliam acesso ao programa",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Digitalização na construção civil avança com uso de BIM e outras tecnologias",
+    "palavra": "BIM",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Inovação em materiais e métodos construtivos ganha espaço no mercado",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Projetos de infraestrutura impulsionam o setor de construção pesada",
+    "palavra": "infraestrutura",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Desafios da sustentabilidade na construção civil e novas certificações",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Indústria do cimento investe em tecnologias para reduzir emissões de carbono",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Prévias operacionais do 2º trimestre da MRV indicam bom desempenho em vendas",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Vendas do e-commerce brasileiro crescem 10,5% em junho de 2026",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Relatório Neotrust aponta aumento de 8% no faturamento do e-commerce no 1º semestre",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "ABComm projeta crescimento de 12% no e-commerce brasileiro em 2026",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Tendências de live commerce e social selling impulsionam vendas online",
+    "palavra": "live-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Marketplaces investem em logística e experiência do cliente para fidelizar consumidores",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Pequenas e médias empresas online registram aumento de vendas em junho",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Plataformas de e-commerce buscam soluções de inteligência artificial para otimizar operações",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Mercado Livre intensifica investimentos em logística e infraestrutura de fulfillment no Brasil",
+    "palavra": "MercadoLivre",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee anuncia mudanças nas taxas de comissão e responsabilidade tributária para vendedores",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee amplia logística no Brasil com três novos centros de distribuição",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee vai capacitar mais de 100 mil empreendedores em 2026",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Amazon limitará títulos de produtos a 75 caracteres a partir de 27 de julho",
+    "palavra": "Amazon",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "DoorDash lança integração direta com Shopify para comerciantes dos EUA",
+    "palavra": "DoorDash",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Novas ferramentas de e-commerce focam em IA, pagamentos cross-border e moda sustentável",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Grupo Casas Bahia investe em estratégia omnichannel para integrar vendas físicas e online",
+    "palavra": "omnicanalidade",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "SHEIN Group expande operação no Brasil e enfrenta desafios regulatórios",
+    "palavra": "SHEIN",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Câmara Brasileira da Economia Digital debate regulamentação de marketplaces e 'Remessa Conforme'",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Senacon/MJSP intensifica fiscalização para garantir direitos do consumidor no e-commerce",
+    "palavra": "Senacon",
+    "tema": "regulacao",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W31": [
+   {
+    "titulo": "JBS expande presença na Coreia do Sul e EUA reabre importação de gado mexicano",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "transversal",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Votorantim Cimentos investe R$ 260 milhões no Tocantins e disputa CSN Cimentos",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Shopee expande logística com dez novos centros de distribuição no Brasil",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "INCC-M desacelera para 0,62% em julho, mas confiança da construção cai",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Mercado de capitais atinge volume recorde de R$ 361,8 bilhões no 1º semestre de 2026",
+    "palavra": "capitais",
+    "tema": "cambio",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Crédito imobiliário cresce 23% no 1º semestre, totalizando R$ 180,9 bilhões",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Setor de seguros no Brasil: baixa cobertura e novas fronteiras como cannabis medicinal",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Emplacamentos de veículos avançam 13% na 1ª quinzena de julho; financiamentos crescem 11% no semestre",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Exportações de frango do Brasil para a UE podem ser suspensas até novembro",
+    "palavra": "aves",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Yara projeta queda de 14% nas entregas de fertilizantes no Brasil em 2026",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Ações da 3tentos caem 20% com margens de biodiesel decepcionantes",
+    "palavra": "biodiesel",
+    "tema": "combustiveis",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Amazon Business projeta US$ 60 bilhões em vendas em 2026; TikTok testa assinatura paga",
+    "palavra": "Amazon",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Amazon limita títulos de produtos e eBay exibe ofertas de segunda chance publicamente",
+    "palavra": "Amazon",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "DoorDash integra-se ao Shopify para comerciantes locais nos EUA",
+    "palavra": "DoorDash",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança do consumidor é o novo diferencial competitivo no e-commerce",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "BYD ganha mercado e Toyota perde no 1º semestre de 2026; Fiat lidera",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "BIS alerta para impacto da IA na política monetária e decisões de juros",
+    "palavra": "BIS",
+    "tema": "juros",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo prorrogará Desenrola Brasil 2.0 por pelo menos 30 dias",
+    "palavra": "Desenrola",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "FGTS distribuirá R$ 13,04 bilhões do lucro de 2025 para trabalhadores",
+    "palavra": "FGTS",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "B3 prepara lançamento de moeda digital (B3RL) para impulsionar ativos tokenizados",
+    "palavra": "tokenização",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CUB paulista registra maior alta de 2026 em junho, impulsionado por mão de obra e despesas",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Fiagros e FIIs registram volumes recordes no 1º semestre de 2026",
+    "palavra": "fundos",
+    "tema": "cambio",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Modernização, IA e sustentabilidade são pilares estratégicos para o setor de seguros em 2026",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Seguro Cibernético evolui para gestão de crise, com faturamento de R$ 228,8 milhões em 2025",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Setor financeiro defende maior integração para investimentos na transição climática",
+    "palavra": "transição",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Votorantim Cimentos investe R$ 5 bilhões em logística, IA e novos negócios no Brasil",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mercado automotivo: IA e fluxo de caixa do consumidor impulsionam vendas em julho",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Abecip revisará projeções de crédito imobiliário para 2026 para cima",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CNseg avalia agenda regulatória da Susep para 2026 e desafios de novas leis",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "JBS mira expansão global com listagem nos EUA e aquisição em Omã",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CNseg e Valor Econômico lançam curso gratuito de Jornalismo em Seguros",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CNseg promove debate sobre Aperfeiçoamento Regulatório no Mercado de Seguros em julho",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Pagamento de indenizações de Seguros de Pessoas cresce 6% no 1º quadrimestre de 2026",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Criminalidade pressiona seguro de automóveis no Rio, elevando indenizações em 13,5%",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Atividade econômica resiste e inflação surpreende positivamente, mercado revisa cenário para 2027",
+    "palavra": "atividade",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "COP30 busca transformar metas climáticas em projetos de US$ 1,3 trilhão em financiamento",
+    "palavra": "COP30",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Setor financeiro busca acelerar transição climática com mobilização de capital privado",
+    "palavra": "transição",
+    "tema": "energia",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Seguros e adaptação climática ganham espaço na agenda econômica global",
+    "palavra": "seguros",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   }
+  ],
+  "2026-W32": [
+   {
+    "titulo": "Mercado Livre supera US$ 10 bilhões em receita no 2º trimestre de 2026, impulsionado por crescimento no Brasil",
+    "palavra": "MercadoLivre",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Shopee expande operação fulfillment com dez novos CDs no Brasil em 2026",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Novas ferramentas de e-commerce focam em IA, automação e pagamentos transfronteiriços",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Fórum E-Commerce Brasil 2026 destaca IA, dados e logística como pilares do comércio digital",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Regulamentação e crescimento de marketplaces são temas centrais no e-commerce",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Julgamento antitruste do Google pode remodelar estratégias de SEO e publicidade digital",
+    "palavra": "Google",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANEEL mantém bandeira tarifária amarela em agosto de 2026",
+    "palavra": "bandeira",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "PMI de serviços do Brasil cai a 49,7 pontos em julho, indicando contração após 9 meses",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Axia investirá R$ 8,7 bilhões na expansão da transmissão de energia até 2030",
+    "palavra": "transmissão",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Primeira usina a biometano do país inicia operação no LRCAP 2026",
+    "palavra": "biometano",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANEEL prorroga tratamento excepcional para antecipação da CCC a Roraima Energia",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Prestação de contas do Procel entra em consulta pública",
+    "palavra": "Procel",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Cade aprova compra de SPEs da Serena pela Odata",
+    "palavra": "Cade",
+    "tema": "regulacao",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Abertura de mercado de energia exigirá esforço de regulação até 2027",
+    "palavra": "eletricidade",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ONS debate desafios da transformação energética",
+    "palavra": "ONS",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Cepel vê regulação como chave para a flexibilidade do setor elétrico",
+    "palavra": "eletricidade",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Energisa avança em projetos híbridos para ampliar flexibilidade da rede",
+    "palavra": "eletricidade",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Reservatórios do Sul operam com 85,2% da capacidade em 5 de agosto",
+    "palavra": "reservatórios",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ANEEL autoriza recondução excepcional de presidentes dos Conselhos de Consumidores",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Minerais estratégicos podem adicionar R$ 192,1 bilhões ao PIB brasileiro até 2050",
+    "palavra": "mineração",
+    "tema": "atividade",
+    "setores": [
+     "servicos",
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Brazil Windpower 2026 debate soluções para curtailment e investimentos em renováveis",
+    "palavra": "eólica",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CUB Residencial Médio de Santa Catarina atinge R$ 3.151,24/m² em agosto de 2026",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MRV divulga resultados do 2º trimestre de 2026 em 12 de agosto",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MRV confirma Bradesco como intermediário em programa de recompra de ações",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "PMI industrial do Brasil cai a 47,5 pontos em julho, indicando forte retração",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Congresso Brasileiro de Fertilizantes da ANDA será em 25 de agosto de 2026",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Entregas de fertilizantes caem 14,7% em maio; produção nacional recua 26%",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Eventos do agronegócio em agosto de 2026 incluem congressos de aviação agrícola e defensivos",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "25º Congresso Brasileiro do Agronegócio (ABAG e B3) em 10 de agosto de 2026",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "industria",
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W33": [
+   {
+    "titulo": "Atividade do setor de serviços no Brasil contrai pela primeira vez em nove meses em julho",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "servicos",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PMI da Indústria Brasileira registra contração acentuada em julho",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "E-commerce brasileiro projeta recorde de 139 milhões de consumidores em 2026",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Faturamento do e-commerce brasileiro atinge R$ 125 bilhões no primeiro semestre de 2026",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Shopee registra crescimento de 50% nas vendas de eletrônicos durante campanha 8.8",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee anuncia expansão logística com mais de 60% de novos centros de distribuição no Brasil",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee lança serviço de entregas rápidas 'Turbo' com delivery em 4 horas na Grande São Paulo",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Shopee registra GMV de US$ 38,3 bilhões no 2T26 e se declara líder no e-commerce brasileiro",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo no Dia dos Pais crescem 7,7%, com e-commerce avançando 12,1%",
+    "palavra": "dia-dos-pais",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Magazine Luiza reporta prejuízo de R$ 50,4 milhões no 2T26; vendas físicas crescem, e-commerce recua",
+    "palavra": "Magalu",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Mercado automotivo cresce 19% no acumulado de 2026; eletrificados representam 23% das vendas",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Produção de veículos no Brasil cresce 8,3% até julho, impulsionada por leves",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Volkswagen e BYD lideram o varejo automotivo no acumulado de 2026",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Congresso ABAG debate futuro do agronegócio em meio a juros altos e geopolítica",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Entregas de fertilizantes caem 14,7% em maio e 2,2% no acumulado do ano",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "13º Congresso Brasileiro de Fertilizantes discutirá oferta global e impactos geopolíticos",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Banco Central estuda Pix internacional e novas funções para o sistema de pagamentos",
+    "palavra": "Pix",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Banco do Brasil testa primeira transação de débito online via Click to Pay",
+    "palavra": "pagamentos",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CAU/BR debate ética e impactos da inteligência artificial na arquitetura e urbanismo",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Sistema OCB recebe cooperativa de crédito mexicana para troca de experiências",
+    "palavra": "cooperativas",
+    "tema": "agro",
+    "setores": [
+     "servicos",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sistema OCB lança livro 'Raízes e Fundamentos do Cooperativismo' durante Semana de Competitividade",
+    "palavra": "cooperativas",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Sistema OCB promove 'Ano da Cultura Cooperativista' para fortalecer participação cidadã",
+    "palavra": "cooperativas",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CAU Lab 2026 abre inscrições para programa de pré-incubação em arquitetura e urbanismo",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CAU/ES abre inscrições para Premiação Acadêmica de Arquitetura e Urbanismo 2026",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "CAU/BR divulga valores e descontos para anuidade de 2026",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Tendências de e-commerce para a temporada de festas de 2026 destacam IA e modernização",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "transversal",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Novas ferramentas de e-commerce lançadas em agosto de 2026, incluindo live shopping e marketing autônomo",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "China Link entra no mercado de educação por assinatura para importadores, com US$38,5 bilhões em importações no 1S26",
+    "palavra": "importadores",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Reforma Tributária e seus impactos setoriais em debate",
+    "palavra": "tributária",
+    "tema": "regulacao",
+    "setores": [
+     "transversal",
+     "industria",
+     "comercio",
+     "servicos",
+     "agro",
+     "construcao",
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W34": [
+   {
+    "titulo": "Confiança do Empresário Industrial segue em pessimismo por 20 meses",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Anatel define regras para operadoras bloquearem chamadas massivas",
+    "palavra": "robocalls",
+    "tema": "digital",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Shopee expande operação fulfillment e lança entrega em até 4 horas",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mercado Livre registra queda de lucro no 2º trimestre de 2026, mas receita cresce",
+    "palavra": "MercadoLivre",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mercado agrícola com exportações fortes e milho com suporte",
+    "palavra": "commodities",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Soja dispara em Chicago devido a inundações nos EUA, preços sobem no Brasil",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Estoque mundial de milho revisado para baixo em agosto de 2026",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Demanda foi o principal fator de mudança nas estimativas de milho e soja do USDA",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Fiat Strada lidera vendas de veículos na primeira quinzena de agosto",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Fenabrave projeta crescimento de 8,6% nas vendas de veículos em 2026",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "comercio",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Produção de veículos no Brasil cresce 3% em julho, diz Anfavea",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Mercado de torres de telecomunicações passa por mudanças",
+    "palavra": "torres",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Radiodifusão cobra novas regras de concorrência e debate TV 3.0",
+    "palavra": "radiodifusão",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Oi inicia demissões em diversos estados",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Colômbia cancela projeto de fibra na Amazônia que se integraria ao Brasil",
+    "palavra": "fibra",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Governo reavaliará antidumping sobre fibra óptica monomodo da China",
+    "palavra": "antidumping",
+    "tema": "exterior",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "E-commerce brasileiro movimenta R$ 208,4 bilhões no 1º semestre de 2026",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Alta renda concentra 44% do faturamento do e-commerce brasileiro",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Reforma tributária pode impactar cidadania fiscal no e-commerce",
+    "palavra": "tributária",
+    "tema": "regulacao",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "E-commerce alcança 45,4% dos lares brasileiros em 2025",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "TikTok Shop avança e muda forma de descobrir produtos no e-commerce",
+    "palavra": "TikTok",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Dia dos Pais tem maior crescimento do varejo desde 2022, aponta ICVA",
+    "palavra": "ICVA",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Pequena indústria registra pior nível de confiança desde a pandemia",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ONU e Anatel abrem seleção para consultor em inclusão digital",
+    "palavra": "Anatel",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Vivo oferece 100 vagas para pessoas com deficiência em 15 capitais",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "XP vê sinais de volta à 'racionalidade' na disputa pela telefonia móvel",
+    "palavra": "telefonia",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IBM ingressa no Open Gateway e será parceira de distribuição",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Testes confirmam viabilidade técnica da TV 3.0",
+    "palavra": "radiodifusão",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Canalização garante 12 canais contínuos e exclusivos para a TV 3.0",
+    "palavra": "radiodifusão",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Ministro cobra protagonismo da radiodifusão sobre streaming e confirma financiamento",
+    "palavra": "radiodifusão",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Empregos de tecnologia crescem mais no Norte e Nordeste, aponta Brasscom",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel reforça exigências de transparência em ofertas de telecomunicações",
+    "palavra": "Anatel",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel atualiza Plano de Destinação de Faixas de Frequências (PDFF)",
+    "palavra": "Anatel",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Anatel prorroga prazo de Tomada de Subsídios sobre mercados de IoT e M2M",
+    "palavra": "IoT",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "FUST: Câmara aprova PL para renovação, mas governo se opõe",
+    "palavra": "telecom",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Indústria da Construção: Sondagem de agosto revela desafios",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "INCC/FGV de julho aponta variação nos custos da construção",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CUB médio de julho indica custo básico por metro quadrado",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "FipeZAP de julho mostra tendência de preços de imóveis",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Crédito imobiliário em julho: ABECIP divulga balanço",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Vendas de cimento em julho: SNIC apresenta dados de atividade",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Lançamentos imobiliários em São Paulo: SindusCon-SP e Secovi-SP",
+    "palavra": "lançamentos",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABRAMAT divulga desempenho da indústria de materiais de construção",
+    "palavra": "materiais",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Programa Minha Casa Minha Vida: Novas contratações em agosto",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Mercado de trabalho na construção civil: CAGED de julho",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Sienge aponta tendências de digitalização para construtoras",
+    "palavra": "construtoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Votorantim Cimentos anuncia investimentos em sustentabilidade",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MRV e Cyrela divulgam prévias operacionais de julho",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ABCP e SNIC debatem futuro do cimento e concreto",
+    "palavra": "cimento",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "CAU/BR e CONFEA discutem fiscalização e ética profissional",
+    "palavra": "arquitetura",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "ADEMI-RJ analisa mercado imobiliário do Rio de Janeiro",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "AECweb destaca inovações em produtos para construção",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Indicadores Industriais de junho: faturamento e massa salarial crescem",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Crescimento do mercado de luxo no Brasil com mudança de códigos de status",
+    "palavra": "luxo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Casa & Decoração cresce, mas variedade sem critério vira risco de margem",
+    "palavra": "decoração",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "China Link entra na educação por assinatura com comunidade de importadores",
+    "palavra": "importadores",
+    "tema": "exterior",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo precisa focar na atenção antes da venda, diz especialista",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança, reputação e marca mudam o e-commerce",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "NielsenIQ divulga dados de consumo e varejo para julho",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABRAS/SuperHiper analisa vendas de supermercados em julho",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Fecomércio-SP avalia desempenho do comércio paulista em julho",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "CNDL/SPC Brasil: Inadimplência e acesso ao crédito em julho",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABF/franchising: Crescimento do setor de franquias no 2º trimestre",
+    "palavra": "franchising",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Abrasce: Desempenho dos shoppings centers em julho",
+    "palavra": "shoppings",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABAD/atacado: Vendas do setor atacadista e distribuidor em julho",
+    "palavra": "atacado",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "APAS/supermercados: Tendências de consumo no varejo alimentar",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "IDV: Perspectivas para o varejo no segundo semestre de 2026",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Consumidor Moderno aborda desafios da experiência do cliente",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Diário do Comércio/ACSP: Impacto dos juros no comércio",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Novo Varejo e SuperVarejo: Estratégias para o varejo físico",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "InfoVarejo: Tecnologia e tendências para o pequeno varejista",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ABDI promove programas de digitalização para PMEs industriais",
+    "palavra": "digitalização",
+    "tema": "digital",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ANFAVEA debate eletrificação da frota e produção de veículos elétricos",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABIMAQ: Balanço do setor de máquinas e equipamentos em julho",
+    "palavra": "máquinas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PMI Brasil Indústria de agosto: S&P Global divulga resultados",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Instituto Aço Brasil: Produção e vendas de aço em julho",
+    "palavra": "aço",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABIQUIM: Desempenho da indústria química em julho",
+    "palavra": "química",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABINEE: Setor eletroeletrônico em julho e perspectivas",
+    "palavra": "eletrônicos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ABIT: Indústria têxtil e de confecção em julho",
+    "palavra": "têxtil",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "IEDI: Desafios e oportunidades para a indústria brasileira",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "FIRJAN e FIEMG: Sondagens regionais da indústria em agosto",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Sindipeças: Desempenho da indústria de autopeças em julho",
+    "palavra": "autopeças",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Abraciclo: Produção e vendas de motocicletas em julho",
+    "palavra": "motocicletas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "AutoData e Automotive Business: Notícias do setor automotivo",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "CEPEA: Preços de commodities agrícolas em agosto",
+    "palavra": "commodities",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Conab: Atualização da estimativa de safra de grãos 2025/2026",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Embrapa: Inovações e pesquisas para o agronegócio",
+    "palavra": "Embrapa",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "MAPA: Políticas públicas e regulamentação para o setor",
+    "palavra": "MAPA",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "IMEA: Balanço do agronegócio em Mato Grosso em julho",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "B3: Desempenho dos contratos futuros agrícolas em agosto",
+    "palavra": "commodities",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Canal Rural e Globo Rural: Cobertura do agronegócio",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "AgFeed e The Agribiz: Análises de negócios e investimentos no agro",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABIEC: Exportações de carne bovina em julho",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABPA: Produção e exportação de aves e suínos em julho",
+    "palavra": "aves",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABIOVE: Balanço da cadeia produtiva da soja em julho",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "UNICA: Produção de açúcar e etanol na safra 2026/2027",
+    "palavra": "açúcar",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Agrolink e Compre Rural: Notícias e análises de mercado",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Revista Cultivar e AgriPoint: Conteúdo técnico para o campo",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sou Agro e AgriBrasilis: Destaques do agronegócio regional",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Forbes Agro: Tendências e grandes players do setor",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Aprosoja Brasil e ABAG: Pautas e defesa do produtor",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sistema OCB: Cooperativismo agropecuário em destaque",
+    "palavra": "cooperativas",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "FPA e ANDA: Debates sobre fertilizantes e políticas agrícolas",
+    "palavra": "fertilizantes",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Datagro e Safras & Mercado: Análises de mercado e projeções",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "JBS: Resultados financeiros e estratégias de mercado",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Sociedade Rural Brasileira: Pautas e eventos do setor",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "ABRAPA: Desafios e oportunidades para o algodão brasileiro",
+    "palavra": "algodão",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W35": [
+   {
+    "titulo": "Focus corta PIB de 2026 para 1,95% e mantém Selic em 13,75%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IPCA-15 tem deflação de 0,40% em agosto, a menor para o mês desde 2022",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IGP-M cai 0,22% em agosto e acumula 2,16% em 12 meses",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "construcao",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Desemprego cai a 5,3%, menor para trimestre até julho desde 2012",
+    "palavra": "desemprego",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Caged: julho cria 58,6 mil vagas, pior resultado para o mês desde 2020",
+    "palavra": "Caged",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos",
+     "construcao",
+     "agro",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Emprego formal encolhe para trabalhadores acima de 25 anos",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Aneel mantém bandeira amarela em setembro, quinto mês seguido",
+    "palavra": "bandeira",
+    "tema": "energia",
+    "setores": [
+     "transversal",
+     "servicos",
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Arrecadação federal bate recorde para julho: R$ 289,3 bilhões",
+    "palavra": "arrecadação",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Inadimplência no crédito livre atinge recorde de 6,4% em julho",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Estoque de crédito chega a R$ 7,37 trilhões",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Falta de confiança chega a 25 setores industriais em agosto",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "CNI: fim da taxa das blusinhas põe em risco 109 mil empregos",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "industria",
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Congresso instala comissão da MP que zerou a taxa das blusinhas",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Indústria pressiona pela volta da taxa das blusinhas",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "industria",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Fim da taxa das blusinhas mantém ICMS de 17% a 20% nas compras até US$ 50",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Confiança do comércio cai 1,3 ponto em agosto, para 84,2 pontos",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Consumo nos lares sobe 3,28% em julho, aponta Abras",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Comércio fecha vagas em julho enquanto serviços sustentam o emprego",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Confiança de serviços sobe 1,2 ponto em agosto, para 89 pontos",
+    "palavra": "serviços",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Galípolo abre Febraban Tech com novas travas de segurança no Pix",
+    "palavra": "Pix",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Bancos levam agentes de IA ao centro da estratégia no Febraban Tech",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Febraban Tech 2026 bate recorde com 70 mil visitas",
+    "palavra": "Febraban",
+    "tema": "cambio",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "INCC-M sobe 0,85% em agosto, puxado pela mão de obra",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Crédito imobiliário com poupança tem melhor julho da história",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Poupança segue com saques líquidos apesar do crédito recorde",
+    "palavra": "poupança",
+    "tema": "cambio",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Confiança da construção recua 0,6 ponto em agosto, para 91,9",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Construção responde por 21,7% das vagas formais de julho",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MCMV: Cidades libera novas listas de empreendimentos do FAR",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Seleção de 130 mil moradias do MCMV encerra prazo em 28 de agosto",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Anec reduz exportação de soja de agosto para 10,25 milhões de t",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Arroba do boi gordo fica perto de R$ 345 no fim de agosto",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Arábica atinge R$ 1.826,58 por saca em 24/08, maior nível desde abril",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Café livre do tarifaço dos EUA deve retomar embarques",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Milho sobe 3,4% na semana com vendedor retraído",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Safrinha quase toda colhida, mas só 60% da produção vendida",
+    "palavra": "safrinha",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Agro gera 12,5 mil vagas formais em julho",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Agropecuários seguram queda do IGP-M em agosto",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo regulamenta marketplace para compras federais (Sicx)",
+    "palavra": "Sicx",
+    "tema": "regulacao",
+    "setores": [
+     "ecommerce",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Sicx abre canal de venda ao governo para MEIs e pequenos fornecedores",
+    "palavra": "Sicx",
+    "tema": "regulacao",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Lupo passa a vender 1,4 mil itens pelo iFood",
+    "palavra": "iFood",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Grupo Carrefour abre 1.894 vagas no Estado de São Paulo",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Lucro da Caixa sobe 5,9% e chega a R$ 3,9 bi no 2º trimestre",
+    "palavra": "Caixa",
+    "tema": "cambio",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Inadimplência do agro na Caixa salta a 20,74%",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "agro",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Carteira imobiliária da Caixa passa de R$ 1 trilhão",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Brasil e EUA abrem nova rodada virtual para negociar o tarifaço",
+    "palavra": "tarifaço",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Suape retoma 55 hectares e abre área para novas indústrias",
+    "palavra": "infraestrutura",
+    "tema": "construcao",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Vendas de máquinas agrícolas caem 27,5% em julho",
+    "palavra": "máquinas-agrícolas",
+    "tema": "agro",
+    "setores": [
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Venda de colheitadeiras despenca 89% em julho",
+    "palavra": "máquinas-agrícolas",
+    "tema": "agro",
+    "setores": [
+     "industria",
+     "agro"
+    ]
+   }
+  ],
+  "2026-W36": [
+   {
+    "titulo": "PIB cresce 0,5% no 2º trimestre, acima do esperado",
+    "palavra": "PIB",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "agro",
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Consumo das famílias recua 0,4% no trimestre",
+    "palavra": "famílias",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Exportações sobem 5,5% e importações 3,4% no PIB do trimestre",
+    "palavra": "PIB",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Focus corta PIB de 2026 para 1,92% e IPCA para 5,01%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Balança tem superávit de US$ 7,4 bilhões em agosto",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "agro",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Vendas aos EUA sobem 12,1% em agosto, mas só por preço",
+    "palavra": "exportações",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "EUA são o único grande parceiro com déficit para o Brasil",
+    "palavra": "EUA",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Ministros cobram Greer e chamam tarifaço de injusto",
+    "palavra": "tarifaço",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Ibovespa tem melhor semana desde janeiro, com alta de 5,40%",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Comissão do Senado aprova inflação como teto do reajuste da luz",
+    "palavra": "luz",
+    "tema": "energia",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Senado aprova regime para reduzir tarifas de energia no Norte",
+    "palavra": "luz",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Nordeste cresce 2,4% em 12 meses e supera o Brasil",
+    "palavra": "Nordeste",
+    "tema": "atividade",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança empresarial cai 0,5 ponto em agosto, para 91,1",
+    "palavra": "empresarial",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Produção industrial sobe 0,2% em julho e interrompe duas quedas",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PMI industrial cai a 46,3, maior contração em 40 meses",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Agroindústria recua 2,9% em julho",
+    "palavra": "agroindústria",
+    "tema": "agro",
+    "setores": [
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Indústria do Rio Grande do Norte tem a maior retração do país",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Venda de veículos cresce 16,9% em agosto, melhor agosto desde 2013",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "CNI chama fim da taxa das blusinhas de retrocesso",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "industria",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Congresso aprova fim da taxa das blusinhas; texto vai à sanção",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Câmara aprova MP das blusinhas antes do Senado",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Relatora mantém estrutura da MP, mas muda o texto",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shein comemora: fim da taxa é vitória do consumidor",
+    "palavra": "SHEIN",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Agentes de IA devem assumir busca, comparação e compra",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Varejo tem 12 grandes empresas em sinal de alerta financeiro",
+    "palavra": "varejistas",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Grandes redes fecharam mais de 1,1 mil lojas desde 2022",
+    "palavra": "varejistas",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Inadimplência das famílias sobe a 29,9% em agosto",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Calote cresce entre famílias de até três salários mínimos",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Empresas inadimplentes chegam a 9,2 milhões, com R$ 238,6 bi",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Varejo vai precisar de mais caixa com a nova forma de recolher tributos",
+    "palavra": "tributária",
+    "tema": "regulacao",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Preço dos imóveis sobe 0,53% em agosto e supera a inflação",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "São Paulo tem valorização de imóveis abaixo da inflação",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "PIB: construção e serviços sustentam emprego enquanto indústria trava",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Agro cresce 2,8% e lidera o PIB do 2º trimestre",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Agro desacelera ao longo do ano, aponta Etene/BNB",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Boi gordo fecha a semana a R$ 347,70 por arroba",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "SindusCon-SP divulga CUB de agosto: R$ 2.686,65/m² no padrão normal",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Custo da construção em Goiás sobe 0,529% em agosto",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Custo de obra em João Pessoa sobe só 0,10% em agosto",
+    "palavra": "CUB",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Exportação de soja cresce 5,2% em agosto, a 9,81 milhões de t",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Óleo cru e soja puxam o saldo comercial de agosto",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "agro",
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Milho segue com embarques fracos apesar da safrinha",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W37": [
+   {
+    "titulo": "IPCA cai 0,32% em agosto, maior deflação desde 2022",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Inflação em 12 meses fica dentro da meta pelo segundo mês",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Inflação da baixa renda também cai 0,32% em agosto",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Focus reduz IPCA de 2026 para 5,00% e sobe PIB para 1,93%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Mercado projeta corte da Selic para 13,75% na próxima semana",
+    "palavra": "Selic",
+    "tema": "juros",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IGP-DI sobe 0,06% em agosto com preços ao produtor",
+    "palavra": "IGP-DI",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Crise no STF e caso Master pesam na bolsa na sexta",
+    "palavra": "STF",
+    "tema": "fiscal",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Economistas veem risco de investimento travado com crise no STF",
+    "palavra": "STF",
+    "tema": "fiscal",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Produção de veículos tem melhor agosto desde 2019",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Exportação de veículos cai 31,7% com retração argentina",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Venda de veículos recua 1,6% em agosto ante julho",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Produção de ônibus cai 6,2% no ano, aponta Anfavea",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Indústria cai em 11 de 18 locais em julho ante 2025",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Indústria do Nordeste recua 4,1% em julho",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "ICVA: varejo cai 2,0% em agosto, pior agosto desde 2020",
+    "palavra": "ICVA",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Intenção de consumo das famílias recua 0,3% em setembro",
+    "palavra": "ICF",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Inadimplentes chegam a 83,9 milhões, recorde da Serasa",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Lula sanciona fim da taxa das blusinhas",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Lula chama de 'meio falso' discurso de prejuízo do varejo",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Volume de serviços fica estável em julho",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Informação e comunicação cai 2,5% e segura os serviços",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Turismo sobe 2,7% em julho, mas cai 2,6% em um ano",
+    "palavra": "turismo",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Mato Grosso do Sul lidera queda nos serviços, com -9,6%",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Exportação de frango sobe 24,8% em agosto",
+    "palavra": "aves",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Cota chinesa derruba exportação de carne bovina em agosto",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "EUA e Arábia Saudita compensam parte da perda chinesa",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "IBGE prevê safra recorde de 352,9 milhões de toneladas",
+    "palavra": "safra",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Paraná abre plantio da soja 2026/27; MT encerra vazio",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Café arábica recua com perspectiva de oferta maior",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Arroba do boi gordo sobe a R$ 348,35 em São Paulo",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Custo da construção sobe 0,44% em agosto, diz IBGE",
+    "palavra": "SINAPI",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MCMV: portaria lista novos empreendimentos aptos no FAR",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "FGTS amplia em R$ 500 milhões os descontos do MCMV",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Minerais não metálicos caem 7,6% no Nordeste",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "construcao",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Amazon abre CD no Espírito Santo com entrega no mesmo dia",
+    "palavra": "Amazon",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "E-commerce cresce 5,1% em agosto e supera loja física",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Lei das blusinhas exige avaliação periódica de impacto",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W38": [
+   {
+    "titulo": "Copom corta Selic para 13,75%, quinto corte seguido",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Copom vê desaceleração da economia para justificar corte",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Focus corta IPCA de 2026 para 4,90% e PIB para 1,89%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IBC-Br recua 0,2% em julho, segunda queda seguida",
+    "palavra": "IBC-Br",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Monitor do PIB da FGV aponta queda de 0,4% em julho",
+    "palavra": "PIB",
+    "tema": "atividade",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar sobe 0,37% na semana e Ibovespa interrompe alta",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Brasil e EUA voltam a negociar tarifaço no G20",
+    "palavra": "tarifaço",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria cai a 44,9 pontos e completa 21 meses de pessimismo",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Venda de veículos no varejo cresce 5% em um ano",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Indústria recua 0,4% no IBC-Br de julho",
+    "palavra": "IBC-Br",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Aneel aprova reajuste médio de 6,94% na Equatorial Pará",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Vendas do varejo caem 0,8% em julho com ressaca da Copa",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Móveis e eletrodomésticos caem 4,9% em julho",
+    "palavra": "móveis",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo ampliado sobe 0,4% em julho, abaixo do esperado",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Fluxo no varejo físico cai 1,5% em agosto",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Com orçamento apertado, consumidor vai menos às compras",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo cresce 7,7% no feriado de 7 de Setembro",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Atacarejo recupera reputação após queda no início do ano",
+    "palavra": "atacarejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Serviços ficam estáveis no IBC-Br de julho",
+    "palavra": "IBC-Br",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "BC muda regras do Pix contra fraudes e libera conta-salário",
+    "palavra": "Pix",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Analistas veem Selic em 13,75% até o fim do ano",
+    "palavra": "Selic",
+    "tema": "juros",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Bares e restaurantes perdem no feriado",
+    "palavra": "restaurantes",
+    "tema": "consumo",
+    "setores": [
+     "servicos",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Conab eleva safra 2025/26 para 361,7 milhões de toneladas",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Trigo deve cair 27,2% na safra 2026, prevê Conab",
+    "palavra": "trigo",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Mato Grosso começa plantio da soja sob alerta do El Niño",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Café arábica acumula queda de quase 12% em setembro",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Milho recua a R$ 69,25 por saca na semana",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Boi gordo fica estável e carne de frango sobe",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Agropecuária cai 1,2% e puxa o IBC-Br para baixo",
+    "palavra": "agropecuária",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Vendas de imóveis sobem 67% em julho na capital paulista",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Estoque de imóveis novos em São Paulo cresce 42% em um ano",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Material de construção sobe 0,7% no varejo de julho",
+    "palavra": "materiais",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Vendedores dos EUA quase triplicam fatia no cross-border do Mercado Livre",
+    "palavra": "cross-border",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "China e Hong Kong ainda concentram 72% do cross-border",
+    "palavra": "cross-border",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Reputação dos marketplaces avança pelo quarto mês",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Pix terá cobrança híbrida com boleto a partir de 2027",
+    "palavra": "Pix",
+    "tema": "digital",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   }
+  ],
+  "2026-W39": [
+   {
+    "titulo": "IPCA-15 sobe 0,70% em setembro, acima do esperado",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Fim do bônus de Itaipu faz luz subir 7,42% na prévia",
+    "palavra": "Itaipu",
+    "tema": "energia",
+    "setores": [
+     "transversal",
+     "servicos",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "BC vê 90% de chance de a inflação estourar o teto em 2026",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Ata do Copom confirma desaceleração da economia",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Focus sobe IPCA de 2026 para 4,92% e corta PIB para 1,88%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Arrecadação federal bate recorde para agosto: R$ 235,6 bi",
+    "palavra": "arrecadação",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança do consumidor cai a 84,2, menor nível desde 2022",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Intenção de investir da indústria é a menor em seis anos",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Intenção de investir na construção cai ao menor nível desde 2019",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "industria",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Aneel eleva para 9,4% o reajuste médio de energia em 2026",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "ANP multa distribuidoras em mais de R$ 200 milhões",
+    "palavra": "ANP",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Senacon abre 70 processos contra postos por preço abusivo",
+    "palavra": "postos",
+    "tema": "combustiveis",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Consumo de café no varejo sobe 4,65% com preço menor",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "comercio",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Compras internacionais disparam após fim da taxa das blusinhas",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Uso ativo de IA no varejo salta de 39% para 65% em um ano",
+    "palavra": "IA",
+    "tema": "digital",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Expectativas pesam e consumidor segue cauteloso",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "BC projeta IPCA de 0,65% em setembro e 0,29% em outubro",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Dólar cai a R$ 5,18 na sexta e Ibovespa recua com Petrobras",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Conab estima safra recorde de café: 67,6 milhões de sacas",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Safra recorde de café pressiona cotações em Nova York",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Plantio da soja 2026/27 chega a 0,5% da área",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportação de café cai 6,6% no ano até agosto",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Abic condiciona alta do consumo de café ao El Niño",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Confiança da construção cai a 90,5 pontos em setembro",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "INCC-M desacelera a 0,25% em setembro",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "MCMV autoriza 2.574 novas moradias em oito estados",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Governo prorroga prazo de entrega de obras do MCMV",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "E-commerce de bens de consumo cresce 58% em 12 meses",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Remessas de até US$ 50 somam US$ 526 milhões em agosto",
+    "palavra": "remessas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Pix: novas regras de segurança passam a valer em 21/09",
+    "palavra": "Pix",
+    "tema": "digital",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   }
+  ],
+  "2026-W40": [
+   {
+    "titulo": "Desemprego fica em 5,3%, menor para o trimestre até agosto",
+    "palavra": "desemprego",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Caged: 165,8 mil vagas em agosto, acima do esperado",
+    "palavra": "Caged",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IGP-M sobe 1,57% em setembro, puxado pelo atacado",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "construcao",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Focus eleva IPCA de 2026 para 4,99% e corta PIB para 1,86%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Contas públicas têm déficit de R$ 10 bilhões em agosto",
+    "palavra": "déficit",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Brasil e EUA criam grupo para negociar o tarifaço",
+    "palavra": "tarifaço",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Alckmin sinaliza retomada da negociação com os EUA",
+    "palavra": "tarifaço",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Ibovespa sobe 5,03% em setembro e dólar fica estável",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Produção industrial cai 0,6% em agosto, pior para o mês desde 2022",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Bens de consumo pressionam a indústria em agosto",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria cai 2,4 pontos, a 91,3",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Receita de máquinas agrícolas cai 22,4% até agosto",
+    "palavra": "máquinas-agrícolas",
+    "tema": "agro",
+    "setores": [
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Indústria de máquinas acumula queda de 13,2% no ano",
+    "palavra": "máquinas",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Juros para famílias sobem e inadimplência chega a 6%",
+    "palavra": "crédito",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Comer fora fica mais caro e brasileiro vai menos a restaurantes",
+    "palavra": "restaurantes",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IGP-M alto favorece reajuste de aluguel em shoppings",
+    "palavra": "aluguel",
+    "tema": "construcao",
+    "setores": [
+     "comercio",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Nordeste lidera ritmo de emprego formal em agosto",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Serviços geram 110,3 mil vagas formais em agosto",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Renda média do trabalho fica em R$ 3.777",
+    "palavra": "renda",
+    "tema": "trabalho",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Juros da dívida pública somam R$ 1,18 trilhão em 12 meses",
+    "palavra": "dívida",
+    "tema": "fiscal",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Boi gordo sobe 5,42% em setembro e chega a R$ 363",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Bezerro bate recorde de R$ 3.437 por cabeça",
+    "palavra": "bezerro",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produtor endividado trava compra de máquinas",
+    "palavra": "máquinas-agrícolas",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Tratores somam 7.252 unidades vendidas em agosto",
+    "palavra": "máquinas-agrícolas",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Construção cria 20,8 mil vagas formais em agosto",
+    "palavra": "emprego",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Crédito imobiliário da poupança soma R$ 16,97 bi em agosto",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Imóveis residenciais acumulam alta de 14,73% em 12 meses",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Aluguéis com aniversário em outubro sobem 3,34%",
+    "palavra": "aluguel",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Shopee lança plataforma de exportação para PMEs brasileiras",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Piloto da Shopee teve 19 mil vendedores e 1,4 milhão de produtos",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Exportar pelo marketplace exige checar regras de cada país",
+    "palavra": "marketplace",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   }
+  ],
+  "2026-W41": [
+   {
+    "titulo": "IPCA sobe 0,82% em setembro e estoura o teto da meta",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Conta de luz sobe 7,98% e lidera a inflação de setembro",
+    "palavra": "luz",
+    "tema": "energia",
+    "setores": [
+     "transversal",
+     "servicos",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Alimentos voltam a subir após três meses de queda",
+    "palavra": "alimentos",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Ibovespa sobe 7,85% e supera 200 mil pontos após o 1º turno",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Juros futuros despencam mais de 1 ponto após o 1º turno",
+    "palavra": "DI",
+    "tema": "juros",
+    "setores": [
+     "transversal",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Focus eleva IPCA de 2026 para 5,01% e prevê Selic de 13,50%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Balança tem superávit de US$ 7,74 bilhões em setembro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produção de veículos tem melhor setembro desde 2014",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Emplacamentos batem recorde para setembro: 509,7 mil",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Eletrificados: 434 mil vendidos, só 72 mil fabricados no país",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Exportação de veículos cai 24,2% em setembro",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Dia das Crianças deve movimentar R$ 9,27 bilhões",
+    "palavra": "crianças",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Shoppings esperam mais público, mas vendas reagem menos",
+    "palavra": "shoppings",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Dia das Crianças deve movimentar R$ 304 milhões em Pernambuco",
+    "palavra": "crianças",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "PMI de serviços cai a 49,2 e volta à contração",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Segundo turno redesenha expectativas de juros e câmbio",
+    "palavra": "eleição",
+    "tema": "fiscal",
+    "setores": [
+     "servicos",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Exportação de carne bovina cai 35,1% em setembro",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportação de café cresce 19,7% em setembro, diz Secex",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Anec projeta 6,18 milhões de t de soja exportadas em outubro",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Plantio da soja em MT chega a 10,23%, abaixo de 2025",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Custo da construção sobe 0,30% em setembro",
+    "palavra": "SINAPI",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Preço dos imóveis sobe 0,58% em setembro",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Correios e AliExpress renovam parceria para Black Friday e 11.11",
+    "palavra": "Correios",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Vendas online do Dia das Crianças crescem sem alta de tíquete",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "E-commerce deve faturar R$ 10,16 bi no Dia das Crianças",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W42": [
+   {
+    "titulo": "Focus eleva IPCA de 2026 para 5,22% e reduz dólar para R$ 5,15",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IBC-Br sobe 0,3% em agosto, acima do esperado",
+    "palavra": "IBC-Br",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Varejo sobe só 0,1% em agosto, abaixo das projeções",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Indústria cresce 0,9% no IBC-Br de agosto",
+    "palavra": "IBC-Br",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Móveis e eletrodomésticos caem 4,2% no varejo de agosto",
+    "palavra": "móveis",
+    "tema": "consumo",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "ICVA: varejo cai 3,9% em setembro, pior setembro desde 2020",
+    "palavra": "ICVA",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Dia das Crianças: varejo fatura 4,2% mais, mas presentes caem",
+    "palavra": "crianças",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Dia das Crianças frustra metade do comércio em Minas",
+    "palavra": "crianças",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo cresce 6,3% no 3º trimestre, aponta Stone",
+    "palavra": "varejo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Bares e restaurantes crescem 15,5% no Dia das Crianças",
+    "palavra": "restaurantes",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Volume de serviços cai 0,1% em agosto",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Turismo cresce 2,5% em agosto",
+    "palavra": "turismo",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Transportes e serviços profissionais recuam em agosto",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Conab prevê safra recorde de 367,1 milhões de t em 2026/27",
+    "palavra": "Conab",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "IBGE estima safra recorde de 354,5 milhões de t em 2026",
+    "palavra": "safra",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Produção de grãos deve crescer apesar do El Niño",
+    "palavra": "grãos",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Mato Grosso semeia 33% da soja e recupera ritmo",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "CBIC estuda impacto da redução da jornada na construção",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "BB vê setor imobiliário resiliente, puxado pelo econômico",
+    "palavra": "imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Compras internacionais de até US$ 50 sobem 82% em setembro",
+    "palavra": "blusinhas",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "E-commerce cresce 5,1% em setembro, contra loja física em queda",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "E-commerce sobe 3,1% no Dia das Crianças, abaixo da loja física",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W43": [
+   {
+    "titulo": "IPCA-15 desacelera a 0,32% em outubro, abaixo do esperado",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Alimentação em casa pressiona a prévia de outubro",
+    "palavra": "alimentos",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Focus mantém IPCA de 2026 em 5,22%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Arrecadação federal soma R$ 239,4 bi em setembro, recorde",
+    "palavra": "arrecadação",
+    "tema": "fiscal",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Dólar fecha abaixo de R$ 5 na véspera do 2º turno",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Empate nas pesquisas e Brent a US$ 116 marcam a semana",
+    "palavra": "eleição",
+    "tema": "fiscal",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Defasagem do diesel da Petrobras chega a R$ 3,53 por litro",
+    "palavra": "diesel",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "servicos",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Aneel aprova reajuste de 7,25% na Equatorial Goiás",
+    "palavra": "ANEEL",
+    "tema": "energia",
+    "setores": [
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Importação de aço sobe 34,6% em setembro",
+    "palavra": "aço",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "IPI tem a maior alta entre os tributos em setembro",
+    "palavra": "arrecadação",
+    "tema": "fiscal",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Black Friday deve movimentar R$ 16,6 bi no e-commerce",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "E-commerce deve faturar R$ 259,8 bilhões em 2026",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Passagens aéreas caem e ajudam a frear a inflação",
+    "palavra": "passagens",
+    "tema": "inflacao",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Plantio da soja em MT chega a 75,81%",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Imea reduz produtividade da soja de MT por risco do El Niño",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Vendas de imóveis em SP sobem 36,9% em agosto",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Oferta de imóveis novos em SP cresce 50,7%",
+    "palavra": "imóveis",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   }
+  ],
+  "2026-W44": [
+   {
+    "titulo": "Lula é reeleito com 51,79% dos votos válidos",
+    "palavra": "eleição",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Ibovespa cai 13,88% com circuit breaker e dólar sobe 8,21%",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Dólar tem maior alta semanal desde 2008 e fecha a R$ 5,44",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Desemprego cai a 5,2%, menor para o 3º trimestre desde 2012",
+    "palavra": "desemprego",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IGP-M sobe 1,47% em outubro e acumula 5,24% em 12 meses",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "construcao",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Endividamento das famílias bate recorde de 50,1% da renda",
+    "palavra": "endividamento",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Juro do cartão rotativo chega a 451,7% ao ano",
+    "palavra": "rotativo",
+    "tema": "consumo",
+    "setores": [
+     "servicos",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria sobe em 27 de 29 setores em outubro",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Fiesp: confiança da indústria paulista sobe, mas segue pessimista",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Consumo nos lares recua 1,46% em setembro, diz Abras",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança, investimento e expansão do comércio recuam em setembro",
+    "palavra": "comércio",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Varejo alimentar cresce 2,8% em setembro com alta de preços",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança do consumidor sobe 0,5 ponto em outubro",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Boi gordo bate recorde real: R$ 389,90 por arroba",
+    "palavra": "boi",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Alta do dólar tem efeito limitado sobre soja e milho",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "INCC-M sobe 0,35% em outubro",
+    "palavra": "INCC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Confiança da construção sobe 0,2 ponto, a 90,7",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Construção vê risco à habitação social com jornada menor",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "71% pretendem comprar no 11.11 e na Black Friday",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Mercado Livre prevê R$ 100 milhões em cupons por dia",
+    "palavra": "MercadoLivre",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   }
+  ],
+  "2026-W45": [
+   {
+    "titulo": "Copom mantém Selic em 13,75% e interrompe ciclo de cortes",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal",
+     "servicos",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Copom projeta IPCA de 5,6% em 2026 e 4,7% em 2027",
+    "palavra": "Copom",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Primeiro Focus pós-eleição eleva dólar para R$ 5,34",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Balança tem superávit recorde para outubro: US$ 9,32 bi",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Caged cria 121,3 mil vagas em setembro, pior setembro desde 2020",
+    "palavra": "Caged",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Dólar fecha a R$ 5,51, maior nível desde dezembro de 2025",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Produção industrial cai 0,8% em setembro, 4ª queda em cinco meses",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Bens de capital recuam 1,9% em setembro",
+    "palavra": "PIM",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "PMI industrial sobe a 46,1 em outubro, mas segue em contração",
+    "palavra": "PMI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Emplacamentos caem 4% em outubro, mas sobem 12,6% no ano",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Shopee, Mercado Livre e Magalu antecipam Black Friday para o 11.11",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Shopee libera R$ 48 milhões em cupons para 11.11 e Black Friday",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Construção pede transição de cinco anos para o fim da escala 6x1",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "construcao",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Chuva acelera plantio da soja em MT e GO, diz Conab",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Plantio da soja em MT chega perto de 90%",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   }
+  ],
+  "2026-W46": [
+   {
+    "titulo": "Focus eleva Selic de 2026 para 13,75% após pausa do Copom",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Bolsa sobe 2,2% e volta a 172 mil pontos; dólar fica em R$ 5,50",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Lula promete manter regras fiscais, sem medidas concretas",
+    "palavra": "regras-fiscais",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "ICVA: varejo cai 4,0% real em outubro, 17º mês de queda",
+    "palavra": "ICVA",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Calote dos consumidores lidera causas de recuperação judicial no varejo",
+    "palavra": "recuperação-judicial",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "E-commerce recua 0,5% em outubro, enquanto loja física sobe 1,9%",
+    "palavra": "e-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "11.11 deve movimentar R$ 3,17 bilhões, alta de 21%",
+    "palavra": "11.11",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Nubank e Shopee fazem parceria de pagamentos para o 11.11",
+    "palavra": "11.11",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Recuperação judicial no agro cresce 57,5% no 3º trimestre",
+    "palavra": "agronegócio",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportação de milho acelera no início de novembro",
+    "palavra": "milho",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Embarques de carne bovina começam novembro perto de 2025",
+    "palavra": "carne",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Exportações de outubro: indústria extrativa sobe 53,5%",
+    "palavra": "exportações",
+    "tema": "exterior",
+    "setores": [
+     "agro",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Câmara de BH muda cálculo do ISS da construção civil",
+    "palavra": "ISS",
+    "tema": "regulacao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Fortaleza terá 550 moradias do MCMV em terreno da União",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Procon de Maringá acha variação de até 50,5% em materiais de construção",
+    "palavra": "materiais",
+    "tema": "construcao",
+    "setores": [
+     "construcao",
+     "comercio"
+    ]
+   }
+  ]
+ }
+}

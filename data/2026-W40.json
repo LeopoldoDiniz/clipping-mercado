@@ -1014,30 +1014,182 @@
   },
   "longitudinal": [
     {
-      "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
+      "id": "tema-agro",
       "tipo": "risco",
-      "titulo": "Custo de energia (ANEEL/tarifa)",
-      "dimensao": "A",
+      "titulo": "Safra, clima e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "industria",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 91.5,
+      "severidade": 10.0,
+      "iminencia": 8.3,
+      "ultima_observacao": "Boi gordo sobe 5,42% em setembro e bezerro bate recorde; máquinas agrícolas caem 22,4% no ano.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 5
+    },
+    {
+      "id": "tema-atividade",
+      "tipo": "risco",
+      "titulo": "Atividade: indústria e serviços",
+      "dimensao": "E",
+      "setores": [
+        "industria",
+        "servicos",
+        "comercio",
+        "transversal",
+        "construcao",
+        "agro"
+      ],
+      "status": "em_curso",
+      "relevancia": 77.5,
+      "severidade": 8.8,
+      "iminencia": 6.7,
+      "ultima_observacao": "PIM cai 0,6% em agosto, pior agosto desde 2022; confiança da indústria FGV cai a 91,3.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 4
+    },
+    {
+      "id": "tema-construcao",
+      "tipo": "oportunidade",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "comercio",
+        "industria"
+      ],
+      "status": "monitorar",
+      "relevancia": 63.5,
+      "severidade": 6.0,
+      "iminencia": 6.7,
+      "ultima_observacao": "Abecip: crédito imobiliário SBPE de R$ 16,97 bi em agosto (+46,6%), com saques de R$ 9,5 bi na poupança.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 4
+    },
+    {
+      "id": "tema-trabalho",
+      "tipo": "risco",
+      "titulo": "Emprego e trabalho",
+      "dimensao": "S",
+      "setores": [
+        "servicos",
+        "transversal",
+        "comercio",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 62.0,
+      "severidade": 2.4,
+      "iminencia": 10.0,
+      "ultima_observacao": "PNAD: desemprego de 5,3% e ocupação recorde de 103,5 mi; Caged cria 165,8 mil vagas em agosto.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W05",
+      "origem": "real",
+      "direcao": "retomado",
+      "noticias_semana": 6
+    },
+    {
+      "id": "tema-ecommerce",
+      "tipo": "oportunidade",
+      "titulo": "E-commerce, marketplaces e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 53.0,
+      "severidade": 5.6,
+      "iminencia": 5.0,
+      "ultima_observacao": "Shopee lança plataforma de exportação para PMEs venderem na Argentina e no México.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W22",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 3
+    },
+    {
+      "id": "tema-consumo",
+      "tipo": "risco",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "construcao",
+        "transversal"
+      ],
+      "status": "em_curso",
+      "relevancia": 46.5,
+      "severidade": 6.0,
+      "iminencia": 3.3,
+      "ultima_observacao": "Endividamento das famílias chega a 49,9% da renda; consumidor reduz idas a restaurantes.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-juros",
+      "tipo": "risco",
+      "titulo": "Juros e política monetária",
+      "dimensao": "E",
       "setores": [
         "transversal",
         "servicos",
         "comercio",
-        "industria",
-        "agro"
+        "construcao"
       ],
-      "status": "materializado",
-      "relevancia": 100,
-      "severidade": 10.0,
-      "iminencia": 10.0,
-      "ultima_observacao": "Aneel eleva projeção de reajuste médio de 2026 para 9,4%; fim do bônus de Itaipu faz luz subir 7,42% no IPCA-15.",
-      "periodo_observacao": "2026-W39",
-      "data_identificacao": "2026-05-25",
-      "origem": "real"
+      "status": "em_curso",
+      "relevancia": 26.5,
+      "severidade": 3.6,
+      "iminencia": 1.7,
+      "ultima_observacao": "Juros para famílias sobem em agosto; inadimplência de 6%; dívida bruta a 82,9% do PIB.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 1
     },
     {
-      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
+      "id": "tema-fiscal",
       "tipo": "risco",
-      "titulo": "Juros, Selic e crédito",
+      "titulo": "Fiscal, eleição e instituições",
+      "dimensao": "P",
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "status": "monitorar",
+      "relevancia": 26.5,
+      "severidade": 2.0,
+      "iminencia": 3.3,
+      "ultima_observacao": "Dívida bruta sobe a 82,9% do PIB em agosto, com juros de R$ 1,18 trilhão em 12 meses.",
+      "periodo_observacao": "2026-W40",
+      "data_identificacao": "2026-W14",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
       "dimensao": "E",
       "setores": [
         "transversal",
@@ -1045,152 +1197,18 @@
         "servicos",
         "construcao",
         "industria",
-        "agro",
-        "ecommerce"
+        "agro"
       ],
       "status": "em_curso",
-      "relevancia": 96.8,
-      "severidade": 9.8,
-      "iminencia": 9.0,
-      "ultima_observacao": "Juros para famílias sobem em agosto; inadimplência de 6%; dívida bruta a 82,9% do PIB.",
+      "relevancia": 24.5,
+      "severidade": 3.2,
+      "iminencia": 1.7,
+      "ultima_observacao": "IGP-M sobe 1,57% em setembro; Focus eleva IPCA 2026 para 4,99%.",
       "periodo_observacao": "2026-W40",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
-      "tipo": "risco",
-      "titulo": "Safra e agro",
-      "dimensao": "E",
-      "setores": [
-        "agro",
-        "transversal",
-        "industria",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 95.75,
-      "severidade": 9.5,
-      "iminencia": 9.0,
-      "ultima_observacao": "Boi gordo sobe 5,42% em setembro e bezerro bate recorde; máquinas agrícolas caem 22,4% no ano.",
-      "periodo_observacao": "2026-W40",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
-      "tipo": "risco",
-      "titulo": "Atividade e indústria (PIM/PMI)",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "servicos",
-        "industria",
-        "agro",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 95.75,
-      "severidade": 9.5,
-      "iminencia": 9.0,
-      "ultima_observacao": "PIM cai 0,6% em agosto, pior agosto desde 2022; confiança da indústria FGV cai a 91,3.",
-      "periodo_observacao": "2026-W40",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "24441022-20e8-4a69-afed-041851f13279",
-      "tipo": "risco",
-      "titulo": "Cautela do Consumidor e Endividamento Familiar",
-      "dimensao": "S",
-      "setores": [
-        "comercio",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 92.75,
-      "severidade": 9.0,
-      "iminencia": 8.5,
-      "ultima_observacao": "Endividamento das famílias chega a 49,9% da renda; consumidor reduz idas a restaurantes.",
-      "periodo_observacao": "2026-W40",
-      "data_identificacao": "2026-07-01",
-      "origem": "real"
-    },
-    {
-      "id": "7ea47e0b-eee5-4298-a17c-8dec4af26bc0",
-      "tipo": "risco",
-      "titulo": "Proposta de Novas Tarifas dos EUA sobre Produtos Brasileiros",
-      "dimensao": "P",
-      "setores": [
-        "industria",
-        "transversal"
-      ],
-      "status": "em_curso",
-      "relevancia": 92.75,
-      "severidade": 9.0,
-      "iminencia": 8.5,
-      "ultima_observacao": "Brasil e EUA criam grupo específico para negociar o tarifaço no G20.",
-      "periodo_observacao": "2026-W40",
-      "data_identificacao": "2026-07-02",
-      "origem": "real"
-    },
-    {
-      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
-      "tipo": "risco",
-      "titulo": "Câmbio e balança",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "comercio",
-        "industria",
-        "agro",
-        "servicos",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 92.75,
-      "severidade": 9.0,
-      "iminencia": 8.5,
-      "ultima_observacao": "Ibovespa sobe 5,03% em setembro; dólar estável a R$ 5,17.",
-      "periodo_observacao": "2026-W40",
-      "data_identificacao": "2025-12-29",
-      "origem": "real"
-    },
-    {
-      "id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
-      "tipo": "risco",
-      "titulo": "Emprego e renda (CAGED/PNAD)",
-      "dimensao": "S",
-      "setores": [
-        "transversal",
-        "servicos",
-        "industria"
-      ],
-      "status": "em_curso",
-      "relevancia": 92.75,
-      "severidade": 9.0,
-      "iminencia": 8.5,
-      "ultima_observacao": "PNAD: desemprego de 5,3% e ocupação recorde de 103,5 mi; Caged cria 165,8 mil vagas em agosto.",
-      "periodo_observacao": "2026-W40",
-      "data_identificacao": "2026-01-26",
-      "origem": "real"
-    },
-    {
-      "id": "81df3fdc-1810-4391-9e21-e5e539979fa3",
-      "tipo": "risco",
-      "titulo": "Remessa Conforme e importados",
-      "dimensao": "L",
-      "setores": [
-        "ecommerce"
-      ],
-      "status": "materializado",
-      "relevancia": 91.97,
-      "severidade": 7.5,
-      "iminencia": 7.0,
-      "ultima_observacao": "Abit: encomendas de até US$ 50 sobem 74% em agosto após o fim da taxa.",
-      "periodo_observacao": "2026-W39",
-      "data_identificacao": "2026-07-13",
-      "origem": "real"
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 1
     }
   ]
 }

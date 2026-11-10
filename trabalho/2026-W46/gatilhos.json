@@ -1,19 +1,11 @@
 {
   "data": "2026-11-10",
   "setores": {
-    "comercio": [
-      "novo sinal já materializado: Onda de recuperações judiciais no varejo e no agro",
-      "4 notícias novas no setor"
+    "panorama": [
+      "indicador Câmbio (US$) atualizado: R$ 5,58"
     ],
-    "agro": [
-      "novo sinal já materializado: Onda de recuperações judiciais no varejo e no agro",
-      "4 notícias novas no setor"
-    ],
-    "ecommerce": [
-      "3 notícias novas no setor"
-    ],
-    "construcao": [
-      "3 notícias novas no setor"
+    "industria": [
+      "indicador PIM (Indústria) atualizado: -0,8%"
     ]
   }
 }
