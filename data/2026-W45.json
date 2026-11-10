@@ -1,0 +1,941 @@
+{
+  "periodo": "2026-W45",
+  "label": "Semana 45 · Novembro 2026",
+  "gerado_em": "2026-11-10T14:01:54.620489",
+  "editorial": {
+    "texto": "A Semana 45, a primeira completa após a eleição, trouxe a interrupção do ciclo de cortes de juros. O Copom, comitê do Banco Central, manteve a Selic, o juro básico, em 13,75% ao ano por unanimidade, frustrando parte do mercado que esperava novo corte, e citou a piora do câmbio e do cenário inflacionário; sua projeção para o IPCA de 2026 subiu a 5,6%. O primeiro Boletim Focus após a eleição elevou o dólar esperado para o fim do ano de R$ 5,05 para R$ 5,34, e na sexta-feira a moeda fechou a R$ 5,51, o maior nível desde dezembro de 2025. A atividade perdeu força: a produção industrial caiu 0,8% em setembro, a quarta queda em cinco meses, e o Caged registrou 121,3 mil vagas formais, o pior setembro desde 2020. Na contramão, a balança comercial teve superávit de US$ 9,32 bilhões, recorde para outubro, puxado pelo petróleo.\n\nO que mudou: a aposta de juros menores no fim do ano foi adiada pelo Banco Central. Entram na memória dois sinais novos: o fim do ciclo de cortes da Selic e a desaceleração da indústria, ambos já materializados.\n\nNa indústria, os bens de capital caíram 1,9% em setembro e o índice de gerentes de compras subiu a 46,1 em outubro, ainda em contração. No comércio, os emplacamentos caíram 4% em outubro, mas o ano segue 12,6% acima de 2025. Nos serviços, a geração de vagas recuou cerca de 25% frente a agosto. No agro, o plantio da soja em Mato Grosso chegou perto de 90%, favorecendo o milho segunda safra. Na construção, a CBIC pediu ao governo cinco anos de transição para o fim da escala 6x1, estimando 300 mil contratações necessárias. No e-commerce, Shopee, Mercado Livre e Magalu anteciparam a Black Friday para o 11.11, com mais de R$ 125 milhões em cupons.\n\nO ponto de atenção é o câmbio: com o dólar acima de R$ 5,50 e juros parados, revise preços de importados e evite dívidas novas a juro alto.",
+    "gerado_em": "2026-11-10T14:01:48.823872",
+    "n_sinais_considerados": 15,
+    "modelo": "claude"
+  },
+  "clipping": [
+    {
+      "setores": [
+        "transversal",
+        "servicos",
+        "construcao"
+      ],
+      "titulo": "Copom mantém Selic em 13,75% e interrompe ciclo de cortes",
+      "texto": "Decisão unânime de 04/11 surpreendeu parte do mercado, que esperava corte; comitê citou piora do câmbio e do cenário inflacionário.",
+      "fontes": [
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4366888/bc-copom-interrompe-ciclo-de-calibracao-e-mantem-taxa-selic-em-13-75-ao-ano"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/no-primeiro-copom-apos-eleicao-selic-e-mantida-em-1375-ao-ano-e-interrompe-ciclo-de-cortes/"
+        },
+        {
+          "nome": "Seu Dinheiro",
+          "url": "https://www.seudinheiro.com/2026/economia/copom-segura-selic-em-1375-e-interrompe-ciclo-de-cortes-nos-juros-mlim/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Copom projeta IPCA de 5,6% em 2026 e 4,7% em 2027",
+      "texto": "Comitê citou câmbio e El Niño entre os riscos; próxima reunião será em 8 e 9 de dezembro.",
+      "fontes": [
+        {
+          "nome": "Muita Informação",
+          "url": "https://muitainformacao.com.br/negocios/banco-central-surpreende-mercado-mantem-selic-em-1375-e-interrompe-sequencia-de-cinco-cortes-nos-juros/"
+        },
+        {
+          "nome": "Diario de Pernambuco",
+          "url": "https://www.diariodepernambuco.com.br/economia/2026/11/11728373-selic-banco-central-mantem-juros-basicos-em-1375-ao-ano.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Primeiro Focus pós-eleição eleva dólar para R$ 5,34",
+      "texto": "Projeção do IPCA de 2026 sobe a 5,22%, Selic de fim de ano a 13,50% e PIB cai para 1,76%; IPCA de 2027 vai a 4,76%.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/2026/11/03/primeiro-focus-pos-eleicao-eleva-projecoes-de-inflacao-selic-e-dolar-para-2026/"
+        },
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/03/11/2026/economia/focus-eleva-estimativas-para-selic-inflacao-e-dolar-projecao-do-pib-e-reduzida/"
+        },
+        {
+          "nome": "Bora Investir (B3)",
+          "url": "https://borainvestir.b3.com.br/noticias/focus-mercado-eleva-projecao-para-inflacao-juros-e-dolar-em-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria",
+        "agro"
+      ],
+      "titulo": "Balança tem superávit recorde para outubro: US$ 9,32 bi",
+      "texto": "Exportações subiram 20%, puxadas pelo petróleo; vendas aos EUA cresceram 11,4% e à China caíram 5,3%.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/07/11/2026/economia/balanca-comercial-tem-maior-superavit-para-outubro-desde-1989/"
+        },
+        {
+          "nome": "Times Brasil",
+          "url": "https://timesbrasil.com.br/brasil/balanca-comercial-tem-superavit-de-us-93-bilhoes-em-outubro-alta-de-39-em-um-ano-e-exportacoes-sobem-20/"
+        },
+        {
+          "nome": "A Crítica",
+          "url": "https://acritica.net/economia/exportacoes-crescem-20-e-brasil-registra-superavit-recorde-para-outubro-em-37-anos/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Caged cria 121,3 mil vagas em setembro, pior setembro desde 2020",
+      "texto": "Geração caiu cerca de 25% frente a agosto; no ano, 1,25 milhão de vagas, 27,9% abaixo de 2025. Serviços lideraram.",
+      "fontes": [
+        {
+          "nome": "Agência Gov",
+          "url": "https://agenciagov.ebc.com.br/noticias/202611/brasil-gera-121-3-mil-empregos-formais-em-setembro-e-saldo-no-ano-chega-a-1-24-milhao-de-novos-postos-com-carteira-assinada"
+        },
+        {
+          "nome": "IstoÉ",
+          "url": "https://istoe.com.br/brasil-cria-121-mil-empregos-formais-setembro-2026"
+        },
+        {
+          "nome": "BP Money",
+          "url": "https://bpmoney.com.br/economia/caged-brasil-cria-1213-mil-vagas-em-setembro-mas-perde-ritmo/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Dólar fecha a R$ 5,51, maior nível desde dezembro de 2025",
+      "texto": "Moeda subiu cerca de 1,2% na semana; Ibovespa teve a primeira semana positiva após três de perdas, aos 168.498 pontos.",
+      "fontes": [
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/11/343800-dolar-sobe-para-rs-551-com-dados-de-emprego-nos-eua.html"
+        },
+        {
+          "nome": "Brasil 61",
+          "url": "https://brasil61.com/n/ibovespa-sobe-1-39-e-fecha-aos-168-498-45-pontos-nesta-sexta-feira-6-bras2617440.amp"
+        },
+        {
+          "nome": "A Crítica",
+          "url": "https://acritica.net/economia/dolar-fecha-r-550-primeira-vez-ano-ibovespa-sobe-139/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Produção industrial cai 0,8% em setembro, 4ª queda em cinco meses",
+      "texto": "Recuo veio pior que o previsto (-0,4%); 17 de 25 ramos caíram e a produção recua 2,5% em um ano.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/05/11/2026/economia/producao-da-industria-recua-08-em-setembro-4a-queda-em-cinco-meses/"
+        },
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/11/1269381-producao-industrial-cai-08-em-setembro-ante-agosto-revela-ibge.html"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/geral/2026/11/industria-cai-setembro-maior-queda-dois-anos-e-meio/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Bens de capital recuam 1,9% em setembro",
+      "texto": "A produção de máquinas e equipamentos caiu no mês; a indústria está 16,5% abaixo do recorde de maio de 2011.",
+      "fontes": [
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/geral/2026/11/industria-cai-setembro-maior-queda-dois-anos-e-meio/"
+        },
+        {
+          "nome": "IstoÉ",
+          "url": "https://istoe.com.br/industria-brasileira-queda-producao-setembro-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "PMI industrial sobe a 46,1 em outubro, mas segue em contração",
+      "texto": "S&P Global: produção cai pelo sexto mês e empresas citam perturbações ligadas ao segundo turno; perda de empregos é a maior em 2,5 anos.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/11/1269088-pmi-industrial-do-brasil-sobe-a-461-pontos-em-outubro-apos-448-em-setembro-mostra-s-p-global.html"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/11/a-industria-brasileira-segue-em-queda-em-outubro-e-as-empresas-citam-perturbacoes-na-razao-das-eleicoes/"
+        },
+        {
+          "nome": "Notícias Agrícolas",
+          "url": "https://www.noticiasagricolas.com.br/noticia/410273"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Emplacamentos caem 4% em outubro, mas sobem 12,6% no ano",
+      "texto": "Fenabrave: 489,1 mil unidades no mês, com dois dias úteis a menos; projeção de 2026 foi elevada para alta de 12,8%.",
+      "fontes": [
+        {
+          "nome": "A Crítica",
+          "url": "https://acritica.net/economia/venda-de-veiculos-novos-deve-crescer-128-em-2026-e-chegar-a-56-milhoes-de-unidades/"
+        },
+        {
+          "nome": "Acessa",
+          "url": "https://www.acessa.com/economia/2026/11/343620-fenabrave-preve-aumento-de-128-na-venda-de-veiculos-novos-em-2026.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ],
+      "titulo": "Shopee, Mercado Livre e Magalu antecipam Black Friday para o 11.11",
+      "texto": "Plataformas somam mais de R$ 125 milhões em cupons; Black Friday oficial será em 27 de novembro.",
+      "fontes": [
+        {
+          "nome": "Gazeta SP",
+          "url": "https://www.gazetasp.com.br/economia/shopee-mercado-livre-e-magalu-adiantam-black-friday-de-27-de-novembro-para-o-dia-11-com-r-125-milhoes-em-cupons/"
+        },
+        {
+          "nome": "NSC Total",
+          "url": "https://www.nsctotal.com.br/economia/black-friday-antecipada-125-milhoes-cupons"
+        },
+        {
+          "nome": "Correio 24 Horas",
+          "url": "https://www.correio24horas.com.br/economia/shopee-mercado-livre-e-magalu-antecipam-black-friday-2026-com-r-125-milhoes-em-cupons-1126"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Shopee libera R$ 48 milhões em cupons para 11.11 e Black Friday",
+      "texto": "Plataforma terá 30 centros de distribuição operando em novembro e dezembro; 85% dos pedidos em SP chegam em até dois dias.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/trends/shopee-libera-r-48-milhoes-em-cupons-e-abre-hoje-sua-maior-temporada-de-descontos-do-ano-no-brasil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao",
+        "servicos"
+      ],
+      "titulo": "Construção pede transição de cinco anos para o fim da escala 6x1",
+      "texto": "CBIC entregou 11 pleitos ao ministro do Trabalho; setor estima perda de 600 milhões de horas e 300 mil contratações necessárias.",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/05/11/2026/economia/construcao-defende-periodo-de-transicao-de-5-anos-para-acabar-com-jornada-6x1/"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4367039/construcao-defende-periodo-de-transicao-de-5-anos-para-acabar-com-jornada-6x1"
+        },
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/construcao-civil/2026/11/05/construcao-civil-propoe-transicao-de-cinco-anos-para-nova-jornada-5x2/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Chuva acelera plantio da soja em MT e GO, diz Conab",
+      "texto": "Boletim de 05/11 aponta avanço da semeadura no Centro-Oeste, mas excesso de chuva prejudica trigo e arroz no Sul.",
+      "fontes": [
+        {
+          "nome": "Brasil 61",
+          "url": "https://brasil61.com/n/chuva-acelera-plantio-da-soja-em-mt-e-go-mas-prejudica-trigo-e-arroz-no-sul-aponta-conab-bras2617410.amp"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Plantio da soja em MT chega perto de 90%",
+      "texto": "Avanço acima da média de cinco anos favorece a janela do milho segunda safra, segundo o Imea.",
+      "fontes": [
+        {
+          "nome": "Revista Cultivar",
+          "url": "https://revistacultivar.com.br/noticias/avanco-da-soja-pode-favorecer-plantio-do-milho-em-mt"
+        }
+      ]
+    }
+  ],
+  "pestel": [
+    {
+      "dim": "P",
+      "nome": "Político",
+      "tema": "Primeiras semanas do novo mandato",
+      "texto": "Mercado aguarda sinais fiscais do governo reeleito; dólar sobe a R$ 5,51.",
+      "score": 7.2,
+      "setores": [
+        "transversal",
+        "servicos"
+      ]
+    },
+    {
+      "dim": "E",
+      "nome": "Econômico",
+      "tema": "Juros param de cair",
+      "texto": "Copom mantém 13,75% e projeta IPCA de 5,6%; indústria cai 0,8% em setembro.",
+      "score": 7.8,
+      "setores": [
+        "transversal",
+        "industria",
+        "construcao"
+      ]
+    },
+    {
+      "dim": "S",
+      "nome": "Social",
+      "tema": "Emprego perde fôlego",
+      "texto": "Caged cria 121,3 mil vagas, pior setembro desde 2020.",
+      "score": 6.6,
+      "setores": [
+        "servicos",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "T",
+      "nome": "Tecnológico",
+      "tema": "Black Friday no 11.11",
+      "texto": "Plataformas antecipam campanhas com R$ 125 milhões em cupons.",
+      "score": 6.2,
+      "setores": [
+        "ecommerce",
+        "comercio"
+      ]
+    },
+    {
+      "dim": "A",
+      "nome": "Ambiental",
+      "tema": "Chuvas no plantio",
+      "texto": "Chuva acelera a soja no Centro-Oeste, mas prejudica trigo e arroz no Sul.",
+      "score": 5.8,
+      "setores": [
+        "agro"
+      ]
+    },
+    {
+      "dim": "L",
+      "nome": "Legal",
+      "tema": "Fim da escala 6x1",
+      "texto": "Construção pede cinco anos de transição e estima 300 mil contratações necessárias.",
+      "score": 6.5,
+      "setores": [
+        "construcao",
+        "servicos",
+        "comercio"
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "label": "SELIC",
+      "valor": "13,75% a.a.",
+      "cor": "neutral",
+      "sub": "Taxa básica de juros · BCB/SGS · 06/11/2026",
+      "fonte": "BCB/SGS"
+    },
+    {
+      "label": "IPCA",
+      "valor": "0,82%",
+      "cor": "down",
+      "sub": "Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeção Focus 2026: 5,22%",
+      "fonte": "IBGE",
+      "acum_ano": 3.95,
+      "ipca_12m": 4.58,
+      "meta_inflacao": 3.0,
+      "meta_desde": "2026-01-01",
+      "meta_fonte": "BCB/SGS 13521",
+      "projecao": 5.22,
+      "projecao_em": "2026-11-06",
+      "projecao_fonte": "Focus/BCB"
+    },
+    {
+      "label": "Câmbio (US$)",
+      "valor": "R$ 5,50",
+      "cor": "down",
+      "sub": "Dólar PTAX venda · BCB · 06/11/2026",
+      "fonte": "BCB/PTAX"
+    },
+    {
+      "label": "Desemprego",
+      "valor": "5,2%",
+      "cor": "up",
+      "sub": "PNAD Contínua · IBGE · jul-ago-set 2026",
+      "fonte": "IBGE"
+    },
+    {
+      "label": "Varejo (PMC)",
+      "valor": "0,1%",
+      "cor": "up",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
+      "fonte": "IBGE",
+      "acum_ano": 1.7
+    },
+    {
+      "label": "PIM (Indústria)",
+      "valor": "-0,8%",
+      "cor": "down",
+      "sub": "Produção física m/m · acum. ano -2,5% · IBGE set/26",
+      "fonte": "IBGE",
+      "acum_ano": -2.5
+    },
+    {
+      "label": "IPP",
+      "valor": "1,54%",
+      "cor": "down",
+      "sub": "Preços ao produtor m/m · acum. ano 5,04% · IBGE set/26",
+      "fonte": "IBGE",
+      "acum_ano": 5.04
+    }
+  ],
+  "kpis_setoriais": [
+    {
+      "setor": "servicos",
+      "setorLabel": "Serviços",
+      "label": "Serviços (PMS)",
+      "valor": "-0,1%",
+      "cor": "down",
+      "sub": "Volume · var. m/m (aj.saz.) · acum. ano +1,7% · IBGE/PMS ago/26",
+      "ref": "ago/26",
+      "pt": -0.1,
+      "acum": 1.7,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "construcao",
+      "setorLabel": "Construção",
+      "label": "Custo m² (SINAPI)",
+      "valor": "R$ 2.000",
+      "cor": "up",
+      "sub": "Custo médio da construção · +0,30% mês · acum. ano +5,72% · IBGE/SINAPI set/26",
+      "ref": "set/26",
+      "pt": 1999.73,
+      "acum": 5.72,
+      "flow": false,
+      "unit": "R$/m²"
+    },
+    {
+      "setor": "construcao",
+      "key": "construcao_incc",
+      "setorLabel": "Construção",
+      "label": "INCC (FGV)",
+      "valor": "+0,37%",
+      "cor": "up",
+      "sub": "Custo da construção (mercado) · var. mês · acum. ano +6,22% · FGV/BCB-SGS out/26",
+      "ref": "out/26",
+      "pt": 0.37,
+      "acum": 6.22,
+      "flow": true,
+      "unit": "%"
+    },
+    {
+      "setor": "agro",
+      "setorLabel": "Agro",
+      "label": "Safra de grãos (LSPA)",
+      "valor": "354,5 Mt",
+      "cor": "up",
+      "sub": "Estimativa da safra 2026 · +0,4% vs. mês anterior · IBGE/LSPA set/26",
+      "ref": "set/26",
+      "pt": 354.5,
+      "acum": null,
+      "flow": false,
+      "unit": "Mt"
+    }
+  ],
+  "pressoes_ipca": {
+    "ref": "set/26",
+    "mes": 9,
+    "ano": 2026,
+    "grupos": [
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": 0.353
+      },
+      {
+        "nome": "Alimentação e bebidas",
+        "ico": "🍎",
+        "val": 0.179
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": 0.179
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.033
+      },
+      {
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.029
+      },
+      {
+        "nome": "Despesas pessoais",
+        "ico": "🎭",
+        "val": 0.027
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.011
+      },
+      {
+        "nome": "Artigos de residência",
+        "ico": "🛋️",
+        "val": 0.009
+      },
+      {
+        "nome": "Educação",
+        "ico": "📚",
+        "val": 0.002
+      }
+    ]
+  },
+  "porter": {
+    "industria": {
+      "rivalidade": 7,
+      "entrantes": 4,
+      "fornecedores": 8,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Importados de baixo valor sem imposto federal elevam a ameaça de substitutos para a indústria leve."
+    },
+    "comercio": {
+      "rivalidade": 8,
+      "entrantes": 7,
+      "fornecedores": 5,
+      "compradores": 8,
+      "substitutos": 7,
+      "nota": "Alta rivalidade e poder dos compradores, com entrada facilitada por novos formatos."
+    },
+    "servicos": {
+      "rivalidade": 7,
+      "entrantes": 6,
+      "fornecedores": 5,
+      "compradores": 6,
+      "substitutos": 6,
+      "nota": "Fragmentado, com rivalidade crescente e diferenciação por especialização."
+    },
+    "agro": {
+      "rivalidade": 6,
+      "entrantes": 3,
+      "fornecedores": 7,
+      "compradores": 7,
+      "substitutos": 3,
+      "nota": "Setor com altas barreiras de entrada e forte influência de fornecedores e compradores globais."
+    },
+    "construcao": {
+      "rivalidade": 6,
+      "entrantes": 5,
+      "fornecedores": 7,
+      "compradores": 6,
+      "substitutos": 3,
+      "nota": "Setor cíclico, com custos de insumos relevantes e menor ameaça de substitutos."
+    },
+    "ecommerce": {
+      "rivalidade": 9,
+      "entrantes": 8,
+      "fornecedores": 6,
+      "compradores": 9,
+      "substitutos": 7,
+      "nota": "Altíssima rivalidade e poder dos compradores, com constante entrada de novos players e modelos."
+    }
+  },
+  "analise": {
+    "panorama": {
+      "acoes": [
+        {
+          "ico": "🏦",
+          "txt": "Selic parada em 13,75%: não conte com juros menores no 1º trimestre."
+        },
+        {
+          "ico": "💱",
+          "txt": "Dólar a R$ 5,51: reajuste tabelas de importados e insumos."
+        },
+        {
+          "ico": "🏭",
+          "txt": "Indústria em queda: ajuste produção à demanda de fim de ano."
+        },
+        {
+          "ico": "🛍️",
+          "txt": "11.11 abre a Black Friday: ative ofertas já nesta semana."
+        },
+        {
+          "ico": "👷",
+          "txt": "Fim da escala 6x1: simule custos de pessoal para 2027."
+        }
+      ]
+    },
+    "setores": {
+      "industria": {
+        "prov": "Quatro quedas em cinco meses: a indústria entra em recessão?",
+        "quote": "Produção industrial caiu 0,8% em setembro, a quarta queda em cinco meses.",
+        "edi": [
+          "A PIM recuou com 17 de 25 ramos em queda e bens de capital em -1,9%, sinal de investimento fraco.",
+          "O PMI de outubro subiu a 46,1, mas segue em contração, e o superávit comercial foi recorde para o mês, puxado pelo petróleo."
+        ],
+        "acoes": [
+          {
+            "ico": "🏭",
+            "txt": "Reduza turnos e estoques onde a demanda caiu."
+          },
+          {
+            "ico": "💱",
+            "txt": "Exportadores: aproveitem o dólar a R$ 5,51."
+          },
+          {
+            "ico": "🔧",
+            "txt": "Adie investimentos em máquinas até o cenário clarear."
+          }
+        ]
+      },
+      "comercio": {
+        "prov": "Juros parados e dólar alto: o Natal vai ser de quê?",
+        "quote": "Copom manteve a Selic em 13,75% e interrompeu o ciclo de cortes.",
+        "edi": [
+          "O BC interrompeu os cortes de juros citando câmbio e inflação, e o Focus elevou o dólar esperado para R$ 5,34.",
+          "Os emplacamentos caíram 4% em outubro, mas o ano segue 12,6% acima de 2025."
+        ],
+        "acoes": [
+          {
+            "ico": "🎄",
+            "txt": "Compre estoque de Natal com cautela cambial."
+          },
+          {
+            "ico": "💳",
+            "txt": "Mantenha crédito seletivo."
+          },
+          {
+            "ico": "🏷️",
+            "txt": "Defina preços de importados com o dólar atual."
+          }
+        ]
+      },
+      "servicos": {
+        "prov": "Emprego desacelera: o pleno emprego chegou ao limite?",
+        "quote": "Caged criou 121,3 mil vagas em setembro, o pior setembro desde 2020.",
+        "edi": [
+          "A criação de vagas caiu cerca de 25% frente a agosto, com os serviços ainda liderando as contratações.",
+          "A construção pediu cinco anos de transição para o fim da escala 6x1, tema que afeta todo o setor de serviços."
+        ],
+        "acoes": [
+          {
+            "ico": "👥",
+            "txt": "Planeje contratações de fim de ano com prudência."
+          },
+          {
+            "ico": "📋",
+            "txt": "Simule o impacto do fim da 6x1 nos turnos."
+          },
+          {
+            "ico": "📊",
+            "txt": "Revise metas de 2027 com PIB de 1,76%."
+          }
+        ]
+      },
+      "agro": {
+        "prov": "Plantio adiantado em MT: a janela do milho safrinha está garantida?",
+        "quote": "Plantio da soja em Mato Grosso chegou perto de 90%.",
+        "edi": [
+          "O avanço acima da média em Mato Grosso favorece o milho segunda safra, e a Conab apontou chuva acelerando o plantio no Centro-Oeste.",
+          "No Sul, o excesso de chuva prejudicou trigo e arroz."
+        ],
+        "acoes": [
+          {
+            "ico": "🌽",
+            "txt": "Garanta sementes e insumos do milho safrinha."
+          },
+          {
+            "ico": "💱",
+            "txt": "Aproveite o dólar alto para vender a próxima safra."
+          },
+          {
+            "ico": "🌧️",
+            "txt": "No Sul, avalie perdas de trigo para seguro."
+          }
+        ]
+      },
+      "construcao": {
+        "prov": "Fim da 6x1 e Selic parada: 2027 ficou mais caro para construir?",
+        "quote": "Construção pede transição de cinco anos para o fim da escala 6x1.",
+        "edi": [
+          "A CBIC entregou 11 pleitos ao Ministério do Trabalho e estima 300 mil contratações necessárias com a escala 5x2.",
+          "O Copom manteve a Selic, interrompendo o ciclo de cortes que vinha aliviando o crédito imobiliário."
+        ],
+        "acoes": [
+          {
+            "ico": "👷",
+            "txt": "Inclua o custo da nova jornada nos orçamentos de 2027."
+          },
+          {
+            "ico": "🏦",
+            "txt": "Antecipe repasses enquanto o funding está disponível."
+          },
+          {
+            "ico": "🧱",
+            "txt": "Compre insumos importados antes de novos repasses cambiais."
+          }
+        ]
+      },
+      "ecommerce": {
+        "prov": "Black Friday começa no 11.11: sua operação aguenta duas semanas de pico?",
+        "quote": "Shopee, Mercado Livre e Magalu somam mais de R$ 125 milhões em cupons.",
+        "edi": [
+          "As plataformas anteciparam as campanhas para o 11.11, e a Shopee terá 30 centros de distribuição operando em novembro e dezembro.",
+          "Com o dólar a R$ 5,51, produtos importados ficam mais caros para o consumidor."
+        ],
+        "acoes": [
+          {
+            "ico": "🗓️",
+            "txt": "Distribua ofertas entre 11.11 e 27/11."
+          },
+          {
+            "ico": "🚚",
+            "txt": "Reforce logística para duas semanas de pico."
+          },
+          {
+            "ico": "💱",
+            "txt": "Reprecifique importados com o dólar atual."
+          }
+        ]
+      }
+    }
+  },
+  "longitudinal": [
+    {
+      "id": "c0ba55f3-3fe8-4165-827b-89019e0349a0",
+      "tipo": "risco",
+      "titulo": "Custo de energia (ANEEL/tarifa)",
+      "dimensao": "A",
+      "setores": [
+        "transversal",
+        "servicos",
+        "comercio",
+        "industria",
+        "agro"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 10.0,
+      "iminencia": 10.0,
+      "ultima_observacao": "Aneel aprova 7,25% na Equatorial Goiás e 1,92% provisório na Neoenergia Brasília.",
+      "periodo_observacao": "2026-W43",
+      "data_identificacao": "2026-05-25",
+      "origem": "real"
+    },
+    {
+      "id": "8a9e8398-e5ea-46ba-bfb6-e38f2dc8aac9",
+      "tipo": "risco",
+      "titulo": "Juros, Selic e crédito",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos",
+        "construcao",
+        "industria",
+        "agro",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 96.8,
+      "severidade": 9.8,
+      "iminencia": 9.0,
+      "ultima_observacao": "Copom mantém Selic em 13,75% em 04/11 e interrompe o ciclo de cortes.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "8efde42b-8518-43b4-83e2-a9d3cfd50439",
+      "tipo": "risco",
+      "titulo": "Safra e agro",
+      "dimensao": "E",
+      "setores": [
+        "agro",
+        "transversal",
+        "industria",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "Plantio da soja em MT perto de 90%; chuva favorece o Centro-Oeste.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "28fdfd33-21e8-4484-80da-d3c58da0d72b",
+      "tipo": "risco",
+      "titulo": "Atividade e indústria (PIM/PMI)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria",
+        "agro",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 95.75,
+      "severidade": 9.5,
+      "iminencia": 9.0,
+      "ultima_observacao": "PIM cai 0,8% em setembro, 4ª queda em cinco meses; PMI de outubro em 46,1.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "0936f489-6f29-449d-bbaf-01646b7acbdc",
+      "tipo": "risco",
+      "titulo": "Câmbio e balança",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "comercio",
+        "industria",
+        "agro",
+        "servicos",
+        "construcao"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Superávit recorde para outubro (US$ 9,32 bi); dólar a R$ 5,51, maior desde dez/2025.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "0c0ff752-5240-4611-a346-53b0e8c9f867",
+      "tipo": "risco",
+      "titulo": "Emprego e renda (CAGED/PNAD)",
+      "dimensao": "S",
+      "setores": [
+        "transversal",
+        "servicos",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 92.75,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Caged cria 121,3 mil vagas em setembro, pior setembro desde 2020.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2026-01-26",
+      "origem": "real"
+    },
+    {
+      "id": "f89c40f5-4951-4e74-885d-fc3c38a68321",
+      "tipo": "risco",
+      "titulo": "Inflação (IPCA/IGP)",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "industria",
+        "comercio",
+        "servicos",
+        "agro",
+        "construcao",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 85.75,
+      "severidade": 7.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Copom projeta IPCA de 5,6% em 2026; Focus eleva IPCA 2027 para 4,76%.",
+      "periodo_observacao": "2026-W45",
+      "data_identificacao": "2025-12-29",
+      "origem": "real"
+    },
+    {
+      "id": "bf589289-a925-4ee4-a6d1-7b4e3ce136fb",
+      "tipo": "risco",
+      "titulo": "Construção e custos",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "transversal",
+        "industria",
+        "agro",
+        "comercio",
+        "servicos",
+        "ecommerce"
+      ],
+      "status": "em_curso",
+      "relevancia": 84.42,
+      "severidade": 9.3,
+      "iminencia": 8.5,
+      "ultima_observacao": "INCC-M sobe 0,35% em outubro; confiança da construção a 90,7.",
+      "periodo_observacao": "2026-W44",
+      "data_identificacao": "2026-01-05",
+      "origem": "real"
+    },
+    {
+      "id": "24441022-20e8-4a69-afed-041851f13279",
+      "tipo": "risco",
+      "titulo": "Cautela do Consumidor e Endividamento Familiar",
+      "dimensao": "S",
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 83.48,
+      "severidade": 9.0,
+      "iminencia": 8.5,
+      "ultima_observacao": "Endividamento das famílias atinge 50,1% da renda; consumo nos lares cai 1,46% em setembro.",
+      "periodo_observacao": "2026-W44",
+      "data_identificacao": "2026-07-01",
+      "origem": "real"
+    }
+  ]
+}
