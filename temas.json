@@ -1,5 +1,5 @@
 {
- "versao": 5,
+ "versao": 6,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -780,7 +780,8 @@
   "talentos": "trabalho",
   "Embraer": "atividade",
   "Ditália": "atividade",
-  "arroba": "agro"
+  "arroba": "agro",
+  "arroz": "agro"
  },
  "leituras": [
   {
@@ -4884,7 +4885,13 @@
    "data": "2026-11-10",
    "semana": "2026-W46",
    "motivo": "palavras novas: Embraer→atividade, Ditália→atividade, arroba→agro"
+  },
+  {
+   "versao": 6,
+   "data": "2026-11-10",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: arroz→agro"
   }
  ],
- "atualizado_em": "2026-11-10T17:49:42.577473+00:00"
+ "atualizado_em": "2026-11-10T18:07:30.822361+00:00"
 }

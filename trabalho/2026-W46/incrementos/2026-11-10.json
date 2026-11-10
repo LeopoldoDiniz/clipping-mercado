@@ -1,28 +1,26 @@
 {
   "clipping": [
-    {"setores": ["transversal"], "titulo": "Ata do Copom sinaliza Selic de 13,75% por mais tempo",
-     "texto": "Ata divulgada em 10/11 confirma pausa unânime com Selic em 13,75%, cita quatro choques que elevaram as projeções de inflação e chama a taxa de substancialmente contracionista.",
-     "palavra": "Copom",
-     "fontes": [{"nome": "Melhor Investimento", "url": "https://melhorinvestimento.net/noticias/ata-copom-selic-1375-novembro-2026"},
-                {"nome": "CNN Brasil", "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-10-novembro-2026/"}]},
-    {"setores": ["industria"], "titulo": "Embraer tem receita recorde, mas lucro ajustado cai 15,6% no 3º trimestre",
-     "texto": "Embraer lucrou R$ 379,8 milhões ajustados no 3T26 (-15,6%); receita subiu 11%, a R$ 12,1 bilhões, com 66 aeronaves entregues e carteira de US$ 35,7 bilhões.",
-     "palavra": "Embraer", "tema": "atividade",
-     "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/mercados/embraer-embj3-resultados-terceiro-trimestre-2026/"},
-                {"nome": "Suno", "url": "https://www.suno.com.br/noticias/embraer-registra-lucro-liquido-milhoes-no-3o-trimestre26-go/"}]},
-    {"setores": ["industria"], "titulo": "Fábrica falida da Ditália vai a leilão por R$ 48 milhões",
-     "texto": "Fábrica de móveis da Ditália, em Monte Belo do Sul (RS), foi a leilão em 10/11 com lance inicial de R$ 48 milhões; falência decretada em junho, dívida de R$ 85 milhões.",
-     "palavra": "Ditália", "tema": "atividade",
-     "fontes": [{"nome": "Agência GBC", "url": "https://agenciagbc.com/2026/11/10/fabrica-de-moveis-no-rs-vai-a-leilao-por-r-48-milhoes-mas-continuara-funcionando-mesmo-apos-falencia/"}]},
-    {"setores": ["agro"], "titulo": "Arroba do boi sobe R$ 5 em Goiás e Mato Grosso",
-     "texto": "Cepea registrou alta de R$ 5 por arroba em Goiânia e Rondonópolis, com negócios entre R$ 360 e R$ 370; oferta restrita alonga escalas de abate para até seis dias.",
-     "palavra": "arroba", "tema": "agro",
-     "fontes": [{"nome": "Canal Rural", "url": "https://www.canalrural.com.br/pecuaria/boi-gordo-sobe-r-5-por-arroba-em-go-e-mt-oferta-restrita-sustenta-precos/"},
-                {"nome": "BRA 1", "url": "https://www.bra1.com.br/agronegocio/id-723714/preco_do_boi_gordo_sobe_r__5_em_goias_e_mato_grosso__diz_cepea"}]}
+    {"setores": ["agro"], "titulo": "Trigo importado tem maior preço desde agosto de 2024",
+     "texto": "Cepea aponta que o preço médio do trigo importado em outubro foi o maior desde agosto de 2024, com safra nacional menor e de qualidade irregular; chuvas no Sul atrasam a colheita.",
+     "palavra": "trigo",
+     "fontes": [{"nome": "Folha Agrícola", "url": "https://folhaagricola.com.br/2026/11/10/trigo-preco-do-trigo-importado-atinge-maior-patamar-em-mais-de-dois-anos/"},
+                {"nome": "BRA 1", "url": "https://www.bra1.com.br/agronegocio/id-723715/trigo_importado_atinge_preco_mais_alto_em_2_anos_por_falha_na_colheita_brasileira"}]},
+    {"setores": ["agro"], "titulo": "Arroz: exportação diária sobe 367% no início de novembro",
+     "texto": "Nos quatro primeiros dias úteis de novembro, a média diária de exportação de arroz em casca subiu 367% sobre novembro de 2025; importação de beneficiado avançou 266,6%.",
+     "palavra": "arroz", "tema": "agro",
+     "fontes": [{"nome": "Portal do Agronegócio", "url": "https://www.portaldoagronegocio.com.br/agricultura/arroz/noticias/arroz-exportacoes-sobem-367-e-importacoes-avancam-266-6-no-inicio-de-novembro"}]},
+    {"setores": ["agro"], "titulo": "Rabobank prevê carne bovina mais escassa e cara em 2027",
+     "texto": "Rabobank projeta produção de carne bovina caindo de 11,3 milhões para cerca de 11 milhões de toneladas em 2027, com retenção de matrizes e consumo per capita de 33,4 para 31,4 kg.",
+     "palavra": "carne",
+     "fontes": [{"nome": "Portal de Doduro", "url": "https://portaldedoduro.com/2026/11/10/menor-oferta-de-animais-deve-pressionar-preco-da-carne-bovina-em-2027/"},
+                {"nome": "Portal do Agronegócio", "url": "https://www.portaldoagronegocio.com.br/gestao-rural/analise-de-mercado/noticias/carne-bovina-mais-escassa-deve-favorecer-frango-e-suinos-em-2027-aponta-rabobank"}]},
+    {"setores": ["agro"], "titulo": "Soja fica de lado com derivados fracos",
+     "texto": "Indicador Cepea/Esalq Paranaguá fechou 9/11 em R$ 158,62 por saca (+0,06%); demanda fraca por farelo e óleo reduz margens de esmagamento e pesa sobre as cotações.",
+     "palavra": "soja",
+     "fontes": [{"nome": "Agrimídia", "url": "https://agrimidia.com.br/suinocultura-industrial/2026/11/10/precos-da-soja-operam-de-lado-no-brasil-com-alerta-climatico-e-demanda-fraca-por-derivados/"}]}
   ],
   "leituras_temas": {
-    "juros": {"tipo": "risco", "status": "em_curso", "texto": "Ata de 10/11 indica Selic de 13,75% por mais tempo, com quatro choques elevando projeções; Focus de 09/11 já vê 13,75% no fim de 2026.", "fontes": ["Copom/BCB", "Focus/BCB"]},
-    "atividade": {"tipo": "risco", "status": "em_curso", "texto": "PIM cai 0,8% em setembro; Embraer tem lucro ajustado 15,6% menor no 3T26 e a falida Ditália vai a leilão por R$ 48 milhões.", "fontes": ["IBGE", "Embraer", "Agência GBC"]}
+    "agro": {"tipo": "risco", "status": "materializado", "texto": "Recuperação judicial no agro sobe 57,5% no 3º tri; trigo importado no maior preço desde ago/2024 e Rabobank vê carne bovina mais escassa em 2027.", "fontes": ["Cepea", "Rabobank"]}
   },
   "novos_temas": []
 }

@@ -1,4 +1,9 @@
 {
   "data": "2026-11-10",
-  "setores": {}
+  "setores": {
+    "agro": [
+      "tema materializou: agro",
+      "4 notícias novas no setor"
+    ]
+  }
 }

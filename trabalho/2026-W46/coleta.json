@@ -313,6 +313,71 @@
           "url": "https://www.bra1.com.br/agronegocio/id-723714/preco_do_boi_gordo_sobe_r__5_em_goias_e_mato_grosso__diz_cepea"
         }
       ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Trigo importado tem maior preço desde agosto de 2024",
+      "texto": "Cepea aponta que o preço médio do trigo importado em outubro foi o maior desde agosto de 2024, com safra nacional menor e de qualidade irregular; chuvas no Sul atrasam a colheita.",
+      "palavra": "trigo",
+      "fontes": [
+        {
+          "nome": "Folha Agrícola",
+          "url": "https://folhaagricola.com.br/2026/11/10/trigo-preco-do-trigo-importado-atinge-maior-patamar-em-mais-de-dois-anos/"
+        },
+        {
+          "nome": "BRA 1",
+          "url": "https://www.bra1.com.br/agronegocio/id-723715/trigo_importado_atinge_preco_mais_alto_em_2_anos_por_falha_na_colheita_brasileira"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arroz: exportação diária sobe 367% no início de novembro",
+      "texto": "Nos quatro primeiros dias úteis de novembro, a média diária de exportação de arroz em casca subiu 367% sobre novembro de 2025; importação de beneficiado avançou 266,6%.",
+      "palavra": "arroz",
+      "tema": "agro",
+      "fontes": [
+        {
+          "nome": "Portal do Agronegócio",
+          "url": "https://www.portaldoagronegocio.com.br/agricultura/arroz/noticias/arroz-exportacoes-sobem-367-e-importacoes-avancam-266-6-no-inicio-de-novembro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Rabobank prevê carne bovina mais escassa e cara em 2027",
+      "texto": "Rabobank projeta produção de carne bovina caindo de 11,3 milhões para cerca de 11 milhões de toneladas em 2027, com retenção de matrizes e consumo per capita de 33,4 para 31,4 kg.",
+      "palavra": "carne",
+      "fontes": [
+        {
+          "nome": "Portal de Doduro",
+          "url": "https://portaldedoduro.com/2026/11/10/menor-oferta-de-animais-deve-pressionar-preco-da-carne-bovina-em-2027/"
+        },
+        {
+          "nome": "Portal do Agronegócio",
+          "url": "https://www.portaldoagronegocio.com.br/gestao-rural/analise-de-mercado/noticias/carne-bovina-mais-escassa-deve-favorecer-frango-e-suinos-em-2027-aponta-rabobank"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Soja fica de lado com derivados fracos",
+      "texto": "Indicador Cepea/Esalq Paranaguá fechou 9/11 em R$ 158,62 por saca (+0,06%); demanda fraca por farelo e óleo reduz margens de esmagamento e pesa sobre as cotações.",
+      "palavra": "soja",
+      "fontes": [
+        {
+          "nome": "Agrimídia",
+          "url": "https://agrimidia.com.br/suinocultura-industrial/2026/11/10/precos-da-soja-operam-de-lado-no-brasil-com-alerta-climatico-e-demanda-fraca-por-derivados/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -590,11 +655,11 @@
         ]
       },
       "agro": {
-        "prov": "Exportação firme e recuperações judiciais em alta: o problema do agro é preço ou dívida?",
+        "prov": "Dívida em alta e oferta curta de trigo e boi: quem compra insumo agro está protegido contra a alta?",
         "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
         "edi": [
-          "Grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano, refletindo endividamento e juros altos.",
-          "No comércio exterior, a exportação de milho acelerou no início de novembro, com ritmo diário 20,1% acima de 2025, e a carne bovina começou o mês perto do ano passado."
+          "O endividamento segue no centro: grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano. A soja ficou de lado, com o indicador Cepea/Esalq Paranaguá a R$ 158,62 por saca em 9/11, pressionada pela demanda fraca por farelo e óleo.",
+          "Do lado da oferta, o trigo importado teve em outubro o maior preço médio desde agosto de 2024, com safra nacional menor e chuvas no Sul atrasando a colheita. Na pecuária, a arroba subiu R$ 5 em GO e MT e o Rabobank projeta produção de carne bovina caindo para cerca de 11 milhões de toneladas em 2027. A exportação de milho acelerou 20,1% no ritmo diário e a de arroz em casca, 367%."
         ],
         "acoes": [
           {
@@ -602,8 +667,12 @@
             "txt": "Renegocie dívidas rurais antes do vencimento da safra."
           },
           {
-            "ico": "🌽",
-            "txt": "Aproveite o ritmo forte de exportação de milho para vender estoques."
+            "ico": "🌾",
+            "txt": "Moinhos e panificação: trave preço e volume de trigo para o 1º trimestre."
+          },
+          {
+            "ico": "🥩",
+            "txt": "Frigoríficos e varejo: contrate boi e carne a prazo antes da escassez de 2027."
           },
           {
             "ico": "🤝",
@@ -689,10 +758,12 @@
     "agro": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Recuperação judicial no agro sobe 57,5% no 3º trimestre; exportação de milho acelera em novembro.",
+      "texto": "Recuperação judicial no agro sobe 57,5% no 3º tri; trigo importado no maior preço desde ago/2024 e Rabobank vê carne bovina mais escassa em 2027.",
       "fontes": [
         "RCN67",
-        "Secex"
+        "Secex",
+        "Cepea",
+        "Rabobank"
       ],
       "materializado": true
     },

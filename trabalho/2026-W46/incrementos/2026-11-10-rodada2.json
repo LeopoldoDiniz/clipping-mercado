@@ -1,0 +1,28 @@
+{
+  "clipping": [
+    {"setores": ["transversal"], "titulo": "Ata do Copom sinaliza Selic de 13,75% por mais tempo",
+     "texto": "Ata divulgada em 10/11 confirma pausa unânime com Selic em 13,75%, cita quatro choques que elevaram as projeções de inflação e chama a taxa de substancialmente contracionista.",
+     "palavra": "Copom",
+     "fontes": [{"nome": "Melhor Investimento", "url": "https://melhorinvestimento.net/noticias/ata-copom-selic-1375-novembro-2026"},
+                {"nome": "CNN Brasil", "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-10-novembro-2026/"}]},
+    {"setores": ["industria"], "titulo": "Embraer tem receita recorde, mas lucro ajustado cai 15,6% no 3º trimestre",
+     "texto": "Embraer lucrou R$ 379,8 milhões ajustados no 3T26 (-15,6%); receita subiu 11%, a R$ 12,1 bilhões, com 66 aeronaves entregues e carteira de US$ 35,7 bilhões.",
+     "palavra": "Embraer", "tema": "atividade",
+     "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/mercados/embraer-embj3-resultados-terceiro-trimestre-2026/"},
+                {"nome": "Suno", "url": "https://www.suno.com.br/noticias/embraer-registra-lucro-liquido-milhoes-no-3o-trimestre26-go/"}]},
+    {"setores": ["industria"], "titulo": "Fábrica falida da Ditália vai a leilão por R$ 48 milhões",
+     "texto": "Fábrica de móveis da Ditália, em Monte Belo do Sul (RS), foi a leilão em 10/11 com lance inicial de R$ 48 milhões; falência decretada em junho, dívida de R$ 85 milhões.",
+     "palavra": "Ditália", "tema": "atividade",
+     "fontes": [{"nome": "Agência GBC", "url": "https://agenciagbc.com/2026/11/10/fabrica-de-moveis-no-rs-vai-a-leilao-por-r-48-milhoes-mas-continuara-funcionando-mesmo-apos-falencia/"}]},
+    {"setores": ["agro"], "titulo": "Arroba do boi sobe R$ 5 em Goiás e Mato Grosso",
+     "texto": "Cepea registrou alta de R$ 5 por arroba em Goiânia e Rondonópolis, com negócios entre R$ 360 e R$ 370; oferta restrita alonga escalas de abate para até seis dias.",
+     "palavra": "arroba", "tema": "agro",
+     "fontes": [{"nome": "Canal Rural", "url": "https://www.canalrural.com.br/pecuaria/boi-gordo-sobe-r-5-por-arroba-em-go-e-mt-oferta-restrita-sustenta-precos/"},
+                {"nome": "BRA 1", "url": "https://www.bra1.com.br/agronegocio/id-723714/preco_do_boi_gordo_sobe_r__5_em_goias_e_mato_grosso__diz_cepea"}]}
+  ],
+  "leituras_temas": {
+    "juros": {"tipo": "risco", "status": "em_curso", "texto": "Ata de 10/11 indica Selic de 13,75% por mais tempo, com quatro choques elevando projeções; Focus de 09/11 já vê 13,75% no fim de 2026.", "fontes": ["Copom/BCB", "Focus/BCB"]},
+    "atividade": {"tipo": "risco", "status": "em_curso", "texto": "PIM cai 0,8% em setembro; Embraer tem lucro ajustado 15,6% menor no 3T26 e a falida Ditália vai a leilão por R$ 48 milhões.", "fontes": ["IBGE", "Embraer", "Agência GBC"]}
+  },
+  "novos_temas": []
+}

@@ -1,40 +1,14 @@
-{
-  "setores": {
-    "comercio": {
-      "prov": "Com o calote do consumidor levando varejistas à recuperação judicial, quanto do seu caixa depende de quem pode não pagar?",
-      "quote": "O varejo caiu 4,0% real em outubro, o 17º mês seguido de queda, segundo o ICVA da Cielo.",
-      "edi": ["O ICVA mostrou nova queda real em outubro, com bens duráveis em -8,9% e serviços em -8,5%; a Cielo descreve um consumidor mais seletivo, que adia compras.",
-              "Levantamento do Monitor RGF-BizDoc aponta 1.024 varejistas em recuperação judicial em setembro, com a inadimplência dos clientes presente em 55% dos pedidos."],
-      "acoes": [{"ico": "💳", "txt": "Reduza vendas a prazo para clientes sem histórico; prefira Pix e cartão."},
-                {"ico": "📦", "txt": "Evite estoques de duráveis, o segmento que mais cai."},
-                {"ico": "🧾", "txt": "Monitore a saúde financeira de fornecedores e parceiros do varejo."}]
-    },
-    "agro": {
-      "prov": "Exportação firme e recuperações judiciais em alta: o problema do agro é preço ou dívida?",
-      "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
-      "edi": ["Grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano, refletindo endividamento e juros altos.",
-              "No comércio exterior, a exportação de milho acelerou no início de novembro, com ritmo diário 20,1% acima de 2025, e a carne bovina começou o mês perto do ano passado."],
-      "acoes": [{"ico": "🏦", "txt": "Renegocie dívidas rurais antes do vencimento da safra."},
-                {"ico": "🌽", "txt": "Aproveite o ritmo forte de exportação de milho para vender estoques."},
-                {"ico": "🤝", "txt": "Exija garantias em vendas a prazo para produtores de grãos."}]
-    },
-    "ecommerce": {
-      "prov": "O online recuou em outubro: o 11.11 vai compensar ou apenas antecipar compras?",
-      "quote": "O e-commerce recuou 0,5% nominal em outubro, enquanto a loja física subiu 1,9%, segundo a Cielo.",
-      "edi": ["A Neotrust projeta R$ 3,17 bilhões no 11.11, alta de 21%, a maior data do ano depois da Black Friday.",
-              "Nubank e Shopee fecharam parceria de pagamentos para a data, com cupons de até 50% para clientes do banco."],
-      "acoes": [{"ico": "🗓️", "txt": "Concentre ofertas no 11.11 e prepare a segunda onda para 27/11."},
-                {"ico": "💳", "txt": "Ofereça condições de pagamento parceladas sem juros em itens de maior tíquete."},
-                {"ico": "📊", "txt": "Compare o resultado do 11.11 com outubro para ajustar a Black Friday."}]
-    },
-    "construcao": {
-      "prov": "Preço de material variando 50% na mesma cidade: você está comprando bem?",
-      "quote": "Procon de Maringá encontrou variação de até 50,5% nos preços de materiais de construção.",
-      "edi": ["Em Belo Horizonte, a Câmara mudou o cálculo do ISS da construção civil, restringindo deduções, sem estimativa de impacto nos preços.",
-              "Em Fortaleza, a União destinou terreno de 55,6 mil m² para 550 moradias do MCMV – Entidades."],
-      "acoes": [{"ico": "🧱", "txt": "Faça cotação ampla de materiais: a dispersão de preços é alta."},
-                {"ico": "🧾", "txt": "Em BH, recalcule o ISS das obras com as novas regras."},
-                {"ico": "🏠", "txt": "Acompanhe chamamentos do MCMV – Entidades em terrenos da União."}]
-    }
-  }
-}
+{"setores": {"agro": {
+  "prov": "Dívida em alta e oferta curta de trigo e boi: quem compra insumo agro está protegido contra a alta?",
+  "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
+  "edi": [
+    "O endividamento segue no centro: grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano. A soja ficou de lado, com o indicador Cepea/Esalq Paranaguá a R$ 158,62 por saca em 9/11, pressionada pela demanda fraca por farelo e óleo.",
+    "Do lado da oferta, o trigo importado teve em outubro o maior preço médio desde agosto de 2024, com safra nacional menor e chuvas no Sul atrasando a colheita. Na pecuária, a arroba subiu R$ 5 em GO e MT e o Rabobank projeta produção de carne bovina caindo para cerca de 11 milhões de toneladas em 2027. A exportação de milho acelerou 20,1% no ritmo diário e a de arroz em casca, 367%."
+  ],
+  "acoes": [
+    {"ico": "🏦", "txt": "Renegocie dívidas rurais antes do vencimento da safra."},
+    {"ico": "🌾", "txt": "Moinhos e panificação: trave preço e volume de trigo para o 1º trimestre."},
+    {"ico": "🥩", "txt": "Frigoríficos e varejo: contrate boi e carne a prazo antes da escassez de 2027."},
+    {"ico": "🤝", "txt": "Exija garantias em vendas a prazo para produtores de grãos."}
+  ]
+}}}

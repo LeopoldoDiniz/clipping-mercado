@@ -2,7 +2,7 @@
   "periodo": "2026-W46",
   "label": "Semana 46 · Novembro 2026",
   "status": "em_andamento",
-  "gerado_em": "2026-11-10T17:52:18.995772",
+  "gerado_em": "2026-11-10T18:09:04.756674",
   "editorial": {
     "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
     "gerado_em": "2026-11-10T14:49:32.685604",
@@ -300,6 +300,66 @@
         {
           "nome": "BRA 1",
           "url": "https://www.bra1.com.br/agronegocio/id-723714/preco_do_boi_gordo_sobe_r__5_em_goias_e_mato_grosso__diz_cepea"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Trigo importado tem maior preço desde agosto de 2024",
+      "texto": "Cepea aponta que o preço médio do trigo importado em outubro foi o maior desde agosto de 2024, com safra nacional menor e de qualidade irregular; chuvas no Sul atrasam a colheita.",
+      "fontes": [
+        {
+          "nome": "Folha Agrícola",
+          "url": "https://folhaagricola.com.br/2026/11/10/trigo-preco-do-trigo-importado-atinge-maior-patamar-em-mais-de-dois-anos/"
+        },
+        {
+          "nome": "BRA 1",
+          "url": "https://www.bra1.com.br/agronegocio/id-723715/trigo_importado_atinge_preco_mais_alto_em_2_anos_por_falha_na_colheita_brasileira"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arroz: exportação diária sobe 367% no início de novembro",
+      "texto": "Nos quatro primeiros dias úteis de novembro, a média diária de exportação de arroz em casca subiu 367% sobre novembro de 2025; importação de beneficiado avançou 266,6%.",
+      "fontes": [
+        {
+          "nome": "Portal do Agronegócio",
+          "url": "https://www.portaldoagronegocio.com.br/agricultura/arroz/noticias/arroz-exportacoes-sobem-367-e-importacoes-avancam-266-6-no-inicio-de-novembro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Rabobank prevê carne bovina mais escassa e cara em 2027",
+      "texto": "Rabobank projeta produção de carne bovina caindo de 11,3 milhões para cerca de 11 milhões de toneladas em 2027, com retenção de matrizes e consumo per capita de 33,4 para 31,4 kg.",
+      "fontes": [
+        {
+          "nome": "Portal de Doduro",
+          "url": "https://portaldedoduro.com/2026/11/10/menor-oferta-de-animais-deve-pressionar-preco-da-carne-bovina-em-2027/"
+        },
+        {
+          "nome": "Portal do Agronegócio",
+          "url": "https://www.portaldoagronegocio.com.br/gestao-rural/analise-de-mercado/noticias/carne-bovina-mais-escassa-deve-favorecer-frango-e-suinos-em-2027-aponta-rabobank"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Soja fica de lado com derivados fracos",
+      "texto": "Indicador Cepea/Esalq Paranaguá fechou 9/11 em R$ 158,62 por saca (+0,06%); demanda fraca por farelo e óleo reduz margens de esmagamento e pesa sobre as cotações.",
+      "fontes": [
+        {
+          "nome": "Agrimídia",
+          "url": "https://agrimidia.com.br/suinocultura-industrial/2026/11/10/precos-da-soja-operam-de-lado-no-brasil-com-alerta-climatico-e-demanda-fraca-por-derivados/"
         }
       ]
     }
@@ -685,11 +745,11 @@
         ]
       },
       "agro": {
-        "prov": "Exportação firme e recuperações judiciais em alta: o problema do agro é preço ou dívida?",
+        "prov": "Dívida em alta e oferta curta de trigo e boi: quem compra insumo agro está protegido contra a alta?",
         "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
         "edi": [
-          "Grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano, refletindo endividamento e juros altos.",
-          "No comércio exterior, a exportação de milho acelerou no início de novembro, com ritmo diário 20,1% acima de 2025, e a carne bovina começou o mês perto do ano passado."
+          "O endividamento segue no centro: grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano. A soja ficou de lado, com o indicador Cepea/Esalq Paranaguá a R$ 158,62 por saca em 9/11, pressionada pela demanda fraca por farelo e óleo.",
+          "Do lado da oferta, o trigo importado teve em outubro o maior preço médio desde agosto de 2024, com safra nacional menor e chuvas no Sul atrasando a colheita. Na pecuária, a arroba subiu R$ 5 em GO e MT e o Rabobank projeta produção de carne bovina caindo para cerca de 11 milhões de toneladas em 2027. A exportação de milho acelerou 20,1% no ritmo diário e a de arroz em casca, 367%."
         ],
         "acoes": [
           {
@@ -697,8 +757,12 @@
             "txt": "Renegocie dívidas rurais antes do vencimento da safra."
           },
           {
-            "ico": "🌽",
-            "txt": "Aproveite o ritmo forte de exportação de milho para vender estoques."
+            "ico": "🌾",
+            "txt": "Moinhos e panificação: trave preço e volume de trigo para o 1º trimestre."
+          },
+          {
+            "ico": "🥩",
+            "txt": "Frigoríficos e varejo: contrate boi e carne a prazo antes da escassez de 2027."
           },
           {
             "ico": "🤝",
@@ -765,33 +829,12 @@
       "relevancia": 100.0,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "Recuperação judicial no agro sobe 57,5% no 3º trimestre; exportação de milho acelera em novembro.",
+      "ultima_observacao": "Recuperação judicial no agro sobe 57,5% no 3º tri; trigo importado no maior preço desde ago/2024 e Rabobank vê carne bovina mais escassa em 2027.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "esquentando",
-      "noticias_semana": 4
-    },
-    {
-      "id": "tema-ecommerce",
-      "tipo": "oportunidade",
-      "titulo": "E-commerce, marketplaces e importados",
-      "dimensao": "L",
-      "setores": [
-        "ecommerce",
-        "comercio",
-        "servicos"
-      ],
-      "status": "monitorar",
-      "relevancia": 82.5,
-      "severidade": 9.0,
-      "iminencia": 7.5,
-      "ultima_observacao": "Abiacom projeta R$ 16,6 bi no e-commerce na semana da Black Friday, alta de 24,4%.",
-      "periodo_observacao": "2026-W43",
-      "data_identificacao": "2026-W22",
-      "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 3
+      "noticias_semana": 8
     },
     {
       "id": "tema-consumo",
@@ -804,15 +847,36 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 81.2,
-      "severidade": 8.0,
-      "iminencia": 5.0,
+      "relevancia": 51.2,
+      "severidade": 5.7,
+      "iminencia": 2.5,
       "ultima_observacao": "ICVA cai 4,0% real em outubro, 17º mês seguido; calote lidera as causas de recuperação judicial de 1.024 varejistas.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W03",
       "origem": "real",
       "direcao": "estável",
       "noticias_semana": 2
+    },
+    {
+      "id": "tema-ecommerce",
+      "tipo": "oportunidade",
+      "titulo": "E-commerce, marketplaces e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "servicos"
+      ],
+      "status": "monitorar",
+      "relevancia": 51.0,
+      "severidade": 6.4,
+      "iminencia": 3.8,
+      "ultima_observacao": "Abiacom projeta R$ 16,6 bi no e-commerce na semana da Black Friday, alta de 24,4%.",
+      "periodo_observacao": "2026-W43",
+      "data_identificacao": "2026-W22",
+      "origem": "real",
+      "direcao": "estável",
+      "noticias_semana": 3
     },
     {
       "id": "tema-atividade",
@@ -824,14 +888,14 @@
         "comercio"
       ],
       "status": "em_curso",
-      "relevancia": 70.0,
-      "severidade": 9.0,
-      "iminencia": 5.0,
+      "relevancia": 44.5,
+      "severidade": 6.4,
+      "iminencia": 2.5,
       "ultima_observacao": "PIM cai 0,8% em setembro; Embraer tem lucro ajustado 15,6% menor no 3T26 e a falida Ditália vai a leilão por R$ 48 milhões.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W02",
       "origem": "real",
-      "direcao": "estável",
+      "direcao": "esfriando",
       "noticias_semana": 2
     },
     {
@@ -844,14 +908,14 @@
         "comercio"
       ],
       "status": "em_curso",
-      "relevancia": 55.0,
-      "severidade": 6.0,
-      "iminencia": 5.0,
+      "relevancia": 34.0,
+      "severidade": 4.3,
+      "iminencia": 2.5,
       "ultima_observacao": "INCC-M sobe 0,35% em outubro; confiança da construção a 90,7.",
       "periodo_observacao": "2026-W44",
       "data_identificacao": "2026-W02",
       "origem": "real",
-      "direcao": "esquentando",
+      "direcao": "estável",
       "noticias_semana": 2
     },
     {
@@ -865,14 +929,14 @@
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 55.0,
-      "severidade": 6.0,
-      "iminencia": 5.0,
+      "relevancia": 34.0,
+      "severidade": 4.3,
+      "iminencia": 2.5,
       "ultima_observacao": "Ata de 10/11 indica Selic de 13,75% por mais tempo, com quatro choques elevando projeções; Focus de 09/11 já vê 13,75% no fim de 2026.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W01",
       "origem": "real",
-      "direcao": "esquentando",
+      "direcao": "estável",
       "noticias_semana": 2
     },
     {
@@ -885,9 +949,9 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 37.5,
-      "severidade": 5.0,
-      "iminencia": 2.5,
+      "relevancia": 24.0,
+      "severidade": 3.6,
+      "iminencia": 1.2,
       "ultima_observacao": "Superávit recorde para outubro (US$ 9,32 bi); dólar a R$ 5,51, maior desde dez/2025.",
       "periodo_observacao": "2026-W45",
       "data_identificacao": "2026-W01",
@@ -906,9 +970,9 @@
         "industria"
       ],
       "status": "monitorar",
-      "relevancia": 37.5,
-      "severidade": 5.0,
-      "iminencia": 2.5,
+      "relevancia": 24.0,
+      "severidade": 3.6,
+      "iminencia": 1.2,
       "ultima_observacao": "Bolsa sobe 7,85% e dólar cai 4,12% após o 1º turno; preços dependem do resultado de 25/10.",
       "periodo_observacao": "2026-W41",
       "data_identificacao": "2026-W14",
@@ -917,25 +981,26 @@
       "noticias_semana": 1
     },
     {
-      "id": "tema-exterior",
+      "id": "tema-inflacao",
       "tipo": "risco",
-      "titulo": "Comércio exterior e tarifas",
+      "titulo": "Inflação e preços",
       "dimensao": "E",
       "setores": [
-        "agro",
-        "industria",
-        "transversal"
+        "transversal",
+        "comercio",
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 22.5,
-      "severidade": 2.0,
-      "iminencia": 2.5,
-      "ultima_observacao": "Brasil e EUA criam grupo específico para negociar o tarifaço no G20.",
-      "periodo_observacao": "2026-W40",
+      "relevancia": 14.5,
+      "severidade": 2.9,
+      "iminencia": 0.0,
+      "ultima_observacao": "Copom projeta IPCA de 5,6% em 2026; Focus eleva IPCA 2027 para 4,76%.",
+      "periodo_observacao": "2026-W45",
       "data_identificacao": "2026-W01",
       "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 1
+      "direcao": "esfriando",
+      "noticias_semana": 0
     }
   ]
 }
