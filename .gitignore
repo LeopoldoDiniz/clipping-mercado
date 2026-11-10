@@ -9,3 +9,7 @@ tools/.body_*
 tools/_cands.json
 tools/backfill_report.json
 tools/verif_report.json
+# trabalho/<semana>/ é VERSIONADO (a rotina na nuvem continua de um dia para o outro);
+# só os prompts e o backup da memória ficam fora.
+trabalho/**/prompt_*.md
+trabalho/**/sinais_antes.json

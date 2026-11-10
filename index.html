@@ -871,9 +871,12 @@ function periodScope(){
 }
 // Badge discreta: aparece quando o período selecionado (mês/tri/sem/ano) ainda NÃO fechou pelo calendário.
 // Semana já é um ponto fechado, então não recebe badge. Auto pela seleção — nenhum controle novo.
+let STATUS={}; // status por semana: "em_andamento" (prévia diária) ou "fechada"
 function periodoAbertoBadge(){
   const g=state.gran;
-  if(g==="semana")return "";
+  if(g==="semana"){const w=state.picks[0];if(STATUS[w]!=="em_andamento")return "";
+    const tip="Semana corrente: atualizada todos os dias e consolidada na segunda-feira. O editorial é a perspectiva publicada no fechamento da semana anterior.";
+    return ` <span class="per-open" title="${tip}">◔ em andamento</span>`;}
   const abertos=granItems(g).filter(i=>state.picks.includes(i.id)&&i.parcial);
   if(!abertos.length)return "";
   const GN={mes:"mês",trimestre:"trimestre",semestre:"semestre",ano:"ano"};
@@ -1992,6 +1995,7 @@ function previaSetor(){
 function applyData(sel,allData,metas){
   WEEKS=metas;WMETA=Object.fromEntries(WEEKS.map(w=>[w.k,w]));CHRONO=WEEKS.slice().reverse();
   longByWeek={};clipByWeek={};allData.forEach(d=>{longByWeek[d._k]=d.longitudinal||[];clipByWeek[d._k]=(d.clipping||[]).map(c=>{const fs=c.fontes||[];const u=fs.filter(f=>f.url&&f.ok!==false)[0]||fs.find(f=>f.url);return {t:c.titulo,txt:c.texto||"",setores:(c.setores||[]).length?c.setores:["transversal"],url:u?u.url:null};});});
+  STATUS={};allData.forEach(d=>{STATUS[d._k]=d.status||"fechada";});
   KPIS=adaptKpis(sel.kpis||[],allData);
   KPIS_SETOR=adaptKpisSetor(sel.kpis_setoriais||[],allData);
   KPIMAP=Object.fromEntries(KPIS.concat(KPIS_SETOR).map(k=>[k.id,k]));

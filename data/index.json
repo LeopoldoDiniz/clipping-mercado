@@ -4,7 +4,8 @@
       "chave": "2026-W45",
       "label": "Semana 45 · Novembro 2026",
       "arquivo": "2026-W45.json",
-      "ordem": 202645
+      "ordem": 202645,
+      "status": "fechada"
     },
     {
       "chave": "2026-W44",
@@ -271,5 +272,5 @@
       "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-11-10T14:01:54.625600"
+  "atualizado_em": "2026-11-10T14:24:17.653778"
 }

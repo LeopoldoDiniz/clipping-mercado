@@ -223,10 +223,13 @@ def _rel_date(y, m, add_m, day):
 
 
 def _pick_mensal(serie, ref, add_m, day):
-    """Último obs mensal já DIVULGADO até a data ref (respeita o calendário)."""
+    """Último obs mensal já DIVULGADO até a data ref (respeita o calendário).
+    Com ref >= hoje (rodada diária), a presença do dado na API já prova a divulgação:
+    o calendário estimado só vale para semanas passadas (backfill)."""
     best = None
+    ao_vivo = ref >= date.today()
     for (y, m, val, per) in serie:
-        if _rel_date(y, m, add_m, day) <= ref:
+        if ao_vivo or _rel_date(y, m, add_m, day) <= ref:
             if best is None or (y, m) > (best[0], best[1]):
                 best = (y, m, val, per)
     return best
@@ -309,7 +312,7 @@ def coletar_kpis(ref=None):
                          "fonte": "BCB/PTAX"}
 
     # IPCA (mês + acum. ano + 12m)
-    ip = _pick_mensal(ipca_m, ref, 1, 10) if ipca_m else None
+    ip = _pick_mensal(ipca_m, ref, 1, 9) if ipca_m else None
     if ip:
         y, m, val = ip[0], ip[1], ip[2]
         prev = next((v for (yy, mm, v, *_ ) in reversed(ipca_m)
@@ -384,7 +387,7 @@ def coletar_kpis(ref=None):
                          "acum_ano": None if acum is None else round(acum, 2)}
 
     # PIM (produção física mês + acum. ano)
-    pi = _pick_mensal(pim_m, ref, 2, 4) if pim_m else None
+    pi = _pick_mensal(pim_m, ref, 2, 2) if pim_m else None
     if pi:
         y, m, val, _ = pi
         prev = next((v for (yy, mm, v, *_ ) in reversed(pim_m) if (yy, mm) < (y, m)), None)
@@ -480,7 +483,7 @@ def coletar_ipca_grupos(ref=None):
             gmap[key][g]["peso"] = val
         else:
             gmap[key][g]["var"] = val
-    disp = [k for k in meses if _rel_date(k[0], k[1], 1, 10) <= ref]
+    disp = [k for k in meses if (ref >= date.today() or _rel_date(k[0], k[1], 1, 9) <= ref)]
     if not disp:
         return None
     ano, mes = max(disp)

@@ -629,34 +629,45 @@ def montar_prompt_editorial(mem, chave, label, dados):
                 if ctx["editorial_anterior"] else
                 "Esta é a primeira edição do editorial — estabeleça a leitura de base do cenário.")
 
-    prompt = f"""Você é o analista-chefe de inteligência de mercado da Nexos, escrevendo o
-EDITORIAL DA SEMANA para {label}. Este texto é a leitura estratégica que sintetiza
-tudo o que o sistema sabe — não apenas os dados desta semana, mas a memória acumulada
-de riscos e oportunidades ao longo das semanas.
+    fn_ag = os.path.join(_pasta(chave), "agenda.md")
+    agenda_txt = (open(fn_ag, encoding="utf-8").read().strip() if os.path.exists(fn_ag)
+                  else "(agenda não informada — use apenas datas de divulgação já confirmadas nos dados acima)")
 
-# INDICADORES DA SEMANA
+    prompt = f"""Você é o analista-chefe de inteligência de mercado da Nexos. Escreva o EDITORIAL que
+ABRE a próxima semana, a partir do fechamento de {label}. O editorial é PREDITIVO: o leitor
+quer saber o que esperar e como se posicionar — a síntese do que passou é secundária.
+
+# INDICADORES (fechamento de {label})
 {kpis_txt}
 
-# MEMÓRIA LONGITUDINAL — sinais acumulados e sua evolução no tempo
+# MEMÓRIA LONGITUDINAL — sinais acumulados e sua evolução no tempo (base das projeções)
 {traj_txt}
 
 # MUDANÇAS RELEVANTES NESTE CICLO
 - Sinais já materializados (o previsto ocorreu): {', '.join(ctx['materializados']) or 'nenhum'}
 - Novos sinais identificados esta semana: {', '.join(ctx['novos']) or 'nenhum'}
 
+# AGENDA DAS PRÓXIMAS SEMANAS (divulgações e eventos com data marcada)
+{agenda_txt}
+
 # CONTINUIDADE NARRATIVA
 {cont_txt}
 
 # COMO ESCREVER
-- Linguagem FORMAL, mas SEM jargão técnico. Um empresário de PME deve entender sem dicionário.
-  Se precisar citar um termo técnico (ex: SELIC), explique em poucas palavras na própria frase.
-- DENSIDADE é a regra: texto CORRIDO de 280 a 360 palavras, analítico e sem listas. Cada frase carrega
-  informação (número, evento, fonte) — nada de generalidade, adjetivo vazio ou enchimento.
-- Cubra, nesta ordem e ancorado nos dados: (1) o quadro macro da semana (Selic, IPCA, câmbio, atividade)
-  com os números-chave; (2) o que MUDOU frente às semanas anteriores (novos sinais, o que materializou);
-  (3) uma leitura enxuta por bloco setorial (indústria; comércio e serviços; agro; construção; e-commerce),
-  citando o fato concreto de cada um; (4) o ponto de atenção para as próximas semanas. Priorize o acionável.
-- Seja específico e ancorado nos dados e sinais fornecidos. Nada de generalidades vagas.
+- ESTRUTURA OBRIGATÓRIA, nesta ordem, em texto corrido de 280 a 360 palavras, sem listas:
+  (1) PERSPECTIVA — abre o texto: o que esperar nas próximas semanas. Cenário principal e riscos,
+      ancorados na trajetória dos sinais (relevância subindo/caindo, iminência) e na agenda acima.
+      Cite as datas que importam. É a maior parte do texto.
+  (2) POR SETOR — uma projeção curta por bloco (indústria; comércio e serviços; agro; construção;
+      e-commerce): o que deve acontecer e o que fazer.
+  (3) RESUMO — fecha o texto: em duas ou três frases, o que aconteceu na semana que passou, com os
+      números-chave.
+- Toda PROJEÇÃO é marcada como tal ("a tendência é", "o cenário mais provável", "se X, então Y")
+  e se apoia num dado ou sinal citado. Nunca apresente previsão como fato consumado.
+- Se o editorial anterior fez uma projeção, diga em uma frase se ela se confirmou ou não.
+- Linguagem FORMAL, mas SEM jargão: um empresário de PME deve entender sem dicionário. Termo técnico
+  (ex.: Selic) é explicado em poucas palavras na própria frase.
+- Densidade: cada frase carrega informação (número, data, evento, fonte). Nada de enchimento.
 - Tom: sóbrio, seguro, de quem acompanha o cenário há tempo. Português do Brasil.
 
 Responda SOMENTE com o texto do editorial, sem título, sem aspas, sem markdown."""
@@ -753,8 +764,9 @@ def reconciliar_kpis(kpis, chave):
     return saida
 
 
-def gerar_dados_portal(dados, mem, chave, label, editorial=None):
-    """Gera data/<periodo>.json que o frontend consome."""
+def gerar_dados_portal(dados, mem, chave, label, editorial=None, status="fechada", ref_kpi=None):
+    """Gera data/<periodo>.json que o frontend consome.
+    status: "fechada" (memória consolidada) ou "em_andamento" (prévia diária)."""
     # os sinais mais relevantes para a revisão longitudinal do portal (desempate fixo)
     top = ranquear(sinais_ativos(mem))[:9]
 
@@ -780,7 +792,7 @@ def gerar_dados_portal(dados, mem, chave, label, editorial=None):
     # BLINDAGEM DE ACURÁCIA: a IA busca, mas os NÚMEROS macro são validados/
     # sobrepostos pelos valores OFICIAIS (BCB/IBGE) válidos na sexta desta semana,
     # já com acumulado no ano. Se a API oficial falhar, mantém o valor da coleta.
-    ref_kpi = _sexta_da_chave(chave)
+    ref_kpi = ref_kpi or _sexta_da_chave(chave)
     kpis_validados = validar_kpis(dados.get("kpis", []), ref=ref_kpi)
     # ponto 1a — herança determinística caso algum indicador não venha da API oficial
     kpis_final = reconciliar_kpis(kpis_validados, chave)
@@ -822,7 +834,7 @@ def gerar_dados_portal(dados, mem, chave, label, editorial=None):
         print(f"[ecommerce] indicador de mercado indisponível nesta rodada: {e}")
 
     saida = {
-        "periodo": chave, "label": label,
+        "periodo": chave, "label": label, "status": status,
         "gerado_em": datetime.utcnow().isoformat(),
         "editorial": editorial,  # análise longitudinal automática (pode ser None)
         "clipping": normalizar_clipping(dados.get("clipping", [])),
@@ -877,7 +889,8 @@ def gerar_dados_portal(dados, mem, chave, label, editorial=None):
     except ValueError:
         ordem = 0
 
-    entrada = {"chave": chave, "label": label, "arquivo": f"{chave}.json", "ordem": ordem}
+    entrada = {"chave": chave, "label": label, "arquivo": f"{chave}.json", "ordem": ordem,
+               "status": status}
     # remove entrada antiga desta mesma semana (se for repetição) e insere a nova
     indice["semanas"] = [s for s in indice.get("semanas", []) if s.get("chave") != chave]
     indice["semanas"].append(entrada)
@@ -891,8 +904,13 @@ def gerar_dados_portal(dados, mem, chave, label, editorial=None):
 # ─────────────────────────────────────────────────────────
 # ENTRADA: preparar → (Claude: coleta.json) → processar → (Claude: editorial.txt) → publicar
 # ─────────────────────────────────────────────────────────
+TRAB = "trabalho"          # a partir da rotina diária: pasta VERSIONADA (a nuvem continua de onde parou)
+PRIMEIRA_SEMANA_DIARIA = "2026-W46"
+
+
 def _pasta(chave):
-    p = os.path.join(RAW, chave)
+    base = TRAB if _ordem_chave(chave) >= _ordem_chave(PRIMEIRA_SEMANA_DIARIA) else RAW
+    p = os.path.join(base, chave)
     os.makedirs(p, exist_ok=True)
     return p
 
@@ -1008,20 +1026,258 @@ def cmd_publicar(chave, label):
     if not editorial:
         print("[motor] aviso: sem editorial nesta edição (segue sem bloquear).")
 
-    gerar_dados_portal(dados, mem, chave, label, editorial)
+    # semanas da rotina diária fecham com referência no domingo (órgãos publicam no fim de semana)
+    ref = (_domingo_da_chave(chave) if _ordem_chave(chave) >= _ordem_chave(PRIMEIRA_SEMANA_DIARIA)
+           else None)
+    gerar_dados_portal(dados, mem, chave, label, editorial, status="fechada", ref_kpi=ref)
     print(f"[motor] Publicado: data/{chave}.json (+ index.json/ultimo.json). Concluído.")
+
+
+# ─────────────────────────────────────────────────────────
+# ROTINA DIÁRIA (v4): atualizar → (análise, se houver gatilho) → previa;  fechar na segunda
+#   - a memória de sinais NÃO é tocada no dia a dia; é consolidada uma vez, no 'fechar'
+#   - gatilhos para reescrever análise são REGRA DE CÓDIGO (não julgamento da IA)
+# ─────────────────────────────────────────────────────────
+GATILHO_NOTICIAS_SETOR = 3
+_KPI_SETOR = {"selic": "panorama", "ipca": "panorama", "cambio": "panorama",
+              "desemprego": "panorama", "varejo": "comercio", "pim": "industria", "ipp": "industria"}
+
+
+def _domingo_da_chave(chave):
+    a, s = chave.split("-W")
+    return date.fromisocalendar(int(a), int(s), 7)
+
+
+def _ref_viva(chave):
+    """Data de referência dos KPIs na rotina diária: hoje, limitado ao domingo da semana."""
+    return min(date.today(), _domingo_da_chave(chave))
+
+
+def _ler_json(fn, padrao=None):
+    if not os.path.exists(fn):
+        return padrao
+    with open(fn, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _gravar_json(fn, obj):
+    tmp = fn + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, fn)
+
+
+def _base_coleta(chave):
+    """Esqueleto de uma semana nova: PESTEL, Porter e análise herdados da última semana
+    publicada (ponto de partida que os gatilhos vão atualizando); clipping vazio."""
+    ant = _semana_anterior(chave)
+    pub = _ler_json(f"data/{ant}.json", {}) or {}
+    return {"clipping": [], "pestel": pub.get("pestel", []), "kpis": pub.get("kpis", []),
+            "indicador_ecommerce": None, "porter": pub.get("porter", {}),
+            "analise": pub.get("analise") or {"panorama": {"acoes": []}, "setores": {}},
+            "novos_sinais": [], "atualizacoes_sinais": [], "_kpis_vistos": {}}
+
+
+def _chave_item(it):
+    fontes = it.get("fontes") or []
+    url = (fontes[0].get("url") if fontes and isinstance(fontes[0], dict) else "") or ""
+    url = re.sub(r"[?#].*$", "", url.strip().lower()).rstrip("/")
+    return url or re.sub(r"\W+", " ", (it.get("titulo") or "").lower()).strip()
+
+
+def _conferir_incremento(inc, ativos):
+    """Mesmas regras de qualidade da coleta semanal, aplicadas só ao que entrou no dia."""
+    erros = []
+    ids = {s["id"] for s in ativos}
+    for i, it in enumerate(inc.get("clipping", [])):
+        if not it.get("titulo") or not it.get("texto"):
+            erros.append(f"clipping[{i}] sem título/texto")
+        if _palavras(it.get("texto", "")) > 35:
+            erros.append(f"clipping[{i}] texto com mais de 35 palavras")
+        setores = it.get("setores") or []
+        if not setores or any(s not in SETORES + ("transversal",) for s in setores):
+            erros.append(f"clipping[{i}] setores inválidos: {setores}")
+        fontes = it.get("fontes") or []
+        if not fontes or not all(url_valida(f.get("url", "")) for f in fontes):
+            erros.append(f"clipping[{i}] sem fonte com URL válida")
+    for a in inc.get("atualizacoes_sinais", []):
+        if a.get("id") not in ids:
+            erros.append(f"atualização para id desconhecido: {a.get('id')}")
+    return erros
+
+
+def _mesclar(coleta, inc):
+    """Junta o incremento do dia à coleta da semana. Retorna as notícias realmente novas."""
+    vistos = {_chave_item(it) for it in coleta["clipping"]}
+    novas = []
+    for it in inc.get("clipping", []):
+        k = _chave_item(it)
+        if k and k not in vistos:
+            vistos.add(k)
+            coleta["clipping"].append(it)
+            novas.append(it)
+    # sinais: uma atualização por id na semana (a do dia mais recente prevalece; fontes somam)
+    por_id = {a["id"]: a for a in coleta["atualizacoes_sinais"]}
+    for a in inc.get("atualizacoes_sinais", []):
+        velho = por_id.get(a["id"])
+        if velho:
+            fontes = list(dict.fromkeys((velho.get("fontes") or []) + (a.get("fontes") or [])))
+            mat = bool(velho.get("materializado")) or bool(a.get("materializado"))
+            velho.update(a)
+            velho["fontes"] = fontes
+            if mat:
+                velho["materializado"] = True
+                velho["novo_status"] = "materializado"
+        else:
+            por_id[a["id"]] = dict(a)
+    coleta["atualizacoes_sinais"] = list(por_id.values())
+    titulos = {n.get("titulo", "").strip().lower() for n in coleta["novos_sinais"]}
+    for n in inc.get("novos_sinais", []):
+        t = n.get("titulo", "").strip().lower()
+        if t and t not in titulos:
+            titulos.add(t)
+            coleta["novos_sinais"].append(n)
+    return novas
+
+
+def _gatilhos(coleta, inc, novas, mem, chave):
+    """REGRA (aprovada em 10/11/2026): reescreve a análise do setor quando
+    (a) saiu um dos 7 indicadores, (b) um sinal materializou, (c) entraram >= 3 notícias novas no setor."""
+    disparos = {}
+
+    def _marca(setor, motivo):
+        disparos.setdefault(setor, []).append(motivo)
+
+    # (a) indicadores oficiais: compara com o que já tinha sido visto nesta semana
+    try:
+        oficiais = validar_kpis(coleta.get("kpis", []), ref=_ref_viva(chave), verbose=False)
+    except Exception as e:
+        print(f"[motor] aviso: KPIs oficiais indisponíveis nesta rodada ({e})")
+        oficiais = coleta.get("kpis", [])
+    vistos = coleta.setdefault("_kpis_vistos", {})
+    for k in oficiais:
+        b = _kpi_bucket(k.get("label"))
+        assinatura = f"{k.get('valor')}|{k.get('sub', '')[:80]}"
+        if b in _KPI_SETOR and k.get("fonte") and vistos.get(b) != assinatura:
+            if b in vistos:   # primeira leitura da semana não é "divulgação nova"
+                _marca(_KPI_SETOR[b], f"indicador {k.get('label')} atualizado: {k.get('valor')}")
+            vistos[b] = assinatura
+    coleta["kpis"] = oficiais
+    # (b) materialização
+    setores_sinal = {s["id"]: s.get("setores", []) for s in mem["sinais"]}
+    for a in inc.get("atualizacoes_sinais", []):
+        if a.get("materializado") or a.get("novo_status") == "materializado":
+            for s in setores_sinal.get(a["id"], []) or ["panorama"]:
+                _marca("panorama" if s == "transversal" else s, f"sinal materializou: {a['id'][:8]}")
+    for n in inc.get("novos_sinais", []):
+        if n.get("materializado"):
+            for s in n.get("setores", []) or ["panorama"]:
+                _marca("panorama" if s == "transversal" else s, f"novo sinal já materializado: {n.get('titulo')}")
+    # (c) volume de notícias novas por setor
+    cont = {}
+    for it in novas:
+        for s in it.get("setores", []):
+            if s in SETORES:
+                cont[s] = cont.get(s, 0) + 1
+    for s, n in cont.items():
+        if n >= GATILHO_NOTICIAS_SETOR:
+            _marca(s, f"{n} notícias novas no setor")
+    return disparos
+
+
+def cmd_atualizar(chave, label):
+    """Rodada diária, passo 1: incorpora trabalho/<semana>/incremento.json e calcula gatilhos."""
+    pasta = _pasta(chave)
+    fn_col, fn_inc = os.path.join(pasta, "coleta.json"), os.path.join(pasta, "incremento.json")
+    mem = carregar_memoria()
+    coleta = _ler_json(fn_col) or _base_coleta(chave)
+    inc = _ler_json(fn_inc, {"clipping": []})
+    erros = _conferir_incremento(inc, sinais_ativos(mem))
+    if erros:
+        for e in erros:
+            print(f"[motor] ERRO: {e}")
+        sys.exit("[motor] Incremento reprovado — nada foi gravado.")
+    novas = _mesclar(coleta, inc)
+    disparos = _gatilhos(coleta, inc, novas, mem, chave)
+    hoje = date.today().isoformat()
+    os.makedirs(os.path.join(pasta, "incrementos"), exist_ok=True)
+    if os.path.exists(fn_inc):
+        os.replace(fn_inc, os.path.join(pasta, "incrementos", f"{hoje}.json"))
+    _gravar_json(fn_col, coleta)
+    diario = _ler_json(os.path.join(pasta, "diario.json"), []) or []
+    diario.append({"data": hoje, "em": _agora(), "noticias_novas": len(novas),
+                   "total_semana": len(coleta["clipping"]), "gatilhos": disparos})
+    _gravar_json(os.path.join(pasta, "diario.json"), diario)
+    _gravar_json(os.path.join(pasta, "gatilhos.json"), {"data": hoje, "setores": disparos})
+    print(f"[motor] {label}: +{len(novas)} notícias (semana: {len(coleta['clipping'])})")
+    if disparos:
+        for s, m in disparos.items():
+            print(f"[motor] GATILHO {s}: {'; '.join(m)}")
+        print(f"[motor] Próximo: gravar {pasta}/analise.json com os setores acima e rodar 'previa {chave}'")
+    else:
+        print(f"[motor] Sem gatilho: análise segue como está. Próximo: 'previa {chave}'")
+
+
+def _aplicar_analise(coleta, patch):
+    """analise.json = {"setores": {setor: {...}}, "panorama": {"acoes": [...]}, "pestel": [...] }"""
+    an = coleta.setdefault("analise", {"panorama": {"acoes": []}, "setores": {}})
+    for s, v in (patch.get("setores") or {}).items():
+        an.setdefault("setores", {})[s] = v
+    if patch.get("panorama"):
+        an["panorama"] = patch["panorama"]
+    if patch.get("pestel"):
+        coleta["pestel"] = patch["pestel"]
+
+
+def _editorial_aberto(chave):
+    """Editorial preditivo que ABRE a semana: o escrito no fechamento da semana anterior."""
+    ant = _ler_json(f"data/{_semana_anterior(chave)}.json", {}) or {}
+    ed = ant.get("editorial")
+    if ed and ed.get("texto"):
+        return dict(ed, abertura_de=ant.get("label", ""))
+    return None
+
+
+def cmd_previa(chave, label):
+    """Rodada diária, passo 2: publica a semana corrente como 'em andamento' (memória intocada)."""
+    pasta = _pasta(chave)
+    coleta = _ler_json(os.path.join(pasta, "coleta.json"))
+    if not coleta:
+        sys.exit(f"[motor] ERRO: rode 'atualizar {chave}' antes da prévia.")
+    fn_an = os.path.join(pasta, "analise.json")
+    if os.path.exists(fn_an):
+        _aplicar_analise(coleta, _ler_json(fn_an))
+        os.makedirs(os.path.join(pasta, "analises"), exist_ok=True)
+        os.replace(fn_an, os.path.join(pasta, "analises", f"{date.today().isoformat()}.json"))
+        _gravar_json(os.path.join(pasta, "coleta.json"), coleta)
+        print("[motor] Análise atualizada pelos gatilhos.")
+    mem = carregar_memoria()
+    gerar_dados_portal(coleta, mem, chave, label, _editorial_aberto(chave),
+                       status="em_andamento", ref_kpi=_ref_viva(chave))
+    print(f"[motor] Prévia publicada: data/{chave}.json (em andamento).")
+
+
+def cmd_fechar(chave, label):
+    """Fechamento (rodada de segunda): consolida a semana na memória UMA vez e pede o
+    editorial preditivo. Depois: gravar editorial.txt e rodar 'publicar <semana>'."""
+    cmd_processar(chave, label, permitir_pulo=False, forcar=False)
 
 
 def main(argv):
     args = [a for a in argv if not a.startswith("--")]
     flags = {a for a in argv if a.startswith("--")}
-    if not args or args[0] not in ("preparar", "processar", "publicar"):
-        sys.exit("uso: python motor.py preparar|processar|publicar [AAAA-Www] [--pular] [--forcar]")
+    cmds = ("preparar", "processar", "publicar", "atualizar", "previa", "fechar")
+    if not args or args[0] not in cmds:
+        sys.exit("uso: python motor.py " + "|".join(cmds) + " [AAAA-Www] [--pular] [--forcar]")
     chave, label, ini, fim = periodo_atual(args[1] if len(args) > 1 else None)
     if args[0] == "preparar":
         cmd_preparar(chave, label, ini, fim, "--pular" in flags)
-    elif args[0] == "processar":
+    elif args[0] in ("processar", "fechar"):
         cmd_processar(chave, label, "--pular" in flags, "--forcar" in flags)
+    elif args[0] == "atualizar":
+        cmd_atualizar(chave, label)
+    elif args[0] == "previa":
+        cmd_previa(chave, label)
     else:
         cmd_publicar(chave, label)
 
