@@ -1,0 +1,24 @@
+{
+  "clipping": [
+    {"setores": ["servicos"], "titulo": "Volume de serviços recua 0,1% em setembro, melhor que o esperado",
+     "texto": "PMS do IBGE (11/11): serviços caem 0,1% ante agosto (projeção era -0,3%) e 0,1% na comparação anual, fim de 29 altas seguidas; acumulado de 2026 é +1,5%.",
+     "palavra": "PMS",
+     "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/economia/setor-de-servicos-setembro-2026-dados-ibge/"},
+                {"nome": "Safras & Mercado", "url": "https://safras.com.br/servicos-recuam-01-em-setembro-ante-agosto-previsao-era-de-03"}]},
+    {"setores": ["industria", "transversal"], "titulo": "Petrobras lucra R$ 39,8 bilhões no 3T26, alta de 21,5%",
+     "texto": "Petrobras teve lucro líquido de R$ 39,8 bilhões no 3º trimestre de 2026 (+21,5% ante 3T25), abaixo da projeção de analistas, e elevou a meta de produção para 2,7 a 2,8 milhões de barris/dia.",
+     "palavra": "Petrobras", "tema": "combustiveis",
+     "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/mercados/petrobras-petr4-balanco-3t26/"},
+                {"nome": "JB", "url": "https://jb.com.br/economia/2026/11/1061517-petrobras-lucra-rs-398-bilhoes-no-3t26-e-eleva-previsao-de-producao.html"}]},
+    {"setores": ["transversal"], "titulo": "Governo prepara ajuste fiscal de ao menos R$ 50 bilhões para 2027",
+     "texto": "Equipe econômica prepara projeto com ao menos R$ 50 bilhões de ajuste para 2027, incluindo cancelamento de até R$ 12,8 bilhões em despesas do Orçamento; desenho final depende do Congresso.",
+     "palavra": "ajuste-fiscal", "tema": "fiscal",
+     "fontes": [{"nome": "Mix Vale", "url": "https://www.mixvale.com.br/2026/11/11/governo-prepara-projeto-de-r-50-bilhoes-para-o-ajuste-fiscal-de-2027/"},
+                {"nome": "Brasil em Folhas", "url": "https://brasilemfolhas.com.br/2026/11/governo-sinaliza-cancelamento-de-r-12-8-bilhoes-em-gastos-para-2027/"}]}
+  ],
+  "leituras_temas": {
+    "atividade": {"tipo": "risco", "status": "em_curso", "texto": "PIM cai 0,8% e PMS recua 0,1% em setembro, fim de 29 altas anuais nos serviços; Adama fecha fábrica no RS e Fiemg vê crise no aço.", "fontes": ["IBGE", "Adama", "Fiemg"]},
+    "fiscal": {"tipo": "risco", "status": "monitorar", "texto": "Governo prepara ajuste de ao menos R$ 50 bilhões para 2027, com corte de até R$ 12,8 bilhões em despesas; depende do Congresso.", "fontes": ["Mix Vale", "Brasil em Folhas"]}
+  },
+  "novos_temas": []
+}

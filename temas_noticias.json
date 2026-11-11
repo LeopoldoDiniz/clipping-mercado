@@ -8643,6 +8643,31 @@
     "setores": [
      "agro"
     ]
+   },
+   {
+    "titulo": "Volume de serviços recua 0,1% em setembro, melhor que o esperado",
+    "palavra": "PMS",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Petrobras lucra R$ 39,8 bilhões no 3T26, alta de 21,5%",
+    "palavra": "Petrobras",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo prepara ajuste fiscal de ao menos R$ 50 bilhões para 2027",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
    }
   ]
  }

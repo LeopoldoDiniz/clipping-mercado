@@ -1,5 +1,5 @@
 {
- "versao": 7,
+ "versao": 8,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -785,7 +785,9 @@
   "gasolina": "combustiveis",
   "Adama": "atividade",
   "Cury": "construcao",
-  "frango": "agro"
+  "frango": "agro",
+  "Petrobras": "combustiveis",
+  "ajuste-fiscal": "fiscal"
  },
  "leituras": [
   {
@@ -4901,7 +4903,13 @@
    "data": "2026-11-11",
    "semana": "2026-W46",
    "motivo": "palavras novas: gasolina→combustiveis, Adama→atividade, Cury→construcao, frango→agro"
+  },
+  {
+   "versao": 8,
+   "data": "2026-11-11",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: Petrobras→combustiveis, ajuste-fiscal→fiscal"
   }
  ],
- "atualizado_em": "2026-11-11T10:07:11.835024+00:00"
+ "atualizado_em": "2026-11-11T12:22:49.313198+00:00"
 }
