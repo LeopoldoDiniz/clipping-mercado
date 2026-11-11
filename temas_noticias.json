@@ -8585,6 +8585,64 @@
     "setores": [
      "agro"
     ]
+   },
+   {
+    "titulo": "Dólar fecha a R$ 5,58, maior valor em 15 meses",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo prorroga desoneração da gasolina e do etanol até 9 de dezembro",
+    "palavra": "gasolina",
+    "tema": "combustiveis",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Adama encerra produção na fábrica de Taquari (RS)",
+    "palavra": "Adama",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Fiemg vê \"tempestade perfeita\" contra o aço mineiro",
+    "palavra": "aço",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Magalu tem prejuízo no 3T26, mas ação sobe com vendas de outubro",
+    "palavra": "Magalu",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Cury lucra R$ 313,9 milhões no 3T26 e distratos sobem 59%",
+    "palavra": "Cury",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Exportação de frango tem maior volume mensal de 2026 em outubro",
+    "palavra": "frango",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
    }
   ]
  }
