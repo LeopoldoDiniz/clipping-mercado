@@ -646,11 +646,11 @@
       "setor": "servicos",
       "setorLabel": "Serviços",
       "label": "Serviços (PMS)",
-      "valor": "+1,2%",
+      "valor": "+1,1%",
       "cor": "up",
       "sub": "Volume · var. m/m (aj.saz.) · acum. ano +2,4% · IBGE/PMS abr/26",
       "ref": "abr/26",
-      "pt": 1.2,
+      "pt": 1.1,
       "acum": 2.4,
       "flow": true,
       "unit": "%"
