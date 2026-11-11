@@ -10,6 +10,23 @@ repositório, com `PYTHONIOENCODING=utf-8`. Não altere código (`*.py`, `index.
 - Janela de busca: o que foi publicado desde a rodada anterior (ontem 07h até agora).
   Cada notícia vai para a semana ISO da **data de publicação** (domingo pertence à semana que termina nele).
 
+## 0.1 Checagem de acesso (antes de tudo)
+Teste as fontes de que a rotina depende e guarde o resultado para o resumo:
+```bash
+for u in "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json" \
+         "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63/p/last%201" \
+         "https://servicodados.ibge.gov.br/api/v3/calendario/?qtd=1"; do
+  curl -s -o /dev/null -w "%{http_code} $u\n" --max-time 30 "$u" || echo "FALHA $u"; done
+curl -s -o /dev/null -w "%{http_code} FGV\n" --max-time 30 --ciphers 'DEFAULT@SECLEVEL=1' \
+  "https://portalibre.fgv.br/calendario-de-divulgacao" || echo "FALHA FGV"
+```
+Depois abra com **WebFetch** uma página de notícia qualquer (ex.: a primeira URL da busca do passo 1).
+- Código 200 = ok. Qualquer outro código, `FALHA` ou erro do WebFetch = acesso bloqueado.
+- Fonte oficial bloqueada: siga a rotina (o motor usa o último valor oficial e o calendário versionado).
+- WebFetch bloqueado: siga, mas só aceite notícia cujo resultado de busca já traga data e número.
+- O resumo final **abre** com a linha `Acesso: BCB ok | SIDRA ok | calendário IBGE ok | FGV ok | notícias ok`
+  (troque `ok` pelo código ou erro que falhou).
+
 ## 1. Busca de notícias
 - Use o modo de busca mais completo disponível (busca ampliada): o modo padrão não encontra publicações de 1–2 dias.
 - Cubra os seis setores: indústria, comércio, serviços, agro, construção, e-commerce (+ transversal: Selic,
@@ -84,5 +101,5 @@ Retomada: se `trabalho/W_PREV/processado.json` já existe mas `data/W_PREV.json`
 - `git add -A && git commit -m "Rotina <HOJE>: <resumo>"` com a linha final
   `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>` e `git push origin main`
   (se rejeitado, `git pull --rebase origin main` e push de novo). O Vercel publica sozinho.
-- Resumo final em português: notícias novas por semana, palavras/temas novos, gatilhos e setores
+- Resumo final em português: a linha `Acesso:` do passo 0.1, notícias novas por semana, palavras/temas novos, gatilhos e setores
   reescritos, se houve fechamento, e avisos do motor.
