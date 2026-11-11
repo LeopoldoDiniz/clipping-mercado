@@ -14,3 +14,4 @@ tools/verif_report.json
 trabalho/**/prompt_*.md
 trabalho/**/sinais_antes.json
 trabalho/**/temas_antes.json
+ferramentas/*.log

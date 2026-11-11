@@ -24,6 +24,8 @@ Depois abra com **WebFetch** uma página de notícia qualquer (ex.: a primeira U
 - Código 200 = ok. Qualquer outro código, `FALHA` ou erro do WebFetch = acesso bloqueado.
 - Fonte oficial bloqueada: siga a rotina (o motor usa o último valor oficial e o calendário versionado).
 - WebFetch bloqueado: siga, mas só aceite notícia cujo resultado de busca já traga data e número.
+- Validade do calendário: `git log -1 --format=%cs -- calendarios_oficiais.json`. Se tiver mais de 100 dias,
+  acrescente à linha `Acesso:` o aviso `calendário vencido desde <data> — rodar ferramentas/renovar_calendarios.ps1 no PC`.
 - O resumo final **abre** com a linha `Acesso: BCB ok | SIDRA ok | calendário IBGE ok | FGV ok | notícias ok`
   (troque `ok` pelo código ou erro que falhou).
 
