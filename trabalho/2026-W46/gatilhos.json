@@ -1,4 +1,24 @@
 {
-  "data": "2026-11-11",
-  "setores": {}
+  "data": "2026-11-12",
+  "setores": {
+    "panorama": [
+      "indicador SELIC atualizado: 13,75% a.a.",
+      "indicador Câmbio (US$) atualizado: R$ 5,56",
+      "tema materializou: agro",
+      "tema materializou: consumo"
+    ],
+    "agro": [
+      "tema materializou: agro",
+      "3 notícias novas no setor"
+    ],
+    "comercio": [
+      "tema materializou: consumo"
+    ],
+    "servicos": [
+      "tema materializou: consumo"
+    ],
+    "ecommerce": [
+      "tema materializou: consumo"
+    ]
+  }
 }

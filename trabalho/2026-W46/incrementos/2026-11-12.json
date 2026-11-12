@@ -1,0 +1,225 @@
+{
+ "clipping": [
+  {
+   "setores": [
+    "agro",
+    "transversal"
+   ],
+   "titulo": "Lucro do Banco do Brasil cai 66,5% no 3T26 com calote no agro",
+   "texto": "BB lucra R$ 1,27 bilhão ajustado no 3º trimestre (-66,5%); inadimplência do agro acima de 90 dias vai a 6,92% (4,84% um ano antes) e projeção de lucro de 2026 cai para R$ 9–11 bilhões.",
+   "palavra": "BB",
+   "tema": "agro",
+   "fontes": [
+    {
+     "nome": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/lucro-do-bb-cai-665-no-3o-trimestre-com-inadimplencia-do-agro"
+    },
+    {
+     "nome": "Seu Dinheiro",
+     "url": "https://www.seudinheiro.com/2026/empresas/agronegocio-esta-cobrando-o-preco-no-banco-do-brasil-inadimplencia-dispara-lucro-encolhe-e-acionistas-ficam-sem-uma-parte-dos-dividendos-miql/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "agro"
+   ],
+   "titulo": "Senado aprova MP do endividamento rural, que vai à sanção",
+   "texto": "Senado aprovou em 11/11 a MP 1.376/2026 da renegociação de dívidas rurais, com marco inicial ampliado para 1º/01/2021 e três \"jabutis\" retirados; texto segue para sanção, com risco de vetos.",
+   "palavra": "dívida-rural",
+   "tema": "agro",
+   "fontes": [
+    {
+     "nome": "Money Times",
+     "url": "https://www.moneytimes.com.br/senado-aprova-mp-do-endividamento-rural-que-segue-a-sancao-presidencial-fets/"
+    },
+    {
+     "nome": "CNN Brasil",
+     "url": "https://www.cnnbrasil.com.br/agro/as-vesperas-de-caducar-mp-do-endividamento-rural-e-aprovada-pelo-senado/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "industria",
+    "comercio"
+   ],
+   "titulo": "Anfavea: produção de veículos cai 5,1% e vendas 5,6% em outubro",
+   "texto": "Anfavea (11/11): produção recua 5,1% e emplacamentos 5,6% ante setembro (265,5 mil, +1,8% no ano); exportações caem 28,3% e importações sobem 22,3% sobre outubro de 2025.",
+   "palavra": "veículos",
+   "fontes": [
+    {
+     "nome": "InfoMoney",
+     "url": "https://www.infomoney.com.br/economia/producao-e-vendas-de-veiculos-no-brasil-caem-em-outubro-ante-setembro-diz-anfavea/"
+    },
+    {
+     "nome": "O Tempo",
+     "url": "https://www.otempo.com.br/economia/2026/11/11/producao-de-veiculos-cai-em-outubro-e-eletricos-aumentam-participacao-no-mercado-diz-anfavea"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "transversal"
+   ],
+   "titulo": "Poupança perde R$ 8,88 bilhões em outubro, quinta saída seguida",
+   "texto": "BC (11/11): saques superaram depósitos em R$ 8,88 bilhões em outubro, menos que os R$ 9,35 bilhões de setembro; saída acumulada em 2026 chega a R$ 75,3 bilhões.",
+   "palavra": "poupança",
+   "fontes": [
+    {
+     "nome": "Repórter PB",
+     "url": "https://www.reporterpb.com.br/noticia/brasil/2026/11/11/saques-da-poupanca-superam-depositos-em-r-8-88-bilhoes-em-outubro-informa-banco-central/194417.html"
+    },
+    {
+     "nome": "Metrópoles",
+     "url": "https://www.metropoles.com/brasil/brasileiros-sacaram-r-88-bilhoes-da-poupanca-em-outubro-diz-bc"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "transversal"
+   ],
+   "titulo": "Dólar cai 0,42%, a R$ 5,56, e Ibovespa sobe a 172 mil pontos",
+   "texto": "Em 11/11, o dólar fechou em queda de 0,42%, a R$ 5,5628, e o Ibovespa subiu 0,42%, a 172.060 pontos, com o pacote de ajuste fiscal no radar.",
+   "palavra": "dólar",
+   "fontes": [
+    {
+     "nome": "Agência Brasil",
+     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-cai-042-e-fecha-r-556-com-foco-em-pacote-fiscal"
+    },
+    {
+     "nome": "Hoje Diário",
+     "url": "https://hojediario.com/2026/11/11/dolar-fecha-em-queda-a-r-556-e-ibovespa-sobe-com-pacote-fiscal-no-radar/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "transversal"
+   ],
+   "titulo": "Senado adia para 12/11 votação do ajuste fiscal de até R$ 60 bilhões",
+   "texto": "Votação do PLP 299/2026, com efeito de R$ 50 a 60 bilhões em 2027, saiu da pauta em 11/11 a pedido da oposição; Alcolumbre marcou nova tentativa para 12/11, às 16h.",
+   "palavra": "ajuste-fiscal",
+   "fontes": [
+    {
+     "nome": "Brasil 247",
+     "url": "https://www.brasil247.com/economia/alcolumbre-adia-votacao-de-ajuste-fiscal-de-r-60-bilhoes-apos-pressao-de-senadores/"
+    },
+    {
+     "nome": "Campo Grande News",
+     "url": "https://www.campograndenews.com.br/politica/senado-pode-votar-nesta-quinta-pacote-de-ajuste-fiscal-de-r-60-bilhoes"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "comercio",
+    "ecommerce"
+   ],
+   "titulo": "Americanas tem prejuízo de R$ 352 milhões no 3T26",
+   "texto": "Americanas teve prejuízo de R$ 352 milhões no 3º trimestre (lucro de R$ 367 milhões um ano antes); receita líquida subiu 10%, a R$ 2,97 bilhões, e Ebitda ajustado caiu a R$ 52 milhões.",
+   "palavra": "Americanas",
+   "tema": "consumo",
+   "fontes": [
+    {
+     "nome": "Expressão Rondônia",
+     "url": "https://expressaorondonia.com.br/americanas-tem-prejuizo-de-r-352-milhoes-no-3o-trimestre/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "ecommerce"
+   ],
+   "titulo": "Shopee vende 90% mais na semana anterior ao 11.11",
+   "texto": "Shopee relata alta de 90% no volume de vendas entre 5 e 10/11 ante a pré-Black Friday de 2025; acessos subiram mais de 40% nas primeiras horas do 11.11.",
+   "palavra": "Shopee",
+   "fontes": [
+    {
+     "nome": "Mercado & Consumo",
+     "url": "https://mercadoeconsumo.com.br/11/11/2026/ecommerce/shopee-registra-alta-de-90-nas-vendas-na-semana-que-antecede-o-11-11/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "agro"
+   ],
+   "titulo": "Café arábica sobe 0,90% e saca vai a R$ 1.611,30",
+   "texto": "Indicador Cepea/Esalq do café arábica subiu 0,90% no fechamento de 10/11, para R$ 1.611,30 a saca de 60 kg, segundo relato de 11/11.",
+   "palavra": "café",
+   "fontes": [
+    {
+     "nome": "Três Pontas Studio Live",
+     "url": "https://www.trespontasstudiolive.com.br/cafe-arabica-registra-alta-e-saca-chega-a-r-1-61130-no-indicador-nacional-nesta-quarta-feira/"
+    },
+    {
+     "nome": "Brasil em Destaque",
+     "url": "https://www.brasilemdestaque.com.br/cafe-arabica-sobe-090-e-saca-e-negociada-a-r-1-61130-em-sao-paulo/"
+    }
+   ]
+  }
+ ],
+ "leituras_temas": {
+  "agro": {
+   "tipo": "risco",
+   "status": "materializado",
+   "materializado": true,
+   "texto": "Inadimplência agro do BB vai a 6,92% e lucro cai 66,5% no 3T26; RJ no agro sobe 57,5%; MP da dívida rural aprovada em 11/11 vai à sanção.",
+   "fontes": [
+    "Banco do Brasil",
+    "RCN67",
+    "Senado"
+   ]
+  },
+  "cambio": {
+   "tipo": "risco",
+   "status": "em_curso",
+   "texto": "Dólar recua a R$ 5,56 em 11/11 após máxima de 15 meses (R$ 5,586) em 10/11; poupança perde R$ 8,88 bi em outubro, R$ 75,3 bi no ano.",
+   "fontes": [
+    "Agência Brasil",
+    "BCB"
+   ]
+  },
+  "fiscal": {
+   "tipo": "risco",
+   "status": "monitorar",
+   "texto": "PLP 299/2026, ajuste de R$ 50 a 60 bilhões em 2027, teve votação adiada no Senado em 11/11 e nova tentativa marcada para 12/11.",
+   "fontes": [
+    "Senado",
+    "Brasil 247"
+   ]
+  },
+  "atividade": {
+   "tipo": "risco",
+   "status": "em_curso",
+   "texto": "PIM -0,8% e PMS -0,1% em setembro; Anfavea: produção de veículos cai 5,1% em outubro, com exportações -28,3% e importações +22,3%.",
+   "fontes": [
+    "IBGE",
+    "Anfavea"
+   ]
+  },
+  "consumo": {
+   "tipo": "risco",
+   "status": "materializado",
+   "materializado": true,
+   "texto": "ICVA cai 4,0% real em outubro, 17º mês seguido; Americanas tem prejuízo de R$ 352 milhões no 3T26 e calote lidera RJs no varejo.",
+   "fontes": [
+    "Cielo",
+    "Americanas",
+    "Monitor RGF-BizDoc"
+   ]
+  },
+  "ecommerce": {
+   "tipo": "oportunidade",
+   "status": "em_curso",
+   "texto": "11.11 projetado em R$ 3,17 bilhões (+21%); Shopee vende 90% mais entre 5 e 10/11 ante a pré-Black Friday de 2025.",
+   "fontes": [
+    "Confi/Neotrust",
+    "Shopee"
+   ]
+  }
+ },
+ "novos_temas": []
+}

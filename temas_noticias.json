@@ -8668,6 +8668,81 @@
     "setores": [
      "transversal"
     ]
+   },
+   {
+    "titulo": "Lucro do Banco do Brasil cai 66,5% no 3T26 com calote no agro",
+    "palavra": "BB",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Senado aprova MP do endividamento rural, que vai à sanção",
+    "palavra": "dívida-rural",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Anfavea: produção de veículos cai 5,1% e vendas 5,6% em outubro",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Poupança perde R$ 8,88 bilhões em outubro, quinta saída seguida",
+    "palavra": "poupança",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar cai 0,42%, a R$ 5,56, e Ibovespa sobe a 172 mil pontos",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Senado adia para 12/11 votação do ajuste fiscal de até R$ 60 bilhões",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Americanas tem prejuízo de R$ 352 milhões no 3T26",
+    "palavra": "Americanas",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Shopee vende 90% mais na semana anterior ao 11.11",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Café arábica sobe 0,90% e saca vai a R$ 1.611,30",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
    }
   ]
  }

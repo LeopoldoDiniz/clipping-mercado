@@ -587,6 +587,166 @@
           "url": "https://brasilemfolhas.com.br/2026/11/governo-sinaliza-cancelamento-de-r-12-8-bilhoes-em-gastos-para-2027/"
         }
       ]
+    },
+    {
+      "setores": [
+        "agro",
+        "transversal"
+      ],
+      "titulo": "Lucro do Banco do Brasil cai 66,5% no 3T26 com calote no agro",
+      "texto": "BB lucra R$ 1,27 bilhão ajustado no 3º trimestre (-66,5%); inadimplência do agro acima de 90 dias vai a 6,92% (4,84% um ano antes) e projeção de lucro de 2026 cai para R$ 9–11 bilhões.",
+      "palavra": "BB",
+      "tema": "agro",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/lucro-do-bb-cai-665-no-3o-trimestre-com-inadimplencia-do-agro"
+        },
+        {
+          "nome": "Seu Dinheiro",
+          "url": "https://www.seudinheiro.com/2026/empresas/agronegocio-esta-cobrando-o-preco-no-banco-do-brasil-inadimplencia-dispara-lucro-encolhe-e-acionistas-ficam-sem-uma-parte-dos-dividendos-miql/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Senado aprova MP do endividamento rural, que vai à sanção",
+      "texto": "Senado aprovou em 11/11 a MP 1.376/2026 da renegociação de dívidas rurais, com marco inicial ampliado para 1º/01/2021 e três \"jabutis\" retirados; texto segue para sanção, com risco de vetos.",
+      "palavra": "dívida-rural",
+      "tema": "agro",
+      "fontes": [
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/senado-aprova-mp-do-endividamento-rural-que-segue-a-sancao-presidencial-fets/"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/agro/as-vesperas-de-caducar-mp-do-endividamento-rural-e-aprovada-pelo-senado/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Anfavea: produção de veículos cai 5,1% e vendas 5,6% em outubro",
+      "texto": "Anfavea (11/11): produção recua 5,1% e emplacamentos 5,6% ante setembro (265,5 mil, +1,8% no ano); exportações caem 28,3% e importações sobem 22,3% sobre outubro de 2025.",
+      "palavra": "veículos",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/producao-e-vendas-de-veiculos-no-brasil-caem-em-outubro-ante-setembro-diz-anfavea/"
+        },
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/economia/2026/11/11/producao-de-veiculos-cai-em-outubro-e-eletricos-aumentam-participacao-no-mercado-diz-anfavea"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Poupança perde R$ 8,88 bilhões em outubro, quinta saída seguida",
+      "texto": "BC (11/11): saques superaram depósitos em R$ 8,88 bilhões em outubro, menos que os R$ 9,35 bilhões de setembro; saída acumulada em 2026 chega a R$ 75,3 bilhões.",
+      "palavra": "poupança",
+      "fontes": [
+        {
+          "nome": "Repórter PB",
+          "url": "https://www.reporterpb.com.br/noticia/brasil/2026/11/11/saques-da-poupanca-superam-depositos-em-r-8-88-bilhoes-em-outubro-informa-banco-central/194417.html"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/brasileiros-sacaram-r-88-bilhoes-da-poupanca-em-outubro-diz-bc"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar cai 0,42%, a R$ 5,56, e Ibovespa sobe a 172 mil pontos",
+      "texto": "Em 11/11, o dólar fechou em queda de 0,42%, a R$ 5,5628, e o Ibovespa subiu 0,42%, a 172.060 pontos, com o pacote de ajuste fiscal no radar.",
+      "palavra": "dólar",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-cai-042-e-fecha-r-556-com-foco-em-pacote-fiscal"
+        },
+        {
+          "nome": "Hoje Diário",
+          "url": "https://hojediario.com/2026/11/11/dolar-fecha-em-queda-a-r-556-e-ibovespa-sobe-com-pacote-fiscal-no-radar/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Senado adia para 12/11 votação do ajuste fiscal de até R$ 60 bilhões",
+      "texto": "Votação do PLP 299/2026, com efeito de R$ 50 a 60 bilhões em 2027, saiu da pauta em 11/11 a pedido da oposição; Alcolumbre marcou nova tentativa para 12/11, às 16h.",
+      "palavra": "ajuste-fiscal",
+      "fontes": [
+        {
+          "nome": "Brasil 247",
+          "url": "https://www.brasil247.com/economia/alcolumbre-adia-votacao-de-ajuste-fiscal-de-r-60-bilhoes-apos-pressao-de-senadores/"
+        },
+        {
+          "nome": "Campo Grande News",
+          "url": "https://www.campograndenews.com.br/politica/senado-pode-votar-nesta-quinta-pacote-de-ajuste-fiscal-de-r-60-bilhoes"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "ecommerce"
+      ],
+      "titulo": "Americanas tem prejuízo de R$ 352 milhões no 3T26",
+      "texto": "Americanas teve prejuízo de R$ 352 milhões no 3º trimestre (lucro de R$ 367 milhões um ano antes); receita líquida subiu 10%, a R$ 2,97 bilhões, e Ebitda ajustado caiu a R$ 52 milhões.",
+      "palavra": "Americanas",
+      "tema": "consumo",
+      "fontes": [
+        {
+          "nome": "Expressão Rondônia",
+          "url": "https://expressaorondonia.com.br/americanas-tem-prejuizo-de-r-352-milhoes-no-3o-trimestre/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Shopee vende 90% mais na semana anterior ao 11.11",
+      "texto": "Shopee relata alta de 90% no volume de vendas entre 5 e 10/11 ante a pré-Black Friday de 2025; acessos subiram mais de 40% nas primeiras horas do 11.11.",
+      "palavra": "Shopee",
+      "fontes": [
+        {
+          "nome": "Mercado & Consumo",
+          "url": "https://mercadoeconsumo.com.br/11/11/2026/ecommerce/shopee-registra-alta-de-90-nas-vendas-na-semana-que-antecede-o-11-11/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Café arábica sobe 0,90% e saca vai a R$ 1.611,30",
+      "texto": "Indicador Cepea/Esalq do café arábica subiu 0,90% no fechamento de 10/11, para R$ 1.611,30 a saca de 60 kg, segundo relato de 11/11.",
+      "palavra": "café",
+      "fontes": [
+        {
+          "nome": "Três Pontas Studio Live",
+          "url": "https://www.trespontasstudiolive.com.br/cafe-arabica-registra-alta-e-saca-chega-a-r-1-61130-no-indicador-nacional-nesta-quarta-feira/"
+        },
+        {
+          "nome": "Brasil em Destaque",
+          "url": "https://www.brasilemdestaque.com.br/cafe-arabica-sobe-090-e-saca-e-negociada-a-r-1-61130-em-sao-paulo/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -663,7 +823,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 11/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 12/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -683,9 +843,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,58",
+      "valor": "R$ 5,56",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 10/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 11/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -776,23 +936,23 @@
       "acoes": [
         {
           "ico": "🏦",
-          "txt": "Selic parada em 13,75% e ata dura: não conte com juros menores no 1º trimestre."
+          "txt": "Selic em 13,75% e BB cortando crédito ao agro: espere financiamento mais caro e seletivo no 1º semestre."
         },
         {
           "ico": "💱",
-          "txt": "Dólar a R$ 5,58, maior em 15 meses: reajuste tabelas de importados e insumos."
+          "txt": "Dólar voltou a R$ 5,56, mas segue perto da máxima de 15 meses: mantenha hedge de importados."
         },
         {
-          "ico": "⛽",
-          "txt": "Desoneração da gasolina vai até 9/12: inclua possível alta de frete no orçamento de dezembro."
+          "ico": "🏛️",
+          "txt": "Acompanhe a votação do ajuste fiscal de até R$ 60 bilhões no Senado: afeta juros e câmbio."
         },
         {
-          "ico": "🏭",
-          "txt": "Aço e química sob pressão de importados: renegocie contratos de insumos com cláusula cambial."
+          "ico": "🌾",
+          "txt": "Vendas a prazo para o agro: exija garantias até a sanção da MP das dívidas rurais."
         },
         {
           "ico": "🛍️",
-          "txt": "11.11 abre a Black Friday (27/11): ative ofertas e confira estoques já nesta semana."
+          "txt": "Consumo segue fraco (ICVA -4,0%): Black Friday com estoque enxuto e foco em Pix."
         }
       ]
     },
@@ -820,72 +980,72 @@
         ]
       },
       "comercio": {
-        "prov": "Com o calote do consumidor levando varejistas à recuperação judicial, quanto do seu caixa depende de quem pode não pagar?",
-        "quote": "O varejo caiu 4,0% real em outubro, o 17º mês seguido de queda, segundo o ICVA da Cielo.",
+        "prov": "Com Americanas no prejuízo e o ICVA no 17º mês de queda, sua Black Friday está dimensionada para um consumidor que adia compras?",
+        "quote": "Americanas teve prejuízo de R$ 352 milhões no 3º trimestre, ante lucro de R$ 367 milhões um ano antes.",
         "edi": [
-          "O ICVA mostrou nova queda real em outubro, com bens duráveis em -8,9% e serviços em -8,5%; a Cielo descreve um consumidor mais seletivo, que adia compras.",
-          "Levantamento do Monitor RGF-BizDoc aponta 1.024 varejistas em recuperação judicial em setembro, com a inadimplência dos clientes presente em 55% dos pedidos."
+          "O varejo segue sob pressão: o ICVA da Cielo caiu 4,0% real em outubro, 17º mês seguido, e o calote do consumidor lidera as causas dos 1.024 pedidos de recuperação judicial no setor. Na temporada de balanços, a Americanas teve prejuízo de R$ 352 milhões e Ebitda ajustado de só R$ 52 milhões, mesmo com receita 10% maior, e o Magalu viu o e-commerce cair 9,8%.",
+          "Nos veículos, os emplacamentos caíram 5,6% em outubro ante setembro, para 265,5 mil unidades (+1,8% no ano), com importados ganhando espaço: entradas subiram 22,3%. A inadimplência de pessoa física no BB foi a 9,14%."
         ],
         "acoes": [
           {
             "ico": "💳",
-            "txt": "Reduza vendas a prazo para clientes sem histórico; prefira Pix e cartão."
+            "txt": "Restrinja crediário próprio a clientes com histórico; priorize Pix e cartão."
           },
           {
             "ico": "📦",
-            "txt": "Evite estoques de duráveis, o segmento que mais cai."
+            "txt": "Dimensione estoques da Black Friday pela venda real de outubro, não pela de 2025."
           },
           {
-            "ico": "🧾",
-            "txt": "Monitore a saúde financeira de fornecedores e parceiros do varejo."
+            "ico": "🚗",
+            "txt": "Concessionárias: prepare oferta de usados e financiamento com entrada maior diante da queda mensal."
           }
         ]
       },
       "servicos": {
-        "prov": "Emprego desacelera: o pleno emprego chegou ao limite?",
-        "quote": "Caged criou 121,3 mil vagas em setembro, o pior setembro desde 2020.",
+        "prov": "Serviços pararam de crescer e o crédito ficou mais caro: seus contratos de 2027 já refletem esse ritmo?",
+        "quote": "O volume de serviços recuou 0,1% em setembro, encerrando 29 altas anuais seguidas.",
         "edi": [
-          "A criação de vagas caiu cerca de 25% frente a agosto, com os serviços ainda liderando as contratações.",
-          "A construção pediu cinco anos de transição para o fim da escala 6x1, tema que afeta todo o setor de serviços."
+          "A PMS de setembro mostrou queda de 0,1% no mês e de 0,1% no ano, a primeira variação anual negativa após 29 altas; o acumulado de 2026 está em +1,5%. O Caged de setembro criou 121,3 mil vagas, o pior setembro desde 2020.",
+          "Nos serviços financeiros, o BB teve lucro ajustado 66,5% menor no 3º trimestre, com inadimplência de pessoa física em 9,14%, e a poupança perdeu R$ 8,88 bilhões em outubro, R$ 75,3 bilhões no ano, com a Selic em 13,75%."
         ],
         "acoes": [
           {
-            "ico": "👥",
-            "txt": "Planeje contratações de fim de ano com prudência."
-          },
-          {
-            "ico": "📋",
-            "txt": "Simule o impacto do fim da 6x1 nos turnos."
-          },
-          {
             "ico": "📊",
-            "txt": "Revise metas de 2027 com PIB de 1,76%."
+            "txt": "Revise metas de 2027 com serviços estáveis, não em expansão."
+          },
+          {
+            "ico": "🧾",
+            "txt": "Cobre adiantamentos ou garantias de clientes empresariais com histórico de atraso."
+          },
+          {
+            "ico": "👥",
+            "txt": "Contrate temporários de fim de ano por demanda confirmada."
           }
         ]
       },
       "agro": {
-        "prov": "Dívida em alta e oferta curta de trigo e boi: quem compra insumo agro está protegido contra a alta?",
-        "quote": "Recuperações judiciais no agro cresceram 57,5% no 3º trimestre, para 1.416 empresas.",
+        "prov": "Com o maior credor do campo apertando o crédito, sua operação aguenta uma safra financiada com menos banco?",
+        "quote": "A inadimplência do agro no Banco do Brasil chegou a 6,92% em setembro, ante 4,84% um ano antes.",
         "edi": [
-          "O endividamento segue no centro: grãos e fibras concentram 800 pedidos de recuperação judicial, alta de 74% em um ano. A soja ficou de lado, com o indicador Cepea/Esalq Paranaguá a R$ 158,62 por saca em 9/11, pressionada pela demanda fraca por farelo e óleo.",
-          "Do lado da oferta, o trigo importado teve em outubro o maior preço médio desde agosto de 2024, com safra nacional menor e chuvas no Sul atrasando a colheita. Na pecuária, a arroba subiu R$ 5 em GO e MT e o Rabobank projeta produção de carne bovina caindo para cerca de 11 milhões de toneladas em 2027. A exportação de milho acelerou 20,1% no ritmo diário e a de arroz em casca, 367%."
+          "O calote rural saiu dos tribunais e chegou ao balanço do principal financiador do setor: o lucro ajustado do BB caiu 66,5% no 3º trimestre, para R$ 1,27 bilhão, e a projeção para 2026 foi cortada para R$ 9 a 11 bilhões. A inadimplência se concentra em médios e grandes produtores de soja, milho e pecuária do Centro-Oeste, e o banco diz que vai reduzir a exposição ao agro e priorizar crédito com garantia. Recuperações judiciais no setor já subiram 57,5% no 3º trimestre.",
+          "Em 11/11, o Senado aprovou a MP 1.376/2026 da renegociação de dívidas rurais, com marco ampliado para dívidas desde 1º/01/2021; o texto vai à sanção, com risco de vetos. Nos preços, o café arábica Cepea subiu 0,90%, a R$ 1.611,30 a saca, a arroba subiu R$ 5 em GO e MT e o trigo importado está no maior preço desde agosto de 2024."
         ],
         "acoes": [
           {
             "ico": "🏦",
-            "txt": "Renegocie dívidas rurais antes do vencimento da safra."
+            "txt": "Antecipe a negociação do custeio 2026/27: crédito bancário ficará mais seletivo e exigirá garantias."
           },
           {
-            "ico": "🌾",
-            "txt": "Moinhos e panificação: trave preço e volume de trigo para o 1º trimestre."
-          },
-          {
-            "ico": "🥩",
-            "txt": "Frigoríficos e varejo: contrate boi e carne a prazo antes da escassez de 2027."
+            "ico": "📜",
+            "txt": "Produtor endividado: reúna laudos e CPRs para aderir à renegociação assim que a MP for sancionada."
           },
           {
             "ico": "🤝",
-            "txt": "Exija garantias em vendas a prazo para produtores de grãos."
+            "txt": "Revendas e cooperativas: reforce garantias em vendas a prazo para grãos e pecuária do Centro-Oeste."
+          },
+          {
+            "ico": "🌾",
+            "txt": "Moinhos e frigoríficos: trave preço de trigo e boi para o 1º trimestre."
           }
         ]
       },
@@ -912,33 +1072,33 @@
         ]
       },
       "ecommerce": {
-        "prov": "O online recuou em outubro: o 11.11 vai compensar ou apenas antecipar compras?",
-        "quote": "O e-commerce recuou 0,5% nominal em outubro, enquanto a loja física subiu 1,9%, segundo a Cielo.",
+        "prov": "O 11.11 acelerou o online, mas o varejo digital das grandes redes encolheu: sua margem resiste à guerra de cupons?",
+        "quote": "A Shopee relatou alta de 90% no volume de vendas entre 5 e 10 de novembro ante a pré-Black Friday de 2025.",
         "edi": [
-          "A Neotrust projeta R$ 3,17 bilhões no 11.11, alta de 21%, a maior data do ano depois da Black Friday.",
-          "Nubank e Shopee fecharam parceria de pagamentos para a data, com cupons de até 50% para clientes do banco."
+          "A data dupla de 11/11 foi projetada pela Neotrust em R$ 3,17 bilhões, alta de 21%, e a Shopee informou acessos mais de 40% maiores nas primeiras horas do dia, com R$ 25 milhões em cupons e frete grátis.",
+          "O movimento é concentrado: o e-commerce como um todo recuou 0,5% em outubro segundo a Cielo, o online do Magalu caiu 9,8% no 3º trimestre e a Americanas fechou o período com prejuízo de R$ 352 milhões."
         ],
         "acoes": [
           {
             "ico": "🗓️",
-            "txt": "Concentre ofertas no 11.11 e prepare a segunda onda para 27/11."
+            "txt": "Use o resultado do 11.11 para recalibrar estoques e verba da Black Friday (27/11)."
           },
           {
-            "ico": "💳",
-            "txt": "Ofereça condições de pagamento parceladas sem juros em itens de maior tíquete."
+            "ico": "💸",
+            "txt": "Limite cupons a itens de margem alta; frete grátis só acima de tíquete mínimo."
           },
           {
-            "ico": "📊",
-            "txt": "Compare o resultado do 11.11 com outubro para ajustar a Black Friday."
+            "ico": "⚡",
+            "txt": "Garanta Pix com desconto no checkout: foi o meio preferido nas campanhas de novembro."
           }
         ]
       }
     }
   },
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 11/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 12/11/2026",
     "ipca": "0,82%|Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeç",
-    "cambio": "R$ 5,58|Dólar PTAX venda · BCB · 10/11/2026",
+    "cambio": "R$ 5,56|Dólar PTAX venda · BCB · 11/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
     "varejo": "0,1%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
     "pim": "-0,8%|Produção física m/m · acum. ano 0,4% · IBGE set/26",
@@ -958,43 +1118,48 @@
       "tipo": "risco",
       "status": "materializado",
       "materializado": true,
-      "texto": "ICVA cai 4,0% real em outubro, 17º mês seguido; calote lidera as causas de recuperação judicial de 1.024 varejistas.",
+      "texto": "ICVA cai 4,0% real em outubro, 17º mês seguido; Americanas tem prejuízo de R$ 352 milhões no 3T26 e calote lidera RJs no varejo.",
       "fontes": [
         "Cielo",
-        "Monitor RGF-BizDoc"
+        "Monitor RGF-BizDoc",
+        "Americanas"
       ]
     },
     "agro": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Recuperação judicial no agro sobe 57,5% no 3º tri; trigo importado no maior preço desde ago/2024 e Rabobank vê carne bovina mais escassa em 2027.",
+      "texto": "Inadimplência agro do BB vai a 6,92% e lucro cai 66,5% no 3T26; RJ no agro sobe 57,5%; MP da dívida rural aprovada em 11/11 vai à sanção.",
       "fontes": [
         "RCN67",
         "Secex",
         "Cepea",
-        "Rabobank"
+        "Rabobank",
+        "Banco do Brasil",
+        "Senado"
       ],
       "materializado": true
     },
     "atividade": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "PIM cai 0,8% e PMS recua 0,1% em setembro, fim de 29 altas anuais nos serviços; Adama fecha fábrica no RS e Fiemg vê crise no aço.",
+      "texto": "PIM -0,8% e PMS -0,1% em setembro; Anfavea: produção de veículos cai 5,1% em outubro, com exportações -28,3% e importações +22,3%.",
       "fontes": [
         "IBGE",
         "Embraer",
         "Agência GBC",
         "Adama",
-        "Fiemg"
+        "Fiemg",
+        "Anfavea"
       ]
     },
     "cambio": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Dólar fecha a R$ 5,586 em 10/11, maior valor desde julho de 2025, após CPI dos EUA de 0,4%; Ibovespa cai 0,52%, a 171.337 pontos.",
+      "texto": "Dólar recua a R$ 5,56 em 11/11 após máxima de 15 meses (R$ 5,586) em 10/11; poupança perde R$ 8,88 bi em outubro, R$ 75,3 bi no ano.",
       "fontes": [
         "Agência Brasil",
-        "InfoMoney"
+        "InfoMoney",
+        "BCB"
       ]
     },
     "combustiveis": {
@@ -1016,10 +1181,21 @@
     "fiscal": {
       "tipo": "risco",
       "status": "monitorar",
-      "texto": "Governo prepara ajuste de ao menos R$ 50 bilhões para 2027, com corte de até R$ 12,8 bilhões em despesas; depende do Congresso.",
+      "texto": "PLP 299/2026, ajuste de R$ 50 a 60 bilhões em 2027, teve votação adiada no Senado em 11/11 e nova tentativa marcada para 12/11.",
       "fontes": [
         "Mix Vale",
-        "Brasil em Folhas"
+        "Brasil em Folhas",
+        "Senado",
+        "Brasil 247"
+      ]
+    },
+    "ecommerce": {
+      "tipo": "oportunidade",
+      "status": "em_curso",
+      "texto": "11.11 projetado em R$ 3,17 bilhões (+21%); Shopee vende 90% mais entre 5 e 10/11 ante a pré-Black Friday de 2025.",
+      "fontes": [
+        "Confi/Neotrust",
+        "Shopee"
       ]
     }
   },

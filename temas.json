@@ -1,5 +1,5 @@
 {
- "versao": 8,
+ "versao": 9,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -787,7 +787,10 @@
   "Cury": "construcao",
   "frango": "agro",
   "Petrobras": "combustiveis",
-  "ajuste-fiscal": "fiscal"
+  "ajuste-fiscal": "fiscal",
+  "BB": "agro",
+  "dívida-rural": "agro",
+  "Americanas": "consumo"
  },
  "leituras": [
   {
@@ -4909,7 +4912,13 @@
    "data": "2026-11-11",
    "semana": "2026-W46",
    "motivo": "palavras novas: Petrobras→combustiveis, ajuste-fiscal→fiscal"
+  },
+  {
+   "versao": 9,
+   "data": "2026-11-12",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: BB→agro, dívida-rural→agro, Americanas→consumo"
   }
  ],
- "atualizado_em": "2026-11-11T12:22:49.313198+00:00"
+ "atualizado_em": "2026-11-12T10:10:45.826699+00:00"
 }
