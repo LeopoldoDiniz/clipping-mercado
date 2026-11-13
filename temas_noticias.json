@@ -8743,6 +8743,55 @@
     "setores": [
      "agro"
     ]
+   },
+   {
+    "titulo": "IPCA sobe 0,14% em outubro, abaixo do esperado",
+    "palavra": "IPCA",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Senado aprova texto-base do ajuste fiscal por 45 a 31",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CNI diz que ajuste fiscal transfere a conta ao setor produtivo",
+    "palavra": "CNI",
+    "tema": "fiscal",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar sobe 1,6% e fecha a R$ 5,65, maior valor desde junho de 2025",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "MRV Incorporação tem lucro ajustado recorde de R$ 315 milhões no 3T26",
+    "palavra": "MRV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Ramah investe R$ 25 milhões em fundição em Minas Gerais",
+    "palavra": "fundição",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
    }
   ]
  }

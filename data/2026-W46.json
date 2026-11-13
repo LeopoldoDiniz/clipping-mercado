@@ -2,7 +2,7 @@
   "periodo": "2026-W46",
   "label": "Semana 46 · Novembro 2026",
   "status": "em_andamento",
-  "gerado_em": "2026-11-12T10:12:53.124880",
+  "gerado_em": "2026-11-13T10:12:22.229798",
   "editorial": {
     "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
     "gerado_em": "2026-11-10T14:49:32.685604",
@@ -703,6 +703,101 @@
           "url": "https://www.brasilemdestaque.com.br/cafe-arabica-sobe-090-e-saca-e-negociada-a-r-1-61130-em-sao-paulo/"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "IPCA sobe 0,14% em outubro, abaixo do esperado",
+      "texto": "IBGE (12/11): IPCA de 0,14% em outubro (0,82% em setembro; consenso 0,25%), 4,63% em 12 meses; energia elétrica cai 1,92% e passagens aéreas 9,21%, mas alimentação sobe 1,04%.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/ipca-inflacao-outubro-2026-dados-ibge/"
+        },
+        {
+          "nome": "IBGE",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/48568-ipca-fica-em-0-14-em-outubro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Senado aprova texto-base do ajuste fiscal por 45 a 31",
+      "texto": "PLP 299/2026 aprovado em 12/11: melhora de R$ 45,1 a 56,1 bilhões no primário de 2027, gasto real limitado a 2% e corte de benefícios tributários; destaques ficam para 17/11, depois Câmara.",
+      "fontes": [
+        {
+          "nome": "Agência Senado",
+          "url": "https://www12.senado.leg.br/noticias/materias/2026/11/12/texto-principal-do-ajuste-fiscal-e-aprovado-pelo-senado"
+        },
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/politica/noticia/2026/11/12/senado-aprova-ajuste-fiscal-561-bi"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "CNI diz que ajuste fiscal transfere a conta ao setor produtivo",
+      "texto": "CNI (12/11) critica no PLP 299 a restrição à compensação de créditos tributários e o corte linear de incentivos; elogia limite de 2% (ante 2,5%) para o gasto real.",
+      "fontes": [
+        {
+          "nome": "O Povo",
+          "url": "https://opovo.com.br/noticias/economia/2026/11/12/para-cni-plp-transfere-a-setor-produtivo-maior-parte-da-conta-do-ajuste-fiscal.html"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/cni-projeto-de-ajuste-fiscal-do-governo-transfere-conta-ao-setor-produtivo"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar sobe 1,6% e fecha a R$ 5,65, maior valor desde junho de 2025",
+      "texto": "Dólar fecha a R$ 5,65 (+1,6%) em 12/11, maior nível desde 2/6/2025, com incerteza sobre o ajuste fiscal; Ibovespa cai 0,43%, a 171.324 pontos, com BB -8,34%.",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/economia/2026/11/12/dolar-dispara-e-fecha-no-maior-valor-desde-junho-de-2025"
+        },
+        {
+          "nome": "Repórter PB",
+          "url": "https://www.reporterpb.com.br/noticia/internacional/2026/11/12/dolar-dispara-1-58-e-fecha-a-r-5-65-maior-nivel-em-17-meses/194484.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "MRV Incorporação tem lucro ajustado recorde de R$ 315 milhões no 3T26",
+      "texto": "MRV Incorporação lucra R$ 315 milhões ajustados no 3T26 (+54,5%), com receita de R$ 3,41 bilhões (+28,7%); greve da Caixa tirou cerca de R$ 80 milhões da geração de caixa.",
+      "fontes": [
+        {
+          "nome": "Moon BH",
+          "url": "https://moonbh.com.br/capital-m/2026/11/12/mrv-incorporacao-lucro-ajustado-recorde-315-milhoes-3t26/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Ramah investe R$ 25 milhões em fundição em Minas Gerais",
+      "texto": "Ramah investe R$ 25 milhões em fundição em Carmo da Mata (MG), com 180 empregos diretos e capacidade de 500 toneladas de peças por mês a partir do 2º semestre de 2027.",
+      "fontes": [
+        {
+          "nome": "Diário do Comércio",
+          "url": "https://diariodocomercio.com.br/negocios/ramah-investimento-fundicao-minas/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -779,17 +874,17 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 12/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 13/11/2026",
       "fonte": "BCB/SGS"
     },
     {
       "label": "IPCA",
-      "valor": "0,82%",
-      "cor": "down",
-      "sub": "Mês · acum. ano 3,95% · 12m 4,58% · meta 3,0% (teto 4,5%) · IBGE set/26 · Projeção Focus 2026: 5,22%",
+      "valor": "0,14%",
+      "cor": "up",
+      "sub": "Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeção Focus 2026: 5,22%",
       "fonte": "IBGE",
-      "acum_ano": 3.95,
-      "ipca_12m": 4.58,
+      "acum_ano": 4.1,
+      "ipca_12m": 4.63,
       "meta_inflacao": 3.0,
       "meta_desde": "2026-01-01",
       "meta_fonte": "BCB/SGS 13521",
@@ -799,9 +894,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,56",
+      "valor": "R$ 5,61",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 11/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 12/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -854,12 +949,12 @@
       "setor": "construcao",
       "setorLabel": "Construção",
       "label": "Custo m² (SINAPI)",
-      "valor": "R$ 2.000",
+      "valor": "R$ 2.006",
       "cor": "up",
-      "sub": "Custo médio da construção · +0,30% mês · acum. ano +5,72% · IBGE/SINAPI set/26",
-      "ref": "set/26",
-      "pt": 1999.73,
-      "acum": 5.72,
+      "sub": "Custo médio da construção · +0,29% mês · acum. ano +6,03% · IBGE/SINAPI out/26",
+      "ref": "out/26",
+      "pt": 2005.57,
+      "acum": 6.03,
       "flow": false,
       "unit": "R$/m²"
     },
@@ -892,54 +987,54 @@
     }
   ],
   "pressoes_ipca": {
-    "ref": "set/26",
-    "mes": 9,
+    "ref": "out/26",
+    "mes": 10,
     "ano": 2026,
     "grupos": [
       {
-        "nome": "Habitação",
-        "ico": "⚡",
-        "val": 0.353
-      },
-      {
         "nome": "Alimentação e bebidas",
         "ico": "🍎",
-        "val": 0.179
-      },
-      {
-        "nome": "Transportes",
-        "ico": "🚌",
-        "val": 0.179
-      },
-      {
-        "nome": "Vestuário",
-        "ico": "👕",
-        "val": 0.033
-      },
-      {
-        "nome": "Comunicação",
-        "ico": "📱",
-        "val": 0.029
+        "val": 0.224
       },
       {
         "nome": "Despesas pessoais",
         "ico": "🎭",
-        "val": 0.027
+        "val": 0.037
       },
       {
-        "nome": "Saúde e cuidados",
-        "ico": "➕",
-        "val": 0.011
+        "nome": "Comunicação",
+        "ico": "📱",
+        "val": 0.032
+      },
+      {
+        "nome": "Vestuário",
+        "ico": "👕",
+        "val": 0.018
       },
       {
         "nome": "Artigos de residência",
         "ico": "🛋️",
-        "val": 0.009
+        "val": 0.015
+      },
+      {
+        "nome": "Saúde e cuidados",
+        "ico": "➕",
+        "val": 0.012
       },
       {
         "nome": "Educação",
         "ico": "📚",
-        "val": 0.002
+        "val": 0.004
+      },
+      {
+        "nome": "Habitação",
+        "ico": "⚡",
+        "val": -0.079
+      },
+      {
+        "nome": "Transportes",
+        "ico": "🚌",
+        "val": -0.119
       }
     ]
   },
@@ -1002,15 +1097,15 @@
         },
         {
           "ico": "💱",
-          "txt": "Dólar voltou a R$ 5,56, mas segue perto da máxima de 15 meses: mantenha hedge de importados."
+          "txt": "Dólar fechou a R$ 5,65 em 12/11, maior valor desde junho de 2025: reforce hedge de importados e revise preços de reposição."
+        },
+        {
+          "ico": "📉",
+          "txt": "IPCA de 0,14% em outubro (4,63% em 12 meses) alivia energia e passagens, mas alimentos subiram 1,04%: negocie custos de insumos alimentares."
         },
         {
           "ico": "🏛️",
-          "txt": "Acompanhe a votação do ajuste fiscal de até R$ 60 bilhões no Senado: afeta juros e câmbio."
-        },
-        {
-          "ico": "🌾",
-          "txt": "Vendas a prazo para o agro: exija garantias até a sanção da MP das dívidas rurais."
+          "txt": "Ajuste fiscal aprovado no Senado (texto-base); destaques em 17/11 e depois Câmara: mapeie benefícios tributários que podem ser cortados."
         },
         {
           "ico": "🛍️",
@@ -1190,15 +1285,15 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 61.0,
-      "severidade": 7.2,
-      "iminencia": 5.0,
+      "relevancia": 68.0,
+      "severidade": 7.8,
+      "iminencia": 5.8,
       "ultima_observacao": "PIM -0,8% e PMS -0,1% em setembro; Anfavea: produção de veículos cai 5,1% em outubro, com exportações -28,3% e importações +22,3%.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W02",
       "origem": "real",
       "direcao": "estável",
-      "noticias_semana": 6
+      "noticias_semana": 7
     },
     {
       "id": "tema-ecommerce",
@@ -1253,15 +1348,36 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 38.5,
-      "severidade": 4.4,
-      "iminencia": 3.3,
-      "ultima_observacao": "Dólar recua a R$ 5,56 em 11/11 após máxima de 15 meses (R$ 5,586) em 10/11; poupança perde R$ 8,88 bi em outubro, R$ 75,3 bi no ano.",
+      "relevancia": 46.0,
+      "severidade": 5.0,
+      "iminencia": 4.2,
+      "ultima_observacao": "Dólar fecha a R$ 5,65 em 12/11 (+1,6%), maior valor desde junho de 2025, com incerteza fiscal; Ibovespa cai 0,43%.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W01",
       "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 4
+      "direcao": "esquentando",
+      "noticias_semana": 5
+    },
+    {
+      "id": "tema-fiscal",
+      "tipo": "risco",
+      "titulo": "Fiscal, eleição e instituições",
+      "dimensao": "P",
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 46.0,
+      "severidade": 5.0,
+      "iminencia": 4.2,
+      "ultima_observacao": "Senado aprova texto-base do PLP 299 em 12/11 (45 a 31), com ganho de R$ 45,1 a 56,1 bi em 2027; CNI critica alta de carga.",
+      "periodo_observacao": "2026-W46",
+      "data_identificacao": "2026-W14",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 5
     },
     {
       "id": "tema-construcao",
@@ -1273,36 +1389,15 @@
         "comercio"
       ],
       "status": "em_curso",
-      "relevancia": 32.0,
-      "severidade": 3.9,
-      "iminencia": 2.5,
-      "ultima_observacao": "Cury lucra R$ 313,9 milhões no 3T26 (+23%) e paga R$ 200 milhões em dividendos, mas distratos sobem 59,3%.",
+      "relevancia": 38.5,
+      "severidade": 4.4,
+      "iminencia": 3.3,
+      "ultima_observacao": "MRV Incorporação tem lucro ajustado recorde de R$ 315 milhões no 3T26 (+54,5%); Cury lucra R$ 313,9 milhões, mas distratos sobem 59,3%.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W02",
       "origem": "real",
       "direcao": "estável",
-      "noticias_semana": 3
-    },
-    {
-      "id": "tema-fiscal",
-      "tipo": "risco",
-      "titulo": "Fiscal, eleição e instituições",
-      "dimensao": "P",
-      "setores": [
-        "transversal",
-        "servicos",
-        "industria"
-      ],
-      "status": "monitorar",
-      "relevancia": 32.0,
-      "severidade": 3.9,
-      "iminencia": 2.5,
-      "ultima_observacao": "PLP 299/2026, ajuste de R$ 50 a 60 bilhões em 2027, teve votação adiada no Senado em 11/11 e nova tentativa marcada para 12/11.",
-      "periodo_observacao": "2026-W46",
-      "data_identificacao": "2026-W14",
-      "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 3
+      "noticias_semana": 4
     },
     {
       "id": "tema-juros",
@@ -1326,26 +1421,26 @@
       "noticias_semana": 2
     },
     {
-      "id": "tema-combustiveis",
-      "tipo": "risco",
-      "titulo": "Combustíveis, petróleo e geopolítica",
+      "id": "tema-inflacao",
+      "tipo": "oportunidade",
+      "titulo": "Inflação e preços",
       "dimensao": "E",
       "setores": [
         "transversal",
-        "industria",
+        "comercio",
         "servicos",
-        "agro"
+        "construcao"
       ],
-      "status": "monitorar",
-      "relevancia": 17.0,
-      "severidade": 1.7,
-      "iminencia": 1.7,
-      "ultima_observacao": "Desoneração federal da gasolina e do etanol prorrogada em 10/11 até 9/12; fim do benefício segue como risco de alta nas bombas.",
+      "status": "em_curso",
+      "relevancia": 18.0,
+      "severidade": 2.8,
+      "iminencia": 0.8,
+      "ultima_observacao": "IPCA de outubro sobe 0,14%, abaixo do consenso de 0,25%, e acumula 4,63% em 12 meses; alimentação ainda sobe 1,04%.",
       "periodo_observacao": "2026-W46",
-      "data_identificacao": "2026-W15",
+      "data_identificacao": "2026-W01",
       "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 2
+      "direcao": "esfriando",
+      "noticias_semana": 1
     }
   ]
 }

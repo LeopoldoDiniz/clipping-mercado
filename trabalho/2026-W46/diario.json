@@ -98,5 +98,18 @@
         "tema materializou: consumo"
       ]
     }
+  },
+  {
+    "data": "2026-11-13",
+    "em": "2026-11-13T10:11:19.537289+00:00",
+    "noticias_novas": 6,
+    "total_semana": 48,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador IPCA atualizado: 0,14%",
+        "indicador Câmbio (US$) atualizado: R$ 5,61"
+      ]
+    }
   }
 ]

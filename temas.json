@@ -1,5 +1,5 @@
 {
- "versao": 9,
+ "versao": 10,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -790,7 +790,10 @@
   "ajuste-fiscal": "fiscal",
   "BB": "agro",
   "dívida-rural": "agro",
-  "Americanas": "consumo"
+  "Americanas": "consumo",
+  "CNI": "fiscal",
+  "MRV": "construcao",
+  "fundição": "atividade"
  },
  "leituras": [
   {
@@ -4918,7 +4921,13 @@
    "data": "2026-11-12",
    "semana": "2026-W46",
    "motivo": "palavras novas: BB→agro, dívida-rural→agro, Americanas→consumo"
+  },
+  {
+   "versao": 10,
+   "data": "2026-11-13",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: CNI→fiscal, MRV→construcao, fundição→atividade"
   }
  ],
- "atualizado_em": "2026-11-12T10:10:45.826699+00:00"
+ "atualizado_em": "2026-11-13T10:10:36.051205+00:00"
 }

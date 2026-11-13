@@ -1,0 +1,39 @@
+{
+  "clipping": [
+    {"setores": ["transversal"], "titulo": "IPCA sobe 0,14% em outubro, abaixo do esperado",
+     "texto": "IBGE (12/11): IPCA de 0,14% em outubro (0,82% em setembro; consenso 0,25%), 4,63% em 12 meses; energia elétrica cai 1,92% e passagens aéreas 9,21%, mas alimentação sobe 1,04%.",
+     "palavra": "IPCA",
+     "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/economia/ipca-inflacao-outubro-2026-dados-ibge/"},
+                {"nome": "IBGE", "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/48568-ipca-fica-em-0-14-em-outubro"}]},
+    {"setores": ["transversal"], "titulo": "Senado aprova texto-base do ajuste fiscal por 45 a 31",
+     "texto": "PLP 299/2026 aprovado em 12/11: melhora de R$ 45,1 a 56,1 bilhões no primário de 2027, gasto real limitado a 2% e corte de benefícios tributários; destaques ficam para 17/11, depois Câmara.",
+     "palavra": "ajuste-fiscal",
+     "fontes": [{"nome": "Agência Senado", "url": "https://www12.senado.leg.br/noticias/materias/2026/11/12/texto-principal-do-ajuste-fiscal-e-aprovado-pelo-senado"},
+                {"nome": "TV Sim Brasil", "url": "https://tvsimbrasil.com.br/brasil/politica/noticia/2026/11/12/senado-aprova-ajuste-fiscal-561-bi"}]},
+    {"setores": ["industria", "transversal"], "titulo": "CNI diz que ajuste fiscal transfere a conta ao setor produtivo",
+     "texto": "CNI (12/11) critica no PLP 299 a restrição à compensação de créditos tributários e o corte linear de incentivos; elogia limite de 2% (ante 2,5%) para o gasto real.",
+     "palavra": "CNI", "tema": "fiscal",
+     "fontes": [{"nome": "O Povo", "url": "https://opovo.com.br/noticias/economia/2026/11/12/para-cni-plp-transfere-a-setor-produtivo-maior-parte-da-conta-do-ajuste-fiscal.html"},
+                {"nome": "Metrópoles", "url": "https://www.metropoles.com/brasil/cni-projeto-de-ajuste-fiscal-do-governo-transfere-conta-ao-setor-produtivo"}]},
+    {"setores": ["transversal"], "titulo": "Dólar sobe 1,6% e fecha a R$ 5,65, maior valor desde junho de 2025",
+     "texto": "Dólar fecha a R$ 5,65 (+1,6%) em 12/11, maior nível desde 2/6/2025, com incerteza sobre o ajuste fiscal; Ibovespa cai 0,43%, a 171.324 pontos, com BB -8,34%.",
+     "palavra": "dólar",
+     "fontes": [{"nome": "O Tempo", "url": "https://www.otempo.com.br/economia/2026/11/12/dolar-dispara-e-fecha-no-maior-valor-desde-junho-de-2025"},
+                {"nome": "Repórter PB", "url": "https://www.reporterpb.com.br/noticia/internacional/2026/11/12/dolar-dispara-1-58-e-fecha-a-r-5-65-maior-nivel-em-17-meses/194484.html"}]},
+    {"setores": ["construcao"], "titulo": "MRV Incorporação tem lucro ajustado recorde de R$ 315 milhões no 3T26",
+     "texto": "MRV Incorporação lucra R$ 315 milhões ajustados no 3T26 (+54,5%), com receita de R$ 3,41 bilhões (+28,7%); greve da Caixa tirou cerca de R$ 80 milhões da geração de caixa.",
+     "palavra": "MRV", "tema": "construcao",
+     "fontes": [{"nome": "Moon BH", "url": "https://moonbh.com.br/capital-m/2026/11/12/mrv-incorporacao-lucro-ajustado-recorde-315-milhoes-3t26/"}]},
+    {"setores": ["industria"], "titulo": "Ramah investe R$ 25 milhões em fundição em Minas Gerais",
+     "texto": "Ramah investe R$ 25 milhões em fundição em Carmo da Mata (MG), com 180 empregos diretos e capacidade de 500 toneladas de peças por mês a partir do 2º semestre de 2027.",
+     "palavra": "fundição", "tema": "atividade",
+     "fontes": [{"nome": "Diário do Comércio", "url": "https://diariodocomercio.com.br/negocios/ramah-investimento-fundicao-minas/"}]}
+  ],
+  "leituras_temas": {
+    "inflacao": {"tipo": "oportunidade", "status": "em_curso", "texto": "IPCA de outubro sobe 0,14%, abaixo do consenso de 0,25%, e acumula 4,63% em 12 meses; alimentação ainda sobe 1,04%.", "fontes": ["IBGE"]},
+    "fiscal": {"tipo": "risco", "status": "em_curso", "texto": "Senado aprova texto-base do PLP 299 em 12/11 (45 a 31), com ganho de R$ 45,1 a 56,1 bi em 2027; CNI critica alta de carga.", "fontes": ["Senado", "CNI"]},
+    "cambio": {"tipo": "risco", "status": "em_curso", "texto": "Dólar fecha a R$ 5,65 em 12/11 (+1,6%), maior valor desde junho de 2025, com incerteza fiscal; Ibovespa cai 0,43%.", "fontes": ["O Tempo", "BCB"]},
+    "construcao": {"tipo": "oportunidade", "status": "em_curso", "texto": "MRV Incorporação tem lucro ajustado recorde de R$ 315 milhões no 3T26 (+54,5%); Cury lucra R$ 313,9 milhões, mas distratos sobem 59,3%.", "fontes": ["MRV", "Cury"]}
+  },
+  "novos_temas": []
+}
