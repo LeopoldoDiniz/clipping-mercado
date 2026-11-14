@@ -1,5 +1,5 @@
 {
- "versao": 10,
+ "versao": 11,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -793,7 +793,12 @@
   "Americanas": "consumo",
   "CNI": "fiscal",
   "MRV": "construcao",
-  "fundição": "atividade"
+  "fundição": "atividade",
+  "CSN": "atividade",
+  "Braskem": "atividade",
+  "Mateus": "consumo",
+  "financiamento-imobiliário": "construcao",
+  "aviação": "atividade"
  },
  "leituras": [
   {
@@ -4927,7 +4932,13 @@
    "data": "2026-11-13",
    "semana": "2026-W46",
    "motivo": "palavras novas: CNI→fiscal, MRV→construcao, fundição→atividade"
+  },
+  {
+   "versao": 11,
+   "data": "2026-11-14",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: CSN→atividade, Braskem→atividade, Mateus→consumo, financiamento-imobiliário→construcao, aviação→atividade"
   }
  ],
- "atualizado_em": "2026-11-13T10:10:36.051205+00:00"
+ "atualizado_em": "2026-11-14T10:10:43.229615+00:00"
 }

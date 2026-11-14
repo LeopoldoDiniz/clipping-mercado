@@ -8792,6 +8792,103 @@
     "setores": [
      "industria"
     ]
+   },
+   {
+    "titulo": "Varejo sobe 0,2% em setembro e IBGE vê estabilidade",
+    "palavra": "PMC",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Dólar fecha a R$ 5,655, maior fechamento de 2026, e sobe 2,6% na semana",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Governo quer votar ajuste fiscal na Câmara logo após destaques de 17/11",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Conab prevê safra recorde de 366,1 milhões de toneladas, mas corta estimativa",
+    "palavra": "safra",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "CSN tem prejuízo de R$ 1,25 bilhão no 3T26 e Ebitda cai 43,5%",
+    "palavra": "CSN",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Braskem tem prejuízo de R$ 1,07 bilhão no 3T26",
+    "palavra": "Braskem",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Grupo Mateus lucra R$ 322 milhões no 3T26, queda de 36%",
+    "palavra": "Mateus",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Caixa estuda subir juros do financiamento imobiliário",
+    "palavra": "financiamento-imobiliário",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Shopee bate recorde no 11.11 e supera Black Friday de 2025",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Petrobras pede ao governo subvenção para a gasolina",
+    "palavra": "gasolina",
+    "tema": "combustiveis",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "AIE prevê excesso de oferta de petróleo no 4º trimestre",
+    "palavra": "petróleo",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Suspensão de decolagens nos EUA afeta voos com o Brasil",
+    "palavra": "aviação",
+    "tema": "atividade",
+    "setores": [
+     "servicos"
+    ]
    }
   ]
  }

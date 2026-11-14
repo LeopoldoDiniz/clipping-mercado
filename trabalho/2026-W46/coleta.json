@@ -851,6 +851,216 @@
           "url": "https://diariodocomercio.com.br/negocios/ramah-investimento-fundicao-minas/"
         }
       ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Varejo sobe 0,2% em setembro e IBGE vê estabilidade",
+      "texto": "PMC (13/11): vendas do varejo variam 0,2% em setembro ante agosto; 3º trimestre fica 0,3% abaixo do 2º; alta de 1,7% em 12 meses; setor segue cerca de 1% abaixo do pico de março.",
+      "palavra": "PMC",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/vendas-no-comercio-variam-02-em-setembro-ibge-mostra-estabilidade"
+        },
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/economia/2026/11/13/ibge-vendas-no-comercio-varejista-variam-0-2-em-setembro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar fecha a R$ 5,655, maior fechamento de 2026, e sobe 2,6% na semana",
+      "texto": "Dólar sobe cerca de 0,1% em 13/11, a R$ 5,655, maior nível desde junho de 2025; Ibovespa avança 0,66%, a 172.451 pontos, e acumula 2,35% na semana.",
+      "palavra": "dólar",
+      "fontes": [
+        {
+          "nome": "O Repórter",
+          "url": "https://oreporter.com/economia/dolar-recua-009-fecha-5647-votacao-fiscal-ibovespa-sobe-13-novembro"
+        },
+        {
+          "nome": "Planeta Osasco",
+          "url": "https://planetaosasco.com/economia/902430-dolar-fecha-estavel-mas-sobe-263-na-semana-ibovespa-avanca-066"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Governo quer votar ajuste fiscal na Câmara logo após destaques de 17/11",
+      "texto": "Alcolumbre (13/11) defende adiar para 17/11 os quatro destaques da oposição ao PLP 299; ministro José Guimarães promete levar o texto ao plenário da Câmara imediatamente depois.",
+      "palavra": "ajuste-fiscal",
+      "fontes": [
+        {
+          "nome": "Agência Senado",
+          "url": "https://www12.senado.leg.br/noticias/materias/2026/11/13/ajuste-fiscal-adiamento-de-votacao-da-mais-tempo-para-reflexao-diz-davi"
+        },
+        {
+          "nome": "Plantão Brasil",
+          "url": "https://www.plantaobrasil.net/noticias/163437-governo-articula-votacao-relampago-de-pacote-fiscal-na-camara-apos-aval-do-senado"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Conab prevê safra recorde de 366,1 milhões de toneladas, mas corta estimativa",
+      "texto": "Conab (13/11): safra 2026/27 de 366,13 milhões de t (+1,3%), 0,3% abaixo do levantamento de outubro; soja em 181,62 milhões de t (+0,7%) e milho em 148 milhões de t (+2,4%).",
+      "palavra": "safra",
+      "fontes": [
+        {
+          "nome": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/11/13/conab-reduz-estimativa-e-preve-safra-2026-27-de-36613-milhoes-de-t-alta-de-13.html"
+        },
+        {
+          "nome": "Agência Gov",
+          "url": "https://agenciagov.ebc.com.br/noticias/202611/nova-estimativa-da-conab-para-safra-de-graos-2026-27-e-de-366-1-milhoes-de-toneladas"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "CSN tem prejuízo de R$ 1,25 bilhão no 3T26 e Ebitda cai 43,5%",
+      "texto": "CSN reverte lucro de R$ 76 milhões e perde R$ 1,247 bilhão no 3T26, com minério mais barato, frete maior e menos exportação de aço; prejuízo soma R$ 2,6 bilhões em 2026.",
+      "palavra": "CSN",
+      "tema": "atividade",
+      "fontes": [
+        {
+          "nome": "BM&C News",
+          "url": "https://bmcnews.com.br/empresas-e-negocios/csn-tem-prejuizo-de-r-1-25-bi-jhsf-cresce-e-caixa-lucra-menos/"
+        },
+        {
+          "nome": "ACIARA",
+          "url": "https://aciara.com.br/csn-tem-prejuizo-no-3t26-veja-balancos-desta-sexta/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Braskem tem prejuízo de R$ 1,07 bilhão no 3T26",
+      "texto": "Braskem perde R$ 1,068 bilhão no 3T26 (R$ 26 milhões no 3T25), com resultado financeiro negativo de R$ 1,6 bilhão e alavancagem de 6,36 vezes, em recuperação extrajudicial desde agosto.",
+      "palavra": "Braskem",
+      "tema": "atividade",
+      "fontes": [
+        {
+          "nome": "Gazeta Mercantil",
+          "url": "https://gazetamercantil.com/braskem-brkm5-prejuizo-terceiro-trimestre-2026"
+        },
+        {
+          "nome": "ACIARA",
+          "url": "https://aciara.com.br/csn-tem-prejuizo-no-3t26-veja-balancos-desta-sexta/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Grupo Mateus lucra R$ 322 milhões no 3T26, queda de 36%",
+      "texto": "Grupo Mateus tem lucro de R$ 322,4 milhões no 3T26 (-36,1%, sem extraordinários de 2025) e receita líquida de R$ 10,7 bilhões (-0,4%); Petz Cobasi lucra R$ 96,1 milhões ajustados (+31,1%).",
+      "palavra": "Mateus",
+      "tema": "consumo",
+      "fontes": [
+        {
+          "nome": "ADVFN",
+          "url": "https://br.advfn.com/jornal/2026/11/grupo-mateus-apresenta-lucro-de-r-322-4-milhoes-no-3t26"
+        },
+        {
+          "nome": "ACIARA",
+          "url": "https://aciara.com.br/csn-tem-prejuizo-no-3t26-veja-balancos-desta-sexta/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Caixa estuda subir juros do financiamento imobiliário",
+      "texto": "Caixa (13/11) avalia reajustar a taxa mínima de 10,3% + TR, a menor entre grandes bancos (Bradesco 15%); poupança teve saques líquidos de R$ 53,2 bilhões de janeiro a setembro.",
+      "palavra": "financiamento-imobiliário",
+      "tema": "construcao",
+      "fontes": [
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/economia/noticia/2026/11/13/por-que-caixa-estuda-subir-juros-financiamento-imobiliario"
+        },
+        {
+          "nome": "Band B",
+          "url": "https://www.bandab.com.br/economia/caixa-admite-que-estuda-aumentar-juros-do-financiamento-da-casa-propria/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Shopee bate recorde no 11.11 e supera Black Friday de 2025",
+      "texto": "Shopee (13/11): vendas do 11.11 mais que dobram ante a Black Friday de 2025; Pix responde por 52% dos pedidos e pedidos no cartão de crédito sobem 121%.",
+      "palavra": "Shopee",
+      "fontes": [
+        {
+          "nome": "Mercado & Consumo",
+          "url": "https://mercadoeconsumo.com.br/13/11/2026/ecommerce/shopee-supera-black-friday-de-2025-e-bate-recorde-de-vendas-no-11-11/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Petrobras pede ao governo subvenção para a gasolina",
+      "texto": "Petrobras pede subsídio igual ao do diesel para a gasolina, vendida a R$ 3,80 por litro na refinaria ante cerca de R$ 7 no exterior; área econômica resiste por falta de orçamento (13/11).",
+      "palavra": "gasolina",
+      "fontes": [
+        {
+          "nome": "O Cafezinho/Reuters",
+          "url": "https://www.ocafezinho.com/2026-11-13/petrobras-pede-para-a-gasolina-o-mesmo-subsidio-do-diesel/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "AIE prevê excesso de oferta de petróleo no 4º trimestre",
+      "texto": "AIE (13/11): oferta global sobe 2,3 milhões de barris/dia em outubro, a 105,4 milhões, com retomada das exportações do Golfo Pérsico; agência projeta excesso de oferta no 4º trimestre.",
+      "palavra": "petróleo",
+      "fontes": [
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/economia/noticia/2026/11/13/aie-preve-excesso-oferta-petroleo-guerra-ira"
+        },
+        {
+          "nome": "SpaceMoney",
+          "url": "https://www.spacemoney.com.br/commodities/iea-superavit-petroleo-quarto-trimestre"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Suspensão de decolagens nos EUA afeta voos com o Brasil",
+      "texto": "FAA suspende decolagens nos EUA em 13/11 por falha de comunicação, a primeira desde janeiro de 2023; Guarulhos recebe ordem de manter em solo voos para os EUA; Anac monitora.",
+      "palavra": "aviação",
+      "tema": "atividade",
+      "fontes": [
+        {
+          "nome": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/brasil/suspensao-de-voos-nos-eua-afeta-operacoes-no-brasil"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -927,7 +1137,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 13/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 14/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -947,9 +1157,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,61",
+      "valor": "R$ 5,65",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 12/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 13/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -961,9 +1171,9 @@
     },
     {
       "label": "Varejo (PMC)",
-      "valor": "0,1%",
-      "cor": "up",
-      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
+      "valor": "0,2%",
+      "cor": "neutral",
+      "sub": "Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE set/26",
       "fonte": "IBGE",
       "acum_ano": 1.7
     },
@@ -1040,116 +1250,112 @@
       "acoes": [
         {
           "ico": "🏦",
-          "txt": "Selic em 13,75% e BB cortando crédito ao agro: espere financiamento mais caro e seletivo no 1º semestre."
+          "txt": "Selic em 13,75% e Caixa estudando subir juros imobiliários: espere crédito mais caro e seletivo no 1º semestre."
         },
         {
           "ico": "💱",
-          "txt": "Dólar fechou a R$ 5,65 em 12/11, maior valor desde junho de 2025: reforce hedge de importados e revise preços de reposição."
-        },
-        {
-          "ico": "📉",
-          "txt": "IPCA de 0,14% em outubro (4,63% em 12 meses) alivia energia e passagens, mas alimentos subiram 1,04%: negocie custos de insumos alimentares."
+          "txt": "Dólar fechou a R$ 5,655 em 13/11, maior de 2026: reforce hedge de importados e revise preços de reposição."
         },
         {
           "ico": "🏛️",
-          "txt": "Ajuste fiscal aprovado no Senado (texto-base); destaques em 17/11 e depois Câmara: mapeie benefícios tributários que podem ser cortados."
+          "txt": "Destaques do ajuste fiscal em 17/11 e votação rápida na Câmara: mapeie benefícios tributários em risco."
         },
         {
           "ico": "🛍️",
-          "txt": "Consumo segue fraco (ICVA -4,0%): Black Friday com estoque enxuto e foco em Pix."
+          "txt": "Varejo estável (PMC +0,2% em setembro) e ICVA -4,0% em outubro: Black Friday com estoque enxuto e foco em Pix."
+        },
+        {
+          "ico": "🌾",
+          "txt": "Conab prevê safra recorde de 366,1 milhões de t, mas o crédito rural segue travado pela inadimplência."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Quatro quedas em cinco meses: a indústria entra em recessão?",
-        "quote": "Produção industrial caiu 0,8% em setembro, a quarta queda em cinco meses.",
+        "prov": "Com siderurgia e química no prejuízo, sua cadeia de fornecedores aguenta mais um trimestre de demanda fraca?",
+        "quote": "A CSN teve prejuízo de R$ 1,247 bilhão no 3º trimestre, ante lucro de R$ 76 milhões um ano antes.",
         "edi": [
-          "A PIM recuou com 17 de 25 ramos em queda e bens de capital em -1,9%, sinal de investimento fraco.",
-          "O PMI de outubro subiu a 46,1, mas segue em contração, e o superávit comercial foi recorde para o mês, puxado pelo petróleo."
+          "A temporada de balanços confirmou o aperto na indústria de base: a CSN perdeu R$ 1,25 bilhão no 3T26, com Ebitda ajustado 43,5% menor, minério mais barato e menos exportação de aço, e já soma R$ 2,6 bilhões de prejuízo no ano. A Braskem perdeu R$ 1,07 bilhão, com resultado financeiro negativo de R$ 1,6 bilhão e alavancagem de 6,36 vezes, em recuperação extrajudicial desde agosto.",
+          "O pano de fundo é a PIM de setembro, com queda de 0,8%, e a produção de veículos 5,1% menor em outubro. O dólar a R$ 5,655 em 13/11 encarece insumos importados, enquanto a AIE passou a prever excesso de oferta de petróleo no 4º trimestre, o que pode aliviar custos de energia e matérias-primas petroquímicas."
         ],
         "acoes": [
           {
-            "ico": "🏭",
-            "txt": "Reduza turnos e estoques onde a demanda caiu."
+            "ico": "🔍",
+            "txt": "Revise o risco de crédito de fornecedores de aço e químicos alavancados antes de novos contratos."
           },
           {
             "ico": "💱",
-            "txt": "Exportadores: aproveitem o dólar a R$ 5,51."
+            "txt": "Com o dólar a R$ 5,65, faça hedge de insumos importados e reprecifique reposição."
           },
           {
-            "ico": "🔧",
-            "txt": "Adie investimentos em máquinas até o cenário clarear."
+            "ico": "🛢️",
+            "txt": "Acompanhe a queda do petróleo para renegociar preços de resinas e combustíveis em dezembro."
           }
         ]
       },
       "comercio": {
-        "prov": "Com Americanas no prejuízo e o ICVA no 17º mês de queda, sua Black Friday está dimensionada para um consumidor que adia compras?",
-        "quote": "Americanas teve prejuízo de R$ 352 milhões no 3º trimestre, ante lucro de R$ 367 milhões um ano antes.",
+        "prov": "O varejo parou de crescer no 3º trimestre: sua Black Friday está planejada para estabilidade, não para alta?",
+        "quote": "As vendas do varejo variaram 0,2% em setembro, e o 3º trimestre ficou 0,3% abaixo do 2º, segundo o IBGE.",
         "edi": [
-          "O varejo segue sob pressão: o ICVA da Cielo caiu 4,0% real em outubro, 17º mês seguido, e o calote do consumidor lidera as causas dos 1.024 pedidos de recuperação judicial no setor. Na temporada de balanços, a Americanas teve prejuízo de R$ 352 milhões e Ebitda ajustado de só R$ 52 milhões, mesmo com receita 10% maior, e o Magalu viu o e-commerce cair 9,8%.",
-          "Nos veículos, os emplacamentos caíram 5,6% em outubro ante setembro, para 265,5 mil unidades (+1,8% no ano), com importados ganhando espaço: entradas subiram 22,3%. A inadimplência de pessoa física no BB foi a 9,14%."
+          "A PMC de setembro mostrou um varejo estável: alta de 0,2% no mês, recuo de 0,3% no trimestre e nível cerca de 1% abaixo do pico de março; em 12 meses, o avanço é de 1,7%. O ICVA da Cielo já apontava queda real de 4,0% em outubro, 17º mês seguido.",
+          "Nos balanços, o Grupo Mateus lucrou R$ 322 milhões no 3T26, 36% menos que um ano antes, com receita de R$ 10,7 bilhões (-0,4%), e a Americanas teve prejuízo de R$ 352 milhões. Na contramão, a Petz Cobasi elevou o lucro ajustado em 31,1%."
         ],
         "acoes": [
           {
-            "ico": "💳",
-            "txt": "Restrinja crediário próprio a clientes com histórico; priorize Pix e cartão."
-          },
-          {
             "ico": "📦",
-            "txt": "Dimensione estoques da Black Friday pela venda real de outubro, não pela de 2025."
+            "txt": "Dimensione estoques de Black Friday (27/11) para vendas estáveis e evite compras de reposição em dólar."
           },
           {
-            "ico": "🚗",
-            "txt": "Concessionárias: prepare oferta de usados e financiamento com entrada maior diante da queda mensal."
+            "ico": "💳",
+            "txt": "Priorize Pix e restrinja crediário a clientes com bom histórico."
+          },
+          {
+            "ico": "🧮",
+            "txt": "Proteja margem: descontos concentrados em itens de giro, não em toda a loja."
           }
         ]
       },
       "servicos": {
-        "prov": "Serviços pararam de crescer e o crédito ficou mais caro: seus contratos de 2027 já refletem esse ritmo?",
+        "prov": "Serviços estagnados e consumo travado: sua carteira de clientes já sente o freio do varejo?",
         "quote": "O volume de serviços recuou 0,1% em setembro, encerrando 29 altas anuais seguidas.",
         "edi": [
-          "A PMS de setembro mostrou queda de 0,1% no mês e de 0,1% no ano, a primeira variação anual negativa após 29 altas; o acumulado de 2026 está em +1,5%. O Caged de setembro criou 121,3 mil vagas, o pior setembro desde 2020.",
-          "Nos serviços financeiros, o BB teve lucro ajustado 66,5% menor no 3º trimestre, com inadimplência de pessoa física em 9,14%, e a poupança perdeu R$ 8,88 bilhões em outubro, R$ 75,3 bilhões no ano, com a Selic em 13,75%."
+          "A PMS de setembro caiu 0,1% no mês e no ano, primeira variação anual negativa após 29 altas, e o varejo, principal cliente de serviços de apoio, ficou 0,3% menor no 3º trimestre. O e-commerce, por outro lado, mantém demanda por logística: a Shopee relatou recorde no 11.11, com vendas via fulfillment mais que triplicando ante a Black Friday de 2025.",
+          "No transporte aéreo, a suspensão das decolagens nos EUA em 13/11, por falha de comunicação da FAA, atingiu voos de Guarulhos e Galeão para o país. A poupança teve saques líquidos de R$ 53,2 bilhões de janeiro a setembro, pressionando o crédito."
         ],
         "acoes": [
           {
-            "ico": "📊",
-            "txt": "Revise metas de 2027 com serviços estáveis, não em expansão."
+            "ico": "🚚",
+            "txt": "Logística e entrega: reforce capacidade para a Black Friday, onde a demanda online segue forte."
           },
           {
             "ico": "🧾",
-            "txt": "Cobre adiantamentos ou garantias de clientes empresariais com histórico de atraso."
+            "txt": "Cobre garantias de clientes do varejo com resultado em queda."
           },
           {
-            "ico": "👥",
-            "txt": "Contrate temporários de fim de ano por demanda confirmada."
+            "ico": "📊",
+            "txt": "Planeje 2027 com serviços estáveis, não em expansão."
           }
         ]
       },
       "agro": {
-        "prov": "Com o maior credor do campo apertando o crédito, sua operação aguenta uma safra financiada com menos banco?",
-        "quote": "A inadimplência do agro no Banco do Brasil chegou a 6,92% em setembro, ante 4,84% um ano antes.",
+        "prov": "Safra recorde com crédito escasso: sua operação garante insumos e capital de giro para colher 366 milhões de toneladas?",
+        "quote": "A Conab prevê safra 2026/27 de 366,13 milhões de toneladas, alta de 1,3%, mas 0,3% abaixo da estimativa de outubro.",
         "edi": [
-          "O calote rural saiu dos tribunais e chegou ao balanço do principal financiador do setor: o lucro ajustado do BB caiu 66,5% no 3º trimestre, para R$ 1,27 bilhão, e a projeção para 2026 foi cortada para R$ 9 a 11 bilhões. A inadimplência se concentra em médios e grandes produtores de soja, milho e pecuária do Centro-Oeste, e o banco diz que vai reduzir a exposição ao agro e priorizar crédito com garantia. Recuperações judiciais no setor já subiram 57,5% no 3º trimestre.",
-          "Em 11/11, o Senado aprovou a MP 1.376/2026 da renegociação de dívidas rurais, com marco ampliado para dívidas desde 1º/01/2021; o texto vai à sanção, com risco de vetos. Nos preços, o café arábica Cepea subiu 0,90%, a R$ 1.611,30 a saca, a arroba subiu R$ 5 em GO e MT e o trigo importado está no maior preço desde agosto de 2024."
+          "A Conab manteve a projeção de safra recorde em 13/11, com soja em 181,6 milhões de toneladas (+0,7%) e milho em 148 milhões (+2,4%), mas cortou a estimativa por menos área e clima desfavorável no Paraná e no Rio Grande do Sul.",
+          "O financiamento é o gargalo: a inadimplência do agro no BB chegou a 6,92% e o lucro do banco caiu 66,5% no 3T26; recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais foi aprovada em 11/11 e aguarda sanção, e o dólar a R$ 5,655 favorece receitas de exportação."
         ],
         "acoes": [
           {
-            "ico": "🏦",
-            "txt": "Antecipe a negociação do custeio 2026/27: crédito bancário ficará mais seletivo e exigirá garantias."
+            "ico": "🌱",
+            "txt": "Garanta insumos e capital de giro antes do pico da colheita; crédito bancário ficará mais seletivo."
           },
           {
             "ico": "📜",
-            "txt": "Produtor endividado: reúna laudos e CPRs para aderir à renegociação assim que a MP for sancionada."
+            "txt": "Avalie a adesão à renegociação da MP de dívidas rurais após a sanção."
           },
           {
-            "ico": "🤝",
-            "txt": "Revendas e cooperativas: reforce garantias em vendas a prazo para grãos e pecuária do Centro-Oeste."
-          },
-          {
-            "ico": "🌾",
-            "txt": "Moinhos e frigoríficos: trave preço de trigo e boi para o 1º trimestre."
+            "ico": "💱",
+            "txt": "Aproveite o dólar a R$ 5,65 para travar parte da venda de soja e milho."
           }
         ]
       },
@@ -1176,35 +1382,35 @@
         ]
       },
       "ecommerce": {
-        "prov": "O 11.11 acelerou o online, mas o varejo digital das grandes redes encolheu: sua margem resiste à guerra de cupons?",
-        "quote": "A Shopee relatou alta de 90% no volume de vendas entre 5 e 10 de novembro ante a pré-Black Friday de 2025.",
+        "prov": "O 11.11 dobrou a Black Friday passada na Shopee: sua operação está pronta para pedidos concentrados em poucos dias?",
+        "quote": "A Shopee informou que as vendas do 11.11 mais que dobraram em relação à Black Friday de 2025.",
         "edi": [
-          "A data dupla de 11/11 foi projetada pela Neotrust em R$ 3,17 bilhões, alta de 21%, e a Shopee informou acessos mais de 40% maiores nas primeiras horas do dia, com R$ 25 milhões em cupons e frete grátis.",
-          "O movimento é concentrado: o e-commerce como um todo recuou 0,5% em outubro segundo a Cielo, o online do Magalu caiu 9,8% no 3º trimestre e a Americanas fechou o período com prejuízo de R$ 352 milhões."
+          "O 11.11 se confirmou como data forte: a Shopee relatou recorde, com Pix em 52% dos pedidos e pedidos no cartão de crédito 121% maiores; a Neotrust projetava R$ 3,17 bilhões no dia (+21%) e R$ 13,3 bilhões na Black Friday (+20,7%).",
+          "O ganho é concentrado nas plataformas: o e-commerce como um todo caiu 0,5% em outubro pela Cielo, o online do Magalu recuou 9,8% no 3T26 e o varejo físico ficou estável em setembro (+0,2%)."
         ],
         "acoes": [
           {
             "ico": "🗓️",
-            "txt": "Use o resultado do 11.11 para recalibrar estoques e verba da Black Friday (27/11)."
+            "txt": "Recalibre estoque e verba da Black Friday (27/11) com o resultado do 11.11."
+          },
+          {
+            "ico": "💳",
+            "txt": "Ofereça parcelamento no cartão: foi a modalidade que mais cresceu no 11.11."
           },
           {
             "ico": "💸",
-            "txt": "Limite cupons a itens de margem alta; frete grátis só acima de tíquete mínimo."
-          },
-          {
-            "ico": "⚡",
-            "txt": "Garanta Pix com desconto no checkout: foi o meio preferido nas campanhas de novembro."
+            "txt": "Limite cupons a itens de margem alta e frete grátis a tíquete mínimo."
           }
         ]
       }
     }
   },
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 13/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 14/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
-    "cambio": "R$ 5,61|Dólar PTAX venda · BCB · 12/11/2026",
+    "cambio": "R$ 5,65|Dólar PTAX venda · BCB · 13/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
-    "varejo": "0,1%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE ago/26",
+    "varejo": "0,2%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE set/26",
     "pim": "-0,8%|Produção física m/m · acum. ano 0,4% · IBGE set/26",
     "ipp": "1,54%|Preços ao produtor m/m · acum. ano 5,04% · IBGE set/26"
   },
@@ -1222,72 +1428,82 @@
       "tipo": "risco",
       "status": "materializado",
       "materializado": true,
-      "texto": "ICVA cai 4,0% real em outubro, 17º mês seguido; Americanas tem prejuízo de R$ 352 milhões no 3T26 e calote lidera RJs no varejo.",
+      "texto": "PMC de setembro varia só 0,2% e 3º trimestre cai 0,3%; ICVA de outubro -4,0%; Grupo Mateus tem lucro 36% menor no 3T26.",
       "fontes": [
         "Cielo",
         "Monitor RGF-BizDoc",
-        "Americanas"
+        "Americanas",
+        "IBGE",
+        "Grupo Mateus"
       ]
     },
     "agro": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Inadimplência agro do BB vai a 6,92% e lucro cai 66,5% no 3T26; RJ no agro sobe 57,5%; MP da dívida rural aprovada em 11/11 vai à sanção.",
+      "texto": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) prevê safra recorde de 366,1 Mt, mas corta 0,3% ante outubro.",
       "fontes": [
         "RCN67",
         "Secex",
         "Cepea",
         "Rabobank",
         "Banco do Brasil",
-        "Senado"
+        "Senado",
+        "Conab"
       ],
       "materializado": true
     },
     "atividade": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "PIM -0,8% e PMS -0,1% em setembro; Anfavea: produção de veículos cai 5,1% em outubro, com exportações -28,3% e importações +22,3%.",
+      "texto": "CSN perde R$ 1,25 bi e Braskem R$ 1,07 bi no 3T26; PIM -0,8% em setembro e produção de veículos -5,1% em outubro.",
       "fontes": [
         "IBGE",
         "Embraer",
         "Agência GBC",
         "Adama",
         "Fiemg",
-        "Anfavea"
+        "Anfavea",
+        "CSN",
+        "Braskem"
       ]
     },
     "cambio": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Dólar fecha a R$ 5,65 em 12/11 (+1,6%), maior valor desde junho de 2025, com incerteza fiscal; Ibovespa cai 0,43%.",
+      "texto": "Dólar fecha a R$ 5,655 em 13/11, maior fechamento de 2026, e sobe 2,6% na semana com dúvidas sobre o ajuste fiscal.",
       "fontes": [
         "Agência Brasil",
         "InfoMoney",
         "BCB",
-        "O Tempo"
+        "O Tempo",
+        "O Repórter"
       ]
     },
     "combustiveis": {
       "tipo": "risco",
       "status": "monitorar",
-      "texto": "Desoneração federal da gasolina e do etanol prorrogada em 10/11 até 9/12; fim do benefício segue como risco de alta nas bombas.",
+      "texto": "Petrobras pede em 13/11 subvenção para gasolina vendida a R$ 3,80/l ante ~R$ 7 lá fora; AIE vê excesso de oferta de petróleo no 4º tri.",
       "fontes": [
-        "Governo federal"
+        "Governo federal",
+        "Petrobras",
+        "AIE"
       ]
     },
     "construcao": {
-      "tipo": "oportunidade",
-      "status": "em_curso",
-      "texto": "MRV Incorporação tem lucro ajustado recorde de R$ 315 milhões no 3T26 (+54,5%); Cury lucra R$ 313,9 milhões, mas distratos sobem 59,3%.",
+      "tipo": "risco",
+      "status": "monitorar",
+      "texto": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR com saque de R$ 53,2 bi da poupança; MRV e Cury ainda lucram recorde no 3T26.",
       "fontes": [
         "Cury",
-        "MRV"
+        "MRV",
+        "Caixa",
+        "Abecip"
       ]
     },
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Senado aprova texto-base do PLP 299 em 12/11 (45 a 31), com ganho de R$ 45,1 a 56,1 bi em 2027; CNI critica alta de carga.",
+      "texto": "Texto-base do PLP 299 aprovado em 12/11; quatro destaques ficam para 17/11 e governo quer votação imediata na Câmara.",
       "fontes": [
         "Mix Vale",
         "Brasil em Folhas",
@@ -1298,12 +1514,13 @@
     },
     "ecommerce": {
       "tipo": "oportunidade",
-      "status": "em_curso",
-      "texto": "11.11 projetado em R$ 3,17 bilhões (+21%); Shopee vende 90% mais entre 5 e 10/11 ante a pré-Black Friday de 2025.",
+      "status": "materializado",
+      "texto": "Shopee informa em 13/11 que vendas do 11.11 mais que dobraram ante a Black Friday de 2025; pedidos no cartão sobem 121%.",
       "fontes": [
         "Confi/Neotrust",
         "Shopee"
-      ]
+      ],
+      "materializado": true
     },
     "inflacao": {
       "tipo": "oportunidade",

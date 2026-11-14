@@ -1,0 +1,49 @@
+{"setores": {
+  "industria": {
+    "prov": "Com siderurgia e química no prejuízo, sua cadeia de fornecedores aguenta mais um trimestre de demanda fraca?",
+    "quote": "A CSN teve prejuízo de R$ 1,247 bilhão no 3º trimestre, ante lucro de R$ 76 milhões um ano antes.",
+    "edi": ["A temporada de balanços confirmou o aperto na indústria de base: a CSN perdeu R$ 1,25 bilhão no 3T26, com Ebitda ajustado 43,5% menor, minério mais barato e menos exportação de aço, e já soma R$ 2,6 bilhões de prejuízo no ano. A Braskem perdeu R$ 1,07 bilhão, com resultado financeiro negativo de R$ 1,6 bilhão e alavancagem de 6,36 vezes, em recuperação extrajudicial desde agosto.", "O pano de fundo é a PIM de setembro, com queda de 0,8%, e a produção de veículos 5,1% menor em outubro. O dólar a R$ 5,655 em 13/11 encarece insumos importados, enquanto a AIE passou a prever excesso de oferta de petróleo no 4º trimestre, o que pode aliviar custos de energia e matérias-primas petroquímicas."],
+    "acoes": [{"ico": "🔍", "txt": "Revise o risco de crédito de fornecedores de aço e químicos alavancados antes de novos contratos."},
+              {"ico": "💱", "txt": "Com o dólar a R$ 5,65, faça hedge de insumos importados e reprecifique reposição."},
+              {"ico": "🛢️", "txt": "Acompanhe a queda do petróleo para renegociar preços de resinas e combustíveis em dezembro."}]
+  },
+  "comercio": {
+    "prov": "O varejo parou de crescer no 3º trimestre: sua Black Friday está planejada para estabilidade, não para alta?",
+    "quote": "As vendas do varejo variaram 0,2% em setembro, e o 3º trimestre ficou 0,3% abaixo do 2º, segundo o IBGE.",
+    "edi": ["A PMC de setembro mostrou um varejo estável: alta de 0,2% no mês, recuo de 0,3% no trimestre e nível cerca de 1% abaixo do pico de março; em 12 meses, o avanço é de 1,7%. O ICVA da Cielo já apontava queda real de 4,0% em outubro, 17º mês seguido.", "Nos balanços, o Grupo Mateus lucrou R$ 322 milhões no 3T26, 36% menos que um ano antes, com receita de R$ 10,7 bilhões (-0,4%), e a Americanas teve prejuízo de R$ 352 milhões. Na contramão, a Petz Cobasi elevou o lucro ajustado em 31,1%."],
+    "acoes": [{"ico": "📦", "txt": "Dimensione estoques de Black Friday (27/11) para vendas estáveis e evite compras de reposição em dólar."},
+              {"ico": "💳", "txt": "Priorize Pix e restrinja crediário a clientes com bom histórico."},
+              {"ico": "🧮", "txt": "Proteja margem: descontos concentrados em itens de giro, não em toda a loja."}]
+  },
+  "servicos": {
+    "prov": "Serviços estagnados e consumo travado: sua carteira de clientes já sente o freio do varejo?",
+    "quote": "O volume de serviços recuou 0,1% em setembro, encerrando 29 altas anuais seguidas.",
+    "edi": ["A PMS de setembro caiu 0,1% no mês e no ano, primeira variação anual negativa após 29 altas, e o varejo, principal cliente de serviços de apoio, ficou 0,3% menor no 3º trimestre. O e-commerce, por outro lado, mantém demanda por logística: a Shopee relatou recorde no 11.11, com vendas via fulfillment mais que triplicando ante a Black Friday de 2025.", "No transporte aéreo, a suspensão das decolagens nos EUA em 13/11, por falha de comunicação da FAA, atingiu voos de Guarulhos e Galeão para o país. A poupança teve saques líquidos de R$ 53,2 bilhões de janeiro a setembro, pressionando o crédito."],
+    "acoes": [{"ico": "🚚", "txt": "Logística e entrega: reforce capacidade para a Black Friday, onde a demanda online segue forte."},
+              {"ico": "🧾", "txt": "Cobre garantias de clientes do varejo com resultado em queda."},
+              {"ico": "📊", "txt": "Planeje 2027 com serviços estáveis, não em expansão."}]
+  },
+  "ecommerce": {
+    "prov": "O 11.11 dobrou a Black Friday passada na Shopee: sua operação está pronta para pedidos concentrados em poucos dias?",
+    "quote": "A Shopee informou que as vendas do 11.11 mais que dobraram em relação à Black Friday de 2025.",
+    "edi": ["O 11.11 se confirmou como data forte: a Shopee relatou recorde, com Pix em 52% dos pedidos e pedidos no cartão de crédito 121% maiores; a Neotrust projetava R$ 3,17 bilhões no dia (+21%) e R$ 13,3 bilhões na Black Friday (+20,7%).", "O ganho é concentrado nas plataformas: o e-commerce como um todo caiu 0,5% em outubro pela Cielo, o online do Magalu recuou 9,8% no 3T26 e o varejo físico ficou estável em setembro (+0,2%)."],
+    "acoes": [{"ico": "🗓️", "txt": "Recalibre estoque e verba da Black Friday (27/11) com o resultado do 11.11."},
+              {"ico": "💳", "txt": "Ofereça parcelamento no cartão: foi a modalidade que mais cresceu no 11.11."},
+              {"ico": "💸", "txt": "Limite cupons a itens de margem alta e frete grátis a tíquete mínimo."}]
+  },
+  "agro": {
+    "prov": "Safra recorde com crédito escasso: sua operação garante insumos e capital de giro para colher 366 milhões de toneladas?",
+    "quote": "A Conab prevê safra 2026/27 de 366,13 milhões de toneladas, alta de 1,3%, mas 0,3% abaixo da estimativa de outubro.",
+    "edi": ["A Conab manteve a projeção de safra recorde em 13/11, com soja em 181,6 milhões de toneladas (+0,7%) e milho em 148 milhões (+2,4%), mas cortou a estimativa por menos área e clima desfavorável no Paraná e no Rio Grande do Sul.", "O financiamento é o gargalo: a inadimplência do agro no BB chegou a 6,92% e o lucro do banco caiu 66,5% no 3T26; recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais foi aprovada em 11/11 e aguarda sanção, e o dólar a R$ 5,655 favorece receitas de exportação."],
+    "acoes": [{"ico": "🌱", "txt": "Garanta insumos e capital de giro antes do pico da colheita; crédito bancário ficará mais seletivo."},
+              {"ico": "📜", "txt": "Avalie a adesão à renegociação da MP de dívidas rurais após a sanção."},
+              {"ico": "💱", "txt": "Aproveite o dólar a R$ 5,65 para travar parte da venda de soja e milho."}]
+  }
+ },
+ "panorama": {"acoes": [
+  {"ico": "🏦", "txt": "Selic em 13,75% e Caixa estudando subir juros imobiliários: espere crédito mais caro e seletivo no 1º semestre."},
+  {"ico": "💱", "txt": "Dólar fechou a R$ 5,655 em 13/11, maior de 2026: reforce hedge de importados e revise preços de reposição."},
+  {"ico": "🏛️", "txt": "Destaques do ajuste fiscal em 17/11 e votação rápida na Câmara: mapeie benefícios tributários em risco."},
+  {"ico": "🛍️", "txt": "Varejo estável (PMC +0,2% em setembro) e ICVA -4,0% em outubro: Black Friday com estoque enxuto e foco em Pix."},
+  {"ico": "🌾", "txt": "Conab prevê safra recorde de 366,1 milhões de t, mas o crédito rural segue travado pela inadimplência."}
+ ]}}

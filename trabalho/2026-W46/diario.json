@@ -111,5 +111,38 @@
         "indicador Câmbio (US$) atualizado: R$ 5,61"
       ]
     }
+  },
+  {
+    "data": "2026-11-14",
+    "em": "2026-11-14T10:11:24.829323+00:00",
+    "noticias_novas": 12,
+    "total_semana": 60,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador Câmbio (US$) atualizado: R$ 5,65",
+        "tema materializou: consumo",
+        "tema materializou: agro"
+      ],
+      "comercio": [
+        "indicador Varejo (PMC) atualizado: 0,2%",
+        "tema materializou: consumo",
+        "tema materializou: ecommerce"
+      ],
+      "servicos": [
+        "tema materializou: consumo",
+        "tema materializou: ecommerce"
+      ],
+      "ecommerce": [
+        "tema materializou: consumo",
+        "tema materializou: ecommerce"
+      ],
+      "agro": [
+        "tema materializou: agro"
+      ],
+      "industria": [
+        "3 notícias novas no setor"
+      ]
+    }
   }
 ]
