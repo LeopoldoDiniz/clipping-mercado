@@ -1,5 +1,5 @@
 {
- "versao": 11,
+ "versao": 12,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -798,7 +798,9 @@
   "Braskem": "atividade",
   "Mateus": "consumo",
   "financiamento-imobiliário": "construcao",
-  "aviação": "atividade"
+  "aviação": "atividade",
+  "Sudene": "fiscal",
+  "BYD": "atividade"
  },
  "leituras": [
   {
@@ -4938,7 +4940,13 @@
    "data": "2026-11-14",
    "semana": "2026-W46",
    "motivo": "palavras novas: CSN→atividade, Braskem→atividade, Mateus→consumo, financiamento-imobiliário→construcao, aviação→atividade"
+  },
+  {
+   "versao": 12,
+   "data": "2026-11-15",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: Sudene→fiscal, BYD→atividade"
   }
  ],
- "atualizado_em": "2026-11-14T10:10:43.229615+00:00"
+ "atualizado_em": "2026-11-15T10:09:46.767773+00:00"
 }

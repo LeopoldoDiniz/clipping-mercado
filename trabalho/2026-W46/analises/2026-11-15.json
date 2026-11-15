@@ -1,0 +1,17 @@
+{"setores": {
+  "agro": {
+    "prov": "Boi e café em alta, crédito rural travado: sua operação está capitalizada para aproveitar os preços?",
+    "quote": "O indicador Cepea do boi gordo fechou 13/11 a R$ 395,40 por arroba, alta de 1,41% em novembro.",
+    "edi": ["A Conab manteve em 13/11 a projeção de safra recorde de 366,1 milhões de toneladas, com soja em 181,6 milhões (+0,7%) e milho em 148 milhões (+2,4%), mas cortou 0,3% ante outubro por clima desfavorável no Sul. Na pecuária, a arroba Cepea chegou a R$ 395,40, com alta de 0,69% na semana, depois de subir 7,03% em outubro; o café arábica subiu 3,95% em Minas em 14/11, a R$ 1.752 a saca, ainda 19,78% abaixo de um ano atrás.", "O crédito segue como gargalo: a inadimplência do agro no BB chegou a 6,92%, o lucro do banco caiu 66,5% no 3T26 e as recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais aguarda sanção, e o dólar a R$ 5,65 favorece a receita em reais de quem exporta."],
+    "acoes": [{"ico": "🐂", "txt": "Pecuarista: avalie travar parte da arroba na B3 com o boi perto de R$ 400."},
+              {"ico": "📜", "txt": "Prepare documentação para aderir à renegociação de dívidas rurais após a sanção da MP."},
+              {"ico": "💱", "txt": "Com o dólar a R$ 5,65, trave parte da venda de soja, milho e café da próxima safra."}]
+  }
+ },
+ "panorama": {"acoes": [
+  {"ico": "🏦", "txt": "Selic em 13,75% e Caixa estudando subir juros imobiliários: espere crédito mais caro e seletivo no 1º semestre."},
+  {"ico": "💱", "txt": "Dólar fechou a R$ 5,655 em 13/11, maior de 2026: reforce hedge de importados e revise preços de reposição."},
+  {"ico": "🏛️", "txt": "PLP 299 eleva corte de benefícios fiscais a 20% e destaques vão a voto em 17/11: mapeie incentivos em risco, inclusive Sudene."},
+  {"ico": "🛍️", "txt": "Varejo estável (PMC +0,2% em setembro) e ICVA -4,0% em outubro: Black Friday com estoque enxuto e foco em Pix."},
+  {"ico": "🌾", "txt": "Safra recorde de 366,1 milhões de t e arroba a R$ 395,40, mas o crédito rural segue travado pela inadimplência."}
+ ]}}

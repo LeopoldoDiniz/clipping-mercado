@@ -1,0 +1,116 @@
+{
+ "clipping": [
+  {
+   "setores": [
+    "transversal",
+    "industria"
+   ],
+   "titulo": "PLP 299 eleva corte de incentivos a 20% e atinge benefícios da Sudene",
+   "texto": "Corte adicional de 10% leva redução de benefícios fiscais a 20%; incentivo de IRPJ da Sudene cai de 67,5% para 60% em novas concessões; ganho primário estimado de R$ 45,1 a 56,1 bi em 2027.",
+   "palavra": "Sudene",
+   "tema": "fiscal",
+   "fontes": [
+    {
+     "nome": "Movimento Econômico",
+     "url": "https://movimentoeconomico.com.br/economia/lei-de-incentivos/2026/11/14/plp-299-corte-de-incentivos-fiscais-pode-chegar-a-20-e-afetar-o-nordeste/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "agro"
+   ],
+   "titulo": "Café sobe 3,95% em Minas e saca vai a R$ 1.752",
+   "texto": "BBM (14/11): café sobe 3,95% em Guaxupé, a R$ 1.752 a saca, mas acumula -19,78% em 12 meses; soja a R$ 153 (+0,51%; +16,48% em 12 meses) e milho a R$ 62,75.",
+   "palavra": "café",
+   "fontes": [
+    {
+     "nome": "O Tempo",
+     "url": "https://www.otempo.com.br/agro/2026/11/14/cotacoes-do-agro-em-minas-14-11-2026"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "agro"
+   ],
+   "titulo": "Arroba do boi fecha semana a R$ 395,40 no Cepea",
+   "texto": "Indicador Cepea do boi gordo fecha 13/11 a R$ 395,40 (US$ 69,95), alta de 0,69% na semana e 1,41% em novembro, ante 7,03% em outubro; escalas de abate de 5 a 7 dias úteis.",
+   "palavra": "arroba",
+   "fontes": [
+    {
+     "nome": "Daily Journal",
+     "url": "https://dailyjournal.news/news/2026-11-14/preco-da-arroba-do-boi-gordo-mantem-tendencia-de-alta-no-brasil"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "industria"
+   ],
+   "titulo": "BYD planeja fábrica de R$ 1 bilhão para vans e caminhões elétricos",
+   "texto": "BYD avalia fábrica de R$ 1 bilhão para vans e caminhões elétricos, com cerca de 2 mil empregos diretos e produção entre 2028 e 2029; MG, SP e RJ disputam a unidade (14/11).",
+   "palavra": "BYD",
+   "tema": "atividade",
+   "fontes": [
+    {
+     "nome": "TV Sim Brasil",
+     "url": "https://tvsimbrasil.com.br/brasil/negocios/noticia/2026/11/14/byd-planeja-fabrica-r1-bi-vans-caminhoes-eletricos"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "servicos"
+   ],
+   "titulo": "Pane nos EUA cancela voos de Latam e Azul no Brasil",
+   "texto": "Paralisação do controle aéreo dos EUA cancela ao menos cinco operações em Guarulhos e dois voos da Azul Campinas–Fort Lauderdale entre 13 e 14/11; Azul libera remarcação sem taxa.",
+   "palavra": "aviação",
+   "fontes": [
+    {
+     "nome": "Airway",
+     "url": "https://www.airway.com.br/pane-aerea-nos-eua-afetou-voos-da-latam-e-azul-no-brasil/"
+    }
+   ]
+  },
+  {
+   "setores": [
+    "construcao"
+   ],
+   "titulo": "Construtoras vendem até 90% de projetos na Expovale Construmóbil",
+   "texto": "Na Expovale Construmóbil, em Lajeado (RS), até 22/11, a DNW tem cerca de 60% das 195 unidades do Edifício Ária vendidas e a Engegold vende perto de 90% de três projetos (14/11).",
+   "palavra": "lançamentos",
+   "fontes": [
+    {
+     "nome": "Grupo A Hora",
+     "url": "https://grupoahora.net.br/conteudos/2026/11/14/construtoras-apresentam-projetos-e-tecnologias-na-expovale-construmobil/"
+    }
+   ]
+  }
+ ],
+ "leituras_temas": {
+  "fiscal": {
+   "tipo": "risco",
+   "status": "em_curso",
+   "texto": "Texto-base do PLP 299 aprovado em 12/11 eleva corte de benefícios fiscais a 20% e reduz incentivo da Sudene a 60%; destaques ficam para 17/11.",
+   "fontes": [
+    "Senado",
+    "CNI",
+    "Movimento Econômico"
+   ]
+  },
+  "agro": {
+   "tipo": "risco",
+   "status": "materializado",
+   "materializado": true,
+   "texto": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) corta safra para 366,1 Mt; arroba Cepea a R$ 395,40 sustenta pecuária.",
+   "fontes": [
+    "Banco do Brasil",
+    "RCN67",
+    "Conab",
+    "Cepea"
+   ]
+  }
+ },
+ "novos_temas": []
+}

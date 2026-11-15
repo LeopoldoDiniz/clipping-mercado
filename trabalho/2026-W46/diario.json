@@ -144,5 +144,20 @@
         "3 notícias novas no setor"
       ]
     }
+  },
+  {
+    "data": "2026-11-15",
+    "em": "2026-11-15T10:10:30.530881+00:00",
+    "noticias_novas": 6,
+    "total_semana": 66,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "tema materializou: agro"
+      ],
+      "agro": [
+        "tema materializou: agro"
+      ]
+    }
   }
 ]

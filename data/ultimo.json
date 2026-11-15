@@ -2,7 +2,7 @@
   "periodo": "2026-W46",
   "label": "Semana 46 · Novembro 2026",
   "status": "em_andamento",
-  "gerado_em": "2026-11-14T10:12:53.911724",
+  "gerado_em": "2026-11-15T10:11:43.870295",
   "editorial": {
     "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
     "gerado_em": "2026-11-10T14:49:32.685604",
@@ -991,6 +991,85 @@
           "url": "https://sbtnews.sbt.com.br/noticia/brasil/suspensao-de-voos-nos-eua-afeta-operacoes-no-brasil"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "PLP 299 eleva corte de incentivos a 20% e atinge benefícios da Sudene",
+      "texto": "Corte adicional de 10% leva redução de benefícios fiscais a 20%; incentivo de IRPJ da Sudene cai de 67,5% para 60% em novas concessões; ganho primário estimado de R$ 45,1 a 56,1 bi em 2027.",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/lei-de-incentivos/2026/11/14/plp-299-corte-de-incentivos-fiscais-pode-chegar-a-20-e-afetar-o-nordeste/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Café sobe 3,95% em Minas e saca vai a R$ 1.752",
+      "texto": "BBM (14/11): café sobe 3,95% em Guaxupé, a R$ 1.752 a saca, mas acumula -19,78% em 12 meses; soja a R$ 153 (+0,51%; +16,48% em 12 meses) e milho a R$ 62,75.",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/agro/2026/11/14/cotacoes-do-agro-em-minas-14-11-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arroba do boi fecha semana a R$ 395,40 no Cepea",
+      "texto": "Indicador Cepea do boi gordo fecha 13/11 a R$ 395,40 (US$ 69,95), alta de 0,69% na semana e 1,41% em novembro, ante 7,03% em outubro; escalas de abate de 5 a 7 dias úteis.",
+      "fontes": [
+        {
+          "nome": "Daily Journal",
+          "url": "https://dailyjournal.news/news/2026-11-14/preco-da-arroba-do-boi-gordo-mantem-tendencia-de-alta-no-brasil"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "BYD planeja fábrica de R$ 1 bilhão para vans e caminhões elétricos",
+      "texto": "BYD avalia fábrica de R$ 1 bilhão para vans e caminhões elétricos, com cerca de 2 mil empregos diretos e produção entre 2028 e 2029; MG, SP e RJ disputam a unidade (14/11).",
+      "fontes": [
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/negocios/noticia/2026/11/14/byd-planeja-fabrica-r1-bi-vans-caminhoes-eletricos"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Pane nos EUA cancela voos de Latam e Azul no Brasil",
+      "texto": "Paralisação do controle aéreo dos EUA cancela ao menos cinco operações em Guarulhos e dois voos da Azul Campinas–Fort Lauderdale entre 13 e 14/11; Azul libera remarcação sem taxa.",
+      "fontes": [
+        {
+          "nome": "Airway",
+          "url": "https://www.airway.com.br/pane-aerea-nos-eua-afetou-voos-da-latam-e-azul-no-brasil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Construtoras vendem até 90% de projetos na Expovale Construmóbil",
+      "texto": "Na Expovale Construmóbil, em Lajeado (RS), até 22/11, a DNW tem cerca de 60% das 195 unidades do Edifício Ária vendidas e a Engegold vende perto de 90% de três projetos (14/11).",
+      "fontes": [
+        {
+          "nome": "Grupo A Hora",
+          "url": "https://grupoahora.net.br/conteudos/2026/11/14/construtoras-apresentam-projetos-e-tecnologias-na-expovale-construmobil/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -1067,7 +1146,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 14/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 15/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -1294,7 +1373,7 @@
         },
         {
           "ico": "🏛️",
-          "txt": "Destaques do ajuste fiscal em 17/11 e votação rápida na Câmara: mapeie benefícios tributários em risco."
+          "txt": "PLP 299 eleva corte de benefícios fiscais a 20% e destaques vão a voto em 17/11: mapeie incentivos em risco, inclusive Sudene."
         },
         {
           "ico": "🛍️",
@@ -1302,7 +1381,7 @@
         },
         {
           "ico": "🌾",
-          "txt": "Conab prevê safra recorde de 366,1 milhões de t, mas o crédito rural segue travado pela inadimplência."
+          "txt": "Safra recorde de 366,1 milhões de t e arroba a R$ 395,40, mas o crédito rural segue travado pela inadimplência."
         }
       ]
     },
@@ -1374,24 +1453,24 @@
         ]
       },
       "agro": {
-        "prov": "Safra recorde com crédito escasso: sua operação garante insumos e capital de giro para colher 366 milhões de toneladas?",
-        "quote": "A Conab prevê safra 2026/27 de 366,13 milhões de toneladas, alta de 1,3%, mas 0,3% abaixo da estimativa de outubro.",
+        "prov": "Boi e café em alta, crédito rural travado: sua operação está capitalizada para aproveitar os preços?",
+        "quote": "O indicador Cepea do boi gordo fechou 13/11 a R$ 395,40 por arroba, alta de 1,41% em novembro.",
         "edi": [
-          "A Conab manteve a projeção de safra recorde em 13/11, com soja em 181,6 milhões de toneladas (+0,7%) e milho em 148 milhões (+2,4%), mas cortou a estimativa por menos área e clima desfavorável no Paraná e no Rio Grande do Sul.",
-          "O financiamento é o gargalo: a inadimplência do agro no BB chegou a 6,92% e o lucro do banco caiu 66,5% no 3T26; recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais foi aprovada em 11/11 e aguarda sanção, e o dólar a R$ 5,655 favorece receitas de exportação."
+          "A Conab manteve em 13/11 a projeção de safra recorde de 366,1 milhões de toneladas, com soja em 181,6 milhões (+0,7%) e milho em 148 milhões (+2,4%), mas cortou 0,3% ante outubro por clima desfavorável no Sul. Na pecuária, a arroba Cepea chegou a R$ 395,40, com alta de 0,69% na semana, depois de subir 7,03% em outubro; o café arábica subiu 3,95% em Minas em 14/11, a R$ 1.752 a saca, ainda 19,78% abaixo de um ano atrás.",
+          "O crédito segue como gargalo: a inadimplência do agro no BB chegou a 6,92%, o lucro do banco caiu 66,5% no 3T26 e as recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais aguarda sanção, e o dólar a R$ 5,65 favorece a receita em reais de quem exporta."
         ],
         "acoes": [
           {
-            "ico": "🌱",
-            "txt": "Garanta insumos e capital de giro antes do pico da colheita; crédito bancário ficará mais seletivo."
+            "ico": "🐂",
+            "txt": "Pecuarista: avalie travar parte da arroba na B3 com o boi perto de R$ 400."
           },
           {
             "ico": "📜",
-            "txt": "Avalie a adesão à renegociação da MP de dívidas rurais após a sanção."
+            "txt": "Prepare documentação para aderir à renegociação de dívidas rurais após a sanção da MP."
           },
           {
             "ico": "💱",
-            "txt": "Aproveite o dólar a R$ 5,65 para travar parte da venda de soja e milho."
+            "txt": "Com o dólar a R$ 5,65, trave parte da venda de soja, milho e café da próxima safra."
           }
         ]
       },
@@ -1455,12 +1534,12 @@
       "relevancia": 100.0,
       "severidade": 10.0,
       "iminencia": 10.0,
-      "ultima_observacao": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) prevê safra recorde de 366,1 Mt, mas corta 0,3% ante outubro.",
+      "ultima_observacao": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) corta safra para 366,1 Mt; arroba Cepea a R$ 395,40 sustenta pecuária.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "esquentando",
-      "noticias_semana": 13
+      "noticias_semana": 15
     },
     {
       "id": "tema-atividade",
@@ -1474,15 +1553,15 @@
         "agro"
       ],
       "status": "em_curso",
-      "relevancia": 83.0,
-      "severidade": 8.9,
-      "iminencia": 7.7,
+      "relevancia": 85.0,
+      "severidade": 9.0,
+      "iminencia": 8.0,
       "ultima_observacao": "CSN perde R$ 1,25 bi e Braskem R$ 1,07 bi no 3T26; PIM -0,8% em setembro e produção de veículos -5,1% em outubro.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W02",
       "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 10
+      "direcao": "esquentando",
+      "noticias_semana": 12
     },
     {
       "id": "tema-ecommerce",
@@ -1495,9 +1574,9 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 68.1,
-      "severidade": 6.3,
-      "iminencia": 4.6,
+      "relevancia": 60.6,
+      "severidade": 5.7,
+      "iminencia": 4.0,
       "ultima_observacao": "Shopee informa em 13/11 que vendas do 11.11 mais que dobraram ante a Black Friday de 2025; pedidos no cartão sobem 121%.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W22",
@@ -1517,35 +1596,15 @@
         "ecommerce"
       ],
       "status": "materializado",
-      "relevancia": 60.0,
-      "severidade": 5.8,
-      "iminencia": 3.8,
+      "relevancia": 53.1,
+      "severidade": 5.2,
+      "iminencia": 3.3,
       "ultima_observacao": "PMC de setembro varia só 0,2% e 3º trimestre cai 0,3%; ICVA de outubro -4,0%; Grupo Mateus tem lucro 36% menor no 3T26.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W03",
       "origem": "real",
-      "direcao": "estável",
+      "direcao": "esfriando",
       "noticias_semana": 5
-    },
-    {
-      "id": "tema-cambio",
-      "tipo": "risco",
-      "titulo": "Câmbio e mercado financeiro",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "servicos"
-      ],
-      "status": "em_curso",
-      "relevancia": 49.5,
-      "severidade": 5.3,
-      "iminencia": 4.6,
-      "ultima_observacao": "Dólar fecha a R$ 5,655 em 13/11, maior fechamento de 2026, e sobe 2,6% na semana com dúvidas sobre o ajuste fiscal.",
-      "periodo_observacao": "2026-W46",
-      "data_identificacao": "2026-W01",
-      "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 6
     },
     {
       "id": "tema-fiscal",
@@ -1559,13 +1618,33 @@
       ],
       "status": "em_curso",
       "relevancia": 49.5,
-      "severidade": 5.3,
-      "iminencia": 4.6,
-      "ultima_observacao": "Texto-base do PLP 299 aprovado em 12/11; quatro destaques ficam para 17/11 e governo quer votação imediata na Câmara.",
+      "severidade": 5.2,
+      "iminencia": 4.7,
+      "ultima_observacao": "Texto-base do PLP 299 aprovado em 12/11 eleva corte de benefícios fiscais a 20% e reduz incentivo da Sudene a 60%; destaques ficam para 17/11.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W14",
       "origem": "real",
       "direcao": "esquentando",
+      "noticias_semana": 7
+    },
+    {
+      "id": "tema-cambio",
+      "tipo": "risco",
+      "titulo": "Câmbio e mercado financeiro",
+      "dimensao": "E",
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 44.0,
+      "severidade": 4.8,
+      "iminencia": 4.0,
+      "ultima_observacao": "Dólar fecha a R$ 5,655 em 13/11, maior fechamento de 2026, e sobe 2,6% na semana com dúvidas sobre o ajuste fiscal.",
+      "periodo_observacao": "2026-W46",
+      "data_identificacao": "2026-W01",
+      "origem": "real",
+      "direcao": "estável",
       "noticias_semana": 6
     },
     {
@@ -1578,15 +1657,15 @@
         "comercio"
       ],
       "status": "monitorar",
-      "relevancia": 42.5,
-      "severidade": 4.7,
-      "iminencia": 3.8,
+      "relevancia": 44.0,
+      "severidade": 4.8,
+      "iminencia": 4.0,
       "ultima_observacao": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR com saque de R$ 53,2 bi da poupança; MRV e Cury ainda lucram recorde no 3T26.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W02",
       "origem": "real",
       "direcao": "estável",
-      "noticias_semana": 5
+      "noticias_semana": 6
     },
     {
       "id": "tema-combustiveis",
@@ -1600,9 +1679,9 @@
         "agro"
       ],
       "status": "monitorar",
-      "relevancia": 28.5,
-      "severidade": 2.6,
-      "iminencia": 3.1,
+      "relevancia": 25.5,
+      "severidade": 2.4,
+      "iminencia": 2.7,
       "ultima_observacao": "Petrobras pede em 13/11 subvenção para gasolina vendida a R$ 3,80/l ante ~R$ 7 lá fora; AIE vê excesso de oferta de petróleo no 4º tri.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W15",
@@ -1621,9 +1700,9 @@
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 23.5,
-      "severidade": 3.2,
-      "iminencia": 1.5,
+      "relevancia": 21.0,
+      "severidade": 2.9,
+      "iminencia": 1.3,
       "ultima_observacao": "Ata de 10/11 indica Selic de 13,75% por mais tempo, com quatro choques elevando projeções; Focus de 09/11 já vê 13,75% no fim de 2026.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W01",

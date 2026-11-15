@@ -1061,6 +1061,93 @@
           "url": "https://sbtnews.sbt.com.br/noticia/brasil/suspensao-de-voos-nos-eua-afeta-operacoes-no-brasil"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "titulo": "PLP 299 eleva corte de incentivos a 20% e atinge benefícios da Sudene",
+      "texto": "Corte adicional de 10% leva redução de benefícios fiscais a 20%; incentivo de IRPJ da Sudene cai de 67,5% para 60% em novas concessões; ganho primário estimado de R$ 45,1 a 56,1 bi em 2027.",
+      "palavra": "Sudene",
+      "tema": "fiscal",
+      "fontes": [
+        {
+          "nome": "Movimento Econômico",
+          "url": "https://movimentoeconomico.com.br/economia/lei-de-incentivos/2026/11/14/plp-299-corte-de-incentivos-fiscais-pode-chegar-a-20-e-afetar-o-nordeste/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Café sobe 3,95% em Minas e saca vai a R$ 1.752",
+      "texto": "BBM (14/11): café sobe 3,95% em Guaxupé, a R$ 1.752 a saca, mas acumula -19,78% em 12 meses; soja a R$ 153 (+0,51%; +16,48% em 12 meses) e milho a R$ 62,75.",
+      "palavra": "café",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/agro/2026/11/14/cotacoes-do-agro-em-minas-14-11-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Arroba do boi fecha semana a R$ 395,40 no Cepea",
+      "texto": "Indicador Cepea do boi gordo fecha 13/11 a R$ 395,40 (US$ 69,95), alta de 0,69% na semana e 1,41% em novembro, ante 7,03% em outubro; escalas de abate de 5 a 7 dias úteis.",
+      "palavra": "arroba",
+      "fontes": [
+        {
+          "nome": "Daily Journal",
+          "url": "https://dailyjournal.news/news/2026-11-14/preco-da-arroba-do-boi-gordo-mantem-tendencia-de-alta-no-brasil"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "BYD planeja fábrica de R$ 1 bilhão para vans e caminhões elétricos",
+      "texto": "BYD avalia fábrica de R$ 1 bilhão para vans e caminhões elétricos, com cerca de 2 mil empregos diretos e produção entre 2028 e 2029; MG, SP e RJ disputam a unidade (14/11).",
+      "palavra": "BYD",
+      "tema": "atividade",
+      "fontes": [
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/negocios/noticia/2026/11/14/byd-planeja-fabrica-r1-bi-vans-caminhoes-eletricos"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Pane nos EUA cancela voos de Latam e Azul no Brasil",
+      "texto": "Paralisação do controle aéreo dos EUA cancela ao menos cinco operações em Guarulhos e dois voos da Azul Campinas–Fort Lauderdale entre 13 e 14/11; Azul libera remarcação sem taxa.",
+      "palavra": "aviação",
+      "fontes": [
+        {
+          "nome": "Airway",
+          "url": "https://www.airway.com.br/pane-aerea-nos-eua-afetou-voos-da-latam-e-azul-no-brasil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Construtoras vendem até 90% de projetos na Expovale Construmóbil",
+      "texto": "Na Expovale Construmóbil, em Lajeado (RS), até 22/11, a DNW tem cerca de 60% das 195 unidades do Edifício Ária vendidas e a Engegold vende perto de 90% de três projetos (14/11).",
+      "palavra": "lançamentos",
+      "fontes": [
+        {
+          "nome": "Grupo A Hora",
+          "url": "https://grupoahora.net.br/conteudos/2026/11/14/construtoras-apresentam-projetos-e-tecnologias-na-expovale-construmobil/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -1137,7 +1224,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 14/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 15/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -1258,7 +1345,7 @@
         },
         {
           "ico": "🏛️",
-          "txt": "Destaques do ajuste fiscal em 17/11 e votação rápida na Câmara: mapeie benefícios tributários em risco."
+          "txt": "PLP 299 eleva corte de benefícios fiscais a 20% e destaques vão a voto em 17/11: mapeie incentivos em risco, inclusive Sudene."
         },
         {
           "ico": "🛍️",
@@ -1266,7 +1353,7 @@
         },
         {
           "ico": "🌾",
-          "txt": "Conab prevê safra recorde de 366,1 milhões de t, mas o crédito rural segue travado pela inadimplência."
+          "txt": "Safra recorde de 366,1 milhões de t e arroba a R$ 395,40, mas o crédito rural segue travado pela inadimplência."
         }
       ]
     },
@@ -1338,24 +1425,24 @@
         ]
       },
       "agro": {
-        "prov": "Safra recorde com crédito escasso: sua operação garante insumos e capital de giro para colher 366 milhões de toneladas?",
-        "quote": "A Conab prevê safra 2026/27 de 366,13 milhões de toneladas, alta de 1,3%, mas 0,3% abaixo da estimativa de outubro.",
+        "prov": "Boi e café em alta, crédito rural travado: sua operação está capitalizada para aproveitar os preços?",
+        "quote": "O indicador Cepea do boi gordo fechou 13/11 a R$ 395,40 por arroba, alta de 1,41% em novembro.",
         "edi": [
-          "A Conab manteve a projeção de safra recorde em 13/11, com soja em 181,6 milhões de toneladas (+0,7%) e milho em 148 milhões (+2,4%), mas cortou a estimativa por menos área e clima desfavorável no Paraná e no Rio Grande do Sul.",
-          "O financiamento é o gargalo: a inadimplência do agro no BB chegou a 6,92% e o lucro do banco caiu 66,5% no 3T26; recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais foi aprovada em 11/11 e aguarda sanção, e o dólar a R$ 5,655 favorece receitas de exportação."
+          "A Conab manteve em 13/11 a projeção de safra recorde de 366,1 milhões de toneladas, com soja em 181,6 milhões (+0,7%) e milho em 148 milhões (+2,4%), mas cortou 0,3% ante outubro por clima desfavorável no Sul. Na pecuária, a arroba Cepea chegou a R$ 395,40, com alta de 0,69% na semana, depois de subir 7,03% em outubro; o café arábica subiu 3,95% em Minas em 14/11, a R$ 1.752 a saca, ainda 19,78% abaixo de um ano atrás.",
+          "O crédito segue como gargalo: a inadimplência do agro no BB chegou a 6,92%, o lucro do banco caiu 66,5% no 3T26 e as recuperações judiciais no setor subiram 57,5% no 3º trimestre. A MP da renegociação de dívidas rurais aguarda sanção, e o dólar a R$ 5,65 favorece a receita em reais de quem exporta."
         ],
         "acoes": [
           {
-            "ico": "🌱",
-            "txt": "Garanta insumos e capital de giro antes do pico da colheita; crédito bancário ficará mais seletivo."
+            "ico": "🐂",
+            "txt": "Pecuarista: avalie travar parte da arroba na B3 com o boi perto de R$ 400."
           },
           {
             "ico": "📜",
-            "txt": "Avalie a adesão à renegociação da MP de dívidas rurais após a sanção."
+            "txt": "Prepare documentação para aderir à renegociação de dívidas rurais após a sanção da MP."
           },
           {
             "ico": "💱",
-            "txt": "Aproveite o dólar a R$ 5,65 para travar parte da venda de soja e milho."
+            "txt": "Com o dólar a R$ 5,65, trave parte da venda de soja, milho e café da próxima safra."
           }
         ]
       },
@@ -1406,7 +1493,7 @@
     }
   },
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 14/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 15/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
     "cambio": "R$ 5,65|Dólar PTAX venda · BCB · 13/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
@@ -1440,7 +1527,7 @@
     "agro": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) prevê safra recorde de 366,1 Mt, mas corta 0,3% ante outubro.",
+      "texto": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) corta safra para 366,1 Mt; arroba Cepea a R$ 395,40 sustenta pecuária.",
       "fontes": [
         "RCN67",
         "Secex",
@@ -1503,13 +1590,14 @@
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Texto-base do PLP 299 aprovado em 12/11; quatro destaques ficam para 17/11 e governo quer votação imediata na Câmara.",
+      "texto": "Texto-base do PLP 299 aprovado em 12/11 eleva corte de benefícios fiscais a 20% e reduz incentivo da Sudene a 60%; destaques ficam para 17/11.",
       "fontes": [
         "Mix Vale",
         "Brasil em Folhas",
         "Senado",
         "Brasil 247",
-        "CNI"
+        "CNI",
+        "Movimento Econômico"
       ]
     },
     "ecommerce": {
