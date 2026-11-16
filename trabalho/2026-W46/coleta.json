@@ -1148,6 +1148,50 @@
           "url": "https://grupoahora.net.br/conteudos/2026/11/14/construtoras-apresentam-projetos-e-tecnologias-na-expovale-construmobil/"
         }
       ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Lajeado emite 888 alvarás até outubro e projeta recorde em 2026",
+      "texto": "Prefeitura de Lajeado (RS) emitiu 888 alvarás e 1.962 Habite-se até outubro de 2026, com 403,2 mil m² aprovados, perto do recorde de 411,2 mil m² de 2025 (15/11).",
+      "palavra": "alvarás",
+      "tema": "construcao",
+      "fontes": [
+        {
+          "nome": "Grupo A Hora",
+          "url": "https://grupoahora.net.br/conteudos/2026/11/15/lajeado-projeta-recorde-em-autorizacoes-para-construir-em-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Tentativas de fraude no e-commerce caem 6,86% em outubro",
+      "texto": "Índice Equifax BoaVista: tentativas de fraude no e-commerce recuam 6,86% em outubro ante setembro, após três altas; taxa cai de 1,42% para 1,33% e valor suspeito, 14,33% (15/11).",
+      "palavra": "fraudes",
+      "tema": "digital",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/15/11/2026/ecommerce/tentativa-de-fraudes-no-e-commerce-recuam-as-vesperas-da-black-friday"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Alckmin defende ajuste fiscal e espera votação na Câmara nesta semana",
+      "texto": "Em 15/11, Alckmin diz que o PLP 299 não atinge os mais pobres; destaques no Senado ficam para 17/11 e governo prevê ganho primário de R$ 45,1 a 56,1 bilhões em 2027.",
+      "palavra": "ajuste-fiscal",
+      "fontes": [
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/alckmin-defende-ajuste-fiscal-e-espera-votacao-na-camara-nesta-semana"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -1579,25 +1623,27 @@
     "construcao": {
       "tipo": "risco",
       "status": "monitorar",
-      "texto": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR com saque de R$ 53,2 bi da poupança; MRV e Cury ainda lucram recorde no 3T26.",
+      "texto": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR; MRV e Cury lucram recorde no 3T26 e Lajeado (RS) soma 888 alvarás até outubro.",
       "fontes": [
         "Cury",
         "MRV",
         "Caixa",
-        "Abecip"
+        "Abecip",
+        "Prefeitura de Lajeado"
       ]
     },
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Texto-base do PLP 299 aprovado em 12/11 eleva corte de benefícios fiscais a 20% e reduz incentivo da Sudene a 60%; destaques ficam para 17/11.",
+      "texto": "Texto-base do PLP 299 aprovado em 12/11 (45 a 31), com ganho de R$ 45,1 a 56,1 bi em 2027; destaques em 17/11 e Câmara precisa de 257 votos.",
       "fontes": [
         "Mix Vale",
         "Brasil em Folhas",
         "Senado",
         "Brasil 247",
         "CNI",
-        "Movimento Econômico"
+        "Movimento Econômico",
+        "Metrópoles"
       ]
     },
     "ecommerce": {
@@ -1616,6 +1662,31 @@
       "texto": "IPCA de outubro sobe 0,14%, abaixo do consenso de 0,25%, e acumula 4,63% em 12 meses; alimentação ainda sobe 1,04%.",
       "fontes": [
         "IBGE"
+      ]
+    },
+    "digital": {
+      "tipo": "oportunidade",
+      "status": "monitorar",
+      "texto": "Tentativas de fraude no e-commerce caem 6,86% em outubro (Equifax BoaVista), taxa a 1,33%, às vésperas da Black Friday de 27/11.",
+      "fontes": [
+        "Equifax BoaVista"
+      ]
+    },
+    "exterior": {
+      "tipo": "oportunidade",
+      "status": "em_curso",
+      "texto": "Secex: exportações de outubro com extrativa +53,5% e transformação +7,7%; agropecuária soma cerca de R$ 4,7 bilhões à receita.",
+      "fontes": [
+        "Secex",
+        "NX1"
+      ]
+    },
+    "regulacao": {
+      "tipo": "risco",
+      "status": "monitorar",
+      "texto": "Câmara de BH aprova em 10/11 mudança no cálculo do ISS da construção, restringindo deduções; impacto nos preços de obras ainda sem estimativa.",
+      "fontes": [
+        "NC News"
       ]
     }
   },

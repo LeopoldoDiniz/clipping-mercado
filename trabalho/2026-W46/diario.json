@@ -159,5 +159,19 @@
         "tema materializou: agro"
       ]
     }
+  },
+  {
+    "data": "2026-11-16",
+    "em": "2026-11-16T10:09:56.569361+00:00",
+    "noticias_novas": 3,
+    "total_semana": 69,
+    "gatilhos": {}
+  },
+  {
+    "data": "2026-11-16",
+    "em": "2026-11-16T10:11:51.834394+00:00",
+    "noticias_novas": 0,
+    "total_semana": 69,
+    "gatilhos": {}
   }
 ]

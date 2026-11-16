@@ -1,5 +1,5 @@
 {
- "versao": 12,
+ "versao": 14,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -21,7 +21,7 @@
   "juros"
  ],
  "regra_incremento": "Claude cria tema novo sem pedir ok (decisão do usuário em 10/11/2026) quando um assunto sem tema se repete; registra versão e motivo em historico.",
- "ultimo_ciclo": "2026-W45",
+ "ultimo_ciclo": "2026-W46",
  "temas": [
   {
    "id": "juros",
@@ -800,7 +800,10 @@
   "financiamento-imobiliário": "construcao",
   "aviação": "atividade",
   "Sudene": "fiscal",
-  "BYD": "atividade"
+  "BYD": "atividade",
+  "alvarás": "construcao",
+  "fraudes": "digital",
+  "suínos": "agro"
  },
  "leituras": [
   {
@@ -4876,6 +4879,185 @@
     "MTE"
    ],
    "origem_sinal": "0c0ff752-5240-4611-a346-53b0e8c9f867"
+  },
+  {
+   "tema": "agro",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Inadimplência agro do BB a 6,92% e RJ no agro +57,5%; Conab (13/11) corta safra para 366,1 Mt; arroba Cepea a R$ 395,40 sustenta pecuária.",
+   "status": "materializado",
+   "materializado": true,
+   "fontes": [
+    "RCN67",
+    "Secex",
+    "Cepea",
+    "Rabobank",
+    "Banco do Brasil",
+    "Senado",
+    "Conab"
+   ]
+  },
+  {
+   "tema": "atividade",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "CSN perde R$ 1,25 bi e Braskem R$ 1,07 bi no 3T26; PIM -0,8% em setembro e produção de veículos -5,1% em outubro.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "IBGE",
+    "Embraer",
+    "Agência GBC",
+    "Adama",
+    "Fiemg",
+    "Anfavea",
+    "CSN",
+    "Braskem"
+   ]
+  },
+  {
+   "tema": "cambio",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Dólar fecha a R$ 5,655 em 13/11, maior fechamento de 2026, e sobe 2,6% na semana com dúvidas sobre o ajuste fiscal.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Agência Brasil",
+    "InfoMoney",
+    "BCB",
+    "O Tempo",
+    "O Repórter"
+   ]
+  },
+  {
+   "tema": "combustiveis",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Petrobras pede em 13/11 subvenção para gasolina vendida a R$ 3,80/l ante ~R$ 7 lá fora; AIE vê excesso de oferta de petróleo no 4º tri.",
+   "status": "monitorar",
+   "materializado": false,
+   "fontes": [
+    "Governo federal",
+    "Petrobras",
+    "AIE"
+   ]
+  },
+  {
+   "tema": "construcao",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR; MRV e Cury lucram recorde no 3T26 e Lajeado (RS) soma 888 alvarás até outubro.",
+   "status": "monitorar",
+   "materializado": false,
+   "fontes": [
+    "Cury",
+    "MRV",
+    "Caixa",
+    "Abecip",
+    "Prefeitura de Lajeado"
+   ]
+  },
+  {
+   "tema": "consumo",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "PMC de setembro varia só 0,2% e 3º trimestre cai 0,3%; ICVA de outubro -4,0%; Grupo Mateus tem lucro 36% menor no 3T26.",
+   "status": "materializado",
+   "materializado": true,
+   "fontes": [
+    "Cielo",
+    "Monitor RGF-BizDoc",
+    "Americanas",
+    "IBGE",
+    "Grupo Mateus"
+   ]
+  },
+  {
+   "tema": "digital",
+   "periodo": "2026-W46",
+   "tipo": "oportunidade",
+   "texto": "Tentativas de fraude no e-commerce caem 6,86% em outubro (Equifax BoaVista), taxa a 1,33%, às vésperas da Black Friday de 27/11.",
+   "status": "monitorar",
+   "materializado": false,
+   "fontes": [
+    "Equifax BoaVista"
+   ]
+  },
+  {
+   "tema": "ecommerce",
+   "periodo": "2026-W46",
+   "tipo": "oportunidade",
+   "texto": "Shopee informa em 13/11 que vendas do 11.11 mais que dobraram ante a Black Friday de 2025; pedidos no cartão sobem 121%.",
+   "status": "materializado",
+   "materializado": true,
+   "fontes": [
+    "Confi/Neotrust",
+    "Shopee"
+   ]
+  },
+  {
+   "tema": "exterior",
+   "periodo": "2026-W46",
+   "tipo": "oportunidade",
+   "texto": "Secex: exportações de outubro com extrativa +53,5% e transformação +7,7%; agropecuária soma cerca de R$ 4,7 bilhões à receita.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Secex",
+    "NX1"
+   ]
+  },
+  {
+   "tema": "fiscal",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Texto-base do PLP 299 aprovado em 12/11 (45 a 31), com ganho de R$ 45,1 a 56,1 bi em 2027; destaques em 17/11 e Câmara precisa de 257 votos.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Mix Vale",
+    "Brasil em Folhas",
+    "Senado",
+    "Brasil 247",
+    "CNI",
+    "Movimento Econômico",
+    "Metrópoles"
+   ]
+  },
+  {
+   "tema": "inflacao",
+   "periodo": "2026-W46",
+   "tipo": "oportunidade",
+   "texto": "IPCA de outubro sobe 0,14%, abaixo do consenso de 0,25%, e acumula 4,63% em 12 meses; alimentação ainda sobe 1,04%.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "IBGE"
+   ]
+  },
+  {
+   "tema": "juros",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Ata de 10/11 indica Selic de 13,75% por mais tempo, com quatro choques elevando projeções; Focus de 09/11 já vê 13,75% no fim de 2026.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Focus/BCB",
+    "Copom/BCB"
+   ]
+  },
+  {
+   "tema": "regulacao",
+   "periodo": "2026-W46",
+   "tipo": "risco",
+   "texto": "Câmara de BH aprova em 10/11 mudança no cálculo do ISS da construção, restringindo deduções; impacto nos preços de obras ainda sem estimativa.",
+   "status": "monitorar",
+   "materializado": false,
+   "fontes": [
+    "NC News"
+   ]
   }
  ],
  "historico": [
@@ -4946,7 +5128,19 @@
    "data": "2026-11-15",
    "semana": "2026-W46",
    "motivo": "palavras novas: Sudene→fiscal, BYD→atividade"
+  },
+  {
+   "versao": 13,
+   "data": "2026-11-16",
+   "semana": "2026-W46",
+   "motivo": "palavras novas: alvarás→construcao, fraudes→digital"
+  },
+  {
+   "versao": 14,
+   "data": "2026-11-16",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: suínos→agro"
   }
  ],
- "atualizado_em": "2026-11-15T10:09:46.767773+00:00"
+ "atualizado_em": "2026-11-16T10:13:26.672553+00:00"
 }

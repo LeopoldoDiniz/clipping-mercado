@@ -1,14 +1,13 @@
 {
   "periodo": "2026-W46",
   "label": "Semana 46 · Novembro 2026",
-  "status": "em_andamento",
-  "gerado_em": "2026-11-15T10:11:43.870295",
+  "status": "fechada",
+  "gerado_em": "2026-11-16T10:13:18.818378",
   "editorial": {
-    "texto": "As próximas semanas devem ser de juros parados, dólar pressionado e consumo contido. O cenário mais provável é a Selic, o juro básico, permanecer em 13,75% na última reunião do Copom do ano, em 8 e 9 de dezembro: o comitê interrompeu os cortes em 4 de novembro citando o câmbio e projeta inflação de 5,6% em 2026, acima do teto da meta. O primeiro teste vem em 12 de novembro, com o IPCA de outubro; a prévia de 0,32% indica alívio no mês, mas o dólar, que fechou a semana a R$ 5,51, tende a encarecer importados até o fim do ano. O fator decisivo é fiscal: se o governo reeleito detalhar um ajuste crível para o Orçamento de 2027, estimado em cerca de R$ 40 bilhões, o câmbio pode recuar; sem isso, o risco é de dólar acima de R$ 5,50 e de novas revisões para cima na inflação. O PIB do terceiro trimestre, no início de dezembro, deve confirmar a desaceleração.\n\nPor setor, a tendência é a seguinte. Na indústria, depois de quatro quedas em cinco meses, a produção deve seguir fraca, e os exportadores ganham com o câmbio. No comércio e nos serviços, o endividamento recorde de 50,1% da renda deve limitar o Natal, apesar do emprego firme, cujo próximo retrato sai em 27 de novembro. No agro, o plantio adiantado da soja em Mato Grosso favorece a safrinha de milho, e o dólar alto sustenta preços em reais. Na construção, o debate sobre o fim da escala 6x1 deve pesar nos orçamentos de 2027. No e-commerce, a temporada que vai do 11.11 à Black Friday, em 27 de novembro, deve concentrar as vendas do trimestre.\n\nO alerta da semana anterior sobre o câmbio se confirmou: o dólar foi citado pelo Copom ao interromper os cortes. Na semana, o Copom manteve a Selic, a produção industrial caiu 0,8% em setembro, o Caged registrou 121,3 mil vagas, o pior setembro desde 2020, e a balança teve superávit recorde para outubro, de US$ 9,32 bilhões.",
-    "gerado_em": "2026-11-10T14:49:32.685604",
-    "n_sinais_considerados": 15,
-    "modelo": "claude",
-    "abertura_de": "Semana 45 · Novembro 2026"
+    "texto": "As próximas semanas devem ser decididas pelo ajuste fiscal. O cenário mais provável é a Selic, o juro básico, seguir em 13,75% na reunião do Copom de 8 e 9 de dezembro, já que a ata de 10 de novembro sinalizou juros parados por mais tempo. O primeiro teste vem na terça, 17 de novembro, com a votação dos destaques do PLP 299 no Senado; depois, a Câmara precisa de 257 votos. Se o texto passar preservando ganho de R$ 45,1 bilhões a R$ 56,1 bilhões em 2027, a tendência é de alívio no dólar, que fechou a semana a R$ 5,655, maior valor do ano; se travar, o risco é de câmbio acima de R$ 5,70 e de inflação mais alta no início de 2027. O IBC-Br, prévia do PIB, sai nesta segunda e deve confirmar a desaceleração; a inflação de outubro, de 0,14%, dá alguma folga, mas o Focus ainda projeta 5,22% para 2026.\n\nPor setor, a tendência é a seguinte. Na indústria, os prejuízos de CSN e Braskem e a queda de 5,1% na produção de veículos indicam fim de ano fraco; convém segurar estoques. No comércio e nos serviços, com ICVA de -4,0% em outubro, o Natal tende a ser contido; priorize giro e crédito seletivo. No agro, o calote no crédito e o corte da Conab pesam, mas a arroba perto de R$ 400 sustenta a pecuária; a salvaguarda das Filipinas à carne suína, prevista para 24 de novembro, é o risco a acompanhar. Na construção, a possível alta dos juros da Caixa deve esfriar vendas de 2027; antecipe lançamentos. No e-commerce, depois do recorde da Shopee no 11.11, a Black Friday de 27 de novembro deve concentrar a demanda, com tíquete menor.\n\nA projeção anterior de dólar pressionado se confirmou: a moeda subiu 2,6% na semana. Na semana, o IPCA de outubro veio em 0,14%, o varejo subiu 0,2% em setembro, o Senado aprovou o texto-base do ajuste por 45 a 31 e o lucro do Banco do Brasil caiu 66,5% com a inadimplência no agro.",
+    "gerado_em": "2026-11-16T10:12:30.645053",
+    "n_temas_considerados": 15,
+    "modelo": "claude"
   },
   "clipping": [
     {
@@ -1070,6 +1069,45 @@
           "url": "https://grupoahora.net.br/conteudos/2026/11/14/construtoras-apresentam-projetos-e-tecnologias-na-expovale-construmobil/"
         }
       ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Lajeado emite 888 alvarás até outubro e projeta recorde em 2026",
+      "texto": "Prefeitura de Lajeado (RS) emitiu 888 alvarás e 1.962 Habite-se até outubro de 2026, com 403,2 mil m² aprovados, perto do recorde de 411,2 mil m² de 2025 (15/11).",
+      "fontes": [
+        {
+          "nome": "Grupo A Hora",
+          "url": "https://grupoahora.net.br/conteudos/2026/11/15/lajeado-projeta-recorde-em-autorizacoes-para-construir-em-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Tentativas de fraude no e-commerce caem 6,86% em outubro",
+      "texto": "Índice Equifax BoaVista: tentativas de fraude no e-commerce recuam 6,86% em outubro ante setembro, após três altas; taxa cai de 1,42% para 1,33% e valor suspeito, 14,33% (15/11).",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/15/11/2026/ecommerce/tentativa-de-fraudes-no-e-commerce-recuam-as-vesperas-da-black-friday"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Alckmin defende ajuste fiscal e espera votação na Câmara nesta semana",
+      "texto": "Em 15/11, Alckmin diz que o PLP 299 não atinge os mais pobres; destaques no Senado ficam para 17/11 e governo prevê ganho primário de R$ 45,1 a 56,1 bilhões em 2027.",
+      "fontes": [
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/alckmin-defende-ajuste-fiscal-e-espera-votacao-na-camara-nesta-semana"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -1560,7 +1598,7 @@
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W02",
       "origem": "real",
-      "direcao": "esquentando",
+      "direcao": "estável",
       "noticias_semana": 12
     },
     {
@@ -1585,6 +1623,27 @@
       "noticias_semana": 6
     },
     {
+      "id": "tema-fiscal",
+      "tipo": "risco",
+      "titulo": "Fiscal, eleição e instituições",
+      "dimensao": "P",
+      "setores": [
+        "transversal",
+        "industria",
+        "servicos"
+      ],
+      "status": "em_curso",
+      "relevancia": 55.0,
+      "severidade": 5.7,
+      "iminencia": 5.3,
+      "ultima_observacao": "Texto-base do PLP 299 aprovado em 12/11 (45 a 31), com ganho de R$ 45,1 a 56,1 bi em 2027; destaques em 17/11 e Câmara precisa de 257 votos.",
+      "periodo_observacao": "2026-W46",
+      "data_identificacao": "2026-W14",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 8
+    },
+    {
       "id": "tema-consumo",
       "tipo": "risco",
       "titulo": "Consumo, renda e endividamento",
@@ -1607,22 +1666,21 @@
       "noticias_semana": 5
     },
     {
-      "id": "tema-fiscal",
+      "id": "tema-construcao",
       "tipo": "risco",
-      "titulo": "Fiscal, eleição e instituições",
-      "dimensao": "P",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
       "setores": [
-        "transversal",
-        "industria",
-        "servicos"
+        "construcao",
+        "comercio"
       ],
-      "status": "em_curso",
+      "status": "monitorar",
       "relevancia": 49.5,
       "severidade": 5.2,
       "iminencia": 4.7,
-      "ultima_observacao": "Texto-base do PLP 299 aprovado em 12/11 eleva corte de benefícios fiscais a 20% e reduz incentivo da Sudene a 60%; destaques ficam para 17/11.",
+      "ultima_observacao": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR; MRV e Cury lucram recorde no 3T26 e Lajeado (RS) soma 888 alvarás até outubro.",
       "periodo_observacao": "2026-W46",
-      "data_identificacao": "2026-W14",
+      "data_identificacao": "2026-W02",
       "origem": "real",
       "direcao": "esquentando",
       "noticias_semana": 7
@@ -1643,26 +1701,6 @@
       "ultima_observacao": "Dólar fecha a R$ 5,655 em 13/11, maior fechamento de 2026, e sobe 2,6% na semana com dúvidas sobre o ajuste fiscal.",
       "periodo_observacao": "2026-W46",
       "data_identificacao": "2026-W01",
-      "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 6
-    },
-    {
-      "id": "tema-construcao",
-      "tipo": "risco",
-      "titulo": "Construção e mercado imobiliário",
-      "dimensao": "E",
-      "setores": [
-        "construcao",
-        "comercio"
-      ],
-      "status": "monitorar",
-      "relevancia": 44.0,
-      "severidade": 4.8,
-      "iminencia": 4.0,
-      "ultima_observacao": "Caixa estuda em 13/11 subir a taxa mínima de 10,3% + TR com saque de R$ 53,2 bi da poupança; MRV e Cury ainda lucram recorde no 3T26.",
-      "periodo_observacao": "2026-W46",
-      "data_identificacao": "2026-W02",
       "origem": "real",
       "direcao": "estável",
       "noticias_semana": 6

@@ -1,11 +1,18 @@
 {
   "semanas": [
     {
+      "chave": "2026-W47",
+      "label": "Semana 47 · Novembro 2026",
+      "arquivo": "2026-W47.json",
+      "ordem": 202647,
+      "status": "em_andamento"
+    },
+    {
       "chave": "2026-W46",
       "label": "Semana 46 · Novembro 2026",
       "arquivo": "2026-W46.json",
       "ordem": 202646,
-      "status": "em_andamento"
+      "status": "fechada"
     },
     {
       "chave": "2026-W45",
@@ -284,5 +291,5 @@
       "ordem": 202601
     }
   ],
-  "atualizado_em": "2026-11-15T10:11:43.879159"
+  "atualizado_em": "2026-11-16T10:15:06.460593"
 }

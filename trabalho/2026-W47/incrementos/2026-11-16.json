@@ -1,0 +1,21 @@
+{
+  "clipping": [
+    {"setores": ["agro"], "titulo": "Brasil negocia com Filipinas para evitar barreira à carne suína",
+     "texto": "Ministro André de Paula se reúne em 16/11 com as Filipinas, que autorizaram em 7/11 limites por 60 dias; o país comprou US$ 600 milhões em carne suína brasileira de janeiro a setembro.",
+     "palavra": "suínos", "tema": "agro",
+     "fontes": [{"nome": "Floresta Notícias/Canal Rural", "url": "https://www.florestanoticias.com/2026/11/16/confira-o-que-vai-mexer-com-os-mercados-na-nova-semana/"}]},
+    {"setores": ["comercio", "ecommerce"], "titulo": "CNDL: 51% dos consumidores das capitais pretendem comprar na Black Friday",
+     "texto": "Pesquisa CNDL/SPC Brasil: 51% pretendem comprar na Black Friday de 27/11, com gasto médio de R$ 1.053; 81% vão usar o e-commerce e 57% já pagam outras compras parceladas (16/11).",
+     "palavra": "BlackFriday",
+     "fontes": [{"nome": "Business Moment", "url": "https://businessmoment.com.br/black-friday-2026-intencao-compra-capitais-cndl/"}]}
+  ],
+  "leituras_temas": {
+    "agro": {"tipo": "risco", "status": "em_curso",
+      "texto": "Filipinas autorizaram em 7/11 salvaguarda de 60 dias à carne suína; Brasil negocia em 16/11 para proteger US$ 600 milhões vendidos até setembro.",
+      "fontes": ["Canal Rural", "MAPA"]},
+    "ecommerce": {"tipo": "oportunidade", "status": "em_curso",
+      "texto": "CNDL/SPC (16/11): 51% dos consumidores das capitais pretendem comprar na Black Friday de 27/11, gasto médio de R$ 1.053, e 81% via e-commerce.",
+      "fontes": ["CNDL/SPC Brasil"]}
+  },
+  "novos_temas": []
+}

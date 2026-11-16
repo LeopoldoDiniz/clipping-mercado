@@ -8938,6 +8938,49 @@
     "setores": [
      "construcao"
     ]
+   },
+   {
+    "titulo": "Lajeado emite 888 alvarás até outubro e projeta recorde em 2026",
+    "palavra": "alvarás",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Tentativas de fraude no e-commerce caem 6,86% em outubro",
+    "palavra": "fraudes",
+    "tema": "digital",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Alckmin defende ajuste fiscal e espera votação na Câmara nesta semana",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W47": [
+   {
+    "titulo": "Brasil negocia com Filipinas para evitar barreira à carne suína",
+    "palavra": "suínos",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "CNDL: 51% dos consumidores das capitais pretendem comprar na Black Friday",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
    }
   ]
  }

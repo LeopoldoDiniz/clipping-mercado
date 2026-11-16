@@ -1,0 +1,16 @@
+- 16/11 (seg): IBC-Br de setembro (BCB). prévia do PIB após PIM -0,8% em setembro.
+- 17/11 (ter): Senado vota destaques do PLP 299, o ajuste fiscal (Metrópoles/Agência Senado). depois o texto segue para a Câmara, que precisa de 257 votos.
+- 19/11 (qui): reunião do Conselho Monetário Nacional e relatório de novembro da IFI (Brasil em Folhas). leitura fiscal independente.
+- 20/11 (sex): feriado nacional da Consciência Negra (Boletim Nacional). semana útil mais curta.
+- 23/11 (seg): Boletim Focus (BCB). projeções de Selic, IPCA e dólar.
+- 24/11 (ter): início previsto da salvaguarda das Filipinas à carne suína brasileira, por 60 dias (Canal Rural). destino de cerca de um quarto do faturamento do segmento.
+- 26/11 (qui): IPP de outubro (IBGE). preços ao produtor, 1,54% em setembro.
+- 27/11 (sex): Black Friday (CNDL/SPC). 51% dos consumidores das capitais pretendem comprar.
+- 27/11 (sex): PNAD Contínua, desemprego do trimestre até outubro (IBGE). taxa anterior de 5,2%.
+- 03/12 (qui): Produção industrial (PIM) de outubro (IBGE).
+- 07/12 (seg): INCC de novembro (FGV). custo da construção.
+- 08/12 (ter): Pesquisa Mensal do Comércio de outubro (IBGE).
+- 08 e 09/12 (ter e qua): última reunião do Copom em 2026 (BCB). Selic em 13,75%.
+- 10/12 (qui): Pesquisa Mensal de Serviços de outubro (IBGE).
+- 11/12 (sex): IPCA e Sinapi de novembro (IBGE).
+- 15/12 (ter): Levantamento Sistemático da Produção Agrícola de novembro (IBGE).

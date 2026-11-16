@@ -1,0 +1,12 @@
+{
+  "clipping": [],
+  "leituras_temas": {
+    "exterior": {"tipo": "oportunidade", "status": "em_curso",
+      "texto": "Secex: exportações de outubro com extrativa +53,5% e transformação +7,7%; agropecuária soma cerca de R$ 4,7 bilhões à receita.",
+      "fontes": ["Secex", "NX1"]},
+    "regulacao": {"tipo": "risco", "status": "monitorar",
+      "texto": "Câmara de BH aprova em 10/11 mudança no cálculo do ISS da construção, restringindo deduções; impacto nos preços de obras ainda sem estimativa.",
+      "fontes": ["NC News"]}
+  },
+  "novos_temas": []
+}
