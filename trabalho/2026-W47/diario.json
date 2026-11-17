@@ -5,5 +5,34 @@
     "noticias_novas": 2,
     "total_semana": 2,
     "gatilhos": {}
+  },
+  {
+    "data": "2026-11-17",
+    "em": "2026-11-17T10:10:22.439740+00:00",
+    "noticias_novas": 12,
+    "total_semana": 14,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador Câmbio (US$) atualizado: R$ 5,73",
+        "tema materializou: cambio",
+        "tema materializou: atividade"
+      ],
+      "servicos": [
+        "tema materializou: cambio",
+        "tema materializou: atividade"
+      ],
+      "industria": [
+        "tema materializou: atividade",
+        "4 notícias novas no setor"
+      ],
+      "comercio": [
+        "tema materializou: atividade"
+      ],
+      "agro": [
+        "tema materializou: atividade",
+        "3 notícias novas no setor"
+      ]
+    }
   }
 ]

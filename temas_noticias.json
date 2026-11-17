@@ -8981,6 +8981,108 @@
      "comercio",
      "ecommerce"
     ]
+   },
+   {
+    "titulo": "Focus corta IPCA de 2026 para 5,11%, mas eleva Selic de 2027 a 12,75%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar sobe 2,15% e fecha a R$ 5,7767, maior valor desde abril de 2025",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "IBC-Br cai 0,2% em setembro e 0,9% no 3º trimestre",
+    "palavra": "IBC-Br",
+    "tema": "atividade",
+    "setores": [
+     "transversal",
+     "industria",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Balança tem superávit de US$ 1,979 bilhão na 2ª semana de novembro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Dólar alto leva soja em Paranaguá ao maior nível nominal desde março de 2023",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Fim de subsídio de R$ 1,40 ao diesel importado pressiona preço nas bombas",
+    "palavra": "diesel",
+    "tema": "combustiveis",
+    "setores": [
+     "transversal",
+     "agro",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Grupo Boticário suspende fábrica de R$ 1,8 bilhão em Pouso Alegre (MG)",
+    "palavra": "cosméticos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Toyota investe US$ 1,3 bilhão na Argentina e vai exportar Tacoma ao Brasil",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Paranaenses planejam gastar 19,9% menos na Black Friday",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Amazonas abre chamamento para construir 240 moradias em Manaus",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Pix faz seis anos com mais de 1 bilhão de chaves e novas regras em 2027",
+    "palavra": "Pix",
+    "tema": "digital",
+    "setores": [
+     "servicos",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Senado vota em 17/11 destaques do ajuste fiscal de até R$ 56,1 bilhões",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
    }
   ]
  }

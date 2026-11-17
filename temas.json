@@ -1,5 +1,5 @@
 {
- "versao": 14,
+ "versao": 15,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -803,7 +803,8 @@
   "BYD": "atividade",
   "alvarás": "construcao",
   "fraudes": "digital",
-  "suínos": "agro"
+  "suínos": "agro",
+  "cosméticos": "atividade"
  },
  "leituras": [
   {
@@ -5140,7 +5141,13 @@
    "data": "2026-11-16",
    "semana": "2026-W47",
    "motivo": "palavras novas: suínos→agro"
+  },
+  {
+   "versao": 15,
+   "data": "2026-11-17",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: cosméticos→atividade"
   }
  ],
- "atualizado_em": "2026-11-16T10:13:26.672553+00:00"
+ "atualizado_em": "2026-11-17T10:10:13.758159+00:00"
 }
