@@ -1,0 +1,21 @@
+{"setores": {
+  "servicos": {
+    "prov": "Seu contrato de serviços repassa dólar acima de R$ 5,78 e frete ainda subsidiado?",
+    "quote": "O dólar fechou 17/11 a R$ 5,781, após tocar R$ 5,81, maior nível desde abril de 2025.",
+    "edi": [
+      "O câmbio voltou a pressionar em 17/11: o dólar subiu pelo quarto pregão seguido e fechou a R$ 5,781, depois de bater R$ 5,81 durante o dia, com os juros longos acima de 15%. Isso encarece viagens ao exterior, software e nuvem cotados em dólar. A prévia do PIB do Banco Central caiu 0,9% no 3º trimestre e o Focus de 16/11 reduziu o PIB de 2026 a 1,72%.",
+      "No transporte, o índice Edenred Ticket Log mostrou diesel S-10 a R$ 7,39 (-0,94%) e gasolina a R$ 6,67 (-0,89%) na 1ª quinzena de novembro, com a subvenção de R$ 2,12 por litro ainda em vigor. O Senado adiou para 18/11 os destaques do ajuste fiscal, e a Câmara deve votar só na semana seguinte."
+    ],
+    "acoes": [
+      {"ico": "📑", "txt": "Inclua cláusula cambial em contratos com custos em dólar, como software, nuvem e viagens."},
+      {"ico": "🚚", "txt": "Aproveite o diesel mais barato na quinzena para fechar fretes, com gatilho para o fim da subvenção."},
+      {"ico": "📉", "txt": "Planeje 2027 com PIB perto de 1% (Focus) e priorize clientes com caixa."}
+    ]
+  }},
+ "panorama": {"acoes": [
+   {"ico": "💱", "txt": "Dólar fechou 17/11 a R$ 5,781, quarta alta seguida e máxima de R$ 5,81: reforce hedge e revise preços de importados."},
+   {"ico": "🏛️", "txt": "Senado adiou para 18/11 os destaques do ajuste fiscal e a Câmara deve votar só na semana seguinte: evite decisões que dependam do texto final."},
+   {"ico": "🏦", "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."},
+   {"ico": "⛽", "txt": "Diesel S-10 caiu 0,94% na 1ª quinzena (Ticket Log): negocie frete agora, antes do fim da subvenção de R$ 2,12/l."},
+   {"ico": "🛒", "txt": "TikTok Shop já é citado por 22% dos compradores online: avalie o canal para a Black Friday de 27/11."}
+ ]}}

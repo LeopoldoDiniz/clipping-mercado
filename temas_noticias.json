@@ -9083,6 +9083,63 @@
     "setores": [
      "transversal"
     ]
+   },
+   {
+    "titulo": "Dólar fecha a R$ 5,781 e Ibovespa sobe 0,31% com ajuste fiscal no radar",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Sem acordo, Senado adia para 18/11 os cinco destaques do ajuste fiscal",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Diesel S-10 cai 0,94% e gasolina 0,89% na 1ª quinzena de novembro",
+    "palavra": "diesel",
+    "tema": "combustiveis",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "TikTok Shop entra no top 3 do e-commerce, citado por 22% dos compradores",
+    "palavra": "TikTok",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Minimercados evitam queda no consumo de bens de massa no 1º semestre",
+    "palavra": "minimercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Café sobe 1,88% em Minas e saca chega a R$ 1.802 em Guaxupé",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Passarelli prevê R$ 300 milhões em lançamentos do MCMV em São Paulo em 2027",
+    "palavra": "incorporadoras",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
    }
   ]
  }

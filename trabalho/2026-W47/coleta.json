@@ -216,6 +216,114 @@
           "url": "https://tvsimbrasil.com.br/brasil/politica/noticia/2026/11/17/senado-vota-destaques-ajuste-fiscal-56-bi"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar fecha a R$ 5,781 e Ibovespa sobe 0,31% com ajuste fiscal no radar",
+      "texto": "Em 17/11 o dólar subiu 0,08%, a R$ 5,781, após tocar R$ 5,81, maior nível desde abril de 2025; Ibovespa avançou 0,31%, a 169.816 pontos; juros longos seguem acima de 15%.",
+      "palavra": "dólar",
+      "fontes": [
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-17-novembro-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Sem acordo, Senado adia para 18/11 os cinco destaques do ajuste fiscal",
+      "texto": "Sessão de 17/11 terminou sem acordo com a oposição; os cinco destaques do PLP 299 ficaram para 18/11. Impacto estimado de R$ 43 a 54 bilhões; Câmara deve votar só na semana seguinte.",
+      "palavra": "ajuste-fiscal",
+      "fontes": [
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/politica/noticia/2026/11/18/senado-vota-5-destaques-ajuste-fiscal-camara-espera"
+        },
+        {
+          "nome": "Mix Vale",
+          "url": "https://www.mixvale.com.br/2026/11/17/plp-299-2026-senado-vota-nesta-terca-feira-os-destaques-ao-ajuste-fiscal-de-lula/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Diesel S-10 cai 0,94% e gasolina 0,89% na 1ª quinzena de novembro",
+      "texto": "Índice Edenred Ticket Log (17/11): diesel S-10 a R$ 7,39, diesel comum a R$ 7,16, gasolina a R$ 6,67; etanol sobe 1,39%, a R$ 4,38, com moagem mais lenta no Centro-Sul.",
+      "palavra": "diesel",
+      "fontes": [
+        {
+          "nome": "Technibus",
+          "url": "https://technibus.com.br/2026/11/17/diesel-e-gasolina-recuam-na-primeira-quinzena-de-novembro"
+        },
+        {
+          "nome": "Correio Braziliense",
+          "url": "https://newblogs.correiobraziliense.com.br/multieixos/2026/11/17/ufa-enfim-precos-do-diesel-e-da-gasolina-recuam/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "TikTok Shop entra no top 3 do e-commerce, citado por 22% dos compradores",
+      "texto": "Worldpanel by Numerator (17/11): nos últimos 30 dias, 79% compraram na Shopee, 41% no Mercado Livre, 22% no TikTok Shop, 20% na Shein e 16% na Amazon.",
+      "palavra": "TikTok",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/17/11/2026/ecommerce/tiktok-shop-ja-e-opcao-de-compra-para-22-dos-consumidores-e-entra-no-top-3-do-e-commerce"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Minimercados evitam queda no consumo de bens de massa no 1º semestre",
+      "texto": "Worldpanel by Numerator (17/11): consumo de bens de massa no Brasil subiu 0,1% no 1º semestre; minimercados contribuíram com 1,8 ponto percentual e o e-commerce com 0,4 ponto.",
+      "palavra": "minimercados",
+      "tema": "consumo",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/17/11/2026/noticias-varejo/minimercados-puxam-vendas-de-bens-de-consumo-no-brasil/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Café sobe 1,88% em Minas e saca chega a R$ 1.802 em Guaxupé",
+      "texto": "BBM (17/11): café sobe 1,88% na média de cinco praças mineiras, mas acumula queda de 18,61% em 12 meses; soja a R$ 155,00 (+18,32% em 12 meses), milho a R$ 63,00.",
+      "palavra": "café",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/agro/2026/11/17/cotacoes-do-agro-em-minas-17-11-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Passarelli prevê R$ 300 milhões em lançamentos do MCMV em São Paulo em 2027",
+      "texto": "Passarelli Incorporação (17/11) foca habitação econômica na capital paulista, com R$ 300 milhões em lançamentos residenciais do Minha Casa, Minha Vida previstos para 2027, predominantemente de dois dormitórios.",
+      "palavra": "incorporadoras",
+      "fontes": [
+        {
+          "nome": "Brasil Inovador",
+          "url": "https://brasilinovador.com.br/passarelli-incorporacao-projeta-r-300-milhoes-em-lancamentos-no-segmento-economico-em-sao-paulo-para-2027/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -292,7 +400,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 17/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 18/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -312,9 +420,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,73",
+      "valor": "R$ 5,79",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 16/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 17/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -405,23 +513,23 @@
       "acoes": [
         {
           "ico": "💱",
-          "txt": "Dólar fechou 16/11 a R$ 5,7767, maior desde abril de 2025: reforce hedge e revise preços de importados."
-        },
-        {
-          "ico": "🏦",
-          "txt": "Focus eleva Selic de 2027 a 12,75%: planeje crédito caro também no próximo ano."
-        },
-        {
-          "ico": "📉",
-          "txt": "IBC-Br cai 0,9% no 3º trimestre: ajuste metas de vendas de 2027 a um PIB perto de 1%."
+          "txt": "Dólar fechou 17/11 a R$ 5,781, quarta alta seguida e máxima de R$ 5,81: reforce hedge e revise preços de importados."
         },
         {
           "ico": "🏛️",
-          "txt": "Senado vota destaques do ajuste fiscal em 17/11 e a Câmara depois: acompanhe o teto de gastos e benefícios fiscais."
+          "txt": "Senado adiou para 18/11 os destaques do ajuste fiscal e a Câmara deve votar só na semana seguinte: evite decisões que dependam do texto final."
+        },
+        {
+          "ico": "🏦",
+          "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."
         },
         {
           "ico": "⛽",
-          "txt": "Subsídio extra ao diesel importado acabou: negocie frete antes de possível reajuste."
+          "txt": "Diesel S-10 caiu 0,94% na 1ª quinzena (Ticket Log): negocie frete agora, antes do fim da subvenção de R$ 2,12/l."
+        },
+        {
+          "ico": "🛒",
+          "txt": "TikTok Shop já é citado por 22% dos compradores online: avalie o canal para a Black Friday de 27/11."
         }
       ]
     },
@@ -471,20 +579,20 @@
         ]
       },
       "servicos": {
-        "prov": "Com a economia desacelerando, seu contrato de serviços tem cláusula de reajuste para custo e câmbio?",
-        "quote": "O Focus de 16/11 cortou o PIB de 2026 para 1,72% e o de 2027 para 1,02%.",
+        "prov": "Seu contrato de serviços repassa dólar acima de R$ 5,78 e frete ainda subsidiado?",
+        "quote": "O dólar fechou 17/11 a R$ 5,781, após tocar R$ 5,81, maior nível desde abril de 2025.",
         "edi": [
-          "A prévia do PIB do Banco Central caiu 0,2% em setembro e 0,9% no 3º trimestre, depois do volume de serviços (PMS) recuar 0,1% no mês. O Focus de 16/11 reduziu o PIB de 2026 a 1,72% e elevou a Selic de 2027 a 12,75%, sinal de crédito caro por mais tempo.",
-          "Em pagamentos, o Pix completou seis anos em 16/11 com mais de 1 bilhão de chaves, 154 milhões de pessoas e 14 milhões de empresas usuárias, e terá novas regras para crédito vinculado a partir de 1/7/2027. O dólar a R$ 5,7767 encarece viagens ao exterior e serviços cotados em moeda estrangeira, como nuvem e software."
+          "O câmbio voltou a pressionar em 17/11: o dólar subiu pelo quarto pregão seguido e fechou a R$ 5,781, depois de bater R$ 5,81 durante o dia, com os juros longos acima de 15%. Isso encarece viagens ao exterior, software e nuvem cotados em dólar. A prévia do PIB do Banco Central caiu 0,9% no 3º trimestre e o Focus de 16/11 reduziu o PIB de 2026 a 1,72%.",
+          "No transporte, o índice Edenred Ticket Log mostrou diesel S-10 a R$ 7,39 (-0,94%) e gasolina a R$ 6,67 (-0,89%) na 1ª quinzena de novembro, com a subvenção de R$ 2,12 por litro ainda em vigor. O Senado adiou para 18/11 os destaques do ajuste fiscal, e a Câmara deve votar só na semana seguinte."
         ],
         "acoes": [
           {
             "ico": "📑",
-            "txt": "Inclua cláusula cambial em contratos com custos em dólar, como software e nuvem."
+            "txt": "Inclua cláusula cambial em contratos com custos em dólar, como software, nuvem e viagens."
           },
           {
-            "ico": "📲",
-            "txt": "Prepare a operação para as regras do Pix de 2027 e use Pix Automático em recorrências."
+            "ico": "🚚",
+            "txt": "Aproveite o diesel mais barato na quinzena para fechar fretes, com gatilho para o fim da subvenção."
           },
           {
             "ico": "📉",
@@ -573,9 +681,10 @@
     "ecommerce": {
       "tipo": "oportunidade",
       "status": "em_curso",
-      "texto": "CNDL/SPC (16/11): 51% dos consumidores das capitais pretendem comprar na Black Friday de 27/11, gasto médio de R$ 1.053, e 81% via e-commerce.",
+      "texto": "TikTok Shop já é citado por 22% dos compradores online (17/11), atrás de Shopee (79%) e Mercado Livre (41%), às vésperas da Black Friday.",
       "fontes": [
-        "CNDL/SPC Brasil"
+        "CNDL/SPC Brasil",
+        "Worldpanel by Numerator"
       ]
     },
     "juros": {
@@ -589,10 +698,12 @@
     "cambio": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Dólar sobe 2,15% em 16/11, a R$ 5,7767, maior desde abril de 2025; Ibovespa cai 1,83% a 169.295 pontos.",
+      "texto": "Dólar fecha a R$ 5,781 em 17/11, quarto pregão de alta, após máxima de R$ 5,81, maior desde abril de 2025.",
       "fontes": [
-        "Mix Vale"
-      ]
+        "Mix Vale",
+        "CNN Brasil"
+      ],
+      "materializado": true
     },
     "atividade": {
       "tipo": "risco",
@@ -606,9 +717,10 @@
     "combustiveis": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Subsídio extra de R$ 1,40/litro ao diesel importado venceu em 12/11; resta R$ 2,12 até 26/11, com defasagem de R$ 2,91 (Abicom).",
+      "texto": "Diesel S-10 cai 0,94%, a R$ 7,39, na 1ª quinzena de novembro (Ticket Log), mas a subvenção de R$ 2,12/litro é temporária.",
       "fontes": [
-        "TV Sim Brasil"
+        "TV Sim Brasil",
+        "Edenred Ticket Log"
       ]
     },
     "exterior": {
@@ -622,7 +734,7 @@
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Senado vota em 17/11 destaques do PLP 299, que prevê até R$ 56,1 bilhões de ganho primário em 2027; Câmara ainda sem data.",
+      "texto": "Senado adia para 18/11 os cinco destaques do PLP 299 (R$ 43 a 54 bilhões); Câmara deve votar só na semana seguinte.",
       "fontes": [
         "TV Sim Brasil"
       ]
@@ -643,13 +755,21 @@
         "BCB",
         "TMC"
       ]
+    },
+    "construcao": {
+      "tipo": "oportunidade",
+      "status": "monitorar",
+      "texto": "Passarelli prevê R$ 300 milhões em lançamentos do MCMV em São Paulo em 2027 (17/11).",
+      "fontes": [
+        "Passarelli Incorporação"
+      ]
     }
   },
   "novos_temas": [],
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 17/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 18/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
-    "cambio": "R$ 5,73|Dólar PTAX venda · BCB · 16/11/2026",
+    "cambio": "R$ 5,79|Dólar PTAX venda · BCB · 17/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
     "varejo": "0,2%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE set/26",
     "pim": "-0,8%|Produção física m/m · acum. ano 0,4% · IBGE set/26",

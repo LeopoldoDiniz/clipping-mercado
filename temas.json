@@ -1,5 +1,5 @@
 {
- "versao": 15,
+ "versao": 16,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -804,7 +804,8 @@
   "alvarás": "construcao",
   "fraudes": "digital",
   "suínos": "agro",
-  "cosméticos": "atividade"
+  "cosméticos": "atividade",
+  "minimercados": "consumo"
  },
  "leituras": [
   {
@@ -5147,7 +5148,13 @@
    "data": "2026-11-17",
    "semana": "2026-W47",
    "motivo": "palavras novas: cosméticos→atividade"
+  },
+  {
+   "versao": 16,
+   "data": "2026-11-18",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: minimercados→consumo"
   }
  ],
- "atualizado_em": "2026-11-17T10:10:13.758159+00:00"
+ "atualizado_em": "2026-11-18T10:10:24.104854+00:00"
 }
