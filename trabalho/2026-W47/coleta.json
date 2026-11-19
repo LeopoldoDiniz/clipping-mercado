@@ -324,6 +324,131 @@
           "url": "https://brasilinovador.com.br/passarelli-incorporacao-projeta-r-300-milhoes-em-lancamentos-no-segmento-economico-em-sao-paulo-para-2027/"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar sobe 1,48% e fecha a R$ 5,868, maior valor desde abril de 2025",
+      "texto": "Em 18/11 o dólar teve a quinta alta seguida, a R$ 5,868, apesar de dois leilões de linha do BC de US$ 1 bilhão; Ibovespa caiu 1,34%, a 167.537 pontos.",
+      "palavra": "dólar",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-para-r-587-com-expectativa-sobre-votacao-de-ajuste-fiscal"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-18-novembro-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Senado conclui votação do ajuste fiscal e envia PLP 299 à Câmara",
+      "texto": "Em 18/11 o plenário rejeitou três destaques da oposição e manteve o substitutivo; Fazenda projeta impacto de R$ 43 a 56 bilhões em 2027. Texto segue para a Câmara.",
+      "palavra": "ajuste-fiscal",
+      "fontes": [
+        {
+          "nome": "Amazonas Atual",
+          "url": "https://amazonasatual.com.br/senado-conclui-votacao-do-plp-299-e-consolida-novo-pacote-de-ajuste-fiscal/"
+        },
+        {
+          "nome": "Agência Senado",
+          "url": "https://www12.senado.leg.br/noticias/audios/2026/11/destaques-ao-ajuste-fiscal-serao-votados-nesta-quarta"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Toyota inaugura segunda fábrica em Sorocaba com capacidade de 100 mil veículos",
+      "texto": "Unidade aberta em 18/11 começa com 1.700 trabalhadores e pode chegar a 200 mil veículos/ano; picape híbrida Corolla Deck sai no 1º semestre de 2027, dentro de plano de R$ 11,5 bilhões.",
+      "palavra": "automotivo",
+      "fontes": [
+        {
+          "nome": "Jornal Cruzeiro do Sul",
+          "url": "https://www.jornalcruzeiro.com.br/sorocaba/noticias/2026/11/767960-toyota-inaugura-segunda-fabrica-em-sorocaba-e-anuncia-producao-de-nova-picape.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Jetour investe mais R$ 400 milhões para produzir SUVs no Brasil em 2027",
+      "texto": "Montadora chinesa eleva a R$ 800 milhões o aporte no país para fabricar os SUVs T1 e T2 com motor flex a partir de 2027; local da fábrica sai no 1º trimestre.",
+      "palavra": "veículos",
+      "fontes": [
+        {
+          "nome": "Plantão Brasil",
+          "url": "https://www.plantaobrasil.net/noticias/164390-jetour-confirma-producao-nacional-e-investe-r-400-milhoes-no-brasil"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Fundos de crédito da Shopee crescem 159% e superam os do Mercado Livre",
+      "texto": "FIDCs ligados à Shopee somavam R$ 8,7 bilhões em outubro (+159% em 12 meses), ante R$ 8,6 bilhões do Mercado Livre (+21,8%), segundo BTG Pactual com dados da CVM.",
+      "palavra": "Shopee",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/18/11/2026/noticias/shopee-amplia-carteira-de-credito-em-159-e-acirra-disputa-com-mercado-livre/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce",
+        "transversal"
+      ],
+      "titulo": "Câmara adia votação do PL dos Mercados Digitais",
+      "texto": "PL 4675/2025, que cria regras especiais e supervisão do Cade sobre grandes plataformas, saiu da pauta em 17/11 sem consenso; governo quer aprová-lo ainda em 2026.",
+      "palavra": "bigtechs",
+      "fontes": [
+        {
+          "nome": "Teletime",
+          "url": "https://teletime.com.br/18/11/2026/camara-pl-dos-mercados-digitais/"
+        },
+        {
+          "nome": "TV Sim Brasil",
+          "url": "https://tvsimbrasil.com.br/brasil/politica/noticia/2026/11/18/camara-adia-pl-big-techs-motta-viaja-argentina"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Café sobe 2,02% e saca chega a R$ 1.837 em Guaxupé",
+      "texto": "Em 18/11 o café liderou as altas do agro em Minas, com a saca a R$ 1.837 em Guaxupé (+2,02%), segundo cotações da BBM.",
+      "palavra": "café",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/agro/2026/11/18/cotacoes-do-agro-em-minas-18-11-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "MRV lança no Rio condomínio MCMV de R$ 138,4 milhões em VGV",
+      "texto": "Refúgio Camorim, na Barra Olímpica, terá 372 apartamentos de 37 a 40 m² em seis blocos, voltados às faixas 3 e 4 do Minha Casa, Minha Vida (18/11).",
+      "palavra": "MCMV",
+      "fontes": [
+        {
+          "nome": "Click Petróleo e Gás",
+          "url": "https://clickpetroleoegas.com.br/mrv-crava-na-barra-olimpica-um-condominio-de-r-138-4-milhoes-em-valor-de-vendas-levanta-6-blocos-com-372-apartamentos-de-ate-40-40-m-e-ja-toca-obras-e-vendas-ao-mesmo-tempo-btl96/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -400,7 +525,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 18/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 19/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -420,9 +545,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,79",
+      "valor": "R$ 5,81",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 17/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 18/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -513,77 +638,77 @@
       "acoes": [
         {
           "ico": "💱",
-          "txt": "Dólar fechou 17/11 a R$ 5,781, quarta alta seguida e máxima de R$ 5,81: reforce hedge e revise preços de importados."
+          "txt": "Dólar fechou 18/11 a R$ 5,868, quinta alta seguida: reforce hedge e revise preços de importados."
         },
         {
           "ico": "🏛️",
-          "txt": "Senado adiou para 18/11 os destaques do ajuste fiscal e a Câmara deve votar só na semana seguinte: evite decisões que dependam do texto final."
+          "txt": "Senado concluiu o ajuste fiscal (PLP 299) em 18/11; acompanhe a votação na Câmara antes de decisões que dependem do texto."
         },
         {
           "ico": "🏦",
           "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."
         },
         {
-          "ico": "⛽",
-          "txt": "Diesel S-10 caiu 0,94% na 1ª quinzena (Ticket Log): negocie frete agora, antes do fim da subvenção de R$ 2,12/l."
+          "ico": "🚗",
+          "txt": "Toyota abriu fábrica em Sorocaba e Jetour investe R$ 400 milhões: oportunidade para fornecedores industriais."
         },
         {
           "ico": "🛒",
-          "txt": "TikTok Shop já é citado por 22% dos compradores online: avalie o canal para a Black Friday de 27/11."
+          "txt": "Black Friday em 27/11 com dólar alto: feche preços de importados já."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Com a prévia do PIB em queda e o dólar perto de R$ 5,78, seu plano de investimento de 2027 ainda fecha?",
-        "quote": "O IBC-Br caiu 0,2% em setembro e 0,9% no 3º trimestre, segundo o Banco Central.",
+        "prov": "Sua cadeia está pronta para fornecer às novas linhas automotivas de 2027?",
+        "quote": "A Toyota abriu em 18/11 a segunda fábrica em Sorocaba, com capacidade inicial de 100 mil veículos por ano.",
         "edi": [
-          "A semana abriu com sinais de freio na atividade: o IBC-Br de setembro recuou 0,2% e fechou o 3º trimestre com queda de 0,9%, depois da PIM de -0,8% no mês. Em 16/11 o Grupo Boticário confirmou a suspensão por tempo indeterminado da fábrica de R$ 1,8 bilhão em Pouso Alegre (MG), que previa 800 empregos, e a Toyota anunciou US$ 1,3 bilhão na Argentina para produzir a picape Tacoma a partir de 2030, com exportação ao Brasil.",
-          "No custo, o dólar fechou 16/11 a R$ 5,7767, maior valor desde abril de 2025, e o subsídio extra de R$ 1,40 por litro ao diesel importado venceu sem renovação, com defasagem de R$ 2,91 por litro apontada pela Abicom. O Focus elevou a Selic esperada para 2027 a 12,75%, o que adia o alívio no custo de capital."
+          "A produção industrial caiu 0,8% em setembro (IBGE) e o IBC-Br recuou 0,9% no 3º trimestre, mas o setor automotivo segue anunciando capacidade. Em 18/11 a Toyota inaugurou a segunda unidade em Sorocaba, com 1.700 trabalhadores e potencial de 200 mil veículos/ano, e a picape híbrida Corolla Deck para o 1º semestre de 2027. A Jetour elevou a R$ 800 milhões o aporte para produzir SUVs flex no país a partir de 2027.",
+          "O custo segue pressionado: o dólar fechou 18/11 a R$ 5,868, maior valor desde abril de 2025, e o IPP acumula 5,04% no ano até setembro. O Senado concluiu o PLP 299, que corta incentivos, e o texto vai à Câmara."
         ],
         "acoes": [
           {
+            "ico": "🚗",
+            "txt": "Fornecedores de autopeças: busque homologação com Toyota e Jetour antes das linhas de 2027."
+          },
+          {
             "ico": "💱",
-            "txt": "Com o dólar a R$ 5,78, faça hedge de insumos importados e reprecifique contratos de reposição."
+            "txt": "Com dólar a R$ 5,868, proteja compras de insumos importados e revise preços de contratos."
           },
           {
-            "ico": "🚚",
-            "txt": "Renegocie frete agora: o diesel pode subir com o fim do subsídio de R$ 1,40 por litro."
-          },
-          {
-            "ico": "🏗️",
-            "txt": "Reavalie o cronograma de expansão de 2027 com Selic esperada de 12,75% e demanda em queda."
+            "ico": "🏛️",
+            "txt": "Mapeie quais incentivos o PLP 299 corta antes da votação na Câmara."
           }
         ]
       },
       "comercio": {
-        "prov": "Seu cliente vai gastar menos nesta Black Friday: sua margem aguenta desconto maior com dólar em alta?",
-        "quote": "No Paraná, o gasto médio previsto na Black Friday caiu 19,9%, de R$ 1.034,92 para R$ 828,50 (Fecomércio PR).",
+        "prov": "Sua Black Friday aguenta importado com dólar a R$ 5,87?",
+        "quote": "O dólar fechou 18/11 a R$ 5,868, quinta alta seguida, a nove dias da Black Friday de 27/11.",
         "edi": [
-          "As pesquisas de 16/11 mostram intenção de compra firme, mas orçamento menor: a CNDL/SPC aponta que 51% dos consumidores das capitais pretendem comprar em 27/11, com gasto médio de R$ 1.053, enquanto a Fecomércio PR prevê queda de 19,9% no gasto médio paranaense, a R$ 828,50, e 53% pensando em antecipar o Natal.",
-          "O pano de fundo é de atividade mais fraca, com o IBC-Br em queda de 0,9% no 3º trimestre, e de custo de reposição maior: o dólar subiu 2,15% em 16/11, a R$ 5,7767, o que encarece eletroeletrônicos, categoria líder de intenção no Paraná (51,1%)."
+          "O varejo ficou praticamente estável em setembro (+0,2%, IBGE) e a atividade recuou 0,9% no 3º trimestre pelo IBC-Br. A alta do dólar, a R$ 5,868 em 18/11, encarece reposição de eletrônicos e importados justamente às vésperas da Black Friday, quando a Fecomércio PR prevê gasto médio 19,9% menor.",
+          "A disputa por crédito ao consumidor esquenta: os fundos de crédito da Shopee somaram R$ 8,7 bilhões em outubro (+159%), acima dos R$ 8,6 bilhões do Mercado Livre, segundo o BTG. Com Selic em 13,75%, o parcelamento oferecido pelas plataformas compete diretamente com o crediário das lojas."
         ],
         "acoes": [
           {
-            "ico": "🛍️",
-            "txt": "Concentre descontos em itens com estoque já pago e preserve margem nos importados."
-          },
-          {
-            "ico": "🎄",
-            "txt": "Ofereça condições que puxem compras de Natal para a Black Friday: 53% cogitam antecipar."
+            "ico": "🏷️",
+            "txt": "Feche o preço de importados para a Black Friday já com o dólar acima de R$ 5,80."
           },
           {
             "ico": "💳",
-            "txt": "Facilite Pix e parcelamento curto: o consumidor chega com orçamento menor e mais endividado."
+            "txt": "Compare o parcelamento próprio com o crédito das plataformas antes de definir condições de 27/11."
+          },
+          {
+            "ico": "📦",
+            "txt": "Priorize itens nacionais e estoque já pago nas ofertas de maior desconto."
           }
         ]
       },
       "servicos": {
-        "prov": "Seu contrato de serviços repassa dólar acima de R$ 5,78 e frete ainda subsidiado?",
-        "quote": "O dólar fechou 17/11 a R$ 5,781, após tocar R$ 5,81, maior nível desde abril de 2025.",
+        "prov": "Seus contratos em dólar já consideram câmbio de R$ 5,87?",
+        "quote": "O dólar fechou 18/11 a R$ 5,868, alta de 1,48% e maior valor desde abril de 2025.",
         "edi": [
-          "O câmbio voltou a pressionar em 17/11: o dólar subiu pelo quarto pregão seguido e fechou a R$ 5,781, depois de bater R$ 5,81 durante o dia, com os juros longos acima de 15%. Isso encarece viagens ao exterior, software e nuvem cotados em dólar. A prévia do PIB do Banco Central caiu 0,9% no 3º trimestre e o Focus de 16/11 reduziu o PIB de 2026 a 1,72%.",
-          "No transporte, o índice Edenred Ticket Log mostrou diesel S-10 a R$ 7,39 (-0,94%) e gasolina a R$ 6,67 (-0,89%) na 1ª quinzena de novembro, com a subvenção de R$ 2,12 por litro ainda em vigor. O Senado adiou para 18/11 os destaques do ajuste fiscal, e a Câmara deve votar só na semana seguinte."
+          "O câmbio subiu pela quinta sessão em 18/11, a R$ 5,868, mesmo com dois leilões de linha de US$ 1 bilhão do Banco Central; o Ibovespa caiu 1,34%. Isso encarece software, nuvem, viagens internacionais e querosene de aviação. A prévia do PIB do BC caiu 0,9% no 3º trimestre.",
+          "O Senado concluiu o PLP 299 em 18/11, com impacto estimado pela Fazenda de R$ 43 a 56 bilhões em 2027, e o texto vai à Câmara. Na Câmara, o PL dos Mercados Digitais, que afeta plataformas de serviços, foi adiado sem nova data."
         ],
         "acoes": [
           {
@@ -591,34 +716,34 @@
             "txt": "Inclua cláusula cambial em contratos com custos em dólar, como software, nuvem e viagens."
           },
           {
-            "ico": "🚚",
-            "txt": "Aproveite o diesel mais barato na quinzena para fechar fretes, com gatilho para o fim da subvenção."
+            "ico": "✈️",
+            "txt": "Turismo: reveja pacotes internacionais de dezembro com o dólar perto de R$ 5,87."
           },
           {
             "ico": "📉",
-            "txt": "Planeje 2027 com PIB perto de 1% (Focus) e priorize clientes com caixa."
+            "txt": "Planeje 2027 com atividade fraca e priorize clientes com caixa."
           }
         ]
       },
       "agro": {
-        "prov": "Com o dólar a R$ 5,78 e a soja na máxima desde 2023, você já travou parte da próxima safra?",
-        "quote": "A agropecuária exportou US$ 3,07 bilhões na 2ª semana de novembro, alta de 15,6% (Secex/MDIC).",
+        "prov": "Vale travar parte da venda com o dólar em R$ 5,87?",
+        "quote": "Em 18/11 a saca de café chegou a R$ 1.837 em Guaxupé (+2,02%), com o dólar a R$ 5,868.",
         "edi": [
-          "O câmbio virou o principal motor dos preços: com o dólar a R$ 5,7767 em 16/11, o Cepea registrou o indicador da soja em Paranaguá no maior patamar nominal desde março de 2023, e a balança da 2ª semana de novembro mostrou exportações agropecuárias de US$ 3,07 bilhões (+15,6%).",
-          "No custo, o fim do subsídio extra de R$ 1,40 por litro ao diesel importado, em 12/11, ameaça encarecer o frete na colheita, e o restante do subsídio, de R$ 2,12, vale só até 26/11. Na carne suína, o Brasil negocia com as Filipinas, que compraram US$ 600 milhões até setembro, para evitar a salvaguarda de 60 dias."
+          "O dólar a R$ 5,868 em 18/11, maior valor desde abril de 2025, sustenta os preços em reais das exportações: o café subiu 2,02% em Guaxupé, a R$ 1.837 a saca, e a soja em Paranaguá já estava no maior nível nominal desde março de 2023. A balança da 2ª semana de novembro mostrou exportações do agro de US$ 3,07 bilhões (+15,6%).",
+          "Do lado do custo, insumos importados como fertilizantes ficam mais caros com o câmbio, e a atividade doméstica recuou 0,9% no 3º trimestre (IBC-Br). A negociação com as Filipinas sobre a carne suína segue aberta."
         ],
         "acoes": [
           {
-            "ico": "💱",
-            "txt": "Aproveite o dólar perto de R$ 5,78 para fixar parte da soja e do milho da safra 2026/27."
+            "ico": "☕",
+            "txt": "Café: considere fixar parte da venda com a saca acima de R$ 1.800 em MG."
           },
           {
-            "ico": "⛽",
-            "txt": "Antecipe compra de diesel antes de 26/11, quando acaba o subsídio restante."
+            "ico": "💱",
+            "txt": "Antecipe compra de fertilizantes para 2027 ou trave câmbio antes de nova alta."
           },
           {
             "ico": "🐖",
-            "txt": "Exportador de suínos: diversifique destinos enquanto a salvaguarda filipina vigora."
+            "txt": "Suinocultores: diversifique destinos enquanto a salvaguarda das Filipinas vigora."
           }
         ]
       },
@@ -681,10 +806,12 @@
     "ecommerce": {
       "tipo": "oportunidade",
       "status": "em_curso",
-      "texto": "TikTok Shop já é citado por 22% dos compradores online (17/11), atrás de Shopee (79%) e Mercado Livre (41%), às vésperas da Black Friday.",
+      "texto": "FIDCs da Shopee chegam a R$ 8,7 bilhões em outubro (+159%), acima dos R$ 8,6 bilhões do Mercado Livre (BTG, 17/11).",
       "fontes": [
         "CNDL/SPC Brasil",
-        "Worldpanel by Numerator"
+        "Worldpanel by Numerator",
+        "Mercado&Consumo",
+        "BTG Pactual"
       ]
     },
     "juros": {
@@ -698,21 +825,25 @@
     "cambio": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Dólar fecha a R$ 5,781 em 17/11, quarto pregão de alta, após máxima de R$ 5,81, maior desde abril de 2025.",
+      "texto": "Dólar fecha a R$ 5,868 em 18/11 (+1,48%), quinta alta seguida e maior valor desde abril de 2025, mesmo com leilões de US$ 1 bilhão do BC.",
       "fontes": [
         "Mix Vale",
-        "CNN Brasil"
+        "CNN Brasil",
+        "Agência Brasil"
       ],
       "materializado": true
     },
     "atividade": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "IBC-Br cai 0,2% em setembro e 0,9% no 3º trimestre; Boticário suspende fábrica de R$ 1,8 bilhão em MG (16/11).",
+      "texto": "IBC-Br cai 0,9% no 3º trimestre, mas Toyota abre 2ª fábrica em Sorocaba (18/11) e Jetour soma R$ 800 milhões para produzir no país.",
       "fontes": [
         "BCB",
-        "Click Petróleo e Gás"
-      ]
+        "Click Petróleo e Gás",
+        "Jornal Cruzeiro do Sul",
+        "Plantão Brasil"
+      ],
+      "materializado": true
     },
     "combustiveis": {
       "tipo": "risco",
@@ -734,9 +865,11 @@
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Senado adia para 18/11 os cinco destaques do PLP 299 (R$ 43 a 54 bilhões); Câmara deve votar só na semana seguinte.",
+      "texto": "Senado conclui PLP 299 em 18/11 rejeitando três destaques; impacto de R$ 43 a 56 bilhões em 2027 depende agora da Câmara.",
       "fontes": [
-        "TV Sim Brasil"
+        "TV Sim Brasil",
+        "Amazonas Atual",
+        "Agência Senado"
       ]
     },
     "consumo": {
@@ -758,18 +891,27 @@
     },
     "construcao": {
       "tipo": "oportunidade",
-      "status": "monitorar",
-      "texto": "Passarelli prevê R$ 300 milhões em lançamentos do MCMV em São Paulo em 2027 (17/11).",
+      "status": "em_curso",
+      "texto": "MRV lança no Rio projeto MCMV de R$ 138,4 milhões com 372 unidades das faixas 3 e 4 (18/11).",
       "fontes": [
-        "Passarelli Incorporação"
+        "Passarelli Incorporação",
+        "Click Petróleo e Gás"
+      ]
+    },
+    "regulacao": {
+      "tipo": "risco",
+      "status": "monitorar",
+      "texto": "Câmara adia o PL 4675/2025 dos Mercados Digitais (17/11) sem nova data; governo quer aprovar ainda em 2026.",
+      "fontes": [
+        "Teletime"
       ]
     }
   },
   "novos_temas": [],
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 18/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 19/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
-    "cambio": "R$ 5,79|Dólar PTAX venda · BCB · 17/11/2026",
+    "cambio": "R$ 5,81|Dólar PTAX venda · BCB · 18/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
     "varejo": "0,2%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE set/26",
     "pim": "-0,8%|Produção física m/m · acum. ano 0,4% · IBGE set/26",

@@ -50,5 +50,32 @@
         "tema materializou: cambio"
       ]
     }
+  },
+  {
+    "data": "2026-11-19",
+    "em": "2026-11-19T10:09:55.054296+00:00",
+    "noticias_novas": 8,
+    "total_semana": 29,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador Câmbio (US$) atualizado: R$ 5,81",
+        "tema materializou: cambio",
+        "tema materializou: atividade"
+      ],
+      "servicos": [
+        "tema materializou: cambio",
+        "tema materializou: atividade"
+      ],
+      "industria": [
+        "tema materializou: atividade"
+      ],
+      "comercio": [
+        "tema materializou: atividade"
+      ],
+      "agro": [
+        "tema materializou: atividade"
+      ]
+    }
   }
 ]

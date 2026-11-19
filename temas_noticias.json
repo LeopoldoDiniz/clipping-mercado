@@ -9140,6 +9140,71 @@
     "setores": [
      "construcao"
     ]
+   },
+   {
+    "titulo": "Dólar sobe 1,48% e fecha a R$ 5,868, maior valor desde abril de 2025",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Senado conclui votação do ajuste fiscal e envia PLP 299 à Câmara",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Toyota inaugura segunda fábrica em Sorocaba com capacidade de 100 mil veículos",
+    "palavra": "automotivo",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Jetour investe mais R$ 400 milhões para produzir SUVs no Brasil em 2027",
+    "palavra": "veículos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Fundos de crédito da Shopee crescem 159% e superam os do Mercado Livre",
+    "palavra": "Shopee",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Câmara adia votação do PL dos Mercados Digitais",
+    "palavra": "bigtechs",
+    "tema": "regulacao",
+    "setores": [
+     "ecommerce",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Café sobe 2,02% e saca chega a R$ 1.837 em Guaxupé",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "MRV lança no Rio condomínio MCMV de R$ 138,4 milhões em VGV",
+    "palavra": "MCMV",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
    }
   ]
  }
