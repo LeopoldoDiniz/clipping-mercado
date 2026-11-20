@@ -9205,6 +9205,90 @@
     "setores": [
      "construcao"
     ]
+   },
+   {
+    "titulo": "Dólar sobe 1,15% e fecha a R$ 5,934, sexta alta seguida",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Câmara marca para 23/11 votação do ajuste fiscal; relator mantém texto do Senado",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Lula assina decreto que regulamenta fim da escala 6x1",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "CBIC alerta que fim da 6x1 exigiria 288 mil trabalhadores a mais nas obras",
+    "palavra": "CBIC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Abate de bovinos cai 13,4% no 3º trimestre; suínos e frangos crescem",
+    "palavra": "abate",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Captação de leite recua 0,4% e couro cai 12,5% no 3º trimestre",
+    "palavra": "leite",
+    "tema": "agro",
+    "setores": [
+     "agro",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Café cai 1,57% em Minas e saca recua a R$ 1.797 em Guaxupé",
+    "palavra": "café",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Morana e Todomoda aceleram expansão e grupo passa de 410 lojas",
+    "palavra": "franchising",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Savegnago investe R$ 4,3 milhões para modernizar loja em Rio Claro (SP)",
+    "palavra": "supermercados",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria capixaba cai de 50,4 para 45,5 pontos em novembro",
+    "palavra": "ICEI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
    }
   ]
  }

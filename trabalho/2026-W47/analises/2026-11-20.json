@@ -1,0 +1,73 @@
+{"setores": {
+  "industria": {
+    "prov": "Sua escala de turnos já está pronta para 42 horas em 16/12?",
+    "quote": "O decreto assinado em 19/11 reduz a jornada para 42 horas semanais a partir de 16/12/2026 e para 40 horas em 2027.",
+    "edi": [
+      "A regulamentação do fim da escala 6x1, assinada em 19/11, dá menos de um mês para a indústria refazer turnos: a jornada cai a 42 horas em 16/12/2026 e a 40 horas em 16/12/2027, com divisor do salário-hora passando de 220 para 210 e depois 200. A confiança já estava no chão: o ICEI nacional caiu a 40,2 pontos em novembro e o do Espírito Santo recuou de 50,4 para 45,5.",
+      "O custo de insumos importados segue subindo com o dólar a R$ 5,934 em 19/11, sexta alta seguida. O IBGE mostrou ainda recebimento de couro 12,5% menor no 3º trimestre, reflexo do abate bovino em queda de 13,4%."
+    ],
+    "acoes": [
+      {"ico": "🕒", "txt": "Redesenhe turnos e banco de horas para a jornada de 42 horas antes de 16/12."},
+      {"ico": "💱", "txt": "Com dólar a R$ 5,93, proteja compras de insumos importados e revise preços de contratos."},
+      {"ico": "👞", "txt": "Calçados e couro: garanta fornecimento de couro com a oferta 12,5% menor no 3º trimestre."}
+    ]
+  },
+  "comercio": {
+    "prov": "Sua escala de lojas para dezembro já considera a jornada de 42 horas?",
+    "quote": "A jornada de 42 horas passa a valer em 16/12, no meio da temporada de Natal, segundo o decreto de 19/11.",
+    "edi": [
+      "O decreto do fim da 6x1, de 19/11, coloca a redução para 42 horas semanais em 16/12, em plena temporada de Natal, e o divisor do salário-hora cai para 210. O varejo, que usa amplamente a 6x1, precisará reorganizar escalas ou contratar temporários com o dólar a R$ 5,934 e a Black Friday de 27/11 já encarecendo reposição de importados.",
+      "Há quem siga expandindo: o grupo Morana prevê 39 inaugurações em 2026 e a Todomoda quer passar de 34 para 54 lojas até dezembro; a Savegnago investiu R$ 4,3 milhões para modernizar loja em Rio Claro, com 8 terminais de autoatendimento."
+    ],
+    "acoes": [
+      {"ico": "🗓️", "txt": "Monte já as escalas de dezembro com jornada de 42 horas a partir de 16/12."},
+      {"ico": "🧾", "txt": "Avalie autoatendimento e temporários para cobrir horas perdidas no Natal."},
+      {"ico": "🏷️", "txt": "Feche preço de importados da Black Friday com o dólar acima de R$ 5,90."}
+    ]
+  },
+  "servicos": {
+    "prov": "Seus contratos já repassam câmbio de R$ 5,93 e a nova jornada?",
+    "quote": "O dólar fechou 19/11 a R$ 5,9344, sexta alta seguida, mesmo após venda de US$ 1 bilhão pelo Banco Central.",
+    "edi": [
+      "O câmbio subiu pela sexta sessão em 19/11, a R$ 5,9344, maior valor desde abril de 2025, apesar de leilão à vista de US$ 1 bilhão do BC; o Ibovespa caiu 0,69%. Na Câmara, o relator manteve o texto do ajuste fiscal (impacto de R$ 50 bilhões em 2027), com votação marcada para 23/11.",
+      "No mesmo dia, o decreto do fim da 6x1 fixou jornada de 42 horas a partir de 16/12/2026 e 40 horas em 2027, o que pesa em bares, hotéis, segurança e limpeza, setores intensivos em mão de obra e com operação contínua."
+    ],
+    "acoes": [
+      {"ico": "📑", "txt": "Inclua cláusula de reequilíbrio por jornada e câmbio nos contratos de 2027."},
+      {"ico": "🕒", "txt": "Operações contínuas: negocie acordo coletivo para a escala de 42 horas antes de 16/12."},
+      {"ico": "✈️", "txt": "Turismo: reveja pacotes internacionais de dezembro com o dólar perto de R$ 5,93."}
+    ]
+  },
+  "construcao": {
+    "prov": "Seu cronograma de obra cabe na jornada de 42 horas?",
+    "quote": "A CBIC estima que o fim da 6x1 exigiria cerca de 288 mil trabalhadores a mais para manter a produção das obras.",
+    "edi": [
+      "Após o decreto de 19/11, a CBIC estima alta de cerca de 5% no salário-hora e de 18% nos encargos na primeira etapa, com adicional de hora extra aos sábados subindo de 60% para 100%. A entidade calcula 288 mil trabalhadores adicionais para manter o ritmo e pede compensações para o Minha Casa, Minha Vida e reequilíbrio rápido de contratos públicos.",
+      "A transição começa em 16/12, e a CBIC diz que adaptar RH e sistemas leva de 90 a 180 dias. Ações no STF ainda não têm data de julgamento."
+    ],
+    "acoes": [
+      {"ico": "🏗️", "txt": "Recalcule o custo de mão de obra das obras em andamento com encargos até 18% maiores."},
+      {"ico": "📄", "txt": "Obras públicas: protocole pedido de reequilíbrio contratual com base no decreto."},
+      {"ico": "🏠", "txt": "MCMV: revise viabilidade dos lançamentos de 2027 com o novo custo por hora."}
+    ]
+  },
+  "agro": {
+    "prov": "Sua estratégia de venda considera o abate bovino 13,4% menor?",
+    "quote": "O IBGE registrou 9,82 milhões de bovinos abatidos no 3º trimestre, queda de 13,4% no ano.",
+    "edi": [
+      "A prévia do IBGE de 19/11 mostrou abate de bovinos 13,4% menor no 3º trimestre, a 9,82 milhões de cabeças, enquanto suínos (+5,2%) e frangos (+5,8%) cresceram. A oferta curta de boi coincide com a tarifa de 67% da China após o fim da cota de 2026; a captação de leite recuou 0,4%, a 7,06 bilhões de litros.",
+      "Nos preços, o café caiu 1,57% em Minas em 19/11, a R$ 1.797 em Guaxupé, após cinco altas, e a soja subiu 0,50%, a R$ 156,50. O dólar a R$ 5,934 sustenta a receita em reais das exportações."
+    ],
+    "acoes": [
+      {"ico": "🐂", "txt": "Pecuaristas: negocie a arroba com a oferta de boi em queda e programe embarques para a cota chinesa de 2027."},
+      {"ico": "☕", "txt": "Café: use a volatilidade para escalonar vendas acima de R$ 1.750 a saca."},
+      {"ico": "💱", "txt": "Com dólar a R$ 5,93, avalie travar parte da soja de 2027."}
+    ]
+  }},
+ "panorama": {"acoes": [
+   {"ico": "🕒", "txt": "Decreto de 19/11 fixa jornada de 42 horas em 16/12: refaça escalas e custos de pessoal já."},
+   {"ico": "💱", "txt": "Dólar fechou 19/11 a R$ 5,934, sexta alta seguida: reforce hedge e revise preços de importados."},
+   {"ico": "🏛️", "txt": "Câmara vota o ajuste fiscal (PLP 299) em 23/11 com o texto do Senado; acompanhe antes de decisões que dependem dele."},
+   {"ico": "🏦", "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."},
+   {"ico": "🛒", "txt": "Black Friday em 27/11 com dólar alto: feche preços de importados já."}
+ ]}}

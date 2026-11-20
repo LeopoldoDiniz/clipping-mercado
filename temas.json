@@ -1,5 +1,5 @@
 {
- "versao": 16,
+ "versao": 17,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -805,7 +805,9 @@
   "fraudes": "digital",
   "suínos": "agro",
   "cosméticos": "atividade",
-  "minimercados": "consumo"
+  "minimercados": "consumo",
+  "CBIC": "construcao",
+  "abate": "agro"
  },
  "leituras": [
   {
@@ -5154,7 +5156,13 @@
    "data": "2026-11-18",
    "semana": "2026-W47",
    "motivo": "palavras novas: minimercados→consumo"
+  },
+  {
+   "versao": 17,
+   "data": "2026-11-20",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: CBIC→construcao, abate→agro"
   }
  ],
- "atualizado_em": "2026-11-19T10:09:45.330639+00:00"
+ "atualizado_em": "2026-11-20T10:10:32.512843+00:00"
 }
