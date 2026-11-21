@@ -9289,6 +9289,33 @@
     "setores": [
      "industria"
     ]
+   },
+   {
+    "titulo": "Exportações do agronegócio somam US$ 16 bilhões em outubro, alta de 4,1%",
+    "palavra": "exportações",
+    "tema": "exterior",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Swift estreia na culinária japonesa de olho em mercado de R$ 2 bilhões",
+    "palavra": "Swift",
+    "tema": "consumo",
+    "setores": [
+     "industria",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Portaria de 23/11 deve definir cálculo do DSR com a segunda folga da 5x2",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "comercio",
+     "servicos"
+    ]
    }
   ]
  }

@@ -619,6 +619,52 @@
           "url": "https://esbrasil.com.br/confianca-industria-capixaba-icei-es-novembro-2026/"
         }
       ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Exportações do agronegócio somam US$ 16 bilhões em outubro, alta de 4,1%",
+      "texto": "Segundo o Mapa, o agro respondeu por 42,3% das exportações de outubro e acumula US$ 149,4 bilhões no ano (+5,2%); carne bovina in natura soma recorde de US$ 14,2 bilhões.",
+      "palavra": "exportações",
+      "fontes": [
+        {
+          "nome": "Muzambinho.com",
+          "url": "https://muzambinho.com.br/2026/11/20/exportacoes-do-agronegocio-somam-us-16-bilhoes-em-outubro-e-acumulam-us-1494-bilhoes-no-ano/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "comercio"
+      ],
+      "titulo": "Swift estreia na culinária japonesa de olho em mercado de R$ 2 bilhões",
+      "texto": "Em 20/11 a marca lançou sashimis, guiozas e harumakis congelados de R$ 15,90 a R$ 30,90, com entrada escalonada em mais de 480 lojas e no e-commerce; segmento cresceu 9% em 12 meses (IFB).",
+      "palavra": "Swift",
+      "tema": "consumo",
+      "fontes": [
+        {
+          "nome": "Mercado&Consumo",
+          "url": "https://mercadoeconsumo.com.br/20/11/2026/foodservice/de-olho-em-mercado-de-r-2-bilhoes-swift-estreia-na-culinaria-japonesa/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Portaria de 23/11 deve definir cálculo do DSR com a segunda folga da 5x2",
+      "texto": "Segundo a Folha, citada pelo ND+ em 20/11, o MTE deve manter um descanso semanal no cálculo do DSR sobre horas extras (divisor 26 e 4 folgas); segunda folga vale a partir de 16/12.",
+      "palavra": "6x1",
+      "fontes": [
+        {
+          "nome": "ND+",
+          "url": "https://ndmais.com.br/economia/fim-escala-6x1-segunda-folga-remunerada-na-5x2/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -695,7 +741,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 20/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 21/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -808,7 +854,7 @@
       "acoes": [
         {
           "ico": "🕒",
-          "txt": "Decreto de 19/11 fixa jornada de 42 horas em 16/12: refaça escalas e custos de pessoal já."
+          "txt": "Jornada de 42 horas em 16/12 e portaria do DSR prevista para 23/11: refaça escalas e folha já."
         },
         {
           "ico": "💱",
@@ -823,18 +869,18 @@
           "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."
         },
         {
-          "ico": "🛒",
-          "txt": "Black Friday em 27/11 com dólar alto: feche preços de importados já."
+          "ico": "🌾",
+          "txt": "Agro exportou US$ 149,4 bilhões até outubro (+5,2%): cadeias exportadoras seguem como contrapeso."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Sua escala de turnos já está pronta para 42 horas em 16/12?",
-        "quote": "O decreto assinado em 19/11 reduz a jornada para 42 horas semanais a partir de 16/12/2026 e para 40 horas em 2027.",
+        "prov": "Seus turnos e o cálculo de horas extras já estão prontos para 16/12?",
+        "quote": "A jornada cai para 42 horas semanais em 16/12/2026, e o MTE deve publicar em 23/11 a portaria que define o DSR com a segunda folga.",
         "edi": [
-          "A regulamentação do fim da escala 6x1, assinada em 19/11, dá menos de um mês para a indústria refazer turnos: a jornada cai a 42 horas em 16/12/2026 e a 40 horas em 16/12/2027, com divisor do salário-hora passando de 220 para 210 e depois 200. A confiança já estava no chão: o ICEI nacional caiu a 40,2 pontos em novembro e o do Espírito Santo recuou de 50,4 para 45,5.",
-          "O custo de insumos importados segue subindo com o dólar a R$ 5,934 em 19/11, sexta alta seguida. O IBGE mostrou ainda recebimento de couro 12,5% menor no 3º trimestre, reflexo do abate bovino em queda de 13,4%."
+          "O decreto de 19/11 dá menos de um mês para a indústria refazer turnos: 42 horas em 16/12/2026 e 40 horas em 16/12/2027, com divisor do salário-hora passando de 220 para 210 e depois 200. Segundo a Folha, citada pelo ND+ em 20/11, a portaria do MTE prevista para 23/11 deve manter o divisor 26 e 4 folgas no cálculo do DSR sobre horas extras. A confiança já estava baixa: o ICEI nacional caiu a 40,2 pontos em novembro.",
+          "O dólar fechou 19/11 a R$ 5,934, sexta alta seguida, e encarece insumos importados. No alimento industrializado, a Swift lançou em 20/11 linha japonesa congelada de R$ 15,90 a R$ 30,90, mirando um segmento de R$ 2 bilhões."
         ],
         "acoes": [
           {
@@ -842,21 +888,21 @@
             "txt": "Redesenhe turnos e banco de horas para a jornada de 42 horas antes de 16/12."
           },
           {
-            "ico": "💱",
-            "txt": "Com dólar a R$ 5,93, proteja compras de insumos importados e revise preços de contratos."
+            "ico": "🧮",
+            "txt": "Confira a folha após a portaria de 23/11: ajuste o cálculo do DSR sobre horas extras."
           },
           {
-            "ico": "👞",
-            "txt": "Calçados e couro: garanta fornecimento de couro com a oferta 12,5% menor no 3º trimestre."
+            "ico": "💱",
+            "txt": "Com dólar a R$ 5,93, proteja compras de insumos importados e revise preços de contratos."
           }
         ]
       },
       "comercio": {
-        "prov": "Sua escala de lojas para dezembro já considera a jornada de 42 horas?",
-        "quote": "A jornada de 42 horas passa a valer em 16/12, no meio da temporada de Natal, segundo o decreto de 19/11.",
+        "prov": "Sua escala de Natal já considera 42 horas e o novo DSR?",
+        "quote": "A jornada de 42 horas passa a valer em 16/12, em plena temporada de Natal, e a regra do DSR sai em portaria prevista para 23/11.",
         "edi": [
-          "O decreto do fim da 6x1, de 19/11, coloca a redução para 42 horas semanais em 16/12, em plena temporada de Natal, e o divisor do salário-hora cai para 210. O varejo, que usa amplamente a 6x1, precisará reorganizar escalas ou contratar temporários com o dólar a R$ 5,934 e a Black Friday de 27/11 já encarecendo reposição de importados.",
-          "Há quem siga expandindo: o grupo Morana prevê 39 inaugurações em 2026 e a Todomoda quer passar de 34 para 54 lojas até dezembro; a Savegnago investiu R$ 4,3 milhões para modernizar loja em Rio Claro, com 8 terminais de autoatendimento."
+          "O decreto do fim da 6x1, de 19/11, leva a jornada a 42 horas em 16/12, com divisor do salário-hora em 210. A portaria do MTE esperada para 23/11 deve manter um descanso semanal no cálculo do DSR sobre horas extras, segundo a Folha, o que limita o custo adicional de comissões e extras no varejo. A Black Friday de 27/11 chega com o dólar a R$ 5,934.",
+          "A expansão continua em nichos: Morana prevê 39 inaugurações em 2026 e a Todomoda quer chegar a 54 lojas até dezembro; a Swift colocará sua linha japonesa congelada em mais de 480 lojas e no e-commerce."
         ],
         "acoes": [
           {
@@ -865,7 +911,7 @@
           },
           {
             "ico": "🧾",
-            "txt": "Avalie autoatendimento e temporários para cobrir horas perdidas no Natal."
+            "txt": "Recalcule o DSR de comissionados assim que a portaria de 23/11 for publicada."
           },
           {
             "ico": "🏷️",
@@ -877,8 +923,8 @@
         "prov": "Seus contratos já repassam câmbio de R$ 5,93 e a nova jornada?",
         "quote": "O dólar fechou 19/11 a R$ 5,9344, sexta alta seguida, mesmo após venda de US$ 1 bilhão pelo Banco Central.",
         "edi": [
-          "O câmbio subiu pela sexta sessão em 19/11, a R$ 5,9344, maior valor desde abril de 2025, apesar de leilão à vista de US$ 1 bilhão do BC; o Ibovespa caiu 0,69%. Na Câmara, o relator manteve o texto do ajuste fiscal (impacto de R$ 50 bilhões em 2027), com votação marcada para 23/11.",
-          "No mesmo dia, o decreto do fim da 6x1 fixou jornada de 42 horas a partir de 16/12/2026 e 40 horas em 2027, o que pesa em bares, hotéis, segurança e limpeza, setores intensivos em mão de obra e com operação contínua."
+          "O câmbio subiu pela sexta sessão em 19/11, a R$ 5,9344, maior valor desde abril de 2025, apesar do leilão de US$ 1 bilhão do BC; a Câmara vota o ajuste fiscal (impacto de R$ 50 bilhões em 2027) em 23/11, mesmo dia previsto para a portaria do MTE sobre o DSR na escala 5x2.",
+          "A jornada de 42 horas a partir de 16/12/2026 pesa em bares, hotéis, segurança e limpeza, intensivos em mão de obra e com operação contínua; o exemplo do ND+ mostra o salário-hora de R$ 3.000 subindo de R$ 13,64 para R$ 14,29."
         ],
         "acoes": [
           {
@@ -890,8 +936,8 @@
             "txt": "Operações contínuas: negocie acordo coletivo para a escala de 42 horas antes de 16/12."
           },
           {
-            "ico": "✈️",
-            "txt": "Turismo: reveja pacotes internacionais de dezembro com o dólar perto de R$ 5,93."
+            "ico": "🧮",
+            "txt": "Reprecifique serviços com o salário-hora cerca de 4,8% maior a partir de 16/12."
           }
         ]
       },
@@ -921,8 +967,8 @@
         "prov": "Seu cronograma de obra cabe na jornada de 42 horas?",
         "quote": "A CBIC estima que o fim da 6x1 exigiria cerca de 288 mil trabalhadores a mais para manter a produção das obras.",
         "edi": [
-          "Após o decreto de 19/11, a CBIC estima alta de cerca de 5% no salário-hora e de 18% nos encargos na primeira etapa, com adicional de hora extra aos sábados subindo de 60% para 100%. A entidade calcula 288 mil trabalhadores adicionais para manter o ritmo e pede compensações para o Minha Casa, Minha Vida e reequilíbrio rápido de contratos públicos.",
-          "A transição começa em 16/12, e a CBIC diz que adaptar RH e sistemas leva de 90 a 180 dias. Ações no STF ainda não têm data de julgamento."
+          "Após o decreto de 19/11, a CBIC estima alta de cerca de 5% no salário-hora e de 18% nos encargos na primeira etapa, com adicional de hora extra aos sábados subindo de 60% para 100%, e pede compensações para o Minha Casa, Minha Vida. A portaria do MTE prevista para 23/11 deve definir o cálculo do DSR sobre horas extras com a segunda folga.",
+          "A transição começa em 16/12, e a CBIC diz que adaptar RH e sistemas leva de 90 a 180 dias; o dólar a R$ 5,934 também pressiona insumos importados das obras."
         ],
         "acoes": [
           {
@@ -934,8 +980,8 @@
             "txt": "Obras públicas: protocole pedido de reequilíbrio contratual com base no decreto."
           },
           {
-            "ico": "🏠",
-            "txt": "MCMV: revise viabilidade dos lançamentos de 2027 com o novo custo por hora."
+            "ico": "🧮",
+            "txt": "Ajuste o cálculo de horas extras de sábado após a portaria de 23/11."
           }
         ]
       },
@@ -1030,9 +1076,10 @@
     "exterior": {
       "tipo": "oportunidade",
       "status": "em_curso",
-      "texto": "Balança tem superávit de US$ 1,979 bilhão na 2ª semana de novembro; agro exporta US$ 3,07 bilhões (+15,6%).",
+      "texto": "Agro exporta US$ 16 bilhões em outubro (+4,1%) e US$ 149,4 bilhões no ano (+5,2%), com recorde de US$ 14,2 bilhões na carne bovina (Mapa).",
       "fontes": [
-        "Secex/MDIC"
+        "Secex/MDIC",
+        "Muzambinho.com"
       ]
     },
     "fiscal": {
@@ -1085,18 +1132,19 @@
     "trabalho": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Decreto de 19/11 regulamenta fim da 6x1: jornada de 42 horas em 16/12/2026 e 40 horas em 2027; CBIC estima encargos +18% nas obras.",
+      "texto": "Decreto de 19/11 fixa 42 horas a partir de 16/12; portaria do MTE prevista para 23/11 deve definir o DSR com a segunda folga.",
       "fontes": [
         "Congresso em Foco",
         "Correio Braziliense",
-        "CBIC"
+        "CBIC",
+        "ND+"
       ],
       "materializado": true
     }
   },
   "novos_temas": [],
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 20/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 21/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
     "cambio": "R$ 5,89|Dólar PTAX venda · BCB · 19/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",

@@ -1,5 +1,5 @@
 {
- "versao": 17,
+ "versao": 18,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -807,7 +807,8 @@
   "cosméticos": "atividade",
   "minimercados": "consumo",
   "CBIC": "construcao",
-  "abate": "agro"
+  "abate": "agro",
+  "Swift": "consumo"
  },
  "leituras": [
   {
@@ -5162,7 +5163,13 @@
    "data": "2026-11-20",
    "semana": "2026-W47",
    "motivo": "palavras novas: CBIC→construcao, abate→agro"
+  },
+  {
+   "versao": 18,
+   "data": "2026-11-21",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: Swift→consumo"
   }
  ],
- "atualizado_em": "2026-11-20T10:10:32.512843+00:00"
+ "atualizado_em": "2026-11-21T10:09:27.403042+00:00"
 }

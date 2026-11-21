@@ -1,0 +1,21 @@
+{
+  "clipping": [
+    {"setores": ["agro"], "titulo": "Exportações do agronegócio somam US$ 16 bilhões em outubro, alta de 4,1%",
+     "texto": "Segundo o Mapa, o agro respondeu por 42,3% das exportações de outubro e acumula US$ 149,4 bilhões no ano (+5,2%); carne bovina in natura soma recorde de US$ 14,2 bilhões.",
+     "palavra": "exportações",
+     "fontes": [{"nome": "Muzambinho.com", "url": "https://muzambinho.com.br/2026/11/20/exportacoes-do-agronegocio-somam-us-16-bilhoes-em-outubro-e-acumulam-us-1494-bilhoes-no-ano/"}]},
+    {"setores": ["industria", "comercio"], "titulo": "Swift estreia na culinária japonesa de olho em mercado de R$ 2 bilhões",
+     "texto": "Em 20/11 a marca lançou sashimis, guiozas e harumakis congelados de R$ 15,90 a R$ 30,90, com entrada escalonada em mais de 480 lojas e no e-commerce; segmento cresceu 9% em 12 meses (IFB).",
+     "palavra": "Swift", "tema": "consumo",
+     "fontes": [{"nome": "Mercado&Consumo", "url": "https://mercadoeconsumo.com.br/20/11/2026/foodservice/de-olho-em-mercado-de-r-2-bilhoes-swift-estreia-na-culinaria-japonesa/"}]},
+    {"setores": ["transversal", "comercio", "servicos"], "titulo": "Portaria de 23/11 deve definir cálculo do DSR com a segunda folga da 5x2",
+     "texto": "Segundo a Folha, citada pelo ND+ em 20/11, o MTE deve manter um descanso semanal no cálculo do DSR sobre horas extras (divisor 26 e 4 folgas); segunda folga vale a partir de 16/12.",
+     "palavra": "6x1",
+     "fontes": [{"nome": "ND+", "url": "https://ndmais.com.br/economia/fim-escala-6x1-segunda-folga-remunerada-na-5x2/"}]}
+  ],
+  "leituras_temas": {
+    "exterior": {"tipo": "oportunidade", "status": "em_curso", "texto": "Agro exporta US$ 16 bilhões em outubro (+4,1%) e US$ 149,4 bilhões no ano (+5,2%), com recorde de US$ 14,2 bilhões na carne bovina (Mapa).", "fontes": ["Muzambinho.com"]},
+    "trabalho": {"tipo": "risco", "status": "materializado", "texto": "Decreto de 19/11 fixa 42 horas a partir de 16/12; portaria do MTE prevista para 23/11 deve definir o DSR com a segunda folga.", "fontes": ["Congresso em Foco", "CBIC", "ND+"], "materializado": true}
+  },
+  "novos_temas": []
+}
