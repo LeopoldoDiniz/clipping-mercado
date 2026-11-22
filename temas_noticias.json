@@ -9316,6 +9316,62 @@
      "comercio",
      "servicos"
     ]
+   },
+   {
+    "titulo": "Durigan vê desaceleração em 2027, mas afasta recessão",
+    "palavra": "Durigan",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Câmara vota ajuste fiscal em 23/11 e CMO analisa receitas do Orçamento em 25/11",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Principia instala fábrica de cosméticos em Linhares (ES); projetos somam R$ 620 milhões",
+    "palavra": "cosméticos",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Itaú BBA: usinas elevam em 7,8% investimento na cana, mas total cai a R$ 20,2 bilhões",
+    "palavra": "cana",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Comissão de Agricultura aprova R$ 8,1 bilhões em emendas, R$ 3 bilhões ao seguro rural",
+    "palavra": "seguro-rural",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Emater-RO: arroba do boi gordo a R$ 353,45 e soja a R$ 124,67 em Rondônia",
+    "palavra": "arroba",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Abrasel: 88% dos bares e restaurantes de Ribeirão Preto têm dificuldade para contratar",
+    "palavra": "restaurantes",
+    "tema": "consumo",
+    "setores": [
+     "servicos"
+    ]
    }
   ]
  }

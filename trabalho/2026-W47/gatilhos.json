@@ -1,21 +1,11 @@
 {
-  "data": "2026-11-21",
+  "data": "2026-11-22",
   "setores": {
     "panorama": [
-      "indicador SELIC atualizado: 13,75% a.a.",
-      "tema materializou: trabalho"
+      "indicador SELIC atualizado: 13,75% a.a."
     ],
-    "servicos": [
-      "tema materializou: trabalho"
-    ],
-    "comercio": [
-      "tema materializou: trabalho"
-    ],
-    "construcao": [
-      "tema materializou: trabalho"
-    ],
-    "industria": [
-      "tema materializou: trabalho"
+    "agro": [
+      "3 notícias novas no setor"
     ]
   }
 }

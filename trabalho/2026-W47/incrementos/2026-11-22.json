@@ -1,0 +1,37 @@
+{
+  "clipping": [
+    {"setores": ["transversal"], "titulo": "Durigan vê desaceleração em 2027, mas afasta recessão",
+     "texto": "Em 21/11 o ministro da Fazenda disse que o país crescerá menos em 2027, sem recessão; reforma tributária começa em janeiro com alíquota de referência estimada em 11,3% pelo TCU.",
+     "palavra": "Durigan", "tema": "fiscal",
+     "fontes": [{"nome": "JB", "url": "https://jb.com.br/economia/2026/11/1061611-durigan-diz-que-desaceleracao-em-2027-nao-significa-recessao.html"}]},
+    {"setores": ["transversal"], "titulo": "Câmara vota ajuste fiscal em 23/11 e CMO analisa receitas do Orçamento em 25/11",
+     "texto": "PLP 299 precisa de 257 votos; governo estima economia de R$ 56 bilhões e superávit de R$ 18,7 bilhões em 2027. Comissões aprovaram 96 emendas de R$ 85,9 bilhões ao Orçamento.",
+     "palavra": "ajuste-fiscal",
+     "fontes": [{"nome": "Brasil de Fato", "url": "https://www.brasildefato.com.br/2026/11/22/camara-abre-semana-com-previsao-de-votacao-do-ajuste-fiscal-e-negociacoes-sobre-orcamento/"}]},
+    {"setores": ["industria"], "titulo": "Principia instala fábrica de cosméticos em Linhares (ES); projetos somam R$ 620 milhões",
+     "texto": "Fábrica de 13,1 mil m² no Polo Moveleiro; com Alugreen e ampliações de WEG e Brametal, a prefeitura estima R$ 620 milhões e 1,4 mil vagas (21/11).",
+     "palavra": "cosméticos",
+     "fontes": [{"nome": "ES Fala", "url": "https://www.esfala.com.br/2026/11/21/gigante-dos-cosmeticos-vai-instalar-fabrica-em-linhares-e-investimento/"}]},
+    {"setores": ["agro"], "titulo": "Itaú BBA: usinas elevam em 7,8% investimento na cana, mas total cai a R$ 20,2 bilhões",
+     "texto": "Levantamento com 47 empresas do Centro-Sul: R$ 8,3 bilhões em renovação de canaviais na safra 2026/27; novos projetos caem de R$ 9,1 bi para R$ 6,2 bi e margem a 23%, menor em dez anos.",
+     "palavra": "cana",
+     "fontes": [{"nome": "O Estado de Rondônia", "url": "https://oestadoderondonia.com.br/industria-de-acucar-e-etanol-devera-fechar-2026-com-ampliacao-de-78-em-investimentos"}]},
+    {"setores": ["agro"], "titulo": "Comissão de Agricultura aprova R$ 8,1 bilhões em emendas, R$ 3 bilhões ao seguro rural",
+     "texto": "Seis emendas ao Orçamento 2027 aprovadas em 18/11 (noticiado em 22/11) incluem R$ 3 bi para fomento e R$ 500 mi para Embrapa; inadimplência agro subiu de 0,86% para 5,62% (CNA).",
+     "palavra": "seguro-rural", "tema": "agro",
+     "fontes": [{"nome": "ND+", "url": "https://ndmais.com.br/economia/agronegocios/comissao-aprova-r-3-bilhoes-para-seguro-rural-mas-verba-ainda-depende-do-orcamento/"}]},
+    {"setores": ["agro"], "titulo": "Emater-RO: arroba do boi gordo a R$ 353,45 e soja a R$ 124,67 em Rondônia",
+     "texto": "Média de 16 a 20/11 pagas ao produtor: café robusta R$ 889,17 a saca, milho R$ 55,22, cacau R$ 242,50 a arroba e leite R$ 2,11 o litro.",
+     "palavra": "arroba",
+     "fontes": [{"nome": "Portal P1", "url": "https://portalp1.com.br/precos-agro-rondonia-boi-cafe-cacau-soja-milho-novembro-2026/"}]},
+    {"setores": ["servicos"], "titulo": "Abrasel: 88% dos bares e restaurantes de Ribeirão Preto têm dificuldade para contratar",
+     "texto": "Falta de candidatos (42%) e de qualificação (27%) lideram; 31% pretendem ampliar equipes no fim de ano. Caged: 8.559 vagas no setor em setembro, 33% abaixo de 2025.",
+     "palavra": "restaurantes",
+     "fontes": [{"nome": "Encontra Ribeirão Preto", "url": "https://www.encontraribeiraopreto.com/bares-de-ribeirao-preto-enfrentam-dificuldade-para-contratar/"}]}
+  ],
+  "leituras_temas": {
+    "fiscal": {"tipo": "risco", "status": "em_curso", "texto": "Câmara vota PLP 299 em 23/11 (257 votos; R$ 56 bi de economia); Durigan prevê desaceleração em 2027 sem recessão.", "fontes": ["Brasil de Fato", "JB"]},
+    "agro": {"tipo": "risco", "status": "em_curso", "texto": "Margem das usinas cai a 23%, menor em dez anos (Itaú BBA); inadimplência agro em 5,62% e R$ 3 bi para seguro rural ainda dependem do Orçamento.", "fontes": ["O Estado de Rondônia", "ND+"]}
+  },
+  "novos_temas": []
+}

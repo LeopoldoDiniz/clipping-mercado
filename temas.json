@@ -1,5 +1,5 @@
 {
- "versao": 18,
+ "versao": 19,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -808,7 +808,9 @@
   "minimercados": "consumo",
   "CBIC": "construcao",
   "abate": "agro",
-  "Swift": "consumo"
+  "Swift": "consumo",
+  "Durigan": "fiscal",
+  "seguro-rural": "agro"
  },
  "leituras": [
   {
@@ -5169,7 +5171,13 @@
    "data": "2026-11-21",
    "semana": "2026-W47",
    "motivo": "palavras novas: Swift→consumo"
+  },
+  {
+   "versao": 19,
+   "data": "2026-11-22",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: Durigan→fiscal, seguro-rural→agro"
   }
  ],
- "atualizado_em": "2026-11-21T10:09:27.403042+00:00"
+ "atualizado_em": "2026-11-22T10:09:08.188795+00:00"
 }

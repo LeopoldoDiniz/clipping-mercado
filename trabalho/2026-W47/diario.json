@@ -133,5 +133,19 @@
         "tema materializou: trabalho"
       ]
     }
+  },
+  {
+    "data": "2026-11-22",
+    "em": "2026-11-22T10:09:16.694003+00:00",
+    "noticias_novas": 7,
+    "total_semana": 49,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a."
+      ],
+      "agro": [
+        "3 notícias novas no setor"
+      ]
+    }
   }
 ]

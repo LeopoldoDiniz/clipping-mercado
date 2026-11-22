@@ -665,6 +665,106 @@
           "url": "https://ndmais.com.br/economia/fim-escala-6x1-segunda-folga-remunerada-na-5x2/"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Durigan vê desaceleração em 2027, mas afasta recessão",
+      "texto": "Em 21/11 o ministro da Fazenda disse que o país crescerá menos em 2027, sem recessão; reforma tributária começa em janeiro com alíquota de referência estimada em 11,3% pelo TCU.",
+      "palavra": "Durigan",
+      "tema": "fiscal",
+      "fontes": [
+        {
+          "nome": "JB",
+          "url": "https://jb.com.br/economia/2026/11/1061611-durigan-diz-que-desaceleracao-em-2027-nao-significa-recessao.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Câmara vota ajuste fiscal em 23/11 e CMO analisa receitas do Orçamento em 25/11",
+      "texto": "PLP 299 precisa de 257 votos; governo estima economia de R$ 56 bilhões e superávit de R$ 18,7 bilhões em 2027. Comissões aprovaram 96 emendas de R$ 85,9 bilhões ao Orçamento.",
+      "palavra": "ajuste-fiscal",
+      "fontes": [
+        {
+          "nome": "Brasil de Fato",
+          "url": "https://www.brasildefato.com.br/2026/11/22/camara-abre-semana-com-previsao-de-votacao-do-ajuste-fiscal-e-negociacoes-sobre-orcamento/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Principia instala fábrica de cosméticos em Linhares (ES); projetos somam R$ 620 milhões",
+      "texto": "Fábrica de 13,1 mil m² no Polo Moveleiro; com Alugreen e ampliações de WEG e Brametal, a prefeitura estima R$ 620 milhões e 1,4 mil vagas (21/11).",
+      "palavra": "cosméticos",
+      "fontes": [
+        {
+          "nome": "ES Fala",
+          "url": "https://www.esfala.com.br/2026/11/21/gigante-dos-cosmeticos-vai-instalar-fabrica-em-linhares-e-investimento/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Itaú BBA: usinas elevam em 7,8% investimento na cana, mas total cai a R$ 20,2 bilhões",
+      "texto": "Levantamento com 47 empresas do Centro-Sul: R$ 8,3 bilhões em renovação de canaviais na safra 2026/27; novos projetos caem de R$ 9,1 bi para R$ 6,2 bi e margem a 23%, menor em dez anos.",
+      "palavra": "cana",
+      "fontes": [
+        {
+          "nome": "O Estado de Rondônia",
+          "url": "https://oestadoderondonia.com.br/industria-de-acucar-e-etanol-devera-fechar-2026-com-ampliacao-de-78-em-investimentos"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Comissão de Agricultura aprova R$ 8,1 bilhões em emendas, R$ 3 bilhões ao seguro rural",
+      "texto": "Seis emendas ao Orçamento 2027 aprovadas em 18/11 (noticiado em 22/11) incluem R$ 3 bi para fomento e R$ 500 mi para Embrapa; inadimplência agro subiu de 0,86% para 5,62% (CNA).",
+      "palavra": "seguro-rural",
+      "tema": "agro",
+      "fontes": [
+        {
+          "nome": "ND+",
+          "url": "https://ndmais.com.br/economia/agronegocios/comissao-aprova-r-3-bilhoes-para-seguro-rural-mas-verba-ainda-depende-do-orcamento/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Emater-RO: arroba do boi gordo a R$ 353,45 e soja a R$ 124,67 em Rondônia",
+      "texto": "Média de 16 a 20/11 pagas ao produtor: café robusta R$ 889,17 a saca, milho R$ 55,22, cacau R$ 242,50 a arroba e leite R$ 2,11 o litro.",
+      "palavra": "arroba",
+      "fontes": [
+        {
+          "nome": "Portal P1",
+          "url": "https://portalp1.com.br/precos-agro-rondonia-boi-cafe-cacau-soja-milho-novembro-2026/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Abrasel: 88% dos bares e restaurantes de Ribeirão Preto têm dificuldade para contratar",
+      "texto": "Falta de candidatos (42%) e de qualificação (27%) lideram; 31% pretendem ampliar equipes no fim de ano. Caged: 8.559 vagas no setor em setembro, 33% abaixo de 2025.",
+      "palavra": "restaurantes",
+      "fontes": [
+        {
+          "nome": "Encontra Ribeirão Preto",
+          "url": "https://www.encontraribeiraopreto.com/bares-de-ribeirao-preto-enfrentam-dificuldade-para-contratar/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -741,7 +841,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 21/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 22/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -853,6 +953,14 @@
     "panorama": {
       "acoes": [
         {
+          "ico": "🏛️",
+          "txt": "Câmara vota o ajuste fiscal (PLP 299) em 23/11 e precisa de 257 votos; acompanhe antes de decisões que dependem dele."
+        },
+        {
+          "ico": "🏦",
+          "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."
+        },
+        {
           "ico": "🕒",
           "txt": "Jornada de 42 horas em 16/12 e portaria do DSR prevista para 23/11: refaça escalas e folha já."
         },
@@ -861,16 +969,8 @@
           "txt": "Dólar fechou 19/11 a R$ 5,934, sexta alta seguida: reforce hedge e revise preços de importados."
         },
         {
-          "ico": "🏛️",
-          "txt": "Câmara vota o ajuste fiscal (PLP 299) em 23/11 com o texto do Senado; acompanhe antes de decisões que dependem dele."
-        },
-        {
-          "ico": "🏦",
-          "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."
-        },
-        {
-          "ico": "🌾",
-          "txt": "Agro exportou US$ 149,4 bilhões até outubro (+5,2%): cadeias exportadoras seguem como contrapeso."
+          "ico": "📉",
+          "txt": "Fazenda prevê desaceleração em 2027 sem recessão: calibre metas de vendas com cautela."
         }
       ]
     },
@@ -942,24 +1042,24 @@
         ]
       },
       "agro": {
-        "prov": "Sua estratégia de venda considera o abate bovino 13,4% menor?",
-        "quote": "O IBGE registrou 9,82 milhões de bovinos abatidos no 3º trimestre, queda de 13,4% no ano.",
+        "prov": "Seu caixa aguenta margem menor e crédito rural mais caro em 2027?",
+        "quote": "A margem operacional das usinas do Centro-Sul deve cair de 26% para 23% na safra 2026/27, a menor em dez anos, segundo o Itaú BBA.",
         "edi": [
-          "A prévia do IBGE de 19/11 mostrou abate de bovinos 13,4% menor no 3º trimestre, a 9,82 milhões de cabeças, enquanto suínos (+5,2%) e frangos (+5,8%) cresceram. A oferta curta de boi coincide com a tarifa de 67% da China após o fim da cota de 2026; a captação de leite recuou 0,4%, a 7,06 bilhões de litros.",
-          "Nos preços, o café caiu 1,57% em Minas em 19/11, a R$ 1.797 em Guaxupé, após cinco altas, e a soja subiu 0,50%, a R$ 156,50. O dólar a R$ 5,934 sustenta a receita em reais das exportações."
+          "O levantamento do Itaú BBA com 47 usinas mostra investimento de R$ 8,3 bilhões na renovação de canaviais (+7,8%), mas o total previsto cai de R$ 23,9 bilhões para R$ 20,2 bilhões e novos projetos recuam a R$ 6,2 bilhões. No crédito, a inadimplência do agro subiu de 0,86% em 2023 para 5,62% em 2026 (CNA); a Comissão de Agricultura aprovou R$ 8,1 bilhões em emendas, R$ 3 bilhões ao seguro rural, ainda dependentes do Orçamento 2027.",
+          "Nos preços ao produtor, a Emater-RO apurou de 16 a 20/11 arroba do boi a R$ 353,45, soja a R$ 124,67 e milho a R$ 55,22 a saca. As exportações do agro somaram US$ 149,4 bilhões até outubro (+5,2%), com o dólar perto de R$ 5,93 ajudando a receita em reais."
         ],
         "acoes": [
           {
-            "ico": "🐂",
-            "txt": "Pecuaristas: negocie a arroba com a oferta de boi em queda e programe embarques para a cota chinesa de 2027."
+            "ico": "🛡️",
+            "txt": "Contrate seguro rural cedo: a subvenção de 2027 ainda depende da votação do Orçamento."
           },
           {
-            "ico": "☕",
-            "txt": "Café: use a volatilidade para escalonar vendas acima de R$ 1.750 a saca."
+            "ico": "💰",
+            "txt": "Renegocie dívidas e alongue prazos antes de nova alta da inadimplência no crédito rural."
           },
           {
             "ico": "💱",
-            "txt": "Com dólar a R$ 5,93, avalie travar parte da soja de 2027."
+            "txt": "Aproveite o dólar perto de R$ 5,93 para travar parte da venda da próxima safra."
           }
         ]
       },
@@ -1013,11 +1113,13 @@
     "agro": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "IBGE (19/11): abate de bovinos cai 13,4% no 3º trimestre, a 9,82 milhões de cabeças, enquanto suínos (+5,2%) e frangos (+5,8%) crescem.",
+      "texto": "Margem das usinas cai a 23%, menor em dez anos (Itaú BBA); inadimplência agro em 5,62% e R$ 3 bi para seguro rural ainda dependem do Orçamento.",
       "fontes": [
         "Canal Rural",
         "MAPA",
-        "Mercado&Consumo"
+        "Mercado&Consumo",
+        "O Estado de Rondônia",
+        "ND+"
       ]
     },
     "ecommerce": {
@@ -1085,13 +1187,15 @@
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Relator na Câmara mantém texto do PLP 299 (impacto de R$ 50 bilhões em 2027); votação marcada para 23/11.",
+      "texto": "Câmara vota PLP 299 em 23/11 (257 votos; R$ 56 bi de economia); Durigan prevê desaceleração em 2027 sem recessão.",
       "fontes": [
         "TV Sim Brasil",
         "Amazonas Atual",
         "Agência Senado",
         "Plox",
-        "SBT News"
+        "SBT News",
+        "Brasil de Fato",
+        "JB"
       ]
     },
     "consumo": {
@@ -1144,7 +1248,7 @@
   },
   "novos_temas": [],
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 21/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 22/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
     "cambio": "R$ 5,89|Dólar PTAX venda · BCB · 19/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
