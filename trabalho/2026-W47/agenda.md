@@ -1,0 +1,16 @@
+- 23/11 (seg): Câmara abre às 18h a votação do PLP 299, o ajuste fiscal (Brasil 247/Metrópoles). precisa de 257 votos; pode avançar para 24/11 se houver destaques.
+- 23/11 (seg): Boletim Focus (BCB). projeções de Selic, IPCA e dólar após real cair 8,37% em novembro.
+- 24/11 (ter): início previsto da salvaguarda das Filipinas à carne suína brasileira, por 60 dias (Canal Rural). destino relevante do segmento.
+- 25/11 (qua): CMO analisa o relatório de receitas do Orçamento de 2027 (Times Brasil). relatório preliminar previsto para 26/11.
+- 26/11 (qui): IPP de outubro (IBGE). preços ao produtor, 1,54% em setembro.
+- 27/11 (sex): Black Friday (CNDL/SPC). Neotrust projeta R$ 13,3 bilhões no e-commerce entre 26 e 29/11.
+- 27/11 (sex): PNAD Contínua, desemprego do trimestre até outubro (IBGE). taxa anterior de 5,2%.
+- 30/11 (seg): Boletim Focus (BCB). última leitura de novembro.
+- 03/12 (qui): Produção industrial (PIM) de outubro (IBGE). setembro caiu 0,8%.
+- 07/12 (seg): INCC de novembro (FGV). custo da construção.
+- 08/12 (ter): Pesquisa Mensal do Comércio de outubro (IBGE). setembro subiu 0,2%.
+- 08 e 09/12 (ter e qua): última reunião do Copom em 2026 (BCB). Selic em 13,75%.
+- 10/12 (qui): Pesquisa Mensal de Serviços de outubro (IBGE).
+- 11/12 (sex): IPCA e Sinapi de novembro (IBGE). outubro teve IPCA de 0,14%.
+- 15/12 (ter): Levantamento Sistemático da Produção Agrícola de novembro (IBGE).
+- 16/12 (qua): jornada máxima cai para 42 horas semanais (Decreto 13.173/EC 141). fim da escala 6x1.

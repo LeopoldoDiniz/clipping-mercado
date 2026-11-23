@@ -1,5 +1,5 @@
 {
- "versao": 19,
+ "versao": 20,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -21,7 +21,7 @@
   "juros"
  ],
  "regra_incremento": "Claude cria tema novo sem pedir ok (decisão do usuário em 10/11/2026) quando um assunto sem tema se repete; registra versão e motivo em historico.",
- "ultimo_ciclo": "2026-W46",
+ "ultimo_ciclo": "2026-W47",
  "temas": [
   {
    "id": "juros",
@@ -810,7 +810,8 @@
   "abate": "agro",
   "Swift": "consumo",
   "Durigan": "fiscal",
-  "seguro-rural": "agro"
+  "seguro-rural": "agro",
+  "real": "cambio"
  },
  "leituras": [
   {
@@ -5065,6 +5066,178 @@
    "fontes": [
     "NC News"
    ]
+  },
+  {
+   "tema": "agro",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Margem das usinas cai a 23%, menor em dez anos (Itaú BBA); inadimplência agro em 5,62% e R$ 3 bi para seguro rural ainda dependem do Orçamento.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Canal Rural",
+    "MAPA",
+    "Mercado&Consumo",
+    "O Estado de Rondônia",
+    "ND+"
+   ]
+  },
+  {
+   "tema": "atividade",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "IBC-Br cai 0,9% no 3º trimestre, mas Toyota abre 2ª fábrica em Sorocaba (18/11) e Jetour soma R$ 800 milhões para produzir no país.",
+   "status": "materializado",
+   "materializado": true,
+   "fontes": [
+    "BCB",
+    "Click Petróleo e Gás",
+    "Jornal Cruzeiro do Sul",
+    "Plantão Brasil"
+   ]
+  },
+  {
+   "tema": "cambio",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Dólar a R$ 5,934 em 19/11; real perde 8,37% em novembro, 5,1 p.p. a mais que emergentes (InfoEconomics, 22/11).",
+   "status": "materializado",
+   "materializado": true,
+   "fontes": [
+    "Mix Vale",
+    "CNN Brasil",
+    "Agência Brasil",
+    "GC Mais",
+    "Correio Braziliense",
+    "InfoEconomics"
+   ]
+  },
+  {
+   "tema": "combustiveis",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Diesel S-10 cai 0,94%, a R$ 7,39, na 1ª quinzena de novembro (Ticket Log), mas a subvenção de R$ 2,12/litro é temporária.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "TV Sim Brasil",
+    "Edenred Ticket Log"
+   ]
+  },
+  {
+   "tema": "construcao",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "CBIC projeta alta de ~10% no custo da mão de obra e 35 mil moradias/ano a menos no MCMV com o fim da 6x1 (22/11).",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Passarelli Incorporação",
+    "Click Petróleo e Gás",
+    "CBIC"
+   ]
+  },
+  {
+   "tema": "consumo",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Fecomércio PR (16/11): gasto médio previsto na Black Friday cai 19,9%, para R$ 828,50.",
+   "status": "monitorar",
+   "materializado": false,
+   "fontes": [
+    "Fecomércio PR"
+   ]
+  },
+  {
+   "tema": "digital",
+   "periodo": "2026-W47",
+   "tipo": "oportunidade",
+   "texto": "Pix chega a seis anos (16/11) com mais de 1 bilhão de chaves e 154 milhões de pessoas usuárias; novas regras a partir de 2027.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "BCB",
+    "TMC"
+   ]
+  },
+  {
+   "tema": "ecommerce",
+   "periodo": "2026-W47",
+   "tipo": "oportunidade",
+   "texto": "FIDCs da Shopee chegam a R$ 8,7 bilhões em outubro (+159%), acima dos R$ 8,6 bilhões do Mercado Livre (BTG, 17/11).",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "CNDL/SPC Brasil",
+    "Worldpanel by Numerator",
+    "Mercado&Consumo",
+    "BTG Pactual"
+   ]
+  },
+  {
+   "tema": "exterior",
+   "periodo": "2026-W47",
+   "tipo": "oportunidade",
+   "texto": "Agro exporta US$ 16 bilhões em outubro (+4,1%) e US$ 149,4 bilhões no ano (+5,2%), com recorde de US$ 14,2 bilhões na carne bovina (Mapa).",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Secex/MDIC",
+    "Muzambinho.com"
+   ]
+  },
+  {
+   "tema": "fiscal",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Câmara vota PLP 299 em 23/11 (257 votos; R$ 56 bi de economia); Durigan prevê desaceleração em 2027 sem recessão.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "TV Sim Brasil",
+    "Amazonas Atual",
+    "Agência Senado",
+    "Plox",
+    "SBT News",
+    "Brasil de Fato",
+    "JB"
+   ]
+  },
+  {
+   "tema": "juros",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Focus de 16/11 eleva Selic de 2027 de 12,50% para 12,75% e IPCA de 2027 a 5,00%, quinta alta seguida.",
+   "status": "em_curso",
+   "materializado": false,
+   "fontes": [
+    "Focus/BCB"
+   ]
+  },
+  {
+   "tema": "regulacao",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Câmara adia o PL 4675/2025 dos Mercados Digitais (17/11) sem nova data; governo quer aprovar ainda em 2026.",
+   "status": "monitorar",
+   "materializado": false,
+   "fontes": [
+    "Teletime"
+   ]
+  },
+  {
+   "tema": "trabalho",
+   "periodo": "2026-W47",
+   "tipo": "risco",
+   "texto": "Decreto de 19/11 fixa 42 horas a partir de 16/12; portaria do MTE prevista para 23/11 deve definir o DSR com a segunda folga.",
+   "status": "materializado",
+   "materializado": true,
+   "fontes": [
+    "Congresso em Foco",
+    "Correio Braziliense",
+    "CBIC",
+    "ND+"
+   ]
   }
  ],
  "historico": [
@@ -5177,7 +5350,13 @@
    "data": "2026-11-22",
    "semana": "2026-W47",
    "motivo": "palavras novas: Durigan→fiscal, seguro-rural→agro"
+  },
+  {
+   "versao": 20,
+   "data": "2026-11-23",
+   "semana": "2026-W47",
+   "motivo": "palavras novas: real→cambio"
   }
  ],
- "atualizado_em": "2026-11-22T10:09:08.188795+00:00"
+ "atualizado_em": "2026-11-23T10:11:40.849766+00:00"
 }

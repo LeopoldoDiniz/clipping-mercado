@@ -1,0 +1,22 @@
+{"setores": {
+  "servicos": {
+    "prov": "Seus contratos em reais aguentam um câmbio que já perdeu 8% no mês?",
+    "quote": "O real caiu 8,37% em novembro até 19/11, 5,1 pontos percentuais a mais que a mediana de quatro moedas emergentes.",
+    "edi": [
+      "O dólar fechou 19/11 a R$ 5,934, sexta alta seguida, e o real acumula queda de 8,37% em novembro, ante 3,31% da mediana de emergentes (InfoEconomics, 22/11). Para serviços, isso pesa em software, equipamentos e viagens cotados em dólar. A Câmara vota o ajuste fiscal (PLP 299) em 23/11, com 257 votos necessários.",
+      "Na mão de obra, a jornada de 42 horas vale a partir de 16/12. Em Ribeirão Preto, 88% dos bares e restaurantes já relatam dificuldade para contratar (Abrasel), e o Caged registrou 8.559 vagas no setor em setembro, 33% abaixo de 2025."
+    ],
+    "acoes": [
+      {"ico": "💱", "txt": "Reveja contratos com custo em dólar (software, equipamentos, viagens) e inclua cláusula de reajuste cambial."},
+      {"ico": "🕒", "txt": "Feche as escalas de 42 horas antes de 16/12 e antecipe contratações de fim de ano."},
+      {"ico": "🧮", "txt": "Reprecifique serviços de 2027 considerando câmbio acima de R$ 5,90 e salário-hora maior."}
+    ]
+  }
+},
+ "panorama": {"acoes": [
+  {"ico": "🏛️", "txt": "Câmara vota o ajuste fiscal (PLP 299) em 23/11 e precisa de 257 votos; acompanhe antes de decisões que dependem dele."},
+  {"ico": "💱", "txt": "Real perde 8,37% em novembro, bem mais que emergentes, e dólar fechou 19/11 a R$ 5,934: reforce hedge e revise preços de importados."},
+  {"ico": "🏦", "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."},
+  {"ico": "🕒", "txt": "Jornada de 42 horas em 16/12 e portaria do DSR prevista para 23/11: refaça escalas e folha já."},
+  {"ico": "📉", "txt": "Fazenda prevê desaceleração em 2027 sem recessão: calibre metas de vendas com cautela."}
+ ]}}

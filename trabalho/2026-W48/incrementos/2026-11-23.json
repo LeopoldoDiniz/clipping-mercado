@@ -1,0 +1,29 @@
+{
+ "clipping": [
+  {
+   "setores": [
+    "transversal"
+   ],
+   "titulo": "Câmara inicia às 18h de 23/11 a votação do ajuste fiscal; Lei Kandir limitada a R$ 2 bilhões",
+   "texto": "PLP 299 corta 20% do crédito presumido, tira até R$ 10,5 bi do subsídio ao diesel da meta de 2026 e limita gasto real a 2%; Planejamento estima até R$ 60 bi.",
+   "palavra": "ajuste-fiscal",
+   "fontes": [
+    {
+     "nome": "Brasil 247",
+     "url": "https://www.brasil247.com/economia/saiba-o-que-muda-com-o-ajuste-fiscal-que-vai-a-votacao-na-camara-nesta-segunda/"
+    }
+   ]
+  }
+ ],
+ "leituras_temas": {
+  "fiscal": {
+   "tipo": "risco",
+   "status": "em_curso",
+   "texto": "Câmara inicia votação do PLP 299 em 23/11 (257 votos); Planejamento estima até R$ 60 bi de melhora em 2027.",
+   "fontes": [
+    "Brasil 247"
+   ]
+  }
+ },
+ "novos_temas": []
+}

@@ -147,5 +147,19 @@
         "3 notícias novas no setor"
       ]
     }
+  },
+  {
+    "data": "2026-11-23",
+    "em": "2026-11-23T10:10:05.191707+00:00",
+    "noticias_novas": 2,
+    "total_semana": 51,
+    "gatilhos": {
+      "panorama": [
+        "tema materializou: cambio"
+      ],
+      "servicos": [
+        "tema materializou: cambio"
+      ]
+    }
   }
 ]

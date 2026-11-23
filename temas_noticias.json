@@ -9372,6 +9372,32 @@
     "setores": [
      "servicos"
     ]
+   },
+   {
+    "titulo": "CBIC: fim da 6x1 pode encarecer mão de obra em 10% e tirar 35 mil moradias/ano do MCMV",
+    "palavra": "CBIC",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Real cai 8,37% em novembro, 5,1 p.p. a mais que a mediana de emergentes",
+    "palavra": "real",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   }
+  ],
+  "2026-W48": [
+   {
+    "titulo": "Câmara inicia às 18h de 23/11 a votação do ajuste fiscal; Lei Kandir limitada a R$ 2 bilhões",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
    }
   ]
  }

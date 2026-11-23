@@ -765,6 +765,35 @@
           "url": "https://www.encontraribeiraopreto.com/bares-de-ribeirao-preto-enfrentam-dificuldade-para-contratar/"
         }
       ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "CBIC: fim da 6x1 pode encarecer mão de obra em 10% e tirar 35 mil moradias/ano do MCMV",
+      "texto": "Projeção da CBIC (22/11): custo de pessoal sobe cerca de 10% e, sem compensação, entregas do MCMV caem 35 mil unidades por ano; programa respondeu por 58% dos lançamentos no 2º trimestre.",
+      "palavra": "CBIC",
+      "fontes": [
+        {
+          "nome": "Click Petróleo e Gás",
+          "url": "https://clickpetroleoegas.com.br/fim-da-escala-6x1-pode-reduzir-entrega-de-35-mil-moradias-por-ano-e-elevar-custo-da-mao-de-obra-em-10-alerta-construcao-civil-asaf04"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Real cai 8,37% em novembro, 5,1 p.p. a mais que a mediana de emergentes",
+      "texto": "Até 19/11 o real perdeu 4,52% na semana e 8,37% no mês, ante 3,31% da mediana de quatro emergentes; DXY sobe 1,89% em novembro (InfoEconomics, 22/11).",
+      "palavra": "real",
+      "tema": "cambio",
+      "fontes": [
+        {
+          "nome": "InfoEconomics",
+          "url": "https://infoeconomics.substack.com/p/por-que-o-real-caiu-mais-que-outras-moedas-emergentes"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -957,16 +986,16 @@
           "txt": "Câmara vota o ajuste fiscal (PLP 299) em 23/11 e precisa de 257 votos; acompanhe antes de decisões que dependem dele."
         },
         {
+          "ico": "💱",
+          "txt": "Real perde 8,37% em novembro, bem mais que emergentes, e dólar fechou 19/11 a R$ 5,934: reforce hedge e revise preços de importados."
+        },
+        {
           "ico": "🏦",
           "txt": "Selic em 13,75% e Focus com 12,75% para 2027: planeje crédito caro também no próximo ano."
         },
         {
           "ico": "🕒",
           "txt": "Jornada de 42 horas em 16/12 e portaria do DSR prevista para 23/11: refaça escalas e folha já."
-        },
-        {
-          "ico": "💱",
-          "txt": "Dólar fechou 19/11 a R$ 5,934, sexta alta seguida: reforce hedge e revise preços de importados."
         },
         {
           "ico": "📉",
@@ -1020,24 +1049,24 @@
         ]
       },
       "servicos": {
-        "prov": "Seus contratos já repassam câmbio de R$ 5,93 e a nova jornada?",
-        "quote": "O dólar fechou 19/11 a R$ 5,9344, sexta alta seguida, mesmo após venda de US$ 1 bilhão pelo Banco Central.",
+        "prov": "Seus contratos em reais aguentam um câmbio que já perdeu 8% no mês?",
+        "quote": "O real caiu 8,37% em novembro até 19/11, 5,1 pontos percentuais a mais que a mediana de quatro moedas emergentes.",
         "edi": [
-          "O câmbio subiu pela sexta sessão em 19/11, a R$ 5,9344, maior valor desde abril de 2025, apesar do leilão de US$ 1 bilhão do BC; a Câmara vota o ajuste fiscal (impacto de R$ 50 bilhões em 2027) em 23/11, mesmo dia previsto para a portaria do MTE sobre o DSR na escala 5x2.",
-          "A jornada de 42 horas a partir de 16/12/2026 pesa em bares, hotéis, segurança e limpeza, intensivos em mão de obra e com operação contínua; o exemplo do ND+ mostra o salário-hora de R$ 3.000 subindo de R$ 13,64 para R$ 14,29."
+          "O dólar fechou 19/11 a R$ 5,934, sexta alta seguida, e o real acumula queda de 8,37% em novembro, ante 3,31% da mediana de emergentes (InfoEconomics, 22/11). Para serviços, isso pesa em software, equipamentos e viagens cotados em dólar. A Câmara vota o ajuste fiscal (PLP 299) em 23/11, com 257 votos necessários.",
+          "Na mão de obra, a jornada de 42 horas vale a partir de 16/12. Em Ribeirão Preto, 88% dos bares e restaurantes já relatam dificuldade para contratar (Abrasel), e o Caged registrou 8.559 vagas no setor em setembro, 33% abaixo de 2025."
         ],
         "acoes": [
           {
-            "ico": "📑",
-            "txt": "Inclua cláusula de reequilíbrio por jornada e câmbio nos contratos de 2027."
+            "ico": "💱",
+            "txt": "Reveja contratos com custo em dólar (software, equipamentos, viagens) e inclua cláusula de reajuste cambial."
           },
           {
             "ico": "🕒",
-            "txt": "Operações contínuas: negocie acordo coletivo para a escala de 42 horas antes de 16/12."
+            "txt": "Feche as escalas de 42 horas antes de 16/12 e antecipe contratações de fim de ano."
           },
           {
             "ico": "🧮",
-            "txt": "Reprecifique serviços com o salário-hora cerca de 4,8% maior a partir de 16/12."
+            "txt": "Reprecifique serviços de 2027 considerando câmbio acima de R$ 5,90 e salário-hora maior."
           }
         ]
       },
@@ -1144,13 +1173,14 @@
     "cambio": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Dólar fecha a R$ 5,934 em 19/11 (+1,15%), sexta alta seguida e maior valor desde abril de 2025, mesmo com venda de US$ 1 bilhão do BC.",
+      "texto": "Dólar a R$ 5,934 em 19/11; real perde 8,37% em novembro, 5,1 p.p. a mais que emergentes (InfoEconomics, 22/11).",
       "fontes": [
         "Mix Vale",
         "CNN Brasil",
         "Agência Brasil",
         "GC Mais",
-        "Correio Braziliense"
+        "Correio Braziliense",
+        "InfoEconomics"
       ],
       "materializado": true
     },
@@ -1218,7 +1248,7 @@
     "construcao": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "CBIC estima que o fim da 6x1 exigiria 288 mil trabalhadores a mais nas obras e pede compensações ao MCMV (19/11).",
+      "texto": "CBIC projeta alta de ~10% no custo da mão de obra e 35 mil moradias/ano a menos no MCMV com o fim da 6x1 (22/11).",
       "fontes": [
         "Passarelli Incorporação",
         "Click Petróleo e Gás",

@@ -1,0 +1,17 @@
+{
+  "clipping": [
+    {"setores": ["construcao"], "titulo": "CBIC: fim da 6x1 pode encarecer mão de obra em 10% e tirar 35 mil moradias/ano do MCMV",
+     "texto": "Projeção da CBIC (22/11): custo de pessoal sobe cerca de 10% e, sem compensação, entregas do MCMV caem 35 mil unidades por ano; programa respondeu por 58% dos lançamentos no 2º trimestre.",
+     "palavra": "CBIC",
+     "fontes": [{"nome": "Click Petróleo e Gás", "url": "https://clickpetroleoegas.com.br/fim-da-escala-6x1-pode-reduzir-entrega-de-35-mil-moradias-por-ano-e-elevar-custo-da-mao-de-obra-em-10-alerta-construcao-civil-asaf04"}]},
+    {"setores": ["transversal"], "titulo": "Real cai 8,37% em novembro, 5,1 p.p. a mais que a mediana de emergentes",
+     "texto": "Até 19/11 o real perdeu 4,52% na semana e 8,37% no mês, ante 3,31% da mediana de quatro emergentes; DXY sobe 1,89% em novembro (InfoEconomics, 22/11).",
+     "palavra": "real", "tema": "cambio",
+     "fontes": [{"nome": "InfoEconomics", "url": "https://infoeconomics.substack.com/p/por-que-o-real-caiu-mais-que-outras-moedas-emergentes"}]}
+  ],
+  "leituras_temas": {
+    "construcao": {"tipo": "risco", "status": "em_curso", "texto": "CBIC projeta alta de ~10% no custo da mão de obra e 35 mil moradias/ano a menos no MCMV com o fim da 6x1 (22/11).", "fontes": ["CBIC", "Click Petróleo e Gás"]},
+    "cambio": {"tipo": "risco", "status": "materializado", "texto": "Dólar a R$ 5,934 em 19/11; real perde 8,37% em novembro, 5,1 p.p. a mais que emergentes (InfoEconomics, 22/11).", "fontes": ["InfoEconomics", "Agência Brasil"], "materializado": true}
+  },
+  "novos_temas": []
+}
