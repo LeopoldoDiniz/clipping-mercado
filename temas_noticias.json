@@ -9398,6 +9398,82 @@
     "setores": [
      "transversal"
     ]
+   },
+   {
+    "titulo": "Câmara aprova ajuste fiscal por 353 a 128 e texto vai à sanção",
+    "palavra": "ajuste-fiscal",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar passa de R$ 6 pela 1ª vez desde abril de 2025, mas fecha a R$ 5,9262",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Focus eleva IPCA de 2026 a 5,15% e Selic de 2027 a 13%",
+    "palavra": "Focus",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Galípolo: se só couber um mandato, BC prioriza estabilidade de preços",
+    "palavra": "Galípolo",
+    "tema": "juros",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Balança tem superávit de US$ 3,103 bilhões na 3ª semana de novembro",
+    "palavra": "balança",
+    "tema": "exterior",
+    "setores": [
+     "transversal",
+     "industria",
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Petrobras prevê US$ 122 bilhões de investimento no plano 2027-2031",
+    "palavra": "Petrobras",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "CBIC: lançamentos sobem 1% e vendas 2,7% no 3º trimestre; estoque recorde de 382 mil",
+    "palavra": "lançamentos",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Black Friday deve movimentar R$ 1,46 bilhão no Rio, diz Fecomércio-RJ",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Dólar perto de R$ 6 sustenta soja; saca vai a R$ 165 em Passo Fundo",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
    }
   ]
  }

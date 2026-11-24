@@ -1,5 +1,5 @@
 {
- "versao": 20,
+ "versao": 21,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -811,7 +811,8 @@
   "Swift": "consumo",
   "Durigan": "fiscal",
   "seguro-rural": "agro",
-  "real": "cambio"
+  "real": "cambio",
+  "Galípolo": "juros"
  },
  "leituras": [
   {
@@ -5356,7 +5357,13 @@
    "data": "2026-11-23",
    "semana": "2026-W47",
    "motivo": "palavras novas: real→cambio"
+  },
+  {
+   "versao": 21,
+   "data": "2026-11-24",
+   "semana": "2026-W48",
+   "motivo": "palavras novas: Galípolo→juros"
   }
  ],
- "atualizado_em": "2026-11-23T10:11:40.849766+00:00"
+ "atualizado_em": "2026-11-24T10:09:52.083233+00:00"
 }

@@ -1,0 +1,26 @@
+{
+  "setores": {
+    "servicos": {
+      "prov": "Seu preço de 2027 já considera um dólar que encostou em R$ 6?",
+      "quote": "O dólar chegou a R$ 6,006 em 23/11, a maior cotação desde abril de 2025, e fechou a R$ 5,9262.",
+      "edi": [
+        "O dólar tocou R$ 6,006 em 23/11 e fechou a R$ 5,9262, em queda de 0,15% após seis altas seguidas; a PTAX do dia ficou em R$ 5,97. Para serviços, a pressão chega por software, equipamentos e viagens cotados em dólar. No mesmo dia, a Câmara aprovou o ajuste fiscal (PLP 299) por 353 a 128, e o texto segue para sanção.",
+        "O Focus de 23/11 elevou o IPCA de 2026 para 5,15% e a Selic de 2027 para 13%, e Galípolo disse que o BC prioriza a estabilidade de preços antes do Copom de dezembro. Na mão de obra, a jornada de 42 horas vale a partir de 16/12."
+      ],
+      "acoes": [
+        {"ico": "💱", "txt": "Reveja contratos com custo em dólar (software, equipamentos, viagens) com câmbio de referência próximo de R$ 6."},
+        {"ico": "🧮", "txt": "Reprecifique serviços de 2027 considerando IPCA projetado de 5,12% e Selic de 13% no Focus."},
+        {"ico": "🕒", "txt": "Feche as escalas de 42 horas antes de 16/12 e antecipe contratações de fim de ano."}
+      ]
+    }
+  },
+  "panorama": {
+    "acoes": [
+      {"ico": "🏛️", "txt": "Câmara aprovou o ajuste fiscal por 353 a 128 em 23/11 e o texto vai à sanção: acompanhe os bloqueios de gasto que ele permite."},
+      {"ico": "💱", "txt": "Dólar tocou R$ 6,006 em 23/11 e fechou a R$ 5,9262: reforce hedge e revise preços de importados."},
+      {"ico": "🏦", "txt": "Focus sobe Selic de 2027 a 13% e Galípolo prioriza a inflação: planeje crédito caro também no próximo ano."},
+      {"ico": "🛍️", "txt": "Black Friday de 27/11: Fecomércio-RJ prevê R$ 1,46 bi no Rio, com gasto médio de R$ 1.563; ajuste estoques e margem."},
+      {"ico": "🏗️", "txt": "Estoque de imóveis novos chega a 382 mil unidades (CBIC): incorporadoras devem priorizar vendas a novos lançamentos."}
+    ]
+  }
+}
