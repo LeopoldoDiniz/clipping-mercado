@@ -1,13 +1,15 @@
 {
-  "data": "2026-11-24",
+  "data": "2026-11-25",
   "setores": {
     "panorama": [
       "indicador SELIC atualizado: 13,75% a.a.",
-      "indicador Câmbio (US$) atualizado: R$ 5,97",
-      "tema materializou: cambio"
+      "indicador Câmbio (US$) atualizado: R$ 5,86"
     ],
-    "servicos": [
-      "tema materializou: cambio"
+    "industria": [
+      "3 notícias novas no setor"
+    ],
+    "comercio": [
+      "3 notícias novas no setor"
     ]
   }
 }

@@ -9474,6 +9474,82 @@
     "setores": [
      "agro"
     ]
+   },
+   {
+    "titulo": "Lula autoriza envio de PEC para conter despesas obrigatórias a partir de 2027",
+    "palavra": "PEC",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Dólar cai 0,31% e fecha a R$ 5,902; Ibovespa recua 0,43%",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Intenção de investimento da indústria cai a 50 pontos, menor nível desde 2020",
+    "palavra": "indústria",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Confiança do consumidor cai 1,2 ponto, a 83,5, menor nível desde agosto de 2022",
+    "palavra": "consumidor",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Petrobras eleva dividendos ordinários do plano a US$ 55-60 bi, mas não promete extras",
+    "palavra": "Petrobras",
+    "tema": "combustiveis",
+    "setores": [
+     "industria",
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Vale retoma parcialmente a mina de Viga (MG), parada desde janeiro",
+    "palavra": "mineração",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Soja sobe 1,14% em Minas e iguala o maior preço em 12 meses, R$ 159",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Só 37,6% das PMEs esperam vender mais na Black Friday, diz Serasa",
+    "palavra": "PMEs",
+    "tema": "consumo",
+    "setores": [
+     "comercio",
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Marinho diz que 'ninguém morre' se comércio fechar aos domingos com fim da 6x1",
+    "palavra": "6x1",
+    "tema": "trabalho",
+    "setores": [
+     "comercio",
+     "servicos"
+    ]
    }
   ]
  }

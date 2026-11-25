@@ -2,7 +2,7 @@
   "periodo": "2026-W48",
   "label": "Semana 48 · Novembro 2026",
   "status": "em_andamento",
-  "gerado_em": "2026-11-24T10:10:42.169650",
+  "gerado_em": "2026-11-25T10:10:35.053472",
   "editorial": {
     "texto": "O câmbio passa a ditar o ritmo das próximas semanas. O dólar fechou 19 de novembro a R$ 5,934, sexta alta seguida, e o real perdeu 8,37% no mês, 5,1 pontos a mais que a mediana de moedas emergentes. A projeção anterior se confirmou só em parte: o Senado aprovou o ajuste fiscal por 69 a 2, mas o alívio esperado no dólar não veio, e o risco de câmbio acima de R$ 5,70 se materializou. O teste agora é a Câmara, que abre a votação do PLP 299 nesta segunda, 23, e precisa de 257 votos. Se o texto passar sem mudanças, preservando até R$ 56 bilhões de economia em 2027, o cenário mais provável é de estabilização do câmbio; se travar ou for desidratado, a tendência é de dólar ainda mais alto e de inflação pressionada no início de 2027. A Selic, o juro básico, deve seguir em 13,75% no Copom de 8 e 9 de dezembro, com o Focus já projetando 12,75% para 2027. O desemprego sai em 27 de novembro e a produção industrial, em 3 de dezembro.\n\nPor setor, a tendência é a seguinte. Na indústria, o dólar encarece insumos e a jornada de 42 horas a partir de 16 de dezembro exige refazer turnos; proteja compras importadas. No comércio e nos serviços, a Black Friday de 27 de novembro tende a vender mais pedidos com tíquete menor; segure margem e feche escalas de dezembro. No agro, o câmbio favorece exportações, mas a margem das usinas em 23% e a salvaguarda filipina à carne suína, prevista para 24 de novembro, pedem cautela. Na construção, o custo de mão de obra deve subir cerca de 10%, segundo a CBIC; reveja orçamentos de obras do MCMV. No e-commerce, a disputa por crédito entre Shopee e Mercado Livre deve se intensificar; negocie condições com as plataformas.\n\nNa semana, o IBC-Br caiu 0,9% no terceiro trimestre, o governo regulamentou o fim da escala 6x1, a Toyota inaugurou a segunda fábrica em Sorocaba e o agro exportou US$ 16 bilhões em outubro, alta de 4,1%.",
     "gerado_em": "2026-11-23T10:11:17.198005",
@@ -164,6 +164,159 @@
           "url": "https://canalrural.com.br/agricultura/projeto-soja-brasil/dolar-se-aproxima-de-r-6-e-impulsiona-precos-e-negocios-no-brasil"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Lula autoriza envio de PEC para conter despesas obrigatórias a partir de 2027",
+      "texto": "Em 24/11, a equipe de Durigan foi liberada para enviar ao Congresso PEC com novos limites a gastos obrigatórios e emendas; impacto estimado de R$ 20 bilhões no Orçamento de 2027.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/politica/lula-autoriza-nova-pec-para-conter-gastos-com-saude-educacao-e-emendas/"
+        },
+        {
+          "nome": "Investing.com/Reuters",
+          "url": "https://br.investing.com/news/economy-news/lula-autoriza-envio-de-pec-sobre-despesas-obrigatorias-ao-congresso-diz-fonte-2136976"
+        },
+        {
+          "nome": "SBT News",
+          "url": "https://sbtnews.sbt.com.br/noticia/politica/durigan-mira-despesas-obrigatorias-em-novo-ajuste-fiscal"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar cai 0,31% e fecha a R$ 5,902; Ibovespa recua 0,43%",
+      "texto": "Em 24/11 a moeda chegou à mínima de R$ 5,80 com a notícia da PEC de gastos; Ibovespa fechou a 164.089 pontos, com Vale -5,51% e Petrobras -1,5%.",
+      "fontes": [
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-24-novembro-2026/"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/tempo-real-24-11-2026-davs/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Intenção de investimento da indústria cai a 50 pontos, menor nível desde 2020",
+      "texto": "Sondagem Industrial da CNI (24/11): índice recua 2,6 pontos em novembro; expectativa de demanda cai 4,2 pontos, a 47,3, e de emprego vai a 46,7.",
+      "fontes": [
+        {
+          "nome": "Perfil News",
+          "url": "https://www.perfilnews.com.br/2026/11/24/intencao-de-investimento-e-expectativas-da-industria-caem-ao-menor-nivel-em-seis-anos-revela-cni/"
+        },
+        {
+          "nome": "Tribuna PR",
+          "url": "https://www.tribunapr.com.br/noticias/economia/industria-registra-menor-intencao-de-investimento-desde-2020/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Confiança do consumidor cai 1,2 ponto, a 83,5, menor nível desde agosto de 2022",
+      "texto": "FGV (24/11): situação atual recua a 79,9 e expectativas a 86,9; avaliação das finanças da própria família cai 2,1 pontos, a 69,2.",
+      "fontes": [
+        {
+          "nome": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/11/24/confianca-do-consumidor-recua-12-ponto-em-novembro-ante-outubro-para-835-pontos-diz-fgv.html"
+        },
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/11/confianca-do-consumidor-brasileiro-cai-ao-menor-nivel-em-mais-de-quatro-anos-diz-fgv/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria",
+        "transversal"
+      ],
+      "titulo": "Petrobras eleva dividendos ordinários do plano a US$ 55-60 bi, mas não promete extras",
+      "texto": "Em 24/11 Magda Chambriard disse que extraordinários são 'potencial'; conselho aprovou R$ 15,6 bilhões (R$ 1,21 por ação) sobre o lucro de 2026. PETR4 caiu 1,82%.",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/11/1271631-dividendos-extraordinarios-sao-um-potencial-mas-petrobras-nao-esta-prometendo-diz-magda.html"
+        },
+        {
+          "nome": "JB News",
+          "url": "https://jbnews.com.br/petrobras-e-vale-derrubam-bolsa-mesmo-apos-avanco-do-pacote-fiscal-e-dolar-recua-a-r-5-91/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "Vale retoma parcialmente a mina de Viga (MG), parada desde janeiro",
+      "texto": "Retomada autorizada pela Justiça mineira, com aval de MPF, ANM e Semad, divulgada em 24/11; guidance de 2026 mantido em 335 a 345 milhões de toneladas de minério.",
+      "fontes": [
+        {
+          "nome": "Revista Mineração",
+          "url": "https://revistamineracao.com.br/2026/11/24/vale-anuncia-retomada-parcial-das-operacoes-na-mina-de-viga-mg/"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/infra/vale-anuncia-retomada-parcial-de-operacoes-na-mina-de-viga-em-mg/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Soja sobe 1,14% em Minas e iguala o maior preço em 12 meses, R$ 159",
+      "texto": "Em 24/11, saca em Uberlândia e Uberaba acumula +7,43% no mês e +19,10% em um ano; café recua 0,77% (R$ 1.802 em Guaxupé) e milho fica em R$ 63.",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/agro/2026/11/24/cotacoes-do-agro-em-minas-24-11-2026"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "ecommerce"
+      ],
+      "titulo": "Só 37,6% das PMEs esperam vender mais na Black Friday, diz Serasa",
+      "texto": "Pesquisa divulgada em 24/11: 18,5% projetam alta de até 10%; 30,8% citam orçamento limitado e custo de campanhas como principal obstáculo.",
+      "fontes": [
+        {
+          "nome": "Consumidor Moderno",
+          "url": "https://consumidormoderno.com.br/black-friday-2026-pmes-inadimplencia-serasa/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio",
+        "servicos"
+      ],
+      "titulo": "Marinho diz que 'ninguém morre' se comércio fechar aos domingos com fim da 6x1",
+      "texto": "Em 24/11, o ministro chamou de 'chororô' as queixas sobre a nova jornada em dezembro; portaria de 23/11 prevê dupla visita de fiscalização nos primeiros 90 dias.",
+      "fontes": [
+        {
+          "nome": "ICL Notícias",
+          "url": "https://iclnoticias.com.br/economia/ninguem-morre-ministro-fim-escala-6x1/"
+        },
+        {
+          "nome": "TNH1",
+          "url": "https://www.tnh1.com.br/noticia/nid/ninguem-morre-se-fechar-comercio-aos-domingos-diz-ministro-sobre-fim-da-escala-6x1/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -240,7 +393,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 24/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 25/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -260,9 +413,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,97",
+      "valor": "R$ 5,86",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 23/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 24/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -459,68 +612,68 @@
       "acoes": [
         {
           "ico": "🏛️",
-          "txt": "Câmara aprovou o ajuste fiscal por 353 a 128 em 23/11 e o texto vai à sanção: acompanhe os bloqueios de gasto que ele permite."
+          "txt": "Depois do PLP 299, Lula autorizou PEC de despesas obrigatórias com impacto de R$ 20 bi em 2027: acompanhe o envio ao Congresso."
         },
         {
           "ico": "💱",
-          "txt": "Dólar tocou R$ 6,006 em 23/11 e fechou a R$ 5,9262: reforce hedge e revise preços de importados."
+          "txt": "Dólar recuou a R$ 5,902 em 24/11 após tocar R$ 6,006: use a janela para hedge, sem contar com queda contínua."
         },
         {
           "ico": "🏦",
-          "txt": "Focus sobe Selic de 2027 a 13% e Galípolo prioriza a inflação: planeje crédito caro também no próximo ano."
+          "txt": "Selic em 13,75% e Focus com 13% em 2027: planeje crédito caro também no próximo ano."
         },
         {
-          "ico": "🛍️",
-          "txt": "Black Friday de 27/11: Fecomércio-RJ prevê R$ 1,46 bi no Rio, com gasto médio de R$ 1.563; ajuste estoques e margem."
+          "ico": "🏭",
+          "txt": "Indústria tem a menor intenção de investimento desde 2020 (CNI): fornecedores B2B devem esperar pedidos mais fracos."
         },
         {
-          "ico": "🏗️",
-          "txt": "Estoque de imóveis novos chega a 382 mil unidades (CBIC): incorporadoras devem priorizar vendas a novos lançamentos."
+          "ico": "🛒",
+          "txt": "Confiança do consumidor na mínima desde 2022 às vésperas da Black Friday de 27/11: ajuste estoques e margem."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Seus turnos e o cálculo de horas extras já estão prontos para 16/12?",
-        "quote": "A jornada cai para 42 horas semanais em 16/12/2026, e o MTE deve publicar em 23/11 a portaria que define o DSR com a segunda folga.",
+        "prov": "Seu plano de investimento de 2027 resiste a uma indústria que já pisa no freio?",
+        "quote": "A intenção de investimento da indústria caiu a 50 pontos em novembro, o menor nível desde julho de 2020 (CNI, 24/11).",
         "edi": [
-          "O decreto de 19/11 dá menos de um mês para a indústria refazer turnos: 42 horas em 16/12/2026 e 40 horas em 16/12/2027, com divisor do salário-hora passando de 220 para 210 e depois 200. Segundo a Folha, citada pelo ND+ em 20/11, a portaria do MTE prevista para 23/11 deve manter o divisor 26 e 4 folgas no cálculo do DSR sobre horas extras. A confiança já estava baixa: o ICEI nacional caiu a 40,2 pontos em novembro.",
-          "O dólar fechou 19/11 a R$ 5,934, sexta alta seguida, e encarece insumos importados. No alimento industrializado, a Swift lançou em 20/11 linha japonesa congelada de R$ 15,90 a R$ 30,90, mirando um segmento de R$ 2 bilhões."
+          "A Sondagem Industrial da CNI, divulgada em 24/11, mostra a intenção de investimento em 50 pontos, queda de 2,6 pontos no mês. Todas as expectativas para os próximos seis meses recuaram: demanda a 47,3, compra de matérias-primas e emprego a 46,7, exportações a 46,8. O dado se soma à PIM de setembro, com queda de 0,8% no mês e alta de só 0,4% no ano.",
+          "Nas grandes empresas, a Petrobras elevou os dividendos ordinários do plano 2027-2031 para US$ 55 a 60 bilhões, mas Magda Chambriard não prometeu extraordinários, e a Vale retomou parcialmente a mina de Viga (MG), mantendo o guidance de 335 a 345 milhões de toneladas. O dólar recuou a R$ 5,902 em 24/11 com a PEC de despesas obrigatórias, depois de tocar R$ 6,006 no dia 23."
         ],
         "acoes": [
           {
-            "ico": "🕒",
-            "txt": "Redesenhe turnos e banco de horas para a jornada de 42 horas antes de 16/12."
+            "ico": "🏭",
+            "txt": "Escalone investimentos de 2027 por etapas: a demanda esperada pela indústria está abaixo de 50 pontos (CNI)."
           },
           {
-            "ico": "🧮",
-            "txt": "Confira a folha após a portaria de 23/11: ajuste o cálculo do DSR sobre horas extras."
+            "ico": "📦",
+            "txt": "Ajuste compras de matéria-prima ao ritmo de pedidos: o índice de compras caiu 3,7 pontos, a 46,7."
           },
           {
             "ico": "💱",
-            "txt": "Com dólar a R$ 5,93, proteja compras de insumos importados e revise preços de contratos."
+            "txt": "Aproveite o recuo do dólar a cerca de R$ 5,90 para travar parte do câmbio de insumos importados."
           }
         ]
       },
       "comercio": {
-        "prov": "Sua escala de Natal já considera 42 horas e o novo DSR?",
-        "quote": "A jornada de 42 horas passa a valer em 16/12, em plena temporada de Natal, e a regra do DSR sai em portaria prevista para 23/11.",
+        "prov": "Sua Black Friday está dimensionada para um consumidor no menor ânimo em quatro anos?",
+        "quote": "A confiança do consumidor caiu a 83,5 pontos em novembro, o menor nível desde agosto de 2022 (FGV, 24/11).",
         "edi": [
-          "O decreto do fim da 6x1, de 19/11, leva a jornada a 42 horas em 16/12, com divisor do salário-hora em 210. A portaria do MTE esperada para 23/11 deve manter um descanso semanal no cálculo do DSR sobre horas extras, segundo a Folha, o que limita o custo adicional de comissões e extras no varejo. A Black Friday de 27/11 chega com o dólar a R$ 5,934.",
-          "A expansão continua em nichos: Morana prevê 39 inaugurações em 2026 e a Todomoda quer chegar a 54 lojas até dezembro; a Swift colocará sua linha japonesa congelada em mais de 480 lojas e no e-commerce."
+          "O ICC da FGV recuou 1,2 ponto em novembro, a 83,5; a avaliação das finanças da própria família caiu 2,1 pontos, a 69,2. Entre os pequenos negócios, só 37,6% esperam vender mais na Black Friday de 27/11, e 30,8% apontam orçamento limitado e custo de campanhas como principal obstáculo (Serasa, 24/11). No Rio, a Fecomércio-RJ estima R$ 1,46 bilhão, com gasto médio de R$ 1.563.",
+          "Na mão de obra, o ministro Luiz Marinho disse em 24/11 que o comércio pode fechar aos domingos com o fim da 6x1; a jornada de 42 horas começa em 16/12, com 90 dias de fiscalização orientativa antes de multas."
         ],
         "acoes": [
           {
-            "ico": "🗓️",
-            "txt": "Monte já as escalas de dezembro com jornada de 42 horas a partir de 16/12."
+            "ico": "🛍️",
+            "txt": "Concentre a Black Friday em itens de giro e parcelamento curto: o orçamento das famílias está no pior nível em anos."
           },
           {
-            "ico": "🧾",
-            "txt": "Recalcule o DSR de comissionados assim que a portaria de 23/11 for publicada."
+            "ico": "💳",
+            "txt": "Reforce análise de crédito e Pix à vista: a inadimplência está em recorde e a confiança, em queda."
           },
           {
-            "ico": "🏷️",
-            "txt": "Feche preço de importados da Black Friday com o dólar acima de R$ 5,90."
+            "ico": "🕒",
+            "txt": "Monte as escalas de dezembro com folga dominical a cada três semanas e 42 horas a partir de 16/12."
           }
         ]
       },
@@ -616,26 +769,6 @@
   },
   "longitudinal": [
     {
-      "id": "tema-fiscal",
-      "tipo": "risco",
-      "titulo": "Fiscal, eleição e instituições",
-      "dimensao": "P",
-      "setores": [
-        "transversal",
-        "industria"
-      ],
-      "status": "em_curso",
-      "relevancia": 78.5,
-      "severidade": 5.7,
-      "iminencia": 10.0,
-      "ultima_observacao": "Câmara aprova PLP 299 por 353 a 128 em 23/11 e texto vai à sanção; dólar tocou R$ 6,006 no mesmo dia.",
-      "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W14",
-      "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 2
-    },
-    {
       "id": "tema-agro",
       "tipo": "oportunidade",
       "titulo": "Safra, clima e agro",
@@ -646,56 +779,35 @@
         "industria"
       ],
       "status": "em_curso",
-      "relevancia": 75.0,
+      "relevancia": 83.5,
       "severidade": 10.0,
-      "iminencia": 5.0,
-      "ultima_observacao": "Dólar perto de R$ 6 eleva soja a R$ 165 a saca em Passo Fundo (23/11).",
+      "iminencia": 6.7,
+      "ultima_observacao": "Soja a R$ 159 em Minas iguala máxima de 12 meses (24/11), após R$ 165 em Passo Fundo em 23/11.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "esfriando",
-      "noticias_semana": 1
-    },
-    {
-      "id": "tema-juros",
-      "tipo": "risco",
-      "titulo": "Juros e política monetária",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "servicos",
-        "construcao"
-      ],
-      "status": "em_curso",
-      "relevancia": 64.5,
-      "severidade": 2.9,
-      "iminencia": 10.0,
-      "ultima_observacao": "Focus de 23/11 eleva Selic de 2027 a 13%; Galípolo prioriza estabilidade de preços antes do Copom de dezembro.",
-      "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W01",
-      "origem": "real",
-      "direcao": "esquentando",
       "noticias_semana": 2
     },
     {
-      "id": "tema-cambio",
+      "id": "tema-fiscal",
       "tipo": "risco",
-      "titulo": "Câmbio e mercado financeiro",
-      "dimensao": "E",
+      "titulo": "Fiscal, eleição e instituições",
+      "dimensao": "P",
       "setores": [
         "transversal",
-        "servicos"
+        "industria"
       ],
-      "status": "materializado",
-      "relevancia": 60.0,
-      "severidade": 4.6,
-      "iminencia": 5.0,
-      "ultima_observacao": "Dólar superou R$ 6 em 23/11 (máxima R$ 6,006), primeira vez desde abril de 2025; fechou a R$ 5,9262.",
+      "status": "em_curso",
+      "relevancia": 79.5,
+      "severidade": 5.9,
+      "iminencia": 10.0,
+      "ultima_observacao": "Após PLP 299 aprovado em 23/11, Lula autoriza em 24/11 PEC de despesas obrigatórias com impacto de R$ 20 bi em 2027.",
       "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W01",
+      "data_identificacao": "2026-W14",
       "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 1
+      "direcao": "esquentando",
+      "noticias_semana": 3
     },
     {
       "id": "tema-atividade",
@@ -709,57 +821,58 @@
         "agro",
         "transversal"
       ],
-      "status": "materializado",
-      "relevancia": 51.2,
-      "severidade": 8.2,
-      "iminencia": 0.0,
-      "ultima_observacao": "IBC-Br cai 0,9% no 3º trimestre, mas Toyota abre 2ª fábrica em Sorocaba (18/11) e Jetour soma R$ 800 milhões para produzir no país.",
-      "periodo_observacao": "2026-W47",
+      "status": "em_curso",
+      "relevancia": 76.5,
+      "severidade": 8.6,
+      "iminencia": 6.7,
+      "ultima_observacao": "Intenção de investimento da indústria cai a 50 pontos em novembro, menor desde 2020 (CNI, 24/11).",
+      "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W02",
       "origem": "real",
       "direcao": "esfriando",
-      "noticias_semana": 0
+      "noticias_semana": 2
     },
     {
-      "id": "tema-construcao",
+      "id": "tema-cambio",
       "tipo": "risco",
-      "titulo": "Construção e mercado imobiliário",
+      "titulo": "Câmbio e mercado financeiro",
       "dimensao": "E",
       "setores": [
-        "construcao",
-        "comercio"
-      ],
-      "status": "em_curso",
-      "relevancia": 48.0,
-      "severidade": 4.6,
-      "iminencia": 5.0,
-      "ultima_observacao": "CBIC (23/11): estoque recorde de 382 mil unidades, 10,2 meses para escoar; lançamentos +1% no 3º tri.",
-      "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W02",
-      "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 1
-    },
-    {
-      "id": "tema-ecommerce",
-      "tipo": "oportunidade",
-      "titulo": "E-commerce, marketplaces e importados",
-      "dimensao": "L",
-      "setores": [
-        "ecommerce",
-        "comercio",
+        "transversal",
         "servicos"
       ],
-      "status": "monitorar",
-      "relevancia": 48.0,
-      "severidade": 4.6,
-      "iminencia": 5.0,
-      "ultima_observacao": "Fecomércio-RJ (23/11) prevê R$ 1,46 bi na Black Friday do Rio, gasto médio de R$ 1.563.",
+      "status": "materializado",
+      "relevancia": 71.9,
+      "severidade": 4.8,
+      "iminencia": 6.7,
+      "ultima_observacao": "Dólar tocou R$ 6,006 em 23/11 e recuou a R$ 5,902 em 24/11 com a PEC de gastos.",
       "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W22",
+      "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "estável",
-      "noticias_semana": 1
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-consumo",
+      "tipo": "risco",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "ecommerce",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 54.0,
+      "severidade": 4.1,
+      "iminencia": 6.7,
+      "ultima_observacao": "Confiança do consumidor cai a 83,5 pontos, mínima desde agosto de 2022 (FGV, 24/11); só 37,6% das PMEs esperam vender mais na Black Friday.",
+      "periodo_observacao": "2026-W48",
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 2
     },
     {
       "id": "tema-combustiveis",
@@ -773,35 +886,76 @@
         "servicos"
       ],
       "status": "monitorar",
-      "relevancia": 37.5,
-      "severidade": 2.5,
-      "iminencia": 5.0,
+      "relevancia": 47.5,
+      "severidade": 2.8,
+      "iminencia": 6.7,
       "ultima_observacao": "Petrobras prevê US$ 122 bi de investimento em 2027-2031, US$ 23 bi em refino e fertilizantes (23/11).",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W15",
       "origem": "real",
       "direcao": "esquentando",
-      "noticias_semana": 1
+      "noticias_semana": 2
     },
     {
-      "id": "tema-exterior",
-      "tipo": "oportunidade",
-      "titulo": "Comércio exterior e tarifas",
+      "id": "tema-juros",
+      "tipo": "risco",
+      "titulo": "Juros e política monetária",
       "dimensao": "E",
       "setores": [
-        "agro",
         "transversal",
-        "industria"
+        "servicos",
+        "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 34.0,
-      "severidade": 1.8,
-      "iminencia": 5.0,
-      "ultima_observacao": "Exportações sobem 23% em novembro até a 3ª semana; superávit de US$ 77,3 bi no ano (Secex, 23/11).",
+      "relevancia": 47.5,
+      "severidade": 2.8,
+      "iminencia": 6.7,
+      "ultima_observacao": "Focus de 23/11 eleva Selic de 2027 a 13%; Galípolo prioriza estabilidade de preços antes do Copom de dezembro.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "esquentando",
+      "noticias_semana": 2
+    },
+    {
+      "id": "tema-construcao",
+      "tipo": "risco",
+      "titulo": "Construção e mercado imobiliário",
+      "dimensao": "E",
+      "setores": [
+        "construcao",
+        "comercio"
+      ],
+      "status": "em_curso",
+      "relevancia": 39.0,
+      "severidade": 4.5,
+      "iminencia": 3.3,
+      "ultima_observacao": "CBIC (23/11): estoque recorde de 382 mil unidades, 10,2 meses para escoar; lançamentos +1% no 3º tri.",
+      "periodo_observacao": "2026-W48",
+      "data_identificacao": "2026-W02",
+      "origem": "real",
+      "direcao": "esfriando",
+      "noticias_semana": 1
+    },
+    {
+      "id": "tema-ecommerce",
+      "tipo": "oportunidade",
+      "titulo": "E-commerce, marketplaces e importados",
+      "dimensao": "L",
+      "setores": [
+        "ecommerce",
+        "comercio",
+        "servicos"
+      ],
+      "status": "monitorar",
+      "relevancia": 39.0,
+      "severidade": 4.5,
+      "iminencia": 3.3,
+      "ultima_observacao": "Fecomércio-RJ (23/11) prevê R$ 1,46 bi na Black Friday do Rio, gasto médio de R$ 1.563.",
+      "periodo_observacao": "2026-W48",
+      "data_identificacao": "2026-W22",
+      "origem": "real",
+      "direcao": "esfriando",
       "noticias_semana": 1
     }
   ]

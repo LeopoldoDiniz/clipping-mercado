@@ -1,5 +1,5 @@
 {
- "versao": 21,
+ "versao": 22,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -812,7 +812,9 @@
   "Durigan": "fiscal",
   "seguro-rural": "agro",
   "real": "cambio",
-  "Galípolo": "juros"
+  "Galípolo": "juros",
+  "PEC": "fiscal",
+  "PMEs": "consumo"
  },
  "leituras": [
   {
@@ -5363,7 +5365,13 @@
    "data": "2026-11-24",
    "semana": "2026-W48",
    "motivo": "palavras novas: Galípolo→juros"
+  },
+  {
+   "versao": 22,
+   "data": "2026-11-25",
+   "semana": "2026-W48",
+   "motivo": "palavras novas: PEC→fiscal, PMEs→consumo"
   }
  ],
- "atualizado_em": "2026-11-24T10:09:52.083233+00:00"
+ "atualizado_em": "2026-11-25T10:09:31.261259+00:00"
 }

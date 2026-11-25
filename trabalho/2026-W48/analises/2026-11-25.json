@@ -1,0 +1,39 @@
+{
+  "setores": {
+    "industria": {
+      "prov": "Seu plano de investimento de 2027 resiste a uma indústria que já pisa no freio?",
+      "quote": "A intenção de investimento da indústria caiu a 50 pontos em novembro, o menor nível desde julho de 2020 (CNI, 24/11).",
+      "edi": [
+        "A Sondagem Industrial da CNI, divulgada em 24/11, mostra a intenção de investimento em 50 pontos, queda de 2,6 pontos no mês. Todas as expectativas para os próximos seis meses recuaram: demanda a 47,3, compra de matérias-primas e emprego a 46,7, exportações a 46,8. O dado se soma à PIM de setembro, com queda de 0,8% no mês e alta de só 0,4% no ano.",
+        "Nas grandes empresas, a Petrobras elevou os dividendos ordinários do plano 2027-2031 para US$ 55 a 60 bilhões, mas Magda Chambriard não prometeu extraordinários, e a Vale retomou parcialmente a mina de Viga (MG), mantendo o guidance de 335 a 345 milhões de toneladas. O dólar recuou a R$ 5,902 em 24/11 com a PEC de despesas obrigatórias, depois de tocar R$ 6,006 no dia 23."
+      ],
+      "acoes": [
+        {"ico": "🏭", "txt": "Escalone investimentos de 2027 por etapas: a demanda esperada pela indústria está abaixo de 50 pontos (CNI)."},
+        {"ico": "📦", "txt": "Ajuste compras de matéria-prima ao ritmo de pedidos: o índice de compras caiu 3,7 pontos, a 46,7."},
+        {"ico": "💱", "txt": "Aproveite o recuo do dólar a cerca de R$ 5,90 para travar parte do câmbio de insumos importados."}
+      ]
+    },
+    "comercio": {
+      "prov": "Sua Black Friday está dimensionada para um consumidor no menor ânimo em quatro anos?",
+      "quote": "A confiança do consumidor caiu a 83,5 pontos em novembro, o menor nível desde agosto de 2022 (FGV, 24/11).",
+      "edi": [
+        "O ICC da FGV recuou 1,2 ponto em novembro, a 83,5; a avaliação das finanças da própria família caiu 2,1 pontos, a 69,2. Entre os pequenos negócios, só 37,6% esperam vender mais na Black Friday de 27/11, e 30,8% apontam orçamento limitado e custo de campanhas como principal obstáculo (Serasa, 24/11). No Rio, a Fecomércio-RJ estima R$ 1,46 bilhão, com gasto médio de R$ 1.563.",
+        "Na mão de obra, o ministro Luiz Marinho disse em 24/11 que o comércio pode fechar aos domingos com o fim da 6x1; a jornada de 42 horas começa em 16/12, com 90 dias de fiscalização orientativa antes de multas."
+      ],
+      "acoes": [
+        {"ico": "🛍️", "txt": "Concentre a Black Friday em itens de giro e parcelamento curto: o orçamento das famílias está no pior nível em anos."},
+        {"ico": "💳", "txt": "Reforce análise de crédito e Pix à vista: a inadimplência está em recorde e a confiança, em queda."},
+        {"ico": "🕒", "txt": "Monte as escalas de dezembro com folga dominical a cada três semanas e 42 horas a partir de 16/12."}
+      ]
+    }
+  },
+  "panorama": {
+    "acoes": [
+      {"ico": "🏛️", "txt": "Depois do PLP 299, Lula autorizou PEC de despesas obrigatórias com impacto de R$ 20 bi em 2027: acompanhe o envio ao Congresso."},
+      {"ico": "💱", "txt": "Dólar recuou a R$ 5,902 em 24/11 após tocar R$ 6,006: use a janela para hedge, sem contar com queda contínua."},
+      {"ico": "🏦", "txt": "Selic em 13,75% e Focus com 13% em 2027: planeje crédito caro também no próximo ano."},
+      {"ico": "🏭", "txt": "Indústria tem a menor intenção de investimento desde 2020 (CNI): fornecedores B2B devem esperar pedidos mais fracos."},
+      {"ico": "🛒", "txt": "Confiança do consumidor na mínima desde 2022 às vésperas da Black Friday de 27/11: ajuste estoques e margem."}
+    ]
+  }
+}
