@@ -9550,6 +9550,62 @@
      "comercio",
      "servicos"
     ]
+   },
+   {
+    "titulo": "Dólar cai 1,59%, a R$ 5,8168, com apostas em Trabuco na Fazenda",
+    "palavra": "Trabuco",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "EUA propõem tarifa de 10% sobre aviões da Embraer feitos no Brasil; ação cai 4%",
+    "palavra": "Embraer",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Confiança da construção cai 4,9 pontos em novembro, a 85,8",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Intenção de consumo das famílias cai 0,9% em novembro, 4ª queda seguida",
+    "palavra": "ICF",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Anec reduz previsão de embarque de soja em novembro a 4,03 milhões de t",
+    "palavra": "embarques",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Intermitente responde por 8,1% das admissões em bares, diz Abrasel",
+    "palavra": "bares",
+    "tema": "trabalho",
+    "setores": [
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "Shopee (31,6%) e Mercado Livre (30,3%) empatam como apps favoritos de compra",
+    "palavra": "m-commerce",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
    }
   ]
  }

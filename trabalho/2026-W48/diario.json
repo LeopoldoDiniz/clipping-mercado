@@ -39,5 +39,17 @@
         "3 notícias novas no setor"
       ]
     }
+  },
+  {
+    "data": "2026-11-26",
+    "em": "2026-11-26T10:09:32.635255+00:00",
+    "noticias_novas": 7,
+    "total_semana": 26,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador Câmbio (US$) atualizado: R$ 5,88"
+      ]
+    }
   }
 ]

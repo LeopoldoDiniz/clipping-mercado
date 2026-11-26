@@ -328,6 +328,132 @@
           "url": "https://www.tnh1.com.br/noticia/nid/ninguem-morre-se-fechar-comercio-aos-domingos-diz-ministro-sobre-fim-da-escala-6x1/"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar cai 1,59%, a R$ 5,8168, com apostas em Trabuco na Fazenda",
+      "texto": "Em 25/11 Ibovespa subiu 1,58%, a 166.684 pontos; DI jan/2029 recuou de 14,855% para 14,660%. Lula quer anunciar o ministro antes de 4/12; BC ofertou US$ 2 bi em linha.",
+      "palavra": "Trabuco",
+      "tema": "fiscal",
+      "fontes": [
+        {
+          "nome": "Correio do Estado",
+          "url": "https://correiodoestado.com.br/economia/2026/11/25/dolar-cai-159-e-fecha-a-r-58168-com-apostas-em-trabuco-na-fazenda.html"
+        },
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/economia/2026/11/25/dolar-cai-para-r-5-81-e-ibovespa-fecha-no-azul"
+        },
+        {
+          "nome": "DGABC",
+          "url": "https://www.dgabc.com.br/Noticia/4370766/ibovespa-rompe-sequencia-de-quedas-com-possivel-ida-de-trabuco-para-fazenda"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "industria"
+      ],
+      "titulo": "EUA propõem tarifa de 10% sobre aviões da Embraer feitos no Brasil; ação cai 4%",
+      "texto": "Proposta do USTR (25/11) pode valer já em janeiro; Embraer tem cerca de 160 pedidos firmes de E175 de American, SkyWest e Republic e US$ 3,5 bi em ativos nos EUA.",
+      "palavra": "Embraer",
+      "fontes": [
+        {
+          "nome": "O Tempo",
+          "url": "https://www.otempo.com.br/economia/2026/11/25/dolar-cai-para-r-5-81-e-ibovespa-fecha-no-azul"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/negocios/cias-aereas-dos-eua-terao-custos-mais-altos-com-tarifa-sobre-embraer/"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/cias-aereas-dos-eua-terao-custos-mais-altos-com-tarifa-sobre-jatos-da-embraer-fets/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "construcao"
+      ],
+      "titulo": "Confiança da construção cai 4,9 pontos em novembro, a 85,8",
+      "texto": "FGV (25/11): expectativas despencam 7,7 pontos, a 84,9, e situação atual recua a 86,9; edificações concentram a piora; uso da capacidade sobe a 77,5%.",
+      "palavra": "construção",
+      "fontes": [
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/11/1271657-indice-de-confianca-da-construcao-cai-49-pontos-em-novembro-a-858-pontos-revela-fgv.html"
+        },
+        {
+          "nome": "SpaceMoney",
+          "url": "https://www.spacemoney.com.br/economia/indicadores-economicos/confianca-construcao-recua-novembro-fgv"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Intenção de consumo das famílias cai 0,9% em novembro, 4ª queda seguida",
+      "texto": "ICF da CNC (25/11) vai a 102,7 pontos; perspectiva de consumo cai 1,6%, pior desde dezembro de 2023; endividamento atinge 81,6% das famílias.",
+      "palavra": "ICF",
+      "fontes": [
+        {
+          "nome": "CartaCapital",
+          "url": "https://www.cartacapital.com.br/economia/intencao-de-consumo-das-familias-cai-pelo-quarto-mes-seguido-diz-cnc/"
+        },
+        {
+          "nome": "BPMoney",
+          "url": "https://bpmoney.com.br/economia/intencao-consumo-familias-cai-novembro-cnc/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Anec reduz previsão de embarque de soja em novembro a 4,03 milhões de t",
+      "texto": "Em 25/11, estimativa caiu de 4,40 milhões de t; milho recua a 7,92 milhões (ante 8,06) e farelo a 2,50 milhões. Soja fica cerca de 200 mil t abaixo de novembro de 2025.",
+      "palavra": "embarques",
+      "tema": "agro",
+      "fontes": [
+        {
+          "nome": "Investing.com/Reuters",
+          "url": "https://br.investing.com/news/commodities-news/anec-reduz-previsao-de-embarques-de-milho-soja-e-farelo-em-novembro-2137988"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos"
+      ],
+      "titulo": "Intermitente responde por 8,1% das admissões em bares, diz Abrasel",
+      "texto": "Levantamento com o Caged de janeiro a setembro: restaurantes 0,98%; no conjunto da alimentação fora do lar, 1,04%, maior percentual da série iniciada em 2017.",
+      "palavra": "bares",
+      "tema": "trabalho",
+      "fontes": [
+        {
+          "nome": "Acre Agora",
+          "url": "https://acreagora.com/2026/11/25/abrasel-aponta-que-81-das-admissoes-em-bares-foram-por-contrato-intermitente/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "Shopee (31,6%) e Mercado Livre (30,3%) empatam como apps favoritos de compra",
+      "texto": "Panorama Mobile Time/Opinion Box (25/11): 95,4% dos donos de smartphone compraram produto físico pelo celular em 12 meses; 15,9% compram todo dia ou quase.",
+      "palavra": "m-commerce",
+      "tema": "ecommerce",
+      "fontes": [
+        {
+          "nome": "Mobile Time",
+          "url": "https://www.mobiletime.com.br/noticias/25/11/2026/shopee-super-panorama/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -404,7 +530,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 25/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 26/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -424,9 +550,9 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,86",
+      "valor": "R$ 5,88",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 24/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 25/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
@@ -517,23 +643,23 @@
       "acoes": [
         {
           "ico": "🏛️",
-          "txt": "Depois do PLP 299, Lula autorizou PEC de despesas obrigatórias com impacto de R$ 20 bi em 2027: acompanhe o envio ao Congresso."
+          "txt": "Trabuco cotado para a Fazenda derrubou o DI 2029 a 14,66% em 25/11: decisão esperada até 4/12; adie travas de juros longos até o nome sair."
         },
         {
           "ico": "💱",
-          "txt": "Dólar recuou a R$ 5,902 em 24/11 após tocar R$ 6,006: use a janela para hedge, sem contar com queda contínua."
+          "txt": "Dólar caiu a R$ 5,8168 em 25/11, mas ainda sobe 6,84% em novembro: aproveite a janela para hedge de importações."
         },
         {
           "ico": "🏦",
           "txt": "Selic em 13,75% e Focus com 13% em 2027: planeje crédito caro também no próximo ano."
         },
         {
-          "ico": "🏭",
-          "txt": "Indústria tem a menor intenção de investimento desde 2020 (CNI): fornecedores B2B devem esperar pedidos mais fracos."
+          "ico": "✈️",
+          "txt": "EUA propõem tarifa de 10% sobre aviões brasileiros a partir de janeiro: exportadores da cadeia aeronáutica devem revisar contratos."
         },
         {
           "ico": "🛒",
-          "txt": "Confiança do consumidor na mínima desde 2022 às vésperas da Black Friday de 27/11: ajuste estoques e margem."
+          "txt": "Intenção de consumo cai pela 4ª vez (ICF 102,7) às vésperas da Black Friday de 27/11: priorize giro de estoque a desconto amplo."
         }
       ]
     },
@@ -676,13 +802,15 @@
     "fiscal": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Após PLP 299 aprovado em 23/11, Lula autoriza em 24/11 PEC de despesas obrigatórias com impacto de R$ 20 bi em 2027.",
+      "texto": "Mercado reage a Trabuco cotado para a Fazenda: dólar a R$ 5,8168 e DI 2029 a 14,66% em 25/11; anúncio esperado até 4/12.",
       "fontes": [
         "Brasil 247",
         "Esmael Morais",
         "Mix Vale",
         "InfoMoney",
-        "CNN Brasil"
+        "CNN Brasil",
+        "Correio do Estado",
+        "DGABC"
       ]
     },
     "juros": {
@@ -705,35 +833,40 @@
     "cambio": {
       "tipo": "risco",
       "status": "materializado",
-      "texto": "Dólar tocou R$ 6,006 em 23/11 e recuou a R$ 5,902 em 24/11 com a PEC de gastos.",
+      "texto": "Dólar cai 1,59% a R$ 5,8168 em 25/11, mas ainda acumula +6,84% em novembro.",
       "fontes": [
         "Mix Vale",
-        "CNN Brasil"
+        "CNN Brasil",
+        "Correio do Estado"
       ],
       "materializado": true
     },
     "exterior": {
-      "tipo": "oportunidade",
-      "status": "em_curso",
-      "texto": "Exportações sobem 23% em novembro até a 3ª semana; superávit de US$ 77,3 bi no ano (Secex, 23/11).",
+      "tipo": "risco",
+      "status": "monitorar",
+      "texto": "USTR propõe tarifa de 10% sobre aeronaves brasileiras (25/11), com possível vigência em janeiro; Embraer cai 4%.",
       "fontes": [
-        "O Povo"
+        "O Povo",
+        "O Tempo",
+        "CNN Brasil"
       ]
     },
     "construcao": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "CBIC (23/11): estoque recorde de 382 mil unidades, 10,2 meses para escoar; lançamentos +1% no 3º tri.",
+      "texto": "Confiança da construção cai 4,9 pontos, a 85,8, com expectativas -7,7 pontos (FGV, 25/11); estoque recorde de 382 mil (CBIC).",
       "fontes": [
-        "DGABC"
+        "DGABC",
+        "Jornal do Comércio"
       ]
     },
     "ecommerce": {
       "tipo": "oportunidade",
-      "status": "monitorar",
-      "texto": "Fecomércio-RJ (23/11) prevê R$ 1,46 bi na Black Friday do Rio, gasto médio de R$ 1.563.",
+      "status": "em_curso",
+      "texto": "95,4% dos donos de smartphone compraram pelo celular em 12 meses; Shopee e Mercado Livre empatam na liderança (Mobile Time, 25/11).",
       "fontes": [
-        "NC News"
+        "NC News",
+        "Mobile Time"
       ]
     },
     "combustiveis": {
@@ -745,12 +878,13 @@
       ]
     },
     "agro": {
-      "tipo": "oportunidade",
-      "status": "em_curso",
-      "texto": "Soja a R$ 159 em Minas iguala máxima de 12 meses (24/11), após R$ 165 em Passo Fundo em 23/11.",
+      "tipo": "risco",
+      "status": "monitorar",
+      "texto": "Anec corta embarque de soja de novembro a 4,03 milhões de t (25/11), abaixo de 2025, apesar da saca recorde em Minas.",
       "fontes": [
         "Canal Rural",
-        "O Tempo"
+        "O Tempo",
+        "Investing.com/Reuters"
       ]
     },
     "atividade": {
@@ -764,10 +898,11 @@
     "consumo": {
       "tipo": "risco",
       "status": "em_curso",
-      "texto": "Confiança do consumidor cai a 83,5 pontos, mínima desde agosto de 2022 (FGV, 24/11); só 37,6% das PMEs esperam vender mais na Black Friday.",
+      "texto": "ICF cai 0,9% a 102,7 (CNC, 25/11), 4ª queda; confiança do consumidor em 83,5, mínima desde 2022 (FGV, 24/11).",
       "fontes": [
         "O Povo",
-        "Consumidor Moderno"
+        "Consumidor Moderno",
+        "CartaCapital"
       ]
     },
     "trabalho": {
@@ -781,9 +916,9 @@
   },
   "novos_temas": [],
   "_kpis_vistos": {
-    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 25/11/2026",
+    "selic": "13,75% a.a.|Taxa básica de juros · BCB/SGS · 26/11/2026",
     "ipca": "0,14%|Mês · acum. ano 4,10% · 12m 4,63% · meta 3,0% (teto 4,5%) · IBGE out/26 · Projeç",
-    "cambio": "R$ 5,86|Dólar PTAX venda · BCB · 24/11/2026",
+    "cambio": "R$ 5,88|Dólar PTAX venda · BCB · 25/11/2026",
     "desemprego": "5,2%|PNAD Contínua · IBGE · jul-ago-set 2026",
     "varejo": "0,2%|Vol. de vendas m/m (aj. sazonal) · acum. ano 1,7% · IBGE set/26",
     "pim": "-0,8%|Produção física m/m · acum. ano 0,4% · IBGE set/26",

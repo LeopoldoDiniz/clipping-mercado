@@ -1,5 +1,5 @@
 {
- "versao": 22,
+ "versao": 23,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -814,7 +814,11 @@
   "real": "cambio",
   "Galípolo": "juros",
   "PEC": "fiscal",
-  "PMEs": "consumo"
+  "PMEs": "consumo",
+  "Trabuco": "fiscal",
+  "embarques": "agro",
+  "bares": "trabalho",
+  "m-commerce": "ecommerce"
  },
  "leituras": [
   {
@@ -5371,7 +5375,13 @@
    "data": "2026-11-25",
    "semana": "2026-W48",
    "motivo": "palavras novas: PEC→fiscal, PMEs→consumo"
+  },
+  {
+   "versao": 23,
+   "data": "2026-11-26",
+   "semana": "2026-W48",
+   "motivo": "palavras novas: Trabuco→fiscal, embarques→agro, bares→trabalho, m-commerce→ecommerce"
   }
  ],
- "atualizado_em": "2026-11-25T10:09:31.261259+00:00"
+ "atualizado_em": "2026-11-26T10:09:24.552821+00:00"
 }
