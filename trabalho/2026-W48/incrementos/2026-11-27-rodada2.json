@@ -1,0 +1,13 @@
+{
+  "clipping": [
+    {"setores": ["industria"],
+     "titulo": "Preços ao produtor sobem 0,98% em outubro, 3ª alta seguida",
+     "texto": "IBGE (26/11): setembro revisado a 1,53%; 15 de 24 atividades subiram; alimentos, refino e químicos somam 0,87 ponto; acumulado de 6,06% no ano e 5,84% em 12 meses.",
+     "palavra": "IPP",
+     "fontes": [{"nome": "O Povo", "url": "https://www.opovo.com.br/noticias/economia/2026/11/26/ipp-sobe-098-em-outubro-ante-dado-revisado-em-setembro-de-153-diz-ibge.html"},
+                {"nome": "SpaceMoney", "url": "https://www.spacemoney.com.br/economia/indicadores-economicos/ipp-alta-outubro-industria"},
+                {"nome": "Sul de Minas Online", "url": "https://www.suldeminasonline.com.br/noticia/19774/dinheiro/precos-da-industria-sobem-pelo-3-ordm-mes-seguido-e-acumulam-6-06-em-2026-diz-ibge.html"}]}
+  ],
+  "leituras_temas": {},
+  "novos_temas": []
+}

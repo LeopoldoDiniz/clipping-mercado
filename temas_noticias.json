@@ -9606,6 +9606,62 @@
     "setores": [
      "ecommerce"
     ]
+   },
+   {
+    "titulo": "IPCA-15 sobe 0,22% em novembro, abaixo dos 0,34% esperados",
+    "palavra": "IPCA-15",
+    "tema": "inflacao",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Ibovespa dispara 6,07%, a 176.799 pontos, e dólar cai a R$ 5,744",
+    "palavra": "Ibovespa",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Trabuco aceita convite de Lula para a Fazenda, segundo a CNN; PT resiste",
+    "palavra": "Trabuco",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Confiança da indústria sobe 0,4 ponto, a 91,4, após quatro quedas",
+    "palavra": "ICI",
+    "tema": "atividade",
+    "setores": [
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Atividade da construção cai a 44,2 pontos em outubro, pior para o mês desde 2016",
+    "palavra": "construção",
+    "tema": "construcao",
+    "setores": [
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Suíno vivo cai mais de 20% em novembro; boi fica em R$ 396,70",
+    "palavra": "suíno",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
+   },
+   {
+    "titulo": "Preços ao produtor sobem 0,98% em outubro, 3ª alta seguida",
+    "palavra": "IPP",
+    "tema": "inflacao",
+    "setores": [
+     "industria"
+    ]
    }
   ]
  }

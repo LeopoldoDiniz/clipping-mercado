@@ -51,5 +51,33 @@
         "indicador Câmbio (US$) atualizado: R$ 5,88"
       ]
     }
+  },
+  {
+    "data": "2026-11-27",
+    "em": "2026-11-27T10:09:44.932023+00:00",
+    "noticias_novas": 6,
+    "total_semana": 32,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador Câmbio (US$) atualizado: R$ 5,74"
+      ],
+      "industria": [
+        "indicador IPP atualizado: 0,98%"
+      ],
+      "construcao": [
+        "tema materializou: construcao"
+      ],
+      "comercio": [
+        "tema materializou: construcao"
+      ]
+    }
+  },
+  {
+    "data": "2026-11-27",
+    "em": "2026-11-27T10:10:19.476023+00:00",
+    "noticias_novas": 1,
+    "total_semana": 33,
+    "gatilhos": {}
   }
 ]

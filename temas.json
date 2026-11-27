@@ -1,5 +1,5 @@
 {
- "versao": 23,
+ "versao": 24,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -818,7 +818,9 @@
   "Trabuco": "fiscal",
   "embarques": "agro",
   "bares": "trabalho",
-  "m-commerce": "ecommerce"
+  "m-commerce": "ecommerce",
+  "ICI": "atividade",
+  "suíno": "agro"
  },
  "leituras": [
   {
@@ -5381,7 +5383,13 @@
    "data": "2026-11-26",
    "semana": "2026-W48",
    "motivo": "palavras novas: Trabuco→fiscal, embarques→agro, bares→trabalho, m-commerce→ecommerce"
+  },
+  {
+   "versao": 24,
+   "data": "2026-11-27",
+   "semana": "2026-W48",
+   "motivo": "palavras novas: ICI→atividade, suíno→agro"
   }
  ],
- "atualizado_em": "2026-11-26T10:09:24.552821+00:00"
+ "atualizado_em": "2026-11-27T10:10:10.917868+00:00"
 }

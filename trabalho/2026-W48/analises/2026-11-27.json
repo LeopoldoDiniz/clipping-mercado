@@ -1,0 +1,37 @@
+{"setores": {
+  "industria": {
+    "prov": "Seu preço de venda acompanha um custo industrial que já subiu 6% no ano?",
+    "quote": "Os preços ao produtor subiram 0,98% em outubro, a terceira alta seguida, e acumulam 6,06% em 2026 (IBGE, 26/11).",
+    "edi": ["O IPP de outubro avançou 0,98%, depois de 1,53% revisado em setembro; alimentos, refino de petróleo e químicos responderam por 0,87 ponto da alta, e 15 das 24 atividades subiram. No mesmo dia, a confiança da indústria (FGV) subiu 0,4 ponto, a 91,4, primeira alta após quatro quedas, com Nuci em 82,2%, mas as expectativas caíram a 89,0, o menor nível desde outubro de 2025.", "O quadro se soma à intenção de investimento da CNI em 50 pontos, mínima desde julho de 2020, e à proposta dos EUA de tarifa de 10% sobre aviões da Embraer. No câmbio, o dólar recuou a R$ 5,744 em 26/11, com Trabuco cotado para a Fazenda."],
+    "acoes": [
+      {"ico": "🧾", "txt": "Revise tabelas de preço com o custo de insumos: IPP acumula 6,06% no ano, com refino e químicos à frente."},
+      {"ico": "💱", "txt": "Use o dólar perto de R$ 5,74 para travar parte do câmbio de insumos importados de 2027."},
+      {"ico": "🏭", "txt": "Mantenha investimentos de 2027 em etapas: expectativas da indústria estão no menor nível em um ano (FGV 89,0)."}
+    ]},
+  "construcao": {
+    "prov": "Sua carteira de obras está preparada para um setor no pior ritmo para outubro desde 2016?",
+    "quote": "O nível de atividade da construção caiu a 44,2 pontos em outubro, o menor para o mês desde 2016 (CNI/CBIC, 26/11).",
+    "edi": ["A Sondagem da Indústria da Construção mostra uso da capacidade em queda de 68% para 64%, a maior baixa mensal desde março de 2020, e emprego a 44,3 pontos, terceira queda seguida. A confiança do empresário (ICEI) despencou 7,7 pontos, a 41,3, e a intenção de investimento caiu a 39,7; a expectativa de atividade passou a indicar queda nos próximos seis meses (43,9).", "A leitura confirma a FGV, cuja confiança da construção caiu 4,9 pontos, a 85,8, e os dados da CBIC de estoque recorde de 382 mil unidades. Ao mesmo tempo, a jornada de 42 horas começa em 16/12 e pressiona o custo de mão de obra."],
+    "acoes": [
+      {"ico": "🏗️", "txt": "Reavalie o calendário de lançamentos de 2027: a expectativa de atividade caiu a 43,9 pontos (CNI/CBIC)."},
+      {"ico": "📦", "txt": "Priorize a venda de estoque pronto antes de novos projetos: o estoque do setor está em 382 mil unidades."},
+      {"ico": "👷", "txt": "Ajuste equipes ao ritmo de obra e à jornada de 42 horas a partir de 16/12."}
+    ]},
+  "comercio": {
+    "prov": "Seu estoque pós-Black Friday está ajustado a famílias que cortam a intenção de consumo?",
+    "quote": "A intenção de consumo das famílias caiu 0,9% em novembro, a 102,7 pontos, quarta queda seguida (CNC, 25/11).",
+    "edi": ["A Black Friday de 27/11 chega com ICF em 102,7 e confiança do consumidor em 83,5, mínima desde agosto de 2022. O IPCA-15 de novembro subiu 0,22%, abaixo do esperado, mas a alimentação no domicílio avançou 2,02%, com tomate +38,92% e carnes +3,65%, o que aperta o orçamento de supermercado.", "Na construção, cadeia de materiais e móveis, a sondagem CNI/CBIC aponta atividade a 44,2 pontos em outubro e expectativa de queda, sinal de demanda fraca para home centers. A Serasa já mostrava só 37,6% das PMEs esperando vender mais na data."],
+    "acoes": [
+      {"ico": "🛒", "txt": "Após a Black Friday, reduza pedidos de reposição em itens de baixo giro: o ICF caiu pela 4ª vez."},
+      {"ico": "🥩", "txt": "Supermercados: revejam margens de hortifrúti e carnes, que puxaram a alta de 2,02% da alimentação em casa."},
+      {"ico": "🧱", "txt": "Varejo de materiais de construção: segure estoques, pois a atividade das obras está no menor nível para outubro desde 2016."}
+    ]}
+ },
+ "panorama": {"acoes": [
+   {"ico": "🏛️", "txt": "Trabuco teria aceitado a Fazenda (CNN, 26/11), sem anúncio oficial: acompanhe a confirmação antes de travar juros longos."},
+   {"ico": "📈", "txt": "Ibovespa subiu 6,07% e dólar caiu a R$ 5,744 em 26/11: janela para hedge de importações e captações."},
+   {"ico": "🏦", "txt": "Selic em 13,75% e Focus com 13% em 2027: mantenha o planejamento com crédito caro no próximo ano."},
+   {"ico": "🧮", "txt": "IPCA-15 de 0,22% veio abaixo do esperado, mas alimentos em casa subiram 2,02%: revise custos de alimentação e benefícios."},
+   {"ico": "✈️", "txt": "EUA propõem tarifa de 10% sobre aviões brasileiros a partir de janeiro: exportadores da cadeia aeronáutica devem revisar contratos."}
+ ]}
+}
