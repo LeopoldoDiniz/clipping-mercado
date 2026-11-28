@@ -2,7 +2,7 @@
   "periodo": "2026-W48",
   "label": "Semana 48 · Novembro 2026",
   "status": "em_andamento",
-  "gerado_em": "2026-11-27T10:11:07.983965",
+  "gerado_em": "2026-11-28T10:10:27.579159",
   "editorial": {
     "texto": "O câmbio passa a ditar o ritmo das próximas semanas. O dólar fechou 19 de novembro a R$ 5,934, sexta alta seguida, e o real perdeu 8,37% no mês, 5,1 pontos a mais que a mediana de moedas emergentes. A projeção anterior se confirmou só em parte: o Senado aprovou o ajuste fiscal por 69 a 2, mas o alívio esperado no dólar não veio, e o risco de câmbio acima de R$ 5,70 se materializou. O teste agora é a Câmara, que abre a votação do PLP 299 nesta segunda, 23, e precisa de 257 votos. Se o texto passar sem mudanças, preservando até R$ 56 bilhões de economia em 2027, o cenário mais provável é de estabilização do câmbio; se travar ou for desidratado, a tendência é de dólar ainda mais alto e de inflação pressionada no início de 2027. A Selic, o juro básico, deve seguir em 13,75% no Copom de 8 e 9 de dezembro, com o Focus já projetando 12,75% para 2027. O desemprego sai em 27 de novembro e a produção industrial, em 3 de dezembro.\n\nPor setor, a tendência é a seguinte. Na indústria, o dólar encarece insumos e a jornada de 42 horas a partir de 16 de dezembro exige refazer turnos; proteja compras importadas. No comércio e nos serviços, a Black Friday de 27 de novembro tende a vender mais pedidos com tíquete menor; segure margem e feche escalas de dezembro. No agro, o câmbio favorece exportações, mas a margem das usinas em 23% e a salvaguarda filipina à carne suína, prevista para 24 de novembro, pedem cautela. Na construção, o custo de mão de obra deve subir cerca de 10%, segundo a CBIC; reveja orçamentos de obras do MCMV. No e-commerce, a disputa por crédito entre Shopee e Mercado Livre deve se intensificar; negocie condições com as plataformas.\n\nNa semana, o IBC-Br caiu 0,9% no terceiro trimestre, o governo regulamentou o fim da escala 6x1, a Toyota inaugurou a segunda fábrica em Sorocaba e o agro exportou US$ 16 bilhões em outubro, alta de 4,1%.",
     "gerado_em": "2026-11-23T10:11:17.198005",
@@ -559,6 +559,171 @@
           "url": "https://www.suldeminasonline.com.br/noticia/19774/dinheiro/precos-da-industria-sobem-pelo-3-ordm-mes-seguido-e-acumulam-6-06-em-2026-diz-ibge.html"
         }
       ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Dólar despenca 3,97%, a R$ 5,5156, e cai 7,07% na semana, maior queda desde 2008",
+      "texto": "Em 27/11, após o Planalto confirmar Trabuco na Fazenda, o dólar fechou a R$ 5,5156; o Ibovespa devolveu 0,13%, a 176.573 pontos, depois da alta de 6% na véspera.",
+      "fontes": [
+        {
+          "nome": "Suno",
+          "url": "https://www.suno.com.br/noticias/ibovespa-hoje-27-novembro-trabuco-dolar-queda/"
+        },
+        {
+          "nome": "Money Times",
+          "url": "https://www.moneytimes.com.br/tempo-real-27-11-2026-davs/"
+        },
+        {
+          "nome": "Diário do Sudoeste",
+          "url": "https://diariodosudoeste.com.br/dolar-cai-397-e-ibovespa-fecha-estavel-com-trabuco/"
+        },
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/politica/governo-lula-anuncia-luiz-carlos-trabuco-para-ministerio-da-fazenda/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "servicos"
+      ],
+      "titulo": "Desemprego fica em 5,1% no trimestre até outubro e iguala a mínima da série",
+      "texto": "IBGE (27/11): taxa abaixo dos 5,3% até julho e dos 5,4% de um ano antes; renda média real de R$ 3.812, alta de 3,5% em 12 meses; 103,7 milhões de ocupados.",
+      "fontes": [
+        {
+          "nome": "InfoMoney",
+          "url": "https://www.infomoney.com.br/economia/taxa-de-desemprego-outubro-2026-ibge/"
+        },
+        {
+          "nome": "JB",
+          "url": "https://www.jb.com.br/economia/2026/11/1061675-desemprego-fica-em-51-no-trimestre-encerrado-em-outubro-diz-ibge.html"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "construcao"
+      ],
+      "titulo": "IGP-M sobe 1,24% em novembro, acima dos 0,94% esperados",
+      "texto": "FGV (27/11): desacelera ante 1,47% de outubro; IPA sobe 1,62% com tomate e cebola; acumula 6,26% em 12 meses, referência para reajuste de aluguéis.",
+      "fontes": [
+        {
+          "nome": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/11/27/igp-m-sobe-124-em-novembro-apos-alta-de-147-em-outubro-revela-fgv.html"
+        },
+        {
+          "nome": "BM&C News",
+          "url": "https://bmcnews.com.br/economia/igp-m-sobe-1-24-em-novembro-e-desacelera-ante-outubro/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal"
+      ],
+      "titulo": "Governo Central tem superávit de R$ 52,3 bilhões em outubro, maior para o mês na série",
+      "texto": "Tesouro (27/11): acima dos R$ 36,6 bi de out/2025 e da mediana Prisma de R$ 43,4 bi; déficit de jan-out cai a R$ 37,9 bi, ante R$ 63,7 bi em 2025.",
+      "fontes": [
+        {
+          "nome": "Correio Braziliense",
+          "url": "https://www.correiobraziliense.com.br/economia/2026/11/7545460-governo-central-registra-superavit-de-rs-523-bi-em-outubro-aponta-tesouro.html"
+        },
+        {
+          "nome": "Imirante",
+          "url": "https://imirante.com/noticias/brasil/2026/11/27/contas-governo-superavit-r-523-bi-outubro"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "transversal",
+        "comercio"
+      ],
+      "titulo": "Inadimplência do crédito livre bate recorde de 6,7% em outubro; juro médio vai a 32,9%",
+      "texto": "BC (27/11): famílias com 8,2% de atraso no crédito livre; concessões livres caem 5,1% no mês, a R$ 628,9 bi; saldo total sobe 0,4%, a R$ 7,5 tri.",
+      "fontes": [
+        {
+          "nome": "Forbes Brasil",
+          "url": "https://forbes.com.br/forbes-money/2026/11/inadimplencia-credito-recorde-outubro-2026/"
+        },
+        {
+          "nome": "Jornal do Comércio",
+          "url": "https://www.jornaldocomercio.com/economia/2026/11/1271975-concessoes-no-credito-livre-caem-51-em-outubro-ante-setembro-afirma-bc.html"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/saldo-das-operacoes-de-credito-avanca-04-em-outubro-e-soma-r-75-tri/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "ecommerce"
+      ],
+      "titulo": "E-commerce fatura R$ 2,7 bi na Black Friday até 15h, alta de só 5,6%",
+      "texto": "Neotrust (27/11): com quinta, evento soma R$ 5,64 bi (+10,8%), abaixo do ritmo da projeção de R$ 13,3 bi (+20,7%) para 26 a 29/11; madrugada 4h-9h subiu 49,5%.",
+      "fontes": [
+        {
+          "nome": "Brasil em Folhas",
+          "url": "https://brasilemfolhas.com.br/2026/11/e-commerce-fatura-r-2-7-bilhoes-nas-primeiras-horas-de-black-friday/"
+        },
+        {
+          "nome": "CNN Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/black-friday-2026-deve-movimentar-r-133-bi-no-e-commerce-diz-pesquisa/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "comercio"
+      ],
+      "titulo": "Cielo processa 13,2 milhões de transações na manhã da Black Friday, 6,4% a mais",
+      "texto": "Entre 0h e 12h de 27/11, lojas físicas e online; Pix cresce 45%, a 1,2 milhão de operações; pico de 900 transações por segundo no físico às 11h.",
+      "fontes": [
+        {
+          "nome": "Central do Varejo",
+          "url": "https://centraldovarejo.com.br/black-friday-2026-abre-com-132-milhoes-de-transacoes-na-cielo-e-pix-cresce-45/"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "servicos",
+        "industria"
+      ],
+      "titulo": "Aneel mantém bandeira verde em dezembro, 3º mês sem cobrança extra",
+      "texto": "Decisão de 27/11 vale para todo o SIN; chuvas elevaram reservatórios e reduziram térmicas, após bandeira amarela de maio a setembro; janeiro sai em 23/12.",
+      "fontes": [
+        {
+          "nome": "Agência Brasil",
+          "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-11/aneel-mantem-bandeira-tarifaria-verde-para-dezembro"
+        },
+        {
+          "nome": "Metrópoles",
+          "url": "https://www.metropoles.com/brasil/aneel-mantem-bandeira-verde-na-conta-de-luz-de-dezembro-sem-custo-extra"
+        }
+      ]
+    },
+    {
+      "setores": [
+        "agro"
+      ],
+      "titulo": "Queda do dólar derruba soja: Paranaguá cai 1,40%, a R$ 166,81",
+      "texto": "Cepea (27/11): indicador Paraná recua 1,17%, a R$ 160,74; Paranaguá ainda acumula alta de 4,99% em novembro; Sorriso (MT) a R$ 135 a saca.",
+      "fontes": [
+        {
+          "nome": "SiteBarra",
+          "url": "https://sitebarra.com.br/v8/soja-recua-nos-dois-mercados-e-trigo-tem-resultados-distintos-no-fechamento/"
+        },
+        {
+          "nome": "Canal Rural",
+          "url": "https://www.canalrural.com.br/agricultura/projeto-soja-brasil/dolar-cai-na-semana-e-derruba-precos-da-soja-no-brasil/"
+        }
+      ]
     }
   ],
   "pestel": [
@@ -635,7 +800,7 @@
       "label": "SELIC",
       "valor": "13,75% a.a.",
       "cor": "neutral",
-      "sub": "Taxa básica de juros · BCB/SGS · 27/11/2026",
+      "sub": "Taxa básica de juros · BCB/SGS · 28/11/2026",
       "fonte": "BCB/SGS"
     },
     {
@@ -655,16 +820,16 @@
     },
     {
       "label": "Câmbio (US$)",
-      "valor": "R$ 5,74",
+      "valor": "R$ 5,54",
       "cor": "down",
-      "sub": "Dólar PTAX venda · BCB · 26/11/2026",
+      "sub": "Dólar PTAX venda · BCB · 27/11/2026",
       "fonte": "BCB/PTAX"
     },
     {
       "label": "Desemprego",
-      "valor": "5,2%",
+      "valor": "5,1%",
       "cor": "up",
-      "sub": "PNAD Contínua · IBGE · jul-ago-set 2026",
+      "sub": "PNAD Contínua · IBGE · ago-set-out 2026",
       "fonte": "IBGE"
     },
     {
@@ -854,46 +1019,46 @@
       "acoes": [
         {
           "ico": "🏛️",
-          "txt": "Trabuco teria aceitado a Fazenda (CNN, 26/11), sem anúncio oficial: acompanhe a confirmação antes de travar juros longos."
+          "txt": "Trabuco confirmado na Fazenda e superávit de R$ 52,3 bi em outubro: o risco fiscal percebido caiu nesta semana."
         },
         {
-          "ico": "📈",
-          "txt": "Ibovespa subiu 6,07% e dólar caiu a R$ 5,744 em 26/11: janela para hedge de importações e captações."
+          "ico": "💱",
+          "txt": "Dólar a R$ 5,5156 após cair 7,07% na semana: janela para hedge de importações, sem contar com novas quedas."
         },
         {
           "ico": "🏦",
-          "txt": "Selic em 13,75% e Focus com 13% em 2027: mantenha o planejamento com crédito caro no próximo ano."
+          "txt": "Selic em 13,75% e crédito livre com inadimplência recorde de 6,7%: mantenha crédito a clientes seletivo."
         },
         {
-          "ico": "🧮",
-          "txt": "IPCA-15 de 0,22% veio abaixo do esperado, mas alimentos em casa subiram 2,02%: revise custos de alimentação e benefícios."
+          "ico": "👥",
+          "txt": "Desemprego de 5,1% e renda real +3,5%: consumo tem suporte, mas a mão de obra fica mais cara."
         },
         {
-          "ico": "✈️",
-          "txt": "EUA propõem tarifa de 10% sobre aviões brasileiros a partir de janeiro: exportadores da cadeia aeronáutica devem revisar contratos."
+          "ico": "📈",
+          "txt": "IGP-M de 1,24% em novembro, 6,26% em 12 meses: prepare-se para reajustes de aluguel e contratos."
         }
       ]
     },
     "setores": {
       "industria": {
-        "prov": "Seu preço de venda acompanha um custo industrial que já subiu 6% no ano?",
-        "quote": "Os preços ao produtor subiram 0,98% em outubro, a terceira alta seguida, e acumulam 6,06% em 2026 (IBGE, 26/11).",
+        "prov": "Seu custo de insumos importados já reflete um dólar 7% mais barato em uma semana?",
+        "quote": "O dólar caiu 3,97% em 27/11, a R$ 5,5156, e acumulou queda de 7,07% na semana, a maior desde 2008.",
         "edi": [
-          "O IPP de outubro avançou 0,98%, depois de 1,53% revisado em setembro; alimentos, refino de petróleo e químicos responderam por 0,87 ponto da alta, e 15 das 24 atividades subiram. No mesmo dia, a confiança da indústria (FGV) subiu 0,4 ponto, a 91,4, primeira alta após quatro quedas, com Nuci em 82,2%, mas as expectativas caíram a 89,0, o menor nível desde outubro de 2025.",
-          "O quadro se soma à intenção de investimento da CNI em 50 pontos, mínima desde julho de 2020, e à proposta dos EUA de tarifa de 10% sobre aviões da Embraer. No câmbio, o dólar recuou a R$ 5,744 em 26/11, com Trabuco cotado para a Fazenda."
+          "A confirmação de Luiz Carlos Trabuco na Fazenda, em 26/11, levou o dólar de R$ 5,902 no início da semana a R$ 5,5156 na sexta. No mesmo dia, o Tesouro informou superávit primário de R$ 52,3 bilhões em outubro, o maior para o mês na série, e o déficit de janeiro a outubro caiu a R$ 37,9 bilhões. Para a indústria, o câmbio barateia insumos e máquinas importados, mas reduz a margem de quem exporta.",
+          "Nos custos, a Aneel manteve a bandeira verde em dezembro, o 3º mês sem cobrança extra na conta de luz. Já os preços no atacado seguem pressionados: o IPA do IGP-M subiu 1,62% em novembro, e o IPP de outubro avançou 0,98%. A intenção de investimento da CNI segue em 50 pontos, a menor desde 2020."
         ],
         "acoes": [
           {
-            "ico": "🧾",
-            "txt": "Revise tabelas de preço com o custo de insumos: IPP acumula 6,06% no ano, com refino e químicos à frente."
-          },
-          {
             "ico": "💱",
-            "txt": "Use o dólar perto de R$ 5,74 para travar parte do câmbio de insumos importados de 2027."
+            "txt": "Renegocie contratos de insumos cotados em dólar e avalie travar parte do câmbio perto de R$ 5,52."
           },
           {
-            "ico": "🏭",
-            "txt": "Mantenha investimentos de 2027 em etapas: expectativas da indústria estão no menor nível em um ano (FGV 89,0)."
+            "ico": "🚢",
+            "txt": "Exportadores: revise preços e margens, pois o real ganhou 7% na semana."
+          },
+          {
+            "ico": "⚡",
+            "txt": "Com bandeira verde em dezembro, antecipe turnos de maior consumo de energia para o mês."
           }
         ]
       },
@@ -920,24 +1085,24 @@
         ]
       },
       "servicos": {
-        "prov": "Seu preço de 2027 já considera um dólar que encostou em R$ 6?",
-        "quote": "O dólar chegou a R$ 6,006 em 23/11, a maior cotação desde abril de 2025, e fechou a R$ 5,9262.",
+        "prov": "Seu quadro de pessoal está preparado para um mercado de trabalho no menor desemprego da série?",
+        "quote": "O desemprego ficou em 5,1% no trimestre até outubro, igualando a mínima da série, com renda média real de R$ 3.812 (IBGE, 27/11).",
         "edi": [
-          "O dólar tocou R$ 6,006 em 23/11 e fechou a R$ 5,9262, em queda de 0,15% após seis altas seguidas; a PTAX do dia ficou em R$ 5,97. Para serviços, a pressão chega por software, equipamentos e viagens cotados em dólar. No mesmo dia, a Câmara aprovou o ajuste fiscal (PLP 299) por 353 a 128, e o texto segue para sanção.",
-          "O Focus de 23/11 elevou o IPCA de 2026 para 5,15% e a Selic de 2027 para 13%, e Galípolo disse que o BC prioriza a estabilidade de preços antes do Copom de dezembro. Na mão de obra, a jornada de 42 horas vale a partir de 16/12."
+          "A PNAD Contínua de 27/11 mostra 103,7 milhões de ocupados e renda real 3,5% maior em 12 meses: bom para a demanda por serviços, mas contratar fica mais caro e mais difícil. A Aneel manteve a bandeira verde em dezembro, aliviando a conta de luz de bares, restaurantes e escritórios.",
+          "No financeiro, o Banco Central apontou inadimplência recorde de 6,7% no crédito livre em outubro, com juro médio de 32,9% ao ano e concessões livres 5,1% menores no mês. O dólar caiu 7,07% na semana com Trabuco na Fazenda, o que barateia viagens e serviços contratados no exterior."
         ],
         "acoes": [
           {
-            "ico": "💱",
-            "txt": "Reveja contratos com custo em dólar (software, equipamentos, viagens) com câmbio de referência próximo de R$ 6."
+            "ico": "👥",
+            "txt": "Planeje retenção e reajustes: renda real sobe 3,5% e o desemprego está em 5,1%."
           },
           {
-            "ico": "🧮",
-            "txt": "Reprecifique serviços de 2027 considerando IPCA projetado de 5,12% e Selic de 13% no Focus."
+            "ico": "💳",
+            "txt": "Aperte cobrança e cadastro de clientes: atraso no crédito livre em recorde de 6,7%."
           },
           {
-            "ico": "🕒",
-            "txt": "Feche as escalas de 42 horas antes de 16/12 e antecipe contratações de fim de ano."
+            "ico": "✈️",
+            "txt": "Turismo e eventos: use o dólar mais baixo para fechar pacotes e fornecedores externos de 2027."
           }
         ]
       },
@@ -1011,6 +1176,26 @@
   },
   "longitudinal": [
     {
+      "id": "tema-fiscal",
+      "tipo": "oportunidade",
+      "titulo": "Fiscal, eleição e instituições",
+      "dimensao": "P",
+      "setores": [
+        "transversal",
+        "industria"
+      ],
+      "status": "materializado",
+      "relevancia": 100.0,
+      "severidade": 6.2,
+      "iminencia": 10.0,
+      "ultima_observacao": "Trabuco confirmado na Fazenda (26/11) e superávit de R$ 52,3 bi em outubro, recorde para o mês; déficit do ano cai a R$ 37,9 bi.",
+      "periodo_observacao": "2026-W48",
+      "data_identificacao": "2026-W14",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 6
+    },
+    {
       "id": "tema-agro",
       "tipo": "risco",
       "titulo": "Safra, clima e agro",
@@ -1021,15 +1206,15 @@
         "industria"
       ],
       "status": "em_curso",
-      "relevancia": 90.0,
+      "relevancia": 91.5,
       "severidade": 10.0,
-      "iminencia": 8.0,
-      "ultima_observacao": "Suíno vivo cai 20% a 26% em novembro (Cepea, 26/11) e Anec corta embarque de soja; boi sustenta R$ 396,70.",
+      "iminencia": 8.3,
+      "ultima_observacao": "Queda do dólar derruba soja em Paranaguá 1,40%, a R$ 166,81 (Cepea, 27/11); suíno vivo caiu mais de 20% no mês.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "esfriando",
-      "noticias_semana": 4
+      "noticias_semana": 5
     },
     {
       "id": "tema-atividade",
@@ -1044,35 +1229,15 @@
         "transversal"
       ],
       "status": "em_curso",
-      "relevancia": 83.5,
-      "severidade": 8.7,
-      "iminencia": 8.0,
+      "relevancia": 75.5,
+      "severidade": 8.4,
+      "iminencia": 6.7,
       "ultima_observacao": "ICI sobe a 91,4 (FGV, 26/11), mas expectativas caem a 89,0; intenção de investimento da CNI em 50 pontos, mínima desde 2020.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W02",
       "origem": "real",
-      "direcao": "estável",
+      "direcao": "esfriando",
       "noticias_semana": 4
-    },
-    {
-      "id": "tema-fiscal",
-      "tipo": "oportunidade",
-      "titulo": "Fiscal, eleição e instituições",
-      "dimensao": "P",
-      "setores": [
-        "transversal",
-        "industria"
-      ],
-      "status": "monitorar",
-      "relevancia": 80.5,
-      "severidade": 6.1,
-      "iminencia": 10.0,
-      "ultima_observacao": "Trabuco teria aceitado a Fazenda (CNN, 26/11), sem anúncio oficial; Ibovespa +6,07% e dólar a R$ 5,744 no dia.",
-      "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W14",
-      "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 5
     },
     {
       "id": "tema-cambio",
@@ -1084,15 +1249,38 @@
         "servicos"
       ],
       "status": "materializado",
-      "relevancia": 67.5,
-      "severidade": 4.8,
-      "iminencia": 6.0,
-      "ultima_observacao": "Dólar cai a R$ 5,744 e Ibovespa sobe 6,07%, a 176.799 pontos, em 26/11, com Trabuco cotado para a Fazenda.",
+      "relevancia": 73.1,
+      "severidade": 5.0,
+      "iminencia": 6.7,
+      "ultima_observacao": "Dólar cai 3,97% em 27/11, a R$ 5,5156, e 7,07% na semana, maior queda desde 2008; Ibovespa a 176.573 pontos.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "estável",
-      "noticias_semana": 3
+      "noticias_semana": 4
+    },
+    {
+      "id": "tema-consumo",
+      "tipo": "risco",
+      "titulo": "Consumo, renda e endividamento",
+      "dimensao": "E",
+      "setores": [
+        "comercio",
+        "servicos",
+        "ecommerce",
+        "transversal",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 65.0,
+      "severidade": 4.7,
+      "iminencia": 8.3,
+      "ultima_observacao": "Inadimplência do crédito livre em recorde de 6,7% e juro médio de 32,9% em outubro (BC, 27/11); Cielo vê Black Friday +6,4%.",
+      "periodo_observacao": "2026-W48",
+      "data_identificacao": "2026-W03",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 5
     },
     {
       "id": "tema-construcao",
@@ -1104,34 +1292,12 @@
         "comercio"
       ],
       "status": "materializado",
-      "relevancia": 67.5,
-      "severidade": 4.8,
-      "iminencia": 6.0,
+      "relevancia": 60.6,
+      "severidade": 4.7,
+      "iminencia": 5.0,
       "ultima_observacao": "Atividade da construção a 44,2 pontos em outubro, pior para o mês desde 2016; confiança CNI 41,3 e FGV 85,8 em novembro.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W02",
-      "origem": "real",
-      "direcao": "estável",
-      "noticias_semana": 3
-    },
-    {
-      "id": "tema-consumo",
-      "tipo": "risco",
-      "titulo": "Consumo, renda e endividamento",
-      "dimensao": "E",
-      "setores": [
-        "comercio",
-        "servicos",
-        "ecommerce",
-        "industria"
-      ],
-      "status": "em_curso",
-      "relevancia": 51.0,
-      "severidade": 4.2,
-      "iminencia": 6.0,
-      "ultima_observacao": "ICF cai 0,9% a 102,7 (CNC, 25/11), 4ª queda; confiança do consumidor em 83,5, mínima desde 2022 (FGV, 24/11).",
-      "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W03",
       "origem": "real",
       "direcao": "estável",
       "noticias_semana": 3
@@ -1147,58 +1313,59 @@
         "servicos"
       ],
       "status": "em_curso",
-      "relevancia": 42.5,
-      "severidade": 4.5,
-      "iminencia": 4.0,
-      "ultima_observacao": "95,4% dos donos de smartphone compraram pelo celular em 12 meses; Shopee e Mercado Livre empatam na liderança (Mobile Time, 25/11).",
+      "relevancia": 48.5,
+      "severidade": 4.7,
+      "iminencia": 5.0,
+      "ultima_observacao": "Black Friday online soma R$ 5,64 bi até 15h de 27/11 (+10,8%, Neotrust), ritmo abaixo dos +20,7% projetados.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W22",
       "origem": "real",
-      "direcao": "esfriando",
-      "noticias_semana": 2
+      "direcao": "estável",
+      "noticias_semana": 3
     },
     {
-      "id": "tema-combustiveis",
+      "id": "tema-trabalho",
       "tipo": "oportunidade",
-      "titulo": "Combustíveis, petróleo e geopolítica",
+      "titulo": "Emprego e trabalho",
+      "dimensao": "S",
+      "setores": [
+        "servicos",
+        "transversal",
+        "comercio",
+        "construcao",
+        "industria"
+      ],
+      "status": "em_curso",
+      "relevancia": 36.0,
+      "severidade": 2.2,
+      "iminencia": 5.0,
+      "ultima_observacao": "Desemprego de 5,1% no trimestre até outubro iguala mínima da série; renda real de R$ 3.812, +3,5% (IBGE, 27/11).",
+      "periodo_observacao": "2026-W48",
+      "data_identificacao": "2026-W05",
+      "origem": "real",
+      "direcao": "esquentando",
+      "noticias_semana": 3
+    },
+    {
+      "id": "tema-inflacao",
+      "tipo": "risco",
+      "titulo": "Inflação e preços",
       "dimensao": "E",
       "setores": [
         "transversal",
         "industria",
-        "agro",
-        "servicos"
-      ],
-      "status": "monitorar",
-      "relevancia": 33.0,
-      "severidade": 2.6,
-      "iminencia": 4.0,
-      "ultima_observacao": "Petrobras prevê US$ 122 bi de investimento em 2027-2031, US$ 23 bi em refino e fertilizantes (23/11).",
-      "periodo_observacao": "2026-W48",
-      "data_identificacao": "2026-W15",
-      "origem": "real",
-      "direcao": "esquentando",
-      "noticias_semana": 2
-    },
-    {
-      "id": "tema-juros",
-      "tipo": "risco",
-      "titulo": "Juros e política monetária",
-      "dimensao": "E",
-      "setores": [
-        "transversal",
-        "servicos",
         "construcao"
       ],
       "status": "em_curso",
-      "relevancia": 33.0,
-      "severidade": 2.6,
-      "iminencia": 4.0,
-      "ultima_observacao": "Focus de 23/11 eleva Selic de 2027 a 13%; Galípolo prioriza estabilidade de preços antes do Copom de dezembro.",
+      "relevancia": 31.0,
+      "severidade": 1.2,
+      "iminencia": 5.0,
+      "ultima_observacao": "IGP-M sobe 1,24% em novembro, acima dos 0,94% esperados, e 6,26% em 12 meses (FGV, 27/11); IPCA-15 veio em 0,22%.",
       "periodo_observacao": "2026-W48",
       "data_identificacao": "2026-W01",
       "origem": "real",
       "direcao": "esquentando",
-      "noticias_semana": 2
+      "noticias_semana": 3
     }
   ]
 }

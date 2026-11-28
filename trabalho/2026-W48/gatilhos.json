@@ -1,4 +1,20 @@
 {
-  "data": "2026-11-27",
-  "setores": {}
+  "data": "2026-11-28",
+  "setores": {
+    "panorama": [
+      "indicador SELIC atualizado: 13,75% a.a.",
+      "indicador Câmbio (US$) atualizado: R$ 5,54",
+      "indicador Desemprego atualizado: 5,1%",
+      "tema materializou: fiscal",
+      "tema materializou: cambio"
+    ],
+    "industria": [
+      "tema materializou: fiscal",
+      "tema materializou: energia"
+    ],
+    "servicos": [
+      "tema materializou: cambio",
+      "tema materializou: energia"
+    ]
+  }
 }

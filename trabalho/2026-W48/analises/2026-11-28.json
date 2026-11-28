@@ -1,0 +1,39 @@
+{
+  "setores": {
+    "industria": {
+      "prov": "Seu custo de insumos importados já reflete um dólar 7% mais barato em uma semana?",
+      "quote": "O dólar caiu 3,97% em 27/11, a R$ 5,5156, e acumulou queda de 7,07% na semana, a maior desde 2008.",
+      "edi": [
+        "A confirmação de Luiz Carlos Trabuco na Fazenda, em 26/11, levou o dólar de R$ 5,902 no início da semana a R$ 5,5156 na sexta. No mesmo dia, o Tesouro informou superávit primário de R$ 52,3 bilhões em outubro, o maior para o mês na série, e o déficit de janeiro a outubro caiu a R$ 37,9 bilhões. Para a indústria, o câmbio barateia insumos e máquinas importados, mas reduz a margem de quem exporta.",
+        "Nos custos, a Aneel manteve a bandeira verde em dezembro, o 3º mês sem cobrança extra na conta de luz. Já os preços no atacado seguem pressionados: o IPA do IGP-M subiu 1,62% em novembro, e o IPP de outubro avançou 0,98%. A intenção de investimento da CNI segue em 50 pontos, a menor desde 2020."
+      ],
+      "acoes": [
+        {"ico": "💱", "txt": "Renegocie contratos de insumos cotados em dólar e avalie travar parte do câmbio perto de R$ 5,52."},
+        {"ico": "🚢", "txt": "Exportadores: revise preços e margens, pois o real ganhou 7% na semana."},
+        {"ico": "⚡", "txt": "Com bandeira verde em dezembro, antecipe turnos de maior consumo de energia para o mês."}
+      ]
+    },
+    "servicos": {
+      "prov": "Seu quadro de pessoal está preparado para um mercado de trabalho no menor desemprego da série?",
+      "quote": "O desemprego ficou em 5,1% no trimestre até outubro, igualando a mínima da série, com renda média real de R$ 3.812 (IBGE, 27/11).",
+      "edi": [
+        "A PNAD Contínua de 27/11 mostra 103,7 milhões de ocupados e renda real 3,5% maior em 12 meses: bom para a demanda por serviços, mas contratar fica mais caro e mais difícil. A Aneel manteve a bandeira verde em dezembro, aliviando a conta de luz de bares, restaurantes e escritórios.",
+        "No financeiro, o Banco Central apontou inadimplência recorde de 6,7% no crédito livre em outubro, com juro médio de 32,9% ao ano e concessões livres 5,1% menores no mês. O dólar caiu 7,07% na semana com Trabuco na Fazenda, o que barateia viagens e serviços contratados no exterior."
+      ],
+      "acoes": [
+        {"ico": "👥", "txt": "Planeje retenção e reajustes: renda real sobe 3,5% e o desemprego está em 5,1%."},
+        {"ico": "💳", "txt": "Aperte cobrança e cadastro de clientes: atraso no crédito livre em recorde de 6,7%."},
+        {"ico": "✈️", "txt": "Turismo e eventos: use o dólar mais baixo para fechar pacotes e fornecedores externos de 2027."}
+      ]
+    }
+  },
+  "panorama": {
+    "acoes": [
+      {"ico": "🏛️", "txt": "Trabuco confirmado na Fazenda e superávit de R$ 52,3 bi em outubro: o risco fiscal percebido caiu nesta semana."},
+      {"ico": "💱", "txt": "Dólar a R$ 5,5156 após cair 7,07% na semana: janela para hedge de importações, sem contar com novas quedas."},
+      {"ico": "🏦", "txt": "Selic em 13,75% e crédito livre com inadimplência recorde de 6,7%: mantenha crédito a clientes seletivo."},
+      {"ico": "👥", "txt": "Desemprego de 5,1% e renda real +3,5%: consumo tem suporte, mas a mão de obra fica mais cara."},
+      {"ico": "📈", "txt": "IGP-M de 1,24% em novembro, 6,26% em 12 meses: prepare-se para reajustes de aluguel e contratos."}
+    ]
+  }
+}

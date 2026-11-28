@@ -9662,6 +9662,82 @@
     "setores": [
      "industria"
     ]
+   },
+   {
+    "titulo": "Dólar despenca 3,97%, a R$ 5,5156, e cai 7,07% na semana, maior queda desde 2008",
+    "palavra": "dólar",
+    "tema": "cambio",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Desemprego fica em 5,1% no trimestre até outubro e iguala a mínima da série",
+    "palavra": "desemprego",
+    "tema": "trabalho",
+    "setores": [
+     "transversal",
+     "servicos"
+    ]
+   },
+   {
+    "titulo": "IGP-M sobe 1,24% em novembro, acima dos 0,94% esperados",
+    "palavra": "IGP-M",
+    "tema": "inflacao",
+    "setores": [
+     "transversal",
+     "construcao"
+    ]
+   },
+   {
+    "titulo": "Governo Central tem superávit de R$ 52,3 bilhões em outubro, maior para o mês na série",
+    "palavra": "primário",
+    "tema": "fiscal",
+    "setores": [
+     "transversal"
+    ]
+   },
+   {
+    "titulo": "Inadimplência do crédito livre bate recorde de 6,7% em outubro; juro médio vai a 32,9%",
+    "palavra": "inadimplência",
+    "tema": "consumo",
+    "setores": [
+     "transversal",
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "E-commerce fatura R$ 2,7 bi na Black Friday até 15h, alta de só 5,6%",
+    "palavra": "BlackFriday",
+    "tema": "ecommerce",
+    "setores": [
+     "ecommerce"
+    ]
+   },
+   {
+    "titulo": "Cielo processa 13,2 milhões de transações na manhã da Black Friday, 6,4% a mais",
+    "palavra": "Cielo",
+    "tema": "consumo",
+    "setores": [
+     "comercio"
+    ]
+   },
+   {
+    "titulo": "Aneel mantém bandeira verde em dezembro, 3º mês sem cobrança extra",
+    "palavra": "bandeira",
+    "tema": "energia",
+    "setores": [
+     "servicos",
+     "industria"
+    ]
+   },
+   {
+    "titulo": "Queda do dólar derruba soja: Paranaguá cai 1,40%, a R$ 166,81",
+    "palavra": "soja",
+    "tema": "agro",
+    "setores": [
+     "agro"
+    ]
    }
   ]
  }

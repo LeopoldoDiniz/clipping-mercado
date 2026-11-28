@@ -1,5 +1,5 @@
 {
- "versao": 24,
+ "versao": 25,
  "criado_em": "2026-11-10",
  "uso": "interno — substitui os sinais (data/sinais.json fica congelado como histórico); não aparece no portal; não etiqueta nem filtra notícias",
  "regras": [
@@ -820,7 +820,9 @@
   "bares": "trabalho",
   "m-commerce": "ecommerce",
   "ICI": "atividade",
-  "suíno": "agro"
+  "suíno": "agro",
+  "primário": "fiscal",
+  "Cielo": "consumo"
  },
  "leituras": [
   {
@@ -5389,7 +5391,13 @@
    "data": "2026-11-27",
    "semana": "2026-W48",
    "motivo": "palavras novas: ICI→atividade, suíno→agro"
+  },
+  {
+   "versao": 25,
+   "data": "2026-11-28",
+   "semana": "2026-W48",
+   "motivo": "palavras novas: primário→fiscal, Cielo→consumo"
   }
  ],
- "atualizado_em": "2026-11-27T10:10:10.917868+00:00"
+ "atualizado_em": "2026-11-28T10:09:38.091756+00:00"
 }

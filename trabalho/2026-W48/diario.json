@@ -79,5 +79,28 @@
     "noticias_novas": 1,
     "total_semana": 33,
     "gatilhos": {}
+  },
+  {
+    "data": "2026-11-28",
+    "em": "2026-11-28T10:09:46.045665+00:00",
+    "noticias_novas": 9,
+    "total_semana": 42,
+    "gatilhos": {
+      "panorama": [
+        "indicador SELIC atualizado: 13,75% a.a.",
+        "indicador Câmbio (US$) atualizado: R$ 5,54",
+        "indicador Desemprego atualizado: 5,1%",
+        "tema materializou: fiscal",
+        "tema materializou: cambio"
+      ],
+      "industria": [
+        "tema materializou: fiscal",
+        "tema materializou: energia"
+      ],
+      "servicos": [
+        "tema materializou: cambio",
+        "tema materializou: energia"
+      ]
+    }
   }
 ]
